@@ -32,11 +32,6 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 General Comments
 ----------------
 
@@ -117,10 +112,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -143,7 +134,6 @@ Raw Data
             "The PostgreSQL Licence"
         ],
         "__impliedId": "PostgreSQL",
-        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
@@ -223,33 +213,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "PostgreSQL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/PostgreSQL_License",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "PostgreSQL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "PostgreSQL License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "PostgreSQL License",
-                        "PostgreSQL"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -506,13 +469,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Silver"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

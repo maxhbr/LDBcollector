@@ -22,11 +22,6 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX") (all data
     \[in this repository\] is generated))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
@@ -116,10 +111,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -147,7 +138,6 @@ Raw Data
             "License :: OSI Approved :: Sleepycat License"
         ],
         "__impliedId": "Sleepycat",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Sleepycat License"
         ],
@@ -232,33 +222,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Sleepycat"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Sleepycat",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "Sleepycat",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Sleepycat Software Product License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Sleepycat Software Product License",
-                        "Sleepycat"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -514,13 +477,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "Google OSS Policy",
                 {

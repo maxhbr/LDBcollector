@@ -21,9 +21,9 @@ Apple Public Source License 1.0,APSL-1.0,"Unknown, probably Attention or Stop or
 Apple Public Source License 1.1,APSL-1.1,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,UNDEFINED,UNDEFINED
 Apple Public Source License 1.2,APSL-1.2,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,UNDEFINED,UNDEFINED
 Apple Public Source License 2.0,APSL-2.0,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,UNDEFINED,UNDEFINED
-Abstyles License,Abstyles,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Abstyles License,Abstyles,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Adobe Systems Incorporated Source Code License Agreement,Adobe-2006,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+Adobe Glyph List License,Adobe-Glyph,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Afmparse License,Afmparse,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Aladdin Free Public License,Aladdin,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Apache License 1.0,Apache-1.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -34,10 +34,10 @@ Artistic License 1.0 (Perl),Artistic-1.0-Perl,"Unknown, probably Stop or No-Go",
 Artistic License 1.0 w/clause 8,Artistic-1.0-cl8,"Unknown, probably Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Artistic License 2.0,Artistic-2.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,False,UNDEFINED
 BSD 1-Clause License,BSD-1-Clause,Go,NoCopyleft,UNDEFINED,UNDEFINED
-"BSD 2-Clause ""Simplified"" License",BSD-2-Clause,Go,NoCopyleft,False,UNDEFINED
+"BSD 2-Clause ""Simplified"" License",BSD-2-Clause,Go,NoCopyleft,UNDEFINED,UNDEFINED
 BSD-2-Clause Plus Patent License,BSD-2-Clause-Patent,Go,NoCopyleft,UNDEFINED,UNDEFINED
 BSD 2-Clause with views sentence,BSD-2-Clause-Views,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-"BSD 2-Clause ""Simplified"" License",BSD-2-Clause,Go,NoCopyleft,False,UNDEFINED
+"BSD 3-Clause ""New"" or ""Revised"" License",BSD-3-Clause,Go,NoCopyleft,UNDEFINED,UNDEFINED
 BSD with attribution,BSD-3-Clause-Attribution,Go,NoCopyleft,UNDEFINED,UNDEFINED
 BSD 3-Clause Clear License,BSD-3-Clause-Clear,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Lawrence Berkeley National Labs BSD variant license,BSD-3-Clause-LBNL,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -128,12 +128,12 @@ Cube License,Cube,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Deutsche Freie Software Lizenz,D-FSL-1.0,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 DOC License,DOC,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 DSDP License,DSDP,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Dotseqn License,Dotseqn,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Dotseqn License,Dotseqn,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Educational Community License v1.0,ECL-1.0,Go,NoCopyleft,False,UNDEFINED
 Educational Community License v2.0,ECL-2.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Eiffel Forum License v1.0,EFL-1.0,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Eiffel Forum License v2.0,EFL-2.0,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-EPICS Open License,EPICS,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+EPICS Open License,EPICS,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Eclipse Public License 1.0,EPL-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Eclipse Public License 2.0,EPL-2.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,True,UNDEFINED
 EU DataGrid Software License,EUDatagrid,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
@@ -144,8 +144,8 @@ Entessa Public License v1.0,Entessa,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Erlang Public License v1.1,ErlPL-1.1,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Eurosym License,Eurosym,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 FSF All Permissive License,FSFAP,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
-FSF Unlimited License,FSFUL,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
-FSF Unlimited License (with License Retention),FSFULLR,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+FSF Unlimited License,FSFUL,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
+FSF Unlimited License (with License Retention),FSFULLR,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Freetype Project License,FTL,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Fair License,Fair,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Frameworx Open License 1.0,Frameworx-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
@@ -178,10 +178,10 @@ GNU General Public License v3.0 only,GPL-3.0-only,"Unknown, probably Attention o
 GNU General Public License v3.0 only,GPL-3.0-only,"Unknown, probably Attention or Stop or No-Go",StrongCopyleft,True,UNDEFINED
 Giftware License,Giftware,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 3dfx Glide License,Glide,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
-Glulxe License,Glulxe,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+Glulxe License,Glulxe,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
+Historical Permission Notice and Disclaimer,HPND,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Historical Permission Notice and Disclaimer - sell variant,HPND-sell-variant,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-Haskell Language Report License,HaskellReport,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Haskell Language Report License,HaskellReport,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Hippocratic License 2.1,Hippocratic-2.1,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 IBM PowerPC Initialization and Boot Software,IBM-pibs,Go,NoCopyleft,UNDEFINED,UNDEFINED
 ICU License,ICU,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -193,7 +193,7 @@ ImageMagick License,ImageMagick,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Imlib2 License,Imlib2,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Info-ZIP License,Info-ZIP,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Intel Open Source License,Intel,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Intel ACPI Software License Agreement,Intel-ACPI,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Intel ACPI Software License Agreement,Intel-ACPI,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Interbase Public License v1.0,Interbase-1.0,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Japan Network Information Center License,JPNIC,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 JSON License,JSON,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
@@ -214,19 +214,19 @@ LaTeX Project Public License v1.1,LPPL-1.1,"Unknown, probably Attention or Stop 
 LaTeX Project Public License v1.2,LPPL-1.2,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 LaTeX Project Public License v1.3a,LPPL-1.3a,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 LaTeX Project Public License v1.3c,LPPL-1.3c,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
-Latex2e License,Latex2e,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Latex2e License,Latex2e,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Leptonica License,Leptonica,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Licence Libre du Québec – Permissive version 1.1,LiLiQ-P-1.1,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 Licence Libre du Québec – Réciprocité version 1.1,LiLiQ-R-1.1,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 Licence Libre du Québec – Réciprocité forte version 1.1,LiLiQ-Rplus-1.1,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 libpng License,Libpng,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Linux Kernel Variant of OpenIB.org license,Linux-OpenIB,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+MIT License,MIT,Go,NoCopyleft,False,UNDEFINED
 MIT No Attribution,MIT-0,Go,NoCopyleft,UNDEFINED,UNDEFINED
 CMU License,MIT-CMU,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Enlightenment License (e16),MIT-advertising,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+enna License,MIT-enna,Go,NoCopyleft,UNDEFINED,UNDEFINED
+feh License,MIT-feh,Go,NoCopyleft,UNDEFINED,UNDEFINED
 MIT +no-false-attribs license,MITNFA,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Mozilla Public License 1.0,MPL-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Mozilla Public License 1.1,MPL-1.1,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
@@ -255,7 +255,7 @@ Netizen Open Source License,NOSL,"Unknown, probably Attention or Stop or No-Go",
 Netscape Public License v1.0,NPL-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Netscape Public License v1.1,NPL-1.1,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,False,UNDEFINED
 Non-Profit Open Software License 3.0,NPOSL-3.0,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,UNDEFINED,UNDEFINED
-"BSD 4-Clause ""Original"" or ""Old"" License",BSD-4-Clause,Attention,NoCopyleft,UNDEFINED,UNDEFINED
+NRL License,NRL,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 NTP License,NTP,Go,NoCopyleft,UNDEFINED,UNDEFINED
 NTP No Attribution,NTP-0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Naumen Public License,Naumen,Go,NoCopyleft,UNDEFINED,UNDEFINED
@@ -306,7 +306,7 @@ Open Software License 2.0,OSL-2.0,"Unknown, probably Attention or Stop or No-Go"
 Open Software License 2.1,OSL-2.1,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,UNDEFINED,UNDEFINED
 Open Software License 3.0,OSL-3.0,"Unknown, probably Attention or Stop or No-Go",SaaSCopyleft,True,UNDEFINED
 OpenSSL License,OpenSSL,Go,NoCopyleft,False,UNDEFINED
-ODC Public Domain Dedication & License 1.0,PDDL-1.0,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+ODC Public Domain Dedication & License 1.0,PDDL-1.0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 PHP License v3.0,PHP-3.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
 PHP License v3.01,PHP-3.01,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Python Software Foundation License 2.0,PSF-2.0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
@@ -328,15 +328,15 @@ Ricoh Source Code Public License,RSCPL,"Unknown, probably Attention or Stop or N
 Rdisc License,Rdisc,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Ruby License,Ruby,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Sax Public Domain Notice,SAX-PD,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-SCEA Shared Source License,SCEA,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+SCEA Shared Source License,SCEA,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 SGI Free Software License B v1.0,SGI-B-1.0,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 SGI Free Software License B v1.1,SGI-B-1.1,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+SGI Free Software License B v2.0,SGI-B-2.0,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Solderpad Hardware License v0.5,SHL-0.5,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 "Solderpad Hardware License, Version 0.51",SHL-0.51,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Sun Industry Standards Source License v1.1,SISSL,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 Sun Industry Standards Source License v1.2,SISSL-1.2,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
+Standard ML of New Jersey License,SMLNJ,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Secure Messaging Protocol Public License,SMPPL,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 SNIA Public License 1.1,SNIA,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Sun Public License v1.0,SPL-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
@@ -345,7 +345,7 @@ SSH short notice,SSH-short,"Unknown, probably Attention or Stop or No-Go",NoCopy
 "Server Side Public License, v 1",SSPL-1.0,"Unknown, probably Attention or Stop or No-Go",UNDEFINED,UNDEFINED,UNDEFINED
 Scheme Widget Library (SWL) Software License Agreement,SWL,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Saxpath License,Saxpath,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Sendmail License,Sendmail,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+Sendmail License,Sendmail,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Sendmail License 8.23,Sendmail-8.23,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 Simple Public License 2.0,SimPL-2.0,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 Sleepycat License,Sleepycat,"Unknown, probably Attention or Stop or No-Go",StrongCopyleft,False,UNDEFINED
@@ -378,7 +378,7 @@ Sybase Open Watcom Public License 1.0,Watcom-1.0,"Unknown, probably Attention or
 Wsuipa License,Wsuipa,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 ICU License,ICU,Go,NoCopyleft,UNDEFINED,UNDEFINED
 XFree86 License 1.1,XFree86-1.1,Go,NoCopyleft,False,UNDEFINED
-XSkat License,XSkat,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+XSkat License,XSkat,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 Xerox License,Xerox,Go,NoCopyleft,UNDEFINED,UNDEFINED
 X.Net License,Xnet,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Yahoo! Public License v1.0,YPL-1.0,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
@@ -398,17 +398,17 @@ copyleft-next 0.3.0,copyleft-next-0.3.0,"Unknown, probably Attention or Stop or 
 copyleft-next 0.3.1,copyleft-next-0.3.1,"Unknown, probably Attention or Stop or No-Go",Copyleft,UNDEFINED,UNDEFINED
 curl License,curl,Go,NoCopyleft,UNDEFINED,UNDEFINED
 diffmark license,diffmark,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
-dvipdfm License,dvipdfm,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+dvipdfm License,dvipdfm,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 eGenix.com Public License 1.1.0,eGenix,Go,NoCopyleft,UNDEFINED,UNDEFINED
 Etalab Open License 2.0,etalab-2.0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 gSOAP Public License v1.3b,gSOAP-1.3b,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
 gnuplot License,gnuplot,"Unknown, probably Attention or Stop or No-Go",WeakCopyleft,UNDEFINED,UNDEFINED
-iMatix Standard Function Library Agreement,iMatix,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+iMatix Standard Function Library Agreement,iMatix,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 PNG Reference Library version 2,libpng-2.0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 libselinux public domain notice,libselinux-1.0,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 libtiff License,libtiff,Go,NoCopyleft,UNDEFINED,UNDEFINED
-Adobe Glyph List License,MIT,Go,NoCopyleft,False,UNDEFINED
-psfrag License,psfrag,Unknown,NoCopyleft,UNDEFINED,UNDEFINED
+mpich2 License,mpich2,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
+psfrag License,psfrag,"Unknown, probably Attention or Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 psutils License,psutils,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 xinetd License,xinetd,"Unknown, probably Stop or No-Go",NoCopyleft,UNDEFINED,UNDEFINED
 XPP License,xpp,Go,NoCopyleft,UNDEFINED,UNDEFINED

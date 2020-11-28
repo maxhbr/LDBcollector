@@ -5,7 +5,6 @@
         "scancode://imlib2"
     ],
     "__impliedId": "Imlib2",
-    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -40,33 +39,6 @@
                 ]
             },
             "spdxLicenseId": "Imlib2"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Imlib2",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "Imlib2",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Imlib2 License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Imlib2 License",
-                    "Imlib2"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -112,15 +84,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

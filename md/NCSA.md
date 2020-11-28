@@ -11,8 +11,6 @@ University of Illinois/NCSA Open Source License (NCSA)
 
 -   `UIUC/NCSA`
 
--   `NCSA/University of Illinois Open Source License`
-
 -   `The University of Illinois/NCSA Open Source License`
 
 -   `License :: OSI Approved :: University of Illinois/NCSA Open Source License`
@@ -48,11 +46,6 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -145,10 +138,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -173,13 +162,11 @@ Raw Data
             "NCSA Open Source License",
             "ncsa",
             "UIUC/NCSA",
-            "NCSA/University of Illinois Open Source License",
             "The University of Illinois/NCSA Open Source License",
             "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
             "uoi-ncsa"
         ],
         "__impliedId": "NCSA",
-        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
@@ -262,33 +249,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "NCSA"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "https://otm.illinois.edu/disclose-protect/illinois-open-source-license",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "NCSA",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "NCSA/University of Illinois Open Source License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "NCSA/University of Illinois Open Source License",
-                        "NCSA"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -608,13 +568,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

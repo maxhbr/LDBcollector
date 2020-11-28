@@ -21,8 +21,6 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GNU GPLv2`
 
--   `GPLv2`
-
 -   `GNU General Public License, Version 2.0`
 
 -   `License :: OSI Approved :: GNU General Public License v2 (GPLv2)`
@@ -538,7 +536,6 @@ Raw Data
             "GPL 2.0",
             "gpl-2.0",
             "GNU GPLv2",
-            "GPLv2",
             "GNU General Public License, Version 2.0",
             "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
             "GNU General Public License 2.0"
@@ -547,6 +544,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
+            "GPLv2",
             "The GNU General Public License (GPL)"
         ],
         "__impliedComments": [
@@ -666,10 +664,12 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "GNU General Public License v2.0 only",
-                        "GPLv2"
+                        "GNU General Public License v2.0 only"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "GPLv2"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

@@ -15,29 +15,29 @@ Number of facts: 4131
     Wikipedia: 38
     choosealicense.com: 39
     finos/OSLC-handbook: 43
-Number of clusters: 2620
+Number of clusters: 2673
 ### Stats on Licenses:
 Number of Licenses: 414
-Number of facts: 2207
-    BlueOak License List: 281
-    Debian Free Software Guidelines: 90
-    Fedora Project Wiki: 233
-    Google OSS Policy: 123
-    Hitachi open-license: 12
-    Open Knowledge International: 106
-    OpenChainPolicyTemplate: 103
-    OpenSourceInitiative: 103
-    Override: 64
-    SPDX: 480
-    Scancode: 460
-    Wikipedia: 44
-    choosealicense.com: 51
-    finos/OSLC-handbook: 57
+Number of facts: 1708
+    BlueOak License List: 228
+    Debian Free Software Guidelines: 82
+    Fedora Project Wiki: 16
+    Google OSS Policy: 113
+    Hitachi open-license: 10
+    Open Knowledge International: 90
+    OpenChainPolicyTemplate: 86
+    OpenSourceInitiative: 87
+    Override: 53
+    SPDX: 420
+    Scancode: 400
+    Wikipedia: 35
+    choosealicense.com: 41
+    finos/OSLC-handbook: 47
 #### based on facts from licenses
-Number of clusters: 410
+Number of clusters: 421
 #### based on licenses
 Number of clusters: 414
 ### Stats on Gaps:
 #### numOfFacts: 4131
-#### numOfLicenseFacs: 2207
-#### numOfLeftover: 2324
+#### numOfLicenseFacs: 1708
+#### numOfLeftover: 2468

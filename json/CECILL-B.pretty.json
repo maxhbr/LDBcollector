@@ -3,11 +3,9 @@
         "CECILL-B",
         "CeCILL-B Free Software License Agreement",
         "scancode://cecill-b",
-        "CeCILL-B License",
-        "CeCILL-B"
+        "CeCILL-B License"
     ],
     "__impliedId": "CECILL-B",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -45,33 +43,6 @@
                 ]
             },
             "spdxLicenseId": "CECILL-B"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://www.cecill.info/licences.en.html",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "CeCILL-B",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "CeCILL-B License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "CeCILL-B License",
-                    "CeCILL-B"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -172,13 +143,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

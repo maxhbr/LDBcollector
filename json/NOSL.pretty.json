@@ -6,7 +6,6 @@
         "NOSL 1.0"
     ],
     "__impliedId": "NOSL",
-    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -36,33 +35,6 @@
                 ]
             },
             "spdxLicenseId": "NOSL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://bits.netizen.com.au/licenses/NOSL/nosl.txt",
-            "GPLv3 Compat?": null,
-            "Short Name": "NOSL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Netizen Open Source License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Netizen Open Source License",
-                    "NOSL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -102,15 +74,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

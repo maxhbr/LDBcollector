@@ -5,7 +5,6 @@
         "scancode://tcl"
     ],
     "__impliedId": "TCL",
-    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -40,33 +39,6 @@
                 ]
             },
             "spdxLicenseId": "TCL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/TCL",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "TCL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "TCL/TK License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "TCL/TK License",
-                    "TCL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -211,13 +183,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

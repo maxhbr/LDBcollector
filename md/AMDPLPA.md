@@ -16,11 +16,6 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 General Comments
 ----------------
 
@@ -135,10 +130,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/amdplpa.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 ### Raw JSON
 
     {
@@ -149,7 +140,6 @@ Raw Data
             "AMD PLPA License"
         ],
         "__impliedId": "AMDPLPA",
-        "__isFsfFree": true,
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -179,33 +169,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AMDPLPA"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "AMDPLPA",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "AMD's plpa_map.c License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "AMD's plpa_map.c License",
-                        "AMDPLPA"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -287,13 +250,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

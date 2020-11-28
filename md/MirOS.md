@@ -26,11 +26,6 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
@@ -95,10 +90,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -122,7 +113,6 @@ Raw Data
             "MirOS Licence"
         ],
         "__impliedId": "MirOS",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The MirOS Licence"
         ],
@@ -200,33 +190,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MirOS"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://mirbsd.de/MirOS-Licence",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MirOS",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "MirOS License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "MirOS License",
-                        "MirOS"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -419,13 +382,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Permissive licence, â» Copyfree, very similar to MIT and ISC but applicable to more than just software"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

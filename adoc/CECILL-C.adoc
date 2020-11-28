@@ -16,10 +16,6 @@
 
 === Comments on (easy) usability
 
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 * ``Google Classification is RECIPROCAL'' (source:
 https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
@@ -293,9 +289,6 @@ Version 1.0 du 2006-09-05."
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -308,11 +301,9 @@ Policy]
         "CECILL-C",
         "CeCILL-C Free Software License Agreement",
         "scancode://cecill-c",
-        "CeCILL-C License",
-        "CeCILL-C"
+        "CeCILL-C License"
     ],
     "__impliedId": "CECILL-C",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -350,33 +341,6 @@ Policy]
                 ]
             },
             "spdxLicenseId": "CECILL-C"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://www.cecill.info/licences.en.html",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "CeCILL-C",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "CeCILL-C License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "CeCILL-C License",
-                    "CeCILL-C"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -450,13 +414,6 @@ Policy]
         }
     },
     "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
         [
             "Google OSS Policy",
             {

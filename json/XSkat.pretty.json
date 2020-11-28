@@ -5,7 +5,6 @@
         "scancode://xskat"
     ],
     "__impliedId": "XSkat",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,33 +42,6 @@
                 ]
             },
             "spdxLicenseId": "XSkat"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/XSkat_License",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "XSkat",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "XSkat License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "XSkat License",
-                    "XSkat"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -117,15 +89,6 @@
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

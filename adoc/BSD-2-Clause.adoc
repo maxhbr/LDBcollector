@@ -7,38 +7,18 @@
 |Shortname |BSD-2-Clause
 |Rating |Go
 |Classification |NoCopyleft
-|Has Patent Hint |False
 |===
 
 *Other Names:*
 
 * `+BSD (2 clause)+`
 * `+BSD License (two clause)+`
-* `+BSD-3-Clause+`
-* `+BSD (3 clause)+`
-* `+BSD License (no advertising)+`
-* `+BSD 3-Clause "New" or "Revised" License+`
-* `+scancode://bsd-new+`
 * `+scancode://bsd-simplified+`
-* `+bsd-3-clause+`
-* `+BSD+`
-* `+Creative Commons BSD+`
-* `+Cryptix General License+`
-* `+Eclipse Distribution License 1.0+`
-* `+Metasploit Framework License (post 2006)+`
 * `+BSD-2+`
 * `+BSD 2-Clause License+`
 * `+Simplified BSD License+`
 * `+FreeBSD License+`
-* `+BSD-3+`
-* `+BSD 3-Clause License+`
-* `+BSD-3-clause+`
-* `+License :: OSI Approved :: BSD License+`
-* `+Revised BSD License+`
-* `+Modified BSD License+`
-* `+New BSD License+`
 * `+BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)+`
-* `+BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)+`
 
 === Description
 
@@ -54,33 +34,17 @@ ____
 
 === Comments on (easy) usability
 
-* **↑**``Google Classification is NOTICE'' (source:
-https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0]))
 * **↑**``Is OSI Approved'' (source:
 https://spdx.org/licenses/BSD-2-Clause.html[SPDX] (all data [in this
 repository] is generated))
-* **↑**``Note that a 2-clause form of the BSD license, removing the
-third condition, is also in use. This is because even a generous
-copyright license does not implicitly forfeit the copyright holder's
-"right of publicity". In other words, even if a license does not forbid
-you from claiming that the copyright holder or other parties endorses or
-promotes your work, the law generally does. We're not aware of any
-exceptions.'' (source: https://wiki.debian.org/DFSGLicenses[Debian Free
-Software Guidelines] (NOASSERTION))
 * **↑**``Rating is: Silver'' (source:
 https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
 * ``Per SPDX.org, this license is OSI certified.'' (source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml[Scancode]
+https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml[Scancode]
 (CC0-1.0))
 
 === Obligations
@@ -109,19 +73,12 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-claus
 
 === URLs
 
-* *Homepage:* http://www.opensource.org/licenses/BSD-3-Clause
 * *Homepage:* http://www.opensource.org/licenses/BSD-2-Clause
 * *OSI Page:* http://opensource.org/licenses/bsd-license.php
 * *OSI Page:* https://opensource.org/licenses/BSD-2-Clause
-* *OSI Page:* https://opensource.org/licenses/BSD-3-Clause
 * *SPDX:* http://spdx.org/licenses/BSD-2-Clause.json
-* *SPDX:* http://spdx.org/licenses/BSD-3-Clause.json
 * *SPDX:* https://spdx.org/licenses/BSD-2-Clause.html
-* *SPDX:* https://spdx.org/licenses/BSD-3-Clause.html
 * *Wikipedia Page:* https://en.wikipedia.org/wiki/BSD_licenses#2-clause
-* *Wikipedia Page:* https://en.wikipedia.org/wiki/BSD_licenses#3-clause
-* *open-license:* http://open-license.hitachi.com/licenses/14
-* http://framework.zend.com/license/new-bsd
 * http://spdx.org/licenses/BSD-2-Clause
 * http://www.freebsd.org/copyright/copyright.html
 
@@ -138,20 +95,16 @@ Redistributions in binary form must reproduce the above copyright notice, this
 list of conditions and the following disclaimer in the documentation and/or
 other materials provided with the distribution.
 
-Neither the name of the ORGANIZATION nor the names of its contributors may be
-used to endorse or promote products derived from this software without specific
-prior written permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
-THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
-ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS
-BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
-GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
-HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
-LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
-THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ....
 
 '''''
@@ -161,70 +114,25 @@ THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ==== Facts
 
 * Override
-* Override
 * https://spdx.org/licenses/BSD-2-Clause.html[SPDX] (all data [in this
 repository] is generated)
-* https://spdx.org/licenses/BSD-3-Clause.html[SPDX] (all data [in this
-repository] is generated)
-* https://blueoakcouncil.org/list[BlueOak License List]
-(https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
 (CC0-1.0)
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml[Scancode]
 (CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml[Scancode]
 (CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
-* https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt[choosealicense.com]
-(https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://github.com/okfn/licenses/blob/master/licenses.csv[Open
-Knowledge International]
-(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
-(NOASSERTION)
-* https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -234,40 +142,17 @@ Knowledge International]
         "BSD-2-Clause",
         "BSD (2 clause)",
         "BSD License (two clause)",
-        "BSD-3-Clause",
-        "BSD (3 clause)",
-        "BSD License (no advertising)",
         "BSD 2-Clause \"Simplified\" License",
-        "BSD 3-Clause \"New\" or \"Revised\" License",
-        "scancode://bsd-new",
         "scancode://bsd-simplified",
         "bsd-2-clause",
-        "bsd-3-clause",
-        "BSD",
-        "Creative Commons BSD",
-        "Cryptix General License",
-        "Eclipse Distribution License 1.0",
-        "Metasploit Framework License (post 2006)",
         "BSD-2",
         "BSD 2-Clause License",
         "BSD-2-clause",
         "Simplified BSD License",
         "FreeBSD License",
-        "BSD-3",
-        "BSD 3-Clause License",
-        "BSD-3-clause",
-        "License :: OSI Approved :: BSD License",
-        "Revised BSD License",
-        "Modified BSD License",
-        "New BSD License",
-        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
-        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
     ],
     "__impliedId": "BSD-2-Clause",
-    "__isFsfFree": true,
-    "__impliedAmbiguousNames": [
-        "The BSD-3-clause License"
-    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -276,7 +161,6 @@ Knowledge International]
             ]
         ]
     ],
-    "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -344,57 +228,31 @@ Knowledge International]
             },
             "spdxLicenseId": "BSD-2-Clause"
         },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "BSD",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "BSD License (no advertising)",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD License (no advertising)",
-                    "BSD"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
-        },
         "Scancode": {
             "otherUrls": [
-                "http://framework.zend.com/license/new-bsd",
-                "https://opensource.org/licenses/BSD-3-Clause"
+                "http://spdx.org/licenses/BSD-2-Clause",
+                "http://www.freebsd.org/copyright/copyright.html",
+                "https://opensource.org/licenses/BSD-2-Clause"
             ],
-            "homepageUrl": "http://www.opensource.org/licenses/BSD-3-Clause",
-            "shortName": "BSD-3-Clause",
+            "homepageUrl": "http://www.opensource.org/licenses/BSD-2-Clause",
+            "shortName": "BSD-2-Clause",
             "textUrls": null,
-            "text": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+            "text": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
             "category": "Permissive",
-            "osiUrl": "http://www.opensource.org/licenses/BSD-3-Clause",
+            "osiUrl": "http://opensource.org/licenses/bsd-license.php",
             "owner": "Regents of the University of California",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml",
-            "key": "bsd-new",
-            "name": "BSD-3-Clause",
-            "spdxId": "BSD-3-Clause",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml",
+            "key": "bsd-simplified",
+            "name": "BSD-2-Clause",
+            "spdxId": "BSD-2-Clause",
             "notes": "Per SPDX.org, this license is OSI certified.",
             "_implications": {
                 "__impliedNames": [
-                    "scancode://bsd-new",
-                    "BSD-3-Clause",
-                    "BSD-3-Clause"
+                    "scancode://bsd-simplified",
+                    "BSD-2-Clause",
+                    "BSD-2-Clause"
                 ],
-                "__impliedId": "BSD-3-Clause",
+                "__impliedId": "BSD-2-Clause",
                 "__impliedComments": [
                     [
                         "Scancode",
@@ -410,23 +268,27 @@ Knowledge International]
                     ]
                 ],
                 "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                 "__impliedURLs": [
                     [
                         "Homepage",
-                        "http://www.opensource.org/licenses/BSD-3-Clause"
+                        "http://www.opensource.org/licenses/BSD-2-Clause"
                     ],
                     [
                         "OSI Page",
-                        "http://www.opensource.org/licenses/BSD-3-Clause"
+                        "http://opensource.org/licenses/bsd-license.php"
                     ],
                     [
                         null,
-                        "http://framework.zend.com/license/new-bsd"
+                        "http://spdx.org/licenses/BSD-2-Clause"
                     ],
                     [
                         null,
-                        "https://opensource.org/licenses/BSD-3-Clause"
+                        "http://www.freebsd.org/copyright/copyright.html"
+                    ],
+                    [
+                        null,
+                        "https://opensource.org/licenses/BSD-2-Clause"
                     ]
                 ]
             }
@@ -445,30 +307,6 @@ Knowledge International]
                     "BSD-2-Clause"
                 ]
             }
-        },
-        "Debian Free Software Guidelines": {
-            "LicenseName": "The BSD-3-clause License",
-            "State": "DFSGCompatible",
-            "_sourceURL": "https://wiki.debian.org/DFSGLicenses",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-3-Clause"
-                ],
-                "__impliedAmbiguousNames": [
-                    "The BSD-3-clause License"
-                ],
-                "__impliedJudgement": [
-                    [
-                        "Debian Free Software Guidelines",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "Note that a 2-clause form of the BSD license, removing the third condition, is also in use. This is because even a generous copyright license does not implicitly forfeit the copyright holder's \"right of publicity\". In other words, even if a license does not forbid you from claiming that the copyright holder or other parties endorses or promotes your work, the law generally does. We're not aware of any exceptions."
-                        }
-                    ]
-                ]
-            },
-            "Comment": "Note that a 2-clause form of the BSD license, removing the third condition, is also in use. This is because even a generous copyright license does not implicitly forfeit the copyright holder's \"right of publicity\". In other words, even if a license does not forbid you from claiming that the copyright holder or other parties endorses or promotes your work, the law generally does. We're not aware of any exceptions.",
-            "LicenseId": "BSD-3-Clause"
         },
         "Override": {
             "oNonCommecrial": null,
@@ -489,190 +327,6 @@ Knowledge International]
             "oJudgement": null,
             "oCompatibilities": null,
             "oRatingState": null
-        },
-        "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/14",
-            "_license_permissions": [
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "",
-                    "_permission_conditionHead": null,
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched code as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/1",
-                            "_action_id": "actions/1",
-                            "_action_name": "Use the obtained source code without modification"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/3",
-                            "_action_id": "actions/3",
-                            "_action_name": "Modify the obtained source code."
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/4",
-                            "_action_id": "actions/4",
-                            "_action_name": "Using Modified Source Code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched binary as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/6",
-                            "_action_id": "actions/6",
-                            "_action_name": "Use the retrieved binaries"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/8",
-                            "_action_id": "actions/8",
-                            "_action_name": "Use binaries generated from modified source code"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                            "_condition_id": "conditions/1",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        }
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the code as it was obtained",
-                            "_action_uri": "http://open-license.hitachi.com/actions/9",
-                            "_action_id": "actions/9",
-                            "_action_name": "Distribute the obtained source code without modification"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/12",
-                            "_action_id": "actions/12",
-                            "_action_name": "Distribution of Modified Source Code"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                            "_condition_id": "conditions/2",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        }
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the fetched binaries as they are",
-                            "_action_uri": "http://open-license.hitachi.com/actions/11",
-                            "_action_id": "actions/11",
-                            "_action_name": "Distribute the fetched binaries"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/14",
-                            "_action_id": "actions/14",
-                            "_action_name": "Distribute the generated binaries from modified source code"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "",
-                    "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                            "_condition_id": "conditions/3",
-                            "_condition_name": "Get special permission in writing.",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "REQUISITE"
-                        }
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/15",
-                            "_action_id": "actions/15",
-                            "_action_name": "Use the name of the owner or contributor to promote or sell the derived product"
-                        }
-                    ]
-                }
-            ],
-            "_license_id": "licenses/14",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/14",
-            "_license_name": "BSD 3-Clause \"New\" or \"Revised\" License",
-            "_license_summary": "BSD-3-Clause",
-            "_license_content": "The BSD 3-Clause License\r\n\r\n      The following is a BSD 3-Clause (\"BSD New\" or \"BSD Simplified\") license template. \r\n      To generate your own license, change the values of OWNER, ORGANIZATION and YEAR from \r\n      their original values as given here, and substitute your own.\r\n\r\n      Note: You may omit clause 3 and still be OSD-conformant. \r\n      Despite its colloquial name \"BSD New\", this is not the newest version of the BSD license; \r\n      it was followed by the even newer BSD-2-Clause version, sometimes known as the \r\n      \"Simplified BSD License\". On January 9th, 2008 the OSI Board approved BSD-2-Clause, \r\n      which is used by FreeBSD and others. It omits the final \"no-endorsement\" clause and \r\n      is thus roughly equivalent to the MIT License.\r\n\r\n      Historical Background: The original license used on BSD Unix had four clauses. \r\n      The advertising clause (the third of four clauses) required you to acknowledge \r\n      use of U.C. Berkeley code in your advertising of any product using that code. It \r\n      was officially rescinded by the Director of the Office of Technology Licensing of \r\n      the University of California on July 22nd, 1999. He states that clause 3 is \"hereby \r\n      deleted in its entirety.\" The four clause license has not been approved by OSI. \r\n      The license below does not contain the advertising clause.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n   * Neither the name of the <ORGANIZATION> nor the names of its contributors may be \r\n     used to endorse or promote products derived from this software without specific prior \r\n     written permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-            "_license_notices": [
-                {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/5",
-                    "_notice_id": "notices/5"
-                },
-                {
-                    "_notice_description": "",
-                    "_notice_content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/6",
-                    "_notice_id": "notices/6"
-                }
-            ],
-            "_license_description": "<OWNER> would be the equivalent of a copyright holder.",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD 3-Clause \"New\" or \"Revised\" License"
-                ],
-                "__impliedText": "The BSD 3-Clause License\r\n\r\n      The following is a BSD 3-Clause (\"BSD New\" or \"BSD Simplified\") license template. \r\n      To generate your own license, change the values of OWNER, ORGANIZATION and YEAR from \r\n      their original values as given here, and substitute your own.\r\n\r\n      Note: You may omit clause 3 and still be OSD-conformant. \r\n      Despite its colloquial name \"BSD New\", this is not the newest version of the BSD license; \r\n      it was followed by the even newer BSD-2-Clause version, sometimes known as the \r\n      \"Simplified BSD License\". On January 9th, 2008 the OSI Board approved BSD-2-Clause, \r\n      which is used by FreeBSD and others. It omits the final \"no-endorsement\" clause and \r\n      is thus roughly equivalent to the MIT License.\r\n\r\n      Historical Background: The original license used on BSD Unix had four clauses. \r\n      The advertising clause (the third of four clauses) required you to acknowledge \r\n      use of U.C. Berkeley code in your advertising of any product using that code. It \r\n      was officially rescinded by the Director of the Office of Technology Licensing of \r\n      the University of California on July 22nd, 1999. He states that clause 3 is \"hereby \r\n      deleted in its entirety.\" The four clause license has not been approved by OSI. \r\n      The license below does not contain the advertising clause.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n   * Neither the name of the <ORGANIZATION> nor the names of its contributors may be \r\n     used to endorse or promote products derived from this software without specific prior \r\n     written permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                "__impliedURLs": [
-                    [
-                        "open-license",
-                        "http://open-license.hitachi.com/licenses/14"
-                    ]
-                ]
-            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",
@@ -778,45 +432,6 @@ Knowledge International]
                 ]
             }
         },
-        "Wikipedia": {
-            "Distribution": {
-                "value": "Permissive",
-                "description": "distribution of the code to third parties"
-            },
-            "Linking": {
-                "value": "Permissive",
-                "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
-            },
-            "Publication date": "1995",
-            "Coordinates": {
-                "name": "Cryptix General License",
-                "version": null,
-                "spdxId": ""
-            },
-            "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
-            "Patent grant": {
-                "value": "Manually",
-                "description": "protection of licensees from patent claims made by code contributors regarding their contribution, and protection of contributors from patent claims made by licensees"
-            },
-            "Trademark grant": {
-                "value": "Manually",
-                "description": "use of trademarks associated with the licensed code or its contributors by a licensee"
-            },
-            "_implications": {
-                "__impliedNames": [
-                    "Cryptix General License"
-                ],
-                "__hasPatentHint": false
-            },
-            "Private use": {
-                "value": "Yes",
-                "description": "whether modification to the code must be shared with the community or may be used privately (e.g. internal use by a corporation)"
-            },
-            "Modification": {
-                "value": "Permissive",
-                "description": "modification of the code by a licensee"
-            }
-        },
         "choosealicense.com": {
             "limitations": [
                 "liability",
@@ -911,46 +526,20 @@ Knowledge International]
                     "termType": "condition"
                 }
             ],
-            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml",
-            "name": "BSD 3-Clause \"New\" or \"Revised\" License",
-            "nameFromFilename": "BSD-3-Clause",
+            "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml",
+            "name": "BSD 2-Clause \"Simplified\" License",
+            "nameFromFilename": "BSD-2-Clause",
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "BSD-3-Clause",
-                    "BSD 3-Clause \"New\" or \"Revised\" License"
+                    "BSD-2-Clause",
+                    "BSD 2-Clause \"Simplified\" License"
                 ]
             },
             "licenseId": [
-                "BSD-3-Clause",
-                "BSD 3-Clause \"New\" or \"Revised\" License"
+                "BSD-2-Clause",
+                "BSD 2-Clause \"Simplified\" License"
             ]
-        },
-        "Google OSS Policy": {
-            "rating": "NOTICE",
-            "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
-            "id": "BSD-3-Clause",
-            "_implications": {
-                "__impliedNames": [
-                    "BSD-3-Clause"
-                ],
-                "__impliedJudgement": [
-                    [
-                        "Google OSS Policy",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "Google Classification is NOTICE"
-                        }
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "Google OSS Policy",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft"
-            }
         }
     },
     "__impliedJudgement": [
@@ -959,27 +548,6 @@ Knowledge International]
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Silver"
-            }
-        ],
-        [
-            "Debian Free Software Guidelines",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "Note that a 2-clause form of the BSD license, removing the third condition, is also in use. This is because even a generous copyright license does not implicitly forfeit the copyright holder's \"right of publicity\". In other words, even if a license does not forbid you from claiming that the copyright holder or other parties endorses or promotes your work, the law generally does. We're not aware of any exceptions."
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
-        [
-            "Google OSS Policy",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "Google Classification is NOTICE"
             }
         ],
         [
@@ -993,10 +561,6 @@ Knowledge International]
     "__impliedCopyleft": [
         [
             "BlueOak License List",
-            "NoCopyleft"
-        ],
-        [
-            "Google OSS Policy",
             "NoCopyleft"
         ],
         [
@@ -1042,7 +606,7 @@ Knowledge International]
         ]
     },
     "__isOsiApproved": true,
-    "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+    "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -1054,31 +618,7 @@ Knowledge International]
         ],
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-3-Clause.json"
-        ],
-        [
-            null,
-            "https://opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            "SPDX",
             "https://spdx.org/licenses/BSD-2-Clause.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-3-Clause.html"
-        ],
-        [
-            "Homepage",
-            "http://www.opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            "OSI Page",
-            "http://www.opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            null,
-            "http://framework.zend.com/license/new-bsd"
         ],
         [
             "Homepage",
@@ -1103,18 +643,6 @@ Knowledge International]
         [
             "OSI Page",
             "https://opensource.org/licenses/BSD-2-Clause"
-        ],
-        [
-            "Wikipedia Page",
-            "https://en.wikipedia.org/wiki/BSD_licenses#3-clause"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/14"
         ]
     ]
 }

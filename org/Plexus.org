@@ -148,6 +148,9 @@ open-license]] (CDLA-Permissive-1.0))
       ],
       "__impliedId": "Plexus",
       "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "Plexus"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -198,10 +201,12 @@ open-license]] (CDLA-Permissive-1.0))
               "FSF Free?": "Yes",
               "_implications": {
                   "__impliedNames": [
-                      "Plexus Classworlds License",
-                      "Plexus"
+                      "Plexus Classworlds License"
                   ],
                   "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "Plexus"
+                  ],
                   "__impliedJudgement": [
                       [
                           "Fedora Project Wiki",

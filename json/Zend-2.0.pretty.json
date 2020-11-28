@@ -3,11 +3,9 @@
         "Zend-2.0",
         "Zend License v2.0",
         "scancode://zend-2.0",
-        "Zend Engine License 2.0",
-        "Zend"
+        "Zend Engine License 2.0"
     ],
     "__impliedId": "Zend-2.0",
-    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -37,33 +35,6 @@
                 ]
             },
             "spdxLicenseId": "Zend-2.0"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://www.zend.com/license/2_00.txt",
-            "GPLv3 Compat?": null,
-            "Short Name": "Zend",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Zend License v2.0",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Zend License v2.0",
-                    "Zend"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -171,13 +142,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

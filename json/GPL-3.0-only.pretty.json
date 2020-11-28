@@ -18,8 +18,6 @@
         "GPL 3.0 or later",
         "gpl-3.0",
         "GNU GPLv3",
-        "GPLv3",
-        "GPLv3+",
         "GNU General Public License, Version 3.0",
         "License :: OSI Approved :: GNU General Public License (GPL)",
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -29,6 +27,7 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "GNU General Public License",
+        "GPLv3",
         "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
         "The GNU General Public License (GPL)"
     ],
@@ -131,10 +130,12 @@
             "FSF Free?": "Yes",
             "_implications": {
                 "__impliedNames": [
-                    "GNU General Public License v3.0 only",
-                    "GPLv3"
+                    "GNU General Public License v3.0 only"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "GPLv3"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

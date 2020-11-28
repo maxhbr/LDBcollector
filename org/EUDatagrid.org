@@ -11,8 +11,6 @@
 
 - =scancode://eu-datagrid=
 
-- =EU Datagrid=
-
 ** Description
 
 #+BEGIN_QUOTE
@@ -121,11 +119,13 @@ open-license]] (CDLA-Permissive-1.0))
           "EUDatagrid",
           "EU DataGrid Software License",
           "scancode://eu-datagrid",
-          "EU Datagrid Software License",
-          "EU Datagrid"
+          "EU Datagrid Software License"
       ],
       "__impliedId": "EUDatagrid",
       "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "EU Datagrid"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -218,10 +218,12 @@ open-license]] (CDLA-Permissive-1.0))
               "FSF Free?": "Yes",
               "_implications": {
                   "__impliedNames": [
-                      "EU Datagrid Software License",
-                      "EU Datagrid"
+                      "EU Datagrid Software License"
                   ],
                   "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "EU Datagrid"
+                  ],
                   "__impliedJudgement": [
                       [
                           "Fedora Project Wiki",

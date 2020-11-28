@@ -92,6 +92,7 @@
 <li><p><strong>OSI Page:</strong> https://opensource.org/licenses/Zlib</p></li>
 <li><p><strong>SPDX:</strong> http://spdx.org/licenses/Zlib.json</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/Zlib.html</p></li>
+<li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/16</p></li>
 <li><p>http://www.zlib.net/zlib_license.html</p></li>
 <li><p>http://www.opensource.org/licenses/Zlib</p></li>
 </ul>
@@ -131,6 +132,7 @@ the following restrictions:
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
+<li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -150,6 +152,7 @@ the following restrictions:
     &quot;__impliedId&quot;: &quot;Zlib&quot;,
     &quot;__isFsfFree&quot;: true,
     &quot;__impliedAmbiguousNames&quot;: [
+        &quot;zlib&quot;,
         &quot;The zlib/libpng License (Zlib)&quot;
     ],
     &quot;__impliedComments&quot;: [
@@ -248,10 +251,12 @@ the following restrictions:
             &quot;FSF Free?&quot;: &quot;Yes&quot;,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
-                    &quot;zlib/libpng License&quot;,
-                    &quot;zlib&quot;
+                    &quot;zlib/libpng License&quot;
                 ],
                 &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;zlib&quot;
+                ],
                 &quot;__impliedJudgement&quot;: [
                     [
                         &quot;Fedora Project Wiki&quot;,
@@ -384,6 +389,327 @@ the following restrictions:
             &quot;oJudgement&quot;: null,
             &quot;oCompatibilities&quot;: null,
             &quot;oRatingState&quot;: null
+        },
+        &quot;Hitachi open-license&quot;: {
+            &quot;_license_uri&quot;: &quot;http://open-license.hitachi.com/licenses/16&quot;,
+            &quot;_license_permissions&quot;: [
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;&quot;,
+                    &quot;_permission_conditionHead&quot;: null,
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/1&quot;,
+                            &quot;_action_id&quot;: &quot;actions/1&quot;,
+                            &quot;_action_name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/4&quot;,
+                            &quot;_action_id&quot;: &quot;actions/4&quot;,
+                            &quot;_action_name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/5&quot;,
+                            &quot;_action_id&quot;: &quot;actions/5&quot;,
+                            &quot;_action_name&quot;: &quot;Use the retrieved object code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the fetched binary as it is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/6&quot;,
+                            &quot;_action_id&quot;: &quot;actions/6&quot;,
+                            &quot;_action_name&quot;: &quot;Use the retrieved binaries&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/7&quot;,
+                            &quot;_action_id&quot;: &quot;actions/7&quot;,
+                            &quot;_action_name&quot;: &quot;Use the object code generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/8&quot;,
+                            &quot;_action_id&quot;: &quot;actions/8&quot;,
+                            &quot;_action_name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the obtained executable as is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/84&quot;,
+                            &quot;_action_id&quot;: &quot;actions/84&quot;,
+                            &quot;_action_name&quot;: &quot;Use the retrieved executable&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/87&quot;,
+                            &quot;_action_id&quot;: &quot;actions/87&quot;,
+                            &quot;_action_name&quot;: &quot;Use the executable generated from the modified source code&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/55&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/55&quot;,
+                                    &quot;_condition_name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/8&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/8&quot;,
+                                    &quot;_condition_name&quot;: &quot;Give you a copy of the relevant license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/9&quot;,
+                            &quot;_action_id&quot;: &quot;actions/9&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                        &quot;contents&quot;: {
+                            &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/55&quot;,
+                            &quot;_condition_id&quot;: &quot;conditions/55&quot;,
+                            &quot;_condition_name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                            &quot;_condition_description&quot;: &quot;&quot;,
+                            &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                        }
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/10&quot;,
+                            &quot;_action_id&quot;: &quot;actions/10&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the obtained object code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the fetched binaries as they are&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/11&quot;,
+                            &quot;_action_id&quot;: &quot;actions/11&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the fetched binaries&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the obtained executable as-is&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/86&quot;,
+                            &quot;_action_id&quot;: &quot;actions/86&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the obtained executable&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/55&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/55&quot;,
+                                    &quot;_condition_name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/30&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/30&quot;,
+                                    &quot;_condition_name&quot;: &quot;Indicate that you have made the change yourself.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/3&quot;,
+                            &quot;_action_id&quot;: &quot;actions/3&quot;,
+                            &quot;_action_name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/13&quot;,
+                            &quot;_action_id&quot;: &quot;actions/13&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the object code generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/14&quot;,
+                            &quot;_action_id&quot;: &quot;actions/14&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/89&quot;,
+                            &quot;_action_id&quot;: &quot;actions/89&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the executable generated from the modified source code&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/55&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/55&quot;,
+                                    &quot;_condition_name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/30&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/30&quot;,
+                                    &quot;_condition_name&quot;: &quot;Indicate that you have made the change yourself.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/8&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/8&quot;,
+                                    &quot;_condition_name&quot;: &quot;Give you a copy of the relevant license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/12&quot;,
+                            &quot;_action_id&quot;: &quot;actions/12&quot;,
+                            &quot;_action_name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        }
+                    ]
+                }
+            ],
+            &quot;_license_id&quot;: &quot;licenses/16&quot;,
+            &quot;_sourceURL&quot;: &quot;http://open-license.hitachi.com/licenses/16&quot;,
+            &quot;_license_name&quot;: &quot;zlib/libpng license&quot;,
+            &quot;_license_summary&quot;: &quot;&quot;,
+            &quot;_license_content&quot;: &quot;The zlib/libpng License\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nThis software is provided &#39;as-is&#39;, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\r\n\r\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\r\n\r\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \r\n        the original software. If you use this software in a product, an acknowledgment in the product \r\n        documentation  would be appreciated but is not required.\r\n\r\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \r\n         the original software.\r\n\r\n      3. This notice may not be removed or altered from any source distribution.&quot;,
+            &quot;_license_notices&quot;: [
+                {
+                    &quot;_notice_description&quot;: &quot;There is no guarantee.&quot;,
+                    &quot;_notice_content&quot;: &quot;the software is provided \&quot;as-is\&quot; and without warranty of any kind, either express or implied.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/1&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/1&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;&quot;,
+                    &quot;_notice_content&quot;: &quot;The author shall not be liable for any damage caused by the use of such software.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/132&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/132&quot;
+                }
+            ],
+            &quot;_license_description&quot;: &quot;&quot;,
+            &quot;_license_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+            &quot;_license_schemaVersion&quot;: &quot;0.1&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;zlib/libpng license&quot;
+                ],
+                &quot;__impliedText&quot;: &quot;The zlib/libpng License\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nThis software is provided &#39;as-is&#39;, without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\r\n\r\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\r\n\r\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \r\n        the original software. If you use this software in a product, an acknowledgment in the product \r\n        documentation  would be appreciated but is not required.\r\n\r\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \r\n         the original software.\r\n\r\n      3. This notice may not be removed or altered from any source distribution.&quot;,
+                &quot;__impliedURLs&quot;: [
+                    [
+                        &quot;open-license&quot;,
+                        &quot;http://open-license.hitachi.com/licenses/16&quot;
+                    ]
+                ]
+            }
         },
         &quot;BlueOak License List&quot;: {
             &quot;BlueOakRating&quot;: &quot;Bronze&quot;,
@@ -767,6 +1093,10 @@ the following restrictions:
         [
             &quot;OSI Page&quot;,
             &quot;https://opensource.org/licenses/Zlib&quot;
+        ],
+        [
+            &quot;open-license&quot;,
+            &quot;http://open-license.hitachi.com/licenses/16&quot;
         ]
     ]
 }</code></pre>

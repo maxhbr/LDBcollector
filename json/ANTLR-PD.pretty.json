@@ -5,7 +5,6 @@
         "scancode://antlr-pd"
     ],
     "__impliedId": "ANTLR-PD",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,33 +42,6 @@
                 ]
             },
             "spdxLicenseId": "ANTLR-PD"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ANTLR-PD",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "ANTLR-PD",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "ANTLR Software Rights Notice",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "ANTLR Software Rights Notice",
-                    "ANTLR-PD"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -170,13 +142,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

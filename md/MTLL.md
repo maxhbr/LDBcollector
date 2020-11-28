@@ -14,11 +14,6 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 General Comments
 ----------------
 
@@ -81,10 +76,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 ### Raw JSON
 
     {
@@ -94,7 +85,6 @@ Raw Data
             "scancode://mtll"
         ],
         "__impliedId": "MTLL",
-        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
@@ -132,33 +122,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MTLL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "MTLL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Matrix Template Library License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Matrix Template Library License",
-                        "MTLL"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -248,13 +211,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

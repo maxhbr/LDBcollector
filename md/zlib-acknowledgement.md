@@ -9,8 +9,6 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 -   `ZLIB License with Acknowledgment`
 
--   `zlib with acknowledgement`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -23,11 +21,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -93,10 +86,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
@@ -108,11 +97,9 @@ Raw Data
             "zlib-acknowledgement",
             "zlib/libpng License with Acknowledgement",
             "scancode://zlib-acknowledgement",
-            "ZLIB License with Acknowledgment",
-            "zlib with acknowledgement"
+            "ZLIB License with Acknowledgment"
         ],
         "__impliedId": "zlib-acknowledgement",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)"
         ],
@@ -153,33 +140,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "zlib-acknowledgement"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "zlib with acknowledgement",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "zlib/libpng License with Acknowledgement",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "zlib/libpng License with Acknowledgement",
-                        "zlib with acknowledgement"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -306,13 +266,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ]
         ],

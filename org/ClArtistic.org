@@ -13,14 +13,7 @@
 
 - =scancode://artistic-clarified=
 
-- =Artistic clarified=
-
 ** Comments on (easy) usability
-
-- *↑*"This software Licenses is OK for Fedora" (source:
-  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]]
-  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 - *↓*"Rating is: Lead" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
@@ -202,10 +195,6 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml][Scancode]]
   (CC0-1.0)
 
-- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]]
-  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
-
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -214,11 +203,9 @@
           "ClArtistic",
           "Artistic (clarified)",
           "Clarified Artistic License",
-          "scancode://artistic-clarified",
-          "Artistic clarified"
+          "scancode://artistic-clarified"
       ],
       "__impliedId": "ClArtistic",
-      "__isFsfFree": true,
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -253,33 +240,6 @@
                   ]
               },
               "spdxLicenseId": "ClArtistic"
-          },
-          "Fedora Project Wiki": {
-              "GPLv2 Compat?": "Yes",
-              "rating": "Good",
-              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ArtisticClarified",
-              "GPLv3 Compat?": "Yes",
-              "Short Name": "Artistic clarified",
-              "licenseType": "license",
-              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-              "Full Name": "Artistic (clarified)",
-              "FSF Free?": "Yes",
-              "_implications": {
-                  "__impliedNames": [
-                      "Artistic (clarified)",
-                      "Artistic clarified"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedJudgement": [
-                      [
-                          "Fedora Project Wiki",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "This software Licenses is OK for Fedora"
-                          }
-                      ]
-                  ]
-              }
           },
           "Scancode": {
               "otherUrls": [
@@ -385,13 +345,6 @@
               {
                   "tag": "NegativeJudgement",
                   "contents": "Rating is: Lead"
-              }
-          ],
-          [
-              "Fedora Project Wiki",
-              {
-                  "tag": "PositiveJudgement",
-                  "contents": "This software Licenses is OK for Fedora"
               }
           ]
       ],

@@ -16,11 +16,6 @@
 
 === Comments on (easy) usability
 
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
-
 === General Comments
 
 * ``Per Fedora, the Trusster Open Source License (TOSL) is a derivation
@@ -92,9 +87,6 @@ OF SUCH DAMAGE.
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tosl.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -107,7 +99,6 @@ Project Wiki]
         "TOSL 1.0a"
     ],
     "__impliedId": "TOSL",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -145,33 +136,6 @@ Project Wiki]
                 ]
             },
             "spdxLicenseId": "TOSL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/TOSL",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "TOSL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Trusster Open Source License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Trusster Open Source License",
-                    "TOSL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -219,15 +183,6 @@ Project Wiki]
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -4,13 +4,11 @@
         "Common Public License 1.0",
         "scancode://cpl-1.0",
         "CPL 1.0",
-        "Common Public License",
-        "CPL",
         "Common Public License, Version 1.0",
+        "CPL",
         "License :: OSI Approved :: Common Public License"
     ],
     "__impliedId": "CPL-1.0",
-    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Common Public License",
         "Common Public License (CPL), Version 1.0"
@@ -68,33 +66,6 @@
                 ]
             },
             "spdxLicenseId": "CPL-1.0"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://www.eclipse.org/legal/cpl-v10.html",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "CPL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Common Public License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Common Public License",
-                    "CPL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -342,13 +313,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

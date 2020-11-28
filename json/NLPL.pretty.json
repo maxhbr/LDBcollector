@@ -5,7 +5,6 @@
         "scancode://nlpl"
     ],
     "__impliedId": "NLPL",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,33 +42,6 @@
                 ]
             },
             "spdxLicenseId": "NLPL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/NLPL",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "NLPL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "No Limit Public License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "No Limit Public License",
-                    "NLPL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -159,13 +131,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

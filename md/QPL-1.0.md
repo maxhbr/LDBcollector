@@ -9,13 +9,11 @@ Q Public License 1.0 (QPL-1.0)
 
 -   `QPL 1.0`
 
--   `Q Public License`
-
--   `QPL`
-
 -   `The Q Public License Version (QPL-1.0)`
 
 -   `License :: OSI Approved :: Qt Public License (QPL)`
+
+-   `Q Public License`
 
 Comments on (easy) usability
 ----------------------------
@@ -23,11 +21,6 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   “The QPL is not GPL-compatible, which, regardless of one's opinion
     about the license's DFSG-freeness, poses a major practical problem
@@ -150,10 +143,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -180,13 +169,11 @@ Raw Data
             "Q Public License 1.0",
             "scancode://qpl-1.0",
             "QPL 1.0",
-            "Q Public License",
-            "QPL",
             "The Q Public License Version (QPL-1.0)",
-            "License :: OSI Approved :: Qt Public License (QPL)"
+            "License :: OSI Approved :: Qt Public License (QPL)",
+            "Q Public License"
         ],
         "__impliedId": "QPL-1.0",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Q Public License",
             "Q Public License (QPL), Version 1.0"
@@ -277,33 +264,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "QPL-1.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://doc.qt.digia.com/3.0/license.html",
-                "GPLv3 Compat?": "NO",
-                "Short Name": "QPL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Q Public License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Q Public License",
-                        "QPL"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -550,13 +510,6 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "The QPL is not GPL-compatible, which, regardless of one's opinion about the license's DFSG-freeness, poses a major practical problem for any code licensed under the QPL that is reused elsewhere in conjunction with code under the GNU GPL. This makes the QPL alone a particularly poor choice of license for a library. Furthermore, it is not clear that the Trolltech corporation (the author of the Qt library and the QPL itself) believes the QPL to be a free software license. Trolltech's website describes how their dual-license approach is intended to be \"open source-friendly\" (see http://www.trolltech.com/company/model.html). If Trolltech felt that the QPL alone were friendly enough to open-source, why do they have a dual-licensing policy?"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

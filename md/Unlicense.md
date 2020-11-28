@@ -148,6 +148,9 @@ Raw Data
         ],
         "__impliedId": "Unlicense",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "Unlicense"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -236,10 +239,12 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "Unlicense",
                         "Unlicense"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "Unlicense"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

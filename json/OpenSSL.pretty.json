@@ -9,6 +9,9 @@
     ],
     "__impliedId": "OpenSSL",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "OpenSSL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -60,10 +63,12 @@
             "FSF Free?": "Yes",
             "_implications": {
                 "__impliedNames": [
-                    "OpenSSL License",
-                    "OpenSSL"
+                    "OpenSSL License"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "OpenSSL"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

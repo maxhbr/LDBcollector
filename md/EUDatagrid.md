@@ -7,8 +7,6 @@ EU DataGrid Software License (EUDatagrid)
 
 -   `scancode://eu-datagrid`
 
--   `EU Datagrid`
-
 Description
 -----------
 
@@ -120,11 +118,13 @@ Raw Data
             "EUDatagrid",
             "EU DataGrid Software License",
             "scancode://eu-datagrid",
-            "EU Datagrid Software License",
-            "EU Datagrid"
+            "EU Datagrid Software License"
         ],
         "__impliedId": "EUDatagrid",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "EU Datagrid"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -217,10 +217,12 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "EU Datagrid Software License",
-                        "EU Datagrid"
+                        "EU Datagrid Software License"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "EU Datagrid"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

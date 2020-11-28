@@ -7,7 +7,6 @@
         "Attribution Assurance Licenses"
     ],
     "__impliedId": "AAL",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -82,33 +81,6 @@
                 ]
             },
             "spdxLicenseId": "AAL"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "http://opensource.org/licenses/attribution.php",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "AAL",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Attribution Assurance License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Attribution Assurance License",
-                    "AAL"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -277,13 +249,6 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

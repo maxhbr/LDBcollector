@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |iMatix Standard Function Library Agreement
 |Shortname |iMatix
-|Rating |Unknown
+|Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
 |===
 
@@ -15,11 +15,6 @@
 * `+SFL License Agreement+`
 
 === Comments on (easy) usability
-
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -85,9 +80,6 @@ The Product is provided as free software, in the hope that it will be useful. It
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sfl-license.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -100,7 +92,6 @@ Project Wiki]
         "SFL License Agreement"
     ],
     "__impliedId": "iMatix",
-    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -130,33 +121,6 @@ Project Wiki]
                 ]
             },
             "spdxLicenseId": "iMatix"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "http://legacy.imatix.com/html/sfl/sfl4.htm#license",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "iMatix",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "iMatix Standard Function Library Agreement",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "iMatix Standard Function Library Agreement",
-                    "iMatix"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -207,15 +171,6 @@ Project Wiki]
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

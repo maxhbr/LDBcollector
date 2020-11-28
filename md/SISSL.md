@@ -22,11 +22,6 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/SISSL.html "SPDX") (all data \[in
     this repository\] is generated))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the Sun Industry Standards Source License (SISSL) cannot be used at
     Google. This license has terms that are very difficult to comply
@@ -368,10 +363,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sissl-1.1.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -396,7 +387,6 @@ Raw Data
             "sun-issl"
         ],
         "__impliedId": "SISSL",
-        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -471,33 +461,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SISSL"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.openoffice.org/licenses/sissl_license.html",
-                "GPLv3 Compat?": null,
-                "Short Name": "SISSL",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Sun Industry Standards Source License",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Sun Industry Standards Source License",
-                        "SISSL"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -611,13 +574,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "Google OSS Policy",
                 {

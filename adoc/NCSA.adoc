@@ -14,7 +14,6 @@
 * `+scancode://uoi-ncsa+`
 * `+NCSA Open Source License+`
 * `+UIUC/NCSA+`
-* `+NCSA/University of Illinois Open Source License+`
 * `+The University of Illinois/NCSA Open Source License+`
 * `+License :: OSI Approved :: University of Illinois/NCSA Open Source License+`
 * `+uoi-ncsa+`
@@ -47,10 +46,6 @@ is generated))
 * **↑**``Rating is: Bronze'' (source:
 https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -141,9 +136,6 @@ repository] is generated)
 (CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/NCSA.yaml[finos/OSLC-handbook]
@@ -166,13 +158,11 @@ Knowledge International]
         "NCSA Open Source License",
         "ncsa",
         "UIUC/NCSA",
-        "NCSA/University of Illinois Open Source License",
         "The University of Illinois/NCSA Open Source License",
         "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
         "uoi-ncsa"
     ],
     "__impliedId": "NCSA",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -255,33 +245,6 @@ Knowledge International]
                 ]
             },
             "spdxLicenseId": "NCSA"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "Yes",
-            "rating": "Good",
-            "Upstream URL": "https://otm.illinois.edu/disclose-protect/illinois-open-source-license",
-            "GPLv3 Compat?": "Yes",
-            "Short Name": "NCSA",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "NCSA/University of Illinois Open Source License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "NCSA/University of Illinois Open Source License",
-                    "NCSA"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -601,13 +564,6 @@ Knowledge International]
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

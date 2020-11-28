@@ -4,12 +4,10 @@
         "Common Development and Distribution License 1.0",
         "scancode://cddl-1.0",
         "CDDL 1.0",
-        "Common Development Distribution License 1.0",
         "Common Development and Distribution License, Version 1.0",
         "cddl1"
     ],
     "__impliedId": "CDDL-1.0",
-    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Common Development and Distribution License"
     ],
@@ -97,33 +95,6 @@
                 ]
             },
             "spdxLicenseId": "CDDL-1.0"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.0",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "CDDL-1.0",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Common Development Distribution License 1.0",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Common Development Distribution License 1.0",
-                    "CDDL-1.0"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -458,13 +429,6 @@
         }
     },
     "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ],
         [
             "Google OSS Policy",
             {

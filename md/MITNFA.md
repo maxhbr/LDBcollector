@@ -119,6 +119,9 @@ Raw Data
         ],
         "__impliedId": "MITNFA",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "MITNFA"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -169,10 +172,12 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "MIT +no-false-attribs license",
-                        "MITNFA"
+                        "MIT +no-false-attribs license"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "MITNFA"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

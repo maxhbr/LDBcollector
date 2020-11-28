@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |dvipdfm License
 |Shortname |dvipdfm
-|Rating |Unknown
+|Rating |Unknown, probably Attention or Stop or No-Go
 |Classification |NoCopyleft
 |===
 
@@ -14,11 +14,6 @@
 * `+scancode://dvipdfm+`
 
 === Comments on (easy) usability
-
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -51,9 +46,6 @@ complete and unchanged* distribution of these files.
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -65,7 +57,6 @@ Project Wiki]
         "scancode://dvipdfm"
     ],
     "__impliedId": "dvipdfm",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -103,33 +94,6 @@ Project Wiki]
                 ]
             },
             "spdxLicenseId": "dvipdfm"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "dvipdfm",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "dvipdfm License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "dvipdfm License",
-                    "dvipdfm"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -177,15 +141,6 @@ Project Wiki]
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -16,11 +16,6 @@
 
 === Comments on (easy) usability
 
-* **↑**``This software Licenses is OK for Fedora'' (source:
-https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
-
 === General Comments
 
 * ``Per Fedora, this license is free but GPL-incompatible, and was found
@@ -74,9 +69,6 @@ serves any particular purpose.
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.yml[Scancode]
 (CC0-1.0)
-* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
-Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -89,7 +81,6 @@ Project Wiki]
         "MakeIndex Distribution Notice"
     ],
     "__impliedId": "MakeIndex",
-    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -127,33 +118,6 @@ Project Wiki]
                 ]
             },
             "spdxLicenseId": "MakeIndex"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "NO",
-            "rating": "Good",
-            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MakeIndex",
-            "GPLv3 Compat?": "NO",
-            "Short Name": "MakeIndex",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "MakeIndex License",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "MakeIndex License",
-                    "MakeIndex"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -201,15 +165,6 @@ Project Wiki]
             }
         }
     },
-    "__impliedJudgement": [
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
-            }
-        ]
-    ],
     "__impliedCopyleft": [
         [
             "Scancode",

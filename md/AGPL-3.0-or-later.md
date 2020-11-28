@@ -19,8 +19,6 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 -   `AGPL 3.0 or later`
 
--   `AGPLv3+`
-
 -   `GNU Affero General Public License 3.0`
 
 Comments on (easy) usability
@@ -29,11 +27,6 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -114,10 +107,6 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -137,11 +126,9 @@ Raw Data
             "GNU Affero General Public License v3.0 or later",
             "scancode://agpl-3.0-plus",
             "AGPL 3.0 or later",
-            "AGPLv3+",
             "GNU Affero General Public License 3.0"
         ],
         "__impliedId": "AGPL-3.0-or-later",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Affero General Public License"
         ],
@@ -204,33 +191,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AGPL-3.0-or-later"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "NO",
-                "rating": "Good",
-                "Upstream URL": "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
-                "GPLv3 Compat?": "Sortof",
-                "Short Name": "AGPLv3+",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "Affero General Public License 3.0 or later",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "Affero General Public License 3.0 or later",
-                        "AGPLv3+"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -549,13 +509,6 @@ Raw Data
             }
         },
         "__impliedJudgement": [
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
-            ],
             [
                 "SPDX",
                 {

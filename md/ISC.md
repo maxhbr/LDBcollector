@@ -7,8 +7,6 @@ ISC License (ISC)
 
 -   `scancode://isc`
 
--   `ISC License (Bind, DHCP Server)`
-
 -   `ISC License (ISC)`
 
 -   `License :: OSI Approved :: ISC License (ISCL)`
@@ -48,11 +46,6 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
-
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -131,10 +124,6 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -164,14 +153,12 @@ Raw Data
             "ISC License",
             "scancode://isc",
             "isc",
-            "ISC License (Bind, DHCP Server)",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
             "ISC license",
             "isc-license"
         ],
         "__impliedId": "ISC",
-        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "ISC license"
         ],
@@ -258,33 +245,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ISC"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://www.isc.org/downloads/software-support-policy/isc-license/",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "ISC",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "ISC License (Bind, DHCP Server)",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "ISC License (Bind, DHCP Server)",
-                        "ISC"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -678,13 +638,6 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
-                }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

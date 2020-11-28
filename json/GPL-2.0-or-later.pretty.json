@@ -7,12 +7,9 @@
         "GPL (v2 or later)",
         "GNU General Public License v2.0 or later",
         "scancode://gpl-2.0-plus",
-        "GPL 2.0 or later",
-        "Creative Commons GNU GPL",
-        "GPLv2+"
+        "GPL 2.0 or later"
     ],
     "__impliedId": "GPL-2.0-or-later",
-    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "GNU General Public License",
         "The GNU General Public License (GPL)"
@@ -74,33 +71,6 @@
                 ]
             },
             "spdxLicenseId": "GPL-2.0-or-later"
-        },
-        "Fedora Project Wiki": {
-            "GPLv2 Compat?": "N/A",
-            "rating": "Good",
-            "Upstream URL": "http://creativecommons.org/choose/cc-gpl",
-            "GPLv3 Compat?": "See Matrix",
-            "Short Name": "GPLv2+",
-            "licenseType": "license",
-            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-            "Full Name": "Creative Commons GNU GPL",
-            "FSF Free?": "Yes",
-            "_implications": {
-                "__impliedNames": [
-                    "Creative Commons GNU GPL",
-                    "GPLv2+"
-                ],
-                "__isFsfFree": true,
-                "__impliedJudgement": [
-                    [
-                        "Fedora Project Wiki",
-                        {
-                            "tag": "PositiveJudgement",
-                            "contents": "This software Licenses is OK for Fedora"
-                        }
-                    ]
-                ]
-            }
         },
         "Scancode": {
             "otherUrls": [
@@ -381,13 +351,6 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
-            }
-        ],
-        [
-            "Fedora Project Wiki",
-            {
-                "tag": "PositiveJudgement",
-                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [
