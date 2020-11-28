@@ -4,7 +4,6 @@ module Lib
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
   , writeLicenseJSONs
-  , writeFactsLicenses
   , cleanupAndMakeOutputFolder
   , Configuration (..)
   , runLDBCore
@@ -52,6 +51,8 @@ import           Generators.DetailsWriter as X
 import           Generators.GraphizWriter as X
 import           Generators.Stats as X
 import           Generators.FindClusters as X
+import           Generators.FactLicenses as X
+import           Generators.GapsWriter as X
 
 runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page, LicenseClusterTree)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do
@@ -68,6 +69,8 @@ runLDBCore configuration handler = do
   outputFolder <- handler facts pages
 
   writeStats outputFolder facts licensesByName
+  writeFactsLicenses outputFolder facts licensesByName
+  writeGaps outputFolder facts licensesByName
 
 data Configuration
   = Configuration
@@ -138,25 +141,6 @@ writeLicenseJSONs outputFolder licenses = do
                    return outputFile) licenses
   BL.writeFile (jsonOutputFolder </> "_all.json") (encodePretty licenses)
   BL.writeFile (jsonOutputFolder </> "_index.json") (encodePretty jsons)
-
-writeFactsLicenses :: FilePath -> Facts -> [(LicenseName, License)] -> IO ()
-writeFactsLicenses outputFolder facts licenses = let
-    lfls :: [(Text, LicenseFactLicense)]
-    lfls = (V.toList . V.uniq . V.map (\lfc -> (extractBrc lfc, extractLFL lfc)) . V.map getLicenseFactClassifier) facts
-    licenseMap = M.fromList licenses
-  in do
-  mapM_ (\tpl@(_, lfl) ->let
-            licensename = extractLFLName lfl
-            outfile = outputFolder </> "LICENSE." ++ licensename
-            in do
-            print tpl
-            when (licensename /= "") $
-              case licensename `M.lookup` licenseMap of
-                Just lic -> case unpackRLSR (getImpliedText lic) of
-                  Just text -> T.writeFile outfile text
-                  _         -> hPutStrLn stderr ("... found no text for: " ++ licensename)
-                _         -> hPutStrLn stderr ("... found no license for: " ++ licensename)
-           ) lfls
 
 cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
 cleanupAndMakeOutputFolder outputFolder = do

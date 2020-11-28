@@ -12,29 +12,30 @@ import qualified Data.ByteString.Lazy as BL
 import qualified Data.Csv as C
 
 import Lib
-import Configuration (configuration)
+import Configuration (configuration, configurationPriv)
 import Comparator
 import OpenLicenseTranslator
 
 run :: IO()
-run = do
+run = let
+    handler outputFolder = (\facts input -> do
+                               let licenses = map (\(ln, l, _, _) -> (ln, l)) input
+                               let pages = map (\(_,_,p, _) -> p) input
+                               let trees = map (\(ln, _, _, t) -> (ln, t)) input
+
+                               writeLicenseJSONs outputFolder licenses
+                               writeDetails outputFolder pages
+                               writePandocs outputFolder pages
+                               writeGraphizs outputFolder trees
+
+                               writeCopyleftTable outputFolder licenses
+
+                               return outputFolder)
+  in do
   outputFolder <- cleanupAndMakeOutputFolder "_generated/"
-  runLDBCore configuration
-    (\facts input ->
-        do
-          let licenses = map (\(ln, l, _, _) -> (ln, l)) input
-          let pages = map (\(_,_,p, _) -> p) input
-          let trees = map (\(ln, _, _, t) -> (ln, t)) input
-
-          writeLicenseJSONs outputFolder licenses
-          writeFactsLicenses outputFolder facts licenses
-          writeDetails outputFolder pages
-          writePandocs outputFolder pages
-          writeGraphizs outputFolder trees
-
-          writeCopyleftTable outputFolder licenses
-
-          return outputFolder)
+  runLDBCore configuration (handler outputFolder)
+  outputFolderPriv <- cleanupAndMakeOutputFolder "_generated.priv/"
+  runLDBCore configurationPriv (handler outputFolderPriv)
 
 main :: IO ()
 main = do

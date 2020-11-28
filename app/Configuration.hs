@@ -1,6 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 module Configuration
   ( configuration
+  , configurationPriv
   ) where
 
 import qualified Prelude as P
@@ -11,6 +12,17 @@ import           Control.Monad.Trans.Writer.Strict (execWriter, tell)
 import qualified Data.Map as M
 
 import Lib
+
+
+configurationPriv :: Configuration
+configurationPriv = let
+  otherLFCs =
+    [ cavilLFC
+    , osadlLFC
+    , gnuLFC
+    , ifrOSSLFC
+    ]
+  in configuration { cLFCs = (cLFCs configuration) ++ otherLFCs }
 
 configuration :: Configuration
 configuration = let
