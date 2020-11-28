@@ -52,7 +52,6 @@ import           Generators.GraphizWriter as X
 import           Generators.Stats as X
 import           Generators.FindClusters as X
 import           Generators.FactLicenses as X
-import           Generators.GapsWriter as X
 
 runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page, LicenseClusterTree)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do
@@ -70,7 +69,6 @@ runLDBCore configuration handler = do
 
   writeStats outputFolder facts licensesByName
   writeFactsLicenses outputFolder facts licensesByName
-  writeGaps outputFolder facts licensesByName
 
 data Configuration
   = Configuration

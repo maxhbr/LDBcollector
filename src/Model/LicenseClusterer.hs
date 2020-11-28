@@ -10,7 +10,7 @@ import qualified Data.Vector as V
 import qualified Data.List as L
 import qualified Data.Set as S
 import           Data.Set (Set)
-import           Data.Char (toUpper)
+import           Data.Char (toUpper, isSpace)
 
 import           Model.License hiding (getLicenseFromFacts)
 
@@ -51,8 +51,12 @@ getLicensesFromFacts'
   -> (License, LicenseClusterTree)
   -> (License, LicenseClusterTree)
 getLicensesFromFacts' name facts (prevLic, prevTree) = let
+    normalizeKey :: LicenseName -> LicenseName
+    normalizeKey = let
+        ignoredChars = "(),"
+      in L.map toUpper . filter (not . (`elem` ignoredChars)) . filter (not . isSpace)
     normalizeSet :: Set LicenseName -> Set LicenseName
-    normalizeSet = S.map (L.map toUpper)
+    normalizeSet = S.map normalizeKey
     prevNames = normalizeSet $ lctToNames prevTree
     prevNamesFilter fact = let
         impliedNames = normalizeSet . S.fromList $ getImpliedNonambiguousNames fact

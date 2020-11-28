@@ -19,12 +19,18 @@ else
         PUSH=true
         shift
     fi
-
+    PRIV=false
     out="$(pwd)/_generated"
+    if [[ "$1" == "--priv" ]]; then
+        PRIV=true
+        PUSH=false
+        out="$(pwd)/_generated.priv"
+        shift
+    fi
     outGit="${out}.git"
 
     set -x
-    stack exec LDBcollector-exe $@
+    stack exec LDBcollector-exe $@ "$($PRIV && echo "priv")"
 
     if [[ -d "$out" ]]; then
         cd "$out"

@@ -51,7 +51,7 @@ instance C.DefaultOrdered TranslationRow where
   headerOrder _ = V.fromList ["ja", "en"]
 
 normalizeKey :: String -> String
-normalizeKey = filter (\c -> not (Char.isSpace c))
+normalizeKey = filter (not . Char.isSpace)
 
 translations :: Map String (Maybe String)
 translations = M.fromList . map (\(TranslationRow ja en) -> (normalizeKey ja

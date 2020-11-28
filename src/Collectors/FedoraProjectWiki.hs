@@ -62,6 +62,11 @@ instance FromNamedRecord FedoraProjectWikiFact_Short where
                                                      <*> r C..: "Short Name" -- Short names are of bad quality here
 instance HasFedoraProjectWikiFactCore FedoraProjectWikiFact_Short where
   getFedoraProjectWikiCore (FedoraProjectWikiFact_Short c _) = c
+class HasFedoraProjectWikiFactShort a where
+  getShortName :: a -> [LicenseName]
+instance HasFedoraProjectWikiFactShort FedoraProjectWikiFact_Short where
+  getShortName (FedoraProjectWikiFact_Short _ (Just ln)) = [ln]
+  getShortName _                                         = []
 
 -- Full Name,Short Name,FSF Free?,GPLv2 Compat?,GPLv3 Compat?,Upstream URL
 data FedoraProjectWikiFact_Full
@@ -76,6 +81,8 @@ instance FromNamedRecord FedoraProjectWikiFact_Full where
                                                <*> r C..: "GPLv3 Compat?"
 instance HasFedoraProjectWikiFactCore FedoraProjectWikiFact_Full where
   getFedoraProjectWikiCore (FedoraProjectWikiFact_Full s _ _) = getFedoraProjectWikiCore s
+instance HasFedoraProjectWikiFactShort FedoraProjectWikiFact_Full where
+  getShortName (FedoraProjectWikiFact_Full s _ _) =  getShortName s
 
 data FedoraProjectWikiFact
   = FedoraProjectWikiFact String
@@ -121,6 +128,9 @@ instance LFRaw FedoraProjectWikiFact where
   getImpliedNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR [getFullNameFromCore full]
   getImpliedNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR [getFullNameFromCore short]
   getImpliedNames (FedoraProjectWikiFact _ (Right bad))          = CLSR [getFullNameFromCore bad]
+  getImpliedAmbiguousNames (FedoraProjectWikiFact _ (Left (Left full)))   = CLSR (getShortName full)
+  getImpliedAmbiguousNames (FedoraProjectWikiFact _ (Left (Right short))) = CLSR (getShortName short)
+  getImpliedAmbiguousNames _                                              = NoCLSR
   getImpliedJudgement fpwf@(FedoraProjectWikiFact _ (Right _))   = SLSR (getLicenseFactClassifier fpwf) $ NegativeJudgement "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
   getImpliedJudgement fpwf                                       = SLSR (getLicenseFactClassifier fpwf) $ PositiveJudgement "This software Licenses is OK for Fedora"
   getImpliedIsFSFFree fpwf                                       = case getFedoraProjectWikiCore fpwf of
@@ -153,7 +163,7 @@ loadFedoraFactsFromByteString _ _ _ = undefined
 
 
 fpwFolder :: Map.Map FilePath ByteString
-fpwFolder = Map.map (B.fromStrict) $ Map.fromList ( $(embedDir "data/Fedora_Project_Wiki/") )
+fpwFolder = Map.map B.fromStrict $ Map.fromList $(embedDir "data/Fedora_Project_Wiki/")
 
 loadFedoraFacts :: IO Facts
 loadFedoraFacts = let

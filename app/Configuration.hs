@@ -121,21 +121,27 @@ overrides =
            [ ("GPL-1.0-only", [ "GPL-1.0"
                               , "GPL1.0"
                               , "GPL1"
+                              , "GNU General Public License Version 1"
                               ])
            , ("GPL-2.0-only", [ "GPL-2.0"
                               , "GPL2.0"
                               , "GPL2"
                               , "GPL (v2)"
+                              , "GNU General Public License Version 2"
                               ])
            , ("GPL-3.0-only", [ "GPL-3.0"
                               , "GPL3.0"
                               , "GPL3"
                               , "GPL (v3)"
+                              , "GNU General Public License Version 3"
                               ])
+           , ("LGPL-2.0-only", [ "GNU Library General Public License Version 2"
+                               ])
            , ("LGPL-2.1-only", [ "LGPL-2.1"
                                , "LGPL2.1"
                                , "LGPL2.1"
                                , "LGPL (v2.1)"
+                               , "GNU Lesser General Public License Version 2.1"
                                ])
            , ("LGPL-3.0-only", [ "LGPL-3.0"
                                , "LGPL-3"
@@ -143,16 +149,26 @@ overrides =
                                , "LGPL3"
                                , "LGPL (v3.0)"
                                , "LGPL (v3)"
+                               , "GNU Lesser General Public License Version 3"
                                ])
            , ("AGPL-1.0-only", [ "AGPL-1.0"
                                , "Affero General Public License (v. 1)"
+                               , "Affero General Public License 1.0"
                                ])
            , ("AGPL-3.0-only", [ "AGPL-3.0"
                                , "AGPL3.0"
                                , "AGPL3"
                                , "AGPL (v3)"
                                , "Affero General Public License 3.0"
+                               , "GNU AFFERO GENERAL PUBLIC LICENSE Version 3"
+                               , "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
                                ])
+           , ("AGPL-3.0-or-later", [ "AGPL-3.0+"
+                                   , "AGPL3.0+"
+                                   , "AGPL3+"
+                                   , "AGPL (v3 or later)"
+                                   , "Affero General Public License 3.0 or later"
+                                   ])
            , ("GPL-1.0-or-later", [ "GPL-1.0+"
                                   , "GPL1.0+"
                                   , "GPL1+"
@@ -179,25 +195,21 @@ overrides =
                                    , "LGPL (v3.0)"
                                    , "LGPL (v3 or later)"
                                    ])
-           , ("AGPL-3.0-or-later", [ "AGPL-3.0+"
-                                   , "AGPL3.0+"
-                                   , "AGPL3+"
-                                   , "AGPL (v3 or later)"
-                                   , "Affero General Public License 3.0 or later"
-                                   , "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
-                                   ])
            , ("BSL-1.0", [ "BSL (v1.0)"
                          ])
            , ("Zlib", [ "zlib/libpng"
                       ])
            , ("Apache-1.0", [ "Apache (v1.0)"
                             , "Apache Software License 1.0", "ASL 1.0"
+                            , "Apache Software License, Version 1.0"
                             ])
            , ("Apache-1.1", [ "Apache (v1.1)"
                             , "Apache Software License 1.1", "ASL 1.1"
+                            , "Apache Software License, Version 1.1"
                             ])
            , ("Apache-2.0", [ "Apache (v2.0)"
                             , "Apache Software License 2.0", "ASL 2.0"
+                            , "Apache License, Version 2.0"
                             ])
            , ("BSL-1.0", [ "BSL (v1)"
                          ])
@@ -210,9 +222,11 @@ overrides =
            , ("BSD-4-Clause", [ "BSD License (original)"
                               ])
            , ("MIT", [ "MIT license (also X11)"
+                     , "The MIT License"
                      ])
            , ("Sleepycat", [ "Berkeley Database License"
                            , "Sleepycat Software Product License"
+                           , "Sleepycat License"
                            ])
            , ("Artistic-1.0", [ "Artistic 1.0 (original)"
                               ])
@@ -221,5 +235,19 @@ overrides =
            , ("Artistic-2.0", [ "Artistic 2.0"
                               ,"Artistic License (v. 2.0)"
                               ])
-           ]
 
+           -- link to missing versions in OpenChainPolicyTemplate
+           , ("UPL-1.0", ["UPL"])
+           , ("LiLiQ-P-1.1", ["LiLiQ-P"])
+           , ("LiLiQ-R-1.1", ["LiLiQ-R"])
+           , ("LiLiQ-Rplus-1.1", ["LiLiQ-R+"])
+
+           -- link to Hitachi open-license
+           , ("Ruby", ["Ruby License (1.9.2 and earlier)", "Ruby License (1.9.3 and later)"])
+           , ("EPL-1.0", ["Eclipse Public License 1.0"])
+           , ("MPL-1.0", ["Mozilla Public License Version 1.0"])
+           , ("MPL-1.1", ["Mozilla Public License Version 1.1"])
+           , ("MPL-2.0", ["Mozilla Public License Version 2.0"])
+           , ("CDDL-1.1", ["COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"])
+           , ("CPL-1.0", ["Common Public License Version 1.0"])
+           ]

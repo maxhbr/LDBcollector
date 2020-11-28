@@ -16,6 +16,7 @@ import           MyPrelude
 
 import qualified Data.Map as M
 import qualified Data.Maybe (maybeToList)
+import qualified Data.List (nub)
 
 import Model.Statement as X
 import Model.LicenseProperties as X
@@ -34,21 +35,22 @@ class (Show a, ToJSON a, LicenseFactClassifiable a) => LFRaw a where
   mkRLSR a = RLSR (getLicenseFactClassifier a)
   -- Statements:
   getImpliedNames :: a -> CollectedLicenseStatementResult LicenseName
-  getImpliedAmbiguousNames :: a -> CollectedLicenseStatementResult LicenseName
-  getImpliedAmbiguousNames _ = getEmptyLicenseStatement
   getImpliedFullName :: a -> RankedLicenseStatementResult LicenseName
   getImpliedFullName _ = getEmptyLicenseStatement
+  getImpliedId :: a -> RankedLicenseStatementResult LicenseName
+  getImpliedId _ = getEmptyLicenseStatement
   getImpliedNonambiguousNames :: a -> [LicenseName]
   getImpliedNonambiguousNames a = let
     names           = unpackCLSR $ getImpliedNames a
+    impliedId      = maybeToList . unpackRLSR $ getImpliedId a
     impliedFullName = maybeToList . unpackRLSR $ getImpliedFullName a
-    in names ++ impliedFullName
+    in nub $ impliedId ++ names ++ impliedFullName
+  getImpliedAmbiguousNames :: a -> CollectedLicenseStatementResult LicenseName
+  getImpliedAmbiguousNames _ = getEmptyLicenseStatement
   getAllImpliedNames :: a -> [LicenseName]
   getAllImpliedNames a = let
     ambiguousNames  = unpackCLSR $ getImpliedAmbiguousNames a
-    in getImpliedNonambiguousNames a ++ ambiguousNames
-  getImpliedId :: a -> RankedLicenseStatementResult LicenseName
-  getImpliedId _ = getEmptyLicenseStatement
+    in nub $ getImpliedNonambiguousNames a ++ ambiguousNames
   getImpliedURLs :: a -> CollectedLicenseStatementResult (Maybe String, URL)
   getImpliedURLs _ = getEmptyLicenseStatement
   getImpliedText :: a -> RankedLicenseStatementResult Text
