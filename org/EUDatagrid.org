@@ -28,6 +28,61 @@
   [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0))
 
+- "[ { "actions": [ { "name": "Use the obtained source code without
+  modification", "description": "Use the fetched code as it is." }, {
+  "name": "Modify the obtained source code." }, { "name": "Use the
+  retrieved binaries", "description": "Use the fetched binary as it is."
+  }, { "name": "Display the obtained source code" }, { "name": "Display
+  the modified source code" }, { "name": "Display the retrieved binary"
+  }, { "name": "Display the generated binary from the modified source
+  code" } ], "conditions": null }, { "actions": [ { "name": "Using
+  Modified Source Code" }, { "name": "Use binaries generated from
+  modified source code" }, { "name": "Publish the modified source code."
+  }, { "name": "Publish the binary generated from the modified source
+  code" } ], "conditions": { "name": "A worldwide, non-exclusive,
+  royalty-free, and unrestricted license to use, display, modify,
+  redistribute, and sublicense their modifications and derivatives to EU
+  DataGrid participants in accordance with this license.", "type":
+  "RESTRICTION", "description": "However, this does not include cases
+  where a separate written license agreement is entered into with the
+  User." }, "description": "The same rights would be granted to
+  sub-licenses." }, { "actions": [ { "name": "Distribute the obtained
+  source code without modification", "description": "Redistribute the
+  code as it was obtained" }, { "name": "Distribute the fetched
+  binaries", "description": "Redistribute the fetched binaries as they
+  are" } ], "conditions": { "name": "Include a copyright notice, list of
+  terms and conditions, and disclaimer included in the license", "type":
+  "OBLIGATION" }, "description": "Relevant documentation for the
+  software will be treated in the same way as the software. The same
+  rights will be granted to sub-licensees." }, { "actions": [ { "name":
+  "Distribution of Modified Source Code" }, { "name": "Distribute the
+  generated binaries from modified source code" } ], "conditions": {
+  "AND": [ { "name": "Include a copyright notice, list of terms and
+  conditions, and disclaimer included in the license", "type":
+  "OBLIGATION" }, { "name": "A worldwide, non-exclusive, royalty-free,
+  and unrestricted license to use, display, modify, redistribute, and
+  sublicense their modifications and derivatives to EU DataGrid
+  participants in accordance with this license.", "type": "RESTRICTION",
+  "description": "However, this does not include cases where a separate
+  written license agreement is entered into with the User." } ] },
+  "description": "Relevant documentation for the software will be
+  treated in the same way as the software. The same rights will be
+  granted to sub-licensees." }, { "actions": [ { "name": "Include
+  end-user documentation in the distribution" } ], "conditions": {
+  "name": "Acknowledgements", "type": "OBLIGATION" }, "description":
+  "Acknowledgements include \"This product includes software developed
+  by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party
+  acknowledgments appear in the software, they should be included in the
+  software itself. The same rights are granted to the sublicensees." },
+  { "actions": [ { "name": "Use the name to endorse and promote software
+  and derivative products" } ], "conditions": { "name": "Get special
+  permission in writing.", "type": "REQUISITE" }, "description": "To use
+  the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\".
+  hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights
+  will be granted to sub-licensees." } ]" (source:
+  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0))
+
 - "Per SPDX.org, this license is OSI certified" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml][Scancode]]
   (CC0-1.0))
@@ -128,7 +183,8 @@
           [
               "Hitachi open-license",
               [
-                  "https://opensource.org/licenses/EUDatagrid"
+                  "https://opensource.org/licenses/EUDatagrid",
+                  "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Display the obtained source code\"\n            },\n            {\n                \"name\": \"Display the modified source code\"\n            },\n            {\n                \"name\": \"Display the retrieved binary\"\n            },\n            {\n                \"name\": \"Display the generated binary from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Publish the binary generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.\",\n            \"type\": \"RESTRICTION\",\n            \"description\": \"However, this does not include cases where a separate written license agreement is entered into with the User.\"\n        },\n        \"description\": \"The same rights would be granted to sub-licenses.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.\",\n                    \"type\": \"RESTRICTION\",\n                    \"description\": \"However, this does not include cases where a separate written license agreement is entered into with the User.\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Include end-user documentation in the distribution\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Acknowledgements\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Acknowledgements include \\\"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\\\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name to endorse and promote software and derivative products\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"To use the names \\\"EDG\\\", \\\"EDG Toolkit\\\" and \\\"EU DataGrid Project\\\". hep-project-grid-edg-license@cern.chÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ. The same rights will be granted to sub-licensees.\"\n    }\n]"
               ]
           ],
           [
@@ -468,7 +524,8 @@
                       [
                           "Hitachi open-license",
                           [
-                              "https://opensource.org/licenses/EUDatagrid"
+                              "https://opensource.org/licenses/EUDatagrid",
+                              "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Display the obtained source code\"\n            },\n            {\n                \"name\": \"Display the modified source code\"\n            },\n            {\n                \"name\": \"Display the retrieved binary\"\n            },\n            {\n                \"name\": \"Display the generated binary from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Publish the binary generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.\",\n            \"type\": \"RESTRICTION\",\n            \"description\": \"However, this does not include cases where a separate written license agreement is entered into with the User.\"\n        },\n        \"description\": \"The same rights would be granted to sub-licenses.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.\",\n                    \"type\": \"RESTRICTION\",\n                    \"description\": \"However, this does not include cases where a separate written license agreement is entered into with the User.\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Include end-user documentation in the distribution\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Acknowledgements\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Acknowledgements include \\\"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\\\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name to endorse and promote software and derivative products\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"To use the names \\\"EDG\\\", \\\"EDG Toolkit\\\" and \\\"EU DataGrid Project\\\". hep-project-grid-edg-license@cern.chÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ. The same rights will be granted to sub-licensees.\"\n    }\n]"
                           ]
                       ]
                   ],

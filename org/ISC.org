@@ -56,6 +56,34 @@
   (source: [[https://github.com/Hitachi/open-license][Hitachi
   open-license]] (CDLA-Permissive-1.0))
 
+- "[ { "actions": [ { "name": "Use the obtained source code without
+  modification", "description": "Use the fetched code as it is." }, {
+  "name": "Modify the obtained source code." }, { "name": "Using
+  Modified Source Code" }, { "name": "Use the retrieved object code",
+  "description": "Use the fetched code as it is." }, { "name": "Use the
+  retrieved binaries", "description": "Use the fetched binary as it is."
+  }, { "name": "Use the object code generated from the modified source
+  code" }, { "name": "Use binaries generated from modified source code"
+  }, { "name": "Use the retrieved executable", "description": "Use the
+  obtained executable as is." }, { "name": "Use the executable generated
+  from the modified source code" } ], "conditions": null }, { "actions":
+  [ { "name": "Distribute the obtained source code without
+  modification", "description": "Redistribute the code as it was
+  obtained" }, { "name": "Distribute the obtained object code",
+  "description": "Redistribute the code as it was obtained" }, { "name":
+  "Distribute the fetched binaries", "description": "Redistribute the
+  fetched binaries as they are" }, { "name": "Distribution of Modified
+  Source Code" }, { "name": "Distribute the object code generated from
+  the modified source code" }, { "name": "Distribute the generated
+  binaries from modified source code" }, { "name": "Distribute the
+  obtained executable", "description": "Redistribute the obtained
+  executable as-is" }, { "name": "Distribute the executable generated
+  from the modified source code" } ], "conditions": { "name": "Include a
+  copyright notice, list of terms and conditions, and disclaimer
+  included in the license", "type": "OBLIGATION" } } ]" (source:
+  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0))
+
 - "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml][Scancode]]
   (CC0-1.0))
@@ -185,7 +213,8 @@
           [
               "Hitachi open-license",
               [
-                  "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                  "https://www.isc.org/downloads/software-support-policy/isc-license/",
+                  "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    }\n]"
               ]
           ],
           [
@@ -496,7 +525,8 @@
                       [
                           "Hitachi open-license",
                           [
-                              "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                              "https://www.isc.org/downloads/software-support-policy/isc-license/",
+                              "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    }\n]"
                           ]
                       ]
                   ],

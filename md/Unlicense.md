@@ -46,6 +46,23 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “\[ { "actions": \[ { "name": "Use the obtained source code without
+    modification", "description": "Use the fetched code as it is." }, {
+    "name": "Modify the obtained source code." }, { "name": "Using
+    Modified Source Code" }, { "name": "Use the retrieved binaries",
+    "description": "Use the fetched binary as it is." }, { "name": "Use
+    binaries generated from modified source code" }, { "name":
+    "Distribute the fetched binaries", "description": "Redistribute the
+    fetched binaries as they are" }, { "name": "Distribute the generated
+    binaries from modified source code" }, { "name": "Selling Software"
+    }, { "name": "Publish the modified source code." }, { "name":
+    "Publish the binary generated from the modified source code" } \],
+    "conditions": null, "description": "In jurisdictions recognizing
+    copyright law, the author of such software shall own the software in
+    the public domain." } \]” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 -   “Per SPDX.org, this is a public domain dedication” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode")
     (CC0-1.0))
@@ -161,7 +178,8 @@ Raw Data
             [
                 "Hitachi open-license",
                 [
-                    "http://unlicense.org/"
+                    "http://unlicense.org/",
+                    "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Publish the binary generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.\"\n    }\n]"
                 ]
             ],
             [
@@ -398,7 +416,8 @@ Raw Data
                         [
                             "Hitachi open-license",
                             [
-                                "http://unlicense.org/"
+                                "http://unlicense.org/",
+                                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Publish the binary generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.\"\n    }\n]"
                             ]
                         ]
                     ],
