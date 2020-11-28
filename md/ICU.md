@@ -7,8 +7,6 @@ ICU License (ICU)
 
 -   `X11`
 
--   `ICU License (ICU 1.8.1 and later)`
-
 -   `X11 License`
 
 -   `scancode://x11-xconsortium`
@@ -16,6 +14,8 @@ ICU License (ICU)
 -   `X11-Style (X Consortium)`
 
 -   `scancode://x11`
+
+-   `ICU License (ICU 1.8.1 and later)`
 
 Comments on (easy) usability
 ----------------------------
@@ -83,8 +83,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/ICU.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -115,12 +113,12 @@ Raw Data
         "__impliedNames": [
             "X11",
             "ICU",
-            "ICU License (ICU 1.8.1 and later)",
             "ICU License",
             "X11 License",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
-            "scancode://x11"
+            "scancode://x11",
+            "ICU License (ICU 1.8.1 and later)"
         ],
         "__impliedId": "ICU",
         "__impliedComments": [
@@ -211,24 +209,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "ICU",
-                        "ICU License (ICU 1.8.1 and later)"
-                    ],
-                    "__impliedId": "ICU"
-                },
-                "oName": "ICU",
-                "oOtherLicenseIds": [
-                    "ICU License (ICU 1.8.1 and later)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -345,7 +325,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "ICU License (ICU 1.8.1 and later)"
+                        "ICU License (ICU 1.8.1 and later)",
+                        "ICU"
                     ],
                     "__impliedComments": [
                         [

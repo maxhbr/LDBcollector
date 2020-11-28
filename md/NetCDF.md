@@ -5,11 +5,11 @@ NetCDF license (NetCDF)
 
 **Other Names:**
 
--   `NetCDF Copyright`
+-   `scancode://netcdf`
 
 -   `NetCDF Copyright(version 2009)`
 
--   `scancode://netcdf`
+-   `NetCDF Copyright`
 
 Description
 -----------
@@ -89,10 +89,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
--   Override
-
 -   [SPDX](https://spdx.org/licenses/NetCDF.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -120,11 +116,11 @@ Raw Data
     {
         "__impliedNames": [
             "NetCDF",
-            "NetCDF Copyright",
-            "NetCDF Copyright(version 2009)",
             "NetCDF license",
             "scancode://netcdf",
-            "NetCDF License"
+            "NetCDF License",
+            "NetCDF Copyright(version 2009)",
+            "NetCDF Copyright"
         ],
         "__impliedId": "NetCDF",
         "__isFsfFree": true,
@@ -243,24 +239,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "NetCDF",
-                        "NetCDF Copyright"
-                    ],
-                    "__impliedId": "NetCDF"
-                },
-                "oName": "NetCDF",
-                "oOtherLicenseIds": [
-                    "NetCDF Copyright"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -354,7 +332,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "NetCDF Copyright(version 2009)"
+                        "NetCDF Copyright(version 2009)",
+                        "NetCDF"
                     ],
                     "__impliedComments": [
                         [

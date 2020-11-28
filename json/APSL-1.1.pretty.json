@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "APSL-1.1",
-        "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
         "Apple Public Source License 1.1",
         "scancode://apsl-1.1",
-        "APSL 1.1"
+        "APSL 1.1",
+        "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
     ],
     "__impliedId": "APSL-1.1",
     "__impliedAmbiguousNames": [
@@ -184,24 +184,6 @@
             },
             "Comment": null,
             "LicenseId": "APSL-1.1"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "APSL-1.1",
-                    "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-                ],
-                "__impliedId": "APSL-1.1"
-            },
-            "oName": "APSL-1.1",
-            "oOtherLicenseIds": [
-                "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
@@ -729,7 +711,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                    "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
+                    "APSL-1.1"
                 ],
                 "__impliedComments": [
                     [

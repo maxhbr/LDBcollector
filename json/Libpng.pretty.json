@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "Libpng",
-        "libpng license (libpng-1.2.6 and later)",
         "libpng License",
         "scancode://libpng",
-        "Libpng License"
+        "Libpng License",
+        "libpng license (libpng-1.2.6 and later)"
     ],
     "__impliedId": "Libpng",
     "__impliedComments": [
@@ -96,24 +96,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "Libpng",
-                    "libpng license (libpng-1.2.6 and later)"
-                ],
-                "__impliedId": "Libpng"
-            },
-            "oName": "Libpng",
-            "oOtherLicenseIds": [
-                "libpng license (libpng-1.2.6 and later)"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/307",
@@ -122,7 +104,8 @@
             "permissions": [],
             "_implications": {
                 "__impliedNames": [
-                    "libpng license (libpng-1.2.6 and later)"
+                    "libpng license (libpng-1.2.6 and later)",
+                    "Libpng"
                 ],
                 "__impliedComments": [
                     [

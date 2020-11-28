@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "SGI-B-1.1",
-        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
         "SGI Free Software License B v1.1",
         "scancode://sgi-freeb-1.1",
-        "SGI Free Software License B 1.1"
+        "SGI Free Software License B 1.1",
+        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
     ],
     "__impliedId": "SGI-B-1.1",
     "__impliedComments": [
@@ -110,24 +110,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "SGI-B-1.1",
-                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
-                ],
-                "__impliedId": "SGI-B-1.1"
-            },
-            "oName": "SGI-B-1.1",
-            "oOtherLicenseIds": [
-                "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/326",
@@ -136,7 +118,8 @@
             "permissions": [],
             "_implications": {
                 "__impliedNames": [
-                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
+                    "SGI-B-1.1"
                 ],
                 "__impliedComments": [
                     [

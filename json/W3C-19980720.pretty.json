@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "W3C-19980720",
-        "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
         "W3C Software Notice and License (1998-07-20)",
         "scancode://w3c-software-19980720",
-        "W3C-SOFTWARE-19980720"
+        "W3C-SOFTWARE-19980720",
+        "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
     ],
     "__impliedId": "W3C-19980720",
     "__impliedComments": [
@@ -92,24 +92,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "W3C-19980720",
-                    "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
-                ],
-                "__impliedId": "W3C-19980720"
-            },
-            "oName": "W3C-19980720",
-            "oOtherLicenseIds": [
-                "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
@@ -258,7 +240,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
+                    "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
+                    "W3C-19980720"
                 ],
                 "__impliedComments": [
                     [

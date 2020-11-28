@@ -27,7 +27,7 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="32,-824 32,-930 366.47,-930 366.47,-824 32,-824"/>
+<polygon fill="lightgray" stroke="lightgray" points="127.54,-824 127.54,-930 270.93,-930 270.93,-824 127.54,-824"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
@@ -35,11 +35,11 @@
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="127.54,-596 127.54,-702 270.93,-702 270.93,-596 127.54,-596"/>
+<polygon fill="lightgray" stroke="lightgray" points="111.94,-542 111.94,-702 286.53,-702 286.53,-542 111.94,-542"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="111.94,-428 111.94,-588 286.53,-588 286.53,-428 111.94,-428"/>
+<polygon fill="lightgray" stroke="lightgray" points="32,-428 32,-534 366.47,-534 366.47,-428 32,-428"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-904" rx="27" ry="18"/>
 <text text-anchor="middle" x="199.24" y="-900.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License (ICU 1.8.1 and later)(4) -->
+<!-- ICU License(4) -->
 <g id="node3" class="node">
-<title>ICU License (ICU 1.8.1 and later)(4)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-850" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-846.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
+<title>ICU License(4)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-850" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-846.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
 </g>
 <!-- ICU(5) -->
 <g id="node4" class="node">
@@ -89,29 +89,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-676" rx="27" ry="18"/>
 <text text-anchor="middle" x="199.24" y="-672.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License(6) -->
+<!-- X11 License(6) -->
 <g id="node7" class="node">
-<title>ICU License(6)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-622" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-618.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
+<title>X11 License(6)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-622" rx="65.79" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-618.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
+</g>
+<!-- scancode://x11(6) -->
+<g id="node8" class="node">
+<title>scancode://x11(6)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-568" rx="79.09" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-564.3" font-family="Times-Roman" font-size="14.00">scancode://x11</text>
 </g>
 <!-- ICU(7) -->
-<g id="node8" class="node">
-<title>ICU(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-562" rx="27" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-558.3" font-family="Times-Roman" font-size="14.00">ICU</text>
-</g>
-<!-- X11 License(7) -->
 <g id="node9" class="node">
-<title>X11 License(7)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-508" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-504.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
+<title>ICU(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-508" rx="27" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-504.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- scancode://x11(7) -->
+<!-- ICU License (ICU 1.8.1 and later)(7) -->
 <g id="node10" class="node">
-<title>scancode://x11(7)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-454" rx="79.09" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-450.3" font-family="Times-Roman" font-size="14.00">scancode://x11</text>
+<title>ICU License (ICU 1.8.1 and later)(7)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-454" rx="159.47" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-450.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
 </g>
 <!-- X11(8) -->
 <g id="node11" class="node">

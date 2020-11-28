@@ -1,13 +1,13 @@
 {
     "__impliedNames": [
         "Zend-2.0",
-        " Zend-2.0",
-        "Zend Engine License, Version 2.00",
         "Zend License v2.0",
         "scancode://zend-2.0",
-        "Zend Engine License 2.0"
+        "Zend Engine License 2.0",
+        "Zend Engine License, Version 2.00",
+        " Zend-2.0"
     ],
-    "__impliedId": " Zend-2.0",
+    "__impliedId": "Zend-2.0",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Zend"
@@ -126,24 +126,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    " Zend-2.0",
-                    "Zend Engine License, Version 2.00"
-                ],
-                "__impliedId": " Zend-2.0"
-            },
-            "oName": " Zend-2.0",
-            "oOtherLicenseIds": [
-                "Zend Engine License, Version 2.00"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "summary": "http://www.zend.com/license/2_00.txt",
             "notices": [
@@ -256,7 +238,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Zend Engine License, Version 2.00"
+                    "Zend Engine License, Version 2.00",
+                    " Zend-2.0"
                 ],
                 "__impliedComments": [
                     [

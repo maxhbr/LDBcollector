@@ -9,9 +9,9 @@
 
 *Other Names:*
 
-- =gSOAP Public License Version 1.3b=
-
 - =scancode://gsoap-1.3b=
+
+- =gSOAP Public License Version 1.3b=
 
 ** Description
 
@@ -251,8 +251,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/gSOAP-1.3b.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -268,9 +266,9 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "gSOAP-1.3b",
-          "gSOAP Public License Version 1.3b",
           "gSOAP Public License v1.3b",
-          "scancode://gsoap-1.3b"
+          "scancode://gsoap-1.3b",
+          "gSOAP Public License Version 1.3b"
       ],
       "__impliedId": "gSOAP-1.3b",
       "__impliedComments": [
@@ -358,24 +356,6 @@ open-license]] (CDLA-Permissive-1.0))
                       ]
                   ]
               }
-          },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "gSOAP-1.3b",
-                      "gSOAP Public License Version 1.3b"
-                  ],
-                  "__impliedId": "gSOAP-1.3b"
-              },
-              "oName": "gSOAP-1.3b",
-              "oOtherLicenseIds": [
-                  "gSOAP Public License Version 1.3b"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
           },
           "Hitachi open-license": {
               "summary": "http://www.cs.fsu.edu/~engelen/license.html",
@@ -761,7 +741,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "gSOAP Public License Version 1.3b"
+                      "gSOAP Public License Version 1.3b",
+                      "gSOAP-1.3b"
                   ],
                   "__impliedComments": [
                       [

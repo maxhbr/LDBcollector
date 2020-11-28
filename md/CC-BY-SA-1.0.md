@@ -5,11 +5,11 @@ Creative Commons Attribution Share Alike 1.0 Generic (CC-BY-SA-1.0)
 
 **Other Names:**
 
--   `Creative Commons Attribution-ShareAlike 1.0 Generic`
+-   `scancode://cc-by-sa-1.0`
 
 -   `Creative Commons ShareAlike 1.0 Generic`
 
--   `scancode://cc-by-sa-1.0`
+-   `Creative Commons Attribution-ShareAlike 1.0 Generic`
 
 Description
 -----------
@@ -169,10 +169,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -204,10 +200,10 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-SA-1.0",
-            "Creative Commons Attribution-ShareAlike 1.0 Generic",
-            "Creative Commons ShareAlike 1.0 Generic",
             "Creative Commons Attribution Share Alike 1.0 Generic",
-            "scancode://cc-by-sa-1.0"
+            "scancode://cc-by-sa-1.0",
+            "Creative Commons ShareAlike 1.0 Generic",
+            "Creative Commons Attribution-ShareAlike 1.0 Generic"
         ],
         "__impliedId": "CC-BY-SA-1.0",
         "__impliedAmbiguousNames": [
@@ -335,24 +331,6 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "CC-BY-SA-1.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-1.0",
-                        "Creative Commons Attribution-ShareAlike 1.0 Generic"
-                    ],
-                    "__impliedId": "CC-BY-SA-1.0"
-                },
-                "oName": "CC-BY-SA-1.0",
-                "oOtherLicenseIds": [
-                    "Creative Commons Attribution-ShareAlike 1.0 Generic"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://creativecommons.org/licenses/sa/1.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
@@ -483,7 +461,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons ShareAlike 1.0 Generic"
+                        "Creative Commons ShareAlike 1.0 Generic",
+                        "CC-BY-SA-1.0"
                     ],
                     "__impliedComments": [
                         [

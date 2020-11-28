@@ -5,8 +5,6 @@ Q Public License 1.0 (QPL-1.0)
 
 **Other Names:**
 
--   `Q PUBLIC LICENSE version 1.0`
-
 -   `scancode://qpl-1.0`
 
 -   `QPL 1.0`
@@ -16,6 +14,8 @@ Q Public License 1.0 (QPL-1.0)
 -   `The Q Public License Version (QPL-1.0)`
 
 -   `License :: OSI Approved :: Qt Public License (QPL)`
+
+-   `Q PUBLIC LICENSE version 1.0`
 
 Description
 -----------
@@ -154,8 +154,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -200,13 +198,13 @@ Raw Data
     {
         "__impliedNames": [
             "QPL-1.0",
-            "Q PUBLIC LICENSE version 1.0",
             "Q Public License 1.0",
             "scancode://qpl-1.0",
             "QPL 1.0",
             "Q Public License",
             "The Q Public License Version (QPL-1.0)",
-            "License :: OSI Approved :: Qt Public License (QPL)"
+            "License :: OSI Approved :: Qt Public License (QPL)",
+            "Q PUBLIC LICENSE version 1.0"
         ],
         "__impliedId": "QPL-1.0",
         "__isFsfFree": true,
@@ -452,24 +450,6 @@ Raw Data
                 "Comment": "The QPL is not GPL-compatible, which, regardless of one's opinion about the license's DFSG-freeness, poses a major practical problem for any code licensed under the QPL that is reused elsewhere in conjunction with code under the GNU GPL. This makes the QPL alone a particularly poor choice of license for a library. Furthermore, it is not clear that the Trolltech corporation (the author of the Qt library and the QPL itself) believes the QPL to be a free software license. Trolltech's website describes how their dual-license approach is intended to be \"open source-friendly\" (see http://www.trolltech.com/company/model.html). If Trolltech felt that the QPL alone were friendly enough to open-source, why do they have a dual-licensing policy?",
                 "LicenseId": "QPL-1.0"
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "QPL-1.0",
-                        "Q PUBLIC LICENSE version 1.0"
-                    ],
-                    "__impliedId": "QPL-1.0"
-                },
-                "oName": "QPL-1.0",
-                "oOtherLicenseIds": [
-                    "Q PUBLIC LICENSE version 1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/QPL-1.0",
                 "notices": [
@@ -612,7 +592,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Q PUBLIC LICENSE version 1.0"
+                        "Q PUBLIC LICENSE version 1.0",
+                        "QPL-1.0"
                     ],
                     "__impliedComments": [
                         [

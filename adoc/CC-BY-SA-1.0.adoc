@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Creative Commons Attribution-ShareAlike 1.0 Generic+`
-* `+Creative Commons ShareAlike 1.0 Generic+`
 * `+scancode://cc-by-sa-1.0+`
+* `+Creative Commons ShareAlike 1.0 Generic+`
+* `+Creative Commons Attribution-ShareAlike 1.0 Generic+`
 
 === Description
 
@@ -158,8 +158,6 @@ Creative Commons may be contacted at http://creativecommons.org/.
 ==== Facts
 
 * LicenseName
-* Override
-* Override
 * https://spdx.org/licenses/CC-BY-SA-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -182,10 +180,10 @@ Policy]
 {
     "__impliedNames": [
         "CC-BY-SA-1.0",
-        "Creative Commons Attribution-ShareAlike 1.0 Generic",
-        "Creative Commons ShareAlike 1.0 Generic",
         "Creative Commons Attribution Share Alike 1.0 Generic",
-        "scancode://cc-by-sa-1.0"
+        "scancode://cc-by-sa-1.0",
+        "Creative Commons ShareAlike 1.0 Generic",
+        "Creative Commons Attribution-ShareAlike 1.0 Generic"
     ],
     "__impliedId": "CC-BY-SA-1.0",
     "__impliedAmbiguousNames": [
@@ -313,24 +311,6 @@ Policy]
             },
             "Comment": null,
             "LicenseId": "CC-BY-SA-1.0"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "CC-BY-SA-1.0",
-                    "Creative Commons Attribution-ShareAlike 1.0 Generic"
-                ],
-                "__impliedId": "CC-BY-SA-1.0"
-            },
-            "oName": "CC-BY-SA-1.0",
-            "oOtherLicenseIds": [
-                "Creative Commons Attribution-ShareAlike 1.0 Generic"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "https://creativecommons.org/licenses/sa/1.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
@@ -461,7 +441,8 @@ Policy]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Creative Commons ShareAlike 1.0 Generic"
+                    "Creative Commons ShareAlike 1.0 Generic",
+                    "CC-BY-SA-1.0"
                 ],
                 "__impliedComments": [
                     [

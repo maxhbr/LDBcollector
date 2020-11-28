@@ -1,11 +1,11 @@
 {
     "__impliedNames": [
         "NetCDF",
-        "NetCDF Copyright",
-        "NetCDF Copyright(version 2009)",
         "NetCDF license",
         "scancode://netcdf",
-        "NetCDF License"
+        "NetCDF License",
+        "NetCDF Copyright(version 2009)",
+        "NetCDF Copyright"
     ],
     "__impliedId": "NetCDF",
     "__isFsfFree": true,
@@ -124,24 +124,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "NetCDF",
-                    "NetCDF Copyright"
-                ],
-                "__impliedId": "NetCDF"
-            },
-            "oName": "NetCDF",
-            "oOtherLicenseIds": [
-                "NetCDF Copyright"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -235,7 +217,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "NetCDF Copyright(version 2009)"
+                    "NetCDF Copyright(version 2009)",
+                    "NetCDF"
                 ],
                 "__impliedComments": [
                     [

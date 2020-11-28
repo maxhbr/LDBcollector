@@ -5,9 +5,9 @@ Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC-BY-NC-S
 
 **Other Names:**
 
--   `Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported`
-
 -   `scancode://cc-by-nc-sa-3.0`
+
+-   `Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported`
 
 Description
 -----------
@@ -578,8 +578,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-SA-3.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -603,9 +601,9 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-NC-SA-3.0",
-            "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
             "Creative Commons Attribution Non Commercial Share Alike 3.0 Unported",
-            "scancode://cc-by-nc-sa-3.0"
+            "scancode://cc-by-nc-sa-3.0",
+            "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
         ],
         "__impliedId": "CC-BY-NC-SA-3.0",
         "__impliedAmbiguousNames": [
@@ -1006,7 +1004,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"
+                        "Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported",
+                        "CC-BY-NC-SA-3.0"
                     ],
                     "__impliedComments": [
                         [

@@ -1,11 +1,11 @@
 {
     "__impliedNames": [
         "Sendmail",
-        "SENDMAIL LICENSE (version 1998)",
+        "Sendmail License",
+        "scancode://sendmail",
         "SENDMAIL LICENSE (version 2004)",
         "SENDMAIL LICENSE (version 2012)",
-        "Sendmail License",
-        "scancode://sendmail"
+        "SENDMAIL LICENSE (version 1998)"
     ],
     "__impliedId": "Sendmail",
     "__isFsfFree": true,
@@ -151,24 +151,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "Sendmail",
-                    "SENDMAIL LICENSE (version 1998)"
-                ],
-                "__impliedId": "Sendmail"
-            },
-            "oName": "Sendmail",
-            "oOtherLicenseIds": [
-                "SENDMAIL LICENSE (version 1998)"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -297,7 +279,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "SENDMAIL LICENSE (version 2004)"
+                    "SENDMAIL LICENSE (version 2004)",
+                    "Sendmail"
                 ],
                 "__impliedComments": [
                     [

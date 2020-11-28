@@ -1,12 +1,12 @@
 {
     "__impliedNames": [
         "MPL-1.0",
-        "Mozilla Public License Version 1.0",
         "Mozilla Public License 1.0",
         "scancode://mpl-1.0",
         "MPL 1.0",
         "Mozilla Public License, Version 1.0",
-        "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"
+        "License :: OSI Approved :: Mozilla Public License 1.0 (MPL)",
+        "Mozilla Public License Version 1.0"
     ],
     "__impliedId": "MPL-1.0",
     "__impliedAmbiguousNames": [
@@ -213,24 +213,6 @@
             },
             "Comment": null,
             "LicenseId": "MPL-1.0"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "MPL-1.0",
-                    "Mozilla Public License Version 1.0"
-                ],
-                "__impliedId": "MPL-1.0"
-            },
-            "oName": "MPL-1.0",
-            "oOtherLicenseIds": [
-                "Mozilla Public License Version 1.0"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -616,7 +598,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Mozilla Public License Version 1.0"
+                    "Mozilla Public License Version 1.0",
+                    "MPL-1.0"
                 ],
                 "__impliedComments": [
                     [

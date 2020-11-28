@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "ZPL-2.1",
-        "Zope Public License (ZPL) Version 2.1",
         "Zope Public License 2.1",
         "scancode://zpl-2.1",
-        "ZPL 2.1"
+        "ZPL 2.1",
+        "Zope Public License (ZPL) Version 2.1"
     ],
     "__impliedId": "ZPL-2.1",
     "__impliedComments": [
@@ -121,24 +121,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "ZPL-2.1",
-                    "Zope Public License (ZPL) Version 2.1"
-                ],
-                "__impliedId": "ZPL-2.1"
-            },
-            "oName": "ZPL-2.1",
-            "oOtherLicenseIds": [
-                "Zope Public License (ZPL) Version 2.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "http://old.zope.org/Resources/License/ZPL-2.1",
@@ -265,7 +247,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Zope Public License (ZPL) Version 2.1"
+                    "Zope Public License (ZPL) Version 2.1",
+                    "ZPL-2.1"
                 ],
                 "__impliedComments": [
                     [

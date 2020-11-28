@@ -5,11 +5,11 @@ Sun Industry Standards Source License v1.2 (SISSL-1.2)
 
 **Other Names:**
 
--   `Sun Industry Standards Source License - Version 1.2`
-
 -   `scancode://sun-sissl-1.2`
 
 -   `Sun Industry Standards Source License 1.2`
+
+-   `Sun Industry Standards Source License - Version 1.2`
 
 Description
 -----------
@@ -233,8 +233,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/SISSL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -254,10 +252,10 @@ Raw Data
     {
         "__impliedNames": [
             "SISSL-1.2",
-            "Sun Industry Standards Source License - Version 1.2",
             "Sun Industry Standards Source License v1.2",
             "scancode://sun-sissl-1.2",
-            "Sun Industry Standards Source License 1.2"
+            "Sun Industry Standards Source License 1.2",
+            "Sun Industry Standards Source License - Version 1.2"
         ],
         "__impliedId": "SISSL-1.2",
         "__impliedComments": [
@@ -338,24 +336,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "SISSL-1.2",
-                        "Sun Industry Standards Source License - Version 1.2"
-                    ],
-                    "__impliedId": "SISSL-1.2"
-                },
-                "oName": "SISSL-1.2",
-                "oOtherLicenseIds": [
-                    "Sun Industry Standards Source License - Version 1.2"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/61",
@@ -364,7 +344,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "Sun Industry Standards Source License - Version 1.2"
+                        "Sun Industry Standards Source License - Version 1.2",
+                        "SISSL-1.2"
                     ],
                     "__impliedComments": [
                         [

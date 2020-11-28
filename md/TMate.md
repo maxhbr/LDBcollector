@@ -5,9 +5,9 @@ TMate Open Source License (TMate)
 
 **Other Names:**
 
--   `TMate Open Source License for "TMate JavaSVN library"`
-
 -   `scancode://tmate`
+
+-   `TMate Open Source License for "TMate JavaSVN library"`
 
 Description
 -----------
@@ -104,8 +104,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/TMate.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -129,9 +127,9 @@ Raw Data
     {
         "__impliedNames": [
             "TMate",
-            "TMate Open Source License for \"TMate JavaSVN library\"",
             "TMate Open Source License",
-            "scancode://tmate"
+            "scancode://tmate",
+            "TMate Open Source License for \"TMate JavaSVN library\""
         ],
         "__impliedId": "TMate",
         "__isFsfFree": true,
@@ -251,24 +249,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "TMate",
-                        "TMate Open Source License for \"TMate JavaSVN library\""
-                    ],
-                    "__impliedId": "TMate"
-                },
-                "oName": "TMate",
-                "oOtherLicenseIds": [
-                    "TMate Open Source License for \"TMate JavaSVN library\""
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://svnkit.com/license.html",

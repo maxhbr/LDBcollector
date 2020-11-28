@@ -5,8 +5,6 @@ SIL Open Font License 1.1 (OFL-1.1)
 
 **Other Names:**
 
--   `SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007`
-
 -   `scancode://ofl-1.1`
 
 -   `OFL 1.1`
@@ -14,6 +12,8 @@ SIL Open Font License 1.1 (OFL-1.1)
 -   `SIL Open Font License, Version 1.1`
 
 -   `Open Font License 1.1`
+
+-   `SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007`
 
 Description
 -----------
@@ -190,8 +190,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/OFL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -224,13 +222,13 @@ Raw Data
     {
         "__impliedNames": [
             "OFL-1.1",
-            "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
             "SIL Open Font License 1.1",
             "scancode://ofl-1.1",
             "OFL 1.1",
             "ofl-1.1",
             "SIL Open Font License, Version 1.1",
-            "Open Font License 1.1"
+            "Open Font License 1.1",
+            "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"
         ],
         "__impliedId": "OFL-1.1",
         "__impliedAmbiguousNames": [
@@ -437,24 +435,6 @@ Raw Data
                 "Comment": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.",
                 "LicenseId": "OFL-1.1"
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "OFL-1.1",
-                        "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"
-                    ],
-                    "__impliedId": "OFL-1.1"
-                },
-                "oName": "OFL-1.1",
-                "oOtherLicenseIds": [
-                    "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -578,7 +558,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"
+                        "SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007",
+                        "OFL-1.1"
                     ],
                     "__impliedComments": [
                         [

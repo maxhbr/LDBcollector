@@ -5,8 +5,6 @@ Zope Public License 2.0 (ZPL-2.0)
 
 **Other Names:**
 
--   `Zope Public License (ZPL) Version 2.0`
-
 -   `scancode://zpl-2.0`
 
 -   `ZPL 2.0`
@@ -16,6 +14,8 @@ Zope Public License 2.0 (ZPL-2.0)
 -   `Zope-2.0`
 
 -   `License :: OSI Approved :: Zope Public License`
+
+-   `Zope Public License (ZPL) Version 2.0`
 
 Description
 -----------
@@ -124,8 +124,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -159,13 +157,13 @@ Raw Data
     {
         "__impliedNames": [
             "ZPL-2.0",
-            "Zope Public License (ZPL) Version 2.0",
             "Zope Public License 2.0",
             "scancode://zpl-2.0",
             "ZPL 2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
-            "License :: OSI Approved :: Zope Public License"
+            "License :: OSI Approved :: Zope Public License",
+            "Zope Public License (ZPL) Version 2.0"
         ],
         "__impliedId": "ZPL-2.0",
         "__impliedComments": [
@@ -345,24 +343,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "ZPL-2.0",
-                        "Zope Public License (ZPL) Version 2.0"
-                    ],
-                    "__impliedId": "ZPL-2.0"
-                },
-                "oName": "ZPL-2.0",
-                "oOtherLicenseIds": [
-                    "Zope Public License (ZPL) Version 2.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/ZPL-2.0",
                 "notices": [
@@ -488,7 +468,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Zope Public License (ZPL) Version 2.0"
+                        "Zope Public License (ZPL) Version 2.0",
+                        "ZPL-2.0"
                     ],
                     "__impliedComments": [
                         [

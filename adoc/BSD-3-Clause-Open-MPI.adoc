@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Open MPI License+`
 * `+scancode://bsd-3-clause-open-mpi+`
+* `+Open MPI License+`
 
 === Description
 
@@ -84,7 +84,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html[SPDX] (all data
 [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml[Scancode]
@@ -98,9 +97,9 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {
     "__impliedNames": [
         "BSD-3-Clause-Open-MPI",
-        "Open MPI License",
         "BSD 3-Clause Open MPI variant",
-        "scancode://bsd-3-clause-open-mpi"
+        "scancode://bsd-3-clause-open-mpi",
+        "Open MPI License"
     ],
     "__impliedId": "BSD-3-Clause-Open-MPI",
     "__impliedComments": [
@@ -204,24 +203,6 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "BSD-3-Clause-Open-MPI",
-                    "Open MPI License"
-                ],
-                "__impliedId": "BSD-3-Clause-Open-MPI"
-            },
-            "oName": "BSD-3-Clause-Open-MPI",
-            "oOtherLicenseIds": [
-                "Open MPI License"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "summary": "http://www.open-mpi.org/community/license.php",
             "notices": [
@@ -306,7 +287,8 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Open MPI License"
+                    "Open MPI License",
+                    "BSD-3-Clause-Open-MPI"
                 ],
                 "__impliedComments": [
                     [

@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)+`
 * `+scancode://w3c-software-doc-20150513+`
 * `+W3C-SOFTWARE-DOC-20150513+`
+* `+W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)+`
 
 === Description
 
@@ -119,7 +119,6 @@ Notes
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/W3C-20150513.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -138,10 +137,10 @@ Policy]
 {
     "__impliedNames": [
         "W3C-20150513",
-        "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)",
         "W3C Software Notice and Document License (2015-05-13)",
         "scancode://w3c-software-doc-20150513",
-        "W3C-SOFTWARE-DOC-20150513"
+        "W3C-SOFTWARE-DOC-20150513",
+        "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"
     ],
     "__impliedId": "W3C-20150513",
     "__impliedComments": [
@@ -243,24 +242,6 @@ Policy]
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "W3C-20150513",
-                    "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"
-                ],
-                "__impliedId": "W3C-20150513"
-            },
-            "oName": "W3C-20150513",
-            "oOtherLicenseIds": [
-                "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
@@ -400,7 +381,8 @@ Policy]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"
+                    "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)",
+                    "W3C-20150513"
                 ],
                 "__impliedComments": [
                     [

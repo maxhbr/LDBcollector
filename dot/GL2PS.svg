@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 289.38,-404 289.38,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="68.65,-298 68.65,-404 236.73,-404 236.73,-298 68.65,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="68.65,-184 68.65,-290 236.73,-290 236.73,-184 68.65,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="57.6,-130 57.6,-290 247.78,-290 247.78,-130 57.6,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="57.6,-16 57.6,-176 247.78,-176 247.78,-16 57.6,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 289.38,-122 289.38,-16 16,-16"/>
 </g>
 <!-- GL2PS(1) -->
 <g id="node1" class="node">
@@ -41,11 +41,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-378" rx="39.79" ry="18"/>
 <text text-anchor="middle" x="152.69" y="-374.3" font-family="Times-Roman" font-size="14.00">GL2PS</text>
 </g>
-<!-- GL2PS LICENSE, Version 2(2) -->
+<!-- GL2PS License(2) -->
 <g id="node3" class="node">
-<title>GL2PS LICENSE, Version 2(2)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-324" rx="128.88" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-320.3" font-family="Times-Roman" font-size="14.00">GL2PS LICENSE, Version 2</text>
+<title>GL2PS License(2)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-324" rx="76.09" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-320.3" font-family="Times-Roman" font-size="14.00">GL2PS License</text>
 </g>
 <!-- GL2PS(3) -->
 <g id="node4" class="node">
@@ -59,23 +59,23 @@
 <ellipse fill="white" stroke="white" cx="152.69" cy="-210" rx="76.09" ry="18"/>
 <text text-anchor="middle" x="152.69" y="-206.3" font-family="Times-Roman" font-size="14.00">GL2PS License</text>
 </g>
-<!-- GL2PS(4) -->
+<!-- scancode://gl2ps(3) -->
 <g id="node6" class="node">
-<title>GL2PS(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-150" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-146.3" font-family="Times-Roman" font-size="14.00">GL2PS</text>
+<title>scancode://gl2ps(3)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-156" rx="87.18" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://gl2ps</text>
 </g>
-<!-- GL2PS License(4) -->
+<!-- GL2PS(4) -->
 <g id="node7" class="node">
-<title>GL2PS License(4)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-96" rx="76.09" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-92.3" font-family="Times-Roman" font-size="14.00">GL2PS License</text>
+<title>GL2PS(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-96" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-92.3" font-family="Times-Roman" font-size="14.00">GL2PS</text>
 </g>
-<!-- scancode://gl2ps(4) -->
+<!-- GL2PS LICENSE, Version 2(4) -->
 <g id="node8" class="node">
-<title>scancode://gl2ps(4)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-42" rx="87.18" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://gl2ps</text>
+<title>GL2PS LICENSE, Version 2(4)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-42" rx="128.88" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-38.3" font-family="Times-Roman" font-size="14.00">GL2PS LICENSE, Version 2</text>
 </g>
 </g>
 </svg>

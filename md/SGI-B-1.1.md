@@ -5,11 +5,11 @@ SGI Free Software License B v1.1 (SGI-B-1.1)
 
 **Other Names:**
 
--   `SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])`
-
 -   `scancode://sgi-freeb-1.1`
 
 -   `SGI Free Software License B 1.1`
+
+-   `SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])`
 
 Comments on (easy) usability
 ----------------------------
@@ -71,8 +71,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/SGI-B-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -88,10 +86,10 @@ Raw Data
     {
         "__impliedNames": [
             "SGI-B-1.1",
-            "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
             "SGI Free Software License B v1.1",
             "scancode://sgi-freeb-1.1",
-            "SGI Free Software License B 1.1"
+            "SGI Free Software License B 1.1",
+            "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
         ],
         "__impliedId": "SGI-B-1.1",
         "__impliedComments": [
@@ -197,24 +195,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "SGI-B-1.1",
-                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
-                    ],
-                    "__impliedId": "SGI-B-1.1"
-                },
-                "oName": "SGI-B-1.1",
-                "oOtherLicenseIds": [
-                    "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/326",
@@ -223,7 +203,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+                        "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])",
+                        "SGI-B-1.1"
                     ],
                     "__impliedComments": [
                         [

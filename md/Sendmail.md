@@ -5,13 +5,13 @@ Sendmail License (Sendmail)
 
 **Other Names:**
 
--   `SENDMAIL LICENSE (version 1998)`
+-   `scancode://sendmail`
 
 -   `SENDMAIL LICENSE (version 2004)`
 
 -   `SENDMAIL LICENSE (version 2012)`
 
--   `scancode://sendmail`
+-   `SENDMAIL LICENSE (version 1998)`
 
 Description
 -----------
@@ -153,12 +153,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
--   Override
-
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Sendmail.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -186,11 +180,11 @@ Raw Data
     {
         "__impliedNames": [
             "Sendmail",
-            "SENDMAIL LICENSE (version 1998)",
+            "Sendmail License",
+            "scancode://sendmail",
             "SENDMAIL LICENSE (version 2004)",
             "SENDMAIL LICENSE (version 2012)",
-            "Sendmail License",
-            "scancode://sendmail"
+            "SENDMAIL LICENSE (version 1998)"
         ],
         "__impliedId": "Sendmail",
         "__isFsfFree": true,
@@ -336,24 +330,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Sendmail",
-                        "SENDMAIL LICENSE (version 1998)"
-                    ],
-                    "__impliedId": "Sendmail"
-                },
-                "oName": "Sendmail",
-                "oOtherLicenseIds": [
-                    "SENDMAIL LICENSE (version 1998)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -482,7 +458,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "SENDMAIL LICENSE (version 2004)"
+                        "SENDMAIL LICENSE (version 2004)",
+                        "Sendmail"
                     ],
                     "__impliedComments": [
                         [

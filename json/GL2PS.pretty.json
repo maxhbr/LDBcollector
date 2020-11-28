@@ -1,9 +1,9 @@
 {
     "__impliedNames": [
         "GL2PS",
-        "GL2PS LICENSE, Version 2",
         "GL2PS License",
-        "scancode://gl2ps"
+        "scancode://gl2ps",
+        "GL2PS LICENSE, Version 2"
     ],
     "__impliedId": "GL2PS",
     "__isFsfFree": true,
@@ -122,24 +122,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "GL2PS",
-                    "GL2PS LICENSE, Version 2"
-                ],
-                "__impliedId": "GL2PS"
-            },
-            "oName": "GL2PS",
-            "oOtherLicenseIds": [
-                "GL2PS LICENSE, Version 2"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -251,7 +233,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "GL2PS LICENSE, Version 2"
+                    "GL2PS LICENSE, Version 2",
+                    "GL2PS"
                 ],
                 "__impliedComments": [
                     [

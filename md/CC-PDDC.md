@@ -5,11 +5,11 @@ Creative Commons Public Domain Dedication and Certification (CC-PDDC)
 
 **Other Names:**
 
--   `Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification`
-
 -   `scancode://cc-pd`
 
 -   `CC-PD`
+
+-   `Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification`
 
 Description
 -----------
@@ -60,8 +60,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-PDDC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -77,10 +75,10 @@ Raw Data
     {
         "__impliedNames": [
             "CC-PDDC",
-            "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification",
             "Creative Commons Public Domain Dedication and Certification",
             "scancode://cc-pd",
-            "CC-PD"
+            "CC-PD",
+            "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"
         ],
         "__impliedId": "CC-PDDC",
         "__impliedComments": [
@@ -168,24 +166,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CC-PDDC",
-                        "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"
-                    ],
-                    "__impliedId": "CC-PDDC"
-                },
-                "oName": "CC-PDDC",
-                "oOtherLicenseIds": [
-                    "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "http://creativecommons.org/licenses/publicdomain/",
                 "notices": [
@@ -225,7 +205,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"
+                        "Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification",
+                        "CC-PDDC"
                     ],
                     "__impliedComments": [
                         [

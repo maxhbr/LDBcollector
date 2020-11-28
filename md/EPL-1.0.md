@@ -196,8 +196,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -491,24 +489,6 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "EPL-1.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "EPL-1.0",
-                        "Eclipse Public License 1.0"
-                    ],
-                    "__impliedId": "EPL-1.0"
-                },
-                "oName": "EPL-1.0",
-                "oOtherLicenseIds": [
-                    "Eclipse Public License 1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -928,7 +908,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Eclipse Public License 1.0"
+                        "Eclipse Public License 1.0",
+                        "EPL-1.0"
                     ],
                     "__impliedComments": [
                         [

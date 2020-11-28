@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "IPA",
-        "IPA Font License Agreement v1.0",
         "IPA Font License",
         "scancode://ipa-font",
-        "IPA Font License 1.0"
+        "IPA Font License 1.0",
+        "IPA Font License Agreement v1.0"
     ],
     "__impliedId": "IPA",
     "__isFsfFree": true,
@@ -202,24 +202,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "IPA",
-                    "IPA Font License Agreement v1.0"
-                ],
-                "__impliedId": "IPA"
-            },
-            "oName": "IPA",
-            "oOtherLicenseIds": [
-                "IPA Font License Agreement v1.0"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/248",
@@ -227,7 +209,8 @@
             "permissions": [],
             "_implications": {
                 "__impliedNames": [
-                    "IPA Font License Agreement v1.0"
+                    "IPA Font License Agreement v1.0",
+                    "IPA"
                 ],
                 "__impliedComments": [
                     [

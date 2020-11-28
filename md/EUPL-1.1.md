@@ -5,8 +5,6 @@ European Union Public License 1.1 (EUPL-1.1)
 
 **Other Names:**
 
--   `European Union Public Licence, v.1.1`
-
 -   `scancode://eupl-1.1`
 
 -   `EUPL 1.1`
@@ -14,6 +12,8 @@ European Union Public License 1.1 (EUPL-1.1)
 -   `European Union Public License, Version 1.1`
 
 -   `License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)`
+
+-   `European Union Public Licence, v.1.1`
 
 Description
 -----------
@@ -377,8 +377,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -419,13 +417,13 @@ Raw Data
     {
         "__impliedNames": [
             "EUPL-1.1",
-            "European Union Public Licence, v.1.1",
             "European Union Public License 1.1",
             "scancode://eupl-1.1",
             "EUPL 1.1",
             "eupl-1.1",
             "European Union Public License, Version 1.1",
-            "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
+            "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+            "European Union Public Licence, v.1.1"
         ],
         "__impliedId": "EUPL-1.1",
         "__isFsfFree": true,
@@ -663,24 +661,6 @@ Raw Data
                         "EUPL-1.1"
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "EUPL-1.1",
-                        "European Union Public Licence, v.1.1"
-                    ],
-                    "__impliedId": "EUPL-1.1"
-                },
-                "oName": "EUPL-1.1",
-                "oOtherLicenseIds": [
-                    "European Union Public Licence, v.1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -993,7 +973,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "European Union Public Licence, v.1.1"
+                        "European Union Public Licence, v.1.1",
+                        "EUPL-1.1"
                     ],
                     "__impliedComments": [
                         [

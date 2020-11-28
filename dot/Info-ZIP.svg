@@ -19,27 +19,27 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-640 16,-746 533.76,-746 533.76,-640 16,-640"/>
+<polygon fill="lightgray" stroke="lightgray" points="183.69,-640 183.69,-746 366.07,-746 366.07,-640 183.69,-640"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="82.29,-526 82.29,-632 467.46,-632 467.46,-526 82.29,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="183.69,-526 183.69,-632 366.07,-632 366.07,-526 183.69,-526"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="83.59,-412 83.59,-518 466.16,-518 466.16,-412 83.59,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="170.69,-358 170.69,-518 379.07,-518 379.07,-358 170.69,-358"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="183.69,-298 183.69,-404 366.07,-404 366.07,-298 183.69,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="83.59,-244 83.59,-350 466.16,-350 466.16,-244 83.59,-244"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="183.69,-184 183.69,-290 366.07,-290 366.07,-184 183.69,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 533.76,-236 533.76,-130 16,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="170.69,-16 170.69,-176 379.07,-176 379.07,-16 170.69,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="82.29,-16 82.29,-122 467.46,-122 467.46,-16 82.29,-16"/>
 </g>
 <!-- Info&#45;ZIP(1) -->
 <g id="node1" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-720" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="274.88" y="-716.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
 </g>
-<!-- Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)(2) -->
+<!-- Info&#45;ZIP License(2) -->
 <g id="node3" class="node">
-<title>Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)(2)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-666" rx="250.76" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-662.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)</text>
+<title>Info&#45;ZIP License(2)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-666" rx="83.39" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-662.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP License</text>
 </g>
 <!-- Info&#45;ZIP(3) -->
 <g id="node4" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-606" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="274.88" y="-602.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
 </g>
-<!-- Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)(3) -->
+<!-- Info&#45;ZIP License(3) -->
 <g id="node5" class="node">
-<title>Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)(3)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-552" rx="184.67" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-548.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)</text>
+<title>Info&#45;ZIP License(3)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-552" rx="83.39" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-548.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP License</text>
 </g>
 <!-- Info&#45;ZIP(4) -->
 <g id="node6" class="node">
@@ -77,53 +77,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-492" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="274.88" y="-488.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
 </g>
-<!-- Info&#45;ZIP license (version 2009&#45;Jan&#45;02)(4) -->
+<!-- Info&#45;Zip License(4) -->
 <g id="node7" class="node">
-<title>Info&#45;ZIP license (version 2009&#45;Jan&#45;02)(4)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-438" rx="183.07" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-434.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP license (version 2009&#45;Jan&#45;02)</text>
+<title>Info&#45;Zip License(4)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-438" rx="83.39" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-434.3" font-family="Times-Roman" font-size="14.00">Info&#45;Zip License</text>
+</g>
+<!-- scancode://info&#45;zip(4) -->
+<g id="node8" class="node">
+<title>scancode://info&#45;zip(4)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-384" rx="96.38" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://info&#45;zip</text>
 </g>
 <!-- Info&#45;ZIP(5) -->
-<g id="node8" class="node">
-<title>Info&#45;ZIP(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-378" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-374.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
-</g>
-<!-- Info&#45;ZIP License(5) -->
 <g id="node9" class="node">
-<title>Info&#45;ZIP License(5)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-324" rx="83.39" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-320.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP License</text>
+<title>Info&#45;ZIP(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-324" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-320.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
+</g>
+<!-- Info&#45;ZIP license (version 2009&#45;Jan&#45;02)(5) -->
+<g id="node10" class="node">
+<title>Info&#45;ZIP license (version 2009&#45;Jan&#45;02)(5)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-270" rx="183.07" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-266.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP license (version 2009&#45;Jan&#45;02)</text>
 </g>
 <!-- Info&#45;ZIP(6) -->
-<g id="node10" class="node">
-<title>Info&#45;ZIP(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-264" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-260.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
-</g>
-<!-- Info&#45;ZIP License(6) -->
 <g id="node11" class="node">
-<title>Info&#45;ZIP License(6)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-210" rx="83.39" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP License</text>
+<title>Info&#45;ZIP(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-210" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
+</g>
+<!-- Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)(6) -->
+<g id="node12" class="node">
+<title>Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)(6)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-156" rx="250.76" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-152.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP copyright and license (version 2005&#45;Feb&#45;10)</text>
 </g>
 <!-- Info&#45;ZIP(7) -->
-<g id="node12" class="node">
-<title>Info&#45;ZIP(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-150" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-146.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
-</g>
-<!-- Info&#45;Zip License(7) -->
 <g id="node13" class="node">
-<title>Info&#45;Zip License(7)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-96" rx="83.39" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-92.3" font-family="Times-Roman" font-size="14.00">Info&#45;Zip License</text>
+<title>Info&#45;ZIP(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="274.88" cy="-96" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-92.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP</text>
 </g>
-<!-- scancode://info&#45;zip(7) -->
+<!-- Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)(7) -->
 <g id="node14" class="node">
-<title>scancode://info&#45;zip(7)</title>
-<ellipse fill="white" stroke="white" cx="274.88" cy="-42" rx="96.38" ry="18"/>
-<text text-anchor="middle" x="274.88" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://info&#45;zip</text>
+<title>Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)(7)</title>
+<ellipse fill="white" stroke="white" cx="274.88" cy="-42" rx="184.67" ry="18"/>
+<text text-anchor="middle" x="274.88" y="-38.3" font-family="Times-Roman" font-size="14.00">Info&#45;ZIP license (Version 2007&#45;Mar&#45;04)</text>
 </g>
 </g>
 </svg>

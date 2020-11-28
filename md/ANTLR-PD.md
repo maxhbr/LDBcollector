@@ -5,9 +5,9 @@ ANTLR Software Rights Notice (ANTLR-PD)
 
 **Other Names:**
 
--   `ANTLR 2 License`
-
 -   `scancode://antlr-pd`
+
+-   `ANTLR 2 License`
 
 Description
 -----------
@@ -105,8 +105,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -130,9 +128,9 @@ Raw Data
     {
         "__impliedNames": [
             "ANTLR-PD",
-            "ANTLR 2 License",
             "ANTLR Software Rights Notice",
-            "scancode://antlr-pd"
+            "scancode://antlr-pd",
+            "ANTLR 2 License"
         ],
         "__impliedId": "ANTLR-PD",
         "__isFsfFree": true,
@@ -278,24 +276,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "ANTLR-PD",
-                        "ANTLR 2 License"
-                    ],
-                    "__impliedId": "ANTLR-PD"
-                },
-                "oName": "ANTLR-PD",
-                "oOtherLicenseIds": [
-                    "ANTLR 2 License"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/37",
@@ -366,7 +346,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "ANTLR 2 License"
+                        "ANTLR 2 License",
+                        "ANTLR-PD"
                     ],
                     "__impliedComments": [
                         [

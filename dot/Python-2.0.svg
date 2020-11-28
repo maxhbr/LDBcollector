@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="49.8,-922 49.8,-1028 584.45,-1028 584.45,-922 49.8,-922"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-922 212.93,-1028 421.32,-1028 421.32,-922 212.93,-922"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,27 +27,27 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-694 212.93,-800 421.32,-800 421.32,-694 212.93,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-640 212.93,-800 421.32,-800 421.32,-640 212.93,-640"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-526 212.93,-686 421.32,-686 421.32,-526 212.93,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-472 16,-632 618.25,-632 618.25,-472 16,-472"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-358 16,-518 618.25,-518 618.25,-358 16,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-358 212.93,-464 421.32,-464 421.32,-358 212.93,-358"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-244 212.93,-350 421.32,-350 421.32,-244 212.93,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="126.49,-244 126.49,-350 507.76,-350 507.76,-244 126.49,-244"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="126.49,-130 126.49,-236 507.76,-236 507.76,-130 126.49,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-130 212.93,-236 421.32,-236 421.32,-130 212.93,-130"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-16 212.93,-122 421.32,-122 421.32,-16 212.93,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="49.8,-16 49.8,-122 584.45,-122 584.45,-16 49.8,-16"/>
 </g>
 <!-- Python&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -55,11 +55,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-1062" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="317.12" y="-1058.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2(2) -->
+<!-- Python License 2.0(2) -->
 <g id="node2" class="node">
-<title>PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2(2)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-1002" rx="259.15" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-998.3" font-family="Times-Roman" font-size="14.00">PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2</text>
+<title>Python License 2.0(2)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-1002" rx="96.38" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-998.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
 </g>
 <!-- Python&#45;2.0(2) -->
 <g id="node3" class="node">
@@ -91,35 +91,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-720" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="317.12" y="-716.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- Python License 2.0(5) -->
+<!-- scancode://python(4) -->
 <g id="node8" class="node">
-<title>Python License 2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-660" rx="96.38" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-656.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
+<title>scancode://python(4)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-666" rx="93.68" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-662.3" font-family="Times-Roman" font-size="14.00">scancode://python</text>
+</g>
+<!-- License :: OSI Approved :: Python Software Foundation License(5) -->
+<g id="node9" class="node">
+<title>License :: OSI Approved :: Python Software Foundation License(5)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-606" rx="293.25" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-602.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Python Software Foundation License</text>
+</g>
+<!-- Python License, Version 2.0(5) -->
+<g id="node10" class="node">
+<title>Python License, Version 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-552" rx="135.38" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-548.3" font-family="Times-Roman" font-size="14.00">Python License, Version 2.0</text>
 </g>
 <!-- Python&#45;2.0(5) -->
-<g id="node9" class="node">
-<title>Python&#45;2.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-606" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-602.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
-</g>
-<!-- scancode://python(5) -->
-<g id="node10" class="node">
-<title>scancode://python(5)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-552" rx="93.68" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-548.3" font-family="Times-Roman" font-size="14.00">scancode://python</text>
-</g>
-<!-- License :: OSI Approved :: Python Software Foundation License(6) -->
 <g id="node11" class="node">
-<title>License :: OSI Approved :: Python Software Foundation License(6)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-492" rx="293.25" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-488.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Python Software Foundation License</text>
+<title>Python&#45;2.0(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-498" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-494.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- Python License, Version 2.0(6) -->
+<!-- Python License 2.0(6) -->
 <g id="node12" class="node">
-<title>Python License, Version 2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-438" rx="135.38" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-434.3" font-family="Times-Roman" font-size="14.00">Python License, Version 2.0</text>
+<title>Python License 2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-438" rx="96.38" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-434.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
 </g>
 <!-- Python&#45;2.0(6) -->
 <g id="node13" class="node">
@@ -127,11 +127,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-384" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="317.12" y="-380.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- Python License 2.0(7) -->
+<!-- Python Software Foundation License 2(7) -->
 <g id="node14" class="node">
-<title>Python License 2.0(7)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-324" rx="96.38" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-320.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
+<title>Python Software Foundation License 2(7)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-324" rx="182.77" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-320.3" font-family="Times-Roman" font-size="14.00">Python Software Foundation License 2</text>
 </g>
 <!-- Python&#45;2.0(7) -->
 <g id="node15" class="node">
@@ -139,11 +139,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-270" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="317.12" y="-266.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- Python Software Foundation License 2(8) -->
+<!-- Python License 2.0(8) -->
 <g id="node16" class="node">
-<title>Python Software Foundation License 2(8)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-210" rx="182.77" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-206.3" font-family="Times-Roman" font-size="14.00">Python Software Foundation License 2</text>
+<title>Python License 2.0(8)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-210" rx="96.38" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-206.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
 </g>
 <!-- Python&#45;2.0(8) -->
 <g id="node17" class="node">
@@ -151,11 +151,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="317.12" cy="-156" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="317.12" y="-152.3" font-family="Times-Roman" font-size="14.00">Python&#45;2.0</text>
 </g>
-<!-- Python License 2.0(9) -->
+<!-- PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2(9) -->
 <g id="node18" class="node">
-<title>Python License 2.0(9)</title>
-<ellipse fill="white" stroke="white" cx="317.12" cy="-96" rx="96.38" ry="18"/>
-<text text-anchor="middle" x="317.12" y="-92.3" font-family="Times-Roman" font-size="14.00">Python License 2.0</text>
+<title>PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2(9)</title>
+<ellipse fill="white" stroke="white" cx="317.12" cy="-96" rx="259.15" ry="18"/>
+<text text-anchor="middle" x="317.12" y="-92.3" font-family="Times-Roman" font-size="14.00">PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2</text>
 </g>
 <!-- Python&#45;2.0(9) -->
 <g id="node19" class="node">

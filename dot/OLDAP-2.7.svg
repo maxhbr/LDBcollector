@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="22.5,-412 22.5,-518 327.07,-518 327.07,-412 22.5,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 333.57,-518 333.57,-412 16,-412"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 333.57,-290 333.57,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="24.45,-130 24.45,-290 325.12,-290 325.12,-130 24.45,-130"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="24.45,-16 24.45,-176 325.12,-176 325.12,-16 24.45,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="22.5,-16 22.5,-122 327.07,-122 327.07,-16 22.5,-16"/>
 </g>
 <!-- OLDAP&#45;2.7(1) -->
 <g id="node1" class="node">
@@ -45,11 +45,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="174.79" cy="-492" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="174.79" y="-488.3" font-family="Times-Roman" font-size="14.00">OLDAP&#45;2.7</text>
 </g>
-<!-- The OpenLDAP Public License(2) -->
+<!-- Open LDAP Public License v2.7(2) -->
 <g id="node3" class="node">
-<title>The OpenLDAP Public License(2)</title>
-<ellipse fill="white" stroke="white" cx="174.79" cy="-438" rx="144.07" ry="18"/>
-<text text-anchor="middle" x="174.79" y="-434.3" font-family="Times-Roman" font-size="14.00">The OpenLDAP Public License</text>
+<title>Open LDAP Public License v2.7(2)</title>
+<ellipse fill="white" stroke="white" cx="174.79" cy="-438" rx="150.57" ry="18"/>
+<text text-anchor="middle" x="174.79" y="-434.3" font-family="Times-Roman" font-size="14.00">Open LDAP Public License v2.7</text>
 </g>
 <!-- OLDAP&#45;2.7(3) -->
 <g id="node4" class="node">
@@ -69,29 +69,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="174.79" cy="-264" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="174.79" y="-260.3" font-family="Times-Roman" font-size="14.00">OLDAP&#45;2.7</text>
 </g>
-<!-- Open LDAP Public License v2.7(4) -->
+<!-- OpenLDAP Public License 2.7(4) -->
 <g id="node7" class="node">
-<title>Open LDAP Public License v2.7(4)</title>
-<ellipse fill="white" stroke="white" cx="174.79" cy="-210" rx="150.57" ry="18"/>
-<text text-anchor="middle" x="174.79" y="-206.3" font-family="Times-Roman" font-size="14.00">Open LDAP Public License v2.7</text>
+<title>OpenLDAP Public License 2.7(4)</title>
+<ellipse fill="white" stroke="white" cx="174.79" cy="-210" rx="142.17" ry="18"/>
+<text text-anchor="middle" x="174.79" y="-206.3" font-family="Times-Roman" font-size="14.00">OpenLDAP Public License 2.7</text>
+</g>
+<!-- scancode://openldap&#45;2.7(4) -->
+<g id="node8" class="node">
+<title>scancode://openldap&#45;2.7(4)</title>
+<ellipse fill="white" stroke="white" cx="174.79" cy="-156" rx="122.38" ry="18"/>
+<text text-anchor="middle" x="174.79" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://openldap&#45;2.7</text>
 </g>
 <!-- OLDAP&#45;2.7(5) -->
-<g id="node8" class="node">
-<title>OLDAP&#45;2.7(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="174.79" cy="-150" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="174.79" y="-146.3" font-family="Times-Roman" font-size="14.00">OLDAP&#45;2.7</text>
-</g>
-<!-- OpenLDAP Public License 2.7(5) -->
 <g id="node9" class="node">
-<title>OpenLDAP Public License 2.7(5)</title>
-<ellipse fill="white" stroke="white" cx="174.79" cy="-96" rx="142.17" ry="18"/>
-<text text-anchor="middle" x="174.79" y="-92.3" font-family="Times-Roman" font-size="14.00">OpenLDAP Public License 2.7</text>
+<title>OLDAP&#45;2.7(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="174.79" cy="-96" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="174.79" y="-92.3" font-family="Times-Roman" font-size="14.00">OLDAP&#45;2.7</text>
 </g>
-<!-- scancode://openldap&#45;2.7(5) -->
+<!-- The OpenLDAP Public License(5) -->
 <g id="node10" class="node">
-<title>scancode://openldap&#45;2.7(5)</title>
-<ellipse fill="white" stroke="white" cx="174.79" cy="-42" rx="122.38" ry="18"/>
-<text text-anchor="middle" x="174.79" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://openldap&#45;2.7</text>
+<title>The OpenLDAP Public License(5)</title>
+<ellipse fill="white" stroke="white" cx="174.79" cy="-42" rx="144.07" ry="18"/>
+<text text-anchor="middle" x="174.79" y="-38.3" font-family="Times-Roman" font-size="14.00">The OpenLDAP Public License</text>
 </g>
 </g>
 </svg>

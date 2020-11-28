@@ -3,7 +3,6 @@
         "BSD-2-Clause",
         "BSD (2 clause)",
         "BSD License (two clause)",
-        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
         "BSD 2-Clause \"Simplified\" License",
         "scancode://bsd-simplified",
         "bsd-2-clause",
@@ -12,7 +11,8 @@
         "BSD-2-clause",
         "Simplified BSD License",
         "FreeBSD License",
-        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
     ],
     "__impliedId": "BSD-2-Clause",
     "__isFsfFree": true,
@@ -310,7 +310,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
+                    "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
+                    "BSD-2-Clause"
                 ],
                 "__impliedComments": [
                     [

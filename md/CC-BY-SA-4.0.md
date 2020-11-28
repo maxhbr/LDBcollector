@@ -5,13 +5,13 @@ Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 **Other Names:**
 
--   `Creative Commons Attribution-ShareAlike 4.0 International`
-
 -   `scancode://cc-by-sa-4.0`
 
 -   `CC-BY-SA 4.0`
 
 -   `Creative Commons Attribution Share-Alike 4.0`
+
+-   `Creative Commons Attribution-ShareAlike 4.0 International`
 
 Description
 -----------
@@ -573,8 +573,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-4.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -612,12 +610,12 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-SA-4.0",
-            "Creative Commons Attribution-ShareAlike 4.0 International",
             "Creative Commons Attribution Share Alike 4.0 International",
             "scancode://cc-by-sa-4.0",
             "cc-by-sa-4.0",
             "CC-BY-SA 4.0",
-            "Creative Commons Attribution Share-Alike 4.0"
+            "Creative Commons Attribution Share-Alike 4.0",
+            "Creative Commons Attribution-ShareAlike 4.0 International"
         ],
         "__impliedId": "CC-BY-SA-4.0",
         "__impliedAmbiguousNames": [
@@ -774,24 +772,6 @@ Raw Data
                 },
                 "Comment": "Version 4.0 is considered to be compatible to the DFSG. Changes from the previous version are discussed in a thread starting at https://lists.debian.org/3172728.oiOx47Q9HF@debstor",
                 "LicenseId": "CC-BY-SA-4.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-4.0",
-                        "Creative Commons Attribution-ShareAlike 4.0 International"
-                    ],
-                    "__impliedId": "CC-BY-SA-4.0"
-                },
-                "oName": "CC-BY-SA-4.0",
-                "oOtherLicenseIds": [
-                    "Creative Commons Attribution-ShareAlike 4.0 International"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://creativecommons.org/licenses/by-sa/4.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã. The official translation is at https://creativecommons.org/licenses/by-sa/4.0/legalcode.ja",
@@ -1025,7 +1005,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Attribution-ShareAlike 4.0 International"
+                        "Creative Commons Attribution-ShareAlike 4.0 International",
+                        "CC-BY-SA-4.0"
                     ],
                     "__impliedComments": [
                         [

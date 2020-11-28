@@ -5,11 +5,11 @@ Ruby License (Ruby)
 
 **Other Names:**
 
+-   `scancode://ruby`
+
 -   `Ruby License (1.9.2 and earlier)`
 
 -   `Ruby License (1.9.3 and later)`
-
--   `scancode://ruby`
 
 Description
 -----------
@@ -131,8 +131,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Ruby.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -164,10 +162,10 @@ Raw Data
     {
         "__impliedNames": [
             "Ruby",
-            "Ruby License (1.9.2 and earlier)",
-            "Ruby License (1.9.3 and later)",
             "Ruby License",
-            "scancode://ruby"
+            "scancode://ruby",
+            "Ruby License (1.9.2 and earlier)",
+            "Ruby License (1.9.3 and later)"
         ],
         "__impliedId": "Ruby",
         "__isFsfFree": true,
@@ -305,26 +303,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Ruby",
-                        "Ruby License (1.9.2 and earlier)",
-                        "Ruby License (1.9.3 and later)"
-                    ],
-                    "__impliedId": "Ruby"
-                },
-                "oName": "Ruby",
-                "oOtherLicenseIds": [
-                    "Ruby License (1.9.2 and earlier)",
-                    "Ruby License (1.9.3 and later)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -470,7 +448,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Ruby License (1.9.2 and earlier)"
+                        "Ruby License (1.9.2 and earlier)",
+                        "Ruby"
                     ],
                     "__impliedComments": [
                         [

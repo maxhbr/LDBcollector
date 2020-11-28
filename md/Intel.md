@@ -5,8 +5,6 @@ Intel Open Source License (Intel)
 
 **Other Names:**
 
--   `Intel License Agreement`
-
 -   `scancode://intel-bsd-export-control`
 
 -   `Intel BSD - Export Control`
@@ -16,6 +14,8 @@ Intel Open Source License (Intel)
 -   `License :: OSI Approved :: Intel Open Source License`
 
 -   `intel-osl`
+
+-   `Intel License Agreement`
 
 Comments on (easy) usability
 ----------------------------
@@ -108,8 +108,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -140,13 +138,13 @@ Raw Data
     {
         "__impliedNames": [
             "Intel",
-            "Intel License Agreement",
             "Intel Open Source License",
             "scancode://intel-bsd-export-control",
             "Intel BSD - Export Control",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
-            "intel-osl"
+            "intel-osl",
+            "Intel License Agreement"
         ],
         "__impliedId": "Intel",
         "__isFsfFree": true,
@@ -331,24 +329,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Intel",
-                        "Intel License Agreement"
-                    ],
-                    "__impliedId": "Intel"
-                },
-                "oName": "Intel",
-                "oOtherLicenseIds": [
-                    "Intel License Agreement"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -430,7 +410,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Intel License Agreement"
+                        "Intel License Agreement",
+                        "Intel"
                     ],
                     "__impliedComments": [
                         [

@@ -9,8 +9,6 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `BSD License (two clause)`
 
--   `BSD 2-Clause "Simplified" or "FreeBSD" License`
-
 -   `scancode://bsd-simplified`
 
 -   `BSD-2`
@@ -22,6 +20,8 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 -   `FreeBSD License`
 
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
+
+-   `BSD 2-Clause "Simplified" or "FreeBSD" License`
 
 Description
 -----------
@@ -132,8 +132,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -178,7 +176,6 @@ Raw Data
             "BSD-2-Clause",
             "BSD (2 clause)",
             "BSD License (two clause)",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
             "BSD 2-Clause \"Simplified\" License",
             "scancode://bsd-simplified",
             "bsd-2-clause",
@@ -187,7 +184,8 @@ Raw Data
             "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
         ],
         "__impliedId": "BSD-2-Clause",
         "__isFsfFree": true,
@@ -485,7 +483,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
+                        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
+                        "BSD-2-Clause"
                     ],
                     "__impliedComments": [
                         [

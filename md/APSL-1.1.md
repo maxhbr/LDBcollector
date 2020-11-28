@@ -5,11 +5,11 @@ Apple Public Source License 1.1 (APSL-1.1)
 
 **Other Names:**
 
--   `APPLE PUBLIC SOURCE LICENSE, Version 1.1`
-
 -   `scancode://apsl-1.1`
 
 -   `APSL 1.1`
+
+-   `APPLE PUBLIC SOURCE LICENSE, Version 1.1`
 
 Description
 -----------
@@ -506,8 +506,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/APSL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -535,10 +533,10 @@ Raw Data
     {
         "__impliedNames": [
             "APSL-1.1",
-            "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
             "Apple Public Source License 1.1",
             "scancode://apsl-1.1",
-            "APSL 1.1"
+            "APSL 1.1",
+            "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
         ],
         "__impliedId": "APSL-1.1",
         "__impliedAmbiguousNames": [
@@ -718,24 +716,6 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "APSL-1.1"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "APSL-1.1",
-                        "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-                    ],
-                    "__impliedId": "APSL-1.1"
-                },
-                "oName": "APSL-1.1",
-                "oOtherLicenseIds": [
-                    "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
@@ -1263,7 +1243,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                        "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
+                        "APSL-1.1"
                     ],
                     "__impliedComments": [
                         [

@@ -5,13 +5,13 @@ Eclipse Public License 2.0 (EPL-2.0)
 
 **Other Names:**
 
--   `Eclipse Public License - v 2.0`
-
 -   `scancode://epl-2.0`
 
 -   `EPL 2.0`
 
 -   `eclipse-2.0`
+
+-   `Eclipse Public License - v 2.0`
 
 Description
 -----------
@@ -384,8 +384,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/EPL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -429,12 +427,12 @@ Raw Data
     {
         "__impliedNames": [
             "EPL-2.0",
-            "Eclipse Public License - v 2.0",
             "Eclipse Public License 2.0",
             "scancode://epl-2.0",
             "EPL 2.0",
             "epl-2.0",
-            "eclipse-2.0"
+            "eclipse-2.0",
+            "Eclipse Public License - v 2.0"
         ],
         "__impliedId": "EPL-2.0",
         "__isFsfFree": true,
@@ -634,24 +632,6 @@ Raw Data
                         "EPL-2.0"
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "EPL-2.0",
-                        "Eclipse Public License - v 2.0"
-                    ],
-                    "__impliedId": "EPL-2.0"
-                },
-                "oName": "EPL-2.0",
-                "oOtherLicenseIds": [
-                    "Eclipse Public License - v 2.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "http://www.eclipse.org/legal/epl-2.0/",
@@ -928,7 +908,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Eclipse Public License - v 2.0"
+                        "Eclipse Public License - v 2.0",
+                        "EPL-2.0"
                     ],
                     "__impliedComments": [
                         [

@@ -5,9 +5,9 @@ Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
 
 **Other Names:**
 
--   `Creative Commons Attribution-ShareAlike 2.5`
-
 -   `scancode://cc-by-sa-2.5`
+
+-   `Creative Commons Attribution-ShareAlike 2.5`
 
 Description
 -----------
@@ -175,8 +175,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.5.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -200,9 +198,9 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-SA-2.5",
-            "Creative Commons Attribution-ShareAlike 2.5",
             "Creative Commons Attribution Share Alike 2.5 Generic",
-            "scancode://cc-by-sa-2.5"
+            "scancode://cc-by-sa-2.5",
+            "Creative Commons Attribution-ShareAlike 2.5"
         ],
         "__impliedId": "CC-BY-SA-2.5",
         "__impliedAmbiguousNames": [
@@ -305,24 +303,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-2.5",
-                        "Creative Commons Attribution-ShareAlike 2.5"
-                    ],
-                    "__impliedId": "CC-BY-SA-2.5"
-                },
-                "oName": "CC-BY-SA-2.5",
-                "oOtherLicenseIds": [
-                    "Creative Commons Attribution-ShareAlike 2.5"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://creativecommons.org/licenses/by-sa/2.5/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
@@ -527,7 +507,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Attribution-ShareAlike 2.5"
+                        "Creative Commons Attribution-ShareAlike 2.5",
+                        "CC-BY-SA-2.5"
                     ],
                     "__impliedComments": [
                         [

@@ -5,11 +5,11 @@ Zope Public License 2.1 (ZPL-2.1)
 
 **Other Names:**
 
--   `Zope Public License (ZPL) Version 2.1`
-
 -   `scancode://zpl-2.1`
 
 -   `ZPL 2.1`
+
+-   `Zope Public License (ZPL) Version 2.1`
 
 Description
 -----------
@@ -111,8 +111,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/ZPL-2.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -136,10 +134,10 @@ Raw Data
     {
         "__impliedNames": [
             "ZPL-2.1",
-            "Zope Public License (ZPL) Version 2.1",
             "Zope Public License 2.1",
             "scancode://zpl-2.1",
-            "ZPL 2.1"
+            "ZPL 2.1",
+            "Zope Public License (ZPL) Version 2.1"
         ],
         "__impliedId": "ZPL-2.1",
         "__impliedComments": [
@@ -256,24 +254,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "ZPL-2.1",
-                        "Zope Public License (ZPL) Version 2.1"
-                    ],
-                    "__impliedId": "ZPL-2.1"
-                },
-                "oName": "ZPL-2.1",
-                "oOtherLicenseIds": [
-                    "Zope Public License (ZPL) Version 2.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "http://old.zope.org/Resources/License/ZPL-2.1",
@@ -400,7 +380,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Zope Public License (ZPL) Version 2.1"
+                        "Zope Public License (ZPL) Version 2.1",
+                        "ZPL-2.1"
                     ],
                     "__impliedComments": [
                         [

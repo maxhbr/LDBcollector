@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="143.39,-748 143.39,-854 399.87,-854 399.87,-748 143.39,-748"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-748 135.59,-854 407.67,-854 407.67,-748 135.59,-748"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-520 135.59,-626 407.67,-626 407.67,-520 135.59,-520"/>
+<polygon fill="lightgray" stroke="lightgray" points="95.29,-466 95.29,-626 447.96,-626 447.96,-466 95.29,-466"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="95.29,-352 95.29,-512 447.96,-512 447.96,-352 95.29,-352"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 527.26,-458 527.26,-298 16,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-344 527.26,-344 527.26,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-130 135.59,-290 407.67,-290 407.67,-130 135.59,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 407.67,-176 407.67,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="143.39,-16 143.39,-122 399.87,-122 399.87,-16 143.39,-16"/>
 </g>
 <!-- Intel(1) -->
 <g id="node1" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-828" rx="30.59" ry="18"/>
 <text text-anchor="middle" x="271.63" y="-824.3" font-family="Times-Roman" font-size="14.00">Intel</text>
 </g>
-<!-- Intel License Agreement(2) -->
+<!-- Intel Open Source License(2) -->
 <g id="node3" class="node">
-<title>Intel License Agreement(2)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-774" rx="120.48" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-770.3" font-family="Times-Roman" font-size="14.00">Intel License Agreement</text>
+<title>Intel Open Source License(2)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-774" rx="128.08" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-770.3" font-family="Times-Roman" font-size="14.00">Intel Open Source License</text>
 </g>
 <!-- Intel(3) -->
 <g id="node4" class="node">
@@ -77,65 +77,65 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-600" rx="30.59" ry="18"/>
 <text text-anchor="middle" x="271.63" y="-596.3" font-family="Times-Roman" font-size="14.00">Intel</text>
 </g>
-<!-- Intel Open Source License(4) -->
+<!-- Intel BSD &#45; Export Control(4) -->
 <g id="node7" class="node">
-<title>Intel Open Source License(4)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-546" rx="128.08" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-542.3" font-family="Times-Roman" font-size="14.00">Intel Open Source License</text>
+<title>Intel BSD &#45; Export Control(4)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-546" rx="126.18" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-542.3" font-family="Times-Roman" font-size="14.00">Intel BSD &#45; Export Control</text>
+</g>
+<!-- scancode://intel&#45;bsd&#45;export&#45;control(4) -->
+<g id="node8" class="node">
+<title>scancode://intel&#45;bsd&#45;export&#45;control(4)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-492" rx="168.17" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-488.3" font-family="Times-Roman" font-size="14.00">scancode://intel&#45;bsd&#45;export&#45;control</text>
 </g>
 <!-- Intel(5) -->
-<g id="node8" class="node">
-<title>Intel(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-486" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-482.3" font-family="Times-Roman" font-size="14.00">Intel</text>
-</g>
-<!-- Intel BSD &#45; Export Control(5) -->
 <g id="node9" class="node">
-<title>Intel BSD &#45; Export Control(5)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-432" rx="126.18" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-428.3" font-family="Times-Roman" font-size="14.00">Intel BSD &#45; Export Control</text>
+<title>Intel(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-432" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-428.3" font-family="Times-Roman" font-size="14.00">Intel</text>
 </g>
-<!-- scancode://intel&#45;bsd&#45;export&#45;control(5) -->
+<!-- License :: OSI Approved :: Intel Open Source License(5) -->
 <g id="node10" class="node">
-<title>scancode://intel&#45;bsd&#45;export&#45;control(5)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-378" rx="168.17" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-374.3" font-family="Times-Roman" font-size="14.00">scancode://intel&#45;bsd&#45;export&#45;control</text>
+<title>License :: OSI Approved :: Intel Open Source License(5)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-378" rx="247.76" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-374.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Intel Open Source License</text>
+</g>
+<!-- The Intel Open Source License(5) -->
+<g id="node11" class="node">
+<title>The Intel Open Source License(5)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-324" rx="147.57" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-320.3" font-family="Times-Roman" font-size="14.00">The Intel Open Source License</text>
 </g>
 <!-- Intel(6) -->
-<g id="node11" class="node">
-<title>Intel(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-318" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-314.3" font-family="Times-Roman" font-size="14.00">Intel</text>
-</g>
-<!-- License :: OSI Approved :: Intel Open Source License(6) -->
 <g id="node12" class="node">
-<title>License :: OSI Approved :: Intel Open Source License(6)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-264" rx="247.76" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-260.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Intel Open Source License</text>
+<title>Intel(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-264" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-260.3" font-family="Times-Roman" font-size="14.00">Intel</text>
 </g>
-<!-- The Intel Open Source License(6) -->
+<!-- Intel Open Source License(6) -->
 <g id="node13" class="node">
-<title>The Intel Open Source License(6)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-210" rx="147.57" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-206.3" font-family="Times-Roman" font-size="14.00">The Intel Open Source License</text>
+<title>Intel Open Source License(6)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-210" rx="128.08" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-206.3" font-family="Times-Roman" font-size="14.00">Intel Open Source License</text>
+</g>
+<!-- intel&#45;osl(6) -->
+<g id="node14" class="node">
+<title>intel&#45;osl(6)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-156" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-152.3" font-family="Times-Roman" font-size="14.00">intel&#45;osl</text>
 </g>
 <!-- Intel(7) -->
-<g id="node14" class="node">
-<title>Intel(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-150" rx="30.59" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-146.3" font-family="Times-Roman" font-size="14.00">Intel</text>
-</g>
-<!-- Intel Open Source License(7) -->
 <g id="node15" class="node">
-<title>Intel Open Source License(7)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-96" rx="128.08" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-92.3" font-family="Times-Roman" font-size="14.00">Intel Open Source License</text>
+<title>Intel(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="271.63" cy="-96" rx="30.59" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-92.3" font-family="Times-Roman" font-size="14.00">Intel</text>
 </g>
-<!-- intel&#45;osl(7) -->
+<!-- Intel License Agreement(7) -->
 <g id="node16" class="node">
-<title>intel&#45;osl(7)</title>
-<ellipse fill="white" stroke="white" cx="271.63" cy="-42" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="271.63" y="-38.3" font-family="Times-Roman" font-size="14.00">intel&#45;osl</text>
+<title>Intel License Agreement(7)</title>
+<ellipse fill="white" stroke="white" cx="271.63" cy="-42" rx="120.48" ry="18"/>
+<text text-anchor="middle" x="271.63" y="-38.3" font-family="Times-Roman" font-size="14.00">Intel License Agreement</text>
 </g>
 </g>
 </svg>

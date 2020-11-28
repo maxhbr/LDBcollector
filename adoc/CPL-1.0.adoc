@@ -12,12 +12,12 @@
 
 *Other Names:*
 
-* `+Common Public License Version 1.0+`
 * `+scancode://cpl-1.0+`
 * `+CPL 1.0+`
 * `+Common Public License, Version 1.0+`
 * `+CPL+`
 * `+License :: OSI Approved :: Common Public License+`
+* `+Common Public License Version 1.0+`
 
 === Description
 
@@ -178,7 +178,6 @@ This Agreement is governed by the laws of the State of New York and the intellec
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/CPL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -203,13 +202,13 @@ Policy]
 {
     "__impliedNames": [
         "CPL-1.0",
-        "Common Public License Version 1.0",
         "Common Public License 1.0",
         "scancode://cpl-1.0",
         "CPL 1.0",
         "Common Public License, Version 1.0",
         "CPL",
-        "License :: OSI Approved :: Common Public License"
+        "License :: OSI Approved :: Common Public License",
+        "Common Public License Version 1.0"
     ],
     "__impliedId": "CPL-1.0",
     "__impliedAmbiguousNames": [
@@ -389,24 +388,6 @@ Policy]
             },
             "Comment": null,
             "LicenseId": "CPL-1.0"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "CPL-1.0",
-                    "Common Public License Version 1.0"
-                ],
-                "__impliedId": "CPL-1.0"
-            },
-            "oName": "CPL-1.0",
-            "oOtherLicenseIds": [
-                "Common Public License Version 1.0"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -830,7 +811,8 @@ Policy]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Common Public License Version 1.0"
+                    "Common Public License Version 1.0",
+                    "CPL-1.0"
                 ],
                 "__impliedComments": [
                     [

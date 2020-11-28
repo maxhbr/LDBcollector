@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "AFL-2.1",
-        "Academic Free License Version 2.1",
         "Academic Free License v2.1",
         "scancode://afl-2.1",
-        "AFL 2.1"
+        "AFL 2.1",
+        "Academic Free License Version 2.1"
     ],
     "__impliedId": "AFL-2.1",
     "__impliedComments": [
@@ -124,24 +124,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "AFL-2.1",
-                    "Academic Free License Version 2.1"
-                ],
-                "__impliedId": "AFL-2.1"
-            },
-            "oName": "AFL-2.1",
-            "oOtherLicenseIds": [
-                "Academic Free License Version 2.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -341,7 +323,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Academic Free License Version 2.1"
+                    "Academic Free License Version 2.1",
+                    "AFL-2.1"
                 ],
                 "__impliedComments": [
                     [

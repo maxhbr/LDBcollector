@@ -5,9 +5,9 @@ GL2PS License (GL2PS)
 
 **Other Names:**
 
--   `GL2PS LICENSE, Version 2`
-
 -   `scancode://gl2ps`
+
+-   `GL2PS LICENSE, Version 2`
 
 Comments on (easy) usability
 ----------------------------
@@ -62,8 +62,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -83,9 +81,9 @@ Raw Data
     {
         "__impliedNames": [
             "GL2PS",
-            "GL2PS LICENSE, Version 2",
             "GL2PS License",
-            "scancode://gl2ps"
+            "scancode://gl2ps",
+            "GL2PS LICENSE, Version 2"
         ],
         "__impliedId": "GL2PS",
         "__isFsfFree": true,
@@ -204,24 +202,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "GL2PS",
-                        "GL2PS LICENSE, Version 2"
-                    ],
-                    "__impliedId": "GL2PS"
-                },
-                "oName": "GL2PS",
-                "oOtherLicenseIds": [
-                    "GL2PS LICENSE, Version 2"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -333,7 +313,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "GL2PS LICENSE, Version 2"
+                        "GL2PS LICENSE, Version 2",
+                        "GL2PS"
                     ],
                     "__impliedComments": [
                         [

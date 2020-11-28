@@ -5,11 +5,11 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 **Other Names:**
 
--   `The bzip2 license`
-
 -   `scancode://bzip2-libbzip-2010`
 
 -   `bzip2 License 2010`
+
+-   `The bzip2 license`
 
 Comments on (easy) usability
 ----------------------------
@@ -87,8 +87,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -108,10 +106,10 @@ Raw Data
     {
         "__impliedNames": [
             "bzip2-1.0.6",
-            "The bzip2 license",
             "bzip2 and libbzip2 License v1.0.6",
             "scancode://bzip2-libbzip-2010",
-            "bzip2 License 2010"
+            "bzip2 License 2010",
+            "The bzip2 license"
         ],
         "__impliedId": "bzip2-1.0.6",
         "__impliedComments": [
@@ -232,24 +230,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "bzip2-1.0.6",
-                        "The bzip2 license"
-                    ],
-                    "__impliedId": "bzip2-1.0.6"
-                },
-                "oName": "bzip2-1.0.6",
-                "oOtherLicenseIds": [
-                    "The bzip2 license"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -358,7 +338,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "The bzip2 license"
+                        "The bzip2 license",
+                        "bzip2-1.0.6"
                     ],
                     "__impliedComments": [
                         [

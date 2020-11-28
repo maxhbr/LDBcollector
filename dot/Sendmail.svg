@@ -19,23 +19,23 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-526 16,-632 369.97,-632 369.97,-526 16,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="95.94,-526 95.94,-632 290.03,-632 290.03,-526 95.94,-526"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 369.97,-518 369.97,-412 16,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="82.29,-358 82.29,-518 303.68,-518 303.68,-358 82.29,-358"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 369.97,-404 369.97,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 369.97,-350 369.97,-244 16,-244"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="95.94,-184 95.94,-290 290.03,-290 290.03,-184 95.94,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 369.97,-236 369.97,-130 16,-130"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="82.29,-16 82.29,-176 303.68,-176 303.68,-16 82.29,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 369.97,-122 369.97,-16 16,-16"/>
 </g>
 <!-- Sendmail(1) -->
 <g id="node1" class="node">
@@ -43,71 +43,71 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-666" rx="52.79" ry="18"/>
 <text text-anchor="middle" x="192.99" y="-662.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
 </g>
-<!-- SENDMAIL LICENSE (version 1998)(2) -->
-<g id="node2" class="node">
-<title>SENDMAIL LICENSE (version 1998)(2)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-606" rx="168.97" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-602.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 1998)</text>
-</g>
 <!-- Sendmail(2) -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>Sendmail(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-552" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-548.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-606" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-602.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
 </g>
-<!-- SENDMAIL LICENSE (version 2004)(3) -->
-<g id="node4" class="node">
-<title>SENDMAIL LICENSE (version 2004)(3)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-492" rx="168.97" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-488.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 2004)</text>
+<!-- Sendmail License(2) -->
+<g id="node3" class="node">
+<title>Sendmail License(2)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-552" rx="89.08" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-548.3" font-family="Times-Roman" font-size="14.00">Sendmail License</text>
 </g>
 <!-- Sendmail(3) -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>Sendmail(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-438" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-434.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-492" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-488.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
 </g>
-<!-- SENDMAIL LICENSE (version 2012)(4) -->
+<!-- Sendmail License(3) -->
+<g id="node5" class="node">
+<title>Sendmail License(3)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-438" rx="89.08" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-434.3" font-family="Times-Roman" font-size="14.00">Sendmail License</text>
+</g>
+<!-- scancode://sendmail(3) -->
 <g id="node6" class="node">
-<title>SENDMAIL LICENSE (version 2012)(4)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-378" rx="168.97" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-374.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 2012)</text>
+<title>scancode://sendmail(3)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-384" rx="102.88" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://sendmail</text>
+</g>
+<!-- SENDMAIL LICENSE (version 2004)(4) -->
+<g id="node7" class="node">
+<title>SENDMAIL LICENSE (version 2004)(4)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-324" rx="168.97" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-320.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 2004)</text>
 </g>
 <!-- Sendmail(4) -->
-<g id="node7" class="node">
+<g id="node8" class="node">
 <title>Sendmail(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-324" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-320.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-270" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-266.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
+</g>
+<!-- SENDMAIL LICENSE (version 2012)(5) -->
+<g id="node9" class="node">
+<title>SENDMAIL LICENSE (version 2012)(5)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-210" rx="168.97" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-206.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 2012)</text>
 </g>
 <!-- Sendmail(5) -->
-<g id="node8" class="node">
+<g id="node10" class="node">
 <title>Sendmail(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-264" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-260.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-156" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-152.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
 </g>
-<!-- Sendmail License(5) -->
-<g id="node9" class="node">
-<title>Sendmail License(5)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-210" rx="89.08" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-206.3" font-family="Times-Roman" font-size="14.00">Sendmail License</text>
+<!-- SENDMAIL LICENSE (version 1998)(6) -->
+<g id="node11" class="node">
+<title>SENDMAIL LICENSE (version 1998)(6)</title>
+<ellipse fill="white" stroke="white" cx="192.99" cy="-96" rx="168.97" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-92.3" font-family="Times-Roman" font-size="14.00">SENDMAIL LICENSE (version 1998)</text>
 </g>
 <!-- Sendmail(6) -->
-<g id="node10" class="node">
-<title>Sendmail(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-150" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-146.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
-</g>
-<!-- Sendmail License(6) -->
-<g id="node11" class="node">
-<title>Sendmail License(6)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-96" rx="89.08" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-92.3" font-family="Times-Roman" font-size="14.00">Sendmail License</text>
-</g>
-<!-- scancode://sendmail(6) -->
 <g id="node12" class="node">
-<title>scancode://sendmail(6)</title>
-<ellipse fill="white" stroke="white" cx="192.99" cy="-42" rx="102.88" ry="18"/>
-<text text-anchor="middle" x="192.99" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://sendmail</text>
+<title>Sendmail(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="192.99" cy="-42" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="192.99" y="-38.3" font-family="Times-Roman" font-size="14.00">Sendmail</text>
 </g>
 </g>
 </svg>

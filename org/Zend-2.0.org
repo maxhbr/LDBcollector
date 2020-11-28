@@ -1,4 +1,4 @@
-* Zend License v2.0 ( Zend-2.0)
+* Zend License v2.0 (Zend-2.0)
 
 | Key              | Value                             |
 |------------------+-----------------------------------|
@@ -9,13 +9,13 @@
 
 *Other Names:*
 
-- =Zend-2.0=
-
-- =Zend Engine License, Version 2.00=
-
 - =scancode://zend-2.0=
 
 - =Zend Engine License 2.0=
+
+- =Zend Engine License, Version 2.00=
+
+- = Zend-2.0=
 
 ** Description
 
@@ -127,8 +127,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/Zend-2.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -155,13 +153,13 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "Zend-2.0",
-          " Zend-2.0",
-          "Zend Engine License, Version 2.00",
           "Zend License v2.0",
           "scancode://zend-2.0",
-          "Zend Engine License 2.0"
+          "Zend Engine License 2.0",
+          "Zend Engine License, Version 2.00",
+          " Zend-2.0"
       ],
-      "__impliedId": " Zend-2.0",
+      "__impliedId": "Zend-2.0",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "Zend"
@@ -280,24 +278,6 @@ open-license]] (CDLA-Permissive-1.0))
                   ]
               }
           },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      " Zend-2.0",
-                      "Zend Engine License, Version 2.00"
-                  ],
-                  "__impliedId": " Zend-2.0"
-              },
-              "oName": " Zend-2.0",
-              "oOtherLicenseIds": [
-                  "Zend Engine License, Version 2.00"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
-          },
           "Hitachi open-license": {
               "summary": "http://www.zend.com/license/2_00.txt",
               "notices": [
@@ -410,7 +390,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "Zend Engine License, Version 2.00"
+                      "Zend Engine License, Version 2.00",
+                      " Zend-2.0"
                   ],
                   "__impliedComments": [
                       [
@@ -559,4 +540,4 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Dot Cluster Graph
 
-[[../dot/ Zend-2.0.svg][../dot/ Zend-2.0.svg]]
+[[../dot/Zend-2.0.svg]]

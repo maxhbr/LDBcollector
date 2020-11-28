@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="23.15,-700 23.15,-806 400.52,-806 400.52,-700 23.15,-700"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-700 16,-806 407.67,-806 407.67,-700 16,-700"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,23 +27,23 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-472 16,-578 407.67,-578 407.67,-472 16,-472"/>
+<polygon fill="lightgray" stroke="lightgray" points="108.29,-472 108.29,-578 315.37,-578 315.37,-472 108.29,-472"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="108.29,-358 108.29,-464 315.37,-464 315.37,-358 108.29,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="156.39,-358 156.39,-464 267.28,-464 267.28,-358 156.39,-358"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="156.39,-244 156.39,-350 267.28,-350 267.28,-244 156.39,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="66.7,-244 66.7,-350 356.97,-350 356.97,-244 66.7,-244"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="66.7,-130 66.7,-236 356.97,-236 356.97,-130 66.7,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="156.39,-130 156.39,-236 267.28,-236 267.28,-130 156.39,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="156.39,-16 156.39,-122 267.28,-122 267.28,-16 156.39,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="23.15,-16 23.15,-122 400.52,-122 400.52,-16 23.15,-16"/>
 </g>
 <!-- CC0&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -57,11 +57,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-780" rx="47.39" ry="18"/>
 <text text-anchor="middle" x="211.83" y="-776.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
 </g>
-<!-- Creative Commons CC0 1.0 Universal(2) -->
+<!-- Creative Commons Zero v1.0 Universal(2) -->
 <g id="node3" class="node">
-<title>Creative Commons CC0 1.0 Universal(2)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-726" rx="180.87" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-722.3" font-family="Times-Roman" font-size="14.00">Creative Commons CC0 1.0 Universal</text>
+<title>Creative Commons Zero v1.0 Universal(2)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-726" rx="187.67" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-722.3" font-family="Times-Roman" font-size="14.00">Creative Commons Zero v1.0 Universal</text>
 </g>
 <!-- CC0&#45;1.0(3) -->
 <g id="node4" class="node">
@@ -81,11 +81,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-552" rx="47.39" ry="18"/>
 <text text-anchor="middle" x="211.83" y="-548.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
 </g>
-<!-- Creative Commons Zero v1.0 Universal(4) -->
+<!-- scancode://cc0&#45;1.0(4) -->
 <g id="node7" class="node">
-<title>Creative Commons Zero v1.0 Universal(4)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-498" rx="187.67" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-494.3" font-family="Times-Roman" font-size="14.00">Creative Commons Zero v1.0 Universal</text>
+<title>scancode://cc0&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-498" rx="95.58" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-494.3" font-family="Times-Roman" font-size="14.00">scancode://cc0&#45;1.0</text>
 </g>
 <!-- CC0&#45;1.0(5) -->
 <g id="node8" class="node">
@@ -93,11 +93,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-438" rx="47.39" ry="18"/>
 <text text-anchor="middle" x="211.83" y="-434.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
 </g>
-<!-- scancode://cc0&#45;1.0(5) -->
+<!-- cc0&#45;1.0(5) -->
 <g id="node9" class="node">
-<title>scancode://cc0&#45;1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-384" rx="95.58" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://cc0&#45;1.0</text>
+<title>cc0&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-384" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-380.3" font-family="Times-Roman" font-size="14.00">cc0&#45;1.0</text>
 </g>
 <!-- CC0&#45;1.0(6) -->
 <g id="node10" class="node">
@@ -105,35 +105,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-324" rx="47.39" ry="18"/>
 <text text-anchor="middle" x="211.83" y="-320.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
 </g>
-<!-- cc0&#45;1.0(6) -->
+<!-- Creative Commons Zero 1.0(6) -->
 <g id="node11" class="node">
-<title>cc0&#45;1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-270" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-266.3" font-family="Times-Roman" font-size="14.00">cc0&#45;1.0</text>
+<title>Creative Commons Zero 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-270" rx="137.28" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Zero 1.0</text>
+</g>
+<!-- CC0 1.0(7) -->
+<g id="node12" class="node">
+<title>CC0 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-210" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-206.3" font-family="Times-Roman" font-size="14.00">CC0 1.0</text>
 </g>
 <!-- CC0&#45;1.0(7) -->
-<g id="node12" class="node">
-<title>CC0&#45;1.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-210" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-206.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
-</g>
-<!-- Creative Commons Zero 1.0(7) -->
 <g id="node13" class="node">
-<title>Creative Commons Zero 1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-156" rx="137.28" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-152.3" font-family="Times-Roman" font-size="14.00">Creative Commons Zero 1.0</text>
-</g>
-<!-- CC0 1.0(8) -->
-<g id="node14" class="node">
-<title>CC0 1.0(8)</title>
-<ellipse fill="white" stroke="white" cx="211.83" cy="-96" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-92.3" font-family="Times-Roman" font-size="14.00">CC0 1.0</text>
+<title>CC0&#45;1.0(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-156" rx="47.39" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-152.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
 </g>
 <!-- CC0&#45;1.0(8) -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>CC0&#45;1.0(8)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-42" rx="47.39" ry="18"/>
-<text text-anchor="middle" x="211.83" y="-38.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="211.83" cy="-96" rx="47.39" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-92.3" font-family="Times-Roman" font-size="14.00">CC0&#45;1.0</text>
+</g>
+<!-- Creative Commons CC0 1.0 Universal(8) -->
+<g id="node15" class="node">
+<title>Creative Commons CC0 1.0 Universal(8)</title>
+<ellipse fill="white" stroke="white" cx="211.83" cy="-42" rx="180.87" ry="18"/>
+<text text-anchor="middle" x="211.83" y="-38.3" font-family="Times-Roman" font-size="14.00">Creative Commons CC0 1.0 Universal</text>
 </g>
 </g>
 </svg>

@@ -9,8 +9,6 @@ Boost Software License 1.0 (BSL-1.0)
 
 -   `BSL (v1)`
 
--   `Boost Software License - Version 1.0`
-
 -   `scancode://boost-1.0`
 
 -   `Boost 1.0`
@@ -18,6 +16,8 @@ Boost Software License 1.0 (BSL-1.0)
 -   `Boost Software License 1.0 (BSL-1.0)`
 
 -   `bsl1.0`
+
+-   `Boost Software License - Version 1.0`
 
 Description
 -----------
@@ -121,8 +121,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/BSL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -167,13 +165,13 @@ Raw Data
             "BSL-1.0",
             "BSL (v1.0)",
             "BSL (v1)",
-            "Boost Software License - Version 1.0",
             "Boost Software License 1.0",
             "scancode://boost-1.0",
             "Boost 1.0",
             "bsl-1.0",
             "Boost Software License 1.0 (BSL-1.0)",
-            "bsl1.0"
+            "bsl1.0",
+            "Boost Software License - Version 1.0"
         ],
         "__impliedId": "BSL-1.0",
         "__impliedComments": [
@@ -489,7 +487,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Boost Software License - Version 1.0"
+                        "Boost Software License - Version 1.0",
+                        "BSL-1.0"
                     ],
                     "__impliedComments": [
                         [

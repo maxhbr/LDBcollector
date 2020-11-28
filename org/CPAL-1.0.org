@@ -9,8 +9,6 @@
 
 *Other Names:*
 
-- =Common Public Attribution License Version 1.0=
-
 - =scancode://cpal-1.0=
 
 - =CPAL 1.0=
@@ -18,6 +16,8 @@
 - =Common Public Attribution License Version 1.0 (CPAL-1.0)=
 
 - =cpal_1.0=
+
+- =Common Public Attribution License Version 1.0=
 
 ** Description
 
@@ -247,8 +247,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/CPAL-1.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -284,12 +282,12 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "CPAL-1.0",
-          "Common Public Attribution License Version 1.0",
           "Common Public Attribution License 1.0",
           "scancode://cpal-1.0",
           "CPAL 1.0",
           "Common Public Attribution License Version 1.0 (CPAL-1.0)",
-          "cpal_1.0"
+          "cpal_1.0",
+          "Common Public Attribution License Version 1.0"
       ],
       "__impliedId": "CPAL-1.0",
       "__impliedAmbiguousNames": [
@@ -495,24 +493,6 @@ open-license]] (CDLA-Permissive-1.0))
               },
               "Comment": "Issue: Badgeware license (see: https://lwn.net/Articles/243841/)",
               "LicenseId": "CPAL-1.0"
-          },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "CPAL-1.0",
-                      "Common Public Attribution License Version 1.0"
-                  ],
-                  "__impliedId": "CPAL-1.0"
-              },
-              "oName": "CPAL-1.0",
-              "oOtherLicenseIds": [
-                  "Common Public Attribution License Version 1.0"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
           },
           "Hitachi open-license": {
               "summary": "https://opensource.org/licenses/CPAL-1.0",
@@ -929,7 +909,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "Common Public Attribution License Version 1.0"
+                      "Common Public Attribution License Version 1.0",
+                      "CPAL-1.0"
                   ],
                   "__impliedComments": [
                       [

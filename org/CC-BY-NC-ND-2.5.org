@@ -10,9 +10,9 @@
 
 *Other Names:*
 
-- =Creative Commons Attribution-NoDerivs 2.5 Generic=
-
 - =scancode://cc-by-nc-nd-2.5=
+
+- =Creative Commons Attribution-NoDerivs 2.5 Generic=
 
 ** Description
 
@@ -169,8 +169,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - Override
 
-- Override
-
 - [[https://spdx.org/licenses/CC-BY-NC-ND-2.5.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -193,9 +191,9 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "CC-BY-NC-ND-2.5",
-          "Creative Commons Attribution-NoDerivs 2.5 Generic",
           "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-          "scancode://cc-by-nc-nd-2.5"
+          "scancode://cc-by-nc-nd-2.5",
+          "Creative Commons Attribution-NoDerivs 2.5 Generic"
       ],
       "__impliedId": "CC-BY-NC-ND-2.5",
       "__impliedAmbiguousNames": [
@@ -474,7 +472,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "Creative Commons Attribution-NoDerivs 2.5 Generic"
+                      "Creative Commons Attribution-NoDerivs 2.5 Generic",
+                      "CC-BY-NC-ND-2.5"
                   ],
                   "__impliedComments": [
                       [

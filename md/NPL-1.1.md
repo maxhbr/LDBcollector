@@ -5,13 +5,13 @@ Netscape Public License v1.1 (NPL-1.1)
 
 **Other Names:**
 
--   `Netscape Public License Version 1.1`
-
 -   `scancode://npl-1.1`
 
 -   `NPL 1.1`
 
 -   `Netscape Public License 1.1`
+
+-   `Netscape Public License Version 1.1`
 
 Description
 -----------
@@ -157,8 +157,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/NPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -181,11 +179,11 @@ Raw Data
     {
         "__impliedNames": [
             "NPL-1.1",
-            "Netscape Public License Version 1.1",
             "Netscape Public License v1.1",
             "scancode://npl-1.1",
             "NPL 1.1",
-            "Netscape Public License 1.1"
+            "Netscape Public License 1.1",
+            "Netscape Public License Version 1.1"
         ],
         "__impliedId": "NPL-1.1",
         "__impliedComments": [
@@ -285,24 +283,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "NPL-1.1",
-                        "Netscape Public License Version 1.1"
-                    ],
-                    "__impliedId": "NPL-1.1"
-                },
-                "oName": "NPL-1.1",
-                "oOtherLicenseIds": [
-                    "Netscape Public License Version 1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "Mozilla Public License Version 1.1 with the Amendments, including Exhibit A-Netscape Public Licensehttp://website-archive.mozilla.org/www. mozilla.org/mpl/MPL/NPL/1.1/",
@@ -713,7 +693,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Netscape Public License Version 1.1"
+                        "Netscape Public License Version 1.1",
+                        "NPL-1.1"
                     ],
                     "__impliedComments": [
                         [

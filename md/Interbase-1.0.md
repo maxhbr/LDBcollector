@@ -5,13 +5,13 @@ Interbase Public License v1.0 (Interbase-1.0)
 
 **Other Names:**
 
--   `INTERBASE PUBLIC LICENSE, Version 1.0 by "Borland Software Corporation"`
-
--   `InterBase Public License, Version 1.0`
-
 -   `scancode://interbase-1.0`
 
 -   `Interbase Public License 1.0`
+
+-   `InterBase Public License, Version 1.0`
+
+-   `INTERBASE PUBLIC LICENSE, Version 1.0 by "Borland Software Corporation"`
 
 Description
 -----------
@@ -289,10 +289,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Interbase-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -312,11 +308,11 @@ Raw Data
     {
         "__impliedNames": [
             "Interbase-1.0",
-            "INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\"",
-            "InterBase Public License, Version 1.0",
             "Interbase Public License v1.0",
             "scancode://interbase-1.0",
-            "Interbase Public License 1.0"
+            "Interbase Public License 1.0",
+            "InterBase Public License, Version 1.0",
+            "INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\""
         ],
         "__impliedId": "Interbase-1.0",
         "__impliedComments": [
@@ -410,24 +406,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Interbase-1.0",
-                        "INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\""
-                    ],
-                    "__impliedId": "Interbase-1.0"
-                },
-                "oName": "Interbase-1.0",
-                "oOtherLicenseIds": [
-                    "INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\""
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "http://www.firebirdsql.org/en/interbase-public-license/",
@@ -859,7 +837,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "InterBase Public License, Version 1.0"
+                        "InterBase Public License, Version 1.0",
+                        "Interbase-1.0"
                     ],
                     "__impliedComments": [
                         [

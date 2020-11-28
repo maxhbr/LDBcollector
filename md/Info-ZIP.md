@@ -5,13 +5,13 @@ Info-ZIP License (Info-ZIP)
 
 **Other Names:**
 
--   `Info-ZIP copyright and license (version 2005-Feb-10)`
-
--   `Info-ZIP license (Version 2007-Mar-04)`
+-   `scancode://info-zip`
 
 -   `Info-ZIP license (version 2009-Jan-02)`
 
--   `scancode://info-zip`
+-   `Info-ZIP copyright and license (version 2005-Feb-10)`
+
+-   `Info-ZIP license (Version 2007-Mar-04)`
 
 Description
 -----------
@@ -93,12 +93,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
--   Override
-
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Info-ZIP.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -126,12 +120,12 @@ Raw Data
     {
         "__impliedNames": [
             "Info-ZIP",
-            "Info-ZIP copyright and license (version 2005-Feb-10)",
-            "Info-ZIP license (Version 2007-Mar-04)",
-            "Info-ZIP license (version 2009-Jan-02)",
             "Info-ZIP License",
             "scancode://info-zip",
-            "Info-Zip License"
+            "Info-Zip License",
+            "Info-ZIP license (version 2009-Jan-02)",
+            "Info-ZIP copyright and license (version 2005-Feb-10)",
+            "Info-ZIP license (Version 2007-Mar-04)"
         ],
         "__impliedId": "Info-ZIP",
         "__impliedComments": [
@@ -219,24 +213,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Info-ZIP",
-                        "Info-ZIP copyright and license (version 2005-Feb-10)"
-                    ],
-                    "__impliedId": "Info-ZIP"
-                },
-                "oName": "Info-ZIP",
-                "oOtherLicenseIds": [
-                    "Info-ZIP copyright and license (version 2005-Feb-10)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "This applies to all source code from http://www.info-zip.org/pub/infozip/license.htmlæç¤ºããã¦ãããã®ãé¤ã, Zip 2.3 or later, UnZip 5.41 or later, WiZ 5.0 or later, and MacZip 1.05 or later.",
                 "notices": [],
@@ -246,7 +222,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "Info-ZIP license (version 2009-Jan-02)"
+                        "Info-ZIP license (version 2009-Jan-02)",
+                        "Info-ZIP"
                     ],
                     "__impliedComments": [
                         [

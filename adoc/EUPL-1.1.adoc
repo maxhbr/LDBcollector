@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+European Union Public Licence, v.1.1+`
 * `+scancode://eupl-1.1+`
 * `+EUPL 1.1+`
 * `+European Union Public License, Version 1.1+`
 * `+License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)+`
+* `+European Union Public Licence, v.1.1+`
 
 === Description
 
@@ -380,7 +380,6 @@ registered office inside a European Union country.
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/EUPL-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -411,13 +410,13 @@ Knowledge International]
 {
     "__impliedNames": [
         "EUPL-1.1",
-        "European Union Public Licence, v.1.1",
         "European Union Public License 1.1",
         "scancode://eupl-1.1",
         "EUPL 1.1",
         "eupl-1.1",
         "European Union Public License, Version 1.1",
-        "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
+        "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)",
+        "European Union Public Licence, v.1.1"
     ],
     "__impliedId": "EUPL-1.1",
     "__isFsfFree": true,
@@ -655,24 +654,6 @@ Knowledge International]
                     "EUPL-1.1"
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "EUPL-1.1",
-                    "European Union Public Licence, v.1.1"
-                ],
-                "__impliedId": "EUPL-1.1"
-            },
-            "oName": "EUPL-1.1",
-            "oOtherLicenseIds": [
-                "European Union Public Licence, v.1.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -985,7 +966,8 @@ Knowledge International]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "European Union Public Licence, v.1.1"
+                    "European Union Public Licence, v.1.1",
+                    "EUPL-1.1"
                 ],
                 "__impliedComments": [
                     [

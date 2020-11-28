@@ -12,12 +12,12 @@
 
 *Other Names:*
 
-* `+Mozilla Public License Version 2.0+`
 * `+scancode://mpl-2.0+`
 * `+MPL 2.0+`
 * `+Mozilla Public License, Version 2.0+`
 * `+License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)+`
 * `+mozilla2.0+`
+* `+Mozilla Public License Version 2.0+`
 
 === Description
 
@@ -502,7 +502,6 @@ Exhibit B - "Incompatible With Secondary Licenses" Notice
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/MPL-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -536,14 +535,14 @@ Knowledge International]
 {
     "__impliedNames": [
         "MPL-2.0",
-        "Mozilla Public License Version 2.0",
         "Mozilla Public License 2.0",
         "scancode://mpl-2.0",
         "MPL 2.0",
         "mpl-2.0",
         "Mozilla Public License, Version 2.0",
         "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-        "mozilla2.0"
+        "mozilla2.0",
+        "Mozilla Public License Version 2.0"
     ],
     "__impliedId": "MPL-2.0",
     "__impliedAmbiguousNames": [
@@ -749,24 +748,6 @@ Knowledge International]
             },
             "Comment": null,
             "LicenseId": "MPL-2.0"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "MPL-2.0",
-                    "Mozilla Public License Version 2.0"
-                ],
-                "__impliedId": "MPL-2.0"
-            },
-            "oName": "MPL-2.0",
-            "oOtherLicenseIds": [
-                "Mozilla Public License Version 2.0"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -988,7 +969,8 @@ Knowledge International]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Mozilla Public License Version 2.0"
+                    "Mozilla Public License Version 2.0",
+                    "MPL-2.0"
                 ],
                 "__impliedComments": [
                     [

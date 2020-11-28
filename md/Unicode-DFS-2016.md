@@ -5,11 +5,11 @@ Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
 
 **Other Names:**
 
--   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
-
 -   `scancode://unicode-dfs-2016`
 
 -   `Unicode DFS 2016`
+
+-   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
 
 Comments on (easy) usability
 ----------------------------
@@ -111,8 +111,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Unicode-DFS-2016.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -136,10 +134,10 @@ Raw Data
     {
         "__impliedNames": [
             "Unicode-DFS-2016",
-            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",
             "Unicode License Agreement - Data Files and Software (2016)",
             "scancode://unicode-dfs-2016",
-            "Unicode DFS 2016"
+            "Unicode DFS 2016",
+            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
         ],
         "__impliedId": "Unicode-DFS-2016",
         "__impliedComments": [
@@ -240,24 +238,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Unicode-DFS-2016",
-                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
-                    ],
-                    "__impliedId": "Unicode-DFS-2016"
-                },
-                "oName": "Unicode-DFS-2016",
-                "oOtherLicenseIds": [
-                    "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/314",
@@ -266,7 +246,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
+                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",
+                        "Unicode-DFS-2016"
                     ],
                     "__impliedComments": [
                         [

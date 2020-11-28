@@ -5,13 +5,13 @@ PHP License v3.0 (PHP-3.0)
 
 **Other Names:**
 
--   `PHP License, version 3.0`
-
 -   `scancode://php-3.0`
 
 -   `PHP License 3.0`
 
 -   `The PHP License, Version 3.0`
+
+-   `PHP License, version 3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -140,8 +140,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/PHP-3.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -182,11 +180,11 @@ Raw Data
     {
         "__impliedNames": [
             "PHP-3.0",
-            "PHP License, version 3.0",
             "PHP License v3.0",
             "scancode://php-3.0",
             "PHP License 3.0",
-            "The PHP License, Version 3.0"
+            "The PHP License, Version 3.0",
+            "PHP License, version 3.0"
         ],
         "__impliedId": "PHP-3.0",
         "__isFsfFree": true,
@@ -396,24 +394,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "PHP-3.0",
-                        "PHP License, version 3.0"
-                    ],
-                    "__impliedId": "PHP-3.0"
-                },
-                "oName": "PHP-3.0",
-                "oOtherLicenseIds": [
-                    "PHP License, version 3.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -525,7 +505,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "PHP License, version 3.0"
+                        "PHP License, version 3.0",
+                        "PHP-3.0"
                     ],
                     "__impliedComments": [
                         [

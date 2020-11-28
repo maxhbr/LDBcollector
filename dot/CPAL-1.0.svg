@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="66.7,-694 66.7,-800 525.96,-800 525.96,-694 66.7,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="102.44,-694 102.44,-800 490.21,-800 490.21,-694 102.44,-694"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="102.44,-466 102.44,-572 490.21,-572 490.21,-466 102.44,-466"/>
+<polygon fill="lightgray" stroke="lightgray" points="189.53,-412 189.53,-572 403.12,-572 403.12,-412 189.53,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="189.53,-298 189.53,-458 403.12,-458 403.12,-298 189.53,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 576.65,-404 576.65,-298 16,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 576.65,-290 576.65,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="102.44,-130 102.44,-290 490.21,-290 490.21,-130 102.44,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="102.44,-16 102.44,-176 490.21,-176 490.21,-16 102.44,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="66.7,-16 66.7,-122 525.96,-122 525.96,-16 66.7,-16"/>
 </g>
 <!-- CPAL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-774" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="296.33" y="-770.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
 </g>
-<!-- Common Public Attribution License Version 1.0(2) -->
+<!-- Common Public Attribution License 1.0(2) -->
 <g id="node3" class="node">
-<title>Common Public Attribution License Version 1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-720" rx="221.76" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-716.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License Version 1.0</text>
+<title>Common Public Attribution License 1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-720" rx="185.77" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-716.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License 1.0</text>
 </g>
 <!-- CPAL&#45;1.0(3) -->
 <g id="node4" class="node">
@@ -71,23 +71,23 @@
 <ellipse fill="white" stroke="white" cx="296.33" cy="-606" rx="185.77" ry="18"/>
 <text text-anchor="middle" x="296.33" y="-602.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License 1.0</text>
 </g>
-<!-- CPAL&#45;1.0(4) -->
+<!-- CPAL 1.0(4) -->
 <g id="node6" class="node">
-<title>CPAL&#45;1.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-546" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-542.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
+<title>CPAL 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-546" rx="50.89" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-542.3" font-family="Times-Roman" font-size="14.00">CPAL 1.0</text>
 </g>
-<!-- Common Public Attribution License 1.0(4) -->
+<!-- CPAL&#45;1.0(4) -->
 <g id="node7" class="node">
-<title>Common Public Attribution License 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-492" rx="185.77" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-488.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License 1.0</text>
+<title>CPAL&#45;1.0(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-492" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-488.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
 </g>
-<!-- CPAL 1.0(5) -->
+<!-- scancode://cpal&#45;1.0(4) -->
 <g id="node8" class="node">
-<title>CPAL 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-432" rx="50.89" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-428.3" font-family="Times-Roman" font-size="14.00">CPAL 1.0</text>
+<title>scancode://cpal&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-438" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-434.3" font-family="Times-Roman" font-size="14.00">scancode://cpal&#45;1.0</text>
 </g>
 <!-- CPAL&#45;1.0(5) -->
 <g id="node9" class="node">
@@ -95,11 +95,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-378" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="296.33" y="-374.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
 </g>
-<!-- scancode://cpal&#45;1.0(5) -->
+<!-- Common Public Attribution License Version 1.0 (CPAL&#45;1.0)(5) -->
 <g id="node10" class="node">
-<title>scancode://cpal&#45;1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-324" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://cpal&#45;1.0</text>
+<title>Common Public Attribution License Version 1.0 (CPAL&#45;1.0)(5)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-324" rx="272.15" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-320.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License Version 1.0 (CPAL&#45;1.0)</text>
 </g>
 <!-- CPAL&#45;1.0(6) -->
 <g id="node11" class="node">
@@ -107,29 +107,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-264" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="296.33" y="-260.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
 </g>
-<!-- Common Public Attribution License Version 1.0 (CPAL&#45;1.0)(6) -->
+<!-- Common Public Attribution License 1.0(6) -->
 <g id="node12" class="node">
-<title>Common Public Attribution License Version 1.0 (CPAL&#45;1.0)(6)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-210" rx="272.15" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-206.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License Version 1.0 (CPAL&#45;1.0)</text>
+<title>Common Public Attribution License 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-210" rx="185.77" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-206.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License 1.0</text>
+</g>
+<!-- cpal_1.0(6) -->
+<g id="node13" class="node">
+<title>cpal_1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-156" rx="48.19" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-152.3" font-family="Times-Roman" font-size="14.00">cpal_1.0</text>
 </g>
 <!-- CPAL&#45;1.0(7) -->
-<g id="node13" class="node">
-<title>CPAL&#45;1.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-150" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-146.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
-</g>
-<!-- Common Public Attribution License 1.0(7) -->
 <g id="node14" class="node">
-<title>Common Public Attribution License 1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-96" rx="185.77" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-92.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License 1.0</text>
+<title>CPAL&#45;1.0(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="296.33" cy="-96" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-92.3" font-family="Times-Roman" font-size="14.00">CPAL&#45;1.0</text>
 </g>
-<!-- cpal_1.0(7) -->
+<!-- Common Public Attribution License Version 1.0(7) -->
 <g id="node15" class="node">
-<title>cpal_1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="296.33" cy="-42" rx="48.19" ry="18"/>
-<text text-anchor="middle" x="296.33" y="-38.3" font-family="Times-Roman" font-size="14.00">cpal_1.0</text>
+<title>Common Public Attribution License Version 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="296.33" cy="-42" rx="221.76" ry="18"/>
+<text text-anchor="middle" x="296.33" y="-38.3" font-family="Times-Roman" font-size="14.00">Common Public Attribution License Version 1.0</text>
 </g>
 </g>
 </svg>

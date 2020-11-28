@@ -5,9 +5,9 @@ libpng License (Libpng)
 
 **Other Names:**
 
--   `libpng license (libpng-1.2.6 and later)`
-
 -   `scancode://libpng`
+
+-   `libpng license (libpng-1.2.6 and later)`
 
 Comments on (easy) usability
 ----------------------------
@@ -153,8 +153,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Libpng.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -177,10 +175,10 @@ Raw Data
     {
         "__impliedNames": [
             "Libpng",
-            "libpng license (libpng-1.2.6 and later)",
             "libpng License",
             "scancode://libpng",
-            "Libpng License"
+            "Libpng License",
+            "libpng license (libpng-1.2.6 and later)"
         ],
         "__impliedId": "Libpng",
         "__impliedComments": [
@@ -272,24 +270,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Libpng",
-                        "libpng license (libpng-1.2.6 and later)"
-                    ],
-                    "__impliedId": "Libpng"
-                },
-                "oName": "Libpng",
-                "oOtherLicenseIds": [
-                    "libpng license (libpng-1.2.6 and later)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/307",
@@ -298,7 +278,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "libpng license (libpng-1.2.6 and later)"
+                        "libpng license (libpng-1.2.6 and later)",
+                        "Libpng"
                     ],
                     "__impliedComments": [
                         [

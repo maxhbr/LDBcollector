@@ -9,8 +9,6 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `Artistic License (v. 2.0)`
 
--   `The Artistic License 2.0`
-
 -   `scancode://artistic-2.0`
 
 -   `Artistic License, Version 2.0`
@@ -18,6 +16,8 @@ Artistic License 2.0 (Artistic-2.0)
 -   `License :: OSI Approved :: Artistic License`
 
 -   `artistic-license-2.0`
+
+-   `The Artistic License 2.0`
 
 Description
 -----------
@@ -189,8 +189,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -243,13 +241,13 @@ Raw Data
             "Artistic-2.0",
             "Artistic 2.0",
             "Artistic License (v. 2.0)",
-            "The Artistic License 2.0",
             "Artistic License 2.0",
             "scancode://artistic-2.0",
             "artistic-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
-            "artistic-license-2.0"
+            "artistic-license-2.0",
+            "The Artistic License 2.0"
         ],
         "__impliedId": "Artistic-2.0",
         "__isFsfFree": true,
@@ -676,7 +674,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "The Artistic License 2.0"
+                        "The Artistic License 2.0",
+                        "Artistic-2.0"
                     ],
                     "__impliedComments": [
                         [

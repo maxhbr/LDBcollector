@@ -12,11 +12,11 @@
 *Other Names:*
 
 * `+X11+`
-* `+ICU License (ICU 1.8.1 and later)+`
 * `+X11 License+`
 * `+scancode://x11-xconsortium+`
 * `+X11-Style (X Consortium)+`
 * `+scancode://x11+`
+* `+ICU License (ICU 1.8.1 and later)+`
 
 === Comments on (easy) usability
 
@@ -72,7 +72,6 @@ X Window System is a trademark of X Consortium, Inc.
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/ICU.html[SPDX] (all data [in this
 repository] is generated)
 * https://spdx.org/licenses/X11.html[SPDX] (all data [in this
@@ -95,12 +94,12 @@ repository] is generated)
     "__impliedNames": [
         "X11",
         "ICU",
-        "ICU License (ICU 1.8.1 and later)",
         "ICU License",
         "X11 License",
         "scancode://x11-xconsortium",
         "X11-Style (X Consortium)",
-        "scancode://x11"
+        "scancode://x11",
+        "ICU License (ICU 1.8.1 and later)"
     ],
     "__impliedId": "ICU",
     "__impliedComments": [
@@ -191,24 +190,6 @@ repository] is generated)
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "ICU",
-                    "ICU License (ICU 1.8.1 and later)"
-                ],
-                "__impliedId": "ICU"
-            },
-            "oName": "ICU",
-            "oOtherLicenseIds": [
-                "ICU License (ICU 1.8.1 and later)"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -325,7 +306,8 @@ repository] is generated)
             ],
             "_implications": {
                 "__impliedNames": [
-                    "ICU License (ICU 1.8.1 and later)"
+                    "ICU License (ICU 1.8.1 and later)",
+                    "ICU"
                 ],
                 "__impliedComments": [
                     [

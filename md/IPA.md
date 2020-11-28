@@ -5,11 +5,11 @@ IPA Font License (IPA)
 
 **Other Names:**
 
--   `IPA Font License Agreement v1.0`
-
 -   `scancode://ipa-font`
 
 -   `IPA Font License 1.0`
+
+-   `IPA Font License Agreement v1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -140,8 +140,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/IPA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -171,10 +169,10 @@ Raw Data
     {
         "__impliedNames": [
             "IPA",
-            "IPA Font License Agreement v1.0",
             "IPA Font License",
             "scancode://ipa-font",
-            "IPA Font License 1.0"
+            "IPA Font License 1.0",
+            "IPA Font License Agreement v1.0"
         ],
         "__impliedId": "IPA",
         "__isFsfFree": true,
@@ -372,24 +370,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "IPA",
-                        "IPA Font License Agreement v1.0"
-                    ],
-                    "__impliedId": "IPA"
-                },
-                "oName": "IPA",
-                "oOtherLicenseIds": [
-                    "IPA Font License Agreement v1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/248",
@@ -397,7 +377,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "IPA Font License Agreement v1.0"
+                        "IPA Font License Agreement v1.0",
+                        "IPA"
                     ],
                     "__impliedComments": [
                         [

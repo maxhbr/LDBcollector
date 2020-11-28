@@ -5,9 +5,9 @@ Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic (CC-BY-NC
 
 **Other Names:**
 
--   `Creative Commons Attribution-NoDerivs 2.5 Generic`
-
 -   `scancode://cc-by-nc-nd-2.5`
+
+-   `Creative Commons Attribution-NoDerivs 2.5 Generic`
 
 Description
 -----------
@@ -169,8 +169,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-2.5.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -194,9 +192,9 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-NC-ND-2.5",
-            "Creative Commons Attribution-NoDerivs 2.5 Generic",
             "Creative Commons Attribution Non Commercial No Derivatives 2.5 Generic",
-            "scancode://cc-by-nc-nd-2.5"
+            "scancode://cc-by-nc-nd-2.5",
+            "Creative Commons Attribution-NoDerivs 2.5 Generic"
         ],
         "__impliedId": "CC-BY-NC-ND-2.5",
         "__impliedAmbiguousNames": [
@@ -475,7 +473,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Attribution-NoDerivs 2.5 Generic"
+                        "Creative Commons Attribution-NoDerivs 2.5 Generic",
+                        "CC-BY-NC-ND-2.5"
                     ],
                     "__impliedComments": [
                         [

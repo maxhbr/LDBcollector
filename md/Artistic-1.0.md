@@ -7,13 +7,13 @@ Artistic License 1.0 (Artistic-1.0)
 
 -   `Artistic 1.0 (original)`
 
--   `Artistic License (Perl) 1.0`
-
 -   `scancode://artistic-1.0`
 
 -   `Artistic 1.0`
 
 -   `Artistic License, Version 1.0`
+
+-   `Artistic License (Perl) 1.0`
 
 Description
 -----------
@@ -218,8 +218,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -259,11 +257,11 @@ Raw Data
         "__impliedNames": [
             "Artistic-1.0",
             "Artistic 1.0 (original)",
-            "Artistic License (Perl) 1.0",
             "Artistic License 1.0",
             "scancode://artistic-1.0",
             "Artistic 1.0",
-            "Artistic License, Version 1.0"
+            "Artistic License, Version 1.0",
+            "Artistic License (Perl) 1.0"
         ],
         "__impliedId": "Artistic-1.0",
         "__impliedAmbiguousNames": [

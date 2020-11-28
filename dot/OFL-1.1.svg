@@ -19,27 +19,27 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-640 16,-746 564.95,-746 564.95,-640 16,-640"/>
+<polygon fill="lightgray" stroke="lightgray" points="154.44,-640 154.44,-746 426.51,-746 426.51,-640 154.44,-640"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="154.44,-526 154.44,-632 426.51,-632 426.51,-526 154.44,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="191.48,-472 191.48,-632 389.47,-632 389.47,-472 191.48,-472"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="191.48,-358 191.48,-518 389.47,-518 389.47,-358 191.48,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="236.33,-358 236.33,-464 344.62,-464 344.62,-358 236.33,-358"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="236.33,-244 236.33,-350 344.62,-350 344.62,-244 236.33,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="115.44,-244 115.44,-350 465.51,-350 465.51,-244 115.44,-244"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="115.44,-130 115.44,-236 465.51,-236 465.51,-130 115.44,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="170.69,-130 170.69,-236 410.27,-236 410.27,-130 170.69,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="170.69,-16 170.69,-122 410.27,-122 410.27,-16 170.69,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 564.95,-122 564.95,-16 16,-16"/>
 </g>
 <!-- OFL&#45;1.1(1) -->
 <g id="node1" class="node">
@@ -53,29 +53,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-720" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="290.48" y="-716.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007(2) -->
+<!-- SIL Open Font License 1.1(2) -->
 <g id="node3" class="node">
-<title>SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007(2)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-666" rx="266.45" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-662.3" font-family="Times-Roman" font-size="14.00">SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007</text>
+<title>SIL Open Font License 1.1(2)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-666" rx="128.08" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-662.3" font-family="Times-Roman" font-size="14.00">SIL Open Font License 1.1</text>
+</g>
+<!-- OFL 1.1(3) -->
+<g id="node4" class="node">
+<title>OFL 1.1(3)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-606" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-602.3" font-family="Times-Roman" font-size="14.00">OFL 1.1</text>
 </g>
 <!-- OFL&#45;1.1(3) -->
-<g id="node4" class="node">
-<title>OFL&#45;1.1(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-606" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-602.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
-</g>
-<!-- SIL Open Font License 1.1(3) -->
 <g id="node5" class="node">
-<title>SIL Open Font License 1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-552" rx="128.08" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-548.3" font-family="Times-Roman" font-size="14.00">SIL Open Font License 1.1</text>
+<title>OFL&#45;1.1(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-552" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-548.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- OFL 1.1(4) -->
+<!-- scancode://ofl&#45;1.1(3) -->
 <g id="node6" class="node">
-<title>OFL 1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-492" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-488.3" font-family="Times-Roman" font-size="14.00">OFL 1.1</text>
+<title>scancode://ofl&#45;1.1(3)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-498" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-494.3" font-family="Times-Roman" font-size="14.00">scancode://ofl&#45;1.1</text>
 </g>
 <!-- OFL&#45;1.1(4) -->
 <g id="node7" class="node">
@@ -83,11 +83,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-438" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="290.48" y="-434.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- scancode://ofl&#45;1.1(4) -->
+<!-- ofl&#45;1.1(4) -->
 <g id="node8" class="node">
-<title>scancode://ofl&#45;1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-384" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://ofl&#45;1.1</text>
+<title>ofl&#45;1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-384" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-380.3" font-family="Times-Roman" font-size="14.00">ofl&#45;1.1</text>
 </g>
 <!-- OFL&#45;1.1(5) -->
 <g id="node9" class="node">
@@ -95,11 +95,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-324" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="290.48" y="-320.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- ofl&#45;1.1(5) -->
+<!-- SIL Open Font License, Version 1.1(5) -->
 <g id="node10" class="node">
-<title>ofl&#45;1.1(5)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-270" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-266.3" font-family="Times-Roman" font-size="14.00">ofl&#45;1.1</text>
+<title>SIL Open Font License, Version 1.1(5)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-270" rx="167.07" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-266.3" font-family="Times-Roman" font-size="14.00">SIL Open Font License, Version 1.1</text>
 </g>
 <!-- OFL&#45;1.1(6) -->
 <g id="node11" class="node">
@@ -107,11 +107,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-210" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="290.48" y="-206.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- SIL Open Font License, Version 1.1(6) -->
+<!-- Open Font License 1.1(6) -->
 <g id="node12" class="node">
-<title>SIL Open Font License, Version 1.1(6)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-156" rx="167.07" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-152.3" font-family="Times-Roman" font-size="14.00">SIL Open Font License, Version 1.1</text>
+<title>Open Font License 1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-156" rx="111.58" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-152.3" font-family="Times-Roman" font-size="14.00">Open Font License 1.1</text>
 </g>
 <!-- OFL&#45;1.1(7) -->
 <g id="node13" class="node">
@@ -119,11 +119,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="290.48" cy="-96" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="290.48" y="-92.3" font-family="Times-Roman" font-size="14.00">OFL&#45;1.1</text>
 </g>
-<!-- Open Font License 1.1(7) -->
+<!-- SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007(7) -->
 <g id="node14" class="node">
-<title>Open Font License 1.1(7)</title>
-<ellipse fill="white" stroke="white" cx="290.48" cy="-42" rx="111.58" ry="18"/>
-<text text-anchor="middle" x="290.48" y="-38.3" font-family="Times-Roman" font-size="14.00">Open Font License 1.1</text>
+<title>SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007(7)</title>
+<ellipse fill="white" stroke="white" cx="290.48" cy="-42" rx="266.45" ry="18"/>
+<text text-anchor="middle" x="290.48" y="-38.3" font-family="Times-Roman" font-size="14.00">SIL OPEN FONT LICENSE Version 1.1 &#45; 26 February 2007</text>
 </g>
 </g>
 </svg>

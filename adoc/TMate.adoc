@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+TMate Open Source License for "TMate JavaSVN library"+`
 * `+scancode://tmate+`
+* `+TMate Open Source License for "TMate JavaSVN library"+`
 
 === Description
 
@@ -101,7 +101,6 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/TMate.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tmate.yml[Scancode]
@@ -120,9 +119,9 @@ Project Wiki]
 {
     "__impliedNames": [
         "TMate",
-        "TMate Open Source License for \"TMate JavaSVN library\"",
         "TMate Open Source License",
-        "scancode://tmate"
+        "scancode://tmate",
+        "TMate Open Source License for \"TMate JavaSVN library\""
     ],
     "__impliedId": "TMate",
     "__isFsfFree": true,
@@ -242,24 +241,6 @@ Project Wiki]
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "TMate",
-                    "TMate Open Source License for \"TMate JavaSVN library\""
-                ],
-                "__impliedId": "TMate"
-            },
-            "oName": "TMate",
-            "oOtherLicenseIds": [
-                "TMate Open Source License for \"TMate JavaSVN library\""
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "https://svnkit.com/license.html",

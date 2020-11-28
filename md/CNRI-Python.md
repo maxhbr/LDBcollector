@@ -5,8 +5,6 @@ CNRI Python License (CNRI-Python)
 
 **Other Names:**
 
--   `CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1`
-
 -   `scancode://cnri-python-1.6`
 
 -   `CNRI Python 1.6`
@@ -14,6 +12,8 @@ CNRI Python License (CNRI-Python)
 -   `CNRI portion of the multi-part Python License`
 
 -   `License :: OSI Approved :: Python License (CNRI Python License)`
+
+-   `CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1`
 
 Description
 -----------
@@ -109,8 +109,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CNRI-Python.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -140,12 +138,12 @@ Raw Data
     {
         "__impliedNames": [
             "CNRI-Python",
-            "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
             "CNRI Python License",
             "scancode://cnri-python-1.6",
             "CNRI Python 1.6",
             "CNRI portion of the multi-part Python License",
-            "License :: OSI Approved :: Python License (CNRI Python License)"
+            "License :: OSI Approved :: Python License (CNRI Python License)",
+            "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
         ],
         "__impliedId": "CNRI-Python",
         "__impliedComments": [
@@ -314,24 +312,6 @@ Raw Data
                         "CNRI-Python"
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CNRI-Python",
-                        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
-                    ],
-                    "__impliedId": "CNRI-Python"
-                },
-                "oName": "CNRI-Python",
-                "oOtherLicenseIds": [
-                    "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -503,7 +483,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+                        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
+                        "CNRI-Python"
                     ],
                     "__impliedComments": [
                         [

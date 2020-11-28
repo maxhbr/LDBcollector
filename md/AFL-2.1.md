@@ -5,11 +5,11 @@ Academic Free License v2.1 (AFL-2.1)
 
 **Other Names:**
 
--   `Academic Free License Version 2.1`
-
 -   `scancode://afl-2.1`
 
 -   `AFL 2.1`
+
+-   `Academic Free License Version 2.1`
 
 Description
 -----------
@@ -145,8 +145,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -170,10 +168,10 @@ Raw Data
     {
         "__impliedNames": [
             "AFL-2.1",
-            "Academic Free License Version 2.1",
             "Academic Free License v2.1",
             "scancode://afl-2.1",
-            "AFL 2.1"
+            "AFL 2.1",
+            "Academic Free License Version 2.1"
         ],
         "__impliedId": "AFL-2.1",
         "__impliedComments": [
@@ -293,24 +291,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "AFL-2.1",
-                        "Academic Free License Version 2.1"
-                    ],
-                    "__impliedId": "AFL-2.1"
-                },
-                "oName": "AFL-2.1",
-                "oOtherLicenseIds": [
-                    "Academic Free License Version 2.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -510,7 +490,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Academic Free License Version 2.1"
+                        "Academic Free License Version 2.1",
+                        "AFL-2.1"
                     ],
                     "__impliedComments": [
                         [

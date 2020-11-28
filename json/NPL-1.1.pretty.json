@@ -1,11 +1,11 @@
 {
     "__impliedNames": [
         "NPL-1.1",
-        "Netscape Public License Version 1.1",
         "Netscape Public License v1.1",
         "scancode://npl-1.1",
         "NPL 1.1",
-        "Netscape Public License 1.1"
+        "Netscape Public License 1.1",
+        "Netscape Public License Version 1.1"
     ],
     "__impliedId": "NPL-1.1",
     "__impliedComments": [
@@ -105,24 +105,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "NPL-1.1",
-                    "Netscape Public License Version 1.1"
-                ],
-                "__impliedId": "NPL-1.1"
-            },
-            "oName": "NPL-1.1",
-            "oOtherLicenseIds": [
-                "Netscape Public License Version 1.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "Mozilla Public License Version 1.1 with the Amendments, including Exhibit A-Netscape Public Licensehttp://website-archive.mozilla.org/www. mozilla.org/mpl/MPL/NPL/1.1/",
@@ -533,7 +515,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Netscape Public License Version 1.1"
+                    "Netscape Public License Version 1.1",
+                    "NPL-1.1"
                 ],
                 "__impliedComments": [
                     [

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+ANTLR 2 License+`
 * `+scancode://antlr-pd+`
+* `+ANTLR 2 License+`
 
 === Description
 
@@ -99,7 +99,6 @@ parrt@antlr.org
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/ANTLR-PD.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -118,9 +117,9 @@ Project Wiki]
 {
     "__impliedNames": [
         "ANTLR-PD",
-        "ANTLR 2 License",
         "ANTLR Software Rights Notice",
-        "scancode://antlr-pd"
+        "scancode://antlr-pd",
+        "ANTLR 2 License"
     ],
     "__impliedId": "ANTLR-PD",
     "__isFsfFree": true,
@@ -266,24 +265,6 @@ Project Wiki]
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "ANTLR-PD",
-                    "ANTLR 2 License"
-                ],
-                "__impliedId": "ANTLR-PD"
-            },
-            "oName": "ANTLR-PD",
-            "oOtherLicenseIds": [
-                "ANTLR 2 License"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/37",
@@ -354,7 +335,8 @@ Project Wiki]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "ANTLR 2 License"
+                    "ANTLR 2 License",
+                    "ANTLR-PD"
                 ],
                 "__impliedComments": [
                     [

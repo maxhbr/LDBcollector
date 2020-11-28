@@ -5,11 +5,11 @@ Independent JPEG Group License (IJG)
 
 **Other Names:**
 
--   `IJG License`
-
 -   `scancode://ijg`
 
 -   `JPEG License`
+
+-   `IJG License`
 
 Comments on (easy) usability
 ----------------------------
@@ -139,8 +139,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/IJG.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -164,10 +162,10 @@ Raw Data
     {
         "__impliedNames": [
             "IJG",
-            "IJG License",
             "Independent JPEG Group License",
             "scancode://ijg",
-            "JPEG License"
+            "JPEG License",
+            "IJG License"
         ],
         "__impliedId": "IJG",
         "__isFsfFree": true,
@@ -297,24 +295,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "IJG",
-                        "IJG License"
-                    ],
-                    "__impliedId": "IJG"
-                },
-                "oName": "IJG",
-                "oOtherLicenseIds": [
-                    "IJG License"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/302",
@@ -323,7 +303,8 @@ Raw Data
                 "permissions": [],
                 "_implications": {
                     "__impliedNames": [
-                        "IJG License"
+                        "IJG License",
+                        "IJG"
                     ],
                     "__impliedComments": [
                         [

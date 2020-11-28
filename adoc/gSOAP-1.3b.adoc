@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+gSOAP Public License Version 1.3b+`
 * `+scancode://gsoap-1.3b+`
+* `+gSOAP Public License Version 1.3b+`
 
 === Description
 
@@ -248,7 +248,6 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/gSOAP-1.3b.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml[Scancode]
@@ -262,9 +261,9 @@ repository] is generated)
 {
     "__impliedNames": [
         "gSOAP-1.3b",
-        "gSOAP Public License Version 1.3b",
         "gSOAP Public License v1.3b",
-        "scancode://gsoap-1.3b"
+        "scancode://gsoap-1.3b",
+        "gSOAP Public License Version 1.3b"
     ],
     "__impliedId": "gSOAP-1.3b",
     "__impliedComments": [
@@ -352,24 +351,6 @@ repository] is generated)
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "gSOAP-1.3b",
-                    "gSOAP Public License Version 1.3b"
-                ],
-                "__impliedId": "gSOAP-1.3b"
-            },
-            "oName": "gSOAP-1.3b",
-            "oOtherLicenseIds": [
-                "gSOAP Public License Version 1.3b"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "http://www.cs.fsu.edu/~engelen/license.html",
@@ -755,7 +736,8 @@ repository] is generated)
             ],
             "_implications": {
                 "__impliedNames": [
-                    "gSOAP Public License Version 1.3b"
+                    "gSOAP Public License Version 1.3b",
+                    "gSOAP-1.3b"
                 ],
                 "__impliedComments": [
                     [

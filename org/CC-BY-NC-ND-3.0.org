@@ -10,11 +10,11 @@ Unported (CC-BY-NC-ND-3.0)
 
 *Other Names:*
 
+- =scancode://cc-by-nc-nd-3.0=
+
 - =Creative Commons Attribution-NoDerivs 3.0 Unported=
 
 - =Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported=
-
-- =scancode://cc-by-nc-nd-3.0=
 
 ** Description
 
@@ -525,10 +525,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - Override
 
-- Override
-
-- Override
-
 - [[https://spdx.org/licenses/CC-BY-NC-ND-3.0.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -554,10 +550,10 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "CC-BY-NC-ND-3.0",
-          "Creative Commons Attribution-NoDerivs 3.0 Unported",
-          "Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported",
           "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported",
-          "scancode://cc-by-nc-nd-3.0"
+          "scancode://cc-by-nc-nd-3.0",
+          "Creative Commons Attribution-NoDerivs 3.0 Unported",
+          "Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported"
       ],
       "__impliedId": "CC-BY-NC-ND-3.0",
       "__impliedAmbiguousNames": [
@@ -842,7 +838,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "Creative Commons Attribution-NoDerivs 3.0 Unported"
+                      "Creative Commons Attribution-NoDerivs 3.0 Unported",
+                      "CC-BY-NC-ND-3.0"
                   ],
                   "__impliedComments": [
                       [

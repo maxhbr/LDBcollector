@@ -9,11 +9,11 @@
 
 *Other Names:*
 
-- =JasPer License Version 2.0=
-
 - =scancode://jasper-2.0=
 
 - =JasPer 2.0=
+
+- =JasPer License Version 2.0=
 
 ** Comments on (easy) usability
 
@@ -107,8 +107,6 @@
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/JasPer-2.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -131,10 +129,10 @@
   {
       "__impliedNames": [
           "JasPer-2.0",
-          "JasPer License Version 2.0",
           "JasPer License",
           "scancode://jasper-2.0",
-          "JasPer 2.0"
+          "JasPer 2.0",
+          "JasPer License Version 2.0"
       ],
       "__impliedId": "JasPer-2.0",
       "__isFsfFree": true,
@@ -258,24 +256,6 @@
                       ]
                   ]
               }
-          },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "JasPer-2.0",
-                      "JasPer License Version 2.0"
-                  ],
-                  "__impliedId": "JasPer-2.0"
-              },
-              "oName": "JasPer-2.0",
-              "oOtherLicenseIds": [
-                  "JasPer License Version 2.0"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
           },
           "Hitachi open-license": {
               "notices": [
@@ -403,7 +383,8 @@
               ],
               "_implications": {
                   "__impliedNames": [
-                      "JasPer License Version 2.0"
+                      "JasPer License Version 2.0",
+                      "JasPer-2.0"
                   ],
                   "__impliedComments": [
                       [

@@ -9,8 +9,6 @@
 
 *Other Names:*
 
-- =Mozilla Public License Version 1.1=
-
 - =scancode://mpl-1.1=
 
 - =MPL 1.1=
@@ -20,6 +18,8 @@
 - =License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)=
 
 - =mozilla1.1=
+
+- =Mozilla Public License Version 1.1=
 
 ** Description
 
@@ -265,8 +265,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/MPL-1.1.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -305,13 +303,13 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "MPL-1.1",
-          "Mozilla Public License Version 1.1",
           "Mozilla Public License 1.1",
           "scancode://mpl-1.1",
           "MPL 1.1",
           "Mozilla Public License, Version 1.1",
           "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
-          "mozilla1.1"
+          "mozilla1.1",
+          "Mozilla Public License Version 1.1"
       ],
       "__impliedId": "MPL-1.1",
       "__impliedAmbiguousNames": [
@@ -521,24 +519,6 @@ open-license]] (CDLA-Permissive-1.0))
               },
               "Comment": null,
               "LicenseId": "MPL-1.1"
-          },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "MPL-1.1",
-                      "Mozilla Public License Version 1.1"
-                  ],
-                  "__impliedId": "MPL-1.1"
-              },
-              "oName": "MPL-1.1",
-              "oOtherLicenseIds": [
-                  "Mozilla Public License Version 1.1"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
           },
           "Hitachi open-license": {
               "notices": [
@@ -933,7 +913,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "Mozilla Public License Version 1.1"
+                      "Mozilla Public License Version 1.1",
+                      "MPL-1.1"
                   ],
                   "__impliedComments": [
                       [

@@ -9,13 +9,13 @@
 
 *Other Names:*
 
-- =SENDMAIL LICENSE (version 1998)=
+- =scancode://sendmail=
 
 - =SENDMAIL LICENSE (version 2004)=
 
 - =SENDMAIL LICENSE (version 2012)=
 
-- =scancode://sendmail=
+- =SENDMAIL LICENSE (version 1998)=
 
 ** Description
 
@@ -154,12 +154,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
-- Override
-
-- Override
-
 - [[https://spdx.org/licenses/Sendmail.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -185,11 +179,11 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "Sendmail",
-          "SENDMAIL LICENSE (version 1998)",
+          "Sendmail License",
+          "scancode://sendmail",
           "SENDMAIL LICENSE (version 2004)",
           "SENDMAIL LICENSE (version 2012)",
-          "Sendmail License",
-          "scancode://sendmail"
+          "SENDMAIL LICENSE (version 1998)"
       ],
       "__impliedId": "Sendmail",
       "__isFsfFree": true,
@@ -335,24 +329,6 @@ open-license]] (CDLA-Permissive-1.0))
                   ]
               }
           },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "Sendmail",
-                      "SENDMAIL LICENSE (version 1998)"
-                  ],
-                  "__impliedId": "Sendmail"
-              },
-              "oName": "Sendmail",
-              "oOtherLicenseIds": [
-                  "SENDMAIL LICENSE (version 1998)"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
-          },
           "Hitachi open-license": {
               "notices": [
                   {
@@ -481,7 +457,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "SENDMAIL LICENSE (version 2004)"
+                      "SENDMAIL LICENSE (version 2004)",
+                      "Sendmail"
                   ],
                   "__impliedComments": [
                       [

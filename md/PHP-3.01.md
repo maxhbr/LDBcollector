@@ -5,11 +5,11 @@ PHP License v3.01 (PHP-3.01)
 
 **Other Names:**
 
--   `PHP License, version 3.01`
-
 -   `scancode://php-3.01`
 
 -   `PHP License 3.01`
+
+-   `PHP License, version 3.01`
 
 Comments on (easy) usability
 ----------------------------
@@ -127,8 +127,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -151,10 +149,10 @@ Raw Data
     {
         "__impliedNames": [
             "PHP-3.01",
-            "PHP License, version 3.01",
             "PHP License v3.01",
             "scancode://php-3.01",
-            "PHP License 3.01"
+            "PHP License 3.01",
+            "PHP License, version 3.01"
         ],
         "__impliedId": "PHP-3.01",
         "__impliedComments": [
@@ -274,24 +272,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "PHP-3.01",
-                        "PHP License, version 3.01"
-                    ],
-                    "__impliedId": "PHP-3.01"
-                },
-                "oName": "PHP-3.01",
-                "oOtherLicenseIds": [
-                    "PHP License, version 3.01"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -403,7 +383,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "PHP License, version 3.01"
+                        "PHP License, version 3.01",
+                        "PHP-3.01"
                     ],
                     "__impliedComments": [
                         [

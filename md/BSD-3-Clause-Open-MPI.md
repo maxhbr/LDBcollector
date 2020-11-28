@@ -5,9 +5,9 @@ BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 **Other Names:**
 
--   `Open MPI License`
-
 -   `scancode://bsd-3-clause-open-mpi`
+
+-   `Open MPI License`
 
 Description
 -----------
@@ -86,8 +86,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -103,9 +101,9 @@ Raw Data
     {
         "__impliedNames": [
             "BSD-3-Clause-Open-MPI",
-            "Open MPI License",
             "BSD 3-Clause Open MPI variant",
-            "scancode://bsd-3-clause-open-mpi"
+            "scancode://bsd-3-clause-open-mpi",
+            "Open MPI License"
         ],
         "__impliedId": "BSD-3-Clause-Open-MPI",
         "__impliedComments": [
@@ -209,24 +207,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "BSD-3-Clause-Open-MPI",
-                        "Open MPI License"
-                    ],
-                    "__impliedId": "BSD-3-Clause-Open-MPI"
-                },
-                "oName": "BSD-3-Clause-Open-MPI",
-                "oOtherLicenseIds": [
-                    "Open MPI License"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "http://www.open-mpi.org/community/license.php",
                 "notices": [
@@ -311,7 +291,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Open MPI License"
+                        "Open MPI License",
+                        "BSD-3-Clause-Open-MPI"
                     ],
                     "__impliedComments": [
                         [

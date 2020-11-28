@@ -5,9 +5,9 @@ Creative Commons Attribution Share Alike 3.0 Unported (CC-BY-SA-3.0)
 
 **Other Names:**
 
--   `Creative Commons Attribution-ShareAlike 3.0 Unported`
-
 -   `scancode://cc-by-sa-3.0`
+
+-   `Creative Commons Attribution-ShareAlike 3.0 Unported`
 
 Description
 -----------
@@ -596,8 +596,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-3.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -625,9 +623,9 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-SA-3.0",
-            "Creative Commons Attribution-ShareAlike 3.0 Unported",
             "Creative Commons Attribution Share Alike 3.0 Unported",
-            "scancode://cc-by-sa-3.0"
+            "scancode://cc-by-sa-3.0",
+            "Creative Commons Attribution-ShareAlike 3.0 Unported"
         ],
         "__impliedId": "CC-BY-SA-3.0",
         "__impliedAmbiguousNames": [
@@ -755,24 +753,6 @@ Raw Data
                 },
                 "Comment": "In contrast to the CC-SA 1.0 license, version 3.0 is considered to be compatible to the DFSG. In addition, the version 2.0 and 2.5 are NOT transitively compatible because of clause 4b, since that only allows redistribution of derivative works under later versions of the license.",
                 "LicenseId": "CC-BY-SA-3.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CC-BY-SA-3.0",
-                        "Creative Commons Attribution-ShareAlike 3.0 Unported"
-                    ],
-                    "__impliedId": "CC-BY-SA-3.0"
-                },
-                "oName": "CC-BY-SA-3.0",
-                "oOtherLicenseIds": [
-                    "Creative Commons Attribution-ShareAlike 3.0 Unported"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "http://creativecommons.org/licenses/by-sa/3.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
@@ -1001,7 +981,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Commons Attribution-ShareAlike 3.0 Unported"
+                        "Creative Commons Attribution-ShareAlike 3.0 Unported",
+                        "CC-BY-SA-3.0"
                     ],
                     "__impliedComments": [
                         [

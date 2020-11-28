@@ -5,11 +5,11 @@ Open LDAP Public License v2.7 (OLDAP-2.7)
 
 **Other Names:**
 
--   `The OpenLDAP Public License`
-
 -   `scancode://openldap-2.7`
 
 -   `OpenLDAP Public License 2.7`
+
+-   `The OpenLDAP Public License`
 
 Description
 -----------
@@ -111,8 +111,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/OLDAP-2.7.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -132,10 +130,10 @@ Raw Data
     {
         "__impliedNames": [
             "OLDAP-2.7",
-            "The OpenLDAP Public License",
             "Open LDAP Public License v2.7",
             "scancode://openldap-2.7",
-            "OpenLDAP Public License 2.7"
+            "OpenLDAP Public License 2.7",
+            "The OpenLDAP Public License"
         ],
         "__impliedId": "OLDAP-2.7",
         "__impliedComments": [
@@ -237,24 +235,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "OLDAP-2.7",
-                        "The OpenLDAP Public License"
-                    ],
-                    "__impliedId": "OLDAP-2.7"
-                },
-                "oName": "OLDAP-2.7",
-                "oOtherLicenseIds": [
-                    "The OpenLDAP Public License"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -355,7 +335,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "The OpenLDAP Public License"
+                        "The OpenLDAP Public License",
+                        "OLDAP-2.7"
                     ],
                     "__impliedComments": [
                         [

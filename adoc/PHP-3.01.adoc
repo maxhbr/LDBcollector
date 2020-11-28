@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+PHP License, version 3.01+`
 * `+scancode://php-3.01+`
 * `+PHP License 3.01+`
+* `+PHP License, version 3.01+`
 
 === Comments on (easy) usability
 
@@ -121,7 +121,6 @@ PHP includes the Zend Engine, freely available at
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/PHP-3.01.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -139,10 +138,10 @@ repository] is generated)
 {
     "__impliedNames": [
         "PHP-3.01",
-        "PHP License, version 3.01",
         "PHP License v3.01",
         "scancode://php-3.01",
-        "PHP License 3.01"
+        "PHP License 3.01",
+        "PHP License, version 3.01"
     ],
     "__impliedId": "PHP-3.01",
     "__impliedComments": [
@@ -262,24 +261,6 @@ repository] is generated)
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "PHP-3.01",
-                    "PHP License, version 3.01"
-                ],
-                "__impliedId": "PHP-3.01"
-            },
-            "oName": "PHP-3.01",
-            "oOtherLicenseIds": [
-                "PHP License, version 3.01"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -391,7 +372,8 @@ repository] is generated)
             ],
             "_implications": {
                 "__impliedNames": [
-                    "PHP License, version 3.01"
+                    "PHP License, version 3.01",
+                    "PHP-3.01"
                 ],
                 "__impliedComments": [
                     [

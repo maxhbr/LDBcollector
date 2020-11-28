@@ -5,11 +5,11 @@ Erlang Public License v1.1 (ErlPL-1.1)
 
 **Other Names:**
 
--   `ERLANG PUBLIC LICENSE Version 1.1`
-
 -   `scancode://erlangpl-1.1`
 
 -   `Erlang Public License 1.1`
+
+-   `ERLANG PUBLIC LICENSE Version 1.1`
 
 Description
 -----------
@@ -382,8 +382,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/ErlPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -407,10 +405,10 @@ Raw Data
     {
         "__impliedNames": [
             "ErlPL-1.1",
-            "ERLANG PUBLIC LICENSE Version 1.1",
             "Erlang Public License v1.1",
             "scancode://erlangpl-1.1",
-            "Erlang Public License 1.1"
+            "Erlang Public License 1.1",
+            "ERLANG PUBLIC LICENSE Version 1.1"
         ],
         "__impliedId": "ErlPL-1.1",
         "__isFsfFree": true,
@@ -537,24 +535,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "ErlPL-1.1",
-                        "ERLANG PUBLIC LICENSE Version 1.1"
-                    ],
-                    "__impliedId": "ErlPL-1.1"
-                },
-                "oName": "ErlPL-1.1",
-                "oOtherLicenseIds": [
-                    "ERLANG PUBLIC LICENSE Version 1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -934,7 +914,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "ERLANG PUBLIC LICENSE Version 1.1"
+                        "ERLANG PUBLIC LICENSE Version 1.1",
+                        "ErlPL-1.1"
                     ],
                     "__impliedComments": [
                         [

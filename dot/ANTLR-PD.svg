@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="75.79,-358 75.79,-464 263.38,-464 263.38,-358 75.79,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-358 16,-464 323.17,-464 323.17,-358 16,-358"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 323.17,-236 323.17,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="64.75,-130 64.75,-236 274.43,-236 274.43,-130 64.75,-130"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="64.75,-16 64.75,-122 274.43,-122 274.43,-16 64.75,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="75.79,-16 75.79,-122 263.38,-122 263.38,-16 75.79,-16"/>
 </g>
 <!-- ANTLR&#45;PD(1) -->
 <g id="node1" class="node">
@@ -39,11 +39,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-498" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="169.59" y="-494.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
 </g>
-<!-- ANTLR 2 License(2) -->
+<!-- ANTLR Software Rights Notice(2) -->
 <g id="node2" class="node">
-<title>ANTLR 2 License(2)</title>
-<ellipse fill="white" stroke="white" cx="169.59" cy="-438" rx="85.59" ry="18"/>
-<text text-anchor="middle" x="169.59" y="-434.3" font-family="Times-Roman" font-size="14.00">ANTLR 2 License</text>
+<title>ANTLR Software Rights Notice(2)</title>
+<ellipse fill="white" stroke="white" cx="169.59" cy="-438" rx="145.67" ry="18"/>
+<text text-anchor="middle" x="169.59" y="-434.3" font-family="Times-Roman" font-size="14.00">ANTLR Software Rights Notice</text>
 </g>
 <!-- ANTLR&#45;PD(2) -->
 <g id="node3" class="node">
@@ -63,29 +63,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-270" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="169.59" y="-266.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
 </g>
-<!-- ANTLR Software Rights Notice(4) -->
-<g id="node6" class="node">
-<title>ANTLR Software Rights Notice(4)</title>
-<ellipse fill="white" stroke="white" cx="169.59" cy="-210" rx="145.67" ry="18"/>
-<text text-anchor="middle" x="169.59" y="-206.3" font-family="Times-Roman" font-size="14.00">ANTLR Software Rights Notice</text>
-</g>
 <!-- ANTLR&#45;PD(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>ANTLR&#45;PD(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-156" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="169.59" y="-152.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-210" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="169.59" y="-206.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
+</g>
+<!-- scancode://antlr&#45;pd(4) -->
+<g id="node7" class="node">
+<title>scancode://antlr&#45;pd(4)</title>
+<ellipse fill="white" stroke="white" cx="169.59" cy="-156" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="169.59" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://antlr&#45;pd</text>
+</g>
+<!-- ANTLR 2 License(5) -->
+<g id="node8" class="node">
+<title>ANTLR 2 License(5)</title>
+<ellipse fill="white" stroke="white" cx="169.59" cy="-96" rx="85.59" ry="18"/>
+<text text-anchor="middle" x="169.59" y="-92.3" font-family="Times-Roman" font-size="14.00">ANTLR 2 License</text>
 </g>
 <!-- ANTLR&#45;PD(5) -->
-<g id="node8" class="node">
-<title>ANTLR&#45;PD(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-96" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="169.59" y="-92.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
-</g>
-<!-- scancode://antlr&#45;pd(5) -->
 <g id="node9" class="node">
-<title>scancode://antlr&#45;pd(5)</title>
-<ellipse fill="white" stroke="white" cx="169.59" cy="-42" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="169.59" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://antlr&#45;pd</text>
+<title>ANTLR&#45;PD(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="169.59" cy="-42" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="169.59" y="-38.3" font-family="Times-Roman" font-size="14.00">ANTLR&#45;PD</text>
 </g>
 </g>
 </svg>

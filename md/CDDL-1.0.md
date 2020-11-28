@@ -5,8 +5,6 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 **Other Names:**
 
--   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California`
-
 -   `scancode://cddl-1.0`
 
 -   `CDDL 1.0`
@@ -16,6 +14,8 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 -   `cddl1`
 
 -   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0`
+
+-   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California`
 
 Description
 -----------
@@ -216,8 +216,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CDDL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -261,13 +259,13 @@ Raw Data
     {
         "__impliedNames": [
             "CDDL-1.0",
-            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California",
             "Common Development and Distribution License 1.0",
             "scancode://cddl-1.0",
             "CDDL 1.0",
             "Common Development and Distribution License, Version 1.0",
             "cddl1",
-            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0"
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"
         ],
         "__impliedId": "CDDL-1.0",
         "__impliedAmbiguousNames": [
@@ -463,24 +461,6 @@ Raw Data
                         "CDDL-1.0"
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CDDL-1.0",
-                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"
-                    ],
-                    "__impliedId": "CDDL-1.0"
-                },
-                "oName": "CDDL-1.0",
-                "oOtherLicenseIds": [
-                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [

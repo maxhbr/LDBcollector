@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "PHP-3.01",
-        "PHP License, version 3.01",
         "PHP License v3.01",
         "scancode://php-3.01",
-        "PHP License 3.01"
+        "PHP License 3.01",
+        "PHP License, version 3.01"
     ],
     "__impliedId": "PHP-3.01",
     "__impliedComments": [
@@ -124,24 +124,6 @@
                 ]
             }
         },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "PHP-3.01",
-                    "PHP License, version 3.01"
-                ],
-                "__impliedId": "PHP-3.01"
-            },
-            "oName": "PHP-3.01",
-            "oOtherLicenseIds": [
-                "PHP License, version 3.01"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
-        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -253,7 +235,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "PHP License, version 3.01"
+                    "PHP License, version 3.01",
+                    "PHP-3.01"
                 ],
                 "__impliedComments": [
                     [

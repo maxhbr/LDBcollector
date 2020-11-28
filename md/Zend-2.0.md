@@ -1,17 +1,17 @@
-Zend License v2.0 ( Zend-2.0)
-=============================
+Zend License v2.0 (Zend-2.0)
+============================
 
 [TABLE]
 
 **Other Names:**
 
--   `Zend-2.0`
-
--   `Zend Engine License, Version 2.00`
-
 -   `scancode://zend-2.0`
 
 -   `Zend Engine License 2.0`
+
+-   `Zend Engine License, Version 2.00`
+
+-   ` Zend-2.0`
 
 Description
 -----------
@@ -125,8 +125,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Zend-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -154,13 +152,13 @@ Raw Data
     {
         "__impliedNames": [
             "Zend-2.0",
-            " Zend-2.0",
-            "Zend Engine License, Version 2.00",
             "Zend License v2.0",
             "scancode://zend-2.0",
-            "Zend Engine License 2.0"
+            "Zend Engine License 2.0",
+            "Zend Engine License, Version 2.00",
+            " Zend-2.0"
         ],
-        "__impliedId": " Zend-2.0",
+        "__impliedId": "Zend-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Zend"
@@ -279,24 +277,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        " Zend-2.0",
-                        "Zend Engine License, Version 2.00"
-                    ],
-                    "__impliedId": " Zend-2.0"
-                },
-                "oName": " Zend-2.0",
-                "oOtherLicenseIds": [
-                    "Zend Engine License, Version 2.00"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "http://www.zend.com/license/2_00.txt",
                 "notices": [
@@ -409,7 +389,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Zend Engine License, Version 2.00"
+                        "Zend Engine License, Version 2.00",
+                        " Zend-2.0"
                     ],
                     "__impliedComments": [
                         [
@@ -557,4 +538,4 @@ Raw Data
 
 ### Dot Cluster Graph
 
-[../dot/ Zend-2.0.svg](../dot/ Zend-2.0.svg "../dot/ Zend-2.0.svg")
+[../dot/Zend-2.0.svg](../dot/Zend-2.0.svg "../dot/Zend-2.0.svg")

@@ -5,8 +5,6 @@ Common Public License 1.0 (CPL-1.0)
 
 **Other Names:**
 
--   `Common Public License Version 1.0`
-
 -   `scancode://cpl-1.0`
 
 -   `CPL 1.0`
@@ -16,6 +14,8 @@ Common Public License 1.0 (CPL-1.0)
 -   `CPL`
 
 -   `License :: OSI Approved :: Common Public License`
+
+-   `Common Public License Version 1.0`
 
 Description
 -----------
@@ -195,8 +195,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -230,13 +228,13 @@ Raw Data
     {
         "__impliedNames": [
             "CPL-1.0",
-            "Common Public License Version 1.0",
             "Common Public License 1.0",
             "scancode://cpl-1.0",
             "CPL 1.0",
             "Common Public License, Version 1.0",
             "CPL",
-            "License :: OSI Approved :: Common Public License"
+            "License :: OSI Approved :: Common Public License",
+            "Common Public License Version 1.0"
         ],
         "__impliedId": "CPL-1.0",
         "__impliedAmbiguousNames": [
@@ -416,24 +414,6 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "CPL-1.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CPL-1.0",
-                        "Common Public License Version 1.0"
-                    ],
-                    "__impliedId": "CPL-1.0"
-                },
-                "oName": "CPL-1.0",
-                "oOtherLicenseIds": [
-                    "Common Public License Version 1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -857,7 +837,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Common Public License Version 1.0"
+                        "Common Public License Version 1.0",
+                        "CPL-1.0"
                     ],
                     "__impliedComments": [
                         [

@@ -5,8 +5,6 @@ Python License 2.0 (Python-2.0)
 
 **Other Names:**
 
--   `PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2`
-
 -   `scancode://python`
 
 -   `Python License, Version 2.0`
@@ -14,6 +12,8 @@ Python License 2.0 (Python-2.0)
 -   `License :: OSI Approved :: Python Software Foundation License`
 
 -   `Python Software Foundation License 2`
+
+-   `PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2`
 
 Description
 -----------
@@ -279,8 +279,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Python-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -320,12 +318,12 @@ Raw Data
     {
         "__impliedNames": [
             "Python-2.0",
-            "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
             "Python License 2.0",
             "scancode://python",
             "Python License, Version 2.0",
             "License :: OSI Approved :: Python Software Foundation License",
-            "Python Software Foundation License 2"
+            "Python Software Foundation License 2",
+            "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
         ],
         "__impliedId": "Python-2.0",
         "__impliedComments": [
@@ -485,24 +483,6 @@ Raw Data
                         "Python-2.0"
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Python-2.0",
-                        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
-                    ],
-                    "__impliedId": "Python-2.0"
-                },
-                "oName": "Python-2.0",
-                "oOtherLicenseIds": [
-                    "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -670,7 +650,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+                        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+                        "Python-2.0"
                     ],
                     "__impliedComments": [
                         [

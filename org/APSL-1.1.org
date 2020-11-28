@@ -9,11 +9,11 @@
 
 *Other Names:*
 
-- =APPLE PUBLIC SOURCE LICENSE, Version 1.1=
-
 - =scancode://apsl-1.1=
 
 - =APSL 1.1=
+
+- =APPLE PUBLIC SOURCE LICENSE, Version 1.1=
 
 ** Description
 
@@ -504,8 +504,6 @@ open-license]] (CDLA-Permissive-1.0))
 
 - LicenseName
 
-- Override
-
 - [[https://spdx.org/licenses/APSL-1.1.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -531,10 +529,10 @@ open-license]] (CDLA-Permissive-1.0))
   {
       "__impliedNames": [
           "APSL-1.1",
-          "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
           "Apple Public Source License 1.1",
           "scancode://apsl-1.1",
-          "APSL 1.1"
+          "APSL 1.1",
+          "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
       ],
       "__impliedId": "APSL-1.1",
       "__impliedAmbiguousNames": [
@@ -714,24 +712,6 @@ open-license]] (CDLA-Permissive-1.0))
               },
               "Comment": null,
               "LicenseId": "APSL-1.1"
-          },
-          "Override": {
-              "oNonCommecrial": null,
-              "implications": {
-                  "__impliedNames": [
-                      "APSL-1.1",
-                      "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-                  ],
-                  "__impliedId": "APSL-1.1"
-              },
-              "oName": "APSL-1.1",
-              "oOtherLicenseIds": [
-                  "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
-              ],
-              "oDescription": null,
-              "oJudgement": null,
-              "oCompatibilities": null,
-              "oRatingState": null
           },
           "Hitachi open-license": {
               "summary": "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
@@ -1259,7 +1239,8 @@ open-license]] (CDLA-Permissive-1.0))
               ],
               "_implications": {
                   "__impliedNames": [
-                      "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                      "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
+                      "APSL-1.1"
                   ],
                   "__impliedComments": [
                       [

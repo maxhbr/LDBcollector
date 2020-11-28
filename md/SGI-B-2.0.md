@@ -5,11 +5,11 @@ SGI Free Software License B v2.0 (SGI-B-2.0)
 
 **Other Names:**
 
--   `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
-
 -   `scancode://sgi-freeb-2.0`
 
 -   `SGI Free Software License B 2.0`
+
+-   `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
 
 Comments on (easy) usability
 ----------------------------
@@ -82,8 +82,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/SGI-B-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -107,10 +105,10 @@ Raw Data
     {
         "__impliedNames": [
             "SGI-B-2.0",
-            "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
             "SGI Free Software License B v2.0",
             "scancode://sgi-freeb-2.0",
-            "SGI Free Software License B 2.0"
+            "SGI Free Software License B 2.0",
+            "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
         ],
         "__impliedId": "SGI-B-2.0",
         "__isFsfFree": true,
@@ -249,24 +247,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "SGI-B-2.0",
-                        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
-                    ],
-                    "__impliedId": "SGI-B-2.0"
-                },
-                "oName": "SGI-B-2.0",
-                "oOtherLicenseIds": [
-                    "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "notices": [
                     {
@@ -389,7 +369,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
+                        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+                        "SGI-B-2.0"
                     ],
                     "__impliedComments": [
                         [

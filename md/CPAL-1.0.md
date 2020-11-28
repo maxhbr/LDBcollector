@@ -5,8 +5,6 @@ Common Public Attribution License 1.0 (CPAL-1.0)
 
 **Other Names:**
 
--   `Common Public Attribution License Version 1.0`
-
 -   `scancode://cpal-1.0`
 
 -   `CPAL 1.0`
@@ -14,6 +12,8 @@ Common Public Attribution License 1.0 (CPAL-1.0)
 -   `Common Public Attribution License Version 1.0 (CPAL-1.0)`
 
 -   `cpal_1.0`
+
+-   `Common Public Attribution License Version 1.0`
 
 Description
 -----------
@@ -247,8 +247,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CPAL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -286,12 +284,12 @@ Raw Data
     {
         "__impliedNames": [
             "CPAL-1.0",
-            "Common Public Attribution License Version 1.0",
             "Common Public Attribution License 1.0",
             "scancode://cpal-1.0",
             "CPAL 1.0",
             "Common Public Attribution License Version 1.0 (CPAL-1.0)",
-            "cpal_1.0"
+            "cpal_1.0",
+            "Common Public Attribution License Version 1.0"
         ],
         "__impliedId": "CPAL-1.0",
         "__impliedAmbiguousNames": [
@@ -497,24 +495,6 @@ Raw Data
                 },
                 "Comment": "Issue: Badgeware license (see: https://lwn.net/Articles/243841/)",
                 "LicenseId": "CPAL-1.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CPAL-1.0",
-                        "Common Public Attribution License Version 1.0"
-                    ],
-                    "__impliedId": "CPAL-1.0"
-                },
-                "oName": "CPAL-1.0",
-                "oOtherLicenseIds": [
-                    "Common Public Attribution License Version 1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/CPAL-1.0",
@@ -931,7 +911,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Common Public Attribution License Version 1.0"
+                        "Common Public Attribution License Version 1.0",
+                        "CPAL-1.0"
                     ],
                     "__impliedComments": [
                         [

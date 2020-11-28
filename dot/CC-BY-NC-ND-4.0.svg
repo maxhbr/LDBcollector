@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="95.29,-244 95.29,-350 692.34,-350 692.34,-244 95.29,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 771.63,-350 771.63,-244 16,-244"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 771.63,-236 771.63,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="251.93,-130 251.93,-236 535.71,-236 535.71,-130 251.93,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="251.93,-16 251.93,-122 535.71,-122 535.71,-16 251.93,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="95.29,-16 95.29,-122 692.34,-122 692.34,-16 95.29,-16"/>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;ND&#45;4.0(1) -->
 <g id="node1" class="node">
@@ -41,11 +41,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="393.82" cy="-324" rx="88.28" ry="18"/>
 <text text-anchor="middle" x="393.82" y="-320.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;ND&#45;4.0</text>
 </g>
-<!-- Creative Commons Attribution&#45;NoDerivatives 4.0 International(2) -->
+<!-- Creative Commons Attribution Non Commercial No Derivatives 4.0 International(2) -->
 <g id="node3" class="node">
-<title>Creative Commons Attribution&#45;NoDerivatives 4.0 International(2)</title>
-<ellipse fill="white" stroke="white" cx="393.82" cy="-270" rx="290.55" ry="18"/>
-<text text-anchor="middle" x="393.82" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution&#45;NoDerivatives 4.0 International</text>
+<title>Creative Commons Attribution Non Commercial No Derivatives 4.0 International(2)</title>
+<ellipse fill="white" stroke="white" cx="393.82" cy="-270" rx="369.63" ry="18"/>
+<text text-anchor="middle" x="393.82" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Non Commercial No Derivatives 4.0 International</text>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;ND&#45;4.0(3) -->
 <g id="node4" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="393.82" cy="-210" rx="88.28" ry="18"/>
 <text text-anchor="middle" x="393.82" y="-206.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;ND&#45;4.0</text>
 </g>
-<!-- Creative Commons Attribution Non Commercial No Derivatives 4.0 International(3) -->
+<!-- scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0(3) -->
 <g id="node5" class="node">
-<title>Creative Commons Attribution Non Commercial No Derivatives 4.0 International(3)</title>
-<ellipse fill="white" stroke="white" cx="393.82" cy="-156" rx="369.63" ry="18"/>
-<text text-anchor="middle" x="393.82" y="-152.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Non Commercial No Derivatives 4.0 International</text>
+<title>scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0(3)</title>
+<ellipse fill="white" stroke="white" cx="393.82" cy="-156" rx="133.78" ry="18"/>
+<text text-anchor="middle" x="393.82" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0</text>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;ND&#45;4.0(4) -->
 <g id="node6" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="393.82" cy="-96" rx="88.28" ry="18"/>
 <text text-anchor="middle" x="393.82" y="-92.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;ND&#45;4.0</text>
 </g>
-<!-- scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0(4) -->
+<!-- Creative Commons Attribution&#45;NoDerivatives 4.0 International(4) -->
 <g id="node7" class="node">
-<title>scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0(4)</title>
-<ellipse fill="white" stroke="white" cx="393.82" cy="-42" rx="133.78" ry="18"/>
-<text text-anchor="middle" x="393.82" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;nc&#45;nd&#45;4.0</text>
+<title>Creative Commons Attribution&#45;NoDerivatives 4.0 International(4)</title>
+<ellipse fill="white" stroke="white" cx="393.82" cy="-42" rx="290.55" ry="18"/>
+<text text-anchor="middle" x="393.82" y="-38.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution&#45;NoDerivatives 4.0 International</text>
 </g>
 </g>
 </svg>

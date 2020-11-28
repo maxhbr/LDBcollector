@@ -2,11 +2,11 @@
     "__impliedNames": [
         "Artistic-1.0",
         "Artistic 1.0 (original)",
-        "Artistic License (Perl) 1.0",
         "Artistic License 1.0",
         "scancode://artistic-1.0",
         "Artistic 1.0",
-        "Artistic License, Version 1.0"
+        "Artistic License, Version 1.0",
+        "Artistic License (Perl) 1.0"
     ],
     "__impliedId": "Artistic-1.0",
     "__impliedAmbiguousNames": [

@@ -5,8 +5,6 @@ Mozilla Public License 2.0 (MPL-2.0)
 
 **Other Names:**
 
--   `Mozilla Public License Version 2.0`
-
 -   `scancode://mpl-2.0`
 
 -   `MPL 2.0`
@@ -16,6 +14,8 @@ Mozilla Public License 2.0 (MPL-2.0)
 -   `License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)`
 
 -   `mozilla2.0`
+
+-   `Mozilla Public License Version 2.0`
 
 Description
 -----------
@@ -497,8 +497,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/MPL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -545,14 +543,14 @@ Raw Data
     {
         "__impliedNames": [
             "MPL-2.0",
-            "Mozilla Public License Version 2.0",
             "Mozilla Public License 2.0",
             "scancode://mpl-2.0",
             "MPL 2.0",
             "mpl-2.0",
             "Mozilla Public License, Version 2.0",
             "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)",
-            "mozilla2.0"
+            "mozilla2.0",
+            "Mozilla Public License Version 2.0"
         ],
         "__impliedId": "MPL-2.0",
         "__impliedAmbiguousNames": [
@@ -758,24 +756,6 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "MPL-2.0"
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "MPL-2.0",
-                        "Mozilla Public License Version 2.0"
-                    ],
-                    "__impliedId": "MPL-2.0"
-                },
-                "oName": "MPL-2.0",
-                "oOtherLicenseIds": [
-                    "Mozilla Public License Version 2.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -997,7 +977,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Mozilla Public License Version 2.0"
+                        "Mozilla Public License Version 2.0",
+                        "MPL-2.0"
                     ],
                     "__impliedComments": [
                         [

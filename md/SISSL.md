@@ -5,8 +5,6 @@ Sun Industry Standards Source License v1.1 (SISSL)
 
 **Other Names:**
 
--   `Sun Industry Standards Source License Version 1.1`
-
 -   `scancode://sun-sissl-1.1`
 
 -   `Sun Industry Standards Source License 1.1`
@@ -16,6 +14,8 @@ Sun Industry Standards Source License v1.1 (SISSL)
 -   `License :: OSI Approved :: Sun Industry Standards Source License (SISSL)`
 
 -   `sun-issl`
+
+-   `Sun Industry Standards Source License Version 1.1`
 
 Description
 -----------
@@ -412,8 +412,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/SISSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -444,13 +442,13 @@ Raw Data
     {
         "__impliedNames": [
             "SISSL",
-            "Sun Industry Standards Source License Version 1.1",
             "Sun Industry Standards Source License v1.1",
             "scancode://sun-sissl-1.1",
             "Sun Industry Standards Source License 1.1",
             "Sun Industry Standards Source License",
             "License :: OSI Approved :: Sun Industry Standards Source License (SISSL)",
-            "sun-issl"
+            "sun-issl",
+            "Sun Industry Standards Source License Version 1.1"
         ],
         "__impliedId": "SISSL",
         "__isFsfFree": true,
@@ -619,24 +617,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "SISSL",
-                        "Sun Industry Standards Source License Version 1.1"
-                    ],
-                    "__impliedId": "SISSL"
-                },
-                "oName": "SISSL",
-                "oOtherLicenseIds": [
-                    "Sun Industry Standards Source License Version 1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -1047,7 +1027,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Sun Industry Standards Source License Version 1.1"
+                        "Sun Industry Standards Source License Version 1.1",
+                        "SISSL"
                     ],
                     "__impliedComments": [
                         [

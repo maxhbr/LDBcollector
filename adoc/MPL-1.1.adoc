@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+Mozilla Public License Version 1.1+`
 * `+scancode://mpl-1.1+`
 * `+MPL 1.1+`
 * `+Mozilla Public License, Version 1.1+`
 * `+License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)+`
 * `+mozilla1.1+`
+* `+Mozilla Public License Version 1.1+`
 
 === Description
 
@@ -252,7 +252,6 @@ EXHIBIT A -Mozilla Public License.
 ==== Facts
 
 * LicenseName
-* Override
 * https://spdx.org/licenses/MPL-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -282,13 +281,13 @@ Knowledge International]
 {
     "__impliedNames": [
         "MPL-1.1",
-        "Mozilla Public License Version 1.1",
         "Mozilla Public License 1.1",
         "scancode://mpl-1.1",
         "MPL 1.1",
         "Mozilla Public License, Version 1.1",
         "License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)",
-        "mozilla1.1"
+        "mozilla1.1",
+        "Mozilla Public License Version 1.1"
     ],
     "__impliedId": "MPL-1.1",
     "__impliedAmbiguousNames": [
@@ -498,24 +497,6 @@ Knowledge International]
             },
             "Comment": null,
             "LicenseId": "MPL-1.1"
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "MPL-1.1",
-                    "Mozilla Public License Version 1.1"
-                ],
-                "__impliedId": "MPL-1.1"
-            },
-            "oName": "MPL-1.1",
-            "oOtherLicenseIds": [
-                "Mozilla Public License Version 1.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -910,7 +891,8 @@ Knowledge International]
             ],
             "_implications": {
                 "__impliedNames": [
-                    "Mozilla Public License Version 1.1"
+                    "Mozilla Public License Version 1.1",
+                    "MPL-1.1"
                 ],
                 "__impliedComments": [
                     [

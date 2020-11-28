@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 1009.51,-404 1009.51,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-298 212.93,-404 812.58,-404 812.58,-298 212.93,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-184 212.93,-290 812.58,-290 812.58,-184 212.93,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="417.66,-130 417.66,-290 607.85,-290 607.85,-130 417.66,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="417.66,-16 417.66,-176 607.85,-176 607.85,-16 417.66,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 1009.51,-122 1009.51,-16 16,-16"/>
 </g>
 <!-- CC&#45;PDDC(1) -->
 <g id="node1" class="node">
@@ -41,29 +41,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="512.76" cy="-378" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="512.76" y="-374.3" font-family="Times-Roman" font-size="14.00">CC&#45;PDDC</text>
 </g>
-<!-- Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification(2) -->
+<!-- Creative Commons Public Domain Dedication and Certification(2) -->
 <g id="node3" class="node">
-<title>Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification(2)</title>
-<ellipse fill="white" stroke="white" cx="512.76" cy="-324" rx="488.51" ry="18"/>
-<text text-anchor="middle" x="512.76" y="-320.3" font-family="Times-Roman" font-size="14.00">Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification</text>
+<title>Creative Commons Public Domain Dedication and Certification(2)</title>
+<ellipse fill="white" stroke="white" cx="512.76" cy="-324" rx="291.65" ry="18"/>
+<text text-anchor="middle" x="512.76" y="-320.3" font-family="Times-Roman" font-size="14.00">Creative Commons Public Domain Dedication and Certification</text>
+</g>
+<!-- CC&#45;PD(3) -->
+<g id="node4" class="node">
+<title>CC&#45;PD(3)</title>
+<ellipse fill="white" stroke="white" cx="512.76" cy="-264" rx="38.99" ry="18"/>
+<text text-anchor="middle" x="512.76" y="-260.3" font-family="Times-Roman" font-size="14.00">CC&#45;PD</text>
 </g>
 <!-- CC&#45;PDDC(3) -->
-<g id="node4" class="node">
-<title>CC&#45;PDDC(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="512.76" cy="-264" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="512.76" y="-260.3" font-family="Times-Roman" font-size="14.00">CC&#45;PDDC</text>
-</g>
-<!-- Creative Commons Public Domain Dedication and Certification(3) -->
 <g id="node5" class="node">
-<title>Creative Commons Public Domain Dedication and Certification(3)</title>
-<ellipse fill="white" stroke="white" cx="512.76" cy="-210" rx="291.65" ry="18"/>
-<text text-anchor="middle" x="512.76" y="-206.3" font-family="Times-Roman" font-size="14.00">Creative Commons Public Domain Dedication and Certification</text>
+<title>CC&#45;PDDC(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="512.76" cy="-210" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="512.76" y="-206.3" font-family="Times-Roman" font-size="14.00">CC&#45;PDDC</text>
 </g>
-<!-- CC&#45;PD(4) -->
+<!-- scancode://cc&#45;pd(3) -->
 <g id="node6" class="node">
-<title>CC&#45;PD(4)</title>
-<ellipse fill="white" stroke="white" cx="512.76" cy="-150" rx="38.99" ry="18"/>
-<text text-anchor="middle" x="512.76" y="-146.3" font-family="Times-Roman" font-size="14.00">CC&#45;PD</text>
+<title>scancode://cc&#45;pd(3)</title>
+<ellipse fill="white" stroke="white" cx="512.76" cy="-156" rx="87.18" ry="18"/>
+<text text-anchor="middle" x="512.76" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;pd</text>
 </g>
 <!-- CC&#45;PDDC(4) -->
 <g id="node7" class="node">
@@ -71,11 +71,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="512.76" cy="-96" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="512.76" y="-92.3" font-family="Times-Roman" font-size="14.00">CC&#45;PDDC</text>
 </g>
-<!-- scancode://cc&#45;pd(4) -->
+<!-- Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification(4) -->
 <g id="node8" class="node">
-<title>scancode://cc&#45;pd(4)</title>
-<ellipse fill="white" stroke="white" cx="512.76" cy="-42" rx="87.18" ry="18"/>
-<text text-anchor="middle" x="512.76" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;pd</text>
+<title>Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification(4)</title>
+<ellipse fill="white" stroke="white" cx="512.76" cy="-42" rx="488.51" ry="18"/>
+<text text-anchor="middle" x="512.76" y="-38.3" font-family="Times-Roman" font-size="14.00">Creative Commons Copyright&#45;Only Dedication (based on United States law) or Public Domain Certification</text>
 </g>
 </g>
 </svg>

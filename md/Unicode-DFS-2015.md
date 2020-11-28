@@ -5,11 +5,11 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 **Other Names:**
 
--   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)`
-
 -   `scancode://unicode-dfs-2015`
 
 -   `Unicode DFS 2015`
+
+-   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)`
 
 Description
 -----------
@@ -146,8 +146,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/Unicode-DFS-2015.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -171,10 +169,10 @@ Raw Data
     {
         "__impliedNames": [
             "Unicode-DFS-2015",
-            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
             "Unicode License Agreement - Data Files and Software (2015)",
             "scancode://unicode-dfs-2015",
-            "Unicode DFS 2015"
+            "Unicode DFS 2015",
+            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
         ],
         "__impliedId": "Unicode-DFS-2015",
         "__impliedComments": [
@@ -268,24 +266,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "Unicode-DFS-2015",
-                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
-                    ],
-                    "__impliedId": "Unicode-DFS-2015"
-                },
-                "oName": "Unicode-DFS-2015",
-                "oOtherLicenseIds": [
-                    "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "http://www.unicode.org/copyright.html#License",
@@ -426,7 +406,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
+                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
+                        "Unicode-DFS-2015"
                     ],
                     "__impliedComments": [
                         [

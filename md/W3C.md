@@ -5,8 +5,6 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 **Other Names:**
 
--   `W3C Software Notice and License (became active on December 31 2002)`
-
 -   `scancode://w3c`
 
 -   `W3C Software Notice and License`
@@ -18,6 +16,8 @@ W3C Software Notice and License (2002-12-31) (W3C)
 -   `W3C Software Notice and License 20021231`
 
 -   `W3C License`
+
+-   `W3C Software Notice and License (became active on December 31 2002)`
 
 Description
 -----------
@@ -156,8 +156,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/W3C.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -198,14 +196,14 @@ Raw Data
     {
         "__impliedNames": [
             "W3C",
-            "W3C Software Notice and License (became active on December 31 2002)",
             "W3C Software Notice and License (2002-12-31)",
             "scancode://w3c",
             "W3C Software Notice and License",
             "The W3C Software Notice and License",
             "License :: OSI Approved :: W3C License",
             "W3C Software Notice and License 20021231",
-            "W3C License"
+            "W3C License",
+            "W3C Software Notice and License (became active on December 31 2002)"
         ],
         "__impliedId": "W3C",
         "__isFsfFree": true,
@@ -420,24 +418,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "W3C",
-                        "W3C Software Notice and License (became active on December 31 2002)"
-                    ],
-                    "__impliedId": "W3C"
-                },
-                "oName": "W3C",
-                "oOtherLicenseIds": [
-                    "W3C Software Notice and License (became active on December 31 2002)"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
                 "notices": [
@@ -588,7 +568,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "W3C Software Notice and License (became active on December 31 2002)"
+                        "W3C Software Notice and License (became active on December 31 2002)",
+                        "W3C"
                     ],
                     "__impliedComments": [
                         [

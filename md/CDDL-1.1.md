@@ -5,11 +5,11 @@ Common Development and Distribution License 1.1 (CDDL-1.1)
 
 **Other Names:**
 
--   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1`
-
 -   `scancode://cddl-1.1`
 
 -   `CDDL 1.1`
+
+-   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1`
 
 Description
 -----------
@@ -189,8 +189,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CDDL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -217,10 +215,10 @@ Raw Data
     {
         "__impliedNames": [
             "CDDL-1.1",
-            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
             "Common Development and Distribution License 1.1",
             "scancode://cddl-1.1",
-            "CDDL 1.1"
+            "CDDL 1.1",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"
         ],
         "__impliedId": "CDDL-1.1",
         "__impliedAmbiguousNames": [
@@ -342,24 +340,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "CDDL-1.1",
-                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"
-                    ],
-                    "__impliedId": "CDDL-1.1"
-                },
-                "oName": "CDDL-1.1",
-                "oOtherLicenseIds": [
-                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "Venue shall be within Santa Clara County, California, and subject to the provisions of California law, the Federal Court for the Northern District of California, and the jurisdiction of the state courts of California.",
@@ -719,7 +699,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"
+                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1",
+                        "CDDL-1.1"
                     ],
                     "__impliedComments": [
                         [

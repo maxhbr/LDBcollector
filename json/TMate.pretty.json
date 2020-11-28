@@ -1,9 +1,9 @@
 {
     "__impliedNames": [
         "TMate",
-        "TMate Open Source License for \"TMate JavaSVN library\"",
         "TMate Open Source License",
-        "scancode://tmate"
+        "scancode://tmate",
+        "TMate Open Source License for \"TMate JavaSVN library\""
     ],
     "__impliedId": "TMate",
     "__isFsfFree": true,
@@ -123,24 +123,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "TMate",
-                    "TMate Open Source License for \"TMate JavaSVN library\""
-                ],
-                "__impliedId": "TMate"
-            },
-            "oName": "TMate",
-            "oOtherLicenseIds": [
-                "TMate Open Source License for \"TMate JavaSVN library\""
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "summary": "https://svnkit.com/license.html",

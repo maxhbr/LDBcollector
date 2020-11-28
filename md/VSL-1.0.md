@@ -5,8 +5,6 @@ Vovida Software License v1.0 (VSL-1.0)
 
 **Other Names:**
 
--   `Vovida Software License, Version 1.0`
-
 -   `scancode://vsl-1.0`
 
 -   `Vovida Software License 1.0`
@@ -14,6 +12,8 @@ Vovida Software License v1.0 (VSL-1.0)
 -   `The Vovida Software License, Version 1.0`
 
 -   `License :: OSI Approved :: Vovida Software License 1.0`
+
+-   `Vovida Software License, Version 1.0`
 
 Description
 -----------
@@ -131,8 +131,6 @@ Raw Data
 
 -   LicenseName
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/VSL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -162,12 +160,12 @@ Raw Data
     {
         "__impliedNames": [
             "VSL-1.0",
-            "Vovida Software License, Version 1.0",
             "Vovida Software License v1.0",
             "scancode://vsl-1.0",
             "Vovida Software License 1.0",
             "The Vovida Software License, Version 1.0",
-            "License :: OSI Approved :: Vovida Software License 1.0"
+            "License :: OSI Approved :: Vovida Software License 1.0",
+            "Vovida Software License, Version 1.0"
         ],
         "__impliedId": "VSL-1.0",
         "__impliedComments": [
@@ -341,24 +339,6 @@ Raw Data
                     ]
                 }
             },
-            "Override": {
-                "oNonCommecrial": null,
-                "implications": {
-                    "__impliedNames": [
-                        "VSL-1.0",
-                        "Vovida Software License, Version 1.0"
-                    ],
-                    "__impliedId": "VSL-1.0"
-                },
-                "oName": "VSL-1.0",
-                "oOtherLicenseIds": [
-                    "Vovida Software License, Version 1.0"
-                ],
-                "oDescription": null,
-                "oJudgement": null,
-                "oCompatibilities": null,
-                "oRatingState": null
-            },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/VSL-1.0",
                 "notices": [
@@ -453,7 +433,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Vovida Software License, Version 1.0"
+                        "Vovida Software License, Version 1.0",
+                        "VSL-1.0"
                     ],
                     "__impliedComments": [
                         [

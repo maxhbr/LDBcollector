@@ -5,9 +5,9 @@ Creative Commons Attribution Non Commercial 1.0 Generic (CC-BY-NC-1.0)
 
 **Other Names:**
 
--   `Creative Comnons Attribution-NonCommercial 1.0 Generic`
-
 -   `scancode://cc-by-nc-1.0`
+
+-   `Creative Comnons Attribution-NonCommercial 1.0 Generic`
 
 Description
 -----------
@@ -167,8 +167,6 @@ Raw Data
 
 -   Override
 
--   Override
-
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -192,9 +190,9 @@ Raw Data
     {
         "__impliedNames": [
             "CC-BY-NC-1.0",
-            "Creative Comnons Attribution-NonCommercial 1.0 Generic",
             "Creative Commons Attribution Non Commercial 1.0 Generic",
-            "scancode://cc-by-nc-1.0"
+            "scancode://cc-by-nc-1.0",
+            "Creative Comnons Attribution-NonCommercial 1.0 Generic"
         ],
         "__impliedId": "CC-BY-NC-1.0",
         "__impliedAmbiguousNames": [
@@ -527,7 +525,8 @@ Raw Data
                 ],
                 "_implications": {
                     "__impliedNames": [
-                        "Creative Comnons Attribution-NonCommercial 1.0 Generic"
+                        "Creative Comnons Attribution-NonCommercial 1.0 Generic",
+                        "CC-BY-NC-1.0"
                     ],
                     "__impliedComments": [
                         [

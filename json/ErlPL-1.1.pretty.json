@@ -1,10 +1,10 @@
 {
     "__impliedNames": [
         "ErlPL-1.1",
-        "ERLANG PUBLIC LICENSE Version 1.1",
         "Erlang Public License v1.1",
         "scancode://erlangpl-1.1",
-        "Erlang Public License 1.1"
+        "Erlang Public License 1.1",
+        "ERLANG PUBLIC LICENSE Version 1.1"
     ],
     "__impliedId": "ErlPL-1.1",
     "__isFsfFree": true,
@@ -131,24 +131,6 @@
                     ]
                 ]
             }
-        },
-        "Override": {
-            "oNonCommecrial": null,
-            "implications": {
-                "__impliedNames": [
-                    "ErlPL-1.1",
-                    "ERLANG PUBLIC LICENSE Version 1.1"
-                ],
-                "__impliedId": "ErlPL-1.1"
-            },
-            "oName": "ErlPL-1.1",
-            "oOtherLicenseIds": [
-                "ERLANG PUBLIC LICENSE Version 1.1"
-            ],
-            "oDescription": null,
-            "oJudgement": null,
-            "oCompatibilities": null,
-            "oRatingState": null
         },
         "Hitachi open-license": {
             "notices": [
@@ -528,7 +510,8 @@
             ],
             "_implications": {
                 "__impliedNames": [
-                    "ERLANG PUBLIC LICENSE Version 1.1"
+                    "ERLANG PUBLIC LICENSE Version 1.1",
+                    "ErlPL-1.1"
                 ],
                 "__impliedComments": [
                     [
