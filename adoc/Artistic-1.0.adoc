@@ -414,7 +414,6 @@ Policy]
         },
         "Hitachi open-license": {
             "summary": "http://opensource.org/licenses/Artistic-1.0",
-            "_id": "licenses/596",
             "notices": [
                 {
                     "_notice_description": "There is no guarantee.",
@@ -448,30 +447,24 @@ Policy]
                 {
                     "actions": [
                         {
-                            "_id": "actions/1",
                             "name": "Use the obtained source code without modification",
                             "description": "Use the fetched code as it is."
                         },
                         {
-                            "_id": "actions/4",
                             "name": "Using Modified Source Code"
                         },
                         {
-                            "_id": "actions/5",
                             "name": "Use the retrieved object code",
                             "description": "Use the fetched code as it is."
                         },
                         {
-                            "_id": "actions/7",
                             "name": "Use the object code generated from the modified source code"
                         },
                         {
-                            "_id": "actions/84",
                             "name": "Use the retrieved executable",
                             "description": "Use the obtained executable as is."
                         },
                         {
-                            "_id": "actions/87",
                             "name": "Use the executable generated from the modified source code"
                         }
                     ],
@@ -480,13 +473,11 @@ Policy]
                 {
                     "actions": [
                         {
-                            "_id": "actions/9",
                             "name": "Distribute the obtained source code without modification",
                             "description": "Redistribute the code as it was obtained"
                         }
                     ],
                     "conditions": {
-                        "_id": "conditions/284",
                         "name": "Include the original copyright notice and associated disclaimer in the package",
                         "type": "OBLIGATION"
                     },
@@ -495,47 +486,40 @@ Policy]
                 {
                     "actions": [
                         {
-                            "_id": "actions/3",
                             "name": "Modify the obtained source code."
                         }
                     ],
                     "conditions": {
                         "AND": [
                             {
-                                "_id": "conditions/285",
                                 "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                 "type": "OBLIGATION"
                             },
                             {
                                 "OR": [
                                     {
-                                        "_id": "conditions/286",
                                         "name": "Make your modifications freely available in one of the following ways Make your modifications freely available in one of the following ways: by placing them in the public domain, posting them on Usenet or similar media, registering them on a major archive site that does not restrict access to your modifications, or allowing the copyright holder to include them in the standard version of the package.",
                                         "type": "OBLIGATION",
                                         "description": "Freely available means that there is no charge for the software and no charge for redistribution of the software."
                                     },
                                     {
-                                        "_id": "conditions/289",
                                         "name": "Use only in your own corporation or organization.",
                                         "type": "RESTRICTION"
                                     },
                                     {
                                         "AND": [
                                             {
-                                                "_id": "conditions/290",
                                                 "name": "Give a non-standard executable a different name than the standard executable.",
                                                 "type": "RESTRICTION",
                                                 "description": "Avoid conflicts with the name of the standard executable"
                                             },
                                             {
-                                                "_id": "conditions/291",
                                                 "name": "Attach a separate page to the non-standard executable version of the manual that specifies the differences from the standard version",
                                                 "type": "RESTRICTION"
                                             }
                                         ]
                                     },
                                     {
-                                        "_id": "conditions/292",
                                         "name": "Decide on a different method of distribution with the copyright holder",
                                         "type": "RESTRICTION"
                                     }
@@ -548,63 +532,52 @@ Policy]
                 {
                     "actions": [
                         {
-                            "_id": "actions/10",
                             "name": "Distribute the obtained object code",
                             "description": "Redistribute the code as it was obtained"
                         },
                         {
-                            "_id": "actions/13",
                             "name": "Distribute the object code generated from the modified source code"
                         },
                         {
-                            "_id": "actions/86",
                             "name": "Distribute the obtained executable",
                             "description": "Redistribute the obtained executable as-is"
                         },
                         {
-                            "_id": "actions/89",
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
                     "conditions": {
                         "OR": [
                             {
-                                "_id": "conditions/293",
                                 "name": "Distribute the standard executable and library files along with manuals and other information on where to get the standard version.",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/294",
                                 "name": "Attach the corresponding source code to the modified package",
                                 "type": "OBLIGATION"
                             },
                             {
                                 "AND": [
                                     {
-                                        "_id": "conditions/296",
                                         "name": "Attach the executable of the standard version for non-standard executables",
                                         "type": "OBLIGATION"
                                     },
                                     {
-                                        "_id": "conditions/290",
                                         "name": "Give a non-standard executable a different name than the standard executable.",
                                         "type": "RESTRICTION",
                                         "description": "Avoid conflicts with the name of the standard executable"
                                     },
                                     {
-                                        "_id": "conditions/291",
                                         "name": "Attach a separate page to the non-standard executable version of the manual that specifies the differences from the standard version",
                                         "type": "RESTRICTION"
                                     },
                                     {
-                                        "_id": "conditions/295",
                                         "name": "Describe where to get the standard version in a manual or other document that specifies the differences from the standard version.",
                                         "type": "OBLIGATION"
                                     }
                                 ]
                             },
                             {
-                                "_id": "conditions/292",
                                 "name": "Decide on a different method of distribution with the copyright holder",
                                 "type": "RESTRICTION"
                             }
@@ -615,12 +588,10 @@ Policy]
                 {
                     "actions": [
                         {
-                            "_id": "actions/269",
                             "name": "Use the copyright holder's name to endorse or promote the derived product"
                         }
                     ],
                     "conditions": {
-                        "_id": "conditions/3",
                         "name": "Get special permission in writing.",
                         "type": "REQUISITE"
                     }

@@ -385,7 +385,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
-                "_id": "licenses/763",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -411,26 +410,21 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/6",
                                 "name": "Use the retrieved binaries",
                                 "description": "Use the fetched binary as it is."
                             },
                             {
-                                "_id": "actions/8",
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/246",
                             "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                             "type": "RESTRICTION",
                             "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
@@ -440,68 +434,54 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/19",
                                 "name": "Sublicense the acquired source code.",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/25",
                                 "name": "Sublicensing Modified Source Code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/33",
                                 "name": "Sublicense the acquired binaries",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/34",
                                 "name": "Sublicense the generated binaries from modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/114",
                                 "name": "Display the obtained source code"
                             },
                             {
-                                "_id": "actions/115",
                                 "name": "Execute the obtained source code."
                             },
                             {
-                                "_id": "actions/118",
                                 "name": "Display the modified source code"
                             },
                             {
-                                "_id": "actions/119",
                                 "name": "Executing Modified Source Code"
                             },
                             {
-                                "_id": "actions/287",
                                 "name": "Display the retrieved binary"
                             },
                             {
-                                "_id": "actions/288",
                                 "name": "Display the generated binary from the modified source code"
                             },
                             {
-                                "_id": "actions/289",
                                 "name": "Execute the generated binary from the modified source code"
                             },
                             {
-                                "_id": "actions/290",
                                 "name": "Execute the obtained binary"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/13",
                                     "name": "Acknowledgements",
                                     "type": "OBLIGATION"
                                 }
@@ -512,7 +492,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -520,23 +499,19 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/13",
                                     "name": "Acknowledgements",
                                     "type": "OBLIGATION"
                                 }
@@ -547,30 +522,25 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/318",
                                     "name": "Indicate your changes in the materials that accompany the distribution.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/13",
                                     "name": "Acknowledgements",
                                     "type": "OBLIGATION"
                                 }
@@ -581,35 +551,29 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/318",
                                     "name": "Indicate your changes in the materials that accompany the distribution.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/13",
                                     "name": "Acknowledgements",
                                     "type": "OBLIGATION"
                                 }
@@ -620,25 +584,21 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/11",
                                 "name": "Distribute the fetched binaries",
                                 "description": "Redistribute the fetched binaries as they are"
                             },
                             {
-                                "_id": "actions/14",
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/13",
                                     "name": "Acknowledgements",
                                     "type": "OBLIGATION"
                                 }
@@ -649,12 +609,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/291",
                                 "name": "Use the names of authors and contributors in publicity and advertising."
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/3",
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },

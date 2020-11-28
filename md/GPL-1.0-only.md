@@ -555,7 +555,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/5",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -597,30 +596,24 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
@@ -629,7 +622,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -637,12 +629,10 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 }
@@ -653,24 +643,20 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION"
                                 }
@@ -681,44 +667,36 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/90",
                                 "name": "Publish the modified source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/77",
                                     "name": "License the software to third parties free of charge in accordance with the terms of such license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/76",
                                     "name": "If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
                                 },
                                 {
-                                    "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION"
                                 }
@@ -729,12 +707,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             }
@@ -742,17 +718,14 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/76",
                                     "name": "If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
@@ -760,12 +733,10 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/42",
                                             "name": "Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.",
                                             "type": "OBLIGATION"
                                         }
@@ -778,64 +749,52 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/91",
                                 "name": "Present the object code generated from the modified source code."
                             },
                             {
-                                "_id": "actions/92",
                                 "name": "Present the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/77",
                                     "name": "License the software to third parties free of charge in accordance with the terms of such license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/76",
                                     "name": "If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
                                 },
                                 {
-                                    "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/42",
                                             "name": "Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.",
                                             "type": "OBLIGATION"
                                         }

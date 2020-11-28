@@ -753,7 +753,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/258",
                 "notices": [
                     {
                         "_notice_description": "The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses.",
@@ -851,37 +850,30 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
@@ -893,46 +885,37 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/114",
                                 "name": "Display the obtained source code"
                             },
                             {
-                                "_id": "actions/115",
                                 "name": "Execute the obtained source code."
                             },
                             {
-                                "_id": "actions/118",
                                 "name": "Display the modified source code"
                             },
                             {
-                                "_id": "actions/119",
                                 "name": "Executing Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/198",
                                     "name": "Let us know where to get a copy of this license.",
                                     "type": "OBLIGATION",
                                     "description": "Notice that the source code is subject to this license."
@@ -944,46 +927,37 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/116",
                                 "name": "Display the retrieved executable."
                             },
                             {
-                                "_id": "actions/117",
                                 "name": "Execute the obtained executable."
                             },
                             {
-                                "_id": "actions/120",
                                 "name": "Display the executable generated from the modified source code."
                             },
                             {
-                                "_id": "actions/121",
                                 "name": "Execute the executable generated from the modified source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/6",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/87",
                                     "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 }
@@ -994,12 +968,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/36",
                                 "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/14",
                             "name": "I do so at my own risk.",
                             "type": "OBLIGATION",
                             "description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage."
@@ -1008,44 +980,36 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/110",
                                 "name": "Distribute the acquired executables under your own license"
                             },
                             {
-                                "_id": "actions/111",
                                 "name": "Distribute executables generated from modified source code under your own license."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/87",
                                     "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/73",
                                     "name": "The license you offer does not restrict or modify the rights to the source code described in the license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/199",
                                     "name": "Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents",
                                     "type": "OBLIGATION"
                                 }

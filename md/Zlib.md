@@ -434,7 +434,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/16",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -460,39 +459,31 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/6",
                                 "name": "Use the retrieved binaries",
                                 "description": "Use the fetched binary as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/8",
                                 "name": "Use binaries generated from modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
@@ -501,7 +492,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -509,12 +499,10 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 }
@@ -525,23 +513,19 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/11",
                                 "name": "Distribute the fetched binaries",
                                 "description": "Redistribute the fetched binaries as they are"
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/55",
                             "name": "Correctly indicate the origin of the software in question",
                             "type": "OBLIGATION"
                         },
@@ -550,31 +534,25 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/14",
                                 "name": "Distribute the generated binaries from modified source code"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 }
@@ -585,24 +563,20 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 }

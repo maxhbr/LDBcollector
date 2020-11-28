@@ -422,7 +422,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/36",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -488,72 +487,56 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/17",
                                 "name": "Display the obtained source code publicly"
                             },
                             {
-                                "_id": "actions/18",
                                 "name": "Executing the fetched source code publicly"
                             },
                             {
-                                "_id": "actions/19",
                                 "name": "Sublicense the acquired source code.",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/20",
                                 "name": "Display the retrieved object code publicly"
                             },
                             {
-                                "_id": "actions/21",
                                 "name": "Publicly execute the fetched object code"
                             },
                             {
-                                "_id": "actions/22",
                                 "name": "Sublicense the acquired object code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/23",
                                 "name": "Display modified source code publicly"
                             },
                             {
-                                "_id": "actions/24",
                                 "name": "Publicly execute the modified source code"
                             },
                             {
-                                "_id": "actions/25",
                                 "name": "Sublicensing Modified Source Code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/26",
                                 "name": "Publicly display the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/27",
                                 "name": "Publicly execute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/28",
                                 "name": "Sublicense the object code generated from the modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             }
@@ -561,18 +544,15 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
@@ -584,7 +564,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -592,34 +571,28 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."
@@ -631,7 +604,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -639,34 +611,28 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."
@@ -678,58 +644,48 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/76",
                                 "name": "Distribute the acquired object code under your own license"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/85",
                                     "name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
                                     "type": "RESTRICTION",
                                     "description": "Contributor is the person or entity that distributes the Software."
                                 },
                                 {
-                                    "_id": "conditions/86",
                                     "name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
                                     "type": "RESTRICTION",
                                     "description": "Contributor is the person or entity that distributes the Software."
                                 },
                                 {
-                                    "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."
@@ -741,36 +697,30 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 }
@@ -781,46 +731,38 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."
@@ -832,46 +774,38 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."
@@ -883,63 +817,52 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/77",
                                 "name": "Distribute object code generated from modified source code under your own license"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/86",
                                     "name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
                                     "type": "RESTRICTION",
                                     "description": "Contributor is the person or entity that distributes the Software."
                                 },
                                 {
-                                    "_id": "conditions/85",
                                     "name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
                                     "type": "RESTRICTION",
                                     "description": "Contributor is the person or entity that distributes the Software."
                                 },
                                 {
-                                    "_id": "conditions/11",
                                     "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
                                     "type": "REQUISITE",
                                     "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
                                 },
                                 {
-                                    "_id": "conditions/83",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question."
                                 },
                                 {
-                                    "_id": "conditions/84",
                                     "name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
                                     "type": "OBLIGATION",
                                     "description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent."

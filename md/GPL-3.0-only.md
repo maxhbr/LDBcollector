@@ -1204,7 +1204,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/7",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -1342,26 +1341,21 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/124",
                             "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                             "type": "RESTRICTION",
                             "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1370,28 +1364,23 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/140",
                                 "name": "Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
                             },
                             {
-                                "_id": "actions/141",
                                 "name": "Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/104",
                                     "name": "Distribution of the parts of the work not covered by your copyright is subject to this license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/105",
                                     "name": "Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/106",
                                     "name": "You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.",
                                     "type": "RESTRICTION"
                                 }
@@ -1401,7 +1390,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -1409,27 +1397,22 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/108",
                                     "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/109",
                                     "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/124",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1441,30 +1424,25 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/110",
                                     "name": "Indicate your changes and the date of the change.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/39",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION",
                                     "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
                                 },
                                 {
-                                    "_id": "conditions/124",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1475,51 +1453,42 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/108",
                                     "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/109",
                                     "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/110",
                                     "name": "Indicate your changes and the date of the change.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/111",
                                     "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
                                 },
                                 {
-                                    "_id": "conditions/39",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION",
                                     "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
                                 },
                                 {
-                                    "_id": "conditions/124",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1531,7 +1500,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -1539,27 +1507,22 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/108",
                                     "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/109",
                                     "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/111",
                                     "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
@@ -1567,40 +1530,33 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/112",
                                             "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/113",
                                             "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/41",
                                             "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/114",
                                             "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
                                             "type": "OBLIGATION"
                                         }
                                     ]
                                 },
                                 {
-                                    "_id": "conditions/115",
                                     "name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
                                     "type": "OBLIGATION",
                                     "description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition."
                                 },
                                 {
-                                    "_id": "conditions/124",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1612,19 +1568,16 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/108",
                                     "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/115",
                                     "name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
                                     "type": "OBLIGATION",
                                     "description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition."
@@ -1632,66 +1585,54 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/112",
                                             "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/113",
                                             "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/41",
                                             "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/114",
                                             "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
                                             "type": "OBLIGATION"
                                         }
                                     ]
                                 },
                                 {
-                                    "_id": "conditions/39",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
                                     "type": "OBLIGATION",
                                     "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
                                 },
                                 {
-                                    "_id": "conditions/111",
                                     "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
                                 },
                                 {
-                                    "_id": "conditions/110",
                                     "name": "Indicate your changes and the date of the change.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/109",
                                     "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/124",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -1703,7 +1644,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/142",
                                 "name": "Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it."
                             }
                         ],
@@ -1712,39 +1652,32 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/116",
                                             "name": "disclaiming any warranty or limiting liability that differs from the terms of this license.",
                                             "type": "RESTRICTION"
                                         },
                                         {
-                                            "_id": "conditions/117",
                                             "name": "require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions",
                                             "type": "RESTRICTION"
                                         },
                                         {
-                                            "_id": "conditions/118",
                                             "name": "Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version",
                                             "type": "RESTRICTION"
                                         },
                                         {
-                                            "_id": "conditions/119",
                                             "name": "Restrict the use of the name of the licensor or author of the section you add for promotional purposes",
                                             "type": "RESTRICTION"
                                         },
                                         {
-                                            "_id": "conditions/122",
                                             "name": "To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.",
                                             "type": "RESTRICTION"
                                         },
                                         {
-                                            "_id": "conditions/120",
                                             "name": "Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her",
                                             "type": "RESTRICTION"
                                         }
                                     ]
                                 },
                                 {
-                                    "_id": "conditions/123",
                                     "name": "Include these license terms, or a reference to them in the file to which these additional license terms apply",
                                     "type": "RESTRICTION"
                                 }

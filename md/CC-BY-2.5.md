@@ -235,7 +235,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "http://creativecommons.org/licenses/by/2.5/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
-                "_id": "licenses/266",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -341,112 +340,88 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/122",
                                 "name": "Reproduce the work."
                             },
                             {
-                                "_id": "actions/126",
                                 "name": "Creating a derivative work"
                             },
                             {
-                                "_id": "actions/127",
                                 "name": "Incorporate a work into one or more collective works"
                             },
                             {
-                                "_id": "actions/128",
                                 "name": "Reproduce a work incorporated into a collective work"
                             },
                             {
-                                "_id": "actions/129",
                                 "name": "Reproduce a derivative work"
                             },
                             {
-                                "_id": "actions/130",
                                 "name": "Distribute copies of the work (including works incorporated into a collective work)"
                             },
                             {
-                                "_id": "actions/131",
                                 "name": "Distributing a medium on which a recording of a work (including a work incorporated into a collective work) is made"
                             },
                             {
-                                "_id": "actions/132",
                                 "name": "Public display of a work (including a work incorporated into a collective work)"
                             },
                             {
-                                "_id": "actions/133",
                                 "name": "Publicly perform a work (including a work incorporated into a collective work)"
                             },
                             {
-                                "_id": "actions/134",
                                 "name": "Public performance of a work (including a work incorporated into a collective work) by digital audio transmission"
                             },
                             {
-                                "_id": "actions/135",
                                 "name": "Distribute copies of derivative works"
                             },
                             {
-                                "_id": "actions/136",
                                 "name": "Distribute the medium in which the derivative works are recorded"
                             },
                             {
-                                "_id": "actions/137",
                                 "name": "Public display of derivative works"
                             },
                             {
-                                "_id": "actions/138",
                                 "name": "Publicly perform a derivative work"
                             },
                             {
-                                "_id": "actions/139",
                                 "name": "Publicly perform a derivative work by digital audio transmission"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/94",
                                     "name": "Exercise rights in all current and future media and formats",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/95",
                                     "name": "Make technical changes for use in other media or formats, if necessary",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/96",
                                     "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/98",
                                     "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/99",
                                     "name": "No sublicensing of copyrighted material.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/100",
                                     "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/101",
                                     "name": "Take no technical measures to restrict access to or use of the work in a way that violates this license",
                                     "type": "OBLIGATION",
                                     "description": "The same is true for works incorporated into a collective work. However, this license does not extend to collective works that are different from the works under this license."
                                 },
                                 {
-                                    "_id": "conditions/102",
                                     "name": "All copyright notices are posted intact.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/103",
                                     "name": "Provide the credit you specify in a reasonable manner.",
                                     "type": "OBLIGATION",
                                     "description": "In the case of derivative or collective works, such credit shall be given at least where other similar credits appear, and in a manner that is at least as prominent as other similar credits. The name of the original author (or a pseudonym, if applicable) and the name of the entity to which the rights are attributed by the licensor's copyright notice, terms of use, or otherwise - the title of the work, if any - the URI listed by the licensor for the work If there is, the URI shall be displayed as much as reasonably practicable. However, this does not apply if there is no reference to copyright notice or information about the license. â In the case of derivative works, credit for the use of the work."

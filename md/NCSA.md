@@ -359,7 +359,6 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
-                "_id": "licenses/684",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -385,25 +384,20 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/6",
                                 "name": "Use the retrieved binaries",
                                 "description": "Use the fetched binary as it is."
                             },
                             {
-                                "_id": "actions/8",
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
@@ -413,31 +407,25 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/19",
                                 "name": "Sublicense the acquired source code.",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/25",
                                 "name": "Sublicensing Modified Source Code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/90",
                                 "name": "Publish the modified source code."
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
                         },
@@ -446,35 +434,28 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/11",
                                 "name": "Distribute the fetched binaries",
                                 "description": "Redistribute the fetched binaries as they are"
                             },
                             {
-                                "_id": "actions/14",
                                 "name": "Distribute the generated binaries from modified source code"
                             },
                             {
-                                "_id": "actions/33",
                                 "name": "Sublicense the acquired binaries",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/34",
                                 "name": "Sublicense the generated binaries from modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/35",
                                 "name": "Selling Software"
                             },
                             {
-                                "_id": "actions/277",
                                 "name": "Publish the binary generated from the modified source code"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/2",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
                         },
@@ -483,12 +464,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/15",
                                 "name": "Use the name of the owner or contributor to promote or sell the derived product"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/3",
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         }

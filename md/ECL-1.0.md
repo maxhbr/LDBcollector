@@ -307,7 +307,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/ecl1.php",
-                "_id": "licenses/1545",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -333,30 +332,24 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
@@ -366,47 +359,38 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/19",
                                 "name": "Sublicense the acquired source code.",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/22",
                                 "name": "Sublicense the acquired object code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             },
                             {
-                                "_id": "actions/106",
                                 "name": "Sublicense the acquired executable",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/403",
                                 "name": "Publish the acquired source code.",
                                 "description": "Publish the source code as it was obtained."
                             },
                             {
-                                "_id": "actions/404",
                                 "name": "Publish the retrieved object code",
                                 "description": "Publish the fetched object code as it is."
                             },
                             {
-                                "_id": "actions/406",
                                 "name": "Present the obtained executables.",
                                 "description": "Publish the obtained executable as is."
                             }
@@ -414,12 +398,10 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
                                     "type": "OBLIGATION"
                                 }
@@ -430,19 +412,16 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
                                     "type": "OBLIGATION"
                                 }
@@ -453,41 +432,32 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/25",
                                 "name": "Sublicensing Modified Source Code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/28",
                                 "name": "Sublicense the object code generated from the modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/90",
                                 "name": "Publish the modified source code."
                             },
                             {
-                                "_id": "actions/91",
                                 "name": "Present the object code generated from the modified source code."
                             },
                             {
-                                "_id": "actions/92",
                                 "name": "Present the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/109",
                                 "name": "Sublicense the generated executable from modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             }
@@ -495,17 +465,14 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
                                     "type": "OBLIGATION"
                                 }
@@ -516,12 +483,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/154",
                                 "name": "Use the copyright holder's name in software promotions and advertisements"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/3",
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },

@@ -222,7 +222,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING",
-                "_id": "licenses/1561",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -256,34 +255,27 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
@@ -293,30 +285,24 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/19",
                                 "name": "Sublicense the acquired source code.",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/25",
                                 "name": "Sublicensing Modified Source Code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/90",
                                 "name": "Publish the modified source code."
                             },
                             {
-                                "_id": "actions/403",
                                 "name": "Publish the acquired source code.",
                                 "description": "Publish the source code as it was obtained."
                             }
@@ -324,7 +310,6 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/191",
                                     "name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 }
@@ -335,62 +320,49 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/22",
                                 "name": "Sublicense the acquired object code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/28",
                                 "name": "Sublicense the object code generated from the modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/35",
                                 "name": "Selling Software"
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/91",
                                 "name": "Present the object code generated from the modified source code."
                             },
                             {
-                                "_id": "actions/92",
                                 "name": "Present the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/106",
                                 "name": "Sublicense the acquired executable",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/109",
                                 "name": "Sublicense the generated executable from modified source code",
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             },
                             {
-                                "_id": "actions/404",
                                 "name": "Publish the retrieved object code",
                                 "description": "Publish the fetched object code as it is."
                             },
                             {
-                                "_id": "actions/406",
                                 "name": "Present the obtained executables.",
                                 "description": "Publish the obtained executable as is."
                             }
@@ -398,31 +370,26 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/191",
                                     "name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/13",
                                             "name": "Acknowledgements",
                                             "type": "OBLIGATION"
                                         },
                                         {
                                             "OR": [
                                                 {
-                                                    "_id": "conditions/21",
                                                     "name": "Attach the source code corresponding to the software in question.",
                                                     "type": "OBLIGATION"
                                                 },
                                                 {
-                                                    "_id": "conditions/87",
                                                     "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
                                                     "type": "OBLIGATION"
                                                 },
                                                 {
-                                                    "_id": "conditions/624",
                                                     "name": "Provide source code for the software upon request",
                                                     "type": "OBLIGATION"
                                                 }

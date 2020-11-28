@@ -423,7 +423,6 @@
               }
           },
           "Hitachi open-license": {
-              "_id": "licenses/66",
               "notices": [
                   {
                       "_notice_description": "",
@@ -449,22 +448,18 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/1",
                               "name": "Use the obtained source code without modification",
                               "description": "Use the fetched code as it is."
                           },
                           {
-                              "_id": "actions/5",
                               "name": "Use the retrieved object code",
                               "description": "Use the fetched code as it is."
                           },
                           {
-                              "_id": "actions/6",
                               "name": "Use the retrieved binaries",
                               "description": "Use the fetched binary as it is."
                           },
                           {
-                              "_id": "actions/84",
                               "name": "Use the retrieved executable",
                               "description": "Use the obtained executable as is."
                           }
@@ -472,12 +467,10 @@
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -488,17 +481,14 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/10",
                               "name": "Distribute the obtained object code",
                               "description": "Redistribute the code as it was obtained"
                           },
                           {
-                              "_id": "actions/11",
                               "name": "Distribute the fetched binaries",
                               "description": "Redistribute the fetched binaries as they are"
                           },
                           {
-                              "_id": "actions/86",
                               "name": "Distribute the obtained executable",
                               "description": "Redistribute the obtained executable as-is"
                           }
@@ -506,18 +496,15 @@
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                               },
                               {
-                                  "_id": "conditions/179",
                                   "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
                                   "type": "OBLIGATION"
                               }
@@ -527,7 +514,6 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/9",
                               "name": "Distribute the obtained source code without modification",
                               "description": "Redistribute the code as it was obtained"
                           }
@@ -535,23 +521,19 @@
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                               },
                               {
-                                  "_id": "conditions/179",
                                   "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/8",
                                   "name": "Give you a copy of the relevant license.",
                                   "type": "OBLIGATION"
                               }
@@ -561,19 +543,16 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/3",
                               "name": "Modify the obtained source code."
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
@@ -584,33 +563,27 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/13",
                               "name": "Distribute the object code generated from the modified source code"
                           },
                           {
-                              "_id": "actions/14",
                               "name": "Distribute the generated binaries from modified source code"
                           },
                           {
-                              "_id": "actions/89",
                               "name": "Distribute the executable generated from the modified source code"
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                               },
                               {
-                                  "_id": "conditions/179",
                                   "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
                                   "type": "OBLIGATION"
                               }
@@ -620,30 +593,25 @@
                   {
                       "actions": [
                           {
-                              "_id": "actions/12",
                               "name": "Distribution of Modified Source Code"
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/18",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/124",
                                   "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                               },
                               {
-                                  "_id": "conditions/179",
                                   "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/8",
                                   "name": "Give you a copy of the relevant license.",
                                   "type": "OBLIGATION"
                               }

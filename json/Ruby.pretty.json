@@ -160,7 +160,6 @@
             "oRatingState": null
         },
         "Hitachi open-license": {
-            "_id": "licenses/2",
             "notices": [
                 {
                     "_notice_description": "There is no guarantee.",
@@ -186,30 +185,24 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/1",
                             "name": "Use the obtained source code without modification",
                             "description": "Use the fetched code as it is."
                         },
                         {
-                            "_id": "actions/4",
                             "name": "Using Modified Source Code"
                         },
                         {
-                            "_id": "actions/5",
                             "name": "Use the retrieved object code",
                             "description": "Use the fetched code as it is."
                         },
                         {
-                            "_id": "actions/6",
                             "name": "Use the retrieved binaries",
                             "description": "Use the fetched binary as it is."
                         },
                         {
-                            "_id": "actions/7",
                             "name": "Use the object code generated from the modified source code"
                         },
                         {
-                            "_id": "actions/8",
                             "name": "Use binaries generated from modified source code"
                         }
                     ],
@@ -219,13 +212,11 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/9",
                             "name": "Distribute the obtained source code without modification",
                             "description": "Redistribute the code as it was obtained"
                         }
                     ],
                     "conditions": {
-                        "_id": "conditions/300",
                         "name": "Include the original copyright notice and associated disclaimer in the software",
                         "type": "OBLIGATION"
                     },
@@ -234,7 +225,6 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/3",
                             "name": "Modify the obtained source code."
                         }
                     ],
@@ -243,31 +233,26 @@
                             {
                                 "OR": [
                                     {
-                                        "_id": "conditions/301",
                                         "name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
                                         "type": "OBLIGATION"
                                     },
                                     {
-                                        "_id": "conditions/289",
                                         "name": "Use only in your own corporation or organization.",
                                         "type": "RESTRICTION"
                                     },
                                     {
                                         "AND": [
                                             {
-                                                "_id": "conditions/302",
                                                 "name": "Giving non-standard binaries a different name than the standard version of the binary",
                                                 "type": "RESTRICTION"
                                             },
                                             {
-                                                "_id": "conditions/264",
                                                 "name": "Pass information on where the original software was obtained",
                                                 "type": "OBLIGATION"
                                             }
                                         ]
                                     },
                                     {
-                                        "_id": "conditions/292",
                                         "name": "Decide on a different method of distribution with the copyright holder",
                                         "type": "RESTRICTION"
                                     }
@@ -280,52 +265,43 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/10",
                             "name": "Distribute the obtained object code",
                             "description": "Redistribute the code as it was obtained"
                         },
                         {
-                            "_id": "actions/11",
                             "name": "Distribute the fetched binaries",
                             "description": "Redistribute the fetched binaries as they are"
                         },
                         {
-                            "_id": "actions/13",
                             "name": "Distribute the object code generated from the modified source code"
                         },
                         {
-                            "_id": "actions/14",
                             "name": "Distribute the generated binaries from modified source code"
                         }
                     ],
                     "conditions": {
                         "OR": [
                             {
-                                "_id": "conditions/264",
                                 "name": "Pass information on where the original software was obtained",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/21",
                                 "name": "Attach the source code corresponding to the software in question.",
                                 "type": "OBLIGATION"
                             },
                             {
                                 "AND": [
                                     {
-                                        "_id": "conditions/302",
                                         "name": "Giving non-standard binaries a different name than the standard version of the binary",
                                         "type": "RESTRICTION"
                                     },
                                     {
-                                        "_id": "conditions/264",
                                         "name": "Pass information on where the original software was obtained",
                                         "type": "OBLIGATION"
                                     }
                                 ]
                             },
                             {
-                                "_id": "conditions/292",
                                 "name": "Decide on a different method of distribution with the copyright holder",
                                 "type": "RESTRICTION"
                             }

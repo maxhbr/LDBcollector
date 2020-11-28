@@ -358,7 +358,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/osl-2.1.php",
-                "_id": "licenses/1084",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -440,96 +439,75 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/17",
                                 "name": "Display the obtained source code publicly"
                             },
                             {
-                                "_id": "actions/18",
                                 "name": "Executing the fetched source code publicly"
                             },
                             {
-                                "_id": "actions/20",
                                 "name": "Display the retrieved object code publicly"
                             },
                             {
-                                "_id": "actions/21",
                                 "name": "Publicly execute the fetched object code"
                             },
                             {
-                                "_id": "actions/23",
                                 "name": "Display modified source code publicly"
                             },
                             {
-                                "_id": "actions/24",
                                 "name": "Publicly execute the modified source code"
                             },
                             {
-                                "_id": "actions/26",
                                 "name": "Publicly display the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/27",
                                 "name": "Publicly execute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/104",
                                 "name": "Display the retrieved executable publicly"
                             },
                             {
-                                "_id": "actions/105",
                                 "name": "Publicly execute the retrieved executable"
                             },
                             {
-                                "_id": "actions/107",
                                 "name": "Publicly display the executable generated from modified source code"
                             },
                             {
-                                "_id": "actions/108",
                                 "name": "Publicly execute executables generated from modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/245",
                                     "name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
@@ -540,12 +518,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             }
@@ -553,13 +529,11 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/245",
                                     "name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
@@ -567,12 +541,10 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/247",
                                             "name": "The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.",
                                             "type": "OBLIGATION"
                                         }
@@ -584,42 +556,34 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             },
                             {
-                                "_id": "actions/357",
                                 "name": "To make the executable generated from the modified source code available as an application intended for use across the network."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/246",
                                     "name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/245",
                                     "name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
                                     "type": "RESTRICTION",
                                     "description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party."
                                 },
                                 {
-                                    "_id": "conditions/72",
                                     "name": "Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.",
                                     "type": "OBLIGATION"
                                 }
@@ -630,12 +594,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/253",
                                 "name": "Use the contributor's name, trademark, or service mark to endorse or promote the derived product"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/3",
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         }

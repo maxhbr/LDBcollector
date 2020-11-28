@@ -149,7 +149,6 @@
         },
         "Hitachi open-license": {
             "summary": "http://creativecommons.org/licenses/by/4.0/このサイトからLegalCodeを参照できる. The official translation is at https://creativecommons.org/licenses/by/4.0/legalcode.ja",
-            "_id": "licenses/842",
             "notices": [
                 {
                     "_notice_description": "Exceptions and limitations refer to exceptions and restrictions, such as fair use and fair dealing, to copyright and similar rights that apply to one's own use of a licensed work.",
@@ -303,64 +302,53 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/122",
                             "name": "Reproduce the work."
                         },
                         {
-                            "_id": "actions/337",
                             "name": "Share your work"
                         }
                     ],
                     "conditions": {
                         "AND": [
                             {
-                                "_id": "conditions/99",
                                 "name": "No sublicensing of copyrighted material.",
                                 "type": "RESTRICTION",
                                 "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
                             },
                             {
-                                "_id": "conditions/94",
                                 "name": "Exercise rights in all current and future media and formats",
                                 "type": "RESTRICTION"
                             },
                             {
-                                "_id": "conditions/95",
                                 "name": "Make technical changes for use in other media or formats, if necessary",
                                 "type": "RESTRICTION"
                             },
                             {
                                 "OR": [
                                     {
-                                        "_id": "conditions/98",
                                         "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
                                         "type": "RESTRICTION"
                                     },
                                     {
-                                        "_id": "conditions/381",
                                         "name": "Not taking effective technical measures to limit the rights licensed to the recipient of the work",
                                         "type": "RESTRICTION"
                                     }
                                 ]
                             },
                             {
-                                "_id": "conditions/370",
                                 "name": "Provide the specified credit in a reasonable manner.",
                                 "type": "OBLIGATION",
                                 "description": "If a pen name is specified, that pen name is also included."
                             },
                             {
-                                "_id": "conditions/102",
                                 "name": "All copyright notices are posted intact.",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/100",
                                 "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/371",
                                 "name": "Include a copy of this license or a Uniform Resource Identifier (URI) or hyperlink identifying this license",
                                 "type": "OBLIGATION"
                             }
@@ -371,83 +359,68 @@
                 {
                     "actions": [
                         {
-                            "_id": "actions/126",
                             "name": "Creating a derivative work"
                         },
                         {
-                            "_id": "actions/129",
                             "name": "Reproduce a derivative work"
                         },
                         {
-                            "_id": "actions/338",
                             "name": "Share the derivative work"
                         }
                     ],
                     "conditions": {
                         "AND": [
                             {
-                                "_id": "conditions/99",
                                 "name": "No sublicensing of copyrighted material.",
                                 "type": "RESTRICTION",
                                 "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
                             },
                             {
-                                "_id": "conditions/94",
                                 "name": "Exercise rights in all current and future media and formats",
                                 "type": "RESTRICTION"
                             },
                             {
-                                "_id": "conditions/95",
                                 "name": "Make technical changes for use in other media or formats, if necessary",
                                 "type": "RESTRICTION"
                             },
                             {
                                 "OR": [
                                     {
-                                        "_id": "conditions/98",
                                         "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
                                         "type": "RESTRICTION"
                                     },
                                     {
-                                        "_id": "conditions/381",
                                         "name": "Not taking effective technical measures to limit the rights licensed to the recipient of the work",
                                         "type": "RESTRICTION"
                                     }
                                 ]
                             },
                             {
-                                "_id": "conditions/370",
                                 "name": "Provide the specified credit in a reasonable manner.",
                                 "type": "OBLIGATION",
                                 "description": "If a pen name is specified, that pen name is also included."
                             },
                             {
-                                "_id": "conditions/102",
                                 "name": "All copyright notices are posted intact.",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/100",
                                 "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/172",
                                 "name": "Include a summary of the changes you have made",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/379",
                                 "name": "Include a summary of the changes included in the work",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/371",
                                 "name": "Include a copy of this license or a Uniform Resource Identifier (URI) or hyperlink identifying this license",
                                 "type": "OBLIGATION"
                             },
                             {
-                                "_id": "conditions/384",
                                 "name": "No license of the author of a derivative work shall apply that would prevent the recipient of the derivative work from complying with this license.",
                                 "type": "RESTRICTION"
                             }

@@ -321,7 +321,6 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/EUDatagrid",
-                "_id": "licenses/1546",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -347,33 +346,26 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             },
                             {
-                                "_id": "actions/6",
                                 "name": "Use the retrieved binaries",
                                 "description": "Use the fetched binary as it is."
                             },
                             {
-                                "_id": "actions/114",
                                 "name": "Display the obtained source code"
                             },
                             {
-                                "_id": "actions/118",
                                 "name": "Display the modified source code"
                             },
                             {
-                                "_id": "actions/287",
                                 "name": "Display the retrieved binary"
                             },
                             {
-                                "_id": "actions/288",
                                 "name": "Display the generated binary from the modified source code"
                             }
                         ],
@@ -382,24 +374,19 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/8",
                                 "name": "Use binaries generated from modified source code"
                             },
                             {
-                                "_id": "actions/90",
                                 "name": "Publish the modified source code."
                             },
                             {
-                                "_id": "actions/277",
                                 "name": "Publish the binary generated from the modified source code"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/630",
                             "name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
                             "type": "RESTRICTION",
                             "description": "However, this does not include cases where a separate written license agreement is entered into with the User."
@@ -409,18 +396,15 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/11",
                                 "name": "Distribute the fetched binaries",
                                 "description": "Redistribute the fetched binaries as they are"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
                         },
@@ -429,23 +413,19 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             },
                             {
-                                "_id": "actions/14",
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/630",
                                     "name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
                                     "type": "RESTRICTION",
                                     "description": "However, this does not include cases where a separate written license agreement is entered into with the User."
@@ -457,12 +437,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/32",
                                 "name": "Include end-user documentation in the distribution"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/13",
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
                         },
@@ -471,12 +449,10 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/557",
                                 "name": "Use the name to endorse and promote software and derivative products"
                             }
                         ],
                         "conditions": {
-                            "_id": "conditions/3",
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },

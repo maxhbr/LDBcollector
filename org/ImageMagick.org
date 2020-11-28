@@ -273,7 +273,6 @@ open-license]] (CDLA-Permissive-1.0))
           },
           "Hitachi open-license": {
               "summary": "http://www.imagemagick.org/script/license.php",
-              "_id": "licenses/873",
               "notices": [
                   {
                       "_notice_description": "",
@@ -315,67 +314,54 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/51",
                               "name": "Use the obtained source without modification.",
                               "description": "The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes."
                           },
                           {
-                              "_id": "actions/52",
                               "name": "Modify the fetched source",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/53",
                               "name": "Use Modified Source",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/54",
                               "name": "Use the fetched object",
                               "description": "Use the acquired object as it is. Objects are files that result from mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
                           },
                           {
-                              "_id": "actions/55",
                               "name": "Using objects generated from modified sources",
                               "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
                           },
                           {
-                              "_id": "actions/56",
                               "name": "Display the acquired source publicly.",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/57",
                               "name": "Publicly execute the acquired source.",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/59",
                               "name": "Display the fetched object publicly",
                               "description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
                           },
                           {
-                              "_id": "actions/60",
                               "name": "Publicly execute the fetched object",
                               "description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
                           },
                           {
-                              "_id": "actions/62",
                               "name": "Publicly display the altered source",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/63",
                               "name": "Run the modified source publicly.",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           },
                           {
-                              "_id": "actions/65",
                               "name": "Publicly display objects generated from modified sources",
                               "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
                           },
                           {
-                              "_id": "actions/66",
                               "name": "Publicly execute objects generated from modified sources",
                               "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
                           }
@@ -383,12 +369,10 @@ open-license]] (CDLA-Permissive-1.0))
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/6",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/7",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
@@ -399,22 +383,18 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/58",
                               "name": "Sublicense the acquired source.",
                               "description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
                           },
                           {
-                              "_id": "actions/61",
                               "name": "Sublicense the acquired objects",
                               "description": "The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
                           },
                           {
-                              "_id": "actions/68",
                               "name": "Distribute the acquired source without modification",
                               "description": "Redistribute the source as is. Redistribute the source code as it was obtained."
                           },
                           {
-                              "_id": "actions/69",
                               "name": "Distribute the fetched objects",
                               "description": "Redistribute the acquired object as is. Objects are files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
                           }
@@ -422,18 +402,15 @@ open-license]] (CDLA-Permissive-1.0))
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/6",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/7",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
                               },
                               {
-                                  "_id": "conditions/8",
                                   "name": "Give you a copy of the relevant license.",
                                   "type": "OBLIGATION"
                               }
@@ -443,12 +420,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/64",
                               "name": "Sublicensing Modified Source",
                               "description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
                           },
                           {
-                              "_id": "actions/73",
                               "name": "Distribution of Modified Source",
                               "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
                           }
@@ -456,34 +431,28 @@ open-license]] (CDLA-Permissive-1.0))
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/6",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/7",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
                               },
                               {
-                                  "_id": "conditions/8",
                                   "name": "Give you a copy of the relevant license.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/9",
                                   "name": "Indicate your changes in the file where you made them.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/10",
                                   "name": "Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute",
                                   "type": "OBLIGATION",
                                   "description": "However, notices that do not relate to derivative works may be excluded."
                               },
                               {
-                                  "_id": "conditions/31",
                                   "name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
                                   "type": "OBLIGATION",
                                   "description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question."
@@ -495,12 +464,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/67",
                               "name": "Sublicense objects generated from modified sources",
                               "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the party that granted the license."
                           },
                           {
-                              "_id": "actions/75",
                               "name": "Distribute objects generated from the modified source",
                               "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
                           }
@@ -508,28 +475,23 @@ open-license]] (CDLA-Permissive-1.0))
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/6",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/7",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
                                   "type": "RESTRICTION",
                                   "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
                               },
                               {
-                                  "_id": "conditions/8",
                                   "name": "Give you a copy of the relevant license.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/9",
                                   "name": "Indicate your changes in the file where you made them.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/31",
                                   "name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
                                   "type": "OBLIGATION",
                                   "description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question."
@@ -541,12 +503,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/36",
                               "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/14",
                           "name": "I do so at my own risk.",
                           "type": "OBLIGATION",
                           "description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage."
@@ -555,12 +515,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/78",
                               "name": "Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications."
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/32",
                           "name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
                           "type": "RESTRICTION"
                       }

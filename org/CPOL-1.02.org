@@ -206,7 +206,6 @@ open-license]] (CDLA-Permissive-1.0))
           },
           "Hitachi open-license": {
               "summary": "http://www.codeproject.com/info/cpol10.aspx",
-              "_id": "licenses/835",
               "notices": [
                   {
                       "_notice_description": "",
@@ -336,33 +335,27 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/1",
                               "name": "Use the obtained source code without modification",
                               "description": "Use the fetched code as it is."
                           },
                           {
-                              "_id": "actions/4",
                               "name": "Using Modified Source Code"
                           },
                           {
-                              "_id": "actions/84",
                               "name": "Use the retrieved executable",
                               "description": "Use the obtained executable as is."
                           },
                           {
-                              "_id": "actions/87",
                               "name": "Use the executable generated from the modified source code"
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/315",
                                   "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/309",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               }
@@ -373,29 +366,24 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/3",
                               "name": "Modify the obtained source code."
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/315",
                                   "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/285",
                                   "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/309",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/310",
                                   "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
                                   "type": "OBLIGATION"
                               }
@@ -406,12 +394,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/284",
                               "name": "Distribute articles discussing software published by the author"
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/3",
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
@@ -420,12 +406,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/156",
                               "name": "Use the author's name to endorse or promote the derived product"
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/3",
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
@@ -434,12 +418,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/35",
                               "name": "Selling Software"
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/254",
                           "name": "We don't sell it alone.",
                           "type": "RESTRICTION"
                       },
@@ -448,12 +430,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/283",
                               "name": "Renting out software"
                           }
                       ],
                       "conditions": {
-                          "_id": "conditions/313",
                           "name": "It's not rented out on its own.",
                           "type": "RESTRICTION"
                       },
@@ -462,12 +442,10 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/9",
                               "name": "Distribute the obtained source code without modification",
                               "description": "Redistribute the code as it was obtained"
                           },
                           {
-                              "_id": "actions/86",
                               "name": "Distribute the obtained executable",
                               "description": "Redistribute the obtained executable as-is"
                           }
@@ -475,33 +453,27 @@ open-license]] (CDLA-Permissive-1.0))
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/315",
                                   "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/309",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/310",
                                   "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/96",
                                   "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/311",
                                   "name": "Do not sublicense the software",
                                   "type": "RESTRICTION",
                                   "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
                               },
                               {
-                                  "_id": "conditions/312",
                                   "name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
                                   "type": "OBLIGATION"
                               }
@@ -512,49 +484,40 @@ open-license]] (CDLA-Permissive-1.0))
                   {
                       "actions": [
                           {
-                              "_id": "actions/12",
                               "name": "Distribution of Modified Source Code"
                           },
                           {
-                              "_id": "actions/89",
                               "name": "Distribute the executable generated from the modified source code"
                           }
                       ],
                       "conditions": {
                           "AND": [
                               {
-                                  "_id": "conditions/315",
                                   "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/285",
                                   "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/309",
                                   "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
                                   "type": "RESTRICTION"
                               },
                               {
-                                  "_id": "conditions/310",
                                   "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/96",
                                   "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
                                   "type": "OBLIGATION"
                               },
                               {
-                                  "_id": "conditions/311",
                                   "name": "Do not sublicense the software",
                                   "type": "RESTRICTION",
                                   "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
                               },
                               {
-                                  "_id": "conditions/312",
                                   "name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
                                   "type": "OBLIGATION"
                               }

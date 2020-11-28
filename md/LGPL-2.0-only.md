@@ -775,7 +775,6 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_id": "licenses/8",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -825,30 +824,24 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/1",
                                 "name": "Use the obtained source code without modification",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/4",
                                 "name": "Using Modified Source Code"
                             },
                             {
-                                "_id": "actions/5",
                                 "name": "Use the retrieved object code",
                                 "description": "Use the fetched code as it is."
                             },
                             {
-                                "_id": "actions/7",
                                 "name": "Use the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/84",
                                 "name": "Use the retrieved executable",
                                 "description": "Use the obtained executable as is."
                             },
                             {
-                                "_id": "actions/87",
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
@@ -858,7 +851,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/9",
                                 "name": "Distribute the obtained source code without modification",
                                 "description": "Redistribute the code as it was obtained"
                             }
@@ -866,12 +858,10 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 }
@@ -882,29 +872,24 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/3",
                                 "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/23",
                                     "name": "The generated work is a software library",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/43",
                                     "name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
                                     "type": "REQUISITE"
                                 }
@@ -915,45 +900,37 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/12",
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/23",
                                     "name": "The generated work is a software library",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/79",
                                     "name": "License the library to third parties free of charge in accordance with the terms of such license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/78",
                                     "name": "If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
                                 },
                                 {
-                                    "_id": "conditions/43",
                                     "name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
                                     "type": "REQUISITE"
                                 }
@@ -965,12 +942,10 @@ Raw Data
                         "summary": "Distribute the library as a library by itself",
                         "actions": [
                             {
-                                "_id": "actions/10",
                                 "name": "Distribute the obtained object code",
                                 "description": "Redistribute the code as it was obtained"
                             },
                             {
-                                "_id": "actions/86",
                                 "name": "Distribute the obtained executable",
                                 "description": "Redistribute the obtained executable as-is"
                             }
@@ -978,17 +953,14 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/78",
                                     "name": "If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
@@ -996,12 +968,10 @@ Raw Data
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/50",
                                             "name": "Attach the source code corresponding to the library",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/41",
                                             "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
                                             "type": "OBLIGATION"
                                         }
@@ -1015,61 +985,50 @@ Raw Data
                         "summary": "Distribute the library as a library by itself",
                         "actions": [
                             {
-                                "_id": "actions/13",
                                 "name": "Distribute the object code generated from the modified source code"
                             },
                             {
-                                "_id": "actions/89",
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/23",
                                     "name": "The generated work is a software library",
                                     "type": "RESTRICTION"
                                 },
                                 {
-                                    "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/79",
                                     "name": "License the library to third parties free of charge in accordance with the terms of such license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/78",
                                     "name": "If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge.",
                                     "type": "OBLIGATION",
                                     "description": "Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables"
                                 },
                                 {
-                                    "_id": "conditions/43",
                                     "name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
                                     "type": "REQUISITE"
                                 },
                                 {
                                     "OR": [
                                         {
-                                            "_id": "conditions/50",
                                             "name": "Attach the source code corresponding to the library",
                                             "type": "OBLIGATION"
                                         },
                                         {
-                                            "_id": "conditions/41",
                                             "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
                                             "type": "OBLIGATION"
                                         }
@@ -1082,7 +1041,6 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/43",
                                 "name": "Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing.",
                                 "description": "The generated work contains a library or part of a library"
                             }
@@ -1090,27 +1048,22 @@ Raw Data
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/24",
                                     "name": "Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.",
                                     "type": "REQUISITE"
                                 },
                                 {
-                                    "_id": "conditions/25",
                                     "name": "Indicate that the library is being used",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/47",
                                     "name": "If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.",
                                     "type": "OBLIGATION"
                                 },
@@ -1119,12 +1072,10 @@ Raw Data
                                         {
                                             "AND": [
                                                 {
-                                                    "_id": "conditions/50",
                                                     "name": "Attach the source code corresponding to the library",
                                                     "type": "OBLIGATION"
                                                 },
                                                 {
-                                                    "_id": "conditions/52",
                                                     "name": "Pass information that can be used to modify the library and put it into a distribution format.",
                                                     "type": "OBLIGATION",
                                                     "description": "If the distribution is in executable form, you can pass on at least the object code or source code of your work."
@@ -1132,19 +1083,16 @@ Raw Data
                                             ]
                                         },
                                         {
-                                            "_id": "conditions/53",
                                             "name": "Provide a written statement, valid for at least three years, that you will provide the corresponding source code for the library and information that allows you to modify the library into a distributable form in exchange for a fee not to exceed the physical cost of distribution",
                                             "type": "OBLIGATION",
                                             "description": "If the distribution is in executable form, at least one of the object code or source code for your work will be passed on, in addition to the corresponding source code for the library."
                                         },
                                         {
-                                            "_id": "conditions/54",
                                             "name": "Make the distribution, the source code corresponding to the library, and the information that can be modified to form the distribution, available for download from the same place with equivalent access.",
                                             "type": "OBLIGATION",
                                             "description": "If the distribution is executable, at least one of the object code or source code for your work is available for download, in addition to the corresponding source code for the library."
                                         },
                                         {
-                                            "_id": "conditions/51",
                                             "name": "Verify that the recipient has received the source code corresponding to the library and information that can be used to modify the library into a distribution format, or has sent a copy itself.",
                                             "type": "OBLIGATION",
                                             "description": "If the distribution is executable, check whether you have received at least one of the object code or source code for your work, in addition to the corresponding source code for the library."
@@ -1158,30 +1106,25 @@ Raw Data
                     {
                         "actions": [
                             {
-                                "_id": "actions/44",
                                 "name": "Distribute portions of a library together with libraries not covered by the license in a single library"
                             }
                         ],
                         "conditions": {
                             "AND": [
                                 {
-                                    "_id": "conditions/48",
                                     "name": "Permit separate distribution of the library and the portion of the library not covered by the license",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/29",
                                     "name": "Pass an independent copy of the library in accordance with that license",
                                     "type": "OBLIGATION",
                                     "description": "Pass a copy of the entire library in question"
                                 },
                                 {
-                                    "_id": "conditions/25",
                                     "name": "Indicate that the library is being used",
                                     "type": "OBLIGATION"
                                 },
                                 {
-                                    "_id": "conditions/49",
                                     "name": "Indicate where the library is located in a stand-alone form",
                                     "type": "OBLIGATION"
                                 }
