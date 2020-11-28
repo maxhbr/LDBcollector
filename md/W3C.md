@@ -19,26 +19,6 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 -   `W3C Software Notice and License (became active on December 31 2002)`
 
-Description
------------
-
-> "W3C Software Short Notice" can be found at
-> http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
-> "previous version" can be found at http The link for "Free Software
-> Foundation's assessment of GPL compatibility" can be found at
-> http://www.
-> gnu.org/philosophy/license-list.html\#GPLCompatibleLicenses "OSI's
-> certification" can be found at
-> www.w3.org/Consortium/Legal/copyright-software-19980720.
-> gnu.org/philosophy/license-list.html\#GPLCompatibleLicenses "OSI's
-> certification" can be found at
-> http://www.opensource.org/licenses/W3C.php." The link for "Open Source
-> Definition" is http://www.opensource.org/docs/definition.php
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

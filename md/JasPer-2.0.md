@@ -139,12 +139,6 @@ Raw Data
         "__impliedAmbiguousNames": [
             "JasPer"
         ],
-        "__impliedComments": [
-            [
-                "Hitachi open-license",
-                []
-            ]
-        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -385,12 +379,6 @@ Raw Data
                     "__impliedNames": [
                         "JasPer License Version 2.0",
                         "JasPer-2.0"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "Hitachi open-license",
-                            []
-                        ]
                     ],
                     "__impliedText": "JasPer License Version 2.0\r\n\r\nCopyright (c) 2001-2006 Michael David Adams\r\nCopyright (c) 1999-2000 Image Power, Inc.\r\nCopyright (c) 1999-2000 The University of British Columbia\r\n\r\nAll rights reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person (the\r\n\"User\") obtaining a copy of this software and associated documentation\r\nfiles (the \"Software\"), to deal in the Software without restriction,\r\nincluding without limitation the rights to use, copy, modify, merge,\r\npublish, distribute, and/or sell copies of the Software, and to permit\r\npersons to whom the Software is furnished to do so, subject to the\r\nfollowing conditions:\r\n\r\n1.  The above copyright notices and this permission notice (which\r\nincludes the disclaimer below) shall be included in all copies or\r\nsubstantial portions of the Software.\r\n\r\n2.  The name of a copyright holder shall not be used to endorse or\r\npromote products derived from the Software without specific prior\r\nwritten permission.\r\n\r\nTHIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS\r\nLICENSE.  NO USE OF THE SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER\r\nTHIS DISCLAIMER.  THE SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS\r\n\"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING\r\nBUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\r\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.  IN NO\r\nEVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL\r\nINDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING\r\nFROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\nNEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\nWITH THE USE OR PERFORMANCE OF THIS SOFTWARE.  NO ASSURANCES ARE\r\nPROVIDED BY THE COPYRIGHT HOLDERS THAT THE SOFTWARE DOES NOT INFRINGE\r\nTHE PATENT OR OTHER INTELLECTUAL PROPERTY RIGHTS OF ANY OTHER ENTITY.\r\nEACH COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY TO THE USER FOR CLAIMS\r\nBROUGHT BY ANY OTHER ENTITY BASED ON INFRINGEMENT OF INTELLECTUAL\r\nPROPERTY RIGHTS OR OTHERWISE.  AS A CONDITION TO EXERCISING THE RIGHTS\r\nGRANTED HEREUNDER, EACH USER HEREBY ASSUMES SOLE RESPONSIBILITY TO SECURE\r\nANY OTHER INTELLECTUAL PROPERTY RIGHTS NEEDED, IF ANY.  THE SOFTWARE\r\nIS NOT FAULT-TOLERANT AND IS NOT INTENDED FOR USE IN MISSION-CRITICAL\r\nSYSTEMS, SUCH AS THOSE USED IN THE OPERATION OF NUCLEAR FACILITIES,\r\nAIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL\r\nSYSTEMS, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH\r\nTHE FAILURE OF THE SOFTWARE OR SYSTEM COULD LEAD DIRECTLY TO DEATH,\r\nPERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (\"HIGH\r\nRISK ACTIVITIES\").  THE COPYRIGHT HOLDERS SPECIFICALLY DISCLAIM ANY\r\nEXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.",
                     "__impliedURLs": [

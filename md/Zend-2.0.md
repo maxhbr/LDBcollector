@@ -13,15 +13,6 @@ Zend License v2.0 (Zend-2.0)
 
 -   ` Zend-2.0`
 
-Description
------------
-
-> http://www.zend.com/license/2\_00.txt
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

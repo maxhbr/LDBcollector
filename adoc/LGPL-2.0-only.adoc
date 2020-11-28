@@ -15,20 +15,6 @@
 * `+scancode://lgpl-2.0+`
 * `+LGPL 2.0+`
 
-=== Description
-
-____
-A library is a collection of software functions and data prepared to be
-linked with application programs (that make use of some of the functions
-and data contained in the library) in order to create executables that
-are convenient to create. Source code includes the source code of all
-modules, plus all relevant interface definition files and scripts used
-to control the compilation and installation of the library.
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Earlier called the "Library General Public License"; this name

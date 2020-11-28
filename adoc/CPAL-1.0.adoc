@@ -17,31 +17,6 @@
 * `+cpal_1.0+`
 * `+Common Public Attribution License Version 1.0+`
 
-=== Description
-
-____
-Source code refers to source code and related interface definition files
-and scripts used to control the compilation and installation of
-executables. An executable is any form of software other than source
-code. Sublicense means that the person who has been granted this license
-re-grants the license granted to a third party. Initial Developer is the
-person or entity listed as the initial developer in the source code
-notice required by EXHIBIT A. Original Code refers to the source code of
-the computer software code listed as original code in the source code
-notice required by EXHIBIT A. Self refers to the person or entity
-exercising its rights under this license in accordance with all of the
-terms of this license. In the case of a legal entity, self includes any
-entity that controls itself, is controlled by itself, or is an
-association of persons under common control with itself. For the
-purposes of this definition, "control" means any of the following (1)
-has the authority to direct or manage the corporation directly or
-indirectly by contract or otherwise; (2) has more than 50% of the
-outstanding shares or beneficial ownership of the corporation
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:

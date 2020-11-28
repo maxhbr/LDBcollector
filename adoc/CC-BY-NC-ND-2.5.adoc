@@ -18,34 +18,6 @@
 * `+scancode://cc-by-nc-nd-2.5+`
 * `+Creative Commons Attribution-NoDerivs 2.5 Generic+`
 
-=== Description
-
-____
-A collective work is a work that is composed of independent works, such
-as a periodical, poetry collection, or encyclopedia, assembled without
-modification. The works that constitute a collective work are not
-considered derivative works for the purposes of this license. A
-derivative work is a translation, arrangement, dramatization,
-fictionalization, film adaptation, sound recording, work of art,
-extract, abridgement, summary, or any other form of work that has been
-re-cast or altered. However, works that constitute a collective work are
-not considered derivative works for the purposes of this license and are
-therefore excluded. For the avoidance of doubt, musical compositions and
-sound recordings that are synchronized with moving images shall be
-considered derivative works for the purposes of this license. A licensor
-is a person or entity that makes a work available under this license. A
-work is a copyrighted work and refers to a work offered under this
-license. The original author is the person or entity that created the
-work. A person or entity exercising rights under this License who has
-never previously violated the terms of this License with respect to his
-or her work, or who has expressly granted Licensor permission to
-exercise his or her rights in the past, even if he or she has violated
-the terms of the License.
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↓**``Google Classification is CANNOT_BE_USED "Everything that Google

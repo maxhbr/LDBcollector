@@ -15,19 +15,6 @@
 
 - =SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005=
 
-** Description
-
-#+BEGIN_QUOTE
-  Font software refers to font files, data files, source files, build
-  scripts, and documents. A retained font name is the name of the font
-  that is retained and identified with a copyright notice. Authors are
-  the designers, engineers, programmers, technical writers, etc. who
-  have contributed to the font software.
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"The following restriction on distributions, which is part of OFL,

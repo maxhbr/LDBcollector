@@ -7,20 +7,6 @@ Freetype Project License (FTL)
 
 -   `scancode://freetype`
 
-Description
------------
-
-> package", "FreeType Project", and "FreeType archive" are the original
-> source code distributed by the authors (David Turner, Robert Wilhelm,
-> and Werner Lemberg) as "FreeType Project". Sublicense means all
-> binaries and related documentation. Sublicensing means that a person
-> who has been granted this license re-grants the license granted to a
-> third party.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

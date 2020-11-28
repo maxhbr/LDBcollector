@@ -15,15 +15,6 @@
 
 - =Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification=
 
-** Description
-
-#+BEGIN_QUOTE
-  http://creativecommons.org/licenses/publicdomain/
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 ** General Comments

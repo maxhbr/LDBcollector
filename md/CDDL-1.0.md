@@ -17,27 +17,6 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 -   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California`
 
-Description
------------
-
-> Source code refers to the source code and the documentation contained
-> in or attached to the source code. Executable Form - means any form of
-> software other than source code. Sublicense means that the person to
-> whom the license is granted re-grants the license granted to a third
-> party. Self means the person or entity exercising its rights under
-> such license in accordance with all of the terms of such license. In
-> the case of a legal entity, it includes any person who controls
-> itself, is controlled by itself, or is an association of persons under
-> common control with itself. For the purposes of this definition,
-> "control" means any of the following (1) has the authority to direct
-> and manage the corporation, directly or indirectly, by contract or
-> otherwise, to direct and manage the corporation; (2) has more than 50%
-> of the outstanding shares or beneficial ownership of the corporation
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

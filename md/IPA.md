@@ -181,10 +181,6 @@ Raw Data
         ],
         "__impliedComments": [
             [
-                "Hitachi open-license",
-                []
-            ],
-            [
                 "Scancode",
                 [
                     "Per SPDX.org, this license is OSI certified."
@@ -379,12 +375,6 @@ Raw Data
                     "__impliedNames": [
                         "IPA Font License Agreement v1.0",
                         "IPA"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "Hitachi open-license",
-                            []
-                        ]
                     ],
                     "__impliedText": "",
                     "__impliedURLs": [

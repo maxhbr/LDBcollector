@@ -19,15 +19,6 @@
 
 - =Vovida Software License, Version 1.0=
 
-** Description
-
-#+BEGIN_QUOTE
-  https://opensource.org/licenses/VSL-1.0
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:

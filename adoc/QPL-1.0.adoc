@@ -19,15 +19,6 @@
 * `+License :: OSI Approved :: Qt Public License (QPL)+`
 * `+Q PUBLIC LICENSE version 1.0+`
 
-=== Description
-
-____
-https://opensource.org/licenses/QPL-1.0
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:

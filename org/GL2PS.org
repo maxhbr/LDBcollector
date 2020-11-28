@@ -91,12 +91,6 @@
       "__impliedAmbiguousNames": [
           "GL2PS"
       ],
-      "__impliedComments": [
-          [
-              "Hitachi open-license",
-              []
-          ]
-      ],
       "facts": {
           "LicenseName": {
               "implications": {
@@ -316,12 +310,6 @@
                   "__impliedNames": [
                       "GL2PS LICENSE, Version 2",
                       "GL2PS"
-                  ],
-                  "__impliedComments": [
-                      [
-                          "Hitachi open-license",
-                          []
-                      ]
                   ],
                   "__impliedText": "                           GL2PS LICENSE\r\n                      Version 2, November 2003\r\n\r\n              Copyright (C) 2003, Christophe Geuzaine\r\n\r\nPermission to use, copy, and distribute this software and its\r\ndocumentation for any purpose with or without fee is hereby granted,\r\nprovided that the copyright notice appear in all copies and that both\r\nthat copyright notice and this permission notice appear in supporting\r\ndocumentation.\r\n\r\nPermission to modify and distribute modified versions of this software\r\nis granted, provided that:\r\n\r\n1) the modifications are licensed under the same terms as this\r\nsoftware;\r\n\r\n2) you make available the source code of any modifications that you\r\ndistribute, either on the same media as you distribute any executable\r\nor other form of this software, or via a mechanism generally accepted\r\nin the software development community for the electronic transfer of\r\ndata.\r\n\r\nThis software is provided \"as is\" without express or implied warranty.",
                   "__impliedURLs": [

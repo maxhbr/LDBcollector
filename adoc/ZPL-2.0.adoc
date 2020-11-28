@@ -18,15 +18,6 @@
 * `+License :: OSI Approved :: Zope Public License+`
 * `+Zope Public License (ZPL) Version 2.0+`
 
-=== Description
-
-____
-https://opensource.org/licenses/ZPL-2.0
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Google Classification is NOTICE'' (source:

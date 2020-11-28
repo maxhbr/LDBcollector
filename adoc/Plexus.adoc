@@ -15,16 +15,6 @@
 * `+Dom4j License+`
 * `+DOM4J License+`
 
-=== Description
-
-____
-"DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate credit
-can be found at "DOM4J Project http://www.dom4j.org/".
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:

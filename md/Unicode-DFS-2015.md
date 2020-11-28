@@ -11,27 +11,6 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 -   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)`
 
-Description
------------
-
-> The Unicode Data Files are located in the following directories
-> \[http://www.unicode.org/Public/, http://www.unicode.org/reports/,
-> http://www.unicode.org/cldr/data/, http All data files in
-> ://source.icu-project.org/repos/icu/, and
-> http://www.unicode.org/utility/trac/browser/\]. However, it excludes
-> PDFs of online code tables in the following directories:
-> \[http://www.unicode.org/Public/\]. The software is either the source
-> code published by the Unicode Standard, or it is available in the
-> following directories \[http://www.unicode.org/Public/,
-> http://www.unicode.org/reports/,http://www.unicode It refers to the
-> source code in \[.org/cldr/data/,
-> http://source.icu-project.org/repos/icu/, and
-> http://www.unicode.org/utility/trac/browser/\].
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

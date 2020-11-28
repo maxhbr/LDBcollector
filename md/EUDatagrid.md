@@ -7,15 +7,6 @@ EU DataGrid Software License (EUDatagrid)
 
 -   `scancode://eu-datagrid`
 
-Description
------------
-
-> https://opensource.org/licenses/EUDatagrid
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

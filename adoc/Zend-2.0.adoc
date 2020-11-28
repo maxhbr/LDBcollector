@@ -16,15 +16,6 @@
 * `+Zend Engine License, Version 2.00+`
 * `+ Zend-2.0+`
 
-=== Description
-
-____
-http://www.zend.com/license/2_00.txt
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Google Classification is NOTICE'' (source:

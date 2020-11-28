@@ -9,15 +9,6 @@ BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 -   `Open MPI License`
 
-Description
------------
-
-> http://www.open-mpi.org/community/license.php
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

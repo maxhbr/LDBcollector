@@ -22,15 +22,6 @@
 
 - =Q PUBLIC LICENSE version 1.0=
 
-** Description
-
-#+BEGIN_QUOTE
-  https://opensource.org/licenses/QPL-1.0
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:

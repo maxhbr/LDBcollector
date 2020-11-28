@@ -15,19 +15,6 @@ Python License 2.0 (Python-2.0)
 
 -   `PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2`
 
-Description
------------
-
-> This License Agreement is between the Python Software Foundation
-> ("PSF") and any person or entity that accesses or uses the source
-> code, binaries or related documentation of such software. This License
-> Agreement does not constitute an agency, partnership or joint venture
-> agreement between PSF and the Licensee.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

@@ -11,21 +11,6 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 -   `LGPL 2.0`
 
-Description
------------
-
-> A library is a collection of software functions and data prepared to
-> be linked with application programs (that make use of some of the
-> functions and data contained in the library) in order to create
-> executables that are convenient to create. Source code includes the
-> source code of all modules, plus all relevant interface definition
-> files and scripts used to control the compilation and installation of
-> the library.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

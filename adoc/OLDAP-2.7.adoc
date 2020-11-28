@@ -15,15 +15,6 @@
 * `+OpenLDAP Public License 2.7+`
 * `+The OpenLDAP Public License+`
 
-=== Description
-
-____
-"OpenLDAP" is a registered trademark of OpenLDAP Foundaction.
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Rating is: Bronze'' (source:

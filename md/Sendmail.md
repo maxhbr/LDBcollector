@@ -13,16 +13,6 @@ Sendmail License (Sendmail)
 
 -   `SENDMAIL LICENSE (version 1998)`
 
-Description
------------
-
-> Source code refers to the complete, compiled and linkable source code
-> of Sendmail, including modifications.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

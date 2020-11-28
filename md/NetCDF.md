@@ -11,15 +11,6 @@ NetCDF license (NetCDF)
 
 -   `NetCDF Copyright`
 
-Description
------------
-
-> http://www.unidata.ucar.edu/software/netcdf/copyright.html
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -34,6 +25,11 @@ Comments on (easy) usability
 
 General Comments
 ----------------
+
+-   “http://www.unidata.ucar.edu/software/netcdf/copyright.html”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
 
 URLs
 ----
@@ -130,7 +126,9 @@ Raw Data
         "__impliedComments": [
             [
                 "Hitachi open-license",
-                []
+                [
+                    "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
+                ]
             ]
         ],
         "facts": {
@@ -334,12 +332,6 @@ Raw Data
                     "__impliedNames": [
                         "NetCDF Copyright(version 2009)",
                         "NetCDF"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "Hitachi open-license",
-                            []
-                        ]
                     ],
                     "__impliedText": "    Copyright 1998-2009 University Corporation for Atmospheric Research/Unidata\r\n\r\n    Portions of this software were developed by the Unidata Program at the\r\n    University Corporation for Atmospheric Research.\r\n\r\n    Access and use of this software shall impose the following obligations\r\n    and understandings on the user. The user is granted the right, without\r\n    any fee or cost, to use, copy, modify, alter, enhance and distribute\r\n    this software, and any derivative works thereof, and its supporting\r\n    documentation for any purpose whatsoever, provided that this entire\r\n    notice appears in all copies of the software, derivative works and\r\n    supporting documentation.  Further, UCAR requests that the user credit\r\n    UCAR/Unidata in any publications that result from the use of this\r\n    software or in any product that includes this software. The names UCAR\r\n    and/or Unidata, however, may not be used in any advertising or publicity\r\n    to endorse or promote any products or commercial entity unless specific\r\n    written permission is obtained from UCAR/Unidata. The user also\r\n    understands that UCAR/Unidata is not obligated to provide the user with\r\n    any support, consulting, training or assistance of any kind with regard\r\n    to the use, operation and performance of this software nor to provide\r\n    the user with any updates, revisions, new versions or \"bug fixes.\"\r\n\r\n    THIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR\r\n    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\r\n    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\r\n    DISCLAIMED. IN NO EVENT SHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL,\r\n    INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING\r\n    FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\n    NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\n    WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
                     "__impliedURLs": [

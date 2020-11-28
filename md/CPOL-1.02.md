@@ -9,23 +9,6 @@ Code Project Open License 1.02 (CPOL-1.02)
 
 -   `CPOL 1.02`
 
-Description
------------
-
-> The author is the person or entity providing the software under this
-> license. Source code refers to the source code and configuration files
-> used to create the executable. The term "executable" refers to the
-> executables, binary files and configuration and data files required
-> for the software to be included in the software. The term "article"
-> refers to any article by the author describing how a user might use
-> the source code or executable of the software. The publisher is the
-> provider of the software's media, such as websites, magazines, CD-ROMs
-> and DVDs.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

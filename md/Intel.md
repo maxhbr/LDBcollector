@@ -150,10 +150,6 @@ Raw Data
         "__isFsfFree": true,
         "__impliedComments": [
             [
-                "Hitachi open-license",
-                []
-            ],
-            [
                 "Scancode",
                 [
                     "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
@@ -412,12 +408,6 @@ Raw Data
                     "__impliedNames": [
                         "Intel License Agreement",
                         "Intel"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "Hitachi open-license",
-                            []
-                        ]
                     ],
                     "__impliedText": "Intel License Agreement\r\n\r\nCopyright (c) 2000, Intel Corporation\r\n\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, are permitted provided that the following conditions are\r\nmet:\r\n\r\n* Redistributions of source code must retain the above copyright\r\nnotice, this list of conditions and the following disclaimer.\r\n\r\n* Redistributions in binary form must reproduce the above copyright\r\nnotice, this list of conditions and the following disclaimer in the\r\ndocumentation and/or other materials provided with the distribution.\r\n\r\n* The name of Intel Corporation may not be used to endorse or promote\r\nproducts derived from this software without specific prior written\r\npermission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\r\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\r\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\r\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL OR\r\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\r\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\r\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\r\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\r\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\r\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                     "__impliedURLs": [

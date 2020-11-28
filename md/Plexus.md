@@ -11,16 +11,6 @@ Plexus Classworlds License (Plexus)
 
 -   `DOM4J License`
 
-Description
------------
-
-> "DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate credit
-> can be found at "DOM4J Project http://www.dom4j.org/".
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

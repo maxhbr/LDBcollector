@@ -17,18 +17,6 @@ Common Public License 1.0 (CPL-1.0)
 
 -   `Common Public License Version 1.0`
 
-Description
------------
-
-> Contributor" means the person or entity that distributes the Software.
-> A Contributor is included among all persons who receive the Software
-> under such a license. Sublicense means that the person to whom the
-> license is granted re-grants the license granted to a third party.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

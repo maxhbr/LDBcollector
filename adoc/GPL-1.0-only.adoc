@@ -18,15 +18,6 @@
 * `+scancode://gpl-1.0+`
 * `+GPL 1.0+`
 
-=== Description
-
-____
-Source code refers to the source code of all modules.
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``This is the most popular free software license. Most of Linux

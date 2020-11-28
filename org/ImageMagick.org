@@ -11,27 +11,6 @@
 
 - =scancode://imagemagick=
 
-** Description
-
-#+BEGIN_QUOTE
-  Source is software source code, documentation sources, configuration
-  files, and other files suitable for making changes. Object - a file
-  resulting from a mechanical transformation of the source, such as
-  compiled object code, generated documentation, or other media
-  conversions. Sublicense" means that the person who has been granted
-  this license re-grants the license granted to a third party. A legal
-  entity is an association of actors and all others who control them,
-  are controlled by them, or are under their common control. The term
-  "control" in this definition refers to one of the following (1)
-  directly or indirectly direct or indirectly direct and manage the
-  corporation by contract or other means; (2) own 50% or more of the
-  corporation's stock; or (3) have a beneficial ownership interest in
-  the corporation.
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Rating is: Silver" (source:

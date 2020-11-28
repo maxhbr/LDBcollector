@@ -9,17 +9,6 @@ ANTLR Software Rights Notice (ANTLR-PD)
 
 -   `ANTLR 2 License`
 
-Description
------------
-
-> ANTLR 3 License and ANTLR 4 License are equivalent to the BSD 3-Clause
-> License. ANTLR (ANother Tool for Language Recognition) is a parser
-> generator.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

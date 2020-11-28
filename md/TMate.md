@@ -9,15 +9,6 @@ TMate Open Source License (TMate)
 
 -   `TMate Open Source License for "TMate JavaSVN library"`
 
-Description
------------
-
-> https://svnkit.com/license.html
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

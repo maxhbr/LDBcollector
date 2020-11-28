@@ -14,30 +14,6 @@
 
 - =Sun Industry Standards Source License - Version 1.2=
 
-** Description
-
-#+BEGIN_QUOTE
-  Source code refers to the source code and related interface definition
-  files and scripts used to control compilation and installation of
-  executables. EXECUTIVE FORMAT refers to any form of software other
-  than source code. Sublicense means that the person who has been
-  granted such a license re-grants the license granted to a third party.
-  Initial Developer means the person or entity listed as the initial
-  developer in the source code notice required by EXHIBIT A. Self refers
-  to the person or entity exercising its rights under the license in
-  accordance with all of the terms of the license. In the case of a
-  Legal Entity, "self" includes any person who controls itself, is
-  controlled by itself, or is an association of persons under common
-  control with itself. For the purposes of this definition, "control"
-  means any of the following (1) has the authority to direct and manage
-  the corporation, directly or indirectly, by contract or otherwise, to
-  direct and manage the corporation; (2) has more than 50% of the
-  outstanding shares or beneficial ownership of the corporation
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↓*"Google Classification is CANNOT_BE_USED "Code released under the

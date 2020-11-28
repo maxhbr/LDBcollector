@@ -17,15 +17,6 @@
 
 - = Zend-2.0=
 
-** Description
-
-#+BEGIN_QUOTE
-  http://www.zend.com/license/2_00.txt
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Google Classification is NOTICE" (source:

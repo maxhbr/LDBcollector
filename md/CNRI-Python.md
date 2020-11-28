@@ -15,20 +15,6 @@ CNRI Python License (CNRI-Python)
 
 -   `CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1`
 
-Description
------------
-
-> This License Agreement is between the Corporation for National
-> Research Initiatives ("CNRI") and any person who accesses or uses the
-> source code, binaries, or related documentation of the software or It
-> is entered into with the Organization. This License Agreement does not
-> constitute an agency, partnership or joint venture agreement between
-> CNRI and Licensee.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

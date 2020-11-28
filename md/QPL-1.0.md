@@ -17,15 +17,6 @@ Q Public License 1.0 (QPL-1.0)
 
 -   `Q PUBLIC LICENSE version 1.0`
 
-Description
------------
-
-> https://opensource.org/licenses/QPL-1.0
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

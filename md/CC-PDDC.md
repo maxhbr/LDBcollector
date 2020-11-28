@@ -11,15 +11,6 @@ Creative Commons Public Domain Dedication and Certification (CC-PDDC)
 
 -   `Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification`
 
-Description
------------
-
-> http://creativecommons.org/licenses/publicdomain/
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

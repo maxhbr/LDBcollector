@@ -16,16 +16,6 @@
 * `+SENDMAIL LICENSE (version 2012)+`
 * `+SENDMAIL LICENSE (version 1998)+`
 
-=== Description
-
-____
-Source code refers to the complete, compiled and linkable source code of
-Sendmail, including modifications.
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``This software Licenses is OK for Fedora'' (source:

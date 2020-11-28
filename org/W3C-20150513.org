@@ -15,16 +15,6 @@
 
 - =W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)=
 
-** Description
-
-#+BEGIN_QUOTE
-  "W3C Software and Document Short Notice" is linked at
-  http://www.w3.org/Consortium/Legal/copyright-software-short-notice
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Google Classification is NOTICE" (source:

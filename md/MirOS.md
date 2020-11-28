@@ -13,15 +13,6 @@ The MirOS Licence (MirOS)
 
 -   `MirOS Licence`
 
-Description
------------
-
-> https://opensource.org/licenses/miros.html
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

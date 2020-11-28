@@ -9,37 +9,6 @@ Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
 
 -   `Creative Commons Attribution-ShareAlike 2.5`
 
-Description
------------
-
-> A collective work is a work that is composed of independent works,
-> such as a periodical, poetry collection, or encyclopedia, assembled
-> without modification. The works that constitute a collective work are
-> not considered derivative works for the purposes of this license. A
-> derivative work is a translation, arrangement, dramatization,
-> fictionalization, film adaptation, sound recording, work of art,
-> excerpt, abridgement, summary, or any other form of work that has been
-> re-cast or altered. However, works that constitute a collective work
-> are not considered derivative works for the purposes of this license
-> and are excluded. For the avoidance of doubt, any music or sound
-> recording that is synchronized with a moving image shall be considered
-> a derivative work for the purposes of this license. A licensor is a
-> person or entity that makes a work available under this license. A
-> work is a copyrighted work and refers to a work offered under this
-> license. The original author is the person or entity that created the
-> work. A person or entity exercising rights under this License who has
-> not previously violated the terms of this License with respect to his
-> or her Work, or who has expressly given Licensor permission to
-> exercise his or her rights even if he or she has previously violated
-> the License, is the person or entity exercising his or her rights
-> under this License. The Licensed Element is the "Bye-Bye Succeeding"
-> license attribute selected by Licensor and displayed on the title of
-> this License.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

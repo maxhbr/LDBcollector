@@ -13,15 +13,6 @@ Educational Community License v1.0 (ECL-1.0)
 
 -   `Educational Community License, Version 1.0`
 
-Description
------------
-
-> https://opensource.org/licenses/ecl1.php
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

@@ -17,15 +17,6 @@ Zope Public License 2.0 (ZPL-2.0)
 
 -   `Zope Public License (ZPL) Version 2.0`
 
-Description
------------
-
-> https://opensource.org/licenses/ZPL-2.0
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

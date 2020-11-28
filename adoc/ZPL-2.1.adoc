@@ -15,15 +15,6 @@
 * `+ZPL 2.1+`
 * `+Zope Public License (ZPL) Version 2.1+`
 
-=== Description
-
-____
-http://old.zope.org/Resources/License/ZPL-2.1
-____
-
-(source: https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-
 === Comments on (easy) usability
 
 * **↑**``Google Classification is NOTICE'' (source:

@@ -17,15 +17,6 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 -   `GPL 1.0`
 
-Description
------------
-
-> Source code refers to the source code of all modules.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

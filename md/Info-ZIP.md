@@ -13,18 +13,6 @@ Info-ZIP License (Info-ZIP)
 
 -   `Info-ZIP license (Version 2007-Mar-04)`
 
-Description
------------
-
-> This applies to all source code from
-> http://www.info-zip.org/pub/infozip/license.html明示されているものを除き,
-> Zip 2.3 or later, UnZip 5.41 or later, WiZ 5.0 or later, and MacZip
-> 1.05 or later.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

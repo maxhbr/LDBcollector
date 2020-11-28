@@ -15,25 +15,6 @@
 
 - =Academic Free License Version 2.1=
 
-** Description
-
-#+BEGIN_QUOTE
-  Source Code means the documentation that describes the appropriate
-  format for making modifications to the Software and how to modify it.
-  Self means the person or entity exercising its rights under this
-  License in accordance with all of the terms of this License. In the
-  case of a legal entity, self includes any person who controls itself,
-  is controlled by itself, or is an association of persons under common
-  control with itself. For the purposes of this definition, "control"
-  means any of the following (1) has the authority to direct and manage
-  the corporation, directly or indirectly, by contract or otherwise, to
-  direct and manage the corporation; (2) has more than 50% of the
-  outstanding shares or beneficial ownership of the corporation
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 - *↑*"Google Classification is NOTICE" (source:

@@ -11,31 +11,6 @@ Creative Commons Attribution Share Alike 1.0 Generic (CC-BY-SA-1.0)
 
 -   `Creative Commons Attribution-ShareAlike 1.0 Generic`
 
-Description
------------
-
-> A collective work is a work that is composed of independent works,
-> such as a periodical, poetry collection, or encyclopedia, assembled
-> without modification. The works that constitute a collective work are
-> not considered derivative works for the purposes of this license. A
-> derivative work is a translation, arrangement, dramatization,
-> fictionalization, film adaptation, sound recording, work of art,
-> excerpt, abridgement, summary, or any other form of work that has been
-> re-cast or altered. However, works that constitute a collective work
-> are not considered derivative works under this license and are
-> therefore excluded. Licensor" means the person or entity making the
-> work available under this license. A work is a copyrighted work and
-> refers to a work offered under this license. The original author is
-> the person or entity that created the work. A person or entity
-> exercising rights under this License who has never previously violated
-> the terms of this License with respect to his or her work, or who has
-> expressly granted Licensor permission to exercise his or her rights in
-> the past, even if he or she has violated the terms of the License.
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
