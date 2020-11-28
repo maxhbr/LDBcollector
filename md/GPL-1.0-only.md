@@ -11,6 +11,8 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 -   `GPL1`
 
+-   `GNU General Public License Version 1`
+
 -   `scancode://gpl-1.0`
 
 -   `GPL 1.0`
@@ -334,6 +336,7 @@ Raw Data
             "GPL-1.0",
             "GPL1.0",
             "GPL1",
+            "GNU General Public License Version 1",
             "GNU General Public License v1.0 only",
             "scancode://gpl-1.0",
             "GPL 1.0"
@@ -467,7 +470,8 @@ Raw Data
                         "GPL-1.0-only",
                         "GPL-1.0",
                         "GPL1.0",
-                        "GPL1"
+                        "GPL1",
+                        "GNU General Public License Version 1"
                     ],
                     "__impliedId": "GPL-1.0-only"
                 },
@@ -475,7 +479,8 @@ Raw Data
                 "oOtherLicenseIds": [
                     "GPL-1.0",
                     "GPL1.0",
-                    "GPL1"
+                    "GPL1",
+                    "GNU General Public License Version 1"
                 ],
                 "oDescription": null,
                 "oJudgement": null,

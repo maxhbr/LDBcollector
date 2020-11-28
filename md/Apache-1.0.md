@@ -11,6 +11,8 @@ Apache License 1.0 (Apache-1.0)
 
 -   `ASL 1.0`
 
+-   `Apache Software License, Version 1.0`
+
 -   `scancode://apache-1.0`
 
 -   `Apache 1.0`
@@ -128,6 +130,7 @@ Raw Data
             "Apache (v1.0)",
             "Apache Software License 1.0",
             "ASL 1.0",
+            "Apache Software License, Version 1.0",
             "Apache License 1.0",
             "scancode://apache-1.0",
             "Apache 1.0"
@@ -234,7 +237,8 @@ Raw Data
                         "Apache-1.0",
                         "Apache (v1.0)",
                         "Apache Software License 1.0",
-                        "ASL 1.0"
+                        "ASL 1.0",
+                        "Apache Software License, Version 1.0"
                     ],
                     "__impliedId": "Apache-1.0"
                 },
@@ -242,7 +246,8 @@ Raw Data
                 "oOtherLicenseIds": [
                     "Apache (v1.0)",
                     "Apache Software License 1.0",
-                    "ASL 1.0"
+                    "ASL 1.0",
+                    "Apache Software License, Version 1.0"
                 ],
                 "oDescription": null,
                 "oJudgement": null,

@@ -5,6 +5,10 @@ Ruby License (Ruby)
 
 **Other Names:**
 
+-   `Ruby License (1.9.2 and earlier)`
+
+-   `Ruby License (1.9.3 and later)`
+
 -   `scancode://ruby`
 
 Comments on (easy) usability
@@ -107,6 +111,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Ruby.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -126,6 +132,8 @@ Raw Data
     {
         "__impliedNames": [
             "Ruby",
+            "Ruby License (1.9.2 and earlier)",
+            "Ruby License (1.9.3 and later)",
             "Ruby License",
             "scancode://ruby"
         ],
@@ -218,6 +226,26 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "Ruby",
+                        "Ruby License (1.9.2 and earlier)",
+                        "Ruby License (1.9.3 and later)"
+                    ],
+                    "__impliedId": "Ruby"
+                },
+                "oName": "Ruby",
+                "oOtherLicenseIds": [
+                    "Ruby License (1.9.2 and earlier)",
+                    "Ruby License (1.9.3 and later)"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

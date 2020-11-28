@@ -5,6 +5,8 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 **Other Names:**
 
+-   `GNU Library General Public License Version 2`
+
 -   `scancode://lgpl-2.0`
 
 -   `LGPL 2.0`
@@ -545,6 +547,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.0-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -571,6 +575,7 @@ Raw Data
     {
         "__impliedNames": [
             "LGPL-2.0-only",
+            "GNU Library General Public License Version 2",
             "GNU Library General Public License v2 only",
             "scancode://lgpl-2.0",
             "LGPL 2.0"
@@ -717,6 +722,24 @@ Raw Data
                 },
                 "Comment": "Earlier called the \"Library General Public License\"; this name is deprecated because it confuses the license's intent.",
                 "LicenseId": "LGPL-2.0-only"
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-only",
+                        "GNU Library General Public License Version 2"
+                    ],
+                    "__impliedId": "LGPL-2.0-only"
+                },
+                "oName": "LGPL-2.0-only",
+                "oOtherLicenseIds": [
+                    "GNU Library General Public License Version 2"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/LGPL-2.0-only.html",

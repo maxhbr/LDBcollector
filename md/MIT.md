@@ -7,6 +7,8 @@ MIT License (MIT)
 
 -   `MIT license (also X11)`
 
+-   `The MIT License`
+
 -   `scancode://mit`
 
 -   `MIT/Expat License`
@@ -175,6 +177,7 @@ Raw Data
         "__impliedNames": [
             "MIT",
             "MIT license (also X11)",
+            "The MIT License",
             "MIT License",
             "scancode://mit",
             "mit",
@@ -376,13 +379,15 @@ Raw Data
                 "implications": {
                     "__impliedNames": [
                         "MIT",
-                        "MIT license (also X11)"
+                        "MIT license (also X11)",
+                        "The MIT License"
                     ],
                     "__impliedId": "MIT"
                 },
                 "oName": "MIT",
                 "oOtherLicenseIds": [
-                    "MIT license (also X11)"
+                    "MIT license (also X11)",
+                    "The MIT License"
                 ],
                 "oDescription": null,
                 "oJudgement": null,

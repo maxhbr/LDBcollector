@@ -2,6 +2,7 @@
     "__impliedNames": [
         "MIT",
         "MIT license (also X11)",
+        "The MIT License",
         "MIT License",
         "scancode://mit",
         "mit",
@@ -203,13 +204,15 @@
             "implications": {
                 "__impliedNames": [
                     "MIT",
-                    "MIT license (also X11)"
+                    "MIT license (also X11)",
+                    "The MIT License"
                 ],
                 "__impliedId": "MIT"
             },
             "oName": "MIT",
             "oOtherLicenseIds": [
-                "MIT license (also X11)"
+                "MIT license (also X11)",
+                "The MIT License"
             ],
             "oDescription": null,
             "oJudgement": null,
