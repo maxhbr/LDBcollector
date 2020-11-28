@@ -37,3 +37,7 @@ Number of facts: 1699
 Number of clusters: 421
 #### based on licenses
 Number of clusters: 414
+### Stats on Gaps:
+#### numOfFacts: 4127
+#### numOfLicenseFacs: 1699
+#### numOfLeftover: 2473
