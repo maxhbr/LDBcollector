@@ -10,7 +10,7 @@ import qualified Data.Vector as V
 import qualified Data.List as L
 import qualified Data.Set as S
 import           Data.Set (Set)
-import           Data.Char (toUpper, isSpace)
+import           Data.Char (toUpper, isSpace, isPrint)
 
 import           Model.License hiding (getLicenseFromFacts)
 
@@ -41,33 +41,41 @@ getLicenseFromFacts
   -> Facts
   -> (License, LicenseClusterTree)
 getLicenseFromFacts name facts = let
-    initialLicense = License $ V.singleton (mkLicenseShortnameFact name [])
     initialTree = lctFromName name
-  in getLicensesFromFacts' name facts (initialLicense, initialTree)
+  in getLicensesFromFacts' name (mkLicenseShortnameFact name [] `V.cons` facts) initialTree
+
+normalizeSet :: Set LicenseName -> Set LicenseName
+normalizeSet = let
+    normalizeKey :: LicenseName -> LicenseName
+    normalizeKey =
+      L.map toUpper -- Case insensitive comparison
+      . filter (not . (`elem` "(),")) -- Ignore some chars
+      . filter isPrint -- ignore non-printable chars
+      . filter (not . isSpace) -- ignore whitespace
+  in S.map normalizeKey
 
 getLicensesFromFacts'
   :: LicenseName
   -> Facts
+  -> LicenseClusterTree
   -> (License, LicenseClusterTree)
-  -> (License, LicenseClusterTree)
-getLicensesFromFacts' name facts (prevLic, prevTree) = let
-    normalizeKey :: LicenseName -> LicenseName
-    normalizeKey = let
-        ignoredChars = "(),"
-      in L.map toUpper . filter (not . (`elem` ignoredChars)) . filter (not . isSpace)
-    normalizeSet :: Set LicenseName -> Set LicenseName
-    normalizeSet = S.map normalizeKey
+getLicensesFromFacts' name facts prevTree = let
+
     prevNames = normalizeSet $ lctToNames prevTree
-    prevNamesFilter fact = let
-        impliedNames = normalizeSet . S.fromList $ getImpliedNonambiguousNames fact
-      in not (prevNames `S.disjoint` impliedNames)
-    factsIntersectingWithNames = V.filter prevNamesFilter facts
+
+    factsIntersectingWithNames = let
+        impliedNames fact = normalizeSet . S.fromList $ getImpliedNonambiguousNames fact
+        prevNamesFilter fact = not (prevNames `S.disjoint` impliedNames fact)
+      in V.filter prevNamesFilter facts
+
     newClusters = (V.toList
                    . V.filter (not . (`isSubLctOf` prevTree))
                    . V.map LCTLeaf
-                  . V.map (S.fromList . getImpliedNonambiguousNames))
+                   . V.map (S.fromList . getImpliedNonambiguousNames))
                   factsIntersectingWithNames
+
     newTree = LCTNode prevTree newClusters
+
   in if L.null newClusters
-     then (prevLic, prevTree)
-     else getLicensesFromFacts' name facts (License factsIntersectingWithNames, newTree)
+     then (License factsIntersectingWithNames, prevTree)
+     else getLicensesFromFacts' name facts newTree

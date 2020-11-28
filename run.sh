@@ -30,7 +30,11 @@ else
     outGit="${out}.git"
 
     set -x
-    stack exec LDBcollector-exe $@ "$($PRIV && echo "priv")"
+    if [[ "$PRIV" == "true" ]]; then
+        stack exec LDBcollector-exe "priv" $@
+    else
+        stack exec LDBcollector-exe $@
+    fi
 
     if [[ -d "$out" ]]; then
         cd "$out"

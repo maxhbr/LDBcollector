@@ -14,15 +14,7 @@ import qualified Data.Vector as V
 import           GHC.IO.Encoding
 import           System.Environment
 import           System.IO
--- -
--- -import qualified Data.ByteString
--- -import qualified Data.Csv as C
--- -import           Data.Set (Set)
--- -import qualified Data.Set as S
--- -import           Data.Map (Map)
--- -import qualified Data.Map as M
--- -import qualified Data.Vector as V
-
+import           Data.List (sortOn)
 
 import           Model.License
 import           Generators.FindClusters
@@ -47,23 +39,9 @@ writeStatsOnFacts handle fs = let
       $ map getLicenseFactClassifier fs
 
 {- #############################################################################
-   ## stas on licenses #########################################################
-   ########################################################################## -}
-
-writeStatsOnLicenses :: Handle -> FilePath -> [(LicenseName, (License, a))] -> IO ()
-writeStatsOnLicenses handle statsFolder lics = do
-  hPutStrLn handle ("Number of Licenses: " ++ show (length lics))
-  let fsOfLics = concatMap (\(_,(License fs, _)) ->  V.toList fs) lics
-  writeStatsOnFacts handle fsOfLics
-  hPutStrLn handle "#### based on facts from licenses"
-  writeClusters handle (statsFolder </> "clusters_from_fatcs_from_lics.csv") (V.fromList fsOfLics)
-  hPutStrLn handle "#### based on licenses"
-  writeClustersFromLicenses handle (statsFolder </> "clusters_from_lics.csv") lics
-
-{- #############################################################################
    ## stas on gaps #############################################################
    ########################################################################## -}
-  
+
 data FactRepresentation
   = FactRep LicenseFact
 unRep :: FactRepresentation -> LicenseFact
@@ -72,6 +50,11 @@ instance Eq FactRepresentation where
   (FactRep f1) == (FactRep f2) = and [ getLicenseFactClassifier f1 == getLicenseFactClassifier f2
                                      , getImpliedNonambiguousNames f1 == getImpliedNonambiguousNames f2
                                      ]
+instance Show FactRepresentation where
+  show (FactRep f) = unwords [ show (getLicenseFactClassifier f)
+                             , show (getImpliedNonambiguousNames f)
+                             , show (getImpliedAmbiguousNames f)
+                             ]
 instance C.ToNamedRecord FactRepresentation where
   toNamedRecord (FactRep f) =
     C.namedRecord [ "lfc" C..= show (getLicenseFactClassifier f)
@@ -98,6 +81,35 @@ writeStatsOnGaps handle statsFolder facts licenses = let
   writeStatsOnFacts handle (map unRep leftoverFactRefs)
 
   BL.writeFile (statsFolder </> "gaps.csv") (C.encodeDefaultOrderedByName leftoverFactRefsWithNames)
+
+{- #############################################################################
+   ## stas on licenses #########################################################
+   ########################################################################## -}
+
+writeLicensesFactsInfos :: Handle -> FilePath -> [(LicenseName, (License, a))] -> IO ()
+writeLicensesFactsInfos handle statsFolder lics = let
+    sortedLics = (sortOn fst . map (\(ln, (l, _)) -> (ln, l))) lics
+    writeLicenseFactsInfos ::Handle ->  (LicenseName, License) -> IO ()
+    writeLicenseFactsInfos handle' (ln, License fs) = do
+      hPutStrLn handle' ("* " ++ ln)
+      mapM_ (\f -> hPutStrLn handle' ("- " ++ show (FactRep f))) (V.toList fs)
+      hPutStrLn handle' ""
+  in do
+  handle' <- openFile (statsFolder </> "licenses.org") WriteMode
+  mapM_ (writeLicenseFactsInfos handle') sortedLics
+  hClose handle'
+
+writeStatsOnLicenses :: Handle -> FilePath -> [(LicenseName, (License, a))] -> IO ()
+writeStatsOnLicenses handle statsFolder lics = do
+  hPutStrLn handle ("Number of Licenses: " ++ show (length lics))
+  let fsOfLics = concatMap (\(_,(License fs, _)) ->  V.toList fs) lics
+  writeStatsOnFacts handle fsOfLics
+  hPutStrLn handle "#### based on facts from licenses"
+  writeClusters handle (statsFolder </> "clusters_from_fatcs_from_lics.csv") (V.fromList fsOfLics)
+  hPutStrLn handle "#### based on licenses"
+  writeClustersFromLicenses handle (statsFolder </> "clusters_from_lics.csv") lics
+
+  writeLicensesFactsInfos handle statsFolder lics
 
 {- #############################################################################
    ## general ##################################################################
