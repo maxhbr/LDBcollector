@@ -128,6 +128,12 @@ emptyOlText :: OlText
 emptyOlText = OlText M.empty
 cleanOlText :: OlText -> OlText
 cleanOlText (OlText m) = OlText (M.filter (/= "") m)
+isEmptyOlText :: OlText -> Bool
+isEmptyOlText = (== emptyOlText) . cleanOlText
+olTextToList :: OlText -> [String]
+olTextToList t = case show t of
+  "" -> []
+  t' -> [t']
 
 olTextToRLSR :: LFRaw a => a -> OlText -> RankedLicenseStatementResult String
 olTextToRLSR ole t =
@@ -198,7 +204,7 @@ instance Translateable OlAction where
 instance ToJSON OlAction where
   toJSON a = objectWithoutEmpty [ "name" .= toJSON (_action_name a)
                                 , "description" .= toJSON (_action_description a)
-                                , "_id" .= _action_id a
+                                -- , "_id" .= _action_id a
                                 ]
 instance FromJSON OlAction where
   parseJSON = withObject "OlAction" $ \v -> OlAction
@@ -246,7 +252,7 @@ instance ToJSON OlCondition where
   toJSON c = objectWithoutEmpty [ "name" .= toJSON (_condition_name c)
                                 , "description" .= toJSON (_condition_description c)
                                 , "type" .= toJSON (_condition_conditionType c)
-                                , "_id" .= _condition_id c
+                                -- , "_id" .= _condition_id c
                                 ]
 instance FromJSON OlCondition where
   parseJSON = withObject "OlCondition" $ \v -> OlCondition
@@ -354,7 +360,11 @@ instance Translateable OlNotice where
   getTranslateables n = getTranslateables (_notice_content n) `S.union` getTranslateables (_notice_description n)
   translate n = n { _notice_content = translate (_notice_content n)
                   , _notice_description = translate (_notice_description n)}
-instance ToJSON OlNotice
+instance ToJSON OlNotice where
+  toJSON n = objectWithoutEmpty [ "content" .= toJSON (_notice_content n)
+                                , "description" .= toJSON (_notice_description n)
+                                -- , "_id"         .= _notice_id n
+                                ]
 instance FromJSON OlNotice where
   parseJSON = withObject "OlNotice" $ \v -> OlNotice
     <$> (fmap show (v .: "schemaVersion" :: Parser Double) :: Parser String)
@@ -436,7 +446,7 @@ instance ToJSON OlLicense where
                                 , "permissions" .= toJSON (_license_permissions l)
                                 , "notices"     .= toJSON (_license_notices l)
                                 , "content"     .= toJSON (_license_content l)
-                                , "_id"         .= _license_id l
+                                -- , "_id"         .= _license_id l
                                 ]
 instance FromJSON OlLicense where
   parseJSON = withObject "OlLicense" $ \v -> OlLicense
@@ -459,6 +469,10 @@ instance LFRaw OlLicense where
   getImpliedFullName ole    = mkRLSR ole 40 (_license_name ole)
   getImpliedURLs ole        = CLSR [(Just "open-license", _license_uri ole)]
   getImpliedText ole        = mkRLSR ole 30 (_license_content ole)
+  getImpliedComments ole    = let
+    in mkSLSR ole (concat [ olTextToList (_license_summary ole)
+                          , olTextToList (_license_description ole)
+                          ])
   getImpliedDescription ole = olTextToRLSR ole (_license_description ole)
 
 licenses :: [OlLicense]
