@@ -5,6 +5,8 @@ Licence Libre du Québec – Permissive version 1.1 (LiLiQ-P-1.1)
 
 **Other Names:**
 
+-   `LiLiQ-P`
+
 -   `Licence Libre du Québec – Permissive, Version 1.1`
 
 Comments on (easy) usability
@@ -33,6 +35,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -44,6 +48,7 @@ Raw Data
     {
         "__impliedNames": [
             "LiLiQ-P-1.1",
+            "LiLiQ-P",
             "Licence Libre du QuÃ©bec â Permissive version 1.1",
             "Licence Libre du QuÃ©bec â Permissive, Version 1.1"
         ],
@@ -91,6 +96,24 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "LiLiQ-P-1.1"
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "LiLiQ-P-1.1",
+                        "LiLiQ-P"
+                    ],
+                    "__impliedId": "LiLiQ-P-1.1"
+                },
+                "oName": "LiLiQ-P-1.1",
+                "oOtherLicenseIds": [
+                    "LiLiQ-P"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "OpenSourceInitiative": {
                 "text": [

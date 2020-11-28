@@ -5,6 +5,8 @@ Licence Libre du Québec – Réciprocité version 1.1 (LiLiQ-R-1.1)
 
 **Other Names:**
 
+-   `LiLiQ-R`
+
 -   `Licence Libre du Québec – Réciprocité, Version 1.1`
 
 Comments on (easy) usability
@@ -33,6 +35,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/LiLiQ-R-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -44,6 +48,7 @@ Raw Data
     {
         "__impliedNames": [
             "LiLiQ-R-1.1",
+            "LiLiQ-R",
             "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",
             "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ©, Version 1.1"
         ],
@@ -91,6 +96,24 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "LiLiQ-R-1.1"
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "LiLiQ-R-1.1",
+                        "LiLiQ-R"
+                    ],
+                    "__impliedId": "LiLiQ-R-1.1"
+                },
+                "oName": "LiLiQ-R-1.1",
+                "oOtherLicenseIds": [
+                    "LiLiQ-R"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "OpenSourceInitiative": {
                 "text": [

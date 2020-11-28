@@ -13,6 +13,7 @@
 
 * `+AGPL-1.0+`
 * `+Affero General Public License (v. 1)+`
+* `+Affero General Public License 1.0+`
 * `+scancode://agpl-1.0+`
 * `+AGPL 1.0+`
 
@@ -162,6 +163,7 @@ repository] is generated)
         "AGPL-1.0-only",
         "AGPL-1.0",
         "Affero General Public License (v. 1)",
+        "Affero General Public License 1.0",
         "Affero General Public License v1.0 only",
         "scancode://agpl-1.0",
         "AGPL 1.0"
@@ -252,14 +254,16 @@ repository] is generated)
                 "__impliedNames": [
                     "AGPL-1.0-only",
                     "AGPL-1.0",
-                    "Affero General Public License (v. 1)"
+                    "Affero General Public License (v. 1)",
+                    "Affero General Public License 1.0"
                 ],
                 "__impliedId": "AGPL-1.0-only"
             },
             "oName": "AGPL-1.0-only",
             "oOtherLicenseIds": [
                 "AGPL-1.0",
-                "Affero General Public License (v. 1)"
+                "Affero General Public License (v. 1)",
+                "Affero General Public License 1.0"
             ],
             "oDescription": null,
             "oJudgement": null,

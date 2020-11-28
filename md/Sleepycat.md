@@ -309,14 +309,16 @@ Raw Data
                     "__impliedNames": [
                         "Sleepycat",
                         "Berkeley Database License",
-                        "Sleepycat Software Product License"
+                        "Sleepycat Software Product License",
+                        "Sleepycat License"
                     ],
                     "__impliedId": "Sleepycat"
                 },
                 "oName": "Sleepycat",
                 "oOtherLicenseIds": [
                     "Berkeley Database License",
-                    "Sleepycat Software Product License"
+                    "Sleepycat Software Product License",
+                    "Sleepycat License"
                 ],
                 "oDescription": null,
                 "oJudgement": null,

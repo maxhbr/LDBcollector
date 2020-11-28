@@ -5,9 +5,13 @@ Universal Permissive License v1.0 (UPL-1.0)
 
 **Other Names:**
 
+-   `UPL`
+
 -   `scancode://upl-1.0`
 
 -   `UPL 1.0`
+
+-   `The Universal Permissive License (UPL), Version 1.0`
 
 Description
 -----------
@@ -106,6 +110,8 @@ Raw Data
 
 ### Facts
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -113,21 +119,29 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml "Scancode")
     (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "UPL-1.0",
+            "UPL",
             "Universal Permissive License v1.0",
             "scancode://upl-1.0",
             "UPL 1.0",
-            "upl-1.0"
+            "upl-1.0",
+            "The Universal Permissive License (UPL), Version 1.0"
         ],
         "__impliedId": "UPL-1.0",
         "facts": {
@@ -231,6 +245,39 @@ Raw Data
                     ]
                 }
             },
+            "OpenChainPolicyTemplate": {
+                "isSaaSDeemed": "no",
+                "licenseType": "permissive",
+                "freedomOrDeath": "no",
+                "typeCopyleft": "no",
+                "_sourceURL": "https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods",
+                "name": "Universal Permissive License ",
+                "commercialUse": true,
+                "spdxId": "UPL",
+                "_implications": {
+                    "__impliedNames": [
+                        "UPL"
+                    ]
+                }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "UPL-1.0",
+                        "UPL"
+                    ],
+                    "__impliedId": "UPL-1.0"
+                },
+                "oName": "UPL-1.0",
+                "oOtherLicenseIds": [
+                    "UPL"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
                 "url": "https://spdx.org/licenses/UPL-1.0.html",
@@ -263,6 +310,42 @@ Raw Data
                         [
                             "SPDX",
                             "https://spdx.org/licenses/UPL-1.0.html"
+                        ]
+                    ]
+                }
+            },
+            "OpenSourceInitiative": {
+                "text": [
+                    {
+                        "url": "https://opensource.org/licenses/UPL",
+                        "title": "HTML",
+                        "media_type": "text/html"
+                    }
+                ],
+                "identifiers": [],
+                "superseded_by": null,
+                "_sourceURL": "https://opensource.org/licenses/",
+                "name": "The Universal Permissive License (UPL), Version 1.0",
+                "other_names": [],
+                "keywords": [
+                    "osi-approved"
+                ],
+                "id": "UPL",
+                "links": [
+                    {
+                        "note": "OSI Page",
+                        "url": "https://opensource.org/licenses/UPL"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "UPL",
+                        "The Universal Permissive License (UPL), Version 1.0"
+                    ],
+                    "__impliedURLs": [
+                        [
+                            "OSI Page",
+                            "https://opensource.org/licenses/UPL"
                         ]
                     ]
                 }
@@ -441,6 +524,10 @@ Raw Data
             [
                 null,
                 "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/UPL"
             ]
         ]
     }

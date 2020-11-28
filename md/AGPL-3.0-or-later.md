@@ -15,8 +15,6 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 -   `Affero General Public License 3.0 or later`
 
--   `GNU Affero General Public License (AGPL-3.0) (v. 3.0)`
-
 -   `scancode://agpl-3.0-plus`
 
 -   `AGPL 3.0 or later`
@@ -125,7 +123,6 @@ Raw Data
             "AGPL3+",
             "AGPL (v3 or later)",
             "Affero General Public License 3.0 or later",
-            "GNU Affero General Public License (AGPL-3.0) (v. 3.0)",
             "GNU Affero General Public License v3.0 or later",
             "scancode://agpl-3.0-plus",
             "AGPL 3.0 or later",
@@ -279,8 +276,7 @@ Raw Data
                         "AGPL3.0+",
                         "AGPL3+",
                         "AGPL (v3 or later)",
-                        "Affero General Public License 3.0 or later",
-                        "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
+                        "Affero General Public License 3.0 or later"
                     ],
                     "__impliedId": "AGPL-3.0-or-later"
                 },
@@ -290,8 +286,7 @@ Raw Data
                     "AGPL3.0+",
                     "AGPL3+",
                     "AGPL (v3 or later)",
-                    "Affero General Public License 3.0 or later",
-                    "GNU Affero General Public License (AGPL-3.0) (v. 3.0)"
+                    "Affero General Public License 3.0 or later"
                 ],
                 "oDescription": null,
                 "oJudgement": null,
