@@ -350,7 +350,7 @@ Knowledge International]
             }
         },
         "Hitachi open-license": {
-            "summary": "",
+            "_id": "licenses/608",
             "notices": [
                 {
                     "_notice_description": "",
@@ -374,7 +374,6 @@ Knowledge International]
             "name": "PostgreSQL License",
             "permissions": [
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/1",
@@ -383,13 +382,11 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/3",
-                            "name": "Modify the obtained source code.",
-                            "description": ""
+                            "name": "Modify the obtained source code."
                         },
                         {
                             "_id": "actions/4",
-                            "name": "Using Modified Source Code",
-                            "description": ""
+                            "name": "Using Modified Source Code"
                         },
                         {
                             "_id": "actions/5",
@@ -398,8 +395,7 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/7",
-                            "name": "Use the object code generated from the modified source code",
-                            "description": ""
+                            "name": "Use the object code generated from the modified source code"
                         },
                         {
                             "_id": "actions/84",
@@ -408,15 +404,13 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/87",
-                            "name": "Use the executable generated from the modified source code",
-                            "description": ""
+                            "name": "Use the executable generated from the modified source code"
                         }
                     ],
                     "conditions": null,
                     "description": "Relevant documentation for the software should be treated in the same way as for the software."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/9",
@@ -430,13 +424,11 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/12",
-                            "name": "Distribution of Modified Source Code",
-                            "description": ""
+                            "name": "Distribution of Modified Source Code"
                         },
                         {
                             "_id": "actions/13",
-                            "name": "Distribute the object code generated from the modified source code",
-                            "description": ""
+                            "name": "Distribute the object code generated from the modified source code"
                         },
                         {
                             "_id": "actions/86",
@@ -445,15 +437,13 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/89",
-                            "name": "Distribute the executable generated from the modified source code",
-                            "description": ""
+                            "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
                     "conditions": {
                         "_id": "conditions/238",
                         "name": "Include a copyright notice and list of terms and conditions included in the license",
-                        "type": "OBLIGATION",
-                        "description": ""
+                        "type": "OBLIGATION"
                     },
                     "description": "Relevant documentation for the software should be treated in the same way as for the software."
                 }
@@ -469,8 +459,7 @@ Knowledge International]
                         "http://open-license.hitachi.com/licenses/608"
                     ]
                 ]
-            },
-            "description": ""
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",

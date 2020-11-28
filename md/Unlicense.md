@@ -330,6 +330,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "http://unlicense.org/",
+                "_id": "licenses/844",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -345,7 +346,6 @@ Raw Data
                 "name": "Unlicense",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -354,13 +354,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -369,8 +367,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_id": "actions/11",
@@ -379,23 +376,19 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_id": "actions/35",
-                                "name": "Selling Software",
-                                "description": ""
+                                "name": "Selling Software"
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             },
                             {
                                 "_id": "actions/277",
-                                "name": "Publish the binary generated from the modified source code",
-                                "description": ""
+                                "name": "Publish the binary generated from the modified source code"
                             }
                         ],
                         "conditions": null,
@@ -413,8 +406,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/844"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

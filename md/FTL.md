@@ -385,6 +385,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
+                "_id": "licenses/763",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -408,7 +409,6 @@ Raw Data
                 "name": "FreeType Project LICENSE",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -417,8 +417,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -427,8 +426,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             }
                         ],
                         "conditions": {
@@ -440,7 +438,6 @@ Raw Data
                         "description": "Related documents should be treated in the same way as software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/19",
@@ -464,43 +461,35 @@ Raw Data
                             },
                             {
                                 "_id": "actions/114",
-                                "name": "Display the obtained source code",
-                                "description": ""
+                                "name": "Display the obtained source code"
                             },
                             {
                                 "_id": "actions/115",
-                                "name": "Execute the obtained source code.",
-                                "description": ""
+                                "name": "Execute the obtained source code."
                             },
                             {
                                 "_id": "actions/118",
-                                "name": "Display the modified source code",
-                                "description": ""
+                                "name": "Display the modified source code"
                             },
                             {
                                 "_id": "actions/119",
-                                "name": "Executing Modified Source Code",
-                                "description": ""
+                                "name": "Executing Modified Source Code"
                             },
                             {
                                 "_id": "actions/287",
-                                "name": "Display the retrieved binary",
-                                "description": ""
+                                "name": "Display the retrieved binary"
                             },
                             {
                                 "_id": "actions/288",
-                                "name": "Display the generated binary from the modified source code",
-                                "description": ""
+                                "name": "Display the generated binary from the modified source code"
                             },
                             {
                                 "_id": "actions/289",
-                                "name": "Execute the generated binary from the modified source code",
-                                "description": ""
+                                "name": "Execute the generated binary from the modified source code"
                             },
                             {
                                 "_id": "actions/290",
-                                "name": "Execute the obtained binary",
-                                "description": ""
+                                "name": "Execute the obtained binary"
                             }
                         ],
                         "conditions": {
@@ -514,15 +503,13 @@ Raw Data
                                 {
                                     "_id": "conditions/13",
                                     "name": "Acknowledgements",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -541,32 +528,27 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/13",
                                     "name": "Acknowledgements",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -580,32 +562,27 @@ Raw Data
                                 {
                                     "_id": "conditions/318",
                                     "name": "Indicate your changes in the materials that accompany the distribution.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/13",
                                     "name": "Acknowledgements",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -619,33 +596,28 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/318",
                                     "name": "Indicate your changes in the materials that accompany the distribution.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/13",
                                     "name": "Acknowledgements",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/11",
@@ -654,8 +626,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
@@ -669,27 +640,23 @@ Raw Data
                                 {
                                     "_id": "conditions/13",
                                     "name": "Acknowledgements",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements.\" Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/291",
-                                "name": "Use the names of authors and contributors in publicity and advertising.",
-                                "description": ""
+                                "name": "Use the names of authors and contributors in publicity and advertising."
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: \"FreeType Project\", \"FreeType Engine\", \"FreeType library\", or \"FreeType Distribution\"."
                     }

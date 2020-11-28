@@ -555,7 +555,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/5",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -595,7 +595,6 @@ Raw Data
                 "name": "GNU General Public License Version 1",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -604,8 +603,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -614,8 +612,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -624,15 +621,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -645,26 +639,22 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -672,37 +662,31 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The source code refers to the source code of all modules."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             }
                         ],
                         "conditions": {
@@ -710,26 +694,22 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/77",
                                     "name": "License the software to third parties free of charge in accordance with the terms of such license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/76",
@@ -740,15 +720,13 @@ Raw Data
                                 {
                                     "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy; you may offer a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/10",
@@ -766,14 +744,12 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/76",
@@ -786,14 +762,12 @@ Raw Data
                                         {
                                             "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/42",
                                             "name": "Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 }
@@ -802,27 +776,22 @@ Raw Data
                         "description": "The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/91",
-                                "name": "Present the object code generated from the modified source code.",
-                                "description": ""
+                                "name": "Present the object code generated from the modified source code."
                             },
                             {
                                 "_id": "actions/92",
-                                "name": "Present the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Present the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -830,26 +799,22 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/40",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/77",
                                     "name": "License the software to third parties free of charge in accordance with the terms of such license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/76",
@@ -860,22 +825,19 @@ Raw Data
                                 {
                                     "_id": "conditions/283",
                                     "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
                                             "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/42",
                                             "name": "Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 }

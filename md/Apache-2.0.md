@@ -633,7 +633,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/11",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -673,7 +673,6 @@ Raw Data
                 "name": "Apache License, Version 2.0",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/51",
@@ -746,8 +745,7 @@ Raw Data
                                 {
                                     "_id": "conditions/6",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/7",
@@ -756,11 +754,9 @@ Raw Data
                                     "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
                                 }
                             ]
-                        },
-                        "description": ""
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/58",
@@ -788,8 +784,7 @@ Raw Data
                                 {
                                     "_id": "conditions/6",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/7",
@@ -800,15 +795,12 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
-                        },
-                        "description": ""
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/64",
@@ -826,8 +818,7 @@ Raw Data
                                 {
                                     "_id": "conditions/6",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/7",
@@ -838,14 +829,12 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/9",
                                     "name": "Indicate your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/10",
@@ -864,7 +853,6 @@ Raw Data
                         "description": "A copyright notice for modifications may be added."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/67",
@@ -882,8 +870,7 @@ Raw Data
                                 {
                                     "_id": "conditions/6",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/7",
@@ -894,14 +881,12 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/9",
                                     "name": "Indicate your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/31",
@@ -914,12 +899,10 @@ Raw Data
                         "description": "A copyright notice for modifications may be added."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/36",
-                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.",
-                                "description": ""
+                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
                             }
                         ],
                         "conditions": {
@@ -927,25 +910,20 @@ Raw Data
                             "name": "I do so at my own risk.",
                             "type": "OBLIGATION",
                             "description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage."
-                        },
-                        "description": ""
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/78",
-                                "name": "Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications.",
-                                "description": ""
+                                "name": "Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications."
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/32",
                             "name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
-                            "type": "RESTRICTION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "RESTRICTION"
+                        }
                     }
                 ],
                 "_implications": {

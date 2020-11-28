@@ -307,6 +307,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/ecl1.php",
+                "_id": "licenses/1545",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -330,7 +331,6 @@ Raw Data
                 "name": "Educational Community License, Version 1.0",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -339,8 +339,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -349,8 +348,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -359,15 +357,13 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": null,
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -420,26 +416,22 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -447,31 +439,26 @@ Raw Data
                                 {
                                     "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/25",
@@ -485,23 +472,19 @@ Raw Data
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             },
                             {
                                 "_id": "actions/91",
-                                "name": "Present the object code generated from the modified source code.",
-                                "description": ""
+                                "name": "Present the object code generated from the modified source code."
                             },
                             {
                                 "_id": "actions/92",
-                                "name": "Present the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Present the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/109",
@@ -514,39 +497,33 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/139",
                                     "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/154",
-                                "name": "Use the copyright holder's name in software promotions and advertisements",
-                                "description": ""
+                                "name": "Use the copyright holder's name in software promotions and advertisements"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "The copyright in the software and related documentation is retained by the copyright holder at all times."
                     }
@@ -562,8 +539,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/1545"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

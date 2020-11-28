@@ -405,7 +405,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/12",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -429,7 +429,6 @@ Raw Data
                 "name": "Apache Software License, Version 1.1",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -438,13 +437,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -453,15 +450,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -470,20 +464,16 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "OBLIGATION"
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/11",
@@ -492,66 +482,54 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/2",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "OBLIGATION"
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/32",
-                                "name": "Include end-user documentation in the distribution",
-                                "description": ""
+                                "name": "Include end-user documentation in the distribution"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/13",
                             "name": "Acknowledgements",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "The acknowledgements are here: \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\" This acknowledgement may be included in the software itself."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/29",
-                                "name": "Use the name to endorse and promote derived products",
-                                "description": ""
+                                "name": "Use the name to endorse and promote derived products"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/30",
-                                "name": "Use the name of the product or part of the name of the product from which it was derived",
-                                "description": ""
+                                "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "\"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã."
                     }
@@ -567,8 +545,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/12"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

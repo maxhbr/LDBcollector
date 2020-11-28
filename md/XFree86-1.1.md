@@ -186,7 +186,7 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/319",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -210,7 +210,6 @@ Raw Data
                 "name": "XFree86 1.1 License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -219,13 +218,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -234,20 +231,17 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             }
                         ],
                         "conditions": null,
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -256,8 +250,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/19",
@@ -273,13 +266,11 @@ Raw Data
                         "conditions": {
                             "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/11",
@@ -288,8 +279,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_id": "actions/33",
@@ -303,49 +293,41 @@ Raw Data
                             },
                             {
                                 "_id": "actions/35",
-                                "name": "Selling Software",
-                                "description": ""
+                                "name": "Selling Software"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/2",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/32",
-                                "name": "Include end-user documentation in the distribution",
-                                "description": ""
+                                "name": "Include end-user documentation in the distribution"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/13",
                             "name": "Acknowledgements",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/154",
-                                "name": "Use the copyright holder's name in software promotions and advertisements",
-                                "description": ""
+                                "name": "Use the copyright holder's name in software promotions and advertisements"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc."
                     }
@@ -361,8 +343,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/319"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

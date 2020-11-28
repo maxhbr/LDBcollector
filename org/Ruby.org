@@ -314,7 +314,7 @@
               "oRatingState": null
           },
           "Hitachi open-license": {
-              "summary": "",
+              "_id": "licenses/2",
               "notices": [
                   {
                       "_notice_description": "There is no guarantee.",
@@ -338,7 +338,6 @@
               "name": "Ruby License (1.9.2 and earlier)",
               "permissions": [
                   {
-                      "summary": "",
                       "actions": [
                           {
                               "_id": "actions/1",
@@ -347,8 +346,7 @@
                           },
                           {
                               "_id": "actions/4",
-                              "name": "Using Modified Source Code",
-                              "description": ""
+                              "name": "Using Modified Source Code"
                           },
                           {
                               "_id": "actions/5",
@@ -362,20 +360,17 @@
                           },
                           {
                               "_id": "actions/7",
-                              "name": "Use the object code generated from the modified source code",
-                              "description": ""
+                              "name": "Use the object code generated from the modified source code"
                           },
                           {
                               "_id": "actions/8",
-                              "name": "Use binaries generated from modified source code",
-                              "description": ""
+                              "name": "Use binaries generated from modified source code"
                           }
                       ],
                       "conditions": null,
                       "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
                   },
                   {
-                      "summary": "",
                       "actions": [
                           {
                               "_id": "actions/9",
@@ -386,18 +381,15 @@
                       "conditions": {
                           "_id": "conditions/300",
                           "name": "Include the original copyright notice and associated disclaimer in the software",
-                          "type": "OBLIGATION",
-                          "description": ""
+                          "type": "OBLIGATION"
                       },
                       "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
                   },
                   {
-                      "summary": "",
                       "actions": [
                           {
                               "_id": "actions/3",
-                              "name": "Modify the obtained source code.",
-                              "description": ""
+                              "name": "Modify the obtained source code."
                           }
                       ],
                       "conditions": {
@@ -407,36 +399,31 @@
                                       {
                                           "_id": "conditions/301",
                                           "name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
-                                          "type": "OBLIGATION",
-                                          "description": ""
+                                          "type": "OBLIGATION"
                                       },
                                       {
                                           "_id": "conditions/289",
                                           "name": "Use only in your own corporation or organization.",
-                                          "type": "RESTRICTION",
-                                          "description": ""
+                                          "type": "RESTRICTION"
                                       },
                                       {
                                           "AND": [
                                               {
                                                   "_id": "conditions/302",
                                                   "name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                                  "type": "RESTRICTION",
-                                                  "description": ""
+                                                  "type": "RESTRICTION"
                                               },
                                               {
                                                   "_id": "conditions/264",
                                                   "name": "Pass information on where the original software was obtained",
-                                                  "type": "OBLIGATION",
-                                                  "description": ""
+                                                  "type": "OBLIGATION"
                                               }
                                           ]
                                       },
                                       {
                                           "_id": "conditions/292",
                                           "name": "Decide on a different method of distribution with the copyright holder",
-                                          "type": "RESTRICTION",
-                                          "description": ""
+                                          "type": "RESTRICTION"
                                       }
                                   ]
                               }
@@ -445,7 +432,6 @@
                       "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
                   },
                   {
-                      "summary": "",
                       "actions": [
                           {
                               "_id": "actions/10",
@@ -459,13 +445,11 @@
                           },
                           {
                               "_id": "actions/13",
-                              "name": "Distribute the object code generated from the modified source code",
-                              "description": ""
+                              "name": "Distribute the object code generated from the modified source code"
                           },
                           {
                               "_id": "actions/14",
-                              "name": "Distribute the generated binaries from modified source code",
-                              "description": ""
+                              "name": "Distribute the generated binaries from modified source code"
                           }
                       ],
                       "conditions": {
@@ -473,36 +457,31 @@
                               {
                                   "_id": "conditions/264",
                                   "name": "Pass information on where the original software was obtained",
-                                  "type": "OBLIGATION",
-                                  "description": ""
+                                  "type": "OBLIGATION"
                               },
                               {
                                   "_id": "conditions/21",
                                   "name": "Attach the source code corresponding to the software in question.",
-                                  "type": "OBLIGATION",
-                                  "description": ""
+                                  "type": "OBLIGATION"
                               },
                               {
                                   "AND": [
                                       {
                                           "_id": "conditions/302",
                                           "name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                          "type": "RESTRICTION",
-                                          "description": ""
+                                          "type": "RESTRICTION"
                                       },
                                       {
                                           "_id": "conditions/264",
                                           "name": "Pass information on where the original software was obtained",
-                                          "type": "OBLIGATION",
-                                          "description": ""
+                                          "type": "OBLIGATION"
                                       }
                                   ]
                               },
                               {
                                   "_id": "conditions/292",
                                   "name": "Decide on a different method of distribution with the copyright holder",
-                                  "type": "RESTRICTION",
-                                  "description": ""
+                                  "type": "RESTRICTION"
                               }
                           ]
                       },
@@ -520,8 +499,7 @@
                           "http://open-license.hitachi.com/licenses/2"
                       ]
                   ]
-              },
-              "description": ""
+              }
           },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",

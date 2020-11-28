@@ -434,7 +434,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/16",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -458,7 +458,6 @@ Raw Data
                 "name": "zlib/libpng license",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -467,8 +466,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -482,13 +480,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -497,15 +493,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -518,21 +511,18 @@ Raw Data
                                 {
                                     "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/10",
@@ -553,33 +543,27 @@ Raw Data
                         "conditions": {
                             "_id": "conditions/55",
                             "name": "Correctly indicate the origin of the software in question",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -587,26 +571,22 @@ Raw Data
                                 {
                                     "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -614,20 +594,17 @@ Raw Data
                                 {
                                     "_id": "conditions/55",
                                     "name": "Correctly indicate the origin of the software in question",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
@@ -645,8 +622,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/16"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

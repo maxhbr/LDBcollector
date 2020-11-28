@@ -368,7 +368,7 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/586",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -392,7 +392,6 @@ Raw Data
                 "name": "Microsoft Reciprocal License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -401,8 +400,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/5",
@@ -425,8 +423,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/124",
@@ -435,11 +432,9 @@ Raw Data
                                     "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                                 }
                             ]
-                        },
-                        "description": ""
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/10",
@@ -453,13 +448,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_id": "actions/86",
@@ -468,8 +461,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -477,8 +469,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/124",
@@ -489,21 +480,17 @@ Raw Data
                                 {
                                     "_id": "conditions/272",
                                     "name": "Provide the source code corresponding to the software or a file containing the software or a part of it.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/179",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
-                        },
-                        "description": ""
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -512,8 +499,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -521,8 +507,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/124",
@@ -533,18 +518,15 @@ Raw Data
                                 {
                                     "_id": "conditions/179",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
-                        },
-                        "description": ""
+                        }
                     }
                 ],
                 "_implications": {

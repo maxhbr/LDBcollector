@@ -1162,7 +1162,7 @@ Knowledge International]
             "oRatingState": null
         },
         "Hitachi open-license": {
-            "summary": "",
+            "_id": "licenses/7",
             "notices": [
                 {
                     "_notice_description": "",
@@ -1298,7 +1298,6 @@ Knowledge International]
             "name": "GNU General Public License Version 3",
             "permissions": [
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/1",
@@ -1307,8 +1306,7 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/4",
-                            "name": "Using Modified Source Code",
-                            "description": ""
+                            "name": "Using Modified Source Code"
                         },
                         {
                             "_id": "actions/5",
@@ -1317,8 +1315,7 @@ Knowledge International]
                         },
                         {
                             "_id": "actions/7",
-                            "name": "Use the object code generated from the modified source code",
-                            "description": ""
+                            "name": "Use the object code generated from the modified source code"
                         }
                     ],
                     "conditions": {
@@ -1326,21 +1323,17 @@ Knowledge International]
                         "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
                         "type": "RESTRICTION",
                         "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
-                    },
-                    "description": ""
+                    }
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/140",
-                            "name": "Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.",
-                            "description": ""
+                            "name": "Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
                         },
                         {
                             "_id": "actions/141",
-                            "name": "Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.",
-                            "description": ""
+                            "name": "Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
                         }
                     ],
                     "conditions": {
@@ -1348,27 +1341,22 @@ Knowledge International]
                             {
                                 "_id": "conditions/104",
                                 "name": "Distribution of the parts of the work not covered by your copyright is subject to this license.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/105",
                                 "name": "Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/106",
                                 "name": "You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             }
                         ]
-                    },
-                    "description": ""
+                    }
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/9",
@@ -1381,26 +1369,22 @@ Knowledge International]
                             {
                                 "_id": "conditions/108",
                                 "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/109",
                                 "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/1",
                                 "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/8",
                                 "name": "Give you a copy of the relevant license.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/124",
@@ -1413,12 +1397,10 @@ Knowledge International]
                     "description": "This license is to be delivered with the software. This license is to be passed along with the software; â Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/3",
-                            "name": "Modify the obtained source code.",
-                            "description": ""
+                            "name": "Modify the obtained source code."
                         }
                     ],
                     "conditions": {
@@ -1426,14 +1408,12 @@ Knowledge International]
                             {
                                 "_id": "conditions/1",
                                 "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/110",
                                 "name": "Indicate your changes and the date of the change.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/39",
@@ -1448,16 +1428,13 @@ Knowledge International]
                                 "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
                             }
                         ]
-                    },
-                    "description": ""
+                    }
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/12",
-                            "name": "Distribution of Modified Source Code",
-                            "description": ""
+                            "name": "Distribution of Modified Source Code"
                         }
                     ],
                     "conditions": {
@@ -1465,32 +1442,27 @@ Knowledge International]
                             {
                                 "_id": "conditions/108",
                                 "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/109",
                                 "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/1",
                                 "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/8",
                                 "name": "Give you a copy of the relevant license.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/110",
                                 "name": "Indicate your changes and the date of the change.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/111",
@@ -1515,7 +1487,6 @@ Knowledge International]
                     "description": "This license is to be delivered with the software. This license is to be passed along with the software; â Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/10",
@@ -1528,26 +1499,22 @@ Knowledge International]
                             {
                                 "_id": "conditions/108",
                                 "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/109",
                                 "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/1",
                                 "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/8",
                                 "name": "Give you a copy of the relevant license.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/111",
@@ -1560,32 +1527,27 @@ Knowledge International]
                                     {
                                         "_id": "conditions/21",
                                         "name": "Attach the source code corresponding to the software in question.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/112",
                                         "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/113",
                                         "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/41",
                                         "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/114",
                                         "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     }
                                 ]
                             },
@@ -1606,12 +1568,10 @@ Knowledge International]
                     "description": "Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/13",
-                            "name": "Distribute the object code generated from the modified source code",
-                            "description": ""
+                            "name": "Distribute the object code generated from the modified source code"
                         }
                     ],
                     "conditions": {
@@ -1619,8 +1579,7 @@ Knowledge International]
                             {
                                 "_id": "conditions/108",
                                 "name": "Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/115",
@@ -1633,32 +1592,27 @@ Knowledge International]
                                     {
                                         "_id": "conditions/21",
                                         "name": "Attach the source code corresponding to the software in question.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/112",
                                         "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/113",
                                         "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/41",
                                         "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     },
                                     {
                                         "_id": "conditions/114",
                                         "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
-                                        "type": "OBLIGATION",
-                                        "description": ""
+                                        "type": "OBLIGATION"
                                     }
                                 ]
                             },
@@ -1677,26 +1631,22 @@ Knowledge International]
                             {
                                 "_id": "conditions/110",
                                 "name": "Indicate your changes and the date of the change.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/8",
                                 "name": "Give you a copy of the relevant license.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/1",
                                 "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/109",
                                 "name": "Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures",
-                                "type": "REQUISITE",
-                                "description": ""
+                                "type": "REQUISITE"
                             },
                             {
                                 "_id": "conditions/124",
@@ -1709,12 +1659,10 @@ Knowledge International]
                     "description": "Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/142",
-                            "name": "Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it.",
-                            "description": ""
+                            "name": "Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it."
                         }
                     ],
                     "conditions": {
@@ -1724,46 +1672,39 @@ Knowledge International]
                                     {
                                         "_id": "conditions/116",
                                         "name": "disclaiming any warranty or limiting liability that differs from the terms of this license.",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/117",
                                         "name": "require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/118",
                                         "name": "Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/119",
                                         "name": "Restrict the use of the name of the licensor or author of the section you add for promotional purposes",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/122",
                                         "name": "To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/120",
                                         "name": "Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     }
                                 ]
                             },
                             {
                                 "_id": "conditions/123",
                                 "name": "Include these license terms, or a reference to them in the file to which these additional license terms apply",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             }
                         ]
                     },

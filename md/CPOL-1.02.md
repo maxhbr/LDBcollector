@@ -206,6 +206,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "http://www.codeproject.com/info/cpol10.aspx",
+                "_id": "licenses/835",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -333,7 +334,6 @@ Raw Data
                 "name": "Code Project Open License 1.02",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -342,8 +342,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/84",
@@ -352,8 +351,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -361,26 +359,22 @@ Raw Data
                                 {
                                     "_id": "conditions/315",
                                     "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/309",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 }
                             ]
                         },
                         "description": "The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -388,101 +382,84 @@ Raw Data
                                 {
                                     "_id": "conditions/315",
                                     "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/285",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/309",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/310",
                                     "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/284",
-                                "name": "Distribute articles discussing software published by the author",
-                                "description": ""
+                                "name": "Distribute articles discussing software published by the author"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "The author's permission must be obtained. You must obtain the author's permission to make the article available. The author is the person or entity that makes the software available under this license. The author is the person or entity that provides the software under this license. Source code refers to the source code or configuration file used to create the executable. The source code refers to the source code or configuration file used to create the executable."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/156",
-                                "name": "Use the author's name to endorse or promote the derived product",
-                                "description": ""
+                                "name": "Use the author's name to endorse or promote the derived product"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "Author's permission."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/35",
-                                "name": "Selling Software",
-                                "description": ""
+                                "name": "Selling Software"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/254",
                             "name": "We don't sell it alone.",
-                            "type": "RESTRICTION",
-                            "description": ""
+                            "type": "RESTRICTION"
                         },
                         "description": "You may not sell the software by itself. The publisher does not sell the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term \"executable\" refers to any executable, binary file or configuration file included in the software, or any data file required for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/283",
-                                "name": "Renting out software",
-                                "description": ""
+                                "name": "Renting out software"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/313",
                             "name": "It's not rented out on its own.",
-                            "type": "RESTRICTION",
-                            "description": ""
+                            "type": "RESTRICTION"
                         },
                         "description": "The software is not to be rented by itself. The publisher does not rent out the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term \"executable\" refers to any executable, binary file or configuration file included in the software, or any data file required for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -500,26 +477,22 @@ Raw Data
                                 {
                                     "_id": "conditions/315",
                                     "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/309",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/310",
                                     "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/96",
                                     "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/311",
@@ -530,25 +503,21 @@ Raw Data
                                 {
                                     "_id": "conditions/312",
                                     "name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -556,32 +525,27 @@ Raw Data
                                 {
                                     "_id": "conditions/315",
                                     "name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/285",
                                     "name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/309",
                                     "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/310",
                                     "name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/96",
                                     "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/311",
@@ -592,8 +556,7 @@ Raw Data
                                 {
                                     "_id": "conditions/312",
                                     "name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },

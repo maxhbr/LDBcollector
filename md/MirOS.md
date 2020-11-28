@@ -350,6 +350,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/miros.html",
+                "_id": "licenses/1554",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -373,7 +374,6 @@ Raw Data
                 "name": "MirOS License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -382,13 +382,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -397,8 +395,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -407,15 +404,13 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": null,
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -429,18 +424,15 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/18",
-                                "name": "Executing the fetched source code publicly",
-                                "description": ""
+                                "name": "Executing the fetched source code publicly"
                             },
                             {
                                 "_id": "actions/19",
@@ -449,8 +441,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/21",
-                                "name": "Publicly execute the fetched object code",
-                                "description": ""
+                                "name": "Publicly execute the fetched object code"
                             },
                             {
                                 "_id": "actions/22",
@@ -459,8 +450,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/24",
-                                "name": "Publicly execute the modified source code",
-                                "description": ""
+                                "name": "Publicly execute the modified source code"
                             },
                             {
                                 "_id": "actions/25",
@@ -469,8 +459,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/27",
-                                "name": "Publicly execute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Publicly execute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/28",
@@ -479,8 +468,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/35",
-                                "name": "Selling Software",
-                                "description": ""
+                                "name": "Selling Software"
                             },
                             {
                                 "_id": "actions/86",
@@ -489,13 +477,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/105",
-                                "name": "Publicly execute the retrieved executable",
-                                "description": ""
+                                "name": "Publicly execute the retrieved executable"
                             },
                             {
                                 "_id": "actions/106",
@@ -504,8 +490,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/108",
-                                "name": "Publicly execute executables generated from modified source code",
-                                "description": ""
+                                "name": "Publicly execute executables generated from modified source code"
                             },
                             {
                                 "_id": "actions/109",
@@ -518,8 +503,7 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
@@ -537,8 +521,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/1554"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",

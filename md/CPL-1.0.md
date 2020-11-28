@@ -422,7 +422,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/36",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -486,7 +486,6 @@ Raw Data
                 "name": "Common Public License Version 1.0",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -495,8 +494,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -505,18 +503,15 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/17",
-                                "name": "Display the obtained source code publicly",
-                                "description": ""
+                                "name": "Display the obtained source code publicly"
                             },
                             {
                                 "_id": "actions/18",
-                                "name": "Executing the fetched source code publicly",
-                                "description": ""
+                                "name": "Executing the fetched source code publicly"
                             },
                             {
                                 "_id": "actions/19",
@@ -525,13 +520,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/20",
-                                "name": "Display the retrieved object code publicly",
-                                "description": ""
+                                "name": "Display the retrieved object code publicly"
                             },
                             {
                                 "_id": "actions/21",
-                                "name": "Publicly execute the fetched object code",
-                                "description": ""
+                                "name": "Publicly execute the fetched object code"
                             },
                             {
                                 "_id": "actions/22",
@@ -540,13 +533,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/23",
-                                "name": "Display modified source code publicly",
-                                "description": ""
+                                "name": "Display modified source code publicly"
                             },
                             {
                                 "_id": "actions/24",
-                                "name": "Publicly execute the modified source code",
-                                "description": ""
+                                "name": "Publicly execute the modified source code"
                             },
                             {
                                 "_id": "actions/25",
@@ -555,13 +546,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/26",
-                                "name": "Publicly display the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Publicly display the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/27",
-                                "name": "Publicly execute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Publicly execute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/28",
@@ -574,8 +563,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -594,7 +582,6 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -607,8 +594,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -625,14 +611,12 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/84",
@@ -645,7 +629,6 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/10",
@@ -658,8 +641,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -676,14 +658,12 @@ Raw Data
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/84",
@@ -696,12 +676,10 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/76",
-                                "name": "Distribute the acquired object code under your own license",
-                                "description": ""
+                                "name": "Distribute the acquired object code under your own license"
                             }
                         ],
                         "conditions": {
@@ -709,8 +687,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -739,20 +716,17 @@ Raw Data
                                 {
                                     "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/84",
@@ -765,12 +739,10 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -778,8 +750,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -796,26 +767,22 @@ Raw Data
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -823,8 +790,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -841,20 +807,17 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/84",
@@ -867,12 +830,10 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -880,8 +841,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -898,20 +858,17 @@ Raw Data
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/84",
@@ -924,12 +881,10 @@ Raw Data
                         "description": "Contributor is the person or entity that distributes the Software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/77",
-                                "name": "Distribute object code generated from modified source code under your own license",
-                                "description": ""
+                                "name": "Distribute object code generated from modified source code under your own license"
                             }
                         ],
                         "conditions": {
@@ -937,32 +892,27 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/30",
                                     "name": "Indicate that you have made the change yourself.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/68",
                                     "name": "Include the copyright notice contained in the software",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/86",

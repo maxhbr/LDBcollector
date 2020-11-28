@@ -442,6 +442,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "BSD-3-Clause",
+                "_id": "licenses/14",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -465,7 +466,6 @@ Raw Data
                 "name": "BSD 3-Clause \"New\" or \"Revised\" License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -474,13 +474,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -489,15 +487,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -506,20 +501,16 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "OBLIGATION"
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/11",
@@ -528,34 +519,27 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/2",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "OBLIGATION"
+                        }
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/15",
-                                "name": "Use the name of the owner or contributor to promote or sell the derived product",
-                                "description": ""
+                                "name": "Use the name of the owner or contributor to promote or sell the derived product"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "REQUISITE"
+                        }
                     }
                 ],
                 "_implications": {

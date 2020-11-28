@@ -149,6 +149,7 @@
         },
         "Hitachi open-license": {
             "summary": "http://creativecommons.org/licenses/by/4.0/このサイトからLegalCodeを参照できる. The official translation is at https://creativecommons.org/licenses/by/4.0/legalcode.ja",
+            "_id": "licenses/842",
             "notices": [
                 {
                     "_notice_description": "Exceptions and limitations refer to exceptions and restrictions, such as fair use and fair dealing, to copyright and similar rights that apply to one's own use of a licensed work.",
@@ -300,17 +301,14 @@
             "name": "Creative Commons Attribution 4.0 International",
             "permissions": [
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/122",
-                            "name": "Reproduce the work.",
-                            "description": ""
+                            "name": "Reproduce the work."
                         },
                         {
                             "_id": "actions/337",
-                            "name": "Share your work",
-                            "description": ""
+                            "name": "Share your work"
                         }
                     ],
                     "conditions": {
@@ -324,28 +322,24 @@
                             {
                                 "_id": "conditions/94",
                                 "name": "Exercise rights in all current and future media and formats",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/95",
                                 "name": "Make technical changes for use in other media or formats, if necessary",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "OR": [
                                     {
                                         "_id": "conditions/98",
                                         "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/381",
                                         "name": "Not taking effective technical measures to limit the rights licensed to the recipient of the work",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     }
                                 ]
                             },
@@ -358,42 +352,35 @@
                             {
                                 "_id": "conditions/102",
                                 "name": "All copyright notices are posted intact.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/100",
                                 "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/371",
                                 "name": "Include a copy of this license or a Uniform Resource Identifier (URI) or hyperlink identifying this license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             }
                         ]
                     },
                     "description": "If reasonably practicable, include a Uniform Resource Identifier (URI) or hyperlink to the work. The provision of credits, copyright notices, and information about this license may be satisfied in a manner that is reasonable in the medium, medium, and context in which the work is shared. For example, if there is a Uniform Resource Identifier (URI) or hyperlink containing the required information, the condition shall be satisfied by presenting the URI or hyperlink to the extent reasonably practicable. If the licensed rights include database rights, you are granted the right to extract, use, reproduce and share all or substantial portions of the database. Copyright and similar rights, regardless of how they are labeled or classified, including, but not limited to, performance, broadcast, sound recording, and database rights, are copyright and similar rights closely related to copyright. However, for purposes of this license, the rights described in 2(b)(1)-(2) shall not be considered copyright or similar rights. An effective technical measure is a technical measure that may not be circumvented without proper authorization under the law satisfying obligations under Article 11 of the World Intellectual Property Organization (WIPO) Convention on Copyright, adopted on 20 December 1996, or equivalent international agreements. Licensed Works are works of art, literature, databases and other works of authorship to which the Licensor applies this License. Licensed Rights refers to the license granted to Licensor in accordance with the terms of this License. The Licensed Rights are limited to the copyrights and similar rights that Licensor has the authority to grant and that apply to the use of works licensed to it. Licensor is the person or entity granting the rights under this License. Sharing means making a work available to the public by any means or process that requires a license for licensed rights. Sharing means making a work available to the public, including reproduction, public display, public performance, distribution, dissemination, communication, or importation, and in such a way as to enable the public to access the work at a place and time of their choosing. The term \"database rights\" refers to non-copyright or essentially equivalent national rights under the EC Database Directive on the legal protection of databases, including any revised or successor versions. itself is the person or entity exercising the rights under this licence."
                 },
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/126",
-                            "name": "Creating a derivative work",
-                            "description": ""
+                            "name": "Creating a derivative work"
                         },
                         {
                             "_id": "actions/129",
-                            "name": "Reproduce a derivative work",
-                            "description": ""
+                            "name": "Reproduce a derivative work"
                         },
                         {
                             "_id": "actions/338",
-                            "name": "Share the derivative work",
-                            "description": ""
+                            "name": "Share the derivative work"
                         }
                     ],
                     "conditions": {
@@ -407,28 +394,24 @@
                             {
                                 "_id": "conditions/94",
                                 "name": "Exercise rights in all current and future media and formats",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/95",
                                 "name": "Make technical changes for use in other media or formats, if necessary",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "OR": [
                                     {
                                         "_id": "conditions/98",
                                         "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     },
                                     {
                                         "_id": "conditions/381",
                                         "name": "Not taking effective technical measures to limit the rights licensed to the recipient of the work",
-                                        "type": "RESTRICTION",
-                                        "description": ""
+                                        "type": "RESTRICTION"
                                     }
                                 ]
                             },
@@ -441,38 +424,32 @@
                             {
                                 "_id": "conditions/102",
                                 "name": "All copyright notices are posted intact.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/100",
                                 "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/172",
                                 "name": "Include a summary of the changes you have made",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/379",
                                 "name": "Include a summary of the changes included in the work",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/371",
                                 "name": "Include a copy of this license or a Uniform Resource Identifier (URI) or hyperlink identifying this license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/384",
                                 "name": "No license of the author of a derivative work shall apply that would prevent the recipient of the derivative work from complying with this license.",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             }
                         ]
                     },

@@ -321,6 +321,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://opensource.org/licenses/EUDatagrid",
+                "_id": "licenses/1546",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -344,7 +345,6 @@ Raw Data
                 "name": "EU DataGrid Software License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -353,8 +353,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/6",
@@ -363,50 +362,40 @@ Raw Data
                             },
                             {
                                 "_id": "actions/114",
-                                "name": "Display the obtained source code",
-                                "description": ""
+                                "name": "Display the obtained source code"
                             },
                             {
                                 "_id": "actions/118",
-                                "name": "Display the modified source code",
-                                "description": ""
+                                "name": "Display the modified source code"
                             },
                             {
                                 "_id": "actions/287",
-                                "name": "Display the retrieved binary",
-                                "description": ""
+                                "name": "Display the retrieved binary"
                             },
                             {
                                 "_id": "actions/288",
-                                "name": "Display the generated binary from the modified source code",
-                                "description": ""
+                                "name": "Display the generated binary from the modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             },
                             {
                                 "_id": "actions/277",
-                                "name": "Publish the binary generated from the modified source code",
-                                "description": ""
+                                "name": "Publish the binary generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -418,7 +407,6 @@ Raw Data
                         "description": "The same rights would be granted to sub-licenses."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -434,23 +422,19 @@ Raw Data
                         "conditions": {
                             "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
@@ -458,8 +442,7 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/630",
@@ -472,36 +455,30 @@ Raw Data
                         "description": "Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/32",
-                                "name": "Include end-user documentation in the distribution",
-                                "description": ""
+                                "name": "Include end-user documentation in the distribution"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/13",
                             "name": "Acknowledgements",
-                            "type": "OBLIGATION",
-                            "description": ""
+                            "type": "OBLIGATION"
                         },
                         "description": "Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/557",
-                                "name": "Use the name to endorse and promote software and derivative products",
-                                "description": ""
+                                "name": "Use the name to endorse and promote software and derivative products"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/3",
                             "name": "Get special permission in writing.",
-                            "type": "REQUISITE",
-                            "description": ""
+                            "type": "REQUISITE"
                         },
                         "description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees."
                     }
@@ -517,8 +494,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/1546"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "OpenSourceInitiative": {
                 "text": [

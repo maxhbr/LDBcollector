@@ -232,6 +232,7 @@ Policy]
         },
         "Hitachi open-license": {
             "summary": "http://creativecommons.org/licenses/by/2.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
+            "_id": "licenses/715",
             "notices": [
                 {
                     "_notice_description": "",
@@ -335,82 +336,66 @@ Policy]
             "name": "Creative Commons Attribution 2.0 Generic",
             "permissions": [
                 {
-                    "summary": "",
                     "actions": [
                         {
                             "_id": "actions/122",
-                            "name": "Reproduce the work.",
-                            "description": ""
+                            "name": "Reproduce the work."
                         },
                         {
                             "_id": "actions/126",
-                            "name": "Creating a derivative work",
-                            "description": ""
+                            "name": "Creating a derivative work"
                         },
                         {
                             "_id": "actions/127",
-                            "name": "Incorporate a work into one or more collective works",
-                            "description": ""
+                            "name": "Incorporate a work into one or more collective works"
                         },
                         {
                             "_id": "actions/128",
-                            "name": "Reproduce a work incorporated into a collective work",
-                            "description": ""
+                            "name": "Reproduce a work incorporated into a collective work"
                         },
                         {
                             "_id": "actions/129",
-                            "name": "Reproduce a derivative work",
-                            "description": ""
+                            "name": "Reproduce a derivative work"
                         },
                         {
                             "_id": "actions/130",
-                            "name": "Distribute copies of the work (including works incorporated into a collective work)",
-                            "description": ""
+                            "name": "Distribute copies of the work (including works incorporated into a collective work)"
                         },
                         {
                             "_id": "actions/131",
-                            "name": "Distributing a medium on which a recording of a work (including a work incorporated into a collective work) is made",
-                            "description": ""
+                            "name": "Distributing a medium on which a recording of a work (including a work incorporated into a collective work) is made"
                         },
                         {
                             "_id": "actions/132",
-                            "name": "Public display of a work (including a work incorporated into a collective work)",
-                            "description": ""
+                            "name": "Public display of a work (including a work incorporated into a collective work)"
                         },
                         {
                             "_id": "actions/133",
-                            "name": "Publicly perform a work (including a work incorporated into a collective work)",
-                            "description": ""
+                            "name": "Publicly perform a work (including a work incorporated into a collective work)"
                         },
                         {
                             "_id": "actions/134",
-                            "name": "Public performance of a work (including a work incorporated into a collective work) by digital audio transmission",
-                            "description": ""
+                            "name": "Public performance of a work (including a work incorporated into a collective work) by digital audio transmission"
                         },
                         {
                             "_id": "actions/135",
-                            "name": "Distribute copies of derivative works",
-                            "description": ""
+                            "name": "Distribute copies of derivative works"
                         },
                         {
                             "_id": "actions/136",
-                            "name": "Distribute the medium in which the derivative works are recorded",
-                            "description": ""
+                            "name": "Distribute the medium in which the derivative works are recorded"
                         },
                         {
                             "_id": "actions/137",
-                            "name": "Public display of derivative works",
-                            "description": ""
+                            "name": "Public display of derivative works"
                         },
                         {
                             "_id": "actions/138",
-                            "name": "Publicly perform a derivative work",
-                            "description": ""
+                            "name": "Publicly perform a derivative work"
                         },
                         {
                             "_id": "actions/139",
-                            "name": "Publicly perform a derivative work by digital audio transmission",
-                            "description": ""
+                            "name": "Publicly perform a derivative work by digital audio transmission"
                         }
                     ],
                     "conditions": {
@@ -418,26 +403,22 @@ Policy]
                             {
                                 "_id": "conditions/94",
                                 "name": "Exercise rights in all current and future media and formats",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/95",
                                 "name": "Make technical changes for use in other media or formats, if necessary",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/96",
                                 "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/98",
                                 "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
-                                "type": "RESTRICTION",
-                                "description": ""
+                                "type": "RESTRICTION"
                             },
                             {
                                 "_id": "conditions/99",
@@ -448,8 +429,7 @@ Policy]
                             {
                                 "_id": "conditions/100",
                                 "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/101",
@@ -460,8 +440,7 @@ Policy]
                             {
                                 "_id": "conditions/102",
                                 "name": "All copyright notices are posted intact.",
-                                "type": "OBLIGATION",
-                                "description": ""
+                                "type": "OBLIGATION"
                             },
                             {
                                 "_id": "conditions/571",

@@ -222,6 +222,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING",
+                "_id": "licenses/1561",
                 "notices": [
                     {
                         "_notice_description": "",
@@ -253,7 +254,6 @@ Raw Data
                 "name": "Imlib2 License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -262,13 +262,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -277,8 +275,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -287,15 +284,13 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": null,
                         "description": "Relevant documentation for the software should be treated in the same way as for the software."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -304,8 +299,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/19",
@@ -319,8 +313,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/90",
-                                "name": "Publish the modified source code.",
-                                "description": ""
+                                "name": "Publish the modified source code."
                             },
                             {
                                 "_id": "actions/403",
@@ -333,15 +326,13 @@ Raw Data
                                 {
                                     "_id": "conditions/191",
                                     "name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/10",
@@ -350,8 +341,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/22",
@@ -365,8 +355,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/35",
-                                "name": "Selling Software",
-                                "description": ""
+                                "name": "Selling Software"
                             },
                             {
                                 "_id": "actions/86",
@@ -375,18 +364,15 @@ Raw Data
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/91",
-                                "name": "Present the object code generated from the modified source code.",
-                                "description": ""
+                                "name": "Present the object code generated from the modified source code."
                             },
                             {
                                 "_id": "actions/92",
-                                "name": "Present the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Present the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/106",
@@ -414,36 +400,31 @@ Raw Data
                                 {
                                     "_id": "conditions/191",
                                     "name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
                                             "_id": "conditions/13",
                                             "name": "Acknowledgements",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "OR": [
                                                 {
                                                     "_id": "conditions/21",
                                                     "name": "Attach the source code corresponding to the software in question.",
-                                                    "type": "OBLIGATION",
-                                                    "description": ""
+                                                    "type": "OBLIGATION"
                                                 },
                                                 {
                                                     "_id": "conditions/87",
                                                     "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
-                                                    "type": "OBLIGATION",
-                                                    "description": ""
+                                                    "type": "OBLIGATION"
                                                 },
                                                 {
                                                     "_id": "conditions/624",
                                                     "name": "Provide source code for the software upon request",
-                                                    "type": "OBLIGATION",
-                                                    "description": ""
+                                                    "type": "OBLIGATION"
                                                 }
                                             ]
                                         }
@@ -465,8 +446,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/1561"
                         ]
                     ]
-                },
-                "description": ""
+                }
             }
         },
         "__impliedJudgement": [

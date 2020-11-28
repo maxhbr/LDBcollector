@@ -385,6 +385,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://www.isc.org/downloads/software-support-policy/isc-license/",
+                "_id": "licenses/379",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -408,7 +409,6 @@ Raw Data
                 "name": "ISC License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -417,13 +417,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/5",
@@ -437,13 +435,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/7",
-                                "name": "Use the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Use the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             },
                             {
                                 "_id": "actions/84",
@@ -452,15 +448,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -479,18 +472,15 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/13",
-                                "name": "Distribute the object code generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the object code generated from the modified source code"
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             },
                             {
                                 "_id": "actions/86",
@@ -499,17 +489,14 @@ Raw Data
                             },
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
                             "_id": "conditions/1",
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "type": "OBLIGATION",
-                            "description": ""
-                        },
-                        "description": ""
+                            "type": "OBLIGATION"
+                        }
                     }
                 ],
                 "_implications": {
@@ -523,8 +510,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/379"
                         ]
                     ]
-                },
-                "description": ""
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",

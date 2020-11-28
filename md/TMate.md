@@ -222,6 +222,7 @@ Raw Data
             },
             "Hitachi open-license": {
                 "summary": "https://svnkit.com/license.html",
+                "_id": "licenses/972",
                 "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
@@ -245,7 +246,6 @@ Raw Data
                 "name": "TMate Open Source License",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -254,13 +254,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/6",
@@ -269,15 +267,12 @@ Raw Data
                             },
                             {
                                 "_id": "actions/8",
-                                "name": "Use binaries generated from modified source code",
-                                "description": ""
+                                "name": "Use binaries generated from modified source code"
                             }
                         ],
-                        "conditions": null,
-                        "description": ""
+                        "conditions": null
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -286,8 +281,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -295,28 +289,24 @@ Raw Data
                                 {
                                     "_id": "conditions/1",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
                                             "_id": "conditions/416",
                                             "name": "Attach the source code of the software that uses the software in question.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/417",
                                             "name": "Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/418",
                                             "name": "Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 },
@@ -325,20 +315,17 @@ Raw Data
                                         {
                                             "_id": "conditions/419",
                                             "name": "Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/420",
                                             "name": "Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/421",
                                             "name": "Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 }
@@ -347,7 +334,6 @@ Raw Data
                         "description": "The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/11",
@@ -356,8 +342,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/14",
-                                "name": "Distribute the generated binaries from modified source code",
-                                "description": ""
+                                "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
                         "conditions": {
@@ -365,22 +350,19 @@ Raw Data
                                 {
                                     "_id": "conditions/2",
                                     "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "OR": [
                                         {
                                             "_id": "conditions/21",
                                             "name": "Attach the source code corresponding to the software in question.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/156",
                                             "name": "Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 },
@@ -389,20 +371,17 @@ Raw Data
                                         {
                                             "_id": "conditions/416",
                                             "name": "Attach the source code of the software that uses the software in question.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/417",
                                             "name": "Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/418",
                                             "name": "Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 },
@@ -411,20 +390,17 @@ Raw Data
                                         {
                                             "_id": "conditions/419",
                                             "name": "Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/420",
                                             "name": "Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         },
                                         {
                                             "_id": "conditions/421",
                                             "name": "Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.",
-                                            "type": "OBLIGATION",
-                                            "description": ""
+                                            "type": "OBLIGATION"
                                         }
                                     ]
                                 }
@@ -444,8 +420,7 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/972"
                         ]
                     ]
-                },
-                "description": ""
+                }
             }
         },
         "__impliedJudgement": [

@@ -484,7 +484,7 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "summary": "",
+                "_id": "licenses/263",
                 "notices": [
                     {
                         "_notice_description": "The description must be described in sufficient detail in the LEGAL, and the LEGAL must be included in all source code distributed.",
@@ -564,7 +564,6 @@ Raw Data
                 "name": "Mozilla Public License Version 1.0",
                 "permissions": [
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/1",
@@ -573,8 +572,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/4",
-                                "name": "Using Modified Source Code",
-                                "description": ""
+                                "name": "Using Modified Source Code"
                             },
                             {
                                 "_id": "actions/84",
@@ -583,8 +581,7 @@ Raw Data
                             },
                             {
                                 "_id": "actions/87",
-                                "name": "Use the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Use the executable generated from the modified source code"
                             }
                         ],
                         "conditions": {
@@ -592,8 +589,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -606,7 +602,6 @@ Raw Data
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/9",
@@ -620,13 +615,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/114",
-                                "name": "Display the obtained source code",
-                                "description": ""
+                                "name": "Display the obtained source code"
                             },
                             {
                                 "_id": "actions/115",
-                                "name": "Execute the obtained source code.",
-                                "description": ""
+                                "name": "Execute the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -634,8 +627,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -646,8 +638,7 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/92",
@@ -666,7 +657,6 @@ Raw Data
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes claims of patents that are licensable by the Initial Developer that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with the Contributor's contributions. â Keep the source code of the software available for at least 12 months from the date it is made available in a reasonable manner commonly used for software replacement and at least 6 months from the date it is made available with a modification of the software. You are obliged to ensure that the source code is available even if it is distributed through a third party mechanism. The initial developer is the person or entity listed as the initial developer in the mandatory EXHIBIT A source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term \"executable\" refers to any form of software other than source code. The term \"sublicense\" refers to the granting of a license to a third party by the person who has been granted such a license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/86",
@@ -680,13 +670,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/116",
-                                "name": "Display the retrieved executable.",
-                                "description": ""
+                                "name": "Display the retrieved executable."
                             },
                             {
                                 "_id": "actions/117",
-                                "name": "Execute the obtained executable.",
-                                "description": ""
+                                "name": "Execute the obtained executable."
                             }
                         ],
                         "conditions": {
@@ -694,8 +682,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -706,20 +693,17 @@ Raw Data
                                 {
                                     "_id": "conditions/87",
                                     "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes those claims that are licensable by the initial developer that are necessarily infringed by the use of the software developed by the initial developer alone or in combination with the contributor's contributions. If media are used, the executable and source code are passed on the same media. Keep the source code of the software available for at least 12 months from the date you make it available in a reasonable manner commonly used for software exchange, and for at least 6 months from the date you make a modified version of the software available. You are obliged to ensure that the source code is available even if it is distributed through a third party mechanism. The initial developer is the person or entity listed as the initial developer in the mandatory EXHIBIT A source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term \"executable\" refers to any form of software other than source code. The term \"sublicense\" refers to the granting of a license to a third party by the person who has been granted such a license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/3",
-                                "name": "Modify the obtained source code.",
-                                "description": ""
+                                "name": "Modify the obtained source code."
                             }
                         ],
                         "conditions": {
@@ -727,8 +711,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -739,14 +722,12 @@ Raw Data
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/89",
                                     "name": "Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/92",
@@ -765,12 +746,10 @@ Raw Data
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/12",
-                                "name": "Distribution of Modified Source Code",
-                                "description": ""
+                                "name": "Distribution of Modified Source Code"
                             },
                             {
                                 "_id": "actions/25",
@@ -779,13 +758,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/118",
-                                "name": "Display the modified source code",
-                                "description": ""
+                                "name": "Display the modified source code"
                             },
                             {
                                 "_id": "actions/119",
-                                "name": "Executing Modified Source Code",
-                                "description": ""
+                                "name": "Executing Modified Source Code"
                             }
                         ],
                         "conditions": {
@@ -793,8 +770,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -805,20 +781,17 @@ Raw Data
                                 {
                                     "_id": "conditions/8",
                                     "name": "Give you a copy of the relevant license.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/89",
                                     "name": "Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/92",
@@ -837,12 +810,10 @@ Raw Data
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes claims of patents that are licensable by the Initial Developer that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with the Contributor's contributions. â Keep the source code of the software available for at least 12 months from the date it is made available in a reasonable manner commonly used for software replacement and at least 6 months from the date it is made available with a modification of the software. You are obliged to ensure that the source code is available even if it is distributed through a third party mechanism. The initial developer is the person or entity listed as the initial developer in the mandatory EXHIBIT A source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term \"executable\" refers to any form of software other than source code. The term \"sublicense\" refers to the granting of a license to a third party by the person who has been granted such a license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/89",
-                                "name": "Distribute the executable generated from the modified source code",
-                                "description": ""
+                                "name": "Distribute the executable generated from the modified source code"
                             },
                             {
                                 "_id": "actions/109",
@@ -851,13 +822,11 @@ Raw Data
                             },
                             {
                                 "_id": "actions/120",
-                                "name": "Display the executable generated from the modified source code.",
-                                "description": ""
+                                "name": "Display the executable generated from the modified source code."
                             },
                             {
                                 "_id": "actions/121",
-                                "name": "Execute the executable generated from the modified source code.",
-                                "description": ""
+                                "name": "Execute the executable generated from the modified source code."
                             }
                         ],
                         "conditions": {
@@ -865,8 +834,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -877,32 +845,27 @@ Raw Data
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/89",
                                     "name": "Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes those claims that are licensable by the initial developer that are necessarily infringed by the use of the software developed by the initial developer alone or in combination with the contributor's contributions. If media are used, the executable and source code are passed on the same media. Keep the source code of the software available for at least 12 months from the date you make it available in a reasonable manner commonly used for software exchange, and for at least 6 months from the date you make a modified version of the software available. You are obliged to ensure that the source code is available even if it is distributed through a third party mechanism. The initial developer is the person or entity listed as the initial developer in the mandatory EXHIBIT A source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term \"executable\" refers to any form of software other than source code. The term \"sublicense\" refers to the granting of a license to a third party by the person who has been granted such a license."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/36",
-                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.",
-                                "description": ""
+                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
                             }
                         ],
                         "conditions": {
@@ -914,12 +877,10 @@ Raw Data
                         "description": "The same is true for the early developers. When accepting liability, the developer may take responsibility for himself or herself, but not for the early developers. The same is true for the Initial Developer. If the Initial Developer is held responsible or is required to pay compensation, it is necessary to prevent the Initial Developer from being held liable and to compensate the Initial Developer for any damages. Early Developers are the persons or entities listed as Early Developers in the source code notices required by EXHIBIT A. Early Developers are not required to be responsible for their own work."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/110",
-                                "name": "Distribute the acquired executables under your own license",
-                                "description": ""
+                                "name": "Distribute the acquired executables under your own license"
                             }
                         ],
                         "conditions": {
@@ -927,8 +888,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -939,38 +899,32 @@ Raw Data
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/73",
                                     "name": "The license you offer does not restrict or modify the rights to the source code described in the license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/74",
                                     "name": "Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
                         "description": "The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes those claims that are licensable by the initial developer that are necessarily infringed by the use of the software developed by the initial developer alone or in combination with the contributor's contributions. If media are used, the executable and source code are passed on the same media. Keep the source code of the software available for at least 12 months from the date you make it available in a reasonable manner commonly used for software exchange, and for at least 6 months from the date you make a modified version of the software available. You are obliged to ensure that the source code is available even if it is distributed through a third party mechanism. The initial developer is the person or entity listed as the initial developer in the mandatory EXHIBIT A source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code."
                     },
                     {
-                        "summary": "",
                         "actions": [
                             {
                                 "_id": "actions/111",
-                                "name": "Distribute executables generated from modified source code under your own license.",
-                                "description": ""
+                                "name": "Distribute executables generated from modified source code under your own license."
                             }
                         ],
                         "conditions": {
@@ -978,8 +932,7 @@ Raw Data
                                 {
                                     "_id": "conditions/18",
                                     "name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/83",
@@ -990,38 +943,32 @@ Raw Data
                                 {
                                     "_id": "conditions/12",
                                     "name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/88",
                                     "name": "Include a file to report the changes you make and the date of all changes",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/89",
                                     "name": "Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 },
                                 {
                                     "_id": "conditions/73",
                                     "name": "The license you offer does not restrict or modify the rights to the source code described in the license.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/71",
                                     "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                    "type": "RESTRICTION",
-                                    "description": ""
+                                    "type": "RESTRICTION"
                                 },
                                 {
                                     "_id": "conditions/74",
                                     "name": "Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer",
-                                    "type": "OBLIGATION",
-                                    "description": ""
+                                    "type": "OBLIGATION"
                                 }
                             ]
                         },
