@@ -113,6 +113,9 @@ Project Wiki]
     ],
     "__impliedId": "MITNFA",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MITNFA"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -166,6 +169,9 @@ Project Wiki]
                     "MIT +no-false-attribs license"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MITNFA"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

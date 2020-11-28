@@ -922,6 +922,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
+            "GPLv3+",
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
         ],
@@ -1027,6 +1028,9 @@ Raw Data
                         "GNU General Public License v3.0 or later"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "GPLv3+"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

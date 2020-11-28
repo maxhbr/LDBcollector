@@ -1,5 +1,4 @@
 lfc,names,ambiguousNames
-Override,"[""dummy"",""doommy""]",[]
 BlueOak License List,"[""BSD-2-Clause-FreeBSD"",""BSD 2-Clause FreeBSD License""]",[]
 BlueOak License List,"[""BSD-2-Clause-NetBSD"",""BSD 2-Clause NetBSD License""]",[]
 OpenChainPolicyTemplate,"[""BSD 3-Clause-Attribution""]",[]
@@ -1313,274 +1312,274 @@ Scancode,"[""scancode://w3c-software-20021231"",""W3C-SOFTWARE-20021231""]",[]
 Scancode,"[""scancode://nwhm"",""Non White Heterosexual Male""]",[]
 Scancode,"[""scancode://linking-exception-lgpl-3.0"",""Linking exception to LGPL 3.0""]",[]
 Scancode,"[""scancode://esri"",""Esri License""]",[]
-Fedora Project Wiki,"[""3dfx Glide License""]",[]
-Fedora Project Wiki,"[""4Suite Copyright License""]",[]
-Fedora Project Wiki,"[""Abstyles License""]",[]
-Fedora Project Wiki,"[""Academic Free License""]",[]
-Fedora Project Wiki,"[""Academy of Motion Picture Arts and Sciences BSD""]",[]
-Fedora Project Wiki,"[""Adobe Systems Incorporated Source Code License Agreement""]",[]
-Fedora Project Wiki,"[""Adobe Postscript AFM License""]",[]
-Fedora Project Wiki,"[""Adobe Glyph List License""]",[]
-Fedora Project Wiki,"[""Affero General Public License 1.0""]",[]
-Fedora Project Wiki,"[""Affero General Public License 3.0 or later""]",[]
-Fedora Project Wiki,"[""Affero General Public License 3.0 with Zarafa trademark exceptions""]",[]
-Fedora Project Wiki,"[""Afmparse License""]",[]
-Fedora Project Wiki,"[""Amazon Digital Services License""]",[]
-Fedora Project Wiki,"[""AMD's plpa_map.c License""]",[]
-Fedora Project Wiki,"[""ANTLR Software Rights Notice""]",[]
-Fedora Project Wiki,"[""Apache Software License 1.0""]",[]
-Fedora Project Wiki,"[""Apache Software License 1.1""]",[]
-Fedora Project Wiki,"[""Apache Software License 2.0""]",[]
-Fedora Project Wiki,"[""App::s2p License""]",[]
-Fedora Project Wiki,"[""Apple MIT License""]",[]
-Fedora Project Wiki,"[""Apple Public Source License 2.0""]",[]
-Fedora Project Wiki,"[""Array Input Method Public License""]",[]
-Fedora Project Wiki,"[""Artistic (clarified)""]",[]
-Fedora Project Wiki,"[""Artistic 2.0""]",[]
-Fedora Project Wiki,"[""Aspell-ru License""]",[]
-Fedora Project Wiki,"[""Attribution Assurance License""]",[]
-Fedora Project Wiki,"[""Bahyph License""]",[]
-Fedora Project Wiki,"[""Barr License""]",[]
-Fedora Project Wiki,"[""Beerware License""]",[]
-Fedora Project Wiki,"[""BeOpen Open Source License Agreement Version 1""]",[]
-Fedora Project Wiki,"[""Bibtex License""]",[]
-Fedora Project Wiki,"[""BitTorrent License""]",[]
-Fedora Project Wiki,"[""Boost Software License""]",[]
-Fedora Project Wiki,"[""Borceux license""]",[]
-Fedora Project Wiki,"[""BSD + Patent""]",[]
-Fedora Project Wiki,"[""BSD with attribution""]",[]
-Fedora Project Wiki,"[""BSD License (no advertising)""]",[]
-Fedora Project Wiki,"[""BSD License (two clause)""]",[]
-Fedora Project Wiki,"[""BSD Protection License""]",[]
-Fedora Project Wiki,"[""Computer Associates Trusted Open Source License 1.1""]",[]
-Fedora Project Wiki,"[""CeCILL License v1.1""]",[]
-Fedora Project Wiki,"[""CeCILL License v2""]",[]
-Fedora Project Wiki,"[""CeCILL-B License""]",[]
-Fedora Project Wiki,"[""CeCILL-C License""]",[]
-Fedora Project Wiki,"[""Celtx Public License (CePL)""]",[]
-Fedora Project Wiki,"[""CMU License (BSD like)""]",[]
-Fedora Project Wiki,"[""CNRI License (Old Python)""]",[]
-Fedora Project Wiki,"[""Common Development Distribution License 1.0""]",[]
-Fedora Project Wiki,"[""Common Development Distribution License 1.1""]",[]
-Fedora Project Wiki,"[""Common Public License""]",[]
-Fedora Project Wiki,"[""Condor Public License""]",[]
-Fedora Project Wiki,"[""Copyright Attribution Only""]",[]
-Fedora Project Wiki,"[""CPAL License 1.0""]",[]
-Fedora Project Wiki,"[""CP/M License""]",[]
-Fedora Project Wiki,"[""CRC32 License""]",[]
-Fedora Project Wiki,"[""Creative Commons BSD""]",[]
-Fedora Project Wiki,"[""Creative Commons GNU GPL""]",[]
-Fedora Project Wiki,"[""Creative Commons GNU LGPL""]",[]
-Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]",[]
-Fedora Project Wiki,"[""Crossword License""]",[]
-Fedora Project Wiki,"[""Cryptix General License""]",[]
-Fedora Project Wiki,"[""Crystal Stacker License""]",[]
-Fedora Project Wiki,"[""CUA Office Public License Version 1.0""]",[]
-Fedora Project Wiki,"[""Cube License""]",[]
-Fedora Project Wiki,"[""diffmark license""]",[]
-Fedora Project Wiki,"[""DO WHATEVER PUBLIC LICENSE""]",[]
-Fedora Project Wiki,"[""Do What The F*ck You Want To Public License""]",[]
-Fedora Project Wiki,"[""DOC License""]",[]
-Fedora Project Wiki,"[""Docbook MIT License""]",[]
-Fedora Project Wiki,"[""Dotseqn License""]",[]
-Fedora Project Wiki,"[""DSDP License""]",[]
-Fedora Project Wiki,"[""dvipdfm License""]",[]
-Fedora Project Wiki,"[""Eclipse Distribution License 1.0""]",[]
-Fedora Project Wiki,"[""Eclipse Public License 1.0""]",[]
-Fedora Project Wiki,"[""Eclipse Public License 2.0""]",[]
-Fedora Project Wiki,"[""eCos License v2.0""]",[]
-Fedora Project Wiki,"[""Educational Community License 1.0""]",[]
-Fedora Project Wiki,"[""Educational Community License 2.0""]",[]
-Fedora Project Wiki,"[""eGenix.com Public License 1.1.0""]",[]
-Fedora Project Wiki,"[""Eiffel Forum License 2.0""]",[]
-Fedora Project Wiki,"[""enna License""]",[]
-Fedora Project Wiki,"[""Enlightenment License (e16)""]",[]
-Fedora Project Wiki,"[""Entessa Public License""]",[]
-Fedora Project Wiki,"[""EPICS Open License""]",[]
-Fedora Project Wiki,"[""Erlang Public License 1.1""]",[]
-Fedora Project Wiki,"[""European Union Public License 1.1""]",[]
-Fedora Project Wiki,"[""Eurosym License""]",[]
-Fedora Project Wiki,"[""Fedora Directory Server License""]",[]
-Fedora Project Wiki,"[""Fair License""]",[]
-Fedora Project Wiki,"[""feh License""]",[]
-Fedora Project Wiki,"[""FLTK License""]",[]
-Fedora Project Wiki,"[""Fraunhofer FDK AAC License""]",[]
-Fedora Project Wiki,"[""FreeImage Public License""]",[]
-Fedora Project Wiki,"[""Freetype License""]",[]
-Fedora Project Wiki,"[""FSF Unlimited License""]",[]
-Fedora Project Wiki,"[""FSF Unlimited License (with License Retention)""]",[]
-Fedora Project Wiki,"[""Giftware License""]",[]
-Fedora Project Wiki,"[""GL2PS License""]",[]
-Fedora Project Wiki,"[""Glulxe License""]",[]
-Fedora Project Wiki,"[""GNU General Public License (no version)""]",[]
-Fedora Project Wiki,"[""GNU General Public License (no version), with Classpath exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License (no version), with font embedding exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v1.0 only""]",[]
-Fedora Project Wiki,"[""GNU General Public License v1.0 or later""]",[]
-Fedora Project Wiki,"[""GNU General Public License v2.0 only, with Classpath exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v2.0 only, with font embedding exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v2.0 or later""]",[]
-Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with Classpath exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with font embedding exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v3.0 only, with Classpath exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v3.0 only, with font embedding exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with Classpath exception""]",[]
-Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with font embedding exception""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License (no version)""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) only""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1), with exceptions""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later, with exceptions""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 only, with exceptions""]",[]
-Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 or later, with exceptions""]",[]
-Fedora Project Wiki,"[""gnuplot License""]",[]
-Fedora Project Wiki,"[""Haskell Language Report License""]",[]
-Fedora Project Wiki,"[""Henry Spencer Reg-Ex Library License""]",[]
-Fedora Project Wiki,"[""Historical Permission Notice and Disclaimer""]",[]
-Fedora Project Wiki,"[""IBM Public License""]",[]
-Fedora Project Wiki,"[""iMatix Standard Function Library Agreement""]",[]
-Fedora Project Wiki,"[""ImageMagick License""]",[]
-Fedora Project Wiki,"[""Imlib2 License""]",[]
-Fedora Project Wiki,"[""Independent JPEG Group License""]",[]
-Fedora Project Wiki,"[""Inner Net License""]",[]
-Fedora Project Wiki,"[""Intel ACPI Software License Agreement""]",[]
-Fedora Project Wiki,"[""Interbase Public License""]",[]
-Fedora Project Wiki,"[""ISC License (Bind, DHCP Server)""]",[]
-Fedora Project Wiki,"[""Jabber Open Source License""]",[]
-Fedora Project Wiki,"[""JasPer License""]",[]
-Fedora Project Wiki,"[""JPython License (old)""]",[]
-Fedora Project Wiki,"[""Julius License""]",[]
-Fedora Project Wiki,"[""Knuth License""]",[]
-Fedora Project Wiki,"[""LaTeX Project Public License""]",[]
-Fedora Project Wiki,"[""Latex2e License""]",[]
-Fedora Project Wiki,"[""Lawrence Berkeley National Labs BSD variant license""]",[]
-Fedora Project Wiki,"[""LEGO Open Source License Agreement""]",[]
-Fedora Project Wiki,"[""Leptonica License""]",[]
-Fedora Project Wiki,"[""Lhcyr License""]",[]
-Fedora Project Wiki,"[""libtiff License""]",[]
-Fedora Project Wiki,"[""Lisp Library General Public License""]",[]
-Fedora Project Wiki,"[""Logica Open Source License""]",[]
-Fedora Project Wiki,"[""Lucent Public License (Plan9)""]",[]
-Fedora Project Wiki,"[""MakeIndex License""]",[]
-Fedora Project Wiki,"[""Matrix Template Library License""]",[]
-Fedora Project Wiki,"[""mecab-ipadic license""]",[]
-Fedora Project Wiki,"[""Metasploit Framework License (post 2006)""]",[]
-Fedora Project Wiki,"[""Microsoft Public License""]",[]
-Fedora Project Wiki,"[""Microsoft Reciprocal License""]",[]
-Fedora Project Wiki,"[""midnight License""]",[]
-Fedora Project Wiki,"[""MirOS License""]",[]
-Fedora Project Wiki,"[""MIT license (also X11)""]",[]
-Fedora Project Wiki,"[""mod_macro License""]",[]
-Fedora Project Wiki,"[""Motosoto License""]",[]
-Fedora Project Wiki,"[""Mozilla Public License v1.0""]",[]
-Fedora Project Wiki,"[""Mozilla Public License v1.1""]",[]
-Fedora Project Wiki,"[""Mozilla Public License v2.0""]",[]
-Fedora Project Wiki,"[""mpich2 License""]",[]
-Fedora Project Wiki,"[""Mup License""]",[]
-Fedora Project Wiki,"[""MX4J License""]",[]
-Fedora Project Wiki,"[""MySQL License""]",[]
-Fedora Project Wiki,"[""Naumen Public License""]",[]
-Fedora Project Wiki,"[""NCSA/University of Illinois Open Source License""]",[]
-Fedora Project Wiki,"[""Neotonic Clearsilver License""]",[]
-Fedora Project Wiki,"[""NetCDF license""]",[]
-Fedora Project Wiki,"[""Nethack General Public License""]",[]
-Fedora Project Wiki,"[""Netizen Open Source License""]",[]
-Fedora Project Wiki,"[""Netscape Public License""]",[]
-Fedora Project Wiki,"[""Newmat License""]",[]
-Fedora Project Wiki,"[""Newsletr License""]",[]
-Fedora Project Wiki,"[""NIST Software License""]",[]
-Fedora Project Wiki,"[""Nmap License""]",[]
-Fedora Project Wiki,"[""Nokia Open Source License""]",[]
-Fedora Project Wiki,"[""No Limit Public License""]",[]
-Fedora Project Wiki,"[""Noweb License""]",[]
-Fedora Project Wiki,"[""NRL License""]",[]
-Fedora Project Wiki,"[""Nunit License""]",[]
-Fedora Project Wiki,"[""Open Government License""]",[]
-Fedora Project Wiki,"[""OpenLDAP License""]",[]
-Fedora Project Wiki,"[""Open Market License""]",[]
-Fedora Project Wiki,"[""OpenPBS License""]",[]
-Fedora Project Wiki,"[""Open Software License 1.0""]",[]
-Fedora Project Wiki,"[""Open Software License 1.1""]",[]
-Fedora Project Wiki,"[""Open Software License 2.0""]",[]
-Fedora Project Wiki,"[""Open Software License 3.0""]",[]
-Fedora Project Wiki,"[""OReilly License""]",[]
-Fedora Project Wiki,"[""Par License""]",[]
-Fedora Project Wiki,"[""Perl License""]",[]
-Fedora Project Wiki,"[""Perl License (variant)""]",[]
-Fedora Project Wiki,"[""Perl License (variant)""]",[]
-Fedora Project Wiki,"[""Perl License (variant)""]",[]
-Fedora Project Wiki,"[""Phorum License""]",[]
-Fedora Project Wiki,"[""PHP License v3.0""]",[]
-Fedora Project Wiki,"[""PlainTeX License""]",[]
-Fedora Project Wiki,"[""PostgreSQL License""]",[]
-Fedora Project Wiki,"[""psfrag License""]",[]
-Fedora Project Wiki,"[""psutils License""]",[]
-Fedora Project Wiki,"[""Public Domain""]",[]
-Fedora Project Wiki,"[""Python License""]",[]
-Fedora Project Wiki,"[""Qhull License""]",[]
-Fedora Project Wiki,"[""Q Public License""]",[]
-Fedora Project Wiki,"[""Qwt License 1.0""]",[]
-Fedora Project Wiki,"[""QuickFix License""]",[]
-Fedora Project Wiki,"[""radvd License""]",[]
-Fedora Project Wiki,"[""Rdisc License""]",[]
-Fedora Project Wiki,"[""REX License""]",[]
-Fedora Project Wiki,"[""Rice BSD""]",[]
-Fedora Project Wiki,"[""Romio License""]",[]
-Fedora Project Wiki,"[""RSA License""]",[]
-Fedora Project Wiki,"[""Rsfs License""]",[]
-Fedora Project Wiki,"[""Ruby License""]",[]
-Fedora Project Wiki,"[""Saxpath License""]",[]
-Fedora Project Wiki,"[""Sequence Library License""]",[]
-Fedora Project Wiki,"[""SCEA Shared Source License""]",[]
-Fedora Project Wiki,"[""Scheme Widget Library (SWL) Software License Agreement""]",[]
-Fedora Project Wiki,"[""SciTech MGL Public License""]",[]
-Fedora Project Wiki,"[""SCRIP License""]",[]
-Fedora Project Wiki,"[""Sendmail License""]",[]
-Fedora Project Wiki,"[""SGI Free Software License B 2.0""]",[]
-Fedora Project Wiki,"[""Sleepycat Software Product License""]",[]
-Fedora Project Wiki,"[""SLIB License""]",[]
-Fedora Project Wiki,"[""softSurfer License""]",[]
-Fedora Project Wiki,"[""SNIA Public License 1.1""]",[]
-Fedora Project Wiki,"[""Standard ML of New Jersey License""]",[]
-Fedora Project Wiki,"[""Sun Industry Standards Source License""]",[]
-Fedora Project Wiki,"[""Sun Public License""]",[]
-Fedora Project Wiki,"[""TCL/TK License""]",[]
-Fedora Project Wiki,"[""Teeworlds License""]",[]
-Fedora Project Wiki,"[""Text-Tabs+Wrap License""]",[]
-Fedora Project Wiki,"[""Thor Public License""]",[]
-Fedora Project Wiki,"[""Threeparttable License""]",[]
-Fedora Project Wiki,"[""Time::ParseDate License""]",[]
-Fedora Project Wiki,"[""TMate Open Source License""]",[]
-Fedora Project Wiki,"[""Tolua License""]",[]
-Fedora Project Wiki,"[""TORQUE v2.5+ Software License v1.1""]",[]
-Fedora Project Wiki,"[""Transitive Grace Period Public Licence""]",[]
-Fedora Project Wiki,"[""Trusted Computing Group License""]",[]
-Fedora Project Wiki,"[""Trusster Open Source License""]",[]
-Fedora Project Wiki,"[""Tumbolia Public License""]",[]
-Fedora Project Wiki,"[""UCAR License""]",[]
-Fedora Project Wiki,"[""Unicode Character Database Terms Of Use""]",[]
-Fedora Project Wiki,"[""Unicode License""]",[]
-Fedora Project Wiki,"[""Universal Permissive License""]",[]
-Fedora Project Wiki,"[""Vim License""]",[]
-Fedora Project Wiki,"[""Vita Nuova Liberal Source License""]",[]
-Fedora Project Wiki,"[""VOSTROM Public License for Open Source""]",[]
-Fedora Project Wiki,"[""Vovida Software License v. 1.0""]",[]
-Fedora Project Wiki,"[""W3C Software Notice and License""]",[]
-Fedora Project Wiki,"[""Webmin License""]",[]
-Fedora Project Wiki,"[""Wsuipa License""]",[]
-Fedora Project Wiki,"[""wxWidgets Library License""]",[]
-Fedora Project Wiki,"[""wxWindows Library License v 3.1""]",[]
-Fedora Project Wiki,"[""xinetd License""]",[]
-Fedora Project Wiki,"[""Xerox License""]",[]
-Fedora Project Wiki,"[""XPP License""]",[]
-Fedora Project Wiki,"[""XSkat License""]",[]
-Fedora Project Wiki,"[""Yahoo Public License v 1.1""]",[]
-Fedora Project Wiki,"[""Zed License""]",[]
-Fedora Project Wiki,"[""Zend License v2.0""]",[]
-Fedora Project Wiki,"[""Zope Public License v 1.0""]",[]
-Fedora Project Wiki,"[""Zope Public License v 2.0""]",[]
-Fedora Project Wiki,"[""Zope Public License v 2.1""]",[]
-Fedora Project Wiki,"[""zlib/libpng License with Acknowledgement""]",[]
+Fedora Project Wiki,"[""3dfx Glide License""]","[""Glide""]"
+Fedora Project Wiki,"[""4Suite Copyright License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""Abstyles License""]","[""Abstyles""]"
+Fedora Project Wiki,"[""Academic Free License""]","[""AFL""]"
+Fedora Project Wiki,"[""Academy of Motion Picture Arts and Sciences BSD""]","[""AMPAS BSD""]"
+Fedora Project Wiki,"[""Adobe Systems Incorporated Source Code License Agreement""]","[""Adobe""]"
+Fedora Project Wiki,"[""Adobe Postscript AFM License""]","[""APAFML""]"
+Fedora Project Wiki,"[""Adobe Glyph List License""]","[""MIT""]"
+Fedora Project Wiki,"[""Affero General Public License 1.0""]","[""AGPLv1""]"
+Fedora Project Wiki,"[""Affero General Public License 3.0 or later""]","[""AGPLv3+""]"
+Fedora Project Wiki,"[""Affero General Public License 3.0 with Zarafa trademark exceptions""]","[""AGPLv3 with exceptions""]"
+Fedora Project Wiki,"[""Afmparse License""]","[""Afmparse""]"
+Fedora Project Wiki,"[""Amazon Digital Services License""]","[""ADSL""]"
+Fedora Project Wiki,"[""AMD's plpa_map.c License""]","[""AMDPLPA""]"
+Fedora Project Wiki,"[""ANTLR Software Rights Notice""]","[""ANTLR-PD""]"
+Fedora Project Wiki,"[""Apache Software License 1.0""]","[""ASL 1.0""]"
+Fedora Project Wiki,"[""Apache Software License 1.1""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""Apache Software License 2.0""]","[""ASL 2.0""]"
+Fedora Project Wiki,"[""App::s2p License""]","[""App-s2p""]"
+Fedora Project Wiki,"[""Apple MIT License""]","[""AML""]"
+Fedora Project Wiki,"[""Apple Public Source License 2.0""]","[""APSL 2.0""]"
+Fedora Project Wiki,"[""Array Input Method Public License""]","[""Array""]"
+Fedora Project Wiki,"[""Artistic (clarified)""]","[""Artistic clarified""]"
+Fedora Project Wiki,"[""Artistic 2.0""]","[""Artistic 2.0""]"
+Fedora Project Wiki,"[""Aspell-ru License""]","[""ARL""]"
+Fedora Project Wiki,"[""Attribution Assurance License""]","[""AAL""]"
+Fedora Project Wiki,"[""Bahyph License""]","[""Bahyph""]"
+Fedora Project Wiki,"[""Barr License""]","[""Barr""]"
+Fedora Project Wiki,"[""Beerware License""]","[""Beerware""]"
+Fedora Project Wiki,"[""BeOpen Open Source License Agreement Version 1""]","[""BeOpen""]"
+Fedora Project Wiki,"[""Bibtex License""]","[""Bibtex""]"
+Fedora Project Wiki,"[""BitTorrent License""]","[""BitTorrent""]"
+Fedora Project Wiki,"[""Boost Software License""]","[""Boost""]"
+Fedora Project Wiki,"[""Borceux license""]","[""Borceux""]"
+Fedora Project Wiki,"[""BSD + Patent""]","[""BSD-2-Clause-Patent""]"
+Fedora Project Wiki,"[""BSD with attribution""]","[""BSD with attribution""]"
+Fedora Project Wiki,"[""BSD License (no advertising)""]","[""BSD""]"
+Fedora Project Wiki,"[""BSD License (two clause)""]","[""BSD""]"
+Fedora Project Wiki,"[""BSD Protection License""]","[""BSD Protection""]"
+Fedora Project Wiki,"[""Computer Associates Trusted Open Source License 1.1""]","[""CATOSL""]"
+Fedora Project Wiki,"[""CeCILL License v1.1""]","[""CeCILL""]"
+Fedora Project Wiki,"[""CeCILL License v2""]","[""CeCILL""]"
+Fedora Project Wiki,"[""CeCILL-B License""]","[""CeCILL-B""]"
+Fedora Project Wiki,"[""CeCILL-C License""]","[""CeCILL-C""]"
+Fedora Project Wiki,"[""Celtx Public License (CePL)""]","[""Netscape""]"
+Fedora Project Wiki,"[""CMU License (BSD like)""]","[""MIT""]"
+Fedora Project Wiki,"[""CNRI License (Old Python)""]","[""CNRI""]"
+Fedora Project Wiki,"[""Common Development Distribution License 1.0""]","[""CDDL-1.0""]"
+Fedora Project Wiki,"[""Common Development Distribution License 1.1""]","[""CDDL-1.1""]"
+Fedora Project Wiki,"[""Common Public License""]","[""CPL""]"
+Fedora Project Wiki,"[""Condor Public License""]","[""Condor""]"
+Fedora Project Wiki,"[""Copyright Attribution Only""]","[""Copyright only""]"
+Fedora Project Wiki,"[""CPAL License 1.0""]","[""CPAL""]"
+Fedora Project Wiki,"[""CP/M License""]","[""CPM""]"
+Fedora Project Wiki,"[""CRC32 License""]","[""CRC32""]"
+Fedora Project Wiki,"[""Creative Commons BSD""]","[""BSD""]"
+Fedora Project Wiki,"[""Creative Commons GNU GPL""]","[""GPLv2+""]"
+Fedora Project Wiki,"[""Creative Commons GNU LGPL""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
+Fedora Project Wiki,"[""Crossword License""]","[""Crossword""]"
+Fedora Project Wiki,"[""Cryptix General License""]","[""BSD""]"
+Fedora Project Wiki,"[""Crystal Stacker License""]","[""Crystal Stacker""]"
+Fedora Project Wiki,"[""CUA Office Public License Version 1.0""]","[""MPLv1.1""]"
+Fedora Project Wiki,"[""Cube License""]","[""Cube""]"
+Fedora Project Wiki,"[""diffmark license""]","[""diffmark""]"
+Fedora Project Wiki,"[""DO WHATEVER PUBLIC LICENSE""]","[""DWPL""]"
+Fedora Project Wiki,"[""Do What The F*ck You Want To Public License""]","[""WTFPL""]"
+Fedora Project Wiki,"[""DOC License""]","[""DOC""]"
+Fedora Project Wiki,"[""Docbook MIT License""]","[""DMIT""]"
+Fedora Project Wiki,"[""Dotseqn License""]","[""Dotseqn""]"
+Fedora Project Wiki,"[""DSDP License""]","[""DSDP""]"
+Fedora Project Wiki,"[""dvipdfm License""]","[""dvipdfm""]"
+Fedora Project Wiki,"[""Eclipse Distribution License 1.0""]","[""BSD""]"
+Fedora Project Wiki,"[""Eclipse Public License 1.0""]","[""EPL-1.0""]"
+Fedora Project Wiki,"[""Eclipse Public License 2.0""]","[""EPL-2.0""]"
+Fedora Project Wiki,"[""eCos License v2.0""]","[""eCos""]"
+Fedora Project Wiki,"[""Educational Community License 1.0""]","[""ECL 1.0""]"
+Fedora Project Wiki,"[""Educational Community License 2.0""]","[""ECL 2.0""]"
+Fedora Project Wiki,"[""eGenix.com Public License 1.1.0""]","[""eGenix""]"
+Fedora Project Wiki,"[""Eiffel Forum License 2.0""]","[""EFL 2.0""]"
+Fedora Project Wiki,"[""enna License""]","[""MIT""]"
+Fedora Project Wiki,"[""Enlightenment License (e16)""]","[""MIT with advertising""]"
+Fedora Project Wiki,"[""Entessa Public License""]","[""Entessa""]"
+Fedora Project Wiki,"[""EPICS Open License""]","[""EPICS""]"
+Fedora Project Wiki,"[""Erlang Public License 1.1""]","[""ERPL""]"
+Fedora Project Wiki,"[""European Union Public License 1.1""]","[""EUPL 1.1""]"
+Fedora Project Wiki,"[""Eurosym License""]","[""Eurosym""]"
+Fedora Project Wiki,"[""Fedora Directory Server License""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""Fair License""]","[""Fair""]"
+Fedora Project Wiki,"[""feh License""]","[""MIT""]"
+Fedora Project Wiki,"[""FLTK License""]","[""LGPLv2 with exceptions""]"
+Fedora Project Wiki,"[""Fraunhofer FDK AAC License""]","[""FDK-AAC""]"
+Fedora Project Wiki,"[""FreeImage Public License""]","[""MPLv1.0""]"
+Fedora Project Wiki,"[""Freetype License""]","[""FTL""]"
+Fedora Project Wiki,"[""FSF Unlimited License""]","[""FSFUL""]"
+Fedora Project Wiki,"[""FSF Unlimited License (with License Retention)""]","[""FSFULLR""]"
+Fedora Project Wiki,"[""Giftware License""]","[""Giftware""]"
+Fedora Project Wiki,"[""GL2PS License""]","[""GL2PS""]"
+Fedora Project Wiki,"[""Glulxe License""]","[""Glulxe""]"
+Fedora Project Wiki,"[""GNU General Public License (no version)""]","[""GPL+""]"
+Fedora Project Wiki,"[""GNU General Public License (no version), with Classpath exception""]","[""GPL+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License (no version), with font embedding exception""]","[""GPL+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v1.0 only""]","[""GPLv1""]"
+Fedora Project Wiki,"[""GNU General Public License v1.0 or later""]","[""GPL+""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 only, with Classpath exception""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 only, with font embedding exception""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 or later""]","[""GPLv2+""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with Classpath exception""]","[""GPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with font embedding exception""]","[""GPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 only, with Classpath exception""]","[""GPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 only, with font embedding exception""]","[""GPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with Classpath exception""]","[""GPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with font embedding exception""]","[""GPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License (no version)""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) only""]","[""LGPLv2""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1), with exceptions""]","[""LGPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later, with exceptions""]","[""LGPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 only, with exceptions""]","[""LGPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 or later, with exceptions""]","[""LGPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""gnuplot License""]","[""gnuplot""]"
+Fedora Project Wiki,"[""Haskell Language Report License""]","[""HaskellReport""]"
+Fedora Project Wiki,"[""Henry Spencer Reg-Ex Library License""]","[""HSRL""]"
+Fedora Project Wiki,"[""Historical Permission Notice and Disclaimer""]","[""MIT""]"
+Fedora Project Wiki,"[""IBM Public License""]","[""IBM""]"
+Fedora Project Wiki,"[""iMatix Standard Function Library Agreement""]","[""iMatix""]"
+Fedora Project Wiki,"[""ImageMagick License""]","[""ImageMagick""]"
+Fedora Project Wiki,"[""Imlib2 License""]","[""Imlib2""]"
+Fedora Project Wiki,"[""Independent JPEG Group License""]","[""IJG""]"
+Fedora Project Wiki,"[""Inner Net License""]","[""Inner-Net""]"
+Fedora Project Wiki,"[""Intel ACPI Software License Agreement""]","[""Intel ACPI""]"
+Fedora Project Wiki,"[""Interbase Public License""]","[""Interbase""]"
+Fedora Project Wiki,"[""ISC License (Bind, DHCP Server)""]","[""ISC""]"
+Fedora Project Wiki,"[""Jabber Open Source License""]","[""Jabber""]"
+Fedora Project Wiki,"[""JasPer License""]","[""JasPer""]"
+Fedora Project Wiki,"[""JPython License (old)""]","[""JPython""]"
+Fedora Project Wiki,"[""Julius License""]","[""Julius""]"
+Fedora Project Wiki,"[""Knuth License""]","[""Knuth""]"
+Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
+Fedora Project Wiki,"[""Latex2e License""]","[""Latex2e""]"
+Fedora Project Wiki,"[""Lawrence Berkeley National Labs BSD variant license""]","[""LBNL BSD""]"
+Fedora Project Wiki,"[""LEGO Open Source License Agreement""]","[""LOSLA""]"
+Fedora Project Wiki,"[""Leptonica License""]","[""Leptonica""]"
+Fedora Project Wiki,"[""Lhcyr License""]","[""Lhcyr""]"
+Fedora Project Wiki,"[""libtiff License""]","[""libtiff""]"
+Fedora Project Wiki,"[""Lisp Library General Public License""]","[""LLGPL""]"
+Fedora Project Wiki,"[""Logica Open Source License""]","[""Logica""]"
+Fedora Project Wiki,"[""Lucent Public License (Plan9)""]","[""LPL""]"
+Fedora Project Wiki,"[""MakeIndex License""]","[""MakeIndex""]"
+Fedora Project Wiki,"[""Matrix Template Library License""]","[""MTLL""]"
+Fedora Project Wiki,"[""mecab-ipadic license""]","[""mecab-ipadic""]"
+Fedora Project Wiki,"[""Metasploit Framework License (post 2006)""]","[""BSD""]"
+Fedora Project Wiki,"[""Microsoft Public License""]","[""MS-PL""]"
+Fedora Project Wiki,"[""Microsoft Reciprocal License""]","[""MS-RL""]"
+Fedora Project Wiki,"[""midnight License""]","[""midnight""]"
+Fedora Project Wiki,"[""MirOS License""]","[""MirOS""]"
+Fedora Project Wiki,"[""MIT license (also X11)""]","[""MIT""]"
+Fedora Project Wiki,"[""mod_macro License""]","[""mod_macro""]"
+Fedora Project Wiki,"[""Motosoto License""]","[""Motosoto""]"
+Fedora Project Wiki,"[""Mozilla Public License v1.0""]","[""MPLv1.0""]"
+Fedora Project Wiki,"[""Mozilla Public License v1.1""]","[""MPLv1.1""]"
+Fedora Project Wiki,"[""Mozilla Public License v2.0""]","[""MPLv2.0""]"
+Fedora Project Wiki,"[""mpich2 License""]","[""MIT""]"
+Fedora Project Wiki,"[""Mup License""]","[""Mup""]"
+Fedora Project Wiki,"[""MX4J License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""MySQL License""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""Naumen Public License""]","[""Naumen""]"
+Fedora Project Wiki,"[""NCSA/University of Illinois Open Source License""]","[""NCSA""]"
+Fedora Project Wiki,"[""Neotonic Clearsilver License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""NetCDF license""]","[""NetCDF""]"
+Fedora Project Wiki,"[""Nethack General Public License""]","[""NGPL""]"
+Fedora Project Wiki,"[""Netizen Open Source License""]","[""NOSL""]"
+Fedora Project Wiki,"[""Netscape Public License""]","[""Netscape""]"
+Fedora Project Wiki,"[""Newmat License""]","[""Newmat""]"
+Fedora Project Wiki,"[""Newsletr License""]","[""Newsletr""]"
+Fedora Project Wiki,"[""NIST Software License""]","[""NISTSL""]"
+Fedora Project Wiki,"[""Nmap License""]","[""Nmap""]"
+Fedora Project Wiki,"[""Nokia Open Source License""]","[""Nokia""]"
+Fedora Project Wiki,"[""No Limit Public License""]","[""NLPL""]"
+Fedora Project Wiki,"[""Noweb License""]","[""Noweb""]"
+Fedora Project Wiki,"[""NRL License""]","[""BSD with advertising""]"
+Fedora Project Wiki,"[""Nunit License""]","[""MIT with advertising""]"
+Fedora Project Wiki,"[""Open Government License""]","[""OGL""]"
+Fedora Project Wiki,"[""OpenLDAP License""]","[""OpenLDAP""]"
+Fedora Project Wiki,"[""Open Market License""]","[""OML""]"
+Fedora Project Wiki,"[""OpenPBS License""]","[""OpenPBS""]"
+Fedora Project Wiki,"[""Open Software License 1.0""]","[""OSL 1.0""]"
+Fedora Project Wiki,"[""Open Software License 1.1""]","[""OSL 1.1""]"
+Fedora Project Wiki,"[""Open Software License 2.0""]","[""OSL 2.0""]"
+Fedora Project Wiki,"[""Open Software License 3.0""]","[""OSL 3.0""]"
+Fedora Project Wiki,"[""OReilly License""]","[""OReilly""]"
+Fedora Project Wiki,"[""Par License""]","[""Par""]"
+Fedora Project Wiki,"[""Perl License""]","[""GPL+ or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2 or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2+ or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""LGPLv2+ or Artistic""]"
+Fedora Project Wiki,"[""Phorum License""]","[""Phorum""]"
+Fedora Project Wiki,"[""PHP License v3.0""]","[""PHP""]"
+Fedora Project Wiki,"[""PlainTeX License""]","[""PlainTeX""]"
+Fedora Project Wiki,"[""PostgreSQL License""]","[""PostgreSQL""]"
+Fedora Project Wiki,"[""psfrag License""]","[""psfrag""]"
+Fedora Project Wiki,"[""psutils License""]","[""psutils""]"
+Fedora Project Wiki,"[""Public Domain""]","[""Public Domain""]"
+Fedora Project Wiki,"[""Python License""]","[""Python""]"
+Fedora Project Wiki,"[""Qhull License""]","[""Qhull""]"
+Fedora Project Wiki,"[""Q Public License""]","[""QPL""]"
+Fedora Project Wiki,"[""Qwt License 1.0""]","[""LGPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""QuickFix License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""radvd License""]","[""radvd""]"
+Fedora Project Wiki,"[""Rdisc License""]","[""Rdisc""]"
+Fedora Project Wiki,"[""REX License""]","[""REX""]"
+Fedora Project Wiki,"[""Rice BSD""]","[""RiceBSD""]"
+Fedora Project Wiki,"[""Romio License""]","[""Romio""]"
+Fedora Project Wiki,"[""RSA License""]","[""RSA""]"
+Fedora Project Wiki,"[""Rsfs License""]","[""Rsfs""]"
+Fedora Project Wiki,"[""Ruby License""]","[""Ruby""]"
+Fedora Project Wiki,"[""Saxpath License""]","[""Saxpath""]"
+Fedora Project Wiki,"[""Sequence Library License""]","[""Sequence""]"
+Fedora Project Wiki,"[""SCEA Shared Source License""]","[""SCEA""]"
+Fedora Project Wiki,"[""Scheme Widget Library (SWL) Software License Agreement""]","[""SWL""]"
+Fedora Project Wiki,"[""SciTech MGL Public License""]","[""STMPL""]"
+Fedora Project Wiki,"[""SCRIP License""]","[""SCRIP""]"
+Fedora Project Wiki,"[""Sendmail License""]","[""Sendmail""]"
+Fedora Project Wiki,"[""SGI Free Software License B 2.0""]","[""MIT""]"
+Fedora Project Wiki,"[""Sleepycat Software Product License""]","[""Sleepycat""]"
+Fedora Project Wiki,"[""SLIB License""]","[""SLIB""]"
+Fedora Project Wiki,"[""softSurfer License""]","[""softSurfer""]"
+Fedora Project Wiki,"[""SNIA Public License 1.1""]","[""SNIA""]"
+Fedora Project Wiki,"[""Standard ML of New Jersey License""]","[""MIT""]"
+Fedora Project Wiki,"[""Sun Industry Standards Source License""]","[""SISSL""]"
+Fedora Project Wiki,"[""Sun Public License""]","[""SPL""]"
+Fedora Project Wiki,"[""TCL/TK License""]","[""TCL""]"
+Fedora Project Wiki,"[""Teeworlds License""]","[""Teeworlds""]"
+Fedora Project Wiki,"[""Text-Tabs+Wrap License""]","[""TTWL""]"
+Fedora Project Wiki,"[""Thor Public License""]","[""TPL""]"
+Fedora Project Wiki,"[""Threeparttable License""]","[""Threeparttable""]"
+Fedora Project Wiki,"[""Time::ParseDate License""]","[""TPDL""]"
+Fedora Project Wiki,"[""TMate Open Source License""]","[""TMate""]"
+Fedora Project Wiki,"[""Tolua License""]","[""Tolua""]"
+Fedora Project Wiki,"[""TORQUE v2.5+ Software License v1.1""]","[""TORQUEv1.1""]"
+Fedora Project Wiki,"[""Transitive Grace Period Public Licence""]","[""TGPPL""]"
+Fedora Project Wiki,"[""Trusted Computing Group License""]","[""TCGL""]"
+Fedora Project Wiki,"[""Trusster Open Source License""]","[""TOSL""]"
+Fedora Project Wiki,"[""Tumbolia Public License""]","[""Tumbolia""]"
+Fedora Project Wiki,"[""UCAR License""]","[""UCAR""]"
+Fedora Project Wiki,"[""Unicode Character Database Terms Of Use""]","[""UCD""]"
+Fedora Project Wiki,"[""Unicode License""]","[""Unicode""]"
+Fedora Project Wiki,"[""Universal Permissive License""]","[""UPL""]"
+Fedora Project Wiki,"[""Vim License""]","[""Vim""]"
+Fedora Project Wiki,"[""Vita Nuova Liberal Source License""]","[""VNLSL""]"
+Fedora Project Wiki,"[""VOSTROM Public License for Open Source""]","[""VOSTROM""]"
+Fedora Project Wiki,"[""Vovida Software License v. 1.0""]","[""VSL""]"
+Fedora Project Wiki,"[""W3C Software Notice and License""]","[""W3C""]"
+Fedora Project Wiki,"[""Webmin License""]","[""Webmin""]"
+Fedora Project Wiki,"[""Wsuipa License""]","[""Wsuipa""]"
+Fedora Project Wiki,"[""wxWidgets Library License""]","[""wxWidgets""]"
+Fedora Project Wiki,"[""wxWindows Library License v 3.1""]","[""wxWindows""]"
+Fedora Project Wiki,"[""xinetd License""]","[""xinetd""]"
+Fedora Project Wiki,"[""Xerox License""]","[""Xerox""]"
+Fedora Project Wiki,"[""XPP License""]","[""xpp""]"
+Fedora Project Wiki,"[""XSkat License""]","[""XSkat""]"
+Fedora Project Wiki,"[""Yahoo Public License v 1.1""]","[""YPLv1.1""]"
+Fedora Project Wiki,"[""Zed License""]","[""Zed""]"
+Fedora Project Wiki,"[""Zend License v2.0""]","[""Zend""]"
+Fedora Project Wiki,"[""Zope Public License v 1.0""]","[""ZPLv1.0""]"
+Fedora Project Wiki,"[""Zope Public License v 2.0""]","[""ZPLv2.0""]"
+Fedora Project Wiki,"[""Zope Public License v 2.1""]","[""ZPLv2.1""]"
+Fedora Project Wiki,"[""zlib/libpng License with Acknowledgement""]","[""zlib with acknowledgement""]"
 Fedora Project Wiki,"[""9wm License (Original)""]",[]
 Fedora Project Wiki,"[""Adaptive Public License""]",[]
 Fedora Project Wiki,"[""Agere LT Modem Driver License""]",[]
@@ -1662,68 +1661,68 @@ Fedora Project Wiki,"[""unrar license""]",[]
 Fedora Project Wiki,"[""X.Net License""]",[]
 Fedora Project Wiki,"[""Yahoo Public License 1.0""]",[]
 Fedora Project Wiki,"[""Zimbra Public License 1.3""]",[]
-Fedora Project Wiki,"[""SIL Open Font License 1.1 http://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png""]",[]
-Fedora Project Wiki,"[""Adobe/TUG Utopia license agreement""]",[]
-Fedora Project Wiki,"[""AMS Bluesky Font License""]",[]
-Fedora Project Wiki,"[""Arphic Public License""]",[]
-Fedora Project Wiki,"[""Baekmuk License""]",[]
-Fedora Project Wiki,"[""Bitstream Vera Font License""]",[]
-Fedora Project Wiki,"[""Charter License""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution license""]",[]
-Fedora Project Wiki,"[""DoubleStroke Font License""]",[]
-Fedora Project Wiki,"[""ec Font License""]",[]
-Fedora Project Wiki,"[""Elvish Font License""]",[]
-Fedora Project Wiki,"[""GUST Font License""]",[]
-Fedora Project Wiki,"[""Hack Open Font License""]",[]
-Fedora Project Wiki,"[""Hershey Font License""]",[]
-Fedora Project Wiki,"[""IPA Font License""]",[]
-Fedora Project Wiki,"[""Liberation Font License""]",[]
-Fedora Project Wiki,"[""LaTeX Project Public License""]",[]
-Fedora Project Wiki,"[""Lucida Legal Notice""]",[]
-Fedora Project Wiki,"[""MgOpen Font License""]",[]
-Fedora Project Wiki,"[""mplus Font License""]",[]
-Fedora Project Wiki,"[""ParaType Font License""]",[]
-Fedora Project Wiki,"[""Punknova Font License""]",[]
-Fedora Project Wiki,"[""STIX Fonts User License""]",[]
-Fedora Project Wiki,"[""Wadalab Font License""]",[]
-Fedora Project Wiki,"[""XANO Mincho Font License""]",[]
+Fedora Project Wiki,"[""SIL Open Font License 1.1 http://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png""]","[""OFL""]"
+Fedora Project Wiki,"[""Adobe/TUG Utopia license agreement""]","[""Utopia""]"
+Fedora Project Wiki,"[""AMS Bluesky Font License""]","[""AMS""]"
+Fedora Project Wiki,"[""Arphic Public License""]","[""Arphic""]"
+Fedora Project Wiki,"[""Baekmuk License""]","[""Baekmuk""]"
+Fedora Project Wiki,"[""Bitstream Vera Font License""]","[""Bitstream Vera""]"
+Fedora Project Wiki,"[""Charter License""]","[""Charter""]"
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""DoubleStroke Font License""]","[""DoubleStroke""]"
+Fedora Project Wiki,"[""ec Font License""]","[""ec""]"
+Fedora Project Wiki,"[""Elvish Font License""]","[""Elvish""]"
+Fedora Project Wiki,"[""GUST Font License""]","[""LPPL""]"
+Fedora Project Wiki,"[""Hack Open Font License""]","[""HOFL""]"
+Fedora Project Wiki,"[""Hershey Font License""]","[""Hershey""]"
+Fedora Project Wiki,"[""IPA Font License""]","[""IPA""]"
+Fedora Project Wiki,"[""Liberation Font License""]","[""Liberation""]"
+Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
+Fedora Project Wiki,"[""Lucida Legal Notice""]","[""Lucida""]"
+Fedora Project Wiki,"[""MgOpen Font License""]","[""MgOpen""]"
+Fedora Project Wiki,"[""mplus Font License""]","[""mplus""]"
+Fedora Project Wiki,"[""ParaType Font License""]","[""PTFL""]"
+Fedora Project Wiki,"[""Punknova Font License""]","[""Punknova""]"
+Fedora Project Wiki,"[""STIX Fonts User License""]","[""STIX""]"
+Fedora Project Wiki,"[""Wadalab Font License""]","[""Wadalab""]"
+Fedora Project Wiki,"[""XANO Mincho Font License""]","[""XANO""]"
 Fedora Project Wiki,"[""DIP SIPA Font License""]",[]
 Fedora Project Wiki,"[""Larabie Fonts License""]",[]
 Fedora Project Wiki,"[""Literat Font License""]",[]
 Fedora Project Wiki,"[""Ubuntu Font License""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution license""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-NoDerivs""]",[]
-Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]",[]
-Fedora Project Wiki,"[""Design Science License""]",[]
-Fedora Project Wiki,"[""Distributed Management Task Force License""]",[]
-Fedora Project Wiki,"[""EFF Open Audio License v1""]",[]
-Fedora Project Wiki,"[""Ethymonics Free Music License""]",[]
-Fedora Project Wiki,"[""Free Art License""]",[]
-Fedora Project Wiki,"[""GeoGratis Licence Agreement""]",[]
-Fedora Project Wiki,"[""GNU General Public License""]",[]
-Fedora Project Wiki,"[""License Ouverte""]",[]
-Fedora Project Wiki,"[""LinuxTag Green OpenMusic License""]",[]
-Fedora Project Wiki,"[""Open Data Commons Public Domain Dedication and Licence""]",[]
-Fedora Project Wiki,"[""Open Data License (GeoLite Country and GeoLite City databases)""]",[]
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-NoDerivs""]","[""CC-BY-ND""]"
+Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
+Fedora Project Wiki,"[""Design Science License""]","[""DSL""]"
+Fedora Project Wiki,"[""Distributed Management Task Force License""]","[""DMTF""]"
+Fedora Project Wiki,"[""EFF Open Audio License v1""]","[""OAL""]"
+Fedora Project Wiki,"[""Ethymonics Free Music License""]","[""EFML""]"
+Fedora Project Wiki,"[""Free Art License""]","[""Free Art""]"
+Fedora Project Wiki,"[""GeoGratis Licence Agreement""]","[""GeoGratis""]"
+Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
+Fedora Project Wiki,"[""License Ouverte""]","[""Ouverte""]"
+Fedora Project Wiki,"[""LinuxTag Green OpenMusic License""]","[""Green OpenMusic""]"
+Fedora Project Wiki,"[""Open Data Commons Public Domain Dedication and Licence""]","[""PDDL-1.0""]"
+Fedora Project Wiki,"[""Open Data License (GeoLite Country and GeoLite City databases)""]","[""BSD with advertising""]"
 Fedora Project Wiki,"[""CAcert Non-Related Persons Disclaimer and License""]",[]
 Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-NoDerivs""]",[]
 Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial""]",[]
 Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-ShareAlike""]",[]
 Fedora Project Wiki,"[""Creative Commons Sampling Plus 1.0""]",[]
 Fedora Project Wiki,"[""LinuxTag Yellow OpenMusic License""]",[]
-Fedora Project Wiki,"[""Apple's Common Documentation License, Version 1.0""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution license""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]",[]
-Fedora Project Wiki,"[""FreeBSD Documentation License""]",[]
-Fedora Project Wiki,"[""GNU Free Documentation License""]",[]
-Fedora Project Wiki,"[""GNU General Public License""]",[]
-Fedora Project Wiki,"[""IEEE and Open Group Documentation License""]",[]
-Fedora Project Wiki,"[""Linux Documentation Project License""]",[]
-Fedora Project Wiki,"[""Old FSF Documentation License""]",[]
-Fedora Project Wiki,"[""Open Publication License, v1.0""]",[]
-Fedora Project Wiki,"[""Public Use License, v1.0""]",[]
-Fedora Project Wiki,"[""Verbatim License""]",[]
+Fedora Project Wiki,"[""Apple's Common Documentation License, Version 1.0""]","[""CDL""]"
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
+Fedora Project Wiki,"[""FreeBSD Documentation License""]","[""FBSDDL""]"
+Fedora Project Wiki,"[""GNU Free Documentation License""]","[""GFDL""]"
+Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
+Fedora Project Wiki,"[""IEEE and Open Group Documentation License""]","[""IEEE""]"
+Fedora Project Wiki,"[""Linux Documentation Project License""]","[""LDPL""]"
+Fedora Project Wiki,"[""Old FSF Documentation License""]","[""OFSFDL""]"
+Fedora Project Wiki,"[""Open Publication License, v1.0""]","[""Open Publication""]"
+Fedora Project Wiki,"[""Public Use License, v1.0""]","[""Public Use""]"
+Fedora Project Wiki,"[""Verbatim License""]","[""Verbatim""]"
 Fedora Project Wiki,"[""Open Content License""]",[]
 Fedora Project Wiki,"[""Open Directory License""]",[]
 Fedora Project Wiki,"[""W3C Documentation License""]",[]

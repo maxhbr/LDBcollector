@@ -411,6 +411,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU Library General Public License",
+            "LGPLv3+",
             "The GNU Lesser General Public License (LGPL)"
         ],
         "__impliedComments": [
@@ -515,6 +516,9 @@ Raw Data
                         "GNU Lesser General Public License v3.0 or later"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "LGPLv3+"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

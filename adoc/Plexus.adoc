@@ -133,6 +133,9 @@ Project Wiki]
     ],
     "__impliedId": "Plexus",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Plexus"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -186,6 +189,9 @@ Project Wiki]
                     "Plexus Classworlds License"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Plexus"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

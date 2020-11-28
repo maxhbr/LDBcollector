@@ -191,6 +191,7 @@
       "__impliedId": "Zlib",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
+          "zlib",
           "The zlib/libpng License (Zlib)"
       ],
       "__impliedComments": [
@@ -292,6 +293,9 @@
                       "zlib/libpng License"
                   ],
                   "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "zlib"
+                  ],
                   "__impliedJudgement": [
                       [
                           "Fedora Project Wiki",

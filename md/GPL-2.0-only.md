@@ -544,6 +544,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
+            "GPLv2",
             "The GNU General Public License (GPL)"
         ],
         "__impliedComments": [
@@ -666,6 +667,9 @@ Raw Data
                         "GNU General Public License v2.0 only"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "GPLv2"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

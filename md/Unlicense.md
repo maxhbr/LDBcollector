@@ -148,6 +148,9 @@ Raw Data
         ],
         "__impliedId": "Unlicense",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "Unlicense"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -239,6 +242,9 @@ Raw Data
                         "Unlicense"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "Unlicense"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

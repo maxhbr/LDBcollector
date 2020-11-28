@@ -123,6 +123,9 @@ open-license]] (CDLA-Permissive-1.0))
       ],
       "__impliedId": "EUDatagrid",
       "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "EU Datagrid"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -218,6 +221,9 @@ open-license]] (CDLA-Permissive-1.0))
                       "EU Datagrid Software License"
                   ],
                   "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "EU Datagrid"
+                  ],
                   "__impliedJudgement": [
                       [
                           "Fedora Project Wiki",

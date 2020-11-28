@@ -160,6 +160,9 @@ Policy]
     ],
     "__impliedId": "BSD-4-Clause",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "BSD with advertising"
+    ],
     "__impliedRatingState": [
         [
             "Override",
@@ -227,6 +230,9 @@ Policy]
                     "BSD License (original)"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "BSD with advertising"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

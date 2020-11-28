@@ -122,6 +122,9 @@ Raw Data
         ],
         "__impliedId": "EUDatagrid",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "EU Datagrid"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -217,6 +220,9 @@ Raw Data
                         "EU Datagrid Software License"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "EU Datagrid"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

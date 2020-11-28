@@ -154,6 +154,9 @@ Raw Data
         ],
         "__impliedId": "OpenSSL",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "OpenSSL"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -208,6 +211,9 @@ Raw Data
                         "OpenSSL License"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "OpenSSL"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

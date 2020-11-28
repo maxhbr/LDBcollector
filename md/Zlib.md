@@ -183,6 +183,7 @@ Raw Data
         "__impliedId": "Zlib",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
+            "zlib",
             "The zlib/libpng License (Zlib)"
         ],
         "__impliedComments": [
@@ -284,6 +285,9 @@ Raw Data
                         "zlib/libpng License"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "zlib"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

@@ -73,6 +73,9 @@ Raw Data
         ],
         "__impliedId": "FSFAP",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "FSFAP"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -126,6 +129,9 @@ Raw Data
                         "FSF All Permissive license"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "FSFAP"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

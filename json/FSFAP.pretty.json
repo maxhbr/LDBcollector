@@ -7,6 +7,9 @@
     ],
     "__impliedId": "FSFAP",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "FSFAP"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -60,6 +63,9 @@
                     "FSF All Permissive license"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "FSFAP"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

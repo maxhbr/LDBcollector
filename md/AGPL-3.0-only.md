@@ -869,6 +869,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Affero General Public License",
+            "AGPLv3",
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
         ],
         "__impliedComments": [
@@ -976,6 +977,9 @@ Raw Data
                         "Affero General Public License 3.0"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "AGPLv3"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

@@ -637,6 +637,7 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "RealNetworks Public Source License",
+            "RPSL",
             "RealNetworks Public Source License (RPSL)"
         ],
         "__impliedComments": [
@@ -741,6 +742,9 @@ Raw Data
                         "RealNetworks Public Source License V1.0"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "RPSL"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

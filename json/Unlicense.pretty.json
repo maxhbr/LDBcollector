@@ -8,6 +8,9 @@
     ],
     "__impliedId": "Unlicense",
     "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Unlicense"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -99,6 +102,9 @@
                     "Unlicense"
                 ],
                 "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Unlicense"
+                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

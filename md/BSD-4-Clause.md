@@ -162,6 +162,9 @@ Raw Data
         ],
         "__impliedId": "BSD-4-Clause",
         "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "BSD with advertising"
+        ],
         "__impliedRatingState": [
             [
                 "Override",
@@ -229,6 +232,9 @@ Raw Data
                         "BSD License (original)"
                     ],
                     "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "BSD with advertising"
+                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",
