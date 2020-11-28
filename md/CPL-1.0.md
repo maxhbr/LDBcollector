@@ -15,6 +15,20 @@ Common Public License 1.0 (CPL-1.0)
 
 -   `License :: OSI Approved :: Common Public License`
 
+-   `Common Public License Version 1.0`
+
+Description
+-----------
+
+> Contributor" means the person or entity that distributes the Software.
+> A Contributor is included among all persons who receive the Software
+> under such a license. Sublicense means that the person to whom the
+> license is granted re-grants the license granted to a third party.
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
+
 Comments on (easy) usability
 ----------------------------
 
@@ -56,6 +70,8 @@ URLs
 -   **OSI Page:** https://opensource.org/licenses/CPL-1.0
 
 -   **SPDX:** http://spdx.org/licenses/CPL-1.0.json
+
+-   **open-license:** http://open-license.hitachi.com/licenses/36
 
 -   https://spdx.org/licenses/CPL-1.0.html
 
@@ -193,6 +209,10 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
@@ -203,7 +223,8 @@ Raw Data
             "CPL 1.0",
             "Common Public License, Version 1.0",
             "CPL",
-            "License :: OSI Approved :: Common Public License"
+            "License :: OSI Approved :: Common Public License",
+            "Common Public License Version 1.0"
         ],
         "__impliedId": "CPL-1.0",
         "__impliedAmbiguousNames": [
@@ -367,6 +388,997 @@ Raw Data
                 },
                 "Comment": null,
                 "LicenseId": "CPL-1.0"
+            },
+            "Hitachi open-license": {
+                "_license_uri": "http://open-license.hitachi.com/licenses/36",
+                "_license_permissions": [
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Use the fetched code as it is.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/1",
+                                "_action_id": "actions/1",
+                                "_action_name": "Use the obtained source code without modification"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/4",
+                                "_action_id": "actions/4",
+                                "_action_name": "Using Modified Source Code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Use the fetched code as it is.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/5",
+                                "_action_id": "actions/5",
+                                "_action_name": "Use the retrieved object code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/7",
+                                "_action_id": "actions/7",
+                                "_action_name": "Use the object code generated from the modified source code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/17",
+                                "_action_id": "actions/17",
+                                "_action_name": "Display the obtained source code publicly"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/18",
+                                "_action_id": "actions/18",
+                                "_action_name": "Executing the fetched source code publicly"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/19",
+                                "_action_id": "actions/19",
+                                "_action_name": "Sublicense the acquired source code."
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/20",
+                                "_action_id": "actions/20",
+                                "_action_name": "Display the retrieved object code publicly"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/21",
+                                "_action_id": "actions/21",
+                                "_action_name": "Publicly execute the fetched object code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/22",
+                                "_action_id": "actions/22",
+                                "_action_name": "Sublicense the acquired object code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/23",
+                                "_action_id": "actions/23",
+                                "_action_name": "Display modified source code publicly"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/24",
+                                "_action_id": "actions/24",
+                                "_action_name": "Publicly execute the modified source code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/25",
+                                "_action_id": "actions/25",
+                                "_action_name": "Sublicensing Modified Source Code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/26",
+                                "_action_id": "actions/26",
+                                "_action_name": "Publicly display the object code generated from the modified source code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/27",
+                                "_action_id": "actions/27",
+                                "_action_name": "Publicly execute the object code generated from the modified source code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/28",
+                                "_action_id": "actions/28",
+                                "_action_name": "Sublicense the object code generated from the modified source code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                        "_condition_id": "conditions/8",
+                                        "_condition_name": "Give you a copy of the relevant license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Redistribute the code as it was obtained",
+                                "_action_uri": "http://open-license.hitachi.com/actions/9",
+                                "_action_id": "actions/9",
+                                "_action_name": "Distribute the obtained source code without modification"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                        "_condition_id": "conditions/12",
+                                        "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Redistribute the code as it was obtained",
+                                "_action_uri": "http://open-license.hitachi.com/actions/10",
+                                "_action_id": "actions/10",
+                                "_action_name": "Distribute the obtained object code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/85",
+                                        "_condition_id": "conditions/85",
+                                        "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/86",
+                                        "_condition_id": "conditions/86",
+                                        "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/71",
+                                        "_condition_id": "conditions/71",
+                                        "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                        "_condition_id": "conditions/12",
+                                        "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/76",
+                                "_action_id": "actions/76",
+                                "_action_name": "Distribute the acquired object code under your own license"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                        "_condition_id": "conditions/30",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/3",
+                                "_action_id": "actions/3",
+                                "_action_name": "Modify the obtained source code."
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                        "_condition_id": "conditions/8",
+                                        "_condition_name": "Give you a copy of the relevant license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                        "_condition_id": "conditions/30",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/12",
+                                "_action_id": "actions/12",
+                                "_action_name": "Distribution of Modified Source Code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                        "_condition_id": "conditions/12",
+                                        "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                        "_condition_id": "conditions/30",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/13",
+                                "_action_id": "actions/13",
+                                "_action_name": "Distribute the object code generated from the modified source code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "Contributor is the person or entity that distributes the Software.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                        "_condition_id": "conditions/18",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                        "_condition_id": "conditions/30",
+                                        "_condition_name": "Indicate that you have made the change yourself.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                        "_condition_id": "conditions/68",
+                                        "_condition_name": "Include the copyright notice contained in the software",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                        "_condition_id": "conditions/12",
+                                        "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/71",
+                                        "_condition_id": "conditions/71",
+                                        "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/86",
+                                        "_condition_id": "conditions/86",
+                                        "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/85",
+                                        "_condition_id": "conditions/85",
+                                        "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                        "_condition_id": "conditions/11",
+                                        "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                        "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "REQUISITE"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                        "_condition_id": "conditions/83",
+                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "RESTRICTION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                        "_condition_id": "conditions/84",
+                                        "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                        "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/77",
+                                "_action_id": "actions/77",
+                                "_action_name": "Distribute object code generated from modified source code under your own license"
+                            }
+                        ]
+                    }
+                ],
+                "_license_id": "licenses/36",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/36",
+                "_license_name": "Common Public License Version 1.0",
+                "_license_summary": "",
+                "_license_content": "Common Public License - v 1.0 \r\n\r\n\r\nTHE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (\"AGREEMENT\"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT. \r\n\r\n\r\n1. DEFINITIONS \r\n\r\n\"Contribution\" means: \r\n\r\na) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and\r\nb) in the case of each subsequent Contributor:\r\ni) changes to the Program, and\r\nii) additions to the Program;\r\nwhere such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution 'originates' from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor's behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program. \r\n\r\n\"Contributor\" means any person or entity that distributes the Program. \r\n\r\n\r\n\"Licensed Patents \" mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program. \r\n\r\n\r\n\"Program\" means the Contributions distributed in accordance with this Agreement. \r\n\r\n\r\n\"Recipient\" means anyone who receives the Program under this Agreement, including all Contributors. \r\n\r\n\r\n2. GRANT OF RIGHTS \r\n\r\na) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.\r\nb) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder. \r\nc) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient's responsibility to acquire that license before distributing the Program.\r\nd) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement. \r\n3. REQUIREMENTS \r\n\r\nA Contributor may choose to distribute the Program in object code form under its own license agreement, provided that: \r\n\r\na) it complies with the terms and conditions of this Agreement; and\r\nb) its license agreement:\r\ni) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose; \r\nii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits; \r\niii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and\r\niv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange. \r\nWhen the Program is made available in source code form: \r\n\r\na) it must be made available under this Agreement; and \r\nb) a copy of this Agreement must be included with each copy of the Program. \r\n\r\nContributors may not remove or alter any copyright notices contained within the Program. \r\n\r\n\r\nEach Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution. \r\n\r\n\r\n4. COMMERCIAL DISTRIBUTION \r\n\r\nCommercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (\"Commercial Contributor\") hereby agrees to defend and indemnify every other Contributor (\"Indemnified Contributor\") against any losses, damages and costs (collectively \"Losses\") arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense. \r\n\r\n\r\nFor example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor's responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages. \r\n\r\n\r\n5. NO WARRANTY \r\n\r\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. \r\n\r\n\r\n6. DISCLAIMER OF LIABILITY \r\n\r\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. \r\n\r\n\r\n7. GENERAL \r\n\r\nIf any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable. \r\n\r\n\r\nIf Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed. \r\n\r\n\r\nAll Recipient's rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient's rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient's obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. \r\n\r\n\r\nEveryone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version. Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved. \r\n\r\n\r\nThis Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.",
+                "_license_notices": [
+                    {
+                        "_notice_description": "There is no guarantee.",
+                        "_notice_content": "except as expressly stated in such license, the software is provided \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, any warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. The warranties or conditions include, but are not limited to, warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. Every person who receives such software under such license is responsible for determining for himself whether use or redistribution of such software is appropriate and assumes all risks associated with exercising his rights under such license (including, but not limited to, program errors, compliance with applicable law, and the risk of loss of data, programs and risks, including but not limited to risks related to damage to equipment and interruption of operations).",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/54",
+                        "_notice_id": "notices/54"
+                    },
+                    {
+                        "_notice_description": "Contributor is the person or entity that distributes the Software.",
+                        "_notice_content": "except as expressly set forth in such license, neither any person nor any contributor who receives such software under such license, for any reason whatsoever, regardless of how the damage may have occurred, and regardless of whether the basis of liability was in contract, strict liability or tort (including negligence), even if in no event shall you be liable for any direct, indirect, special, incidental, exemplary, or consequential damages arising out of the use or distribution of the software or the exercise of the rights granted by the license, even if you have been advised of the possibility of such damages shall be.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/27",
+                        "_notice_id": "notices/27"
+                    },
+                    {
+                        "_notice_description": "",
+                        "_notice_content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/55",
+                        "_notice_id": "notices/55"
+                    },
+                    {
+                        "_notice_description": "Contributor is the person or entity that distributes the Software.",
+                        "_notice_content": "The license of a contributor's contribution to a contributor, including cross-claims and counterclaims, to use the contributor's contribution alone or in combination with such software (but not in combination with other software or hardware) constitutes patent infringement when the patent action is formally filed, and the license of the contributor to the litigant The patent license granted pursuant to",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/56",
+                        "_notice_id": "notices/56"
+                    },
+                    {
+                        "_notice_description": "Contributor is the person or entity that distributes the Software. Contributor is included among all persons who receive such software under such license.",
+                        "_notice_content": "If a person who receives the software under such a license brings a patent action against a contributor for a patent that applies to the software (which means software in general), including cross-claims and counterclaims, the contributor grants the person who brought the action to the contributor in accordance with such license A patent license that has been granted (including a patent license that does not apply to the Software) terminates upon formal filing of a patent lawsuit.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/50",
+                        "_notice_id": "notices/50"
+                    },
+                    {
+                        "_notice_description": "",
+                        "_notice_content": "If any person receiving such software under such license fails to comply with any of the material terms of such license and fails to correct the violation within a reasonable time after becoming aware of it, all rights under such license of the person who has failed to correct the violation shall be terminated. Upon termination, you agree to cease use and distribution of the program as soon as possible, provided that you have failed to correct the violation. However, the obligations under the license of the person who has not corrected the breach and the license granted by the person who has not corrected the breach shall remain in force.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/20",
+                        "_notice_id": "notices/20"
+                    },
+                    {
+                        "_notice_description": "",
+                        "_notice_content": "The license is subject to the laws of the State of New York and the intellectual property laws of the United States. After one (1) year from the accrual of the cause of action, no party to such license may bring legal action under such license. Each party waives the right to a jury trial in any action concerning such license.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/57",
+                        "_notice_id": "notices/57"
+                    }
+                ],
+                "_license_description": "Contributor\" means the person or entity that distributes the Software. A Contributor is included among all persons who receive the Software under such a license. Sublicense means that the person to whom the license is granted re-grants the license granted to a third party.",
+                "_license_baseUri": "http://open-license.hitachi.com/",
+                "_license_schemaVersion": "0.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "Common Public License Version 1.0"
+                    ],
+                    "__impliedText": "Common Public License - v 1.0 \r\n\r\n\r\nTHE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS COMMON PUBLIC LICENSE (\"AGREEMENT\"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT. \r\n\r\n\r\n1. DEFINITIONS \r\n\r\n\"Contribution\" means: \r\n\r\na) in the case of the initial Contributor, the initial code and documentation distributed under this Agreement, and\r\nb) in the case of each subsequent Contributor:\r\ni) changes to the Program, and\r\nii) additions to the Program;\r\nwhere such changes and/or additions to the Program originate from and are distributed by that particular Contributor. A Contribution 'originates' from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor's behalf. Contributions do not include additions to the Program which: (i) are separate modules of software distributed in conjunction with the Program under their own license agreement, and (ii) are not derivative works of the Program. \r\n\r\n\"Contributor\" means any person or entity that distributes the Program. \r\n\r\n\r\n\"Licensed Patents \" mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program. \r\n\r\n\r\n\"Program\" means the Contributions distributed in accordance with this Agreement. \r\n\r\n\r\n\"Recipient\" means anyone who receives the Program under this Agreement, including all Contributors. \r\n\r\n\r\n2. GRANT OF RIGHTS \r\n\r\na) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, distribute and sublicense the Contribution of such Contributor, if any, and such derivative works, in source code and object code form.\r\nb) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in source code and object code form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder. \r\nc) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to distribute the Program, it is Recipient's responsibility to acquire that license before distributing the Program.\r\nd) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement. \r\n3. REQUIREMENTS \r\n\r\nA Contributor may choose to distribute the Program in object code form under its own license agreement, provided that: \r\n\r\na) it complies with the terms and conditions of this Agreement; and\r\nb) its license agreement:\r\ni) effectively disclaims on behalf of all Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose; \r\nii) effectively excludes on behalf of all Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits; \r\niii) states that any provisions which differ from this Agreement are offered by that Contributor alone and not by any other party; and\r\niv) states that source code for the Program is available from such Contributor, and informs licensees how to obtain it in a reasonable manner on or through a medium customarily used for software exchange. \r\nWhen the Program is made available in source code form: \r\n\r\na) it must be made available under this Agreement; and \r\nb) a copy of this Agreement must be included with each copy of the Program. \r\n\r\nContributors may not remove or alter any copyright notices contained within the Program. \r\n\r\n\r\nEach Contributor must identify itself as the originator of its Contribution, if any, in a manner that reasonably allows subsequent Recipients to identify the originator of the Contribution. \r\n\r\n\r\n4. COMMERCIAL DISTRIBUTION \r\n\r\nCommercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor (\"Commercial Contributor\") hereby agrees to defend and indemnify every other Contributor (\"Indemnified Contributor\") against any losses, damages and costs (collectively \"Losses\") arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense. \r\n\r\n\r\nFor example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor's responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages. \r\n\r\n\r\n5. NO WARRANTY \r\n\r\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, THE PROGRAM IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations. \r\n\r\n\r\n6. DISCLAIMER OF LIABILITY \r\n\r\nEXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. \r\n\r\n\r\n7. GENERAL \r\n\r\nIf any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable. \r\n\r\n\r\nIf Recipient institutes patent litigation against a Contributor with respect to a patent applicable to software (including a cross-claim or counterclaim in a lawsuit), then any patent licenses granted by that Contributor to such Recipient under this Agreement shall terminate as of the date such litigation is filed. In addition, if Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed. \r\n\r\n\r\nAll Recipient's rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient's rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient's obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive. \r\n\r\n\r\nEveryone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. IBM is the initial Agreement Steward. IBM may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version. Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved. \r\n\r\n\r\nThis Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/36"
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/CPL-1.0.html",
@@ -584,6 +1596,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/CPL-1.0"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/36"
             ]
         ]
     }
