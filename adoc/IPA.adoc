@@ -39,6 +39,14 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *open-license:* http://open-license.hitachi.com/licenses/248
 * http://www.opensource.org/licenses/IPA
 
+=== openLicenseDesc
+
+....
+[]
+....
+
+(source: Hitachi open-license)
+
 === Text
 
 ....
@@ -356,6 +364,7 @@ Knowledge International]
             }
         },
         "Hitachi open-license": {
+            "permissionsStr": "[]",
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/248",
             "name": "IPA Font License Agreement v1.0",

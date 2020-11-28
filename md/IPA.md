@@ -43,6 +43,13 @@ URLs
 
 -   http://www.opensource.org/licenses/IPA
 
+openLicenseDesc
+---------------
+
+    []
+
+(source: Hitachi open-license)
+
 Text
 ----
 
@@ -367,6 +374,7 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
+                "permissionsStr": "[]",
                 "notices": [],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/248",
                 "name": "IPA Font License Agreement v1.0",
