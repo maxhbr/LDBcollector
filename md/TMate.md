@@ -7,6 +7,15 @@ TMate Open Source License (TMate)
 
 -   `scancode://tmate`
 
+Description
+-----------
+
+> https://svnkit.com/license.html
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
+
 Comments on (easy) usability
 ----------------------------
 
@@ -19,70 +28,6 @@ General Comments
 ----------------
 
 -   “https://svnkit.com/license.html” (source: [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0))
-
--   “\[ { "actions": \[ { "name": "Use the obtained source code without
-    modification", "description": "Use the fetched code as it is." }, {
-    "name": "Modify the obtained source code." }, { "name": "Using
-    Modified Source Code" }, { "name": "Use the retrieved binaries",
-    "description": "Use the fetched binary as it is." }, { "name": "Use
-    binaries generated from modified source code" } \], "conditions":
-    null }, { "actions": \[ { "name": "Distribute the obtained source
-    code without modification", "description": "Redistribute the code as
-    it was obtained" }, { "name": "Distribution of Modified Source Code"
-    } \], "conditions": { "AND": \[ { "name": "Include a copyright
-    notice, list of terms and conditions, and disclaimer included in the
-    license", "type": "OBLIGATION" }, { "OR": \[ { "name": "Attach the
-    source code of the software that uses the software in question.",
-    "type": "OBLIGATION" }, { "name": "Tell them that the source code
-    for the software that uses the software is available in exchange for
-    a fee of about the cost of distribution.", "type": "OBLIGATION" }, {
-    "name": "Obtain express permission from the copyright holder not to
-    redistribute the source code of software that uses the software.",
-    "type": "OBLIGATION" } \] }, { "OR": \[ { "name": "Attach the source
-    code of the software that accompanies the software, which is the
-    software that uses the software that uses the software.", "type":
-    "OBLIGATION" }, { "name": "Communicate that the source code for the
-    software that accompanies the software, which is the software that
-    uses the software, is available", "type": "OBLIGATION" }, { "name":
-    "Obtain the express permission of the copyright holder that he may
-    not redistribute the source code of any software that accompanies
-    the software that uses the software, which is the software that uses
-    the software.", "type": "OBLIGATION" } \] } \] }, "description":
-    "The source code is redistributed under reasonable conditions. â
-    Permission may be obtained from the copyright holder at
-    support@svnkit.comã«é£çµ¡ãã." }, { "actions": \[ { "name":
-    "Distribute the fetched binaries", "description": "Redistribute the
-    fetched binaries as they are" }, { "name": "Distribute the generated
-    binaries from modified source code" } \], "conditions": { "AND": \[
-    { "name": "Include a copyright notice, list of terms and conditions,
-    and disclaimer in the materials accompanying the distribution, which
-    are included in the license", "type": "OBLIGATION" }, { "OR": \[ {
-    "name": "Attach the source code corresponding to the software in
-    question.", "type": "OBLIGATION" }, { "name": "Tell them that the
-    corresponding source code for the software is available in exchange
-    for a fee for the cost of distribution.", "type": "OBLIGATION" } \]
-    }, { "OR": \[ { "name": "Attach the source code of the software that
-    uses the software in question.", "type": "OBLIGATION" }, { "name":
-    "Tell them that the source code for the software that uses the
-    software is available in exchange for a fee of about the cost of
-    distribution.", "type": "OBLIGATION" }, { "name": "Obtain express
-    permission from the copyright holder not to redistribute the source
-    code of software that uses the software.", "type": "OBLIGATION" } \]
-    }, { "OR": \[ { "name": "Attach the source code of the software that
-    accompanies the software, which is the software that uses the
-    software that uses the software.", "type": "OBLIGATION" }, { "name":
-    "Communicate that the source code for the software that accompanies
-    the software, which is the software that uses the software, is
-    available", "type": "OBLIGATION" }, { "name": "Obtain the express
-    permission of the copyright holder that he may not redistribute the
-    source code of any software that accompanies the software that uses
-    the software, which is the software that uses the software.",
-    "type": "OBLIGATION" } \] } \] }, "description": "The source code is
-    redistributed under reasonable conditions. â Permission may be
-    obtained from the copyright holder at
-    support@svnkit.comã«é£çµ¡ãã." } \]” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
@@ -186,8 +131,7 @@ Raw Data
             [
                 "Hitachi open-license",
                 [
-                    "https://svnkit.com/license.html",
-                    "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that uses the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"description\": \"The source code is redistributed under reasonable conditions. Ã¢ÂÂ Permission may be obtained from the copyright holder at support@svnkit.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code corresponding to the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that uses the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"description\": \"The source code is redistributed under reasonable conditions. Ã¢ÂÂ Permission may be obtained from the copyright holder at support@svnkit.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ.\"\n    }\n]"
+                    "https://svnkit.com/license.html"
                 ]
             ]
         ],
@@ -459,8 +403,7 @@ Raw Data
                         [
                             "Hitachi open-license",
                             [
-                                "https://svnkit.com/license.html",
-                                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that uses the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"description\": \"The source code is redistributed under reasonable conditions. Ã¢ÂÂ Permission may be obtained from the copyright holder at support@svnkit.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code corresponding to the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that uses the software in question.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                },\n                {\n                    \"OR\": [\n                        {\n                            \"name\": \"Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\",\n                            \"type\": \"OBLIGATION\"\n                        },\n                        {\n                            \"name\": \"Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\",\n                            \"type\": \"OBLIGATION\"\n                        }\n                    ]\n                }\n            ]\n        },\n        \"description\": \"The source code is redistributed under reasonable conditions. Ã¢ÂÂ Permission may be obtained from the copyright holder at support@svnkit.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ.\"\n    }\n]"
+                                "https://svnkit.com/license.html"
                             ]
                         ]
                     ],

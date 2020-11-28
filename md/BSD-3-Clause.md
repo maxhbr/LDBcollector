@@ -79,31 +79,6 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
--   “\[ { "actions": \[ { "name": "Use the obtained source code without
-    modification", "description": "Use the fetched code as it is." }, {
-    "name": "Modify the obtained source code." }, { "name": "Using
-    Modified Source Code" }, { "name": "Use the retrieved binaries",
-    "description": "Use the fetched binary as it is." }, { "name": "Use
-    binaries generated from modified source code" } \], "conditions":
-    null }, { "actions": \[ { "name": "Distribute the obtained source
-    code without modification", "description": "Redistribute the code as
-    it was obtained" }, { "name": "Distribution of Modified Source Code"
-    } \], "conditions": { "name": "Include a copyright notice, list of
-    terms and conditions, and disclaimer included in the license",
-    "type": "OBLIGATION" } }, { "actions": \[ { "name": "Distribute the
-    fetched binaries", "description": "Redistribute the fetched binaries
-    as they are" }, { "name": "Distribute the generated binaries from
-    modified source code" } \], "conditions": { "name": "Include a
-    copyright notice, list of terms and conditions, and disclaimer in
-    the materials accompanying the distribution, which are included in
-    the license", "type": "OBLIGATION" } }, { "actions": \[ { "name":
-    "Use the name of the owner or contributor to promote or sell the
-    derived product" } \], "conditions": { "name": "Get special
-    permission in writing.", "type": "REQUISITE" } } \]” (source:
-    [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0))
-
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
     (CC0-1.0))
@@ -246,8 +221,7 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "BSD-3-Clause",
-                    "<OWNER> would be the equivalent of a copyright holder.",
-                    "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the owner or contributor to promote or sell the derived product\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        }\n    }\n]"
+                    "<OWNER> would be the equivalent of a copyright holder."
                 ]
             ],
             [
@@ -570,8 +544,7 @@ Raw Data
                             "Hitachi open-license",
                             [
                                 "BSD-3-Clause",
-                                "<OWNER> would be the equivalent of a copyright holder.",
-                                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the owner or contributor to promote or sell the derived product\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        }\n    }\n]"
+                                "<OWNER> would be the equivalent of a copyright holder."
                             ]
                         ]
                     ],

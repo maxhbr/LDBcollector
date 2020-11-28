@@ -10,6 +10,17 @@
 
 - =scancode://unicode-tou=
 
+** Description
+
+#+BEGIN_QUOTE
+  EXHIBIT 1 of UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
+  is registered separately.
+  https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/ 314
+#+END_QUOTE
+
+(source: [[https://github.com/Hitachi/open-license][Hitachi
+open-license]] (CDLA-Permissive-1.0))
+
 ** Comments on (easy) usability
 
 ** General Comments

@@ -6,6 +6,15 @@
 | Shortname   | CC-BY-3.0-US                                     |
 | Rating      | Unknown, probably Attention or Stop or No-Go     |
 
+** Description
+
+#+BEGIN_QUOTE
+  http://creativecommons.org/licenses/by/3.0/us/このサイトからLegalCodeを参照できる.
+#+END_QUOTE
+
+(source: [[https://github.com/Hitachi/open-license][Hitachi
+open-license]] (CDLA-Permissive-1.0))
+
 ** Comments on (easy) usability
 
 ** General Comments

@@ -60,53 +60,6 @@
 
 ** General Comments
 
-- "[ { "actions": [ { "name": "Use the obtained source code without
-  modification", "description": "Use the fetched code as it is." }, {
-  "name": "Using Modified Source Code" }, { "name": "Use the retrieved
-  object code", "description": "Use the fetched code as it is." }, {
-  "name": "Use the retrieved binaries", "description": "Use the fetched
-  binary as it is." }, { "name": "Use the object code generated from the
-  modified source code" }, { "name": "Use binaries generated from
-  modified source code" }, { "name": "Use the retrieved executable",
-  "description": "Use the obtained executable as is." }, { "name": "Use
-  the executable generated from the modified source code" } ],
-  "conditions": null }, { "actions": [ { "name": "Distribute the
-  obtained source code without modification", "description":
-  "Redistribute the code as it was obtained" } ], "conditions": { "AND":
-  [ { "name": "Correctly indicate the origin of the software in
-  question", "type": "OBLIGATION" }, { "name": "Give you a copy of the
-  relevant license.", "type": "OBLIGATION" } ] }, "description": "If
-  used in a product, it would be nice to include an acknowledgement in
-  the product documentation, but it is not required." }, { "actions": [
-  { "name": "Distribute the obtained object code", "description":
-  "Redistribute the code as it was obtained" }, { "name": "Distribute
-  the fetched binaries", "description": "Redistribute the fetched
-  binaries as they are" }, { "name": "Distribute the obtained
-  executable", "description": "Redistribute the obtained executable
-  as-is" } ], "conditions": { "name": "Correctly indicate the origin of
-  the software in question", "type": "OBLIGATION" }, "description": "If
-  used in a product, it would be nice to include an acknowledgement in
-  the product documentation, but it is not required." }, { "actions": [
-  { "name": "Modify the obtained source code." }, { "name": "Distribute
-  the object code generated from the modified source code" }, { "name":
-  "Distribute the generated binaries from modified source code" }, {
-  "name": "Distribute the executable generated from the modified source
-  code" } ], "conditions": { "AND": [ { "name": "Correctly indicate the
-  origin of the software in question", "type": "OBLIGATION" }, { "name":
-  "Indicate that you have made the change yourself.", "type":
-  "OBLIGATION" } ] }, "description": "If used in a product, it would be
-  nice to include an acknowledgement in the product documentation, but
-  it is not required." }, { "actions": [ { "name": "Distribution of
-  Modified Source Code" } ], "conditions": { "AND": [ { "name":
-  "Correctly indicate the origin of the software in question", "type":
-  "OBLIGATION" }, { "name": "Indicate that you have made the change
-  yourself.", "type": "OBLIGATION" }, { "name": "Give you a copy of the
-  relevant license.", "type": "OBLIGATION" } ] }, "description": "If
-  used in a product, it would be nice to include an acknowledgement in
-  the product documentation, but it is not required." } ]" (source:
-  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
-  (CDLA-Permissive-1.0))
-
 - "Per SPDX.org, this is OSI certified" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml][Scancode]]
   (CC0-1.0))
@@ -246,9 +199,7 @@
       "__impliedComments": [
           [
               "Hitachi open-license",
-              [
-                  "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Correctly indicate the origin of the software in question\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Indicate that you have made the change yourself.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Indicate that you have made the change yourself.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    }\n]"
-              ]
+              []
           ],
           [
               "Scancode",
@@ -644,9 +595,7 @@
                   "__impliedComments": [
                       [
                           "Hitachi open-license",
-                          [
-                              "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Correctly indicate the origin of the software in question\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Indicate that you have made the change yourself.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Correctly indicate the origin of the software in question\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Indicate that you have made the change yourself.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\"\n    }\n]"
-                          ]
+                          []
                       ]
                   ],
                   "__impliedText": "The zlib/libpng License\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\r\n\r\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\r\n\r\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \r\n        the original software. If you use this software in a product, an acknowledgment in the product \r\n        documentation  would be appreciated but is not required.\r\n\r\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \r\n         the original software.\r\n\r\n      3. This notice may not be removed or altered from any source distribution.",

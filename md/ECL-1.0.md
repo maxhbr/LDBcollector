@@ -13,6 +13,15 @@ Educational Community License v1.0 (ECL-1.0)
 
 -   `Educational Community License, Version 1.0`
 
+Description
+-----------
+
+> https://opensource.org/licenses/ecl1.php
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
+
 Comments on (easy) usability
 ----------------------------
 
@@ -33,80 +42,6 @@ General Comments
 ----------------
 
 -   “https://opensource.org/licenses/ecl1.php” (source: [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0))
-
--   “\[ { "actions": \[ { "name": "Use the obtained source code without
-    modification", "description": "Use the fetched code as it is." }, {
-    "name": "Using Modified Source Code" }, { "name": "Use the retrieved
-    object code", "description": "Use the fetched code as it is." }, {
-    "name": "Use the object code generated from the modified source
-    code" }, { "name": "Use the retrieved executable", "description":
-    "Use the obtained executable as is." }, { "name": "Use the
-    executable generated from the modified source code" } \],
-    "conditions": null, "description": "Relevant documentation for the
-    software should be treated in the same way as for the software." },
-    { "actions": \[ { "name": "Distribute the obtained source code
-    without modification", "description": "Redistribute the code as it
-    was obtained" }, { "name": "Distribute the obtained object code",
-    "description": "Redistribute the code as it was obtained" }, {
-    "name": "Sublicense the acquired source code.", "description":
-    "Sublicensing means that the person to whom the license was granted
-    re-grants the license granted to a third party." }, { "name":
-    "Sublicense the acquired object code", "description": "Sublicensing
-    means that the person to whom the license was granted re-grants the
-    license granted to a third party." }, { "name": "Distribute the
-    obtained executable", "description": "Redistribute the obtained
-    executable as-is" }, { "name": "Sublicense the acquired executable",
-    "description": "Sublicensing means that the person to whom the
-    license was granted re-grants the license granted to a third party."
-    }, { "name": "Publish the acquired source code.", "description":
-    "Publish the source code as it was obtained." }, { "name": "Publish
-    the retrieved object code", "description": "Publish the fetched
-    object code as it is." }, { "name": "Present the obtained
-    executables.", "description": "Publish the obtained executable as
-    is." } \], "conditions": { "AND": \[ { "name": "Give you a copy of
-    the relevant license.", "type": "OBLIGATION" }, { "name": "Include
-    disclaimers, notices and clauses regarding existing intellectual
-    property", "type": "OBLIGATION" } \] }, "description": "You must
-    treat the software documentation in the same way as the software. A
-    copy of this license shall be placed in a place visible to the
-    user." }, { "actions": \[ { "name": "Modify the obtained source
-    code." } \], "conditions": { "AND": \[ { "name": "Include
-    disclaimers, notices and clauses regarding existing intellectual
-    property", "type": "OBLIGATION" }, { "name": "Include a file to
-    report the changes you make and the date of all changes", "type":
-    "OBLIGATION" } \] }, "description": "Relevant documentation for the
-    software should be treated in the same way as for the software." },
-    { "actions": \[ { "name": "Distribution of Modified Source Code" },
-    { "name": "Distribute the object code generated from the modified
-    source code" }, { "name": "Sublicensing Modified Source Code",
-    "description": "Sublicensing means that the person to whom the
-    license was granted re-grants the license granted to a third party."
-    }, { "name": "Sublicense the object code generated from the modified
-    source code", "description": "Sublicensing means that the person to
-    whom the license was granted re-grants the license granted to a
-    third party." }, { "name": "Distribute the executable generated from
-    the modified source code" }, { "name": "Publish the modified source
-    code." }, { "name": "Present the object code generated from the
-    modified source code." }, { "name": "Present the executable
-    generated from the modified source code" }, { "name": "Sublicense
-    the generated executable from modified source code", "description":
-    "Sublicensing means that the person to whom the license was granted
-    re-grants the license granted to a third party." } \], "conditions":
-    { "AND": \[ { "name": "Give you a copy of the relevant license.",
-    "type": "OBLIGATION" }, { "name": "Include disclaimers, notices and
-    clauses regarding existing intellectual property", "type":
-    "OBLIGATION" }, { "name": "Include a file to report the changes you
-    make and the date of all changes", "type": "OBLIGATION" } \] },
-    "description": "You must treat the software documentation in the
-    same way as the software. A copy of this license shall be placed in
-    a place visible to the user." }, { "actions": \[ { "name": "Use the
-    copyright holder's name in software promotions and advertisements" }
-    \], "conditions": { "name": "Get special permission in writing.",
-    "type": "REQUISITE" }, "description": "The copyright in the software
-    and related documentation is retained by the copyright holder at all
-    times." } \]” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
@@ -240,8 +175,7 @@ Raw Data
             [
                 "Hitachi open-license",
                 [
-                    "https://opensource.org/licenses/ecl1.php",
-                    "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the acquired object code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Sublicense the acquired executable\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publish the acquired source code.\",\n                \"description\": \"Publish the source code as it was obtained.\"\n            },\n            {\n                \"name\": \"Publish the retrieved object code\",\n                \"description\": \"Publish the fetched object code as it is.\"\n            },\n            {\n                \"name\": \"Present the obtained executables.\",\n                \"description\": \"Publish the obtained executable as is.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Modify the obtained source code.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include a file to report the changes you make and the date of all changes\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the object code generated from the modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Present the object code generated from the modified source code.\"\n            },\n            {\n                \"name\": \"Present the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the generated executable from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include a file to report the changes you make and the date of all changes\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the copyright holder's name in software promotions and advertisements\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"The copyright in the software and related documentation is retained by the copyright holder at all times.\"\n    }\n]"
+                    "https://opensource.org/licenses/ecl1.php"
                 ]
             ],
             [
@@ -577,8 +511,7 @@ Raw Data
                         [
                             "Hitachi open-license",
                             [
-                                "https://opensource.org/licenses/ecl1.php",
-                                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the acquired object code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Sublicense the acquired executable\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publish the acquired source code.\",\n                \"description\": \"Publish the source code as it was obtained.\"\n            },\n            {\n                \"name\": \"Publish the retrieved object code\",\n                \"description\": \"Publish the fetched object code as it is.\"\n            },\n            {\n                \"name\": \"Present the obtained executables.\",\n                \"description\": \"Publish the obtained executable as is.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Modify the obtained source code.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include a file to report the changes you make and the date of all changes\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the object code generated from the modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Publish the modified source code.\"\n            },\n            {\n                \"name\": \"Present the object code generated from the modified source code.\"\n            },\n            {\n                \"name\": \"Present the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the generated executable from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include disclaimers, notices and clauses regarding existing intellectual property\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Include a file to report the changes you make and the date of all changes\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the copyright holder's name in software promotions and advertisements\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"The copyright in the software and related documentation is retained by the copyright holder at all times.\"\n    }\n]"
+                                "https://opensource.org/licenses/ecl1.php"
                             ]
                         ]
                     ],

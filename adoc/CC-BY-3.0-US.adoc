@@ -8,6 +8,15 @@
 |Rating |Unknown, probably Attention or Stop or No-Go
 |===
 
+=== Description
+
+____
+http://creativecommons.org/licenses/by/3.0/us/このサイトからLegalCodeを参照できる.
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
+
 === Comments on (easy) usability
 
 === General Comments

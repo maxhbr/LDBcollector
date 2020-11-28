@@ -7,6 +7,17 @@ Unicode Terms of Use (Unicode-TOU)
 
 -   `scancode://unicode-tou`
 
+Description
+-----------
+
+> EXHIBIT 1 of UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
+> is registered separately.
+> https://factbook.soft.hitachi.co.jp/production/db/legl\_licenses/ 314
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
+
 Comments on (easy) usability
 ----------------------------
 

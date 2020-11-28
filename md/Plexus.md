@@ -42,45 +42,6 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
--   “\[ { "actions": \[ { "name": "Use the obtained source code without
-    modification", "description": "Use the fetched code as it is." }, {
-    "name": "Modify the obtained source code." }, { "name": "Using
-    Modified Source Code" }, { "name": "Use the retrieved binaries",
-    "description": "Use the fetched binary as it is." }, { "name": "Use
-    binaries generated from modified source code" } \], "conditions":
-    null, "description": "Relevant documentation for the software should
-    be treated in the same way as for the software." }, { "actions": \[
-    { "name": "Distribute the obtained source code without
-    modification", "description": "Redistribute the code as it was
-    obtained" }, { "name": "Distribution of Modified Source Code" } \],
-    "conditions": { "AND": \[ { "name": "Include the copyright notice
-    contained in the software", "type": "OBLIGATION" }, { "name": "Give
-    you a copy of the relevant license.", "type": "OBLIGATION" } \] },
-    "description": "Relevant documentation for the software should be
-    treated in the same way as for the software." }, { "actions": \[ {
-    "name": "Distribute the fetched binaries", "description":
-    "Redistribute the fetched binaries as they are" }, { "name":
-    "Distribute the generated binaries from modified source code" } \],
-    "conditions": { "name": "Include a copyright notice, list of terms
-    and conditions, and disclaimer in the materials accompanying the
-    distribution, which are included in the license", "type":
-    "OBLIGATION" }, "description": "Relevant documentation for the
-    software should be treated in the same way as for the software." },
-    { "actions": \[ { "name": "Use the name to endorse and promote
-    derived products" } \], "conditions": { "name": "Get special
-    permission in writing.", "type": "REQUISITE" }, "description":
-    "\\"If you want to use the name \\"DOM4J\\".
-    dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from
-    MetaStuff, Ltd." }, { "actions": \[ { "name": "Use the name of the
-    product or part of the name of the product from which it was
-    derived" } \], "conditions": { "name": "Get special permission in
-    writing.", "type": "REQUISITE" }, "description": "\\"If you use the
-    name \\"DOM4J\\", you have the permission of MetaStuff, Ltd.\\"
-    DOM4J\\" is a registered trademark of MetaStuff, Ltd." } \]”
-    (source: [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0))
-
 -   “Per Fedora, this is an Apache 1.1 derived license. Unfortunately,
     clause 4 is too broad, making it Free but GPL-incompatible. It does
     also replace the deprecated keys classworlds and apache-due-credit
@@ -201,8 +162,7 @@ Raw Data
             [
                 "Hitachi open-license",
                 [
-                    "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\".",
-                    "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include the copyright notice contained in the software\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name to endorse and promote derived products\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"\\\"If you want to use the name \\\"DOM4J\\\". dom4j-info@metastuff.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ¦ and get permission from MetaStuff, Ltd.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the product or part of the name of the product from which it was derived\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"\\\"If you use the name \\\"DOM4J\\\", you have the permission of MetaStuff, Ltd.\\\" DOM4J\\\" is a registered trademark of MetaStuff, Ltd.\"\n    }\n]"
+                    "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
                 ]
             ],
             [
@@ -467,8 +427,7 @@ Raw Data
                         [
                             "Hitachi open-license",
                             [
-                                "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\".",
-                                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include the copyright notice contained in the software\",\n                    \"type\": \"OBLIGATION\"\n                },\n                {\n                    \"name\": \"Give you a copy of the relevant license.\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name to endorse and promote derived products\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"\\\"If you want to use the name \\\"DOM4J\\\". dom4j-info@metastuff.comÃ£ÂÂ«Ã©ÂÂ£Ã§ÂµÂ¡Ã£ÂÂÃ£ÂÂ¦ and get permission from MetaStuff, Ltd.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the product or part of the name of the product from which it was derived\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        },\n        \"description\": \"\\\"If you use the name \\\"DOM4J\\\", you have the permission of MetaStuff, Ltd.\\\" DOM4J\\\" is a registered trademark of MetaStuff, Ltd.\"\n    }\n]"
+                                "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
                             ]
                         ]
                     ],

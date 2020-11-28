@@ -44,32 +44,6 @@
 
 ** General Comments
 
-- "[ { "actions": [ { "name": "Use the obtained source code without
-  modification", "description": "Use the fetched code as it is." }, {
-  "name": "Modify the obtained source code." }, { "name": "Using
-  Modified Source Code" }, { "name": "Use the retrieved object code",
-  "description": "Use the fetched code as it is." }, { "name": "Use the
-  object code generated from the modified source code" }, { "name": "Use
-  the retrieved executable", "description": "Use the obtained executable
-  as is." }, { "name": "Use the executable generated from the modified
-  source code" } ], "conditions": null, "description": "Relevant
-  documentation for the software should be treated in the same way as
-  for the software." }, { "actions": [ { "name": "Distribute the
-  obtained source code without modification", "description":
-  "Redistribute the code as it was obtained" }, { "name": "Distribute
-  the obtained object code", "description": "Redistribute the code as it
-  was obtained" }, { "name": "Distribution of Modified Source Code" }, {
-  "name": "Distribute the object code generated from the modified source
-  code" }, { "name": "Distribute the obtained executable",
-  "description": "Redistribute the obtained executable as-is" }, {
-  "name": "Distribute the executable generated from the modified source
-  code" } ], "conditions": { "name": "Include a copyright notice and
-  list of terms and conditions included in the license", "type":
-  "OBLIGATION" }, "description": "Relevant documentation for the
-  software should be treated in the same way as for the software." } ]"
-  (source: [[https://github.com/Hitachi/open-license][Hitachi
-  open-license]] (CDLA-Permissive-1.0))
-
 - "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml][Scancode]]
   (CC0-1.0))
@@ -194,9 +168,7 @@
       "__impliedComments": [
           [
               "Hitachi open-license",
-              [
-                  "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice and list of terms and conditions included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    }\n]"
-              ]
+              []
           ],
           [
               "Scancode",
@@ -473,9 +445,7 @@
                   "__impliedComments": [
                       [
                           "Hitachi open-license",
-                          [
-                              "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice and list of terms and conditions included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    }\n]"
-                          ]
+                          []
                       ]
                   ],
                   "__impliedText": "The PostgreSQL License\r\n\r\nThis is a template license. The body of the license starts at the end of this paragraph. To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file (\"COPYRIGHT\", \"LICENSE\" or \"COPYING\" are common names for this file) in your software distribution.\r\n\r\nCopyright (c) $YEAR, $ORGANIZATION\r\n\r\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.\r\n\r\nIN NO EVENT SHALL $ORGANISATION BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF $ORGANISATION HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\n$ORGANISATION SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND $ORGANISATION HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.",

@@ -48,33 +48,6 @@ conflicts'' (source: Override)
 * ``BSD-4-Clause'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
-* ``[ \{ "actions": [ \{ "name": "Use the obtained source code without
-modification", "description": "Use the fetched code as it is." }, \{
-"name": "Modify the obtained source code." }, \{ "name": "Using Modified
-Source Code" }, \{ "name": "Use the retrieved binaries", "description":
-"Use the fetched binary as it is." }, \{ "name": "Use binaries generated
-from modified source code" } ], "conditions": null }, \{ "actions": [ \{
-"name": "Distribute the obtained source code without modification",
-"description": "Redistribute the code as it was obtained" }, \{ "name":
-"Distribution of Modified Source Code" } ], "conditions": \{ "name":
-"Include a copyright notice, list of terms and conditions, and
-disclaimer included in the license", "type": "OBLIGATION" } }, \{
-"actions": [ \{ "name": "Distribute the fetched binaries",
-"description": "Redistribute the fetched binaries as they are" }, \{
-"name": "Distribute the generated binaries from modified source code" }
-], "conditions": \{ "name": "Include a copyright notice, list of terms
-and conditions, and disclaimer in the materials accompanying the
-distribution, which are included in the license", "type": "OBLIGATION" }
-}, \{ "actions": [ \{ "name": "Create an advertising medium that
-describes the features and use of the software" } ], "conditions": \{
-"name": "Acknowledgements", "type": "OBLIGATION" }, "description": "The
-text of the acknowledgement is here \"This product includes software
-developed by the <organization>.\"" }, \{ "actions": [ \{ "name": "Use
-the name of the owner or contributor to promote or sell the derived
-product" } ], "conditions": \{ "name": "Get special permission in
-writing.", "type": "REQUISITE" } } ]'' (source:
-https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
 * ``Per SPDX.org, this license was rescinded by the author on 22 July
 1999.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml[Scancode]
@@ -212,8 +185,7 @@ Policy]
         [
             "Hitachi open-license",
             [
-                "BSD-4-Clause",
-                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Create an advertising medium that describes the features and use of the software\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Acknowledgements\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"The text of the acknowledgement is here \\\"This product includes software developed by the <organization>.\\\"\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the owner or contributor to promote or sell the derived product\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        }\n    }\n]"
+                "BSD-4-Clause"
             ]
         ],
         [
@@ -505,8 +477,7 @@ Policy]
                     [
                         "Hitachi open-license",
                         [
-                            "BSD-4-Clause",
-                            "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\",\n            \"type\": \"OBLIGATION\"\n        }\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Create an advertising medium that describes the features and use of the software\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Acknowledgements\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"The text of the acknowledgement is here \\\"This product includes software developed by the <organization>.\\\"\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the name of the owner or contributor to promote or sell the derived product\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Get special permission in writing.\",\n            \"type\": \"REQUISITE\"\n        }\n    }\n]"
+                            "BSD-4-Clause"
                         ]
                     ]
                 ],

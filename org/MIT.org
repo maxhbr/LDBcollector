@@ -77,45 +77,6 @@
 
 ** General Comments
 
-- "[ { "actions": [ { "name": "Use the obtained source code without
-  modification", "description": "Use the fetched code as it is." }, {
-  "name": "Modify the obtained source code." }, { "name": "Using
-  Modified Source Code" }, { "name": "Use the retrieved binaries",
-  "description": "Use the fetched binary as it is." }, { "name": "Use
-  the object code generated from the modified source code" }, { "name":
-  "Use binaries generated from modified source code" } ], "conditions":
-  null }, { "actions": [ { "name": "Distribute the obtained source code
-  without modification", "description": "Redistribute the code as it was
-  obtained" }, { "name": "Distribute the fetched binaries",
-  "description": "Redistribute the fetched binaries as they are" }, {
-  "name": "Distribution of Modified Source Code" }, { "name":
-  "Distribute the generated binaries from modified source code" }, {
-  "name": "Sublicense the acquired source code.", "description":
-  "Sublicensing means that the person to whom the license was granted
-  re-grants the license granted to a third party." }, { "name":
-  "Sublicensing Modified Source Code", "description": "Sublicensing
-  means that the person to whom the license was granted re-grants the
-  license granted to a third party." }, { "name": "Sublicense the
-  acquired binaries", "description": "Sublicensing means that the person
-  to whom the license was granted re-grants the license granted to a
-  third party." }, { "name": "Sublicense the generated binaries from
-  modified source code", "description": "Sublicensing means that the
-  person to whom the license was granted re-grants the license granted
-  to a third party." }, { "name": "Selling Software" }, { "name":
-  "Duplicate the obtained source code without modification" }, { "name":
-  "Duplicate the modified source code" }, { "name": "Duplicate the
-  acquired binary" }, { "name": "Duplicate the generated binary from the
-  modified source code" }, { "name": "Duplicate the obtained object
-  code" }, { "name": "Duplicate the object code generated from the
-  modified source code" } ], "conditions": { "name": "Include a
-  copyright notice, list of terms and conditions, and disclaimer
-  included in the license", "type": "OBLIGATION" }, "description": "The
-  relevant documentation for the software will be treated in the same
-  way as the software. The same rights will be granted to those to whom
-  the software is provided." } ]" (source:
-  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
-  (CDLA-Permissive-1.0))
-
 - "Per SPDX.org, this license is OSI certified." (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml][Scancode]]
   (CC0-1.0))
@@ -260,9 +221,7 @@
       "__impliedComments": [
           [
               "Hitachi open-license",
-              [
-                  "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the acquired binaries\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the generated binaries from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Duplicate the obtained source code without modification\"\n            },\n            {\n                \"name\": \"Duplicate the modified source code\"\n            },\n            {\n                \"name\": \"Duplicate the acquired binary\"\n            },\n            {\n                \"name\": \"Duplicate the generated binary from the modified source code\"\n            },\n            {\n                \"name\": \"Duplicate the obtained object code\"\n            },\n            {\n                \"name\": \"Duplicate the object code generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\"\n    }\n]"
-              ]
+              []
           ],
           [
               "Scancode",
@@ -609,9 +568,7 @@
                   "__impliedComments": [
                       [
                           "Hitachi open-license",
-                          [
-                              "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved binaries\",\n                \"description\": \"Use the fetched binary as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use binaries generated from modified source code\"\n            }\n        ],\n        \"conditions\": null\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the fetched binaries\",\n                \"description\": \"Redistribute the fetched binaries as they are\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the generated binaries from modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the acquired binaries\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Sublicense the generated binaries from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Duplicate the obtained source code without modification\"\n            },\n            {\n                \"name\": \"Duplicate the modified source code\"\n            },\n            {\n                \"name\": \"Duplicate the acquired binary\"\n            },\n            {\n                \"name\": \"Duplicate the generated binary from the modified source code\"\n            },\n            {\n                \"name\": \"Duplicate the obtained object code\"\n            },\n            {\n                \"name\": \"Duplicate the object code generated from the modified source code\"\n            }\n        ],\n        \"conditions\": {\n            \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n            \"type\": \"OBLIGATION\"\n        },\n        \"description\": \"The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\"\n    }\n]"
-                          ]
+                          []
                       ]
                   ],
                   "__impliedText": "The MIT License (MIT)\r\n\r\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",

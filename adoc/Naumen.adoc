@@ -13,6 +13,15 @@
 
 * `+scancode://naumen+`
 
+=== Description
+
+____
+https://opensource.org/licenses/Naumen
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
+
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:

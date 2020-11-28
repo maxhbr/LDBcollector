@@ -16,6 +16,15 @@
 * `+The MirOS Licence (MirOS)+`
 * `+MirOS Licence+`
 
+=== Description
+
+____
+https://opensource.org/licenses/miros.html
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
+
 === Comments on (easy) usability
 
 * **↑**``Is OSI Approved'' (source:
@@ -36,54 +45,6 @@ https://blueoakcouncil.org/list[BlueOak License List]
 === General Comments
 
 * ``https://opensource.org/licenses/miros.html'' (source:
-https://github.com/Hitachi/open-license[Hitachi open-license]
-(CDLA-Permissive-1.0))
-* ``[ \{ "actions": [ \{ "name": "Use the obtained source code without
-modification", "description": "Use the fetched code as it is." }, \{
-"name": "Modify the obtained source code." }, \{ "name": "Using Modified
-Source Code" }, \{ "name": "Use the retrieved object code",
-"description": "Use the fetched code as it is." }, \{ "name": "Use the
-object code generated from the modified source code" }, \{ "name": "Use
-the retrieved executable", "description": "Use the obtained executable
-as is." }, \{ "name": "Use the executable generated from the modified
-source code" } ], "conditions": null, "description": "Relevant
-documentation for the software should be treated in the same way as for
-the software." }, \{ "actions": [ \{ "name": "Distribute the obtained
-source code without modification", "description": "Redistribute the code
-as it was obtained" }, \{ "name": "Distribute the obtained object code",
-"description": "Redistribute the code as it was obtained" }, \{ "name":
-"Distribution of Modified Source Code" }, \{ "name": "Distribute the
-object code generated from the modified source code" }, \{ "name":
-"Executing the fetched source code publicly" }, \{ "name": "Sublicense
-the acquired source code.", "description": "Sublicensing means that the
-person to whom the license was granted re-grants the license granted to
-a third party." }, \{ "name": "Publicly execute the fetched object code"
-}, \{ "name": "Sublicense the acquired object code", "description":
-"Sublicensing means that the person to whom the license was granted
-re-grants the license granted to a third party." }, \{ "name": "Publicly
-execute the modified source code" }, \{ "name": "Sublicensing Modified
-Source Code", "description": "Sublicensing means that the person to whom
-the license was granted re-grants the license granted to a third party."
-}, \{ "name": "Publicly execute the object code generated from the
-modified source code" }, \{ "name": "Sublicense the object code
-generated from the modified source code", "description": "Sublicensing
-means that the person to whom the license was granted re-grants the
-license granted to a third party." }, \{ "name": "Selling Software" },
-\{ "name": "Distribute the obtained executable", "description":
-"Redistribute the obtained executable as-is" }, \{ "name": "Distribute
-the executable generated from the modified source code" }, \{ "name":
-"Publicly execute the retrieved executable" }, \{ "name": "Sublicense
-the acquired executable", "description": "Sublicensing means that the
-person to whom the license was granted re-grants the license granted to
-a third party." }, \{ "name": "Publicly execute executables generated
-from modified source code" }, \{ "name": "Sublicense the generated
-executable from modified source code", "description": "Sublicensing
-means that the person to whom the license was granted re-grants the
-license granted to a third party." } ], "conditions": \{ "AND": [ \{
-"name": "Include a copyright notice, list of terms and conditions, and
-disclaimer included in the license", "type": "OBLIGATION" } ] },
-"description": "Related documentation and accompanying documents for the
-software are treated in the same way as the software." } ]'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
 * ``Per SPDX.org, this license is OSI certified.'' (source:
@@ -169,8 +130,7 @@ Knowledge International]
         [
             "Hitachi open-license",
             [
-                "https://opensource.org/licenses/miros.html",
-                "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Executing the fetched source code publicly\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the fetched object code\"\n            },\n            {\n                \"name\": \"Sublicense the acquired object code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the modified source code\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the object code generated from the modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Publicly execute the retrieved executable\"\n            },\n            {\n                \"name\": \"Sublicense the acquired executable\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute executables generated from modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the generated executable from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Related documentation and accompanying documents for the software are treated in the same way as the software.\"\n    }\n]"
+                "https://opensource.org/licenses/miros.html"
             ]
         ],
         [
@@ -518,8 +478,7 @@ Knowledge International]
                     [
                         "Hitachi open-license",
                         [
-                            "https://opensource.org/licenses/miros.html",
-                            "[\n    {\n        \"actions\": [\n            {\n                \"name\": \"Use the obtained source code without modification\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Modify the obtained source code.\"\n            },\n            {\n                \"name\": \"Using Modified Source Code\"\n            },\n            {\n                \"name\": \"Use the retrieved object code\",\n                \"description\": \"Use the fetched code as it is.\"\n            },\n            {\n                \"name\": \"Use the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Use the retrieved executable\",\n                \"description\": \"Use the obtained executable as is.\"\n            },\n            {\n                \"name\": \"Use the executable generated from the modified source code\"\n            }\n        ],\n        \"conditions\": null,\n        \"description\": \"Relevant documentation for the software should be treated in the same way as for the software.\"\n    },\n    {\n        \"actions\": [\n            {\n                \"name\": \"Distribute the obtained source code without modification\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribute the obtained object code\",\n                \"description\": \"Redistribute the code as it was obtained\"\n            },\n            {\n                \"name\": \"Distribution of Modified Source Code\"\n            },\n            {\n                \"name\": \"Distribute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Executing the fetched source code publicly\"\n            },\n            {\n                \"name\": \"Sublicense the acquired source code.\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the fetched object code\"\n            },\n            {\n                \"name\": \"Sublicense the acquired object code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the modified source code\"\n            },\n            {\n                \"name\": \"Sublicensing Modified Source Code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute the object code generated from the modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the object code generated from the modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Selling Software\"\n            },\n            {\n                \"name\": \"Distribute the obtained executable\",\n                \"description\": \"Redistribute the obtained executable as-is\"\n            },\n            {\n                \"name\": \"Distribute the executable generated from the modified source code\"\n            },\n            {\n                \"name\": \"Publicly execute the retrieved executable\"\n            },\n            {\n                \"name\": \"Sublicense the acquired executable\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            },\n            {\n                \"name\": \"Publicly execute executables generated from modified source code\"\n            },\n            {\n                \"name\": \"Sublicense the generated executable from modified source code\",\n                \"description\": \"Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.\"\n            }\n        ],\n        \"conditions\": {\n            \"AND\": [\n                {\n                    \"name\": \"Include a copyright notice, list of terms and conditions, and disclaimer included in the license\",\n                    \"type\": \"OBLIGATION\"\n                }\n            ]\n        },\n        \"description\": \"Related documentation and accompanying documents for the software are treated in the same way as the software.\"\n    }\n]"
+                            "https://opensource.org/licenses/miros.html"
                         ]
                     ]
                 ],
