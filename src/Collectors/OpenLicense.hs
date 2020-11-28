@@ -13,10 +13,12 @@ module Collectors.OpenLicense
 import qualified Prelude as P
 import           MyPrelude hiding (id)
 
-import           Data.Aeson.Types (Parser)
 import           Data.Aeson
+import           Data.Aeson.Encode.Pretty (encodePretty)
+import           Data.Aeson.Types (Parser)
 import qualified Data.ByteString
 import qualified Data.ByteString.Lazy as B
+import qualified Data.ByteString.Lazy.Char8 as Char8
 import qualified Data.Char as Char
 import qualified Data.Csv as C
 import           Data.FileEmbed (embedFile)
@@ -24,7 +26,7 @@ import           Data.Map (Map)
 import           Data.Set (Set)
 import qualified Data.Set as S
 import qualified Data.Map as M
-import           Data.Maybe (catMaybes)
+import           Data.Maybe (catMaybes, maybeToList)
 import qualified Data.Vector as V
 import           Network.URI (parseURI)
 
@@ -414,6 +416,8 @@ instance FromJSON OlPermission where
     <*> v .: "description"
     <*> (fmap (getForOlRefs actions) (v .: "actions" :: Parser [OlRef]) :: Parser [OlAction])
     <*> v .:? "conditionHead"
+prettyPrintPermissions :: [OlPermission] -> String
+prettyPrintPermissions = Char8.unpack . encodePretty
 
 data OlLicense
  = OlLicense
@@ -465,15 +469,22 @@ instance LicenseFactClassifiable OlLicense where
   getLicenseFactClassifier _ = olLFC
 instance LFRaw OlLicense where
   getLicenseFactVersion ole = LFVersion "429ef37c6f3f057e724b04db0a6cd94fa1aa2db9"
-  getImpliedNames ole       = CLSR [_license_name ole]
+  getImpliedNames ole       = CLSR (_license_name ole : (fixName (_license_name ole)))
   getImpliedFullName ole    = mkRLSR ole 40 (_license_name ole)
   getImpliedURLs ole        = CLSR [(Just "open-license", _license_uri ole)]
   getImpliedText ole        = mkRLSR ole 30 (_license_content ole)
   getImpliedComments ole    = let
-    in mkSLSR ole (concat [ olTextToList (_license_summary ole)
+      permsL = case _license_permissions ole of
+        [] -> []
+        ps -> [prettyPrintPermissions ps]
+    in case (concat [ olTextToList (_license_summary ole)
                           , olTextToList (_license_description ole)
-                          ])
-  getImpliedDescription ole = olTextToRLSR ole (_license_description ole)
+                          ]) of
+         [] -> NoSLSR
+         cs -> mkSLSR ole cs
+  -- getImpliedDescription ole = case olTextToRLSR ole (_license_description ole) of
+  --   NoRLSR -> olTextToRLSR ole (_license_summary ole)
+  --   rlsr   -> rlsr
 
 licenses :: [OlLicense]
 licenses = case eitherDecode (B.fromStrict licensesFile) of
@@ -497,6 +508,106 @@ loadOpenLicenseTranslateables = (map (\t -> TranslationRow t (case translateStri
                                   . filter (\s -> not ((length s < 100) && (isJust $ parseURI s)))
                                   . S.toList
                                   . getTranslateables) licenses
+
+{- #############################################################################
+   #### fixes ##################################################################
+   ########################################################################## -}
+
+nameFixesRaw :: [(LicenseName, [LicenseName])]
+nameFixesRaw =
+  [ ("Ruby", ["Ruby License (1.9.2 and earlier)", "Ruby License (1.9.3 and later)"])
+  , ("EPL-1.0", ["Eclipse Public License 1.0"])
+  , ("MPL-1.0", ["Mozilla Public License Version 1.0"])
+  , ("MPL-1.1", ["Mozilla Public License Version 1.1"])
+  , ("MPL-2.0", ["Mozilla Public License Version 2.0"])
+  , ("CDDL-1.0", ["COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"])
+  , ("CDDL-1.1", ["COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"])
+  , ("CPL-1.0", ["Common Public License Version 1.0"])
+  , ("ANTLR-PD", ["ANTLR 2 License"])
+  , ("APSL-1.1", ["APPLE PUBLIC SOURCE LICENSE, Version 1.1"])
+  , ("AFL-2.1", ["Academic Free License Version 2.1"])
+  , ("Artistic-1.0", ["Artistic License (Perl) 1.0"])
+  -- , ("", ["Artistic License"])
+  , ("BSD-2-Clause", ["BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"])
+  , ("BSL-1.0", ["Boost Software License - Version 1.0"])
+  , ("CNRI-Python", ["CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"]) -- ??
+  , ("CPAL-1.0", ["Common Public Attribution License Version 1.0"])
+  , ("CC-BY-NC-ND-4.0", ["Creative Commons Attribution-NoDerivatives 4.0 International"])
+  , ("CC-BY-NC-ND-2.5", ["Creative Commons Attribution-NoDerivs 2.5 Generic"])
+  , ("CC-BY-NC-ND-3.0", ["Creative Commons Attribution-NoDerivs 3.0 Unported"])
+  , ("CC-BY-NC-SA-3.0", ["Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported"])
+  , ("CC-BY-NC-SA-4.0", ["Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"])
+  , ("CC-BY-SA-1.0", ["Creative Commons Attribution-ShareAlike 1.0 Generic"])
+  , ("CC-BY-SA-2.0", ["Creative Commons Attribution-ShareAlike 2.0 Generic"])
+  , ("CC-BY-SA-2.5", ["Creative Commons Attribution-ShareAlike 2.5"])
+  , ("CC-BY-SA-3.0", ["Creative Commons Attribution-ShareAlike 3.0 Unported"])
+  , ("CC-BY-SA-4.0", ["Creative Commons Attribution-ShareAlike 4.0 International"])
+  , ("CC0-1.0", ["Creative Commons CC0 1.0 Universal"])
+  , ("CC-PDDC", ["Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification"])
+  , ("CC-BY-SA-1.0", ["Creative Commons ShareAlike 1.0 Generic"]) -- ??
+  , ("CC-BY-NC-1.0", ["Creative Comnons Attribution-NonCommercial 1.0 Generic"]) -- TYPO!
+  , ("CC-BY-NC-ND-3.0", ["Creative Comnons Attribution-NonCommercial-NoDerivs 3.0 Unported"]) -- TYPO!
+  , ("ErlPL-1.1", ["ERLANG PUBLIC LICENSE Version 1.1"])
+  , ("EPL-2.0", ["Eclipse Public License - v 2.0"])
+  , ("EUPL-1.1", ["European Union Public Licence, v.1.1"])
+  , ("GL2PS", ["GL2PS LICENSE, Version 2"])
+  , ("GFDL-1.1", ["GNU Free Documentation License Version 1.1"])
+  , ("GFDL-1.2", ["GNU Free Documentation License Version 1.2"])
+  , ("GFDL-1.3", ["GNU Free Documentation License Version 1.3"])
+  , ("ICU", ["ICU License (ICU 1.8.1 and later)"])
+  , ("IJG", ["IJG License"])
+  , ("Interbase-1.0", ["INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\""])
+  , ("IPA", ["IPA Font License Agreement v1.0"])
+  , ("Info-ZIP", ["Info-ZIP copyright and license (version 2005-Feb-10)"])
+  , ("Info-ZIP", ["Info-ZIP license (Version 2007-Mar-04)"])
+  , ("Info-ZIP", ["Info-ZIP license (version 2009-Jan-02)"])
+  -- , ("", ["Initial Developer's Public License Version 1.0"]) -- ??
+  , ("Intel", ["Intel License Agreement"]) -- ??
+  , ("Interbase-1.0", ["InterBase Public License, Version 1.0"])
+  , ("JasPer-2.0", ["JasPer License Version 2.0"])
+  -- , ("", ["Microsoft Limited Public License"]) -- ??
+  -- , ("", ["Microsoft Permissive License"]) -- ??
+  -- , ("", ["Microsoft Platform and Application License"])
+  , ("NetCDF", ["NetCDF Copyright"])
+  , ("NetCDF", ["NetCDF Copyright(version 2009)"])
+  , ("NPL-1.1", ["Netscape Public License Version 1.1"])
+  , ("BSD-3-Clause-Open-MPI", ["Open MPI License"])
+  , ("PHP-3.0", ["PHP License, version 3.0"])
+  , ("PHP-3.01", ["PHP License, version 3.01"])
+  , ("Python-2.0", ["PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"])
+  , ("QPL-1.0", ["Q PUBLIC LICENSE version 1.0"])
+  , ("Sendmail", ["SENDMAIL LICENSE (version 1998)"])
+  , ("Sendmail", ["SENDMAIL LICENSE (version 2004)"])
+  , ("Sendmail", ["SENDMAIL LICENSE (version 2012)"])
+  , ("SGI-B-1.1", ["SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"])
+  , ("SGI-B-2.0", ["SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"])
+  , ("OFL-1.0", ["SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005"])
+  , ("OFL-1.1", ["SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007"])
+  , ("SISSL-1.2", ["Sun Industry Standards Source License - Version 1.2"])
+  , ("SISSL", ["Sun Industry Standards Source License Version 1.1"])
+  , ("TMate", ["TMate Open Source License for \"TMate JavaSVN library\""])
+  , ("Artistic-2.0", ["The Artistic License 2.0"])
+  , ("OLDAP-2.7", ["The OpenLDAP Public License"]) -- ??
+  , ("bzip2-1.0.6", ["The bzip2 license"]) -- ??
+  , ("Unicode-DFS-2015", ["UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"])
+  , ("Unicode-DFS-2016", ["UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"])
+  , ("VSL-1.0", ["Vovida Software License, Version 1.0"])
+  , ("W3C-20150513", ["W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"])
+  , ("W3C-19980720", ["W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"])
+  , ("W3C", ["W3C Software Notice and License (became active on December 31 2002)"])
+  , ("XFree86-1.0", ["XFree86 1.0 License"])
+  , (" Zend-2.0", ["Zend Engine License, Version 2.00"])
+  , ("ZPL-1.0", ["Zope Public License (ZPL) Version 1.0"])
+  , ("ZPL-2.0", ["Zope Public License (ZPL) Version 2.0"])
+  , ("ZPL-2.1", ["Zope Public License (ZPL) Version 2.1"])
+  , ("gSOAP-1.3b", ["gSOAP Public License Version 1.3b"])
+  , ("Libpng", ["libpng license (libpng-1.2.6 and later)"]) -- ??  libpng-2.0
+  , ("wxWindows", ["wxWindows Library Licence, Version 3.1"])
+  ]
+nameFixes :: Map LicenseName LicenseName
+nameFixes = M.fromList (concatMap (\(s, ns) -> map (\n -> (n, s)) ns) nameFixesRaw)
+fixName :: LicenseName -> [LicenseName]
+fixName = maybeToList . (`M.lookup` nameFixes)
 
 {- #############################################################################
    #### files ##################################################################

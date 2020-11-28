@@ -242,12 +242,4 @@ overrides =
            , ("LiLiQ-R-1.1", ["LiLiQ-R"])
            , ("LiLiQ-Rplus-1.1", ["LiLiQ-R+"])
 
-           -- link to Hitachi open-license
-           , ("Ruby", ["Ruby License (1.9.2 and earlier)", "Ruby License (1.9.3 and later)"])
-           , ("EPL-1.0", ["Eclipse Public License 1.0"])
-           , ("MPL-1.0", ["Mozilla Public License Version 1.0"])
-           , ("MPL-1.1", ["Mozilla Public License Version 1.1"])
-           , ("MPL-2.0", ["Mozilla Public License Version 2.0"])
-           , ("CDDL-1.1", ["COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1"])
-           , ("CPL-1.0", ["Common Public License Version 1.0"])
            ]
