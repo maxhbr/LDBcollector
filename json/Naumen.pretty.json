@@ -6,6 +6,7 @@
         "NAUMEN Public License"
     ],
     "__impliedId": "Naumen",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -80,6 +81,33 @@
                 ]
             },
             "spdxLicenseId": "Naumen"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/naumen.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Naumen",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Naumen Public License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Naumen Public License",
+                    "Naumen"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -243,6 +271,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

@@ -6,6 +6,7 @@
         "NetCDF License"
     ],
     "__impliedId": "NetCDF",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +36,33 @@
                 ]
             },
             "spdxLicenseId": "NetCDF"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.unidata.ucar.edu/software/netcdf/copyright.html",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "NetCDF",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "NetCDF license",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "NetCDF license",
+                    "NetCDF"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -116,6 +144,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

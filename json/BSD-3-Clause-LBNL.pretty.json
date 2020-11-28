@@ -3,9 +3,11 @@
         "BSD-3-Clause-LBNL",
         "Lawrence Berkeley National Labs BSD variant license",
         "scancode://lbnl-bsd",
-        "LBNL BSD Variant"
+        "LBNL BSD Variant",
+        "LBNL BSD"
     ],
     "__impliedId": "BSD-3-Clause-LBNL",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -44,6 +46,33 @@
                 ]
             },
             "spdxLicenseId": "BSD-3-Clause-LBNL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/LBNLBSD",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "LBNL BSD",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Lawrence Berkeley National Labs BSD variant license",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Lawrence Berkeley National Labs BSD variant license",
+                    "LBNL BSD"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -131,6 +160,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

@@ -13,6 +13,8 @@
 
 - =BSD-2-Clause Plus Patent=
 
+- =BSD + Patent=
+
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:
@@ -22,6 +24,11 @@
 - *↑*"Rating is: Gold" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -112,6 +119,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -120,9 +131,11 @@
           "BSD-2-Clause-Patent",
           "BSD-2-Clause Plus Patent License",
           "scancode://bsd-plus-patent",
-          "BSD-2-Clause Plus Patent"
+          "BSD-2-Clause Plus Patent",
+          "BSD + Patent"
       ],
       "__impliedId": "BSD-2-Clause-Patent",
+      "__isFsfFree": true,
       "__impliedComments": [
           [
               "Scancode",
@@ -169,6 +182,33 @@
                   ]
               },
               "spdxLicenseId": "BSD-2-Clause-Patent"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "BSD-2-Clause-Patent",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "BSD + Patent",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "BSD + Patent",
+                      "BSD-2-Clause-Patent"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -277,6 +317,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Gold"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

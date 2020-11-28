@@ -5,6 +5,7 @@
         "scancode://dsdp"
     ],
     "__impliedId": "DSDP",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -34,6 +35,33 @@
                 ]
             },
             "spdxLicenseId": "DSDP"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/DSDP",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "DSDP",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "DSDP License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "DSDP License",
+                    "DSDP"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -115,6 +143,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Silver"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

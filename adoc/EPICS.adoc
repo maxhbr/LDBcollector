@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |EPICS Open License
 |Shortname |EPICS
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown
 |Classification |NoCopyleft
 |===
 
@@ -14,6 +14,11 @@
 * `+scancode://epics+`
 
 === Comments on (easy) usability
+
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -69,6 +74,9 @@ LIMITATION OF LIABILITY. IN NO EVENT WILL THE COPYRIGHT HOLDERS, THEIR THIRD PAR
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epics.yml[Scancode]
 (CC0-1.0)
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -80,6 +88,7 @@ repository] is generated)
         "scancode://epics"
     ],
     "__impliedId": "EPICS",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -109,6 +118,33 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "EPICS"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.aps.anl.gov/epics/license/open.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "EPICS",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "EPICS Open License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "EPICS Open License",
+                    "EPICS"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -154,6 +190,15 @@ repository] is generated)
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

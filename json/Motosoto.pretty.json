@@ -8,6 +8,7 @@
         "License :: OSI Approved :: Motosoto License"
     ],
     "__impliedId": "Motosoto",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -82,6 +83,33 @@
                 ]
             },
             "spdxLicenseId": "Motosoto"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/motosoto.php",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Motosoto",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Motosoto License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Motosoto License",
+                    "Motosoto"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -209,6 +237,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

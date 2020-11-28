@@ -27,6 +27,11 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX") (all data \[in
     this repository\] is generated))
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -117,6 +122,10 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -135,6 +144,7 @@ Raw Data
             "Microsoft Reciprocal License (MS-RL)"
         ],
         "__impliedId": "MS-RL",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Microsoft Reciprocal License"
         ],
@@ -223,6 +233,33 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MS-RL"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "MS-RL",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Microsoft Reciprocal License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Microsoft Reciprocal License",
+                        "MS-RL"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -473,6 +510,13 @@ Raw Data
             }
         },
         "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
             [
                 "SPDX",
                 {

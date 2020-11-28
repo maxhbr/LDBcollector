@@ -11,6 +11,8 @@
 
 - =scancode://freetype=
 
+- =Freetype License=
+
 ** Description
 
 #+BEGIN_QUOTE
@@ -35,6 +37,11 @@ open-license]] (CDLA-Permissive-1.0))
 - *↑*"Rating is: Bronze" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -244,6 +251,10 @@ open-license]] (CDLA-Permissive-1.0))
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -260,9 +271,11 @@ open-license]] (CDLA-Permissive-1.0))
           "Freetype Project License",
           "scancode://freetype",
           "FreeType Project License",
+          "Freetype License",
           "FreeType Project LICENSE"
       ],
       "__impliedId": "FTL",
+      "__isFsfFree": true,
       "__impliedComments": [
           [
               "Scancode",
@@ -305,6 +318,33 @@ open-license]] (CDLA-Permissive-1.0))
                   ]
               },
               "spdxLicenseId": "FTL"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "http://freetype.fis.uniroma2.it/FTL.TXT",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "FTL",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Freetype License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Freetype License",
+                      "FTL"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -955,6 +995,13 @@ open-license]] (CDLA-Permissive-1.0))
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Bronze"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

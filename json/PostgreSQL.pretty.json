@@ -7,6 +7,7 @@
         "The PostgreSQL Licence"
     ],
     "__impliedId": "PostgreSQL",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -86,6 +87,33 @@
                 ]
             },
             "spdxLicenseId": "PostgreSQL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/PostgreSQL_License",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "PostgreSQL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "PostgreSQL License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "PostgreSQL License",
+                    "PostgreSQL"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -342,6 +370,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Silver"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

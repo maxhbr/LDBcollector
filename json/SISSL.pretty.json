@@ -9,6 +9,7 @@
         "sun-issl"
     ],
     "__impliedId": "SISSL",
+    "__isFsfFree": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -83,6 +84,33 @@
                 ]
             },
             "spdxLicenseId": "SISSL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.openoffice.org/licenses/sissl_license.html",
+            "GPLv3 Compat?": null,
+            "Short Name": "SISSL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Sun Industry Standards Source License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Sun Industry Standards Source License",
+                    "SISSL"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -196,6 +224,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "Google OSS Policy",
             {

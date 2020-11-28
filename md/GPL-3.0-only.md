@@ -37,6 +37,10 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GNU GPLv3`
 
+-   `GPLv3`
+
+-   `GPLv3+`
+
 -   `GNU General Public License, Version 3.0`
 
 -   `License :: OSI Approved :: GNU General Public License (GPL)`
@@ -855,6 +859,10 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -913,6 +921,8 @@ Raw Data
             "GPL 3.0 or later",
             "gpl-3.0",
             "GNU GPLv3",
+            "GPLv3",
+            "GPLv3+",
             "GNU General Public License, Version 3.0",
             "License :: OSI Approved :: GNU General Public License (GPL)",
             "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
@@ -922,7 +932,6 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
-            "GPLv3+",
             "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
             "The GNU General Public License (GPL)"
         ],
@@ -1018,19 +1027,17 @@ Raw Data
                 "rating": "Good",
                 "Upstream URL": "http://www.fsf.org/licensing/licenses/gpl.html",
                 "GPLv3 Compat?": "N/A",
-                "Short Name": "GPLv3+",
+                "Short Name": "GPLv3",
                 "licenseType": "license",
                 "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "GNU General Public License v3.0 or later",
+                "Full Name": "GNU General Public License v3.0 only",
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "GNU General Public License v3.0 or later"
+                        "GNU General Public License v3.0 only",
+                        "GPLv3"
                     ],
                     "__isFsfFree": true,
-                    "__impliedAmbiguousNames": [
-                        "GPLv3+"
-                    ],
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

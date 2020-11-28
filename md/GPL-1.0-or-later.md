@@ -15,6 +15,10 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 -   `GPL 1.0 or later`
 
+-   `GNU General Public License (no version)`
+
+-   `GPL+`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -24,6 +28,11 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -68,6 +77,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -86,9 +103,12 @@ Raw Data
             "GPL1+",
             "GNU General Public License v1.0 or later",
             "scancode://gpl-1.0-plus",
-            "GPL 1.0 or later"
+            "GPL 1.0 or later",
+            "GNU General Public License (no version)",
+            "GPL+"
         ],
         "__impliedId": "GPL-1.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)"
         ],
@@ -129,6 +149,33 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-1.0-or-later"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include.",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "GPL+",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "GNU General Public License (no version)",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "GNU General Public License (no version)",
+                        "GPL+"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -253,6 +300,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

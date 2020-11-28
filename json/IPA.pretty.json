@@ -6,6 +6,7 @@
         "IPA Font License 1.0"
     ],
     "__impliedId": "IPA",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -80,6 +81,31 @@
                 ]
             },
             "spdxLicenseId": "IPA"
+        },
+        "Fedora Project Wiki": {
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/IPAFontLicense",
+            "Short Name": "IPA",
+            "licenseType": "font license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "IPA Font License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "IPA Font License",
+                    "IPA"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -201,6 +227,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

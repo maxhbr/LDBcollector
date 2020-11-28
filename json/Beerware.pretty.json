@@ -7,6 +7,7 @@
         "Beerware 42"
     ],
     "__impliedId": "Beerware",
+    "__isFsfFree": true,
     "__hasPatentHint": false,
     "facts": {
         "SPDX": {
@@ -42,6 +43,33 @@
                 ]
             },
             "spdxLicenseId": "Beerware"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Beerware",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Beerware",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Beerware License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Beerware License",
+                    "Beerware"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -193,6 +221,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

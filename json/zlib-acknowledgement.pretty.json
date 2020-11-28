@@ -3,9 +3,11 @@
         "zlib-acknowledgement",
         "zlib/libpng License with Acknowledgement",
         "scancode://zlib-acknowledgement",
-        "ZLIB License with Acknowledgment"
+        "ZLIB License with Acknowledgment",
+        "zlib with acknowledgement"
     ],
     "__impliedId": "zlib-acknowledgement",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The zlib/libpng License (Zlib)"
     ],
@@ -46,6 +48,33 @@
                 ]
             },
             "spdxLicenseId": "zlib-acknowledgement"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "zlib with acknowledgement",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "zlib/libpng License with Acknowledgement",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "zlib/libpng License with Acknowledgement",
+                    "zlib with acknowledgement"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -172,6 +201,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

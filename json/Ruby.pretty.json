@@ -5,6 +5,7 @@
         "scancode://ruby"
     ],
     "__impliedId": "Ruby",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -42,6 +43,33 @@
                 ]
             },
             "spdxLicenseId": "Ruby"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Compatible if dual licensed with GPL, otherwise Incompatible",
+            "rating": "Good",
+            "Upstream URL": "http://www.ruby-lang.org/en/LICENSE.txt",
+            "GPLv3 Compat?": null,
+            "Short Name": "Ruby",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Ruby License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Ruby License",
+                    "Ruby"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -156,6 +184,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

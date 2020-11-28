@@ -5,6 +5,7 @@
         "scancode://bahyph"
     ],
     "__impliedId": "Bahyph",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -34,6 +35,33 @@
                 ]
             },
             "spdxLicenseId": "Bahyph"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Bahyph",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Bahyph",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Bahyph License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Bahyph License",
+                    "Bahyph"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -115,6 +143,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

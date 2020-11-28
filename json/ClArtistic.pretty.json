@@ -3,9 +3,11 @@
         "ClArtistic",
         "Artistic (clarified)",
         "Clarified Artistic License",
-        "scancode://artistic-clarified"
+        "scancode://artistic-clarified",
+        "Artistic clarified"
     ],
     "__impliedId": "ClArtistic",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -40,6 +42,33 @@
                 ]
             },
             "spdxLicenseId": "ClArtistic"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ArtisticClarified",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Artistic clarified",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Artistic (clarified)",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Artistic (clarified)",
+                    "Artistic clarified"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -145,6 +174,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

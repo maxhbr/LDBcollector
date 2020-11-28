@@ -9,12 +9,19 @@ ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 -   `PDDL 1.0`
 
+-   `Open Data Commons Public Domain Dedication and Licence`
+
 -   `Open Data Commons Public Domain Dedication and Licence 1.0`
 
 -   `ODC-PDDL-1.0`
 
 Comments on (easy) usability
 ----------------------------
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -181,6 +188,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/pddl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -193,10 +204,12 @@ Raw Data
             "ODC Public Domain Dedication & License 1.0",
             "scancode://pddl-1.0",
             "PDDL 1.0",
+            "Open Data Commons Public Domain Dedication and Licence",
             "Open Data Commons Public Domain Dedication and Licence 1.0",
             "ODC-PDDL-1.0"
         ],
         "__impliedId": "PDDL-1.0",
+        "__isFsfFree": true,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -258,6 +271,31 @@ Raw Data
                 },
                 "spdxLicenseId": "PDDL-1.0"
             },
+            "Fedora Project Wiki": {
+                "rating": "Good",
+                "Upstream URL": "https://fedoraproject.org/wiki/Licensing/PDDL",
+                "Short Name": "PDDL-1.0",
+                "licenseType": "content license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Open Data Commons Public Domain Dedication and Licence",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Open Data Commons Public Domain Dedication and Licence",
+                        "PDDL-1.0"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
             "Scancode": {
                 "otherUrls": [
                     "http://opendatacommons.org/licenses/pddl/1.0/"
@@ -302,6 +340,15 @@ Raw Data
                 }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",

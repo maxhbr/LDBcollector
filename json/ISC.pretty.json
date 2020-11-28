@@ -4,12 +4,14 @@
         "ISC License",
         "scancode://isc",
         "isc",
+        "ISC License (Bind, DHCP Server)",
         "ISC License (ISC)",
         "License :: OSI Approved :: ISC License (ISCL)",
         "ISC license",
         "isc-license"
     ],
     "__impliedId": "ISC",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "ISC license"
     ],
@@ -96,6 +98,33 @@
                 ]
             },
             "spdxLicenseId": "ISC"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.isc.org/downloads/software-support-policy/isc-license/",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "ISC",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "ISC License (Bind, DHCP Server)",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "ISC License (Bind, DHCP Server)",
+                    "ISC"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -489,6 +518,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

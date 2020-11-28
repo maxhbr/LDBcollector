@@ -7,6 +7,7 @@
         "Microsoft Reciprocal License (MS-RL)"
     ],
     "__impliedId": "MS-RL",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Microsoft Reciprocal License"
     ],
@@ -95,6 +96,33 @@
                 ]
             },
             "spdxLicenseId": "MS-RL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-RL",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "MS-RL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Microsoft Reciprocal License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Microsoft Reciprocal License",
+                    "MS-RL"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -345,6 +373,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

@@ -9,9 +9,11 @@ Common Public License 1.0 (CPL-1.0)
 
 -   `CPL 1.0`
 
--   `Common Public License, Version 1.0`
+-   `Common Public License`
 
 -   `CPL`
+
+-   `Common Public License, Version 1.0`
 
 -   `License :: OSI Approved :: Common Public License`
 
@@ -27,6 +29,11 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -179,6 +186,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -201,11 +212,13 @@ Raw Data
             "Common Public License 1.0",
             "scancode://cpl-1.0",
             "CPL 1.0",
-            "Common Public License, Version 1.0",
+            "Common Public License",
             "CPL",
+            "Common Public License, Version 1.0",
             "License :: OSI Approved :: Common Public License"
         ],
         "__impliedId": "CPL-1.0",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Common Public License",
             "Common Public License (CPL), Version 1.0"
@@ -263,6 +276,33 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "CPL-1.0"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.eclipse.org/legal/cpl-v10.html",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "CPL",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Common Public License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Common Public License",
+                        "CPL"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -510,6 +550,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

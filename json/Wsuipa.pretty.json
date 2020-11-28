@@ -5,6 +5,7 @@
         "scancode://wsuipa"
     ],
     "__impliedId": "Wsuipa",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -42,6 +43,33 @@
                 ]
             },
             "spdxLicenseId": "Wsuipa"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Wsuipa",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Wsuipa",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Wsuipa License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Wsuipa License",
+                    "Wsuipa"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -131,6 +159,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

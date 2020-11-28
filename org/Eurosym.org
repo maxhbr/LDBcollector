@@ -13,6 +13,11 @@
 
 ** Comments on (easy) usability
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 ** General Comments
 
 ** URLs
@@ -58,6 +63,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eurosym.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -68,6 +77,7 @@
           "scancode://eurosym"
       ],
       "__impliedId": "Eurosym",
+      "__isFsfFree": true,
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -97,6 +107,33 @@
                   ]
               },
               "spdxLicenseId": "Eurosym"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Eurosym",
+              "GPLv3 Compat?": "NO",
+              "Short Name": "Eurosym",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Eurosym License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Eurosym License",
+                      "Eurosym"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -142,6 +179,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

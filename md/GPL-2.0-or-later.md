@@ -17,6 +17,10 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 -   `GPL 2.0 or later`
 
+-   `Creative Commons GNU GPL`
+
+-   `GPLv2+`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -30,6 +34,11 @@ Comments on (easy) usability
     Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -99,6 +108,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -121,9 +138,12 @@ Raw Data
             "GPL (v2 or later)",
             "GNU General Public License v2.0 or later",
             "scancode://gpl-2.0-plus",
-            "GPL 2.0 or later"
+            "GPL 2.0 or later",
+            "Creative Commons GNU GPL",
+            "GPLv2+"
         ],
         "__impliedId": "GPL-2.0-or-later",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
             "The GNU General Public License (GPL)"
@@ -185,6 +205,33 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-2.0-or-later"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "N/A",
+                "rating": "Good",
+                "Upstream URL": "http://creativecommons.org/choose/cc-gpl",
+                "GPLv3 Compat?": "See Matrix",
+                "Short Name": "GPLv2+",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Creative Commons GNU GPL",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Creative Commons GNU GPL",
+                        "GPLv2+"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -465,6 +512,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

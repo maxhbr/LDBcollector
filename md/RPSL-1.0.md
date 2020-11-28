@@ -9,6 +9,8 @@ RealNetworks Public Source License v1.0 (RPSL-1.0)
 
 -   `RealNetworks Public Source License 1.0`
 
+-   `RPSL`
+
 -   `RealNetworks Public Source License, Version 1.0`
 
 Comments on (easy) usability
@@ -631,13 +633,13 @@ Raw Data
             "scancode://rpsl-1.0",
             "RealNetworks Public Source License 1.0",
             "RealNetworks Public Source License V1.0",
+            "RPSL",
             "RealNetworks Public Source License, Version 1.0"
         ],
         "__impliedId": "RPSL-1.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "RealNetworks Public Source License",
-            "RPSL",
             "RealNetworks Public Source License (RPSL)"
         ],
         "__impliedComments": [
@@ -739,12 +741,10 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "RealNetworks Public Source License V1.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedAmbiguousNames": [
+                        "RealNetworks Public Source License V1.0",
                         "RPSL"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

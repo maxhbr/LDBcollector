@@ -8,6 +8,7 @@
         "MirOS Licence"
     ],
     "__impliedId": "MirOS",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The MirOS Licence"
     ],
@@ -85,6 +86,33 @@
                 ]
             },
             "spdxLicenseId": "MirOS"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://mirbsd.de/MirOS-Licence",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "MirOS",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "MirOS License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "MirOS License",
+                    "MirOS"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -277,6 +305,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Permissive licence, Ⓕ Copyfree, very similar to MIT and ISC but applicable to more than just software"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

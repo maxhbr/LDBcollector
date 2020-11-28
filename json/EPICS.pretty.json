@@ -5,6 +5,7 @@
         "scancode://epics"
     ],
     "__impliedId": "EPICS",
+    "__isFsfFree": true,
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -34,6 +35,33 @@
                 ]
             },
             "spdxLicenseId": "EPICS"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.aps.anl.gov/epics/license/open.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "EPICS",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "EPICS Open License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "EPICS Open License",
+                    "EPICS"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -79,6 +107,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

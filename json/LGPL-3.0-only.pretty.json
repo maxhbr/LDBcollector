@@ -20,6 +20,8 @@
         "LGPL 3.0 or later",
         "lgpl-3.0",
         "GNU LGPLv3",
+        "LGPLv3",
+        "LGPLv3+",
         "GNU Lesser General Public License, Version 3.0",
         "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
         "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
@@ -29,7 +31,6 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "GNU Library General Public License",
-        "LGPLv3",
         "The GNU Lesser General Public License (LGPL)"
     ],
     "__impliedComments": [
@@ -131,12 +132,10 @@
             "FSF Free?": "Yes",
             "_implications": {
                 "__impliedNames": [
-                    "GNU Lesser General Public License v3.0 only"
-                ],
-                "__isFsfFree": true,
-                "__impliedAmbiguousNames": [
+                    "GNU Lesser General Public License v3.0 only",
                     "LGPLv3"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

@@ -9,6 +9,7 @@
         "eclipse-1.0"
     ],
     "__impliedId": "EPL-1.0",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Eclipse Public License",
         "Eclipse Public License - 1.0"
@@ -101,6 +102,33 @@
                 ]
             },
             "spdxLicenseId": "EPL-1.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.eclipse.org/legal/epl-v10.html",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "EPL-1.0",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Eclipse Public License 1.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Eclipse Public License 1.0",
+                    "EPL-1.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -496,6 +524,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

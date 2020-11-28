@@ -4,10 +4,12 @@
         "ODC Public Domain Dedication & License 1.0",
         "scancode://pddl-1.0",
         "PDDL 1.0",
+        "Open Data Commons Public Domain Dedication and Licence",
         "Open Data Commons Public Domain Dedication and Licence 1.0",
         "ODC-PDDL-1.0"
     ],
     "__impliedId": "PDDL-1.0",
+    "__isFsfFree": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -69,6 +71,31 @@
             },
             "spdxLicenseId": "PDDL-1.0"
         },
+        "Fedora Project Wiki": {
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/PDDL",
+            "Short Name": "PDDL-1.0",
+            "licenseType": "content license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Open Data Commons Public Domain Dedication and Licence",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Data Commons Public Domain Dedication and Licence",
+                    "PDDL-1.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
+        },
         "Scancode": {
             "otherUrls": [
                 "http://opendatacommons.org/licenses/pddl/1.0/"
@@ -113,6 +140,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

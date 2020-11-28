@@ -6,9 +6,12 @@
         "GPL1+",
         "GNU General Public License v1.0 or later",
         "scancode://gpl-1.0-plus",
-        "GPL 1.0 or later"
+        "GPL 1.0 or later",
+        "GNU General Public License (no version)",
+        "GPL+"
     ],
     "__impliedId": "GPL-1.0-or-later",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The GNU General Public License (GPL)"
     ],
@@ -49,6 +52,33 @@
                 ]
             },
             "spdxLicenseId": "GPL-1.0-or-later"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include.",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "GPL+",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "GNU General Public License (no version)",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "GNU General Public License (no version)",
+                    "GPL+"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -173,6 +203,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "This is the most popular free software license. Most of Linux (the kernel) is distributed under the GPL, as is most of the other basic software in the GNU operating system."
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

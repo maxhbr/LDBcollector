@@ -3,9 +3,11 @@
         "CECILL-C",
         "CeCILL-C Free Software License Agreement",
         "scancode://cecill-c",
-        "CeCILL-C License"
+        "CeCILL-C License",
+        "CeCILL-C"
     ],
     "__impliedId": "CECILL-C",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +45,33 @@
                 ]
             },
             "spdxLicenseId": "CECILL-C"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.cecill.info/licences.en.html",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "CeCILL-C",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "CeCILL-C License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "CeCILL-C License",
+                    "CeCILL-C"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -116,6 +145,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "Google OSS Policy",
             {

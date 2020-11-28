@@ -157,9 +157,6 @@ open-license]] (CDLA-Permissive-1.0))
       ],
       "__impliedId": "OpenSSL",
       "__isFsfFree": true,
-      "__impliedAmbiguousNames": [
-          "OpenSSL"
-      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -211,12 +208,10 @@ open-license]] (CDLA-Permissive-1.0))
               "FSF Free?": "Yes",
               "_implications": {
                   "__impliedNames": [
-                      "OpenSSL License"
-                  ],
-                  "__isFsfFree": true,
-                  "__impliedAmbiguousNames": [
+                      "OpenSSL License",
                       "OpenSSL"
                   ],
+                  "__isFsfFree": true,
                   "__impliedJudgement": [
                       [
                           "Fedora Project Wiki",

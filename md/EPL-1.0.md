@@ -37,6 +37,11 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
@@ -195,6 +200,10 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -226,6 +235,7 @@ Raw Data
             "eclipse-1.0"
         ],
         "__impliedId": "EPL-1.0",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Eclipse Public License",
             "Eclipse Public License - 1.0"
@@ -318,6 +328,33 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "EPL-1.0"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.eclipse.org/legal/epl-v10.html",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "EPL-1.0",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Eclipse Public License 1.0",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eclipse Public License 1.0",
+                        "EPL-1.0"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -713,6 +750,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

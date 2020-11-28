@@ -147,9 +147,6 @@ Raw Data
         ],
         "__impliedId": "Plexus",
         "__isFsfFree": true,
-        "__impliedAmbiguousNames": [
-            "Plexus"
-        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -200,12 +197,10 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "Plexus Classworlds License"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedAmbiguousNames": [
+                        "Plexus Classworlds License",
                         "Plexus"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

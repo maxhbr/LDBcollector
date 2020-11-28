@@ -1,18 +1,72 @@
-* MIT License (MIT)
+* Adobe Glyph List License (MIT)
 
-| Key               | Value         |
-|-------------------+---------------|
-| Fullname          | MIT License   |
-| Shortname         | MIT           |
-| Rating            | Go            |
-| Classification    | NoCopyleft    |
-| Has Patent Hint   | False         |
+| Key               | Value                      |
+|-------------------+----------------------------|
+| Fullname          | Adobe Glyph List License   |
+| Shortname         | MIT                        |
+| Rating            | Go                         |
+| Classification    | NoCopyleft                 |
+| Has Patent Hint   | False                      |
 
 *Other Names:*
 
 - =MIT license (also X11)=
 
+- =Adobe-Glyph=
+
+- =HPND=
+
+- =Historical Permission Notice and Disclaimer=
+
+- =MIT License=
+
+- =MIT-enna=
+
+- =enna License=
+
+- =MIT-feh=
+
+- =feh License=
+
+- =SGI-B-2.0=
+
+- =SGI Free Software License B v2.0=
+
+- =SMLNJ=
+
+- =Standard ML of New Jersey License=
+
+- =mpich2=
+
+- =mpich2 License=
+
+- =scancode://sgi-freeb-2.0=
+
+- =SGI Free Software License B 2.0=
+
+- =scancode://historical=
+
+- =scancode://enna=
+
+- =scancode://mit-ack=
+
+- =MIT Acknowledgment License=
+
 - =scancode://mit=
+
+- =scancode://standard-ml-nj=
+
+- =Standard ML of New Jersey=
+
+- =scancode://mpich=
+
+- =MPICH License=
+
+- =scancode://adobe-glyph=
+
+- =Adobe Glyph License=
+
+- =CMU License (BSD like)=
 
 - =MIT/Expat License=
 
@@ -55,12 +109,17 @@
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
 
 - *↑*"Is OSI Approved" (source:
-  [[https://spdx.org/licenses/MIT.html][SPDX]] (all data [in this
+  [[https://spdx.org/licenses/HPND.html][SPDX]] (all data [in this
   repository] is generated))
 
 - *↑*"Rating is: Silver" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 - "Because MIT has used many licenses for software, the Free Software
   Foundation considers MIT License ambiguous. The MIT License published
@@ -70,8 +129,8 @@
 
 ** General Comments
 
-- "Per SPDX.org, this license is OSI certified." (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml][Scancode]]
+- "Per SPDX.org, this license was released 18 Sept 2008" (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml][Scancode]]
   (CC0-1.0))
 
 ** Obligations
@@ -93,45 +152,109 @@
 
 ** URLs
 
+- *Homepage:* http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
+
+- *Homepage:* http://www.opensource.org/licenses/historical.php
+
+- *Homepage:* https://fedoraproject.org/wiki/Licensing/MIT#enna
+
+- *Homepage:*
+  https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#feh
+
 - *Homepage:* http://opensource.org/licenses/mit-license.php
+
+- *Homepage:* http://www.smlnj.org//license.html
+
+- *Homepage:* https://svn.mcs.anl.gov/repos/mpi/mpich2/trunk/COPYRIGHT
+
+- *Homepage:* https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 
 - *OSI Page:* http://www.opensource.org/licenses/MIT
 
+- *OSI Page:* https://opensource.org/licenses/HPND
+
 - *OSI Page:* https://opensource.org/licenses/mit
+
+- *SPDX:* http://spdx.org/licenses/Adobe-Glyph.json
+
+- *SPDX:* http://spdx.org/licenses/HPND.json
 
 - *SPDX:* http://spdx.org/licenses/MIT.json
 
+- *SPDX:* http://spdx.org/licenses/MIT-enna.json
+
+- *SPDX:* http://spdx.org/licenses/MIT-feh.json
+
+- *SPDX:* http://spdx.org/licenses/SGI-B-2.0.json
+
+- *SPDX:* http://spdx.org/licenses/SMLNJ.json
+
+- *SPDX:* http://spdx.org/licenses/mpich2.json
+
 - *SPDX:* https://spdx.org/licenses/MIT.html
+
+- *SPDX:* https://spdx.org/licenses/MIT-enna.html
+
+- *SPDX:* https://spdx.org/licenses/MIT-feh.html
+
+- *SPDX:* https://spdx.org/licenses/SGI-B-2.0.html
+
+- *SPDX:* https://spdx.org/licenses/SMLNJ.html
+
+- *SPDX:* https://spdx.org/licenses/HPND.html
+
+- *SPDX:* https://spdx.org/licenses/mpich2.html
 
 - *Wikipedia page:* https://en.wikipedia.org/wiki/MIT_License
 
 - *tl;dr legal:* https://tldrlegal.com/license/mit-license
 
+- https://fedoraproject.org/wiki/Licensing/MIT#feh
+
+- https://www.smlnj.org/license.html
+
+- https://fedoraproject.org/wiki/Licensing/MIT
+
+- http://oss.sgi.com/projects/FreeB/
+
+- http://www.opensource.org/licenses/HPND
+
 - https://opensource.com/article/18/3/patent-grant-mit-license
 
 - https://opensource.com/article/19/4/history-mit-license
 
+- http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
+
+- http://www2.cs.tum.edu/projects/cup/
+
 ** Text
 
 #+BEGIN_EXAMPLE
-  Permission is hereby granted, free of charge, to any person obtaining
-  a copy of this software and associated documentation files (the
+  Permission is hereby granted, free of charge, to any person obtaining a
+  copy of this software and associated documentation files (the
   "Software"), to deal in the Software without restriction, including
   without limitation the rights to use, copy, modify, merge, publish,
   distribute, sublicense, and/or sell copies of the Software, and to
   permit persons to whom the Software is furnished to do so, subject to
   the following conditions:
 
-  The above copyright notice and this permission notice shall be
-  included in all copies or substantial portions of the Software.
+  The above copyright notice including the dates of first publication and
+  either this permission notice or a reference to
+  http://oss.sgi.com/projects/FreeB/ shall be included in all copies or
+  substantial portions of the Software.
 
-  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
   MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-  CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-  TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+  IN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,
+  DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+  OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+  THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+  Except as contained in this notice, the name of Silicon Graphics, Inc.
+  shall not be used in advertising or otherwise to promote the sale, use
+  or other dealings in this Software without prior written authorization
+  from Silicon Graphics, Inc.
 #+END_EXAMPLE
 
 --------------
@@ -142,8 +265,47 @@
 
 - Override
 
+- [[https://spdx.org/licenses/Adobe-Glyph.html][SPDX]] (all data [in
+  this repository] is generated)
+
+- [[https://spdx.org/licenses/HPND.html][SPDX]] (all data [in this
+  repository] is generated)
+
 - [[https://spdx.org/licenses/MIT.html][SPDX]] (all data [in this
   repository] is generated)
+
+- [[https://spdx.org/licenses/MIT-enna.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://spdx.org/licenses/MIT-feh.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://spdx.org/licenses/SGI-B-2.0.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://spdx.org/licenses/SMLNJ.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://spdx.org/licenses/mpich2.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://blueoakcouncil.org/list][BlueOak License List]]
+  ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
@@ -151,11 +313,74 @@
 - [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
   (CC0-1.0)
 
+- [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enna.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-ack.yml][Scancode]]
+  (CC0-1.0)
+
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml][Scancode]]
+  (CC0-1.0)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-glyph.yml][Scancode]]
   (CC0-1.0)
 
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -174,6 +399,10 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
+- [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
+  Knowledge International]]
+  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
+
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
 
@@ -184,9 +413,36 @@
       "__impliedNames": [
           "MIT",
           "MIT license (also X11)",
+          "Adobe-Glyph",
+          "Adobe Glyph List License",
+          "HPND",
+          "Historical Permission Notice and Disclaimer",
           "MIT License",
+          "MIT-enna",
+          "enna License",
+          "MIT-feh",
+          "feh License",
+          "SGI-B-2.0",
+          "SGI Free Software License B v2.0",
+          "SMLNJ",
+          "Standard ML of New Jersey License",
+          "mpich2",
+          "mpich2 License",
+          "scancode://sgi-freeb-2.0",
+          "SGI Free Software License B 2.0",
+          "scancode://historical",
+          "scancode://enna",
+          "scancode://mit-ack",
+          "MIT Acknowledgment License",
           "scancode://mit",
+          "scancode://standard-ml-nj",
+          "Standard ML of New Jersey",
+          "scancode://mpich",
+          "MPICH License",
+          "scancode://adobe-glyph",
+          "Adobe Glyph License",
           "mit",
+          "CMU License (BSD like)",
           "MIT/Expat License",
           "Expat",
           "License :: OSI Approved :: MIT License",
@@ -194,6 +450,7 @@
           "mit-license"
       ],
       "__impliedId": "MIT",
+      "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "The MIT License"
       ],
@@ -201,7 +458,7 @@
           [
               "Scancode",
               [
-                  "Per SPDX.org, this license is OSI certified."
+                  "Per SPDX.org, this license was released 18 Sept 2008"
               ]
           ]
       ],
@@ -209,30 +466,27 @@
       "facts": {
           "Open Knowledge International": {
               "is_generic": null,
-              "legacy_ids": [
-                  "mit-license"
-              ],
+              "legacy_ids": [],
               "status": "active",
               "domain_software": true,
-              "url": "https://opensource.org/licenses/MIT",
+              "url": "https://opensource.org/licenses/HPND",
               "maintainer": "",
               "od_conformance": "not reviewed",
               "_sourceURL": "https://github.com/okfn/licenses/blob/master/licenses.csv",
               "domain_data": false,
               "osd_conformance": "approved",
-              "id": "MIT",
-              "title": "MIT License",
+              "id": "HPND",
+              "title": "Historical Permission Notice and Disclaimer",
               "_implications": {
                   "__impliedNames": [
-                      "MIT",
-                      "MIT License",
-                      "mit-license"
+                      "HPND",
+                      "Historical Permission Notice and Disclaimer"
                   ],
-                  "__impliedId": "MIT",
+                  "__impliedId": "HPND",
                   "__impliedURLs": [
                       [
                           null,
-                          "https://opensource.org/licenses/MIT"
+                          "https://opensource.org/licenses/HPND"
                       ]
                   ]
               },
@@ -240,72 +494,88 @@
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
-              "spdxFullName": "MIT License",
-              "spdxDetailsURL": "http://spdx.org/licenses/MIT.json",
-              "_sourceURL": "https://spdx.org/licenses/MIT.html",
-              "spdxLicIsOSIApproved": true,
+              "spdxFullName": "Adobe Glyph List License",
+              "spdxDetailsURL": "http://spdx.org/licenses/Adobe-Glyph.json",
+              "_sourceURL": "https://spdx.org/licenses/Adobe-Glyph.html",
+              "spdxLicIsOSIApproved": false,
               "spdxSeeAlso": [
-                  "https://opensource.org/licenses/MIT"
+                  "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph"
               ],
               "_implications": {
                   "__impliedNames": [
-                      "MIT",
-                      "MIT License"
+                      "Adobe-Glyph",
+                      "Adobe Glyph List License"
                   ],
-                  "__impliedId": "MIT",
-                  "__impliedJudgement": [
-                      [
-                          "SPDX",
-                          {
-                              "tag": "PositiveJudgement",
-                              "contents": "Is OSI Approved"
-                          }
-                      ]
-                  ],
-                  "__isOsiApproved": true,
+                  "__impliedId": "Adobe-Glyph",
+                  "__isOsiApproved": false,
                   "__impliedURLs": [
                       [
                           "SPDX",
-                          "http://spdx.org/licenses/MIT.json"
+                          "http://spdx.org/licenses/Adobe-Glyph.json"
                       ],
                       [
                           null,
-                          "https://opensource.org/licenses/MIT"
+                          "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph"
                       ]
                   ]
               },
-              "spdxLicenseId": "MIT"
+              "spdxLicenseId": "Adobe-Glyph"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "MIT",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Adobe Glyph List License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Adobe Glyph List License",
+                      "MIT"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
-                  "https://opensource.com/article/18/3/patent-grant-mit-license",
-                  "https://opensource.com/article/19/4/history-mit-license",
-                  "https://opensource.org/licenses/MIT"
+                  "http://oss.sgi.com/projects/FreeB/"
               ],
-              "homepageUrl": "http://opensource.org/licenses/mit-license.php",
-              "shortName": "MIT License",
+              "homepageUrl": "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf",
+              "shortName": "SGI Free Software License B 2.0",
               "textUrls": null,
-              "text": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+              "text": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
               "category": "Permissive",
-              "osiUrl": "http://www.opensource.org/licenses/MIT",
-              "owner": "MIT",
-              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml",
-              "key": "mit",
-              "name": "MIT License",
-              "spdxId": "MIT",
-              "notes": "Per SPDX.org, this license is OSI certified.",
+              "osiUrl": null,
+              "owner": "SGI - Silicon Graphics",
+              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml",
+              "key": "sgi-freeb-2.0",
+              "name": "SGI Free Software License B v2.0",
+              "spdxId": "SGI-B-2.0",
+              "notes": "Per SPDX.org, this license was released 18 Sept 2008",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://mit",
-                      "MIT License",
-                      "MIT"
+                      "scancode://sgi-freeb-2.0",
+                      "SGI Free Software License B 2.0",
+                      "SGI-B-2.0"
                   ],
-                  "__impliedId": "MIT",
+                  "__impliedId": "SGI-B-2.0",
                   "__impliedComments": [
                       [
                           "Scancode",
                           [
-                              "Per SPDX.org, this license is OSI certified."
+                              "Per SPDX.org, this license was released 18 Sept 2008"
                           ]
                       ]
                   ],
@@ -316,27 +586,15 @@
                       ]
                   ],
                   "__calculatedCopyleft": "NoCopyleft",
-                  "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+                  "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
                   "__impliedURLs": [
                       [
                           "Homepage",
-                          "http://opensource.org/licenses/mit-license.php"
-                      ],
-                      [
-                          "OSI Page",
-                          "http://www.opensource.org/licenses/MIT"
+                          "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
                       ],
                       [
                           null,
-                          "https://opensource.com/article/18/3/patent-grant-mit-license"
-                      ],
-                      [
-                          null,
-                          "https://opensource.com/article/19/4/history-mit-license"
-                      ],
-                      [
-                          null,
-                          "https://opensource.org/licenses/MIT"
+                          "http://oss.sgi.com/projects/FreeB/"
                       ]
                   ]
               }
@@ -347,12 +605,12 @@
               "freedomOrDeath": "no",
               "typeCopyleft": "no",
               "_sourceURL": "https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods",
-              "name": "MIT License ",
+              "name": "Historical Permission Notice and Disclaimer",
               "commercialUse": true,
-              "spdxId": "MIT",
+              "spdxId": "HPND",
               "_implications": {
                   "__impliedNames": [
-                      "MIT"
+                      "HPND"
                   ]
               }
           },
@@ -437,94 +695,43 @@
           "OpenSourceInitiative": {
               "text": [
                   {
-                      "url": "https://opensource.org/licenses/mit",
+                      "url": "https://opensource.org/licenses/HPND",
                       "title": "HTML",
                       "media_type": "text/html"
                   }
               ],
               "identifiers": [
                   {
-                      "identifier": "MIT",
-                      "scheme": "DEP5"
-                  },
-                  {
-                      "identifier": "Expat",
-                      "scheme": "DEP5"
-                  },
-                  {
-                      "identifier": "MIT",
+                      "identifier": "HPND",
                       "scheme": "SPDX"
-                  },
-                  {
-                      "identifier": "License :: OSI Approved :: MIT License",
-                      "scheme": "Trove"
                   }
               ],
               "superseded_by": null,
               "_sourceURL": "https://opensource.org/licenses/",
-              "name": "MIT/Expat License",
-              "other_names": [
-                  {
-                      "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.",
-                      "name": "MIT"
-                  },
-                  {
-                      "note": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.",
-                      "name": "Expat"
-                  }
-              ],
+              "name": "Historical Permission Notice and Disclaimer",
+              "other_names": [],
               "keywords": [
                   "osi-approved",
-                  "popular",
-                  "permissive"
+                  "discouraged",
+                  "redundant"
               ],
-              "id": "MIT",
+              "id": "HPND",
               "links": [
                   {
-                      "note": "tl;dr legal",
-                      "url": "https://tldrlegal.com/license/mit-license"
-                  },
-                  {
-                      "note": "Wikipedia page",
-                      "url": "https://en.wikipedia.org/wiki/MIT_License"
-                  },
-                  {
                       "note": "OSI Page",
-                      "url": "https://opensource.org/licenses/mit"
+                      "url": "https://opensource.org/licenses/HPND"
                   }
               ],
               "_implications": {
                   "__impliedNames": [
-                      "MIT",
-                      "MIT/Expat License",
-                      "MIT",
-                      "Expat",
-                      "MIT",
-                      "License :: OSI Approved :: MIT License",
-                      "MIT",
-                      "Expat"
-                  ],
-                  "__impliedJudgement": [
-                      [
-                          "OpenSourceInitiative",
-                          {
-                              "tag": "NeutralJudgement",
-                              "contents": "Because MIT has used many licenses for software, the Free Software Foundation considers MIT License ambiguous. The MIT License published on the OSI site is the same as the Expat License.\n"
-                          }
-                      ]
+                      "HPND",
+                      "Historical Permission Notice and Disclaimer",
+                      "HPND"
                   ],
                   "__impliedURLs": [
                       [
-                          "tl;dr legal",
-                          "https://tldrlegal.com/license/mit-license"
-                      ],
-                      [
-                          "Wikipedia page",
-                          "https://en.wikipedia.org/wiki/MIT_License"
-                      ],
-                      [
                           "OSI Page",
-                          "https://opensource.org/licenses/mit"
+                          "https://opensource.org/licenses/HPND"
                       ]
                   ]
               }
@@ -734,6 +941,13 @@
               }
           ],
           [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ],
+          [
               "Google OSS Policy",
               {
                   "tag": "PositiveJudgement",
@@ -813,9 +1027,25 @@
               }
           ]
       },
-      "__isOsiApproved": true,
-      "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining\na copy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+      "__isOsiApproved": false,
+      "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
       "__impliedURLs": [
+          [
+              "SPDX",
+              "http://spdx.org/licenses/Adobe-Glyph.json"
+          ],
+          [
+              null,
+              "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/HPND.json"
+          ],
+          [
+              null,
+              "https://opensource.org/licenses/HPND"
+          ],
           [
               "SPDX",
               "http://spdx.org/licenses/MIT.json"
@@ -826,7 +1056,99 @@
           ],
           [
               "SPDX",
+              "http://spdx.org/licenses/MIT-enna.json"
+          ],
+          [
+              null,
+              "https://fedoraproject.org/wiki/Licensing/MIT#enna"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/MIT-feh.json"
+          ],
+          [
+              null,
+              "https://fedoraproject.org/wiki/Licensing/MIT#feh"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/SGI-B-2.0.json"
+          ],
+          [
+              null,
+              "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/SMLNJ.json"
+          ],
+          [
+              null,
+              "https://www.smlnj.org/license.html"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/mpich2.json"
+          ],
+          [
+              null,
+              "https://fedoraproject.org/wiki/Licensing/MIT"
+          ],
+          [
+              "SPDX",
               "https://spdx.org/licenses/MIT.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/MIT-enna.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/MIT-feh.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/SGI-B-2.0.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/SMLNJ.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/HPND.html"
+          ],
+          [
+              "SPDX",
+              "https://spdx.org/licenses/mpich2.html"
+          ],
+          [
+              "Homepage",
+              "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
+          ],
+          [
+              null,
+              "http://oss.sgi.com/projects/FreeB/"
+          ],
+          [
+              "Homepage",
+              "http://www.opensource.org/licenses/historical.php"
+          ],
+          [
+              "OSI Page",
+              "http://www.opensource.org/licenses/historical.php"
+          ],
+          [
+              null,
+              "http://www.opensource.org/licenses/HPND"
+          ],
+          [
+              "Homepage",
+              "https://fedoraproject.org/wiki/Licensing/MIT#enna"
+          ],
+          [
+              "Homepage",
+              "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#feh"
           ],
           [
               "Homepage",
@@ -843,6 +1165,30 @@
           [
               null,
               "https://opensource.com/article/19/4/history-mit-license"
+          ],
+          [
+              "Homepage",
+              "http://www.smlnj.org//license.html"
+          ],
+          [
+              null,
+              "http://www.gnu.org/licenses/license-list.html#StandardMLofNJ"
+          ],
+          [
+              null,
+              "http://www2.cs.tum.edu/projects/cup/"
+          ],
+          [
+              "Homepage",
+              "https://svn.mcs.anl.gov/repos/mpi/mpich2/trunk/COPYRIGHT"
+          ],
+          [
+              "Homepage",
+              "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph"
+          ],
+          [
+              "OSI Page",
+              "https://opensource.org/licenses/HPND"
           ],
           [
               "tl;dr legal",

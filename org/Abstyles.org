@@ -1,17 +1,22 @@
 * Abstyles License (Abstyles)
 
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Abstyles License                               |
-| Shortname        | Abstyles                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key              | Value              |
+|------------------+--------------------|
+| Fullname         | Abstyles License   |
+| Shortname        | Abstyles           |
+| Rating           | Unknown            |
+| Classification   | NoCopyleft         |
 
 *Other Names:*
 
 - =scancode://abstyles=
 
 ** Comments on (easy) usability
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -53,6 +58,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -63,6 +72,7 @@
           "scancode://abstyles"
       ],
       "__impliedId": "Abstyles",
+      "__isFsfFree": true,
       "__impliedComments": [
           [
               "Scancode",
@@ -100,6 +110,33 @@
                   ]
               },
               "spdxLicenseId": "Abstyles"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+              "GPLv3 Compat?": "NO",
+              "Short Name": "Abstyles",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Abstyles License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Abstyles License",
+                      "Abstyles"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -147,6 +184,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

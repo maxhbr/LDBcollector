@@ -4,9 +4,11 @@
         "PHP License v3.0",
         "scancode://php-3.0",
         "PHP License 3.0",
+        "PHP",
         "The PHP License, Version 3.0"
     ],
     "__impliedId": "PHP-3.0",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -86,6 +88,33 @@
                 ]
             },
             "spdxLicenseId": "PHP-3.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.php.net/license/3_01.txt",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "PHP",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "PHP License v3.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "PHP License v3.0",
+                    "PHP"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -351,6 +380,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

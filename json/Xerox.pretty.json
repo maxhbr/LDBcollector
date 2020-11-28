@@ -6,6 +6,7 @@
         "MIT with Export Control"
     ],
     "__impliedId": "Xerox",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +44,33 @@
                 ]
             },
             "spdxLicenseId": "Xerox"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Xerox",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Xerox",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Xerox License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Xerox License",
+                    "Xerox"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -138,6 +166,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Silver"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

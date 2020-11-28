@@ -3,9 +3,11 @@
         "ErlPL-1.1",
         "Erlang Public License v1.1",
         "scancode://erlangpl-1.1",
-        "Erlang Public License 1.1"
+        "Erlang Public License 1.1",
+        "ERPL"
     ],
     "__impliedId": "ErlPL-1.1",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Erlang Public License"
     ],
@@ -46,6 +48,33 @@
                 ]
             },
             "spdxLicenseId": "ErlPL-1.1"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "ERPL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Erlang Public License 1.1",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Erlang Public License 1.1",
+                    "ERPL"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -123,6 +152,15 @@
             "CopyleftKind": "WeakCopyleft"
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "BlueOak License List",

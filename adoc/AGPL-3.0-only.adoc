@@ -22,6 +22,7 @@
 * `+AGPL 3.0+`
 * `+agpl-3.0+`
 * `+GNU AGPLv3+`
+* `+AGPLv3+`
 * `+GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)+`
 * `+License :: OSI Approved :: GNU Affero General Public License v3+`
 * `+GNU Affero General Public License v3+`
@@ -842,6 +843,7 @@ Knowledge International]
         "AGPL 3.0",
         "agpl-3.0",
         "GNU AGPLv3",
+        "AGPLv3",
         "GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)",
         "License :: OSI Approved :: GNU Affero General Public License v3",
         "GNU Affero General Public License v3",
@@ -851,7 +853,6 @@ Knowledge International]
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Affero General Public License",
-        "AGPLv3",
         "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"
     ],
     "__impliedComments": [
@@ -956,12 +957,10 @@ Knowledge International]
             "FSF Free?": "Yes",
             "_implications": {
                 "__impliedNames": [
-                    "Affero General Public License 3.0"
-                ],
-                "__isFsfFree": true,
-                "__impliedAmbiguousNames": [
+                    "Affero General Public License 3.0",
                     "AGPLv3"
                 ],
+                "__isFsfFree": true,
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",

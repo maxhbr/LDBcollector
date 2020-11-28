@@ -183,8 +183,7 @@ Raw Data
         "__impliedId": "OSL-2.1",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Open Software License",
-            "OSL 2.1"
+            "Open Software License"
         ],
         "__impliedComments": [
             [
@@ -257,12 +256,10 @@ Raw Data
                 "FSF Free?": "Yes",
                 "_implications": {
                     "__impliedNames": [
-                        "Open Software License 2.1"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedAmbiguousNames": [
+                        "Open Software License 2.1",
                         "OSL 2.1"
                     ],
+                    "__isFsfFree": true,
                     "__impliedJudgement": [
                         [
                             "Fedora Project Wiki",

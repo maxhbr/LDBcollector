@@ -5,6 +5,7 @@
         "scancode://dvipdfm"
     ],
     "__impliedId": "dvipdfm",
+    "__isFsfFree": true,
     "__impliedComments": [
         [
             "Scancode",
@@ -42,6 +43,33 @@
                 ]
             },
             "spdxLicenseId": "dvipdfm"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "dvipdfm",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "dvipdfm License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "dvipdfm License",
+                    "dvipdfm"
+                ],
+                "__isFsfFree": true,
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -89,6 +117,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

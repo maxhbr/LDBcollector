@@ -151,9 +151,6 @@ Knowledge International]
     ],
     "__impliedId": "Unlicense",
     "__isFsfFree": true,
-    "__impliedAmbiguousNames": [
-        "Unlicense"
-    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -242,12 +239,10 @@ Knowledge International]
             "FSF Free?": "Yes",
             "_implications": {
                 "__impliedNames": [
+                    "Unlicense",
                     "Unlicense"
                 ],
                 "__isFsfFree": true,
-                "__impliedAmbiguousNames": [
-                    "Unlicense"
-                ],
                 "__impliedJudgement": [
                     [
                         "Fedora Project Wiki",
