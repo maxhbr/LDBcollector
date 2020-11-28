@@ -386,20 +386,11 @@ Raw Data
                 "summary": "BSD-4-Clause",
                 "notices": [
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "the software is provided by the copyright holder \"as-is\" and without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/102",
-                        "_notice_id": "notices/102"
+                        "content": "the software is provided by the copyright holder \"as-is\" and without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "The copyright holder may be liable for direct, indirect, and incidental damages arising from the use of the software, regardless of the cause of the damage, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if he or she has been advised of the possibility of such damages. in no event shall you be liable for any damages, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute or substitute services, loss of use, loss of data, loss of profits, or business interruption) ",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/103",
-                        "_notice_id": "notices/103"
+                        "content": "The copyright holder may be liable for direct, indirect, and incidental damages arising from the use of the software, regardless of the cause of the damage, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if he or she has been advised of the possibility of such damages. in no event shall you be liable for any damages, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute or substitute services, loss of use, loss of data, loss of profits, or business interruption) "
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/277",

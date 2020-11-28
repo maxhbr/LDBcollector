@@ -672,116 +672,48 @@ Raw Data
                 "summary": "http://creativecommons.org/licenses/by/3.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
                 "notices": [
                     {
-                        "_notice_description": "",
-                        "_notice_content": "No rights arising from fair use, exhaustion of rights, or restrictions by copyright law or the exclusive rights of the copyright holder under applicable law will be diminished or limited by this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/75",
-                        "_notice_id": "notices/75"
+                        "content": "No rights arising from fair use, exhaustion of rights, or restrictions by copyright law or the exclusive rights of the copyright holder under applicable law will be diminished or limited by this license."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "This license is the final and exclusive agreement with respect to the Work and there is no other agreement. This license may not be modified without mutual written agreement between Licensor and the Licensee.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/86",
-                        "_notice_id": "notices/86"
+                        "content": "This license is the final and exclusive agreement with respect to the Work and there is no other agreement. This license may not be modified without mutual written agreement between Licensor and the Licensee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "No waiver of any of the provisions of this license, in whole or in part, or acceptance of any breach thereof may be made unless it is in writing and signed by the party responsible for pursuing such waiver or acceptance.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/85",
-                        "_notice_id": "notices/85"
+                        "content": "No waiver of any of the provisions of this license, in whole or in part, or acceptance of any breach thereof may be made unless it is in writing and signed by the party responsible for pursuing such waiver or acceptance."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/55",
-                        "_notice_id": "notices/55"
+                        "content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "This license will continue for the duration of the applicable copyright for as long as you comply with this license. Notwithstanding the foregoing, the Licensor reserves the right to release the Work under a different license or to discontinue distribution of the Work. The exercise of such right by the Licensor shall not terminate the rights granted by this License.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/84",
-                        "_notice_id": "notices/84"
+                        "content": "This license will continue for the duration of the applicable copyright for as long as you comply with this license. Notwithstanding the foregoing, the Licensor reserves the right to release the Work under a different license or to discontinue distribution of the Work. The exercise of such right by the Licensor shall not terminate the rights granted by this License."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Any violation of this license shall automatically terminate all rights under this license. However, the obligations of the offending party under this license and the license to the person or entity receiving the derivative or collective work distributed by the offending party shall remain in force.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/83",
-                        "_notice_id": "notices/83"
+                        "content": "Any violation of this license shall automatically terminate all rights under this license. However, the obligations of the offending party under this license and the license to the person or entity receiving the derivative or collective work distributed by the offending party shall remain in force."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Under no legal theory shall Licensor be liable for any special, incidental, consequential, or punitive damages arising out of this license or use of the Works, even if Licensor has been advised of the possibility of such damages, unless otherwise ordered by applicable law. It shall not pursue responsibility.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/77",
-                        "_notice_id": "notices/77"
+                        "content": "Under no legal theory shall Licensor be liable for any special, incidental, consequential, or punitive damages arising out of this license or use of the Works, even if Licensor has been advised of the possibility of such damages, unless otherwise ordered by applicable law. It shall not pursue responsibility."
                     },
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "the work is provided by licensor \"as-is\" and without warranty of any kind, whether express, implied, statutory or otherwise, unless otherwise agreed to in writing. the warranties herein include, but are not limited to, warranties of title, commercial availability, fitness for a particular purpose, and non-infringement, for any cause whatsoever, regardless of the cause of the damage caused.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/78",
-                        "_notice_id": "notices/78"
+                        "content": "the work is provided by licensor \"as-is\" and without warranty of any kind, whether express, implied, statutory or otherwise, unless otherwise agreed to in writing. the warranties herein include, but are not limited to, warranties of title, commercial availability, fitness for a particular purpose, and non-infringement, for any cause whatsoever, regardless of the cause of the damage caused.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If requested by the Licensor, the author or other credit required by this license will be removed from the collective or derivative works to the extent feasible.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/82",
-                        "_notice_id": "notices/82"
+                        "content": "If requested by the Licensor, the author or other credit required by this license will be removed from the collective or derivative works to the extent feasible."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "All rights not expressly granted by the Licensor are reserved.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/81",
-                        "_notice_id": "notices/81"
+                        "content": "All rights not expressly granted by the Licensor are reserved."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "The Licensor waives the right to collect royalties from any person exercising rights under this license, whether as an individual or as a member of a copyright management organization that collects royalties under a voluntary licensing system.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/111",
-                        "_notice_id": "notices/111"
+                        "content": "The Licensor waives the right to collect royalties from any person exercising rights under this license, whether as an individual or as a member of a copyright management organization that collects royalties under a voluntary licensing system."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If a jurisdiction can be deemed to waive its right to collect royalties through a legal or licensing regime, the Licensor waives its exclusive right to collect such royalties from persons exercising their rights under this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/110",
-                        "_notice_id": "notices/110"
+                        "content": "If a jurisdiction can be deemed to waive its right to collect royalties through a legal or licensing regime, the Licensor waives its exclusive right to collect such royalties from persons exercising their rights under this license."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If in any jurisdiction the right to collect royalties through a legal or licensing regime is deemed non-waivable, the Licensor reserves the exclusive right to collect such royalties from persons exercising their rights under this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/109",
-                        "_notice_id": "notices/109"
+                        "content": "If in any jurisdiction the right to collect royalties through a legal or licensing regime is deemed non-waivable, the Licensor reserves the exclusive right to collect such royalties from persons exercising their rights under this license."
                     },
                     {
-                        "_notice_description": "This license does not limit the rights granted by applicable law.",
-                        "_notice_content": "The rights and content granted in this license include the Berne Convention for the Protection of Literary and Artistic Works of 28 September 1979, the 1961 International Convention for the Protection of Performers and Record Producers and the Period of Broadcasting, the 1996 World Intellectual Property Organization (WIPO) Convention on Copyright, the 1996 Performances The terms of the World Intellectual Property Organization (WIPO) Convention on the Recording Industry and the Universal Copyright Convention, as amended on 24 July 1971, are used. The rights and content granted in this licence shall be effective in the appropriate jurisdiction consistent with the terms of the treaty provisions' subdivisions in each country's law. If any rights granted under applicable copyright law are not granted under this license, such rights are also included in this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/112",
-                        "_notice_id": "notices/112"
+                        "content": "The rights and content granted in this license include the Berne Convention for the Protection of Literary and Artistic Works of 28 September 1979, the 1961 International Convention for the Protection of Performers and Record Producers and the Period of Broadcasting, the 1996 World Intellectual Property Organization (WIPO) Convention on Copyright, the 1996 Performances The terms of the World Intellectual Property Organization (WIPO) Convention on the Recording Industry and the Universal Copyright Convention, as amended on 24 July 1971, are used. The rights and content granted in this licence shall be effective in the appropriate jurisdiction consistent with the terms of the treaty provisions' subdivisions in each country's law. If any rights granted under applicable copyright law are not granted under this license, such rights are also included in this license.",
+                        "description": "This license does not limit the rights granted by applicable law."
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/58",

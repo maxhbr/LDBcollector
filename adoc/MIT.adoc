@@ -440,12 +440,8 @@ Knowledge International]
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/3",
-                    "_notice_id": "notices/3"
+                    "content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                    "description": "There is no guarantee."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/33",

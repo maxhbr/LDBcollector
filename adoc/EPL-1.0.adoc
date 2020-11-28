@@ -502,52 +502,25 @@ Knowledge International]
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "except as expressly stated in such license, the software is provided \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, any warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. The warranties or conditions include, but are not limited to, warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. Every person who receives such software under such license is responsible for determining for himself whether use or redistribution of such software is appropriate and assumes all risks associated with exercising his rights under such license (including, but not limited to, program errors, compliance with applicable law, and the risk of loss of data, programs and risks, including but not limited to risks related to damage to equipment and interruption of operations).",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/54",
-                    "_notice_id": "notices/54"
+                    "content": "except as expressly stated in such license, the software is provided \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, any warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. The warranties or conditions include, but are not limited to, warranties or conditions of title, non-infringement, commercial usability, and fitness for a particular purpose. Every person who receives such software under such license is responsible for determining for himself whether use or redistribution of such software is appropriate and assumes all risks associated with exercising his rights under such license (including, but not limited to, program errors, compliance with applicable law, and the risk of loss of data, programs and risks, including but not limited to risks related to damage to equipment and interruption of operations).",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "Contributor is the person or entity that distributes the Software.",
-                    "_notice_content": "except as expressly set forth in such license, neither any person nor any contributor who receives such software under such license, for any reason whatsoever, regardless of how the damage may have occurred, and regardless of whether the basis of liability was in contract, strict liability or tort (including negligence), even if in no event shall you be liable for any direct, indirect, special, incidental, exemplary, or consequential damages arising out of the use or distribution of the software or the exercise of the rights granted by the license, even if you have been advised of the possibility of such damages shall be.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/27",
-                    "_notice_id": "notices/27"
+                    "content": "except as expressly set forth in such license, neither any person nor any contributor who receives such software under such license, for any reason whatsoever, regardless of how the damage may have occurred, and regardless of whether the basis of liability was in contract, strict liability or tort (including negligence), even if in no event shall you be liable for any direct, indirect, special, incidental, exemplary, or consequential damages arising out of the use or distribution of the software or the exercise of the rights granted by the license, even if you have been advised of the possibility of such damages shall be.",
+                    "description": "Contributor is the person or entity that distributes the Software."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/55",
-                    "_notice_id": "notices/55"
+                    "content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable."
                 },
                 {
-                    "_notice_description": "Contributor is the person or entity that distributes the Software.",
-                    "_notice_content": "The license of a contributor's contribution to a contributor, including cross-claims and counterclaims, to use the contributor's contribution alone or in combination with such software (but not in combination with other software or hardware) constitutes patent infringement when the patent action is formally filed, and the license of the contributor to the litigant The patent license granted pursuant to",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/56",
-                    "_notice_id": "notices/56"
+                    "content": "The license of a contributor's contribution to a contributor, including cross-claims and counterclaims, to use the contributor's contribution alone or in combination with such software (but not in combination with other software or hardware) constitutes patent infringement when the patent action is formally filed, and the license of the contributor to the litigant The patent license granted pursuant to",
+                    "description": "Contributor is the person or entity that distributes the Software."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If any person receiving such software under such license fails to comply with any of the material terms of such license and fails to correct the violation within a reasonable time after becoming aware of it, all rights under such license of the person who has failed to correct the violation shall be terminated. Upon termination, you agree to cease use and distribution of the program as soon as possible, provided that you have failed to correct the violation. However, the obligations under the license of the person who has not corrected the breach and the license granted by the person who has not corrected the breach shall remain in force.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/20",
-                    "_notice_id": "notices/20"
+                    "content": "If any person receiving such software under such license fails to comply with any of the material terms of such license and fails to correct the violation within a reasonable time after becoming aware of it, all rights under such license of the person who has failed to correct the violation shall be terminated. Upon termination, you agree to cease use and distribution of the program as soon as possible, provided that you have failed to correct the violation. However, the obligations under the license of the person who has not corrected the breach and the license granted by the person who has not corrected the breach shall remain in force."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "The license is subject to the laws of the State of New York and the intellectual property laws of the United States. After one (1) year from the accrual of the cause of action, no party to such license may bring legal action under such license. Each party waives the right to a jury trial in any action concerning such license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/57",
-                    "_notice_id": "notices/57"
+                    "content": "The license is subject to the laws of the State of New York and the intellectual property laws of the United States. After one (1) year from the accrual of the cause of action, no party to such license may bring legal action under such license. Each party waives the right to a jury trial in any action concerning such license."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/17",

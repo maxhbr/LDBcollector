@@ -235,76 +235,34 @@
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "The description must be described in sufficient detail in the LEGAL, and the LEGAL must be included in all source code distributed.",
-                    "_notice_content": "If you are unable to comply with any provision of such license by law, court order, or regulation, you will comply with the terms of such license to the maximum extent possible. It also explains the limited scope of compliance and the code affected by it.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/70",
-                    "_notice_id": "notices/70"
+                    "content": "If you are unable to comply with any provision of such license by law, court order, or regulation, you will comply with the terms of such license to the maximum extent possible. It also explains the limited scope of compliance and the code affected by it.",
+                    "description": "The description must be described in sufficient detail in the LEGAL, and the LEGAL must be included in all source code distributed."
                 },
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the software is made available on a royalty-free basis and, to the extent permitted by applicable law, there is no warranty for the software. except as otherwise stated in writing, the software is provided by the copyright holder or other entity \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/31",
-                    "_notice_id": "notices/31"
+                    "content": "the software is made available on a royalty-free basis and, to the extent permitted by applicable law, there is no warranty for the software. except as otherwise stated in writing, the software is provided by the copyright holder or other entity \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation.",
-                    "_notice_content": "Failure to remedy a violation of the terms of the license within thirty (30) days of becoming aware of such violation will result in automatic license revocation. Any term that should remain in effect after expiration will remain in effect after the expiration of the license. An end-user license granted to anyone other than the end-user in violation prior to the expiration of the license will remain in effect.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/60",
-                    "_notice_id": "notices/60"
+                    "content": "Failure to remedy a violation of the terms of the license within thirty (30) days of becoming aware of such violation will result in automatic license revocation. Any term that should remain in effect after expiration will remain in effect after the expiration of the license. An end-user license granted to anyone other than the end-user in violation prior to the expiration of the license will remain in effect.",
+                    "description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent of the The Company shall not be liable for any damage or loss (including commercial damage or loss) that is not caused by the",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/62",
-                    "_notice_id": "notices/62"
+                    "content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent of the The Company shall not be liable for any damage or loss (including commercial damage or loss) that is not caused by the"
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If any provision of such license shall be deemed unenforceable, such provision shall be amended only to the extent necessary to make it enforceable. With the exception of provisions relating to conflicts of law, the provisions of the laws of the State of California shall be followed. Except to the extent otherwise provided by applicable law.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/58",
-                    "_notice_id": "notices/58"
+                    "content": "If any provision of such license shall be deemed unenforceable, such provision shall be amended only to the extent necessary to make it enforceable. With the exception of provisions relating to conflicts of law, the provisions of the laws of the State of California shall be followed. Except to the extent otherwise provided by applicable law."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If at least one party is a U.S. citizen or an entity licensed or registered to do business in the United States, the following applies Any dispute (other than intellectual property disputes) relating to such license shall be subject to the terms of the final mediation, unless otherwise agreed to in writing, and the losing party shall bear all costs of the mediation. The mediation shall be conducted in Santa Clara County, California, in accordance with JAMS/EndDispute. Venue shall be in Santa Clara County, California, and venue shall be subject to the jurisdiction of the United States Court for the Northern District of California, and the losing party shall bear the costs of the litigation and reasonable attorneys' fees.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/71",
-                    "_notice_id": "notices/71"
+                    "content": "If at least one party is a U.S. citizen or an entity licensed or registered to do business in the United States, the following applies Any dispute (other than intellectual property disputes) relating to such license shall be subject to the terms of the final mediation, unless otherwise agreed to in writing, and the losing party shall bear all costs of the mediation. The mediation shall be conducted in Santa Clara County, California, in accordance with JAMS/EndDispute. Venue shall be in Santa Clara County, California, and venue shall be subject to the jurisdiction of the United States Court for the Northern District of California, and the losing party shall bear the costs of the litigation and reasonable attorneys' fees."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "The application of the UN contractual provisions on international trade in goods is expressly excluded.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/16",
-                    "_notice_id": "notices/16"
+                    "content": "The application of the UN contractual provisions on international trade in goods is expressly excluded."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/63",
-                    "_notice_id": "notices/63"
+                    "content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "EXHIBIT A. \"The contents of this file are subject to the Mozilla Public License Version 1.0 (the \"License\"); you may not use this file except in compliance You may obtain a copy of the License at http://www.mozilla.org/MPL/ Software distributed under the License is distributed on an \"AS IS\" See the License for the specific language governing rights and limitations under the The Original Code is ______________________________________. The Initial Developer of the Original Code is ________________________. Portions created by ______________________ are Copyright (C) ______ _______________________. All Rights Reserved.Contributor(s): ______________________________________.\"",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/72",
-                    "_notice_id": "notices/72"
+                    "content": "EXHIBIT A. \"The contents of this file are subject to the Mozilla Public License Version 1.0 (the \"License\"); you may not use this file except in compliance You may obtain a copy of the License at http://www.mozilla.org/MPL/ Software distributed under the License is distributed on an \"AS IS\" See the License for the specific language governing rights and limitations under the The Original Code is ______________________________________. The Initial Developer of the Original Code is ________________________. Portions created by ______________________ are Copyright (C) ______ _______________________. All Rights Reserved.Contributor(s): ______________________________________.\""
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/263",

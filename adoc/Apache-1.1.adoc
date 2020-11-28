@@ -388,20 +388,11 @@ Knowledge International]
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/7",
-                    "_notice_id": "notices/7"
+                    "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "neither the Apache Software Foundation nor any contributor has been advised of the possibility of such damages, for any cause whatsoever, regardless of how caused, and regardless of whether liability is based on contract, strict liability or tort (including negligence), even if advised of the possibility of such damages. for any direct, indirect, special, incidental, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or substitute services, loss of use, loss of data, loss of profits, or business interruption) arising out of the use of such software. No liability (including but not limited to indemnification) shall be assumed.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/9",
-                    "_notice_id": "notices/9"
+                    "content": "neither the Apache Software Foundation nor any contributor has been advised of the possibility of such damages, for any cause whatsoever, regardless of how caused, and regardless of whether liability is based on contract, strict liability or tort (including negligence), even if advised of the possibility of such damages. for any direct, indirect, special, incidental, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or substitute services, loss of use, loss of data, loss of profits, or business interruption) arising out of the use of such software. No liability (including but not limited to indemnification) shall be assumed."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/12",

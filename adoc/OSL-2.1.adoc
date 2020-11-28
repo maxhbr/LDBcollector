@@ -364,76 +364,32 @@ Policy]
             "summary": "https://opensource.org/licenses/osl-2.1.php",
             "notices": [
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If any provision of this license is deemed unenforceable, that provision shall be amended only to the extent necessary to make it enforceable.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/259",
-                    "_notice_id": "notices/259"
+                    "content": "If any provision of this license is deemed unenforceable, that provision shall be amended only to the extent necessary to make it enforceable."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If a lawsuit is brought in connection with this license, the losing party shall bear the costs of the lawsuit and reasonable attorney's fees.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/260",
-                    "_notice_id": "notices/260"
+                    "content": "If a lawsuit is brought in connection with this license, the losing party shall bear the costs of the lawsuit and reasonable attorney's fees."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "The application of the UN contractual provisions on international trade in goods is expressly excluded.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/16",
-                    "_notice_id": "notices/16"
+                    "content": "The application of the UN contractual provisions on international trade in goods is expressly excluded."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Any action with respect to this License shall be filed only in the court of the jurisdiction in which Licensor resides or maintains its principal place of business, and the laws of that jurisdiction shall apply, except for the conflict of law provisions.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/261",
-                    "_notice_id": "notices/261"
+                    "content": "Any action with respect to this License shall be filed only in the court of the jurisdiction in which Licensor resides or maintains its principal place of business, and the laws of that jurisdiction shall apply, except for the conflict of law provisions."
                 },
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the original software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of non-infringement, commercial usability, and fitness for a particular purpose. The warranties include, but are not limited to, the warranties of non-infringement, commercial usability, and fitness for a particular purpose. the entire risk to the quality of the original software is borne by you.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/263",
-                    "_notice_id": "notices/263"
+                    "content": "the original software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of non-infringement, commercial usability, and fitness for a particular purpose. The warranties include, but are not limited to, the warranties of non-infringement, commercial usability, and fitness for a particular purpose. the entire risk to the quality of the original software is borne by you.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Any use of the original Software outside of the scope of this license or after the termination of this license is subject to the requirements and penalties of Section 101 of the U.S. Copyright Act, equivalent laws of other countries, and international treaties.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/264",
-                    "_notice_id": "notices/264"
+                    "content": "Any use of the original Software outside of the scope of this license or after the termination of this license is subject to the requirements and penalties of Section 101 of the U.S. Copyright Act, equivalent laws of other countries, and international treaties."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Under no conditions and on no theory of law, whether in tort (including negligence), contract or otherwise, shall Licensor be liable for any direct, indirect, special, incidental or consequential damages (including loss of goodwill, loss of business (including but not limited to commercial damage or loss, including but not limited to damage or loss due to outages, computer failure or malfunction). To the extent that applicable law does not permit such a limitation on liability for death or personal injury caused by the negligence of the copyright holder, such limitation shall not apply to such liability. Some countries or jurisdictions do not allow the exclusion or limitation of incidental or consequential damages as a matter of law, in which case this exclusion and limitation will not apply.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/265",
-                    "_notice_id": "notices/265"
+                    "content": "Under no conditions and on no theory of law, whether in tort (including negligence), contract or otherwise, shall Licensor be liable for any direct, indirect, special, incidental or consequential damages (including loss of goodwill, loss of business (including but not limited to commercial damage or loss, including but not limited to damage or loss due to outages, computer failure or malfunction). To the extent that applicable law does not permit such a limitation on liability for death or personal injury caused by the negligence of the copyright holder, such limitation shall not apply to such liability. Some countries or jurisdictions do not allow the exclusion or limitation of incidental or consequential damages as a matter of law, in which case this exclusion and limitation will not apply."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Failure to apply this license when distributing the original software or derivative works shall result in immediate termination of all rights under this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/692",
-                    "_notice_id": "notices/692"
+                    "content": "Failure to apply this license when distributing the original software or derivative works shall result in immediate termination of all rights under this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If you file a patent action, including cross-claims or counterclaims, alleging that the original Software directly or indirectly infringes a patent, this license will terminate upon formal filing of the patent action, unless you allege that the original Software infringes a patent by a combination of the original Software and other software or hardware. The license shall terminate upon formal filing of the patent action, unless the original software in combination with other software or hardware is alleged to infringe the patent.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/272",
-                    "_notice_id": "notices/272"
+                    "content": "If you file a patent action, including cross-claims or counterclaims, alleging that the original Software directly or indirectly infringes a patent, this license will terminate upon formal filing of the patent action, unless you allege that the original Software infringes a patent by a combination of the original Software and other software or hardware. The license shall terminate upon formal filing of the patent action, unless the original software in combination with other software or hardware is alleged to infringe the patent."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/1084",

@@ -713,148 +713,63 @@ Knowledge International]
             "summary": "http://creativecommons.org/licenses/by/4.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã. The official translation is at https://creativecommons.org/licenses/by/4.0/legalcode.ja",
             "notices": [
                 {
-                    "_notice_description": "Exceptions and limitations refer to exceptions and restrictions, such as fair use and fair dealing, to copyright and similar rights that apply to one's own use of a licensed work.",
-                    "_notice_content": "For the avoidance of doubt, if exceptions and limitations apply to its own use, this license shall not apply. In this case, you do not have to comply with the terms of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/460",
-                    "_notice_id": "notices/460"
+                    "content": "For the avoidance of doubt, if exceptions and limitations apply to its own use, this license shall not apply. In this case, you do not have to comply with the terms of this license.",
+                    "description": "Exceptions and limitations refer to exceptions and restrictions, such as fair use and fair dealing, to copyright and similar rights that apply to one's own use of a licensed work."
                 },
                 {
-                    "_notice_description": "An effective technical measure is a technical measure that must not be circumvented without appropriate authority under the law that satisfies obligations under Article 11 of the World Intellectual Property Organization's (WIPO) Convention on Copyright, adopted on 20 December 1996, or equivalent international agreements.",
-                    "_notice_content": "Licensor agrees to waive or not to exercise any right or authority to prohibit any technical modifications necessary to circumvent effective technical measures.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/461",
-                    "_notice_id": "notices/461"
+                    "content": "Licensor agrees to waive or not to exercise any right or authority to prohibit any technical modifications necessary to circumvent effective technical measures.",
+                    "description": "An effective technical measure is a technical measure that must not be circumvented without appropriate authority under the law that satisfies obligations under Article 11 of the World Intellectual Property Organization's (WIPO) Convention on Copyright, adopted on 20 December 1996, or equivalent international agreements."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "This license does not confer any support, endorsement or official status on the person exercising the rights of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/462",
-                    "_notice_id": "notices/462"
+                    "content": "This license does not confer any support, endorsement or official status on the person exercising the rights of this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Moral rights, such as the author's right to identity, shall not be licensed under this license. Moral rights, such as publicity and privacy rights, shall be treated in the same manner. Licensor agrees to waive, or not to exercise, any rights it may have only to the extent necessary for any person to exercise his or her rights under this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/463",
-                    "_notice_id": "notices/463"
+                    "content": "Moral rights, such as the author's right to identity, shall not be licensed under this license. Moral rights, such as publicity and privacy rights, shall be treated in the same manner. Licensor agrees to waive, or not to exercise, any rights it may have only to the extent necessary for any person to exercise his or her rights under this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "No patent rights or trademarks shall be licensed under this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/465",
-                    "_notice_id": "notices/465"
+                    "content": "No patent rights or trademarks shall be licensed under this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "To the extent possible, Licensor waives its right to collect royalties, whether directly or through an entity, from persons exercising rights under this license, either legally or through a licensing system. In all other cases, Licensor expressly reserves the right to collect such royalties from persons exercising their rights under this License.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/464",
-                    "_notice_id": "notices/464"
+                    "content": "To the extent possible, Licensor waives its right to collect royalties, whether directly or through an entity, from persons exercising rights under this license, either legally or through a licensing system. In all other cases, Licensor expressly reserves the right to collect such royalties from persons exercising their rights under this License."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If requested by the Licensor, the author or other credit required by this license will be removed from the work to the extent practicable.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/466",
-                    "_notice_id": "notices/466"
+                    "content": "If requested by the Licensor, the author or other credit required by this license will be removed from the work to the extent practicable."
                 },
                 {
-                    "_notice_description": "This non-warranty may not apply if all or part of the non-warranty is not granted.",
-                    "_notice_content": "Except as otherwise warranted by Licensor, Licensor is providing the Works \"as-is\" to the extent possible and makes no representations or warranties of any kind, express, implied, statutory or otherwise, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, non-infringement, or potential infringement. The representations and warranties herein include, but are not limited to, representations and warranties, whether known or discoverable, as to title, commercial usability, fitness for a particular purpose, non-infringement, lack of defects, accuracy, and the absence of errors, whether latent or not.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/468",
-                    "_notice_id": "notices/468"
+                    "content": "Except as otherwise warranted by Licensor, Licensor is providing the Works \"as-is\" to the extent possible and makes no representations or warranties of any kind, express, implied, statutory or otherwise, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, non-infringement, or potential infringement. The representations and warranties herein include, but are not limited to, representations and warranties, whether known or discoverable, as to title, commercial usability, fitness for a particular purpose, non-infringement, lack of defects, accuracy, and the absence of errors, whether latent or not.",
+                    "description": "This non-warranty may not apply if all or part of the non-warranty is not granted."
                 },
                 {
-                    "_notice_description": "If all or part of the disclaimer is not granted, this disclaimer may not apply to you.",
-                    "_notice_content": "to the extent possible, under no legal theory (including, but not limited to, negligence) or otherwise, shall Licensor be liable for any direct, special, indirect, incidental, or consequential damages, including, but not limited to, direct, special, indirect, or incidental damages, arising out of this license or use of the Works, even if Licensor has been advised of the possibility of such loss, cost, expense, or damage. In no event shall it be liable for any consequential, punitive or other loss, cost, expense or other damages.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/469",
-                    "_notice_id": "notices/469"
+                    "content": "to the extent possible, under no legal theory (including, but not limited to, negligence) or otherwise, shall Licensor be liable for any direct, special, indirect, incidental, or consequential damages, including, but not limited to, direct, special, indirect, or incidental damages, arising out of this license or use of the Works, even if Licensor has been advised of the possibility of such loss, cost, expense, or damage. In no event shall it be liable for any consequential, punitive or other loss, cost, expense or other damages.",
+                    "description": "If all or part of the disclaimer is not granted, this disclaimer may not apply to you."
                 },
                 {
-                    "_notice_description": "However, if the violation is corrected within thirty (30) days of discovery of the violation, it shall be automatically reinstated on the date the violation is corrected. The same shall also apply if the rights are expressly reinstated in the Licensor.",
-                    "_notice_content": "Violation of this license shall result in automatic termination of all rights under this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/467",
-                    "_notice_id": "notices/467"
+                    "content": "Violation of this license shall result in automatic termination of all rights under this license.",
+                    "description": "However, if the violation is corrected within thirty (30) days of discovery of the violation, it shall be automatically reinstated on the date the violation is corrected. The same shall also apply if the rights are expressly reinstated in the Licensor."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Licensor reserves the right to release the Work under a different license or to discontinue distribution of the Work. The exercise of such right by Licensor shall not terminate this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/470",
-                    "_notice_id": "notices/470"
+                    "content": "Licensor reserves the right to release the Work under a different license or to discontinue distribution of the Work. The exercise of such right by Licensor shall not terminate this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Sections 1, 5, 6, 7, and 8 of this license shall remain in effect after the termination of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/471",
-                    "_notice_id": "notices/471"
+                    "content": "Sections 1, 5, 6, 7, and 8 of this license shall remain in effect after the termination of this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Licensor shall not be subject to any different terms and conditions without the express agreement of the parties exercising their rights under this license and each other.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/475",
-                    "_notice_id": "notices/475"
+                    "content": "Licensor shall not be subject to any different terms and conditions without the express agreement of the parties exercising their rights under this license and each other."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Any arrangement or agreement with respect to the Work not expressly stated in this license shall be separate and apart from the terms of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/476",
-                    "_notice_id": "notices/476"
+                    "content": "Any arrangement or agreement with respect to the Work not expressly stated in this license shall be separate and apart from the terms of this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "For the avoidance of doubt, this license shall not be construed as reducing or limiting or imposing conditions on the use of the work that are legally possible without the granting of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/473",
-                    "_notice_id": "notices/473"
+                    "content": "For the avoidance of doubt, this license shall not be construed as reducing or limiting or imposing conditions on the use of the work that are legally possible without the granting of this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If any provision of this license is unenforceable, it shall be automatically amended to the minimum extent necessary to make it enforceable. If any provision cannot be amended, it shall be severed from this license so as not to affect the enforceability of any other provision of this license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/477",
-                    "_notice_id": "notices/477"
+                    "content": "If any provision of this license is unenforceable, it shall be automatically amended to the minimum extent necessary to make it enforceable. If any provision cannot be amended, it shall be severed from this license so as not to affect the enforceability of any other provision of this license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Unless Licensor expressly agrees, Licensor will not waive or agree not to comply with any of the terms of this License.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/474",
-                    "_notice_id": "notices/474"
+                    "content": "Unless Licensor expressly agrees, Licensor will not waive or agree not to comply with any of the terms of this License."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "This license shall not be construed to limit or waive any privileges or immunities applicable to the Licensor or to itself (including those arising from legal proceedings in any jurisdiction or authority).",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/478",
-                    "_notice_id": "notices/478"
+                    "content": "This license shall not be construed to limit or waive any privileges or immunities applicable to the Licensor or to itself (including those arising from legal proceedings in any jurisdiction or authority)."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/842",

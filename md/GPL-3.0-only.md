@@ -1219,132 +1219,58 @@ Raw Data
             "Hitachi open-license": {
                 "notices": [
                     {
-                        "_notice_description": "",
-                        "_notice_content": "This license acknowledges the fair use rights provided by the Copyright Act, or other equivalent rights.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/89",
-                        "_notice_id": "notices/89"
+                        "content": "This license acknowledges the fair use rights provided by the Copyright Act, or other equivalent rights."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "The software shall not be deemed to be a means of technical protection under any applicable law that satisfies the obligations set forth in Article 11 of the WIPO Copyright Treaty (adopted on 20 December 1996) or under any law that prohibits circumvention of technical protection measures.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/90",
-                        "_notice_id": "notices/90"
+                        "content": "The software shall not be deemed to be a means of technical protection under any applicable law that satisfies the obligations set forth in Article 11 of the WIPO Copyright Treaty (adopted on 20 December 1996) or under any law that prohibits circumvention of technical protection measures."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If you distribute the software, you may remove any additional license terms that are different from those in this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/91",
-                        "_notice_id": "notices/91"
+                        "content": "If you distribute the software, you may remove any additional license terms that are different from those in this license."
                     },
                     {
-                        "_notice_description": "In the event of cessation of all acts in violation of this license, the license granted by a particular copyright holder shall be restored on an interim basis until such time as the copyright holder expressly states that it is finally terminated. It shall also be permanently restored if the copyright holder has not been notified of the violation by reasonable means within 60 days of the cessation of all conduct in violation of this license. The license granted by the copyright holder shall be permanently reinstated if the specific copyright holder has been notified of the violation by reasonable means, if it is the first notice from that copyright holder with respect to the violation of this license and the violation is remedied within thirty (30) days after receipt of such notice; and â The license granted by the copyright holder shall be permanently reinstated. If the rights are not permanently reinstated, no new license for the software can be obtained.",
-                        "_notice_content": "Violation of this license shall result in automatic termination of all rights under this license, except that the license to the person or entity that received the software distributed by the violator shall remain in effect. However, the license to the person or entity receiving the software distributed by the offending party shall remain in effect.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/92",
-                        "_notice_id": "notices/92"
+                        "content": "Violation of this license shall result in automatic termination of all rights under this license, except that the license to the person or entity that received the software distributed by the violator shall remain in effect. However, the license to the person or entity receiving the software distributed by the offending party shall remain in effect.",
+                        "description": "In the event of cessation of all acts in violation of this license, the license granted by a particular copyright holder shall be restored on an interim basis until such time as the copyright holder expressly states that it is finally terminated. It shall also be permanently restored if the copyright holder has not been notified of the violation by reasonable means within 60 days of the cessation of all conduct in violation of this license. The license granted by the copyright holder shall be permanently reinstated if the specific copyright holder has been notified of the violation by reasonable means, if it is the first notice from that copyright holder with respect to the violation of this license and the violation is remedied within thirty (30) days after receipt of such notice; and â The license granted by the copyright holder shall be permanently reinstated. If the rights are not permanently reinstated, no new license for the software can be obtained."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Each time such software is redistributed by any person who receives such software under such license, the recipient shall automatically obtain permission from the original licensee to copy, distribute or modify the software under the terms and conditions and restrictions specified in such license. All persons who receive such software under such license shall not impose any further restrictions on the recipient's exercise of the rights granted herein. All persons who receive such software under such license shall have no responsibility to enforce compliance by third parties with such license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/37",
-                        "_notice_id": "notices/37"
+                        "content": "Each time such software is redistributed by any person who receives such software under such license, the recipient shall automatically obtain permission from the original licensee to copy, distribute or modify the software under the terms and conditions and restrictions specified in such license. All persons who receive such software under such license shall not impose any further restrictions on the recipient's exercise of the rights granted herein. All persons who receive such software under such license shall have no responsibility to enforce compliance by third parties with such license."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If distribution of such software occurs as a result of a business transfer, divestiture, or merger transaction, the party receiving the software will succeed to all of the licenses granted under this license. The party receiving the software will also succeed to the right to retain the source code of the software, if the source code is reasonably available to the party receiving the software.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/93",
-                        "_notice_id": "notices/93"
+                        "content": "If distribution of such software occurs as a result of a business transfer, divestiture, or merger transaction, the party receiving the software will succeed to all of the licenses granted under this license. The party receiving the software will also succeed to the right to retain the source code of the software, if the source code is reasonably available to the party receiving the software."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "No patent action shall be brought with respect to the Software, including cross-claims and counterclaims.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/99",
-                        "_notice_id": "notices/99"
+                        "content": "No patent action shall be brought with respect to the Software, including cross-claims and counterclaims."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If you distribute the software in a country knowing on reasonable grounds that distribution of the software or use of the software by the recipient in that country without a patent agreement in place would infringe certain patent rights valid in that country, the source code corresponding to the software is If the software is not free to the public and cannot be copied in accordance with this license, you will either: â Make the source code corresponding to such software available free of charge to the public on a network server or through any means readily accessible to the public; or â Make the corresponding source code for such software available free of charge pursuant to this License on a network server available to the public or through any means readily accessible to the public; â Do not enjoy the benefits of such an agreement with respect to such software; or â Do not use any downstream Recipient also ensures that such agreement applies in accordance with this license",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/100",
-                        "_notice_id": "notices/100"
+                        "content": "If you distribute the software in a country knowing on reasonable grounds that distribution of the software or use of the software by the recipient in that country without a patent agreement in place would infringe certain patent rights valid in that country, the source code corresponding to the software is If the software is not free to the public and cannot be copied in accordance with this license, you will either: â Make the source code corresponding to such software available free of charge to the public on a network server or through any means readily accessible to the public; or â Make the corresponding source code for such software available free of charge pursuant to this License on a network server available to the public or through any means readily accessible to the public; â Do not enjoy the benefits of such an agreement with respect to such software; or â Do not use any downstream Recipient also ensures that such agreement applies in accordance with this license"
                     },
                     {
-                        "_notice_description": "However, this does not apply if such an agreement or contract was made prior to March 28, 2007.",
-                        "_notice_content": "With respect to a third party engaged in the business of distributing software, and with respect to the software (or any copy made from the software) that you distribute, or with respect to a particular product that contains the software or that is bundled with the software, you promise to pay the third party for the software. You may not distribute the software to any party that receives the software if you have agreed with that third party as to what that third party is granting you: â The agreement on the patent does not include any rights granted under this license. â the scope of the agreement on the patent does not include the rights granted under this license; â the agreement on the patent prohibits the exercise of the rights granted under this license; â the agreement on the patent conditions the non-exercise of the rights granted under this license on the non-exercise of the rights granted under this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/101",
-                        "_notice_id": "notices/101"
+                        "content": "With respect to a third party engaged in the business of distributing software, and with respect to the software (or any copy made from the software) that you distribute, or with respect to a particular product that contains the software or that is bundled with the software, you promise to pay the third party for the software. You may not distribute the software to any party that receives the software if you have agreed with that third party as to what that third party is granting you: â The agreement on the patent does not include any rights granted under this license. â the scope of the agreement on the patent does not include the rights granted under this license; â the agreement on the patent prohibits the exercise of the rights granted under this license; â the agreement on the patent conditions the non-exercise of the rights granted under this license on the non-exercise of the rights granted under this license.",
+                        "description": "However, this does not apply if such an agreement or contract was made prior to March 28, 2007."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Nothing in this license shall be construed to deny or limit any implied license or any defense against patent infringement that may be allowed under any other applicable patent law.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/94",
-                        "_notice_id": "notices/94"
+                        "content": "Nothing in this license shall be construed to deny or limit any implied license or any defense against patent infringement that may be allowed under any other applicable patent law."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "If a court judgment or allegation of infringement, or for any other reason not limited to patent infringement or patent-related, results in a court order or allegation that imposes restrictions on all persons who receive software under such license (whether by court order, contract, or otherwise) that are inconsistent with the terms of such license, then the license Not all persons who receive such software under a license (including, but not limited to, a license to use the software) are exempt from the terms of that license. Failure to distribute such software in a manner that simultaneously satisfies the responsibilities imposed under such license and any other relevant responsibilities shall result in the failure to distribute such software.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/33",
-                        "_notice_id": "notices/33"
+                        "content": "If a court judgment or allegation of infringement, or for any other reason not limited to patent infringement or patent-related, results in a court order or allegation that imposes restrictions on all persons who receive software under such license (whether by court order, contract, or otherwise) that are inconsistent with the terms of such license, then the license Not all persons who receive such software under a license (including, but not limited to, a license to use the software) are exempt from the terms of that license. Failure to distribute such software in a manner that simultaneously satisfies the responsibilities imposed under such license and any other relevant responsibilities shall result in the failure to distribute such software."
                     },
                     {
-                        "_notice_description": "This license continues to apply to that portion of the combined software, but the software as a whole is also subject to Section 13 of the GNU Affero General Public License Version 3, Network Interactions.",
-                        "_notice_content": "Notwithstanding anything in this license to the contrary, linking or combining the software with software licensed under the GNU Affero General Public License Version 3 into a single combined piece of software, and distributing the software It can be done.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/95",
-                        "_notice_id": "notices/95"
+                        "content": "Notwithstanding anything in this license to the contrary, linking or combining the software with software licensed under the GNU Affero General Public License Version 3 into a single combined piece of software, and distributing the software It can be done.",
+                        "description": "This license continues to apply to that portion of the combined software, but the software as a whole is also subject to Section 13 of the GNU Affero General Public License Version 3, Network Interactions."
                     },
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "to the extent permitted by appropriate law, there are no warranties regarding the software. the software is provided by the copyright holder, or other entity, \"as-is\", without warranty or condition of any kind, either express or implied, except as otherwise stated in writing. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/96",
-                        "_notice_id": "notices/96"
+                        "content": "to the extent permitted by appropriate law, there are no warranties regarding the software. the software is provided by the copyright holder, or other entity, \"as-is\", without warranty or condition of any kind, either express or implied, except as otherwise stated in writing. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Neither the copyright holder nor any other entity that modifies or redistributes the software as permitted by the license, even if advised of the possibility of such damage to all persons who receive the software under the license, is liable to pay any damages under applicable law or in writing. For any ordinary, special, incidental, or consequential damages arising out of the use of such software (such as loss or inaccurate processing of data, loss incurred by any person or third party who receives such software under such license, or You will not be liable for any damages or losses (including, but not limited to, damages or losses caused by the failure of such software to work with other software).",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/32",
-                        "_notice_id": "notices/32"
+                        "content": "Neither the copyright holder nor any other entity that modifies or redistributes the software as permitted by the license, even if advised of the possibility of such damage to all persons who receive the software under the license, is liable to pay any damages under applicable law or in writing. For any ordinary, special, incidental, or consequential damages arising out of the use of such software (such as loss or inaccurate processing of data, loss incurred by any person or third party who receives such software under such license, or You will not be liable for any damages or losses (including, but not limited to, damages or losses caused by the failure of such software to work with other software)."
                     },
                     {
-                        "_notice_description": "However, this does not apply if any warranty or liability is assumed in connection with the transfer of such software for a fee.",
-                        "_notice_content": "In the event that the non-warranty or disclaimer of this license is not found to be valid as provided in the place where the dispute arises, the court hearing the dispute shall apply the law that comes closest to an absolute disclaimer of civil liability for the Software under the law of the place where the dispute is heard.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/97",
-                        "_notice_id": "notices/97"
+                        "content": "In the event that the non-warranty or disclaimer of this license is not found to be valid as provided in the place where the dispute arises, the court hearing the dispute shall apply the law that comes closest to an absolute disclaimer of civil liability for the Software under the law of the place where the dispute is heard.",
+                        "description": "However, this does not apply if any warranty or liability is assumed in connection with the transfer of such software for a fee."
                     },
                     {
-                        "_notice_description": "It is safest to add this indication to the beginning of each file to most effectively state that the warranty is excluded.",
-                        "_notice_content": "If you apply this license to a new program, attach the following notices At a minimum, include a line of copyright notice and a pointer to the location of the full notice you are attaching in each file. <one line of the program's name and a brief description of what it does> Copyright (C) <year> <name of author> This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version .This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS You should have received a copy of the GNU General Public License along with If not, see <http://www.gnu.org/licenses/>.  Also add information on how to contact the program, etc. by electronic or paper mail. If the program is interactive, a short notice like the following should be displayed when it starts up in interactive mode: <name of program> <name of author> <name of author> <name of author <name of the program> Copyright (C) <year> <name of author> This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'. This is free software, and you are welcome to redistribute it under certain conditions; type `show c' for details. 'show w' and 'show c' is replaced by an appropriate pointer or command. It doesn't matter what you call it or how you display it, as long as the information is conveyed; for a GUI interface, you could use the 'About...' box instead.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/98",
-                        "_notice_id": "notices/98"
+                        "content": "If you apply this license to a new program, attach the following notices At a minimum, include a line of copyright notice and a pointer to the location of the full notice you are attaching in each file. <one line of the program's name and a brief description of what it does> Copyright (C) <year> <name of author> This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version .This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS You should have received a copy of the GNU General Public License along with If not, see <http://www.gnu.org/licenses/>.  Also add information on how to contact the program, etc. by electronic or paper mail. If the program is interactive, a short notice like the following should be displayed when it starts up in interactive mode: <name of program> <name of author> <name of author> <name of author <name of the program> Copyright (C) <year> <name of author> This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'. This is free software, and you are welcome to redistribute it under certain conditions; type `show c' for details. 'show w' and 'show c' is replaced by an appropriate pointer or command. It doesn't matter what you call it or how you display it, as long as the information is conveyed; for a GUI interface, you could use the 'About...' box instead.",
+                        "description": "It is safest to add this indication to the beginning of each file to most effectively state that the warranty is excluded."
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/7",

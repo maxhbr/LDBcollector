@@ -238,28 +238,14 @@ Raw Data
                 "summary": "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING",
                 "notices": [
                     {
-                        "_notice_description": "",
-                        "_notice_content": "This license applies only to such software and does not apply to any software that links (whether static or dynamic) to the libraries provided by such software.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/850",
-                        "_notice_id": "notices/850"
+                        "content": "This license applies only to such software and does not apply to any software that links (whether static or dynamic) to the libraries provided by such software."
                     },
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/3",
-                        "_notice_id": "notices/3"
+                        "content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "The author shall not be liable for any claims, damages or otherwise arising out of the use or other treatment of such software, whether in contract, negligence or other tort action.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/725",
-                        "_notice_id": "notices/725"
+                        "content": "The author shall not be liable for any claims, damages or otherwise arising out of the use or other treatment of such software, whether in contract, negligence or other tort action."
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/1561",

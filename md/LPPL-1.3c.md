@@ -741,36 +741,19 @@ Raw Data
                 "summary": "http://latex-project.org/lppl/",
                 "notices": [
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "There are no warranties with respect to the software. the software is provided by the copyright holder \"as-is\" by the copyright holder, except as otherwise stated in writing, without warranty of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties herein include, but are not limited to, implied warranties of commercial usability and fitness for a particular purpose. the entire risk as to the quality and performance of the software is borne by you. The software is defective and you will assume all costs of service, repair and correction.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/291",
-                        "_notice_id": "notices/291"
+                        "content": "There are no warranties with respect to the software. the software is provided by the copyright holder \"as-is\" by the copyright holder, except as otherwise stated in writing, without warranty of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties herein include, but are not limited to, implied warranties of commercial usability and fitness for a particular purpose. the entire risk as to the quality and performance of the software is borne by you. The software is defective and you will assume all costs of service, repair and correction.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "That no entity distributing or modifying such software, nor the author or copyright holder of any component of such software may use or exploit such software, even if advised of the possibility of such damage, unless ordered to do so by applicable law or written consent In no event shall the Company be liable for any ordinary, special, incidental or consequential damages (including, but not limited to, damages for loss of data, inaccurate data, or damages resulting from inability to continue as a result of defects in such software operating in conjunction with other programs) caused by the use of this software.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/292",
-                        "_notice_id": "notices/292"
+                        "content": "That no entity distributing or modifying such software, nor the author or copyright holder of any component of such software may use or exploit such software, even if advised of the possibility of such damage, unless ordered to do so by applicable law or written consent In no event shall the Company be liable for any ordinary, special, incidental or consequential damages (including, but not limited to, damages for loss of data, inaccurate data, or damages resulting from inability to continue as a result of defects in such software operating in conjunction with other programs) caused by the use of this software."
                     },
                     {
-                        "_notice_description": "Compiled software is software that has undergone a process of conversion to a format that can be used directly on a computer system. This process involves using the installation mechanisms provided by the software, converting the software, copying software components, etc.",
-                        "_notice_content": "If the compiled software generated from such software is distributed by means of a direct installation on the recipient's system, the compiled software may be distributed.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/294",
-                        "_notice_id": "notices/294"
+                        "content": "If the compiled software generated from such software is distributed by means of a direct installation on the recipient's system, the compiled software may be distributed.",
+                        "description": "Compiled software is software that has undergone a process of conversion to a format that can be used directly on a computer system. This process involves using the installation mechanisms provided by the software, converting the software, copying software components, etc."
                     },
                     {
-                        "_notice_description": "Current maintainer refers to a person who has been nominated as a potential maintainer of the software. If there is no explicit candidate for maintainer, refers to the copyright holder under applicable law. Compiled software is software that has undergone a process of conversion to a form that can be used directly on a computer system. This process includes using the installation mechanisms provided by the software, converting the software, copying components of the software, etc.",
-                        "_notice_content": "If you are not the current maintainer of such software, you may distribute the software compiled from the modified software to all recipients of the software compiled from the modified software as long as you distribute the modified software in accordance with Section 6 of this license.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/295",
-                        "_notice_id": "notices/295"
+                        "content": "If you are not the current maintainer of such software, you may distribute the software compiled from the modified software to all recipients of the software compiled from the modified software as long as you distribute the modified software in accordance with Section 6 of this license.",
+                        "description": "Current maintainer refers to a person who has been nominated as a potential maintainer of the software. If there is no explicit candidate for maintainer, refers to the copyright holder under applicable law. Compiled software is software that has undergone a process of conversion to a form that can be used directly on a computer system. This process includes using the installation mechanisms provided by the software, converting the software, copying components of the software, etc."
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/649",

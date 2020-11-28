@@ -286,20 +286,11 @@ Raw Data
             "Hitachi open-license": {
                 "notices": [
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "the software is provided by the openssl project \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/106",
-                        "_notice_id": "notices/106"
+                        "content": "the software is provided by the openssl project \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Neither the OpenSSL Project nor any contributor, for any cause whatsoever, shall be liable for any damages, regardless of how caused, and regardless of whether the basis of liability is contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages, for the software For any direct, indirect, special, incidental, punitive or consequential damages (including, but not limited to, compensation for procurement of replacement or substitute services, loss of use, loss of data, loss of profits, or business interruption) arising out of the use of ) shall not be liable in any way (including",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/107",
-                        "_notice_id": "notices/107"
+                        "content": "Neither the OpenSSL Project nor any contributor, for any cause whatsoever, shall be liable for any damages, regardless of how caused, and regardless of whether the basis of liability is contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages, for the software For any direct, indirect, special, incidental, punitive or consequential damages (including, but not limited to, compensation for procurement of replacement or substitute services, loss of use, loss of data, loss of profits, or business interruption) arising out of the use of ) shall not be liable in any way (including"
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/279",

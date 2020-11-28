@@ -214,28 +214,14 @@
             "summary": "http://opensource.org/licenses/Artistic-1.0",
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the package is provided \"as-is\" and without any warranties, express or implied, including, but not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. The warranties herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/312",
-                    "_notice_id": "notices/312"
+                    "content": "the package is provided \"as-is\" and without any warranties, express or implied, including, but not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. The warranties herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Any script or library that is the input of such a package, or the output of such a package, is considered to be the property of the person who generated it, not the package itself.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/316",
-                    "_notice_id": "notices/316"
+                    "content": "Any script or library that is the input of such a package, or the output of such a package, is considered to be the property of the person who generated it, not the package itself."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "C and perl subroutines linked to this package are not considered to be the package in question.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/317",
-                    "_notice_id": "notices/317"
+                    "content": "C and perl subroutines linked to this package are not considered to be the package in question."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/596",

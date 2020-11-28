@@ -232,124 +232,53 @@ open-license]] (CDLA-Permissive-1.0))
               "summary": "http://www.codeproject.com/info/cpol10.aspx",
               "notices": [
                   {
-                      "_notice_description": "",
-                      "_notice_content": "No rights arising from fair use, exhaustion of rights, or restrictions by copyright law or the exclusive rights of the copyright holder under applicable law will be diminished or limited by this license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/75",
-                      "_notice_id": "notices/75"
+                      "content": "No rights arising from fair use, exhaustion of rights, or restrictions by copyright law or the exclusive rights of the copyright holder under applicable law will be diminished or limited by this license."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "You agree not to represent or advertise the Software as your own product.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/359",
-                      "_notice_id": "notices/359"
+                      "content": "You agree not to represent or advertise the Software as your own product."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "You agree not to use such software for illegal, immoral or improper purposes or on pages that contain illegal, immoral or improper material.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/343",
-                      "_notice_id": "notices/343"
+                      "content": "You agree not to use such software for illegal, immoral or improper purposes or on pages that contain illegal, immoral or improper material."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "The recipient of such software agrees to comply with all export laws and other equivalent laws and regulations applicable to such software.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/342",
-                      "_notice_id": "notices/342"
+                      "content": "The recipient of such software agrees to comply with all export laws and other equivalent laws and regulations applicable to such software."
                   },
                   {
-                      "_notice_description": "There is no guarantee.",
-                      "_notice_content": "the software is provided \"as-is, where-is, as-available\" and without any conditions or warranties of any kind, either express or implied. The user assumes the entire risk of use, including copyright infringement, patent infringement, and fitness for purpose. The author does not provide any warranties or conditions, whether express, implied or statutory. The warranties and conditions include, but are not limited to, warranties and conditions regarding commercial applicability, quality and fitness for a particular purpose, title and non-infringement, and warranties and conditions regarding the accuracy, usefulness, and freedom from bugs and viruses of the software.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/345",
-                      "_notice_id": "notices/345"
+                      "content": "the software is provided \"as-is, where-is, as-available\" and without any conditions or warranties of any kind, either express or implied. The user assumes the entire risk of use, including copyright infringement, patent infringement, and fitness for purpose. The author does not provide any warranties or conditions, whether express, implied or statutory. The warranties and conditions include, but are not limited to, warranties and conditions regarding commercial applicability, quality and fitness for a particular purpose, title and non-infringement, and warranties and conditions regarding the accuracy, usefulness, and freedom from bugs and viruses of the software.",
+                      "description": "There is no guarantee."
                   },
                   {
-                      "_notice_description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software.",
-                      "_notice_content": "You shall defend and indemnify the author and publisher against any claims, actions, losses, damages, liabilities, costs and expenses (including the payment of reasonable legal fees and attorneys' fees) arising from your own use of such software.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/344",
-                      "_notice_id": "notices/344"
+                      "content": "You shall defend and indemnify the author and publisher against any claims, actions, losses, damages, liabilities, costs and expenses (including the payment of reasonable legal fees and attorneys' fees) arising from your own use of such software.",
+                      "description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software."
                   },
                   {
-                      "_notice_description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software.",
-                      "_notice_content": "Under no legal theory shall the author or publisher be liable for any special, incidental, consequential, or punitive damages arising out of the use of the software or otherwise, even if they have been advised of the possibility of such damages, unless otherwise required by applicable law. shall not be liable for any of the following.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/346",
-                      "_notice_id": "notices/346"
+                      "content": "Under no legal theory shall the author or publisher be liable for any special, incidental, consequential, or punitive damages arising out of the use of the software or otherwise, even if they have been advised of the possibility of such damages, unless otherwise required by applicable law. shall not be liable for any of the following.",
+                      "description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "Any violation of this license shall automatically terminate all rights under this license. However, the license to the person or entity receiving the derivative works distributed by the offending party shall remain in effect so long as such person or entity remains in full compliance with this license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/357",
-                      "_notice_id": "notices/357"
+                      "content": "Any violation of this license shall automatically terminate all rights under this license. However, the license to the person or entity receiving the derivative works distributed by the offending party shall remain in effect so long as such person or entity remains in full compliance with this license."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "If you file a claim with a Contributor for infringement of your copyrights, trademarks, patents or other rights that are infringed by the Software, your license to the Software granted to you by the Contributor will automatically terminate.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/347",
-                      "_notice_id": "notices/347"
+                      "content": "If you file a claim with a Contributor for infringement of your copyrights, trademarks, patents or other rights that are infringed by the Software, your license to the Software granted to you by the Contributor will automatically terminate."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "This license shall continue for the duration of the applicable copyright. Notwithstanding the foregoing, the author has the right to release the software under a different license or to discontinue distribution of the software. The exercise of such right by the author does not terminate the rights granted by this license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/358",
-                      "_notice_id": "notices/358"
+                      "content": "This license shall continue for the duration of the applicable copyright. Notwithstanding the foregoing, the author has the right to release the software under a different license or to discontinue distribution of the software. The exercise of such right by the author does not terminate the rights granted by this license."
                   },
                   {
-                      "_notice_description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software.",
-                      "_notice_content": "The Publisher is neither responsible nor warranted for the content of this license. The Publisher makes no warranties with respect to such software. In no event shall the Publisher be liable on any theory of law for any damages including, but not limited to, ordinary, special, incidental or consequential damages resulting from this license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/348",
-                      "_notice_id": "notices/348"
+                      "content": "The Publisher is neither responsible nor warranted for the content of this license. The Publisher makes no warranties with respect to such software. In no event shall the Publisher be liable on any theory of law for any damages including, but not limited to, ordinary, special, incidental or consequential damages resulting from this license.",
+                      "description": "Publisher is the provider of media such as websites, magazines, CD-ROMs, and DVDs related to the software."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "This license is subject to the laws of the place where the author maintains his or her principal place of business or principal place of residence.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/349",
-                      "_notice_id": "notices/349"
+                      "content": "This license is subject to the laws of the place where the author maintains his or her principal place of business or principal place of residence."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/55",
-                      "_notice_id": "notices/55"
+                      "content": "The invalidity or unenforceability of any provision of such license under applicable law shall not affect the validity or enforceability of any other part of such license. Without further action by the parties in this regard, the provision shall be amended to the minimum extent necessary to make it valid and enforceable."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "No waiver of any of the provisions of this license, in whole or in part, or acceptance of any breach thereof may be made unless it is in writing and signed by the party responsible for pursuing such waiver or acceptance.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/85",
-                      "_notice_id": "notices/85"
+                      "content": "No waiver of any of the provisions of this license, in whole or in part, or acceptance of any breach thereof may be made unless it is in writing and signed by the party responsible for pursuing such waiver or acceptance."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "This license is the final and exclusive agreement with respect to the software and there is no other agreement. This license may not be modified without mutual written agreement with the author.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/356",
-                      "_notice_id": "notices/356"
+                      "content": "This license is the final and exclusive agreement with respect to the software and there is no other agreement. This license may not be modified without mutual written agreement with the author."
                   }
               ],
               "_sourceURL": "http://open-license.hitachi.com/licenses/835",

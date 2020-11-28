@@ -236,20 +236,11 @@
             "summary": "https://www.isc.org/downloads/software-support-policy/isc-license/",
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "such software is provided \"as-is\" and the copyright holder makes no warranties, including any implied warranties of commercial usability or fitness for purpose.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/139",
-                    "_notice_id": "notices/139"
+                    "content": "such software is provided \"as-is\" and the copyright holder makes no warranties, including any implied warranties of commercial usability or fitness for purpose.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "In no event shall the copyright holder be liable for any special, direct, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or any damages resulting from loss of use, loss of data or loss of profits.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/140",
-                    "_notice_id": "notices/140"
+                    "content": "In no event shall the copyright holder be liable for any special, direct, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or any damages resulting from loss of use, loss of data or loss of profits."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/379",

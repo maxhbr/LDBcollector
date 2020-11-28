@@ -772,44 +772,20 @@ Policy]
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Each time such library is redistributed by any person who receives such library under such license, the recipient shall automatically obtain permission from the original licensee to copy, distribute, or modify such library under the terms and conditions and restrictions specified in such license. All persons receiving such library under such license shall not impose any further restrictions on the recipient's exercise of the rights granted herein. All persons receiving such libraries under such license shall have no responsibility to enforce compliance by third parties with such license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/38",
-                    "_notice_id": "notices/38"
+                    "content": "Each time such library is redistributed by any person who receives such library under such license, the recipient shall automatically obtain permission from the original licensee to copy, distribute, or modify such library under the terms and conditions and restrictions specified in such license. All persons receiving such library under such license shall not impose any further restrictions on the recipient's exercise of the rights granted herein. All persons receiving such libraries under such license shall have no responsibility to enforce compliance by third parties with such license."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "infringement, or for any other reason not limited to patent infringement or patent-related, even if a court judgment or allegation results in the imposition of restrictions on all persons who receive such library under such license (by court order, contract or otherwise) that are inconsistent with the terms of such license. Not all persons who receive such libraries under the license are exempt from the terms of such license. Failure to distribute such library in a manner that simultaneously satisfies the responsibilities imposed under such license and any other relevant responsibilities will result in the failure to distribute such library.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/36",
-                    "_notice_id": "notices/36"
+                    "content": "infringement, or for any other reason not limited to patent infringement or patent-related, even if a court judgment or allegation results in the imposition of restrictions on all persons who receive such library under such license (by court order, contract or otherwise) that are inconsistent with the terms of such license. Not all persons who receive such libraries under the license are exempt from the terms of such license. Failure to distribute such library in a manner that simultaneously satisfies the responsibilities imposed under such license and any other relevant responsibilities will result in the failure to distribute such library."
                 },
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the library is made available on a royalty-free basis, so there are no warranties of any kind with respect to the library, to the extent permitted by applicable law. such library is provided by the copyright holder, or other entity, \"as-is\", without warranty or condition of any kind, either express or implied, except as otherwise stated in writing. the warranties or conditions herein include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. all persons receiving such library under such license assume the entire risk as to the quality and performance of such library. If such library is found to be defective, all persons receiving such library under such license will assume all costs of necessary maintenance, compensation, and correction.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/34",
-                    "_notice_id": "notices/34"
+                    "content": "the library is made available on a royalty-free basis, so there are no warranties of any kind with respect to the library, to the extent permitted by applicable law. such library is provided by the copyright holder, or other entity, \"as-is\", without warranty or condition of any kind, either express or implied, except as otherwise stated in writing. the warranties or conditions herein include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. all persons receiving such library under such license assume the entire risk as to the quality and performance of such library. If such library is found to be defective, all persons receiving such library under such license will assume all costs of necessary maintenance, compensation, and correction.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Neither the copyright holder nor any other entity that modifies or redistributes such library as permitted by such license, even if advised of the possibility of such damage to all persons who receive such library under such license, shall be liable for any damages under applicable law or in writing. Unless otherwise ordered by consent, for any ordinary, special, incidental or consequential damages arising out of the use of such library (including, but not limited to, loss or inaccurate processing of data, loss incurred by any person or third party who receives such library under such license, or such You will not be liable for any damages or losses (including, but not limited to, damages or losses caused by the failure of the Library to work with other software).",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/35",
-                    "_notice_id": "notices/35"
+                    "content": "Neither the copyright holder nor any other entity that modifies or redistributes such library as permitted by such license, even if advised of the possibility of such damage to all persons who receive such library under such license, shall be liable for any damages under applicable law or in writing. Unless otherwise ordered by consent, for any ordinary, special, incidental or consequential damages arising out of the use of such library (including, but not limited to, loss or inaccurate processing of data, loss incurred by any person or third party who receives such library under such license, or such You will not be liable for any damages or losses (including, but not limited to, damages or losses caused by the failure of the Library to work with other software)."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If you apply the license to a new library, include the following notice in each source file, at least a line of copyright notice and a pointer to the full notice you attach. <name of the library and a brief description of what it does> Copyright (C) <yyyy> <name of author>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library General Public License for more details. Public License along with this library; if not, write to the Free Software Foundation, Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA Electronic Or add information on how to contact the library etc. by paper mail.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/152",
-                    "_notice_id": "notices/152"
+                    "content": "If you apply the license to a new library, include the following notice in each source file, at least a line of copyright notice and a pointer to the full notice you attach. <name of the library and a brief description of what it does> Copyright (C) <yyyy> <name of author>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Library General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Library General Public License for more details. Public License along with this library; if not, write to the Free Software Foundation, Inc. 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA Electronic Or add information on how to contact the library etc. by paper mail."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/8",

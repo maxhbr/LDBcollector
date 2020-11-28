@@ -366,20 +366,11 @@
           "Hitachi open-license": {
               "notices": [
                   {
-                      "_notice_description": "",
-                      "_notice_content": "In no event shall the copyright holder be liable for any direct, indirect, special, incidental, consequential, or lost profits resulting from the use of the software or related documentation, even if he or she has been advised of the possibility of such damages.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/257",
-                      "_notice_id": "notices/257"
+                      "content": "In no event shall the copyright holder be liable for any direct, indirect, special, incidental, consequential, or lost profits resulting from the use of the software or related documentation, even if he or she has been advised of the possibility of such damages."
                   },
                   {
-                      "_notice_description": "There is no guarantee.",
-                      "_notice_content": "The copyright holder makes no warranties whatsoever. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. the software is provided \"as-is\" and the copyright holder is under no obligation to provide maintenance, support, updates, enhancements, or modifications.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/258",
-                      "_notice_id": "notices/258"
+                      "content": "The copyright holder makes no warranties whatsoever. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose. the software is provided \"as-is\" and the copyright holder is under no obligation to provide maintenance, support, updates, enhancements, or modifications.",
+                      "description": "There is no guarantee."
                   }
               ],
               "_sourceURL": "http://open-license.hitachi.com/licenses/608",

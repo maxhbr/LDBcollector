@@ -393,20 +393,11 @@ Policy]
             "summary": "http://www.freetype.org/license.html[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT]",
             "notices": [
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability and fitness for a particular purpose.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/370",
-                    "_notice_id": "notices/370"
+                    "content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability and fitness for a particular purpose.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Neither the author nor the copyright holder shall be liable for any damage caused by the use or inability to use such software.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/371",
-                    "_notice_id": "notices/371"
+                    "content": "Neither the author nor the copyright holder shall be liable for any damage caused by the use or inability to use such software."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/763",

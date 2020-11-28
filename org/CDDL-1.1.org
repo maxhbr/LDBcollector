@@ -364,84 +364,37 @@ open-license]] (CDLA-Permissive-1.0))
               "summary": "Venue shall be within Santa Clara County, California, and subject to the provisions of California law, the Federal Court for the Northern District of California, and the jurisdiction of the state courts of California.",
               "notices": [
                   {
-                      "_notice_description": "There is no guarantee.",
-                      "_notice_content": "the software is made available on a royalty-free basis and, to the extent permitted by applicable law, there is no warranty for the software. except as otherwise stated in writing, the software is provided by the copyright holder or other entity \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/31",
-                      "_notice_id": "notices/31"
+                      "content": "the software is made available on a royalty-free basis and, to the extent permitted by applicable law, there is no warranty for the software. except as otherwise stated in writing, the software is provided by the copyright holder or other entity \"as-is\" and without any warranties or conditions of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.",
+                      "description": "There is no guarantee."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/63",
-                      "_notice_id": "notices/63"
+                      "content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "The application of the UN contractual provisions on international trade in goods is expressly excluded.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/16",
-                      "_notice_id": "notices/16"
+                      "content": "The application of the UN contractual provisions on international trade in goods is expressly excluded."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "If any action is brought in connection with such license, venue shall be within Santa Clara County, California, and shall be subject to the jurisdiction of the Federal Court for the Northern District of California, and the state courts of California. In addition, the losing party shall bear the costs of litigation and reasonable attorney's fees.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/59",
-                      "_notice_id": "notices/59"
+                      "content": "If any action is brought in connection with such license, venue shall be within Santa Clara County, California, and shall be subject to the jurisdiction of the Federal Court for the Northern District of California, and the state courts of California. In addition, the losing party shall bear the costs of litigation and reasonable attorney's fees."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "If any provision of such license shall be deemed unenforceable, such provision shall be amended only to the extent necessary to make it enforceable. With the exception of provisions relating to conflicts of law, the provisions of the laws of the State of California shall be followed. Except to the extent otherwise provided by applicable law.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/58",
-                      "_notice_id": "notices/58"
+                      "content": "If any provision of such license shall be deemed unenforceable, such provision shall be amended only to the extent necessary to make it enforceable. With the exception of provisions relating to conflicts of law, the provisions of the laws of the State of California shall be followed. Except to the extent otherwise provided by applicable law."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent of the The Company shall not be liable for any damage or loss (including commercial damage or loss) that is not caused by the",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/62",
-                      "_notice_id": "notices/62"
+                      "content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent of the The Company shall not be liable for any damage or loss (including commercial damage or loss) that is not caused by the"
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "If you allege to an early developer or contributor that the software directly or indirectly infringes any patent, and the infringement is resolved (e.g., through a license agreement or settlement) before it becomes a patent infringement lawsuit, you may pay or license the amount of money or In determining the value, it shall take into account the reasonable value of the patent license granted to it pursuant to such license.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/64",
-                      "_notice_id": "notices/64"
+                      "content": "If you allege to an early developer or contributor that the software directly or indirectly infringes any patent, and the infringement is resolved (e.g., through a license agreement or settlement) before it becomes a patent infringement lawsuit, you may pay or license the amount of money or In determining the value, it shall take into account the reasonable value of the patent license granted to it pursuant to such license."
                   },
                   {
-                      "_notice_description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation.",
-                      "_notice_content": "If you assert against an early developer or contributor that the software directly or indirectly infringes any patent (other than ascertainment), all copyright or patent licenses granted to you will be transferred from the early developer or contributor's notice to you to It will automatically expire after 60 days. This does not apply if you unilaterally or by written agreement withdraw the applicable claim within sixty (60) days of notice. In addition, any end-user license granted to anyone other than yourself prior to the revocation shall remain in full force and effect.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/61",
-                      "_notice_id": "notices/61"
+                      "content": "If you assert against an early developer or contributor that the software directly or indirectly infringes any patent (other than ascertainment), all copyright or patent licenses granted to you will be transferred from the early developer or contributor's notice to you to It will automatically expire after 60 days. This does not apply if you unilaterally or by written agreement withdraw the applicable claim within sixty (60) days of notice. In addition, any end-user license granted to anyone other than yourself prior to the revocation shall remain in full force and effect.",
+                      "description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation."
                   },
                   {
-                      "_notice_description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation.",
-                      "_notice_content": "Failure to remedy a violation of the terms of the license within thirty (30) days of becoming aware of such violation will result in automatic license revocation. Any term that should remain in effect after expiration will remain in effect after the expiration of the license. An end-user license granted to anyone other than the end-user in violation prior to the expiration of the license will remain in effect.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/60",
-                      "_notice_id": "notices/60"
+                      "content": "Failure to remedy a violation of the terms of the license within thirty (30) days of becoming aware of such violation will result in automatic license revocation. Any term that should remain in effect after expiration will remain in effect after the expiration of the license. An end-user license granted to anyone other than the end-user in violation prior to the expiration of the license will remain in effect.",
+                      "description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation."
                   },
                   {
-                      "_notice_description": "",
-                      "_notice_content": "You agree that when you use, distribute or otherwise make available the software to which such license applies, you are responsible for compliance with U.S. export control regulations and equivalent laws in other countries.",
-                      "_notice_baseUri": "http://open-license.hitachi.com/",
-                      "_notice_schemaVersion": "0.1",
-                      "_notice_uri": "http://open-license.hitachi.com/notices/18",
-                      "_notice_id": "notices/18"
+                      "content": "You agree that when you use, distribute or otherwise make available the software to which such license applies, you are responsible for compliance with U.S. export control regulations and equivalent laws in other countries."
                   }
               ],
               "_sourceURL": "http://open-license.hitachi.com/licenses/265",

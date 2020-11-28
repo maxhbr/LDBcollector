@@ -320,20 +320,11 @@ Raw Data
             "Hitachi open-license": {
                 "notices": [
                     {
-                        "_notice_description": "There is no guarantee.",
-                        "_notice_content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/7",
-                        "_notice_id": "notices/7"
+                        "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
                     },
                     {
-                        "_notice_description": "",
-                        "_notice_content": "Any script or library that is the input of such software, or the output of such software, shall be considered the property of the person who generated it, not the software.",
-                        "_notice_baseUri": "http://open-license.hitachi.com/",
-                        "_notice_schemaVersion": "0.1",
-                        "_notice_uri": "http://open-license.hitachi.com/notices/318",
-                        "_notice_id": "notices/318"
+                        "content": "Any script or library that is the input of such software, or the output of such software, shall be considered the property of the person who generated it, not the software."
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/2",

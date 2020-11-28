@@ -385,20 +385,11 @@ Knowledge International]
         "Hitachi open-license": {
             "notices": [
                 {
-                    "_notice_description": "",
-                    "_notice_content": "If a Contributor files a claim against a Contributor for a patent that is infringed by the Software, the patent license for the Software granted by the Contributor to the Contributor will automatically terminate.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/190",
-                    "_notice_id": "notices/190"
+                    "content": "If a Contributor files a claim against a Contributor for a patent that is infringed by the Software, the patent license for the Software granted by the Contributor to the Contributor will automatically terminate."
                 },
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "The Software is licensed \"as-is\". The risks associated with the use of the software are self-explanatory. Contributor provides no express warranties or conditions. You may have additional consumer rights under your local laws that cannot be changed by this license. to the extent permitted under local law, contributor disclaims any implied warranties of commercial applicability, fitness for a particular purpose or non-infringement.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/195",
-                    "_notice_id": "notices/195"
+                    "content": "The Software is licensed \"as-is\". The risks associated with the use of the software are self-explanatory. Contributor provides no express warranties or conditions. You may have additional consumer rights under your local laws that cannot be changed by this license. to the extent permitted under local law, contributor disclaims any implied warranties of commercial applicability, fitness for a particular purpose or non-infringement.",
+                    "description": "There is no guarantee."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/586",

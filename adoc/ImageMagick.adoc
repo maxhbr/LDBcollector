@@ -291,36 +291,17 @@ Project Wiki]
             "summary": "http://www.imagemagick.org/script/license.php",
             "notices": [
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Except for necessary, reasonable, and customary uses, such as describing the source of the work, the trade name, trademark, service mark, or product name of the copyright owner, or a person authorized by the copyright owner to grant such license, may not be used.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/29",
-                    "_notice_id": "notices/29"
+                    "content": "Except for necessary, reasonable, and customary uses, such as describing the source of the work, the trade name, trademark, service mark, or product name of the copyright owner, or a person authorized by the copyright owner to grant such license, may not be used."
                 },
                 {
-                    "_notice_description": "There is no guarantee.",
-                    "_notice_content": "Unless otherwise ordered by applicable law or written consent, the software is provided \"as-is\" by the copyright owner, or by those acknowledged by the copyright owner as the subject of the license grant, without any warranties or conditions, express or implied, including, but not limited to There are no The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose. It is your responsibility to determine for yourself whether use or redistribution of the software is appropriate, and you assume all risks associated with exercising the rights granted by such license.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/23",
-                    "_notice_id": "notices/23"
+                    "content": "Unless otherwise ordered by applicable law or written consent, the software is provided \"as-is\" by the copyright owner, or by those acknowledged by the copyright owner as the subject of the license grant, without any warranties or conditions, express or implied, including, but not limited to There are no The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose. It is your responsibility to determine for yourself whether use or redistribution of the software is appropriate, and you assume all risks associated with exercising the rights granted by such license.",
+                    "description": "There is no guarantee."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any direct, indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent in No liability (including, but not limited to, commercial damage or loss) shall be assumed.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/24",
-                    "_notice_id": "notices/24"
+                    "content": "Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any direct, indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent in No liability (including, but not limited to, commercial damage or loss) shall be assumed."
                 },
                 {
-                    "_notice_description": "",
-                    "_notice_content": "When you apply the license to your software, you must attach the following boilerplate with the part enclosed in [] as your identification information and remove the symbol \"[]\". In that case, the canned text should be enclosed in the comment syntax appropriate for the file format. It is also recommended that the file name or class name and statement of purpose appear on the same \"printed page\" as the copyright notice so that the file can be easily identified in the third party archive.    Copyright [yyyy] [name of copyright owner] Licensed under the ImageMagick License (the \"License\"); you may not use this file except in compliance with You may obtain a copy of the License at http://www.imagemagick.org/script/license.php Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or See the License for the specific language governing permissions and limitations under the License.",
-                    "_notice_baseUri": "http://open-license.hitachi.com/",
-                    "_notice_schemaVersion": "0.1",
-                    "_notice_uri": "http://open-license.hitachi.com/notices/431",
-                    "_notice_id": "notices/431"
+                    "content": "When you apply the license to your software, you must attach the following boilerplate with the part enclosed in [] as your identification information and remove the symbol \"[]\". In that case, the canned text should be enclosed in the comment syntax appropriate for the file format. It is also recommended that the file name or class name and statement of purpose appear on the same \"printed page\" as the copyright notice so that the file can be easily identified in the third party archive.    Copyright [yyyy] [name of copyright owner] Licensed under the ImageMagick License (the \"License\"); you may not use this file except in compliance with You may obtain a copy of the License at http://www.imagemagick.org/script/license.php Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or See the License for the specific language governing permissions and limitations under the License."
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/873",
