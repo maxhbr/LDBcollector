@@ -1,0 +1,46 @@
+*  ()
+
+| Key         | Value                             |
+|-------------+-----------------------------------|
+| Fullname    |                                   |
+| Shortname   |                                   |
+| Rating      | Unknown, probably Stop or No-Go   |
+
+** Comments on (easy) usability
+
+** General Comments
+
+--------------
+
+** Raw Data
+
+*** Facts
+
+- LicenseName
+
+*** Raw JSON
+
+#+BEGIN_EXAMPLE
+  {
+      "__impliedNames": [
+          ""
+      ],
+      "__impliedId": "",
+      "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      ""
+                  ],
+                  "__impliedId": ""
+              },
+              "shortname": "",
+              "otherNames": []
+          }
+      }
+  }
+#+END_EXAMPLE
+
+*** Dot Cluster Graph
+
+[[../dot/.svg]]
