@@ -774,16 +774,13 @@
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeLeaf",
-                          "contents": {
-                              "_condition_uri": "http://open-license.hitachi.com/conditions/268",
-                              "_condition_id": "conditions/268",
-                              "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
-                              "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
-                              "_condition_schemaVersion": "0.1",
-                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                              "_condition_conditionType": "OBLIGATION"
-                          }
+                          "_condition_uri": "http://open-license.hitachi.com/conditions/268",
+                          "_condition_id": "conditions/268",
+                          "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
+                          "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
+                          "_condition_schemaVersion": "0.1",
+                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                          "_condition_conditionType": "OBLIGATION"
                       },
                       "_permission_actions": [
                           {
@@ -816,106 +813,81 @@
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeOr",
-                                  "contents": [
+                                  "OR": [
                                       {
-                                          "tag": "OlConditionTreeLeaf",
-                                          "contents": {
-                                              "_condition_uri": "http://open-license.hitachi.com/conditions/259",
-                                              "_condition_id": "conditions/259",
-                                              "_condition_name": "The current maintainer of the software, the",
-                                              "_condition_description": "A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.",
-                                              "_condition_schemaVersion": "0.1",
-                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                              "_condition_conditionType": "RESTRICTION"
-                                          }
+                                          "_condition_uri": "http://open-license.hitachi.com/conditions/259",
+                                          "_condition_id": "conditions/259",
+                                          "_condition_name": "The current maintainer of the software, the",
+                                          "_condition_description": "A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.",
+                                          "_condition_schemaVersion": "0.1",
+                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                          "_condition_conditionType": "RESTRICTION"
                                       },
                                       {
-                                          "tag": "OlConditionTreeAnd",
-                                          "contents": [
+                                          "AND": [
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/260",
-                                                      "_condition_id": "conditions/260",
-                                                      "_condition_name": "Modify the original software copy",
-                                                      "_condition_description": "",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "REQUISITE"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/260",
+                                                  "_condition_id": "conditions/260",
+                                                  "_condition_name": "Modify the original software copy",
+                                                  "_condition_description": "",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "REQUISITE"
                                               },
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/261",
-                                                      "_condition_id": "conditions/261",
-                                                      "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
-                                                      "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "OBLIGATION"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/261",
+                                                  "_condition_id": "conditions/261",
+                                                  "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
+                                                  "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "OBLIGATION"
                                               },
                                               {
-                                                  "tag": "OlConditionTreeOr",
-                                                  "contents": [
+                                                  "OR": [
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/266",
-                                                              "_condition_id": "conditions/266",
-                                                              "_condition_name": "Including details of the changes you have made",
-                                                              "_condition_description": "",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/266",
+                                                          "_condition_id": "conditions/266",
+                                                          "_condition_name": "Including details of the changes you have made",
+                                                          "_condition_description": "",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       },
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/267",
-                                                              "_condition_id": "conditions/267",
-                                                              "_condition_name": "Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes",
-                                                              "_condition_description": "",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/267",
+                                                          "_condition_id": "conditions/267",
+                                                          "_condition_name": "Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes",
+                                                          "_condition_description": "",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       }
                                                   ]
                                               },
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/262",
-                                                      "_condition_id": "conditions/262",
-                                                      "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
-                                                      "_condition_description": "Unless you state that you will provide support for a variant",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "RESTRICTION"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/262",
+                                                  "_condition_id": "conditions/262",
+                                                  "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
+                                                  "_condition_description": "Unless you state that you will provide support for a variant",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "RESTRICTION"
                                               }
                                           ]
                                       }
                                   ]
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/268",
-                                      "_condition_id": "conditions/268",
-                                      "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
-                                      "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/268",
+                                  "_condition_id": "conditions/268",
+                                  "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
+                                  "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -934,117 +906,88 @@
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeOr",
-                                  "contents": [
+                                  "OR": [
                                       {
-                                          "tag": "OlConditionTreeLeaf",
-                                          "contents": {
-                                              "_condition_uri": "http://open-license.hitachi.com/conditions/259",
-                                              "_condition_id": "conditions/259",
-                                              "_condition_name": "The current maintainer of the software, the",
-                                              "_condition_description": "A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.",
-                                              "_condition_schemaVersion": "0.1",
-                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                              "_condition_conditionType": "RESTRICTION"
-                                          }
+                                          "_condition_uri": "http://open-license.hitachi.com/conditions/259",
+                                          "_condition_id": "conditions/259",
+                                          "_condition_name": "The current maintainer of the software, the",
+                                          "_condition_description": "A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.",
+                                          "_condition_schemaVersion": "0.1",
+                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                          "_condition_conditionType": "RESTRICTION"
                                       },
                                       {
-                                          "tag": "OlConditionTreeAnd",
-                                          "contents": [
+                                          "AND": [
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/260",
-                                                      "_condition_id": "conditions/260",
-                                                      "_condition_name": "Modify the original software copy",
-                                                      "_condition_description": "",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "REQUISITE"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/260",
+                                                  "_condition_id": "conditions/260",
+                                                  "_condition_name": "Modify the original software copy",
+                                                  "_condition_description": "",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "REQUISITE"
                                               },
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/261",
-                                                      "_condition_id": "conditions/261",
-                                                      "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
-                                                      "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "OBLIGATION"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/261",
+                                                  "_condition_id": "conditions/261",
+                                                  "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
+                                                  "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "OBLIGATION"
                                               },
                                               {
-                                                  "tag": "OlConditionTreeOr",
-                                                  "contents": [
+                                                  "OR": [
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/266",
-                                                              "_condition_id": "conditions/266",
-                                                              "_condition_name": "Including details of the changes you have made",
-                                                              "_condition_description": "",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/266",
+                                                          "_condition_id": "conditions/266",
+                                                          "_condition_name": "Including details of the changes you have made",
+                                                          "_condition_description": "",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       },
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/267",
-                                                              "_condition_id": "conditions/267",
-                                                              "_condition_name": "Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes",
-                                                              "_condition_description": "",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/267",
+                                                          "_condition_id": "conditions/267",
+                                                          "_condition_name": "Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes",
+                                                          "_condition_description": "",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       }
                                                   ]
                                               },
                                               {
-                                                  "tag": "OlConditionTreeLeaf",
-                                                  "contents": {
-                                                      "_condition_uri": "http://open-license.hitachi.com/conditions/262",
-                                                      "_condition_id": "conditions/262",
-                                                      "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
-                                                      "_condition_description": "Unless you state that you will provide support for a variant",
-                                                      "_condition_schemaVersion": "0.1",
-                                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                      "_condition_conditionType": "RESTRICTION"
-                                                  }
+                                                  "_condition_uri": "http://open-license.hitachi.com/conditions/262",
+                                                  "_condition_id": "conditions/262",
+                                                  "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
+                                                  "_condition_description": "Unless you state that you will provide support for a variant",
+                                                  "_condition_schemaVersion": "0.1",
+                                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                  "_condition_conditionType": "RESTRICTION"
                                               },
                                               {
-                                                  "tag": "OlConditionTreeOr",
-                                                  "contents": [
+                                                  "OR": [
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/263",
-                                                              "_condition_id": "conditions/263",
-                                                              "_condition_name": "Pass on a copy of the original software",
-                                                              "_condition_description": "It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/263",
+                                                          "_condition_id": "conditions/263",
+                                                          "_condition_name": "Pass on a copy of the original software",
+                                                          "_condition_description": "It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       },
                                                       {
-                                                          "tag": "OlConditionTreeLeaf",
-                                                          "contents": {
-                                                              "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                                              "_condition_id": "conditions/264",
-                                                              "_condition_name": "Pass information on where the original software was obtained",
-                                                              "_condition_description": "",
-                                                              "_condition_schemaVersion": "0.1",
-                                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                              "_condition_conditionType": "OBLIGATION"
-                                                          }
+                                                          "_condition_uri": "http://open-license.hitachi.com/conditions/264",
+                                                          "_condition_id": "conditions/264",
+                                                          "_condition_name": "Pass information on where the original software was obtained",
+                                                          "_condition_description": "",
+                                                          "_condition_schemaVersion": "0.1",
+                                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                          "_condition_conditionType": "OBLIGATION"
                                                       }
                                                   ]
                                               }
@@ -1053,16 +996,13 @@
                                   ]
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/268",
-                                      "_condition_id": "conditions/268",
-                                      "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
-                                      "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/268",
+                                  "_condition_id": "conditions/268",
+                                  "_condition_name": "Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license",
+                                  "_condition_description": "This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt\nnd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.\nnd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -1097,96 +1037,73 @@
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/260",
-                                      "_condition_id": "conditions/260",
-                                      "_condition_name": "Modify the original software copy",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/260",
+                                  "_condition_id": "conditions/260",
+                                  "_condition_name": "Modify the original software copy",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/261",
-                                      "_condition_id": "conditions/261",
-                                      "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
-                                      "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/261",
+                                  "_condition_id": "conditions/261",
+                                  "_condition_name": "If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that",
+                                  "_condition_description": "A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/172",
-                                      "_condition_id": "conditions/172",
-                                      "_condition_name": "Include a summary of the changes you have made",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/172",
+                                  "_condition_id": "conditions/172",
+                                  "_condition_name": "Include a summary of the changes you have made",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/262",
-                                      "_condition_id": "conditions/262",
-                                      "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
-                                      "_condition_description": "Unless you state that you will provide support for a variant",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/262",
+                                  "_condition_id": "conditions/262",
+                                  "_condition_name": "Does not include information indicating that the original author or others provide support for the modifications",
+                                  "_condition_description": "Unless you state that you will provide support for a variant",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeOr",
-                                  "contents": [
+                                  "OR": [
                                       {
-                                          "tag": "OlConditionTreeLeaf",
-                                          "contents": {
-                                              "_condition_uri": "http://open-license.hitachi.com/conditions/263",
-                                              "_condition_id": "conditions/263",
-                                              "_condition_name": "Pass on a copy of the original software",
-                                              "_condition_description": "It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.",
-                                              "_condition_schemaVersion": "0.1",
-                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                              "_condition_conditionType": "OBLIGATION"
-                                          }
+                                          "_condition_uri": "http://open-license.hitachi.com/conditions/263",
+                                          "_condition_id": "conditions/263",
+                                          "_condition_name": "Pass on a copy of the original software",
+                                          "_condition_description": "It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.",
+                                          "_condition_schemaVersion": "0.1",
+                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                          "_condition_conditionType": "OBLIGATION"
                                       },
                                       {
-                                          "tag": "OlConditionTreeLeaf",
-                                          "contents": {
-                                              "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                              "_condition_id": "conditions/264",
-                                              "_condition_name": "Pass information on where the original software was obtained",
-                                              "_condition_description": "",
-                                              "_condition_schemaVersion": "0.1",
-                                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                                              "_condition_conditionType": "OBLIGATION"
-                                          }
+                                          "_condition_uri": "http://open-license.hitachi.com/conditions/264",
+                                          "_condition_id": "conditions/264",
+                                          "_condition_name": "Pass information on where the original software was obtained",
+                                          "_condition_description": "",
+                                          "_condition_schemaVersion": "0.1",
+                                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                                          "_condition_conditionType": "OBLIGATION"
                                       }
                                   ]
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/265",
-                                      "_condition_id": "conditions/265",
-                                      "_condition_name": "Notice in writing of the limitations of Chapter 6 of this license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/265",
+                                  "_condition_id": "conditions/265",
+                                  "_condition_name": "Notice in writing of the limitations of Chapter 6 of this license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },

@@ -17,13 +17,6 @@ Apache License 1.0 (Apache-1.0)
 
 -   `Apache 1.0`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -373,31 +366,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                        "_condition_id": "conditions/1",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                    "_condition_id": "conditions/1",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                        "_condition_id": "conditions/13",
-                                        "_condition_name": "Acknowledgements",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                    "_condition_id": "conditions/13",
+                                    "_condition_name": "Acknowledgements",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -424,31 +410,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                                        "_condition_id": "conditions/2",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                                    "_condition_id": "conditions/2",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                        "_condition_id": "conditions/13",
-                                        "_condition_name": "Acknowledgements",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                    "_condition_id": "conditions/13",
+                                    "_condition_name": "Acknowledgements",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -475,16 +454,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                "_condition_id": "conditions/13",
-                                "_condition_name": "Acknowledgements",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                            "_condition_id": "conditions/13",
+                            "_condition_name": "Acknowledgements",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -501,16 +477,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "\"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {
@@ -527,16 +500,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "\"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {

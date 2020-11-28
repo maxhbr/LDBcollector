@@ -359,31 +359,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                        "_condition_id": "conditions/68",
-                                        "_condition_name": "Include the copyright notice contained in the software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                    "_condition_id": "conditions/68",
+                                    "_condition_name": "Include the copyright notice contained in the software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                        "_condition_id": "conditions/8",
-                                        "_condition_name": "Give you a copy of the relevant license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -410,16 +403,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                                "_condition_id": "conditions/2",
-                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                            "_condition_id": "conditions/2",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -444,16 +434,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {
@@ -470,16 +457,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "\"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {

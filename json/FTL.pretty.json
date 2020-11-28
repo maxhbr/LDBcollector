@@ -133,16 +133,13 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documents should be treated in the same way as software.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                            "_condition_id": "conditions/246",
-                            "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                            "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "RESTRICTION"
-                        }
+                        "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                        "_condition_id": "conditions/246",
+                        "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                        "_condition_schemaVersion": "0.1",
+                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                        "_condition_conditionType": "RESTRICTION"
                     },
                     "_permission_actions": [
                         {
@@ -183,31 +180,24 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                    "_condition_id": "conditions/246",
-                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                "_condition_id": "conditions/246",
+                                "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "RESTRICTION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                    "_condition_id": "conditions/13",
-                                    "_condition_name": "Acknowledgements",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                "_condition_id": "conditions/13",
+                                "_condition_name": "Acknowledgements",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -314,55 +304,42 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                    "_condition_id": "conditions/246",
-                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                "_condition_id": "conditions/246",
+                                "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "RESTRICTION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                "_condition_id": "conditions/8",
+                                "_condition_name": "Give you a copy of the relevant license.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                    "_condition_id": "conditions/68",
-                                    "_condition_name": "Include the copyright notice contained in the software",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                "_condition_id": "conditions/68",
+                                "_condition_name": "Include the copyright notice contained in the software",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                    "_condition_id": "conditions/13",
-                                    "_condition_name": "Acknowledgements",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                "_condition_id": "conditions/13",
+                                "_condition_name": "Acknowledgements",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -381,55 +358,42 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                    "_condition_id": "conditions/246",
-                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                "_condition_id": "conditions/246",
+                                "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "RESTRICTION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/318",
-                                    "_condition_id": "conditions/318",
-                                    "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/318",
+                                "_condition_id": "conditions/318",
+                                "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                    "_condition_id": "conditions/68",
-                                    "_condition_name": "Include the copyright notice contained in the software",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                "_condition_id": "conditions/68",
+                                "_condition_name": "Include the copyright notice contained in the software",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                    "_condition_id": "conditions/13",
-                                    "_condition_name": "Acknowledgements",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                "_condition_id": "conditions/13",
+                                "_condition_name": "Acknowledgements",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -448,67 +412,51 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                    "_condition_id": "conditions/246",
-                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                "_condition_id": "conditions/246",
+                                "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "RESTRICTION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                "_condition_id": "conditions/8",
+                                "_condition_name": "Give you a copy of the relevant license.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/318",
-                                    "_condition_id": "conditions/318",
-                                    "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/318",
+                                "_condition_id": "conditions/318",
+                                "_condition_name": "Indicate your changes in the materials that accompany the distribution.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                    "_condition_id": "conditions/68",
-                                    "_condition_name": "Include the copyright notice contained in the software",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                "_condition_id": "conditions/68",
+                                "_condition_name": "Include the copyright notice contained in the software",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                    "_condition_id": "conditions/13",
-                                    "_condition_name": "Acknowledgements",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                "_condition_id": "conditions/13",
+                                "_condition_name": "Acknowledgements",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -527,31 +475,24 @@
                     "_permission_summary": "",
                     "_permission_description": "The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements.\" Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                    "_condition_id": "conditions/246",
-                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                "_condition_id": "conditions/246",
+                                "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "RESTRICTION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                    "_condition_id": "conditions/13",
-                                    "_condition_name": "Acknowledgements",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                "_condition_id": "conditions/13",
+                                "_condition_name": "Acknowledgements",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -578,16 +519,13 @@
                     "_permission_summary": "",
                     "_permission_description": "You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: \"FreeType Project\", \"FreeType Engine\", \"FreeType library\", or \"FreeType Distribution\".",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                            "_condition_id": "conditions/3",
-                            "_condition_name": "Get special permission in writing.",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "REQUISITE"
-                        }
+                        "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                        "_condition_id": "conditions/3",
+                        "_condition_name": "Get special permission in writing.",
+                        "_condition_description": "",
+                        "_condition_schemaVersion": "0.1",
+                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                        "_condition_conditionType": "REQUISITE"
                     },
                     "_permission_actions": [
                         {

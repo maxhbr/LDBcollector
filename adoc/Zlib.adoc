@@ -499,31 +499,24 @@ Knowledge International]
                     "_permission_summary": "",
                     "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/55",
-                                    "_condition_id": "conditions/55",
-                                    "_condition_name": "Correctly indicate the origin of the software in question",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/55",
+                                "_condition_id": "conditions/55",
+                                "_condition_name": "Correctly indicate the origin of the software in question",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                "_condition_id": "conditions/8",
+                                "_condition_name": "Give you a copy of the relevant license.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -542,16 +535,13 @@ Knowledge International]
                     "_permission_summary": "",
                     "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeLeaf",
-                        "contents": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/55",
-                            "_condition_id": "conditions/55",
-                            "_condition_name": "Correctly indicate the origin of the software in question",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        }
+                        "_condition_uri": "http://open-license.hitachi.com/conditions/55",
+                        "_condition_id": "conditions/55",
+                        "_condition_name": "Correctly indicate the origin of the software in question",
+                        "_condition_description": "",
+                        "_condition_schemaVersion": "0.1",
+                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                        "_condition_conditionType": "OBLIGATION"
                     },
                     "_permission_actions": [
                         {
@@ -584,31 +574,24 @@ Knowledge International]
                     "_permission_summary": "",
                     "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/55",
-                                    "_condition_id": "conditions/55",
-                                    "_condition_name": "Correctly indicate the origin of the software in question",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/55",
+                                "_condition_id": "conditions/55",
+                                "_condition_name": "Correctly indicate the origin of the software in question",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                    "_condition_id": "conditions/30",
-                                    "_condition_name": "Indicate that you have made the change yourself.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                "_condition_id": "conditions/30",
+                                "_condition_name": "Indicate that you have made the change yourself.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },
@@ -651,43 +634,33 @@ Knowledge International]
                     "_permission_summary": "",
                     "_permission_description": "If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/55",
-                                    "_condition_id": "conditions/55",
-                                    "_condition_name": "Correctly indicate the origin of the software in question",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/55",
+                                "_condition_id": "conditions/55",
+                                "_condition_name": "Correctly indicate the origin of the software in question",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                    "_condition_id": "conditions/30",
-                                    "_condition_name": "Indicate that you have made the change yourself.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                "_condition_id": "conditions/30",
+                                "_condition_name": "Indicate that you have made the change yourself.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             },
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                "_condition_id": "conditions/8",
+                                "_condition_name": "Give you a copy of the relevant license.",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },

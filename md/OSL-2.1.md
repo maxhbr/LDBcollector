@@ -363,31 +363,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                        "_condition_id": "conditions/246",
-                                        "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                    "_condition_id": "conditions/246",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/245",
-                                        "_condition_id": "conditions/245",
-                                        "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/245",
+                                    "_condition_id": "conditions/245",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 }
                             ]
                         },
@@ -550,58 +543,44 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                        "_condition_id": "conditions/246",
-                                        "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                    "_condition_id": "conditions/246",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/245",
-                                        "_condition_id": "conditions/245",
-                                        "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/245",
+                                    "_condition_id": "conditions/245",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeOr",
-                                    "contents": [
+                                    "OR": [
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                                "_condition_id": "conditions/21",
-                                                "_condition_name": "Attach the source code corresponding to the software in question.",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/21",
+                                            "_condition_id": "conditions/21",
+                                            "_condition_name": "Attach the source code corresponding to the software in question.",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/247",
-                                                "_condition_id": "conditions/247",
-                                                "_condition_name": "The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/247",
+                                            "_condition_id": "conditions/247",
+                                            "_condition_name": "The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         }
                                     ]
                                 }
@@ -630,43 +609,33 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Make sure the recipient knows that the change has been made.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/246",
-                                        "_condition_id": "conditions/246",
-                                        "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/246",
+                                    "_condition_id": "conditions/246",
+                                    "_condition_name": "An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/245",
-                                        "_condition_id": "conditions/245",
-                                        "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
-                                        "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/245",
+                                    "_condition_id": "conditions/245",
+                                    "_condition_name": "An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license.",
+                                    "_condition_description": "Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/72",
-                                        "_condition_id": "conditions/72",
-                                        "_condition_name": "Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/72",
+                                    "_condition_id": "conditions/72",
+                                    "_condition_name": "Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -717,16 +686,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {

@@ -278,31 +278,24 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                      "_condition_id": "conditions/6",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
+                                  "_condition_id": "conditions/6",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                      "_condition_id": "conditions/7",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                      "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
+                                  "_condition_id": "conditions/7",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               }
                           ]
                       },
@@ -417,43 +410,33 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                      "_condition_id": "conditions/6",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
+                                  "_condition_id": "conditions/6",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                      "_condition_id": "conditions/7",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                      "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
+                                  "_condition_id": "conditions/7",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                      "_condition_id": "conditions/8",
-                                      "_condition_name": "Give you a copy of the relevant license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                  "_condition_id": "conditions/8",
+                                  "_condition_name": "Give you a copy of the relevant license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -496,79 +479,60 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "A copyright notice for modifications may be added.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                      "_condition_id": "conditions/6",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
+                                  "_condition_id": "conditions/6",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                      "_condition_id": "conditions/7",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                      "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
+                                  "_condition_id": "conditions/7",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                      "_condition_id": "conditions/8",
-                                      "_condition_name": "Give you a copy of the relevant license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                  "_condition_id": "conditions/8",
+                                  "_condition_name": "Give you a copy of the relevant license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/9",
-                                      "_condition_id": "conditions/9",
-                                      "_condition_name": "Indicate your changes in the file where you made them.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/9",
+                                  "_condition_id": "conditions/9",
+                                  "_condition_name": "Indicate your changes in the file where you made them.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/10",
-                                      "_condition_id": "conditions/10",
-                                      "_condition_name": "Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute",
-                                      "_condition_description": "However, notices that do not relate to derivative works may be excluded.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/10",
+                                  "_condition_id": "conditions/10",
+                                  "_condition_name": "Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute",
+                                  "_condition_description": "However, notices that do not relate to derivative works may be excluded.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/31",
-                                      "_condition_id": "conditions/31",
-                                      "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
-                                      "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/31",
+                                  "_condition_id": "conditions/31",
+                                  "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
+                                  "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -595,67 +559,51 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "A copyright notice for modifications may be added.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                      "_condition_id": "conditions/6",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
+                                  "_condition_id": "conditions/6",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                      "_condition_id": "conditions/7",
-                                      "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                      "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
+                                  "_condition_id": "conditions/7",
+                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                      "_condition_id": "conditions/8",
-                                      "_condition_name": "Give you a copy of the relevant license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                  "_condition_id": "conditions/8",
+                                  "_condition_name": "Give you a copy of the relevant license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/9",
-                                      "_condition_id": "conditions/9",
-                                      "_condition_name": "Indicate your changes in the file where you made them.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/9",
+                                  "_condition_id": "conditions/9",
+                                  "_condition_name": "Indicate your changes in the file where you made them.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/31",
-                                      "_condition_id": "conditions/31",
-                                      "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
-                                      "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/31",
+                                  "_condition_id": "conditions/31",
+                                  "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
+                                  "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -682,16 +630,13 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeLeaf",
-                          "contents": {
-                              "_condition_uri": "http://open-license.hitachi.com/conditions/14",
-                              "_condition_id": "conditions/14",
-                              "_condition_name": "I do so at my own risk.",
-                              "_condition_description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.",
-                              "_condition_schemaVersion": "0.1",
-                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                              "_condition_conditionType": "OBLIGATION"
-                          }
+                          "_condition_uri": "http://open-license.hitachi.com/conditions/14",
+                          "_condition_id": "conditions/14",
+                          "_condition_name": "I do so at my own risk.",
+                          "_condition_description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.",
+                          "_condition_schemaVersion": "0.1",
+                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                          "_condition_conditionType": "OBLIGATION"
                       },
                       "_permission_actions": [
                           {
@@ -708,16 +653,13 @@ open-license]] (CDLA-Permissive-1.0))
                       "_permission_summary": "",
                       "_permission_description": "",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeLeaf",
-                          "contents": {
-                              "_condition_uri": "http://open-license.hitachi.com/conditions/32",
-                              "_condition_id": "conditions/32",
-                              "_condition_name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
-                              "_condition_description": "",
-                              "_condition_schemaVersion": "0.1",
-                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                              "_condition_conditionType": "RESTRICTION"
-                          }
+                          "_condition_uri": "http://open-license.hitachi.com/conditions/32",
+                          "_condition_id": "conditions/32",
+                          "_condition_name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
+                          "_condition_description": "",
+                          "_condition_schemaVersion": "0.1",
+                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                          "_condition_conditionType": "RESTRICTION"
                       },
                       "_permission_actions": [
                           {

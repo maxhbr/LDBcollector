@@ -10,14 +10,6 @@
 
 - =scancode://unicode-tou=
 
-** Description
-
-#+BEGIN_QUOTE
-#+END_QUOTE
-
-(source: [[https://github.com/Hitachi/open-license][Hitachi
-open-license]] (CDLA-Permissive-1.0))
-
 ** Comments on (easy) usability
 
 ** General Comments

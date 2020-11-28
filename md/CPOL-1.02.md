@@ -211,31 +211,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/315",
-                                        "_condition_id": "conditions/315",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/315",
+                                    "_condition_id": "conditions/315",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/309",
-                                        "_condition_id": "conditions/309",
-                                        "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/309",
+                                    "_condition_id": "conditions/309",
+                                    "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 }
                             ]
                         },
@@ -278,55 +271,42 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/315",
-                                        "_condition_id": "conditions/315",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/315",
+                                    "_condition_id": "conditions/315",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/285",
-                                        "_condition_id": "conditions/285",
-                                        "_condition_name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/285",
+                                    "_condition_id": "conditions/285",
+                                    "_condition_name": "Indicate your changes and the date of your changes in the file where you made them.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/309",
-                                        "_condition_id": "conditions/309",
-                                        "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/309",
+                                    "_condition_id": "conditions/309",
+                                    "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/310",
-                                        "_condition_id": "conditions/310",
-                                        "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/310",
+                                    "_condition_id": "conditions/310",
+                                    "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -345,16 +325,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The author's permission must be obtained. You must obtain the author's permission to make the article available. The author is the person or entity that makes the software available under this license. The author is the person or entity that provides the software under this license. Source code refers to the source code or configuration file used to create the executable. The source code refers to the source code or configuration file used to create the executable.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {
@@ -371,16 +348,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Author's permission.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {
@@ -397,16 +371,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "You may not sell the software by itself. The publisher does not sell the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term \"executable\" refers to any executable, binary file or configuration file included in the software, or any data file required for the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/254",
-                                "_condition_id": "conditions/254",
-                                "_condition_name": "We don't sell it alone.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "RESTRICTION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/254",
+                            "_condition_id": "conditions/254",
+                            "_condition_name": "We don't sell it alone.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "RESTRICTION"
                         },
                         "_permission_actions": [
                             {
@@ -423,16 +394,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The software is not to be rented by itself. The publisher does not rent out the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term \"executable\" refers to any executable, binary file or configuration file included in the software, or any data file required for the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/313",
-                                "_condition_id": "conditions/313",
-                                "_condition_name": "It's not rented out on its own.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "RESTRICTION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/313",
+                            "_condition_id": "conditions/313",
+                            "_condition_name": "It's not rented out on its own.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "RESTRICTION"
                         },
                         "_permission_actions": [
                             {
@@ -449,79 +417,60 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/315",
-                                        "_condition_id": "conditions/315",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/315",
+                                    "_condition_id": "conditions/315",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/309",
-                                        "_condition_id": "conditions/309",
-                                        "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/309",
+                                    "_condition_id": "conditions/309",
+                                    "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/310",
-                                        "_condition_id": "conditions/310",
-                                        "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/310",
+                                    "_condition_id": "conditions/310",
+                                    "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/96",
-                                        "_condition_id": "conditions/96",
-                                        "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/96",
+                                    "_condition_id": "conditions/96",
+                                    "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/311",
-                                        "_condition_id": "conditions/311",
-                                        "_condition_name": "Do not sublicense the software",
-                                        "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/311",
+                                    "_condition_id": "conditions/311",
+                                    "_condition_name": "Do not sublicense the software",
+                                    "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/312",
-                                        "_condition_id": "conditions/312",
-                                        "_condition_name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/312",
+                                    "_condition_id": "conditions/312",
+                                    "_condition_name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -548,91 +497,69 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/315",
-                                        "_condition_id": "conditions/315",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/315",
+                                    "_condition_id": "conditions/315",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/285",
-                                        "_condition_id": "conditions/285",
-                                        "_condition_name": "Indicate your changes and the date of your changes in the file where you made them.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/285",
+                                    "_condition_id": "conditions/285",
+                                    "_condition_name": "Indicate your changes and the date of your changes in the file where you made them.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/309",
-                                        "_condition_id": "conditions/309",
-                                        "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/309",
+                                    "_condition_id": "conditions/309",
+                                    "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/310",
-                                        "_condition_id": "conditions/310",
-                                        "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/310",
+                                    "_condition_id": "conditions/310",
+                                    "_condition_name": "Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/96",
-                                        "_condition_id": "conditions/96",
-                                        "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/96",
+                                    "_condition_id": "conditions/96",
+                                    "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/311",
-                                        "_condition_id": "conditions/311",
-                                        "_condition_name": "Do not sublicense the software",
-                                        "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/311",
+                                    "_condition_id": "conditions/311",
+                                    "_condition_name": "Do not sublicense the software",
+                                    "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/312",
-                                        "_condition_id": "conditions/312",
-                                        "_condition_name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/312",
+                                    "_condition_id": "conditions/312",
+                                    "_condition_name": "Take no technical measures to restrict access to or use of the software in a way that would violate this license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },

@@ -11,13 +11,6 @@ Ruby License (Ruby)
 
 -   `scancode://ruby`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -382,16 +375,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/300",
-                                "_condition_id": "conditions/300",
-                                "_condition_name": "Include the original copyright notice and associated disclaimer in the software",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/300",
+                            "_condition_id": "conditions/300",
+                            "_condition_name": "Include the original copyright notice and associated disclaimer in the software",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -408,75 +398,57 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeOr",
-                                    "contents": [
+                                    "OR": [
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/301",
-                                                "_condition_id": "conditions/301",
-                                                "_condition_name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/301",
+                                            "_condition_id": "conditions/301",
+                                            "_condition_name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/289",
-                                                "_condition_id": "conditions/289",
-                                                "_condition_name": "Use only in your own corporation or organization.",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "RESTRICTION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/289",
+                                            "_condition_id": "conditions/289",
+                                            "_condition_name": "Use only in your own corporation or organization.",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "RESTRICTION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeAnd",
-                                            "contents": [
+                                            "AND": [
                                                 {
-                                                    "tag": "OlConditionTreeLeaf",
-                                                    "contents": {
-                                                        "_condition_uri": "http://open-license.hitachi.com/conditions/302",
-                                                        "_condition_id": "conditions/302",
-                                                        "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                                        "_condition_description": "",
-                                                        "_condition_schemaVersion": "0.1",
-                                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                        "_condition_conditionType": "RESTRICTION"
-                                                    }
+                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/302",
+                                                    "_condition_id": "conditions/302",
+                                                    "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
+                                                    "_condition_description": "",
+                                                    "_condition_schemaVersion": "0.1",
+                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                    "_condition_conditionType": "RESTRICTION"
                                                 },
                                                 {
-                                                    "tag": "OlConditionTreeLeaf",
-                                                    "contents": {
-                                                        "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                                        "_condition_id": "conditions/264",
-                                                        "_condition_name": "Pass information on where the original software was obtained",
-                                                        "_condition_description": "",
-                                                        "_condition_schemaVersion": "0.1",
-                                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                        "_condition_conditionType": "OBLIGATION"
-                                                    }
+                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/264",
+                                                    "_condition_id": "conditions/264",
+                                                    "_condition_name": "Pass information on where the original software was obtained",
+                                                    "_condition_description": "",
+                                                    "_condition_schemaVersion": "0.1",
+                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                    "_condition_conditionType": "OBLIGATION"
                                                 }
                                             ]
                                         },
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/292",
-                                                "_condition_id": "conditions/292",
-                                                "_condition_name": "Decide on a different method of distribution with the copyright holder",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "RESTRICTION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/292",
+                                            "_condition_id": "conditions/292",
+                                            "_condition_name": "Decide on a different method of distribution with the copyright holder",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "RESTRICTION"
                                         }
                                     ]
                                 }
@@ -497,72 +469,55 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeOr",
-                            "contents": [
+                            "OR": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                        "_condition_id": "conditions/264",
-                                        "_condition_name": "Pass information on where the original software was obtained",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/264",
+                                    "_condition_id": "conditions/264",
+                                    "_condition_name": "Pass information on where the original software was obtained",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                        "_condition_id": "conditions/21",
-                                        "_condition_name": "Attach the source code corresponding to the software in question.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/21",
+                                    "_condition_id": "conditions/21",
+                                    "_condition_name": "Attach the source code corresponding to the software in question.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeAnd",
-                                    "contents": [
+                                    "AND": [
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/302",
-                                                "_condition_id": "conditions/302",
-                                                "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "RESTRICTION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/302",
+                                            "_condition_id": "conditions/302",
+                                            "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "RESTRICTION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                                "_condition_id": "conditions/264",
-                                                "_condition_name": "Pass information on where the original software was obtained",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/264",
+                                            "_condition_id": "conditions/264",
+                                            "_condition_name": "Pass information on where the original software was obtained",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         }
                                     ]
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/292",
-                                        "_condition_id": "conditions/292",
-                                        "_condition_name": "Decide on a different method of distribution with the copyright holder",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/292",
+                                    "_condition_id": "conditions/292",
+                                    "_condition_name": "Decide on a different method of distribution with the copyright holder",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 }
                             ]
                         },

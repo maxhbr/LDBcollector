@@ -417,31 +417,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 }
                             ]
                         },
@@ -484,43 +477,33 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/179",
-                                        "_condition_id": "conditions/179",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -555,55 +538,42 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/179",
-                                        "_condition_id": "conditions/179",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                        "_condition_id": "conditions/8",
-                                        "_condition_name": "Give you a copy of the relevant license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -622,31 +592,24 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 }
                             ]
                         },
@@ -665,43 +628,33 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/179",
-                                        "_condition_id": "conditions/179",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -736,55 +689,42 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                        "_condition_id": "conditions/18",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                        "_condition_id": "conditions/124",
-                                        "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                        "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/179",
-                                        "_condition_id": "conditions/179",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                        "_condition_id": "conditions/8",
-                                        "_condition_name": "Give you a copy of the relevant license.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },

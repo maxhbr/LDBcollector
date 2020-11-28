@@ -296,19 +296,15 @@
                     "_permission_summary": "",
                     "_permission_description": "Related documentation and accompanying documents for the software are treated in the same way as the software.",
                     "_permission_conditionHead": {
-                        "tag": "OlConditionTreeAnd",
-                        "contents": [
+                        "AND": [
                             {
-                                "tag": "OlConditionTreeLeaf",
-                                "contents": {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
+                                "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                "_condition_id": "conditions/1",
+                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                "_condition_description": "",
+                                "_condition_schemaVersion": "0.1",
+                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                "_condition_conditionType": "OBLIGATION"
                             }
                         ]
                     },

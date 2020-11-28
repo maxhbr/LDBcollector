@@ -9,13 +9,6 @@ MIT +no-false-attribs license (MITNFA)
 
 -   `MIT no false attribution License`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -316,16 +309,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                "_condition_id": "conditions/1",
-                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -390,46 +380,35 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                        "_condition_id": "conditions/1",
-                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                    "_condition_id": "conditions/1",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeOr",
-                                    "contents": [
+                                    "OR": [
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/273",
-                                                "_condition_id": "conditions/273",
-                                                "_condition_name": "Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/273",
+                                            "_condition_id": "conditions/273",
+                                            "_condition_name": "Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/274",
-                                                "_condition_id": "conditions/274",
-                                                "_condition_name": "Delete the e-mail address or URL of the original author's bug report",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/274",
+                                            "_condition_id": "conditions/274",
+                                            "_condition_name": "Delete the e-mail address or URL of the original author's bug report",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         }
                                     ]
                                 }

@@ -7,13 +7,6 @@ Naumen Public License (Naumen)
 
 -   `scancode://naumen`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

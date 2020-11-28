@@ -19,13 +19,6 @@ IBM Public License v1.0 (IPL-1.0)
 
 -   `IBM Public License Version 1.0`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

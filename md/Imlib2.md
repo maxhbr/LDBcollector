@@ -7,13 +7,6 @@ Imlib2 License (Imlib2)
 
 -   `scancode://imlib2`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -297,19 +290,15 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/191",
-                                        "_condition_id": "conditions/191",
-                                        "_condition_name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/191",
+                                    "_condition_id": "conditions/191",
+                                    "_condition_name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 }
                             ]
                         },
@@ -368,73 +357,55 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided. Acknowledgements should be included in any copyright notices, manuals, advertising or promotional documents, or accompanying documentation for products containing the software. The acknowledgment should state that the software is being used.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeAnd",
-                            "contents": [
+                            "AND": [
                                 {
-                                    "tag": "OlConditionTreeLeaf",
-                                    "contents": {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/191",
-                                        "_condition_id": "conditions/191",
-                                        "_condition_name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/191",
+                                    "_condition_id": "conditions/191",
+                                    "_condition_name": "Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
                                 },
                                 {
-                                    "tag": "OlConditionTreeOr",
-                                    "contents": [
+                                    "OR": [
                                         {
-                                            "tag": "OlConditionTreeLeaf",
-                                            "contents": {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                                "_condition_id": "conditions/13",
-                                                "_condition_name": "Acknowledgements",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
+                                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                                            "_condition_id": "conditions/13",
+                                            "_condition_name": "Acknowledgements",
+                                            "_condition_description": "",
+                                            "_condition_schemaVersion": "0.1",
+                                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                                            "_condition_conditionType": "OBLIGATION"
                                         },
                                         {
-                                            "tag": "OlConditionTreeOr",
-                                            "contents": [
+                                            "OR": [
                                                 {
-                                                    "tag": "OlConditionTreeLeaf",
-                                                    "contents": {
-                                                        "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                                        "_condition_id": "conditions/21",
-                                                        "_condition_name": "Attach the source code corresponding to the software in question.",
-                                                        "_condition_description": "",
-                                                        "_condition_schemaVersion": "0.1",
-                                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                        "_condition_conditionType": "OBLIGATION"
-                                                    }
+                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/21",
+                                                    "_condition_id": "conditions/21",
+                                                    "_condition_name": "Attach the source code corresponding to the software in question.",
+                                                    "_condition_description": "",
+                                                    "_condition_schemaVersion": "0.1",
+                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                    "_condition_conditionType": "OBLIGATION"
                                                 },
                                                 {
-                                                    "tag": "OlConditionTreeLeaf",
-                                                    "contents": {
-                                                        "_condition_uri": "http://open-license.hitachi.com/conditions/87",
-                                                        "_condition_id": "conditions/87",
-                                                        "_condition_name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
-                                                        "_condition_description": "",
-                                                        "_condition_schemaVersion": "0.1",
-                                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                        "_condition_conditionType": "OBLIGATION"
-                                                    }
+                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/87",
+                                                    "_condition_id": "conditions/87",
+                                                    "_condition_name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
+                                                    "_condition_description": "",
+                                                    "_condition_schemaVersion": "0.1",
+                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                    "_condition_conditionType": "OBLIGATION"
                                                 },
                                                 {
-                                                    "tag": "OlConditionTreeLeaf",
-                                                    "contents": {
-                                                        "_condition_uri": "http://open-license.hitachi.com/conditions/624",
-                                                        "_condition_id": "conditions/624",
-                                                        "_condition_name": "Provide source code for the software upon request",
-                                                        "_condition_description": "",
-                                                        "_condition_schemaVersion": "0.1",
-                                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                        "_condition_conditionType": "OBLIGATION"
-                                                    }
+                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/624",
+                                                    "_condition_id": "conditions/624",
+                                                    "_condition_name": "Provide source code for the software upon request",
+                                                    "_condition_description": "",
+                                                    "_condition_schemaVersion": "0.1",
+                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                    "_condition_conditionType": "OBLIGATION"
                                                 }
                                             ]
                                         }

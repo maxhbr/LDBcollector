@@ -9,13 +9,6 @@ XFree86 License 1.1 (XFree86-1.1)
 
 -   `XFree86 1.1 License`
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 
@@ -254,16 +247,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                "_condition_id": "conditions/1",
-                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -304,16 +294,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                                "_condition_id": "conditions/2",
-                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                            "_condition_id": "conditions/2",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -362,16 +349,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                                "_condition_id": "conditions/13",
-                                "_condition_name": "Acknowledgements",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
+                            "_condition_id": "conditions/13",
+                            "_condition_name": "Acknowledgements",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
                         },
                         "_permission_actions": [
                             {
@@ -388,16 +372,13 @@ Raw Data
                         "_permission_summary": "",
                         "_permission_description": "If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc.",
                         "_permission_conditionHead": {
-                            "tag": "OlConditionTreeLeaf",
-                            "contents": {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                                "_condition_id": "conditions/3",
-                                "_condition_name": "Get special permission in writing.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "REQUISITE"
-                            }
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
                         },
                         "_permission_actions": [
                             {

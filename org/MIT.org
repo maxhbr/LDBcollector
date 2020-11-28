@@ -522,16 +522,13 @@
                       "_permission_summary": "",
                       "_permission_description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeLeaf",
-                          "contents": {
-                              "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                              "_condition_id": "conditions/1",
-                              "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                              "_condition_description": "",
-                              "_condition_schemaVersion": "0.1",
-                              "_condition_baseUri": "http://open-license.hitachi.com/",
-                              "_condition_conditionType": "OBLIGATION"
-                          }
+                          "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                          "_condition_id": "conditions/1",
+                          "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                          "_condition_description": "",
+                          "_condition_schemaVersion": "0.1",
+                          "_condition_baseUri": "http://open-license.hitachi.com/",
+                          "_condition_conditionType": "OBLIGATION"
                       },
                       "_permission_actions": [
                           {

@@ -3,13 +3,6 @@ Creative Commons Attribution 3.0 United States (CC-BY-3.0-US)
 
 [TABLE]
 
-Description
------------
-
-(source: [Hitachi
-open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-(CDLA-Permissive-1.0))
-
 Comments on (easy) usability
 ----------------------------
 

@@ -510,43 +510,33 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               }
                           ]
                       },
@@ -685,79 +675,60 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                      "_condition_id": "conditions/8",
-                                      "_condition_name": "Give you a copy of the relevant license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                  "_condition_id": "conditions/8",
+                                  "_condition_name": "Give you a copy of the relevant license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -776,79 +747,60 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/12",
-                                      "_condition_id": "conditions/12",
-                                      "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                  "_condition_id": "conditions/12",
+                                  "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -867,115 +819,87 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/85",
-                                      "_condition_id": "conditions/85",
-                                      "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/85",
+                                  "_condition_id": "conditions/85",
+                                  "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/86",
-                                      "_condition_id": "conditions/86",
-                                      "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/86",
+                                  "_condition_id": "conditions/86",
+                                  "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/71",
-                                      "_condition_id": "conditions/71",
-                                      "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/71",
+                                  "_condition_id": "conditions/71",
+                                  "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/12",
-                                      "_condition_id": "conditions/12",
-                                      "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                  "_condition_id": "conditions/12",
+                                  "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -994,67 +918,51 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                      "_condition_id": "conditions/30",
-                                      "_condition_name": "Indicate that you have made the change yourself.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                  "_condition_id": "conditions/30",
+                                  "_condition_name": "Indicate that you have made the change yourself.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -1073,91 +981,69 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                      "_condition_id": "conditions/8",
-                                      "_condition_name": "Give you a copy of the relevant license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                  "_condition_id": "conditions/8",
+                                  "_condition_name": "Give you a copy of the relevant license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                      "_condition_id": "conditions/30",
-                                      "_condition_name": "Indicate that you have made the change yourself.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                  "_condition_id": "conditions/30",
+                                  "_condition_name": "Indicate that you have made the change yourself.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -1176,91 +1062,69 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/12",
-                                      "_condition_id": "conditions/12",
-                                      "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                  "_condition_id": "conditions/12",
+                                  "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                      "_condition_id": "conditions/30",
-                                      "_condition_name": "Indicate that you have made the change yourself.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                  "_condition_id": "conditions/30",
+                                  "_condition_name": "Indicate that you have made the change yourself.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
@@ -1279,127 +1143,96 @@
                       "_permission_summary": "",
                       "_permission_description": "Contributor is the person or entity that distributes the Software.",
                       "_permission_conditionHead": {
-                          "tag": "OlConditionTreeAnd",
-                          "contents": [
+                          "AND": [
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/18",
-                                      "_condition_id": "conditions/18",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                  "_condition_id": "conditions/18",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/30",
-                                      "_condition_id": "conditions/30",
-                                      "_condition_name": "Indicate that you have made the change yourself.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/30",
+                                  "_condition_id": "conditions/30",
+                                  "_condition_name": "Indicate that you have made the change yourself.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/68",
-                                      "_condition_id": "conditions/68",
-                                      "_condition_name": "Include the copyright notice contained in the software",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/68",
+                                  "_condition_id": "conditions/68",
+                                  "_condition_name": "Include the copyright notice contained in the software",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/12",
-                                      "_condition_id": "conditions/12",
-                                      "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/12",
+                                  "_condition_id": "conditions/12",
+                                  "_condition_name": "Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/71",
-                                      "_condition_id": "conditions/71",
-                                      "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
-                                      "_condition_description": "",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/71",
+                                  "_condition_id": "conditions/71",
+                                  "_condition_name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                  "_condition_description": "",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/86",
-                                      "_condition_id": "conditions/86",
-                                      "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/86",
+                                  "_condition_id": "conditions/86",
+                                  "_condition_name": "To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/85",
-                                      "_condition_id": "conditions/85",
-                                      "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/85",
+                                  "_condition_id": "conditions/85",
+                                  "_condition_name": "all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/11",
-                                      "_condition_id": "conditions/11",
-                                      "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
-                                      "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "REQUISITE"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/11",
+                                  "_condition_id": "conditions/11",
+                                  "_condition_name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                  "_condition_description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "REQUISITE"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/83",
-                                      "_condition_id": "conditions/83",
-                                      "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
-                                      "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "RESTRICTION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/83",
+                                  "_condition_id": "conditions/83",
+                                  "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license",
+                                  "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "RESTRICTION"
                               },
                               {
-                                  "tag": "OlConditionTreeLeaf",
-                                  "contents": {
-                                      "_condition_uri": "http://open-license.hitachi.com/conditions/84",
-                                      "_condition_id": "conditions/84",
-                                      "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
-                                      "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
-                                      "_condition_schemaVersion": "0.1",
-                                      "_condition_baseUri": "http://open-license.hitachi.com/",
-                                      "_condition_conditionType": "OBLIGATION"
-                                  }
+                                  "_condition_uri": "http://open-license.hitachi.com/conditions/84",
+                                  "_condition_id": "conditions/84",
+                                  "_condition_name": "Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution.",
+                                  "_condition_description": "Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.",
+                                  "_condition_schemaVersion": "0.1",
+                                  "_condition_baseUri": "http://open-license.hitachi.com/",
+                                  "_condition_conditionType": "OBLIGATION"
                               }
                           ]
                       },
