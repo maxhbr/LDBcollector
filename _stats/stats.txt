@@ -38,6 +38,14 @@ Number of clusters: 429
 #### based on licenses
 Number of clusters: 414
 ### Stats on Gaps:
-#### numOfFacts: 4133
-#### numOfLicenseFacs: 1725
-#### numOfLeftover: 2455
+Number of facts: 2455
+    BlueOak License List: 2
+    Debian Free Software Guidelines: 5
+    Fedora Project Wiki: 414
+    Google OSS Policy: 3
+    Hitachi open-license: 689
+    Open Knowledge International: 23
+    OpenChainPolicyTemplate: 8
+    OpenSourceInitiative: 4
+    Scancode: 1303
+    Wikipedia: 4
