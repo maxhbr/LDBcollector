@@ -1,10 +1,10 @@
 * Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 
-| Key         | Value                                          |
-|-------------+------------------------------------------------|
-| Fullname    | Sybase Open Watcom Public License 1.0          |
-| Shortname   | Watcom-1.0                                     |
-| Rating      | Unknown, probably Attention or Stop or No-Go   |
+| Key         | Value                                   |
+|-------------+-----------------------------------------|
+| Fullname    | Sybase Open Watcom Public License 1.0   |
+| Shortname   | Watcom-1.0                              |
+| Rating      | Unknown, probably Stop or No-Go         |
 
 *Other Names:*
 
@@ -32,6 +32,13 @@
   [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]]))
+
+- *↓*"This software licenses which is NOT OKAY for Fedora. Nothing in
+  Fedora is permitted to use this license. It is either non-free or
+  deprecated." (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -419,6 +426,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -516,6 +527,29 @@
                   ]
               },
               "spdxLicenseId": "Watcom-1.0"
+          },
+          "Fedora Project Wiki": {
+              "rating": "Bad",
+              "Upstream URL": "http://opensource.org/licenses/sybase.php",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Sybase Open Watcom Public License 1.0",
+              "FSF Free?": "No",
+              "_implications": {
+                  "__impliedNames": [
+                      "Sybase Open Watcom Public License 1.0"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "NegativeJudgement",
+                              "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                          }
+                      ]
+                  ]
+              },
+              "Notes": null
           },
           "Scancode": {
               "otherUrls": [
@@ -651,6 +685,13 @@
           }
       },
       "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "NegativeJudgement",
+                  "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+              }
+          ],
           [
               "Google OSS Policy",
               {

@@ -6,6 +6,10 @@
         "Standard ML of New Jersey"
     ],
     "__impliedId": "SMLNJ",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MIT"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +47,35 @@
                 ]
             },
             "spdxLicenseId": "SMLNJ"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "MIT",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Standard ML of New Jersey License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Standard ML of New Jersey License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MIT"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -148,6 +181,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

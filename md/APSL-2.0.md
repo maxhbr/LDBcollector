@@ -20,6 +20,11 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/APSL-2.0.html "SPDX") (all data
     \[in this repository\] is generated))
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
@@ -190,8 +195,15 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-2.0.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -217,8 +229,10 @@ Raw Data
             "License :: OSI Approved :: Apple Public Source License"
         ],
         "__impliedId": "APSL-2.0",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Apple Public Source License",
+            "APSL 2.0",
             "Apple Public Source License (APSL)"
         ],
         "__impliedComments": [
@@ -236,6 +250,7 @@ Raw Data
                 ]
             ]
         ],
+        "__hasPatentHint": false,
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -302,6 +317,35 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "APSL-2.0"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://www.opensource.apple.com/apsl/2.0.txt",
+                "GPLv3 Compat?": null,
+                "Short Name": "APSL 2.0",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Apple Public Source License 2.0",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 2.0"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "APSL 2.0"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -479,6 +523,29 @@ Raw Data
                     ]
                 }
             },
+            "Wikipedia": {
+                "Linking": {
+                    "value": "Permissive",
+                    "description": "linking of the licensed code with code licensed under a different license (e.g. when the code is provided as a library)"
+                },
+                "Publication date": "06.08.03",
+                "Coordinates": {
+                    "name": "Apple Public Source License",
+                    "version": "2.0",
+                    "spdxId": ""
+                },
+                "_sourceURL": "https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses",
+                "_implications": {
+                    "__impliedNames": [
+                        "Apple Public Source License 2.0"
+                    ],
+                    "__hasPatentHint": false
+                },
+                "Modification": {
+                    "value": "Limited",
+                    "description": "modification of the code by a licensee"
+                }
+            },
             "Google OSS Policy": {
                 "rating": "RECIPROCAL",
                 "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
@@ -505,6 +572,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

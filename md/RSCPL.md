@@ -20,6 +20,12 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/RSCPL.html "SPDX") (all data \[in
     this repository\] is generated))
 
+-   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated.” (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -192,6 +198,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ricoh-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -290,6 +300,29 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "RSCPL"
+            },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "http://opensource.org/licenses/ricohpl.php",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Ricoh Source Code Public License",
+                "FSF Free?": "No",
+                "_implications": {
+                    "__impliedNames": [
+                        "Ricoh Source Code Public License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": null
             },
             "Scancode": {
                 "otherUrls": [
@@ -422,6 +455,13 @@ Raw Data
             }
         },
         "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                }
+            ],
             [
                 "SPDX",
                 {

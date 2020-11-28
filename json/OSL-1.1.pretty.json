@@ -6,8 +6,10 @@
         "OSL 1.1"
     ],
     "__impliedId": "OSL-1.1",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "Open Software License",
+        "OSL 1.1",
         "Open Software License (OSL) v1.1"
     ],
     "__impliedComments": [
@@ -48,6 +50,35 @@
                 ]
             },
             "spdxLicenseId": "OSL-1.1"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/OSL1.1",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "OSL 1.1",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Open Software License 1.1",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License 1.1"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "OSL 1.1"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -186,6 +217,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

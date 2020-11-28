@@ -6,6 +6,10 @@
         "EFL MIT-Style License"
     ],
     "__impliedId": "MIT-advertising",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MIT with advertising"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +47,35 @@
                 ]
             },
             "spdxLicenseId": "MIT-advertising"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "MIT with advertising",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Enlightenment License (e16)",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Enlightenment License (e16)"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MIT with advertising"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -132,6 +165,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

@@ -43,6 +43,7 @@
 <h2>Comments on (easy) usability</h2>
 <ul>
 <li><p><strong>↑</strong>“Is OSI Approved” (source: <a href="https://spdx.org/licenses/AGPL-3.0-or-later.html" title="SPDX">SPDX</a> (all data [in this repository] is generated))</p></li>
+<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -84,6 +85,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 <li><p><a href="https://spdx.org/licenses/AGPL-3.0-or-later.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://blueoakcouncil.org/copyleft" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
@@ -102,8 +104,10 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
         &quot;GNU Affero General Public License 3.0&quot;
     ],
     &quot;__impliedId&quot;: &quot;AGPL-3.0-or-later&quot;,
+    &quot;__isFsfFree&quot;: true,
     &quot;__impliedAmbiguousNames&quot;: [
-        &quot;Affero General Public License&quot;
+        &quot;Affero General Public License&quot;,
+        &quot;AGPLv3+&quot;
     ],
     &quot;__impliedComments&quot;: [
         [
@@ -164,6 +168,35 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;AGPL-3.0-or-later&quot;
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;http://www.fsf.org/licensing/licenses/agpl-3.0.html&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;Sortof&quot;,
+            &quot;Short Name&quot;: &quot;AGPLv3+&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Affero General Public License 3.0 or later&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Affero General Public License 3.0 or later&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;AGPLv3+&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
@@ -482,6 +515,13 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
         }
     },
     &quot;__impliedJudgement&quot;: [
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+            }
+        ],
         [
             &quot;SPDX&quot;,
             {

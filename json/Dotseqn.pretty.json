@@ -5,6 +5,10 @@
         "scancode://dotseqn"
     ],
     "__impliedId": "Dotseqn",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Dotseqn"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -34,6 +38,35 @@
                 ]
             },
             "spdxLicenseId": "Dotseqn"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Dotseqn",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Dotseqn",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Dotseqn License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Dotseqn License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Dotseqn"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -73,6 +106,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -6,6 +6,10 @@
         "VOSTROM Public License"
     ],
     "__impliedId": "VOSTROM",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "VOSTROM"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "VOSTROM"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/VOSTROM",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "VOSTROM",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "VOSTROM Public License for Open Source",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "VOSTROM Public License for Open Source"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "VOSTROM"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -80,6 +113,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

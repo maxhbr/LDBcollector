@@ -6,6 +6,10 @@
         "BSD Acknowledgment License"
     ],
     "__impliedId": "BSD-3-Clause-Attribution",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "BSD with attribution"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "BSD-3-Clause-Attribution"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": null,
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution",
+            "GPLv3 Compat?": null,
+            "Short Name": "BSD with attribution",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "BSD with attribution",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "BSD with attribution"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "BSD with attribution"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -116,6 +149,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

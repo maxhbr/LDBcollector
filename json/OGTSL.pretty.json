@@ -87,6 +87,29 @@
             },
             "spdxLicenseId": "OGTSL"
         },
+        "Fedora Project Wiki": {
+            "rating": "Bad",
+            "Upstream URL": "http://opensource.org/licenses/opengroup.php",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Open Group Test Suite License",
+            "FSF Free?": "No",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Group Test Suite License"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                        }
+                    ]
+                ]
+            },
+            "Notes": "Same flaws as Artistic 1.0"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt",
@@ -257,6 +280,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
             }
         ],
         [

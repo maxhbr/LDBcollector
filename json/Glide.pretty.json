@@ -6,6 +6,10 @@
         "3DFX GLIDE"
     ],
     "__impliedId": "Glide",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Glide"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "Glide"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.users.on.net/~triforce/glidexp/COPYING.txt",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Glide",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "3dfx Glide License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "3dfx Glide License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Glide"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -74,6 +107,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

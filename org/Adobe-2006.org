@@ -15,6 +15,11 @@
 
 ** Comments on (easy) usability
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 - *↓*"Rating is: Lead" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
@@ -76,6 +81,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-scl.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -87,6 +96,10 @@
           "Adobe Source Code License 2006"
       ],
       "__impliedId": "Adobe-2006",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "Adobe"
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -116,6 +129,35 @@
                   ]
               },
               "spdxLicenseId": "Adobe-2006"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/AdobeLicense",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "Adobe",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Adobe Systems Incorporated Source Code License Agreement",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Adobe Systems Incorporated Source Code License Agreement"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "Adobe"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -203,6 +245,13 @@
               {
                   "tag": "NegativeJudgement",
                   "contents": "Rating is: Lead"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ]
       ],

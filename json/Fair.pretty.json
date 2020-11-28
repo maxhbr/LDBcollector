@@ -6,6 +6,10 @@
         "Fair License (Fair)"
     ],
     "__impliedId": "Fair",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Fair"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -85,6 +89,35 @@
                 ]
             },
             "spdxLicenseId": "Fair"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/fair.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Fair",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Fair License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Fair License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Fair"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -258,6 +291,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

@@ -29,8 +29,8 @@
 <ul>
 <li><p><code>scancode://ecl-2.0</code></p></li>
 <li><p><code>ECL 2.0</code></p></li>
-<li><p><code>Educational Community License, Version 2.0</code></p></li>
 <li><p><code>Educational Community License 2.0</code></p></li>
+<li><p><code>Educational Community License, Version 2.0</code></p></li>
 <li><p><code>ecl2</code></p></li>
 </ul>
 <h2>Description</h2>
@@ -42,6 +42,7 @@
 <ul>
 <li><p><strong>↑</strong>“Is OSI Approved” (source: <a href="https://spdx.org/licenses/ECL-2.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated))</p></li>
 <li><p><strong>↑</strong>“Rating is: Silver” (source: <a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>))</p></li>
+<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -299,6 +300,7 @@ identification within third-party archives.
 <li><p><a href="https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods" title="OpenChainPolicyTemplate">OpenChainPolicyTemplate</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt" title="choosealicense.com">choosealicense.com</a> (<a href="https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 </ul>
@@ -310,11 +312,15 @@ identification within third-party archives.
         &quot;scancode://ecl-2.0&quot;,
         &quot;ECL 2.0&quot;,
         &quot;ecl-2.0&quot;,
-        &quot;Educational Community License, Version 2.0&quot;,
         &quot;Educational Community License 2.0&quot;,
+        &quot;Educational Community License, Version 2.0&quot;,
         &quot;ecl2&quot;
     ],
     &quot;__impliedId&quot;: &quot;ECL-2.0&quot;,
+    &quot;__isFsfFree&quot;: true,
+    &quot;__impliedAmbiguousNames&quot;: [
+        &quot;ECL 2.0&quot;
+    ],
     &quot;__impliedComments&quot;: [
         [
             &quot;Scancode&quot;,
@@ -392,6 +398,35 @@ identification within third-party archives.
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;ECL-2.0&quot;
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;http://www.osedu.org/licenses/ECL-2.0/&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;Yes&quot;,
+            &quot;Short Name&quot;: &quot;ECL 2.0&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Educational Community License 2.0&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Educational Community License 2.0&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;ECL 2.0&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
@@ -636,6 +671,13 @@ identification within third-party archives.
             {
                 &quot;tag&quot;: &quot;PositiveJudgement&quot;,
                 &quot;contents&quot;: &quot;Rating is: Silver&quot;
+            }
+        ],
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
             }
         ],
         [

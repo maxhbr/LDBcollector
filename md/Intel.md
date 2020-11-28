@@ -26,6 +26,12 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated.” (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -106,6 +112,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -126,6 +136,7 @@ Raw Data
             "intel-osl"
         ],
         "__impliedId": "Intel",
+        "__isFsfFree": true,
         "__impliedComments": [
             [
                 "Scancode",
@@ -203,6 +214,30 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Intel"
+            },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "http://opensource.org/licenses/intel-open-source-license.php",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Intel Open Source License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Intel Open Source License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": "Deprecated license"
             },
             "Scancode": {
                 "otherUrls": [
@@ -361,6 +396,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
                 }
             ],
             [

@@ -1,11 +1,11 @@
 * Adobe Glyph List License (Adobe-Glyph)
 
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Adobe Glyph List License                       |
-| Shortname        | Adobe-Glyph                                    |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key              | Value                      |
+|------------------+----------------------------|
+| Fullname         | Adobe Glyph List License   |
+| Shortname        | Adobe-Glyph                |
+| Rating           | Unknown                    |
+| Classification   | NoCopyleft                 |
 
 *Other Names:*
 
@@ -14,6 +14,11 @@
 - =Adobe Glyph License=
 
 ** Comments on (easy) usability
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -47,6 +52,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-glyph.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -58,6 +67,10 @@
           "Adobe Glyph License"
       ],
       "__impliedId": "Adobe-Glyph",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "MIT"
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -87,6 +100,35 @@
                   ]
               },
               "spdxLicenseId": "Adobe-Glyph"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "MIT",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Adobe Glyph List License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Adobe Glyph List License"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "MIT"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -126,6 +168,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

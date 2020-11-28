@@ -31,6 +31,7 @@
 </ul>
 <h2>Comments on (easy) usability</h2>
 <ul>
+<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -177,6 +178,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
 <li><p><a href="https://spdx.org/licenses/BSD-Protection.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://blueoakcouncil.org/copyleft" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-protection.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -186,8 +188,10 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
         &quot;scancode://bsd-protection&quot;
     ],
     &quot;__impliedId&quot;: &quot;BSD-Protection&quot;,
+    &quot;__isFsfFree&quot;: true,
     &quot;__impliedAmbiguousNames&quot;: [
-        &quot;BSD Protection License&quot;
+        &quot;BSD Protection License&quot;,
+        &quot;BSD Protection&quot;
     ],
     &quot;__impliedComments&quot;: [
         [
@@ -226,6 +230,35 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;BSD-Protection&quot;
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;https://fedoraproject.org/wiki/Licensing/BSD_Protection_License&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;NO&quot;,
+            &quot;Short Name&quot;: &quot;BSD Protection&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;BSD Protection License&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;BSD Protection License&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;BSD Protection&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: null,
@@ -303,6 +336,15 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
             &quot;CopyleftKind&quot;: &quot;StrongCopyleft&quot;
         }
     },
+    &quot;__impliedJudgement&quot;: [
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+            }
+        ]
+    ],
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;BlueOak License List&quot;,

@@ -9,11 +9,11 @@ Eiffel Forum License v2.0 (EFL-2.0)
 
 -   `EFL 2.0`
 
+-   `Eiffel Forum License 2.0`
+
 -   `Eiffel Forum License, Version 2`
 
 -   `License :: OSI Approved :: Eiffel Forum License`
-
--   `Eiffel Forum License 2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -21,6 +21,11 @@ Comments on (easy) usability
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EFL-2.0.html "SPDX") (all data \[in
     this repository\] is generated))
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -98,6 +103,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -113,11 +122,15 @@ Raw Data
             "Eiffel Forum License v2.0",
             "scancode://efl-2.0",
             "EFL 2.0",
+            "Eiffel Forum License 2.0",
             "Eiffel Forum License, Version 2",
-            "License :: OSI Approved :: Eiffel Forum License",
-            "Eiffel Forum License 2.0"
+            "License :: OSI Approved :: Eiffel Forum License"
         ],
         "__impliedId": "EFL-2.0",
+        "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "EFL 2.0"
+        ],
         "__impliedComments": [
             [
                 "Scancode",
@@ -197,6 +210,35 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "EFL-2.0"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "EFL 2.0",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Eiffel Forum License 2.0",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "Eiffel Forum License 2.0"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "EFL 2.0"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -385,6 +427,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
                 }
             ],
             [

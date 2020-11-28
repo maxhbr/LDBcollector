@@ -7,6 +7,10 @@
         "License :: OSI Approved :: Nethack General Public License"
     ],
     "__impliedId": "NGPL",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "NGPL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -81,6 +85,35 @@
                 ]
             },
             "spdxLicenseId": "NGPL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/nethack.php",
+            "GPLv3 Compat?": null,
+            "Short Name": "NGPL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Nethack General Public License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Nethack General Public License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "NGPL"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -204,6 +237,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

@@ -93,6 +93,7 @@
 <li><p><strong>OSI Page:</strong> http://opensource.org/licenses/MPL-2.0</p></li>
 <li><p><strong>SPDX:</strong> http://spdx.org/licenses/MPL-2.0.json</p></li>
 <li><p><strong>Wikipedia page:</strong> https://en.wikipedia.org/wiki/MPL_License</p></li>
+<li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/258</p></li>
 <li><p>http://www.mozilla.org/MPL/2.0/</p></li>
 <li><p>https://spdx.org/licenses/MPL-2.0.html</p></li>
 </ul>
@@ -486,6 +487,7 @@ Exhibit B - &quot;Incompatible With Secondary Licenses&quot; Notice
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
+<li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -706,6 +708,511 @@ Exhibit B - &quot;Incompatible With Secondary Licenses&quot; Notice
             &quot;oJudgement&quot;: null,
             &quot;oCompatibilities&quot;: null,
             &quot;oRatingState&quot;: null
+        },
+        &quot;Hitachi open-license&quot;: {
+            &quot;_license_uri&quot;: &quot;http://open-license.hitachi.com/licenses/258&quot;,
+            &quot;_license_permissions&quot;: [
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/18&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/18&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s copyright license is granted in accordance with such license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/83&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/83&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s patent license is granted pursuant to such license&quot;,
+                                    &quot;_condition_description&quot;: &quot;However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor&#39;s contribution alone or in combination with the software in question.&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the fetched code as it is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/1&quot;,
+                            &quot;_action_id&quot;: &quot;actions/1&quot;,
+                            &quot;_action_name&quot;: &quot;Use the obtained source code without modification&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/3&quot;,
+                            &quot;_action_id&quot;: &quot;actions/3&quot;,
+                            &quot;_action_name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/4&quot;,
+                            &quot;_action_id&quot;: &quot;actions/4&quot;,
+                            &quot;_action_name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Use the obtained executable as is.&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/84&quot;,
+                            &quot;_action_id&quot;: &quot;actions/84&quot;,
+                            &quot;_action_name&quot;: &quot;Use the retrieved executable&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/87&quot;,
+                            &quot;_action_id&quot;: &quot;actions/87&quot;,
+                            &quot;_action_name&quot;: &quot;Use the executable generated from the modified source code&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/18&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/18&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s copyright license is granted in accordance with such license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/83&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/83&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s patent license is granted pursuant to such license&quot;,
+                                    &quot;_condition_description&quot;: &quot;However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor&#39;s contribution alone or in combination with the software in question.&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/198&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/198&quot;,
+                                    &quot;_condition_name&quot;: &quot;Let us know where to get a copy of this license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;Notice that the source code is subject to this license.&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the code as it was obtained&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/9&quot;,
+                            &quot;_action_id&quot;: &quot;actions/9&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the obtained source code without modification&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/12&quot;,
+                            &quot;_action_id&quot;: &quot;actions/12&quot;,
+                            &quot;_action_name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/114&quot;,
+                            &quot;_action_id&quot;: &quot;actions/114&quot;,
+                            &quot;_action_name&quot;: &quot;Display the obtained source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/115&quot;,
+                            &quot;_action_id&quot;: &quot;actions/115&quot;,
+                            &quot;_action_name&quot;: &quot;Execute the obtained source code.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/118&quot;,
+                            &quot;_action_id&quot;: &quot;actions/118&quot;,
+                            &quot;_action_name&quot;: &quot;Display the modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/119&quot;,
+                            &quot;_action_id&quot;: &quot;actions/119&quot;,
+                            &quot;_action_name&quot;: &quot;Executing Modified Source Code&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/6&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/6&quot;,
+                                    &quot;_condition_name&quot;: &quot;An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor&#39;s copyright license is granted in accordance with such license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/83&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/83&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s patent license is granted pursuant to such license&quot;,
+                                    &quot;_condition_description&quot;: &quot;However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor&#39;s contribution alone or in combination with the software in question.&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/87&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/87&quot;,
+                                    &quot;_condition_name&quot;: &quot;Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;Redistribute the obtained executable as-is&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/86&quot;,
+                            &quot;_action_id&quot;: &quot;actions/86&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the obtained executable&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/89&quot;,
+                            &quot;_action_id&quot;: &quot;actions/89&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the executable generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/116&quot;,
+                            &quot;_action_id&quot;: &quot;actions/116&quot;,
+                            &quot;_action_name&quot;: &quot;Display the retrieved executable.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/117&quot;,
+                            &quot;_action_id&quot;: &quot;actions/117&quot;,
+                            &quot;_action_name&quot;: &quot;Execute the obtained executable.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/120&quot;,
+                            &quot;_action_id&quot;: &quot;actions/120&quot;,
+                            &quot;_action_name&quot;: &quot;Display the executable generated from the modified source code.&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/121&quot;,
+                            &quot;_action_id&quot;: &quot;actions/121&quot;,
+                            &quot;_action_name&quot;: &quot;Execute the executable generated from the modified source code.&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                        &quot;contents&quot;: {
+                            &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/14&quot;,
+                            &quot;_condition_id&quot;: &quot;conditions/14&quot;,
+                            &quot;_condition_name&quot;: &quot;I do so at my own risk.&quot;,
+                            &quot;_condition_description&quot;: &quot;If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.&quot;,
+                            &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                        }
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/36&quot;,
+                            &quot;_action_id&quot;: &quot;actions/36&quot;,
+                            &quot;_action_name&quot;: &quot;When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.&quot;
+                        }
+                    ]
+                },
+                {
+                    &quot;_permission_summary&quot;: &quot;&quot;,
+                    &quot;_permission_description&quot;: &quot;The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.&quot;,
+                    &quot;_permission_conditionHead&quot;: {
+                        &quot;tag&quot;: &quot;OlConditionTreeAnd&quot;,
+                        &quot;contents&quot;: [
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/18&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/18&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s copyright license is granted in accordance with such license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/83&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/83&quot;,
+                                    &quot;_condition_name&quot;: &quot;A worldwide, non-exclusive, royalty-free contributor&#39;s patent license is granted pursuant to such license&quot;,
+                                    &quot;_condition_description&quot;: &quot;However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor&#39;s contribution alone or in combination with the software in question.&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/87&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/87&quot;,
+                                    &quot;_condition_name&quot;: &quot;Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/73&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/73&quot;,
+                                    &quot;_condition_name&quot;: &quot;The license you offer does not restrict or modify the rights to the source code described in the license.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/71&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/71&quot;,
+                                    &quot;_condition_name&quot;: &quot;Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;RESTRICTION&quot;
+                                }
+                            },
+                            {
+                                &quot;tag&quot;: &quot;OlConditionTreeLeaf&quot;,
+                                &quot;contents&quot;: {
+                                    &quot;_condition_uri&quot;: &quot;http://open-license.hitachi.com/conditions/199&quot;,
+                                    &quot;_condition_id&quot;: &quot;conditions/199&quot;,
+                                    &quot;_condition_name&quot;: &quot;Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents&quot;,
+                                    &quot;_condition_description&quot;: &quot;&quot;,
+                                    &quot;_condition_schemaVersion&quot;: &quot;0.1&quot;,
+                                    &quot;_condition_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                                    &quot;_condition_conditionType&quot;: &quot;OBLIGATION&quot;
+                                }
+                            }
+                        ]
+                    },
+                    &quot;_permission_actions&quot;: [
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/110&quot;,
+                            &quot;_action_id&quot;: &quot;actions/110&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute the acquired executables under your own license&quot;
+                        },
+                        {
+                            &quot;_action_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                            &quot;_action_schemaVersion&quot;: &quot;0.1&quot;,
+                            &quot;_action_description&quot;: &quot;&quot;,
+                            &quot;_action_uri&quot;: &quot;http://open-license.hitachi.com/actions/111&quot;,
+                            &quot;_action_id&quot;: &quot;actions/111&quot;,
+                            &quot;_action_name&quot;: &quot;Distribute executables generated from modified source code under your own license.&quot;
+                        }
+                    ]
+                }
+            ],
+            &quot;_license_id&quot;: &quot;licenses/258&quot;,
+            &quot;_sourceURL&quot;: &quot;http://open-license.hitachi.com/licenses/258&quot;,
+            &quot;_license_name&quot;: &quot;Mozilla Public License Version 2.0&quot;,
+            &quot;_license_summary&quot;: &quot;&quot;,
+            &quot;_license_content&quot;: &quot;Mozilla Public License Version 2.0\r\n\r\n1. Definitions\r\n\r\n1.1. \&quot;Contributor\&quot;\r\n    means each individual or legal entity that creates, contributes to\r\n    the creation of, or owns Covered Software.\r\n\r\n1.2. \&quot;Contributor Version\&quot;\r\n    means the combination of the Contributions of others (if any) used\r\n    by a Contributor and that particular Contributor&#39;s Contribution.\r\n\r\n1.3. \&quot;Contribution\&quot;\r\n    means Covered Software of a particular Contributor.\r\n\r\n1.4. \&quot;Covered Software\&quot;\r\n    means Source Code Form to which the initial Contributor has attached\r\n    the notice in Exhibit A, the Executable Form of such Source Code\r\n    Form, and Modifications of such Source Code Form, in each case\r\n    including portions thereof.\r\n\r\n1.5. \&quot;Incompatible With Secondary Licenses\&quot;\r\n    means\r\n\r\n    (a) that the initial Contributor has attached the notice described\r\n        in Exhibit B to the Covered Software; or\r\n\r\n    (b) that the Covered Software was made available under the terms of\r\n        version 1.1 or earlier of the License, but not also under the\r\n        terms of a Secondary License.\r\n\r\n1.6. \&quot;Executable Form\&quot;\r\n    means any form of the work other than Source Code Form.\r\n\r\n1.7. \&quot;Larger Work\&quot;\r\n    means a work that combines Covered Software with other material, in \r\n    a separate file or files, that is not Covered Software.\r\n\r\n1.8. \&quot;License\&quot;\r\n    means this document.\r\n\r\n1.9. \&quot;Licensable\&quot;\r\n    means having the right to grant, to the maximum extent possible,\r\n    whether at the time of the initial grant or subsequently, any and\r\n    all of the rights conveyed by this License.\r\n\r\n1.10. \&quot;Modifications\&quot;\r\n    means any of the following:\r\n\r\n    (a) any file in Source Code Form that results from an addition to,\r\n        deletion from, or modification of the contents of Covered\r\n        Software; or\r\n\r\n    (b) any new file in Source Code Form that contains any Covered\r\n        Software.\r\n\r\n1.11. \&quot;Patent Claims\&quot; of a Contributor\r\n    means any patent claim(s), including without limitation, method,\r\n    process, and apparatus claims, in any patent Licensable by such\r\n    Contributor that would be infringed, but for the grant of the\r\n    License, by the making, using, selling, offering for sale, having\r\n    made, import, or transfer of either its Contributions or its\r\n    Contributor Version.\r\n\r\n1.12. \&quot;Secondary License\&quot;\r\n    means either the GNU General Public License, Version 2.0, the GNU\r\n    Lesser General Public License, Version 2.1, the GNU Affero General\r\n    Public License, Version 3.0, or any later versions of those\r\n    licenses.\r\n\r\n1.13. \&quot;Source Code Form\&quot;\r\n    means the form of the work preferred for making modifications.\r\n\r\n1.14. \&quot;You\&quot; (or \&quot;Your\&quot;)\r\n    means an individual or a legal entity exercising rights under this\r\n    License. For legal entities, \&quot;You\&quot; includes any entity that\r\n    controls, is controlled by, or is under common control with You. For\r\n    purposes of this definition, \&quot;control\&quot; means (a) the power, direct\r\n    or indirect, to cause the direction or management of such entity,\r\n    whether by contract or otherwise, or (b) ownership of more than\r\n    fifty percent (50%) of the outstanding shares or beneficial\r\n    ownership of such entity.\r\n\r\n2. License Grants and Conditions\r\n\r\n2.1. Grants\r\n\r\nEach Contributor hereby grants You a world-wide, royalty-free,\r\nnon-exclusive license:\r\n\r\n(a) under intellectual property rights (other than patent or trademark)\r\n    Licensable by such Contributor to use, reproduce, make available,\r\n    modify, display, perform, distribute, and otherwise exploit its\r\n    Contributions, either on an unmodified basis, with Modifications, or\r\n    as part of a Larger Work; and\r\n\r\n(b) under Patent Claims of such Contributor to make, use, sell, offer\r\n    for sale, have made, import, and otherwise transfer either its\r\n    Contributions or its Contributor Version.\r\n\r\n2.2. Effective Date\r\n\r\nThe licenses granted in Section 2.1 with respect to any Contribution\r\nbecome effective for each Contribution on the date the Contributor first\r\ndistributes such Contribution.\r\n\r\n2.3. Limitations on Grant Scope\r\n\r\nThe licenses granted in this Section 2 are the only rights granted under\r\nthis License. No additional rights or licenses will be implied from the\r\ndistribution or licensing of Covered Software under this License.\r\nNotwithstanding Section 2.1(b) above, no patent license is granted by a\r\nContributor:\r\n\r\n(a) for any code that a Contributor has removed from Covered Software;\r\n    or\r\n\r\n(b) for infringements caused by: (i) Your and any other third party&#39;s\r\n    modifications of Covered Software, or (ii) the combination of its\r\n    Contributions with other software (except as part of its Contributor\r\n    Version); or\r\n\r\n(c) under Patent Claims infringed by Covered Software in the absence of\r\n    its Contributions.\r\n\r\nThis License does not grant any rights in the trademarks, service marks,\r\nor logos of any Contributor (except as may be necessary to comply with\r\nthe notice requirements in Section 3.4).\r\n\r\n2.4. Subsequent Licenses\r\n\r\nNo Contributor makes additional grants as a result of Your choice to\r\ndistribute the Covered Software under a subsequent version of this\r\nLicense (see Section 10.2) or under the terms of a Secondary License (if\r\npermitted under the terms of Section 3.3).\r\n\r\n2.5. Representation\r\n\r\nEach Contributor represents that the Contributor believes its\r\nContributions are its original creation(s) or it has sufficient rights\r\nto grant the rights to its Contributions conveyed by this License.\r\n\r\n2.6. Fair Use\r\n\r\nThis License is not intended to limit any rights You have under\r\napplicable copyright doctrines of fair use, fair dealing, or other\r\nequivalents.\r\n\r\n2.7. Conditions\r\n\r\nSections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted\r\nin Section 2.1.\r\n\r\n3. Responsibilities\r\n\r\n3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any\r\nModifications that You create or to which You contribute, must be under\r\nthe terms of this License. You must inform recipients that the Source\r\nCode Form of the Covered Software is governed by the terms of this\r\nLicense, and how they can obtain a copy of this License. You may not\r\nattempt to alter or restrict the recipients&#39; rights in the Source Code\r\nForm.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n(a) such Covered Software must also be made available in Source Code\r\n    Form, as described in Section 3.1, and You must inform recipients of\r\n    the Executable Form how they can obtain a copy of such Source Code\r\n    Form by reasonable means in a timely manner, at a charge no more\r\n    than the cost of distribution to the recipient; and\r\n\r\n(b) You may distribute such Executable Form under the terms of this\r\n    License, or sublicense it under different terms, provided that the\r\n    license for the Executable Form does not attempt to limit or alter\r\n    the recipients&#39; rights in the Source Code Form under this License.\r\n\r\n3.3. Distribution of a Larger Work\r\n\r\nYou may create and distribute a Larger Work under terms of Your choice,\r\nprovided that You also comply with the requirements of this License for\r\nthe Covered Software. If the Larger Work is a combination of Covered\r\nSoftware with a work governed by one or more Secondary Licenses, and the\r\nCovered Software is not Incompatible With Secondary Licenses, this\r\nLicense permits You to additionally distribute such Covered Software\r\nunder the terms of such Secondary License(s), so that the recipient of\r\nthe Larger Work may, at their option, further distribute the Covered\r\nSoftware under the terms of either this License or such Secondary\r\nLicense(s).\r\n\r\n3.4. Notices\r\n\r\nYou may not remove or alter the substance of any license notices\r\n(including copyright notices, patent notices, disclaimers of warranty,\r\nor limitations of liability) contained within the Source Code Form of\r\nthe Covered Software, except that You may alter any license notices to\r\nthe extent required to remedy known factual inaccuracies.\r\n\r\n3.5. Application of Additional Terms\r\n\r\nYou may choose to offer, and to charge a fee for, warranty, support,\r\nindemnity or liability obligations to one or more recipients of Covered\r\nSoftware. However, You may do so only on Your own behalf, and not on\r\nbehalf of any Contributor. You must make it absolutely clear that any\r\nsuch warranty, support, indemnity, or liability obligation is offered by\r\nYou alone, and You hereby agree to indemnify every Contributor for any\r\nliability incurred by such Contributor as a result of warranty, support,\r\nindemnity or liability terms You offer. You may include additional\r\ndisclaimers of warranty and limitations of liability specific to any\r\njurisdiction.\r\n\r\n4. Inability to Comply Due to Statute or Regulation\r\n\r\nIf it is impossible for You to comply with any of the terms of this\r\nLicense with respect to some or all of the Covered Software due to\r\nstatute, judicial order, or regulation then You must: (a) comply with\r\nthe terms of this License to the maximum extent possible; and (b)\r\ndescribe the limitations and the code they affect. Such description must\r\nbe placed in a text file included with all distributions of the Covered\r\nSoftware under this License. Except to the extent prohibited by statute\r\nor regulation, such description must be sufficiently detailed for a\r\nrecipient of ordinary skill to be able to understand it.\r\n\r\n5. Termination\r\n\r\n5.1. The rights granted under this License will terminate automatically\r\nif You fail to comply with any of its terms. However, if You become\r\ncompliant, then the rights granted under this License from a particular\r\nContributor are reinstated (a) provisionally, unless and until such\r\nContributor explicitly and finally terminates Your grants, and (b) on an\r\nongoing basis, if such Contributor fails to notify You of the\r\nnon-compliance by some reasonable means prior to 60 days after You have\r\ncome back into compliance. Moreover, Your grants from a particular\r\nContributor are reinstated on an ongoing basis if such Contributor\r\nnotifies You of the non-compliance by some reasonable means, this is the\r\nfirst time You have received notice of non-compliance with this License\r\nfrom such Contributor, and You become compliant prior to 30 days after\r\nYour receipt of the notice.\r\n\r\n5.2. If You initiate litigation against any entity by asserting a patent\r\ninfringement claim (excluding declaratory judgment actions,\r\ncounter-claims, and cross-claims) alleging that a Contributor Version\r\ndirectly or indirectly infringes any patent, then the rights granted to\r\nYou by any and all Contributors for the Covered Software under Section\r\n2.1 of this License shall terminate.\r\n\r\n5.3. In the event of termination under Sections 5.1 or 5.2 above, all\r\nend user license agreements (excluding distributors and resellers) which\r\nhave been validly granted by You or Your distributors under this License\r\nprior to termination shall survive termination.\r\n\r\n************************************************************************\r\n*                                                                      *\r\n*  6. Disclaimer of Warranty                                           *\r\n                                           *\r\n*                                                                      *\r\n*  Covered Software is provided under this License on an \&quot;as is\&quot;       *\r\n*  basis, without warranty of any kind, either expressed, implied, or  *\r\n*  statutory, including, without limitation, warranties that the       *\r\n*  Covered Software is free of defects, merchantable, fit for a        *\r\n*  particular purpose or non-infringing. The entire risk as to the     *\r\n*  quality and performance of the Covered Software is with You.        *\r\n*  Should any Covered Software prove defective in any respect, You     *\r\n*  (not any Contributor) assume the cost of any necessary servicing,   *\r\n*  repair, or correction. This disclaimer of warranty constitutes an   *\r\n*  essential part of this License. No use of any Covered Software is   *\r\n*  authorized under this License except under this disclaimer.         *\r\n*                                                                      *\r\n************************************************************************\r\n\r\n************************************************************************\r\n*                                                                      *\r\n*  7. Limitation of Liability                                          *\r\n                                          *\r\n*                                                                      *\r\n*  Under no circumstances and under no legal theory, whether tort      *\r\n*  (including negligence), contract, or otherwise, shall any           *\r\n*  Contributor, or anyone who distributes Covered Software as          *\r\n*  permitted above, be liable to You for any direct, indirect,         *\r\n*  special, incidental, or consequential damages of any character      *\r\n*  including, without limitation, damages for lost profits, loss of    *\r\n*  goodwill, work stoppage, computer failure or malfunction, or any    *\r\n*  and all other commercial damages or losses, even if such party      *\r\n*  shall have been informed of the possibility of such damages. This   *\r\n*  limitation of liability shall not apply to liability for death or   *\r\n*  personal injury resulting from such party&#39;s negligence to the       *\r\n*  extent applicable law prohibits such limitation. Some               *\r\n*  jurisdictions do not allow the exclusion or limitation of           *\r\n*  incidental or consequential damages, so this exclusion and          *\r\n*  limitation may not apply to You.                                    *\r\n*                                                                      *\r\n************************************************************************\r\n\r\n8. Litigation\r\n\r\nAny litigation relating to this License may be brought only in the\r\ncourts of a jurisdiction where the defendant maintains its principal\r\nplace of business and such litigation shall be governed by laws of that\r\njurisdiction, without reference to its conflict-of-law provisions.\r\nNothing in this Section shall prevent a party&#39;s ability to bring\r\ncross-claims or counter-claims.\r\n\r\n9. Miscellaneous\r\n\r\nThis License represents the complete agreement concerning the subject\r\nmatter hereof. If any provision of this License is held to be\r\nunenforceable, such provision shall be reformed only to the extent\r\nnecessary to make it enforceable. Any law or regulation which provides\r\nthat the language of a contract shall be construed against the drafter\r\nshall not be used to construe this License against a Contributor.\r\n\r\n10. Versions of the License\r\n\r\n10.1. New Versions\r\n\r\nMozilla Foundation is the license steward. Except as provided in Section\r\n10.3, no one other than the license steward has the right to modify or\r\npublish new versions of this License. Each version will be given a\r\ndistinguishing version number.\r\n\r\n10.2. Effect of New Versions\r\n\r\nYou may distribute the Covered Software under the terms of the version\r\nof the License under which You originally received the Covered Software,\r\nor under the terms of any subsequent version published by the license\r\nsteward.\r\n\r\n10.3. Modified Versions\r\n\r\nIf you create software not governed by this License, and you want to\r\ncreate a new license for such software, you may create and use a\r\nmodified version of this License if you rename the license and remove\r\nany references to the name of the license steward (except to note that\r\nsuch modified license differs from this License).\r\n\r\n10.4. Distributing Source Code Form that is Incompatible With Secondary\r\nLicenses\r\n\r\nIf You choose to distribute Source Code Form that is Incompatible With\r\nSecondary Licenses under the terms of this version of the License, the\r\nnotice described in Exhibit B of this License must be attached.\r\n\r\nExhibit A - Source Code Form License Notice\r\n\r\n  This Source Code Form is subject to the terms of the Mozilla Public\r\n  License, v. 2.0. If a copy of the MPL was not distributed with this\r\n  file, You can obtain one at http://mozilla.org/MPL/2.0/.\r\n\r\nIf it is not possible or desirable to put the notice in a particular\r\nfile, then You may include the notice in a location (such as a LICENSE\r\nfile in a relevant directory) where a recipient would be likely to look\r\nfor such a notice.\r\n\r\nYou may add additional accurate notices of copyright ownership.\r\n\r\nExhibit B - \&quot;Incompatible With Secondary Licenses\&quot; Notice\r\n\r\n  This Source Code Form is \&quot;Incompatible With Secondary Licenses\&quot;, as\r\n  defined by the Mozilla Public License, v. 2.0.&quot;,
+            &quot;_license_notices&quot;: [
+                {
+                    &quot;_notice_description&quot;: &quot;The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses.&quot;,
+                    &quot;_notice_content&quot;: &quot;Subject to the requirements of this license for such software, you may generate and distribute a combination of such software with other software under terms of your choosing. If the combined software is a combination of software covered by one or more of the second licenses and the software is compatible with the second license, the recipient of the combined software may generate and distribute the software under the terms of either this license or the second license. This license additionally permits the distribution of such software under the terms of such a second license, since it may be distributed under the&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/233&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/233&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;The description must be in sufficient detail in the text file and include the text file in all software distributed.&quot;,
+                    &quot;_notice_content&quot;: &quot;If you are unable to comply with any provision of this license by law, court order, or regulation, you will comply with the terms of this license to the maximum extent possible. It also describes the limited scope of compliance and the code affected by it.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/230&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/230&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \&quot;control\&quot; means any of the following. (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise; or (2)holds more than 50% of the outstanding shares or beneficial ownership of the corporation.&quot;,
+                    &quot;_notice_content&quot;: &quot;Failure to comply with the terms of this license will result in automatic revocation of the license. However, if you cure a violation of the terms of this license, this license shall remain in effect temporarily until Contributor clearly terminates the license. If Contributor has not been notified by reasonable means of this license violation within sixty (60) days after curing the violation of the terms of this license, this license shall continue in effect. In addition, if you remedy the violation of this license within thirty (30) days after being notified by CONTRIBUTOR by reasonable means that you have violated this license, you will continue to keep this license in effect if you are the first to receive such notice from that CONTRIBUTOR. Any provision that should remain in effect after the expiration of the license shall remain in effect after the expiration of the license. An end-user license granted to an end-user other than the offending Contributor prior to revocation shall remain in effect.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/228&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/228&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \&quot;control\&quot; means any of the following. (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise; or (2)holds more than 50% of the outstanding shares or beneficial ownership of the corporation.&quot;,
+                    &quot;_notice_content&quot;: &quot;The license granted expires when you formally file a patent action (other than a declaratory judgment, counterclaim, or cross-claim) alleging that the software directly or indirectly infringes any patent. A provision that should remain in effect after the expiration of the license remains in effect after the expiration of the license. Any end-user license granted to anyone other than yourself prior to the expiration of the license will remain in effect.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/229&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/229&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;There is no guarantee.&quot;,
+                    &quot;_notice_content&quot;: &quot;the software is made available on a royalty-free basis and, to the extent permitted by applicable law, there is no warranty for the software. except as otherwise stated in writing, the software is provided by the copyright holder or other entity \&quot;as-is\&quot; and without any warranties or conditions of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. the warranties or conditions herein include, but are not limited to, implied warranties of commercial applicability and fitness for a particular purpose. all persons who receive such software under such license assume the entire risk as to the quality and performance of such software. If the Software is found to be defective, all persons who receive such Software under such license will assume all costs of necessary maintenance, indemnification, and correction.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/31&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/31&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;&quot;,
+                    &quot;_notice_content&quot;: &quot;Under no condition and under no legal theory shall the copyright owner nor any person or entity granted a license, nor any person or entity acting on its behalf (including negligence), whether in tort (including negligence), contract, or otherwise, even if advised of the possibility of such damages, be liable for any applicable law or writing For any indirect, special, incidental, or consequential damages (including, but not limited to, damages and losses due to loss of goodwill, business interruption, computer failure or malfunction, etc.) arising out of such license or use of such software, unless otherwise ordered by consent of the The Company shall not be liable for any damage or loss (including commercial damage or loss) that is not caused by the&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/62&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/62&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;It does not preclude the filing of cross-claims or counterclaims.&quot;,
+                    &quot;_notice_content&quot;: &quot;Any action with respect to this License shall be filed only in the court of the jurisdiction in which the Defendant maintains its principal place of business, and the law of that jurisdiction shall apply, except as to conflict of laws provisions.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/231&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/231&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;&quot;,
+                    &quot;_notice_content&quot;: &quot;Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/63&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/63&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses.&quot;,
+                    &quot;_notice_content&quot;: &quot;the source code format in which the initial contributor has attached EXHIBIT B to such software, or the source code format in which such software has been used under a version 1.1 or earlier of this license and not under a second license, to this version of this license Exhibit B of this license is attached for distribution under&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/232&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/232&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;&quot;,
+                    &quot;_notice_content&quot;: &quot;Exhibit A - Source Code Form License Notice This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0. If a copy of the MPL was not distributed with this file, you can obtain one at http://mozilla.org/MPL/2.0/.If it is not possible or desirable to put the notice in a particularfile, Then you may include the notice in a location (such as a LICENSEfile in a relevant directory) where a recipient would be likely to lookfor such a notice. may add additional accurate notices of copyright ownership.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/226&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/226&quot;
+                },
+                {
+                    &quot;_notice_description&quot;: &quot;&quot;,
+                    &quot;_notice_content&quot;: &quot;Exhibit B - \&quot;Incompatible With Secondary Licenses\&quot; Notice This Source Code Form is \&quot;Incompatible With Secondary Licenses\&quot;, as defined by the Mozilla Public License, v. 2.0.&quot;,
+                    &quot;_notice_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+                    &quot;_notice_schemaVersion&quot;: &quot;0.1&quot;,
+                    &quot;_notice_uri&quot;: &quot;http://open-license.hitachi.com/notices/227&quot;,
+                    &quot;_notice_id&quot;: &quot;notices/227&quot;
+                }
+            ],
+            &quot;_license_description&quot;: &quot;Source code refers to a format suitable for making modified versions of the software. Executable is any form of software other than source code. The second license is the GNU General Public License, Version 2.0, the GNU Lesser General Public License, Version 2.1, the GNU Affero General Public License, Version 3.0, or a later version of the license. or any later version of these licenses. You are the person or entity exercising the rights under the license in accordance with all of the terms of the license. In the case of a legal entity, self includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \&quot;control\&quot; means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation&quot;,
+            &quot;_license_baseUri&quot;: &quot;http://open-license.hitachi.com/&quot;,
+            &quot;_license_schemaVersion&quot;: &quot;0.1&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Mozilla Public License Version 2.0&quot;
+                ],
+                &quot;__impliedText&quot;: &quot;Mozilla Public License Version 2.0\r\n\r\n1. Definitions\r\n\r\n1.1. \&quot;Contributor\&quot;\r\n    means each individual or legal entity that creates, contributes to\r\n    the creation of, or owns Covered Software.\r\n\r\n1.2. \&quot;Contributor Version\&quot;\r\n    means the combination of the Contributions of others (if any) used\r\n    by a Contributor and that particular Contributor&#39;s Contribution.\r\n\r\n1.3. \&quot;Contribution\&quot;\r\n    means Covered Software of a particular Contributor.\r\n\r\n1.4. \&quot;Covered Software\&quot;\r\n    means Source Code Form to which the initial Contributor has attached\r\n    the notice in Exhibit A, the Executable Form of such Source Code\r\n    Form, and Modifications of such Source Code Form, in each case\r\n    including portions thereof.\r\n\r\n1.5. \&quot;Incompatible With Secondary Licenses\&quot;\r\n    means\r\n\r\n    (a) that the initial Contributor has attached the notice described\r\n        in Exhibit B to the Covered Software; or\r\n\r\n    (b) that the Covered Software was made available under the terms of\r\n        version 1.1 or earlier of the License, but not also under the\r\n        terms of a Secondary License.\r\n\r\n1.6. \&quot;Executable Form\&quot;\r\n    means any form of the work other than Source Code Form.\r\n\r\n1.7. \&quot;Larger Work\&quot;\r\n    means a work that combines Covered Software with other material, in \r\n    a separate file or files, that is not Covered Software.\r\n\r\n1.8. \&quot;License\&quot;\r\n    means this document.\r\n\r\n1.9. \&quot;Licensable\&quot;\r\n    means having the right to grant, to the maximum extent possible,\r\n    whether at the time of the initial grant or subsequently, any and\r\n    all of the rights conveyed by this License.\r\n\r\n1.10. \&quot;Modifications\&quot;\r\n    means any of the following:\r\n\r\n    (a) any file in Source Code Form that results from an addition to,\r\n        deletion from, or modification of the contents of Covered\r\n        Software; or\r\n\r\n    (b) any new file in Source Code Form that contains any Covered\r\n        Software.\r\n\r\n1.11. \&quot;Patent Claims\&quot; of a Contributor\r\n    means any patent claim(s), including without limitation, method,\r\n    process, and apparatus claims, in any patent Licensable by such\r\n    Contributor that would be infringed, but for the grant of the\r\n    License, by the making, using, selling, offering for sale, having\r\n    made, import, or transfer of either its Contributions or its\r\n    Contributor Version.\r\n\r\n1.12. \&quot;Secondary License\&quot;\r\n    means either the GNU General Public License, Version 2.0, the GNU\r\n    Lesser General Public License, Version 2.1, the GNU Affero General\r\n    Public License, Version 3.0, or any later versions of those\r\n    licenses.\r\n\r\n1.13. \&quot;Source Code Form\&quot;\r\n    means the form of the work preferred for making modifications.\r\n\r\n1.14. \&quot;You\&quot; (or \&quot;Your\&quot;)\r\n    means an individual or a legal entity exercising rights under this\r\n    License. For legal entities, \&quot;You\&quot; includes any entity that\r\n    controls, is controlled by, or is under common control with You. For\r\n    purposes of this definition, \&quot;control\&quot; means (a) the power, direct\r\n    or indirect, to cause the direction or management of such entity,\r\n    whether by contract or otherwise, or (b) ownership of more than\r\n    fifty percent (50%) of the outstanding shares or beneficial\r\n    ownership of such entity.\r\n\r\n2. License Grants and Conditions\r\n\r\n2.1. Grants\r\n\r\nEach Contributor hereby grants You a world-wide, royalty-free,\r\nnon-exclusive license:\r\n\r\n(a) under intellectual property rights (other than patent or trademark)\r\n    Licensable by such Contributor to use, reproduce, make available,\r\n    modify, display, perform, distribute, and otherwise exploit its\r\n    Contributions, either on an unmodified basis, with Modifications, or\r\n    as part of a Larger Work; and\r\n\r\n(b) under Patent Claims of such Contributor to make, use, sell, offer\r\n    for sale, have made, import, and otherwise transfer either its\r\n    Contributions or its Contributor Version.\r\n\r\n2.2. Effective Date\r\n\r\nThe licenses granted in Section 2.1 with respect to any Contribution\r\nbecome effective for each Contribution on the date the Contributor first\r\ndistributes such Contribution.\r\n\r\n2.3. Limitations on Grant Scope\r\n\r\nThe licenses granted in this Section 2 are the only rights granted under\r\nthis License. No additional rights or licenses will be implied from the\r\ndistribution or licensing of Covered Software under this License.\r\nNotwithstanding Section 2.1(b) above, no patent license is granted by a\r\nContributor:\r\n\r\n(a) for any code that a Contributor has removed from Covered Software;\r\n    or\r\n\r\n(b) for infringements caused by: (i) Your and any other third party&#39;s\r\n    modifications of Covered Software, or (ii) the combination of its\r\n    Contributions with other software (except as part of its Contributor\r\n    Version); or\r\n\r\n(c) under Patent Claims infringed by Covered Software in the absence of\r\n    its Contributions.\r\n\r\nThis License does not grant any rights in the trademarks, service marks,\r\nor logos of any Contributor (except as may be necessary to comply with\r\nthe notice requirements in Section 3.4).\r\n\r\n2.4. Subsequent Licenses\r\n\r\nNo Contributor makes additional grants as a result of Your choice to\r\ndistribute the Covered Software under a subsequent version of this\r\nLicense (see Section 10.2) or under the terms of a Secondary License (if\r\npermitted under the terms of Section 3.3).\r\n\r\n2.5. Representation\r\n\r\nEach Contributor represents that the Contributor believes its\r\nContributions are its original creation(s) or it has sufficient rights\r\nto grant the rights to its Contributions conveyed by this License.\r\n\r\n2.6. Fair Use\r\n\r\nThis License is not intended to limit any rights You have under\r\napplicable copyright doctrines of fair use, fair dealing, or other\r\nequivalents.\r\n\r\n2.7. Conditions\r\n\r\nSections 3.1, 3.2, 3.3, and 3.4 are conditions of the licenses granted\r\nin Section 2.1.\r\n\r\n3. Responsibilities\r\n\r\n3.1. Distribution of Source Form\r\n\r\nAll distribution of Covered Software in Source Code Form, including any\r\nModifications that You create or to which You contribute, must be under\r\nthe terms of this License. You must inform recipients that the Source\r\nCode Form of the Covered Software is governed by the terms of this\r\nLicense, and how they can obtain a copy of this License. You may not\r\nattempt to alter or restrict the recipients&#39; rights in the Source Code\r\nForm.\r\n\r\n3.2. Distribution of Executable Form\r\n\r\nIf You distribute Covered Software in Executable Form then:\r\n\r\n(a) such Covered Software must also be made available in Source Code\r\n    Form, as described in Section 3.1, and You must inform recipients of\r\n    the Executable Form how they can obtain a copy of such Source Code\r\n    Form by reasonable means in a timely manner, at a charge no more\r\n    than the cost of distribution to the recipient; and\r\n\r\n(b) You may distribute such Executable Form under the terms of this\r\n    License, or sublicense it under different terms, provided that the\r\n    license for the Executable Form does not attempt to limit or alter\r\n    the recipients&#39; rights in the Source Code Form under this License.\r\n\r\n3.3. Distribution of a Larger Work\r\n\r\nYou may create and distribute a Larger Work under terms of Your choice,\r\nprovided that You also comply with the requirements of this License for\r\nthe Covered Software. If the Larger Work is a combination of Covered\r\nSoftware with a work governed by one or more Secondary Licenses, and the\r\nCovered Software is not Incompatible With Secondary Licenses, this\r\nLicense permits You to additionally distribute such Covered Software\r\nunder the terms of such Secondary License(s), so that the recipient of\r\nthe Larger Work may, at their option, further distribute the Covered\r\nSoftware under the terms of either this License or such Secondary\r\nLicense(s).\r\n\r\n3.4. Notices\r\n\r\nYou may not remove or alter the substance of any license notices\r\n(including copyright notices, patent notices, disclaimers of warranty,\r\nor limitations of liability) contained within the Source Code Form of\r\nthe Covered Software, except that You may alter any license notices to\r\nthe extent required to remedy known factual inaccuracies.\r\n\r\n3.5. Application of Additional Terms\r\n\r\nYou may choose to offer, and to charge a fee for, warranty, support,\r\nindemnity or liability obligations to one or more recipients of Covered\r\nSoftware. However, You may do so only on Your own behalf, and not on\r\nbehalf of any Contributor. You must make it absolutely clear that any\r\nsuch warranty, support, indemnity, or liability obligation is offered by\r\nYou alone, and You hereby agree to indemnify every Contributor for any\r\nliability incurred by such Contributor as a result of warranty, support,\r\nindemnity or liability terms You offer. You may include additional\r\ndisclaimers of warranty and limitations of liability specific to any\r\njurisdiction.\r\n\r\n4. Inability to Comply Due to Statute or Regulation\r\n\r\nIf it is impossible for You to comply with any of the terms of this\r\nLicense with respect to some or all of the Covered Software due to\r\nstatute, judicial order, or regulation then You must: (a) comply with\r\nthe terms of this License to the maximum extent possible; and (b)\r\ndescribe the limitations and the code they affect. Such description must\r\nbe placed in a text file included with all distributions of the Covered\r\nSoftware under this License. Except to the extent prohibited by statute\r\nor regulation, such description must be sufficiently detailed for a\r\nrecipient of ordinary skill to be able to understand it.\r\n\r\n5. Termination\r\n\r\n5.1. The rights granted under this License will terminate automatically\r\nif You fail to comply with any of its terms. However, if You become\r\ncompliant, then the rights granted under this License from a particular\r\nContributor are reinstated (a) provisionally, unless and until such\r\nContributor explicitly and finally terminates Your grants, and (b) on an\r\nongoing basis, if such Contributor fails to notify You of the\r\nnon-compliance by some reasonable means prior to 60 days after You have\r\ncome back into compliance. Moreover, Your grants from a particular\r\nContributor are reinstated on an ongoing basis if such Contributor\r\nnotifies You of the non-compliance by some reasonable means, this is the\r\nfirst time You have received notice of non-compliance with this License\r\nfrom such Contributor, and You become compliant prior to 30 days after\r\nYour receipt of the notice.\r\n\r\n5.2. If You initiate litigation against any entity by asserting a patent\r\ninfringement claim (excluding declaratory judgment actions,\r\ncounter-claims, and cross-claims) alleging that a Contributor Version\r\ndirectly or indirectly infringes any patent, then the rights granted to\r\nYou by any and all Contributors for the Covered Software under Section\r\n2.1 of this License shall terminate.\r\n\r\n5.3. In the event of termination under Sections 5.1 or 5.2 above, all\r\nend user license agreements (excluding distributors and resellers) which\r\nhave been validly granted by You or Your distributors under this License\r\nprior to termination shall survive termination.\r\n\r\n************************************************************************\r\n*                                                                      *\r\n*  6. Disclaimer of Warranty                                           *\r\n                                           *\r\n*                                                                      *\r\n*  Covered Software is provided under this License on an \&quot;as is\&quot;       *\r\n*  basis, without warranty of any kind, either expressed, implied, or  *\r\n*  statutory, including, without limitation, warranties that the       *\r\n*  Covered Software is free of defects, merchantable, fit for a        *\r\n*  particular purpose or non-infringing. The entire risk as to the     *\r\n*  quality and performance of the Covered Software is with You.        *\r\n*  Should any Covered Software prove defective in any respect, You     *\r\n*  (not any Contributor) assume the cost of any necessary servicing,   *\r\n*  repair, or correction. This disclaimer of warranty constitutes an   *\r\n*  essential part of this License. No use of any Covered Software is   *\r\n*  authorized under this License except under this disclaimer.         *\r\n*                                                                      *\r\n************************************************************************\r\n\r\n************************************************************************\r\n*                                                                      *\r\n*  7. Limitation of Liability                                          *\r\n                                          *\r\n*                                                                      *\r\n*  Under no circumstances and under no legal theory, whether tort      *\r\n*  (including negligence), contract, or otherwise, shall any           *\r\n*  Contributor, or anyone who distributes Covered Software as          *\r\n*  permitted above, be liable to You for any direct, indirect,         *\r\n*  special, incidental, or consequential damages of any character      *\r\n*  including, without limitation, damages for lost profits, loss of    *\r\n*  goodwill, work stoppage, computer failure or malfunction, or any    *\r\n*  and all other commercial damages or losses, even if such party      *\r\n*  shall have been informed of the possibility of such damages. This   *\r\n*  limitation of liability shall not apply to liability for death or   *\r\n*  personal injury resulting from such party&#39;s negligence to the       *\r\n*  extent applicable law prohibits such limitation. Some               *\r\n*  jurisdictions do not allow the exclusion or limitation of           *\r\n*  incidental or consequential damages, so this exclusion and          *\r\n*  limitation may not apply to You.                                    *\r\n*                                                                      *\r\n************************************************************************\r\n\r\n8. Litigation\r\n\r\nAny litigation relating to this License may be brought only in the\r\ncourts of a jurisdiction where the defendant maintains its principal\r\nplace of business and such litigation shall be governed by laws of that\r\njurisdiction, without reference to its conflict-of-law provisions.\r\nNothing in this Section shall prevent a party&#39;s ability to bring\r\ncross-claims or counter-claims.\r\n\r\n9. Miscellaneous\r\n\r\nThis License represents the complete agreement concerning the subject\r\nmatter hereof. If any provision of this License is held to be\r\nunenforceable, such provision shall be reformed only to the extent\r\nnecessary to make it enforceable. Any law or regulation which provides\r\nthat the language of a contract shall be construed against the drafter\r\nshall not be used to construe this License against a Contributor.\r\n\r\n10. Versions of the License\r\n\r\n10.1. New Versions\r\n\r\nMozilla Foundation is the license steward. Except as provided in Section\r\n10.3, no one other than the license steward has the right to modify or\r\npublish new versions of this License. Each version will be given a\r\ndistinguishing version number.\r\n\r\n10.2. Effect of New Versions\r\n\r\nYou may distribute the Covered Software under the terms of the version\r\nof the License under which You originally received the Covered Software,\r\nor under the terms of any subsequent version published by the license\r\nsteward.\r\n\r\n10.3. Modified Versions\r\n\r\nIf you create software not governed by this License, and you want to\r\ncreate a new license for such software, you may create and use a\r\nmodified version of this License if you rename the license and remove\r\nany references to the name of the license steward (except to note that\r\nsuch modified license differs from this License).\r\n\r\n10.4. Distributing Source Code Form that is Incompatible With Secondary\r\nLicenses\r\n\r\nIf You choose to distribute Source Code Form that is Incompatible With\r\nSecondary Licenses under the terms of this version of the License, the\r\nnotice described in Exhibit B of this License must be attached.\r\n\r\nExhibit A - Source Code Form License Notice\r\n\r\n  This Source Code Form is subject to the terms of the Mozilla Public\r\n  License, v. 2.0. If a copy of the MPL was not distributed with this\r\n  file, You can obtain one at http://mozilla.org/MPL/2.0/.\r\n\r\nIf it is not possible or desirable to put the notice in a particular\r\nfile, then You may include the notice in a location (such as a LICENSE\r\nfile in a relevant directory) where a recipient would be likely to look\r\nfor such a notice.\r\n\r\nYou may add additional accurate notices of copyright ownership.\r\n\r\nExhibit B - \&quot;Incompatible With Secondary Licenses\&quot; Notice\r\n\r\n  This Source Code Form is \&quot;Incompatible With Secondary Licenses\&quot;, as\r\n  defined by the Mozilla Public License, v. 2.0.&quot;,
+                &quot;__impliedURLs&quot;: [
+                    [
+                        &quot;open-license&quot;,
+                        &quot;http://open-license.hitachi.com/licenses/258&quot;
+                    ]
+                ]
+            }
         },
         &quot;BlueOak License List&quot;: {
             &quot;url&quot;: &quot;https://spdx.org/licenses/MPL-2.0.html&quot;,
@@ -1184,6 +1691,10 @@ Exhibit B - &quot;Incompatible With Secondary Licenses&quot; Notice
         [
             &quot;Mozilla Page&quot;,
             &quot;https://www.mozilla.org/en-US/MPL/&quot;
+        ],
+        [
+            &quot;open-license&quot;,
+            &quot;http://open-license.hitachi.com/licenses/258&quot;
         ]
     ]
 }</code></pre>

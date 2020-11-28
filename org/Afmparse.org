@@ -13,6 +13,11 @@
 
 ** Comments on (easy) usability
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 - *↓*"Rating is: Lead" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
@@ -64,6 +69,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afmparse.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -75,6 +84,10 @@
           "afmparse License"
       ],
       "__impliedId": "Afmparse",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "Afmparse"
+      ],
       "facts": {
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
@@ -104,6 +117,35 @@
                   ]
               },
               "spdxLicenseId": "Afmparse"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Afmparse",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "Afmparse",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Afmparse License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Afmparse License"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "Afmparse"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -185,6 +227,13 @@
               {
                   "tag": "NegativeJudgement",
                   "contents": "Rating is: Lead"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ]
       ],

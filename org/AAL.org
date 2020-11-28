@@ -21,6 +21,11 @@
   [[https://spdx.org/licenses/AAL.html][SPDX]] (all data [in this
   repository] is generated))
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 - *↓*"Rating is: Lead" (source:
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
@@ -116,6 +121,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -135,6 +144,10 @@
           "Attribution Assurance Licenses"
       ],
       "__impliedId": "AAL",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "AAL"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -209,6 +222,35 @@
                   ]
               },
               "spdxLicenseId": "AAL"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "http://opensource.org/licenses/attribution.php",
+              "GPLv3 Compat?": "NO",
+              "Short Name": "AAL",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Attribution Assurance License",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Attribution Assurance License"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "AAL"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -377,6 +419,13 @@
               {
                   "tag": "NegativeJudgement",
                   "contents": "Rating is: Lead"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

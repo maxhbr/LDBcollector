@@ -6,6 +6,10 @@
         "SGI Free Software License B 2.0"
     ],
     "__impliedId": "SGI-B-2.0",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MIT"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +47,35 @@
                 ]
             },
             "spdxLicenseId": "SGI-B-2.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "MIT",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "SGI Free Software License B 2.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "SGI Free Software License B 2.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MIT"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -138,6 +171,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

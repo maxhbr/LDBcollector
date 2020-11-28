@@ -19,6 +19,11 @@
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 ** General Comments
 
 - "Per Fedora, this license is a modified version of the common MIT
@@ -67,6 +72,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -78,6 +87,10 @@
           "EFL MIT-Style License"
       ],
       "__impliedId": "MIT-advertising",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "MIT with advertising"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -115,6 +128,35 @@
                   ]
               },
               "spdxLicenseId": "MIT-advertising"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising",
+              "GPLv3 Compat?": "NO",
+              "Short Name": "MIT with advertising",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "Enlightenment License (e16)",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "Enlightenment License (e16)"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "MIT with advertising"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -204,6 +246,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Bronze"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ]
       ],

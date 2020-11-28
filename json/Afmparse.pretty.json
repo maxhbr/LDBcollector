@@ -6,6 +6,10 @@
         "afmparse License"
     ],
     "__impliedId": "Afmparse",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Afmparse"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "Afmparse"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Afmparse",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Afmparse",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Afmparse License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Afmparse License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Afmparse"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -116,6 +149,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

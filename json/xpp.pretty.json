@@ -6,6 +6,10 @@
         "Indiana Extreme License 1.2"
     ],
     "__impliedId": "xpp",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "xpp"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "xpp"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/xpp",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "xpp",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "XPP License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "XPP License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "xpp"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -116,6 +149,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

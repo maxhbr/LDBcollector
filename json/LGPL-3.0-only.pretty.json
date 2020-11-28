@@ -31,6 +31,7 @@
     "__impliedAmbiguousNames": [
         "GNU Library General Public License",
         "LGPLv3",
+        "LGPLv3+",
         "The GNU Lesser General Public License (LGPL)"
     ],
     "__impliedComments": [

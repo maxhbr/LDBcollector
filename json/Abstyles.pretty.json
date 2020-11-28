@@ -5,6 +5,10 @@
         "scancode://abstyles"
     ],
     "__impliedId": "Abstyles",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Abstyles"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -42,6 +46,35 @@
                 ]
             },
             "spdxLicenseId": "Abstyles"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Abstyles",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Abstyles License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Abstyles License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Abstyles"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -89,6 +122,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

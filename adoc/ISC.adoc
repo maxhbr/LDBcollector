@@ -85,6 +85,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt[cho
 * *SPDX:* http://spdx.org/licenses/ISC.json
 * *SPDX:* https://spdx.org/licenses/ISC.html
 * *Wikipedia page:* https://en.wikipedia.org/wiki/ISC_license
+* *open-license:* http://open-license.hitachi.com/licenses/379
 * https://www.isc.org/downloads/software-support-policy/isc-license/
 * http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license
 * http://www.opensource.org/licenses/ISC
@@ -136,6 +137,8 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -357,6 +360,210 @@ Knowledge International]
             },
             "Comment": null,
             "LicenseId": "ISC"
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/379",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": null,
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "Use the obtained source code without modification"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "Modify the obtained source code."
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/4",
+                            "_action_id": "actions/4",
+                            "_action_name": "Using Modified Source Code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/5",
+                            "_action_id": "actions/5",
+                            "_action_name": "Use the retrieved object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched binary as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/6",
+                            "_action_id": "actions/6",
+                            "_action_name": "Use the retrieved binaries"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/7",
+                            "_action_id": "actions/7",
+                            "_action_name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/8",
+                            "_action_id": "actions/8",
+                            "_action_name": "Use binaries generated from modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the obtained executable as is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/84",
+                            "_action_id": "actions/84",
+                            "_action_name": "Use the retrieved executable"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/87",
+                            "_action_id": "actions/87",
+                            "_action_name": "Use the executable generated from the modified source code"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                            "_condition_id": "conditions/1",
+                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "OBLIGATION"
+                        }
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/9",
+                            "_action_id": "actions/9",
+                            "_action_name": "Distribute the obtained source code without modification"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/10",
+                            "_action_id": "actions/10",
+                            "_action_name": "Distribute the obtained object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the fetched binaries as they are",
+                            "_action_uri": "http://open-license.hitachi.com/actions/11",
+                            "_action_id": "actions/11",
+                            "_action_name": "Distribute the fetched binaries"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/12",
+                            "_action_id": "actions/12",
+                            "_action_name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/13",
+                            "_action_id": "actions/13",
+                            "_action_name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/14",
+                            "_action_id": "actions/14",
+                            "_action_name": "Distribute the generated binaries from modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the obtained executable as-is",
+                            "_action_uri": "http://open-license.hitachi.com/actions/86",
+                            "_action_id": "actions/86",
+                            "_action_name": "Distribute the obtained executable"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/89",
+                            "_action_id": "actions/89",
+                            "_action_name": "Distribute the executable generated from the modified source code"
+                        }
+                    ]
+                }
+            ],
+            "_license_id": "licenses/379",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/379",
+            "_license_name": "ISC License",
+            "_license_summary": "https://www.isc.org/downloads/software-support-policy/isc-license/",
+            "_license_content": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\r\nCopyright Â© 1995-2003 by Internet Software Consortium\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\r\n\r\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+            "_license_notices": [
+                {
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "such software is provided \"as-is\" and the copyright holder makes no warranties, including any implied warranties of commercial usability or fitness for purpose.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/139",
+                    "_notice_id": "notices/139"
+                },
+                {
+                    "_notice_description": "",
+                    "_notice_content": "In no event shall the copyright holder be liable for any special, direct, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or any damages resulting from loss of use, loss of data or loss of profits.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/140",
+                    "_notice_id": "notices/140"
+                }
+            ],
+            "_license_description": "",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "ISC License"
+                ],
+                "__impliedText": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\r\nCopyright Â© 1995-2003 by Internet Software Consortium\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\r\n\r\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/379"
+                    ]
+                ]
+            }
         },
         "BlueOak License List": {
             "BlueOakRating": "Silver",
@@ -749,6 +956,10 @@ Knowledge International]
         [
             "Wikipedia page",
             "https://en.wikipedia.org/wiki/ISC_license"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/379"
         ]
     ]
 }

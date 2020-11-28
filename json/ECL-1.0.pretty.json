@@ -4,10 +4,14 @@
         "Educational Community License v1.0",
         "scancode://ecl-1.0",
         "ECL 1.0",
-        "Educational Community License, Version 1.0",
-        "Educational Community License 1.0"
+        "Educational Community License 1.0",
+        "Educational Community License, Version 1.0"
     ],
     "__impliedId": "ECL-1.0",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "ECL 1.0"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -55,6 +59,35 @@
                 ]
             },
             "spdxLicenseId": "ECL-1.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/ecl1.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "ECL 1.0",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Educational Community License 1.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Educational Community License 1.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "ECL 1.0"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -112,6 +145,399 @@
                     [
                         null,
                         "https://opensource.org/licenses/ECL-1.0"
+                    ]
+                ]
+            }
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/1545",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
+                    "_permission_conditionHead": null,
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "Use the obtained source code without modification"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/4",
+                            "_action_id": "actions/4",
+                            "_action_name": "Using Modified Source Code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/5",
+                            "_action_id": "actions/5",
+                            "_action_name": "Use the retrieved object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/7",
+                            "_action_id": "actions/7",
+                            "_action_name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the obtained executable as is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/84",
+                            "_action_id": "actions/84",
+                            "_action_name": "Use the retrieved executable"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/87",
+                            "_action_id": "actions/87",
+                            "_action_name": "Use the executable generated from the modified source code"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/139",
+                                    "_condition_id": "conditions/139",
+                                    "_condition_name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/9",
+                            "_action_id": "actions/9",
+                            "_action_name": "Distribute the obtained source code without modification"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/10",
+                            "_action_id": "actions/10",
+                            "_action_name": "Distribute the obtained object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/19",
+                            "_action_id": "actions/19",
+                            "_action_name": "Sublicense the acquired source code."
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/22",
+                            "_action_id": "actions/22",
+                            "_action_name": "Sublicense the acquired object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the obtained executable as-is",
+                            "_action_uri": "http://open-license.hitachi.com/actions/86",
+                            "_action_id": "actions/86",
+                            "_action_name": "Distribute the obtained executable"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/106",
+                            "_action_id": "actions/106",
+                            "_action_name": "Sublicense the acquired executable"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Publish the source code as it was obtained.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/403",
+                            "_action_id": "actions/403",
+                            "_action_name": "Publish the acquired source code."
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Publish the fetched object code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/404",
+                            "_action_id": "actions/404",
+                            "_action_name": "Publish the retrieved object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Publish the obtained executable as is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/406",
+                            "_action_id": "actions/406",
+                            "_action_name": "Present the obtained executables."
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/139",
+                                    "_condition_id": "conditions/139",
+                                    "_condition_name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/88",
+                                    "_condition_id": "conditions/88",
+                                    "_condition_name": "Include a file to report the changes you make and the date of all changes",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "Modify the obtained source code."
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/139",
+                                    "_condition_id": "conditions/139",
+                                    "_condition_name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/88",
+                                    "_condition_id": "conditions/88",
+                                    "_condition_name": "Include a file to report the changes you make and the date of all changes",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/12",
+                            "_action_id": "actions/12",
+                            "_action_name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/13",
+                            "_action_id": "actions/13",
+                            "_action_name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/25",
+                            "_action_id": "actions/25",
+                            "_action_name": "Sublicensing Modified Source Code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/28",
+                            "_action_id": "actions/28",
+                            "_action_name": "Sublicense the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/89",
+                            "_action_id": "actions/89",
+                            "_action_name": "Distribute the executable generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/90",
+                            "_action_id": "actions/90",
+                            "_action_name": "Publish the modified source code."
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/91",
+                            "_action_id": "actions/91",
+                            "_action_name": "Present the object code generated from the modified source code."
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/92",
+                            "_action_id": "actions/92",
+                            "_action_name": "Present the executable generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/109",
+                            "_action_id": "actions/109",
+                            "_action_name": "Sublicense the generated executable from modified source code"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "The copyright in the software and related documentation is retained by the copyright holder at all times.",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeLeaf",
+                        "contents": {
+                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
+                            "_condition_id": "conditions/3",
+                            "_condition_name": "Get special permission in writing.",
+                            "_condition_description": "",
+                            "_condition_schemaVersion": "0.1",
+                            "_condition_baseUri": "http://open-license.hitachi.com/",
+                            "_condition_conditionType": "REQUISITE"
+                        }
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/154",
+                            "_action_id": "actions/154",
+                            "_action_name": "Use the copyright holder's name in software promotions and advertisements"
+                        }
+                    ]
+                }
+            ],
+            "_license_id": "licenses/1545",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/1545",
+            "_license_name": "Educational Community License, Version 1.0",
+            "_license_summary": "https://opensource.org/licenses/ecl1.php",
+            "_license_content": "The Educational Community License\r\n\r\nThis Educational Community License (the \"License\") applies to any original work\r\nof authorship (the \"Original Work\") whose owner (the \"Licensor\") has placed the\r\nfollowing notice immediately following the copyright notice for the Original\r\nWork:\r\n\r\n  Copyright (c) {year} {copyright holders}\r\n\r\n  Licensed under the Educational Community License version 1.0\r\n\r\nThis Original Work, including software, source code, documents, or other related\r\nitems, is being provided by the copyright holder(s) subject to the terms of the\r\nEducational Community License. By obtaining, using and/or copying this Original\r\nWork, you agree that you have read, understand, and will comply with the\r\nfollowing terms and conditions of the Educational Community License:\r\n\r\nPermission to use, copy, modify, merge, publish, distribute, and sublicense this\r\nOriginal Work and its documentation, with or without modification, for any\r\npurpose, and without fee or royalty to the copyright holder(s) is hereby granted,\r\nprovided that you include the following on ALL copies of the Original Work or\r\nportions thereof, including modifications or derivatives, that you make:\r\n\r\nThe full text of the Educational Community License in a location viewable to\r\nusers of the redistributed or derivative work.\r\n\r\nAny pre-existing intellectual property disclaimers, notices, or terms and\r\nconditions.\r\n\r\nNotice of any changes or modifications to the Original Work, including the date\r\nthe changes were made.\r\n\r\nAny modifications of the Original Work must be distributed in such a manner as to\r\navoid any confusion with the Original Work of the copyright holders.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\r\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\r\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\r\nAN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\r\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n\r\nThe name and trademarks of copyright holder(s) may NOT be used in advertising or\r\npublicity pertaining to the Original or Derivative Works without specific,\r\nwritten prior permission. Title to copyright in the Original Work and any\r\nassociated documentation will at all times remain with the copyright holders.",
+            "_license_notices": [
+                {
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "the software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/3",
+                    "_notice_id": "notices/3"
+                },
+                {
+                    "_notice_description": "",
+                    "_notice_content": "Neither the author nor the copyright holder shall be liable for any claim, damage or other cause of action, whether in contract, negligence or other tort, arising out of the use or other treatment of such software.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/637",
+                    "_notice_id": "notices/637"
+                }
+            ],
+            "_license_description": "",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Educational Community License, Version 1.0"
+                ],
+                "__impliedText": "The Educational Community License\r\n\r\nThis Educational Community License (the \"License\") applies to any original work\r\nof authorship (the \"Original Work\") whose owner (the \"Licensor\") has placed the\r\nfollowing notice immediately following the copyright notice for the Original\r\nWork:\r\n\r\n  Copyright (c) {year} {copyright holders}\r\n\r\n  Licensed under the Educational Community License version 1.0\r\n\r\nThis Original Work, including software, source code, documents, or other related\r\nitems, is being provided by the copyright holder(s) subject to the terms of the\r\nEducational Community License. By obtaining, using and/or copying this Original\r\nWork, you agree that you have read, understand, and will comply with the\r\nfollowing terms and conditions of the Educational Community License:\r\n\r\nPermission to use, copy, modify, merge, publish, distribute, and sublicense this\r\nOriginal Work and its documentation, with or without modification, for any\r\npurpose, and without fee or royalty to the copyright holder(s) is hereby granted,\r\nprovided that you include the following on ALL copies of the Original Work or\r\nportions thereof, including modifications or derivatives, that you make:\r\n\r\nThe full text of the Educational Community License in a location viewable to\r\nusers of the redistributed or derivative work.\r\n\r\nAny pre-existing intellectual property disclaimers, notices, or terms and\r\nconditions.\r\n\r\nNotice of any changes or modifications to the Original Work, including the date\r\nthe changes were made.\r\n\r\nAny modifications of the Original Work must be distributed in such a manner as to\r\navoid any confusion with the Original Work of the copyright holders.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\r\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\r\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\r\nAN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\r\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n\r\nThe name and trademarks of copyright holder(s) may NOT be used in advertising or\r\npublicity pertaining to the Original or Derivative Works without specific,\r\nwritten prior permission. Title to copyright in the Original Work and any\r\nassociated documentation will at all times remain with the copyright holders.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/1545"
                     ]
                 ]
             }
@@ -230,6 +656,13 @@
             }
         ],
         [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
+        [
             "SPDX",
             {
                 "tag": "PositiveJudgement",
@@ -278,6 +711,10 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/ECL-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1545"
         ]
     ]
 }

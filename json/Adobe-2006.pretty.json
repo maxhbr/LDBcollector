@@ -6,6 +6,10 @@
         "Adobe Source Code License 2006"
     ],
     "__impliedId": "Adobe-2006",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Adobe"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "Adobe-2006"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/AdobeLicense",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "Adobe",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Adobe Systems Incorporated Source Code License Agreement",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Adobe Systems Incorporated Source Code License Agreement"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Adobe"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -122,6 +155,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

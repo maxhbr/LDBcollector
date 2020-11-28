@@ -30,6 +30,12 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
+-   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated.” (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -418,6 +424,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -514,6 +524,29 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Watcom-1.0"
+            },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "http://opensource.org/licenses/sybase.php",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "Sybase Open Watcom Public License 1.0",
+                "FSF Free?": "No",
+                "_implications": {
+                    "__impliedNames": [
+                        "Sybase Open Watcom Public License 1.0"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": null
             },
             "Scancode": {
                 "otherUrls": [
@@ -649,6 +682,13 @@ Raw Data
             }
         },
         "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                }
+            ],
             [
                 "Google OSS Policy",
                 {

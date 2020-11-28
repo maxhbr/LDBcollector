@@ -6,6 +6,10 @@
         "JasPer 2.0"
     ],
     "__impliedId": "JasPer-2.0",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "JasPer"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "JasPer-2.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://www.ece.uvic.ca/~mdadams/jasper/LICENSE",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "JasPer",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "JasPer License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "JasPer License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "JasPer"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -122,6 +155,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

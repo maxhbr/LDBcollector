@@ -7,8 +7,20 @@ TMate Open Source License (TMate)
 
 -   `scancode://tmate`
 
+Description
+-----------
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
+
 Comments on (easy) usability
 ----------------------------
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -19,6 +31,8 @@ URLs
 -   **Homepage:** http://svnkit.com/licensing.html
 
 -   **SPDX:** http://spdx.org/licenses/TMate.json
+
+-   **open-license:** http://open-license.hitachi.com/licenses/972
 
 -   http://svnkit.com/license.html
 
@@ -84,6 +98,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tmate.yml "Scancode")
     (CC0-1.0)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
@@ -93,6 +115,10 @@ Raw Data
             "scancode://tmate"
         ],
         "__impliedId": "TMate",
+        "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "TMate"
+        ],
         "facts": {
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
@@ -122,6 +148,35 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "TMate"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "NO",
+                "rating": "Good",
+                "Upstream URL": "http://svnkit.com/license.html",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "TMate",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "TMate Open Source License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "TMate Open Source License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "TMate"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,
@@ -159,8 +214,378 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Hitachi open-license": {
+                "_license_uri": "http://open-license.hitachi.com/licenses/972",
+                "_license_permissions": [
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "",
+                        "_permission_conditionHead": null,
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Use the fetched code as it is.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/1",
+                                "_action_id": "actions/1",
+                                "_action_name": "Use the obtained source code without modification"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/3",
+                                "_action_id": "actions/3",
+                                "_action_name": "Modify the obtained source code."
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/4",
+                                "_action_id": "actions/4",
+                                "_action_name": "Using Modified Source Code"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Use the fetched binary as it is.",
+                                "_action_uri": "http://open-license.hitachi.com/actions/6",
+                                "_action_id": "actions/6",
+                                "_action_name": "Use the retrieved binaries"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/8",
+                                "_action_id": "actions/8",
+                                "_action_name": "Use binaries generated from modified source code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/1",
+                                        "_condition_id": "conditions/1",
+                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeOr",
+                                    "contents": [
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/416",
+                                                "_condition_id": "conditions/416",
+                                                "_condition_name": "Attach the source code of the software that uses the software in question.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/417",
+                                                "_condition_id": "conditions/417",
+                                                "_condition_name": "Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/418",
+                                                "_condition_id": "conditions/418",
+                                                "_condition_name": "Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "OlConditionTreeOr",
+                                    "contents": [
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/419",
+                                                "_condition_id": "conditions/419",
+                                                "_condition_name": "Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/420",
+                                                "_condition_id": "conditions/420",
+                                                "_condition_name": "Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/421",
+                                                "_condition_id": "conditions/421",
+                                                "_condition_name": "Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Redistribute the code as it was obtained",
+                                "_action_uri": "http://open-license.hitachi.com/actions/9",
+                                "_action_id": "actions/9",
+                                "_action_name": "Distribute the obtained source code without modification"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/12",
+                                "_action_id": "actions/12",
+                                "_action_name": "Distribution of Modified Source Code"
+                            }
+                        ]
+                    },
+                    {
+                        "_permission_summary": "",
+                        "_permission_description": "The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.",
+                        "_permission_conditionHead": {
+                            "tag": "OlConditionTreeAnd",
+                            "contents": [
+                                {
+                                    "tag": "OlConditionTreeLeaf",
+                                    "contents": {
+                                        "_condition_uri": "http://open-license.hitachi.com/conditions/2",
+                                        "_condition_id": "conditions/2",
+                                        "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                                        "_condition_description": "",
+                                        "_condition_schemaVersion": "0.1",
+                                        "_condition_baseUri": "http://open-license.hitachi.com/",
+                                        "_condition_conditionType": "OBLIGATION"
+                                    }
+                                },
+                                {
+                                    "tag": "OlConditionTreeOr",
+                                    "contents": [
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/21",
+                                                "_condition_id": "conditions/21",
+                                                "_condition_name": "Attach the source code corresponding to the software in question.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/156",
+                                                "_condition_id": "conditions/156",
+                                                "_condition_name": "Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "OlConditionTreeOr",
+                                    "contents": [
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/416",
+                                                "_condition_id": "conditions/416",
+                                                "_condition_name": "Attach the source code of the software that uses the software in question.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/417",
+                                                "_condition_id": "conditions/417",
+                                                "_condition_name": "Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/418",
+                                                "_condition_id": "conditions/418",
+                                                "_condition_name": "Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        }
+                                    ]
+                                },
+                                {
+                                    "tag": "OlConditionTreeOr",
+                                    "contents": [
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/419",
+                                                "_condition_id": "conditions/419",
+                                                "_condition_name": "Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/420",
+                                                "_condition_id": "conditions/420",
+                                                "_condition_name": "Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        },
+                                        {
+                                            "tag": "OlConditionTreeLeaf",
+                                            "contents": {
+                                                "_condition_uri": "http://open-license.hitachi.com/conditions/421",
+                                                "_condition_id": "conditions/421",
+                                                "_condition_name": "Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.",
+                                                "_condition_description": "",
+                                                "_condition_schemaVersion": "0.1",
+                                                "_condition_baseUri": "http://open-license.hitachi.com/",
+                                                "_condition_conditionType": "OBLIGATION"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "_permission_actions": [
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "Redistribute the fetched binaries as they are",
+                                "_action_uri": "http://open-license.hitachi.com/actions/11",
+                                "_action_id": "actions/11",
+                                "_action_name": "Distribute the fetched binaries"
+                            },
+                            {
+                                "_action_baseUri": "http://open-license.hitachi.com/",
+                                "_action_schemaVersion": "0.1",
+                                "_action_description": "",
+                                "_action_uri": "http://open-license.hitachi.com/actions/14",
+                                "_action_id": "actions/14",
+                                "_action_name": "Distribute the generated binaries from modified source code"
+                            }
+                        ]
+                    }
+                ],
+                "_license_id": "licenses/972",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/972",
+                "_license_name": "TMate Open Source License",
+                "_license_summary": "https://svnkit.com/license.html",
+                "_license_content": "The TMate Open Source License.\r\n\r\nThis license applies to all portions of TMate SVNKit library, which \r\nare not externally-maintained libraries (e.g. Ganymed SSH library).\r\n\r\nAll the source code and compiled classes in package org.tigris.subversion.javahl\r\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\r\n\r\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, \r\nare permitted provided that the following conditions are met:\r\n\r\n    * Redistributions of source code must retain the above copyright notice, \r\n      this list of conditions and the following disclaimer.\r\n      \r\n    * Redistributions in binary form must reproduce the above copyright notice, \r\n      this list of conditions and the following disclaimer in the documentation \r\n      and/or other materials provided with the distribution.\r\n      \r\n    * Redistributions in any form must be accompanied by information on how to \r\n      obtain complete source code for the software that uses SVNKit and any \r\n      accompanying software that uses the software that uses SVNKit. The source \r\n      code must either be included in the distribution or be available for no \r\n      more than the cost of distribution plus a nominal fee, and must be freely \r\n      redistributable under reasonable conditions. For an executable file, complete \r\n      source code means the source code for all modules it contains. It does not \r\n      include source code for modules or files that typically accompany the major \r\n      components of the operating system on which the executable file runs.\r\n      \r\n    * Redistribution in any form without redistributing source code for software \r\n      that uses SVNKit is possible only when such redistribution is explictly permitted \r\n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \r\n      get such permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\r\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \r\nDISCLAIMED. \r\n\r\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \r\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \r\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \r\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \r\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "_license_notices": [
+                    {
+                        "_notice_description": "There is no guarantee.",
+                        "_notice_content": "the software is provided by the copyright holder \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. The warranties include, but are not limited to, the implied warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/156",
+                        "_notice_id": "notices/156"
+                    },
+                    {
+                        "_notice_description": "",
+                        "_notice_content": "The copyright holder may be liable for direct, indirect, and incidental damages arising from the use of the software, regardless of the cause of the damage, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if he or she has been advised of the possibility of such damages. in no event shall you be liable for any damages, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute or substitute services, loss of use, loss of data, loss of profits, or business interruption) ",
+                        "_notice_baseUri": "http://open-license.hitachi.com/",
+                        "_notice_schemaVersion": "0.1",
+                        "_notice_uri": "http://open-license.hitachi.com/notices/103",
+                        "_notice_id": "notices/103"
+                    }
+                ],
+                "_license_description": "",
+                "_license_baseUri": "http://open-license.hitachi.com/",
+                "_license_schemaVersion": "0.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "TMate Open Source License"
+                    ],
+                    "__impliedText": "The TMate Open Source License.\r\n\r\nThis license applies to all portions of TMate SVNKit library, which \r\nare not externally-maintained libraries (e.g. Ganymed SSH library).\r\n\r\nAll the source code and compiled classes in package org.tigris.subversion.javahl\r\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\r\n\r\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, \r\nare permitted provided that the following conditions are met:\r\n\r\n    * Redistributions of source code must retain the above copyright notice, \r\n      this list of conditions and the following disclaimer.\r\n      \r\n    * Redistributions in binary form must reproduce the above copyright notice, \r\n      this list of conditions and the following disclaimer in the documentation \r\n      and/or other materials provided with the distribution.\r\n      \r\n    * Redistributions in any form must be accompanied by information on how to \r\n      obtain complete source code for the software that uses SVNKit and any \r\n      accompanying software that uses the software that uses SVNKit. The source \r\n      code must either be included in the distribution or be available for no \r\n      more than the cost of distribution plus a nominal fee, and must be freely \r\n      redistributable under reasonable conditions. For an executable file, complete \r\n      source code means the source code for all modules it contains. It does not \r\n      include source code for modules or files that typically accompany the major \r\n      components of the operating system on which the executable file runs.\r\n      \r\n    * Redistribution in any form without redistributing source code for software \r\n      that uses SVNKit is possible only when such redistribution is explictly permitted \r\n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \r\n      get such permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\r\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \r\nDISCLAIMED. \r\n\r\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \r\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \r\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \r\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \r\nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/972"
+                        ]
+                    ]
+                }
             }
         },
+        "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ]
+        ],
         "__impliedCopyleft": [
             [
                 "Scancode",
@@ -182,6 +607,10 @@ Raw Data
             [
                 "Homepage",
                 "http://svnkit.com/licensing.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/972"
             ]
         ]
     }

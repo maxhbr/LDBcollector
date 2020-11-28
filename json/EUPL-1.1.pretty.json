@@ -9,8 +9,10 @@
         "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
     ],
     "__impliedId": "EUPL-1.1",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "European Union Public License"
+        "European Union Public License",
+        "EUPL 1.1"
     ],
     "__impliedComments": [
         [
@@ -103,6 +105,35 @@
                 ]
             },
             "spdxLicenseId": "EUPL-1.1"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://ec.europa.eu/idabc/en/document/7774.html",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "EUPL 1.1",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "European Union Public License 1.1",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "European Union Public License 1.1"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "EUPL 1.1"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -405,6 +436,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "Google OSS Policy",
             {

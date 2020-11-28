@@ -17,7 +17,7 @@
 </tr>
 <tr class="odd">
 <td><p>Rating</p></td>
-<td><p>Unknown, probably Attention or Stop or No-Go</p></td>
+<td><p>Unknown, probably Stop or No-Go</p></td>
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
@@ -32,6 +32,7 @@
 </ul>
 <h2>Comments on (easy) usability</h2>
 <ul>
+<li><p><strong>↓</strong>“This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated.” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -113,6 +114,7 @@ If the unit or agency is the Department of Defense (&quot;DOD&quot;), the Progra
 <ul>
 <li><p><a href="https://spdx.org/licenses/Aladdin.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -161,6 +163,29 @@ If the unit or agency is the Department of Defense (&quot;DOD&quot;), the Progra
             },
             &quot;spdxLicenseId&quot;: &quot;Aladdin&quot;
         },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;rating&quot;: &quot;Bad&quot;,
+            &quot;Upstream URL&quot;: &quot;http://www.artifex.com/downloads/doc/Public.htm&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Aladdin Free Public License&quot;,
+            &quot;FSF Free?&quot;: &quot;No&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Aladdin Free Public License&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;NegativeJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated.&quot;
+                        }
+                    ]
+                ]
+            },
+            &quot;Notes&quot;: null
+        },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: null,
             &quot;homepageUrl&quot;: &quot;http://pages.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm&quot;,
@@ -207,6 +232,15 @@ If the unit or agency is the Department of Defense (&quot;DOD&quot;), the Progra
             }
         }
     },
+    &quot;__impliedJudgement&quot;: [
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;NegativeJudgement&quot;,
+                &quot;contents&quot;: &quot;This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated.&quot;
+            }
+        ]
+    ],
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;Scancode&quot;,

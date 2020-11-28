@@ -6,6 +6,10 @@
         "AMPAS BSD-Style License"
     ],
     "__impliedId": "AMPAS",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "AMPAS BSD"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "AMPAS"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "AMPAS BSD",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Academy of Motion Picture Arts and Sciences BSD",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Academy of Motion Picture Arts and Sciences BSD"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "AMPAS BSD"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -116,6 +149,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

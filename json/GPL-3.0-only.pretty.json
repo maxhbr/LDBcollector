@@ -29,6 +29,7 @@
     "__impliedAmbiguousNames": [
         "GNU General Public License",
         "GPLv3",
+        "GPLv3+",
         "GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)",
         "The GNU General Public License (GPL)"
     ],

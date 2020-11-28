@@ -6,8 +6,10 @@
         "OSL 2.0"
     ],
     "__impliedId": "OSL-2.0",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Open Software License"
+        "Open Software License",
+        "OSL 2.0"
     ],
     "__impliedComments": [
         [
@@ -56,6 +58,35 @@
                 ]
             },
             "spdxLicenseId": "OSL-2.0"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.nexb.com/license/LICENSE-OSL-2.0.html",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "OSL 2.0",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Open Software License 2.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Open Software License 2.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "OSL 2.0"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -169,6 +200,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "Google OSS Policy",
             {

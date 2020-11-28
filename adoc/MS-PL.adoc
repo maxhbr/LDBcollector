@@ -36,6 +36,10 @@ repository] is generated))
 * **↑**``Rating is: Silver'' (source:
 https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -75,6 +79,7 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt[c
 * *OSI Page:* https://opensource.org/licenses/MS-PL
 * *SPDX:* http://spdx.org/licenses/MS-PL.json
 * *SPDX:* https://spdx.org/licenses/MS-PL.html
+* *open-license:* http://open-license.hitachi.com/licenses/66
 * http://www.microsoft.com/opensource/licenses.mspx
 * http://www.microsoft.com/en-us/openness/licenses.aspx#MPL
 * http://www.opensource.org/licenses/MS-PL
@@ -160,6 +165,9 @@ repository] is generated)
 (CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml[finos/OSLC-handbook]
@@ -172,6 +180,8 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -186,6 +196,10 @@ Knowledge International]
         "Ms-PL"
     ],
     "__impliedId": "MS-PL",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MS-PL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -266,6 +280,35 @@ Knowledge International]
                 ]
             },
             "spdxLicenseId": "MS-PL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "MS-PL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Microsoft Public License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Microsoft Public License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MS-PL"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -349,6 +392,435 @@ Knowledge International]
             "_implications": {
                 "__impliedNames": [
                     "MS-PL"
+                ]
+            }
+        },
+        "Hitachi open-license": {
+            "_license_uri": "http://open-license.hitachi.com/licenses/66",
+            "_license_permissions": [
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/1",
+                            "_action_id": "actions/1",
+                            "_action_name": "Use the obtained source code without modification"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched code as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/5",
+                            "_action_id": "actions/5",
+                            "_action_name": "Use the retrieved object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the fetched binary as it is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/6",
+                            "_action_id": "actions/6",
+                            "_action_name": "Use the retrieved binaries"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Use the obtained executable as is.",
+                            "_action_uri": "http://open-license.hitachi.com/actions/84",
+                            "_action_id": "actions/84",
+                            "_action_name": "Use the retrieved executable"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/10",
+                            "_action_id": "actions/10",
+                            "_action_name": "Distribute the obtained object code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the fetched binaries as they are",
+                            "_action_uri": "http://open-license.hitachi.com/actions/11",
+                            "_action_id": "actions/11",
+                            "_action_name": "Distribute the fetched binaries"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the obtained executable as-is",
+                            "_action_uri": "http://open-license.hitachi.com/actions/86",
+                            "_action_id": "actions/86",
+                            "_action_name": "Distribute the obtained executable"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "Redistribute the code as it was obtained",
+                            "_action_uri": "http://open-license.hitachi.com/actions/9",
+                            "_action_id": "actions/9",
+                            "_action_name": "Distribute the obtained source code without modification"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/3",
+                            "_action_id": "actions/3",
+                            "_action_name": "Modify the obtained source code."
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/13",
+                            "_action_id": "actions/13",
+                            "_action_name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/14",
+                            "_action_id": "actions/14",
+                            "_action_name": "Distribute the generated binaries from modified source code"
+                        },
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/89",
+                            "_action_id": "actions/89",
+                            "_action_name": "Distribute the executable generated from the modified source code"
+                        }
+                    ]
+                },
+                {
+                    "_permission_summary": "",
+                    "_permission_description": "",
+                    "_permission_conditionHead": {
+                        "tag": "OlConditionTreeAnd",
+                        "contents": [
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/18",
+                                    "_condition_id": "conditions/18",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
+                                    "_condition_id": "conditions/124",
+                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "RESTRICTION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/179",
+                                    "_condition_id": "conditions/179",
+                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            },
+                            {
+                                "tag": "OlConditionTreeLeaf",
+                                "contents": {
+                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
+                                    "_condition_id": "conditions/8",
+                                    "_condition_name": "Give you a copy of the relevant license.",
+                                    "_condition_description": "",
+                                    "_condition_schemaVersion": "0.1",
+                                    "_condition_baseUri": "http://open-license.hitachi.com/",
+                                    "_condition_conditionType": "OBLIGATION"
+                                }
+                            }
+                        ]
+                    },
+                    "_permission_actions": [
+                        {
+                            "_action_baseUri": "http://open-license.hitachi.com/",
+                            "_action_schemaVersion": "0.1",
+                            "_action_description": "",
+                            "_action_uri": "http://open-license.hitachi.com/actions/12",
+                            "_action_id": "actions/12",
+                            "_action_name": "Distribution of Modified Source Code"
+                        }
+                    ]
+                }
+            ],
+            "_license_id": "licenses/66",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/66",
+            "_license_name": "Microsoft Public License",
+            "_license_summary": "",
+            "_license_content": "This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.\r\n\r\n1. Definitions\r\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\" have the\r\nsame meaning here as under U.S. copyright law.\r\nA \"contribution\" is the original software, or any additions or changes to the software.\r\nA \"contributor\" is any person that distributes its contribution under this license.\r\n\"Licensed patents\" are a contributor's patent claims that read directly on its contribution.\r\n\r\n2. Grant of Rights\r\n(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.\r\n(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.\r\n\r\n3. Conditions and Limitations\r\n(A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.\r\n(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.\r\n(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.\r\n(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.\r\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.",
+            "_license_notices": [
+                {
+                    "_notice_description": "",
+                    "_notice_content": "If a Contributor files a claim against a Contributor for a patent that is infringed by the Software, the patent license for the Software granted by the Contributor to the Contributor will automatically terminate.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/190",
+                    "_notice_id": "notices/190"
+                },
+                {
+                    "_notice_description": "There is no guarantee.",
+                    "_notice_content": "The Software is licensed \"as-is\". The risks associated with the use of the software are self-explanatory. Contributor provides no express warranties or conditions. You may have additional consumer rights under your local laws that cannot be changed by this license. to the extent permitted under local law, contributor disclaims any implied warranties of commercial applicability, fitness for a particular purpose or non-infringement.",
+                    "_notice_baseUri": "http://open-license.hitachi.com/",
+                    "_notice_schemaVersion": "0.1",
+                    "_notice_uri": "http://open-license.hitachi.com/notices/195",
+                    "_notice_id": "notices/195"
+                }
+            ],
+            "_license_description": "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks.",
+            "_license_baseUri": "http://open-license.hitachi.com/",
+            "_license_schemaVersion": "0.1",
+            "_implications": {
+                "__impliedNames": [
+                    "Microsoft Public License"
+                ],
+                "__impliedText": "This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.\r\n\r\n1. Definitions\r\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\" have the\r\nsame meaning here as under U.S. copyright law.\r\nA \"contribution\" is the original software, or any additions or changes to the software.\r\nA \"contributor\" is any person that distributes its contribution under this license.\r\n\"Licensed patents\" are a contributor's patent claims that read directly on its contribution.\r\n\r\n2. Grant of Rights\r\n(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.\r\n(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.\r\n\r\n3. Conditions and Limitations\r\n(A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.\r\n(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.\r\n(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.\r\n(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.\r\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/66"
+                    ]
                 ]
             }
         },
@@ -645,6 +1117,13 @@ Knowledge International]
             }
         ],
         [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
+        [
             "Google OSS Policy",
             {
                 "tag": "PositiveJudgement",
@@ -752,6 +1231,10 @@ Knowledge International]
         [
             "OSI Page",
             "https://opensource.org/licenses/MS-PL"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/66"
         ]
     ]
 }

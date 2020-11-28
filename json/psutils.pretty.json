@@ -6,6 +6,10 @@
         "PS Utilities License"
     ],
     "__impliedId": "psutils",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "psutils"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -35,6 +39,35 @@
                 ]
             },
             "spdxLicenseId": "psutils"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/psutils",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "psutils",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "psutils License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "psutils License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "psutils"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -122,6 +155,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

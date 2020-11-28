@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |Abstyles License
 |Shortname |Abstyles
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown
 |Classification |NoCopyleft
 |===
 
@@ -14,6 +14,11 @@
 * `+scancode://abstyles+`
 
 === Comments on (easy) usability
+
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -52,6 +57,9 @@ permission notice identical to this one.
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml[Scancode]
 (CC0-1.0)
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -63,6 +71,10 @@ repository] is generated)
         "scancode://abstyles"
     ],
     "__impliedId": "Abstyles",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Abstyles"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -100,6 +112,35 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "Abstyles"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "Abstyles",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Abstyles License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Abstyles License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Abstyles"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -147,6 +188,15 @@ repository] is generated)
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

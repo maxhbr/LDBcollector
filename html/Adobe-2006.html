@@ -32,6 +32,7 @@
 </ul>
 <h2>Comments on (easy) usability</h2>
 <ul>
+<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 <li><p><strong>↓</strong>“Rating is: Lead” (source: <a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
@@ -78,6 +79,7 @@ SUCH DAMAGE.</code></pre>
 <li><p><a href="https://spdx.org/licenses/Adobe-2006.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adobe-scl.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -88,6 +90,10 @@ SUCH DAMAGE.</code></pre>
         &quot;Adobe Source Code License 2006&quot;
     ],
     &quot;__impliedId&quot;: &quot;Adobe-2006&quot;,
+    &quot;__isFsfFree&quot;: true,
+    &quot;__impliedAmbiguousNames&quot;: [
+        &quot;Adobe&quot;
+    ],
     &quot;facts&quot;: {
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
@@ -117,6 +123,35 @@ SUCH DAMAGE.</code></pre>
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;Adobe-2006&quot;
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;Yes&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;https://fedoraproject.org/wiki/Licensing/AdobeLicense&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;Yes&quot;,
+            &quot;Short Name&quot;: &quot;Adobe&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Adobe Systems Incorporated Source Code License Agreement&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Adobe Systems Incorporated Source Code License Agreement&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;Adobe&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
@@ -204,6 +239,13 @@ SUCH DAMAGE.</code></pre>
             {
                 &quot;tag&quot;: &quot;NegativeJudgement&quot;,
                 &quot;contents&quot;: &quot;Rating is: Lead&quot;
+            }
+        ],
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
             }
         ]
     ],

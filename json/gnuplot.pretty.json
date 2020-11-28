@@ -5,6 +5,10 @@
         "scancode://gnuplot"
     ],
     "__impliedId": "gnuplot",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "gnuplot"
+    ],
     "facts": {
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
@@ -34,6 +38,35 @@
                 ]
             },
             "spdxLicenseId": "gnuplot"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Gnuplot",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "gnuplot",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "gnuplot License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "gnuplot License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "gnuplot"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -79,6 +112,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

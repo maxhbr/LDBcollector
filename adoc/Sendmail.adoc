@@ -5,7 +5,7 @@
 |Key |Value
 |Fullname |Sendmail License
 |Shortname |Sendmail
-|Rating |Unknown, probably Attention or Stop or No-Go
+|Rating |Unknown
 |Classification |NoCopyleft
 |===
 
@@ -14,6 +14,11 @@
 * `+scancode://sendmail+`
 
 === Comments on (easy) usability
+
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -123,6 +128,9 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml[Scancode]
 (CC0-1.0)
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -134,6 +142,10 @@ repository] is generated)
         "scancode://sendmail"
     ],
     "__impliedId": "Sendmail",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "Sendmail"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -176,6 +188,35 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "Sendmail"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder",
+            "rating": "Good",
+            "Upstream URL": "http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf",
+            "GPLv3 Compat?": "Compatible if Eric Allman, Sendmail Inc. or the University of California is the copyright holder",
+            "Short Name": "Sendmail",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Sendmail License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Sendmail License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "Sendmail"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -229,6 +270,15 @@ repository] is generated)
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

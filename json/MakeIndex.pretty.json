@@ -6,6 +6,10 @@
         "MakeIndex Distribution Notice"
     ],
     "__impliedId": "MakeIndex",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MakeIndex"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +47,35 @@
                 ]
             },
             "spdxLicenseId": "MakeIndex"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/MakeIndex",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "MakeIndex",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "MakeIndex License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "MakeIndex License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MakeIndex"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -90,6 +123,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

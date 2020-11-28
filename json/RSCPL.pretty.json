@@ -88,6 +88,29 @@
             },
             "spdxLicenseId": "RSCPL"
         },
+        "Fedora Project Wiki": {
+            "rating": "Bad",
+            "Upstream URL": "http://opensource.org/licenses/ricohpl.php",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Ricoh Source Code Public License",
+            "FSF Free?": "No",
+            "_implications": {
+                "__impliedNames": [
+                    "Ricoh Source Code Public License"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                        }
+                    ]
+                ]
+            },
+            "Notes": null
+        },
         "Scancode": {
             "otherUrls": [
                 "http://wayback.archive.org/web/20060715140826/http://www.risource.org/RPL/RPL-1.0A.shtml",
@@ -219,6 +242,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+            }
+        ],
         [
             "SPDX",
             {

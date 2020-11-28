@@ -47,6 +47,11 @@
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
+
 ** General Comments
 
 - "Per SPDX.org, this license is OSI certified." (source:
@@ -139,6 +144,10 @@
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
@@ -168,6 +177,10 @@
           "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"
       ],
       "__impliedId": "BSD-2-Clause",
+      "__isFsfFree": true,
+      "__impliedAmbiguousNames": [
+          "BSD"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -242,6 +255,35 @@
                   ]
               },
               "spdxLicenseId": "BSD-2-Clause"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "Yes",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD",
+              "GPLv3 Compat?": "Yes",
+              "Short Name": "BSD",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "BSD License (two clause)",
+              "FSF Free?": "Yes",
+              "_implications": {
+                  "__impliedNames": [
+                      "BSD License (two clause)"
+                  ],
+                  "__isFsfFree": true,
+                  "__impliedAmbiguousNames": [
+                      "BSD"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [
@@ -563,6 +605,13 @@
               {
                   "tag": "PositiveJudgement",
                   "contents": "Rating is: Silver"
+              }
+          ],
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
               }
           ],
           [

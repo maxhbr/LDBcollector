@@ -23,6 +23,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 DebianFreeSoftwareGuidelines (DFSG-free)'' (source:
 https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION))
+* **↑**``This software Licenses is OK for Fedora'' (source:
+https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0]))
 
 === General Comments
 
@@ -79,6 +83,9 @@ misrepresented as being the original software.
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml[Scancode]
 (CC0-1.0)
+* https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
+Project Wiki]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
 
@@ -93,7 +100,9 @@ misrepresented as being the original software.
         "ZLIB License with Acknowledgment"
     ],
     "__impliedId": "zlib-acknowledgement",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
+        "zlib with acknowledgement",
         "The zlib/libpng License (Zlib)"
     ],
     "__impliedComments": [
@@ -133,6 +142,35 @@ misrepresented as being the original software.
                 ]
             },
             "spdxLicenseId": "zlib-acknowledgement"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "zlib with acknowledgement",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "zlib/libpng License with Acknowledgement",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "zlib/libpng License with Acknowledgement"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "zlib with acknowledgement"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -259,6 +297,13 @@ misrepresented as being the original software.
             {
                 "tag": "PositiveJudgement",
                 "contents": "This license is compatible with the DebianFreeSoftwareGuidelines (DFSG-free)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

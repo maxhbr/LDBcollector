@@ -5,6 +5,10 @@
         "scancode://historical"
     ],
     "__impliedId": "HPND",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MIT"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -79,6 +83,35 @@
                 ]
             },
             "spdxLicenseId": "HPND"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/historical.php",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "MIT",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Historical Permission Notice and Disclaimer",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Historical Permission Notice and Disclaimer"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MIT"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -242,6 +275,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ],
         [

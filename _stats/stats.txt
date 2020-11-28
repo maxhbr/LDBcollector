@@ -18,19 +18,19 @@ Number of facts: 4139
 Number of clusters: 2658
 ### Stats on Licenses:
 Number of Licenses: 414
-Number of facts: 1727
+Number of facts: 1914
     BlueOak License List: 228
     Debian Free Software Guidelines: 82
-    Fedora Project Wiki: 16
-    Google OSS Policy: 113
-    Hitachi open-license: 20
+    Fedora Project Wiki: 164
+    Google OSS Policy: 114
+    Hitachi open-license: 55
     Open Knowledge International: 90
-    OpenChainPolicyTemplate: 86
+    OpenChainPolicyTemplate: 88
     OpenSourceInitiative: 87
     Override: 61
     SPDX: 420
     Scancode: 400
-    Wikipedia: 36
+    Wikipedia: 37
     choosealicense.com: 41
     finos/OSLC-handbook: 47
 #### based on facts from licenses
@@ -38,14 +38,14 @@ Number of clusters: 425
 #### based on licenses
 Number of clusters: 414
 ### Stats on Gaps:
-Number of facts: 2459
+Number of facts: 2276
     BlueOak License List: 2
     Debian Free Software Guidelines: 5
-    Fedora Project Wiki: 414
-    Google OSS Policy: 3
-    Hitachi open-license: 693
+    Fedora Project Wiki: 270
+    Google OSS Policy: 2
+    Hitachi open-license: 658
     Open Knowledge International: 23
-    OpenChainPolicyTemplate: 8
+    OpenChainPolicyTemplate: 6
     OpenSourceInitiative: 4
     Scancode: 1303
-    Wikipedia: 4
+    Wikipedia: 3

@@ -19,6 +19,12 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
+-   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
+    in Fedora is permitted to use this license. It is either non-free or
+    deprecated.” (source: [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 General Comments
 ----------------
 
@@ -67,6 +73,10 @@ Raw Data
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/json.yml "Scancode")
     (CC0-1.0)
+
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -117,6 +127,29 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "JSON"
+            },
+            "Fedora Project Wiki": {
+                "rating": "Bad",
+                "Upstream URL": "http://www.json.org/license.html",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "JSON License",
+                "FSF Free?": "No",
+                "_implications": {
+                    "__impliedNames": [
+                        "JSON License"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                            }
+                        ]
+                    ]
+                },
+                "Notes": "The clause \"The Software shall be used for Good, not Evil.\" is impossible to parse or comply with."
             },
             "Scancode": {
                 "otherUrls": [
@@ -218,6 +251,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Infamous for the clause The Software shall be used for Good, not Evil."
+                }
+            ],
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
                 }
             ],
             [

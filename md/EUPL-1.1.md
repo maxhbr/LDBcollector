@@ -31,6 +31,11 @@ Comments on (easy) usability
     [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated))
 
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
+
 -   **↓**“Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
     the use of EUPL-licensed software is not allowed at Google."”
@@ -382,6 +387,10 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.1.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -406,8 +415,10 @@ Raw Data
             "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"
         ],
         "__impliedId": "EUPL-1.1",
+        "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "European Union Public License"
+            "European Union Public License",
+            "EUPL 1.1"
         ],
         "__impliedComments": [
             [
@@ -500,6 +511,35 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "EUPL-1.1"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "http://ec.europa.eu/idabc/en/document/7774.html",
+                "GPLv3 Compat?": "NO",
+                "Short Name": "EUPL 1.1",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "European Union Public License 1.1",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "European Union Public License 1.1"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "EUPL 1.1"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -802,6 +842,13 @@ Raw Data
             }
         },
         "__impliedJudgement": [
+            [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
             [
                 "Google OSS Policy",
                 {

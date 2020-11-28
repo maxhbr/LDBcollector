@@ -1,17 +1,22 @@
 * psfrag License (psfrag)
 
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | psfrag License                                 |
-| Shortname        | psfrag                                         |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key              | Value            |
+|------------------+------------------|
+| Fullname         | psfrag License   |
+| Shortname        | psfrag           |
+| Rating           | Unknown          |
+| Classification   | NoCopyleft       |
 
 *Other Names:*
 
 - =scancode://psfrag=
 
 ** Comments on (easy) usability
+
+- *↑*"This software Licenses is OK for Fedora" (source:
+  [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]]))
 
 ** General Comments
 
@@ -49,6 +54,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -59,6 +68,9 @@
           "scancode://psfrag"
       ],
       "__impliedId": "psfrag",
+      "__impliedAmbiguousNames": [
+          "psfrag"
+      ],
       "__impliedComments": [
           [
               "Scancode",
@@ -96,6 +108,34 @@
                   ]
               },
               "spdxLicenseId": "psfrag"
+          },
+          "Fedora Project Wiki": {
+              "GPLv2 Compat?": "NO",
+              "rating": "Good",
+              "Upstream URL": "https://fedoraproject.org/wiki/Licensing/psfrag",
+              "GPLv3 Compat?": "NO",
+              "Short Name": "psfrag",
+              "licenseType": "license",
+              "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+              "Full Name": "psfrag License",
+              "FSF Free?": "Yes (but only for tex)",
+              "_implications": {
+                  "__impliedNames": [
+                      "psfrag License"
+                  ],
+                  "__impliedAmbiguousNames": [
+                      "psfrag"
+                  ],
+                  "__impliedJudgement": [
+                      [
+                          "Fedora Project Wiki",
+                          {
+                              "tag": "PositiveJudgement",
+                              "contents": "This software Licenses is OK for Fedora"
+                          }
+                      ]
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": null,
@@ -143,6 +183,15 @@
               }
           }
       },
+      "__impliedJudgement": [
+          [
+              "Fedora Project Wiki",
+              {
+                  "tag": "PositiveJudgement",
+                  "contents": "This software Licenses is OK for Fedora"
+              }
+          ]
+      ],
       "__impliedCopyleft": [
           [
               "Scancode",

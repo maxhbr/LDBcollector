@@ -5,6 +5,10 @@
         "scancode://mtll"
     ],
     "__impliedId": "MTLL",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "MTLL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -42,6 +46,35 @@
                 ]
             },
             "spdxLicenseId": "MTLL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "MTLL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Matrix Template Library License",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Matrix Template Library License"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "MTLL"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -131,6 +164,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

@@ -9,6 +9,10 @@
         "ca-tosl1.1"
     ],
     "__impliedId": "CATOSL-1.1",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "CATOSL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -86,6 +90,35 @@
                 ]
             },
             "spdxLicenseId": "CATOSL-1.1"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://opensource.org/licenses/ca-tosl1.1.php",
+            "GPLv3 Compat?": "NO",
+            "Short Name": "CATOSL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Computer Associates Trusted Open Source License 1.1",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Computer Associates Trusted Open Source License 1.1"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "CATOSL"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -208,6 +241,13 @@
         }
     },
     "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
         [
             "SPDX",
             {

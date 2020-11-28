@@ -64,6 +64,29 @@
             },
             "spdxLicenseId": "APSL-1.0"
         },
+        "Fedora Project Wiki": {
+            "rating": "Bad",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Apple Public Source License 1.0",
+            "FSF Free?": "No",
+            "_implications": {
+                "__impliedNames": [
+                    "Apple Public Source License 1.0"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+                        }
+                    ]
+                ]
+            },
+            "Notes": null
+        },
         "Scancode": {
             "otherUrls": [
                 "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0"
@@ -185,6 +208,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "This license is not compatible with the DebianFreeSoftwareGuidelines (DFSG-unfree)"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
             }
         ],
         [

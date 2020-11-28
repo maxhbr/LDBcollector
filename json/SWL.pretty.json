@@ -6,6 +6,10 @@
         "Scheme Widget Library (SWL) Software License"
     ],
     "__impliedId": "SWL",
+    "__isFsfFree": true,
+    "__impliedAmbiguousNames": [
+        "SWL"
+    ],
     "__impliedComments": [
         [
             "Scancode",
@@ -43,6 +47,35 @@
                 ]
             },
             "spdxLicenseId": "SWL"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "Yes",
+            "rating": "Good",
+            "Upstream URL": "https://fedoraproject.org/wiki/Licensing/SWL",
+            "GPLv3 Compat?": "Yes",
+            "Short Name": "SWL",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Scheme Widget Library (SWL) Software License Agreement",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Scheme Widget Library (SWL) Software License Agreement"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "SWL"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [
@@ -138,6 +171,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Rating is: Bronze"
+            }
+        ],
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
             }
         ]
     ],

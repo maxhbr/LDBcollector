@@ -36,6 +36,7 @@
 <p> (source: choosealicense.com (<a href="https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" title="MIT">MIT</a>))</p>
 <h2>Comments on (easy) usability</h2>
 <ul>
+<li><p><strong>↑</strong>“This software Licenses is OK for Fedora” (source: <a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>))</p></li>
 </ul>
 <h2>General Comments</h2>
 <ul>
@@ -185,6 +186,7 @@ Note:
 <li><p><a href="https://spdx.org/licenses/Vim.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt" title="choosealicense.com">choosealicense.com</a> (<a href="https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -196,6 +198,10 @@ Note:
         &quot;vim&quot;
     ],
     &quot;__impliedId&quot;: &quot;Vim&quot;,
+    &quot;__isFsfFree&quot;: true,
+    &quot;__impliedAmbiguousNames&quot;: [
+        &quot;Vim&quot;
+    ],
     &quot;facts&quot;: {
         &quot;SPDX&quot;: {
             &quot;isSPDXLicenseDeprecated&quot;: false,
@@ -225,6 +231,35 @@ Note:
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;Vim&quot;
+        },
+        &quot;Fedora Project Wiki&quot;: {
+            &quot;GPLv2 Compat?&quot;: &quot;Yes&quot;,
+            &quot;rating&quot;: &quot;Good&quot;,
+            &quot;Upstream URL&quot;: &quot;http://vimdoc.sourceforge.net/htmldoc/uganda.html&quot;,
+            &quot;GPLv3 Compat?&quot;: &quot;Yes&quot;,
+            &quot;Short Name&quot;: &quot;Vim&quot;,
+            &quot;licenseType&quot;: &quot;license&quot;,
+            &quot;_sourceURL&quot;: &quot;https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing&quot;,
+            &quot;Full Name&quot;: &quot;Vim License&quot;,
+            &quot;FSF Free?&quot;: &quot;Yes&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Vim License&quot;
+                ],
+                &quot;__isFsfFree&quot;: true,
+                &quot;__impliedAmbiguousNames&quot;: [
+                    &quot;Vim&quot;
+                ],
+                &quot;__impliedJudgement&quot;: [
+                    [
+                        &quot;Fedora Project Wiki&quot;,
+                        {
+                            &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                            &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+                        }
+                    ]
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
@@ -340,6 +375,15 @@ Note:
             &quot;description&quot;: &quot;There are no restrictions on using or distributing an unmodified copy of the software. Parts of the software may also be distributed, but the license text must always be included. For modified versions a few restrictions apply. The license is GPL compatible, you may compile the software with GPL libraries and distribute it.&quot;
         }
     },
+    &quot;__impliedJudgement&quot;: [
+        [
+            &quot;Fedora Project Wiki&quot;,
+            {
+                &quot;tag&quot;: &quot;PositiveJudgement&quot;,
+                &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
+            }
+        ]
+    ],
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;Scancode&quot;,

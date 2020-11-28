@@ -9,8 +9,10 @@
         "AGPL 1.0"
     ],
     "__impliedId": "AGPL-1.0-only",
+    "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Affero General Public License"
+        "Affero General Public License",
+        "AGPLv1"
     ],
     "__impliedComments": [
         [
@@ -50,6 +52,35 @@
                 ]
             },
             "spdxLicenseId": "AGPL-1.0-only"
+        },
+        "Fedora Project Wiki": {
+            "GPLv2 Compat?": "NO",
+            "rating": "Good",
+            "Upstream URL": "http://www.affero.org/oagpl.html",
+            "GPLv3 Compat?": null,
+            "Short Name": "AGPLv1",
+            "licenseType": "license",
+            "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+            "Full Name": "Affero General Public License 1.0",
+            "FSF Free?": "Yes",
+            "_implications": {
+                "__impliedNames": [
+                    "Affero General Public License 1.0"
+                ],
+                "__isFsfFree": true,
+                "__impliedAmbiguousNames": [
+                    "AGPLv1"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Fedora Project Wiki",
+                        {
+                            "tag": "PositiveJudgement",
+                            "contents": "This software Licenses is OK for Fedora"
+                        }
+                    ]
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": null,
@@ -148,8 +179,44 @@
                 ]
             },
             "CopyleftKind": "SaaSCopyleft"
+        },
+        "Google OSS Policy": {
+            "rating": "CANNOT_BE_USED",
+            "_sourceURL": "https://opensource.google.com/docs/thirdparty/licenses/",
+            "id": "AGPL-1.0",
+            "_implications": {
+                "__impliedNames": [
+                    "AGPL-1.0"
+                ],
+                "__impliedJudgement": [
+                    [
+                        "Google OSS Policy",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "Google Classification is CANNOT_BE_USED \"Code released under the GNU Affero General Public License (AGPL) cannot be used in google3 under any circumstances, and only very rarely on workstations. Read more at go/agpl\""
+                        }
+                    ]
+                ]
+            },
+            "description": "Code released under the GNU Affero General Public License (AGPL) cannot be used in google3 under any circumstances, and only very rarely on workstations. Read more at go/agpl"
         }
     },
+    "__impliedJudgement": [
+        [
+            "Fedora Project Wiki",
+            {
+                "tag": "PositiveJudgement",
+                "contents": "This software Licenses is OK for Fedora"
+            }
+        ],
+        [
+            "Google OSS Policy",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "Google Classification is CANNOT_BE_USED \"Code released under the GNU Affero General Public License (AGPL) cannot be used in google3 under any circumstances, and only very rarely on workstations. Read more at go/agpl\""
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "BlueOak License List",
