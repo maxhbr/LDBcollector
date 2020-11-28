@@ -34,6 +34,9 @@ import           Collectors.Common
 olLFC :: LicenseFactClassifier
 olLFC = LFCWithURLAndLicense "https://github.com/Hitachi/open-license" (LFL "CDLA-Permissive-1.0") "Hitachi open-license"
 
+objectWithoutEmpty :: [(Text, Value)] -> Value
+objectWithoutEmpty = object . filter (\(_,v) -> v /= "")
+
 {- #############################################################################
    #### Translatable ###########################################################
    ########################################################################## -}
@@ -193,10 +196,10 @@ instance Translateable OlAction where
   translate a = a { _action_name = translate (_action_name a)
                   , _action_description = translate (_action_description a)}
 instance ToJSON OlAction where
-  toJSON a = object [ "name" .= toJSON (_action_name a)
-                    , "description" .= toJSON (_action_description a)
-                    , "_id" .= _action_id a
-                    ]
+  toJSON a = objectWithoutEmpty [ "name" .= toJSON (_action_name a)
+                                , "description" .= toJSON (_action_description a)
+                                , "_id" .= _action_id a
+                                ]
 instance FromJSON OlAction where
   parseJSON = withObject "OlAction" $ \v -> OlAction
     <$> (fmap show (v .: "schemaVersion" :: Parser Double) :: Parser String)
@@ -240,11 +243,11 @@ instance Translateable OlCondition where
   translate c = c { _condition_name = translate (_condition_name c)
                   , _condition_description = translate (_condition_description c)}
 instance ToJSON OlCondition where
-  toJSON c = object [ "name" .= toJSON (_condition_name c)
-                    , "description" .= toJSON (_condition_description c)
-                    , "type" .= toJSON (_condition_conditionType c)
-                    , "_id" .= _condition_id c
-                    ]
+  toJSON c = objectWithoutEmpty [ "name" .= toJSON (_condition_name c)
+                                , "description" .= toJSON (_condition_description c)
+                                , "type" .= toJSON (_condition_conditionType c)
+                                , "_id" .= _condition_id c
+                                ]
 instance FromJSON OlCondition where
   parseJSON = withObject "OlCondition" $ \v -> OlCondition
     <$> (fmap show (v .: "schemaVersion" :: Parser Double) :: Parser String)
@@ -390,11 +393,11 @@ instance Translateable OlPermission where
                   , _permission_actions = translate (_permission_actions p)
                   , _permission_conditionHead = translate (_permission_conditionHead p)}
 instance ToJSON OlPermission where
-  toJSON p = object [ "summary" .= toJSON (_permission_summary c)
-                    , "description" .= toJSON (_permission_description c)
-                    , "actions" .= toJSON (_permission_actions c)
-                    , "conditions" .= _permission_conditionHead c
-                    ]
+  toJSON p = objectWithoutEmpty [ "summary" .= toJSON (_permission_summary p)
+                                , "description" .= toJSON (_permission_description p)
+                                , "actions" .= toJSON (_permission_actions p)
+                                , "conditions" .= _permission_conditionHead p
+                                ]
 instance FromJSON OlPermission where
   parseJSON = withObject "OlPermission" $ \v -> OlPermission
     <$> v .: "summary"
@@ -427,13 +430,14 @@ instance Translateable OlLicense where
     , _license_permissions = translate (_license_permissions l)
     , _license_notices = translate (_license_notices l) }
 instance ToJSON OlLicense where
-  toJSON l = object [ "name"        .= toJSON (_license_name l)
-                    , "summary"     .= toJSON (_license_summary l)
-                    , "description" .= toJSON (_license_description l)
-                    , "permissions" .= toJSON (_license_permissions l)
-                    , "notices"     .= toJSON (_license_notices l)
-                    , "content"     .= toJSON (_license_content l)
-                    ]
+  toJSON l = objectWithoutEmpty [ "name"        .= toJSON (_license_name l)
+                                , "summary"     .= toJSON (_license_summary l)
+                                , "description" .= toJSON (_license_description l)
+                                , "permissions" .= toJSON (_license_permissions l)
+                                , "notices"     .= toJSON (_license_notices l)
+                                , "content"     .= toJSON (_license_content l)
+                                , "_id"         .= _license_id l
+                                ]
 instance FromJSON OlLicense where
   parseJSON = withObject "OlLicense" $ \v -> OlLicense
     <$> (fmap show (v .: "schemaVersion" :: Parser Double) :: Parser String)
