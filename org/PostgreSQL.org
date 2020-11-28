@@ -360,141 +360,8 @@
               }
           },
           "Hitachi open-license": {
-              "_license_uri": "http://open-license.hitachi.com/licenses/608",
-              "_license_permissions": [
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
-                      "_permission_conditionHead": null,
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Use the fetched code as it is.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/1",
-                              "_action_id": "actions/1",
-                              "_action_name": "Use the obtained source code without modification"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/3",
-                              "_action_id": "actions/3",
-                              "_action_name": "Modify the obtained source code."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/4",
-                              "_action_id": "actions/4",
-                              "_action_name": "Using Modified Source Code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Use the fetched code as it is.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/5",
-                              "_action_id": "actions/5",
-                              "_action_name": "Use the retrieved object code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/7",
-                              "_action_id": "actions/7",
-                              "_action_name": "Use the object code generated from the modified source code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Use the obtained executable as is.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/84",
-                              "_action_id": "actions/84",
-                              "_action_name": "Use the retrieved executable"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/87",
-                              "_action_id": "actions/87",
-                              "_action_name": "Use the executable generated from the modified source code"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
-                      "_permission_conditionHead": {
-                          "_condition_uri": "http://open-license.hitachi.com/conditions/238",
-                          "_condition_id": "conditions/238",
-                          "_condition_name": "Include a copyright notice and list of terms and conditions included in the license",
-                          "_condition_description": "",
-                          "_condition_schemaVersion": "0.1",
-                          "_condition_baseUri": "http://open-license.hitachi.com/",
-                          "_condition_conditionType": "OBLIGATION"
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Redistribute the code as it was obtained",
-                              "_action_uri": "http://open-license.hitachi.com/actions/9",
-                              "_action_id": "actions/9",
-                              "_action_name": "Distribute the obtained source code without modification"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Redistribute the code as it was obtained",
-                              "_action_uri": "http://open-license.hitachi.com/actions/10",
-                              "_action_id": "actions/10",
-                              "_action_name": "Distribute the obtained object code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/12",
-                              "_action_id": "actions/12",
-                              "_action_name": "Distribution of Modified Source Code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/13",
-                              "_action_id": "actions/13",
-                              "_action_name": "Distribute the object code generated from the modified source code"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Redistribute the obtained executable as-is",
-                              "_action_uri": "http://open-license.hitachi.com/actions/86",
-                              "_action_id": "actions/86",
-                              "_action_name": "Distribute the obtained executable"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/89",
-                              "_action_id": "actions/89",
-                              "_action_name": "Distribute the executable generated from the modified source code"
-                          }
-                      ]
-                  }
-              ],
-              "_license_id": "licenses/608",
-              "_sourceURL": "http://open-license.hitachi.com/licenses/608",
-              "_license_name": "PostgreSQL License",
-              "_license_summary": "",
-              "_license_content": "The PostgreSQL License\r\n\r\nThis is a template license. The body of the license starts at the end of this paragraph. To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file (\"COPYRIGHT\", \"LICENSE\" or \"COPYING\" are common names for this file) in your software distribution.\r\n\r\nCopyright (c) $YEAR, $ORGANIZATION\r\n\r\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.\r\n\r\nIN NO EVENT SHALL $ORGANISATION BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF $ORGANISATION HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\n$ORGANISATION SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND $ORGANISATION HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.",
-              "_license_notices": [
+              "summary": "",
+              "notices": [
                   {
                       "_notice_description": "",
                       "_notice_content": "In no event shall the copyright holder be liable for any direct, indirect, special, incidental, consequential, or lost profits resulting from the use of the software or related documentation, even if he or she has been advised of the possibility of such damages.",
@@ -512,9 +379,95 @@
                       "_notice_id": "notices/258"
                   }
               ],
-              "_license_description": "",
-              "_license_baseUri": "http://open-license.hitachi.com/",
-              "_license_schemaVersion": "0.1",
+              "_sourceURL": "http://open-license.hitachi.com/licenses/608",
+              "content": "The PostgreSQL License\r\n\r\nThis is a template license. The body of the license starts at the end of this paragraph. To use it, say that it is The PostgreSQL License, and then substitute the copyright year and name of the copyright holder into the body of the license. Then put the license into a prominent file (\"COPYRIGHT\", \"LICENSE\" or \"COPYING\" are common names for this file) in your software distribution.\r\n\r\nCopyright (c) $YEAR, $ORGANIZATION\r\n\r\nPermission to use, copy, modify, and distribute this software and its documentation for any purpose, without fee, and without a written agreement is hereby granted, provided that the above copyright notice and this paragraph and the following two paragraphs appear in all copies.\r\n\r\nIN NO EVENT SHALL $ORGANISATION BE LIABLE TO ANY PARTY FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES, INCLUDING LOST PROFITS, ARISING OUT OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF $ORGANISATION HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\n$ORGANISATION SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN \"AS IS\" BASIS, AND $ORGANISATION HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS, OR MODIFICATIONS.",
+              "name": "PostgreSQL License",
+              "permissions": [
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/1",
+                              "name": "Use the obtained source code without modification",
+                              "description": "Use the fetched code as it is."
+                          },
+                          {
+                              "_id": "actions/3",
+                              "name": "Modify the obtained source code.",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/4",
+                              "name": "Using Modified Source Code",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/5",
+                              "name": "Use the retrieved object code",
+                              "description": "Use the fetched code as it is."
+                          },
+                          {
+                              "_id": "actions/7",
+                              "name": "Use the object code generated from the modified source code",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/84",
+                              "name": "Use the retrieved executable",
+                              "description": "Use the obtained executable as is."
+                          },
+                          {
+                              "_id": "actions/87",
+                              "name": "Use the executable generated from the modified source code",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": null,
+                      "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/9",
+                              "name": "Distribute the obtained source code without modification",
+                              "description": "Redistribute the code as it was obtained"
+                          },
+                          {
+                              "_id": "actions/10",
+                              "name": "Distribute the obtained object code",
+                              "description": "Redistribute the code as it was obtained"
+                          },
+                          {
+                              "_id": "actions/12",
+                              "name": "Distribution of Modified Source Code",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/13",
+                              "name": "Distribute the object code generated from the modified source code",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/86",
+                              "name": "Distribute the obtained executable",
+                              "description": "Redistribute the obtained executable as-is"
+                          },
+                          {
+                              "_id": "actions/89",
+                              "name": "Distribute the executable generated from the modified source code",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": {
+                          "_id": "conditions/238",
+                          "name": "Include a copyright notice and list of terms and conditions included in the license",
+                          "type": "OBLIGATION",
+                          "description": ""
+                      },
+                      "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                  }
+              ],
               "_implications": {
                   "__impliedNames": [
                       "PostgreSQL License"
@@ -526,7 +479,8 @@
                           "http://open-license.hitachi.com/licenses/608"
                       ]
                   ]
-              }
+              },
+              "description": ""
           },
           "BlueOak License List": {
               "BlueOakRating": "Silver",

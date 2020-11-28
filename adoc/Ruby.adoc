@@ -299,255 +299,8 @@ Policy]
             "oRatingState": null
         },
         "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/2",
-            "_license_permissions": [
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
-                    "_permission_conditionHead": null,
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched code as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/1",
-                            "_action_id": "actions/1",
-                            "_action_name": "Use the obtained source code without modification"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/4",
-                            "_action_id": "actions/4",
-                            "_action_name": "Using Modified Source Code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched code as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/5",
-                            "_action_id": "actions/5",
-                            "_action_name": "Use the retrieved object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched binary as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/6",
-                            "_action_id": "actions/6",
-                            "_action_name": "Use the retrieved binaries"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/7",
-                            "_action_id": "actions/7",
-                            "_action_name": "Use the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/8",
-                            "_action_id": "actions/8",
-                            "_action_name": "Use binaries generated from modified source code"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
-                    "_permission_conditionHead": {
-                        "_condition_uri": "http://open-license.hitachi.com/conditions/300",
-                        "_condition_id": "conditions/300",
-                        "_condition_name": "Include the original copyright notice and associated disclaimer in the software",
-                        "_condition_description": "",
-                        "_condition_schemaVersion": "0.1",
-                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                        "_condition_conditionType": "OBLIGATION"
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the code as it was obtained",
-                            "_action_uri": "http://open-license.hitachi.com/actions/9",
-                            "_action_id": "actions/9",
-                            "_action_name": "Distribute the obtained source code without modification"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
-                    "_permission_conditionHead": {
-                        "AND": [
-                            {
-                                "OR": [
-                                    {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/301",
-                                        "_condition_id": "conditions/301",
-                                        "_condition_name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    },
-                                    {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/289",
-                                        "_condition_id": "conditions/289",
-                                        "_condition_name": "Use only in your own corporation or organization.",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    },
-                                    {
-                                        "AND": [
-                                            {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/302",
-                                                "_condition_id": "conditions/302",
-                                                "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "RESTRICTION"
-                                            },
-                                            {
-                                                "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                                "_condition_id": "conditions/264",
-                                                "_condition_name": "Pass information on where the original software was obtained",
-                                                "_condition_description": "",
-                                                "_condition_schemaVersion": "0.1",
-                                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                "_condition_conditionType": "OBLIGATION"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/292",
-                                        "_condition_id": "conditions/292",
-                                        "_condition_name": "Decide on a different method of distribution with the copyright holder",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/3",
-                            "_action_id": "actions/3",
-                            "_action_name": "Modify the obtained source code."
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.",
-                    "_permission_conditionHead": {
-                        "OR": [
-                            {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                "_condition_id": "conditions/264",
-                                "_condition_name": "Pass information on where the original software was obtained",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            },
-                            {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                "_condition_id": "conditions/21",
-                                "_condition_name": "Attach the source code corresponding to the software in question.",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            },
-                            {
-                                "AND": [
-                                    {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/302",
-                                        "_condition_id": "conditions/302",
-                                        "_condition_name": "Giving non-standard binaries a different name than the standard version of the binary",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "RESTRICTION"
-                                    },
-                                    {
-                                        "_condition_uri": "http://open-license.hitachi.com/conditions/264",
-                                        "_condition_id": "conditions/264",
-                                        "_condition_name": "Pass information on where the original software was obtained",
-                                        "_condition_description": "",
-                                        "_condition_schemaVersion": "0.1",
-                                        "_condition_baseUri": "http://open-license.hitachi.com/",
-                                        "_condition_conditionType": "OBLIGATION"
-                                    }
-                                ]
-                            },
-                            {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/292",
-                                "_condition_id": "conditions/292",
-                                "_condition_name": "Decide on a different method of distribution with the copyright holder",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "RESTRICTION"
-                            }
-                        ]
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the code as it was obtained",
-                            "_action_uri": "http://open-license.hitachi.com/actions/10",
-                            "_action_id": "actions/10",
-                            "_action_name": "Distribute the obtained object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the fetched binaries as they are",
-                            "_action_uri": "http://open-license.hitachi.com/actions/11",
-                            "_action_id": "actions/11",
-                            "_action_name": "Distribute the fetched binaries"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/13",
-                            "_action_id": "actions/13",
-                            "_action_name": "Distribute the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/14",
-                            "_action_id": "actions/14",
-                            "_action_name": "Distribute the generated binaries from modified source code"
-                        }
-                    ]
-                }
-            ],
-            "_license_id": "licenses/2",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/2",
-            "_license_name": "Ruby License (1.9.2 and earlier)",
-            "_license_summary": "",
-            "_license_content": "Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.jp>.\r\nYou can redistribute it and/or modify it under either the terms of the GPL\r\nversion 2 (see the file GPL), or the conditions below:\r\n\r\n  1. You may make and give away verbatim copies of the source form of the\r\n     software without restriction, provided that you duplicate all of the\r\n     original copyright notices and associated disclaimers.\r\n\r\n  2. You may modify your copy of the software in any way, provided that\r\n     you do at least ONE of the following:\r\n\r\n       a) place your modifications in the Public Domain or otherwise\r\n          make them Freely Available, such as by posting said\r\n\t  modifications to Usenet or an equivalent medium, or by allowing\r\n\t  the author to include your modifications in the software.\r\n\r\n       b) use the modified software only within your corporation or\r\n          organization.\r\n\r\n       c) give non-standard binaries non-standard names, with\r\n          instructions on where to get the original software distribution.\r\n\r\n       d) make other distribution arrangements with the author.\r\n\r\n  3. You may distribute the software in object code or binary form,\r\n     provided that you do at least ONE of the following:\r\n\r\n       a) distribute the binaries and library files of the software,\r\n\t  together with instructions (in the manual page or equivalent)\r\n\t  on where to get the original distribution.\r\n\r\n       b) accompany the distribution with the machine-readable source of\r\n\t  the software.\r\n\r\n       c) give non-standard binaries non-standard names, with\r\n          instructions on where to get the original software distribution.\r\n\r\n       d) make other distribution arrangements with the author.\r\n\r\n  4. You may modify and include the part of the software into any other\r\n     software (possibly commercial).  But some files in the distribution\r\n     are not written by the author, so that they are not under these terms.\r\n\r\n     For the list of those files and their copying conditions, see the\r\n     file LEGAL.\r\n\r\n  5. The scripts and library files supplied as input to or produced as \r\n     output from the software do not automatically fall under the\r\n     copyright of the software, but belong to whomever generated them, \r\n     and may be sold commercially, and may be aggregated with this\r\n     software.\r\n\r\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\r\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\r\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\r\n     PURPOSE.\r\n",
-            "_license_notices": [
+            "summary": "",
+            "notices": [
                 {
                     "_notice_description": "There is no guarantee.",
                     "_notice_content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
@@ -565,9 +318,182 @@ Policy]
                     "_notice_id": "notices/318"
                 }
             ],
-            "_license_description": "",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/2",
+            "content": "Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.jp>.\r\nYou can redistribute it and/or modify it under either the terms of the GPL\r\nversion 2 (see the file GPL), or the conditions below:\r\n\r\n  1. You may make and give away verbatim copies of the source form of the\r\n     software without restriction, provided that you duplicate all of the\r\n     original copyright notices and associated disclaimers.\r\n\r\n  2. You may modify your copy of the software in any way, provided that\r\n     you do at least ONE of the following:\r\n\r\n       a) place your modifications in the Public Domain or otherwise\r\n          make them Freely Available, such as by posting said\r\n\t  modifications to Usenet or an equivalent medium, or by allowing\r\n\t  the author to include your modifications in the software.\r\n\r\n       b) use the modified software only within your corporation or\r\n          organization.\r\n\r\n       c) give non-standard binaries non-standard names, with\r\n          instructions on where to get the original software distribution.\r\n\r\n       d) make other distribution arrangements with the author.\r\n\r\n  3. You may distribute the software in object code or binary form,\r\n     provided that you do at least ONE of the following:\r\n\r\n       a) distribute the binaries and library files of the software,\r\n\t  together with instructions (in the manual page or equivalent)\r\n\t  on where to get the original distribution.\r\n\r\n       b) accompany the distribution with the machine-readable source of\r\n\t  the software.\r\n\r\n       c) give non-standard binaries non-standard names, with\r\n          instructions on where to get the original software distribution.\r\n\r\n       d) make other distribution arrangements with the author.\r\n\r\n  4. You may modify and include the part of the software into any other\r\n     software (possibly commercial).  But some files in the distribution\r\n     are not written by the author, so that they are not under these terms.\r\n\r\n     For the list of those files and their copying conditions, see the\r\n     file LEGAL.\r\n\r\n  5. The scripts and library files supplied as input to or produced as \r\n     output from the software do not automatically fall under the\r\n     copyright of the software, but belong to whomever generated them, \r\n     and may be sold commercially, and may be aggregated with this\r\n     software.\r\n\r\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\r\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\r\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\r\n     PURPOSE.\r\n",
+            "name": "Ruby License (1.9.2 and earlier)",
+            "permissions": [
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/1",
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "_id": "actions/4",
+                            "name": "Using Modified Source Code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/5",
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "_id": "actions/6",
+                            "name": "Use the retrieved binaries",
+                            "description": "Use the fetched binary as it is."
+                        },
+                        {
+                            "_id": "actions/7",
+                            "name": "Use the object code generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/8",
+                            "name": "Use binaries generated from modified source code",
+                            "description": ""
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
+                },
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/9",
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        }
+                    ],
+                    "conditions": {
+                        "_id": "conditions/300",
+                        "name": "Include the original copyright notice and associated disclaimer in the software",
+                        "type": "OBLIGATION",
+                        "description": ""
+                    },
+                    "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
+                },
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/3",
+                            "name": "Modify the obtained source code.",
+                            "description": ""
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "OR": [
+                                    {
+                                        "_id": "conditions/301",
+                                        "name": "You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.",
+                                        "type": "OBLIGATION",
+                                        "description": ""
+                                    },
+                                    {
+                                        "_id": "conditions/289",
+                                        "name": "Use only in your own corporation or organization.",
+                                        "type": "RESTRICTION",
+                                        "description": ""
+                                    },
+                                    {
+                                        "AND": [
+                                            {
+                                                "_id": "conditions/302",
+                                                "name": "Giving non-standard binaries a different name than the standard version of the binary",
+                                                "type": "RESTRICTION",
+                                                "description": ""
+                                            },
+                                            {
+                                                "_id": "conditions/264",
+                                                "name": "Pass information on where the original software was obtained",
+                                                "type": "OBLIGATION",
+                                                "description": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "_id": "conditions/292",
+                                        "name": "Decide on a different method of distribution with the copyright holder",
+                                        "type": "RESTRICTION",
+                                        "description": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
+                },
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/10",
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "_id": "actions/11",
+                            "name": "Distribute the fetched binaries",
+                            "description": "Redistribute the fetched binaries as they are"
+                        },
+                        {
+                            "_id": "actions/13",
+                            "name": "Distribute the object code generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/14",
+                            "name": "Distribute the generated binaries from modified source code",
+                            "description": ""
+                        }
+                    ],
+                    "conditions": {
+                        "OR": [
+                            {
+                                "_id": "conditions/264",
+                                "name": "Pass information on where the original software was obtained",
+                                "type": "OBLIGATION",
+                                "description": ""
+                            },
+                            {
+                                "_id": "conditions/21",
+                                "name": "Attach the source code corresponding to the software in question.",
+                                "type": "OBLIGATION",
+                                "description": ""
+                            },
+                            {
+                                "AND": [
+                                    {
+                                        "_id": "conditions/302",
+                                        "name": "Giving non-standard binaries a different name than the standard version of the binary",
+                                        "type": "RESTRICTION",
+                                        "description": ""
+                                    },
+                                    {
+                                        "_id": "conditions/264",
+                                        "name": "Pass information on where the original software was obtained",
+                                        "type": "OBLIGATION",
+                                        "description": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "_id": "conditions/292",
+                                "name": "Decide on a different method of distribution with the copyright holder",
+                                "type": "RESTRICTION",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    "description": "The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file."
+                }
+            ],
             "_implications": {
                 "__impliedNames": [
                     "Ruby License (1.9.2 and earlier)"
@@ -579,7 +505,8 @@ Policy]
                         "http://open-license.hitachi.com/licenses/2"
                     ]
                 ]
-            }
+            },
+            "description": ""
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",

@@ -186,218 +186,8 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/319",
-                "_license_permissions": [
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
-                        "_permission_conditionHead": null,
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched code as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/1",
-                                "_action_id": "actions/1",
-                                "_action_name": "Use the obtained source code without modification"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/3",
-                                "_action_id": "actions/3",
-                                "_action_name": "Modify the obtained source code."
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/4",
-                                "_action_id": "actions/4",
-                                "_action_name": "Using Modified Source Code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched binary as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/6",
-                                "_action_id": "actions/6",
-                                "_action_name": "Use the retrieved binaries"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/8",
-                                "_action_id": "actions/8",
-                                "_action_name": "Use binaries generated from modified source code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/90",
-                                "_action_id": "actions/90",
-                                "_action_name": "Publish the modified source code."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                            "_condition_id": "conditions/1",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the code as it was obtained",
-                                "_action_uri": "http://open-license.hitachi.com/actions/9",
-                                "_action_id": "actions/9",
-                                "_action_name": "Distribute the obtained source code without modification"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/12",
-                                "_action_id": "actions/12",
-                                "_action_name": "Distribution of Modified Source Code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/19",
-                                "_action_id": "actions/19",
-                                "_action_name": "Sublicense the acquired source code."
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/25",
-                                "_action_id": "actions/25",
-                                "_action_name": "Sublicensing Modified Source Code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                            "_condition_id": "conditions/2",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the fetched binaries as they are",
-                                "_action_uri": "http://open-license.hitachi.com/actions/11",
-                                "_action_id": "actions/11",
-                                "_action_name": "Distribute the fetched binaries"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/14",
-                                "_action_id": "actions/14",
-                                "_action_name": "Distribute the generated binaries from modified source code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/33",
-                                "_action_id": "actions/33",
-                                "_action_name": "Sublicense the acquired binaries"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/34",
-                                "_action_id": "actions/34",
-                                "_action_name": "Sublicense the generated binaries from modified source code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/35",
-                                "_action_id": "actions/35",
-                                "_action_name": "Selling Software"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                            "_condition_id": "conditions/13",
-                            "_condition_name": "Acknowledgements",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/32",
-                                "_action_id": "actions/32",
-                                "_action_name": "Include end-user documentation in the distribution"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc.",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                            "_condition_id": "conditions/3",
-                            "_condition_name": "Get special permission in writing.",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "REQUISITE"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/154",
-                                "_action_id": "actions/154",
-                                "_action_name": "Use the copyright holder's name in software promotions and advertisements"
-                            }
-                        ]
-                    }
-                ],
-                "_license_id": "licenses/319",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/319",
-                "_license_name": "XFree86 1.1 License",
-                "_license_summary": "",
-                "_license_content": "Version 1.1 of XFree86Â® Project Licence.\r\n\r\nCopyright (C) 1994-2004 The XFree86 Project, Inc.\r\nAll rights reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\r\n\r\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution, and in the same place and form as other copyright, license and disclaimer information.\r\n\r\n3. The end-user documentation included with the redistribution, if any, must include the following acknowledgment: \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in the same place and form as other third-party acknowledgments. Alternately, this acknowledgment may appear in the software itself, in the same form and location as other such third-party acknowledgments.\r\n\r\n4. Except as contained in this notice, the name of The XFree86 Project, Inc shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from The XFree86 Project, Inc.\r\n\r\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86 PROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                "_license_notices": [
+                "summary": "",
+                "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
                         "_notice_content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
@@ -415,9 +205,151 @@ Raw Data
                         "_notice_id": "notices/6"
                     }
                 ],
-                "_license_description": "",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/319",
+                "content": "Version 1.1 of XFree86Â® Project Licence.\r\n\r\nCopyright (C) 1994-2004 The XFree86 Project, Inc.\r\nAll rights reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n\r\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\r\n\r\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution, and in the same place and form as other copyright, license and disclaimer information.\r\n\r\n3. The end-user documentation included with the redistribution, if any, must include the following acknowledgment: \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in the same place and form as other third-party acknowledgments. Alternately, this acknowledgment may appear in the software itself, in the same form and location as other such third-party acknowledgments.\r\n\r\n4. Except as contained in this notice, the name of The XFree86 Project, Inc shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from The XFree86 Project, Inc.\r\n\r\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86 PROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "name": "XFree86 1.1 License",
+                "permissions": [
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/1",
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "_id": "actions/3",
+                                "name": "Modify the obtained source code.",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/4",
+                                "name": "Using Modified Source Code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/6",
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "_id": "actions/8",
+                                "name": "Use binaries generated from modified source code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/90",
+                                "name": "Publish the modified source code.",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": null,
+                        "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/9",
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "_id": "actions/12",
+                                "name": "Distribution of Modified Source Code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/19",
+                                "name": "Sublicense the acquired source code.",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "_id": "actions/25",
+                                "name": "Sublicensing Modified Source Code",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/1",
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/11",
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "_id": "actions/14",
+                                "name": "Distribute the generated binaries from modified source code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/33",
+                                "name": "Sublicense the acquired binaries",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "_id": "actions/34",
+                                "name": "Sublicense the generated binaries from modified source code",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "_id": "actions/35",
+                                "name": "Selling Software",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/2",
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": "Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/32",
+                                "name": "Include end-user documentation in the distribution",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/13",
+                            "name": "Acknowledgements",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/154",
+                                "name": "Use the copyright holder's name in software promotions and advertisements",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/3",
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE",
+                            "description": ""
+                        },
+                        "description": "If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc."
+                    }
+                ],
                 "_implications": {
                     "__impliedNames": [
                         "XFree86 1.1 License"
@@ -429,7 +361,8 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/319"
                         ]
                     ]
-                }
+                },
+                "description": ""
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

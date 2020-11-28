@@ -272,413 +272,8 @@ open-license]] (CDLA-Permissive-1.0))
               }
           },
           "Hitachi open-license": {
-              "_license_uri": "http://open-license.hitachi.com/licenses/873",
-              "_license_permissions": [
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                  "_condition_id": "conditions/6",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                  "_condition_id": "conditions/7",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/51",
-                              "_action_id": "actions/51",
-                              "_action_name": "Use the obtained source without modification."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/52",
-                              "_action_id": "actions/52",
-                              "_action_name": "Modify the fetched source"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/53",
-                              "_action_id": "actions/53",
-                              "_action_name": "Use Modified Source"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Use the acquired object as it is. Objects are files that result from mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/54",
-                              "_action_id": "actions/54",
-                              "_action_name": "Use the fetched object"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/55",
-                              "_action_id": "actions/55",
-                              "_action_name": "Using objects generated from modified sources"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/56",
-                              "_action_id": "actions/56",
-                              "_action_name": "Display the acquired source publicly."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/57",
-                              "_action_id": "actions/57",
-                              "_action_name": "Publicly execute the acquired source."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/59",
-                              "_action_id": "actions/59",
-                              "_action_name": "Display the fetched object publicly"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/60",
-                              "_action_id": "actions/60",
-                              "_action_name": "Publicly execute the fetched object"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/62",
-                              "_action_id": "actions/62",
-                              "_action_name": "Publicly display the altered source"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/63",
-                              "_action_id": "actions/63",
-                              "_action_name": "Run the modified source publicly."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/65",
-                              "_action_id": "actions/65",
-                              "_action_name": "Publicly display objects generated from modified sources"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/66",
-                              "_action_id": "actions/66",
-                              "_action_name": "Publicly execute objects generated from modified sources"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                  "_condition_id": "conditions/6",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                  "_condition_id": "conditions/7",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                  "_condition_id": "conditions/8",
-                                  "_condition_name": "Give you a copy of the relevant license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/58",
-                              "_action_id": "actions/58",
-                              "_action_name": "Sublicense the acquired source."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/61",
-                              "_action_id": "actions/61",
-                              "_action_name": "Sublicense the acquired objects"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Redistribute the source as is. Redistribute the source code as it was obtained.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/68",
-                              "_action_id": "actions/68",
-                              "_action_name": "Distribute the acquired source without modification"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Redistribute the acquired object as is. Objects are files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/69",
-                              "_action_id": "actions/69",
-                              "_action_name": "Distribute the fetched objects"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "A copyright notice for modifications may be added.",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                  "_condition_id": "conditions/6",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                  "_condition_id": "conditions/7",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                  "_condition_id": "conditions/8",
-                                  "_condition_name": "Give you a copy of the relevant license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/9",
-                                  "_condition_id": "conditions/9",
-                                  "_condition_name": "Indicate your changes in the file where you made them.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/10",
-                                  "_condition_id": "conditions/10",
-                                  "_condition_name": "Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute",
-                                  "_condition_description": "However, notices that do not relate to derivative works may be excluded.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/31",
-                                  "_condition_id": "conditions/31",
-                                  "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
-                                  "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/64",
-                              "_action_id": "actions/64",
-                              "_action_name": "Sublicensing Modified Source"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/73",
-                              "_action_id": "actions/73",
-                              "_action_name": "Distribution of Modified Source"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "A copyright notice for modifications may be added.",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/6",
-                                  "_condition_id": "conditions/6",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/7",
-                                  "_condition_id": "conditions/7",
-                                  "_condition_name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
-                                  "_condition_description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                  "_condition_id": "conditions/8",
-                                  "_condition_name": "Give you a copy of the relevant license.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/9",
-                                  "_condition_id": "conditions/9",
-                                  "_condition_name": "Indicate your changes in the file where you made them.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/31",
-                                  "_condition_id": "conditions/31",
-                                  "_condition_name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
-                                  "_condition_description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the party that granted the license.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/67",
-                              "_action_id": "actions/67",
-                              "_action_name": "Sublicense objects generated from modified sources"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.",
-                              "_action_uri": "http://open-license.hitachi.com/actions/75",
-                              "_action_id": "actions/75",
-                              "_action_name": "Distribute objects generated from the modified source"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "",
-                      "_permission_conditionHead": {
-                          "_condition_uri": "http://open-license.hitachi.com/conditions/14",
-                          "_condition_id": "conditions/14",
-                          "_condition_name": "I do so at my own risk.",
-                          "_condition_description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.",
-                          "_condition_schemaVersion": "0.1",
-                          "_condition_baseUri": "http://open-license.hitachi.com/",
-                          "_condition_conditionType": "OBLIGATION"
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/36",
-                              "_action_id": "actions/36",
-                              "_action_name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "",
-                      "_permission_conditionHead": {
-                          "_condition_uri": "http://open-license.hitachi.com/conditions/32",
-                          "_condition_id": "conditions/32",
-                          "_condition_name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
-                          "_condition_description": "",
-                          "_condition_schemaVersion": "0.1",
-                          "_condition_baseUri": "http://open-license.hitachi.com/",
-                          "_condition_conditionType": "RESTRICTION"
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/78",
-                              "_action_id": "actions/78",
-                              "_action_name": "Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications."
-                          }
-                      ]
-                  }
-              ],
-              "_license_id": "licenses/873",
-              "_sourceURL": "http://open-license.hitachi.com/licenses/873",
-              "_license_name": "ImageMagick License",
-              "_license_summary": "http://www.imagemagick.org/script/license.php",
-              "_license_content": "Before we get to the text of the license, lets just review what the license says in simple terms:\r\n\r\nIt allows you to:\r\n\r\n  ã»freely download and use ImageMagick software, in whole or in part, for personal, company internal, or commercial purposes;\r\n  ã»use ImageMagick software in packages or distributions that you create;\r\n  ã»link against a library under a different license;\r\n  ã»link code under a different license against a library under this license;\r\n  ã»merge code into a work under a different license;\r\n  ã»extend patent grants to any code using code under this license;\r\n  ã»and extend patent protection.\r\n\r\nIt forbids you to:\r\n\r\n  ã» redistribute any piece of ImageMagick-originated software without proper attribution;\r\n  ã» use any marks owned by ImageMagick Studio LLC in any way that might state or imply that ImageMagick Studio LLC endorses your distribution;\r\n  ã» use any marks owned by ImageMagick Studio LLC in any way that might state or imply that you created the ImageMagick software in question.\r\n\r\nIt requires you to:\r\n\r\n  ã»include a copy of the license in any redistribution you may make that includes ImageMagick software;\r\n  ã»provide clear attribution to ImageMagick Studio LLC for any distributions that include ImageMagick software.\r\n\r\nIt does not require you to:\r\n\r\n  ã»include the source of the ImageMagick software itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it;\r\n  ã»submit changes that you make to the software back to the ImageMagick Studio LLC (though such feedback is encouraged).\r\n\r\nA few other clarifications include:\r\n\r\n  ã»ImageMagick is freely available without charge;\r\n  ã»you may include ImageMagick on a DVD as long as you comply with the terms of the license;\r\n  ã»you can give modified code away for free or sell it under the terms of the ImageMagick license or distribute the result under a different license, but you need to acknowledge the use of the ImageMagick software;\r\n  ã»the license is compatible with the GPL V3.\r\n  ã»when exporting the ImageMagick software, review its export classification.\r\n\r\n\r\nTerms and Conditions for Use, Reproduction, and Distribution\r\n\r\nThe legally binding and authoritative terms and conditions for use, reproduction, and distribution of ImageMagick follow:\r\n\r\nCopyright 1999-2016 ImageMagick Studio LLC, a non-profit organization dedicated to making software imaging solutions freely available.\r\n\r\n1. Definitions.\r\n\r\nLicense shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.\r\n\r\nLicensor shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.\r\n\r\nLegal Entity shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, control means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.\r\n\r\nYou (or Your) shall mean an individual or Legal Entity exercising permissions granted by this License.\r\n\r\nSource form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.\r\n\r\nObject form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.\r\n\r\nWork shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).\r\n\r\nDerivative Works shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.\r\n\r\nContribution shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, \"submitted\" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as Not a Contribution.\r\n\r\nContributor shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.\r\n\r\n2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.\r\n\r\n3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted.  If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed. \r\n\r\n4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:\r\n\r\na.\tYou must give any other recipients of the Work or Derivative Works a copy of this License; and\r\n\r\nb.\tYou must cause any modified files to carry prominent notices stating that You changed the files; and\r\n\r\nc.\tYou must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and\r\n\r\nd.\tIf the Work includes a \"NOTICE\" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.\r\n\r\nYou may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.\r\n\r\n5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.\r\n\r\n6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.\r\n\r\n7. Disclaimer of Warranty.  Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.\r\n\r\n8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.\r\n\r\n9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.\r\n\r\nHow to Apply the License to your Work\r\n\r\nTo apply the ImageMagick License to your work, attach the following boilerplate notice, with the fields enclosed by brackets \"[]\" replaced with your own identifying information (don't include the brackets). The text should be enclosed in the appropriate comment syntax for the file format.  We also recommend that a file or class name and description of purpose be included on the same \"printed page\" as the copyright notice for easier identification within third-party archives.\r\n\r\n\r\n   Copyright [yyyy] [name of copyright owner]\r\n\r\n   Licensed under the ImageMagick License (the \"License\"); you may not use\r\n   this file except in compliance with the License.  You may obtain a copy\r\n   of the License at\r\n\r\n     http://www.imagemagick.org/script/license.php\r\n\r\n   Unless required by applicable law or agreed to in writing, software\r\n   distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\r\n   WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\r\n   License for the specific language governing permissions and limitations\r\n   under the License.",
-              "_license_notices": [
+              "summary": "http://www.imagemagick.org/script/license.php",
+              "notices": [
                   {
                       "_notice_description": "",
                       "_notice_content": "Except for necessary, reasonable, and customary uses, such as describing the source of the work, the trade name, trademark, service mark, or product name of the copyright owner, or a person authorized by the copyright owner to grant such license, may not be used.",
@@ -712,9 +307,286 @@ open-license]] (CDLA-Permissive-1.0))
                       "_notice_id": "notices/431"
                   }
               ],
-              "_license_description": "Source is software source code, documentation sources, configuration files, and other files suitable for making changes. Object - a file resulting from a mechanical transformation of the source, such as compiled object code, generated documentation, or other media conversions. Sublicense\" means that the person who has been granted this license re-grants the license granted to a third party. A legal entity is an association of actors and all others who control them, are controlled by them, or are under their common control. The term \"control\" in this definition refers to one of the following (1) directly or indirectly direct or indirectly direct and manage the corporation by contract or other means; (2) own 50% or more of the corporation's stock; or (3) have a beneficial ownership interest in the corporation.",
-              "_license_baseUri": "http://open-license.hitachi.com/",
-              "_license_schemaVersion": "0.1",
+              "_sourceURL": "http://open-license.hitachi.com/licenses/873",
+              "content": "Before we get to the text of the license, lets just review what the license says in simple terms:\r\n\r\nIt allows you to:\r\n\r\n  ã»freely download and use ImageMagick software, in whole or in part, for personal, company internal, or commercial purposes;\r\n  ã»use ImageMagick software in packages or distributions that you create;\r\n  ã»link against a library under a different license;\r\n  ã»link code under a different license against a library under this license;\r\n  ã»merge code into a work under a different license;\r\n  ã»extend patent grants to any code using code under this license;\r\n  ã»and extend patent protection.\r\n\r\nIt forbids you to:\r\n\r\n  ã» redistribute any piece of ImageMagick-originated software without proper attribution;\r\n  ã» use any marks owned by ImageMagick Studio LLC in any way that might state or imply that ImageMagick Studio LLC endorses your distribution;\r\n  ã» use any marks owned by ImageMagick Studio LLC in any way that might state or imply that you created the ImageMagick software in question.\r\n\r\nIt requires you to:\r\n\r\n  ã»include a copy of the license in any redistribution you may make that includes ImageMagick software;\r\n  ã»provide clear attribution to ImageMagick Studio LLC for any distributions that include ImageMagick software.\r\n\r\nIt does not require you to:\r\n\r\n  ã»include the source of the ImageMagick software itself, or of any modifications you may have made to it, in any redistribution you may assemble that includes it;\r\n  ã»submit changes that you make to the software back to the ImageMagick Studio LLC (though such feedback is encouraged).\r\n\r\nA few other clarifications include:\r\n\r\n  ã»ImageMagick is freely available without charge;\r\n  ã»you may include ImageMagick on a DVD as long as you comply with the terms of the license;\r\n  ã»you can give modified code away for free or sell it under the terms of the ImageMagick license or distribute the result under a different license, but you need to acknowledge the use of the ImageMagick software;\r\n  ã»the license is compatible with the GPL V3.\r\n  ã»when exporting the ImageMagick software, review its export classification.\r\n\r\n\r\nTerms and Conditions for Use, Reproduction, and Distribution\r\n\r\nThe legally binding and authoritative terms and conditions for use, reproduction, and distribution of ImageMagick follow:\r\n\r\nCopyright 1999-2016 ImageMagick Studio LLC, a non-profit organization dedicated to making software imaging solutions freely available.\r\n\r\n1. Definitions.\r\n\r\nLicense shall mean the terms and conditions for use, reproduction, and distribution as defined by Sections 1 through 9 of this document.\r\n\r\nLicensor shall mean the copyright owner or entity authorized by the copyright owner that is granting the License.\r\n\r\nLegal Entity shall mean the union of the acting entity and all other entities that control, are controlled by, or are under common control with that entity. For the purposes of this definition, control means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.\r\n\r\nYou (or Your) shall mean an individual or Legal Entity exercising permissions granted by this License.\r\n\r\nSource form shall mean the preferred form for making modifications, including but not limited to software source code, documentation source, and configuration files.\r\n\r\nObject form shall mean any form resulting from mechanical transformation or translation of a Source form, including but not limited to compiled object code, generated documentation, and conversions to other media types.\r\n\r\nWork shall mean the work of authorship, whether in Source or Object form, made available under the License, as indicated by a copyright notice that is included in or attached to the work (an example is provided in the Appendix below).\r\n\r\nDerivative Works shall mean any work, whether in Source or Object form, that is based on (or derived from) the Work and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship. For the purposes of this License, Derivative Works shall not include works that remain separable from, or merely link (or bind by name) to the interfaces of, the Work and Derivative Works thereof.\r\n\r\nContribution shall mean any work of authorship, including the original version of the Work and any modifications or additions to that Work or Derivative Works thereof, that is intentionally submitted to Licensor for inclusion in the Work by the copyright owner or by an individual or Legal Entity authorized to submit on behalf of the copyright owner. For the purposes of this definition, \"submitted\" means any form of electronic, verbal, or written communication sent to the Licensor or its representatives, including but not limited to communication on electronic mailing lists, source code control systems, and issue tracking systems that are managed by, or on behalf of, the Licensor for the purpose of discussing and improving the Work, but excluding communication that is conspicuously marked or otherwise designated in writing by the copyright owner as Not a Contribution.\r\n\r\nContributor shall mean Licensor and any individual or Legal Entity on behalf of whom a Contribution has been received by Licensor and subsequently incorporated within the Work.\r\n\r\n2. Grant of Copyright License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, sublicense, and distribute the Work and such Derivative Works in Source or Object form.\r\n\r\n3. Grant of Patent License. Subject to the terms and conditions of this License, each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable patent license to make, have made, use, offer to sell, sell, import, and otherwise transfer the Work, where such license applies only to those patent claims licensable by such Contributor that are necessarily infringed by their Contribution(s) alone or by combination of their Contribution(s) with the Work to which such Contribution(s) was submitted.  If You institute patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Work or a Contribution incorporated within the Work constitutes direct or contributory patent infringement, then any patent licenses granted to You under this License for that Work shall terminate as of the date such litigation is filed. \r\n\r\n4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works thereof in any medium, with or without modifications, and in Source or Object form, provided that You meet the following conditions:\r\n\r\na.\tYou must give any other recipients of the Work or Derivative Works a copy of this License; and\r\n\r\nb.\tYou must cause any modified files to carry prominent notices stating that You changed the files; and\r\n\r\nc.\tYou must retain, in the Source form of any Derivative Works that You distribute, all copyright, patent, trademark, and attribution notices from the Source form of the Work, excluding those notices that do not pertain to any part of the Derivative Works; and\r\n\r\nd.\tIf the Work includes a \"NOTICE\" text file as part of its distribution, then any Derivative Works that You distribute must include a readable copy of the attribution notices contained within such NOTICE file, excluding those notices that do not pertain to any part of the Derivative Works, in at least one of the following places: within a NOTICE text file distributed as part of the Derivative Works; within the Source form or documentation, if provided along with the Derivative Works; or, within a display generated by the Derivative Works, if and wherever such third-party notices normally appear. The contents of the NOTICE file are for informational purposes only and do not modify the License. You may add Your own attribution notices within Derivative Works that You distribute, alongside or as an addendum to the NOTICE text from the Work, provided that such additional attribution notices cannot be construed as modifying the License.\r\n\r\nYou may add Your own copyright statement to Your modifications and may provide additional or different license terms and conditions for use, reproduction, or distribution of Your modifications, or for any such Derivative Works as a whole, provided Your use, reproduction, and distribution of the Work otherwise complies with the conditions stated in this License.\r\n\r\n5. Submission of Contributions. Unless You explicitly state otherwise, any Contribution intentionally submitted for inclusion in the Work by You to the Licensor shall be under the terms and conditions of this License, without any additional terms or conditions. Notwithstanding the above, nothing herein shall supersede or modify the terms of any separate license agreement you may have executed with Licensor regarding such Contributions.\r\n\r\n6. Trademarks. This License does not grant permission to use the trade names, trademarks, service marks, or product names of the Licensor, except as required for reasonable and customary use in describing the origin of the Work and reproducing the content of the NOTICE file.\r\n\r\n7. Disclaimer of Warranty.  Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an AS IS BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.\r\n\r\n8. Limitation of Liability. In no event and under no legal theory, whether in tort (including negligence), contract, or otherwise, unless required by applicable law (such as deliberate and grossly negligent acts) or agreed to in writing, shall any Contributor be liable to You for damages, including any direct, indirect, special, incidental, or consequential damages of any character arising as a result of this License or out of the use or inability to use the Work (including but not limited to damages for loss of goodwill, work stoppage, computer failure or malfunction, or any and all other commercial damages or losses), even if such Contributor has been advised of the possibility of such damages.\r\n\r\n9. Accepting Warranty or Additional Liability. While redistributing the Work or Derivative Works thereof, You may choose to offer, and charge a fee for, acceptance of support, warranty, indemnity, or other liability obligations and/or rights consistent with this License. However, in accepting such obligations, You may act only on Your own behalf and on Your sole responsibility, not on behalf of any other Contributor, and only if You agree to indemnify, defend, and hold each Contributor harmless for any liability incurred by, or claims asserted against, such Contributor by reason of your accepting any such warranty or additional liability.\r\n\r\nHow to Apply the License to your Work\r\n\r\nTo apply the ImageMagick License to your work, attach the following boilerplate notice, with the fields enclosed by brackets \"[]\" replaced with your own identifying information (don't include the brackets). The text should be enclosed in the appropriate comment syntax for the file format.  We also recommend that a file or class name and description of purpose be included on the same \"printed page\" as the copyright notice for easier identification within third-party archives.\r\n\r\n\r\n   Copyright [yyyy] [name of copyright owner]\r\n\r\n   Licensed under the ImageMagick License (the \"License\"); you may not use\r\n   this file except in compliance with the License.  You may obtain a copy\r\n   of the License at\r\n\r\n     http://www.imagemagick.org/script/license.php\r\n\r\n   Unless required by applicable law or agreed to in writing, software\r\n   distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT\r\n   WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the\r\n   License for the specific language governing permissions and limitations\r\n   under the License.",
+              "name": "ImageMagick License",
+              "permissions": [
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/51",
+                              "name": "Use the obtained source without modification.",
+                              "description": "The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/52",
+                              "name": "Modify the fetched source",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/53",
+                              "name": "Use Modified Source",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/54",
+                              "name": "Use the fetched object",
+                              "description": "Use the acquired object as it is. Objects are files that result from mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
+                          },
+                          {
+                              "_id": "actions/55",
+                              "name": "Using objects generated from modified sources",
+                              "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
+                          },
+                          {
+                              "_id": "actions/56",
+                              "name": "Display the acquired source publicly.",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/57",
+                              "name": "Publicly execute the acquired source.",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/59",
+                              "name": "Display the fetched object publicly",
+                              "description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
+                          },
+                          {
+                              "_id": "actions/60",
+                              "name": "Publicly execute the fetched object",
+                              "description": "Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
+                          },
+                          {
+                              "_id": "actions/62",
+                              "name": "Publicly display the altered source",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/63",
+                              "name": "Run the modified source publicly.",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          },
+                          {
+                              "_id": "actions/65",
+                              "name": "Publicly display objects generated from modified sources",
+                              "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
+                          },
+                          {
+                              "_id": "actions/66",
+                              "name": "Publicly execute objects generated from modified sources",
+                              "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/6",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/7",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
+                              }
+                          ]
+                      },
+                      "description": ""
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/58",
+                              "name": "Sublicense the acquired source.",
+                              "description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
+                          },
+                          {
+                              "_id": "actions/61",
+                              "name": "Sublicense the acquired objects",
+                              "description": "The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
+                          },
+                          {
+                              "_id": "actions/68",
+                              "name": "Distribute the acquired source without modification",
+                              "description": "Redistribute the source as is. Redistribute the source code as it was obtained."
+                          },
+                          {
+                              "_id": "actions/69",
+                              "name": "Distribute the fetched objects",
+                              "description": "Redistribute the acquired object as is. Objects are files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/6",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/7",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
+                              },
+                              {
+                                  "_id": "conditions/8",
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              }
+                          ]
+                      },
+                      "description": ""
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/64",
+                              "name": "Sublicensing Modified Source",
+                              "description": "The term \"source\" refers to software source code, document sources, configuration files and other files suitable for making changes. The term \"sublicense\" refers to the granting of a second license to a third party by the person to whom the license was granted."
+                          },
+                          {
+                              "_id": "actions/73",
+                              "name": "Distribution of Modified Source",
+                              "description": "Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/6",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/7",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
+                              },
+                              {
+                                  "_id": "conditions/8",
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/9",
+                                  "name": "Indicate your changes in the file where you made them.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/10",
+                                  "name": "Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute",
+                                  "type": "OBLIGATION",
+                                  "description": "However, notices that do not relate to derivative works may be excluded."
+                              },
+                              {
+                                  "_id": "conditions/31",
+                                  "name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
+                                  "type": "OBLIGATION",
+                                  "description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question."
+                              }
+                          ]
+                      },
+                      "description": "A copyright notice for modifications may be added."
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/67",
+                              "name": "Sublicense objects generated from modified sources",
+                              "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation and other media conversions. The term \"sublicense\" refers to the granting of a second license to a third party by the party that granted the license."
+                          },
+                          {
+                              "_id": "actions/75",
+                              "name": "Distribute objects generated from the modified source",
+                              "description": "Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term \"object\" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/6",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/7",
+                                  "name": "An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate."
+                              },
+                              {
+                                  "_id": "conditions/8",
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/9",
+                                  "name": "Indicate your changes in the file where you made them.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/31",
+                                  "name": "If the acquired software contains a text file equivalent to \"NOTICE\", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice.",
+                                  "type": "OBLIGATION",
+                                  "description": "(a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question."
+                              }
+                          ]
+                      },
+                      "description": "A copyright notice for modifications may be added."
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/36",
+                              "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": {
+                          "_id": "conditions/14",
+                          "name": "I do so at my own risk.",
+                          "type": "OBLIGATION",
+                          "description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage."
+                      },
+                      "description": ""
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/78",
+                              "name": "Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications.",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": {
+                          "_id": "conditions/32",
+                          "name": "Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.",
+                          "type": "RESTRICTION",
+                          "description": ""
+                      },
+                      "description": ""
+                  }
+              ],
               "_implications": {
                   "__impliedNames": [
                       "ImageMagick License"
@@ -726,7 +598,8 @@ open-license]] (CDLA-Permissive-1.0))
                           "http://open-license.hitachi.com/licenses/873"
                       ]
                   ]
-              }
+              },
+              "description": "Source is software source code, documentation sources, configuration files, and other files suitable for making changes. Object - a file resulting from a mechanical transformation of the source, such as compiled object code, generated documentation, or other media conversions. Sublicense\" means that the person who has been granted this license re-grants the license granted to a third party. A legal entity is an association of actors and all others who control them, are controlled by them, or are under their common control. The term \"control\" in this definition refers to one of the following (1) directly or indirectly direct or indirectly direct and manage the corporation by contract or other means; (2) own 50% or more of the corporation's stock; or (3) have a beneficial ownership interest in the corporation."
           },
           "BlueOak License List": {
               "BlueOakRating": "Silver",

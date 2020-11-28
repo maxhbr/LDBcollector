@@ -701,970 +701,8 @@ Raw Data
                 "oRatingState": null
             },
             "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/10",
-                "_license_permissions": [
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                            "_condition_id": "conditions/124",
-                            "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                            "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "RESTRICTION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched code as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/1",
-                                "_action_id": "actions/1",
-                                "_action_name": "Use the obtained source code without modification"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/4",
-                                "_action_id": "actions/4",
-                                "_action_name": "Using Modified Source Code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched code as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/5",
-                                "_action_id": "actions/5",
-                                "_action_name": "Use the retrieved object code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/7",
-                                "_action_id": "actions/7",
-                                "_action_name": "Use the object code generated from the modified source code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/104",
-                                    "_condition_id": "conditions/104",
-                                    "_condition_name": "Distribution of the parts of the work not covered by your copyright is subject to this license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/105",
-                                    "_condition_id": "conditions/105",
-                                    "_condition_name": "Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/106",
-                                    "_condition_id": "conditions/106",
-                                    "_condition_name": "You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/140",
-                                "_action_id": "actions/140",
-                                "_action_name": "Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/141",
-                                "_action_id": "actions/141",
-                                "_action_name": "Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the code as it was obtained",
-                                "_action_uri": "http://open-license.hitachi.com/actions/9",
-                                "_action_id": "actions/9",
-                                "_action_name": "Distribute the obtained source code without modification"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/110",
-                                    "_condition_id": "conditions/110",
-                                    "_condition_name": "Indicate your changes and the date of the change.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/39",
-                                    "_condition_id": "conditions/39",
-                                    "_condition_name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "_condition_description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/125",
-                                    "_condition_id": "conditions/125",
-                                    "_condition_name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
-                                    "_condition_description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/3",
-                                "_action_id": "actions/3",
-                                "_action_name": "Modify the obtained source code."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute the GNU General Public License Version 3 with the software, provided that you keep a copy of this license and any additional terms added to it. A library is anything other than an application or software that combines or links an application with a library. Applications are software that uses the interfaces provided by the library. Applications refer to software that uses the interfaces provided by the library, except software that is created by modifying the library. The definition of a subclass of a class defined by the library is considered to be one of the uses of the interface provided by the library. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/110",
-                                    "_condition_id": "conditions/110",
-                                    "_condition_name": "Indicate your changes and the date of the change.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/111",
-                                    "_condition_id": "conditions/111",
-                                    "_condition_name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
-                                    "_condition_description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/39",
-                                    "_condition_id": "conditions/39",
-                                    "_condition_name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "_condition_description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/125",
-                                    "_condition_id": "conditions/125",
-                                    "_condition_name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
-                                    "_condition_description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "OR": [
-                                        {
-                                            "AND": [
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/127",
-                                                    "_condition_id": "conditions/127",
-                                                    "_condition_name": "Distributed in accordance with this license",
-                                                    "_condition_description": "Subject to this license and the GNU General Public License Version 3.",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "OBLIGATION"
-                                                },
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/43",
-                                                    "_condition_id": "conditions/43",
-                                                    "_condition_name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
-                                                    "_condition_description": "",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "REQUISITE"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/126",
-                                            "_condition_id": "conditions/126",
-                                            "_condition_name": "Distributed under the GNU General Public License Version 3",
-                                            "_condition_description": "No additional terms of this license applicable to such copies of the software are allowed.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/12",
-                                "_action_id": "actions/12",
-                                "_action_name": "Distribution of Modified Source Code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/111",
-                                    "_condition_id": "conditions/111",
-                                    "_condition_name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
-                                    "_condition_description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "OR": [
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                            "_condition_id": "conditions/21",
-                                            "_condition_name": "Attach the source code corresponding to the software in question.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/112",
-                                            "_condition_id": "conditions/112",
-                                            "_condition_name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/113",
-                                            "_condition_id": "conditions/113",
-                                            "_condition_name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/41",
-                                            "_condition_id": "conditions/41",
-                                            "_condition_name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/114",
-                                            "_condition_id": "conditions/114",
-                                            "_condition_name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/115",
-                                    "_condition_id": "conditions/115",
-                                    "_condition_name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
-                                    "_condition_description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the code as it was obtained",
-                                "_action_uri": "http://open-license.hitachi.com/actions/10",
-                                "_action_id": "actions/10",
-                                "_action_name": "Distribute the obtained object code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy the GNU General Public License Version 3 and any additional terms added to this license and others, provided that you keep intact all copyright and other proprietary notices that apply. A library is anything other than an application or software that combines or links an application with a library. Applications are software that uses the interfaces provided by the library. Applications refer to software that uses the interfaces provided by the library, except software that is created by modifying the library. The definition of a subclass of a class defined by the library is considered to be one of the uses of the interface provided by the library. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/125",
-                                    "_condition_id": "conditions/125",
-                                    "_condition_name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
-                                    "_condition_description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/115",
-                                    "_condition_id": "conditions/115",
-                                    "_condition_name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
-                                    "_condition_description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "OR": [
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/21",
-                                            "_condition_id": "conditions/21",
-                                            "_condition_name": "Attach the source code corresponding to the software in question.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/112",
-                                            "_condition_id": "conditions/112",
-                                            "_condition_name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/113",
-                                            "_condition_id": "conditions/113",
-                                            "_condition_name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/41",
-                                            "_condition_id": "conditions/41",
-                                            "_condition_name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/114",
-                                            "_condition_id": "conditions/114",
-                                            "_condition_name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/39",
-                                    "_condition_id": "conditions/39",
-                                    "_condition_name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
-                                    "_condition_description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/111",
-                                    "_condition_id": "conditions/111",
-                                    "_condition_name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
-                                    "_condition_description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/110",
-                                    "_condition_id": "conditions/110",
-                                    "_condition_name": "Indicate your changes and the date of the change.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "OR": [
-                                        {
-                                            "AND": [
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/127",
-                                                    "_condition_id": "conditions/127",
-                                                    "_condition_name": "Distributed in accordance with this license",
-                                                    "_condition_description": "Subject to this license and the GNU General Public License Version 3.",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "OBLIGATION"
-                                                },
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/43",
-                                                    "_condition_id": "conditions/43",
-                                                    "_condition_name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
-                                                    "_condition_description": "",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "REQUISITE"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/126",
-                                            "_condition_id": "conditions/126",
-                                            "_condition_name": "Distributed under the GNU General Public License Version 3",
-                                            "_condition_description": "No additional terms of this license applicable to such copies of the software are allowed.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        }
-                                    ]
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/13",
-                                "_action_id": "actions/13",
-                                "_action_name": "Distribute the object code generated from the modified source code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "This additional license provision may be a license document independent of the GNU General Public License Version 3, or it may be written as an exception to the GNU General Public License Version 3.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "OR": [
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/116",
-                                            "_condition_id": "conditions/116",
-                                            "_condition_name": "disclaiming any warranty or limiting liability that differs from the terms of this license.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/117",
-                                            "_condition_id": "conditions/117",
-                                            "_condition_name": "require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/118",
-                                            "_condition_id": "conditions/118",
-                                            "_condition_name": "Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/119",
-                                            "_condition_id": "conditions/119",
-                                            "_condition_name": "Restrict the use of the name of the licensor or author of the section you add for promotional purposes",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/122",
-                                            "_condition_id": "conditions/122",
-                                            "_condition_name": "To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/120",
-                                            "_condition_id": "conditions/120",
-                                            "_condition_name": "Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her",
-                                            "_condition_description": "",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "RESTRICTION"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/123",
-                                    "_condition_id": "conditions/123",
-                                    "_condition_name": "Include these license terms, or a reference to them in the file to which these additional license terms apply",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/142",
-                                "_action_id": "actions/142",
-                                "_action_name": "Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. The GNU General Public License Version 3 gives you a copy of this license and the GNU General Public License Version 3 along with the object code. You may copy and distribute a copy of this license and the GNU General Public License Version 3 with the object code, provided that you keep intact all copyright and other proprietary notices that are added to this license and any additional terms. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/25",
-                                    "_condition_id": "conditions/25",
-                                    "_condition_name": "Indicate that the library is being used",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "This does not apply if the code or data that the application takes in is a numerical parameter, a data structure layout or accessor, a small macro, or an in-line function or template (less than 10 lines in length).",
-                                "_action_uri": "http://open-license.hitachi.com/actions/143",
-                                "_action_id": "actions/143",
-                                "_action_name": "Distribute the code in the library's header files and applications that include various data as object code under the conditions of your choosing."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "A library is something other than an application or software that combines or links an application with a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. This license and a copy of the GNU General Public License Version 3 go with the distribution. You must keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. Source code means the source code for generating, installing and executing executable object code, all of the source code necessary to modify the object code, and the scripts that control these operations. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may charge a fee for the physical act of transferring a copy; you may provide support or warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/24",
-                                    "_condition_id": "conditions/24",
-                                    "_condition_name": "Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "REQUISITE"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/25",
-                                    "_condition_id": "conditions/25",
-                                    "_condition_name": "Indicate that the library is being used",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                    "_condition_id": "conditions/1",
-                                    "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/8",
-                                    "_condition_id": "conditions/8",
-                                    "_condition_name": "Give you a copy of the relevant license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/47",
-                                    "_condition_id": "conditions/47",
-                                    "_condition_name": "If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "OR": [
-                                        {
-                                            "AND": [
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/50",
-                                                    "_condition_id": "conditions/50",
-                                                    "_condition_name": "Attach the source code corresponding to the library",
-                                                    "_condition_description": "",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "OBLIGATION"
-                                                },
-                                                {
-                                                    "_condition_uri": "http://open-license.hitachi.com/conditions/128",
-                                                    "_condition_id": "conditions/128",
-                                                    "_condition_name": "Pass information that can be used to modify the library and put it into a distribution format.",
-                                                    "_condition_description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The term \"application\" refers to software that uses the interfaces provided by the library, except for software that has been modified from the library. Distributions are software that combines or links libraries and applications. Source code means the source code to create, install, and execute executable object code, as well as any modifications to the object code necessary to create, install, and execute the object code. All of the source code and the scripts that control these tasks.",
-                                                    "_condition_schemaVersion": "0.1",
-                                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                                    "_condition_conditionType": "OBLIGATION"
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/129",
-                                            "_condition_id": "conditions/129",
-                                            "_condition_name": "Provide the one holding the distribution, in exchange for a fee not to exceed the physical cost of providing it, the source code corresponding to the library and the information that can be used to modify the library into the form of the distribution on a physical medium for at least three years, or Pass a valid written statement for a period of time during the provision of repair parts or customer support for the model of the product in which it is incorporated, whichever is longer",
-                                            "_condition_description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/130",
-                                            "_condition_id": "conditions/130",
-                                            "_condition_name": "provide free of charge to the one holding the distribution from a network server with the source code corresponding to the library and information that allows the library to be modified into the form of the distribution, for at least three years, or to provide repair parts for the model of the product in which the distribution is embedded, or Pass a valid written statement for the duration of providing customer support, whichever is longer",
-                                            "_condition_description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/131",
-                                            "_condition_id": "conditions/131",
-                                            "_condition_name": "Make the distribution, the source code corresponding to the library and the information that can be modified to form the distribution, available for download from the same place with equivalent access.",
-                                            "_condition_description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/132",
-                                            "_condition_id": "conditions/132",
-                                            "_condition_name": "If peer-to-peer transmission is used, notify the other peers of the distribution, the corresponding source code for the library, and the location where the information that allows the library to be modified to form the distribution is available free of charge.",
-                                            "_condition_description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        },
-                                        {
-                                            "_condition_uri": "http://open-license.hitachi.com/conditions/28",
-                                            "_condition_id": "conditions/28",
-                                            "_condition_name": "Use an appropriate shared library mechanism to link with the library in question",
-                                            "_condition_description": "A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.",
-                                            "_condition_schemaVersion": "0.1",
-                                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                                            "_condition_conditionType": "OBLIGATION"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/133",
-                                    "_condition_id": "conditions/133",
-                                    "_condition_name": "In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format.",
-                                    "_condition_description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: â Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "The generated work contains a library or part of a library",
-                                "_action_uri": "http://open-license.hitachi.com/actions/43",
-                                "_action_id": "actions/43",
-                                "_action_name": "Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing."
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. In this document, \"application\" means software that uses an interface provided by the library, except software that has been modified from the library. This license gives you the right to make copies of the library under the terms of this license, provided that you do not transfer the physical act of transferring the copies. You may charge a fee for the physical act of transferring a copy; you may not charge a fee in exchange for support or services. You may charge a fee for the physical act of transferring a copy; you may offer support and warranty in exchange for a fee.",
-                        "_permission_conditionHead": {
-                            "AND": [
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/124",
-                                    "_condition_id": "conditions/124",
-                                    "_condition_name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
-                                    "_condition_description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "RESTRICTION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/29",
-                                    "_condition_id": "conditions/29",
-                                    "_condition_name": "Pass an independent copy of the library in accordance with that license",
-                                    "_condition_description": "Pass a copy of the entire library in question",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/25",
-                                    "_condition_id": "conditions/25",
-                                    "_condition_name": "Indicate that the library is being used",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                },
-                                {
-                                    "_condition_uri": "http://open-license.hitachi.com/conditions/49",
-                                    "_condition_id": "conditions/49",
-                                    "_condition_name": "Indicate where the library is located in a stand-alone form",
-                                    "_condition_description": "",
-                                    "_condition_schemaVersion": "0.1",
-                                    "_condition_baseUri": "http://open-license.hitachi.com/",
-                                    "_condition_conditionType": "OBLIGATION"
-                                }
-                            ]
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/44",
-                                "_action_id": "actions/44",
-                                "_action_name": "Distribute portions of a library together with libraries not covered by the license in a single library"
-                            }
-                        ]
-                    }
-                ],
-                "_license_id": "licenses/10",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/10",
-                "_license_name": "GNU Lesser General Public License Version 3",
-                "_license_summary": "This license is an addition to the terms of the GNU General Public License Version 3: it is subject to the terms of the GNU General Public License Version 3, and to the terms of this license. This license is subject to the terms of the GNU General Public License Version 3, and the terms of this license. The GNU General Public License Version 3 is here: https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/7",
-                "_license_content": "                   GNU LESSER GENERAL PUBLIC LICENSE\r\n                       Version 3, 29 June 2007\r\n\r\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\r\n Everyone is permitted to copy and distribute verbatim copies\r\n of this license document, but changing it is not allowed.\r\n\r\n\r\n  This version of the GNU Lesser General Public License incorporates\r\nthe terms and conditions of version 3 of the GNU General Public\r\nLicense, supplemented by the additional permissions listed below.\r\n\r\n  0. Additional Definitions.\r\n\r\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\r\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\r\nGeneral Public License.\r\n\r\n  \"The Library\" refers to a covered work governed by this License,\r\nother than an Application or a Combined Work as defined below.\r\n\r\n  An \"Application\" is any work that makes use of an interface provided\r\nby the Library, but which is not otherwise based on the Library.\r\nDefining a subclass of a class defined by the Library is deemed a mode\r\nof using an interface provided by the Library.\r\n\r\n  A \"Combined Work\" is a work produced by combining or linking an\r\nApplication with the Library.  The particular version of the Library\r\nwith which the Combined Work was made is also called the \"Linked\r\nVersion\".\r\n\r\n  The \"Minimal Corresponding Source\" for a Combined Work means the\r\nCorresponding Source for the Combined Work, excluding any source code\r\nfor portions of the Combined Work that, considered in isolation, are\r\nbased on the Application, and not on the Linked Version.\r\n\r\n  The \"Corresponding Application Code\" for a Combined Work means the\r\nobject code and/or source code for the Application, including any data\r\nand utility programs needed for reproducing the Combined Work from the\r\nApplication, but excluding the System Libraries of the Combined Work.\r\n\r\n  1. Exception to Section 3 of the GNU GPL.\r\n\r\n  You may convey a covered work under sections 3 and 4 of this License\r\nwithout being bound by section 3 of the GNU GPL.\r\n\r\n  2. Conveying Modified Versions.\r\n\r\n  If you modify a copy of the Library, and, in your modifications, a\r\nfacility refers to a function or data to be supplied by an Application\r\nthat uses the facility (other than as an argument passed when the\r\nfacility is invoked), then you may convey a copy of the modified\r\nversion:\r\n\r\n   a) under this License, provided that you make a good faith effort to\r\n   ensure that, in the event an Application does not supply the\r\n   function or data, the facility still operates, and performs\r\n   whatever part of its purpose remains meaningful, or\r\n\r\n   b) under the GNU GPL, with none of the additional permissions of\r\n   this License applicable to that copy.\r\n\r\n  3. Object Code Incorporating Material from Library Header Files.\r\n\r\n  The object code form of an Application may incorporate material from\r\na header file that is part of the Library.  You may convey such object\r\ncode under terms of your choice, provided that, if the incorporated\r\nmaterial is not limited to numerical parameters, data structure\r\nlayouts and accessors, or small macros, inline functions and templates\r\n(ten or fewer lines in length), you do both of the following:\r\n\r\n   a) Give prominent notice with each copy of the object code that the\r\n   Library is used in it and that the Library and its use are\r\n   covered by this License.\r\n\r\n   b) Accompany the object code with a copy of the GNU GPL and this license\r\n   document.\r\n\r\n  4. Combined Works.\r\n\r\n  You may convey a Combined Work under terms of your choice that,\r\ntaken together, effectively do not restrict modification of the\r\nportions of the Library contained in the Combined Work and reverse\r\nengineering for debugging such modifications, if you also do each of\r\nthe following:\r\n\r\n   a) Give prominent notice with each copy of the Combined Work that\r\n   the Library is used in it and that the Library and its use are\r\n   covered by this License.\r\n\r\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\r\n   document.\r\n\r\n   c) For a Combined Work that displays copyright notices during\r\n   execution, include the copyright notice for the Library among\r\n   these notices, as well as a reference directing the user to the\r\n   copies of the GNU GPL and this license document.\r\n\r\n   d) Do one of the following:\r\n\r\n       0) Convey the Minimal Corresponding Source under the terms of this\r\n       License, and the Corresponding Application Code in a form\r\n       suitable for, and under terms that permit, the user to\r\n       recombine or relink the Application with a modified version of\r\n       the Linked Version to produce a modified Combined Work, in the\r\n       manner specified by section 6 of the GNU GPL for conveying\r\n       Corresponding Source.\r\n\r\n       1) Use a suitable shared library mechanism for linking with the\r\n       Library.  A suitable mechanism is one that (a) uses at run time\r\n       a copy of the Library already present on the user's computer\r\n       system, and (b) will operate properly with a modified version\r\n       of the Library that is interface-compatible with the Linked\r\n       Version.\r\n\r\n   e) Provide Installation Information, but only if you would otherwise\r\n   be required to provide such information under section 6 of the\r\n   GNU GPL, and only to the extent that such information is\r\n   necessary to install and execute a modified version of the\r\n   Combined Work produced by recombining or relinking the\r\n   Application with a modified version of the Linked Version. (If\r\n   you use option 4d0, the Installation Information must accompany\r\n   the Minimal Corresponding Source and Corresponding Application\r\n   Code. If you use option 4d1, you must provide the Installation\r\n   Information in the manner specified by section 6 of the GNU GPL\r\n   for conveying Corresponding Source.)\r\n\r\n  5. Combined Libraries.\r\n\r\n  You may place library facilities that are a work based on the\r\nLibrary side by side in a single library together with other library\r\nfacilities that are not Applications and are not covered by this\r\nLicense, and convey such a combined library under terms of your\r\nchoice, if you do both of the following:\r\n\r\n   a) Accompany the combined library with a copy of the same work based\r\n   on the Library, uncombined with any other library facilities,\r\n   conveyed under the terms of this License.\r\n\r\n   b) Give prominent notice with the combined library that part of it\r\n   is a work based on the Library, and explaining where to find the\r\n   accompanying uncombined form of the same work.\r\n\r\n  6. Revised Versions of the GNU Lesser General Public License.\r\n\r\n  The Free Software Foundation may publish revised and/or new versions\r\nof the GNU Lesser General Public License from time to time. Such new\r\nversions will be similar in spirit to the present version, but may\r\ndiffer in detail to address new problems or concerns.\r\n\r\n  Each version is given a distinguishing version number. If the\r\nLibrary as you received it specifies that a certain numbered version\r\nof the GNU Lesser General Public License \"or any later version\"\r\napplies to it, you have the option of following the terms and\r\nconditions either of that published version or of any later version\r\npublished by the Free Software Foundation. If the Library as you\r\nreceived it does not specify a version number of the GNU Lesser\r\nGeneral Public License, you may choose any version of the GNU Lesser\r\nGeneral Public License ever published by the Free Software Foundation.\r\n\r\n  If the Library as you received it specifies that a proxy can decide\r\nwhether future versions of the GNU Lesser General Public License shall\r\napply, that proxy's public statement of acceptance of any version is\r\npermanent authorization for you to choose that version for the\r\nLibrary.\r\n\r\n",
-                "_license_notices": [
+                "summary": "This license is an addition to the terms of the GNU General Public License Version 3: it is subject to the terms of the GNU General Public License Version 3, and to the terms of this license. This license is subject to the terms of the GNU General Public License Version 3, and the terms of this license. The GNU General Public License Version 3 is here: https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/7",
+                "notices": [
                     {
                         "_notice_description": "",
                         "_notice_content": "This license acknowledges the fair use rights provided by the Copyright Act, or other equivalent rights.",
@@ -1794,9 +832,690 @@ Raw Data
                         "_notice_id": "notices/98"
                     }
                 ],
-                "_license_description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to source code for generating and installing object code, source code for executing executable object code, all the source code necessary for modifying object code, and scripts for controlling these operations.",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/10",
+                "content": "                   GNU LESSER GENERAL PUBLIC LICENSE\r\n                       Version 3, 29 June 2007\r\n\r\n Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>\r\n Everyone is permitted to copy and distribute verbatim copies\r\n of this license document, but changing it is not allowed.\r\n\r\n\r\n  This version of the GNU Lesser General Public License incorporates\r\nthe terms and conditions of version 3 of the GNU General Public\r\nLicense, supplemented by the additional permissions listed below.\r\n\r\n  0. Additional Definitions.\r\n\r\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\r\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\r\nGeneral Public License.\r\n\r\n  \"The Library\" refers to a covered work governed by this License,\r\nother than an Application or a Combined Work as defined below.\r\n\r\n  An \"Application\" is any work that makes use of an interface provided\r\nby the Library, but which is not otherwise based on the Library.\r\nDefining a subclass of a class defined by the Library is deemed a mode\r\nof using an interface provided by the Library.\r\n\r\n  A \"Combined Work\" is a work produced by combining or linking an\r\nApplication with the Library.  The particular version of the Library\r\nwith which the Combined Work was made is also called the \"Linked\r\nVersion\".\r\n\r\n  The \"Minimal Corresponding Source\" for a Combined Work means the\r\nCorresponding Source for the Combined Work, excluding any source code\r\nfor portions of the Combined Work that, considered in isolation, are\r\nbased on the Application, and not on the Linked Version.\r\n\r\n  The \"Corresponding Application Code\" for a Combined Work means the\r\nobject code and/or source code for the Application, including any data\r\nand utility programs needed for reproducing the Combined Work from the\r\nApplication, but excluding the System Libraries of the Combined Work.\r\n\r\n  1. Exception to Section 3 of the GNU GPL.\r\n\r\n  You may convey a covered work under sections 3 and 4 of this License\r\nwithout being bound by section 3 of the GNU GPL.\r\n\r\n  2. Conveying Modified Versions.\r\n\r\n  If you modify a copy of the Library, and, in your modifications, a\r\nfacility refers to a function or data to be supplied by an Application\r\nthat uses the facility (other than as an argument passed when the\r\nfacility is invoked), then you may convey a copy of the modified\r\nversion:\r\n\r\n   a) under this License, provided that you make a good faith effort to\r\n   ensure that, in the event an Application does not supply the\r\n   function or data, the facility still operates, and performs\r\n   whatever part of its purpose remains meaningful, or\r\n\r\n   b) under the GNU GPL, with none of the additional permissions of\r\n   this License applicable to that copy.\r\n\r\n  3. Object Code Incorporating Material from Library Header Files.\r\n\r\n  The object code form of an Application may incorporate material from\r\na header file that is part of the Library.  You may convey such object\r\ncode under terms of your choice, provided that, if the incorporated\r\nmaterial is not limited to numerical parameters, data structure\r\nlayouts and accessors, or small macros, inline functions and templates\r\n(ten or fewer lines in length), you do both of the following:\r\n\r\n   a) Give prominent notice with each copy of the object code that the\r\n   Library is used in it and that the Library and its use are\r\n   covered by this License.\r\n\r\n   b) Accompany the object code with a copy of the GNU GPL and this license\r\n   document.\r\n\r\n  4. Combined Works.\r\n\r\n  You may convey a Combined Work under terms of your choice that,\r\ntaken together, effectively do not restrict modification of the\r\nportions of the Library contained in the Combined Work and reverse\r\nengineering for debugging such modifications, if you also do each of\r\nthe following:\r\n\r\n   a) Give prominent notice with each copy of the Combined Work that\r\n   the Library is used in it and that the Library and its use are\r\n   covered by this License.\r\n\r\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\r\n   document.\r\n\r\n   c) For a Combined Work that displays copyright notices during\r\n   execution, include the copyright notice for the Library among\r\n   these notices, as well as a reference directing the user to the\r\n   copies of the GNU GPL and this license document.\r\n\r\n   d) Do one of the following:\r\n\r\n       0) Convey the Minimal Corresponding Source under the terms of this\r\n       License, and the Corresponding Application Code in a form\r\n       suitable for, and under terms that permit, the user to\r\n       recombine or relink the Application with a modified version of\r\n       the Linked Version to produce a modified Combined Work, in the\r\n       manner specified by section 6 of the GNU GPL for conveying\r\n       Corresponding Source.\r\n\r\n       1) Use a suitable shared library mechanism for linking with the\r\n       Library.  A suitable mechanism is one that (a) uses at run time\r\n       a copy of the Library already present on the user's computer\r\n       system, and (b) will operate properly with a modified version\r\n       of the Library that is interface-compatible with the Linked\r\n       Version.\r\n\r\n   e) Provide Installation Information, but only if you would otherwise\r\n   be required to provide such information under section 6 of the\r\n   GNU GPL, and only to the extent that such information is\r\n   necessary to install and execute a modified version of the\r\n   Combined Work produced by recombining or relinking the\r\n   Application with a modified version of the Linked Version. (If\r\n   you use option 4d0, the Installation Information must accompany\r\n   the Minimal Corresponding Source and Corresponding Application\r\n   Code. If you use option 4d1, you must provide the Installation\r\n   Information in the manner specified by section 6 of the GNU GPL\r\n   for conveying Corresponding Source.)\r\n\r\n  5. Combined Libraries.\r\n\r\n  You may place library facilities that are a work based on the\r\nLibrary side by side in a single library together with other library\r\nfacilities that are not Applications and are not covered by this\r\nLicense, and convey such a combined library under terms of your\r\nchoice, if you do both of the following:\r\n\r\n   a) Accompany the combined library with a copy of the same work based\r\n   on the Library, uncombined with any other library facilities,\r\n   conveyed under the terms of this License.\r\n\r\n   b) Give prominent notice with the combined library that part of it\r\n   is a work based on the Library, and explaining where to find the\r\n   accompanying uncombined form of the same work.\r\n\r\n  6. Revised Versions of the GNU Lesser General Public License.\r\n\r\n  The Free Software Foundation may publish revised and/or new versions\r\nof the GNU Lesser General Public License from time to time. Such new\r\nversions will be similar in spirit to the present version, but may\r\ndiffer in detail to address new problems or concerns.\r\n\r\n  Each version is given a distinguishing version number. If the\r\nLibrary as you received it specifies that a certain numbered version\r\nof the GNU Lesser General Public License \"or any later version\"\r\napplies to it, you have the option of following the terms and\r\nconditions either of that published version or of any later version\r\npublished by the Free Software Foundation. If the Library as you\r\nreceived it does not specify a version number of the GNU Lesser\r\nGeneral Public License, you may choose any version of the GNU Lesser\r\nGeneral Public License ever published by the Free Software Foundation.\r\n\r\n  If the Library as you received it specifies that a proxy can decide\r\nwhether future versions of the GNU Lesser General Public License shall\r\napply, that proxy's public statement of acceptance of any version is\r\npermanent authorization for you to choose that version for the\r\nLibrary.\r\n\r\n",
+                "name": "GNU Lesser General Public License Version 3",
+                "permissions": [
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/1",
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "_id": "actions/4",
+                                "name": "Using Modified Source Code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/5",
+                                "name": "Use the retrieved object code",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "_id": "actions/7",
+                                "name": "Use the object code generated from the modified source code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/124",
+                            "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                            "type": "RESTRICTION",
+                            "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                        },
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/140",
+                                "name": "Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/141",
+                                "name": "Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/104",
+                                    "name": "Distribution of the parts of the work not covered by your copyright is subject to this license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/105",
+                                    "name": "Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.",
+                                    "type": "RESTRICTION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/106",
+                                    "name": "You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.",
+                                    "type": "RESTRICTION",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/9",
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                }
+                            ]
+                        },
+                        "description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/3",
+                                "name": "Modify the obtained source code.",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/110",
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/39",
+                                    "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
+                                    "type": "OBLIGATION",
+                                    "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
+                                },
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/125",
+                                    "name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
+                                    "type": "RESTRICTION",
+                                    "description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library."
+                                }
+                            ]
+                        },
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/12",
+                                "name": "Distribution of Modified Source Code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/110",
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/111",
+                                    "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
+                                    "type": "OBLIGATION",
+                                    "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
+                                },
+                                {
+                                    "_id": "conditions/39",
+                                    "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
+                                    "type": "OBLIGATION",
+                                    "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
+                                },
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/125",
+                                    "name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
+                                    "type": "RESTRICTION",
+                                    "description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library."
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "AND": [
+                                                {
+                                                    "_id": "conditions/127",
+                                                    "name": "Distributed in accordance with this license",
+                                                    "type": "OBLIGATION",
+                                                    "description": "Subject to this license and the GNU General Public License Version 3."
+                                                },
+                                                {
+                                                    "_id": "conditions/43",
+                                                    "name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
+                                                    "type": "REQUISITE",
+                                                    "description": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_id": "conditions/126",
+                                            "name": "Distributed under the GNU General Public License Version 3",
+                                            "type": "OBLIGATION",
+                                            "description": "No additional terms of this license applicable to such copies of the software are allowed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute the GNU General Public License Version 3 with the software, provided that you keep a copy of this license and any additional terms added to it. A library is anything other than an application or software that combines or links an application with a library. Applications are software that uses the interfaces provided by the library. Applications refer to software that uses the interfaces provided by the library, except software that is created by modifying the library. The definition of a subclass of a class defined by the library is considered to be one of the uses of the interface provided by the library. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/10",
+                                "name": "Distribute the obtained object code",
+                                "description": "Redistribute the code as it was obtained"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/111",
+                                    "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
+                                    "type": "OBLIGATION",
+                                    "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "_id": "conditions/21",
+                                            "name": "Attach the source code corresponding to the software in question.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/112",
+                                            "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/113",
+                                            "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/41",
+                                            "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/114",
+                                            "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_id": "conditions/115",
+                                    "name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
+                                    "type": "OBLIGATION",
+                                    "description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition."
+                                },
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                }
+                            ]
+                        },
+                        "description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/13",
+                                "name": "Distribute the object code generated from the modified source code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/125",
+                                    "name": "In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called).",
+                                    "type": "RESTRICTION",
+                                    "description": "An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library."
+                                },
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/115",
+                                    "name": "In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format",
+                                    "type": "OBLIGATION",
+                                    "description": "If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition."
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "_id": "conditions/21",
+                                            "name": "Attach the source code corresponding to the software in question.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/112",
+                                            "name": "A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/113",
+                                            "name": "A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/41",
+                                            "name": "Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/114",
+                                            "name": "When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.",
+                                            "type": "OBLIGATION",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_id": "conditions/39",
+                                    "name": "If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license",
+                                    "type": "OBLIGATION",
+                                    "description": "Even if the software is interactive, there is no need to have it printed if you do not normally print such notices."
+                                },
+                                {
+                                    "_id": "conditions/111",
+                                    "name": "If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work.",
+                                    "type": "OBLIGATION",
+                                    "description": "Often, it is a condition described in the context of static and dynamic linkage of source code, object code"
+                                },
+                                {
+                                    "_id": "conditions/110",
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "AND": [
+                                                {
+                                                    "_id": "conditions/127",
+                                                    "name": "Distributed in accordance with this license",
+                                                    "type": "OBLIGATION",
+                                                    "description": "Subject to this license and the GNU General Public License Version 3."
+                                                },
+                                                {
+                                                    "_id": "conditions/43",
+                                                    "name": "Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.",
+                                                    "type": "REQUISITE",
+                                                    "description": ""
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_id": "conditions/126",
+                                            "name": "Distributed under the GNU General Public License Version 3",
+                                            "type": "OBLIGATION",
+                                            "description": "No additional terms of this license applicable to such copies of the software are allowed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy the GNU General Public License Version 3 and any additional terms added to this license and others, provided that you keep intact all copyright and other proprietary notices that apply. A library is anything other than an application or software that combines or links an application with a library. Applications are software that uses the interfaces provided by the library. Applications refer to software that uses the interfaces provided by the library, except software that is created by modifying the library. The definition of a subclass of a class defined by the library is considered to be one of the uses of the interface provided by the library. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/142",
+                                "name": "Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it.",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "OR": [
+                                        {
+                                            "_id": "conditions/116",
+                                            "name": "disclaiming any warranty or limiting liability that differs from the terms of this license.",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/117",
+                                            "name": "require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/118",
+                                            "name": "Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/119",
+                                            "name": "Restrict the use of the name of the licensor or author of the section you add for promotional purposes",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/122",
+                                            "name": "To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        },
+                                        {
+                                            "_id": "conditions/120",
+                                            "name": "Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her",
+                                            "type": "RESTRICTION",
+                                            "description": ""
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_id": "conditions/123",
+                                    "name": "Include these license terms, or a reference to them in the file to which these additional license terms apply",
+                                    "type": "RESTRICTION",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "description": "This additional license provision may be a license document independent of the GNU General Public License Version 3, or it may be written as an exception to the GNU General Public License Version 3."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/143",
+                                "name": "Distribute the code in the library's header files and applications that include various data as object code under the conditions of your choosing.",
+                                "description": "This does not apply if the code or data that the application takes in is a numerical parameter, a data structure layout or accessor, a small macro, or an in-line function or template (less than 10 lines in length)."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/25",
+                                    "name": "Indicate that the library is being used",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. The GNU General Public License Version 3 gives you a copy of this license and the GNU General Public License Version 3 along with the object code. You may copy and distribute a copy of this license and the GNU General Public License Version 3 with the object code, provided that you keep intact all copyright and other proprietary notices that are added to this license and any additional terms. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/43",
+                                "name": "Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing.",
+                                "description": "The generated work contains a library or part of a library"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/24",
+                                    "name": "Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.",
+                                    "type": "REQUISITE",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/25",
+                                    "name": "Indicate that the library is being used",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/1",
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/8",
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/47",
+                                    "name": "If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "AND": [
+                                                {
+                                                    "_id": "conditions/50",
+                                                    "name": "Attach the source code corresponding to the library",
+                                                    "type": "OBLIGATION",
+                                                    "description": ""
+                                                },
+                                                {
+                                                    "_id": "conditions/128",
+                                                    "name": "Pass information that can be used to modify the library and put it into a distribution format.",
+                                                    "type": "OBLIGATION",
+                                                    "description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The term \"application\" refers to software that uses the interfaces provided by the library, except for software that has been modified from the library. Distributions are software that combines or links libraries and applications. Source code means the source code to create, install, and execute executable object code, as well as any modifications to the object code necessary to create, install, and execute the object code. All of the source code and the scripts that control these tasks."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "_id": "conditions/129",
+                                            "name": "Provide the one holding the distribution, in exchange for a fee not to exceed the physical cost of providing it, the source code corresponding to the library and the information that can be used to modify the library into the form of the distribution on a physical medium for at least three years, or Pass a valid written statement for a period of time during the provision of repair parts or customer support for the model of the product in which it is incorporated, whichever is longer",
+                                            "type": "OBLIGATION",
+                                            "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question."
+                                        },
+                                        {
+                                            "_id": "conditions/130",
+                                            "name": "provide free of charge to the one holding the distribution from a network server with the source code corresponding to the library and information that allows the library to be modified into the form of the distribution, for at least three years, or to provide repair parts for the model of the product in which the distribution is embedded, or Pass a valid written statement for the duration of providing customer support, whichever is longer",
+                                            "type": "OBLIGATION",
+                                            "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question."
+                                        },
+                                        {
+                                            "_id": "conditions/131",
+                                            "name": "Make the distribution, the source code corresponding to the library and the information that can be modified to form the distribution, available for download from the same place with equivalent access.",
+                                            "type": "OBLIGATION",
+                                            "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question."
+                                        },
+                                        {
+                                            "_id": "conditions/132",
+                                            "name": "If peer-to-peer transmission is used, notify the other peers of the distribution, the corresponding source code for the library, and the location where the information that allows the library to be modified to form the distribution is available free of charge.",
+                                            "type": "OBLIGATION",
+                                            "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question."
+                                        },
+                                        {
+                                            "_id": "conditions/28",
+                                            "name": "Use an appropriate shared library mechanism to link with the library in question",
+                                            "type": "OBLIGATION",
+                                            "description": "A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "_id": "conditions/133",
+                                    "name": "In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format.",
+                                    "type": "OBLIGATION",
+                                    "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: â Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement."
+                                }
+                            ]
+                        },
+                        "description": "A library is something other than an application or software that combines or links an application with a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. This license and a copy of the GNU General Public License Version 3 go with the distribution. You must keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. Source code means the source code for generating, installing and executing executable object code, all of the source code necessary to modify the object code, and the scripts that control these operations. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may charge a fee for the physical act of transferring a copy; you may provide support or warranty in exchange for a fee."
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/44",
+                                "name": "Distribute portions of a library together with libraries not covered by the license in a single library",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "_id": "conditions/124",
+                                    "name": "A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license.",
+                                    "type": "RESTRICTION",
+                                    "description": "However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution."
+                                },
+                                {
+                                    "_id": "conditions/29",
+                                    "name": "Pass an independent copy of the library in accordance with that license",
+                                    "type": "OBLIGATION",
+                                    "description": "Pass a copy of the entire library in question"
+                                },
+                                {
+                                    "_id": "conditions/25",
+                                    "name": "Indicate that the library is being used",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                },
+                                {
+                                    "_id": "conditions/49",
+                                    "name": "Indicate where the library is located in a stand-alone form",
+                                    "type": "OBLIGATION",
+                                    "description": ""
+                                }
+                            ]
+                        },
+                        "description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. In this document, \"application\" means software that uses an interface provided by the library, except software that has been modified from the library. This license gives you the right to make copies of the library under the terms of this license, provided that you do not transfer the physical act of transferring the copies. You may charge a fee for the physical act of transferring a copy; you may not charge a fee in exchange for support or services. You may charge a fee for the physical act of transferring a copy; you may offer support and warranty in exchange for a fee."
+                    }
+                ],
                 "_implications": {
                     "__impliedNames": [
                         "GNU Lesser General Public License Version 3"
@@ -1808,7 +1527,8 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/10"
                         ]
                     ]
-                }
+                },
+                "description": "A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to source code for generating and installing object code, source code for executing executable object code, all the source code necessary for modifying object code, and scripts for controlling these operations."
             },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/LGPL-3.0-only.html",

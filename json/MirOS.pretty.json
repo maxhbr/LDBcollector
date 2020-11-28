@@ -227,249 +227,8 @@
             "LicenseId": "MirOS"
         },
         "Hitachi open-license": {
-            "_license_uri": "http://open-license.hitachi.com/licenses/1554",
-            "_license_permissions": [
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "Relevant documentation for the software should be treated in the same way as for the software.",
-                    "_permission_conditionHead": null,
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched code as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/1",
-                            "_action_id": "actions/1",
-                            "_action_name": "Use the obtained source code without modification"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/3",
-                            "_action_id": "actions/3",
-                            "_action_name": "Modify the obtained source code."
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/4",
-                            "_action_id": "actions/4",
-                            "_action_name": "Using Modified Source Code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the fetched code as it is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/5",
-                            "_action_id": "actions/5",
-                            "_action_name": "Use the retrieved object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/7",
-                            "_action_id": "actions/7",
-                            "_action_name": "Use the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Use the obtained executable as is.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/84",
-                            "_action_id": "actions/84",
-                            "_action_name": "Use the retrieved executable"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/87",
-                            "_action_id": "actions/87",
-                            "_action_name": "Use the executable generated from the modified source code"
-                        }
-                    ]
-                },
-                {
-                    "_permission_summary": "",
-                    "_permission_description": "Related documentation and accompanying documents for the software are treated in the same way as the software.",
-                    "_permission_conditionHead": {
-                        "AND": [
-                            {
-                                "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                                "_condition_id": "conditions/1",
-                                "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                                "_condition_description": "",
-                                "_condition_schemaVersion": "0.1",
-                                "_condition_baseUri": "http://open-license.hitachi.com/",
-                                "_condition_conditionType": "OBLIGATION"
-                            }
-                        ]
-                    },
-                    "_permission_actions": [
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the code as it was obtained",
-                            "_action_uri": "http://open-license.hitachi.com/actions/9",
-                            "_action_id": "actions/9",
-                            "_action_name": "Distribute the obtained source code without modification"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the code as it was obtained",
-                            "_action_uri": "http://open-license.hitachi.com/actions/10",
-                            "_action_id": "actions/10",
-                            "_action_name": "Distribute the obtained object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/12",
-                            "_action_id": "actions/12",
-                            "_action_name": "Distribution of Modified Source Code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/13",
-                            "_action_id": "actions/13",
-                            "_action_name": "Distribute the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/18",
-                            "_action_id": "actions/18",
-                            "_action_name": "Executing the fetched source code publicly"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/19",
-                            "_action_id": "actions/19",
-                            "_action_name": "Sublicense the acquired source code."
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/21",
-                            "_action_id": "actions/21",
-                            "_action_name": "Publicly execute the fetched object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/22",
-                            "_action_id": "actions/22",
-                            "_action_name": "Sublicense the acquired object code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/24",
-                            "_action_id": "actions/24",
-                            "_action_name": "Publicly execute the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/25",
-                            "_action_id": "actions/25",
-                            "_action_name": "Sublicensing Modified Source Code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/27",
-                            "_action_id": "actions/27",
-                            "_action_name": "Publicly execute the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/28",
-                            "_action_id": "actions/28",
-                            "_action_name": "Sublicense the object code generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/35",
-                            "_action_id": "actions/35",
-                            "_action_name": "Selling Software"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Redistribute the obtained executable as-is",
-                            "_action_uri": "http://open-license.hitachi.com/actions/86",
-                            "_action_id": "actions/86",
-                            "_action_name": "Distribute the obtained executable"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/89",
-                            "_action_id": "actions/89",
-                            "_action_name": "Distribute the executable generated from the modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/105",
-                            "_action_id": "actions/105",
-                            "_action_name": "Publicly execute the retrieved executable"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/106",
-                            "_action_id": "actions/106",
-                            "_action_name": "Sublicense the acquired executable"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "",
-                            "_action_uri": "http://open-license.hitachi.com/actions/108",
-                            "_action_id": "actions/108",
-                            "_action_name": "Publicly execute executables generated from modified source code"
-                        },
-                        {
-                            "_action_baseUri": "http://open-license.hitachi.com/",
-                            "_action_schemaVersion": "0.1",
-                            "_action_description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.",
-                            "_action_uri": "http://open-license.hitachi.com/actions/109",
-                            "_action_id": "actions/109",
-                            "_action_name": "Sublicense the generated executable from modified source code"
-                        }
-                    ]
-                }
-            ],
-            "_license_id": "licenses/1554",
-            "_sourceURL": "http://open-license.hitachi.com/licenses/1554",
-            "_license_name": "MirOS License",
-            "_license_summary": "https://opensource.org/licenses/miros.html",
-            "_license_content": "/*-\r\n* Copyright © year, year, year, …\r\n* First M. Last <user@host.domain>\r\n*\r\n* Provided that these terms and disclaimer and all copyright notices\r\n* are retained or reproduced in an accompanying document, permission\r\n* is granted to deal in this work without restriction, including un‐\r\n* limited rights to use, publicly perform, distribute, sell, modify,\r\n* merge, give away, or sublicence.\r\n*\r\n* This work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\r\n* the utmost extent permitted by applicable law, neither express nor\r\n* implied; without malicious intent or gross negligence. In no event\r\n* may a licensor, author or contributor be held liable for indirect,\r\n* direct, other damage, loss, or other issues arising in any way out\r\n* of dealing in the work, even if advised of the possibility of such\r\n* damage or existence of a defect, except proven that it results out\r\n* of said person's immediate fault when using the work as intended.\r\n*/\r\n\r\nI_N_S_T_R_U_C_T_I_O_N_S_:_\r\nTo apply the template(¹) specify the years of copyright (separated by\r\ncomma, not as a range), the legal names of the copyright holders, and\r\nthe real names of the authors if different. Avoid adding text.\r\n\r\nR_A_T_I_O_N_A_L_E_:_\r\nThis licence is apt for any kind of work (such as source code, fonts,\r\ndocumentation, graphics, sound etc.) and the preferred terms for work\r\nadded to MirBSD. It has been drafted as universally usable equivalent\r\nof the \"historic permission notice\"⁽²⁾ adapted to Europen law because\r\nin some (droit d'auteur) countries authors cannot disclaim all liabi‐\r\nlities. Compliance to DFSG⁽³⁾ 1.1 is ensured, and GPLv2 compatibility\r\nis asserted unless advertising clauses are used. The MirOS Licence is\r\ncertified to conform to OKD⁽⁴⁾ 1.0 and OSD⁽⁵⁾ 1.9, and qualifies as a\r\nFree Software⁽⁶⁾ and also Free Documentation⁽⁷⁾ licence and is inclu‐\r\nded in some relevant lists⁽⁸⁾⁽⁹⁾⁽¹⁰⁾.\r\n\r\nWe believe you are not liable for work inserted which is intellectual\r\nproperty of third parties, if you were not aware of the fact, act ap‐\r\npropriately as soon as you become aware of that problem, seek an ami‐\r\ncable solution for all parties, and never knowingly distribute a work\r\nwithout being authorised to do so by its licensors.\r\n\r\nR_E_F_E_R_E_N_C_E_S_:_\r\n① also at http://mirbsd.de/MirOS-Licence\r\n② http://www.opensource.org/licenses/historical.php\r\n③ http://www.debian.org/social_contract#guidelines\r\n④ http://www.opendefinition.org/1.0\r\n⑤ http://www.opensource.org/docs/osd\r\n⑥ http://www.gnu.org/philosophy/free-sw.html\r\n⑦ http://www.gnu.org/philosophy/free-doc.html\r\n⑧ http://www.ifross.de/ifross_html/lizenzcenter.html\r\n⑨ http://www.opendefinition.org/licenses\r\n⑩ http://opensource.org/licenses/miros.html",
-            "_license_notices": [
+            "summary": "https://opensource.org/licenses/miros.html",
+            "notices": [
                 {
                     "_notice_description": "There is no guarantee.",
                     "_notice_content": "such software is provided \"as-is\" and, except in the case of bad faith or gross negligence, without warranty of any kind, either express or implied, to the extent permitted by applicable law.",
@@ -487,9 +246,164 @@
                     "_notice_id": "notices/854"
                 }
             ],
-            "_license_description": "",
-            "_license_baseUri": "http://open-license.hitachi.com/",
-            "_license_schemaVersion": "0.1",
+            "_sourceURL": "http://open-license.hitachi.com/licenses/1554",
+            "content": "/*-\r\n* Copyright © year, year, year, …\r\n* First M. Last <user@host.domain>\r\n*\r\n* Provided that these terms and disclaimer and all copyright notices\r\n* are retained or reproduced in an accompanying document, permission\r\n* is granted to deal in this work without restriction, including un‐\r\n* limited rights to use, publicly perform, distribute, sell, modify,\r\n* merge, give away, or sublicence.\r\n*\r\n* This work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\r\n* the utmost extent permitted by applicable law, neither express nor\r\n* implied; without malicious intent or gross negligence. In no event\r\n* may a licensor, author or contributor be held liable for indirect,\r\n* direct, other damage, loss, or other issues arising in any way out\r\n* of dealing in the work, even if advised of the possibility of such\r\n* damage or existence of a defect, except proven that it results out\r\n* of said person's immediate fault when using the work as intended.\r\n*/\r\n\r\nI_N_S_T_R_U_C_T_I_O_N_S_:_\r\nTo apply the template(¹) specify the years of copyright (separated by\r\ncomma, not as a range), the legal names of the copyright holders, and\r\nthe real names of the authors if different. Avoid adding text.\r\n\r\nR_A_T_I_O_N_A_L_E_:_\r\nThis licence is apt for any kind of work (such as source code, fonts,\r\ndocumentation, graphics, sound etc.) and the preferred terms for work\r\nadded to MirBSD. It has been drafted as universally usable equivalent\r\nof the \"historic permission notice\"⁽²⁾ adapted to Europen law because\r\nin some (droit d'auteur) countries authors cannot disclaim all liabi‐\r\nlities. Compliance to DFSG⁽³⁾ 1.1 is ensured, and GPLv2 compatibility\r\nis asserted unless advertising clauses are used. The MirOS Licence is\r\ncertified to conform to OKD⁽⁴⁾ 1.0 and OSD⁽⁵⁾ 1.9, and qualifies as a\r\nFree Software⁽⁶⁾ and also Free Documentation⁽⁷⁾ licence and is inclu‐\r\nded in some relevant lists⁽⁸⁾⁽⁹⁾⁽¹⁰⁾.\r\n\r\nWe believe you are not liable for work inserted which is intellectual\r\nproperty of third parties, if you were not aware of the fact, act ap‐\r\npropriately as soon as you become aware of that problem, seek an ami‐\r\ncable solution for all parties, and never knowingly distribute a work\r\nwithout being authorised to do so by its licensors.\r\n\r\nR_E_F_E_R_E_N_C_E_S_:_\r\n① also at http://mirbsd.de/MirOS-Licence\r\n② http://www.opensource.org/licenses/historical.php\r\n③ http://www.debian.org/social_contract#guidelines\r\n④ http://www.opendefinition.org/1.0\r\n⑤ http://www.opensource.org/docs/osd\r\n⑥ http://www.gnu.org/philosophy/free-sw.html\r\n⑦ http://www.gnu.org/philosophy/free-doc.html\r\n⑧ http://www.ifross.de/ifross_html/lizenzcenter.html\r\n⑨ http://www.opendefinition.org/licenses\r\n⑩ http://opensource.org/licenses/miros.html",
+            "name": "MirOS License",
+            "permissions": [
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/1",
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "_id": "actions/3",
+                            "name": "Modify the obtained source code.",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/4",
+                            "name": "Using Modified Source Code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/5",
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "_id": "actions/7",
+                            "name": "Use the object code generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/84",
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "_id": "actions/87",
+                            "name": "Use the executable generated from the modified source code",
+                            "description": ""
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                },
+                {
+                    "summary": "",
+                    "actions": [
+                        {
+                            "_id": "actions/9",
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "_id": "actions/10",
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "_id": "actions/12",
+                            "name": "Distribution of Modified Source Code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/13",
+                            "name": "Distribute the object code generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/18",
+                            "name": "Executing the fetched source code publicly",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/19",
+                            "name": "Sublicense the acquired source code.",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        },
+                        {
+                            "_id": "actions/21",
+                            "name": "Publicly execute the fetched object code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/22",
+                            "name": "Sublicense the acquired object code",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        },
+                        {
+                            "_id": "actions/24",
+                            "name": "Publicly execute the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/25",
+                            "name": "Sublicensing Modified Source Code",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        },
+                        {
+                            "_id": "actions/27",
+                            "name": "Publicly execute the object code generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/28",
+                            "name": "Sublicense the object code generated from the modified source code",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        },
+                        {
+                            "_id": "actions/35",
+                            "name": "Selling Software",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/86",
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        },
+                        {
+                            "_id": "actions/89",
+                            "name": "Distribute the executable generated from the modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/105",
+                            "name": "Publicly execute the retrieved executable",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/106",
+                            "name": "Sublicense the acquired executable",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        },
+                        {
+                            "_id": "actions/108",
+                            "name": "Publicly execute executables generated from modified source code",
+                            "description": ""
+                        },
+                        {
+                            "_id": "actions/109",
+                            "name": "Sublicense the generated executable from modified source code",
+                            "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "_id": "conditions/1",
+                                "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                "type": "OBLIGATION",
+                                "description": ""
+                            }
+                        ]
+                    },
+                    "description": "Related documentation and accompanying documents for the software are treated in the same way as the software."
+                }
+            ],
             "_implications": {
                 "__impliedNames": [
                     "MirOS License"
@@ -501,7 +415,8 @@
                         "http://open-license.hitachi.com/licenses/1554"
                     ]
                 ]
-            }
+            },
+            "description": ""
         },
         "BlueOak License List": {
             "BlueOakRating": "Lead",

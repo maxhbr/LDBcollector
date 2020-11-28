@@ -579,328 +579,8 @@ open-license]] (CDLA-Permissive-1.0))
               "LicenseId": "CC-BY-3.0"
           },
           "Hitachi open-license": {
-              "_license_uri": "http://open-license.hitachi.com/licenses/58",
-              "_license_permissions": [
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "A work is a literary or artistic work offered under this licence in any form, including digital forms of expression, including, but not limited to, creations in the fields of literature, science and the arts. Works of authorship are works of creation in the fields of literature, science and the arts, including, but not limited to, books, pamphlets, other written works, and other works of authorship in digital form. This license includes, but is not limited to: books, pamphlets, and other written works; lectures, speeches, and sermons of the same nature as lectures, speeches, and sermons; plays, musical productions, choreography, and silent plays; musical works with or without lyrics; cinematographic and similarly expressed works in motion pictures; sketches, paintings, architecture, sculptures, and prints. The work of photography, lithography, photographic works, works of applied art, illustrations, maps, blueprints, sketches, or other three-dimensional works related to geography, topography, architecture, or science, demonstrations, broadcasts, sound recordings, and the compilation of copyrighted data. A work performed by a variety or circus performer, to the extent that it is not considered an object, a literary work, or a work of art, including, but not limited to, the recording of sound and visual information, rights to fixation, and copies of works. Reproduction means the reproduction of a work by means of any means, including, but not limited to, the right to record or fix audio or visual information, or copies of a work, including, but not limited to, protected performance or sound recording storage devices in digital form or other electronic media. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work, such as an encyclopaedia, poetry, etc., or a collection of works other than those enumerated as works of authorship, each of which consists of independent works assembled without modification and which, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. A derivative work is a work or other work that has existed before the original work, such as a translation, alteration, derivative work, arrangement of a musical work, modification of a literary or artistic work, sound recording, performance, alteration of a film work, transformation of a work into another form by changing the cast or format, or alteration that includes a form recognizable as a derivative of the original work. A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. For the avoidance of doubt, synchronized musical works, performances and recordings shall be considered derivative works under this license. Public performance is defined as the public recitation and communication of a work in public by any means or procedure, including wire, radio or public digital performance, or making the work available to the public by making it accessible to the public at a place of their choosing, where it exists. includes digital performances in public and involves the public performance of a work by any means or procedure; and broadcasting or rebroadcasting of a work by any means or procedure, including signals, sounds or images.",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/94",
-                                  "_condition_id": "conditions/94",
-                                  "_condition_name": "Exercise rights in all current and future media and formats",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/103",
-                                  "_condition_id": "conditions/103",
-                                  "_condition_name": "Provide the credit you specify in a reasonable manner.",
-                                  "_condition_description": "In the case of derivative or collective works, such credit shall be given at least where other similar credits appear, and in a manner that is at least as prominent as other similar credits. The name of the original author (or a pseudonym, if applicable) and the name of the entity to which the rights are attributed by the licensor's copyright notice, terms of use, or otherwise - the title of the work, if any - the URI listed by the licensor for the work If there is, the URI shall be displayed as much as reasonably practicable. However, this does not apply if there is no reference to copyright notice or information about the license. â In the case of derivative works, credit for the use of the work.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/102",
-                                  "_condition_id": "conditions/102",
-                                  "_condition_name": "All copyright notices are posted intact.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/101",
-                                  "_condition_id": "conditions/101",
-                                  "_condition_name": "Take no technical measures to restrict access to or use of the work in a way that violates this license",
-                                  "_condition_description": "The same is true for works incorporated into a collective work. However, this license does not extend to collective works that are different from the works under this license.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/100",
-                                  "_condition_id": "conditions/100",
-                                  "_condition_name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/99",
-                                  "_condition_id": "conditions/99",
-                                  "_condition_name": "No sublicensing of copyrighted material.",
-                                  "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/98",
-                                  "_condition_id": "conditions/98",
-                                  "_condition_name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/96",
-                                  "_condition_id": "conditions/96",
-                                  "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/95",
-                                  "_condition_id": "conditions/95",
-                                  "_condition_name": "Make technical changes for use in other media or formats, if necessary",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/134",
-                                  "_condition_id": "conditions/134",
-                                  "_condition_name": "I will not defame the original author.",
-                                  "_condition_description": "You may not use this license for any purpose other than to create a derivative work, except with the written consent of the licensor or where legally permitted. Where, in some jurisdictions (such as Japan), the exercise of the right to create a derivative work would be deemed to be materially defamatory to the original author, the licensor may, to the extent that the person exercising the right to create the derivative work can exercise to the fullest extent permitted by national law, provide the licensee with a copy of the copyrighted work as required by this License. You agree not to exempt or claim credit for the author or others who are",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/122",
-                              "_action_id": "actions/122",
-                              "_action_name": "Reproduce the work."
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/127",
-                              "_action_id": "actions/127",
-                              "_action_name": "Incorporate a work into one or more collective works"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/128",
-                              "_action_id": "actions/128",
-                              "_action_name": "Reproduce a work incorporated into a collective work"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/130",
-                              "_action_id": "actions/130",
-                              "_action_name": "Distribute copies of the work (including works incorporated into a collective work)"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/131",
-                              "_action_id": "actions/131",
-                              "_action_name": "Distributing a medium on which a recording of a work (including a work incorporated into a collective work) is made"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/132",
-                              "_action_id": "actions/132",
-                              "_action_name": "Public display of a work (including a work incorporated into a collective work)"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/133",
-                              "_action_id": "actions/133",
-                              "_action_name": "Publicly perform a work (including a work incorporated into a collective work)"
-                          }
-                      ]
-                  },
-                  {
-                      "_permission_summary": "",
-                      "_permission_description": "Secondary works are those works that have been translated, altered, or derived from the original work and other previously existing works, such as translations, alterations, derivatives, arrangements of musical works, alterations of literary or artistic works, sound recordings, performances, alterations to a film work, alterations of a work into another form by changing the cast or format, and alterations that include a form recognizable as a derivative of the original work. A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A work is a literary or artistic work offered under this license in any form or format, including digital forms of expression. Works of authorship are works of creation in the fields of literature, science and the arts, including, but not limited to, books, pamphlets and other works of authorship. This license includes, but is not limited to: books, pamphlets, and other written works; lectures, speeches, and sermons of the same nature as lectures, speeches, and sermons; plays, musical productions, choreography, and silent plays; musical works with or without lyrics; cinematographic and similarly expressed works in motion pictures; sketches, paintings, architecture, sculptures, and prints. The work of photography, lithography, photographic works, works of applied art, illustrations, maps, blueprints, sketches, or other three-dimensional works related to geography, topography, architecture, or science, demonstrations, broadcasts, sound recordings, and the compilation of copyrighted data. A collective work is a work, a work performed by a variety or circus performer, not considered a literary or artistic work. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work, such as an encyclopaedia or book of poetry, or a collection of works other than those enumerated as works of authorship, each of which is an assemblage of independent works, assembled without modification, which, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. Reproduction is the reproduction of a work by means including, but not limited to, the right to record or fix audio or visual information and copies of the work, including, but not limited to, protected performance or sound recording storage in digital form or other electronic media. Distribution is making the original work, a copy of the original work, or a derivative work, available to the public through sale or other transfer of ownership in an appropriate manner. Public performance\" means to make a work available to the public by any means or procedure, including wire, radio or public digital performance, by reciting or transmitting to the public, or by making the public accessible to the work at a place of their choosing, where it exists. includes digital performances in public and involves the public performance of a work by any means or procedure; and broadcasting or rebroadcasting of a work by any means or procedure, including signals, sounds or images.",
-                      "_permission_conditionHead": {
-                          "AND": [
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/135",
-                                  "_condition_id": "conditions/135",
-                                  "_condition_name": "Take reasonable steps to identify that the original work has been created with changes to the original work",
-                                  "_condition_description": "Labeling and distinguishing",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/103",
-                                  "_condition_id": "conditions/103",
-                                  "_condition_name": "Provide the credit you specify in a reasonable manner.",
-                                  "_condition_description": "In the case of derivative or collective works, such credit shall be given at least where other similar credits appear, and in a manner that is at least as prominent as other similar credits. The name of the original author (or a pseudonym, if applicable) and the name of the entity to which the rights are attributed by the licensor's copyright notice, terms of use, or otherwise - the title of the work, if any - the URI listed by the licensor for the work If there is, the URI shall be displayed as much as reasonably practicable. However, this does not apply if there is no reference to copyright notice or information about the license. â In the case of derivative works, credit for the use of the work.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/102",
-                                  "_condition_id": "conditions/102",
-                                  "_condition_name": "All copyright notices are posted intact.",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/101",
-                                  "_condition_id": "conditions/101",
-                                  "_condition_name": "Take no technical measures to restrict access to or use of the work in a way that violates this license",
-                                  "_condition_description": "The same is true for works incorporated into a collective work. However, this license does not extend to collective works that are different from the works under this license.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/100",
-                                  "_condition_id": "conditions/100",
-                                  "_condition_name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/99",
-                                  "_condition_id": "conditions/99",
-                                  "_condition_name": "No sublicensing of copyrighted material.",
-                                  "_condition_description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/98",
-                                  "_condition_id": "conditions/98",
-                                  "_condition_name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/96",
-                                  "_condition_id": "conditions/96",
-                                  "_condition_name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/95",
-                                  "_condition_id": "conditions/95",
-                                  "_condition_name": "Make technical changes for use in other media or formats, if necessary",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/94",
-                                  "_condition_id": "conditions/94",
-                                  "_condition_name": "Exercise rights in all current and future media and formats",
-                                  "_condition_description": "",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "RESTRICTION"
-                              },
-                              {
-                                  "_condition_uri": "http://open-license.hitachi.com/conditions/134",
-                                  "_condition_id": "conditions/134",
-                                  "_condition_name": "I will not defame the original author.",
-                                  "_condition_description": "You may not use this license for any purpose other than to create a derivative work, except with the written consent of the licensor or where legally permitted. Where, in some jurisdictions (such as Japan), the exercise of the right to create a derivative work would be deemed to be materially defamatory to the original author, the licensor may, to the extent that the person exercising the right to create the derivative work can exercise to the fullest extent permitted by national law, provide the licensee with a copy of the copyrighted work as required by this License. You agree not to exempt or claim credit for the author or others who are",
-                                  "_condition_schemaVersion": "0.1",
-                                  "_condition_baseUri": "http://open-license.hitachi.com/",
-                                  "_condition_conditionType": "OBLIGATION"
-                              }
-                          ]
-                      },
-                      "_permission_actions": [
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/126",
-                              "_action_id": "actions/126",
-                              "_action_name": "Creating a derivative work"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/129",
-                              "_action_id": "actions/129",
-                              "_action_name": "Reproduce a derivative work"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/135",
-                              "_action_id": "actions/135",
-                              "_action_name": "Distribute copies of derivative works"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/136",
-                              "_action_id": "actions/136",
-                              "_action_name": "Distribute the medium in which the derivative works are recorded"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/137",
-                              "_action_id": "actions/137",
-                              "_action_name": "Public display of derivative works"
-                          },
-                          {
-                              "_action_baseUri": "http://open-license.hitachi.com/",
-                              "_action_schemaVersion": "0.1",
-                              "_action_description": "",
-                              "_action_uri": "http://open-license.hitachi.com/actions/138",
-                              "_action_id": "actions/138",
-                              "_action_name": "Publicly perform a derivative work"
-                          }
-                      ]
-                  }
-              ],
-              "_license_id": "licenses/58",
-              "_sourceURL": "http://open-license.hitachi.com/licenses/58",
-              "_license_name": "Creative Commons Attribution 3.0 Unported",
-              "_license_summary": "http://creativecommons.org/licenses/by/3.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
-              "_license_content": "Creative Commons Legal Code\r\nAttribution 3.0 Unported\r\n \r\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN \"AS-IS\" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.\r\n\r\n\r\nLicense\r\n\r\nTHE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE (\"CCPL\" OR \"LICENSE\"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.\r\n\r\nBY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.\r\n\r\n1. Definitions\r\n\r\n    a.\t\"Adaptation\" means a work based upon the Work, or upon the Work and other pre-existing works,\r\n     such as a translation, adaptation, derivative work, arrangement of music or other alterations\r\n     of a literary or artistic work, or phonogram or performance and includes cinematographic\r\n     adaptations or any other form in which the Work may be recast, transformed, or adapted\r\n     including in any form recognizably derived from the original, except that a work that\r\n     constitutes a Collection will not be considered an Adaptation for the purpose of this\r\n     License. For the avoidance of doubt, where the Work is a musical work, performance or phonogram,\r\n     the synchronization of the Work in timed-relation with a moving image (\"synching\") will be considered\r\n     an Adaptation for the purpose of this License. \r\n\r\n    b. \"Collection\" means a collection of literary or artistic works, such as encyclopedias\r\n     and anthologies, or performances, phonograms or broadcasts, or other works or subject\r\n     matter other than works listed in Section 1(f) below, which, by reason of the selection\r\n     and arrangement of their contents, constitute intellectual creations, in which the Work\r\n     is included in its entirety in unmodified form along with one or more other contributions,\r\n     each constituting separate and independent works in themselves, which together are assembled\r\n     into a collective whole. A work that constitutes a Collection will not be considered\r\n     an Adaptation (as defined above) for the purposes of this License. \r\n\r\n    c. \"Distribute\" means to make available to the public the original and copies of\r\n    the Work or Adaptation, as appropriate, through sale or other transfer of ownership. \r\n\r\n    d. \"Licensor\" means the individual, individuals, entity or entities that offer(s)\r\n     the Work under the terms of this License. \r\n\r\n    e. \"Original Author\" means, in the case of a literary or artistic work, the individual,\r\n     individuals, entity or entities who created the Work or if no individual or entity can be\r\n     identified, the publisher; and in addition (i) in the case of a performance the actors,\r\n     singers, musicians, dancers, and other persons who act, sing, deliver, declaim,\r\n     play in, interpret or otherwise perform literary or artistic works or expressions of folklore;\r\n     (ii) in the case of a phonogram the producer being the person or legal entity who first\r\n     fixes the sounds of a performance or other sounds; and, (iii) in the case of broadcasts,\r\n     the organization that transmits the broadcast. \r\n\r\n    f. \"Work\" means the literary and/or artistic work offered under the terms of this License\r\n     including without limitation any production in the literary, scientific and artistic domain,\r\n     whatever may be the mode or form of its expression including digital form, such as a book,\r\n     pamphlet and other writing; a lecture, address, sermon or other work of the same nature;\r\n     a dramatic or dramatico-musical work; a choreographic work or entertainment in dumb show;\r\n     a musical composition with or without words; a cinematographic work to which\r\n     are assimilated works expressed by a process analogous to cinematography; a work of\r\n     drawing, painting, architecture, sculpture, engraving or lithography; a photographic\r\n     work to which are assimilated works expressed by a process analogous to photography;\r\n     a work of applied art; an illustration, map, plan, sketch or three-dimensional work relative\r\n     to geography, topography, architecture or science; a performance; a broadcast;\r\n     a phonogram; a compilation of data to the extent it is protected as a copyrightable\r\n     work; or a work performed by a variety or circus performer to the extent it is not\r\n     otherwise considered a literary or artistic work. \r\n\r\n    g. \"You\" means an individual or entity exercising rights under this License who has\r\n     not previously violated the terms of this License with respect to the Work, or who\r\n     has received express permission from the Licensor to exercise rights under this\r\n     License despite a previous violation. \r\n\r\n    h. \"Publicly Perform\" means to perform public recitations of the Work and to communicate\r\n     to the public those public recitations, by any means or process, including by wire\r\n     or wireless means or public digital performances; to make available to the public Works\r\n     in such a way that members of the public may access these Works from a place and at a\r\n     place individually chosen by them; to perform the Work to the public by any means or\r\n     process and the communication to the public of the performances of the Work,\r\n     including by public digital performance; to broadcast and rebroadcast the Work by any\r\n     means including signs, sounds or images. \r\n\r\n    i. \"Reproduce\" means to make copies of the Work by any means including without limitation\r\n     by sound or visual recordings and the right of fixation and reproducing fixations of\r\n     the Work, including storage of a protected performance or phonogram in digital form\r\n     or other electronic medium. \r\n\r\n2. Fair Dealing Rights.\r\n\r\n Nothing in this License is intended to reduce, limit, or restrict any uses free from copyright or rights arising from limitations or exceptions that are provided for in connection with the copyright protection under copyright law or other applicable laws.\r\n\r\n3. License Grant.\r\n\r\n Subject to the terms and conditions of this License, Licensor hereby grants You a worldwide, royalty-free, non-exclusive, perpetual (for the duration of the applicable copyright) license to exercise the rights in the Work as stated below:\r\n\r\n    a. to Reproduce the Work, to incorporate the Work into one or more Collections,\r\n     and to Reproduce the Work as incorporated in the Collections; \r\n\r\n    b. to create and Reproduce Adaptations provided that any such Adaptation, including\r\n     any translation in any medium, takes reasonable steps to clearly label, demarcate\r\n     or otherwise identify that changes were made to the original Work. For example,\r\n     a translation could be marked \"The original work was translated from English\r\n     to Spanish,\" or a modification could indicate \"The original work has been modified.\"; \r\n\r\n    c. to Distribute and Publicly Perform the Work including as incorporated in Collections; and, \r\n\r\n    d. to Distribute and Publicly Perform Adaptations. \r\n\r\n    e. For the avoidance of doubt:\r\n\r\n        i. Non-waivable Compulsory License Schemes. In those jurisdictions in which\r\n         the right to collect royalties through any statutory or compulsory licensing scheme\r\n         cannot be waived, the Licensor reserves the exclusive right to collect\r\n         such royalties for any exercise by You of the rights granted under this License; \r\n        ii. Waivable Compulsory License Schemes. In those jurisdictions in which\r\n         the right to collect royalties through any statutory or compulsory licensing scheme\r\n         can be waived, the Licensor waives the exclusive right to collect such royalties\r\n         for any exercise by You of the rights granted under this License; and, \r\n        iii. Voluntary License Schemes. The Licensor waives the right to collect royalties,\r\n         whether individually or, in the event that the Licensor is a member of\r\n         a collecting society that administers voluntary licensing schemes, via\r\n         that society, from any exercise by You of the rights granted under this License. \r\n\r\nThe above rights may be exercised in all media and formats whether now known or hereafter devised. The above rights include the right to make such modifications as are technically necessary to exercise the rights in other media and formats. Subject to Section 8(f), all rights not expressly granted by Licensor are hereby reserved.\r\n\r\n4. Restrictions.\r\n\r\n The license granted in Section 3 above is expressly made subject to and limited by the following restrictions:\r\n\r\n    a. You may Distribute or Publicly Perform the Work only under the terms of this License.\r\n     You must include a copy of, or the Uniform Resource Identifier (URI) for,\r\n     this License with every copy of the Work You Distribute or Publicly Perform. You\r\n     may not offer or impose any terms on the Work that restrict the terms of this License\r\n     or the ability of the recipient of the Work to exercise the rights granted to that\r\n     recipient under the terms of the License. You may not sublicense the Work. You\r\n     must keep intact all notices that refer to this License and to the disclaimer of\r\n     warranties with every copy of the Work You Distribute or Publicly Perform. When\r\n     You Distribute or Publicly Perform the Work, You may not impose any effective\r\n     technological measures on the Work that restrict the ability of a recipient of the Work\r\n     from You to exercise the rights granted to that recipient under the terms of the\r\n     License. This Section 4(a) applies to the Work as incorporated in a Collection,\r\n     but this does not require the Collection apart from the Work itself to be made subject to\r\n     the terms of this License. If You create a Collection, upon notice from any Licensor\r\n     You must, to the extent practicable, remove from the Collection any credit as\r\n     required by Section 4(b), as requested. If You create an Adaptation, upon notice\r\n     from any Licensor You must, to the extent practicable, remove from the Adaptation\r\n     any credit as required by Section 4(b), as requested. \r\n\r\n    b. If You Distribute, or Publicly Perform the Work or any Adaptations or Collections,\r\n     You must, unless a request has been made pursuant to Section 4(a), keep intact all\r\n     copyright notices for the Work and provide, reasonable to the medium or means You\r\n     are utilizing: (i) the name of the Original Author (or pseudonym, if applicable)\r\n     if supplied, and/or if the Original Author and/or Licensor designate another party\r\n     or parties (e.g., a sponsor institute, publishing entity, journal) for attribution\r\n     (\"Attribution Parties\") in Licensor's copyright notice, terms of service or by other\r\n     reasonable means, the name of such party or parties; (ii) the title of the Work if\r\n     supplied; (iii) to the extent reasonably practicable, the URI, if any, that Licensor\r\n     specifies to be associated with the Work, unless such URI does not refer to the\r\n     copyright notice or licensing information for the Work; and (iv) , consistent with\r\n     Section 3(b), in the case of an Adaptation, a credit identifying the use of\r\n     the Work in the Adaptation (e.g., \"French translation of the Work by Original Author,\"\r\n     or \"Screenplay based on original Work by Original Author\"). The credit required by\r\n     this Section 4 (b) may be implemented in any reasonable manner; provided, however,\r\n     that in the case of a Adaptation or Collection, at a minimum such credit will appear,\r\n     if a credit for all contributing authors of the Adaptation or Collection appears,\r\n     then as part of these credits and in a manner at least as prominent as the credits\r\n     for the other contributing authors. For the avoidance of doubt, You may only use\r\n     the credit required by this Section for the purpose of attribution in the manner\r\n     set out above and, by exercising Your rights under this License, You may not implicitly\r\n     or explicitly assert or imply any connection with, sponsorship or endorsement\r\n     by the Original Author, Licensor and/or Attribution Parties, as appropriate, of You or\r\n     Your use of the Work, without the separate, express prior written permission of\r\n     the Original Author, Licensor and/or Attribution Parties.  \r\n\r\n    c. Except as otherwise agreed in writing by the Licensor or as may be otherwise permitted\r\n     by applicable law, if You Reproduce, Distribute or Publicly Perform the Work either by\r\n     itself or as part of any Adaptations or Collections, You must not distort, mutilate,\r\n     modify or take other derogatory action in relation to the Work which would be prejudicial\r\n     to the Original Author's honor or reputation. Licensor agrees that in those\r\n     jurisdictions (e.g. Japan), in which any exercise of the right granted in Section 3(b)\r\n     of this License (the right to make Adaptations) would be deemed to be a distortion,\r\n     mutilation, modification or other derogatory action prejudicial to the Original\r\n     Author's honor and reputation, the Licensor will waive or not assert, as appropriate,\r\n     this Section, to the fullest extent permitted by the applicable national law,\r\n     to enable You to reasonably exercise Your right under Section 3(b) of this License\r\n     (right to make Adaptations) but not otherwise. \r\n\r\n5. Representations, Warranties and Disclaimer\r\n\r\nUNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.\r\n\r\n6. Limitation on Liability.\r\n\r\n EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\r\n\r\n7. Termination\r\n\r\n    a. This License and the rights granted hereunder will terminate automatically\r\n     upon any breach by You of the terms of this License. Individuals or entities\r\n     who have received Adaptations or Collections from You under this License, however,\r\n     will not have their licenses terminated provided such individuals or entities\r\n     remain in full compliance with those licenses. Sections 1, 2, 5, 6, 7, and 8 will\r\n     survive any termination of this License. \r\n\r\n    b. Subject to the above terms and conditions, the license granted here is perpetual\r\n     (for the duration of the applicable copyright in the Work). Notwithstanding the above,\r\n     Licensor reserves the right to release the Work under different license terms or\r\n     to stop distributing the Work at any time; provided, however that any such election will\r\n     not serve to withdraw this License (or any other license that has been, or is required\r\n     to be, granted under the terms of this License), and this License will continue in full\r\n     force and effect unless terminated as stated above. \r\n\r\n8. Miscellaneous\r\n\r\n    a. Each time You Distribute or Publicly Perform the Work or a Collection, the Licensor\r\n     offers to the recipient a license to the Work on the same terms and conditions as\r\n     the license granted to You under this License. \r\n\r\n    b. Each time You Distribute or Publicly Perform an Adaptation, Licensor offers\r\n     to the recipient a license to the original Work on the same terms and conditions as the\r\n     license granted to You under this License. \r\n\r\n    c. If any provision of this License is invalid or unenforceable under\r\n     applicable law, it shall not affect the validity or enforceability of the\r\n     remainder of the terms of this License, and without further action by the parties\r\n     to this agreement, such provision shall be reformed to the minimum extent necessary\r\n     to make such provision valid and enforceable. \r\n\r\n    d. No term or provision of this License shall be deemed waived and no breach\r\n     consented to unless such waiver or consent shall be in writing and signed by\r\n     the party to be charged with such waiver or consent. \r\n\r\n    e. This License constitutes the entire agreement between the parties with respect to\r\n     the Work licensed here. There are no understandings, agreements or representations\r\n     with respect to the Work not specified here. Licensor shall not be bound by any additional\r\n     provisions that may appear in any communication from You. This License may not be\r\n     modified without the mutual written agreement of the Licensor and You. \r\n\r\n    f. The rights granted under, and the subject matter referenced, in this License\r\n     were drafted utilizing the terminology of the Berne Convention for the Protection\r\n     of Literary and Artistic Works (as amended on September 28, 1979), the Rome Convention\r\n     of 1961, the WIPO Copyright Treaty of 1996, the WIPO Performances and Phonograms\r\n     Treaty of 1996 and the Universal Copyright Convention (as revised on July 24, 1971).\r\n     These rights and subject matter take effect in the relevant jurisdiction in which the\r\n     License terms are sought to be enforced according to the corresponding provisions\r\n     of the implementation of those treaty provisions in the applicable national law.\r\n     If the standard suite of rights granted under applicable copyright law includes additional\r\n     rights not granted under this License, such additional rights are deemed to be included\r\n     in the License; this License is not intended to restrict the license of any rights under applicable law. \r\n\r\n\r\nCreative Commons Notice\r\n\r\nCreative Commons is not a party to this License, and makes no warranty whatsoever in connection with the Work. Creative Commons will not be liable to You or any party on any legal theory for any damages whatsoever, including without limitation any general, special, incidental or consequential damages arising in connection to this license. Notwithstanding the foregoing two (2) sentences, if Creative Commons has expressly identified itself as the Licensor hereunder, it shall have all rights and obligations of Licensor.\r\n\r\nExcept for the limited purpose of indicating to the public that the Work is licensed under the CCPL, Creative Commons does not authorize the use by either party of the trademark \"Creative Commons\" or any related trademark or logo of Creative Commons without the prior written consent of Creative Commons. Any permitted use will be in compliance with Creative Commons' then-current trademark usage guidelines, as may be published on its website or otherwise made available upon request from time to time. For the avoidance of doubt, this trademark restriction does not form part of this License.\r\n\r\nCreative Commons may be contacted at http://creativecommons.org/.",
-              "_license_notices": [
+              "summary": "http://creativecommons.org/licenses/by/3.0/ãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
+              "notices": [
                   {
                       "_notice_description": "",
                       "_notice_content": "No rights arising from fair use, exhaustion of rights, or restrictions by copyright law or the exclusive rights of the copyright holder under applicable law will be diminished or limited by this license.",
@@ -1014,9 +694,222 @@ open-license]] (CDLA-Permissive-1.0))
                       "_notice_id": "notices/112"
                   }
               ],
-              "_license_description": "A derivative work is a translation, alteration, or derivative work; an arrangement of a musical work; an alteration of a literary or artistic work; a sound recording; a performance; an alteration to a film work; an alteration of a work into another form by changing the cast or format; an alteration that includes a form that is recognizable as a derivative of the original work and another work that existed before the original work, such as A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work such as an encyclopedia or a book of poetry, or a collection of works other than those listed as works, each of which is an unaltered assembly of independent works that, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. Distribution means making the original work, a copy of the original work, or a derivative work, available to the public through sale or other transfer of ownership in a suitable manner. Licensor is the person or entity making the work available under this license. In the case of a literary or artistic work, the original author is the person or entity that created the work. In the case of a literary or artistic work, the person or entity that created the work, however, if the person or entity cannot be identified, the person or entity that published the work. In addition, (i) in the case of performances, actors, singers, musicians, dancers, or persons acting, singing, speaking, addressing, performing, interpreting, or performing a literary or artistic work or rendering folklore, and (ii) in the case of recordings, the person or entity who produced the work. (ii) in the case of sound recordings, the person or entity who first fixes the sound of a performance or other sound, as the case may be. (iii) in the case of broadcasting, the organization that broadcasts the broadcast work. A work is a literary or artistic work offered under this License in any form, including digital forms of expression. Creations in the fields of literature, science, and the arts, including, but not limited to, books, pamphlets, and other works of art. Examples include: - Books, pamphlets, and other written works; - Lectures, speeches, and sermons of the same nature; - Plays, musical works, choreography, and silent plays; - Musical works with or without lyrics; - Cinematographic works that combine cinematography and similar methods of expression; - Sketches, paintings, architecture, sculpture, and prints. , lithographic printing, - photographic works that combine photography and works expressed by similar methods, - works of applied art, - illustrations, maps, blueprints, sketches, or 3-dimensional works related to geography, topography, architecture, or science, - demonstrations, - broadcasts, - sound recordings, - compilations of data to the extent that they are protected by copyright. A work of literature or a work performed by a variety or circus performer, to the extent that it is not considered a work of art. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to a work, or who has expressly granted Licensor permission to exercise rights in the event of a prior license violation. Public performance means: â Reciting a work in public or communicating it to the public by any means or procedure, including wire, wireless, or public digital performance; â Making a work available to the public in a manner that allows the public access to the place where the work exists, at a place of their choosing. and - the public performance of a work by any means or procedure, including digital performances in public; and - the broadcasting or rebroadcasting of a work by any means or procedure, including signals, sound or images. Reproduction refers to the reproduction of a work by any means, including, but not limited to, the right to record or fix audio or visual information, or a copy of the work, including, but not limited to, a protected demonstration or recording storage of the work in digital form or other electronic media.",
-              "_license_baseUri": "http://open-license.hitachi.com/",
-              "_license_schemaVersion": "0.1",
+              "_sourceURL": "http://open-license.hitachi.com/licenses/58",
+              "content": "Creative Commons Legal Code\r\nAttribution 3.0 Unported\r\n \r\nCREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN \"AS-IS\" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.\r\n\r\n\r\nLicense\r\n\r\nTHE WORK (AS DEFINED BELOW) IS PROVIDED UNDER THE TERMS OF THIS CREATIVE COMMONS PUBLIC LICENSE (\"CCPL\" OR \"LICENSE\"). THE WORK IS PROTECTED BY COPYRIGHT AND/OR OTHER APPLICABLE LAW. ANY USE OF THE WORK OTHER THAN AS AUTHORIZED UNDER THIS LICENSE OR COPYRIGHT LAW IS PROHIBITED.\r\n\r\nBY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HERE, YOU ACCEPT AND AGREE TO BE BOUND BY THE TERMS OF THIS LICENSE. TO THE EXTENT THIS LICENSE MAY BE CONSIDERED TO BE A CONTRACT, THE LICENSOR GRANTS YOU THE RIGHTS CONTAINED HERE IN CONSIDERATION OF YOUR ACCEPTANCE OF SUCH TERMS AND CONDITIONS.\r\n\r\n1. Definitions\r\n\r\n    a.\t\"Adaptation\" means a work based upon the Work, or upon the Work and other pre-existing works,\r\n     such as a translation, adaptation, derivative work, arrangement of music or other alterations\r\n     of a literary or artistic work, or phonogram or performance and includes cinematographic\r\n     adaptations or any other form in which the Work may be recast, transformed, or adapted\r\n     including in any form recognizably derived from the original, except that a work that\r\n     constitutes a Collection will not be considered an Adaptation for the purpose of this\r\n     License. For the avoidance of doubt, where the Work is a musical work, performance or phonogram,\r\n     the synchronization of the Work in timed-relation with a moving image (\"synching\") will be considered\r\n     an Adaptation for the purpose of this License. \r\n\r\n    b. \"Collection\" means a collection of literary or artistic works, such as encyclopedias\r\n     and anthologies, or performances, phonograms or broadcasts, or other works or subject\r\n     matter other than works listed in Section 1(f) below, which, by reason of the selection\r\n     and arrangement of their contents, constitute intellectual creations, in which the Work\r\n     is included in its entirety in unmodified form along with one or more other contributions,\r\n     each constituting separate and independent works in themselves, which together are assembled\r\n     into a collective whole. A work that constitutes a Collection will not be considered\r\n     an Adaptation (as defined above) for the purposes of this License. \r\n\r\n    c. \"Distribute\" means to make available to the public the original and copies of\r\n    the Work or Adaptation, as appropriate, through sale or other transfer of ownership. \r\n\r\n    d. \"Licensor\" means the individual, individuals, entity or entities that offer(s)\r\n     the Work under the terms of this License. \r\n\r\n    e. \"Original Author\" means, in the case of a literary or artistic work, the individual,\r\n     individuals, entity or entities who created the Work or if no individual or entity can be\r\n     identified, the publisher; and in addition (i) in the case of a performance the actors,\r\n     singers, musicians, dancers, and other persons who act, sing, deliver, declaim,\r\n     play in, interpret or otherwise perform literary or artistic works or expressions of folklore;\r\n     (ii) in the case of a phonogram the producer being the person or legal entity who first\r\n     fixes the sounds of a performance or other sounds; and, (iii) in the case of broadcasts,\r\n     the organization that transmits the broadcast. \r\n\r\n    f. \"Work\" means the literary and/or artistic work offered under the terms of this License\r\n     including without limitation any production in the literary, scientific and artistic domain,\r\n     whatever may be the mode or form of its expression including digital form, such as a book,\r\n     pamphlet and other writing; a lecture, address, sermon or other work of the same nature;\r\n     a dramatic or dramatico-musical work; a choreographic work or entertainment in dumb show;\r\n     a musical composition with or without words; a cinematographic work to which\r\n     are assimilated works expressed by a process analogous to cinematography; a work of\r\n     drawing, painting, architecture, sculpture, engraving or lithography; a photographic\r\n     work to which are assimilated works expressed by a process analogous to photography;\r\n     a work of applied art; an illustration, map, plan, sketch or three-dimensional work relative\r\n     to geography, topography, architecture or science; a performance; a broadcast;\r\n     a phonogram; a compilation of data to the extent it is protected as a copyrightable\r\n     work; or a work performed by a variety or circus performer to the extent it is not\r\n     otherwise considered a literary or artistic work. \r\n\r\n    g. \"You\" means an individual or entity exercising rights under this License who has\r\n     not previously violated the terms of this License with respect to the Work, or who\r\n     has received express permission from the Licensor to exercise rights under this\r\n     License despite a previous violation. \r\n\r\n    h. \"Publicly Perform\" means to perform public recitations of the Work and to communicate\r\n     to the public those public recitations, by any means or process, including by wire\r\n     or wireless means or public digital performances; to make available to the public Works\r\n     in such a way that members of the public may access these Works from a place and at a\r\n     place individually chosen by them; to perform the Work to the public by any means or\r\n     process and the communication to the public of the performances of the Work,\r\n     including by public digital performance; to broadcast and rebroadcast the Work by any\r\n     means including signs, sounds or images. \r\n\r\n    i. \"Reproduce\" means to make copies of the Work by any means including without limitation\r\n     by sound or visual recordings and the right of fixation and reproducing fixations of\r\n     the Work, including storage of a protected performance or phonogram in digital form\r\n     or other electronic medium. \r\n\r\n2. Fair Dealing Rights.\r\n\r\n Nothing in this License is intended to reduce, limit, or restrict any uses free from copyright or rights arising from limitations or exceptions that are provided for in connection with the copyright protection under copyright law or other applicable laws.\r\n\r\n3. License Grant.\r\n\r\n Subject to the terms and conditions of this License, Licensor hereby grants You a worldwide, royalty-free, non-exclusive, perpetual (for the duration of the applicable copyright) license to exercise the rights in the Work as stated below:\r\n\r\n    a. to Reproduce the Work, to incorporate the Work into one or more Collections,\r\n     and to Reproduce the Work as incorporated in the Collections; \r\n\r\n    b. to create and Reproduce Adaptations provided that any such Adaptation, including\r\n     any translation in any medium, takes reasonable steps to clearly label, demarcate\r\n     or otherwise identify that changes were made to the original Work. For example,\r\n     a translation could be marked \"The original work was translated from English\r\n     to Spanish,\" or a modification could indicate \"The original work has been modified.\"; \r\n\r\n    c. to Distribute and Publicly Perform the Work including as incorporated in Collections; and, \r\n\r\n    d. to Distribute and Publicly Perform Adaptations. \r\n\r\n    e. For the avoidance of doubt:\r\n\r\n        i. Non-waivable Compulsory License Schemes. In those jurisdictions in which\r\n         the right to collect royalties through any statutory or compulsory licensing scheme\r\n         cannot be waived, the Licensor reserves the exclusive right to collect\r\n         such royalties for any exercise by You of the rights granted under this License; \r\n        ii. Waivable Compulsory License Schemes. In those jurisdictions in which\r\n         the right to collect royalties through any statutory or compulsory licensing scheme\r\n         can be waived, the Licensor waives the exclusive right to collect such royalties\r\n         for any exercise by You of the rights granted under this License; and, \r\n        iii. Voluntary License Schemes. The Licensor waives the right to collect royalties,\r\n         whether individually or, in the event that the Licensor is a member of\r\n         a collecting society that administers voluntary licensing schemes, via\r\n         that society, from any exercise by You of the rights granted under this License. \r\n\r\nThe above rights may be exercised in all media and formats whether now known or hereafter devised. The above rights include the right to make such modifications as are technically necessary to exercise the rights in other media and formats. Subject to Section 8(f), all rights not expressly granted by Licensor are hereby reserved.\r\n\r\n4. Restrictions.\r\n\r\n The license granted in Section 3 above is expressly made subject to and limited by the following restrictions:\r\n\r\n    a. You may Distribute or Publicly Perform the Work only under the terms of this License.\r\n     You must include a copy of, or the Uniform Resource Identifier (URI) for,\r\n     this License with every copy of the Work You Distribute or Publicly Perform. You\r\n     may not offer or impose any terms on the Work that restrict the terms of this License\r\n     or the ability of the recipient of the Work to exercise the rights granted to that\r\n     recipient under the terms of the License. You may not sublicense the Work. You\r\n     must keep intact all notices that refer to this License and to the disclaimer of\r\n     warranties with every copy of the Work You Distribute or Publicly Perform. When\r\n     You Distribute or Publicly Perform the Work, You may not impose any effective\r\n     technological measures on the Work that restrict the ability of a recipient of the Work\r\n     from You to exercise the rights granted to that recipient under the terms of the\r\n     License. This Section 4(a) applies to the Work as incorporated in a Collection,\r\n     but this does not require the Collection apart from the Work itself to be made subject to\r\n     the terms of this License. If You create a Collection, upon notice from any Licensor\r\n     You must, to the extent practicable, remove from the Collection any credit as\r\n     required by Section 4(b), as requested. If You create an Adaptation, upon notice\r\n     from any Licensor You must, to the extent practicable, remove from the Adaptation\r\n     any credit as required by Section 4(b), as requested. \r\n\r\n    b. If You Distribute, or Publicly Perform the Work or any Adaptations or Collections,\r\n     You must, unless a request has been made pursuant to Section 4(a), keep intact all\r\n     copyright notices for the Work and provide, reasonable to the medium or means You\r\n     are utilizing: (i) the name of the Original Author (or pseudonym, if applicable)\r\n     if supplied, and/or if the Original Author and/or Licensor designate another party\r\n     or parties (e.g., a sponsor institute, publishing entity, journal) for attribution\r\n     (\"Attribution Parties\") in Licensor's copyright notice, terms of service or by other\r\n     reasonable means, the name of such party or parties; (ii) the title of the Work if\r\n     supplied; (iii) to the extent reasonably practicable, the URI, if any, that Licensor\r\n     specifies to be associated with the Work, unless such URI does not refer to the\r\n     copyright notice or licensing information for the Work; and (iv) , consistent with\r\n     Section 3(b), in the case of an Adaptation, a credit identifying the use of\r\n     the Work in the Adaptation (e.g., \"French translation of the Work by Original Author,\"\r\n     or \"Screenplay based on original Work by Original Author\"). The credit required by\r\n     this Section 4 (b) may be implemented in any reasonable manner; provided, however,\r\n     that in the case of a Adaptation or Collection, at a minimum such credit will appear,\r\n     if a credit for all contributing authors of the Adaptation or Collection appears,\r\n     then as part of these credits and in a manner at least as prominent as the credits\r\n     for the other contributing authors. For the avoidance of doubt, You may only use\r\n     the credit required by this Section for the purpose of attribution in the manner\r\n     set out above and, by exercising Your rights under this License, You may not implicitly\r\n     or explicitly assert or imply any connection with, sponsorship or endorsement\r\n     by the Original Author, Licensor and/or Attribution Parties, as appropriate, of You or\r\n     Your use of the Work, without the separate, express prior written permission of\r\n     the Original Author, Licensor and/or Attribution Parties.  \r\n\r\n    c. Except as otherwise agreed in writing by the Licensor or as may be otherwise permitted\r\n     by applicable law, if You Reproduce, Distribute or Publicly Perform the Work either by\r\n     itself or as part of any Adaptations or Collections, You must not distort, mutilate,\r\n     modify or take other derogatory action in relation to the Work which would be prejudicial\r\n     to the Original Author's honor or reputation. Licensor agrees that in those\r\n     jurisdictions (e.g. Japan), in which any exercise of the right granted in Section 3(b)\r\n     of this License (the right to make Adaptations) would be deemed to be a distortion,\r\n     mutilation, modification or other derogatory action prejudicial to the Original\r\n     Author's honor and reputation, the Licensor will waive or not assert, as appropriate,\r\n     this Section, to the fullest extent permitted by the applicable national law,\r\n     to enable You to reasonably exercise Your right under Section 3(b) of this License\r\n     (right to make Adaptations) but not otherwise. \r\n\r\n5. Representations, Warranties and Disclaimer\r\n\r\nUNLESS OTHERWISE MUTUALLY AGREED TO BY THE PARTIES IN WRITING, LICENSOR OFFERS THE WORK AS-IS AND MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE WORK, EXPRESS, IMPLIED, STATUTORY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, WARRANTIES OF TITLE, MERCHANTIBILITY, FITNESS FOR A PARTICULAR PURPOSE, NONINFRINGEMENT, OR THE ABSENCE OF LATENT OR OTHER DEFECTS, ACCURACY, OR THE PRESENCE OF ABSENCE OF ERRORS, WHETHER OR NOT DISCOVERABLE. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO SUCH EXCLUSION MAY NOT APPLY TO YOU.\r\n\r\n6. Limitation on Liability.\r\n\r\n EXCEPT TO THE EXTENT REQUIRED BY APPLICABLE LAW, IN NO EVENT WILL LICENSOR BE LIABLE TO YOU ON ANY LEGAL THEORY FOR ANY SPECIAL, INCIDENTAL, CONSEQUENTIAL, PUNITIVE OR EXEMPLARY DAMAGES ARISING OUT OF THIS LICENSE OR THE USE OF THE WORK, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.\r\n\r\n7. Termination\r\n\r\n    a. This License and the rights granted hereunder will terminate automatically\r\n     upon any breach by You of the terms of this License. Individuals or entities\r\n     who have received Adaptations or Collections from You under this License, however,\r\n     will not have their licenses terminated provided such individuals or entities\r\n     remain in full compliance with those licenses. Sections 1, 2, 5, 6, 7, and 8 will\r\n     survive any termination of this License. \r\n\r\n    b. Subject to the above terms and conditions, the license granted here is perpetual\r\n     (for the duration of the applicable copyright in the Work). Notwithstanding the above,\r\n     Licensor reserves the right to release the Work under different license terms or\r\n     to stop distributing the Work at any time; provided, however that any such election will\r\n     not serve to withdraw this License (or any other license that has been, or is required\r\n     to be, granted under the terms of this License), and this License will continue in full\r\n     force and effect unless terminated as stated above. \r\n\r\n8. Miscellaneous\r\n\r\n    a. Each time You Distribute or Publicly Perform the Work or a Collection, the Licensor\r\n     offers to the recipient a license to the Work on the same terms and conditions as\r\n     the license granted to You under this License. \r\n\r\n    b. Each time You Distribute or Publicly Perform an Adaptation, Licensor offers\r\n     to the recipient a license to the original Work on the same terms and conditions as the\r\n     license granted to You under this License. \r\n\r\n    c. If any provision of this License is invalid or unenforceable under\r\n     applicable law, it shall not affect the validity or enforceability of the\r\n     remainder of the terms of this License, and without further action by the parties\r\n     to this agreement, such provision shall be reformed to the minimum extent necessary\r\n     to make such provision valid and enforceable. \r\n\r\n    d. No term or provision of this License shall be deemed waived and no breach\r\n     consented to unless such waiver or consent shall be in writing and signed by\r\n     the party to be charged with such waiver or consent. \r\n\r\n    e. This License constitutes the entire agreement between the parties with respect to\r\n     the Work licensed here. There are no understandings, agreements or representations\r\n     with respect to the Work not specified here. Licensor shall not be bound by any additional\r\n     provisions that may appear in any communication from You. This License may not be\r\n     modified without the mutual written agreement of the Licensor and You. \r\n\r\n    f. The rights granted under, and the subject matter referenced, in this License\r\n     were drafted utilizing the terminology of the Berne Convention for the Protection\r\n     of Literary and Artistic Works (as amended on September 28, 1979), the Rome Convention\r\n     of 1961, the WIPO Copyright Treaty of 1996, the WIPO Performances and Phonograms\r\n     Treaty of 1996 and the Universal Copyright Convention (as revised on July 24, 1971).\r\n     These rights and subject matter take effect in the relevant jurisdiction in which the\r\n     License terms are sought to be enforced according to the corresponding provisions\r\n     of the implementation of those treaty provisions in the applicable national law.\r\n     If the standard suite of rights granted under applicable copyright law includes additional\r\n     rights not granted under this License, such additional rights are deemed to be included\r\n     in the License; this License is not intended to restrict the license of any rights under applicable law. \r\n\r\n\r\nCreative Commons Notice\r\n\r\nCreative Commons is not a party to this License, and makes no warranty whatsoever in connection with the Work. Creative Commons will not be liable to You or any party on any legal theory for any damages whatsoever, including without limitation any general, special, incidental or consequential damages arising in connection to this license. Notwithstanding the foregoing two (2) sentences, if Creative Commons has expressly identified itself as the Licensor hereunder, it shall have all rights and obligations of Licensor.\r\n\r\nExcept for the limited purpose of indicating to the public that the Work is licensed under the CCPL, Creative Commons does not authorize the use by either party of the trademark \"Creative Commons\" or any related trademark or logo of Creative Commons without the prior written consent of Creative Commons. Any permitted use will be in compliance with Creative Commons' then-current trademark usage guidelines, as may be published on its website or otherwise made available upon request from time to time. For the avoidance of doubt, this trademark restriction does not form part of this License.\r\n\r\nCreative Commons may be contacted at http://creativecommons.org/.",
+              "name": "Creative Commons Attribution 3.0 Unported",
+              "permissions": [
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/122",
+                              "name": "Reproduce the work.",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/127",
+                              "name": "Incorporate a work into one or more collective works",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/128",
+                              "name": "Reproduce a work incorporated into a collective work",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/130",
+                              "name": "Distribute copies of the work (including works incorporated into a collective work)",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/131",
+                              "name": "Distributing a medium on which a recording of a work (including a work incorporated into a collective work) is made",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/132",
+                              "name": "Public display of a work (including a work incorporated into a collective work)",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/133",
+                              "name": "Publicly perform a work (including a work incorporated into a collective work)",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/94",
+                                  "name": "Exercise rights in all current and future media and formats",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/103",
+                                  "name": "Provide the credit you specify in a reasonable manner.",
+                                  "type": "OBLIGATION",
+                                  "description": "In the case of derivative or collective works, such credit shall be given at least where other similar credits appear, and in a manner that is at least as prominent as other similar credits. The name of the original author (or a pseudonym, if applicable) and the name of the entity to which the rights are attributed by the licensor's copyright notice, terms of use, or otherwise - the title of the work, if any - the URI listed by the licensor for the work If there is, the URI shall be displayed as much as reasonably practicable. However, this does not apply if there is no reference to copyright notice or information about the license. â In the case of derivative works, credit for the use of the work."
+                              },
+                              {
+                                  "_id": "conditions/102",
+                                  "name": "All copyright notices are posted intact.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/101",
+                                  "name": "Take no technical measures to restrict access to or use of the work in a way that violates this license",
+                                  "type": "OBLIGATION",
+                                  "description": "The same is true for works incorporated into a collective work. However, this license does not extend to collective works that are different from the works under this license."
+                              },
+                              {
+                                  "_id": "conditions/100",
+                                  "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/99",
+                                  "name": "No sublicensing of copyrighted material.",
+                                  "type": "RESTRICTION",
+                                  "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
+                              },
+                              {
+                                  "_id": "conditions/98",
+                                  "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/96",
+                                  "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/95",
+                                  "name": "Make technical changes for use in other media or formats, if necessary",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/134",
+                                  "name": "I will not defame the original author.",
+                                  "type": "OBLIGATION",
+                                  "description": "You may not use this license for any purpose other than to create a derivative work, except with the written consent of the licensor or where legally permitted. Where, in some jurisdictions (such as Japan), the exercise of the right to create a derivative work would be deemed to be materially defamatory to the original author, the licensor may, to the extent that the person exercising the right to create the derivative work can exercise to the fullest extent permitted by national law, provide the licensee with a copy of the copyrighted work as required by this License. You agree not to exempt or claim credit for the author or others who are"
+                              }
+                          ]
+                      },
+                      "description": "A work is a literary or artistic work offered under this licence in any form, including digital forms of expression, including, but not limited to, creations in the fields of literature, science and the arts. Works of authorship are works of creation in the fields of literature, science and the arts, including, but not limited to, books, pamphlets, other written works, and other works of authorship in digital form. This license includes, but is not limited to: books, pamphlets, and other written works; lectures, speeches, and sermons of the same nature as lectures, speeches, and sermons; plays, musical productions, choreography, and silent plays; musical works with or without lyrics; cinematographic and similarly expressed works in motion pictures; sketches, paintings, architecture, sculptures, and prints. The work of photography, lithography, photographic works, works of applied art, illustrations, maps, blueprints, sketches, or other three-dimensional works related to geography, topography, architecture, or science, demonstrations, broadcasts, sound recordings, and the compilation of copyrighted data. A work performed by a variety or circus performer, to the extent that it is not considered an object, a literary work, or a work of art, including, but not limited to, the recording of sound and visual information, rights to fixation, and copies of works. Reproduction means the reproduction of a work by means of any means, including, but not limited to, the right to record or fix audio or visual information, or copies of a work, including, but not limited to, protected performance or sound recording storage devices in digital form or other electronic media. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work, such as an encyclopaedia, poetry, etc., or a collection of works other than those enumerated as works of authorship, each of which consists of independent works assembled without modification and which, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. A derivative work is a work or other work that has existed before the original work, such as a translation, alteration, derivative work, arrangement of a musical work, modification of a literary or artistic work, sound recording, performance, alteration of a film work, transformation of a work into another form by changing the cast or format, or alteration that includes a form recognizable as a derivative of the original work. A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. For the avoidance of doubt, synchronized musical works, performances and recordings shall be considered derivative works under this license. Public performance is defined as the public recitation and communication of a work in public by any means or procedure, including wire, radio or public digital performance, or making the work available to the public by making it accessible to the public at a place of their choosing, where it exists. includes digital performances in public and involves the public performance of a work by any means or procedure; and broadcasting or rebroadcasting of a work by any means or procedure, including signals, sounds or images."
+                  },
+                  {
+                      "summary": "",
+                      "actions": [
+                          {
+                              "_id": "actions/126",
+                              "name": "Creating a derivative work",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/129",
+                              "name": "Reproduce a derivative work",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/135",
+                              "name": "Distribute copies of derivative works",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/136",
+                              "name": "Distribute the medium in which the derivative works are recorded",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/137",
+                              "name": "Public display of derivative works",
+                              "description": ""
+                          },
+                          {
+                              "_id": "actions/138",
+                              "name": "Publicly perform a derivative work",
+                              "description": ""
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "_id": "conditions/135",
+                                  "name": "Take reasonable steps to identify that the original work has been created with changes to the original work",
+                                  "type": "OBLIGATION",
+                                  "description": "Labeling and distinguishing"
+                              },
+                              {
+                                  "_id": "conditions/103",
+                                  "name": "Provide the credit you specify in a reasonable manner.",
+                                  "type": "OBLIGATION",
+                                  "description": "In the case of derivative or collective works, such credit shall be given at least where other similar credits appear, and in a manner that is at least as prominent as other similar credits. The name of the original author (or a pseudonym, if applicable) and the name of the entity to which the rights are attributed by the licensor's copyright notice, terms of use, or otherwise - the title of the work, if any - the URI listed by the licensor for the work If there is, the URI shall be displayed as much as reasonably practicable. However, this does not apply if there is no reference to copyright notice or information about the license. â In the case of derivative works, credit for the use of the work."
+                              },
+                              {
+                                  "_id": "conditions/102",
+                                  "name": "All copyright notices are posted intact.",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/101",
+                                  "name": "Take no technical measures to restrict access to or use of the work in a way that violates this license",
+                                  "type": "OBLIGATION",
+                                  "description": "The same is true for works incorporated into a collective work. However, this license does not extend to collective works that are different from the works under this license."
+                              },
+                              {
+                                  "_id": "conditions/100",
+                                  "name": "This license, and the statements about the non-warranty and disclaimer are verbatim",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/99",
+                                  "name": "No sublicensing of copyrighted material.",
+                                  "type": "RESTRICTION",
+                                  "description": "Sublicense means that a person who has been granted this license re-grants the license so granted to a third party."
+                              },
+                              {
+                                  "_id": "conditions/98",
+                                  "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/96",
+                                  "name": "Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license",
+                                  "type": "OBLIGATION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/95",
+                                  "name": "Make technical changes for use in other media or formats, if necessary",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/94",
+                                  "name": "Exercise rights in all current and future media and formats",
+                                  "type": "RESTRICTION",
+                                  "description": ""
+                              },
+                              {
+                                  "_id": "conditions/134",
+                                  "name": "I will not defame the original author.",
+                                  "type": "OBLIGATION",
+                                  "description": "You may not use this license for any purpose other than to create a derivative work, except with the written consent of the licensor or where legally permitted. Where, in some jurisdictions (such as Japan), the exercise of the right to create a derivative work would be deemed to be materially defamatory to the original author, the licensor may, to the extent that the person exercising the right to create the derivative work can exercise to the fullest extent permitted by national law, provide the licensee with a copy of the copyrighted work as required by this License. You agree not to exempt or claim credit for the author or others who are"
+                              }
+                          ]
+                      },
+                      "description": "Secondary works are those works that have been translated, altered, or derived from the original work and other previously existing works, such as translations, alterations, derivatives, arrangements of musical works, alterations of literary or artistic works, sound recordings, performances, alterations to a film work, alterations of a work into another form by changing the cast or format, and alterations that include a form recognizable as a derivative of the original work. A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A work is a literary or artistic work offered under this license in any form or format, including digital forms of expression. Works of authorship are works of creation in the fields of literature, science and the arts, including, but not limited to, books, pamphlets and other works of authorship. This license includes, but is not limited to: books, pamphlets, and other written works; lectures, speeches, and sermons of the same nature as lectures, speeches, and sermons; plays, musical productions, choreography, and silent plays; musical works with or without lyrics; cinematographic and similarly expressed works in motion pictures; sketches, paintings, architecture, sculptures, and prints. The work of photography, lithography, photographic works, works of applied art, illustrations, maps, blueprints, sketches, or other three-dimensional works related to geography, topography, architecture, or science, demonstrations, broadcasts, sound recordings, and the compilation of copyrighted data. A collective work is a work, a work performed by a variety or circus performer, not considered a literary or artistic work. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work, such as an encyclopaedia or book of poetry, or a collection of works other than those enumerated as works of authorship, each of which is an assemblage of independent works, assembled without modification, which, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. Reproduction is the reproduction of a work by means including, but not limited to, the right to record or fix audio or visual information and copies of the work, including, but not limited to, protected performance or sound recording storage in digital form or other electronic media. Distribution is making the original work, a copy of the original work, or a derivative work, available to the public through sale or other transfer of ownership in an appropriate manner. Public performance\" means to make a work available to the public by any means or procedure, including wire, radio or public digital performance, by reciting or transmitting to the public, or by making the public accessible to the work at a place of their choosing, where it exists. includes digital performances in public and involves the public performance of a work by any means or procedure; and broadcasting or rebroadcasting of a work by any means or procedure, including signals, sounds or images."
+                  }
+              ],
               "_implications": {
                   "__impliedNames": [
                       "Creative Commons Attribution 3.0 Unported"
@@ -1028,7 +921,8 @@ open-license]] (CDLA-Permissive-1.0))
                           "http://open-license.hitachi.com/licenses/58"
                       ]
                   ]
-              }
+              },
+              "description": "A derivative work is a translation, alteration, or derivative work; an arrangement of a musical work; an alteration of a literary or artistic work; a sound recording; a performance; an alteration to a film work; an alteration of a work into another form by changing the cast or format; an alteration that includes a form that is recognizable as a derivative of the original work and another work that existed before the original work, such as A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work such as an encyclopedia or a book of poetry, or a collection of works other than those listed as works, each of which is an unaltered assembly of independent works that, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. Distribution means making the original work, a copy of the original work, or a derivative work, available to the public through sale or other transfer of ownership in a suitable manner. Licensor is the person or entity making the work available under this license. In the case of a literary or artistic work, the original author is the person or entity that created the work. In the case of a literary or artistic work, the person or entity that created the work, however, if the person or entity cannot be identified, the person or entity that published the work. In addition, (i) in the case of performances, actors, singers, musicians, dancers, or persons acting, singing, speaking, addressing, performing, interpreting, or performing a literary or artistic work or rendering folklore, and (ii) in the case of recordings, the person or entity who produced the work. (ii) in the case of sound recordings, the person or entity who first fixes the sound of a performance or other sound, as the case may be. (iii) in the case of broadcasting, the organization that broadcasts the broadcast work. A work is a literary or artistic work offered under this License in any form, including digital forms of expression. Creations in the fields of literature, science, and the arts, including, but not limited to, books, pamphlets, and other works of art. Examples include: - Books, pamphlets, and other written works; - Lectures, speeches, and sermons of the same nature; - Plays, musical works, choreography, and silent plays; - Musical works with or without lyrics; - Cinematographic works that combine cinematography and similar methods of expression; - Sketches, paintings, architecture, sculpture, and prints. , lithographic printing, - photographic works that combine photography and works expressed by similar methods, - works of applied art, - illustrations, maps, blueprints, sketches, or 3-dimensional works related to geography, topography, architecture, or science, - demonstrations, - broadcasts, - sound recordings, - compilations of data to the extent that they are protected by copyright. A work of literature or a work performed by a variety or circus performer, to the extent that it is not considered a work of art. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to a work, or who has expressly granted Licensor permission to exercise rights in the event of a prior license violation. Public performance means: â Reciting a work in public or communicating it to the public by any means or procedure, including wire, wireless, or public digital performance; â Making a work available to the public in a manner that allows the public access to the place where the work exists, at a place of their choosing. and - the public performance of a work by any means or procedure, including digital performances in public; and - the broadcasting or rebroadcasting of a work by any means or procedure, including signals, sound or images. Reproduction refers to the reproduction of a work by any means, including, but not limited to, the right to record or fix audio or visual information, or a copy of the work, including, but not limited to, a protected demonstration or recording storage of the work in digital form or other electronic media."
           },
           "Google OSS Policy": {
               "rating": "NOTICE",

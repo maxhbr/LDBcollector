@@ -373,170 +373,8 @@ Raw Data
                 }
             },
             "Hitachi open-license": {
-                "_license_uri": "http://open-license.hitachi.com/licenses/277",
-                "_license_permissions": [
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": null,
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched code as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/1",
-                                "_action_id": "actions/1",
-                                "_action_name": "Use the obtained source code without modification"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/3",
-                                "_action_id": "actions/3",
-                                "_action_name": "Modify the obtained source code."
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/4",
-                                "_action_id": "actions/4",
-                                "_action_name": "Using Modified Source Code"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Use the fetched binary as it is.",
-                                "_action_uri": "http://open-license.hitachi.com/actions/6",
-                                "_action_id": "actions/6",
-                                "_action_name": "Use the retrieved binaries"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/8",
-                                "_action_id": "actions/8",
-                                "_action_name": "Use binaries generated from modified source code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/1",
-                            "_condition_id": "conditions/1",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the code as it was obtained",
-                                "_action_uri": "http://open-license.hitachi.com/actions/9",
-                                "_action_id": "actions/9",
-                                "_action_name": "Distribute the obtained source code without modification"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/12",
-                                "_action_id": "actions/12",
-                                "_action_name": "Distribution of Modified Source Code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/2",
-                            "_condition_id": "conditions/2",
-                            "_condition_name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "Redistribute the fetched binaries as they are",
-                                "_action_uri": "http://open-license.hitachi.com/actions/11",
-                                "_action_id": "actions/11",
-                                "_action_name": "Distribute the fetched binaries"
-                            },
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/14",
-                                "_action_id": "actions/14",
-                                "_action_name": "Distribute the generated binaries from modified source code"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "The text of the acknowledgement is here \"This product includes software developed by the <organization>.\"",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/13",
-                            "_condition_id": "conditions/13",
-                            "_condition_name": "Acknowledgements",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "OBLIGATION"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/31",
-                                "_action_id": "actions/31",
-                                "_action_name": "Create an advertising medium that describes the features and use of the software"
-                            }
-                        ]
-                    },
-                    {
-                        "_permission_summary": "",
-                        "_permission_description": "",
-                        "_permission_conditionHead": {
-                            "_condition_uri": "http://open-license.hitachi.com/conditions/3",
-                            "_condition_id": "conditions/3",
-                            "_condition_name": "Get special permission in writing.",
-                            "_condition_description": "",
-                            "_condition_schemaVersion": "0.1",
-                            "_condition_baseUri": "http://open-license.hitachi.com/",
-                            "_condition_conditionType": "REQUISITE"
-                        },
-                        "_permission_actions": [
-                            {
-                                "_action_baseUri": "http://open-license.hitachi.com/",
-                                "_action_schemaVersion": "0.1",
-                                "_action_description": "",
-                                "_action_uri": "http://open-license.hitachi.com/actions/15",
-                                "_action_id": "actions/15",
-                                "_action_name": "Use the name of the owner or contributor to promote or sell the derived product"
-                            }
-                        ]
-                    }
-                ],
-                "_license_id": "licenses/277",
-                "_sourceURL": "http://open-license.hitachi.com/licenses/277",
-                "_license_name": "BSD 4-clause \"Original\" or \"Old\" License",
-                "_license_summary": "BSD-4-Clause",
-                "_license_content": "Copyright (c) {{year}}, {{copyright holder}} \r\nAll rights reserved. \r\n\r\nRedistribution and use in source and binary forms, with or without \r\nmodification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright \r\n    notice, this list of conditions and the following disclaimer. \r\n    2. Redistributions in binary form must reproduce the above copyright \r\n    notice, this list of conditions and the following disclaimer in the \r\n    documentation and/or other materials provided with the distribution. \r\n    3. All advertising materials mentioning features or use of this software \r\n    must display the following acknowledgement: \r\n    This product includes software developed by {{the organization}}. \r\n    4. Neither the name of {{the organization nor the \r\n    names of its contributors}} may be used to endorse or promote products \r\n    derived from this software without specific prior written permission. \r\n\r\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \r\nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \r\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \r\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                "_license_notices": [
+                "summary": "BSD-4-Clause",
+                "notices": [
                     {
                         "_notice_description": "There is no guarantee.",
                         "_notice_content": "the software is provided by the copyright holder \"as-is\" and without any warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
@@ -554,9 +392,121 @@ Raw Data
                         "_notice_id": "notices/103"
                     }
                 ],
-                "_license_description": "",
-                "_license_baseUri": "http://open-license.hitachi.com/",
-                "_license_schemaVersion": "0.1",
+                "_sourceURL": "http://open-license.hitachi.com/licenses/277",
+                "content": "Copyright (c) {{year}}, {{copyright holder}} \r\nAll rights reserved. \r\n\r\nRedistribution and use in source and binary forms, with or without \r\nmodification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright \r\n    notice, this list of conditions and the following disclaimer. \r\n    2. Redistributions in binary form must reproduce the above copyright \r\n    notice, this list of conditions and the following disclaimer in the \r\n    documentation and/or other materials provided with the distribution. \r\n    3. All advertising materials mentioning features or use of this software \r\n    must display the following acknowledgement: \r\n    This product includes software developed by {{the organization}}. \r\n    4. Neither the name of {{the organization nor the \r\n    names of its contributors}} may be used to endorse or promote products \r\n    derived from this software without specific prior written permission. \r\n\r\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \r\nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \r\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \r\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "name": "BSD 4-clause \"Original\" or \"Old\" License",
+                "permissions": [
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/1",
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "_id": "actions/3",
+                                "name": "Modify the obtained source code.",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/4",
+                                "name": "Using Modified Source Code",
+                                "description": ""
+                            },
+                            {
+                                "_id": "actions/6",
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "_id": "actions/8",
+                                "name": "Use binaries generated from modified source code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": null,
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/9",
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "_id": "actions/12",
+                                "name": "Distribution of Modified Source Code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/1",
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/11",
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "_id": "actions/14",
+                                "name": "Distribute the generated binaries from modified source code",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/2",
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": ""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/31",
+                                "name": "Create an advertising medium that describes the features and use of the software",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/13",
+                            "name": "Acknowledgements",
+                            "type": "OBLIGATION",
+                            "description": ""
+                        },
+                        "description": "The text of the acknowledgement is here \"This product includes software developed by the <organization>.\""
+                    },
+                    {
+                        "summary": "",
+                        "actions": [
+                            {
+                                "_id": "actions/15",
+                                "name": "Use the name of the owner or contributor to promote or sell the derived product",
+                                "description": ""
+                            }
+                        ],
+                        "conditions": {
+                            "_id": "conditions/3",
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE",
+                            "description": ""
+                        },
+                        "description": ""
+                    }
+                ],
                 "_implications": {
                     "__impliedNames": [
                         "BSD 4-clause \"Original\" or \"Old\" License"
@@ -568,7 +518,8 @@ Raw Data
                             "http://open-license.hitachi.com/licenses/277"
                         ]
                     ]
-                }
+                },
+                "description": ""
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
