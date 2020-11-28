@@ -1,13 +1,26 @@
-Zend License v2.0 (Zend-2.0)
-============================
+Zend License v2.0 ( Zend-2.0)
+=============================
 
 [TABLE]
 
 **Other Names:**
 
+-   `Zend-2.0`
+
+-   `Zend Engine License, Version 2.00`
+
 -   `scancode://zend-2.0`
 
 -   `Zend Engine License 2.0`
+
+Description
+-----------
+
+> http://www.zend.com/license/2\_00.txt
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
 
 Comments on (easy) usability
 ----------------------------
@@ -28,6 +41,10 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “http://www.zend.com/license/2\_00.txt” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 URLs
 ----
 
@@ -37,6 +54,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Zend-2.0.json
 
 -   **SPDX:** https://spdx.org/licenses/Zend-2.0.html
+
+-   **open-license:** http://open-license.hitachi.com/licenses/837
 
 Text
 ----
@@ -106,6 +125,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Zend-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -124,19 +145,33 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Zend-2.0",
+            " Zend-2.0",
+            "Zend Engine License, Version 2.00",
             "Zend License v2.0",
             "scancode://zend-2.0",
             "Zend Engine License 2.0"
         ],
-        "__impliedId": "Zend-2.0",
+        "__impliedId": " Zend-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Zend"
+        ],
+        "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "http://www.zend.com/license/2_00.txt"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -240,6 +275,155 @@ Raw Data
                         [
                             "Homepage",
                             "https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt"
+                        ]
+                    ]
+                }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        " Zend-2.0",
+                        "Zend Engine License, Version 2.00"
+                    ],
+                    "__impliedId": " Zend-2.0"
+                },
+                "oName": " Zend-2.0",
+                "oOtherLicenseIds": [
+                    "Zend Engine License, Version 2.00"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "summary": "http://www.zend.com/license/2_00.txt",
+                "notices": [
+                    {
+                        "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated."
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/837",
+                "content": "-------------------------------------------------------------------- \r\n                The Zend Engine License, Version 2.00\r\nCopyright (c) 1999-2006 Zend Technologies Ltd. All rights reserved.\r\n-------------------------------------------------------------------- \r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, is permitted provided that the following conditions\r\nare met:\r\n\r\n  1. Redistributions of source code must retain the above copyright\r\n     notice, this list of conditions and the following disclaimer. \r\n \r\n  2. Redistributions in binary form must reproduce the above \r\n     copyright notice, this list of conditions and the following \r\n     disclaimer in the documentation and/or other materials provided\r\n     with the distribution.\r\n \r\n  3. The names \"Zend\" and \"Zend Engine\" must not be used to endorse\r\n     or promote products derived from this software without prior\r\n     permission from Zend Technologies Ltd. For written permission,\r\n     please contact license@zend.com. \r\n \r\n  4. Zend Technologies Ltd. may publish revised and/or new versions\r\n     of the license from time to time. Each version will be given a\r\n     distinguishing version number.\r\n     Once covered code has been published under a particular version\r\n     of the license, you may always continue to use it under the\r\n     terms of that version. You may also choose to use such covered\r\n     code under the terms of any subsequent version of the license\r\n     published by Zend Technologies Ltd. No one other than Zend\r\n     Technologies Ltd. has the right to modify the terms applicable\r\n     to covered code created under this License.\r\n\r\n  5. Redistributions of any form whatsoever must retain the following\r\n     acknowledgment:\r\n     \"This product includes the Zend Engine, freely available at\r\n     http://www.zend.com\"\r\n\r\n  6. All advertising materials mentioning features or use of this\r\n     software must display the following acknowledgment:\r\n     \"The Zend Engine is freely available at http://www.zend.com\"\r\n\r\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS'' AND \r\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\r\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A \r\nPARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND\r\nTECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\r\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\r\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\r\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\r\nSUCH DAMAGE.\r\n\r\n-------------------------------------------------------------------- ",
+                "name": "Zend Engine License, Version 2.00",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Modify the obtained source code."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "name": "Use binaries generated from modified source code"
+                            }
+                        ],
+                        "conditions": null
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Acknowledgements",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\""
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "name": "Distribute the generated binaries from modified source code"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Acknowledgements",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\""
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the name to endorse and promote derived products"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE"
+                        },
+                        "description": "\"Zend\", when using the name \"Zend Engine\". license@zend.comã«é£çµ¡ãã."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Create an advertising medium that describes the features and use of the software"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Acknowledgements",
+                            "type": "OBLIGATION"
+                        },
+                        "description": "Acknowledgement is here: \"The Zend Engine is freely available at http://www.zend.com\""
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "Zend Engine License, Version 2.00"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "http://www.zend.com/license/2_00.txt"
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "-------------------------------------------------------------------- \r\n                The Zend Engine License, Version 2.00\r\nCopyright (c) 1999-2006 Zend Technologies Ltd. All rights reserved.\r\n-------------------------------------------------------------------- \r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, is permitted provided that the following conditions\r\nare met:\r\n\r\n  1. Redistributions of source code must retain the above copyright\r\n     notice, this list of conditions and the following disclaimer. \r\n \r\n  2. Redistributions in binary form must reproduce the above \r\n     copyright notice, this list of conditions and the following \r\n     disclaimer in the documentation and/or other materials provided\r\n     with the distribution.\r\n \r\n  3. The names \"Zend\" and \"Zend Engine\" must not be used to endorse\r\n     or promote products derived from this software without prior\r\n     permission from Zend Technologies Ltd. For written permission,\r\n     please contact license@zend.com. \r\n \r\n  4. Zend Technologies Ltd. may publish revised and/or new versions\r\n     of the license from time to time. Each version will be given a\r\n     distinguishing version number.\r\n     Once covered code has been published under a particular version\r\n     of the license, you may always continue to use it under the\r\n     terms of that version. You may also choose to use such covered\r\n     code under the terms of any subsequent version of the license\r\n     published by Zend Technologies Ltd. No one other than Zend\r\n     Technologies Ltd. has the right to modify the terms applicable\r\n     to covered code created under this License.\r\n\r\n  5. Redistributions of any form whatsoever must retain the following\r\n     acknowledgment:\r\n     \"This product includes the Zend Engine, freely available at\r\n     http://www.zend.com\"\r\n\r\n  6. All advertising materials mentioning features or use of this\r\n     software must display the following acknowledgment:\r\n     \"The Zend Engine is freely available at http://www.zend.com\"\r\n\r\nTHIS SOFTWARE IS PROVIDED BY ZEND TECHNOLOGIES LTD. ``AS IS'' AND \r\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\r\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A \r\nPARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL ZEND\r\nTECHNOLOGIES LTD.  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\r\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF\r\nUSE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,\r\nOR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT\r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\r\nSUCH DAMAGE.\r\n\r\n-------------------------------------------------------------------- ",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/837"
                         ]
                     ]
                 }
@@ -363,10 +547,14 @@ Raw Data
             [
                 "Homepage",
                 "https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/837"
             ]
         ]
     }
 
 ### Dot Cluster Graph
 
-[../dot/Zend-2.0.svg](../dot/Zend-2.0.svg "../dot/Zend-2.0.svg")
+[../dot/ Zend-2.0.svg](../dot/ Zend-2.0.svg "../dot/ Zend-2.0.svg")

@@ -9,6 +9,8 @@
 
 *Other Names:*
 
+- =Vovida Software License, Version 1.0=
+
 - =scancode://vsl-1.0=
 
 - =Vovida Software License 1.0=
@@ -16,6 +18,15 @@
 - =The Vovida Software License, Version 1.0=
 
 - =License :: OSI Approved :: Vovida Software License 1.0=
+
+** Description
+
+#+BEGIN_QUOTE
+  https://opensource.org/licenses/VSL-1.0
+#+END_QUOTE
+
+(source: [[https://github.com/Hitachi/open-license][Hitachi
+open-license]] (CDLA-Permissive-1.0))
 
 ** Comments on (easy) usability
 
@@ -28,6 +39,10 @@
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
 ** General Comments
+
+- "https://opensource.org/licenses/VSL-1.0" (source:
+  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0))
 
 - "Per SPDX.org, this license is OSI certified" (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.yml][Scancode]]
@@ -44,6 +59,8 @@
 - *SPDX:* http://spdx.org/licenses/VSL-1.0.json
 
 - *SPDX:* https://spdx.org/licenses/VSL-1.0.html
+
+- *open-license:* http://open-license.hitachi.com/licenses/1574
 
 - http://www.opensource.org/licenses/VSL-1.0
 
@@ -115,6 +132,8 @@
 
 - LicenseName
 
+- Override
+
 - [[https://spdx.org/licenses/VSL-1.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -134,12 +153,16 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
+- [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0)
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "VSL-1.0",
+          "Vovida Software License, Version 1.0",
           "Vovida Software License v1.0",
           "scancode://vsl-1.0",
           "Vovida Software License 1.0",
@@ -148,6 +171,12 @@
       ],
       "__impliedId": "VSL-1.0",
       "__impliedComments": [
+          [
+              "Hitachi open-license",
+              [
+                  "https://opensource.org/licenses/VSL-1.0"
+              ]
+          ],
           [
               "Scancode",
               [
@@ -312,6 +341,137 @@
                   ]
               }
           },
+          "Override": {
+              "oNonCommecrial": null,
+              "implications": {
+                  "__impliedNames": [
+                      "VSL-1.0",
+                      "Vovida Software License, Version 1.0"
+                  ],
+                  "__impliedId": "VSL-1.0"
+              },
+              "oName": "VSL-1.0",
+              "oOtherLicenseIds": [
+                  "Vovida Software License, Version 1.0"
+              ],
+              "oDescription": null,
+              "oJudgement": null,
+              "oCompatibilities": null,
+              "oRatingState": null
+          },
+          "Hitachi open-license": {
+              "summary": "https://opensource.org/licenses/VSL-1.0",
+              "notices": [
+                  {
+                      "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, title and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, title, and non-infringement.",
+                      "description": "There is no guarantee."
+                  },
+                  {
+                      "content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. or for direct damages in excess of $1,000.00, or for any indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or substitute services, loss of use, loss of data, loss of profits, or business interruption). No liability (including, but not limited to, compensation) shall be assumed."
+                  }
+              ],
+              "_sourceURL": "http://open-license.hitachi.com/licenses/1574",
+              "content": "   The Vovida Software License, Version 1.0\r\n  \r\n   Copyright (c) 2000-<year> Vovida Networks, Inc.  All rights reserved.\r\n  \r\n   Redistribution and use in source and binary forms, with or without\r\n   modification, are permitted provided that the following conditions\r\n   are met:\r\n  \r\n   1. Redistributions of source code must retain the above copyright\r\n      notice, this list of conditions and the following disclaimer.\r\n  \r\n   2. Redistributions in binary form must reproduce the above copyright\r\n      notice, this list of conditions and the following disclaimer in\r\n      the documentation and/or other materials provided with the\r\n      distribution.\r\n  \r\n   3. The names \"VOCAL\", \"Vovida Open Communication Application Library\",\r\n      and \"Vovida Open Communication Application Library (VOCAL)\" must\r\n      not be used to endorse or promote products derived from this\r\n      software without prior written permission. For written\r\n      permission, please contact vocal@vovida.org.\r\n  \r\n   4. Products derived from this software may not be called \"VOCAL\", nor\r\n      may \"VOCAL\" appear in their name, without prior written\r\n      permission of Vovida Networks, Inc.\r\n  \r\n   THIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED\r\n   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\r\n   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND\r\n   NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL VOVIDA\r\n   NETWORKS, INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT DAMAGES\r\n   IN EXCESS OF $1,000, NOR FOR ANY INDIRECT, INCIDENTAL, SPECIAL,\r\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\r\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\r\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\r\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\r\n   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\r\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\r\n   DAMAGE.",
+              "name": "Vovida Software License, Version 1.0",
+              "permissions": [
+                  {
+                      "actions": [
+                          {
+                              "name": "Use the obtained source code without modification",
+                              "description": "Use the fetched code as it is."
+                          },
+                          {
+                              "name": "Modify the obtained source code."
+                          },
+                          {
+                              "name": "Using Modified Source Code"
+                          },
+                          {
+                              "name": "Use the retrieved binaries",
+                              "description": "Use the fetched binary as it is."
+                          },
+                          {
+                              "name": "Use binaries generated from modified source code"
+                          }
+                      ],
+                      "conditions": null
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute the obtained source code without modification",
+                              "description": "Redistribute the code as it was obtained"
+                          },
+                          {
+                              "name": "Distribution of Modified Source Code"
+                          }
+                      ],
+                      "conditions": {
+                          "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                          "type": "OBLIGATION"
+                      }
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute the fetched binaries",
+                              "description": "Redistribute the fetched binaries as they are"
+                          },
+                          {
+                              "name": "Distribute the generated binaries from modified source code"
+                          }
+                      ],
+                      "conditions": {
+                          "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                          "type": "OBLIGATION"
+                      }
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Use the name to endorse and promote derived products"
+                          }
+                      ],
+                      "conditions": {
+                          "name": "Get special permission in writing.",
+                          "type": "REQUISITE"
+                      },
+                      "description": "\"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Use the name of the product or part of the name of the product from which it was derived"
+                          }
+                      ],
+                      "conditions": {
+                          "name": "Get special permission in writing.",
+                          "type": "REQUISITE"
+                      },
+                      "description": "If you use the name \"VOCAL\". get permission from Vovida Networks, Inc."
+                  }
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "Vovida Software License, Version 1.0"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Hitachi open-license",
+                          [
+                              "https://opensource.org/licenses/VSL-1.0"
+                          ]
+                      ]
+                  ],
+                  "__impliedText": "   The Vovida Software License, Version 1.0\r\n  \r\n   Copyright (c) 2000-<year> Vovida Networks, Inc.  All rights reserved.\r\n  \r\n   Redistribution and use in source and binary forms, with or without\r\n   modification, are permitted provided that the following conditions\r\n   are met:\r\n  \r\n   1. Redistributions of source code must retain the above copyright\r\n      notice, this list of conditions and the following disclaimer.\r\n  \r\n   2. Redistributions in binary form must reproduce the above copyright\r\n      notice, this list of conditions and the following disclaimer in\r\n      the documentation and/or other materials provided with the\r\n      distribution.\r\n  \r\n   3. The names \"VOCAL\", \"Vovida Open Communication Application Library\",\r\n      and \"Vovida Open Communication Application Library (VOCAL)\" must\r\n      not be used to endorse or promote products derived from this\r\n      software without prior written permission. For written\r\n      permission, please contact vocal@vovida.org.\r\n  \r\n   4. Products derived from this software may not be called \"VOCAL\", nor\r\n      may \"VOCAL\" appear in their name, without prior written\r\n      permission of Vovida Networks, Inc.\r\n  \r\n   THIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED\r\n   WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\r\n   OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND\r\n   NON-INFRINGEMENT ARE DISCLAIMED.  IN NO EVENT SHALL VOVIDA\r\n   NETWORKS, INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT DAMAGES\r\n   IN EXCESS OF $1,000, NOR FOR ANY INDIRECT, INCIDENTAL, SPECIAL,\r\n   EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\r\n   PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\r\n   PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY\r\n   OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\r\n   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE\r\n   USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\r\n   DAMAGE.",
+                  "__impliedURLs": [
+                      [
+                          "open-license",
+                          "http://open-license.hitachi.com/licenses/1574"
+                      ]
+                  ]
+              }
+          },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
               "url": "https://spdx.org/licenses/VSL-1.0.html",
@@ -459,6 +619,10 @@
           [
               "OSI Page",
               "https://opensource.org/licenses/VSL-1.0"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/1574"
           ]
       ]
   }

@@ -5,6 +5,8 @@ IPA Font License (IPA)
 
 **Other Names:**
 
+-   `IPA Font License Agreement v1.0`
+
 -   `scancode://ipa-font`
 
 -   `IPA Font License 1.0`
@@ -36,6 +38,8 @@ URLs
 -   **OSI Page:** https://opensource.org/licenses/IPA
 
 -   **SPDX:** http://spdx.org/licenses/IPA.json
+
+-   **open-license:** http://open-license.hitachi.com/licenses/248
 
 -   http://www.opensource.org/licenses/IPA
 
@@ -136,6 +140,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/IPA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -156,11 +162,16 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "IPA",
+            "IPA Font License Agreement v1.0",
             "IPA Font License",
             "scancode://ipa-font",
             "IPA Font License 1.0"
@@ -171,6 +182,10 @@ Raw Data
             "IPA"
         ],
         "__impliedComments": [
+            [
+                "Hitachi open-license",
+                []
+            ],
             [
                 "Scancode",
                 [
@@ -357,6 +372,48 @@ Raw Data
                     ]
                 }
             },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "IPA",
+                        "IPA Font License Agreement v1.0"
+                    ],
+                    "__impliedId": "IPA"
+                },
+                "oName": "IPA",
+                "oOtherLicenseIds": [
+                    "IPA Font License Agreement v1.0"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "notices": [],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/248",
+                "name": "IPA Font License Agreement v1.0",
+                "permissions": [],
+                "_implications": {
+                    "__impliedNames": [
+                        "IPA Font License Agreement v1.0"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            []
+                        ]
+                    ],
+                    "__impliedText": "",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/248"
+                        ]
+                    ]
+                }
+            },
             "OpenSourceInitiative": {
                 "text": [
                     {
@@ -450,6 +507,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/IPA"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/248"
             ]
         ]
     }

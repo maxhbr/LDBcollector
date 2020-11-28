@@ -28,6 +28,7 @@
 <p><strong>Other Names:</strong></p>
 <ul>
 <li><p><code>X11</code></p></li>
+<li><p><code>ICU License (ICU 1.8.1 and later)</code></p></li>
 <li><p><code>X11 License</code></p></li>
 <li><p><code>scancode://x11-xconsortium</code></p></li>
 <li><p><code>X11-Style (X Consortium)</code></p></li>
@@ -48,6 +49,7 @@
 <li><p><strong>SPDX:</strong> http://spdx.org/licenses/X11.json</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/ICU.html</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/X11.html</p></li>
+<li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/297</p></li>
 <li><p>http://source.icu-project.org/repos/icu/icu/trunk/license.html</p></li>
 <li><p>http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3</p></li>
 </ul>
@@ -79,18 +81,21 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
 <h3>Facts</h3>
 <ul>
 <li><p>LicenseName</p></li>
+<li><p>Override</p></li>
 <li><p><a href="https://spdx.org/licenses/ICU.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://spdx.org/licenses/X11.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
     &quot;__impliedNames&quot;: [
         &quot;X11&quot;,
         &quot;ICU&quot;,
+        &quot;ICU License (ICU 1.8.1 and later)&quot;,
         &quot;ICU License&quot;,
         &quot;X11 License&quot;,
         &quot;scancode://x11-xconsortium&quot;,
@@ -98,6 +103,12 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
         &quot;scancode://x11&quot;
     ],
     &quot;__impliedId&quot;: &quot;ICU&quot;,
+    &quot;__impliedComments&quot;: [
+        [
+            &quot;Hitachi open-license&quot;,
+            []
+        ]
+    ],
     &quot;facts&quot;: {
         &quot;LicenseName&quot;: {
             &quot;implications&quot;: {
@@ -177,6 +188,156 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
                     [
                         null,
                         &quot;http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3&quot;
+                    ]
+                ]
+            }
+        },
+        &quot;Override&quot;: {
+            &quot;oNonCommecrial&quot;: null,
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ICU&quot;,
+                    &quot;ICU License (ICU 1.8.1 and later)&quot;
+                ],
+                &quot;__impliedId&quot;: &quot;ICU&quot;
+            },
+            &quot;oName&quot;: &quot;ICU&quot;,
+            &quot;oOtherLicenseIds&quot;: [
+                &quot;ICU License (ICU 1.8.1 and later)&quot;
+            ],
+            &quot;oDescription&quot;: null,
+            &quot;oJudgement&quot;: null,
+            &quot;oCompatibilities&quot;: null,
+            &quot;oRatingState&quot;: null
+        },
+        &quot;Hitachi open-license&quot;: {
+            &quot;notices&quot;: [
+                {
+                    &quot;content&quot;: &quot;the software is provided \&quot;as-is\&quot; and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \&quot;as-is\&quot; and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.&quot;,
+                    &quot;description&quot;: &quot;There is no guarantee.&quot;
+                },
+                {
+                    &quot;content&quot;: &quot;In no event shall the copyright holder be liable for any claim, special, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or for any damages resulting from loss of use, loss of data or loss of profits.&quot;
+                }
+            ],
+            &quot;_sourceURL&quot;: &quot;http://open-license.hitachi.com/licenses/297&quot;,
+            &quot;content&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE\r\n\r\nCopyright (c) &lt;years&gt; International Business Machines Corporation and others \r\n\r\nAll rights reserved. \r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the above copyright notice(s) and this permission notice appear in all copies of the Software and that both the above copyright notice(s) and this permission notice appear in supporting documentation. \r\n\r\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. \r\n\r\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.&quot;,
+            &quot;name&quot;: &quot;ICU License (ICU 1.8.1 and later)&quot;,
+            &quot;permissions&quot;: [
+                {
+                    &quot;actions&quot;: [
+                        {
+                            &quot;name&quot;: &quot;Use the obtained source code without modification&quot;,
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Modify the obtained source code.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Using Modified Source Code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use the retrieved object code&quot;,
+                            &quot;description&quot;: &quot;Use the fetched code as it is.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use the retrieved binaries&quot;,
+                            &quot;description&quot;: &quot;Use the fetched binary as it is.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use the object code generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use binaries generated from modified source code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use the retrieved executable&quot;,
+                            &quot;description&quot;: &quot;Use the obtained executable as is.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Use the executable generated from the modified source code&quot;
+                        }
+                    ],
+                    &quot;conditions&quot;: null,
+                    &quot;description&quot;: &quot;Relevant documentation for the software should be treated in the same way as for the software.&quot;
+                },
+                {
+                    &quot;actions&quot;: [
+                        {
+                            &quot;name&quot;: &quot;Distribute the obtained source code without modification&quot;,
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the obtained object code&quot;,
+                            &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the fetched binaries&quot;,
+                            &quot;description&quot;: &quot;Redistribute the fetched binaries as they are&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the object code generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Selling Software&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the obtained executable&quot;,
+                            &quot;description&quot;: &quot;Redistribute the obtained executable as-is&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Distribute the executable generated from the modified source code&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Publish the modified source code.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Present the object code generated from the modified source code.&quot;
+                        },
+                        {
+                            &quot;name&quot;: &quot;Present the executable generated from the modified source code&quot;
+                        }
+                    ],
+                    &quot;conditions&quot;: {
+                        &quot;name&quot;: &quot;Include a copyright notice, list of terms and conditions, and disclaimer included in the license&quot;,
+                        &quot;type&quot;: &quot;OBLIGATION&quot;
+                    },
+                    &quot;description&quot;: &quot;Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.&quot;
+                },
+                {
+                    &quot;actions&quot;: [
+                        {
+                            &quot;name&quot;: &quot;Use the copyright holder&#39;s name in software promotions and advertisements&quot;
+                        }
+                    ],
+                    &quot;conditions&quot;: {
+                        &quot;name&quot;: &quot;Get special permission in writing.&quot;,
+                        &quot;type&quot;: &quot;REQUISITE&quot;
+                    },
+                    &quot;description&quot;: &quot;With permission of the copyright owner.&quot;
+                }
+            ],
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ICU License (ICU 1.8.1 and later)&quot;
+                ],
+                &quot;__impliedComments&quot;: [
+                    [
+                        &quot;Hitachi open-license&quot;,
+                        []
+                    ]
+                ],
+                &quot;__impliedText&quot;: &quot;COPYRIGHT AND PERMISSION NOTICE\r\n\r\nCopyright (c) &lt;years&gt; International Business Machines Corporation and others \r\n\r\nAll rights reserved. \r\n\r\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \&quot;Software\&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, provided that the above copyright notice(s) and this permission notice appear in all copies of the Software and that both the above copyright notice(s) and this permission notice appear in supporting documentation. \r\n\r\nTHE SOFTWARE IS PROVIDED \&quot;AS IS\&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. \r\n\r\nExcept as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.&quot;,
+                &quot;__impliedURLs&quot;: [
+                    [
+                        &quot;open-license&quot;,
+                        &quot;http://open-license.hitachi.com/licenses/297&quot;
                     ]
                 ]
             }
@@ -276,6 +437,10 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
         [
             null,
             &quot;http://www.xfree86.org/current/LICENSE5.html&quot;
+        ],
+        [
+            &quot;open-license&quot;,
+            &quot;http://open-license.hitachi.com/licenses/297&quot;
         ]
     ]
 }</code></pre>

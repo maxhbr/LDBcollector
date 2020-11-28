@@ -5,9 +5,32 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 **Other Names:**
 
+-   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)`
+
 -   `scancode://unicode-dfs-2015`
 
 -   `Unicode DFS 2015`
+
+Description
+-----------
+
+> The Unicode Data Files are located in the following directories
+> \[http://www.unicode.org/Public/, http://www.unicode.org/reports/,
+> http://www.unicode.org/cldr/data/, http All data files in
+> ://source.icu-project.org/repos/icu/, and
+> http://www.unicode.org/utility/trac/browser/\]. However, it excludes
+> PDFs of online code tables in the following directories:
+> \[http://www.unicode.org/Public/\]. The software is either the source
+> code published by the Unicode Standard, or it is available in the
+> following directories \[http://www.unicode.org/Public/,
+> http://www.unicode.org/reports/,http://www.unicode It refers to the
+> source code in \[.org/cldr/data/,
+> http://source.icu-project.org/repos/icu/, and
+> http://www.unicode.org/utility/trac/browser/\].
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
 
 Comments on (easy) usability
 ----------------------------
@@ -23,6 +46,26 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “http://www.unicode.org/copyright.html\#License” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
+-   “The Unicode Data Files are located in the following directories
+    \[http://www.unicode.org/Public/, http://www.unicode.org/reports/,
+    http://www.unicode.org/cldr/data/, http All data files in
+    ://source.icu-project.org/repos/icu/, and
+    http://www.unicode.org/utility/trac/browser/\]. However, it excludes
+    PDFs of online code tables in the following directories:
+    \[http://www.unicode.org/Public/\]. The software is either the
+    source code published by the Unicode Standard, or it is available in
+    the following directories \[http://www.unicode.org/Public/,
+    http://www.unicode.org/reports/,http://www.unicode It refers to the
+    source code in \[.org/cldr/data/,
+    http://source.icu-project.org/repos/icu/, and
+    http://www.unicode.org/utility/trac/browser/\].” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 URLs
 ----
 
@@ -32,6 +75,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Unicode-DFS-2015.json
 
 -   **SPDX:** https://spdx.org/licenses/Unicode-DFS-2015.html
+
+-   **open-license:** http://open-license.hitachi.com/licenses/976
 
 Text
 ----
@@ -101,6 +146,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Unicode-DFS-2015.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -115,16 +162,30 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Unicode-DFS-2015",
+            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
             "Unicode License Agreement - Data Files and Software (2015)",
             "scancode://unicode-dfs-2015",
             "Unicode DFS 2015"
         ],
         "__impliedId": "Unicode-DFS-2015",
+        "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "http://www.unicode.org/copyright.html#License",
+                    "The Unicode Data Files are located in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/, http://www.unicode.org/cldr/data/, http All data files in ://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]. However, it excludes PDFs of online code tables in the following directories: [http://www.unicode.org/Public/]. The software is either the source code published by the Unicode Standard, or it is available in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/,http://www.unicode It refers to the source code in [.org/cldr/data/, http://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]."
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -207,6 +268,184 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "Unicode-DFS-2015",
+                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
+                    ],
+                    "__impliedId": "Unicode-DFS-2015"
+                },
+                "oName": "Unicode-DFS-2015",
+                "oOtherLicenseIds": [
+                    "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "summary": "http://www.unicode.org/copyright.html#License",
+                "notices": [
+                    {
+                        "content": "the data files and software and related documentation are provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose and non-infringement. The warranties include, but are not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "In no event shall the copyright holder be liable for any claim, special, indirect or consequential damages, and any damages resulting from loss of use, loss of data or loss of profits, whether in contract, negligence or other tort action, arising out of the use or performance of such data files, software and related documentation. No liability shall be assumed."
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/976",
+                "content": "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE\r\n\r\nUnicode Data Files include all data files under the directories\r\nhttp://www.unicode.org/Public/, http://www.unicode.org/reports/,\r\nhttp://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and\r\nhttp://www.unicode.org/utility/trac/browser/.\r\n\r\nUnicode Data Files do not include PDF online code charts under the\r\ndirectory http://www.unicode.org/Public/.\r\n\r\nSoftware includes any source code published in the Unicode Standard\r\nor under the directories\r\nhttp://www.unicode.org/Public/, http://www.unicode.org/reports/,\r\nhttp://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and\r\nhttp://www.unicode.org/utility/trac/browser/.\r\n\r\nNOTICE TO USER: Carefully read the following legal agreement.\r\nBY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING UNICODE INC.'S\r\nDATA FILES (\"DATA FILES\"), AND/OR SOFTWARE (\"SOFTWARE\"),\r\nYOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE\r\nTERMS AND CONDITIONS OF THIS AGREEMENT.\r\nIF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE\r\nTHE DATA FILES OR SOFTWARE.\r\n\r\nCOPYRIGHT AND PERMISSION NOTICE\r\n\r\nCopyright Â© 1991-<year> Unicode, Inc. All rights reserved.\r\nDistributed under the Terms of Use in http://www.unicode.org/copyright.html.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of the Unicode data files and any associated documentation\r\n(the \"Data Files\") or Unicode software and any associated documentation\r\n(the \"Software\") to deal in the Data Files or Software\r\nwithout restriction, including without limitation the rights to use,\r\ncopy, modify, merge, publish, distribute, and/or sell copies of\r\nthe Data Files or Software, and to permit persons to whom the Data Files\r\nor Software are furnished to do so, provided that either\r\n(a) this copyright and permission notice appear with all copies\r\nof the Data Files or Software, or\r\n(b) this copyright and permission notice appear in associated\r\nDocumentation.\r\n\r\nTHE DATA FILES AND SOFTWARE ARE PROVIDED \"AS IS\", WITHOUT WARRANTY OF\r\nANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\r\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\r\nNONINFRINGEMENT OF THIRD PARTY RIGHTS.\r\nIN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS\r\nNOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL\r\nDAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\r\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\r\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\r\nPERFORMANCE OF THE DATA FILES OR SOFTWARE.\r\n\r\nExcept as contained in this notice, the name of a copyright holder\r\nshall not be used in advertising or otherwise to promote the sale,\r\nuse or other dealings in these Data Files or Software without prior\r\nwritten authorization of the copyright holder.",
+                "name": "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Modify the obtained source code."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved object code",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Use the object code generated from the modified source code"
+                            },
+                            {
+                                "name": "Use the retrieved executable",
+                                "description": "Use the obtained executable as is."
+                            },
+                            {
+                                "name": "Use the executable generated from the modified source code"
+                            },
+                            {
+                                "name": "To use the acquired data file without modification",
+                                "description": "Use the fetched data files as they are."
+                            },
+                            {
+                                "name": "Modify the acquired data file."
+                            },
+                            {
+                                "name": "Using Modified Data Files"
+                            }
+                        ],
+                        "conditions": null,
+                        "description": "Treat related documents in the same way as data files and software."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the acquired data files without modification",
+                                "description": "Distribute the acquired data files as they are"
+                            },
+                            {
+                                "name": "Distribution of modified data files"
+                            },
+                            {
+                                "name": "Selling data files"
+                            },
+                            {
+                                "name": "I'm going to present the modified data file."
+                            },
+                            {
+                                "name": "Sell altered data files."
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such data files.",
+                            "type": "OBLIGATION"
+                        },
+                        "description": "Related documents are treated in the same way as data files."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribute the obtained object code",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            },
+                            {
+                                "name": "Distribute the object code generated from the modified source code"
+                            },
+                            {
+                                "name": "Selling Software"
+                            },
+                            {
+                                "name": "Distribute the obtained executable",
+                                "description": "Redistribute the obtained executable as-is"
+                            },
+                            {
+                                "name": "Distribute the executable generated from the modified source code"
+                            },
+                            {
+                                "name": "Publish the modified source code."
+                            },
+                            {
+                                "name": "Present the object code generated from the modified source code."
+                            },
+                            {
+                                "name": "Present the executable generated from the modified source code"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer contained in such software",
+                            "type": "OBLIGATION"
+                        },
+                        "description": "Related documentation should be treated in the same way as software."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the copyright holder's name in software promotions and advertisements"
+                            },
+                            {
+                                "name": "Use the copyright holder's name in data file promotions and advertisements."
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE"
+                        }
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE (since 2016)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "http://www.unicode.org/copyright.html#License",
+                                "The Unicode Data Files are located in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/, http://www.unicode.org/cldr/data/, http All data files in ://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]. However, it excludes PDFs of online code tables in the following directories: [http://www.unicode.org/Public/]. The software is either the source code published by the Unicode Standard, or it is available in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/,http://www.unicode It refers to the source code in [.org/cldr/data/, http://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]."
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE\r\n\r\nUnicode Data Files include all data files under the directories\r\nhttp://www.unicode.org/Public/, http://www.unicode.org/reports/,\r\nhttp://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and\r\nhttp://www.unicode.org/utility/trac/browser/.\r\n\r\nUnicode Data Files do not include PDF online code charts under the\r\ndirectory http://www.unicode.org/Public/.\r\n\r\nSoftware includes any source code published in the Unicode Standard\r\nor under the directories\r\nhttp://www.unicode.org/Public/, http://www.unicode.org/reports/,\r\nhttp://www.unicode.org/cldr/data/, http://source.icu-project.org/repos/icu/, and\r\nhttp://www.unicode.org/utility/trac/browser/.\r\n\r\nNOTICE TO USER: Carefully read the following legal agreement.\r\nBY DOWNLOADING, INSTALLING, COPYING OR OTHERWISE USING UNICODE INC.'S\r\nDATA FILES (\"DATA FILES\"), AND/OR SOFTWARE (\"SOFTWARE\"),\r\nYOU UNEQUIVOCALLY ACCEPT, AND AGREE TO BE BOUND BY, ALL OF THE\r\nTERMS AND CONDITIONS OF THIS AGREEMENT.\r\nIF YOU DO NOT AGREE, DO NOT DOWNLOAD, INSTALL, COPY, DISTRIBUTE OR USE\r\nTHE DATA FILES OR SOFTWARE.\r\n\r\nCOPYRIGHT AND PERMISSION NOTICE\r\n\r\nCopyright Â© 1991-<year> Unicode, Inc. All rights reserved.\r\nDistributed under the Terms of Use in http://www.unicode.org/copyright.html.\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of the Unicode data files and any associated documentation\r\n(the \"Data Files\") or Unicode software and any associated documentation\r\n(the \"Software\") to deal in the Data Files or Software\r\nwithout restriction, including without limitation the rights to use,\r\ncopy, modify, merge, publish, distribute, and/or sell copies of\r\nthe Data Files or Software, and to permit persons to whom the Data Files\r\nor Software are furnished to do so, provided that either\r\n(a) this copyright and permission notice appear with all copies\r\nof the Data Files or Software, or\r\n(b) this copyright and permission notice appear in associated\r\nDocumentation.\r\n\r\nTHE DATA FILES AND SOFTWARE ARE PROVIDED \"AS IS\", WITHOUT WARRANTY OF\r\nANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE\r\nWARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\r\nNONINFRINGEMENT OF THIRD PARTY RIGHTS.\r\nIN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS\r\nNOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL\r\nDAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\r\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\r\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR\r\nPERFORMANCE OF THE DATA FILES OR SOFTWARE.\r\n\r\nExcept as contained in this notice, the name of a copyright holder\r\nshall not be used in advertising or otherwise to promote the sale,\r\nuse or other dealings in these Data Files or Software without prior\r\nwritten authorization of the copyright holder.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/976"
+                        ]
+                    ]
+                },
+                "description": "The Unicode Data Files are located in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/, http://www.unicode.org/cldr/data/, http All data files in ://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]. However, it excludes PDFs of online code tables in the following directories: [http://www.unicode.org/Public/]. The software is either the source code published by the Unicode Standard, or it is available in the following directories [http://www.unicode.org/Public/, http://www.unicode.org/reports/,http://www.unicode It refers to the source code in [.org/cldr/data/, http://source.icu-project.org/repos/icu/, and http://www.unicode.org/utility/trac/browser/]."
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
@@ -320,6 +559,10 @@ Raw Data
             [
                 "Homepage",
                 "https://web.archive.org/web/20151224134844/http://unicode.org/copyright.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/976"
             ]
         ]
     }

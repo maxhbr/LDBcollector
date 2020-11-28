@@ -12,6 +12,7 @@
 *Other Names:*
 
 * `+Artistic 1.0 (original)+`
+* `+Artistic License (Perl) 1.0+`
 * `+scancode://artistic-1.0+`
 * `+Artistic 1.0+`
 * `+Artistic License, Version 1.0+`
@@ -86,6 +87,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *SPDX:* http://spdx.org/licenses/Artistic-1.0.json
 * *SPDX:* https://spdx.org/licenses/Artistic-1.0.html
 * *open-license:* http://open-license.hitachi.com/licenses/596
+* *open-license:* http://open-license.hitachi.com/licenses/721
 * http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 * http://www.perlfoundation.org/artistic_license_1_0
 
@@ -199,6 +201,7 @@ The End
 
 * LicenseName
 * Override
+* Override
 * https://spdx.org/licenses/Artistic-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -217,6 +220,8 @@ Policy]
 (NOASSERTION)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -225,6 +230,7 @@ Policy]
     "__impliedNames": [
         "Artistic-1.0",
         "Artistic 1.0 (original)",
+        "Artistic License (Perl) 1.0",
         "Artistic License 1.0",
         "scancode://artistic-1.0",
         "Artistic 1.0",
@@ -833,6 +839,10 @@ Policy]
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/596"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/721"
         ]
     ]
 }

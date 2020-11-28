@@ -9,9 +9,24 @@
 
 *Other Names:*
 
+- =SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005=
+
 - =scancode://ofl-1.0=
 
 - =OFL 1.0=
+
+** Description
+
+#+BEGIN_QUOTE
+  Font software refers to font files, data files, source files, build
+  scripts, and documents. A retained font name is the name of the font
+  that is retained and identified with a copyright notice. Authors are
+  the designers, engineers, programmers, technical writers, etc. who
+  have contributed to the font software.
+#+END_QUOTE
+
+(source: [[https://github.com/Hitachi/open-license][Hitachi
+open-license]] (CDLA-Permissive-1.0))
 
 ** Comments on (easy) usability
 
@@ -24,6 +39,14 @@
 
 ** General Comments
 
+- "Font software refers to font files, data files, source files, build
+  scripts, and documents. A retained font name is the name of the font
+  that is retained and identified with a copyright notice. Authors are
+  the designers, engineers, programmers, technical writers, etc. who
+  have contributed to the font software." (source:
+  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0))
+
 - "Per SPDX.org, this license has been superseded. This license was
   released in November 2005. " (source:
   [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml][Scancode]]
@@ -35,6 +58,8 @@
   http://scripts.sil.org/cms/scripts/page.php?item_id=OFL10_web
 
 - *SPDX:* http://spdx.org/licenses/OFL-1.0.json
+
+- *open-license:* http://open-license.hitachi.com/licenses/823
 
 ** Text
 
@@ -136,6 +161,8 @@
 
 - LicenseName
 
+- Override
+
 - [[https://spdx.org/licenses/OFL-1.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -145,12 +172,16 @@
 - [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
   Guidelines]] (NOASSERTION)
 
+- [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0)
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "OFL-1.0",
+          "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005",
           "SIL Open Font License 1.0",
           "scancode://ofl-1.0",
           "OFL 1.0"
@@ -160,6 +191,12 @@
           "The SIL Open Font License"
       ],
       "__impliedComments": [
+          [
+              "Hitachi open-license",
+              [
+                  "Font software refers to font files, data files, source files, build scripts, and documents. A retained font name is the name of the font that is retained and identified with a copyright notice. Authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
+              ]
+          ],
           [
               "Scancode",
               [
@@ -275,6 +312,167 @@
               },
               "Comment": "The following restriction on distributions, which is part of OFL, has been widely accepted by open source projects when it is applied to fonts: 1) Neither the Font Software nor any of its individual components, in Original or Modified Versions, may be sold by itself.",
               "LicenseId": "OFL-1.0"
+          },
+          "Override": {
+              "oNonCommecrial": null,
+              "implications": {
+                  "__impliedNames": [
+                      "OFL-1.0",
+                      "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005"
+                  ],
+                  "__impliedId": "OFL-1.0"
+              },
+              "oName": "OFL-1.0",
+              "oOtherLicenseIds": [
+                  "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005"
+              ],
+              "oDescription": null,
+              "oJudgement": null,
+              "oCompatibilities": null,
+              "oRatingState": null
+          },
+          "Hitachi open-license": {
+              "notices": [
+                  {
+                      "content": "the font software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement of copyrights, patents, trademarks and other rights.",
+                      "description": "There is no guarantee."
+                  }
+              ],
+              "_sourceURL": "http://open-license.hitachi.com/licenses/823",
+              "content": "This Font Software is Copyright (c) 2006, Christopher J Fynn\r\nAll Rights Reserved.\r\n\r\n\"Jomolhari\" is a Reserved Font Name for this Font Software.\r\n\r\nThis Font Software is licensed under the SIL Open Font License, Version 1.0.\r\nNo modification of the license is permitted, only verbatim copy is allowed.\r\nThis license is copied below, and is also available with a FAQ at:\r\nhttp://scripts.sil.org/OFL\r\n\r\n\r\n-----------------------------------------------------------\r\nSIL OPEN FONT LICENSE Version 1.0 - 22 November 2005\r\n-----------------------------------------------------------\r\n\r\nPREAMBLE\r\nThe goals of the Open Font License (OFL) are to stimulate worldwide\r\ndevelopment of cooperative font projects, to support the font creation\r\nefforts of academic and linguistic communities, and to provide an open\r\nframework in which fonts may be shared and improved in partnership with\r\nothers.\r\n\r\nThe OFL allows the licensed fonts to be used, studied, modified and\r\nredistributed freely as long as they are not sold by themselves. The\r\nfonts, including any derivative works, can be bundled, embedded, \r\nredistributed and sold with any software provided that the font\r\nnames of derivative works are changed. The fonts and derivatives,\r\nhowever, cannot be released under any other type of license.\r\n\r\nDEFINITIONS\r\n\"Font Software\" refers to any and all of the following:\r\n\t- font files\r\n\t- data files\r\n\t- source code\r\n\t- build scripts\r\n\t- documentation\r\n\r\n\"Reserved Font Name\" refers to the Font Software name as seen by\r\nusers and any other names as specified after the copyright statement.\r\n\r\n\"Standard Version\" refers to the collection of Font Software\r\ncomponents as distributed by the Copyright Holder.\r\n\r\n\"Modified Version\" refers to any derivative font software made by\r\nadding to, deleting, or substituting -- in part or in whole --\r\nany of the components of the Standard Version, by changing formats\r\nor by porting the Font Software to a new environment.\r\n\r\n\"Author\" refers to any designer, engineer, programmer, technical\r\nwriter or other person who contributed to the Font Software.\r\n\r\nPERMISSION & CONDITIONS\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of the Font Software, to use, study, copy, merge, embed, modify,\r\nredistribute, and sell modified and unmodified copies of the Font\r\nSoftware, subject to the following conditions:\r\n\r\n1) Neither the Font Software nor any of its individual components,\r\nin Standard or Modified Versions, may be sold by itself.\r\n\r\n2) Standard or Modified Versions of the Font Software may be bundled,\r\nredistributed and sold with any software, provided that each copy\r\ncontains the above copyright notice and this license. These can be\r\nincluded either as stand-alone text files, human-readable headers or\r\nin the appropriate machine-readable metadata fields within text or\r\nbinary files as long as those fields can be easily viewed by the user.\r\n\r\n3) No Modified Version of the Font Software may use the Reserved Font\r\nName(s), in part or in whole, unless explicit written permission is\r\ngranted by the Copyright Holder. This restriction applies to all \r\nreferences stored in the Font Software, such as the font menu name and\r\nother font description fields, which are used to differentiate the\r\nfont from others.\r\n\r\n4) The name(s) of the Copyright Holder or the Author(s) of the Font\r\nSoftware shall not be used to promote, endorse or advertise any\r\nModified Version, except to acknowledge the contribution(s) of the\r\nCopyright Holder and the Author(s) or with their explicit written\r\npermission.\r\n\r\n5) The Font Software, modified or unmodified, in part or in whole,\r\nmust be distributed using this license, and may not be distributed\r\nunder any other license.\r\n\r\nTERMINATION\r\nThis license becomes null and void if any of the above conditions are\r\nnot met.\r\n\r\nDISCLAIMER\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\r\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\r\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\r\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\r\nOTHER DEALINGS IN THE FONT SOFTWARE.\r\n",
+              "name": "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005",
+              "permissions": [
+                  {
+                      "actions": [
+                          {
+                              "name": "Using Font Software",
+                              "description": "Use the acquired font software as it is."
+                          },
+                          {
+                              "name": "Modify the font software"
+                          },
+                          {
+                              "name": "Using Modified Font Software"
+                          }
+                      ],
+                      "conditions": null,
+                      "description": "Font software refers to font files, data files, source files, build scripts, and documents."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Selling font software"
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "We don't sell it alone.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "Include a copyright notice in the license",
+                                  "type": "OBLIGATION"
+                              },
+                              {
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distributing font software",
+                              "description": "Distribute the acquired font software as is"
+                          },
+                          {
+                              "name": "Distribute Modified Font Software"
+                          },
+                          {
+                              "name": "Embedding font software"
+                          },
+                          {
+                              "name": "Incorporate modified font software"
+                          },
+                          {
+                              "name": "Combining font software"
+                          },
+                          {
+                              "name": "Combining Modified Font Software"
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "Include a copyright notice in the license",
+                                  "type": "OBLIGATION"
+                              },
+                              {
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Use font names retained in modified font software",
+                              "description": "A retained font name is a name that is clearly identified as the retained font name with a copyright notice."
+                          }
+                      ],
+                      "conditions": {
+                          "name": "Get special permission in writing.",
+                          "type": "REQUISITE"
+                      },
+                      "description": "The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term \"font software\" refers to font files, data files, source files, build scripts, and documents."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Use the name of the copyright holder or author to endorse or promote the modified font software"
+                          }
+                      ],
+                      "conditions": {
+                          "OR": [
+                              {
+                                  "name": "Acknowledgements",
+                                  "type": "OBLIGATION"
+                              },
+                              {
+                                  "name": "Get special permission in writing.",
+                                  "type": "REQUISITE"
+                              }
+                          ]
+                      },
+                      "description": "The term \"font software\" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
+                  }
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "SIL OPEN FONT LICENSE Version 1.0 - 22 November 2005"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Hitachi open-license",
+                          [
+                              "Font software refers to font files, data files, source files, build scripts, and documents. A retained font name is the name of the font that is retained and identified with a copyright notice. Authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
+                          ]
+                      ]
+                  ],
+                  "__impliedText": "This Font Software is Copyright (c) 2006, Christopher J Fynn\r\nAll Rights Reserved.\r\n\r\n\"Jomolhari\" is a Reserved Font Name for this Font Software.\r\n\r\nThis Font Software is licensed under the SIL Open Font License, Version 1.0.\r\nNo modification of the license is permitted, only verbatim copy is allowed.\r\nThis license is copied below, and is also available with a FAQ at:\r\nhttp://scripts.sil.org/OFL\r\n\r\n\r\n-----------------------------------------------------------\r\nSIL OPEN FONT LICENSE Version 1.0 - 22 November 2005\r\n-----------------------------------------------------------\r\n\r\nPREAMBLE\r\nThe goals of the Open Font License (OFL) are to stimulate worldwide\r\ndevelopment of cooperative font projects, to support the font creation\r\nefforts of academic and linguistic communities, and to provide an open\r\nframework in which fonts may be shared and improved in partnership with\r\nothers.\r\n\r\nThe OFL allows the licensed fonts to be used, studied, modified and\r\nredistributed freely as long as they are not sold by themselves. The\r\nfonts, including any derivative works, can be bundled, embedded, \r\nredistributed and sold with any software provided that the font\r\nnames of derivative works are changed. The fonts and derivatives,\r\nhowever, cannot be released under any other type of license.\r\n\r\nDEFINITIONS\r\n\"Font Software\" refers to any and all of the following:\r\n\t- font files\r\n\t- data files\r\n\t- source code\r\n\t- build scripts\r\n\t- documentation\r\n\r\n\"Reserved Font Name\" refers to the Font Software name as seen by\r\nusers and any other names as specified after the copyright statement.\r\n\r\n\"Standard Version\" refers to the collection of Font Software\r\ncomponents as distributed by the Copyright Holder.\r\n\r\n\"Modified Version\" refers to any derivative font software made by\r\nadding to, deleting, or substituting -- in part or in whole --\r\nany of the components of the Standard Version, by changing formats\r\nor by porting the Font Software to a new environment.\r\n\r\n\"Author\" refers to any designer, engineer, programmer, technical\r\nwriter or other person who contributed to the Font Software.\r\n\r\nPERMISSION & CONDITIONS\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of the Font Software, to use, study, copy, merge, embed, modify,\r\nredistribute, and sell modified and unmodified copies of the Font\r\nSoftware, subject to the following conditions:\r\n\r\n1) Neither the Font Software nor any of its individual components,\r\nin Standard or Modified Versions, may be sold by itself.\r\n\r\n2) Standard or Modified Versions of the Font Software may be bundled,\r\nredistributed and sold with any software, provided that each copy\r\ncontains the above copyright notice and this license. These can be\r\nincluded either as stand-alone text files, human-readable headers or\r\nin the appropriate machine-readable metadata fields within text or\r\nbinary files as long as those fields can be easily viewed by the user.\r\n\r\n3) No Modified Version of the Font Software may use the Reserved Font\r\nName(s), in part or in whole, unless explicit written permission is\r\ngranted by the Copyright Holder. This restriction applies to all \r\nreferences stored in the Font Software, such as the font menu name and\r\nother font description fields, which are used to differentiate the\r\nfont from others.\r\n\r\n4) The name(s) of the Copyright Holder or the Author(s) of the Font\r\nSoftware shall not be used to promote, endorse or advertise any\r\nModified Version, except to acknowledge the contribution(s) of the\r\nCopyright Holder and the Author(s) or with their explicit written\r\npermission.\r\n\r\n5) The Font Software, modified or unmodified, in part or in whole,\r\nmust be distributed using this license, and may not be distributed\r\nunder any other license.\r\n\r\nTERMINATION\r\nThis license becomes null and void if any of the above conditions are\r\nnot met.\r\n\r\nDISCLAIMER\r\nTHE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF\r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT\r\nOF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE\r\nCOPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\r\nINCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL\r\nDAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\r\nFROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM\r\nOTHER DEALINGS IN THE FONT SOFTWARE.\r\n",
+                  "__impliedURLs": [
+                      [
+                          "open-license",
+                          "http://open-license.hitachi.com/licenses/823"
+                      ]
+                  ]
+              },
+              "description": "Font software refers to font files, data files, source files, build scripts, and documents. A retained font name is the name of the font that is retained and identified with a copyright notice. Authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software."
           }
       },
       "__impliedJudgement": [
@@ -307,6 +505,10 @@
           [
               "Homepage",
               "http://scripts.sil.org/cms/scripts/page.php?item_id=OFL10_web"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/823"
           ]
       ]
   }

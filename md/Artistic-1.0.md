@@ -7,6 +7,8 @@ Artistic License 1.0 (Artistic-1.0)
 
 -   `Artistic 1.0 (original)`
 
+-   `Artistic License (Perl) 1.0`
+
 -   `scancode://artistic-1.0`
 
 -   `Artistic 1.0`
@@ -97,6 +99,8 @@ URLs
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0.html
 
 -   **open-license:** http://open-license.hitachi.com/licenses/596
+
+-   **open-license:** http://open-license.hitachi.com/licenses/721
 
 -   http://www.gnu.org/licenses/license-list.html\#ArtisticLicense
 
@@ -214,6 +218,8 @@ Raw Data
 
 -   Override
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -243,12 +249,17 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Artistic-1.0",
             "Artistic 1.0 (original)",
+            "Artistic License (Perl) 1.0",
             "Artistic License 1.0",
             "scancode://artistic-1.0",
             "Artistic 1.0",
@@ -857,6 +868,10 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/596"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/721"
             ]
         ]
     }

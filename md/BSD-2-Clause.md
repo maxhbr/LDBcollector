@@ -9,6 +9,8 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `BSD License (two clause)`
 
+-   `BSD 2-Clause "Simplified" or "FreeBSD" License`
+
 -   `scancode://bsd-simplified`
 
 -   `BSD-2`
@@ -51,6 +53,15 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “BSD-2-Clause” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
+-   “&lt;OWNER&gt; would be the equivalent of a copyright holder.”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
     (CC0-1.0))
@@ -79,6 +90,8 @@ URLs
 
 -   **Wikipedia Page:**
     https://en.wikipedia.org/wiki/BSD\_licenses\#2-clause
+
+-   **open-license:** http://open-license.hitachi.com/licenses/15
 
 -   http://spdx.org/licenses/BSD-2-Clause
 
@@ -119,6 +132,8 @@ Raw Data
 
 -   Override
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -152,6 +167,10 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
@@ -159,6 +178,7 @@ Raw Data
             "BSD-2-Clause",
             "BSD (2 clause)",
             "BSD License (two clause)",
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
             "BSD 2-Clause \"Simplified\" License",
             "scancode://bsd-simplified",
             "bsd-2-clause",
@@ -175,6 +195,13 @@ Raw Data
             "BSD"
         ],
         "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "BSD-2-Clause",
+                    "<OWNER> would be the equivalent of a copyright holder."
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -387,6 +414,97 @@ Raw Data
                 "oJudgement": null,
                 "oCompatibilities": null,
                 "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "summary": "BSD-2-Clause",
+                "notices": [
+                    {
+                        "content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated."
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/15",
+                "content": "The BSD 2-Clause License\r\n\r\n      The following is a BSD 2-Clause license template. To generate your own license, change \r\n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \r\n      and substitute your own.\r\n\r\n      Note: see also the BSD-3-Clause license.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "name": "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Modify the obtained source code."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "name": "Use binaries generated from modified source code"
+                            }
+                        ],
+                        "conditions": null
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                            "type": "OBLIGATION"
+                        }
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "name": "Distribute the generated binaries from modified source code"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "type": "OBLIGATION"
+                        }
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "BSD-2-Clause",
+                                "<OWNER> would be the equivalent of a copyright holder."
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "The BSD 2-Clause License\r\n\r\n      The following is a BSD 2-Clause license template. To generate your own license, change \r\n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \r\n      and substitute your own.\r\n\r\n      Note: see also the BSD-3-Clause license.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/15"
+                        ]
+                    ]
+                },
+                "description": "<OWNER> would be the equivalent of a copyright holder."
             },
             "BlueOak License List": {
                 "BlueOakRating": "Silver",
@@ -710,6 +828,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/BSD-2-Clause"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/15"
             ]
         ]
     }

@@ -12,12 +12,32 @@
 
 *Other Names:*
 
+* `+W3C Software Notice and License (became active on December 31 2002)+`
 * `+scancode://w3c+`
 * `+W3C Software Notice and License+`
 * `+The W3C Software Notice and License+`
 * `+License :: OSI Approved :: W3C License+`
 * `+W3C Software Notice and License 20021231+`
 * `+W3C License+`
+
+=== Description
+
+____
+"W3C Software Short Notice" can be found at
+http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
+"previous version" can be found at http The link for "Free Software
+Foundation's assessment of GPL compatibility" can be found at
+http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses
+"OSI's certification" can be found at
+www.w3.org/Consortium/Legal/copyright-software-19980720.
+gnu.org/philosophy/license-list.html#GPLCompatibleLicenses "OSI's
+certification" can be found at
+http://www.opensource.org/licenses/W3C.php." The link for "Open Source
+Definition" is http://www.opensource.org/docs/definition.php
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 
 === Comments on (easy) usability
 
@@ -38,6 +58,22 @@ Project Wiki]
 
 === General Comments
 
+* ``http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231''
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
+* ``"W3C Software Short Notice" can be found at
+http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
+"previous version" can be found at http The link for "Free Software
+Foundation's assessment of GPL compatibility" can be found at
+http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses
+"OSI's certification" can be found at
+www.w3.org/Consortium/Legal/copyright-software-19980720.
+gnu.org/philosophy/license-list.html#GPLCompatibleLicenses "OSI's
+certification" can be found at
+http://www.opensource.org/licenses/W3C.php." The link for "Open Source
+Definition" is http://www.opensource.org/docs/definition.php'' (source:
+https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 * ``Per SPDX.org, this license was released 13 December 2002. This
 license is OSI certified. '' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml[Scancode]
@@ -50,6 +86,7 @@ http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 * *OSI Page:* https://opensource.org/licenses/W3C
 * *SPDX:* http://spdx.org/licenses/W3C.json
 * *SPDX:* https://spdx.org/licenses/W3C.html
+* *open-license:* http://open-license.hitachi.com/licenses/269
 * http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
 * http://www.opensource.org/licenses/W3C
 * http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
@@ -101,6 +138,7 @@ times remain with copyright holders.
 ==== Facts
 
 * LicenseName
+* Override
 * https://spdx.org/licenses/W3C.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -122,6 +160,8 @@ Policy]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -129,6 +169,7 @@ Knowledge International]
 {
     "__impliedNames": [
         "W3C",
+        "W3C Software Notice and License (became active on December 31 2002)",
         "W3C Software Notice and License (2002-12-31)",
         "scancode://w3c",
         "W3C Software Notice and License",
@@ -143,6 +184,13 @@ Knowledge International]
         "W3C"
     ],
     "__impliedComments": [
+        [
+            "Hitachi open-license",
+            [
+                "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+                "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
+            ]
+        ],
         [
             "Scancode",
             [
@@ -342,6 +390,195 @@ Knowledge International]
                     "W3C"
                 ]
             }
+        },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "W3C",
+                    "W3C Software Notice and License (became active on December 31 2002)"
+                ],
+                "__impliedId": "W3C"
+            },
+            "oName": "W3C",
+            "oOtherLicenseIds": [
+                "W3C Software Notice and License (became active on December 31 2002)"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "summary": "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+            "notices": [
+                {
+                    "content": "the software and related documentation are provided \"as-is\" and the copyright holder makes no warranties of any kind, either express or implied, including, but not limited to, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement of third party patents, copyrights, trademarks and other rights by use of the software and related documentation. The warranties include, but are not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement of patents, copyrights, trademarks or other rights of third parties by use of the software or related documentation.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "In no event shall the copyright holder be liable for any direct, indirect, special or consequential damages resulting from the use of such software or related documentation."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/269",
+            "content": "W3C Software Notice and License\r\n\r\nThis work (and included software, documentation such as READMEs, or other related items) is being provided by the copyright holders under the following license.\r\n\r\n\r\nLicense\r\n\r\nBy obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\r\n\r\nPermission to copy, modify, and distribute this software and its documentation, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications:\r\n\r\n    â¢The full text of this NOTICE in a location viewable to users of the redistributed or \r\n    derivative work.\r\n\r\n    â¢Any pre-existing intellectual property disclaimers, notices, or terms and conditions. \r\n    If none exist, the W3C Software Short Notice should be included (hypertext is \r\n    preferred, text is permitted) within the body of any redistributed or \r\n    derivative code.\r\n\r\n    â¢Notice of any changes or modifications to the files, including the date changes \r\n    were made. (We recommend you provide URIs to the location from which the code \r\n    is derived.)\r\n\r\n\r\nDisclaimers\r\n\r\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\r\n\r\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\r\n\r\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.\r\n\r\n\r\nNotes\r\n\r\nThis version: http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231\r\n\r\nThis formulation of W3C's notice and license became active on December 31 2002. This version removes the copyright ownership notice such that this license can be used with materials other than those owned by the W3C, reflects that ERCIM is now a host of the W3C, includes references to this specific dated version of the license, and removes the ambiguous grant of \"use\". Otherwise, this version is the same as the previous version and is written so as to preserve the Free Software Foundation's assessment of GPL compatibility and OSI's certification under the Open Source Definition.",
+            "name": "W3C Software Notice and License (became active on December 31 2002)",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Use the retrieved binaries",
+                            "description": "Use the fetched binary as it is."
+                        },
+                        {
+                            "name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Use binaries generated from modified source code"
+                        },
+                        {
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "name": "Use the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the fetched binaries",
+                            "description": "Redistribute the fetched binaries as they are"
+                        },
+                        {
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is here: http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.htmlâ W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.]$name_of_software: $distribution_URICopyright Â© [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3CÂ® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<- here â \"1998 Version\" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html â \"Copyright\" link to http Link to \"World Wide Web Consortium\" can be found at http://www.w3.org/ â \"Massachusetts Institute of Technology\" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/â \"European Research Consortium for Informatics and Mathematics\" can be found at http://www.ercim.org/â \"Keio University\" The link to http://www.keio.ac.jp/â \"Beihang\" can be found at http://ev.buaa.edu.cn/"
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Modify the obtained source code."
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a file to report the changes you make and the date of all changes",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.htmlâ W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright Â© [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3CÂ® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this farâ \"1998 Version\" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.htmlâ \"Copyright\" link to http Link to \"World Wide Web Consortium\" can be found at http://www.w3.org/ â \"Massachusetts Institute of Technology\" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/â \"European Research Consortium for Informatics and Mathematics\" can be found at http://www.ercim.org/â \"Keio University\" The link to http://www.keio.ac.jp/â The link to \"Beihang\" is http://ev.buaa.edu.cn/â When you inform people of changes you have made, it is recommended to inform them of the URI to get the code."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Distribute the generated binaries from modified source code"
+                        },
+                        {
+                            "name": "Distribute the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include disclaimers, notices and clauses regarding existing intellectual property",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a file to report the changes you make and the date of all changes",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.htmlâ W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright Â© [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3CÂ® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this farâ \"1998 Version\" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.htmlâ \"Copyright\" link to http Link to \"World Wide Web Consortium\" can be found at http://www.w3.org/ â \"Massachusetts Institute of Technology\" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/â \"European Research Consortium for Informatics and Mathematics\" can be found at http://www.ercim.org/â \"Keio University\" The link to http://www.keio.ac.jp/â The link to \"Beihang\" is http://ev.buaa.edu.cn/â When you inform people of changes you have made, it is recommended to inform them of the URI to get the code."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Using the copyright holder's name or trademark in software promotion and advertising"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "Get special permission in writing.",
+                        "type": "REQUISITE"
+                    },
+                    "description": "The copyright to the software and related documentation is retained by the copyright holder at all times."
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "W3C Software Notice and License (became active on December 31 2002)"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+                            "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
+                        ]
+                    ]
+                ],
+                "__impliedText": "W3C Software Notice and License\r\n\r\nThis work (and included software, documentation such as READMEs, or other related items) is being provided by the copyright holders under the following license.\r\n\r\n\r\nLicense\r\n\r\nBy obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\r\n\r\nPermission to copy, modify, and distribute this software and its documentation, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications:\r\n\r\n    â¢The full text of this NOTICE in a location viewable to users of the redistributed or \r\n    derivative work.\r\n\r\n    â¢Any pre-existing intellectual property disclaimers, notices, or terms and conditions. \r\n    If none exist, the W3C Software Short Notice should be included (hypertext is \r\n    preferred, text is permitted) within the body of any redistributed or \r\n    derivative code.\r\n\r\n    â¢Notice of any changes or modifications to the files, including the date changes \r\n    were made. (We recommend you provide URIs to the location from which the code \r\n    is derived.)\r\n\r\n\r\nDisclaimers\r\n\r\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\r\n\r\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\r\n\r\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.\r\n\r\n\r\nNotes\r\n\r\nThis version: http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231\r\n\r\nThis formulation of W3C's notice and license became active on December 31 2002. This version removes the copyright ownership notice such that this license can be used with materials other than those owned by the W3C, reflects that ERCIM is now a host of the W3C, includes references to this specific dated version of the license, and removes the ambiguous grant of \"use\". Otherwise, this version is the same as the previous version and is written so as to preserve the Free Software Foundation's assessment of GPL compatibility and OSI's certification under the Open Source Definition.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/269"
+                    ]
+                ]
+            },
+            "description": "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
@@ -558,6 +795,10 @@ Knowledge International]
         [
             "OSI Page",
             "https://opensource.org/licenses/W3C"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/269"
         ]
     ]
 }

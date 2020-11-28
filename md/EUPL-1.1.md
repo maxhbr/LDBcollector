@@ -5,6 +5,8 @@ European Union Public License 1.1 (EUPL-1.1)
 
 **Other Names:**
 
+-   `European Union Public Licence, v.1.1`
+
 -   `scancode://eupl-1.1`
 
 -   `EUPL 1.1`
@@ -85,6 +87,8 @@ URLs
 -   **OSI Page:** https://opensource.org/licenses/EUPL-1.1
 
 -   **SPDX:** http://spdx.org/licenses/EUPL-1.1.json
+
+-   **open-license:** http://open-license.hitachi.com/licenses/885
 
 -   https://joinup.ec.europa.eu/software/page/eupl/licence-eupl
 
@@ -373,6 +377,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -404,11 +410,16 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "EUPL-1.1",
+            "European Union Public Licence, v.1.1",
             "European Union Public License 1.1",
             "scancode://eupl-1.1",
             "EUPL 1.1",
@@ -429,6 +440,10 @@ Raw Data
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
                 ]
+            ],
+            [
+                "Hitachi open-license",
+                []
             ],
             [
                 "Scancode",
@@ -646,6 +661,352 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "EUPL-1.1"
+                    ]
+                }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "EUPL-1.1",
+                        "European Union Public Licence, v.1.1"
+                    ],
+                    "__impliedId": "EUPL-1.1"
+                },
+                "oName": "EUPL-1.1",
+                "oOtherLicenseIds": [
+                    "European Union Public Licence, v.1.1"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "notices": [
+                    {
+                        "content": "In countries where moral rights apply, the licensor shall waive the right to exercise moral rights, to the extent permitted by law, in order to give effect to the licensing of the economic rights listed in Chapter 2."
+                    },
+                    {
+                        "content": "This license is not intended to deprive the Licensee of the benefit of any exceptions or limitations to the exclusive rights of the original Software or the rights holders of such Software or the exhaustion of such rights or any other applicable restrictions."
+                    },
+                    {
+                        "content": "You shall not offer or indicate any terms or conditions that alter or limit this license."
+                    },
+                    {
+                        "content": "If you distribute derivative works based on the original software and the software licensed under the Compatible Licences as shown in the Appendix, such derivative works may be distributed under the Compatible Licences. In the event of a conflict between the obligations of this License and the obligations of the Compatible Licences, the obligations of the Compatible Licences shall prevail."
+                    },
+                    {
+                        "content": "Licensor's trademarks, trademarks, service marks, and names may not be used to reproduce copyright notices and to describe the origin of such software, except where reasonable and customary use is necessary to do so."
+                    },
+                    {
+                        "content": "the software is provided under this license \"as-is\" and without warranty of any kind with respect to the software. The warranties include, but are not limited to, the warranties of commercial applicability, fitness for a particular purpose, freedom from defects or errors, accuracy, and non-infringement of non-copyright rights in Section 6.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "Except in the case of willful misconduct or damage caused directly to an individual, Licensor shall not be liable for any damages, including, but not limited to, damages for loss of goodwill, business interruption, computer failure or malfunction, or commercial damages, even if Licensor has been advised of the likelihood of such damages occurring In no event shall you be liable for any direct, indirect, property or personal damage resulting from the use of this license or the software.",
+                        "description": "However, if product liability laws apply to such Software, Licensor shall be liable under such laws."
+                    },
+                    {
+                        "content": "Violation of this license shall automatically terminate all rights under this license, except that the license to the recipient of the software distributed by the offending party shall remain in effect as long as the recipient remains in full compliance with this license. However, the license to the recipient of such software distributed by the offending party shall remain in effect so long as the recipient remains in full compliance with this license."
+                    },
+                    {
+                        "content": "The invalidity or unenforceability of any provision of this license under applicable law shall not affect the validity or enforceability of any other part of this license. Such provisions shall be amended to the extent necessary to make them valid and enforceable."
+                    },
+                    {
+                        "content": "Any litigation between the Commission as licensor and the Licensee regarding the interpretation of this License shall be subject to the jurisdiction of the European Court of Justice as provided for in Article 238 of the Treaty establishing the European Community."
+                    },
+                    {
+                        "content": "Any litigation between parties not before the Commission concerning the interpretation of this license shall be subject to the exclusive jurisdiction of the court in which Licensor resides or conducts its principal business."
+                    },
+                    {
+                        "content": "This license shall be governed by the laws of the country in the European Union where the Licensor resides or has its registered office.",
+                        "description": "However, Belgian law shall apply in the following cases. Litigation between the European Community as licensor and the licensee - Licensors other than the European Commission, who do not reside or have their registered office in a country of the European Union."
+                    },
+                    {
+                        "content": "Appendix \"Compatible Licences\" according to article 5 EUPL are:- GNU General Public License (GNU GPL) v. 2- Open Software License (OSL) v. 2.1, v. 3.0- Common Public License v. 1.0- Eclipse Public License v. 1.0- Cecill v. 2.0"
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/885",
+                "content": "European Union Public Licence\r\nV. 1.1\r\n\r\nEUPL Â© the European Community 2007\r\n\r\nThis European Union Public Licence (the âEUPLâ) applies to the Work or Software\r\n(as defined below) which is provided under the terms of this Licence. Any use of the\r\nWork, other than as authorised under this Licence is prohibited (to the extent such use\r\nis covered by a right of the copyright holder of the Work).\r\n\r\nThe Original Work is provided under the terms of this Licence when the Licensor (as\r\ndefined below) has placed the following notice immediately following the copyright\r\nnotice for the Original Work:\r\n\r\nLicensed under the EUPL V.1.1\r\n\r\nor has expressed by any other mean his willingness to license under the EUPL.\r\n\r\n1. Definitions\r\n\r\nIn this Licence, the following terms have the following meaning:\r\n\r\n- The Licence: this Licence.\r\n\r\n- The Original Work or the Software: the software distributed and/or communicated\r\nby the Licensor under this Licence, available as Source Code and also as Executable\r\nCode as the case may be.\r\n\r\n- Derivative Works: the works or software that could be created by the Licensee,\r\nbased upon the Original Work or modifications thereof. This Licence does not define\r\nthe extent of modification or dependence on the Original Work required in order to\r\nclassify a work as a Derivative Work; this extent is determined by copyright law\r\napplicable in the country mentioned in Article 15.\r\n\r\n- The Work: the Original Work and/or its Derivative Works.\r\n\r\n- The Source Code: the human-readable form of the Work which is the most\r\nconvenient for people to study and modify.\r\n\r\n- The Executable Code: any code which has generally been compiled and which is\r\nmeant to be interpreted by a computer as a program.\r\n\r\n- The Licensor: the natural or legal person that distributes and/or communicates the\r\nWork under the Licence.\r\n\r\n- Contributor(s): any natural or legal person who modifies the Work under the\r\nLicence, or otherwise contributes to the creation of a Derivative Work.\r\n\r\n- The Licensee or âYouâ: any natural or legal person who makes any usage of the\r\nSoftware under the terms of the Licence.\r\n\r\n- Distribution and/or Communication: any act of selling, giving, lending, renting,\r\ndistributing, communicating, transmitting, or otherwise making available, on-line or\r\noff-line, copies of the Work or providing access to its essential functionalities at the\r\ndisposal of any other natural or legal person.\r\n\r\n2. Scope of the rights granted by the Licence\r\n\r\nThe Licensor hereby grants You a world-wide, royalty-free, non-exclusive, sublicensable\r\nlicence to do the following, for the duration of copyright vested in the\r\nOriginal Work:\r\n\r\n- use the Work in any circumstance and for all usage,\r\n- reproduce the Work,\r\n- modify the Original Work, and make Derivative Works based upon the Work,\r\n- communicate to the public, including the right to make available or display the\r\nWork or copies thereof to the public and perform publicly, as the case may be,\r\nthe Work,\r\n- distribute the Work or copies thereof,\r\n- lend and rent the Work or copies thereof,\r\n- sub-license rights in the Work or copies thereof.\r\n\r\nThose rights can be exercised on any media, supports and formats, whether now\r\nknown or later invented, as far as the applicable law permits so.\r\n\r\nIn the countries where moral rights apply, the Licensor waives his right to exercise his\r\nmoral right to the extent allowed by law in order to make effective the licence of the\r\neconomic rights here above listed.\r\n\r\nThe Licensor grants to the Licensee royalty-free, non exclusive usage rights to any\r\npatents held by the Licensor, to the extent necessary to make use of the rights granted\r\non the Work under this Licence.\r\n\r\n3. Communication of the Source Code\r\n\r\nThe Licensor may provide the Work either in its Source Code form, or as Executable\r\nCode. If the Work is provided as Executable Code, the Licensor provides in addition a\r\nmachine-readable copy of the Source Code of the Work along with each copy of the\r\nWork that the Licensor distributes or indicates, in a notice following the copyright\r\nnotice attached to the Work, a repository where the Source Code is easily and freely\r\naccessible for as long as the Licensor continues to distribute and/or communicate the\r\nWork.\r\n\r\n4. Limitations on copyright\r\n\r\nNothing in this Licence is intended to deprive the Licensee of the benefits from any\r\nexception or limitation to the exclusive rights of the rights owners in the Original\r\nWork or Software, of the exhaustion of those rights or of other applicable limitations\r\nthereto.\r\n\r\n5. Obligations of the Licensee\r\n\r\nThe grant of the rights mentioned above is subject to some restrictions and obligations\r\nimposed on the Licensee. Those obligations are the following:\r\n\r\nAttribution right: the Licensee shall keep intact all copyright, patent or trademarks\r\nnotices and all notices that refer to the Licence and to the disclaimer of warranties.\r\nThe Licensee must include a copy of such notices and a copy of the Licence with\r\nevery copy of the Work he/she distributes and/or communicates. The Licensee must\r\ncause any Derivative Work to carry prominent notices stating that the Work has been\r\nmodified and the date of modification.\r\n\r\nCopyleft clause: If the Licensee distributes and/or communicates copies of the\r\nOriginal Works or Derivative Works based upon the Original Work, this Distribution\r\nand/or Communication will be done under the terms of this Licence or of a later\r\nversion of this Licence unless the Original Work is expressly distributed only under\r\nthis version of the Licence. The Licensee (becoming Licensor) cannot offer or impose\r\nany additional terms or conditions on the Work or Derivative Work that alter or\r\nrestrict the terms of the Licence.\r\n\r\nCompatibility clause: If the Licensee Distributes and/or Communicates Derivative\r\nWorks or copies thereof based upon both the Original Work and another work\r\nlicensed under a Compatible Licence, this Distribution and/or Communication can be\r\ndone under the terms of this Compatible Licence. For the sake of this clause,\r\nâCompatible Licenceâ refers to the licences listed in the appendix attached to this\r\nLicence. Should the Licenseeâs obligations under the Compatible Licence conflict\r\nwith his/her obligations under this Licence, the obligations of the Compatible Licence\r\nshall prevail.\r\n\r\nProvision of Source Code: When distributing and/or communicating copies of the\r\nWork, the Licensee will provide a machine-readable copy of the Source Code or\r\nindicate a repository where this Source will be easily and freely available for as long\r\nas the Licensee continues to distribute and/or communicate the Work.\r\n\r\nLegal Protection: This Licence does not grant permission to use the trade names,\r\ntrademarks, service marks, or names of the Licensor, except as required for\r\nreasonable and customary use in describing the origin of the Work and reproducing\r\nthe content of the copyright notice.\r\n\r\n6. Chain of Authorship\r\n\r\nThe original Licensor warrants that the copyright in the Original Work granted\r\nhereunder is owned by him/her or licensed to him/her and that he/she has the power\r\nand authority to grant the Licence.\r\n\r\nEach Contributor warrants that the copyright in the modifications he/she brings to the\r\nWork are owned by him/her or licensed to him/her and that he/she has the power and\r\nauthority to grant the Licence.\r\n\r\nEach time You accept the Licence, the original Licensor and subsequent Contributors\r\ngrant You a licence to their contributions to the Work, under the terms of this\r\nLicence.\r\n\r\n7. Disclaimer of Warranty\r\n\r\nThe Work is a work in progress, which is continuously improved by numerous\r\ncontributors. It is not a finished work and may therefore contain defects or âbugsâ\r\ninherent to this type of software development.\r\n\r\nFor the above reason, the Work is provided under the Licence on an âas isâ basis and\r\nwithout warranties of any kind concerning the Work, including without limitation\r\nmerchantability, fitness for a particular purpose, absence of defects or errors,\r\naccuracy, non-infringement of intellectual property rights other than copyright as\r\nstated in Article 6 of this Licence.\r\n\r\nThis disclaimer of warranty is an essential part of the Licence and a condition for the\r\ngrant of any rights to the Work.\r\n\r\n8. Disclaimer of Liability\r\n\r\nExcept in the cases of wilful misconduct or damages directly caused to natural\r\npersons, the Licensor will in no event be liable for any direct or indirect, material or\r\nmoral, damages of any kind, arising out of the Licence or of the use of the Work,\r\nincluding without limitation, damages for loss of goodwill, work stoppage, computer\r\nfailure or malfunction, loss of data or any commercial damage, even if the Licensor\r\nhas been advised of the possibility of such damage. However, the Licensor will be\r\nliable under statutory product liability laws as far such laws apply to the Work.\r\n\r\n9. Additional agreements\r\n\r\nWhile distributing the Original Work or Derivative Works, You may choose to\r\nconclude an additional agreement to offer, and charge a fee for, acceptance of support,\r\nwarranty, indemnity, or other liability obligations and/or services consistent with this\r\nLicence. However, in accepting such obligations, You may act only on your own\r\nbehalf and on your sole responsibility, not on behalf of the original Licensor or any\r\nother Contributor, and only if You agree to indemnify, defend, and hold each\r\nContributor harmless for any liability incurred by, or claims asserted against such\r\nContributor by the fact You have accepted any such warranty or additional liability.\r\n\r\n10. Acceptance of the Licence\r\n\r\nThe provisions of this Licence can be accepted by clicking on an icon âI agreeâ\r\nplaced under the bottom of a window displaying the text of this Licence or by\r\naffirming consent in any other similar way, in accordance with the rules of applicable\r\nlaw. Clicking on that icon indicates your clear and irrevocable acceptance of this\r\nLicence and all of its terms and conditions.\r\n\r\nSimilarly, you irrevocably accept this Licence and all of its terms and conditions by\r\nexercising any rights granted to You by Article 2 of this Licence, such as the use of\r\nthe Work, the creation by You of a Derivative Work or the Distribution and/or\r\nCommunication by You of the Work or copies thereof.\r\n\r\n11. Information to the public\r\n\r\nIn case of any Distribution and/or Communication of the Work by means of electronic\r\ncommunication by You (for example, by offering to download the Work from a\r\nremote location) the distribution channel or media (for example, a website) must at\r\nleast provide to the public the information requested by the applicable law regarding\r\nthe Licensor, the Licence and the way it may be accessible, concluded, stored and\r\nreproduced by the Licensee.\r\n\r\n12. Termination of the Licence\r\n\r\nThe Licence and the rights granted hereunder will terminate automatically upon any\r\nbreach by the Licensee of the terms of the Licence.\r\n\r\nSuch a termination will not terminate the licences of any person who has received the\r\nWork from the Licensee under the Licence, provided such persons remain in full\r\ncompliance with the Licence.\r\n\r\n13. Miscellaneous\r\n\r\nWithout prejudice of Article 9 above, the Licence represents the complete agreement\r\nbetween the Parties as to the Work licensed hereunder.\r\n\r\nIf any provision of the Licence is invalid or unenforceable under applicable law, this\r\nwill not affect the validity or enforceability of the Licence as a whole. Such provision\r\nwill be construed and/or reformed so as necessary to make it valid and enforceable.\r\n\r\nThe European Commission may publish other linguistic versions and/or new versions\r\nof this Licence, so far this is required and reasonable, without reducing the scope of\r\nthe rights granted by the Licence. New versions of the Licence will be published with\r\na unique version number.\r\n\r\nAll linguistic versions of this Licence, approved by the European Commission, have\r\nidentical value. Parties can take advantage of the linguistic version of their choice.\r\n\r\n14. Jurisdiction\r\n\r\nAny litigation resulting from the interpretation of this License, arising between the\r\nEuropean Commission, as a Licensor, and any Licensee, will be subject to the\r\njurisdiction of the Court of Justice of the European Communities, as laid down in\r\narticle 238 of the Treaty establishing the European Community.\r\n\r\nAny litigation arising between Parties, other than the European Commission, and\r\nresulting from the interpretation of this License, will be subject to the exclusive\r\njurisdiction of the competent court where the Licensor resides or conducts its primary\r\nbusiness.\r\n\r\n15. Applicable Law\r\n\r\nThis Licence shall be governed by the law of the European Union country where the\r\nLicensor resides or has his registered office.\r\n\r\nThis licence shall be governed by the Belgian law if:\r\n\r\n- a litigation arises between the European Commission, as a Licensor, and any\r\nLicensee;\r\n- the Licensor, other than the European Commission, has no residence or\r\nregistered office inside a European Union country.\r\n\r\n===\r\nAppendix\r\n\r\nâCompatible Licencesâ according to article 5 EUPL are:\r\n\r\n- GNU General Public License (GNU GPL) v. 2\r\n- Open Software License (OSL) v. 2.1, v. 3.0\r\n- Common Public License v. 1.0\r\n- Eclipse Public License v. 1.0\r\n- Cecill v. 2.0",
+                "name": "European Union Public Licence, v.1.1",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved executable",
+                                "description": "Use the obtained executable as is."
+                            },
+                            {
+                                "name": "Use the executable generated from the modified source code"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                }
+                            ]
+                        },
+                        "description": "rights in all present and future media, supports and formats as permitted by applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Display the obtained source code publicly"
+                            },
+                            {
+                                "name": "Executing the fetched source code publicly"
+                            },
+                            {
+                                "name": "Sublicense the acquired source code.",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include all statements referring to copyright, patents, trademarks, this license and disclaimer",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained executable",
+                                "description": "Redistribute the obtained executable as-is"
+                            },
+                            {
+                                "name": "Display the retrieved executable publicly"
+                            },
+                            {
+                                "name": "Publicly execute the retrieved executable"
+                            },
+                            {
+                                "name": "Sublicense the acquired executable",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include all statements referring to copyright, patents, trademarks, this license and disclaimer",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "name": "Attach the source code corresponding to the software in question.",
+                                            "type": "OBLIGATION"
+                                        },
+                                        {
+                                            "name": "Indicates a repository where the source code for the software can be used freely.",
+                                            "type": "OBLIGATION",
+                                            "description": "Indicates a repository that is available for as long as you continue to distribute the software"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": "You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Modify the obtained source code."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include all statements referring to copyright, patents, trademarks, this license and disclaimer",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "â The rights shall be enforceable in all present and future media, supports and formats as permitted by applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            },
+                            {
+                                "name": "Display modified source code publicly"
+                            },
+                            {
+                                "name": "Publicly execute the modified source code"
+                            },
+                            {
+                                "name": "Sublicensing Modified Source Code",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include all statements referring to copyright, patents, trademarks, this license and disclaimer",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Publicly display the object code generated from the modified source code"
+                            },
+                            {
+                                "name": "Distribute the executable generated from the modified source code"
+                            },
+                            {
+                                "name": "Publicly execute executables generated from modified source code"
+                            },
+                            {
+                                "name": "Sublicense the generated executable from modified source code",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Exercise rights in all current and future media and formats",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include all statements referring to copyright, patents, trademarks, this license and disclaimer",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Indicate your changes and the date of the change.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "OR": [
+                                        {
+                                            "name": "Attach the source code corresponding to the software in question.",
+                                            "type": "OBLIGATION"
+                                        },
+                                        {
+                                            "name": "Indicates a repository where the source code for the software can be used freely.",
+                                            "type": "OBLIGATION",
+                                            "description": "Indicates a repository that is available for as long as you continue to distribute the software"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": "You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
+                            }
+                        ],
+                        "conditions": {
+                            "name": "I do so at my own risk.",
+                            "type": "OBLIGATION",
+                            "description": "If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage."
+                        }
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "European Union Public Licence, v.1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            []
+                        ]
+                    ],
+                    "__impliedText": "European Union Public Licence\r\nV. 1.1\r\n\r\nEUPL Â© the European Community 2007\r\n\r\nThis European Union Public Licence (the âEUPLâ) applies to the Work or Software\r\n(as defined below) which is provided under the terms of this Licence. Any use of the\r\nWork, other than as authorised under this Licence is prohibited (to the extent such use\r\nis covered by a right of the copyright holder of the Work).\r\n\r\nThe Original Work is provided under the terms of this Licence when the Licensor (as\r\ndefined below) has placed the following notice immediately following the copyright\r\nnotice for the Original Work:\r\n\r\nLicensed under the EUPL V.1.1\r\n\r\nor has expressed by any other mean his willingness to license under the EUPL.\r\n\r\n1. Definitions\r\n\r\nIn this Licence, the following terms have the following meaning:\r\n\r\n- The Licence: this Licence.\r\n\r\n- The Original Work or the Software: the software distributed and/or communicated\r\nby the Licensor under this Licence, available as Source Code and also as Executable\r\nCode as the case may be.\r\n\r\n- Derivative Works: the works or software that could be created by the Licensee,\r\nbased upon the Original Work or modifications thereof. This Licence does not define\r\nthe extent of modification or dependence on the Original Work required in order to\r\nclassify a work as a Derivative Work; this extent is determined by copyright law\r\napplicable in the country mentioned in Article 15.\r\n\r\n- The Work: the Original Work and/or its Derivative Works.\r\n\r\n- The Source Code: the human-readable form of the Work which is the most\r\nconvenient for people to study and modify.\r\n\r\n- The Executable Code: any code which has generally been compiled and which is\r\nmeant to be interpreted by a computer as a program.\r\n\r\n- The Licensor: the natural or legal person that distributes and/or communicates the\r\nWork under the Licence.\r\n\r\n- Contributor(s): any natural or legal person who modifies the Work under the\r\nLicence, or otherwise contributes to the creation of a Derivative Work.\r\n\r\n- The Licensee or âYouâ: any natural or legal person who makes any usage of the\r\nSoftware under the terms of the Licence.\r\n\r\n- Distribution and/or Communication: any act of selling, giving, lending, renting,\r\ndistributing, communicating, transmitting, or otherwise making available, on-line or\r\noff-line, copies of the Work or providing access to its essential functionalities at the\r\ndisposal of any other natural or legal person.\r\n\r\n2. Scope of the rights granted by the Licence\r\n\r\nThe Licensor hereby grants You a world-wide, royalty-free, non-exclusive, sublicensable\r\nlicence to do the following, for the duration of copyright vested in the\r\nOriginal Work:\r\n\r\n- use the Work in any circumstance and for all usage,\r\n- reproduce the Work,\r\n- modify the Original Work, and make Derivative Works based upon the Work,\r\n- communicate to the public, including the right to make available or display the\r\nWork or copies thereof to the public and perform publicly, as the case may be,\r\nthe Work,\r\n- distribute the Work or copies thereof,\r\n- lend and rent the Work or copies thereof,\r\n- sub-license rights in the Work or copies thereof.\r\n\r\nThose rights can be exercised on any media, supports and formats, whether now\r\nknown or later invented, as far as the applicable law permits so.\r\n\r\nIn the countries where moral rights apply, the Licensor waives his right to exercise his\r\nmoral right to the extent allowed by law in order to make effective the licence of the\r\neconomic rights here above listed.\r\n\r\nThe Licensor grants to the Licensee royalty-free, non exclusive usage rights to any\r\npatents held by the Licensor, to the extent necessary to make use of the rights granted\r\non the Work under this Licence.\r\n\r\n3. Communication of the Source Code\r\n\r\nThe Licensor may provide the Work either in its Source Code form, or as Executable\r\nCode. If the Work is provided as Executable Code, the Licensor provides in addition a\r\nmachine-readable copy of the Source Code of the Work along with each copy of the\r\nWork that the Licensor distributes or indicates, in a notice following the copyright\r\nnotice attached to the Work, a repository where the Source Code is easily and freely\r\naccessible for as long as the Licensor continues to distribute and/or communicate the\r\nWork.\r\n\r\n4. Limitations on copyright\r\n\r\nNothing in this Licence is intended to deprive the Licensee of the benefits from any\r\nexception or limitation to the exclusive rights of the rights owners in the Original\r\nWork or Software, of the exhaustion of those rights or of other applicable limitations\r\nthereto.\r\n\r\n5. Obligations of the Licensee\r\n\r\nThe grant of the rights mentioned above is subject to some restrictions and obligations\r\nimposed on the Licensee. Those obligations are the following:\r\n\r\nAttribution right: the Licensee shall keep intact all copyright, patent or trademarks\r\nnotices and all notices that refer to the Licence and to the disclaimer of warranties.\r\nThe Licensee must include a copy of such notices and a copy of the Licence with\r\nevery copy of the Work he/she distributes and/or communicates. The Licensee must\r\ncause any Derivative Work to carry prominent notices stating that the Work has been\r\nmodified and the date of modification.\r\n\r\nCopyleft clause: If the Licensee distributes and/or communicates copies of the\r\nOriginal Works or Derivative Works based upon the Original Work, this Distribution\r\nand/or Communication will be done under the terms of this Licence or of a later\r\nversion of this Licence unless the Original Work is expressly distributed only under\r\nthis version of the Licence. The Licensee (becoming Licensor) cannot offer or impose\r\nany additional terms or conditions on the Work or Derivative Work that alter or\r\nrestrict the terms of the Licence.\r\n\r\nCompatibility clause: If the Licensee Distributes and/or Communicates Derivative\r\nWorks or copies thereof based upon both the Original Work and another work\r\nlicensed under a Compatible Licence, this Distribution and/or Communication can be\r\ndone under the terms of this Compatible Licence. For the sake of this clause,\r\nâCompatible Licenceâ refers to the licences listed in the appendix attached to this\r\nLicence. Should the Licenseeâs obligations under the Compatible Licence conflict\r\nwith his/her obligations under this Licence, the obligations of the Compatible Licence\r\nshall prevail.\r\n\r\nProvision of Source Code: When distributing and/or communicating copies of the\r\nWork, the Licensee will provide a machine-readable copy of the Source Code or\r\nindicate a repository where this Source will be easily and freely available for as long\r\nas the Licensee continues to distribute and/or communicate the Work.\r\n\r\nLegal Protection: This Licence does not grant permission to use the trade names,\r\ntrademarks, service marks, or names of the Licensor, except as required for\r\nreasonable and customary use in describing the origin of the Work and reproducing\r\nthe content of the copyright notice.\r\n\r\n6. Chain of Authorship\r\n\r\nThe original Licensor warrants that the copyright in the Original Work granted\r\nhereunder is owned by him/her or licensed to him/her and that he/she has the power\r\nand authority to grant the Licence.\r\n\r\nEach Contributor warrants that the copyright in the modifications he/she brings to the\r\nWork are owned by him/her or licensed to him/her and that he/she has the power and\r\nauthority to grant the Licence.\r\n\r\nEach time You accept the Licence, the original Licensor and subsequent Contributors\r\ngrant You a licence to their contributions to the Work, under the terms of this\r\nLicence.\r\n\r\n7. Disclaimer of Warranty\r\n\r\nThe Work is a work in progress, which is continuously improved by numerous\r\ncontributors. It is not a finished work and may therefore contain defects or âbugsâ\r\ninherent to this type of software development.\r\n\r\nFor the above reason, the Work is provided under the Licence on an âas isâ basis and\r\nwithout warranties of any kind concerning the Work, including without limitation\r\nmerchantability, fitness for a particular purpose, absence of defects or errors,\r\naccuracy, non-infringement of intellectual property rights other than copyright as\r\nstated in Article 6 of this Licence.\r\n\r\nThis disclaimer of warranty is an essential part of the Licence and a condition for the\r\ngrant of any rights to the Work.\r\n\r\n8. Disclaimer of Liability\r\n\r\nExcept in the cases of wilful misconduct or damages directly caused to natural\r\npersons, the Licensor will in no event be liable for any direct or indirect, material or\r\nmoral, damages of any kind, arising out of the Licence or of the use of the Work,\r\nincluding without limitation, damages for loss of goodwill, work stoppage, computer\r\nfailure or malfunction, loss of data or any commercial damage, even if the Licensor\r\nhas been advised of the possibility of such damage. However, the Licensor will be\r\nliable under statutory product liability laws as far such laws apply to the Work.\r\n\r\n9. Additional agreements\r\n\r\nWhile distributing the Original Work or Derivative Works, You may choose to\r\nconclude an additional agreement to offer, and charge a fee for, acceptance of support,\r\nwarranty, indemnity, or other liability obligations and/or services consistent with this\r\nLicence. However, in accepting such obligations, You may act only on your own\r\nbehalf and on your sole responsibility, not on behalf of the original Licensor or any\r\nother Contributor, and only if You agree to indemnify, defend, and hold each\r\nContributor harmless for any liability incurred by, or claims asserted against such\r\nContributor by the fact You have accepted any such warranty or additional liability.\r\n\r\n10. Acceptance of the Licence\r\n\r\nThe provisions of this Licence can be accepted by clicking on an icon âI agreeâ\r\nplaced under the bottom of a window displaying the text of this Licence or by\r\naffirming consent in any other similar way, in accordance with the rules of applicable\r\nlaw. Clicking on that icon indicates your clear and irrevocable acceptance of this\r\nLicence and all of its terms and conditions.\r\n\r\nSimilarly, you irrevocably accept this Licence and all of its terms and conditions by\r\nexercising any rights granted to You by Article 2 of this Licence, such as the use of\r\nthe Work, the creation by You of a Derivative Work or the Distribution and/or\r\nCommunication by You of the Work or copies thereof.\r\n\r\n11. Information to the public\r\n\r\nIn case of any Distribution and/or Communication of the Work by means of electronic\r\ncommunication by You (for example, by offering to download the Work from a\r\nremote location) the distribution channel or media (for example, a website) must at\r\nleast provide to the public the information requested by the applicable law regarding\r\nthe Licensor, the Licence and the way it may be accessible, concluded, stored and\r\nreproduced by the Licensee.\r\n\r\n12. Termination of the Licence\r\n\r\nThe Licence and the rights granted hereunder will terminate automatically upon any\r\nbreach by the Licensee of the terms of the Licence.\r\n\r\nSuch a termination will not terminate the licences of any person who has received the\r\nWork from the Licensee under the Licence, provided such persons remain in full\r\ncompliance with the Licence.\r\n\r\n13. Miscellaneous\r\n\r\nWithout prejudice of Article 9 above, the Licence represents the complete agreement\r\nbetween the Parties as to the Work licensed hereunder.\r\n\r\nIf any provision of the Licence is invalid or unenforceable under applicable law, this\r\nwill not affect the validity or enforceability of the Licence as a whole. Such provision\r\nwill be construed and/or reformed so as necessary to make it valid and enforceable.\r\n\r\nThe European Commission may publish other linguistic versions and/or new versions\r\nof this Licence, so far this is required and reasonable, without reducing the scope of\r\nthe rights granted by the Licence. New versions of the Licence will be published with\r\na unique version number.\r\n\r\nAll linguistic versions of this Licence, approved by the European Commission, have\r\nidentical value. Parties can take advantage of the linguistic version of their choice.\r\n\r\n14. Jurisdiction\r\n\r\nAny litigation resulting from the interpretation of this License, arising between the\r\nEuropean Commission, as a Licensor, and any Licensee, will be subject to the\r\njurisdiction of the Court of Justice of the European Communities, as laid down in\r\narticle 238 of the Treaty establishing the European Community.\r\n\r\nAny litigation arising between Parties, other than the European Commission, and\r\nresulting from the interpretation of this License, will be subject to the exclusive\r\njurisdiction of the competent court where the Licensor resides or conducts its primary\r\nbusiness.\r\n\r\n15. Applicable Law\r\n\r\nThis Licence shall be governed by the law of the European Union country where the\r\nLicensor resides or has his registered office.\r\n\r\nThis licence shall be governed by the Belgian law if:\r\n\r\n- a litigation arises between the European Commission, as a Licensor, and any\r\nLicensee;\r\n- the Licensor, other than the European Commission, has no residence or\r\nregistered office inside a European Union country.\r\n\r\n===\r\nAppendix\r\n\r\nâCompatible Licencesâ according to article 5 EUPL are:\r\n\r\n- GNU General Public License (GNU GPL) v. 2\r\n- Open Software License (OSL) v. 2.1, v. 3.0\r\n- Common Public License v. 1.0\r\n- Eclipse Public License v. 1.0\r\n- Cecill v. 2.0",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/885"
+                        ]
                     ]
                 }
             },
@@ -993,6 +1354,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/EUPL-1.1"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/885"
             ]
         ]
     }

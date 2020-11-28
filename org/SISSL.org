@@ -8,6 +8,8 @@
 
 *Other Names:*
 
+- =Sun Industry Standards Source License Version 1.1=
+
 - =scancode://sun-sissl-1.1=
 
 - =Sun Industry Standards Source License 1.1=
@@ -17,6 +19,30 @@
 - =License :: OSI Approved :: Sun Industry Standards Source License (SISSL)=
 
 - =sun-issl=
+
+** Description
+
+#+BEGIN_QUOTE
+  Source code refers to source code and related interface definition
+  files and scripts used to control the compilation and installation of
+  executables. An executable is any form of software other than source
+  code. Sublicense means that the person who has been granted this
+  license re-grants the license granted to a third party. Initial
+  Developer means the person or entity listed as the initial developer
+  in the source code notice required by EXHIBIT A. Standards refer to
+  the standards listed in EXHIBIT B. A person or entity exercising its
+  rights under this License in accordance with all of the terms of this
+  License. In the case of a legal entity, self includes any entity that
+  controls itself, is controlled by itself, or is an association of
+  persons under common control with itself. For the purposes of this
+  definition, "control" means any of the following (1) has the authority
+  to direct or manage the corporation directly or indirectly by contract
+  or otherwise; (2) has more than 50% of the outstanding shares or
+  beneficial ownership of the corporation
+#+END_QUOTE
+
+(source: [[https://github.com/Hitachi/open-license][Hitachi
+open-license]] (CDLA-Permissive-1.0))
 
 ** Comments on (easy) usability
 
@@ -42,6 +68,25 @@
 
 ** General Comments
 
+- "Source code refers to source code and related interface definition
+  files and scripts used to control the compilation and installation of
+  executables. An executable is any form of software other than source
+  code. Sublicense means that the person who has been granted this
+  license re-grants the license granted to a third party. Initial
+  Developer means the person or entity listed as the initial developer
+  in the source code notice required by EXHIBIT A. Standards refer to
+  the standards listed in EXHIBIT B. A person or entity exercising its
+  rights under this License in accordance with all of the terms of this
+  License. In the case of a legal entity, self includes any entity that
+  controls itself, is controlled by itself, or is an association of
+  persons under common control with itself. For the purposes of this
+  definition, "control" means any of the following (1) has the authority
+  to direct or manage the corporation directly or indirectly by contract
+  or otherwise; (2) has more than 50% of the outstanding shares or
+  beneficial ownership of the corporation" (source:
+  [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0))
+
 ** URLs
 
 - *Homepage:* http://www.openoffice.org/licenses/sissl_license.html
@@ -49,6 +94,8 @@
 - *OSI Page:* https://opensource.org/licenses/SISSL
 
 - *SPDX:* http://spdx.org/licenses/SISSL.json
+
+- *open-license:* http://open-license.hitachi.com/licenses/1486
 
 ** Text
 
@@ -365,6 +412,8 @@
 
 - LicenseName
 
+- Override
+
 - [[https://spdx.org/licenses/SISSL.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -386,12 +435,16 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
+- [[https://github.com/Hitachi/open-license][Hitachi open-license]]
+  (CDLA-Permissive-1.0)
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "SISSL",
+          "Sun Industry Standards Source License Version 1.1",
           "Sun Industry Standards Source License v1.1",
           "scancode://sun-sissl-1.1",
           "Sun Industry Standards Source License 1.1",
@@ -403,6 +456,14 @@
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "SISSL"
+      ],
+      "__impliedComments": [
+          [
+              "Hitachi open-license",
+              [
+                  "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Standards refer to the standards listed in EXHIBIT B. A person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+              ]
+          ]
       ],
       "facts": {
           "Open Knowledge International": {
@@ -559,6 +620,453 @@
                   ]
               }
           },
+          "Override": {
+              "oNonCommecrial": null,
+              "implications": {
+                  "__impliedNames": [
+                      "SISSL",
+                      "Sun Industry Standards Source License Version 1.1"
+                  ],
+                  "__impliedId": "SISSL"
+              },
+              "oName": "SISSL",
+              "oOtherLicenseIds": [
+                  "Sun Industry Standards Source License Version 1.1"
+              ],
+              "oDescription": null,
+              "oJudgement": null,
+              "oCompatibilities": null,
+              "oRatingState": null
+          },
+          "Hitachi open-license": {
+              "notices": [
+                  {
+                      "content": "If you are unable to comply with any provision of such license by law, court order, or regulation, you will comply with the terms of such license to the maximum extent possible. It also explains the limited scope of compliance and the code affected by it.",
+                      "description": "The description must be described in sufficient detail in the LEGAL, and the LEGAL must be included in all source code distributed."
+                  },
+                  {
+                      "content": "the original software is provided \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, the warranties of non-defectiveness, commercial usability, fitness for a particular purpose, and non-infringement. The warranties include, but are not limited to, the warranties of non-defectiveness, commercial applicability, fitness for a particular purpose, and non-infringement. All persons who receive the original software under this license assume the entire risk as to the quality and performance of the original software. If the original Software is found to be defective, all persons who receive the original Software under this license will assume all costs of necessary maintenance, indemnification and correction.",
+                      "description": "There is no guarantee."
+                  },
+                  {
+                      "content": "Failure to remedy a violation of the terms of the license within thirty (30) days of becoming aware of such violation will result in automatic license revocation. Any term that should remain in effect after expiration will remain in effect after the expiration of the license. An end-user license granted to anyone other than the end-user in violation prior to the expiration of the license will remain in effect.",
+                      "description": "itself means any person or legal entity exercising its rights under such licence and in accordance with all of the terms of such licence. In the case of a legal entity, it includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following. (1) has the authority to direct and manage the corporation directly or indirectly by contract or otherwise (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation."
+                  },
+                  {
+                      "content": "Under no conditions and on no theory of law shall it be assumed that you, the original developer, any contributor, or the original distributor of the software or any supplier to any of them, whether in tort (including negligence), contract, or otherwise, even if you have been advised of the possibility of such damages, that applicable law allows the limitation of liability. For any indirect, special, incidental or consequential damages (loss of goodwill, business interruption, computer failure or malfunction) arising out of the use of this license or the original software, except for liability for death or personal injury arising out of the negligence of such party who is not responsible for such negligence. and losses) including, but not limited to, commercial damages and losses."
+                  },
+                  {
+                      "content": "If any provision of such license shall be deemed unenforceable, such provision shall be amended only to the extent necessary to make it enforceable. With the exception of provisions relating to conflicts of law, the provisions of the laws of the State of California shall be followed. Except to the extent otherwise provided by applicable law."
+                  },
+                  {
+                      "content": "If any action is brought in connection with such license, if at least one party is a citizen of the United States or an organization licensed or registered to do business in the United States, venue shall be in Santa Clara County, California, and venue shall be subject to the jurisdiction of the United States Court for the Northern District of California, and the losing party shall bear the costs of the action and reasonable attorney's fees. In addition, the losing party shall bear the costs of the litigation and reasonable attorney's fees."
+                  },
+                  {
+                      "content": "The application of the UN contractual provisions on international trade in goods is expressly excluded."
+                  },
+                  {
+                      "content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license."
+                  },
+                  {
+                      "content": "EXHIBIT A - Sun Standards License \"The contents of this file are subject to the Sun StandardsLicense Version 1.1 (the \"License\"); You may not use this file You may obtain a copy of the License at _______________________________. Software distributed under the License is distributed onan \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, eitherexpress or implied. The Original Code is ______________________________________. Microsystems, Inc.Portions created by: _______________________________________are Copyright (C): _______________________________________ All Rights Reserved.Contributor(s): _______________________________________"
+                  },
+                  {
+                      "content": "EXHIBIT B - StandardsThe Standard is defined as the following:OpenOffice.org XML File Format Specification, located athttp://xml.openoffice. orgOpenOffice.org Application Programming Interface Specification, located athttp://api.openoffice.org"
+                  }
+              ],
+              "_sourceURL": "http://open-license.hitachi.com/licenses/1486",
+              "content": "Sun Industry Standards Source License (SISSL)\r\n\r\n1.0 DEFINITIONS\r\n\r\n1.1 \"Commercial Use\" means distribution or otherwise making the Original Code\r\navailable to a third party.\r\n\r\n1.2 \"Contributor Version\" means the combination of the Original Code, and the\r\nModifications made by that particular Contributor.\r\n\r\n1.3 \"Electronic Distribution Mechanism\" means a mechanism generally accepted in\r\nthe software development community for the electronic transfer of data.\r\n\r\n1.4 \"Executable\" means Original Code in any form other than Source Code.\r\n\r\n1.5 \"Initial Developer\" means the individual or entity identified as the Initial\r\nDeveloper in the Source Code notice required by Exhibit A.\r\n\r\n1.6 \"Larger Work\" means a work which combines Original Code or portions thereof\r\nwith code not governed by the terms of this License.\r\n\r\n1.7 \"License\" means this document.\r\n\r\n1.8 \"Licensable\" means having the right to grant, to the maximum extent possible,\r\nwhether at the time of the initial grant or subsequently acquired, any and all of\r\nthe rights conveyed herein.\r\n\r\n1.9 \"Modifications\" means any addition to or deletion from the substance or\r\nstructure of either the Original Code or any previous Modifications. A\r\nModification is:\r\n\r\n  A. Any addition to or deletion from the contents of a file containing Original\r\n  Code or previous Modifications.\r\n\r\n  B. Any new file that contains any part of the Original Code or previous\r\n  Modifications.\r\n\r\n1.10 \"Original Code\" means Source Code of computer software code which is\r\ndescribed in the Source Code notice required by Exhibit A as Original Code.\r\n\r\n1.11 \"Patent Claims\" means any patent claim(s), now owned or hereafter acquired,\r\nincluding without limitation, method, process, and apparatus claims, in any\r\npatent Licensable by grantor.\r\n\r\n1.12 \"Source Code\" means the preferred form of the Original Code for making\r\nmodifications to it, including all modules it contains, plus any associated\r\ninterface definition files, or scripts used to control compilation and\r\ninstallation of an Executable.\r\n\r\n1.13 \"Standards\" means the standards identified in Exhibit B.\r\n\r\n1.14 \"You\" (or \"Your\") means an individual or a legal entity exercising rights\r\nunder, and complying with all of the terms of, this License or a future version\r\nof this License issued under Section 6.1. For legal entities, \"You'' includes any\r\nentity which controls, is controlled by, or is under common control with You. For\r\npurposes of this definition, \"control'' means (a) the power, direct or indirect,\r\nto cause the direction or management of such entity, whether by contract or\r\notherwise, or (b) ownership of more than fifty percent (50%) of the outstanding\r\nshares or beneficial ownership of such entity.\r\n\r\n2.0 SOURCE CODE LICENSE\r\n\r\n2.1 The Initial Developer Grant\r\nThe Initial Developer hereby grants You a world-wide, royalty-free, non-exclusive\r\nlicense, subject to third party intellectual property claims: \r\n\r\n  (a) under intellectual property rights (other than patent or trademark)\r\n  Licensable by Initial Developer to use, reproduce, modify, display, perform,\r\n  sublicense and distribute the Original Code (or portions thereof) with or\r\n  without Modifications, and/or as part of a Larger Work; and\r\n\r\n  (b) under Patents Claims infringed by the making, using or selling of Original\r\n  Code, to make, have made, use, practice, sell, and offer for sale, and/or\r\n  otherwise dispose of the Original Code (or portions thereof).\r\n\r\n  (c) the licenses granted in this Section 2.1(a) and (b) are effective on the\r\n  date Initial Developer first distributes Original Code under the terms of this\r\n  License.\r\n\r\n  (d) Notwithstanding Section 2.1(b) above, no patent license is granted: 1) for\r\n  code that You delete from the Original Code; 2) separate from the Original\r\n  Code; or 3) for infringements caused by: i) the modification of the Original\r\n  Code or ii) the combination of the Original Code with other software or\r\n  devices, including but not limited to Modifications.\r\n\r\n3.0 DISTRIBUTION OBLIGATIONS\r\n\r\n3.1 Application of License.\r\nThe Source Code version of Original Code may be distributed only under the terms\r\nof this License or a future version of this License released under Section 6.1,\r\nand You must include a copy of this License with every copy of the Source Code\r\nYou distribute. You may not offer or impose any terms on any Source Code version\r\nthat alters or restricts the applicable version of this License or the\r\nrecipients' rights hereunder. Your license for shipment of the Contributor\r\nVersion is conditioned upon Your full compliance with this Section. The\r\nModifications which You create must comply with all requirements set out by the\r\nStandards body in effect one hundred twenty (120) days before You ship the\r\nContributor Version. In the event that the Modifications do not meet such\r\nrequirements, You agree to publish either (i) any deviation from the Standards\r\nprotocol resulting from implementation of Your Modifications and a reference\r\nimplementation of Your Modifications or (ii) Your Modifications in Source Code\r\nform, and to make any such deviation and reference implementation or\r\nModifications available to all third parties under the same terms as this license\r\non a royalty free basis within thirty (30) days of Your first customer shipment\r\nof Your Modifications.\r\n\r\n3.2 Required Notices.\r\nYou must duplicate the notice in Exhibit A in each file of the Source Code. If it\r\nis not possible to put such notice in a particular Source Code file due to its\r\nstructure, then You must include such notice in a location (such as a relevant\r\ndirectory) where a user would be likely to look for such a notice. If You created\r\none or more Modification(s) You may add Your name as a Contributor to the notice\r\ndescribed in Exhibit A. You must also duplicate this License in any documentation\r\nfor the Source Code where You describe recipients' rights or ownership rights\r\nrelating to Initial Code. You may choose to offer, and to charge a fee for,\r\nwarranty, support, indemnity or liability obligations to one or more recipients\r\nof Your version of the Code. However, You may do so only on Your own behalf, and\r\nnot on behalf of the Initial Developer. You must make it absolutely clear than\r\nany such warranty, support, indemnity or liability obligation is offered by You\r\nalone, and You hereby agree to indemnify the Initial Developer for any liability\r\nincurred by the Initial Developer as a result of warranty, support, indemnity or\r\nliability terms You offer.\r\n\r\n3.3 Distribution of Executable Versions.\r\nYou may distribute Original Code in Executable and Source form only if the\r\nrequirements of Sections 3.1 and 3.2 have been met for that Original Code, and if\r\nYou include a notice stating that the Source Code version of the Original Code is\r\navailable under the terms of this License. The notice must be conspicuously\r\nincluded in any notice in an Executable or Source versions, related documentation\r\nor collateral in which You describe recipients' rights relating to the Original\r\nCode. You may distribute the Executable and Source versions of Your version of\r\nthe Code or ownership rights under a license of Your choice, which may contain\r\nterms different from this License, provided that You are in compliance with the\r\nterms of this License. If You distribute the Executable and Source versions under\r\na different license You must make it absolutely clear that any terms which differ\r\nfrom this License are offered by You alone, not by the Initial Developer. You\r\nhereby agree to indemnify the Initial Developer for any liability incurred by the\r\nInitial Developer as a result of any such terms You offer.\r\n\r\n3.4 Larger Works.\r\nYou may create a Larger Work by combining Original Code with other code not\r\ngoverned by the terms of this License and distribute the Larger Work as a single\r\nproduct. In such a case, You must make sure the requirements of this License are\r\nfulfilled for the Original Code.\r\n\r\n4.0 INABILITY TO COMPLY DUE TO STATUTE OR REGULATION\r\n\r\nIf it is impossible for You to comply with any of the terms of this License with\r\nrespect to some or all of the Original Code due to statute, judicial order, or\r\nregulation then You must: (a) comply with the terms of this License to the\r\nmaximum extent possible; and (b) describe the limitations and the code they\r\naffect. Such description must be included in the LEGAL file described in Section\r\n3.2 and must be included with all distributions of the Source Code. Except to the\r\nextent prohibited by statute or regulation, such description must be sufficiently\r\ndetailed for a recipient of ordinary skill to be able to understand it.\r\n\r\n5.0 APPLICATION OF THIS LICENSE\r\n\r\nThis License applies to code to which the Initial Developer has attached the\r\nnotice in Exhibit A and to related Modifications as set out in Section 3.1.\r\n\r\n6.0 VERSIONS OF THE LICENSE\r\n\r\n6.1 New Versions.\r\nSun may publish revised and/or new versions of the License from time to time.\r\nEach version will be given a distinguishing version number.\r\n\r\n6.2 Effect of New Versions.\r\nOnce Original Code has been published under a particular version of the License,\r\nYou may always continue to use it under the terms of that version. You may also\r\nchoose to use such Original Code under the terms of any subsequent version of the\r\nLicense published by Sun. No one other than Sun has the right to modify the terms\r\napplicable to Original Code.\r\n\r\n7.0 DISCLAIMER OF WARRANTY\r\n\r\nORIGINAL CODE IS PROVIDED UNDER THIS LICENSE ON AN \"AS IS\" BASIS, WITHOUT\r\nWARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION,\r\nWARRANTIES THAT THE ORIGINAL CODE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A\r\nPARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND\r\nPERFORMANCE OF THE ORIGINAL CODE IS WITH YOU. SHOULD ANY ORIGINAL CODE PROVE\r\nDEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL DEVELOPER) ASSUME THE COST OF ANY\r\nNECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY\r\nCONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY ORIGINAL CODE IS\r\nAUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\r\n\r\n8.0 TERMINATION\r\n\r\n8.1 This License and the rights granted hereunder will terminate automatically if\r\nYou fail to comply with terms herein and fail to cure such breach within 30 days\r\nof becoming aware of the breach. All sublicenses to the Original Code which are\r\nproperly granted shall survive any termination of this License. Provisions which,\r\nby their nature, must remain in effect beyond the termination of this License\r\nshall survive.\r\n\r\n8.2 In the event of termination under Section 8.1 above, all end user license\r\nagreements (excluding distributors and resellers) which have been validly granted\r\nby You or any distributor hereunder prior to termination shall survive\r\ntermination.\r\n\r\n9.0 LIMIT OF LIABILITY\r\n\r\nUNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING\r\nNEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL DEVELOPER, ANY OTHER\r\nCONTRIBUTOR, OR ANY DISTRIBUTOR OF ORIGINAL CODE, OR ANY SUPPLIER OF ANY OF SUCH\r\nPARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR\r\nCONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR\r\nLOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL\r\nOTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED\r\nOF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY\r\nTO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE\r\nTO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT\r\nALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS\r\nEXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\r\n\r\n10.0 U.S. GOVERNMENT END USERS\r\n\r\nU.S. Government: If this Software is being acquired by or on behalf of the U.S.\r\nGovernment or by a U.S. Government prime contractor or subcontractor (at any\r\ntier), then the Government's rights in the Software and accompanying\r\ndocumentation shall be only as set forth in this license; this is in accordance\r\nwith 48 C.F.R. 227.7201 through 227.7202-4 (for Department of Defense (DoD)\r\nacquisitions) and with 48 C.F.R. 2.101 and 12.212 (for non-DoD acquisitions).\r\n\r\n11.0 MISCELLANEOUS\r\n\r\nThis License represents the complete agreement concerning subject matter hereof.\r\nIf any provision of this License is held to be unenforceable, such provision\r\nshall be reformed only to the extent necessary to make it enforceable. This\r\nLicense shall be governed by California law provisions (except to the extent\r\napplicable law, if any, provides otherwise), excluding its conflict-of-law\r\nprovisions. With respect to disputes in which at least one party is a citizen of,\r\nor an entity chartered or registered to do business in the United States of\r\nAmerica, any litigation relating to this License shall be subject to the\r\njurisdiction of the Federal Courts of the Northern District of California, with\r\nvenue lying in Santa Clara County, California, with the losing party responsible\r\nfor costs, including without limitation, court costs and reasonable attorneys'\r\nfees and expenses. The application of the United Nations Convention on Contracts\r\nfor the International Sale of Goods is expressly excluded. Any law or regulation\r\nwhich provides that the language of a contract shall be construed against the\r\ndrafter shall not apply to this License.\r\n\r\nEXHIBIT A - Sun Standards License\r\n\r\n\"The contents of this file are subject to the Sun Standards\r\nLicense Version 1.1 (the \"License\");\r\nYou may not use this file except in compliance with the\r\nLicense. You may obtain a copy of the\r\nLicense at _______________________________.\r\n\r\nSoftware distributed under the License is distributed on\r\nan \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either\r\nexpress or implied. See the License for the specific\r\nlanguage governing rights and limitations under the License.\r\n\r\nThe Original Code is ______________________________________.\r\n\r\nThe Initial Developer of the Original Code is:\r\nSun Microsystems, Inc..\r\n\r\nPortions created by: _______________________________________\r\n\r\nare Copyright (C): _______________________________________\r\n\r\nAll Rights Reserved.\r\n\r\nContributor(s): _______________________________________\r\n\r\n\r\nEXHIBIT B - Standards\r\n\r\nThe Standard is defined as the following:\r\n\r\nOpenOffice.org XML File Format Specification, located at\r\nhttp://xml.openoffice.org\r\n\r\nOpenOffice.org Application Programming Interface Specification, located at\r\nhttp://api.openoffice.org",
+              "name": "Sun Industry Standards Source License Version 1.1",
+              "permissions": [
+                  {
+                      "actions": [
+                          {
+                              "name": "Use the obtained source code without modification",
+                              "description": "Use the fetched code as it is."
+                          },
+                          {
+                              "name": "Using Modified Source Code"
+                          },
+                          {
+                              "name": "Use the retrieved executable",
+                              "description": "Use the obtained executable as is."
+                          },
+                          {
+                              "name": "Use the executable generated from the modified source code"
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              }
+                          ]
+                      },
+                      "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute the obtained source code without modification",
+                              "description": "Redistribute the code as it was obtained"
+                          },
+                          {
+                              "name": "Sublicense the acquired source code.",
+                              "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                          },
+                          {
+                              "name": "Display the obtained source code"
+                          },
+                          {
+                              "name": "Execute the obtained source code."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "name": "Copy the notice of EXHIBIT A to each file in the source code.",
+                                  "type": "OBLIGATION",
+                                  "description": "If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory)."
+                              },
+                              {
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "The term \"source code\" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute the obtained executable",
+                              "description": "Redistribute the obtained executable as-is"
+                          },
+                          {
+                              "name": "Sublicense the acquired executable",
+                              "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                          },
+                          {
+                              "name": "Display the retrieved executable."
+                          },
+                          {
+                              "name": "Execute the obtained executable."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "name": "Include a notice that the source code corresponding to the original software is available under this license",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "A sublicense means that the person who is granted this license re-grants the license to a third party. Sublicensing means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The source code is the source code, the source code, the documentation and the documentation. The term \"source code\" refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Modify the obtained source code."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "OR": [
+                                      {
+                                          "name": "Modification is subject to a standard issued 120 days prior to shipping the modification.",
+                                          "type": "REQUISITE"
+                                      },
+                                      {
+                                          "name": "Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.",
+                                          "type": "OBLIGATION"
+                                      },
+                                      {
+                                          "name": "If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.",
+                                          "type": "OBLIGATION"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "name": "Copy the notice of EXHIBIT A to each file in the source code.",
+                                  "type": "OBLIGATION",
+                                  "description": "If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory)."
+                              }
+                          ]
+                      },
+                      "description": "Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribution of Modified Source Code"
+                          },
+                          {
+                              "name": "Sublicensing Modified Source Code",
+                              "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                          },
+                          {
+                              "name": "Display the modified source code"
+                          },
+                          {
+                              "name": "Executing Modified Source Code"
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "OR": [
+                                      {
+                                          "name": "Modification is subject to a standard issued 120 days prior to shipping the modification.",
+                                          "type": "REQUISITE"
+                                      },
+                                      {
+                                          "name": "Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.",
+                                          "type": "OBLIGATION"
+                                      },
+                                      {
+                                          "name": "If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.",
+                                          "type": "OBLIGATION"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "name": "Copy the notice of EXHIBIT A to each file in the source code.",
+                                  "type": "OBLIGATION",
+                                  "description": "If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory)."
+                              },
+                              {
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "The term \"source code\" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions. The term \"standard\" refers to the standard described in EXHIBIT B."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute the executable generated from the modified source code"
+                          },
+                          {
+                              "name": "Sublicense the generated executable from modified source code",
+                              "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                          },
+                          {
+                              "name": "Display the executable generated from the modified source code."
+                          },
+                          {
+                              "name": "Execute the executable generated from the modified source code."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "OR": [
+                                      {
+                                          "name": "Modification is subject to a standard issued 120 days prior to shipping the modification.",
+                                          "type": "REQUISITE"
+                                      },
+                                      {
+                                          "name": "Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.",
+                                          "type": "OBLIGATION"
+                                      },
+                                      {
+                                          "name": "If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.",
+                                          "type": "OBLIGATION"
+                                      }
+                                  ]
+                              }
+                          ]
+                      },
+                      "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The term \"executable\" refers to any form of software other than source code. The term \"sublicense\" refers to the granting of a second license to a third party by the party that granted the license. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions: â The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT B. The term \"standard\" refers to the standard described in EXHIBIT B."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "to provide support, warranty, indemnification, and other liability and rights not inconsistent with the license, for a fee, when you distribute the modified software"
+                          }
+                      ],
+                      "conditions": {
+                          "name": "I do so at my own risk.",
+                          "type": "OBLIGATION",
+                          "description": "If you accept liability, you may do so at your own risk, but not on behalf of the initial developers. If the initial developers are held liable or are required to pay compensation for their actions, it is necessary to prevent the initial developers from being damaged and to compensate them for the damage."
+                      },
+                      "description": "An early developer is the person or entity listed as an early developer in a source code notice required by EXHIBIT A."
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute executables generated from modified source code under your own license."
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "OR": [
+                                      {
+                                          "name": "Modification is subject to a standard issued 120 days prior to shipping the modification.",
+                                          "type": "REQUISITE"
+                                      },
+                                      {
+                                          "name": "Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.",
+                                          "type": "OBLIGATION"
+                                      },
+                                      {
+                                          "name": "If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.",
+                                          "type": "OBLIGATION"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "Indemnify the initial developer against any liability arising from the terms of the license it offers",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard is based on the following principles Standards refer to those standards listed in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                  },
+                  {
+                      "actions": [
+                          {
+                              "name": "Distribute modified source code under your own license"
+                          }
+                      ],
+                      "conditions": {
+                          "AND": [
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license.",
+                                  "type": "RESTRICTION",
+                                  "description": "However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question."
+                              },
+                              {
+                                  "OR": [
+                                      {
+                                          "name": "Modification is subject to a standard issued 120 days prior to shipping the modification.",
+                                          "type": "REQUISITE"
+                                      },
+                                      {
+                                          "name": "Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.",
+                                          "type": "OBLIGATION"
+                                      },
+                                      {
+                                          "name": "If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.",
+                                          "type": "OBLIGATION"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "name": "Copy the notice of EXHIBIT A to each file in the source code.",
+                                  "type": "OBLIGATION",
+                                  "description": "If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory)."
+                              },
+                              {
+                                  "name": "Give you a copy of the relevant license.",
+                                  "type": "OBLIGATION"
+                              },
+                              {
+                                  "name": "Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.",
+                                  "type": "RESTRICTION"
+                              },
+                              {
+                                  "name": "Indemnify the initial developer against any liability arising from the terms of the license it offers",
+                                  "type": "OBLIGATION"
+                              }
+                          ]
+                      },
+                      "description": "Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The term \"standard\" refers to the standard described in EXHIBIT B. The term \"initial developer\" refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                  }
+              ],
+              "_implications": {
+                  "__impliedNames": [
+                      "Sun Industry Standards Source License Version 1.1"
+                  ],
+                  "__impliedComments": [
+                      [
+                          "Hitachi open-license",
+                          [
+                              "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Standards refer to the standards listed in EXHIBIT B. A person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                          ]
+                      ]
+                  ],
+                  "__impliedText": "Sun Industry Standards Source License (SISSL)\r\n\r\n1.0 DEFINITIONS\r\n\r\n1.1 \"Commercial Use\" means distribution or otherwise making the Original Code\r\navailable to a third party.\r\n\r\n1.2 \"Contributor Version\" means the combination of the Original Code, and the\r\nModifications made by that particular Contributor.\r\n\r\n1.3 \"Electronic Distribution Mechanism\" means a mechanism generally accepted in\r\nthe software development community for the electronic transfer of data.\r\n\r\n1.4 \"Executable\" means Original Code in any form other than Source Code.\r\n\r\n1.5 \"Initial Developer\" means the individual or entity identified as the Initial\r\nDeveloper in the Source Code notice required by Exhibit A.\r\n\r\n1.6 \"Larger Work\" means a work which combines Original Code or portions thereof\r\nwith code not governed by the terms of this License.\r\n\r\n1.7 \"License\" means this document.\r\n\r\n1.8 \"Licensable\" means having the right to grant, to the maximum extent possible,\r\nwhether at the time of the initial grant or subsequently acquired, any and all of\r\nthe rights conveyed herein.\r\n\r\n1.9 \"Modifications\" means any addition to or deletion from the substance or\r\nstructure of either the Original Code or any previous Modifications. A\r\nModification is:\r\n\r\n  A. Any addition to or deletion from the contents of a file containing Original\r\n  Code or previous Modifications.\r\n\r\n  B. Any new file that contains any part of the Original Code or previous\r\n  Modifications.\r\n\r\n1.10 \"Original Code\" means Source Code of computer software code which is\r\ndescribed in the Source Code notice required by Exhibit A as Original Code.\r\n\r\n1.11 \"Patent Claims\" means any patent claim(s), now owned or hereafter acquired,\r\nincluding without limitation, method, process, and apparatus claims, in any\r\npatent Licensable by grantor.\r\n\r\n1.12 \"Source Code\" means the preferred form of the Original Code for making\r\nmodifications to it, including all modules it contains, plus any associated\r\ninterface definition files, or scripts used to control compilation and\r\ninstallation of an Executable.\r\n\r\n1.13 \"Standards\" means the standards identified in Exhibit B.\r\n\r\n1.14 \"You\" (or \"Your\") means an individual or a legal entity exercising rights\r\nunder, and complying with all of the terms of, this License or a future version\r\nof this License issued under Section 6.1. For legal entities, \"You'' includes any\r\nentity which controls, is controlled by, or is under common control with You. For\r\npurposes of this definition, \"control'' means (a) the power, direct or indirect,\r\nto cause the direction or management of such entity, whether by contract or\r\notherwise, or (b) ownership of more than fifty percent (50%) of the outstanding\r\nshares or beneficial ownership of such entity.\r\n\r\n2.0 SOURCE CODE LICENSE\r\n\r\n2.1 The Initial Developer Grant\r\nThe Initial Developer hereby grants You a world-wide, royalty-free, non-exclusive\r\nlicense, subject to third party intellectual property claims: \r\n\r\n  (a) under intellectual property rights (other than patent or trademark)\r\n  Licensable by Initial Developer to use, reproduce, modify, display, perform,\r\n  sublicense and distribute the Original Code (or portions thereof) with or\r\n  without Modifications, and/or as part of a Larger Work; and\r\n\r\n  (b) under Patents Claims infringed by the making, using or selling of Original\r\n  Code, to make, have made, use, practice, sell, and offer for sale, and/or\r\n  otherwise dispose of the Original Code (or portions thereof).\r\n\r\n  (c) the licenses granted in this Section 2.1(a) and (b) are effective on the\r\n  date Initial Developer first distributes Original Code under the terms of this\r\n  License.\r\n\r\n  (d) Notwithstanding Section 2.1(b) above, no patent license is granted: 1) for\r\n  code that You delete from the Original Code; 2) separate from the Original\r\n  Code; or 3) for infringements caused by: i) the modification of the Original\r\n  Code or ii) the combination of the Original Code with other software or\r\n  devices, including but not limited to Modifications.\r\n\r\n3.0 DISTRIBUTION OBLIGATIONS\r\n\r\n3.1 Application of License.\r\nThe Source Code version of Original Code may be distributed only under the terms\r\nof this License or a future version of this License released under Section 6.1,\r\nand You must include a copy of this License with every copy of the Source Code\r\nYou distribute. You may not offer or impose any terms on any Source Code version\r\nthat alters or restricts the applicable version of this License or the\r\nrecipients' rights hereunder. Your license for shipment of the Contributor\r\nVersion is conditioned upon Your full compliance with this Section. The\r\nModifications which You create must comply with all requirements set out by the\r\nStandards body in effect one hundred twenty (120) days before You ship the\r\nContributor Version. In the event that the Modifications do not meet such\r\nrequirements, You agree to publish either (i) any deviation from the Standards\r\nprotocol resulting from implementation of Your Modifications and a reference\r\nimplementation of Your Modifications or (ii) Your Modifications in Source Code\r\nform, and to make any such deviation and reference implementation or\r\nModifications available to all third parties under the same terms as this license\r\non a royalty free basis within thirty (30) days of Your first customer shipment\r\nof Your Modifications.\r\n\r\n3.2 Required Notices.\r\nYou must duplicate the notice in Exhibit A in each file of the Source Code. If it\r\nis not possible to put such notice in a particular Source Code file due to its\r\nstructure, then You must include such notice in a location (such as a relevant\r\ndirectory) where a user would be likely to look for such a notice. If You created\r\none or more Modification(s) You may add Your name as a Contributor to the notice\r\ndescribed in Exhibit A. You must also duplicate this License in any documentation\r\nfor the Source Code where You describe recipients' rights or ownership rights\r\nrelating to Initial Code. You may choose to offer, and to charge a fee for,\r\nwarranty, support, indemnity or liability obligations to one or more recipients\r\nof Your version of the Code. However, You may do so only on Your own behalf, and\r\nnot on behalf of the Initial Developer. You must make it absolutely clear than\r\nany such warranty, support, indemnity or liability obligation is offered by You\r\nalone, and You hereby agree to indemnify the Initial Developer for any liability\r\nincurred by the Initial Developer as a result of warranty, support, indemnity or\r\nliability terms You offer.\r\n\r\n3.3 Distribution of Executable Versions.\r\nYou may distribute Original Code in Executable and Source form only if the\r\nrequirements of Sections 3.1 and 3.2 have been met for that Original Code, and if\r\nYou include a notice stating that the Source Code version of the Original Code is\r\navailable under the terms of this License. The notice must be conspicuously\r\nincluded in any notice in an Executable or Source versions, related documentation\r\nor collateral in which You describe recipients' rights relating to the Original\r\nCode. You may distribute the Executable and Source versions of Your version of\r\nthe Code or ownership rights under a license of Your choice, which may contain\r\nterms different from this License, provided that You are in compliance with the\r\nterms of this License. If You distribute the Executable and Source versions under\r\na different license You must make it absolutely clear that any terms which differ\r\nfrom this License are offered by You alone, not by the Initial Developer. You\r\nhereby agree to indemnify the Initial Developer for any liability incurred by the\r\nInitial Developer as a result of any such terms You offer.\r\n\r\n3.4 Larger Works.\r\nYou may create a Larger Work by combining Original Code with other code not\r\ngoverned by the terms of this License and distribute the Larger Work as a single\r\nproduct. In such a case, You must make sure the requirements of this License are\r\nfulfilled for the Original Code.\r\n\r\n4.0 INABILITY TO COMPLY DUE TO STATUTE OR REGULATION\r\n\r\nIf it is impossible for You to comply with any of the terms of this License with\r\nrespect to some or all of the Original Code due to statute, judicial order, or\r\nregulation then You must: (a) comply with the terms of this License to the\r\nmaximum extent possible; and (b) describe the limitations and the code they\r\naffect. Such description must be included in the LEGAL file described in Section\r\n3.2 and must be included with all distributions of the Source Code. Except to the\r\nextent prohibited by statute or regulation, such description must be sufficiently\r\ndetailed for a recipient of ordinary skill to be able to understand it.\r\n\r\n5.0 APPLICATION OF THIS LICENSE\r\n\r\nThis License applies to code to which the Initial Developer has attached the\r\nnotice in Exhibit A and to related Modifications as set out in Section 3.1.\r\n\r\n6.0 VERSIONS OF THE LICENSE\r\n\r\n6.1 New Versions.\r\nSun may publish revised and/or new versions of the License from time to time.\r\nEach version will be given a distinguishing version number.\r\n\r\n6.2 Effect of New Versions.\r\nOnce Original Code has been published under a particular version of the License,\r\nYou may always continue to use it under the terms of that version. You may also\r\nchoose to use such Original Code under the terms of any subsequent version of the\r\nLicense published by Sun. No one other than Sun has the right to modify the terms\r\napplicable to Original Code.\r\n\r\n7.0 DISCLAIMER OF WARRANTY\r\n\r\nORIGINAL CODE IS PROVIDED UNDER THIS LICENSE ON AN \"AS IS\" BASIS, WITHOUT\r\nWARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION,\r\nWARRANTIES THAT THE ORIGINAL CODE IS FREE OF DEFECTS, MERCHANTABLE, FIT FOR A\r\nPARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE RISK AS TO THE QUALITY AND\r\nPERFORMANCE OF THE ORIGINAL CODE IS WITH YOU. SHOULD ANY ORIGINAL CODE PROVE\r\nDEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL DEVELOPER) ASSUME THE COST OF ANY\r\nNECESSARY SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY\r\nCONSTITUTES AN ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY ORIGINAL CODE IS\r\nAUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER.\r\n\r\n8.0 TERMINATION\r\n\r\n8.1 This License and the rights granted hereunder will terminate automatically if\r\nYou fail to comply with terms herein and fail to cure such breach within 30 days\r\nof becoming aware of the breach. All sublicenses to the Original Code which are\r\nproperly granted shall survive any termination of this License. Provisions which,\r\nby their nature, must remain in effect beyond the termination of this License\r\nshall survive.\r\n\r\n8.2 In the event of termination under Section 8.1 above, all end user license\r\nagreements (excluding distributors and resellers) which have been validly granted\r\nby You or any distributor hereunder prior to termination shall survive\r\ntermination.\r\n\r\n9.0 LIMIT OF LIABILITY\r\n\r\nUNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER TORT (INCLUDING\r\nNEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL YOU, THE INITIAL DEVELOPER, ANY OTHER\r\nCONTRIBUTOR, OR ANY DISTRIBUTOR OF ORIGINAL CODE, OR ANY SUPPLIER OF ANY OF SUCH\r\nPARTIES, BE LIABLE TO ANY PERSON FOR ANY INDIRECT, SPECIAL, INCIDENTAL, OR\r\nCONSEQUENTIAL DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR\r\nLOSS OF GOODWILL, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL\r\nOTHER COMMERCIAL DAMAGES OR LOSSES, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED\r\nOF THE POSSIBILITY OF SUCH DAMAGES. THIS LIMITATION OF LIABILITY SHALL NOT APPLY\r\nTO LIABILITY FOR DEATH OR PERSONAL INJURY RESULTING FROM SUCH PARTY'S NEGLIGENCE\r\nTO THE EXTENT APPLICABLE LAW PROHIBITS SUCH LIMITATION. SOME JURISDICTIONS DO NOT\r\nALLOW THE EXCLUSION OR LIMITATION OF INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THIS\r\nEXCLUSION AND LIMITATION MAY NOT APPLY TO YOU.\r\n\r\n10.0 U.S. GOVERNMENT END USERS\r\n\r\nU.S. Government: If this Software is being acquired by or on behalf of the U.S.\r\nGovernment or by a U.S. Government prime contractor or subcontractor (at any\r\ntier), then the Government's rights in the Software and accompanying\r\ndocumentation shall be only as set forth in this license; this is in accordance\r\nwith 48 C.F.R. 227.7201 through 227.7202-4 (for Department of Defense (DoD)\r\nacquisitions) and with 48 C.F.R. 2.101 and 12.212 (for non-DoD acquisitions).\r\n\r\n11.0 MISCELLANEOUS\r\n\r\nThis License represents the complete agreement concerning subject matter hereof.\r\nIf any provision of this License is held to be unenforceable, such provision\r\nshall be reformed only to the extent necessary to make it enforceable. This\r\nLicense shall be governed by California law provisions (except to the extent\r\napplicable law, if any, provides otherwise), excluding its conflict-of-law\r\nprovisions. With respect to disputes in which at least one party is a citizen of,\r\nor an entity chartered or registered to do business in the United States of\r\nAmerica, any litigation relating to this License shall be subject to the\r\njurisdiction of the Federal Courts of the Northern District of California, with\r\nvenue lying in Santa Clara County, California, with the losing party responsible\r\nfor costs, including without limitation, court costs and reasonable attorneys'\r\nfees and expenses. The application of the United Nations Convention on Contracts\r\nfor the International Sale of Goods is expressly excluded. Any law or regulation\r\nwhich provides that the language of a contract shall be construed against the\r\ndrafter shall not apply to this License.\r\n\r\nEXHIBIT A - Sun Standards License\r\n\r\n\"The contents of this file are subject to the Sun Standards\r\nLicense Version 1.1 (the \"License\");\r\nYou may not use this file except in compliance with the\r\nLicense. You may obtain a copy of the\r\nLicense at _______________________________.\r\n\r\nSoftware distributed under the License is distributed on\r\nan \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, either\r\nexpress or implied. See the License for the specific\r\nlanguage governing rights and limitations under the License.\r\n\r\nThe Original Code is ______________________________________.\r\n\r\nThe Initial Developer of the Original Code is:\r\nSun Microsystems, Inc..\r\n\r\nPortions created by: _______________________________________\r\n\r\nare Copyright (C): _______________________________________\r\n\r\nAll Rights Reserved.\r\n\r\nContributor(s): _______________________________________\r\n\r\n\r\nEXHIBIT B - Standards\r\n\r\nThe Standard is defined as the following:\r\n\r\nOpenOffice.org XML File Format Specification, located at\r\nhttp://xml.openoffice.org\r\n\r\nOpenOffice.org Application Programming Interface Specification, located at\r\nhttp://api.openoffice.org",
+                  "__impliedURLs": [
+                      [
+                          "open-license",
+                          "http://open-license.hitachi.com/licenses/1486"
+                      ]
+                  ]
+              },
+              "description": "Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. An executable is any form of software other than source code. Sublicense means that the person who has been granted this license re-grants the license granted to a third party. Initial Developer means the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. Standards refer to the standards listed in EXHIBIT B. A person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+          },
           "OpenSourceInitiative": {
               "text": [
                   {
@@ -678,6 +1186,10 @@
           [
               "OSI Page",
               "https://opensource.org/licenses/SISSL"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/1486"
           ]
       ]
   }

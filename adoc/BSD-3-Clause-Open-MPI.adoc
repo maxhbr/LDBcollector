@@ -11,16 +11,31 @@
 
 *Other Names:*
 
+* `+Open MPI License+`
 * `+scancode://bsd-3-clause-open-mpi+`
+
+=== Description
+
+____
+http://www.open-mpi.org/community/license.php
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 
 === Comments on (easy) usability
 
 === General Comments
 
+* ``http://www.open-mpi.org/community/license.php'' (source:
+https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
+
 === URLs
 
 * *Homepage:* https://www.open-mpi.org/community/license.php
 * *SPDX:* http://spdx.org/licenses/BSD-3-Clause-Open-MPI.json
+* *open-license:* http://open-license.hitachi.com/licenses/831
 * http://www.netlib.org/lapack/LICENSE.txt
 
 === Text
@@ -69,10 +84,13 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ==== Facts
 
 * LicenseName
+* Override
 * https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html[SPDX] (all data
 [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml[Scancode]
 (CC0-1.0)
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -80,10 +98,19 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 {
     "__impliedNames": [
         "BSD-3-Clause-Open-MPI",
+        "Open MPI License",
         "BSD 3-Clause Open MPI variant",
         "scancode://bsd-3-clause-open-mpi"
     ],
     "__impliedId": "BSD-3-Clause-Open-MPI",
+    "__impliedComments": [
+        [
+            "Hitachi open-license",
+            [
+                "http://www.open-mpi.org/community/license.php"
+            ]
+        ]
+    ],
     "facts": {
         "LicenseName": {
             "implications": {
@@ -176,6 +203,127 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                     ]
                 ]
             }
+        },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-Open-MPI",
+                    "Open MPI License"
+                ],
+                "__impliedId": "BSD-3-Clause-Open-MPI"
+            },
+            "oName": "BSD-3-Clause-Open-MPI",
+            "oOtherLicenseIds": [
+                "Open MPI License"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "summary": "http://www.open-mpi.org/community/license.php",
+            "notices": [
+                {
+                    "content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated."
+                },
+                {
+                    "content": "The copyright holder does not warrant again that the source code provided does not infringe any intellectual property rights, such as patents or copyrights, of third parties."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/831",
+            "content": "Open MPI is distributed under the \"New BSD license\"[http://www.opensource.org/licenses/bsd-license.php], listed below. \r\n----------------------------------------\r\nMost files in this release are marked with the copyrights of the\r\norganizations who have edited them.  The copyrights below are in no\r\nparticular order and generally reflect members of the Open MPI core\r\nteam who have contributed code to this release.  The copyrights for\r\ncode used under license from other parties are included in the\r\ncorresponding files.\r\n\r\nCopyright (c) 2004-2010 The Trustees of Indiana University and Indiana\r\n                        University Research and Technology\r\n                        Corporation.  All rights reserved.\r\nCopyright (c) 2004-2010 The University of Tennessee and The University\r\n                        of Tennessee Research Foundation.  All rights\r\n                        reserved.\r\nCopyright (c) 2004-2010 High Performance Computing Center Stuttgart, \r\n                        University of Stuttgart.  All rights reserved.\r\nCopyright (c) 2004-2008 The Regents of the University of California.\r\n                        All rights reserved.\r\nCopyright (c) 2006-2010 Los Alamos National Security, LLC.  All rights\r\n                        reserved. \r\nCopyright (c) 2006-2010 Cisco Systems, Inc.  All rights reserved.\r\nCopyright (c) 2006-2010 Voltaire, Inc. All rights reserved.\r\nCopyright (c) 2006-2011 Sandia National Laboratories. All rights reserved.\r\nCopyright (c) 2006-2010 Sun Microsystems, Inc.  All rights reserved.\r\n                        Use is subject to license terms.\r\nCopyright (c) 2006-2010 The University of Houston. All rights reserved.\r\nCopyright (c) 2006-2009 Myricom, Inc.  All rights reserved.\r\nCopyright (c) 2007-2008 UT-Battelle, LLC. All rights reserved.\r\nCopyright (c) 2007-2010 IBM Corporation.  All rights reserved.\r\nCopyright (c) 1998-2005 Forschungszentrum Juelich, Juelich Supercomputing \r\n                        Centre, Federal Republic of Germany\r\nCopyright (c) 2005-2008 ZIH, TU Dresden, Federal Republic of Germany\r\nCopyright (c) 2007      Evergrid, Inc. All rights reserved.\r\nCopyright (c) 2008      Chelsio, Inc.  All rights reserved.\r\nCopyright (c) 2008-2009 Institut National de Recherche en\r\n                        Informatique.  All rights reserved.\r\nCopyright (c) 2007      Lawrence Livermore National Security, LLC.\r\n                        All rights reserved.\r\nCopyright (c) 2007-2009 Mellanox Technologies.  All rights reserved.\r\nCopyright (c) 2006-2010 QLogic Corporation.  All rights reserved.\r\nCopyright (c) 2008-2010 Oak Ridge National Labs.  All rights reserved.\r\nCopyright (c) 2006-2010 Oracle and/or its affiliates.  All rights reserved.\r\nCopyright (c) 2009      Bull SAS.  All rights reserved.\r\nCopyright (c) 2010      ARM ltd.  All rights reserved.\r\nCopyright (c) 2010-2011 Alex Brick <bricka@ccs.neu.edu>.  All rights reserved.\r\nCopyright (c) 2013-2014 Intel, Inc. All rights reserved.\r\nCopyright (c) 2011-2014 NVIDIA Corporation.  All rights reserved.\r\n\r\n$COPYRIGHT$\r\n\r\nAdditional copyrights may follow\r\n\r\n$HEADER$\r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, are permitted provided that the following conditions are\r\nmet:\r\n\r\n- Redistributions of source code must retain the above copyright\r\n  notice, this list of conditions and the following disclaimer.\r\n\r\n- Redistributions in binary form must reproduce the above copyright\r\n  notice, this list of conditions and the following disclaimer listed\r\n  in this license in the documentation and/or other materials\r\n  provided with the distribution.\r\n\r\n- Neither the name of the copyright holders nor the names of its\r\n  contributors may be used to endorse or promote products derived from\r\n  this software without specific prior written permission.\r\n\r\nThe copyright holders provide no reassurances that the source code\r\nprovided does not infringe any patent, copyright, or any other\r\nintellectual property rights of third parties.  The copyright holders\r\ndisclaim any liability to any recipient for claims brought against\r\nrecipient by any third party for infringement of that parties\r\nintellectual property rights.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\r\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\r\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\r\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\r\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\r\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\r\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\r\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\r\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+            "name": "Open MPI License",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Modify the obtained source code."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved binaries",
+                            "description": "Use the fetched binary as it is."
+                        },
+                        {
+                            "name": "Use binaries generated from modified source code"
+                        }
+                    ],
+                    "conditions": null
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                        "type": "OBLIGATION"
+                    }
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the fetched binaries",
+                            "description": "Redistribute the fetched binaries as they are"
+                        },
+                        {
+                            "name": "Distribute the generated binaries from modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                        "type": "OBLIGATION"
+                    }
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Use the name of the owner or contributor to promote or sell the derived product"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "Get special permission in writing.",
+                        "type": "REQUISITE"
+                    }
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Open MPI License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "http://www.open-mpi.org/community/license.php"
+                        ]
+                    ]
+                ],
+                "__impliedText": "Open MPI is distributed under the \"New BSD license\"[http://www.opensource.org/licenses/bsd-license.php], listed below. \r\n----------------------------------------\r\nMost files in this release are marked with the copyrights of the\r\norganizations who have edited them.  The copyrights below are in no\r\nparticular order and generally reflect members of the Open MPI core\r\nteam who have contributed code to this release.  The copyrights for\r\ncode used under license from other parties are included in the\r\ncorresponding files.\r\n\r\nCopyright (c) 2004-2010 The Trustees of Indiana University and Indiana\r\n                        University Research and Technology\r\n                        Corporation.  All rights reserved.\r\nCopyright (c) 2004-2010 The University of Tennessee and The University\r\n                        of Tennessee Research Foundation.  All rights\r\n                        reserved.\r\nCopyright (c) 2004-2010 High Performance Computing Center Stuttgart, \r\n                        University of Stuttgart.  All rights reserved.\r\nCopyright (c) 2004-2008 The Regents of the University of California.\r\n                        All rights reserved.\r\nCopyright (c) 2006-2010 Los Alamos National Security, LLC.  All rights\r\n                        reserved. \r\nCopyright (c) 2006-2010 Cisco Systems, Inc.  All rights reserved.\r\nCopyright (c) 2006-2010 Voltaire, Inc. All rights reserved.\r\nCopyright (c) 2006-2011 Sandia National Laboratories. All rights reserved.\r\nCopyright (c) 2006-2010 Sun Microsystems, Inc.  All rights reserved.\r\n                        Use is subject to license terms.\r\nCopyright (c) 2006-2010 The University of Houston. All rights reserved.\r\nCopyright (c) 2006-2009 Myricom, Inc.  All rights reserved.\r\nCopyright (c) 2007-2008 UT-Battelle, LLC. All rights reserved.\r\nCopyright (c) 2007-2010 IBM Corporation.  All rights reserved.\r\nCopyright (c) 1998-2005 Forschungszentrum Juelich, Juelich Supercomputing \r\n                        Centre, Federal Republic of Germany\r\nCopyright (c) 2005-2008 ZIH, TU Dresden, Federal Republic of Germany\r\nCopyright (c) 2007      Evergrid, Inc. All rights reserved.\r\nCopyright (c) 2008      Chelsio, Inc.  All rights reserved.\r\nCopyright (c) 2008-2009 Institut National de Recherche en\r\n                        Informatique.  All rights reserved.\r\nCopyright (c) 2007      Lawrence Livermore National Security, LLC.\r\n                        All rights reserved.\r\nCopyright (c) 2007-2009 Mellanox Technologies.  All rights reserved.\r\nCopyright (c) 2006-2010 QLogic Corporation.  All rights reserved.\r\nCopyright (c) 2008-2010 Oak Ridge National Labs.  All rights reserved.\r\nCopyright (c) 2006-2010 Oracle and/or its affiliates.  All rights reserved.\r\nCopyright (c) 2009      Bull SAS.  All rights reserved.\r\nCopyright (c) 2010      ARM ltd.  All rights reserved.\r\nCopyright (c) 2010-2011 Alex Brick <bricka@ccs.neu.edu>.  All rights reserved.\r\nCopyright (c) 2013-2014 Intel, Inc. All rights reserved.\r\nCopyright (c) 2011-2014 NVIDIA Corporation.  All rights reserved.\r\n\r\n$COPYRIGHT$\r\n\r\nAdditional copyrights may follow\r\n\r\n$HEADER$\r\n\r\nRedistribution and use in source and binary forms, with or without\r\nmodification, are permitted provided that the following conditions are\r\nmet:\r\n\r\n- Redistributions of source code must retain the above copyright\r\n  notice, this list of conditions and the following disclaimer.\r\n\r\n- Redistributions in binary form must reproduce the above copyright\r\n  notice, this list of conditions and the following disclaimer listed\r\n  in this license in the documentation and/or other materials\r\n  provided with the distribution.\r\n\r\n- Neither the name of the copyright holders nor the names of its\r\n  contributors may be used to endorse or promote products derived from\r\n  this software without specific prior written permission.\r\n\r\nThe copyright holders provide no reassurances that the source code\r\nprovided does not infringe any patent, copyright, or any other\r\nintellectual property rights of third parties.  The copyright holders\r\ndisclaim any liability to any recipient for claims brought against\r\nrecipient by any third party for infringement of that parties\r\nintellectual property rights.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\r\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\r\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\r\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\r\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\r\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\r\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\r\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\r\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/831"
+                    ]
+                ]
+            }
         }
     },
     "__impliedCopyleft": [
@@ -203,6 +351,10 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         [
             "Homepage",
             "https://www.open-mpi.org/community/license.php"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/831"
         ]
     ]
 }

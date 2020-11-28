@@ -5,6 +5,8 @@ CNRI Python License (CNRI-Python)
 
 **Other Names:**
 
+-   `CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1`
+
 -   `scancode://cnri-python-1.6`
 
 -   `CNRI Python 1.6`
@@ -12,6 +14,20 @@ CNRI Python License (CNRI-Python)
 -   `CNRI portion of the multi-part Python License`
 
 -   `License :: OSI Approved :: Python License (CNRI Python License)`
+
+Description
+-----------
+
+> This License Agreement is between the Corporation for National
+> Research Initiatives ("CNRI") and any person who accesses or uses the
+> source code, binaries, or related documentation of the software or It
+> is entered into with the Organization. This License Agreement does not
+> constitute an agency, partnership or joint venture agreement between
+> CNRI and Licensee.
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
 
 Comments on (easy) usability
 ----------------------------
@@ -26,6 +42,15 @@ Comments on (easy) usability
 
 General Comments
 ----------------
+
+-   “This License Agreement is between the Corporation for National
+    Research Initiatives ("CNRI") and any person who accesses or uses
+    the source code, binaries, or related documentation of the software
+    or It is entered into with the Organization. This License Agreement
+    does not constitute an agency, partnership or joint venture
+    agreement between CNRI and Licensee.” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
 
 -   “per SPDX.org, CNRI portion of the multi-part Python License
     (Python-2.0)” (source:
@@ -43,6 +68,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/CNRI-Python.json
 
 -   **SPDX:** https://spdx.org/licenses/CNRI-Python.html
+
+-   **open-license:** http://open-license.hitachi.com/licenses/292
 
 -   http://spdx.org/licenses/CNRI-Python
 
@@ -82,6 +109,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/CNRI-Python.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -102,11 +131,16 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "CNRI-Python",
+            "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
             "CNRI Python License",
             "scancode://cnri-python-1.6",
             "CNRI Python 1.6",
@@ -115,6 +149,12 @@ Raw Data
         ],
         "__impliedId": "CNRI-Python",
         "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "This License Agreement is between the Corporation for National Research Initiatives (\"CNRI\") and any person who accesses or uses the source code, binaries, or related documentation of the software or It is entered into with the Organization. This License Agreement does not constitute an agency, partnership or joint venture agreement between CNRI and Licensee."
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -275,6 +315,214 @@ Raw Data
                     ]
                 }
             },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "CNRI-Python",
+                        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+                    ],
+                    "__impliedId": "CNRI-Python"
+                },
+                "oName": "CNRI-Python",
+                "oOtherLicenseIds": [
+                    "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "notices": [
+                    {
+                        "content": "The Software is provided to Licensee by the copyright holder \"as-is\" and makes no representations or warranties, express or implied, including but not limited to representations and warranties of commercial applicability, fitness for a particular purpose, and non-infringement by use of the Software. The representations and warranties include, but are not limited to, representations and warranties of commercial applicability, fitness for a particular purpose, and non-infringement by use of such software.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "In no event shall the copyright holder be liable to the licensee or users of such software for any incidental, special, or consequential damages, or for any loss arising from the use, modification, or distribution of such software, even if the licensee or users of such software have been advised of the possibility of such damages."
+                    },
+                    {
+                        "content": "Violation of this license shall result in automatic termination of all rights under this license."
+                    },
+                    {
+                        "content": "This license is subject to the provisions of the federal intellectual property laws of the United States (including, but not limited to, federal copyright law). To the extent that the federal intellectual property laws of the United States do not apply, they are subject to the provisions of the laws of the Commonwealth of Virginia, except for the conflict of laws provisions of the Commonwealth of Virginia.",
+                        "description": "However, derivative works of such software that incorporate material previously distributed under the GNU General Public License (GPL) that is not separable from the software shall be governed by Virginia law only for issues relating to chapters 4, 5, and 7 of this license."
+                    },
+                    {
+                        "content": "You do not have the right to use CNRI's trademarks or trade names to endorse or promote the products and services of Licensee or third parties."
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/292",
+                "content": "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1\r\n\r\n1.This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 (âCNRIâ), and the Individual or Organization (âLicenseeâ) accessing and otherwise using Python 1.6.1 software in source or binary form and its associated documentation.\r\n\r\n2.Subject to the terms and conditions of this License Agreement, CNRI hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 1.6.1 alone or in any derivative version, provided, however, that CNRIâs License Agreement and CNRIâs notice of copyright, i.e., âCopyright Â© 1995-2001 Corporation for National Research Initiatives; All Rights Reservedâ are retained in Python 1.6.1 alone or in any derivative version prepared by Licensee. Alternately, in lieu of CNRIâs License Agreement, Licensee may substitute the following text (omitting the quotes): âPython 1.6.1 is made available subject to the terms and conditions in CNRIâs License Agreement. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl.handle.net/1895.22/1013.â\r\n\r\n3.In the event Licensee prepares a derivative work that is based on or incorporates Python 1.6.1 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python 1.6.1.\r\n\r\n4.CNRI is making Python 1.6.1 available to Licensee on an âAS ISâ basis. CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, CNRI MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 1.6.1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.\r\n\r\n5.CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 1.6.1 FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 1.6.1, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\r\n\r\n6.This License Agreement will automatically terminate upon a material breach of its terms and conditions.\r\n\r\n7.This License Agreement shall be governed by the federal intellectual property law of the United States, including without limitation the federal copyright law, and, to the extent such U.S. federal law does not apply, by the law of the Commonwealth of Virginia, excluding Virginiaâs conflict of law provisions. Notwithstanding the foregoing, with regard to derivative works based on Python 1.6.1 that incorporate non-separable material that was previously distributed under the GNU General Public License (GPL), the law of the Commonwealth of Virginia shall govern this License Agreement only as to issues arising under or with respect to Paragraphs 4, 5, and 7 of this License Agreement. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between CNRI and Licensee. This License Agreement does not grant permission to use CNRI trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.\r\n\r\n8.By clicking on the âACCEPTâ button where indicated, or by copying, installing or otherwise using Python 1.6.1, Licensee agrees to be bound by the terms and conditions of this License Agreement.",
+                "name": "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "name": "Use binaries generated from modified source code"
+                            },
+                            {
+                                "name": "Analyze the obtained source code"
+                            },
+                            {
+                                "name": "Analyze the modified source code"
+                            },
+                            {
+                                "name": "Analyze the acquired binaries"
+                            },
+                            {
+                                "name": "Analyze the binary generated from the retrieved source code"
+                            },
+                            {
+                                "name": "Test the fetched source code"
+                            },
+                            {
+                                "name": "Testing Modified Source Code"
+                            },
+                            {
+                                "name": "Test the acquired binaries"
+                            },
+                            {
+                                "name": "Test the generated binaries from modified source code"
+                            }
+                        ],
+                        "conditions": null,
+                        "description": "Treat software related documentation in the same way as software"
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "name": "Display the obtained source code publicly"
+                            },
+                            {
+                                "name": "Executing the fetched source code publicly"
+                            },
+                            {
+                                "name": "Display the fetched binaries publicly"
+                            },
+                            {
+                                "name": "Executing the fetched binary publicly"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include the copyright notice contained in the software",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "The following text may be used in lieu of a copy of such license (except in quotation marks): \"Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013.\"âCopyright Â© 1995-2001 Corporation for National Research Initiatives; All Rights Reserved \""
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Modify the obtained source code."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Include the copyright notice contained in the software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include a summary of the changes you have made",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "The following text may be used in lieu of a copy of such license (except in quotation marks): \"Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013.\"âCopyright Â© 1995-2001 Corporation for National Research Initiatives; All Rights Reserved \""
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            },
+                            {
+                                "name": "Distribute the generated binaries from modified source code"
+                            },
+                            {
+                                "name": "Display modified source code publicly"
+                            },
+                            {
+                                "name": "Publicly execute the modified source code"
+                            },
+                            {
+                                "name": "Display the generated binaries from modified source code publicly"
+                            },
+                            {
+                                "name": "Executing the generated binaries from modified source code publicly"
+                            },
+                            {
+                                "name": "Combining the software with one's own work to produce and distribute the software or a work containing parts of the software"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include the copyright notice contained in the software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include a summary of the changes you have made",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "The following text may be used in lieu of a copy of such license (except in quotation marks): \"Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013.\"âCopyright Â© 1995-2001 Corporation for National Research Initiatives; All Rights Reserved \""
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "This License Agreement is between the Corporation for National Research Initiatives (\"CNRI\") and any person who accesses or uses the source code, binaries, or related documentation of the software or It is entered into with the Organization. This License Agreement does not constitute an agency, partnership or joint venture agreement between CNRI and Licensee."
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1\r\n\r\n1.This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 (âCNRIâ), and the Individual or Organization (âLicenseeâ) accessing and otherwise using Python 1.6.1 software in source or binary form and its associated documentation.\r\n\r\n2.Subject to the terms and conditions of this License Agreement, CNRI hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 1.6.1 alone or in any derivative version, provided, however, that CNRIâs License Agreement and CNRIâs notice of copyright, i.e., âCopyright Â© 1995-2001 Corporation for National Research Initiatives; All Rights Reservedâ are retained in Python 1.6.1 alone or in any derivative version prepared by Licensee. Alternately, in lieu of CNRIâs License Agreement, Licensee may substitute the following text (omitting the quotes): âPython 1.6.1 is made available subject to the terms and conditions in CNRIâs License Agreement. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl.handle.net/1895.22/1013.â\r\n\r\n3.In the event Licensee prepares a derivative work that is based on or incorporates Python 1.6.1 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python 1.6.1.\r\n\r\n4.CNRI is making Python 1.6.1 available to Licensee on an âAS ISâ basis. CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, CNRI MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 1.6.1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.\r\n\r\n5.CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 1.6.1 FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 1.6.1, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\r\n\r\n6.This License Agreement will automatically terminate upon a material breach of its terms and conditions.\r\n\r\n7.This License Agreement shall be governed by the federal intellectual property law of the United States, including without limitation the federal copyright law, and, to the extent such U.S. federal law does not apply, by the law of the Commonwealth of Virginia, excluding Virginiaâs conflict of law provisions. Notwithstanding the foregoing, with regard to derivative works based on Python 1.6.1 that incorporate non-separable material that was previously distributed under the GNU General Public License (GPL), the law of the Commonwealth of Virginia shall govern this License Agreement only as to issues arising under or with respect to Paragraphs 4, 5, and 7 of this License Agreement. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between CNRI and Licensee. This License Agreement does not grant permission to use CNRI trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.\r\n\r\n8.By clicking on the âACCEPTâ button where indicated, or by copying, installing or otherwise using Python 1.6.1, Licensee agrees to be bound by the terms and conditions of this License Agreement.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/292"
+                        ]
+                    ]
+                },
+                "description": "This License Agreement is between the Corporation for National Research Initiatives (\"CNRI\") and any person who accesses or uses the source code, binaries, or related documentation of the software or It is entered into with the Organization. This License Agreement does not constitute an agency, partnership or joint venture agreement between CNRI and Licensee."
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/CNRI-Python.html",
@@ -418,6 +666,10 @@ Raw Data
             [
                 "OSI Page",
                 "https://opensource.org/licenses/CNRI-Python"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/292"
             ]
         ]
     }

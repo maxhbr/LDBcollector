@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "GL2PS",
+        "GL2PS LICENSE, Version 2",
         "GL2PS License",
         "scancode://gl2ps"
     ],
@@ -8,6 +9,12 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "GL2PS"
+    ],
+    "__impliedComments": [
+        [
+            "Hitachi open-license",
+            []
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -114,6 +121,152 @@
                     ]
                 ]
             }
+        },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "GL2PS",
+                    "GL2PS LICENSE, Version 2"
+                ],
+                "__impliedId": "GL2PS"
+            },
+            "oName": "GL2PS",
+            "oOtherLicenseIds": [
+                "GL2PS LICENSE, Version 2"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "notices": [
+                {
+                    "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied.",
+                    "description": "There is no guarantee."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/1560",
+            "content": "                           GL2PS LICENSE\r\n                      Version 2, November 2003\r\n\r\n              Copyright (C) 2003, Christophe Geuzaine\r\n\r\nPermission to use, copy, and distribute this software and its\r\ndocumentation for any purpose with or without fee is hereby granted,\r\nprovided that the copyright notice appear in all copies and that both\r\nthat copyright notice and this permission notice appear in supporting\r\ndocumentation.\r\n\r\nPermission to modify and distribute modified versions of this software\r\nis granted, provided that:\r\n\r\n1) the modifications are licensed under the same terms as this\r\nsoftware;\r\n\r\n2) you make available the source code of any modifications that you\r\ndistribute, either on the same media as you distribute any executable\r\nor other form of this software, or via a mechanism generally accepted\r\nin the software development community for the electronic transfer of\r\ndata.\r\n\r\nThis software is provided \"as is\" without express or implied warranty.",
+            "name": "GL2PS LICENSE, Version 2",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Modify the obtained source code."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "name": "Use the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include a copyright notice in the license",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Distribute the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include a copyright notice in the license",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "OR": [
+                                    {
+                                        "name": "Attach the source code corresponding to the software in question.",
+                                        "type": "OBLIGATION"
+                                    },
+                                    {
+                                        "name": "Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.",
+                                        "type": "OBLIGATION"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "GL2PS LICENSE, Version 2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        []
+                    ]
+                ],
+                "__impliedText": "                           GL2PS LICENSE\r\n                      Version 2, November 2003\r\n\r\n              Copyright (C) 2003, Christophe Geuzaine\r\n\r\nPermission to use, copy, and distribute this software and its\r\ndocumentation for any purpose with or without fee is hereby granted,\r\nprovided that the copyright notice appear in all copies and that both\r\nthat copyright notice and this permission notice appear in supporting\r\ndocumentation.\r\n\r\nPermission to modify and distribute modified versions of this software\r\nis granted, provided that:\r\n\r\n1) the modifications are licensed under the same terms as this\r\nsoftware;\r\n\r\n2) you make available the source code of any modifications that you\r\ndistribute, either on the same media as you distribute any executable\r\nor other form of this software, or via a mechanism generally accepted\r\nin the software development community for the electronic transfer of\r\ndata.\r\n\r\nThis software is provided \"as is\" without express or implied warranty.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/1560"
+                    ]
+                ]
+            }
         }
     },
     "__impliedJudgement": [
@@ -146,6 +299,10 @@
         [
             "Homepage",
             "http://www.geuz.org/gl2ps/COPYING.GL2PS"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1560"
         ]
     ]
 }

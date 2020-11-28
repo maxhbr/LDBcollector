@@ -5,6 +5,8 @@ libpng License (Libpng)
 
 **Other Names:**
 
+-   `libpng license (libpng-1.2.6 and later)`
+
 -   `scancode://libpng`
 
 Comments on (easy) usability
@@ -25,6 +27,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Libpng.json
 
 -   **SPDX:** https://spdx.org/licenses/Libpng.html
+
+-   **open-license:** http://open-license.hitachi.com/licenses/307
 
 -   http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
@@ -149,6 +153,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/Libpng.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -162,16 +168,27 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Libpng",
+            "libpng license (libpng-1.2.6 and later)",
             "libpng License",
             "scancode://libpng",
             "Libpng License"
         ],
         "__impliedId": "Libpng",
+        "__impliedComments": [
+            [
+                "Hitachi open-license",
+                []
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -251,6 +268,49 @@ Raw Data
                         [
                             null,
                             "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
+                        ]
+                    ]
+                }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "Libpng",
+                        "libpng license (libpng-1.2.6 and later)"
+                    ],
+                    "__impliedId": "Libpng"
+                },
+                "oName": "Libpng",
+                "oOtherLicenseIds": [
+                    "libpng license (libpng-1.2.6 and later)"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "notices": [],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/307",
+                "content": "This copy of the libpng notices is provided for your convenience.  In case of\r\nany discrepancy between this copy and the notices in the file png.h that is\r\nincluded in the libpng distribution, the latter shall prevail.\r\n\r\nCOPYRIGHT NOTICE, DISCLAIMER, and LICENSE:\r\n\r\nIf you modify libpng you may insert additional notices immediately following\r\nthis sentence.\r\n\r\nThis code is released under the libpng license.\r\n\r\nlibpng versions 1.2.6, August 15, 2004, through <version>, <date>, are\r\n Copyright (c) 2004, 2006-<year> Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-1.2.5\r\nwith the following individual added to the list of Contributing Authors\r\n\r\n   Cosmin Truta\r\n\r\nlibpng versions 1.0.7, July 1, 2000, through 1.2.5 - October 3, 2002, are\r\nCopyright (c) 2000-2002 Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-1.0.6\r\nwith the following individuals added to the list of Contributing Authors\r\n\r\n   Simon-Pierre Cadieux\r\n   Eric S. Raymond\r\n   Gilles Vollant\r\n\r\nand with the following additions to the disclaimer:\r\n\r\n   There is no warranty against interference with your enjoyment of the\r\n   library or against infringement.  There is no warranty that our\r\n   efforts or the library will fulfill any of your particular purposes\r\n   or needs.  This library is provided with all faults, and the entire\r\n   risk of satisfactory quality, performance, accuracy, and effort is with\r\n   the user.\r\n\r\nlibpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are\r\nCopyright (c) 1998, 1999 Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-0.96,\r\nwith the following individuals added to the list of Contributing Authors:\r\n\r\n   Tom Lane\r\n   Glenn Randers-Pehrson\r\n   Willem van Schaik\r\n\r\nlibpng versions 0.89, June 1996, through 0.96, May 1997, are\r\nCopyright (c) 1996, 1997 Andreas Dilger\r\nDistributed according to the same disclaimer and license as libpng-0.88,\r\nwith the following individuals added to the list of Contributing Authors:\r\n\r\n   John Bowler\r\n   Kevin Bracey\r\n   Sam Bushell\r\n   Magnus Holmgren\r\n   Greg Roelofs\r\n   Tom Tanner\r\n\r\nlibpng versions 0.5, May 1995, through 0.88, January 1996, are\r\nCopyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.\r\n\r\nFor the purposes of this copyright and license, \"Contributing Authors\"\r\nis defined as the following set of individuals:\r\n\r\n   Andreas Dilger\r\n   Dave Martindale\r\n   Guy Eric Schalnat\r\n   Paul Schmidt\r\n   Tim Wegner\r\n\r\nThe PNG Reference Library is supplied \"AS IS\".  The Contributing Authors\r\nand Group 42, Inc. disclaim all warranties, expressed or implied,\r\nincluding, without limitation, the warranties of merchantability and of\r\nfitness for any purpose.  The Contributing Authors and Group 42, Inc.\r\nassume no liability for direct, indirect, incidental, special, exemplary,\r\nor consequential damages, which may result from the use of the PNG\r\nReference Library, even if advised of the possibility of such damage.\r\n\r\nPermission is hereby granted to use, copy, modify, and distribute this\r\nsource code, or portions hereof, for any purpose, without fee, subject\r\nto the following restrictions:\r\n\r\n1. The origin of this source code must not be misrepresented.\r\n\r\n2. Altered versions must be plainly marked as such and must not\r\n   be misrepresented as being the original source.\r\n\r\n3. This Copyright notice may not be removed or altered from any\r\n   source or altered source distribution.\r\n\r\nThe Contributing Authors and Group 42, Inc. specifically permit, without\r\nfee, and encourage the use of this source code as a component to\r\nsupporting the PNG file format in commercial products.  If you use this\r\nsource code in a product, acknowledgment is not required but would be\r\nappreciated.\r\n\r\n\r\nA \"png_get_copyright\" function is available, for convenient use in \"about\"\r\nboxes and the like:\r\n\r\n   printf(\"%s\",png_get_copyright(NULL));\r\n\r\nAlso, the PNG logo (in PNG format, of course) is supplied in the\r\nfiles \"pngbar.png\" and \"pngbar.jpg (88x31) and \"pngnow.png\" (98x31).\r\n\r\nLibpng is OSI Certified Open Source Software.  OSI Certified Open Source is a\r\ncertification mark of the Open Source Initiative.\r\n\r\nGlenn Randers-Pehrson\r\nglennrp at users.sourceforge.net\r\nSeptember 16, 2013",
+                "name": "libpng license (libpng-1.2.6 and later)",
+                "permissions": [],
+                "_implications": {
+                    "__impliedNames": [
+                        "libpng license (libpng-1.2.6 and later)"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            []
+                        ]
+                    ],
+                    "__impliedText": "This copy of the libpng notices is provided for your convenience.  In case of\r\nany discrepancy between this copy and the notices in the file png.h that is\r\nincluded in the libpng distribution, the latter shall prevail.\r\n\r\nCOPYRIGHT NOTICE, DISCLAIMER, and LICENSE:\r\n\r\nIf you modify libpng you may insert additional notices immediately following\r\nthis sentence.\r\n\r\nThis code is released under the libpng license.\r\n\r\nlibpng versions 1.2.6, August 15, 2004, through <version>, <date>, are\r\n Copyright (c) 2004, 2006-<year> Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-1.2.5\r\nwith the following individual added to the list of Contributing Authors\r\n\r\n   Cosmin Truta\r\n\r\nlibpng versions 1.0.7, July 1, 2000, through 1.2.5 - October 3, 2002, are\r\nCopyright (c) 2000-2002 Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-1.0.6\r\nwith the following individuals added to the list of Contributing Authors\r\n\r\n   Simon-Pierre Cadieux\r\n   Eric S. Raymond\r\n   Gilles Vollant\r\n\r\nand with the following additions to the disclaimer:\r\n\r\n   There is no warranty against interference with your enjoyment of the\r\n   library or against infringement.  There is no warranty that our\r\n   efforts or the library will fulfill any of your particular purposes\r\n   or needs.  This library is provided with all faults, and the entire\r\n   risk of satisfactory quality, performance, accuracy, and effort is with\r\n   the user.\r\n\r\nlibpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are\r\nCopyright (c) 1998, 1999 Glenn Randers-Pehrson, and are\r\ndistributed according to the same disclaimer and license as libpng-0.96,\r\nwith the following individuals added to the list of Contributing Authors:\r\n\r\n   Tom Lane\r\n   Glenn Randers-Pehrson\r\n   Willem van Schaik\r\n\r\nlibpng versions 0.89, June 1996, through 0.96, May 1997, are\r\nCopyright (c) 1996, 1997 Andreas Dilger\r\nDistributed according to the same disclaimer and license as libpng-0.88,\r\nwith the following individuals added to the list of Contributing Authors:\r\n\r\n   John Bowler\r\n   Kevin Bracey\r\n   Sam Bushell\r\n   Magnus Holmgren\r\n   Greg Roelofs\r\n   Tom Tanner\r\n\r\nlibpng versions 0.5, May 1995, through 0.88, January 1996, are\r\nCopyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.\r\n\r\nFor the purposes of this copyright and license, \"Contributing Authors\"\r\nis defined as the following set of individuals:\r\n\r\n   Andreas Dilger\r\n   Dave Martindale\r\n   Guy Eric Schalnat\r\n   Paul Schmidt\r\n   Tim Wegner\r\n\r\nThe PNG Reference Library is supplied \"AS IS\".  The Contributing Authors\r\nand Group 42, Inc. disclaim all warranties, expressed or implied,\r\nincluding, without limitation, the warranties of merchantability and of\r\nfitness for any purpose.  The Contributing Authors and Group 42, Inc.\r\nassume no liability for direct, indirect, incidental, special, exemplary,\r\nor consequential damages, which may result from the use of the PNG\r\nReference Library, even if advised of the possibility of such damage.\r\n\r\nPermission is hereby granted to use, copy, modify, and distribute this\r\nsource code, or portions hereof, for any purpose, without fee, subject\r\nto the following restrictions:\r\n\r\n1. The origin of this source code must not be misrepresented.\r\n\r\n2. Altered versions must be plainly marked as such and must not\r\n   be misrepresented as being the original source.\r\n\r\n3. This Copyright notice may not be removed or altered from any\r\n   source or altered source distribution.\r\n\r\nThe Contributing Authors and Group 42, Inc. specifically permit, without\r\nfee, and encourage the use of this source code as a component to\r\nsupporting the PNG file format in commercial products.  If you use this\r\nsource code in a product, acknowledgment is not required but would be\r\nappreciated.\r\n\r\n\r\nA \"png_get_copyright\" function is available, for convenient use in \"about\"\r\nboxes and the like:\r\n\r\n   printf(\"%s\",png_get_copyright(NULL));\r\n\r\nAlso, the PNG logo (in PNG format, of course) is supplied in the\r\nfiles \"pngbar.png\" and \"pngbar.jpg (88x31) and \"pngnow.png\" (98x31).\r\n\r\nLibpng is OSI Certified Open Source Software.  OSI Certified Open Source is a\r\ncertification mark of the Open Source Initiative.\r\n\r\nGlenn Randers-Pehrson\r\nglennrp at users.sourceforge.net\r\nSeptember 16, 2013",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/307"
                         ]
                     ]
                 }
@@ -375,6 +435,10 @@ Raw Data
             [
                 "Homepage",
                 "http://www.libpng.org/pub/png/libpng.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/307"
             ]
         ]
     }

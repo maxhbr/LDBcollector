@@ -5,6 +5,8 @@ TMate Open Source License (TMate)
 
 **Other Names:**
 
+-   `TMate Open Source License for "TMate JavaSVN library"`
+
 -   `scancode://tmate`
 
 Description
@@ -39,6 +41,8 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/TMate.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/972
+
+-   **open-license:** http://open-license.hitachi.com/licenses/1391
 
 -   http://svnkit.com/license.html
 
@@ -100,6 +104,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/TMate.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -114,11 +120,16 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "TMate",
+            "TMate Open Source License for \"TMate JavaSVN library\"",
             "TMate Open Source License",
             "scancode://tmate"
         ],
@@ -240,6 +251,24 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "TMate",
+                        "TMate Open Source License for \"TMate JavaSVN library\""
+                    ],
+                    "__impliedId": "TMate"
+                },
+                "oName": "TMate",
+                "oOtherLicenseIds": [
+                    "TMate Open Source License for \"TMate JavaSVN library\""
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "Hitachi open-license": {
                 "summary": "https://svnkit.com/license.html",
@@ -451,6 +480,10 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/972"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/1391"
             ]
         ]
     }

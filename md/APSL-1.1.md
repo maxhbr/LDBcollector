@@ -5,9 +5,37 @@ Apple Public Source License 1.1 (APSL-1.1)
 
 **Other Names:**
 
+-   `APPLE PUBLIC SOURCE LICENSE, Version 1.1`
+
 -   `scancode://apsl-1.1`
 
 -   `APSL 1.1`
+
+Description
+-----------
+
+> Deployment means to use, sublicense or distribute the Software for
+> purposes other than internal research and development. This includes,
+> but is not limited to, any use or distribution within one's own
+> company or organization other than for use in research and development
+> of the Software, and any direct or indirect sublicense or distribution
+> of the Software in any form to third parties. Source Code means the
+> source code of all modules contained in the Software, all associated
+> interface definition files, and scripts used to control the
+> compilation and installation of executables (object code). Himself
+> means the person or entity exercising its rights under such license in
+> accordance with all of the terms of such license. In the case of a
+> Legal Entity, "self" includes any person who controls itself, is
+> controlled by itself, or is an association of persons under common
+> control with itself. For the purposes of this definition, "control"
+> means any of the following (1) has the authority to direct and manage
+> the corporation, directly or indirectly, by contract or otherwise, to
+> direct and manage the corporation; (2) has more than 50% of the
+> outstanding shares or beneficial ownership of the corporation
+
+(source: [Hitachi
+open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+(CDLA-Permissive-1.0))
 
 Comments on (easy) usability
 ----------------------------
@@ -46,6 +74,33 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   “https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE\_LICENSE”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
+-   “Deployment means to use, sublicense or distribute the Software for
+    purposes other than internal research and development. This
+    includes, but is not limited to, any use or distribution within
+    one's own company or organization other than for use in research and
+    development of the Software, and any direct or indirect sublicense
+    or distribution of the Software in any form to third parties. Source
+    Code means the source code of all modules contained in the Software,
+    all associated interface definition files, and scripts used to
+    control the compilation and installation of executables (object
+    code). Himself means the person or entity exercising its rights
+    under such license in accordance with all of the terms of such
+    license. In the case of a Legal Entity, "self" includes any person
+    who controls itself, is controlled by itself, or is an association
+    of persons under common control with itself. For the purposes of
+    this definition, "control" means any of the following (1) has the
+    authority to direct and manage the corporation, directly or
+    indirectly, by contract or otherwise, to direct and manage the
+    corporation; (2) has more than 50% of the outstanding shares or
+    beneficial ownership of the corporation” (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 -   “Per SPDX.org, this license was released 19 April 1999.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.1.yml "Scancode")
     (CC0-1.0))
@@ -57,6 +112,8 @@ URLs
     http://web.archive.org/web/20000901055846/http://www.opensource.apple.com/apsl/
 
 -   **SPDX:** http://spdx.org/licenses/APSL-1.1.json
+
+-   **open-license:** http://open-license.hitachi.com/licenses/1101
 
 -   http://www.opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE\_LICENSE
 
@@ -449,6 +506,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/APSL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -467,11 +526,16 @@ Raw Data
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "APSL-1.1",
+            "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
             "Apple Public Source License 1.1",
             "scancode://apsl-1.1",
             "APSL 1.1"
@@ -487,6 +551,13 @@ Raw Data
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Hitachi open-license",
+                [
+                    "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
+                    "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. Source Code means the source code of all modules contained in the Software, all associated interface definition files, and scripts used to control the compilation and installation of executables (object code). Himself means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
                 ]
             ],
             [
@@ -648,6 +719,571 @@ Raw Data
                 "Comment": null,
                 "LicenseId": "APSL-1.1"
             },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "APSL-1.1",
+                        "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                    ],
+                    "__impliedId": "APSL-1.1"
+                },
+                "oName": "APSL-1.1",
+                "oOtherLicenseIds": [
+                    "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
+            },
+            "Hitachi open-license": {
+                "summary": "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
+                "notices": [
+                    {
+                        "content": "Grant the copyright holder and all third parties a royalty-free, non-exclusive license to use, reproduce, modify, adapt, distribute, and deploy the Modification to the same extent as the copyright holder's license, based on patents and other intellectual property rights owned or controlled by them.",
+                        "description": "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties."
+                    },
+                    {
+                        "content": "It is a perpetual, worldwide, royalty-free, non-exclusive, irrevocable, and irrevocable license to use, reproduce, compile, display, perform, modify, sublicense, and distribute the Modification in any form and through multiple layers of distribution to the copyright owner and its subsidiaries under patent and other intellectual property rights owned or controlled by them. Granting a license"
+                    },
+                    {
+                        "content": "the software is provided \"as-is\" and without warranty, upgrade or support of any kind. the copyright holders and licensors expressly disclaim all warranties and conditions, express or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The warranties or conditions include, but are not limited to, implied warranties or conditions of commercial usability, satisfactory quality, fitness for a particular purpose, and non-infringement of third party rights. neither the copyright holder nor the licensor warrants that the functionality of the software will meet the requirements of the recipients of the software under this license, that the operation of the software will not cause interruption or error, or that defects in the software will be corrected. No information, oral or written, obtained from the copyright owner and licensor, or from any authorized representative of the copyright owner, shall constitute a warranty or extend the scope of this warranty.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "Under no conditions shall either the copyright owner or the licensor be liable for any damages, whether based on contract or warranty (including negligence), tort or product liability or otherwise, even if advised of the possibility of such damages and even if the original purpose of the legal remedy has not been achieved. In no event shall Licensor, Inc. be liable for any incidental, special, indirect or consequential damages arising out of this license or use of the Software. The total liability of the copyright owner and licensor for all damages under this license shall not exceed Fifty Dollars ($50.00)."
+                    },
+                    {
+                        "content": "If you fail to remedy any violation of the terms of this license within thirty (30) days of becoming aware of such violation, your license will automatically expire. The offending party shall immediately stop using the Software and destroy all such Software in its possession or control. Any term that should remain in effect after the expiration of the license shall remain in effect after the expiration of the license."
+                    },
+                    {
+                        "content": "If applicable law prohibits or restricts you from complying with the terms of this license, or prevents you from enforcing the terms of this license, your license will immediately expire. Violators shall immediately cease to use such Software and destroy all such Software in their possession or control. Any term that should remain in effect after the expiration of the license shall remain in effect after the expiration of the license."
+                    },
+                    {
+                        "content": "If any person who receives the software under this license brings a patent infringement action against the copyright holder, the license will automatically expire. The offending party shall immediately stop using the software and destroy all such software in its possession or control. Any terms that should remain in effect after the expiration of the license shall remain in effect after the expiration of the license."
+                    },
+                    {
+                        "content": "Neither party shall be liable to the other party for any indemnification, damages or losses resulting from the termination of this license exclusively in accordance with its terms."
+                    },
+                    {
+                        "content": "The termination of this license shall not affect any other rights or legal remedies of the parties."
+                    },
+                    {
+                        "content": "The failure of the copyright holder to enforce the terms of this license shall not be deemed a waiver of future enforcement of that or any other term."
+                    },
+                    {
+                        "content": "Any statute or decree that states that the language of the contract should be construed to the detriment of the drafter shall not apply to such license."
+                    },
+                    {
+                        "content": "If any provision of this license is deemed unenforceable, such provision shall be enforced to the maximum extent permitted to achieve the parties' economic interests and objectives. The remainder of this license shall remain in full force and effect."
+                    },
+                    {
+                        "content": "Any litigation or other dispute between the recipient of the software under this license and the copyright holder in connection with this license shall be resolved in the Northern District of California. The recipient of the software and the copyright holder agree to submit to personal jurisdiction and venue in the state and federal courts in the Northern District of California."
+                    },
+                    {
+                        "content": "The application of the UN contractual provisions on international trade in goods is expressly excluded."
+                    },
+                    {
+                        "content": "This license is governed by the laws of the United States and, except for the provisions regarding conflict of laws of the State of California, the laws of the State of California."
+                    },
+                    {
+                        "content": "EXHIBIT A. \"Portions Copyright (c) 1999 Apple Computer, Inc. Code as defined in and that are subject to the Apple Public Source License Version 1.1 (the \"License\"). You may not use this file except in compliance with the License. Please obtain a copy of the License at http://www.apple.com/publicsource and read it. The Original Code and all software distributed under the License are distributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT. please see the License for the specific language governing rights and limitations under the License.\""
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/1101",
+                "content": "APPLE PUBLIC SOURCE LICENSE\r\nVersion 1.1 - April 19,1999\r\n\r\nPlease read this License carefully before downloading this software.\r\nBy downloading and using this software, you are agreeing to be bound\r\nby the terms of this License.  If you do not or cannot agree to the\r\nterms of this License, please do not download or use the software.\r\n\r\n1. General; Definitions.  This License applies to any program or other\r\nwork which Apple Computer, Inc. (\"Apple\") publicly announces as\r\nsubject to this Apple Public Source License and which contains a\r\nnotice placed by Apple identifying such program or work as \"Original\r\nCode\" and stating that it is subject to the terms of this Apple Public\r\nSource License version 1.1 (or subsequent version thereof), as it may\r\nbe revised from time to time by Apple (\"License\").  As used in this\r\nLicense:\r\n\r\n1.1 \"Affected Original Code\" means only those specific portions of\r\nOriginal Code that allegedly infringe upon any party's intellectual\r\nproperty rights or are otherwise the subject of a claim of\r\ninfringement.\r\n\r\n1.2 \"Applicable Patent Rights\" mean: (a) in the case where Apple is\r\nthe grantor of rights, (i) claims of patents that are now or hereafter\r\nacquired, owned by or assigned to Apple and (ii) that cover subject\r\nmatter contained in the Original Code, but only to the extent\r\nnecessary to use, reproduce and/or distribute the Original Code\r\nwithout infringement; and (b) in the case where You are the grantor of\r\nrights, (i) claims of patents that are now or hereafter acquired,\r\nowned by or assigned to You and (ii) that cover subject matter in Your\r\nModifications, taken alone or in combination with Original Code.\r\n\r\n1.3 \"Covered Code\" means the Original Code, Modifications, the\r\ncombination of Original Code and any Modifications, and/or any\r\nrespective portions thereof.\r\n\r\n1.4 \"Deploy\" means to use, sublicense or distribute Covered Code other\r\nthan for Your internal research and development (R&D), and includes\r\nwithout limitation, any and all internal use or distribution of\r\nCovered Code within Your business or organization except for R&D use,\r\nas well as direct or indirect sublicensing or distribution of Covered\r\nCode by You to any third party in any form or manner.\r\n\r\n1.5 \"Larger Work\" means a work which combines Covered Code or portions\r\nthereof with code not governed by the terms of this License.\r\n\r\n1.6 \"Modifications\" mean any addition to, deletion from, and/or change\r\nto, the substance and/or structure of Covered Code.  When code is\r\nreleased as a series of files, a Modification is: (a) any addition to\r\nor deletion from the contents of a file containing Covered Code;\r\nand/or (b) any new file or other representation of computer program\r\nstatements that contains any part of Covered Code.\r\n\r\n1.7 \"Original Code\" means (a) the Source Code of a program or other\r\nwork as originally made available by Apple under this License,\r\nincluding the Source Code of any updates or upgrades to such programs\r\nor works made available by Apple under this License, and that has been\r\nexpressly identified by Apple as such in the header file(s) of such\r\nwork; and (b) the object code compiled from such Source Code and\r\noriginally made available by Apple under this License.\r\n\r\n1.8 \"Source Code\" means the human readable form of a program or other\r\nwork that is suitable for making modifications to it, including all\r\nmodules it contains, plus any associated interface definition files,\r\nscripts used to control compilation and installation of an executable\r\n(object code).\r\n\r\n1.9 \"You\" or \"Your\" means an individual or a legal entity exercising\r\nrights under this License.  For legal entities, \"You\" or \"Your\"\r\nincludes any entity which controls, is controlled by, or is under\r\ncommon control with, You, where \"control\" means (a) the power, direct\r\nor indirect, to cause the direction or management of such entity,\r\nwhether by contract or otherwise, or (b) ownership of fifty percent\r\n(50%) or more of the outstanding shares or beneficial ownership of\r\nsuch entity.\r\n\r\n2. Permitted Uses; Conditions & Restrictions.  Subject to the terms\r\nand conditions of this License, Apple hereby grants You, effective on\r\nthe date You accept this License and download the Original Code, a\r\nworld-wide, royalty-free, non- exclusive license, to the extent of\r\nApple's Applicable Patent Rights and copyrights covering the Original\r\nCode, to do the following:\r\n\r\n2.1 You may use, copy, modify and distribute Original Code, with or\r\nwithout Modifications, solely for Your internal research and\r\ndevelopment, provided that You must in each instance:\r\n\r\n(a) retain and reproduce in all copies of Original Code the copyright\r\nand other proprietary notices and disclaimers of Apple as they appear\r\nin the Original Code, and keep intact all notices in the Original Code\r\nthat refer to this License;\r\n\r\n(b) include a copy of this License with every copy of Source Code of\r\nCovered Code and documentation You distribute, and You may not offer\r\nor impose any terms on such Source Code that alter or restrict this\r\nLicense or the recipients' rights hereunder, except as permitted under\r\nSection 6; and\r\n\r\n(c) completely and accurately document all Modifications that you have\r\nmade and the date of each such Modification, designate the version of\r\nthe Original Code you used, prominently include a file carrying such\r\ninformation with the Modifications, and duplicate the notice in\r\nExhibit A in each file of the Source Code of all such Modifications.\r\n\r\n2.2 You may Deploy Covered Code, provided that You must in each\r\n  instance:\r\n\r\n(a) satisfy all the conditions of Section 2.1 with respect to the\r\nSource Code of the Covered Code;\r\n\r\n(b) make all Your Deployed Modifications publicly available in Source\r\nCode form via electronic distribution (e.g. download from a web site)\r\nunder the terms of this License and subject to the license grants set\r\nforth in Section 3 below, and any additional terms You may choose to\r\noffer under Section 6.  You must continue to make the Source Code of\r\nYour Deployed Modifications available for as long as you Deploy the\r\nCovered Code or twelve (12) months from the date of initial\r\nDeployment, whichever is longer;\r\n\r\n(c) if You Deploy Covered Code containing Modifications made by You,\r\ninform others of how to obtain those Modifications by filling out and\r\nsubmitting the information found at\r\nhttp://www.apple.com/publicsource/modifications.html, if available;\r\nand\r\n\r\n(d) if You Deploy Covered Code in object code, executable form only,\r\ninclude a prominent notice, in the code itself as well as in related\r\ndocumentation, stating that Source Code of the Covered Code is\r\navailable under the terms of this License with information on how and\r\nwhere to obtain such Source Code.\r\n\r\n3. Your Grants.  In consideration of, and as a condition to, the\r\nlicenses granted to You under this License:\r\n\r\n(a) You hereby grant to Apple and all third parties a non-exclusive,\r\nroyalty-free license, under Your Applicable Patent Rights and other\r\nintellectual property rights owned or controlled by You, to use,\r\nreproduce, modify, distribute and Deploy Your Modifications of the\r\nsame scope and extent as Apple's licenses under Sections 2.1 and 2.2;\r\nand\r\n\r\n(b) You hereby grant to Apple and its subsidiaries a non-exclusive,\r\nworldwide, royalty-free, perpetual and irrevocable license, under Your\r\nApplicable Patent Rights and other intellectual property rights owned\r\nor controlled by You, to use, reproduce, execute, compile, display,\r\nperform, modify or have modified (for Apple and/or its subsidiaries),\r\nsublicense and distribute Your Modifications, in any form, through\r\nmultiple tiers of distribution.\r\n\r\n4. Larger Works.  You may create a Larger Work by combining Covered\r\nCode with other code not governed by the terms of this License and\r\ndistribute the Larger Work as a single product.  In each such\r\ninstance, You must make sure the requirements of this License are\r\nfulfilled for the Covered Code or any portion thereof.\r\n\r\n5. Limitations on Patent License.  Except as expressly stated in\r\nSection 2, no other patent rights, express or implied, are granted by\r\nApple herein.  Modifications and/or Larger Works may require\r\nadditional patent licenses from Apple which Apple may grant in its\r\nsole discretion.\r\n\r\n6. Additional Terms.  You may choose to offer, and to charge a fee\r\nfor, warranty, support, indemnity or liability obligations and/or\r\nother rights consistent with the scope of the license granted herein\r\n(\"Additional Terms\") to one or more recipients of Covered\r\nCode. However, You may do so only on Your own behalf and as Your sole\r\nresponsibility, and not on behalf of Apple. You must obtain the\r\nrecipient's agreement that any such Additional Terms are offered by\r\nYou alone, and You hereby agree to indemnify, defend and hold Apple\r\nharmless for any liability incurred by or claims asserted against\r\nApple by reason of any such Additional Terms.\r\n\r\n7. Versions of the License.  Apple may publish revised and/or new\r\nversions of this License from time to time.  Each version will be\r\ngiven a distinguishing version number.  Once Original Code has been\r\npublished under a particular version of this License, You may continue\r\nto use it under the terms of that version. You may also choose to use\r\nsuch Original Code under the terms of any subsequent version of this\r\nLicense published by Apple.  No one other than Apple has the right to\r\nmodify the terms applicable to Covered Code created under this\r\nLicense.\r\n\r\n8. NO WARRANTY OR SUPPORT.  The Original Code may contain in whole or\r\nin part pre-release, untested, or not fully tested works.  The\r\nOriginal Code may contain errors that could cause failures or loss of\r\ndata, and may be incomplete or contain inaccuracies.  You expressly\r\nacknowledge and agree that use of the Original Code, or any portion\r\nthereof, is at Your sole and entire risk.  THE ORIGINAL CODE IS\r\nPROVIDED \"AS IS\" AND WITHOUT WARRANTY, UPGRADES OR SUPPORT OF ANY KIND\r\nAND APPLE AND APPLE'S LICENSOR(S) (FOR THE PURPOSES OF SECTIONS 8 AND\r\n9, APPLE AND APPLE'S LICENSOR(S) ARE COLLECTIVELY REFERRED TO AS\r\n\"APPLE\") EXPRESSLY DISCLAIM ALL WARRANTIES AND/OR CONDITIONS, EXPRESS\r\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\r\nAND/OR CONDITIONS OF MERCHANTABILITY OR SATISFACTORY QUALITY AND\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY\r\nRIGHTS.  APPLE DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE\r\nORIGINAL CODE WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF\r\nTHE ORIGINAL CODE WILL BE UNINTERRUPTED OR ERROR- FREE, OR THAT\r\nDEFECTS IN THE ORIGINAL CODE WILL BE CORRECTED.  NO ORAL OR WRITTEN\r\nINFORMATION OR ADVICE GIVEN BY APPLE OR AN APPLE AUTHORIZED\r\nREPRESENTATIVE SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE THE\r\nSCOPE OF THIS WARRANTY.  You acknowledge that the Original Code is not\r\nintended for use in the operation of nuclear facilities, aircraft\r\nnavigation, communication systems, or air traffic control machines in\r\nwhich case the failure of the Original Code could lead to death,\r\npersonal injury, or severe physical or environmental damage.\r\n\r\n9. Liability.\r\n\r\n9.1 Infringement.  If any portion of, or functionality implemented by,\r\nthe Original Code becomes the subject of a claim of infringement,\r\nApple may, at its option: (a) attempt to procure the rights necessary\r\nfor Apple and You to continue using the Affected Original Code; (b)\r\nmodify the Affected Original Code so that it is no longer infringing;\r\nor (c) suspend Your rights to use, reproduce, modify, sublicense and\r\ndistribute the Affected Original Code until a final determination of\r\nthe claim is made by a court or governmental administrative agency of\r\ncompetent jurisdiction and Apple lifts the suspension as set forth\r\nbelow.  Such suspension of rights will be effective immediately upon\r\nApple's posting of a notice to such effect on the Apple web site that\r\nis used for implementation of this License.  Upon such final\r\ndetermination being made, if Apple is legally able, without the\r\npayment of a fee or royalty, to resume use, reproduction,\r\nmodification, sublicensing and distribution of the Affected Original\r\nCode, Apple will lift the suspension of rights to the Affected\r\nOriginal Code by posting a notice to such effect on the Apple web site\r\nthat is used for implementation of this License.  If Apple suspends\r\nYour rights to Affected Original Code, nothing in this License shall\r\nbe construed to restrict You, at Your option and subject to applicable\r\nlaw, from replacing the Affected Original Code with non-infringing\r\ncode or independently negotiating for necessary rights from such third\r\nparty.\r\n\r\n9.2 LIMITATION OF LIABILITY.  UNDER NO CIRCUMSTANCES SHALL APPLE BE\r\nLIABLE FOR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\r\nARISING OUT OF OR RELATING TO THIS LICENSE OR YOUR USE OR INABILITY TO\r\nUSE THE ORIGINAL CODE, OR ANY PORTION THEREOF, WHETHER UNDER A THEORY\r\nOF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCTS LIABILITY\r\nOR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF\r\nSUCH DAMAGES AND NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF\r\nANY REMEDY.  In no event shall Apple's total liability to You for all\r\ndamages under this License exceed the amount of fifty dollars\r\n($50.00).\r\n\r\n10. Trademarks.  This License does not grant any rights to use the\r\ntrademarks or trade names \"Apple\", \"Apple Computer\", \"Mac OS X\", \"Mac\r\nOS X Server\" or any other trademarks or trade names belonging to Apple\r\n(collectively \"Apple Marks\") and no Apple Marks may be used to endorse\r\nor promote products derived from the Original Code other than as\r\npermitted by and in strict compliance at all times with Apple's third\r\nparty trademark usage guidelines which are posted at\r\nhttp://www.apple.com/legal/guidelinesfor3rdparties.html.\r\n\r\n11. Ownership.  Apple retains all rights, title and interest in and to\r\nthe Original Code and any Modifications made by or on behalf of Apple\r\n(\"Apple Modifications\"), and such Apple Modifications will not be\r\nautomatically subject to this License.  Apple may, at its sole\r\ndiscretion, choose to license such Apple Modifications under this\r\nLicense, or on different terms from those contained in this License or\r\nmay choose not to license them at all.  Apple's development, use,\r\nreproduction, modification, sublicensing and distribution of Covered\r\nCode will not be subject to this License.\r\n\r\n12. Termination.\r\n\r\n12.1 Termination.  This License and the rights granted hereunder will\r\n   terminate:\r\n\r\n(a) automatically without notice from Apple if You fail to comply with\r\nany term(s) of this License and fail to cure such breach within 30\r\ndays of becoming aware of such breach; (b) immediately in the event of\r\nthe circumstances described in Section 13.5(b); or (c) automatically\r\nwithout notice from Apple if You, at any time during the term of this\r\nLicense, commence an action for patent infringement against Apple.\r\n\r\n12.2 Effect of Termination.  Upon termination, You agree to\r\nimmediately stop any further use, reproduction, modification,\r\nsublicensing and distribution of the Covered Code and to destroy all\r\ncopies of the Covered Code that are in your possession or control.\r\nAll sublicenses to the Covered Code which have been properly granted\r\nprior to termination shall survive any termination of this License.\r\nProvisions which, by their nature, should remain in effect beyond the\r\ntermination of this License shall survive, including but not limited\r\nto Sections 3, 5, 8, 9, 10, 11, 12.2 and 13.  Neither party will be\r\nliable to the other for compensation, indemnity or damages of any sort\r\nsolely as a result of terminating this License in accordance with its\r\nterms, and termination of this License will be without prejudice to\r\nany other right or remedy of either party.\r\n\r\n13.  Miscellaneous.\r\n\r\n13.1 Government End Users.  The Covered Code is a \"commercial item\" as\r\ndefined in FAR 2.101.  Government software and technical data rights\r\nin the Covered Code include only those rights customarily provided to\r\nthe public as defined in this License. This customary commercial\r\nlicense in technical data and software is provided in accordance with\r\nFAR 12.211 (Technical Data) and 12.212 (Computer Software) and, for\r\nDepartment of Defense purchases, DFAR 252.227-7015 (Technical Data --\r\nCommercial Items) and 227.7202-3 (Rights in Commercial Computer\r\nSoftware or Computer Software Documentation).  Accordingly, all U.S.\r\nGovernment End Users acquire Covered Code with only those rights set\r\nforth herein.\r\n\r\n13.2 Relationship of Parties.  This License will not be construed as\r\ncreating an agency, partnership, joint venture or any other form of\r\nlegal association between You and Apple, and You will not represent to\r\nthe contrary, whether expressly, by implication, appearance or\r\notherwise.\r\n\r\n13.3 Independent Development.  Nothing in this License will impair\r\nApple's right to acquire, license, develop, have others develop for\r\nit, market and/or distribute technology or products that perform the\r\nsame or similar functions as, or otherwise compete with,\r\nModifications, Larger Works, technology or products that You may\r\ndevelop, produce, market or distribute.\r\n\r\n13.4 Waiver; Construction.  Failure by Apple to enforce any provision\r\nof this License will not be deemed a waiver of future enforcement of\r\nthat or any other provision.  Any law or regulation which provides\r\nthat the language of a contract shall be construed against the drafter\r\nwill not apply to this License.\r\n\r\n13.5 Severability.  (a) If for any reason a court of competent\r\njurisdiction finds any provision of this License, or portion thereof,\r\nto be unenforceable, that provision of the License will be enforced to\r\nthe maximum extent permissible so as to effect the economic benefits\r\nand intent of the parties, and the remainder of this License will\r\ncontinue in full force and effect.  (b) Notwithstanding the foregoing,\r\nif applicable law prohibits or restricts You from fully and/or\r\nspecifically complying with Sections 2 and/or 3 or prevents the\r\nenforceability of either of those Sections, this License will\r\nimmediately terminate and You must immediately discontinue any use of\r\nthe Covered Code and destroy all copies of it that are in your\r\npossession or control.\r\n\r\n13.6 Dispute Resolution.  Any litigation or other dispute resolution\r\nbetween You and Apple relating to this License shall take place in the\r\nNorthern District of California, and You and Apple hereby consent to\r\nthe personal jurisdiction of, and venue in, the state and federal\r\ncourts within that District with respect to this License. The\r\napplication of the United Nations Convention on Contracts for the\r\nInternational Sale of Goods is expressly excluded.\r\n\r\n13.7 Entire Agreement; Governing Law.  This License constitutes the\r\nentire agreement between the parties with respect to the subject\r\nmatter hereof.  This License shall be governed by the laws of the\r\nUnited States and the State of California, except that body of\r\nCalifornia law concerning conflicts of law.\r\n\r\nWhere You are located in the province of Quebec, Canada, the following\r\nclause applies: The parties hereby confirm that they have requested\r\nthat this License and all related documents be drafted in English. Les\r\nparties ont exige que le present contrat et tous les documents\r\nconnexes soient rediges en anglais.\r\n\r\nEXHIBIT A.\r\n\r\n\"Portions Copyright (c) 1999 Apple Computer, Inc.  All Rights\r\nReserved.  This file contains Original Code and/or Modifications of\r\nOriginal Code as defined in and that are subject to the Apple Public\r\nSource License Version 1.1 (the \"License\").  You may not use this file\r\nexcept in compliance with the License.  Please obtain a copy of the\r\nLicense at http://www.apple.com/publicsource and read it before using\r\nthis file.\r\n\r\nThe Original Code and all software distributed under the License are\r\ndistributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, EITHER\r\nEXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,\r\nINCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE OR NON- INFRINGEMENT.  Please see the\r\nLicense for the specific language governing rights and limitations\r\nunder the License.\"",
+                "name": "APPLE PUBLIC SOURCE LICENSE, Version 1.1",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the acquired source code for internal research and development without modification.",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Use the acquired object code for internal research and development",
+                                "description": "Use the fetched code as it is."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                }
+                            ]
+                        },
+                        "description": "Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Modify the acquired source code for internal research and development"
+                            },
+                            {
+                                "name": "Use of modified source code for internal research and development"
+                            },
+                            {
+                                "name": "Use object code generated from modified source code for internal research and development"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification for internal research and development.",
+                                "description": "Redistribute the code as it was obtained"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                    "type": "RESTRICTION"
+                                }
+                            ]
+                        },
+                        "description": "Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the acquired object code for internal research and development",
+                                "description": "Redistribute the code as it was obtained"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute modified source code for internal research and development."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute object code generated from modified source code for internal research and development"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification for purposes other than in-house research and development.",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Distribute the obtained source code without modification for purposes other than internal research and development.",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Sublicense the acquired source code for non-internal research and development.",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                    "type": "RESTRICTION"
+                                }
+                            ]
+                        },
+                        "description": "Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use of modified source code for purposes other than internal research and development"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute modified source code for purposes other than internal research and development."
+                            },
+                            {
+                                "name": "Sublicense modified source code for non-internal research and development",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include any copyright notice, proprietary notices and disclaimers contained in such software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "The notes to this license are posted verbatim.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer.",
+                                    "type": "OBLIGATION",
+                                    "description": "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website."
+                                },
+                                {
+                                    "name": "Letting you know how to get your modifications.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html â Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the acquired object code for non-internal research and development",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Distribute the obtained object code for purposes other than internal research and development",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Sublicense the acquired object code for non-internal research and development",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "name": "Use the acquired executables for non-internal research and development",
+                                "description": "Use the obtained executable as is."
+                            },
+                            {
+                                "name": "Distribute the obtained executables for non-internal research and development.",
+                                "description": "Redistribute the obtained executable as-is"
+                            },
+                            {
+                                "name": "Sublicense the acquired executables for non-internal research and development",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "name": "Using object code generated from modified source code for non-internal research and development"
+                            },
+                            {
+                                "name": "Using executables generated from modified source code for non-internal research and development"
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute object code generated from modified source code for purposes other than internal research and development."
+                            },
+                            {
+                                "name": "Sublicense object code generated from modified source code for non-internal research and development",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            },
+                            {
+                                "name": "Distribute executables generated from modified source code for non-internal research and development."
+                            },
+                            {
+                                "name": "Sublicense executables generated from modified source code for non-internal research and development.",
+                                "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.",
+                                    "type": "RESTRICTION"
+                                },
+                                {
+                                    "name": "Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer.",
+                                    "type": "OBLIGATION",
+                                    "description": "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website."
+                                },
+                                {
+                                    "name": "Letting you know how to get your modifications.",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "âInformation on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html â Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee."
+                            }
+                        ],
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "I'm responsible for my own.",
+                                    "type": "OBLIGATION",
+                                    "description": "If problems arise, including problems associated with distribution, we will deal with them ourselves."
+                                },
+                                {
+                                    "name": "Obtain the recipient's agreement to impose its own additional terms",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use trademarks and trade names to endorse and promote derived products"
+                            }
+                        ],
+                        "conditions": {
+                            "name": "Strictly adhere to the guidelines provided by the copyright holder and use only in the manner permitted by the guidelines",
+                            "type": "RESTRICTION"
+                        },
+                        "description": "You may use \"Apple\", \"Apple Computer\", \"Mac OS X\", \"Mac OS X Server\", or any other trademark or product name that belongs to Apple. The URL for the guidelines provided by Apple can be found here: http://www.apple.com/legal/guidelinesfor3rdparties.html"
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "APPLE PUBLIC SOURCE LICENSE, Version 1.1"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "https://opensource.apple.com/source/IOSerialFamily/IOSerialFamily-7/APPLE_LICENSE",
+                                "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. Source Code means the source code of all modules contained in the Software, all associated interface definition files, and scripts used to control the compilation and installation of executables (object code). Himself means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "APPLE PUBLIC SOURCE LICENSE\r\nVersion 1.1 - April 19,1999\r\n\r\nPlease read this License carefully before downloading this software.\r\nBy downloading and using this software, you are agreeing to be bound\r\nby the terms of this License.  If you do not or cannot agree to the\r\nterms of this License, please do not download or use the software.\r\n\r\n1. General; Definitions.  This License applies to any program or other\r\nwork which Apple Computer, Inc. (\"Apple\") publicly announces as\r\nsubject to this Apple Public Source License and which contains a\r\nnotice placed by Apple identifying such program or work as \"Original\r\nCode\" and stating that it is subject to the terms of this Apple Public\r\nSource License version 1.1 (or subsequent version thereof), as it may\r\nbe revised from time to time by Apple (\"License\").  As used in this\r\nLicense:\r\n\r\n1.1 \"Affected Original Code\" means only those specific portions of\r\nOriginal Code that allegedly infringe upon any party's intellectual\r\nproperty rights or are otherwise the subject of a claim of\r\ninfringement.\r\n\r\n1.2 \"Applicable Patent Rights\" mean: (a) in the case where Apple is\r\nthe grantor of rights, (i) claims of patents that are now or hereafter\r\nacquired, owned by or assigned to Apple and (ii) that cover subject\r\nmatter contained in the Original Code, but only to the extent\r\nnecessary to use, reproduce and/or distribute the Original Code\r\nwithout infringement; and (b) in the case where You are the grantor of\r\nrights, (i) claims of patents that are now or hereafter acquired,\r\nowned by or assigned to You and (ii) that cover subject matter in Your\r\nModifications, taken alone or in combination with Original Code.\r\n\r\n1.3 \"Covered Code\" means the Original Code, Modifications, the\r\ncombination of Original Code and any Modifications, and/or any\r\nrespective portions thereof.\r\n\r\n1.4 \"Deploy\" means to use, sublicense or distribute Covered Code other\r\nthan for Your internal research and development (R&D), and includes\r\nwithout limitation, any and all internal use or distribution of\r\nCovered Code within Your business or organization except for R&D use,\r\nas well as direct or indirect sublicensing or distribution of Covered\r\nCode by You to any third party in any form or manner.\r\n\r\n1.5 \"Larger Work\" means a work which combines Covered Code or portions\r\nthereof with code not governed by the terms of this License.\r\n\r\n1.6 \"Modifications\" mean any addition to, deletion from, and/or change\r\nto, the substance and/or structure of Covered Code.  When code is\r\nreleased as a series of files, a Modification is: (a) any addition to\r\nor deletion from the contents of a file containing Covered Code;\r\nand/or (b) any new file or other representation of computer program\r\nstatements that contains any part of Covered Code.\r\n\r\n1.7 \"Original Code\" means (a) the Source Code of a program or other\r\nwork as originally made available by Apple under this License,\r\nincluding the Source Code of any updates or upgrades to such programs\r\nor works made available by Apple under this License, and that has been\r\nexpressly identified by Apple as such in the header file(s) of such\r\nwork; and (b) the object code compiled from such Source Code and\r\noriginally made available by Apple under this License.\r\n\r\n1.8 \"Source Code\" means the human readable form of a program or other\r\nwork that is suitable for making modifications to it, including all\r\nmodules it contains, plus any associated interface definition files,\r\nscripts used to control compilation and installation of an executable\r\n(object code).\r\n\r\n1.9 \"You\" or \"Your\" means an individual or a legal entity exercising\r\nrights under this License.  For legal entities, \"You\" or \"Your\"\r\nincludes any entity which controls, is controlled by, or is under\r\ncommon control with, You, where \"control\" means (a) the power, direct\r\nor indirect, to cause the direction or management of such entity,\r\nwhether by contract or otherwise, or (b) ownership of fifty percent\r\n(50%) or more of the outstanding shares or beneficial ownership of\r\nsuch entity.\r\n\r\n2. Permitted Uses; Conditions & Restrictions.  Subject to the terms\r\nand conditions of this License, Apple hereby grants You, effective on\r\nthe date You accept this License and download the Original Code, a\r\nworld-wide, royalty-free, non- exclusive license, to the extent of\r\nApple's Applicable Patent Rights and copyrights covering the Original\r\nCode, to do the following:\r\n\r\n2.1 You may use, copy, modify and distribute Original Code, with or\r\nwithout Modifications, solely for Your internal research and\r\ndevelopment, provided that You must in each instance:\r\n\r\n(a) retain and reproduce in all copies of Original Code the copyright\r\nand other proprietary notices and disclaimers of Apple as they appear\r\nin the Original Code, and keep intact all notices in the Original Code\r\nthat refer to this License;\r\n\r\n(b) include a copy of this License with every copy of Source Code of\r\nCovered Code and documentation You distribute, and You may not offer\r\nor impose any terms on such Source Code that alter or restrict this\r\nLicense or the recipients' rights hereunder, except as permitted under\r\nSection 6; and\r\n\r\n(c) completely and accurately document all Modifications that you have\r\nmade and the date of each such Modification, designate the version of\r\nthe Original Code you used, prominently include a file carrying such\r\ninformation with the Modifications, and duplicate the notice in\r\nExhibit A in each file of the Source Code of all such Modifications.\r\n\r\n2.2 You may Deploy Covered Code, provided that You must in each\r\n  instance:\r\n\r\n(a) satisfy all the conditions of Section 2.1 with respect to the\r\nSource Code of the Covered Code;\r\n\r\n(b) make all Your Deployed Modifications publicly available in Source\r\nCode form via electronic distribution (e.g. download from a web site)\r\nunder the terms of this License and subject to the license grants set\r\nforth in Section 3 below, and any additional terms You may choose to\r\noffer under Section 6.  You must continue to make the Source Code of\r\nYour Deployed Modifications available for as long as you Deploy the\r\nCovered Code or twelve (12) months from the date of initial\r\nDeployment, whichever is longer;\r\n\r\n(c) if You Deploy Covered Code containing Modifications made by You,\r\ninform others of how to obtain those Modifications by filling out and\r\nsubmitting the information found at\r\nhttp://www.apple.com/publicsource/modifications.html, if available;\r\nand\r\n\r\n(d) if You Deploy Covered Code in object code, executable form only,\r\ninclude a prominent notice, in the code itself as well as in related\r\ndocumentation, stating that Source Code of the Covered Code is\r\navailable under the terms of this License with information on how and\r\nwhere to obtain such Source Code.\r\n\r\n3. Your Grants.  In consideration of, and as a condition to, the\r\nlicenses granted to You under this License:\r\n\r\n(a) You hereby grant to Apple and all third parties a non-exclusive,\r\nroyalty-free license, under Your Applicable Patent Rights and other\r\nintellectual property rights owned or controlled by You, to use,\r\nreproduce, modify, distribute and Deploy Your Modifications of the\r\nsame scope and extent as Apple's licenses under Sections 2.1 and 2.2;\r\nand\r\n\r\n(b) You hereby grant to Apple and its subsidiaries a non-exclusive,\r\nworldwide, royalty-free, perpetual and irrevocable license, under Your\r\nApplicable Patent Rights and other intellectual property rights owned\r\nor controlled by You, to use, reproduce, execute, compile, display,\r\nperform, modify or have modified (for Apple and/or its subsidiaries),\r\nsublicense and distribute Your Modifications, in any form, through\r\nmultiple tiers of distribution.\r\n\r\n4. Larger Works.  You may create a Larger Work by combining Covered\r\nCode with other code not governed by the terms of this License and\r\ndistribute the Larger Work as a single product.  In each such\r\ninstance, You must make sure the requirements of this License are\r\nfulfilled for the Covered Code or any portion thereof.\r\n\r\n5. Limitations on Patent License.  Except as expressly stated in\r\nSection 2, no other patent rights, express or implied, are granted by\r\nApple herein.  Modifications and/or Larger Works may require\r\nadditional patent licenses from Apple which Apple may grant in its\r\nsole discretion.\r\n\r\n6. Additional Terms.  You may choose to offer, and to charge a fee\r\nfor, warranty, support, indemnity or liability obligations and/or\r\nother rights consistent with the scope of the license granted herein\r\n(\"Additional Terms\") to one or more recipients of Covered\r\nCode. However, You may do so only on Your own behalf and as Your sole\r\nresponsibility, and not on behalf of Apple. You must obtain the\r\nrecipient's agreement that any such Additional Terms are offered by\r\nYou alone, and You hereby agree to indemnify, defend and hold Apple\r\nharmless for any liability incurred by or claims asserted against\r\nApple by reason of any such Additional Terms.\r\n\r\n7. Versions of the License.  Apple may publish revised and/or new\r\nversions of this License from time to time.  Each version will be\r\ngiven a distinguishing version number.  Once Original Code has been\r\npublished under a particular version of this License, You may continue\r\nto use it under the terms of that version. You may also choose to use\r\nsuch Original Code under the terms of any subsequent version of this\r\nLicense published by Apple.  No one other than Apple has the right to\r\nmodify the terms applicable to Covered Code created under this\r\nLicense.\r\n\r\n8. NO WARRANTY OR SUPPORT.  The Original Code may contain in whole or\r\nin part pre-release, untested, or not fully tested works.  The\r\nOriginal Code may contain errors that could cause failures or loss of\r\ndata, and may be incomplete or contain inaccuracies.  You expressly\r\nacknowledge and agree that use of the Original Code, or any portion\r\nthereof, is at Your sole and entire risk.  THE ORIGINAL CODE IS\r\nPROVIDED \"AS IS\" AND WITHOUT WARRANTY, UPGRADES OR SUPPORT OF ANY KIND\r\nAND APPLE AND APPLE'S LICENSOR(S) (FOR THE PURPOSES OF SECTIONS 8 AND\r\n9, APPLE AND APPLE'S LICENSOR(S) ARE COLLECTIVELY REFERRED TO AS\r\n\"APPLE\") EXPRESSLY DISCLAIM ALL WARRANTIES AND/OR CONDITIONS, EXPRESS\r\nOR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES\r\nAND/OR CONDITIONS OF MERCHANTABILITY OR SATISFACTORY QUALITY AND\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY\r\nRIGHTS.  APPLE DOES NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE\r\nORIGINAL CODE WILL MEET YOUR REQUIREMENTS, OR THAT THE OPERATION OF\r\nTHE ORIGINAL CODE WILL BE UNINTERRUPTED OR ERROR- FREE, OR THAT\r\nDEFECTS IN THE ORIGINAL CODE WILL BE CORRECTED.  NO ORAL OR WRITTEN\r\nINFORMATION OR ADVICE GIVEN BY APPLE OR AN APPLE AUTHORIZED\r\nREPRESENTATIVE SHALL CREATE A WARRANTY OR IN ANY WAY INCREASE THE\r\nSCOPE OF THIS WARRANTY.  You acknowledge that the Original Code is not\r\nintended for use in the operation of nuclear facilities, aircraft\r\nnavigation, communication systems, or air traffic control machines in\r\nwhich case the failure of the Original Code could lead to death,\r\npersonal injury, or severe physical or environmental damage.\r\n\r\n9. Liability.\r\n\r\n9.1 Infringement.  If any portion of, or functionality implemented by,\r\nthe Original Code becomes the subject of a claim of infringement,\r\nApple may, at its option: (a) attempt to procure the rights necessary\r\nfor Apple and You to continue using the Affected Original Code; (b)\r\nmodify the Affected Original Code so that it is no longer infringing;\r\nor (c) suspend Your rights to use, reproduce, modify, sublicense and\r\ndistribute the Affected Original Code until a final determination of\r\nthe claim is made by a court or governmental administrative agency of\r\ncompetent jurisdiction and Apple lifts the suspension as set forth\r\nbelow.  Such suspension of rights will be effective immediately upon\r\nApple's posting of a notice to such effect on the Apple web site that\r\nis used for implementation of this License.  Upon such final\r\ndetermination being made, if Apple is legally able, without the\r\npayment of a fee or royalty, to resume use, reproduction,\r\nmodification, sublicensing and distribution of the Affected Original\r\nCode, Apple will lift the suspension of rights to the Affected\r\nOriginal Code by posting a notice to such effect on the Apple web site\r\nthat is used for implementation of this License.  If Apple suspends\r\nYour rights to Affected Original Code, nothing in this License shall\r\nbe construed to restrict You, at Your option and subject to applicable\r\nlaw, from replacing the Affected Original Code with non-infringing\r\ncode or independently negotiating for necessary rights from such third\r\nparty.\r\n\r\n9.2 LIMITATION OF LIABILITY.  UNDER NO CIRCUMSTANCES SHALL APPLE BE\r\nLIABLE FOR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES\r\nARISING OUT OF OR RELATING TO THIS LICENSE OR YOUR USE OR INABILITY TO\r\nUSE THE ORIGINAL CODE, OR ANY PORTION THEREOF, WHETHER UNDER A THEORY\r\nOF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCTS LIABILITY\r\nOR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF\r\nSUCH DAMAGES AND NOTWITHSTANDING THE FAILURE OF ESSENTIAL PURPOSE OF\r\nANY REMEDY.  In no event shall Apple's total liability to You for all\r\ndamages under this License exceed the amount of fifty dollars\r\n($50.00).\r\n\r\n10. Trademarks.  This License does not grant any rights to use the\r\ntrademarks or trade names \"Apple\", \"Apple Computer\", \"Mac OS X\", \"Mac\r\nOS X Server\" or any other trademarks or trade names belonging to Apple\r\n(collectively \"Apple Marks\") and no Apple Marks may be used to endorse\r\nor promote products derived from the Original Code other than as\r\npermitted by and in strict compliance at all times with Apple's third\r\nparty trademark usage guidelines which are posted at\r\nhttp://www.apple.com/legal/guidelinesfor3rdparties.html.\r\n\r\n11. Ownership.  Apple retains all rights, title and interest in and to\r\nthe Original Code and any Modifications made by or on behalf of Apple\r\n(\"Apple Modifications\"), and such Apple Modifications will not be\r\nautomatically subject to this License.  Apple may, at its sole\r\ndiscretion, choose to license such Apple Modifications under this\r\nLicense, or on different terms from those contained in this License or\r\nmay choose not to license them at all.  Apple's development, use,\r\nreproduction, modification, sublicensing and distribution of Covered\r\nCode will not be subject to this License.\r\n\r\n12. Termination.\r\n\r\n12.1 Termination.  This License and the rights granted hereunder will\r\n   terminate:\r\n\r\n(a) automatically without notice from Apple if You fail to comply with\r\nany term(s) of this License and fail to cure such breach within 30\r\ndays of becoming aware of such breach; (b) immediately in the event of\r\nthe circumstances described in Section 13.5(b); or (c) automatically\r\nwithout notice from Apple if You, at any time during the term of this\r\nLicense, commence an action for patent infringement against Apple.\r\n\r\n12.2 Effect of Termination.  Upon termination, You agree to\r\nimmediately stop any further use, reproduction, modification,\r\nsublicensing and distribution of the Covered Code and to destroy all\r\ncopies of the Covered Code that are in your possession or control.\r\nAll sublicenses to the Covered Code which have been properly granted\r\nprior to termination shall survive any termination of this License.\r\nProvisions which, by their nature, should remain in effect beyond the\r\ntermination of this License shall survive, including but not limited\r\nto Sections 3, 5, 8, 9, 10, 11, 12.2 and 13.  Neither party will be\r\nliable to the other for compensation, indemnity or damages of any sort\r\nsolely as a result of terminating this License in accordance with its\r\nterms, and termination of this License will be without prejudice to\r\nany other right or remedy of either party.\r\n\r\n13.  Miscellaneous.\r\n\r\n13.1 Government End Users.  The Covered Code is a \"commercial item\" as\r\ndefined in FAR 2.101.  Government software and technical data rights\r\nin the Covered Code include only those rights customarily provided to\r\nthe public as defined in this License. This customary commercial\r\nlicense in technical data and software is provided in accordance with\r\nFAR 12.211 (Technical Data) and 12.212 (Computer Software) and, for\r\nDepartment of Defense purchases, DFAR 252.227-7015 (Technical Data --\r\nCommercial Items) and 227.7202-3 (Rights in Commercial Computer\r\nSoftware or Computer Software Documentation).  Accordingly, all U.S.\r\nGovernment End Users acquire Covered Code with only those rights set\r\nforth herein.\r\n\r\n13.2 Relationship of Parties.  This License will not be construed as\r\ncreating an agency, partnership, joint venture or any other form of\r\nlegal association between You and Apple, and You will not represent to\r\nthe contrary, whether expressly, by implication, appearance or\r\notherwise.\r\n\r\n13.3 Independent Development.  Nothing in this License will impair\r\nApple's right to acquire, license, develop, have others develop for\r\nit, market and/or distribute technology or products that perform the\r\nsame or similar functions as, or otherwise compete with,\r\nModifications, Larger Works, technology or products that You may\r\ndevelop, produce, market or distribute.\r\n\r\n13.4 Waiver; Construction.  Failure by Apple to enforce any provision\r\nof this License will not be deemed a waiver of future enforcement of\r\nthat or any other provision.  Any law or regulation which provides\r\nthat the language of a contract shall be construed against the drafter\r\nwill not apply to this License.\r\n\r\n13.5 Severability.  (a) If for any reason a court of competent\r\njurisdiction finds any provision of this License, or portion thereof,\r\nto be unenforceable, that provision of the License will be enforced to\r\nthe maximum extent permissible so as to effect the economic benefits\r\nand intent of the parties, and the remainder of this License will\r\ncontinue in full force and effect.  (b) Notwithstanding the foregoing,\r\nif applicable law prohibits or restricts You from fully and/or\r\nspecifically complying with Sections 2 and/or 3 or prevents the\r\nenforceability of either of those Sections, this License will\r\nimmediately terminate and You must immediately discontinue any use of\r\nthe Covered Code and destroy all copies of it that are in your\r\npossession or control.\r\n\r\n13.6 Dispute Resolution.  Any litigation or other dispute resolution\r\nbetween You and Apple relating to this License shall take place in the\r\nNorthern District of California, and You and Apple hereby consent to\r\nthe personal jurisdiction of, and venue in, the state and federal\r\ncourts within that District with respect to this License. The\r\napplication of the United Nations Convention on Contracts for the\r\nInternational Sale of Goods is expressly excluded.\r\n\r\n13.7 Entire Agreement; Governing Law.  This License constitutes the\r\nentire agreement between the parties with respect to the subject\r\nmatter hereof.  This License shall be governed by the laws of the\r\nUnited States and the State of California, except that body of\r\nCalifornia law concerning conflicts of law.\r\n\r\nWhere You are located in the province of Quebec, Canada, the following\r\nclause applies: The parties hereby confirm that they have requested\r\nthat this License and all related documents be drafted in English. Les\r\nparties ont exige que le present contrat et tous les documents\r\nconnexes soient rediges en anglais.\r\n\r\nEXHIBIT A.\r\n\r\n\"Portions Copyright (c) 1999 Apple Computer, Inc.  All Rights\r\nReserved.  This file contains Original Code and/or Modifications of\r\nOriginal Code as defined in and that are subject to the Apple Public\r\nSource License Version 1.1 (the \"License\").  You may not use this file\r\nexcept in compliance with the License.  Please obtain a copy of the\r\nLicense at http://www.apple.com/publicsource and read it before using\r\nthis file.\r\n\r\nThe Original Code and all software distributed under the License are\r\ndistributed on an \"AS IS\" basis, WITHOUT WARRANTY OF ANY KIND, EITHER\r\nEXPRESS OR IMPLIED, AND APPLE HEREBY DISCLAIMS ALL SUCH WARRANTIES,\r\nINCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE OR NON- INFRINGEMENT.  Please see the\r\nLicense for the specific language governing rights and limitations\r\nunder the License.\"",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/1101"
+                        ]
+                    ]
+                },
+                "description": "Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. Source Code means the source code of all modules contained in the Software, all associated interface definition files, and scripts used to control the compilation and installation of executables (object code). Himself means the person or entity exercising its rights under such license in accordance with all of the terms of such license. In the case of a Legal Entity, \"self\" includes any person who controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, \"control\" means any of the following (1) has the authority to direct and manage the corporation, directly or indirectly, by contract or otherwise, to direct and manage the corporation; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation"
+            },
             "BlueOak License List": {
                 "url": "https://spdx.org/licenses/APSL-1.1.html",
                 "familyName": "Apple Public Source License",
@@ -748,6 +1384,10 @@ Raw Data
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.1"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/1101"
             ]
         ]
     }

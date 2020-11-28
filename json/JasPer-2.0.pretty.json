@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "JasPer-2.0",
+        "JasPer License Version 2.0",
         "JasPer License",
         "scancode://jasper-2.0",
         "JasPer 2.0"
@@ -9,6 +10,12 @@
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "JasPer"
+    ],
+    "__impliedComments": [
+        [
+            "Hitachi open-license",
+            []
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -122,6 +129,167 @@
                 ]
             }
         },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "JasPer-2.0",
+                    "JasPer License Version 2.0"
+                ],
+                "__impliedId": "JasPer-2.0"
+            },
+            "oName": "JasPer-2.0",
+            "oOtherLicenseIds": [
+                "JasPer License Version 2.0"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "notices": [
+                {
+                    "content": "the software is provided by the copyright holder \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, warranties of merchantability, fitness for a particular purpose, and non-infringement. the software is provided by the copyright holder \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the warranties of commercial applicability, fitness for a particular purpose, and non-infringement.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "In no event shall the copyright holder be liable for any claim, special, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or for any damages resulting from loss of use, loss of data or loss of profits."
+                },
+                {
+                    "content": "Such software is not fault-tolerant. The software or system is not fault-tolerant for missions such as nuclear facilities, aircraft guidance and communications systems, air traffic control systems, life support systems, or weapons systems that are involved in high-risk activities where a failure of the software or system could directly cause death or personal injury, severe property damage, or environmental damage. It is not intended for use in critical systems. The copyright holder makes no warranty, express or implied, as to suitability for high risk activities."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/764",
+            "content": "JasPer License Version 2.0\r\n\r\nCopyright (c) 2001-2006 Michael David Adams\r\nCopyright (c) 1999-2000 Image Power, Inc.\r\nCopyright (c) 1999-2000 The University of British Columbia\r\n\r\nAll rights reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person (the\r\n\"User\") obtaining a copy of this software and associated documentation\r\nfiles (the \"Software\"), to deal in the Software without restriction,\r\nincluding without limitation the rights to use, copy, modify, merge,\r\npublish, distribute, and/or sell copies of the Software, and to permit\r\npersons to whom the Software is furnished to do so, subject to the\r\nfollowing conditions:\r\n\r\n1.  The above copyright notices and this permission notice (which\r\nincludes the disclaimer below) shall be included in all copies or\r\nsubstantial portions of the Software.\r\n\r\n2.  The name of a copyright holder shall not be used to endorse or\r\npromote products derived from the Software without specific prior\r\nwritten permission.\r\n\r\nTHIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS\r\nLICENSE.  NO USE OF THE SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER\r\nTHIS DISCLAIMER.  THE SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS\r\n\"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING\r\nBUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\r\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.  IN NO\r\nEVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL\r\nINDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING\r\nFROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\nNEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\nWITH THE USE OR PERFORMANCE OF THIS SOFTWARE.  NO ASSURANCES ARE\r\nPROVIDED BY THE COPYRIGHT HOLDERS THAT THE SOFTWARE DOES NOT INFRINGE\r\nTHE PATENT OR OTHER INTELLECTUAL PROPERTY RIGHTS OF ANY OTHER ENTITY.\r\nEACH COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY TO THE USER FOR CLAIMS\r\nBROUGHT BY ANY OTHER ENTITY BASED ON INFRINGEMENT OF INTELLECTUAL\r\nPROPERTY RIGHTS OR OTHERWISE.  AS A CONDITION TO EXERCISING THE RIGHTS\r\nGRANTED HEREUNDER, EACH USER HEREBY ASSUMES SOLE RESPONSIBILITY TO SECURE\r\nANY OTHER INTELLECTUAL PROPERTY RIGHTS NEEDED, IF ANY.  THE SOFTWARE\r\nIS NOT FAULT-TOLERANT AND IS NOT INTENDED FOR USE IN MISSION-CRITICAL\r\nSYSTEMS, SUCH AS THOSE USED IN THE OPERATION OF NUCLEAR FACILITIES,\r\nAIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL\r\nSYSTEMS, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH\r\nTHE FAILURE OF THE SOFTWARE OR SYSTEM COULD LEAD DIRECTLY TO DEATH,\r\nPERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (\"HIGH\r\nRISK ACTIVITIES\").  THE COPYRIGHT HOLDERS SPECIFICALLY DISCLAIM ANY\r\nEXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.",
+            "name": "JasPer License Version 2.0",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Modify the obtained source code."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "name": "Use the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                        "type": "REQUISITE",
+                        "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
+                    },
+                    "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Selling Software"
+                        },
+                        {
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        },
+                        {
+                            "name": "Distribute the executable generated from the modified source code"
+                        },
+                        {
+                            "name": "Publish the modified source code."
+                        },
+                        {
+                            "name": "Present the object code generated from the modified source code."
+                        },
+                        {
+                            "name": "Present the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                "type": "REQUISITE",
+                                "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
+                            }
+                        ]
+                    },
+                    "description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Use the copyright holder's name to endorse or promote the derived product"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Get special permission in writing.",
+                                "type": "REQUISITE"
+                            },
+                            {
+                                "name": "If there are intellectual property rights that need to be acquired, we will acquire them ourselves.",
+                                "type": "REQUISITE",
+                                "description": "The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed."
+                            }
+                        ]
+                    },
+                    "description": "The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided."
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "JasPer License Version 2.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        []
+                    ]
+                ],
+                "__impliedText": "JasPer License Version 2.0\r\n\r\nCopyright (c) 2001-2006 Michael David Adams\r\nCopyright (c) 1999-2000 Image Power, Inc.\r\nCopyright (c) 1999-2000 The University of British Columbia\r\n\r\nAll rights reserved.\r\n\r\nPermission is hereby granted, free of charge, to any person (the\r\n\"User\") obtaining a copy of this software and associated documentation\r\nfiles (the \"Software\"), to deal in the Software without restriction,\r\nincluding without limitation the rights to use, copy, modify, merge,\r\npublish, distribute, and/or sell copies of the Software, and to permit\r\npersons to whom the Software is furnished to do so, subject to the\r\nfollowing conditions:\r\n\r\n1.  The above copyright notices and this permission notice (which\r\nincludes the disclaimer below) shall be included in all copies or\r\nsubstantial portions of the Software.\r\n\r\n2.  The name of a copyright holder shall not be used to endorse or\r\npromote products derived from the Software without specific prior\r\nwritten permission.\r\n\r\nTHIS DISCLAIMER OF WARRANTY CONSTITUTES AN ESSENTIAL PART OF THIS\r\nLICENSE.  NO USE OF THE SOFTWARE IS AUTHORIZED HEREUNDER EXCEPT UNDER\r\nTHIS DISCLAIMER.  THE SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS\r\n\"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING\r\nBUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A\r\nPARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS.  IN NO\r\nEVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL\r\nINDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING\r\nFROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\nNEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\nWITH THE USE OR PERFORMANCE OF THIS SOFTWARE.  NO ASSURANCES ARE\r\nPROVIDED BY THE COPYRIGHT HOLDERS THAT THE SOFTWARE DOES NOT INFRINGE\r\nTHE PATENT OR OTHER INTELLECTUAL PROPERTY RIGHTS OF ANY OTHER ENTITY.\r\nEACH COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY TO THE USER FOR CLAIMS\r\nBROUGHT BY ANY OTHER ENTITY BASED ON INFRINGEMENT OF INTELLECTUAL\r\nPROPERTY RIGHTS OR OTHERWISE.  AS A CONDITION TO EXERCISING THE RIGHTS\r\nGRANTED HEREUNDER, EACH USER HEREBY ASSUMES SOLE RESPONSIBILITY TO SECURE\r\nANY OTHER INTELLECTUAL PROPERTY RIGHTS NEEDED, IF ANY.  THE SOFTWARE\r\nIS NOT FAULT-TOLERANT AND IS NOT INTENDED FOR USE IN MISSION-CRITICAL\r\nSYSTEMS, SUCH AS THOSE USED IN THE OPERATION OF NUCLEAR FACILITIES,\r\nAIRCRAFT NAVIGATION OR COMMUNICATION SYSTEMS, AIR TRAFFIC CONTROL\r\nSYSTEMS, DIRECT LIFE SUPPORT MACHINES, OR WEAPONS SYSTEMS, IN WHICH\r\nTHE FAILURE OF THE SOFTWARE OR SYSTEM COULD LEAD DIRECTLY TO DEATH,\r\nPERSONAL INJURY, OR SEVERE PHYSICAL OR ENVIRONMENTAL DAMAGE (\"HIGH\r\nRISK ACTIVITIES\").  THE COPYRIGHT HOLDERS SPECIFICALLY DISCLAIM ANY\r\nEXPRESS OR IMPLIED WARRANTY OF FITNESS FOR HIGH RISK ACTIVITIES.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/764"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/JasPer-2.0.html",
@@ -204,6 +372,10 @@
         [
             "Homepage",
             "http://www.ece.uvic.ca/~frodo/jasper/LICENSE"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/764"
         ]
     ]
 }

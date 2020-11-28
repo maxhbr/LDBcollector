@@ -2,6 +2,7 @@
     "__impliedNames": [
         "Artistic-1.0",
         "Artistic 1.0 (original)",
+        "Artistic License (Perl) 1.0",
         "Artistic License 1.0",
         "scancode://artistic-1.0",
         "Artistic 1.0",
@@ -610,6 +611,10 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/596"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/721"
         ]
     ]
 }

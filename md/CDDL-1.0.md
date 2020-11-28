@@ -5,6 +5,8 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 **Other Names:**
 
+-   `COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California`
+
 -   `scancode://cddl-1.0`
 
 -   `CDDL 1.0`
@@ -93,6 +95,8 @@ URLs
     https://en.wikipedia.org/wiki/Common\_Development\_and\_Distribution\_License
 
 -   **open-license:** http://open-license.hitachi.com/licenses/19
+
+-   **open-license:** http://open-license.hitachi.com/licenses/254
 
 -   https://opensource.org/licenses/cddl1
 
@@ -212,6 +216,8 @@ Raw Data
 
 -   LicenseName
 
+-   Override
+
 -   [SPDX](https://spdx.org/licenses/CDDL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -246,11 +252,16 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "CDDL-1.0",
+            "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California",
             "Common Development and Distribution License 1.0",
             "scancode://cddl-1.0",
             "CDDL 1.0",
@@ -452,6 +463,24 @@ Raw Data
                         "CDDL-1.0"
                     ]
                 }
+            },
+            "Override": {
+                "oNonCommecrial": null,
+                "implications": {
+                    "__impliedNames": [
+                        "CDDL-1.0",
+                        "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"
+                    ],
+                    "__impliedId": "CDDL-1.0"
+                },
+                "oName": "CDDL-1.0",
+                "oOtherLicenseIds": [
+                    "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.0 governed by the laws of the State of California"
+                ],
+                "oDescription": null,
+                "oJudgement": null,
+                "oCompatibilities": null,
+                "oRatingState": null
             },
             "Hitachi open-license": {
                 "notices": [
@@ -1150,6 +1179,10 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/19"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/254"
             ]
         ]
     }

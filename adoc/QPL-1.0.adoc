@@ -12,11 +12,21 @@
 
 *Other Names:*
 
+* `+Q PUBLIC LICENSE version 1.0+`
 * `+scancode://qpl-1.0+`
 * `+QPL 1.0+`
 * `+Q Public License+`
 * `+The Q Public License Version (QPL-1.0)+`
 * `+License :: OSI Approved :: Qt Public License (QPL)+`
+
+=== Description
+
+____
+https://opensource.org/licenses/QPL-1.0
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 
 === Comments on (easy) usability
 
@@ -53,6 +63,9 @@ software (like the weak copyleft licenses, and larger programs that you
 build with the licensed software, when you give copies to others.''
 (source: https://blueoakcouncil.org/copyleft[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0]))
+* ``https://opensource.org/licenses/QPL-1.0'' (source:
+https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 * ``Per SPDX.org, this license is OSI certified.'' (source:
 https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml[Scancode]
 (CC0-1.0))
@@ -62,6 +75,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:* http://doc.trolltech.com/4.0/qpl.html
 * *OSI Page:* https://opensource.org/licenses/QPL-1.0
 * *SPDX:* http://spdx.org/licenses/QPL-1.0.json
+* *open-license:* http://open-license.hitachi.com/licenses/788
 * http://doc.qt.nokia.com/3.3/license.html
 * https://spdx.org/licenses/QPL-1.0.html
 * http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
@@ -126,6 +140,7 @@ This license is governed by the Laws of Norway. Disputes shall be settled by Osl
 ==== Facts
 
 * LicenseName
+* Override
 * https://spdx.org/licenses/QPL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -149,6 +164,8 @@ Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -156,6 +173,7 @@ Knowledge International]
 {
     "__impliedNames": [
         "QPL-1.0",
+        "Q PUBLIC LICENSE version 1.0",
         "Q Public License 1.0",
         "scancode://qpl-1.0",
         "QPL 1.0",
@@ -175,6 +193,12 @@ Knowledge International]
             "BlueOak License List",
             [
                 "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+            ]
+        ],
+        [
+            "Hitachi open-license",
+            [
+                "https://opensource.org/licenses/QPL-1.0"
             ]
         ],
         [
@@ -401,6 +425,185 @@ Knowledge International]
             "Comment": "The QPL is not GPL-compatible, which, regardless of one's opinion about the license's DFSG-freeness, poses a major practical problem for any code licensed under the QPL that is reused elsewhere in conjunction with code under the GNU GPL. This makes the QPL alone a particularly poor choice of license for a library. Furthermore, it is not clear that the Trolltech corporation (the author of the Qt library and the QPL itself) believes the QPL to be a free software license. Trolltech's website describes how their dual-license approach is intended to be \"open source-friendly\" (see http://www.trolltech.com/company/model.html). If Trolltech felt that the QPL alone were friendly enough to open-source, why do they have a dual-licensing policy?",
             "LicenseId": "QPL-1.0"
         },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "QPL-1.0",
+                    "Q PUBLIC LICENSE version 1.0"
+                ],
+                "__impliedId": "QPL-1.0"
+            },
+            "oName": "QPL-1.0",
+            "oOtherLicenseIds": [
+                "Q PUBLIC LICENSE version 1.0"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "summary": "https://opensource.org/licenses/QPL-1.0",
+            "notices": [
+                {
+                    "content": "Neither the initial developer nor the copyright holder, even if advised of the possibility of such damages, shall be liable for any damages, including, but not limited to, loss of income, loss of profits, or any other direct, indirect, special, incidental, or consequential damages, except to the extent it would otherwise be provided in the event of an unchanging law The Company shall not be liable for any of the following"
+                },
+                {
+                    "content": "such software and this license are provided \"as-is\" and without any warranties of any kind, including warranties of design, commercial applicability or fitness for a particular purpose.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "This license is subject to the provisions of Norwegian law. The dispute shall be resolved by the Oslo City Court."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/788",
+            "content": "\t\t\t     THE Q PUBLIC LICENSE\r\n\t\t\t\t  version 1.0\r\n\r\n\t\t   Copyright (C) 1999-2000 Trolltech AS, Norway.\r\n\t\t       Everyone is permitted to copy and\r\n\t\t       distribute this license document.\r\n\r\nThe intent of this license is to establish freedom to share and change the\r\nsoftware regulated by this license under the open source model.\r\n\r\nThis license applies to any software containing a notice placed by the\r\ncopyright holder saying that it may be distributed under the terms of\r\nthe Q Public License version 1.0.  Such software is herein referred to as\r\nthe Software.  This license covers modification and distribution of the\r\nSoftware, use of third-party application programs based on the Software,\r\nand development of free software which uses the Software.\r\n\r\n\t\t\t\t Granted Rights\r\n\r\n1. You are granted the non-exclusive rights set forth in this license\r\n   provided you agree to and comply with any and all conditions in this\r\n   license.  Whole or partial distribution of the Software, or software\r\n   items that link with the Software, in any form signifies acceptance of\r\n   this license.\r\n\r\n2. You may copy and distribute the Software in unmodified form provided\r\n   that the entire package, including - but not restricted to - copyright,\r\n   trademark notices and disclaimers, as released by the initial developer\r\n   of the Software, is distributed.\r\n\r\n3. You may make modifications to the Software and distribute your\r\n   modifications, in a form that is separate from the Software, such as\r\n   patches. The following restrictions apply to modifications:\r\n\r\n     a. Modifications must not alter or remove any copyright notices in\r\n        the Software.\r\n\r\n     b. When modifications to the Software are released under this\r\n        license, a non-exclusive royalty-free right is granted to the\r\n        initial developer of the Software to distribute your modification\r\n        in future versions of the Software provided such versions remain\r\n        available under these terms in addition to any other license(s) of\r\n        the initial developer.\r\n\r\n4. You may distribute machine-executable forms of the Software or\r\n   machine-executable forms of modified versions of the Software, provided\r\n   that you meet these restrictions:\r\n\r\n     a. You must include this license document in the distribution.\r\n\r\n     b. You must ensure that all recipients of the machine-executable forms\r\n        are also able to receive the complete machine-readable source code\r\n        to the distributed Software, including all modifications, without\r\n        any charge beyond the costs of data transfer, and place prominent\r\n        notices in the distribution explaining this.\r\n\r\n     c. You must ensure that all modifications included in the\r\n        machine-executable forms are available under the terms of this\r\n        license.\r\n\r\n5. You may use the original or modified versions of the Software to\r\n   compile, link and run application programs legally developed by you\r\n   or by others.\r\n\r\n6. You may develop application programs, reusable components and other\r\n   software items that link with the original or modified versions of the\r\n   Software.  These items, when distributed, are subject to the following\r\n   requirements:\r\n\r\n     a. You must ensure that all recipients of machine-executable forms of\r\n        these items are also able to receive and use the complete\r\n        machine-readable source code to the items without any charge\r\n        beyond the costs of data transfer.\r\n\r\n     b. You must explicitly license all recipients of your items to use\r\n        and re-distribute original and modified versions of the items in\r\n        both machine-executable and source code forms. The recipients must\r\n        be able to do so without any charges whatsoever, and they must be\r\n        able to re-distribute to anyone they choose.\r\n\r\n\r\n     c. If the items are not available to the general public, and the\r\n        initial developer of the Software requests a copy of the items,\r\n        then you must supply one.\r\n\r\n\t\t\t    Limitations of Liability\r\n\r\nIn no event shall the initial developers or copyright holders be liable\r\nfor any damages whatsoever, including - but not restricted to - lost\r\nrevenue or profits or other direct, indirect, special, incidental or\r\nconsequential damages, even if they have been advised of the possibility\r\nof such damages, except to the extent invariable law, if any, provides\r\notherwise.\r\n\r\n\t\t\t          No Warranty\r\n\r\nThe Software and this license document are provided AS IS with NO WARRANTY\r\nOF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS\r\nFOR A PARTICULAR PURPOSE.\r\n                                 Choice of Law\r\n\r\nThis license is governed by the Laws of Norway. Disputes shall be settled\r\nby Oslo City Court.",
+            "name": "Q PUBLIC LICENSE version 1.0",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Modify the obtained source code."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "name": "Use the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "The software may be used to compile, link, and execute legitimately developed application programs."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        }
+                    ],
+                    "conditions": {
+                        "name": "Include copyright and trademark notices and disclaimers contained in the software",
+                        "type": "OBLIGATION"
+                    }
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Create and distribute your modifications in a form separate from the original software",
+                            "description": "Create a patch file or other format"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include the copyright notice contained in the software",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Enables the recipient to receive the source code corresponding to the software.",
+                                "type": "OBLIGATION",
+                                "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                            }
+                        ]
+                    }
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Enables the recipient to receive the source code corresponding to the software.",
+                                "type": "OBLIGATION",
+                                "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                            },
+                            {
+                                "name": "Apply this license to the entire modification",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Enables the recipient to receive and use the source code corresponding to the item in question.",
+                                "type": "OBLIGATION",
+                                "description": "No fee shall be charged in excess of the cost of transferring the data."
+                            },
+                            {
+                                "name": "expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Supply copies of items not available to the general public to early developers of the software upon request from them.",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    }
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "Q PUBLIC LICENSE version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "https://opensource.org/licenses/QPL-1.0"
+                        ]
+                    ]
+                ],
+                "__impliedText": "\t\t\t     THE Q PUBLIC LICENSE\r\n\t\t\t\t  version 1.0\r\n\r\n\t\t   Copyright (C) 1999-2000 Trolltech AS, Norway.\r\n\t\t       Everyone is permitted to copy and\r\n\t\t       distribute this license document.\r\n\r\nThe intent of this license is to establish freedom to share and change the\r\nsoftware regulated by this license under the open source model.\r\n\r\nThis license applies to any software containing a notice placed by the\r\ncopyright holder saying that it may be distributed under the terms of\r\nthe Q Public License version 1.0.  Such software is herein referred to as\r\nthe Software.  This license covers modification and distribution of the\r\nSoftware, use of third-party application programs based on the Software,\r\nand development of free software which uses the Software.\r\n\r\n\t\t\t\t Granted Rights\r\n\r\n1. You are granted the non-exclusive rights set forth in this license\r\n   provided you agree to and comply with any and all conditions in this\r\n   license.  Whole or partial distribution of the Software, or software\r\n   items that link with the Software, in any form signifies acceptance of\r\n   this license.\r\n\r\n2. You may copy and distribute the Software in unmodified form provided\r\n   that the entire package, including - but not restricted to - copyright,\r\n   trademark notices and disclaimers, as released by the initial developer\r\n   of the Software, is distributed.\r\n\r\n3. You may make modifications to the Software and distribute your\r\n   modifications, in a form that is separate from the Software, such as\r\n   patches. The following restrictions apply to modifications:\r\n\r\n     a. Modifications must not alter or remove any copyright notices in\r\n        the Software.\r\n\r\n     b. When modifications to the Software are released under this\r\n        license, a non-exclusive royalty-free right is granted to the\r\n        initial developer of the Software to distribute your modification\r\n        in future versions of the Software provided such versions remain\r\n        available under these terms in addition to any other license(s) of\r\n        the initial developer.\r\n\r\n4. You may distribute machine-executable forms of the Software or\r\n   machine-executable forms of modified versions of the Software, provided\r\n   that you meet these restrictions:\r\n\r\n     a. You must include this license document in the distribution.\r\n\r\n     b. You must ensure that all recipients of the machine-executable forms\r\n        are also able to receive the complete machine-readable source code\r\n        to the distributed Software, including all modifications, without\r\n        any charge beyond the costs of data transfer, and place prominent\r\n        notices in the distribution explaining this.\r\n\r\n     c. You must ensure that all modifications included in the\r\n        machine-executable forms are available under the terms of this\r\n        license.\r\n\r\n5. You may use the original or modified versions of the Software to\r\n   compile, link and run application programs legally developed by you\r\n   or by others.\r\n\r\n6. You may develop application programs, reusable components and other\r\n   software items that link with the original or modified versions of the\r\n   Software.  These items, when distributed, are subject to the following\r\n   requirements:\r\n\r\n     a. You must ensure that all recipients of machine-executable forms of\r\n        these items are also able to receive and use the complete\r\n        machine-readable source code to the items without any charge\r\n        beyond the costs of data transfer.\r\n\r\n     b. You must explicitly license all recipients of your items to use\r\n        and re-distribute original and modified versions of the items in\r\n        both machine-executable and source code forms. The recipients must\r\n        be able to do so without any charges whatsoever, and they must be\r\n        able to re-distribute to anyone they choose.\r\n\r\n\r\n     c. If the items are not available to the general public, and the\r\n        initial developer of the Software requests a copy of the items,\r\n        then you must supply one.\r\n\r\n\t\t\t    Limitations of Liability\r\n\r\nIn no event shall the initial developers or copyright holders be liable\r\nfor any damages whatsoever, including - but not restricted to - lost\r\nrevenue or profits or other direct, indirect, special, incidental or\r\nconsequential damages, even if they have been advised of the possibility\r\nof such damages, except to the extent invariable law, if any, provides\r\notherwise.\r\n\r\n\t\t\t          No Warranty\r\n\r\nThe Software and this license document are provided AS IS with NO WARRANTY\r\nOF ANY KIND, INCLUDING THE WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS\r\nFOR A PARTICULAR PURPOSE.\r\n                                 Choice of Law\r\n\r\nThis license is governed by the Laws of Norway. Disputes shall be settled\r\nby Oslo City Court.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/788"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/QPL-1.0.html",
             "familyName": "Q Public License",
@@ -610,6 +813,10 @@ Knowledge International]
         [
             "OSI Page",
             "https://opensource.org/licenses/QPL-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/788"
         ]
     ]
 }

@@ -11,7 +11,18 @@
 
 *Other Names:*
 
+* `+NetCDF Copyright+`
+* `+NetCDF Copyright(version 2009)+`
 * `+scancode://netcdf+`
+
+=== Description
+
+____
+http://www.unidata.ucar.edu/software/netcdf/copyright.html
+____
+
+(source: https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 
 === Comments on (easy) usability
 
@@ -30,6 +41,8 @@ Project Wiki]
 * *Homepage:* http://www.unidata.ucar.edu/software/netcdf/copyright.html
 * *SPDX:* http://spdx.org/licenses/NetCDF.json
 * *SPDX:* https://spdx.org/licenses/NetCDF.html
+* *open-license:* http://open-license.hitachi.com/licenses/912
+* *open-license:* http://open-license.hitachi.com/licenses/921
 
 === Text
 
@@ -70,6 +83,8 @@ IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
 ==== Facts
 
 * LicenseName
+* Override
+* Override
 * https://spdx.org/licenses/NetCDF.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -79,6 +94,10 @@ repository] is generated)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
+* https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0)
 
 ==== Raw JSON
 
@@ -86,6 +105,8 @@ Project Wiki]
 {
     "__impliedNames": [
         "NetCDF",
+        "NetCDF Copyright",
+        "NetCDF Copyright(version 2009)",
         "NetCDF license",
         "scancode://netcdf",
         "NetCDF License"
@@ -94,6 +115,12 @@ Project Wiki]
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "NetCDF"
+    ],
+    "__impliedComments": [
+        [
+            "Hitachi open-license",
+            []
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -201,6 +228,134 @@ Project Wiki]
                 ]
             }
         },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "NetCDF",
+                    "NetCDF Copyright"
+                ],
+                "__impliedId": "NetCDF"
+            },
+            "oName": "NetCDF",
+            "oOtherLicenseIds": [
+                "NetCDF Copyright"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "notices": [
+                {
+                    "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "In no event shall the copyright holder be liable for any special, indirect or consequential damages, whether in contract, negligence or other tort action, arising out of the use or performance of such software, or any damages resulting from loss of use, loss of data or loss of profits."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/912",
+            "content": "    Copyright 1998-2009 University Corporation for Atmospheric Research/Unidata\r\n\r\n    Portions of this software were developed by the Unidata Program at the\r\n    University Corporation for Atmospheric Research.\r\n\r\n    Access and use of this software shall impose the following obligations\r\n    and understandings on the user. The user is granted the right, without\r\n    any fee or cost, to use, copy, modify, alter, enhance and distribute\r\n    this software, and any derivative works thereof, and its supporting\r\n    documentation for any purpose whatsoever, provided that this entire\r\n    notice appears in all copies of the software, derivative works and\r\n    supporting documentation.  Further, UCAR requests that the user credit\r\n    UCAR/Unidata in any publications that result from the use of this\r\n    software or in any product that includes this software. The names UCAR\r\n    and/or Unidata, however, may not be used in any advertising or publicity\r\n    to endorse or promote any products or commercial entity unless specific\r\n    written permission is obtained from UCAR/Unidata. The user also\r\n    understands that UCAR/Unidata is not obligated to provide the user with\r\n    any support, consulting, training or assistance of any kind with regard\r\n    to the use, operation and performance of this software nor to provide\r\n    the user with any updates, revisions, new versions or \"bug fixes.\"\r\n\r\n    THIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR\r\n    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\r\n    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\r\n    DISCLAIMED. IN NO EVENT SHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL,\r\n    INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING\r\n    FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\n    NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\n    WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
+            "name": "NetCDF Copyright(version 2009)",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Modify the obtained source code."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved object code",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Use the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Use the retrieved executable",
+                            "description": "Use the obtained executable as is."
+                        },
+                        {
+                            "name": "Use the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "Documentation accompanying the software should be treated in the same way as the software."
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the obtained object code",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "name": "Distribute the object code generated from the modified source code"
+                        },
+                        {
+                            "name": "Distribute the obtained executable",
+                            "description": "Redistribute the obtained executable as-is"
+                        },
+                        {
+                            "name": "Distribute the executable generated from the modified source code"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include credit to the copyright holder.",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software."
+                },
+                {
+                    "actions": [],
+                    "conditions": {
+                        "name": "Get special permission in writing.",
+                        "type": "REQUISITE"
+                    },
+                    "description": "To use the name UCAR or Unidata; obtain permission from UCAR/Unidata."
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "NetCDF Copyright(version 2009)"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        []
+                    ]
+                ],
+                "__impliedText": "    Copyright 1998-2009 University Corporation for Atmospheric Research/Unidata\r\n\r\n    Portions of this software were developed by the Unidata Program at the\r\n    University Corporation for Atmospheric Research.\r\n\r\n    Access and use of this software shall impose the following obligations\r\n    and understandings on the user. The user is granted the right, without\r\n    any fee or cost, to use, copy, modify, alter, enhance and distribute\r\n    this software, and any derivative works thereof, and its supporting\r\n    documentation for any purpose whatsoever, provided that this entire\r\n    notice appears in all copies of the software, derivative works and\r\n    supporting documentation.  Further, UCAR requests that the user credit\r\n    UCAR/Unidata in any publications that result from the use of this\r\n    software or in any product that includes this software. The names UCAR\r\n    and/or Unidata, however, may not be used in any advertising or publicity\r\n    to endorse or promote any products or commercial entity unless specific\r\n    written permission is obtained from UCAR/Unidata. The user also\r\n    understands that UCAR/Unidata is not obligated to provide the user with\r\n    any support, consulting, training or assistance of any kind with regard\r\n    to the use, operation and performance of this software nor to provide\r\n    the user with any updates, revisions, new versions or \"bug fixes.\"\r\n\r\n    THIS SOFTWARE IS PROVIDED BY UCAR/UNIDATA \"AS IS\" AND ANY EXPRESS OR\r\n    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\r\n    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\r\n    DISCLAIMED. IN NO EVENT SHALL UCAR/UNIDATA BE LIABLE FOR ANY SPECIAL,\r\n    INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING\r\n    FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,\r\n    NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION\r\n    WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/912"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/NetCDF.html",
@@ -283,6 +438,14 @@ Project Wiki]
         [
             "Homepage",
             "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/912"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/921"
         ]
     ]
 }

@@ -1,6 +1,7 @@
 {
     "__impliedNames": [
         "Python-2.0",
+        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
         "Python License 2.0",
         "scancode://python",
         "Python License, Version 2.0",
@@ -8,6 +9,14 @@
         "Python Software Foundation License 2"
     ],
     "__impliedId": "Python-2.0",
+    "__impliedComments": [
+        [
+            "Hitachi open-license",
+            [
+                "This License Agreement is between the Python Software Foundation (\"PSF\") and any person or entity that accesses or uses the source code, binaries or related documentation of such software. This License Agreement does not constitute an agency, partnership or joint venture agreement between PSF and the Licensee."
+            ]
+        ]
+    ],
     "__hasPatentHint": false,
     "facts": {
         "Open Knowledge International": {
@@ -157,6 +166,210 @@
                     "Python-2.0"
                 ]
             }
+        },
+        "Override": {
+            "oNonCommecrial": null,
+            "implications": {
+                "__impliedNames": [
+                    "Python-2.0",
+                    "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+                ],
+                "__impliedId": "Python-2.0"
+            },
+            "oName": "Python-2.0",
+            "oOtherLicenseIds": [
+                "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+            ],
+            "oDescription": null,
+            "oJudgement": null,
+            "oCompatibilities": null,
+            "oRatingState": null
+        },
+        "Hitachi open-license": {
+            "notices": [
+                {
+                    "content": "The Software is provided to Licensee by the copyright holder \"as-is\" and makes no representations or warranties, express or implied, including but not limited to representations and warranties of commercial applicability, fitness for a particular purpose, and non-infringement by use of the Software. The representations and warranties include, but are not limited to, representations and warranties of commercial applicability, fitness for a particular purpose, and non-infringement by use of such software.",
+                    "description": "There is no guarantee."
+                },
+                {
+                    "content": "In no event shall the copyright holder be liable to the licensee or users of such software for any incidental, special, or consequential damages, or for any loss arising from the use, modification, or distribution of such software, even if the licensee or users of such software have been advised of the possibility of such damages."
+                },
+                {
+                    "content": "Violation of this license shall result in automatic termination of all rights under this license."
+                },
+                {
+                    "content": "You have no right to use PSF's trademarks or trade names to endorse or promote the products and services of the Licensee or third parties."
+                }
+            ],
+            "_sourceURL": "http://open-license.hitachi.com/licenses/385",
+            "content": "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2\r\n\r\n1. This LICENSE AGREEMENT is between the Python Software Foundation\r\n(\"PSF\"), and the Individual or Organization (\"Licensee\") accessing and\r\notherwise using this software (\"Python\") in source or binary form and\r\nits associated documentation.\r\n\r\n2. Subject to the terms and conditions of this License Agreement, PSF hereby\r\ngrants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,\r\nanalyze, test, perform and/or display publicly, prepare derivative works,\r\ndistribute, and otherwise use Python alone or in any derivative version,\r\nprovided, however, that PSF's License Agreement and PSF's notice of copyright,\r\ni.e., \"Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,\r\n2011, 2012, 2013 Python Software Foundation; All Rights Reserved\" are retained\r\nin Python alone or in any derivative version prepared by Licensee.\r\n\r\n3. In the event Licensee prepares a derivative work that is based on\r\nor incorporates Python or any part thereof, and wants to make\r\nthe derivative work available to others as provided herein, then\r\nLicensee hereby agrees to include in any such work a brief summary of\r\nthe changes made to Python.\r\n\r\n4. PSF is making Python available to Licensee on an \"AS IS\"\r\nbasis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR\r\nIMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND\r\nDISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS\r\nFOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT\r\nINFRINGE ANY THIRD PARTY RIGHTS.\r\n\r\n5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON\r\nFOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS\r\nA RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,\r\nOR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\r\n\r\n6. This License Agreement will automatically terminate upon a material\r\nbreach of its terms and conditions.\r\n\r\n7. Nothing in this License Agreement shall be deemed to create any\r\nrelationship of agency, partnership, or joint venture between PSF and\r\nLicensee.  This License Agreement does not grant permission to use PSF\r\ntrademarks or trade name in a trademark sense to endorse or promote\r\nproducts or services of Licensee, or any third party.\r\n\r\n8. By copying, installing or otherwise using Python, Licensee\r\nagrees to be bound by the terms and conditions of this License\r\nAgreement.",
+            "name": "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+            "permissions": [
+                {
+                    "actions": [
+                        {
+                            "name": "Use the obtained source code without modification",
+                            "description": "Use the fetched code as it is."
+                        },
+                        {
+                            "name": "Using Modified Source Code"
+                        },
+                        {
+                            "name": "Use the retrieved binaries",
+                            "description": "Use the fetched binary as it is."
+                        },
+                        {
+                            "name": "Use binaries generated from modified source code"
+                        },
+                        {
+                            "name": "Analyze the obtained source code"
+                        },
+                        {
+                            "name": "Analyze the modified source code"
+                        },
+                        {
+                            "name": "Analyze the acquired binaries"
+                        },
+                        {
+                            "name": "Analyze the binary generated from the retrieved source code"
+                        },
+                        {
+                            "name": "Test the fetched source code"
+                        },
+                        {
+                            "name": "Testing Modified Source Code"
+                        },
+                        {
+                            "name": "Test the acquired binaries"
+                        },
+                        {
+                            "name": "Test the generated binaries from modified source code"
+                        }
+                    ],
+                    "conditions": null,
+                    "description": "Treat software related documentation in the same way as software"
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribute the obtained source code without modification",
+                            "description": "Redistribute the code as it was obtained"
+                        },
+                        {
+                            "name": "Distribute the fetched binaries",
+                            "description": "Redistribute the fetched binaries as they are"
+                        },
+                        {
+                            "name": "Display the obtained source code publicly"
+                        },
+                        {
+                            "name": "Executing the fetched source code publicly"
+                        },
+                        {
+                            "name": "Display the fetched binaries publicly"
+                        },
+                        {
+                            "name": "Executing the fetched binary publicly"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include the copyright notice contained in the software",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\""
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Modify the obtained source code."
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Include the copyright notice contained in the software",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a summary of the changes you have made",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\""
+                },
+                {
+                    "actions": [
+                        {
+                            "name": "Distribution of Modified Source Code"
+                        },
+                        {
+                            "name": "Distribute the generated binaries from modified source code"
+                        },
+                        {
+                            "name": "Display modified source code publicly"
+                        },
+                        {
+                            "name": "Publicly execute the modified source code"
+                        },
+                        {
+                            "name": "Display the generated binaries from modified source code publicly"
+                        },
+                        {
+                            "name": "Executing the generated binaries from modified source code publicly"
+                        },
+                        {
+                            "name": "Combining the software with one's own work to produce and distribute the software or a work containing parts of the software"
+                        }
+                    ],
+                    "conditions": {
+                        "AND": [
+                            {
+                                "name": "Give you a copy of the relevant license.",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include the copyright notice contained in the software",
+                                "type": "OBLIGATION"
+                            },
+                            {
+                                "name": "Include a summary of the changes you have made",
+                                "type": "OBLIGATION"
+                            }
+                        ]
+                    },
+                    "description": "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\""
+                }
+            ],
+            "_implications": {
+                "__impliedNames": [
+                    "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "This License Agreement is between the Python Software Foundation (\"PSF\") and any person or entity that accesses or uses the source code, binaries or related documentation of such software. This License Agreement does not constitute an agency, partnership or joint venture agreement between PSF and the Licensee."
+                        ]
+                    ]
+                ],
+                "__impliedText": "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2\r\n\r\n1. This LICENSE AGREEMENT is between the Python Software Foundation\r\n(\"PSF\"), and the Individual or Organization (\"Licensee\") accessing and\r\notherwise using this software (\"Python\") in source or binary form and\r\nits associated documentation.\r\n\r\n2. Subject to the terms and conditions of this License Agreement, PSF hereby\r\ngrants Licensee a nonexclusive, royalty-free, world-wide license to reproduce,\r\nanalyze, test, perform and/or display publicly, prepare derivative works,\r\ndistribute, and otherwise use Python alone or in any derivative version,\r\nprovided, however, that PSF's License Agreement and PSF's notice of copyright,\r\ni.e., \"Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010,\r\n2011, 2012, 2013 Python Software Foundation; All Rights Reserved\" are retained\r\nin Python alone or in any derivative version prepared by Licensee.\r\n\r\n3. In the event Licensee prepares a derivative work that is based on\r\nor incorporates Python or any part thereof, and wants to make\r\nthe derivative work available to others as provided herein, then\r\nLicensee hereby agrees to include in any such work a brief summary of\r\nthe changes made to Python.\r\n\r\n4. PSF is making Python available to Licensee on an \"AS IS\"\r\nbasis.  PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR\r\nIMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND\r\nDISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS\r\nFOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT\r\nINFRINGE ANY THIRD PARTY RIGHTS.\r\n\r\n5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON\r\nFOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS\r\nA RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON,\r\nOR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.\r\n\r\n6. This License Agreement will automatically terminate upon a material\r\nbreach of its terms and conditions.\r\n\r\n7. Nothing in this License Agreement shall be deemed to create any\r\nrelationship of agency, partnership, or joint venture between PSF and\r\nLicensee.  This License Agreement does not grant permission to use PSF\r\ntrademarks or trade name in a trademark sense to endorse or promote\r\nproducts or services of Licensee, or any third party.\r\n\r\n8. By copying, installing or otherwise using Python, Licensee\r\nagrees to be bound by the terms and conditions of this License\r\nAgreement.",
+                "__impliedURLs": [
+                    [
+                        "open-license",
+                        "http://open-license.hitachi.com/licenses/385"
+                    ]
+                ]
+            },
+            "description": "This License Agreement is between the Python Software Foundation (\"PSF\") and any person or entity that accesses or uses the source code, binaries or related documentation of such software. This License Agreement does not constitute an agency, partnership or joint venture agreement between PSF and the Licensee."
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
@@ -430,6 +643,10 @@
         [
             "OSI Page",
             "https://opensource.org/licenses/Python-2.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/385"
         ]
     ]
 }
