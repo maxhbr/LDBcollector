@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-2-Clause-Patent"
+                ],
+                "__impliedId": "BSD-2-Clause-Patent"
+            },
+            "shortname": "BSD-2-Clause-Patent",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD-2-Clause Plus Patent License",

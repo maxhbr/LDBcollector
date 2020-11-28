@@ -63,6 +63,7 @@ purpose. It is provided "as is" without express or implied warranty.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/NTP.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -128,6 +129,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NTP"
+                ],
+                "__impliedId": "NTP"
+            },
+            "shortname": "NTP",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

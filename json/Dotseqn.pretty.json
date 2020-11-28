@@ -10,6 +10,16 @@
         "Dotseqn"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Dotseqn"
+                ],
+                "__impliedId": "Dotseqn"
+            },
+            "shortname": "Dotseqn",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Dotseqn License",

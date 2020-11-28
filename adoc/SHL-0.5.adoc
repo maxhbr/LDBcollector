@@ -158,6 +158,7 @@ Copyright [yyyy] [name of copyright owner] Copyright and related rights are lice
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/SHL-0.5.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/shl-0.5.yml[Scancode]
@@ -175,6 +176,16 @@ repository] is generated)
     ],
     "__impliedId": "SHL-0.5",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SHL-0.5"
+                ],
+                "__impliedId": "SHL-0.5"
+            },
+            "shortname": "SHL-0.5",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Solderpad Hardware License v0.5",

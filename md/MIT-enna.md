@@ -68,6 +68,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MIT-enna.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -96,6 +98,16 @@ Raw Data
             "MIT"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-enna"
+                    ],
+                    "__impliedId": "MIT-enna"
+                },
+                "shortname": "MIT-enna",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "enna License",

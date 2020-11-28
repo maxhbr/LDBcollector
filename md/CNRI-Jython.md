@@ -55,6 +55,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CNRI-Jython.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -75,6 +77,16 @@ Raw Data
         ],
         "__impliedId": "CNRI-Jython",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CNRI-Jython"
+                    ],
+                    "__impliedId": "CNRI-Jython"
+                },
+                "shortname": "CNRI-Jython",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Jython License",

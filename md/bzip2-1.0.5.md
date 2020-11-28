@@ -31,6 +31,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -47,6 +49,16 @@ Raw Data
         ],
         "__impliedId": "bzip2-1.0.5",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.5"
+                    ],
+                    "__impliedId": "bzip2-1.0.5"
+                },
+                "shortname": "bzip2-1.0.5",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "bzip2 and libbzip2 License v1.0.5",

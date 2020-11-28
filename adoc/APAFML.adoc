@@ -50,6 +50,7 @@ obligation to support the use of the AFM files.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/APAFML.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -75,6 +76,16 @@ Project Wiki]
         "APAFML"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APAFML"
+                ],
+                "__impliedId": "APAFML"
+            },
+            "shortname": "APAFML",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Adobe Postscript AFM License",

@@ -186,6 +186,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX") (all data \[in
@@ -294,6 +296,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EPL-1.0"
+                    ],
+                    "__impliedId": "EPL-1.0"
+                },
+                "shortname": "EPL-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

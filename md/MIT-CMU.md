@@ -61,6 +61,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -89,6 +91,16 @@ Raw Data
         ],
         "__impliedId": "MIT-CMU",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-CMU"
+                    ],
+                    "__impliedId": "MIT-CMU"
+                },
+                "shortname": "MIT-CMU",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CMU License",

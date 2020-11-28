@@ -111,6 +111,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NLOD-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -127,6 +129,16 @@ Raw Data
         ],
         "__impliedId": "NLOD-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NLOD-1.0"
+                    ],
+                    "__impliedId": "NLOD-1.0"
+                },
+                "shortname": "NLOD-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Norwegian Licence for Open Government Data",

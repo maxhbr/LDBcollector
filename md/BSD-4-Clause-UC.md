@@ -128,6 +128,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX") (all
@@ -180,6 +182,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause-UC"
+                    ],
+                    "__impliedId": "BSD-4-Clause-UC"
+                },
+                "shortname": "BSD-4-Clause-UC",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD-4-Clause (University of California-Specific)",

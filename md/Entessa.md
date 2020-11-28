@@ -108,6 +108,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Entessa.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -187,6 +189,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Entessa"
+                    ],
+                    "__impliedId": "Entessa"
+                },
+                "shortname": "Entessa",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

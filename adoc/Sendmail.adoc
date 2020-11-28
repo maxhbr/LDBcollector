@@ -124,6 +124,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Sendmail.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml[Scancode]
@@ -155,6 +156,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Sendmail"
+                ],
+                "__impliedId": "Sendmail"
+            },
+            "shortname": "Sendmail",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sendmail License",

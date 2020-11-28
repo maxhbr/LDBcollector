@@ -60,6 +60,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Info-ZIP.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -81,6 +83,16 @@ Raw Data
         ],
         "__impliedId": "Info-ZIP",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Info-ZIP"
+                    ],
+                    "__impliedId": "Info-ZIP"
+                },
+                "shortname": "Info-ZIP",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Info-ZIP License",

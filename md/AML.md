@@ -50,6 +50,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -78,6 +80,16 @@ Raw Data
             "AML"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AML"
+                    ],
+                    "__impliedId": "AML"
+                },
+                "shortname": "AML",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apple MIT License",

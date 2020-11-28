@@ -515,6 +515,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CUA-OPL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -578,6 +580,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CUA-OPL-1.0"
+                    ],
+                    "__impliedId": "CUA-OPL-1.0"
+                },
+                "shortname": "CUA-OPL-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

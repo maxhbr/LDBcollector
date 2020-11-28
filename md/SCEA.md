@@ -99,6 +99,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SCEA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -124,6 +126,16 @@ Raw Data
             "SCEA"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SCEA"
+                    ],
+                    "__impliedId": "SCEA"
+                },
+                "shortname": "SCEA",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SCEA Shared Source License",

@@ -87,6 +87,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/NGPL.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -159,6 +161,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "NGPL"
+                  ],
+                  "__impliedId": "NGPL"
+              },
+              "shortname": "NGPL",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

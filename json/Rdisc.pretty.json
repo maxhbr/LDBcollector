@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Rdisc"
+                ],
+                "__impliedId": "Rdisc"
+            },
+            "shortname": "Rdisc",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Rdisc License",

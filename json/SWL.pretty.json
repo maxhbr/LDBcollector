@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SWL"
+                ],
+                "__impliedId": "SWL"
+            },
+            "shortname": "SWL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",

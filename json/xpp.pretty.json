@@ -11,6 +11,16 @@
         "xpp"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "xpp"
+                ],
+                "__impliedId": "xpp"
+            },
+            "shortname": "xpp",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "XPP License",

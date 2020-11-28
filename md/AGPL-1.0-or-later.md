@@ -66,6 +66,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AGPL-1.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -105,6 +107,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-1.0-or-later"
+                    ],
+                    "__impliedId": "AGPL-1.0-or-later"
+                },
+                "shortname": "AGPL-1.0-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Affero General Public License v1.0 or later",

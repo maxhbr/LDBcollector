@@ -69,6 +69,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/libpng-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -86,6 +88,16 @@ Raw Data
         ],
         "__impliedId": "libpng-2.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "libpng-2.0"
+                    ],
+                    "__impliedId": "libpng-2.0"
+                },
+                "shortname": "libpng-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PNG Reference Library version 2",

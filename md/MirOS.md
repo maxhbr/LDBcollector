@@ -91,6 +91,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -176,6 +178,16 @@ Raw Data
                     ]
                 },
                 "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MirOS"
+                    ],
+                    "__impliedId": "MirOS"
+                },
+                "shortname": "MirOS",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

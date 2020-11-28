@@ -163,6 +163,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -179,6 +181,16 @@ Raw Data
         ],
         "__impliedId": "CAL-1.0-Combined-Work-Exception",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CAL-1.0-Combined-Work-Exception"
+                    ],
+                    "__impliedId": "CAL-1.0-Combined-Work-Exception"
+                },
+                "shortname": "CAL-1.0-Combined-Work-Exception",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Cryptographic Autonomy License 1.0 (Combined Work Exception)",

@@ -46,6 +46,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ZPL-2.0"
+                ],
+                "__impliedId": "ZPL-2.0"
+            },
+            "shortname": "ZPL-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zope Public License 2.0",

@@ -127,6 +127,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Ruby.html "SPDX") (all data \[in
@@ -179,6 +181,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Ruby"
+                    ],
+                    "__impliedId": "Ruby"
+                },
+                "shortname": "Ruby",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Ruby License",

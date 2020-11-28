@@ -120,6 +120,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX") (all data
@@ -164,6 +166,16 @@ Raw Data
             "The Apache Software License (ASL)"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Apache-1.0"
+                    ],
+                    "__impliedId": "Apache-1.0"
+                },
+                "shortname": "Apache-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apache License 1.0",

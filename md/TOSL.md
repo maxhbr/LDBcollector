@@ -88,6 +88,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/TOSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -121,6 +123,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "TOSL"
+                    ],
+                    "__impliedId": "TOSL"
+                },
+                "shortname": "TOSL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Trusster Open Source License",

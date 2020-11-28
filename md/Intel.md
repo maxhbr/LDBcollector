@@ -102,6 +102,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -176,6 +178,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Intel"
+                    ],
+                    "__impliedId": "Intel"
+                },
+                "shortname": "Intel",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

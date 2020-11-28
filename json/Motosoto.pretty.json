@@ -49,6 +49,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Motosoto"
+                ],
+                "__impliedId": "Motosoto"
+            },
+            "shortname": "Motosoto",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Motosoto License",

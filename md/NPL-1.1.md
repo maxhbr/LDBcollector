@@ -86,6 +86,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -112,6 +114,16 @@ Raw Data
         "__impliedId": "NPL-1.1",
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NPL-1.1"
+                    ],
+                    "__impliedId": "NPL-1.1"
+                },
+                "shortname": "NPL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Netscape Public License v1.1",

@@ -65,6 +65,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Fair.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -139,6 +141,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Fair"
+                    ],
+                    "__impliedId": "Fair"
+                },
+                "shortname": "Fair",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

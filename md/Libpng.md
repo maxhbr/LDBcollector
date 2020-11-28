@@ -147,6 +147,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Libpng.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -171,6 +173,16 @@ Raw Data
         ],
         "__impliedId": "Libpng",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Libpng"
+                    ],
+                    "__impliedId": "Libpng"
+                },
+                "shortname": "Libpng",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libpng License",

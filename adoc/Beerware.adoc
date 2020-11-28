@@ -57,6 +57,7 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Beerware.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -90,6 +91,16 @@ Policy]
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Beerware"
+                ],
+                "__impliedId": "Beerware"
+            },
+            "shortname": "Beerware",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Beerware License",

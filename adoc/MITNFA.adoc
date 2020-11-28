@@ -88,6 +88,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MITNFA.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -125,6 +126,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MITNFA"
+                ],
+                "__impliedId": "MITNFA"
+            },
+            "shortname": "MITNFA",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "MIT +no-false-attribs license",

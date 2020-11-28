@@ -181,6 +181,7 @@ General Provisions
 
 ==== Facts
 
+* LicenseName
 * Override
 * https://spdx.org/licenses/Artistic-2.0.html[SPDX] (all data [in this
 repository] is generated)
@@ -271,6 +272,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-2.0"
+                ],
+                "__impliedId": "Artistic-2.0"
+            },
+            "shortname": "Artistic-2.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

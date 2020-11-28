@@ -41,6 +41,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/PSF-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -57,6 +59,16 @@ Raw Data
         ],
         "__impliedId": "PSF-2.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "PSF-2.0"
+                    ],
+                    "__impliedId": "PSF-2.0"
+                },
+                "shortname": "PSF-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Python Software Foundation License 2.0",

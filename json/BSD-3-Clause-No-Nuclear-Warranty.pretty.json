@@ -14,6 +14,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-No-Nuclear-Warranty"
+                ],
+                "__impliedId": "BSD-3-Clause-No-Nuclear-Warranty"
+            },
+            "shortname": "BSD-3-Clause-No-Nuclear-Warranty",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 3-Clause No Nuclear Warranty",

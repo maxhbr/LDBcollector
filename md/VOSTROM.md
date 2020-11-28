@@ -100,6 +100,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/VOSTROM.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -125,6 +127,16 @@ Raw Data
             "VOSTROM"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "VOSTROM"
+                    ],
+                    "__impliedId": "VOSTROM"
+                },
+                "shortname": "VOSTROM",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "VOSTROM Public License for Open Source",

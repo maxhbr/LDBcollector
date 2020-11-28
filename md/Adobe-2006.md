@@ -71,6 +71,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Adobe-2006.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -100,6 +102,16 @@ Raw Data
             "Adobe"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Adobe-2006"
+                    ],
+                    "__impliedId": "Adobe-2006"
+                },
+                "shortname": "Adobe-2006",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Systems Incorporated Source Code License Agreement",

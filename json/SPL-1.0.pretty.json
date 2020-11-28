@@ -56,6 +56,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SPL-1.0"
+                ],
+                "__impliedId": "SPL-1.0"
+            },
+            "shortname": "SPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Public License v1.0",

@@ -114,6 +114,7 @@ UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/PostgreSQL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -190,6 +191,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PostgreSQL"
+                ],
+                "__impliedId": "PostgreSQL"
+            },
+            "shortname": "PostgreSQL",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

@@ -11,6 +11,16 @@
         "Barr"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Barr"
+                ],
+                "__impliedId": "Barr"
+            },
+            "shortname": "Barr",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Barr License",

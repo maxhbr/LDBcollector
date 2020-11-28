@@ -42,6 +42,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Glulxe.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -67,6 +69,16 @@
           "Glulxe"
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Glulxe"
+                  ],
+                  "__impliedId": "Glulxe"
+              },
+              "shortname": "Glulxe",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Glulxe License",

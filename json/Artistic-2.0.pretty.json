@@ -57,6 +57,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-2.0"
+                ],
+                "__impliedId": "Artistic-2.0"
+            },
+            "shortname": "Artistic-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Artistic License 2.0",

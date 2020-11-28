@@ -114,6 +114,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/OpenSSL.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -170,6 +172,16 @@ open-license]] (CDLA-Permissive-1.0))
       ],
       "__hasPatentHint": false,
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "OpenSSL"
+                  ],
+                  "__impliedId": "OpenSSL"
+              },
+              "shortname": "OpenSSL",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "OpenSSL License",

@@ -60,6 +60,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Beerware.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -98,6 +100,16 @@ Raw Data
         ],
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Beerware"
+                    ],
+                    "__impliedId": "Beerware"
+                },
+                "shortname": "Beerware",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Beerware License",

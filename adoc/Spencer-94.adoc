@@ -59,6 +59,7 @@ sources, credits must appear in the documentation.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Spencer-94.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -78,6 +79,16 @@ repository] is generated)
     ],
     "__impliedId": "Spencer-94",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Spencer-94"
+                ],
+                "__impliedId": "Spencer-94"
+            },
+            "shortname": "Spencer-94",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Spencer License 94",

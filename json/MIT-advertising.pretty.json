@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-advertising"
+                ],
+                "__impliedId": "MIT-advertising"
+            },
+            "shortname": "MIT-advertising",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Enlightenment License (e16)",

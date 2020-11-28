@@ -54,6 +54,7 @@ into another language, under the above conditions for modified versions.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Latex2e.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml[Scancode]
@@ -85,6 +86,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Latex2e"
+                ],
+                "__impliedId": "Latex2e"
+            },
+            "shortname": "Latex2e",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Latex2e License",

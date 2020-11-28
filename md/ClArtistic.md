@@ -189,6 +189,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/ClArtistic.html "SPDX") (all data
@@ -220,6 +222,16 @@ Raw Data
             "Artistic clarified"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ClArtistic"
+                    ],
+                    "__impliedId": "ClArtistic"
+                },
+                "shortname": "ClArtistic",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Clarified Artistic License",

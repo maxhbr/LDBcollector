@@ -365,6 +365,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BitTorrent-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -382,6 +384,16 @@ Raw Data
         ],
         "__impliedId": "BitTorrent-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BitTorrent-1.0"
+                    ],
+                    "__impliedId": "BitTorrent-1.0"
+                },
+                "shortname": "BitTorrent-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BitTorrent Open Source License v1.0",

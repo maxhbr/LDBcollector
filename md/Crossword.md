@@ -51,6 +51,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Crossword.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -79,6 +81,16 @@ Raw Data
             "Crossword"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Crossword"
+                    ],
+                    "__impliedId": "Crossword"
+                },
+                "shortname": "Crossword",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Crossword License",

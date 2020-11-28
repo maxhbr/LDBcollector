@@ -112,6 +112,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CPOL-1.02.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -133,6 +135,16 @@ Raw Data
         ],
         "__impliedId": "CPOL-1.02",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CPOL-1.02"
+                    ],
+                    "__impliedId": "CPOL-1.02"
+                },
+                "shortname": "CPOL-1.02",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Code Project Open License 1.02",

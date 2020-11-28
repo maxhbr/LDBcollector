@@ -52,6 +52,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Latex2e.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -84,6 +86,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Latex2e"
+                    ],
+                    "__impliedId": "Latex2e"
+                },
+                "shortname": "Latex2e",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Latex2e License",

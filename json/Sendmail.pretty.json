@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Sendmail"
+                ],
+                "__impliedId": "Sendmail"
+            },
+            "shortname": "Sendmail",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sendmail License",

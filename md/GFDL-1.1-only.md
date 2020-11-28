@@ -400,6 +400,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/GFDL-1.1-only.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -432,6 +434,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GFDL-1.1-only"
+                    ],
+                    "__impliedId": "GFDL-1.1-only"
+                },
+                "shortname": "GFDL-1.1-only",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Free Documentation License v1.1 only",

@@ -49,6 +49,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Entessa"
+                ],
+                "__impliedId": "Entessa"
+            },
+            "shortname": "Entessa",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Entessa Public License v1.0",

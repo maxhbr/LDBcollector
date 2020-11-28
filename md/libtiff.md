@@ -66,6 +66,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/libtiff.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -99,6 +101,16 @@ Raw Data
             "libtiff"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "libtiff"
+                    ],
+                    "__impliedId": "libtiff"
+                },
+                "shortname": "libtiff",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libtiff License",

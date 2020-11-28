@@ -108,6 +108,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/OpenSSL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -156,6 +157,16 @@ Policy]
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OpenSSL"
+                ],
+                "__impliedId": "OpenSSL"
+            },
+            "shortname": "OpenSSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "OpenSSL License",

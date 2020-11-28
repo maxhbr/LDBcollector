@@ -84,6 +84,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/TCL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -115,6 +117,16 @@ Raw Data
             "TCL"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "TCL"
+                    ],
+                    "__impliedId": "TCL"
+                },
+                "shortname": "TCL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TCL/TK License",

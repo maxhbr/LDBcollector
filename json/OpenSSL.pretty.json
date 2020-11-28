@@ -22,6 +22,16 @@
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OpenSSL"
+                ],
+                "__impliedId": "OpenSSL"
+            },
+            "shortname": "OpenSSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "OpenSSL License",

@@ -73,6 +73,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Attribution.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -102,6 +104,16 @@ Raw Data
             "BSD with attribution"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-Attribution"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Attribution"
+                },
+                "shortname": "BSD-3-Clause-Attribution",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD with attribution",

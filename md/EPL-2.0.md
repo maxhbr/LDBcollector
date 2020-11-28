@@ -359,6 +359,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EPL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -450,6 +452,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EPL-2.0"
+                    ],
+                    "__impliedId": "EPL-2.0"
+                },
+                "shortname": "EPL-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

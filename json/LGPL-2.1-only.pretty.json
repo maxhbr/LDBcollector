@@ -62,6 +62,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-2.1-only"
+                ],
+                "__impliedId": "LGPL-2.1-only"
+            },
+            "shortname": "LGPL-2.1-only",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Lesser General Public License v2.1 only",

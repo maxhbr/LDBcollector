@@ -111,6 +111,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   Override
@@ -203,6 +205,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSL-1.0"
+                    ],
+                    "__impliedId": "BSL-1.0"
+                },
+                "shortname": "BSL-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

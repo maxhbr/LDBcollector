@@ -60,6 +60,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MIT-advertising.html[SPDX] (all data [in
 this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -94,6 +95,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-advertising"
+                ],
+                "__impliedId": "MIT-advertising"
+            },
+            "shortname": "MIT-advertising",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Enlightenment License (e16)",

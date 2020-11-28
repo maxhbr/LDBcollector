@@ -58,6 +58,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NIST-PD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -74,6 +76,16 @@ Raw Data
         ],
         "__impliedId": "NIST-PD",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NIST-PD"
+                    ],
+                    "__impliedId": "NIST-PD"
+                },
+                "shortname": "NIST-PD",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NIST Public Domain Notice",

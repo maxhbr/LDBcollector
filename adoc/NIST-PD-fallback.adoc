@@ -59,6 +59,7 @@ OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/NIST-PD-fallback.html[SPDX] (all data [in
 this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nist-pd-fallback.yml[Scancode]
@@ -76,6 +77,16 @@ this repository] is generated)
     ],
     "__impliedId": "NIST-PD-fallback",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NIST-PD-fallback"
+                ],
+                "__impliedId": "NIST-PD-fallback"
+            },
+            "shortname": "NIST-PD-fallback",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NIST Public Domain Notice with license fallback",

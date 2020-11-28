@@ -90,6 +90,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/xinetd.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -118,6 +120,16 @@ Raw Data
             "xinetd"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "xinetd"
+                    ],
+                    "__impliedId": "xinetd"
+                },
+                "shortname": "xinetd",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "xinetd License",

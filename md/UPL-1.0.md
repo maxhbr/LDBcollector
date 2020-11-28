@@ -110,6 +110,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
@@ -145,6 +147,16 @@ Raw Data
         ],
         "__impliedId": "UPL-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "UPL-1.0"
+                    ],
+                    "__impliedId": "UPL-1.0"
+                },
+                "shortname": "UPL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Universal Permissive License v1.0",

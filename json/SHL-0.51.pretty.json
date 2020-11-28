@@ -7,6 +7,16 @@
     ],
     "__impliedId": "SHL-0.51",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SHL-0.51"
+                ],
+                "__impliedId": "SHL-0.51"
+            },
+            "shortname": "SHL-0.51",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Solderpad Hardware License, Version 0.51",

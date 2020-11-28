@@ -45,6 +45,7 @@ file, please do not distribute the results under the name `zed-csp.sty'.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Zed.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -70,6 +71,16 @@ Project Wiki]
         "Zed"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Zed"
+                ],
+                "__impliedId": "Zed"
+            },
+            "shortname": "Zed",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zed License",

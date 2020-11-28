@@ -79,6 +79,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Caldera.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -95,6 +97,16 @@ Raw Data
         ],
         "__impliedId": "Caldera",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Caldera"
+                    ],
+                    "__impliedId": "Caldera"
+                },
+                "shortname": "Caldera",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Caldera License",

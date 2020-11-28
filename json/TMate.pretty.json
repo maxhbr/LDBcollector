@@ -10,6 +10,16 @@
         "TMate"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TMate"
+                ],
+                "__impliedId": "TMate"
+            },
+            "shortname": "TMate",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TMate Open Source License",

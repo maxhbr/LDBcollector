@@ -62,6 +62,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -105,6 +107,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MPL-2.0-no-copyleft-exception"
+                    ],
+                    "__impliedId": "MPL-2.0-no-copyleft-exception"
+                },
+                "shortname": "MPL-2.0-no-copyleft-exception",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mozilla Public License 2.0 (no copyleft exception)",

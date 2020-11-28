@@ -174,6 +174,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX") (all data
@@ -277,6 +279,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Artistic-2.0"
+                    ],
+                    "__impliedId": "Artistic-2.0"
+                },
+                "shortname": "Artistic-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

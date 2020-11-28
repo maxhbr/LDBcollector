@@ -56,6 +56,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/curl.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -77,6 +79,16 @@ Raw Data
         ],
         "__impliedId": "curl",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "curl"
+                    ],
+                    "__impliedId": "curl"
+                },
+                "shortname": "curl",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "curl License",

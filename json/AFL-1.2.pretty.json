@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-1.2"
+                ],
+                "__impliedId": "AFL-1.2"
+            },
+            "shortname": "AFL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academic Free License v1.2",

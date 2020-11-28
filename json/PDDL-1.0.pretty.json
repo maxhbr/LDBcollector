@@ -40,6 +40,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PDDL-1.0"
+                ],
+                "__impliedId": "PDDL-1.0"
+            },
+            "shortname": "PDDL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ODC Public Domain Dedication & License 1.0",

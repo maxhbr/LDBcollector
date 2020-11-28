@@ -134,6 +134,7 @@ OTHER DEALINGS IN THE FONT SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/OFL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml[Scancode]
@@ -164,6 +165,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OFL-1.0"
+                ],
+                "__impliedId": "OFL-1.0"
+            },
+            "shortname": "OFL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SIL Open Font License 1.0",

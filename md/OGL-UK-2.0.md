@@ -111,6 +111,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OGL-UK-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -159,6 +161,16 @@ Raw Data
                     ]
                 },
                 "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OGL-UK-2.0"
+                    ],
+                    "__impliedId": "OGL-UK-2.0"
+                },
+                "shortname": "OGL-UK-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

@@ -11,6 +11,16 @@
         "Borceux"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Borceux"
+                ],
+                "__impliedId": "Borceux"
+            },
+            "shortname": "Borceux",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Borceux license",

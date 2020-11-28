@@ -124,6 +124,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Sendmail.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -156,6 +158,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Sendmail"
+                    ],
+                    "__impliedId": "Sendmail"
+                },
+                "shortname": "Sendmail",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License",

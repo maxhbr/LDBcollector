@@ -7,6 +7,16 @@
     ],
     "__impliedId": "SSPL-1.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SSPL-1.0"
+                ],
+                "__impliedId": "SSPL-1.0"
+            },
+            "shortname": "SSPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Server Side Public License, v 1",

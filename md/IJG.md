@@ -133,6 +133,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/IJG.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -162,6 +164,16 @@ Raw Data
             "IJG"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "IJG"
+                    ],
+                    "__impliedId": "IJG"
+                },
+                "shortname": "IJG",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Independent JPEG Group License",

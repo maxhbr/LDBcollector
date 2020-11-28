@@ -171,6 +171,7 @@ The text of this license is released under the Creative Commons Attribution-Shar
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CAL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -200,6 +201,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CAL-1.0"
+                ],
+                "__impliedId": "CAL-1.0"
+            },
+            "shortname": "CAL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cryptographic Autonomy License 1.0",

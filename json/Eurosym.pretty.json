@@ -10,6 +10,16 @@
         "Eurosym"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Eurosym"
+                ],
+                "__impliedId": "Eurosym"
+            },
+            "shortname": "Eurosym",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Eurosym License",

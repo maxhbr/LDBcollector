@@ -245,6 +245,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/UCL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -264,6 +266,16 @@ Raw Data
         ],
         "__impliedId": "UCL-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "UCL-1.0"
+                    ],
+                    "__impliedId": "UCL-1.0"
+                },
+                "shortname": "UCL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Upstream Compatibility License v1.0",

@@ -71,6 +71,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MTLL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -107,6 +109,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MTLL"
+                    ],
+                    "__impliedId": "MTLL"
+                },
+                "shortname": "MTLL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Matrix Template Library License",

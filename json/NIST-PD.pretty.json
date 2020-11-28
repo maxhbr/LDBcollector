@@ -6,6 +6,16 @@
     ],
     "__impliedId": "NIST-PD",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NIST-PD"
+                ],
+                "__impliedId": "NIST-PD"
+            },
+            "shortname": "NIST-PD",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NIST Public Domain Notice",

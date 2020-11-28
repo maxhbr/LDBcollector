@@ -51,6 +51,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NCSA"
+                ],
+                "__impliedId": "NCSA"
+            },
+            "shortname": "NCSA",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "University of Illinois/NCSA Open Source License",

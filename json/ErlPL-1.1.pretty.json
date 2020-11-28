@@ -20,6 +20,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ErlPL-1.1"
+                ],
+                "__impliedId": "ErlPL-1.1"
+            },
+            "shortname": "ErlPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Erlang Public License v1.1",

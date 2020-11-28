@@ -11,6 +11,16 @@
         "NOSL"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NOSL"
+                ],
+                "__impliedId": "NOSL"
+            },
+            "shortname": "NOSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Netizen Open Source License",

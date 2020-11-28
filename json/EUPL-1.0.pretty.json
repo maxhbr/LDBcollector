@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.0"
+                ],
+                "__impliedId": "EUPL-1.0"
+            },
+            "shortname": "EUPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.0",

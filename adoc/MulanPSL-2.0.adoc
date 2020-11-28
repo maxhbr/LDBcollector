@@ -164,6 +164,7 @@ Copyright © 中国开源云联盟 京ICP备05013730号-37
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MulanPSL-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mulanpsl-2.0.yml[Scancode]
@@ -181,6 +182,16 @@ repository] is generated)
     ],
     "__impliedId": "MulanPSL-2.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MulanPSL-2.0"
+                ],
+                "__impliedId": "MulanPSL-2.0"
+            },
+            "shortname": "MulanPSL-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Mulan Permissive Software License, Version 2",

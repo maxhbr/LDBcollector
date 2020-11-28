@@ -8,6 +8,16 @@
     ],
     "__impliedId": "RSA-MD",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "RSA-MD"
+                ],
+                "__impliedId": "RSA-MD"
+            },
+            "shortname": "RSA-MD",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "RSA Message-Digest License",

@@ -99,6 +99,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Unicode-DFS-2015.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -124,6 +126,16 @@ Raw Data
         ],
         "__impliedId": "Unicode-DFS-2015",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Unicode-DFS-2015"
+                    ],
+                    "__impliedId": "Unicode-DFS-2015"
+                },
+                "shortname": "Unicode-DFS-2015",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Unicode License Agreement - Data Files and Software (2015)",

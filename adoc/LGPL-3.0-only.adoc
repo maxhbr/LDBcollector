@@ -12,6 +12,7 @@
 
 *Other Names:*
 
+* `+LGPL-3.0-or-later+`
 * `+LGPL-3.0+`
 * `+LGPL-3+`
 * `+LGPL3.0+`
@@ -19,7 +20,6 @@
 * `+LGPL (v3.0)+`
 * `+LGPL (v3)+`
 * `+GNU Lesser General Public License Version 3+`
-* `+LGPL-3.0-or-later+`
 * `+LGPL-3.0++`
 * `+LGPL-3++`
 * `+LGPL3.0++`
@@ -301,6 +301,7 @@ Library.
 
 ==== Facts
 
+* LicenseName
 * Override
 * Override
 * https://spdx.org/licenses/LGPL-3.0-only.html[SPDX] (all data [in this
@@ -354,6 +355,7 @@ Knowledge International]
 ....
 {
     "__impliedNames": [
+        "LGPL-3.0-or-later",
         "LGPL-3.0-only",
         "LGPL-3.0",
         "LGPL-3",
@@ -362,7 +364,6 @@ Knowledge International]
         "LGPL (v3.0)",
         "LGPL (v3)",
         "GNU Lesser General Public License Version 3",
-        "LGPL-3.0-or-later",
         "LGPL-3.0+",
         "LGPL-3+",
         "LGPL3.0+",
@@ -431,6 +432,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-3.0-or-later"
+                ],
+                "__impliedId": "LGPL-3.0-or-later"
+            },
+            "shortname": "LGPL-3.0-or-later",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

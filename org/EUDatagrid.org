@@ -88,6 +88,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/EUDatagrid.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -162,6 +164,16 @@ open-license]] (CDLA-Permissive-1.0))
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "EUDatagrid"
+                  ],
+                  "__impliedId": "EUDatagrid"
+              },
+              "shortname": "EUDatagrid",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

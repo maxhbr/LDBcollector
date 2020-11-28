@@ -48,6 +48,16 @@
             },
             "domain_content": true
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-3.0"
+                ],
+                "__impliedId": "AFL-3.0"
+            },
+            "shortname": "AFL-3.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academic Free License v3.0",

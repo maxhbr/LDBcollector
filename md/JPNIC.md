@@ -75,6 +75,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/JPNIC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -92,6 +94,16 @@ Raw Data
         ],
         "__impliedId": "JPNIC",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "JPNIC"
+                    ],
+                    "__impliedId": "JPNIC"
+                },
+                "shortname": "JPNIC",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Japan Network Information Center License",

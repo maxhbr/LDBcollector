@@ -65,6 +65,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SGI-B-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -90,6 +92,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SGI-B-1.1"
+                    ],
+                    "__impliedId": "SGI-B-1.1"
+                },
+                "shortname": "SGI-B-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SGI Free Software License B v1.1",

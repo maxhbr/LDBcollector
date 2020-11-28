@@ -447,6 +447,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/APSL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -495,6 +497,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "APSL-1.1"
+                    ],
+                    "__impliedId": "APSL-1.1"
+                },
+                "shortname": "APSL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Apple Public Source License 1.1",

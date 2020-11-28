@@ -85,6 +85,7 @@ By downloading, copying, installing or otherwise using the Software, Licensee ag
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/eGenix.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -111,6 +112,16 @@ Project Wiki]
         "eGenix"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "eGenix"
+                ],
+                "__impliedId": "eGenix"
+            },
+            "shortname": "eGenix",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "eGenix.com Public License 1.1.0",

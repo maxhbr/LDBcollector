@@ -211,6 +211,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EUPL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -260,6 +262,16 @@ Raw Data
         ],
         "__hasPatentHint": true,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EUPL-1.2"
+                    ],
+                    "__impliedId": "EUPL-1.2"
+                },
+                "shortname": "EUPL-1.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "European Union Public License 1.2",

@@ -35,6 +35,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
@@ -57,6 +59,16 @@ Raw Data
         ],
         "__impliedId": "LiLiQ-P-1.1",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LiLiQ-P-1.1"
+                    ],
+                    "__impliedId": "LiLiQ-P-1.1"
+                },
+                "shortname": "LiLiQ-P-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Licence Libre du QuÃ©bec â Permissive version 1.1",

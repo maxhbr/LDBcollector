@@ -77,6 +77,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ICU.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -101,9 +103,9 @@ Raw Data
 
     {
         "__impliedNames": [
+            "X11",
             "ICU",
             "ICU License",
-            "X11",
             "X11 License",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
@@ -111,6 +113,16 @@ Raw Data
         ],
         "__impliedId": "ICU",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "X11"
+                    ],
+                    "__impliedId": "X11"
+                },
+                "shortname": "X11",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ICU License",

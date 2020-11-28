@@ -99,6 +99,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause-Patent.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -131,6 +133,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause-Patent"
+                    ],
+                    "__impliedId": "BSD-2-Clause-Patent"
+                },
+                "shortname": "BSD-2-Clause-Patent",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD-2-Clause Plus Patent License",

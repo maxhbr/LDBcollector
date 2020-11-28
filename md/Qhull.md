@@ -62,6 +62,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Qhull.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -90,6 +92,16 @@ Raw Data
             "Qhull"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Qhull"
+                    ],
+                    "__impliedId": "Qhull"
+                },
+                "shortname": "Qhull",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Qhull License",

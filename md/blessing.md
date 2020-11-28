@@ -38,6 +38,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/blessing.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -54,6 +56,16 @@ Raw Data
         ],
         "__impliedId": "blessing",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "blessing"
+                    ],
+                    "__impliedId": "blessing"
+                },
+                "shortname": "blessing",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SQLite Blessing",

@@ -7,6 +7,16 @@
     ],
     "__impliedId": "JPNIC",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "JPNIC"
+                ],
+                "__impliedId": "JPNIC"
+            },
+            "shortname": "JPNIC",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Japan Network Information Center License",

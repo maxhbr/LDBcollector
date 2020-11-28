@@ -525,6 +525,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NOSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -550,6 +552,16 @@ Raw Data
             "NOSL"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NOSL"
+                    ],
+                    "__impliedId": "NOSL"
+                },
+                "shortname": "NOSL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Netizen Open Source License",

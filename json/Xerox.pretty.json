@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Xerox"
+                ],
+                "__impliedId": "Xerox"
+            },
+            "shortname": "Xerox",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Xerox License",

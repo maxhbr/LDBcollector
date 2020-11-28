@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-1.0-cl8"
+                ],
+                "__impliedId": "Artistic-1.0-cl8"
+            },
+            "shortname": "Artistic-1.0-cl8",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Artistic License 1.0 w/clause 8",

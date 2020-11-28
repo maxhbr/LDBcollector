@@ -156,6 +156,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -173,6 +175,16 @@ Raw Data
         ],
         "__impliedId": "PolyForm-Small-Business-1.0.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "PolyForm-Small-Business-1.0.0"
+                    ],
+                    "__impliedId": "PolyForm-Small-Business-1.0.0"
+                },
+                "shortname": "PolyForm-Small-Business-1.0.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PolyForm Small Business License 1.0.0",

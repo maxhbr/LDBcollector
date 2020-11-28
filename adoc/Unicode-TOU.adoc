@@ -168,6 +168,7 @@ between the parties.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Unicode-TOU.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-tou.yml[Scancode]
@@ -186,6 +187,16 @@ repository] is generated)
     ],
     "__impliedId": "Unicode-TOU",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Unicode-TOU"
+                ],
+                "__impliedId": "Unicode-TOU"
+            },
+            "shortname": "Unicode-TOU",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Unicode Terms of Use",

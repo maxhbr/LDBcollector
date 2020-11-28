@@ -5,6 +5,16 @@
     ],
     "__impliedId": "OFL-1.0-RFN",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OFL-1.0-RFN"
+                ],
+                "__impliedId": "OFL-1.0-RFN"
+            },
+            "shortname": "OFL-1.0-RFN",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SIL Open Font License 1.0 with Reserved Font Name",

@@ -428,6 +428,7 @@ Creative Commons may be contacted at creativecommons.org.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CC-BY-ND-4.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nd-4.0.yml[Scancode]
@@ -447,6 +448,16 @@ Policy]
     ],
     "__impliedId": "CC-BY-ND-4.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC-BY-ND-4.0"
+                ],
+                "__impliedId": "CC-BY-ND-4.0"
+            },
+            "shortname": "CC-BY-ND-4.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution No Derivatives 4.0 International",

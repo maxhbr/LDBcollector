@@ -147,6 +147,7 @@ October 31, 2008
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Libpng.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -168,6 +169,16 @@ repository] is generated)
     ],
     "__impliedId": "Libpng",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Libpng"
+                ],
+                "__impliedId": "Libpng"
+            },
+            "shortname": "Libpng",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libpng License",

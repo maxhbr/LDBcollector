@@ -191,6 +191,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/RSCPL.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -260,6 +262,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "RSCPL"
+                  ],
+                  "__impliedId": "RSCPL"
+              },
+              "shortname": "RSCPL",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

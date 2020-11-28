@@ -7,6 +7,16 @@
     ],
     "__impliedId": "PolyForm-Noncommercial-1.0.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PolyForm-Noncommercial-1.0.0"
+                ],
+                "__impliedId": "PolyForm-Noncommercial-1.0.0"
+            },
+            "shortname": "PolyForm-Noncommercial-1.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PolyForm Noncommercial License 1.0.0",

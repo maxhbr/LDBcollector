@@ -41,6 +41,7 @@ Dedicator recognizes that, once placed in the public domain, the Work may be fre
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CC-PDDC.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-pd.yml[Scancode]
@@ -58,6 +59,16 @@ repository] is generated)
     ],
     "__impliedId": "CC-PDDC",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC-PDDC"
+                ],
+                "__impliedId": "CC-PDDC"
+            },
+            "shortname": "CC-PDDC",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Public Domain Dedication and Certification",

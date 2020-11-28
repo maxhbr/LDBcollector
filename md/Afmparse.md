@@ -59,6 +59,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Afmparse.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -88,6 +90,16 @@ Raw Data
             "Afmparse"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Afmparse"
+                    ],
+                    "__impliedId": "Afmparse"
+                },
+                "shortname": "Afmparse",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Afmparse License",

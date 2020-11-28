@@ -78,6 +78,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -107,6 +109,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-No-Nuclear-License-2014"
+                    ],
+                    "__impliedId": "BSD-3-Clause-No-Nuclear-License-2014"
+                },
+                "shortname": "BSD-3-Clause-No-Nuclear-License-2014",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause No Nuclear License 2014",

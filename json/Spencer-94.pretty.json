@@ -7,6 +7,16 @@
     ],
     "__impliedId": "Spencer-94",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Spencer-94"
+                ],
+                "__impliedId": "Spencer-94"
+            },
+            "shortname": "Spencer-94",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Spencer License 94",

@@ -290,6 +290,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Glide.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -315,6 +317,16 @@ Raw Data
             "Glide"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Glide"
+                    ],
+                    "__impliedId": "Glide"
+                },
+                "shortname": "Glide",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "3dfx Glide License",

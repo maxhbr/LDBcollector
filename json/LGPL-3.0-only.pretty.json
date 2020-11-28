@@ -78,6 +78,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-3.0-only"
+                ],
+                "__impliedId": "LGPL-3.0-only"
+            },
+            "shortname": "LGPL-3.0-only",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Lesser General Public License v3.0 only",

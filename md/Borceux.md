@@ -61,6 +61,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Borceux.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -90,6 +92,16 @@ Raw Data
             "Borceux"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Borceux"
+                    ],
+                    "__impliedId": "Borceux"
+                },
+                "shortname": "Borceux",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Borceux license",

@@ -154,6 +154,7 @@ of your licenses.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/PolyForm-Small-Business-1.0.0.html[SPDX]
 (all data [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/polyform-small-business-1.0.0.yml[Scancode]
@@ -171,6 +172,16 @@ of your licenses.
     ],
     "__impliedId": "PolyForm-Small-Business-1.0.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PolyForm-Small-Business-1.0.0"
+                ],
+                "__impliedId": "PolyForm-Small-Business-1.0.0"
+            },
+            "shortname": "PolyForm-Small-Business-1.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PolyForm Small Business License 1.0.0",

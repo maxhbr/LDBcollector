@@ -43,6 +43,7 @@ program or documentation which mentions my name and the URL shown above.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Glulxe.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/glulxe.yml[Scancode]
@@ -66,6 +67,16 @@ Project Wiki]
         "Glulxe"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Glulxe"
+                ],
+                "__impliedId": "Glulxe"
+            },
+            "shortname": "Glulxe",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Glulxe License",

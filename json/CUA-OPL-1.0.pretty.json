@@ -44,6 +44,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CUA-OPL-1.0"
+                ],
+                "__impliedId": "CUA-OPL-1.0"
+            },
+            "shortname": "CUA-OPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CUA Office Public License v1.0",

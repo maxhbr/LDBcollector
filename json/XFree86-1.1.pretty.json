@@ -8,6 +8,16 @@
     "__impliedId": "XFree86-1.1",
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "XFree86-1.1"
+                ],
+                "__impliedId": "XFree86-1.1"
+            },
+            "shortname": "XFree86-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "XFree86 License 1.1",

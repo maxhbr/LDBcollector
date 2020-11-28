@@ -60,6 +60,7 @@ bug reports on your work be reported to you.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Noweb.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/noweb.yml[Scancode]
@@ -83,6 +84,16 @@ Project Wiki]
         "Noweb"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Noweb"
+                ],
+                "__impliedId": "Noweb"
+            },
+            "shortname": "Noweb",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Noweb License",

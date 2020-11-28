@@ -140,6 +140,7 @@ This Agreement is governed by the laws of the State of New York and the intellec
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/IPL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -229,6 +230,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "IPL-1.0"
+                ],
+                "__impliedId": "IPL-1.0"
+            },
+            "shortname": "IPL-1.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

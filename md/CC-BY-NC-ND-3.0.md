@@ -356,6 +356,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-3.0.html "SPDX") (all
@@ -397,6 +399,16 @@ Raw Data
         ],
         "__impliedNonCommercial": true,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-NC-ND-3.0"
+                    ],
+                    "__impliedId": "CC-BY-NC-ND-3.0"
+                },
+                "shortname": "CC-BY-NC-ND-3.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial No Derivatives 3.0 Unported",

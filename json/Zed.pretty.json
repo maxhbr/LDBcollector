@@ -10,6 +10,16 @@
         "Zed"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Zed"
+                ],
+                "__impliedId": "Zed"
+            },
+            "shortname": "Zed",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zed License",

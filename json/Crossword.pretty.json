@@ -10,6 +10,16 @@
         "Crossword"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Crossword"
+                ],
+                "__impliedId": "Crossword"
+            },
+            "shortname": "Crossword",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Crossword License",

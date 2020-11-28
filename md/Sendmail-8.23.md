@@ -69,6 +69,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Sendmail-8.23.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -85,6 +87,16 @@ Raw Data
         ],
         "__impliedId": "Sendmail-8.23",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Sendmail-8.23"
+                    ],
+                    "__impliedId": "Sendmail-8.23"
+                },
+                "shortname": "Sendmail-8.23",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sendmail License 8.23",

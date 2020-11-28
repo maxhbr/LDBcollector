@@ -44,6 +44,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BitTorrent-1.1"
+                ],
+                "__impliedId": "BitTorrent-1.1"
+            },
+            "shortname": "BitTorrent-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BitTorrent Open Source License v1.1",

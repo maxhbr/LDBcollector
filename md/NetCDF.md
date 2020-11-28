@@ -70,6 +70,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NetCDF.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -99,6 +101,16 @@ Raw Data
             "NetCDF"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NetCDF"
+                    ],
+                    "__impliedId": "NetCDF"
+                },
+                "shortname": "NetCDF",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NetCDF license",

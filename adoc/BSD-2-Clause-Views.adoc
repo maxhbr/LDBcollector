@@ -44,6 +44,7 @@ The views and conclusions contained in the software and documentation are those 
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BSD-2-Clause-Views.html[SPDX] (all data [in
 this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-2-clause-views.yml[Scancode]
@@ -60,6 +61,16 @@ this repository] is generated)
     ],
     "__impliedId": "BSD-2-Clause-Views",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-2-Clause-Views"
+                ],
+                "__impliedId": "BSD-2-Clause-Views"
+            },
+            "shortname": "BSD-2-Clause-Views",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 2-Clause with views sentence",

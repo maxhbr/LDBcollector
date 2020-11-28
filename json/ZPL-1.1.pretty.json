@@ -7,6 +7,16 @@
     ],
     "__impliedId": "ZPL-1.1",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ZPL-1.1"
+                ],
+                "__impliedId": "ZPL-1.1"
+            },
+            "shortname": "ZPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Zope Public License 1.1",

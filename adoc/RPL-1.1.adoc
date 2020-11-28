@@ -212,6 +212,7 @@ All software distributed under the Licenses is provided strictly on an "AS IS" b
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/RPL-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -251,6 +252,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.1"
+                ],
+                "__impliedId": "RPL-1.1"
+            },
+            "shortname": "RPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Reciprocal Public License 1.1",

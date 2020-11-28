@@ -7,6 +7,16 @@
     ],
     "__impliedId": "IBM-pibs",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "IBM-pibs"
+                ],
+                "__impliedId": "IBM-pibs"
+            },
+            "shortname": "IBM-pibs",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "IBM PowerPC Initialization and Boot Software",

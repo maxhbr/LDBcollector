@@ -92,6 +92,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
@@ -154,6 +156,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-2.0-or-later"
+                    ],
+                    "__impliedId": "GPL-2.0-or-later"
+                },
+                "shortname": "GPL-2.0-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU General Public License v2.0 or later",

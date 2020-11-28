@@ -102,6 +102,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/AAL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -171,6 +172,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AAL"
+                ],
+                "__impliedId": "AAL"
+            },
+            "shortname": "AAL",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

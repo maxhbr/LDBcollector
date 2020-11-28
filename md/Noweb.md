@@ -59,6 +59,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Noweb.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -83,6 +85,16 @@ Raw Data
             "Noweb"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Noweb"
+                    ],
+                    "__impliedId": "Noweb"
+                },
+                "shortname": "Noweb",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Noweb License",

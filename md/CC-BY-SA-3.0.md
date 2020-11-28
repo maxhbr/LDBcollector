@@ -413,6 +413,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-3.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -453,6 +455,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-SA-3.0"
+                    ],
+                    "__impliedId": "CC-BY-SA-3.0"
+                },
+                "shortname": "CC-BY-SA-3.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Share Alike 3.0 Unported",

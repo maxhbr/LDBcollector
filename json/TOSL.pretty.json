@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TOSL"
+                ],
+                "__impliedId": "TOSL"
+            },
+            "shortname": "TOSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Trusster Open Source License",

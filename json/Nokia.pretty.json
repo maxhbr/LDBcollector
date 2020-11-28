@@ -49,6 +49,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Nokia"
+                ],
+                "__impliedId": "Nokia"
+            },
+            "shortname": "Nokia",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Nokia Open Source License",

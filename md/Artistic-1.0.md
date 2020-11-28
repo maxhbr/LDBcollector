@@ -193,6 +193,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
@@ -248,6 +250,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Artistic-1.0"
+                    ],
+                    "__impliedId": "Artistic-1.0"
+                },
+                "shortname": "Artistic-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Artistic License 1.0",

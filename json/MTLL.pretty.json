@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MTLL"
+                ],
+                "__impliedId": "MTLL"
+            },
+            "shortname": "MTLL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Matrix Template Library License",

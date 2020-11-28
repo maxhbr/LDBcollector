@@ -68,6 +68,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html[SPDX] (all data
 [in this repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml[Scancode]
@@ -84,6 +85,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     ],
     "__impliedId": "BSD-3-Clause-Open-MPI",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-Open-MPI"
+                ],
+                "__impliedId": "BSD-3-Clause-Open-MPI"
+            },
+            "shortname": "BSD-3-Clause-Open-MPI",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 3-Clause Open MPI variant",

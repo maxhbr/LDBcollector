@@ -69,6 +69,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EPICS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -93,6 +95,16 @@ Raw Data
             "EPICS"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EPICS"
+                    ],
+                    "__impliedId": "EPICS"
+                },
+                "shortname": "EPICS",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "EPICS Open License",

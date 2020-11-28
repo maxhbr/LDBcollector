@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -91,6 +93,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Linux-OpenIB"
+                    ],
+                    "__impliedId": "Linux-OpenIB"
+                },
+                "shortname": "Linux-OpenIB",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Linux Kernel Variant of OpenIB.org license",

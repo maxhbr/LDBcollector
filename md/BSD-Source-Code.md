@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-Source-Code.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -83,6 +85,16 @@ Raw Data
         ],
         "__impliedId": "BSD-Source-Code",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-Source-Code"
+                    ],
+                    "__impliedId": "BSD-Source-Code"
+                },
+                "shortname": "BSD-Source-Code",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Source Code Attribution",

@@ -148,6 +148,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OSL-3.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -243,6 +245,16 @@ Raw Data
                     ]
                 },
                 "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSL-3.0"
+                    ],
+                    "__impliedId": "OSL-3.0"
+                },
+                "shortname": "OSL-3.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

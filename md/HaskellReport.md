@@ -45,6 +45,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/HaskellReport.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -70,6 +72,16 @@ Raw Data
             "HaskellReport"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "HaskellReport"
+                    ],
+                    "__impliedId": "HaskellReport"
+                },
+                "shortname": "HaskellReport",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Haskell Language Report License",

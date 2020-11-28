@@ -99,6 +99,7 @@ As far as the law allows, this software comes as is, without any warranty or con
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Parity-7.0.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -128,6 +129,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Parity-7.0.0"
+                ],
+                "__impliedId": "Parity-7.0.0"
+            },
+            "shortname": "Parity-7.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "The Parity Public License 7.0.0",

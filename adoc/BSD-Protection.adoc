@@ -173,6 +173,7 @@ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION, AND MODIFICATION
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BSD-Protection.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -207,6 +208,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-Protection"
+                ],
+                "__impliedId": "BSD-Protection"
+            },
+            "shortname": "BSD-Protection",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD Protection License",

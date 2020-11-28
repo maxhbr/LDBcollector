@@ -197,6 +197,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/gSOAP-1.3b.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -213,6 +215,16 @@ Raw Data
         ],
         "__impliedId": "gSOAP-1.3b",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "gSOAP-1.3b"
+                    ],
+                    "__impliedId": "gSOAP-1.3b"
+                },
+                "shortname": "gSOAP-1.3b",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "gSOAP Public License v1.3b",

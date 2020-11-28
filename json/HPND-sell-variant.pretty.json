@@ -16,6 +16,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "HPND-sell-variant"
+                ],
+                "__impliedId": "HPND-sell-variant"
+            },
+            "shortname": "HPND-sell-variant",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Historical Permission Notice and Disclaimer - sell variant",

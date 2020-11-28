@@ -168,6 +168,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Unicode-TOU.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -188,6 +190,16 @@ open-license]] (CDLA-Permissive-1.0))
       ],
       "__impliedId": "Unicode-TOU",
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Unicode-TOU"
+                  ],
+                  "__impliedId": "Unicode-TOU"
+              },
+              "shortname": "Unicode-TOU",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Unicode Terms of Use",

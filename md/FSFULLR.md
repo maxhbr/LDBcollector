@@ -42,6 +42,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/FSFULLR.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -67,6 +69,16 @@ Raw Data
             "FSFULLR"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "FSFULLR"
+                    ],
+                    "__impliedId": "FSFULLR"
+                },
+                "shortname": "FSFULLR",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FSF Unlimited License (with License Retention)",

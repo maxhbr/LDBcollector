@@ -46,6 +46,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Adobe-Glyph.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -71,6 +73,16 @@ Raw Data
             "MIT"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Adobe-Glyph"
+                    ],
+                    "__impliedId": "Adobe-Glyph"
+                },
+                "shortname": "Adobe-Glyph",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Glyph List License",

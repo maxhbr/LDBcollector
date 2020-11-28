@@ -7,6 +7,16 @@
     ],
     "__impliedId": "Libpng",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Libpng"
+                ],
+                "__impliedId": "Libpng"
+            },
+            "shortname": "Libpng",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libpng License",

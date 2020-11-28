@@ -45,6 +45,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Zed.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -73,6 +75,16 @@ Raw Data
             "Zed"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Zed"
+                    ],
+                    "__impliedId": "Zed"
+                },
+                "shortname": "Zed",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zed License",

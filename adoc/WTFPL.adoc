@@ -104,6 +104,7 @@ DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/WTFPL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -145,6 +146,16 @@ Policy]
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "WTFPL"
+                ],
+                "__impliedId": "WTFPL"
+            },
+            "shortname": "WTFPL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Do What The F*ck You Want To Public License",

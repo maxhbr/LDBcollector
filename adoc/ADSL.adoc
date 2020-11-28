@@ -52,6 +52,7 @@ of this software code.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/ADSL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -77,6 +78,16 @@ Project Wiki]
         "ADSL"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ADSL"
+                ],
+                "__impliedId": "ADSL"
+            },
+            "shortname": "ADSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Amazon Digital Services License",

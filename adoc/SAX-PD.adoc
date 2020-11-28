@@ -88,6 +88,7 @@ David Megginson, Megginson Technologies Ltd.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/SAX-PD.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml[Scancode]
@@ -104,6 +105,16 @@ repository] is generated)
     ],
     "__impliedId": "SAX-PD",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SAX-PD"
+                ],
+                "__impliedId": "SAX-PD"
+            },
+            "shortname": "SAX-PD",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sax Public Domain Notice",

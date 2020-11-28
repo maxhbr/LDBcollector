@@ -10,6 +10,16 @@
     ],
     "__impliedId": "ICU",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ICU"
+                ],
+                "__impliedId": "ICU"
+            },
+            "shortname": "ICU",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ICU License",

@@ -37,6 +37,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LPL-1.0"
+                ],
+                "__impliedId": "LPL-1.0"
+            },
+            "shortname": "LPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Lucent Public License Version 1.0",

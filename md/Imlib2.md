@@ -81,6 +81,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Imlib2.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -109,6 +111,16 @@ Raw Data
             "Imlib2"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Imlib2"
+                    ],
+                    "__impliedId": "Imlib2"
+                },
+                "shortname": "Imlib2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Imlib2 License",

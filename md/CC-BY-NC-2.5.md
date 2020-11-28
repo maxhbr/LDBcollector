@@ -107,6 +107,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-2.5.html "SPDX") (all data
@@ -148,6 +150,16 @@ Raw Data
         ],
         "__impliedNonCommercial": true,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-NC-2.5"
+                    ],
+                    "__impliedId": "CC-BY-NC-2.5"
+                },
+                "shortname": "CC-BY-NC-2.5",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial 2.5 Generic",

@@ -100,6 +100,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
@@ -160,6 +162,16 @@ Raw Data
         ],
         "__hasPatentHint": true,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-3.0-or-later"
+                    ],
+                    "__impliedId": "AGPL-3.0-or-later"
+                },
+                "shortname": "AGPL-3.0-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Affero General Public License v3.0 or later",

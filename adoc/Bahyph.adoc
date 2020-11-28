@@ -53,6 +53,7 @@ END OF COPYRIGHT NOTICE
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Bahyph.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -78,6 +79,16 @@ Project Wiki]
         "Bahyph"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Bahyph"
+                ],
+                "__impliedId": "Bahyph"
+            },
+            "shortname": "Bahyph",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Bahyph License",

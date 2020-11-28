@@ -11,6 +11,16 @@
         "IJG"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "IJG"
+                ],
+                "__impliedId": "IJG"
+            },
+            "shortname": "IJG",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Independent JPEG Group License",

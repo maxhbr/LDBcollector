@@ -124,6 +124,8 @@
 
 *** Facts
 
+- LicenseName
+
 - Override
 
 - [[https://spdx.org/licenses/BSD-2-Clause.html][SPDX]] (all data [in
@@ -217,6 +219,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "BSD-2-Clause"
+                  ],
+                  "__impliedId": "BSD-2-Clause"
+              },
+              "shortname": "BSD-2-Clause",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

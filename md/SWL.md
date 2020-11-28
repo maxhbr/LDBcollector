@@ -64,6 +64,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SWL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -101,6 +103,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SWL"
+                    ],
+                    "__impliedId": "SWL"
+                },
+                "shortname": "SWL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",

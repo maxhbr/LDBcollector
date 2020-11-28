@@ -328,6 +328,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/GPL-1.0-only.html "SPDX") (all data
@@ -380,6 +382,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-1.0-only"
+                    ],
+                    "__impliedId": "GPL-1.0-only"
+                },
+                "shortname": "GPL-1.0-only",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU General Public License v1.0 only",

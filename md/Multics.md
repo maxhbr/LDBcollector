@@ -64,6 +64,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Multics.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -129,6 +131,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Multics"
+                    ],
+                    "__impliedId": "Multics"
+                },
+                "shortname": "Multics",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

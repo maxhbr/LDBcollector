@@ -125,6 +125,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -149,6 +151,16 @@ Raw Data
         ],
         "__impliedId": "CC-BY-2.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-2.0"
+                    ],
+                    "__impliedId": "CC-BY-2.0"
+                },
+                "shortname": "CC-BY-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 2.0 Generic",

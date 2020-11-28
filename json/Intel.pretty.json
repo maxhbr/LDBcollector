@@ -50,6 +50,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Intel"
+                ],
+                "__impliedId": "Intel"
+            },
+            "shortname": "Intel",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Intel Open Source License",

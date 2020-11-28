@@ -58,6 +58,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/HPND-sell-variant.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -87,6 +89,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "HPND-sell-variant"
+                    ],
+                    "__impliedId": "HPND-sell-variant"
+                },
+                "shortname": "HPND-sell-variant",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Historical Permission Notice and Disclaimer - sell variant",

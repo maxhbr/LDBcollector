@@ -38,6 +38,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Python-2.0"
+                ],
+                "__impliedId": "Python-2.0"
+            },
+            "shortname": "Python-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Python License 2.0",

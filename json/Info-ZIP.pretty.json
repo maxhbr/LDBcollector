@@ -7,6 +7,16 @@
     ],
     "__impliedId": "Info-ZIP",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Info-ZIP"
+                ],
+                "__impliedId": "Info-ZIP"
+            },
+            "shortname": "Info-ZIP",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Info-ZIP License",

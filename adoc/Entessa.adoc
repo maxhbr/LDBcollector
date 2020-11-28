@@ -101,6 +101,7 @@ LLC, http://www.entessa.com. For more information on the openSEAL, please see
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Entessa.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -173,6 +174,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Entessa"
+                ],
+                "__impliedId": "Entessa"
+            },
+            "shortname": "Entessa",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

@@ -6,6 +6,16 @@
     ],
     "__impliedId": "TCP-wrappers",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TCP-wrappers"
+                ],
+                "__impliedId": "TCP-wrappers"
+            },
+            "shortname": "TCP-wrappers",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TCP Wrappers License",

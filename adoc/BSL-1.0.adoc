@@ -119,6 +119,7 @@ DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * Override
 * Override
 * https://spdx.org/licenses/BSL-1.0.html[SPDX] (all data [in this
@@ -200,6 +201,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSL-1.0"
+                ],
+                "__impliedId": "BSL-1.0"
+            },
+            "shortname": "BSL-1.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

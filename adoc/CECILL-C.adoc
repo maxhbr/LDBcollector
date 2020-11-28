@@ -289,6 +289,7 @@ Version 1.0 du 2006-09-05."
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CECILL-C.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml[Scancode]
@@ -324,6 +325,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CECILL-C"
+                ],
+                "__impliedId": "CECILL-C"
+            },
+            "shortname": "CECILL-C",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CeCILL-C Free Software License Agreement",

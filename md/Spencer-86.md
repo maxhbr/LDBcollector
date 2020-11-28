@@ -59,6 +59,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Spencer-86.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -80,6 +82,16 @@ Raw Data
         ],
         "__impliedId": "Spencer-86",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Spencer-86"
+                    ],
+                    "__impliedId": "Spencer-86"
+                },
+                "shortname": "Spencer-86",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Spencer License 86",

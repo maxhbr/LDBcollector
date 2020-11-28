@@ -9,6 +9,16 @@
         "JSON evil license"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "JSON"
+                ],
+                "__impliedId": "JSON"
+            },
+            "shortname": "JSON",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "JSON License",

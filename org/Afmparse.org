@@ -60,6 +60,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Afmparse.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -89,6 +91,16 @@
           "Afmparse"
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Afmparse"
+                  ],
+                  "__impliedId": "Afmparse"
+              },
+              "shortname": "Afmparse",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Afmparse License",

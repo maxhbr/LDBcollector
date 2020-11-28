@@ -103,6 +103,8 @@
 
 *** Facts
 
+- LicenseName
+
 - Override
 
 - [[https://spdx.org/licenses/Sleepycat.html][SPDX]] (all data [in this
@@ -197,6 +199,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Sleepycat"
+                  ],
+                  "__impliedId": "Sleepycat"
+              },
+              "shortname": "Sleepycat",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

@@ -164,6 +164,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -235,6 +237,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NASA-1.3"
+                    ],
+                    "__impliedId": "NASA-1.3"
+                },
+                "shortname": "NASA-1.3",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

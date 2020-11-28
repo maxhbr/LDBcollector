@@ -89,6 +89,7 @@ confusion about 2.2.1 and 2.1.8.*.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/xinetd.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -114,6 +115,16 @@ Project Wiki]
         "xinetd"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "xinetd"
+                ],
+                "__impliedId": "xinetd"
+            },
+            "shortname": "xinetd",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "xinetd License",

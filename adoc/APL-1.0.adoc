@@ -389,6 +389,7 @@ Each Subsequent Contributor (including the Initial Contributor where the Initial
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/APL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml[Scancode]
@@ -451,6 +452,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APL-1.0"
+                ],
+                "__impliedId": "APL-1.0"
+            },
+            "shortname": "APL-1.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

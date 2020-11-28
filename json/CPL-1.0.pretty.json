@@ -30,6 +30,16 @@
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CPL-1.0"
+                ],
+                "__impliedId": "CPL-1.0"
+            },
+            "shortname": "CPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Public License 1.0",

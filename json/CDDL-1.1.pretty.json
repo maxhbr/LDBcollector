@@ -25,6 +25,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CDDL-1.1"
+                ],
+                "__impliedId": "CDDL-1.1"
+            },
+            "shortname": "CDDL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Development and Distribution License 1.1",

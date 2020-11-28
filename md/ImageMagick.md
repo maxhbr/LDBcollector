@@ -116,6 +116,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ImageMagick.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -156,6 +158,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ImageMagick"
+                    ],
+                    "__impliedId": "ImageMagick"
+                },
+                "shortname": "ImageMagick",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ImageMagick License",

@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OLDAP-2.2.2"
+                ],
+                "__impliedId": "OLDAP-2.2.2"
+            },
+            "shortname": "OLDAP-2.2.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open LDAP Public License 2.2.2",

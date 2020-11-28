@@ -55,6 +55,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/libselinux-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -72,6 +74,16 @@ Raw Data
         ],
         "__impliedId": "libselinux-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "libselinux-1.0"
+                    ],
+                    "__impliedId": "libselinux-1.0"
+                },
+                "shortname": "libselinux-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "libselinux public domain notice",

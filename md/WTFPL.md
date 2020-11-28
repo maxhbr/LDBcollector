@@ -98,6 +98,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/WTFPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -148,6 +150,16 @@ Raw Data
         ],
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "WTFPL"
+                    ],
+                    "__impliedId": "WTFPL"
+                },
+                "shortname": "WTFPL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Do What The F*ck You Want To Public License",

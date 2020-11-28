@@ -173,6 +173,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OFL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -248,6 +250,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OFL-1.1"
+                    ],
+                    "__impliedId": "OFL-1.1"
+                },
+                "shortname": "OFL-1.1",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

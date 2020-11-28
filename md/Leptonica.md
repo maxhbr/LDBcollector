@@ -49,6 +49,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Leptonica.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -77,6 +79,16 @@ Raw Data
             "Leptonica"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Leptonica"
+                    ],
+                    "__impliedId": "Leptonica"
+                },
+                "shortname": "Leptonica",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Leptonica License",

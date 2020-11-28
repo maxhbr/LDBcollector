@@ -5,6 +5,16 @@
     ],
     "__impliedId": "GFDL-1.2-no-invariants-only",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "GFDL-1.2-no-invariants-only"
+                ],
+                "__impliedId": "GFDL-1.2-no-invariants-only"
+            },
+            "shortname": "GFDL-1.2-no-invariants-only",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Free Documentation License v1.2 only - no invariants",

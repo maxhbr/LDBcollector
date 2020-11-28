@@ -39,6 +39,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Dotseqn.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -63,6 +65,16 @@ Raw Data
             "Dotseqn"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Dotseqn"
+                    ],
+                    "__impliedId": "Dotseqn"
+                },
+                "shortname": "Dotseqn",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Dotseqn License",

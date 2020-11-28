@@ -87,6 +87,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Xnet.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -163,6 +165,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Xnet"
+                  ],
+                  "__impliedId": "Xnet"
+              },
+              "shortname": "Xnet",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

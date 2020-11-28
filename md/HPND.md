@@ -73,6 +73,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/HPND.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -146,6 +148,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "HPND"
+                    ],
+                    "__impliedId": "HPND"
+                },
+                "shortname": "HPND",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

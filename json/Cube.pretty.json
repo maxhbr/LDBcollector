@@ -10,6 +10,16 @@
         "Cube"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Cube"
+                ],
+                "__impliedId": "Cube"
+            },
+            "shortname": "Cube",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cube License",

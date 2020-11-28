@@ -6,6 +6,16 @@
     ],
     "__impliedId": "BSD-2-Clause-Views",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-2-Clause-Views"
+                ],
+                "__impliedId": "BSD-2-Clause-Views"
+            },
+            "shortname": "BSD-2-Clause-Views",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 2-Clause with views sentence",

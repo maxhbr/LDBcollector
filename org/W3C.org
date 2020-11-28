@@ -112,6 +112,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/W3C.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -198,6 +200,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "W3C"
+                  ],
+                  "__impliedId": "W3C"
+              },
+              "shortname": "W3C",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

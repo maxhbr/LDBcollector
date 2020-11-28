@@ -125,6 +125,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AMDPLPA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -154,6 +156,16 @@ Raw Data
             "AMDPLPA"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AMDPLPA"
+                    ],
+                    "__impliedId": "AMDPLPA"
+                },
+                "shortname": "AMDPLPA",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "AMD's plpa_map.c License",

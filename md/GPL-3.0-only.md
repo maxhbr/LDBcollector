@@ -5,6 +5,8 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 **Other Names:**
 
+-   `GPL-3.0-or-later`
+
 -   `GPL-3.0`
 
 -   `GPL3.0`
@@ -14,8 +16,6 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 -   `GPL (v3)`
 
 -   `GNU General Public License Version 3`
-
--   `GPL-3.0-or-later`
 
 -   `GPL-3.0+`
 
@@ -825,6 +825,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   Override
@@ -907,13 +909,13 @@ Raw Data
 
     {
         "__impliedNames": [
+            "GPL-3.0-or-later",
             "GPL-3.0-only",
             "GPL-3.0",
             "GPL3.0",
             "GPL3",
             "GPL (v3)",
             "GNU General Public License Version 3",
-            "GPL-3.0-or-later",
             "GPL-3.0+",
             "GPL3.0+",
             "GPL3+",
@@ -983,6 +985,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-3.0-or-later"
+                    ],
+                    "__impliedId": "GPL-3.0-or-later"
+                },
+                "shortname": "GPL-3.0-or-later",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

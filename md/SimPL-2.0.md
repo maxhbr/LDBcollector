@@ -79,6 +79,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SimPL-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -143,6 +145,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SimPL-2.0"
+                    ],
+                    "__impliedId": "SimPL-2.0"
+                },
+                "shortname": "SimPL-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

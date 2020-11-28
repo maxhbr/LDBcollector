@@ -83,6 +83,7 @@ terms specified in this license.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/TCL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -110,6 +111,16 @@ Project Wiki]
         "TCL"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TCL"
+                ],
+                "__impliedId": "TCL"
+            },
+            "shortname": "TCL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TCL/TK License",

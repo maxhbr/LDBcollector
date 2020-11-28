@@ -58,6 +58,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.1"
+                ],
+                "__impliedId": "EUPL-1.1"
+            },
+            "shortname": "EUPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.1",

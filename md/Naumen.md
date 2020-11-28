@@ -84,6 +84,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Naumen.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -162,6 +164,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Naumen"
+                    ],
+                    "__impliedId": "Naumen"
+                },
+                "shortname": "Naumen",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

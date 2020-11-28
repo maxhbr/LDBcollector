@@ -134,6 +134,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/NCSA.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -221,6 +223,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "NCSA"
+                  ],
+                  "__impliedId": "NCSA"
+              },
+              "shortname": "NCSA",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

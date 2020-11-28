@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Mup"
+                ],
+                "__impliedId": "Mup"
+            },
+            "shortname": "Mup",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Mup License",

@@ -188,6 +188,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/YPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -205,6 +207,16 @@ Raw Data
         ],
         "__impliedId": "YPL-1.1",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "YPL-1.1"
+                    ],
+                    "__impliedId": "YPL-1.1"
+                },
+                "shortname": "YPL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Yahoo! Public License v1.1",

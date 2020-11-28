@@ -92,6 +92,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/TMate.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -120,6 +122,16 @@ Raw Data
             "TMate"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "TMate"
+                    ],
+                    "__impliedId": "TMate"
+                },
+                "shortname": "TMate",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TMate Open Source License",

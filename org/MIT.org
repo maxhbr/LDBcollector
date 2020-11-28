@@ -149,6 +149,8 @@
 
 *** Facts
 
+- LicenseName
+
 - Override
 
 - [[https://spdx.org/licenses/MIT.html][SPDX]] (all data [in this
@@ -256,6 +258,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "MIT"
+                  ],
+                  "__impliedId": "MIT"
+              },
+              "shortname": "MIT",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

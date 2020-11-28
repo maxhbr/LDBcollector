@@ -116,6 +116,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/etalab-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -140,6 +142,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "etalab-2.0"
+                    ],
+                    "__impliedId": "etalab-2.0"
+                },
+                "shortname": "etalab-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Etalab Open License 2.0",

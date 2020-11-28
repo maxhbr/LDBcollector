@@ -457,6 +457,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-4.0.html "SPDX") (all data
@@ -533,6 +535,16 @@ Raw Data
                     ]
                 },
                 "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-NC-4.0"
+                    ],
+                    "__impliedId": "CC-BY-NC-4.0"
+                },
+                "shortname": "CC-BY-NC-4.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

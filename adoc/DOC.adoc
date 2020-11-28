@@ -60,6 +60,7 @@ Back to the ACE home page.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/DOC.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -86,6 +87,16 @@ Project Wiki]
         "DOC"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "DOC"
+                ],
+                "__impliedId": "DOC"
+            },
+            "shortname": "DOC",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "DOC License",

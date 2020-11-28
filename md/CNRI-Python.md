@@ -80,6 +80,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CNRI-Python.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -148,6 +150,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CNRI-Python"
+                    ],
+                    "__impliedId": "CNRI-Python"
+                },
+                "shortname": "CNRI-Python",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

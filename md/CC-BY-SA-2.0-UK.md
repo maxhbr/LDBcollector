@@ -23,6 +23,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-SA-2.0-UK.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -35,6 +37,16 @@ Raw Data
         ],
         "__impliedId": "CC-BY-SA-2.0-UK",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-SA-2.0-UK"
+                    ],
+                    "__impliedId": "CC-BY-SA-2.0-UK"
+                },
+                "shortname": "CC-BY-SA-2.0-UK",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Share Alike 2.0 England and Wales",

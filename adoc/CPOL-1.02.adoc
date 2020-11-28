@@ -110,6 +110,7 @@ BY EXERCISING ANY RIGHTS TO THE WORK PROVIDED HEREIN, YOU ACCEPT AND AGREE TO BE
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CPOL-1.02.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpol-1.02.yml[Scancode]
@@ -129,6 +130,16 @@ repository] is generated)
     ],
     "__impliedId": "CPOL-1.02",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CPOL-1.02"
+                ],
+                "__impliedId": "CPOL-1.02"
+            },
+            "shortname": "CPOL-1.02",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Code Project Open License 1.02",

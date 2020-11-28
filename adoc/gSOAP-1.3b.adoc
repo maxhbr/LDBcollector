@@ -199,6 +199,7 @@ THE SOFTWARE IN THIS PRODUCT WAS IN PART PROVIDED BY GENIVIA INC AND ANY EXPRESS
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/gSOAP-1.3b.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml[Scancode]
@@ -215,6 +216,16 @@ repository] is generated)
     ],
     "__impliedId": "gSOAP-1.3b",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "gSOAP-1.3b"
+                ],
+                "__impliedId": "gSOAP-1.3b"
+            },
+            "shortname": "gSOAP-1.3b",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "gSOAP Public License v1.3b",

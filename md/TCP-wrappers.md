@@ -75,6 +75,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/TCP-wrappers.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -99,6 +101,16 @@ Raw Data
         ],
         "__impliedId": "TCP-wrappers",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "TCP-wrappers"
+                    ],
+                    "__impliedId": "TCP-wrappers"
+                },
+                "shortname": "TCP-wrappers",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "TCP Wrappers License",

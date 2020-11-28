@@ -799,6 +799,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX") (all
@@ -918,6 +920,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-3.0-only"
+                    ],
+                    "__impliedId": "AGPL-3.0-only"
+                },
+                "shortname": "AGPL-3.0-only",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

@@ -130,6 +130,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - Override
 
 - [[https://spdx.org/licenses/Ruby.html][SPDX]] (all data [in this
@@ -180,6 +182,16 @@ open-license]] (CDLA-Permissive-1.0))
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Ruby"
+                  ],
+                  "__impliedId": "Ruby"
+              },
+              "shortname": "Ruby",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Ruby License",

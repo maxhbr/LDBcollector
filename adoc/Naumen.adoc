@@ -81,6 +81,7 @@ This software consists of contributions made by NAUMEN and Contributors. Specifi
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Naumen.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -151,6 +152,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Naumen"
+                ],
+                "__impliedId": "Naumen"
+            },
+            "shortname": "Naumen",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

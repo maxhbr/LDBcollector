@@ -100,6 +100,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Clear.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -136,6 +138,16 @@ Raw Data
             "The BSD-3-clause License"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-Clear"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Clear"
+                },
+                "shortname": "BSD-3-Clause-Clear",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause Clear License",

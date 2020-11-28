@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Net-SNMP"
+                ],
+                "__impliedId": "Net-SNMP"
+            },
+            "shortname": "Net-SNMP",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Net-SNMP License",

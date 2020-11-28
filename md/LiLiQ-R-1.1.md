@@ -35,6 +35,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/LiLiQ-R-1.1.html "SPDX") (all data
@@ -57,6 +59,16 @@ Raw Data
         ],
         "__impliedId": "LiLiQ-R-1.1",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LiLiQ-R-1.1"
+                    ],
+                    "__impliedId": "LiLiQ-R-1.1"
+                },
+                "shortname": "LiLiQ-R-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© version 1.1",

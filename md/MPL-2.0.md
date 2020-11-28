@@ -476,6 +476,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/MPL-2.0.html "SPDX") (all data \[in
@@ -584,6 +586,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MPL-2.0"
+                    ],
+                    "__impliedId": "MPL-2.0"
+                },
+                "shortname": "MPL-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

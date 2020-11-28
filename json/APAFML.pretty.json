@@ -10,6 +10,16 @@
         "APAFML"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APAFML"
+                ],
+                "__impliedId": "APAFML"
+            },
+            "shortname": "APAFML",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Adobe Postscript AFM License",

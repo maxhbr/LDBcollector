@@ -65,6 +65,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/gnuplot.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -89,6 +91,16 @@ Raw Data
             "gnuplot"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "gnuplot"
+                    ],
+                    "__impliedId": "gnuplot"
+                },
+                "shortname": "gnuplot",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "gnuplot License",

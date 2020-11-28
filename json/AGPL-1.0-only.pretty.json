@@ -24,6 +24,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-1.0-only"
+                ],
+                "__impliedId": "AGPL-1.0-only"
+            },
+            "shortname": "AGPL-1.0-only",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Affero General Public License v1.0 only",

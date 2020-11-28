@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SMLNJ"
+                ],
+                "__impliedId": "SMLNJ"
+            },
+            "shortname": "SMLNJ",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Standard ML of New Jersey License",

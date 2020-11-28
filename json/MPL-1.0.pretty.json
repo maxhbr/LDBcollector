@@ -56,6 +56,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MPL-1.0"
+                ],
+                "__impliedId": "MPL-1.0"
+            },
+            "shortname": "MPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Mozilla Public License 1.0",

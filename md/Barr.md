@@ -52,6 +52,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Barr.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -81,6 +83,16 @@ Raw Data
             "Barr"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Barr"
+                    ],
+                    "__impliedId": "Barr"
+                },
+                "shortname": "Barr",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Barr License",

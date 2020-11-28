@@ -7,6 +7,16 @@
     ],
     "__impliedId": "BitTorrent-1.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BitTorrent-1.0"
+                ],
+                "__impliedId": "BitTorrent-1.0"
+            },
+            "shortname": "BitTorrent-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BitTorrent Open Source License v1.0",

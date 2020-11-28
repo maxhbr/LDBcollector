@@ -102,6 +102,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/xpp.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -131,6 +133,16 @@ Raw Data
             "xpp"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "xpp"
+                    ],
+                    "__impliedId": "xpp"
+                },
+                "shortname": "xpp",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XPP License",

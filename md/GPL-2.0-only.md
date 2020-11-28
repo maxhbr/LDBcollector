@@ -484,6 +484,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   Override
@@ -617,6 +619,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-2.0-only"
+                    ],
+                    "__impliedId": "GPL-2.0-only"
+                },
+                "shortname": "GPL-2.0-only",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

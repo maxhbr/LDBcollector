@@ -114,6 +114,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Plexus.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -159,6 +161,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Plexus"
+                    ],
+                    "__impliedId": "Plexus"
+                },
+                "shortname": "Plexus",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Plexus Classworlds License",

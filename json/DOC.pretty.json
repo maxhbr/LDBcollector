@@ -11,6 +11,16 @@
         "DOC"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "DOC"
+                ],
+                "__impliedId": "DOC"
+            },
+            "shortname": "DOC",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "DOC License",

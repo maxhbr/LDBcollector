@@ -228,6 +228,7 @@ Legal Terms
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/FTL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -261,6 +262,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "FTL"
+                ],
+                "__impliedId": "FTL"
+            },
+            "shortname": "FTL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Freetype Project License",

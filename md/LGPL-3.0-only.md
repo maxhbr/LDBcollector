@@ -5,6 +5,8 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 
 **Other Names:**
 
+-   `LGPL-3.0-or-later`
+
 -   `LGPL-3.0`
 
 -   `LGPL-3`
@@ -18,8 +20,6 @@ GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
 -   `LGPL (v3)`
 
 -   `GNU Lesser General Public License Version 3`
-
--   `LGPL-3.0-or-later`
 
 -   `LGPL-3.0+`
 
@@ -316,6 +316,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   Override
@@ -394,6 +396,7 @@ Raw Data
 
     {
         "__impliedNames": [
+            "LGPL-3.0-or-later",
             "LGPL-3.0-only",
             "LGPL-3.0",
             "LGPL-3",
@@ -402,7 +405,6 @@ Raw Data
             "LGPL (v3.0)",
             "LGPL (v3)",
             "GNU Lesser General Public License Version 3",
-            "LGPL-3.0-or-later",
             "LGPL-3.0+",
             "LGPL-3+",
             "LGPL3.0+",
@@ -471,6 +473,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-3.0-or-later"
+                    ],
+                    "__impliedId": "LGPL-3.0-or-later"
+                },
+                "shortname": "LGPL-3.0-or-later",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

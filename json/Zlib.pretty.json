@@ -59,6 +59,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Zlib"
+                ],
+                "__impliedId": "Zlib"
+            },
+            "shortname": "Zlib",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "zlib License",

@@ -472,6 +472,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/RHeCos-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -489,6 +491,16 @@ Raw Data
         ],
         "__impliedId": "RHeCos-1.1",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "RHeCos-1.1"
+                    ],
+                    "__impliedId": "RHeCos-1.1"
+                },
+                "shortname": "RHeCos-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Red Hat eCos Public License v1.1",

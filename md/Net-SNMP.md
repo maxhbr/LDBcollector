@@ -286,6 +286,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Net-SNMP.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -315,6 +317,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Net-SNMP"
+                    ],
+                    "__impliedId": "Net-SNMP"
+                },
+                "shortname": "Net-SNMP",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Net-SNMP License",

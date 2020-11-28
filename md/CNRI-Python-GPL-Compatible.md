@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -84,6 +86,16 @@ Raw Data
         ],
         "__impliedId": "CNRI-Python-GPL-Compatible",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CNRI-Python-GPL-Compatible"
+                    ],
+                    "__impliedId": "CNRI-Python-GPL-Compatible"
+                },
+                "shortname": "CNRI-Python-GPL-Compatible",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CNRI Python Open Source GPL Compatible License Agreement",

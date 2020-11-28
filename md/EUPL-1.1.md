@@ -371,6 +371,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EUPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -463,6 +465,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EUPL-1.1"
+                    ],
+                    "__impliedId": "EUPL-1.1"
+                },
+                "shortname": "EUPL-1.1",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

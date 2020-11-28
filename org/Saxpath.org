@@ -87,6 +87,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Saxpath.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -123,6 +125,16 @@
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Saxpath"
+                  ],
+                  "__impliedId": "Saxpath"
+              },
+              "shortname": "Saxpath",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Saxpath License",

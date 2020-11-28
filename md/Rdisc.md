@@ -57,6 +57,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Rdisc.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -93,6 +95,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Rdisc"
+                    ],
+                    "__impliedId": "Rdisc"
+                },
+                "shortname": "Rdisc",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Rdisc License",

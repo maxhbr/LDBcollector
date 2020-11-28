@@ -98,6 +98,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BSD-2-Clause-Patent.html[SPDX] (all data [in
 this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -127,6 +128,16 @@ this repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-2-Clause-Patent"
+                ],
+                "__impliedId": "BSD-2-Clause-Patent"
+            },
+            "shortname": "BSD-2-Clause-Patent",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD-2-Clause Plus Patent License",

@@ -77,6 +77,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SMLNJ.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -114,6 +116,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SMLNJ"
+                    ],
+                    "__impliedId": "SMLNJ"
+                },
+                "shortname": "SMLNJ",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Standard ML of New Jersey License",

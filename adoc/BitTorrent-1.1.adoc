@@ -184,6 +184,7 @@ Software distributed under the License is distributed on an AS IS basis, WITHOUT
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BitTorrent-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml[Scancode]
@@ -240,6 +241,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BitTorrent-1.1"
+                ],
+                "__impliedId": "BitTorrent-1.1"
+            },
+            "shortname": "BitTorrent-1.1",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

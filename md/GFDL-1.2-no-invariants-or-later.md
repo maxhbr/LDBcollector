@@ -24,6 +24,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/GFDL-1.2-no-invariants-or-later.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -36,6 +38,16 @@ Raw Data
         ],
         "__impliedId": "GFDL-1.2-no-invariants-or-later",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GFDL-1.2-no-invariants-or-later"
+                    ],
+                    "__impliedId": "GFDL-1.2-no-invariants-or-later"
+                },
+                "shortname": "GFDL-1.2-no-invariants-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Free Documentation License v1.2 or later - no invariants",

@@ -6,6 +6,16 @@
     ],
     "__impliedId": "gSOAP-1.3b",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "gSOAP-1.3b"
+                ],
+                "__impliedId": "gSOAP-1.3b"
+            },
+            "shortname": "gSOAP-1.3b",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "gSOAP Public License v1.3b",

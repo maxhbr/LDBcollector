@@ -48,6 +48,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LPPL-1.3c"
+                ],
+                "__impliedId": "LPPL-1.3c"
+            },
+            "shortname": "LPPL-1.3c",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "LaTeX Project Public License v1.3c",

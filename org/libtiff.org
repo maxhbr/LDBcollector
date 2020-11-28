@@ -68,6 +68,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/libtiff.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -101,6 +103,16 @@
           "libtiff"
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "libtiff"
+                  ],
+                  "__impliedId": "libtiff"
+              },
+              "shortname": "libtiff",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "libtiff License",

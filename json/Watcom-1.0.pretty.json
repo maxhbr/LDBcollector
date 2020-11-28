@@ -44,6 +44,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Watcom-1.0"
+                ],
+                "__impliedId": "Watcom-1.0"
+            },
+            "shortname": "Watcom-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sybase Open Watcom Public License 1.0",

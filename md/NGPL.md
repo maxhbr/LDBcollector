@@ -86,6 +86,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NGPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -157,6 +159,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NGPL"
+                    ],
+                    "__impliedId": "NGPL"
+                },
+                "shortname": "NGPL",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

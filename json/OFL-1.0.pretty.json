@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OFL-1.0"
+                ],
+                "__impliedId": "OFL-1.0"
+            },
+            "shortname": "OFL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SIL Open Font License 1.0",

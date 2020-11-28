@@ -11,6 +11,16 @@
         "Glide"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Glide"
+                ],
+                "__impliedId": "Glide"
+            },
+            "shortname": "Glide",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "3dfx Glide License",

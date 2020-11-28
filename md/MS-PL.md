@@ -146,6 +146,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MS-PL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -240,6 +242,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MS-PL"
+                    ],
+                    "__impliedId": "MS-PL"
+                },
+                "shortname": "MS-PL",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

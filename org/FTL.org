@@ -235,6 +235,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/FTL.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -272,6 +274,16 @@ open-license]] (CDLA-Permissive-1.0))
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "FTL"
+                  ],
+                  "__impliedId": "FTL"
+              },
+              "shortname": "FTL",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Freetype Project License",

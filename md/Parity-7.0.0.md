@@ -99,6 +99,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Parity-7.0.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -130,6 +132,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Parity-7.0.0"
+                    ],
+                    "__impliedId": "Parity-7.0.0"
+                },
+                "shortname": "Parity-7.0.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "The Parity Public License 7.0.0",

@@ -124,6 +124,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NCSA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -212,6 +214,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NCSA"
+                    ],
+                    "__impliedId": "NCSA"
+                },
+                "shortname": "NCSA",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

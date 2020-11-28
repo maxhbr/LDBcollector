@@ -223,6 +223,7 @@ Without prejudice to specific agreement between parties,
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/EUPL-1.2.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -266,6 +267,16 @@ Policy]
     ],
     "__hasPatentHint": true,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.2"
+                ],
+                "__impliedId": "EUPL-1.2"
+            },
+            "shortname": "EUPL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.2",

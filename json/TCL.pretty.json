@@ -10,6 +10,16 @@
         "TCL"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TCL"
+                ],
+                "__impliedId": "TCL"
+            },
+            "shortname": "TCL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TCL/TK License",

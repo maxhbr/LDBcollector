@@ -60,6 +60,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SMPPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -76,6 +78,16 @@ Raw Data
         ],
         "__impliedId": "SMPPL",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SMPPL"
+                    ],
+                    "__impliedId": "SMPPL"
+                },
+                "shortname": "SMPPL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Secure Messaging Protocol Public License",

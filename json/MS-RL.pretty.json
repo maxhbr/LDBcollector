@@ -55,6 +55,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-RL"
+                ],
+                "__impliedId": "MS-RL"
+            },
+            "shortname": "MS-RL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Microsoft Reciprocal License",

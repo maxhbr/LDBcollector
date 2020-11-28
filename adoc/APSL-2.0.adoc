@@ -173,6 +173,7 @@ The Original Code and all software distributed under the License are distributed
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/APSL-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -260,6 +261,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APSL-2.0"
+                ],
+                "__impliedId": "APSL-2.0"
+            },
+            "shortname": "APSL-2.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

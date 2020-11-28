@@ -167,6 +167,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Unicode-TOU.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -187,6 +189,16 @@ Raw Data
         ],
         "__impliedId": "Unicode-TOU",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Unicode-TOU"
+                    ],
+                    "__impliedId": "Unicode-TOU"
+                },
+                "shortname": "Unicode-TOU",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Unicode Terms of Use",

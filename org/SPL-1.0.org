@@ -595,6 +595,8 @@ open-license]] (CDLA-Permissive-1.0))
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/SPL-1.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -677,6 +679,16 @@ open-license]] (CDLA-Permissive-1.0))
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "SPL-1.0"
+                  ],
+                  "__impliedId": "SPL-1.0"
+              },
+              "shortname": "SPL-1.0",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

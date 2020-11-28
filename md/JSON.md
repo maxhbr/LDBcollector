@@ -68,6 +68,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/JSON.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -99,6 +101,16 @@ Raw Data
             "JSON evil license"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "JSON"
+                    ],
+                    "__impliedId": "JSON"
+                },
+                "shortname": "JSON",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "JSON License",

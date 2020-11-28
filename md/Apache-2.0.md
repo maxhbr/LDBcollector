@@ -315,6 +315,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX") (all data
@@ -424,6 +426,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Apache-2.0"
+                    ],
+                    "__impliedId": "Apache-2.0"
+                },
+                "shortname": "Apache-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

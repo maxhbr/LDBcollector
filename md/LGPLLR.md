@@ -261,6 +261,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/LGPLLR.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -277,6 +279,16 @@ Raw Data
         ],
         "__impliedId": "LGPLLR",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPLLR"
+                    ],
+                    "__impliedId": "LGPLLR"
+                },
+                "shortname": "LGPLLR",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Lesser General Public License For Linguistic Resources",

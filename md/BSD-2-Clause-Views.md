@@ -44,6 +44,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause-Views.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -60,6 +62,16 @@ Raw Data
         ],
         "__impliedId": "BSD-2-Clause-Views",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause-Views"
+                    ],
+                    "__impliedId": "BSD-2-Clause-Views"
+                },
+                "shortname": "BSD-2-Clause-Views",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 2-Clause with views sentence",

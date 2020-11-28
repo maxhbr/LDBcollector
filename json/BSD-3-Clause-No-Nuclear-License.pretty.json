@@ -7,6 +7,16 @@
     ],
     "__impliedId": "BSD-3-Clause-No-Nuclear-License",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-No-Nuclear-License"
+                ],
+                "__impliedId": "BSD-3-Clause-No-Nuclear-License"
+            },
+            "shortname": "BSD-3-Clause-No-Nuclear-License",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 3-Clause No Nuclear License",

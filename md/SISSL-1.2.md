@@ -183,6 +183,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SISSL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -204,6 +206,16 @@ Raw Data
         ],
         "__impliedId": "SISSL-1.2",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SISSL-1.2"
+                    ],
+                    "__impliedId": "SISSL-1.2"
+                },
+                "shortname": "SISSL-1.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sun Industry Standards Source License v1.2",

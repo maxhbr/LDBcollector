@@ -382,6 +382,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SSH-OpenSSH.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -407,6 +409,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SSH-OpenSSH"
+                    ],
+                    "__impliedId": "SSH-OpenSSH"
+                },
+                "shortname": "SSH-OpenSSH",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SSH OpenSSH license",

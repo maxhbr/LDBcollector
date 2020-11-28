@@ -7,6 +7,16 @@
     ],
     "__impliedId": "libpng-2.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "libpng-2.0"
+                ],
+                "__impliedId": "libpng-2.0"
+            },
+            "shortname": "libpng-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PNG Reference Library version 2",

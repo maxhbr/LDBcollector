@@ -48,6 +48,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/psfrag.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -80,6 +82,16 @@
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "psfrag"
+                  ],
+                  "__impliedId": "psfrag"
+              },
+              "shortname": "psfrag",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "psfrag License",

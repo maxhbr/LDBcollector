@@ -77,6 +77,7 @@ misrepresented as being the original software.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/zlib-acknowledgement.html[SPDX] (all data
 [in this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -114,6 +115,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "zlib-acknowledgement"
+                ],
+                "__impliedId": "zlib-acknowledgement"
+            },
+            "shortname": "zlib-acknowledgement",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "zlib/libpng License with Acknowledgement",

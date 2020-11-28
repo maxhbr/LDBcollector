@@ -57,6 +57,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/IBM-pibs.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -78,6 +80,16 @@ Raw Data
         ],
         "__impliedId": "IBM-pibs",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "IBM-pibs"
+                    ],
+                    "__impliedId": "IBM-pibs"
+                },
+                "shortname": "IBM-pibs",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "IBM PowerPC Initialization and Boot Software",

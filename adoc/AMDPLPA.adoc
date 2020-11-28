@@ -124,6 +124,7 @@ concerning personal jurisdiction and venue of these courts.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/AMDPLPA.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -150,6 +151,16 @@ Project Wiki]
         "AMDPLPA"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AMDPLPA"
+                ],
+                "__impliedId": "AMDPLPA"
+            },
+            "shortname": "AMDPLPA",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "AMD's plpa_map.c License",

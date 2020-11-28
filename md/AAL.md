@@ -108,6 +108,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AAL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -183,6 +185,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AAL"
+                    ],
+                    "__impliedId": "AAL"
+                },
+                "shortname": "AAL",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

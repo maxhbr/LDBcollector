@@ -16,6 +16,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "FTL"
+                ],
+                "__impliedId": "FTL"
+            },
+            "shortname": "FTL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Freetype Project License",

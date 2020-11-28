@@ -81,6 +81,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/zlib-acknowledgement.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -123,6 +125,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "zlib-acknowledgement"
+                    ],
+                    "__impliedId": "zlib-acknowledgement"
+                },
+                "shortname": "zlib-acknowledgement",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "zlib/libpng License with Acknowledgement",

@@ -100,6 +100,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/JasPer-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -129,6 +131,16 @@ Raw Data
             "JasPer"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "JasPer-2.0"
+                    ],
+                    "__impliedId": "JasPer-2.0"
+                },
+                "shortname": "JasPer-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "JasPer License",

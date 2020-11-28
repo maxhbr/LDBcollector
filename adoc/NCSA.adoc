@@ -127,6 +127,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/NCSA.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -205,6 +206,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NCSA"
+                ],
+                "__impliedId": "NCSA"
+            },
+            "shortname": "NCSA",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

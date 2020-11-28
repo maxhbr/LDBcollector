@@ -152,6 +152,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OSET-PL-2.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -171,6 +173,16 @@ Raw Data
         ],
         "__impliedId": "OSET-PL-2.1",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSET-PL-2.1"
+                    ],
+                    "__impliedId": "OSET-PL-2.1"
+                },
+                "shortname": "OSET-PL-2.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "OSET Public License version 2.1",

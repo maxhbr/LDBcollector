@@ -340,6 +340,7 @@ Defining What Constitutes The Program
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/LPPL-1.2.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.2.yml[Scancode]
@@ -365,6 +366,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LPPL-1.2"
+                ],
+                "__impliedId": "LPPL-1.2"
+            },
+            "shortname": "LPPL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "LaTeX Project Public License v1.2",

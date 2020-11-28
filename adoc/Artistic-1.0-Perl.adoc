@@ -181,6 +181,7 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Artistic-1.0-Perl.html[SPDX] (all data [in
 this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -215,6 +216,16 @@ this repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-1.0-Perl"
+                ],
+                "__impliedId": "Artistic-1.0-Perl"
+            },
+            "shortname": "Artistic-1.0-Perl",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Artistic License 1.0 (Perl)",

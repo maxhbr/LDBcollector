@@ -6,6 +6,16 @@
     ],
     "__impliedId": "blessing",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "blessing"
+                ],
+                "__impliedId": "blessing"
+            },
+            "shortname": "blessing",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SQLite Blessing",

@@ -82,6 +82,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -118,6 +120,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ANTLR-PD"
+                    ],
+                    "__impliedId": "ANTLR-PD"
+                },
+                "shortname": "ANTLR-PD",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "ANTLR Software Rights Notice",

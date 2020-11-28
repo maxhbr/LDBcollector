@@ -10,6 +10,16 @@
         "AML"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AML"
+                ],
+                "__impliedId": "AML"
+            },
+            "shortname": "AML",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apple MIT License",

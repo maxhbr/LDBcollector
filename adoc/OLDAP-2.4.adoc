@@ -91,6 +91,7 @@ distributed verbatim copies of this document is granted.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/OLDAP-2.4.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -118,6 +119,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OLDAP-2.4"
+                ],
+                "__impliedId": "OLDAP-2.4"
+            },
+            "shortname": "OLDAP-2.4",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open LDAP Public License v2.4",

@@ -100,6 +100,7 @@ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/VOSTROM.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vostrom.yml[Scancode]
@@ -124,6 +125,16 @@ Project Wiki]
         "VOSTROM"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "VOSTROM"
+                ],
+                "__impliedId": "VOSTROM"
+            },
+            "shortname": "VOSTROM",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "VOSTROM Public License for Open Source",

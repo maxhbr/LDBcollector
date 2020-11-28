@@ -11,6 +11,16 @@
         "AMDPLPA"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AMDPLPA"
+                ],
+                "__impliedId": "AMDPLPA"
+            },
+            "shortname": "AMDPLPA",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "AMD's plpa_map.c License",

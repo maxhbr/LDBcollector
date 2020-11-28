@@ -64,6 +64,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MIT-feh.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -93,6 +95,16 @@ Raw Data
             "MIT"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-feh"
+                    ],
+                    "__impliedId": "MIT-feh"
+                },
+                "shortname": "MIT-feh",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "feh License",

@@ -18,6 +18,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Wsuipa"
+                ],
+                "__impliedId": "Wsuipa"
+            },
+            "shortname": "Wsuipa",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Wsuipa License",

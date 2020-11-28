@@ -56,6 +56,7 @@ In no event will Sun Microsystems, Inc. be liable for any lost revenue or profit
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Rdisc.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -89,6 +90,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Rdisc"
+                ],
+                "__impliedId": "Rdisc"
+            },
+            "shortname": "Rdisc",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Rdisc License",

@@ -76,6 +76,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/psutils.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -105,6 +107,16 @@ Raw Data
             "psutils"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "psutils"
+                    ],
+                    "__impliedId": "psutils"
+                },
+                "shortname": "psutils",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "psutils License",

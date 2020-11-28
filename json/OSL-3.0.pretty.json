@@ -58,6 +58,16 @@
             },
             "domain_content": true
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OSL-3.0"
+                ],
+                "__impliedId": "OSL-3.0"
+            },
+            "shortname": "OSL-3.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Software License 3.0",

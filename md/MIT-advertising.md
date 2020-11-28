@@ -62,6 +62,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MIT-advertising.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -99,6 +101,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-advertising"
+                    ],
+                    "__impliedId": "MIT-advertising"
+                },
+                "shortname": "MIT-advertising",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Enlightenment License (e16)",

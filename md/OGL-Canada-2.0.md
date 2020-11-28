@@ -97,6 +97,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OGL-Canada-2.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -150,6 +152,16 @@ Raw Data
                     ]
                 },
                 "domain_content": true
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OGL-Canada-2.0"
+                    ],
+                    "__impliedId": "OGL-Canada-2.0"
+                },
+                "shortname": "OGL-Canada-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

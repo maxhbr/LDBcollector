@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CECILL-C"
+                ],
+                "__impliedId": "CECILL-C"
+            },
+            "shortname": "CECILL-C",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CeCILL-C Free Software License Agreement",

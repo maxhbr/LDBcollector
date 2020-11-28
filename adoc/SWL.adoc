@@ -60,6 +60,7 @@ BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE READ THIS AGREEMENT, 
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/SWL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -94,6 +95,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SWL"
+                ],
+                "__impliedId": "SWL"
+            },
+            "shortname": "SWL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Scheme Widget Library (SWL) Software License Agreement",

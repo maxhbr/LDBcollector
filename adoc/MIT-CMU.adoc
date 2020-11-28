@@ -58,6 +58,7 @@ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MIT-CMU.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -82,6 +83,16 @@ repository] is generated)
     ],
     "__impliedId": "MIT-CMU",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-CMU"
+                ],
+                "__impliedId": "MIT-CMU"
+            },
+            "shortname": "MIT-CMU",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CMU License",

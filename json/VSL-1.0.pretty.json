@@ -45,6 +45,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "VSL-1.0"
+                ],
+                "__impliedId": "VSL-1.0"
+            },
+            "shortname": "VSL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Vovida Software License v1.0",

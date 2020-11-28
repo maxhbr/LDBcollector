@@ -338,6 +338,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/LPPL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -363,6 +365,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LPPL-1.1"
+                    ],
+                    "__impliedId": "LPPL-1.1"
+                },
+                "shortname": "LPPL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "LaTeX Project Public License v1.1",

@@ -173,6 +173,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-Protection.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -210,6 +212,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-Protection"
+                    ],
+                    "__impliedId": "BSD-Protection"
+                },
+                "shortname": "BSD-Protection",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Protection License",

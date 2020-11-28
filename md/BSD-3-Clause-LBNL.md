@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-LBNL.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -92,6 +94,16 @@ Raw Data
             "LBNL BSD"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-LBNL"
+                    ],
+                    "__impliedId": "BSD-3-Clause-LBNL"
+                },
+                "shortname": "BSD-3-Clause-LBNL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Lawrence Berkeley National Labs BSD variant license",

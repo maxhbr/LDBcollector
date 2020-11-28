@@ -216,6 +216,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -258,6 +260,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "RPL-1.1"
+                    ],
+                    "__impliedId": "RPL-1.1"
+                },
+                "shortname": "RPL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Reciprocal Public License 1.1",

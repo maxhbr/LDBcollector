@@ -10,6 +10,16 @@
         "EPICS"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EPICS"
+                ],
+                "__impliedId": "EPICS"
+            },
+            "shortname": "EPICS",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "EPICS Open License",

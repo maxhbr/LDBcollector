@@ -152,6 +152,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MulanPSL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -169,6 +171,16 @@ Raw Data
         ],
         "__impliedId": "MulanPSL-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MulanPSL-1.0"
+                    ],
+                    "__impliedId": "MulanPSL-1.0"
+                },
+                "shortname": "MulanPSL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Mulan Permissive Software License, Version 1",

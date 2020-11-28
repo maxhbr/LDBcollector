@@ -80,6 +80,7 @@ parrt@antlr.org
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/ANTLR-PD.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -113,6 +114,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ANTLR-PD"
+                ],
+                "__impliedId": "ANTLR-PD"
+            },
+            "shortname": "ANTLR-PD",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ANTLR Software Rights Notice",

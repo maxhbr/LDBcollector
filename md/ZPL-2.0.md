@@ -105,6 +105,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -178,6 +180,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ZPL-2.0"
+                    ],
+                    "__impliedId": "ZPL-2.0"
+                },
+                "shortname": "ZPL-2.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

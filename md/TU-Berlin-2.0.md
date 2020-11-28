@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/TU-Berlin-2.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -84,6 +86,16 @@ Raw Data
         ],
         "__impliedId": "TU-Berlin-2.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "TU-Berlin-2.0"
+                    ],
+                    "__impliedId": "TU-Berlin-2.0"
+                },
+                "shortname": "TU-Berlin-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Technische Universitaet Berlin License 2.0",

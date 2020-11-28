@@ -10,6 +10,16 @@
         "DSDP"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "DSDP"
+                ],
+                "__impliedId": "DSDP"
+            },
+            "shortname": "DSDP",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "DSDP License",

@@ -95,6 +95,7 @@ This is version 2.0 of the Open Government Licence – Canada. The Information P
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/OGL-Canada-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/can-ogl-2.0-en.yml[Scancode]
@@ -147,6 +148,16 @@ Knowledge International]
                 ]
             },
             "domain_content": true
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OGL-Canada-2.0"
+                ],
+                "__impliedId": "OGL-Canada-2.0"
+            },
+            "shortname": "OGL-Canada-2.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

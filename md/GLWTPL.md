@@ -57,6 +57,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/GLWTPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -73,6 +75,16 @@ Raw Data
         ],
         "__impliedId": "GLWTPL",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GLWTPL"
+                    ],
+                    "__impliedId": "GLWTPL"
+                },
+                "shortname": "GLWTPL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Good Luck With That Public License",

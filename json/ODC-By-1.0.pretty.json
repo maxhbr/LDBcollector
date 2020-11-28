@@ -36,6 +36,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ODC-By-1.0"
+                ],
+                "__impliedId": "ODC-By-1.0"
+            },
+            "shortname": "ODC-By-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Data Commons Attribution License v1.0",

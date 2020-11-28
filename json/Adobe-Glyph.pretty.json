@@ -11,6 +11,16 @@
         "MIT"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Adobe-Glyph"
+                ],
+                "__impliedId": "Adobe-Glyph"
+            },
+            "shortname": "Adobe-Glyph",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Adobe Glyph List License",

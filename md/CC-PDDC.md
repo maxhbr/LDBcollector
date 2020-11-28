@@ -40,6 +40,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-PDDC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -57,6 +59,16 @@ Raw Data
         ],
         "__impliedId": "CC-PDDC",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-PDDC"
+                    ],
+                    "__impliedId": "CC-PDDC"
+                },
+                "shortname": "CC-PDDC",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Public Domain Dedication and Certification",

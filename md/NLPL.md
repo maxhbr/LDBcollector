@@ -64,6 +64,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NLPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -100,6 +102,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NLPL"
+                    ],
+                    "__impliedId": "NLPL"
+                },
+                "shortname": "NLPL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "No Limit Public License",

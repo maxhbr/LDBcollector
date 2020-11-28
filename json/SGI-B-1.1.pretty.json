@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SGI-B-1.1"
+                ],
+                "__impliedId": "SGI-B-1.1"
+            },
+            "shortname": "SGI-B-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SGI Free Software License B v1.1",

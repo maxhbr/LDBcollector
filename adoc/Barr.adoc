@@ -51,6 +51,7 @@ it will not work  with AMSTeX, I have not tested it.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Barr.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -77,6 +78,16 @@ Project Wiki]
         "Barr"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Barr"
+                ],
+                "__impliedId": "Barr"
+            },
+            "shortname": "Barr",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Barr License",

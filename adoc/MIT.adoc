@@ -136,6 +136,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * Override
 * https://spdx.org/licenses/MIT.html[SPDX] (all data [in this
 repository] is generated)
@@ -230,6 +231,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT"
+                ],
+                "__impliedId": "MIT"
+            },
+            "shortname": "MIT",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

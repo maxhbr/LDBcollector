@@ -11,6 +11,16 @@
         "libtiff"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "libtiff"
+                ],
+                "__impliedId": "libtiff"
+            },
+            "shortname": "libtiff",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "libtiff License",

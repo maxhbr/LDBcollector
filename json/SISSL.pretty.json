@@ -45,6 +45,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SISSL"
+                ],
+                "__impliedId": "SISSL"
+            },
+            "shortname": "SISSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Industry Standards Source License v1.1",

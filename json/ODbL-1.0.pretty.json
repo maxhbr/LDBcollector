@@ -38,6 +38,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ODbL-1.0"
+                ],
+                "__impliedId": "ODbL-1.0"
+            },
+            "shortname": "ODbL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ODC Open Database License v1.0",

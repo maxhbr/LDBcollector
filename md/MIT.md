@@ -139,6 +139,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/MIT.html "SPDX") (all data \[in
@@ -248,6 +250,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT"
+                    ],
+                    "__impliedId": "MIT"
+                },
+                "shortname": "MIT",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

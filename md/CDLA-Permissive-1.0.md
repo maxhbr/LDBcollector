@@ -120,6 +120,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CDLA-Permissive-1.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -137,6 +139,16 @@ Raw Data
         ],
         "__impliedId": "CDLA-Permissive-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CDLA-Permissive-1.0"
+                    ],
+                    "__impliedId": "CDLA-Permissive-1.0"
+                },
+                "shortname": "CDLA-Permissive-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Community Data License Agreement Permissive 1.0",

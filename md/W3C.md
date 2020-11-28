@@ -109,6 +109,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/W3C.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -195,6 +197,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "W3C"
+                    ],
+                    "__impliedId": "W3C"
+                },
+                "shortname": "W3C",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

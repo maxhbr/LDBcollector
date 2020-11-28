@@ -123,6 +123,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 ==== Facts
 
+* LicenseName
 * Override
 * https://spdx.org/licenses/Ruby.html[SPDX] (all data [in this
 repository] is generated)
@@ -166,6 +167,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Ruby"
+                ],
+                "__impliedId": "Ruby"
+            },
+            "shortname": "Ruby",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Ruby License",

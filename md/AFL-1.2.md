@@ -138,6 +138,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AFL-1.2.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -167,6 +169,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AFL-1.2"
+                    ],
+                    "__impliedId": "AFL-1.2"
+                },
+                "shortname": "AFL-1.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academic Free License v1.2",

@@ -52,6 +52,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "W3C"
+                ],
+                "__impliedId": "W3C"
+            },
+            "shortname": "W3C",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "W3C Software Notice and License (2002-12-31)",

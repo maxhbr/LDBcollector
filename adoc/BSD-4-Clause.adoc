@@ -124,6 +124,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ==== Facts
 
+* LicenseName
 * Override
 * Override
 * https://spdx.org/licenses/BSD-4-Clause.html[SPDX] (all data [in this
@@ -186,6 +187,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-4-Clause"
+                ],
+                "__impliedId": "BSD-4-Clause"
+            },
+            "shortname": "BSD-4-Clause",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 4-Clause \"Original\" or \"Old\" License",

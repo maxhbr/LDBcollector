@@ -263,6 +263,7 @@ END OF TERMS AND CONDITIONS
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/LGPLLR.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpllr.yml[Scancode]
@@ -279,6 +280,16 @@ repository] is generated)
     ],
     "__impliedId": "LGPLLR",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPLLR"
+                ],
+                "__impliedId": "LGPLLR"
+            },
+            "shortname": "LGPLLR",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Lesser General Public License For Linguistic Resources",

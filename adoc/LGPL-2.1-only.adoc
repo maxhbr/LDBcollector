@@ -628,6 +628,7 @@ That's all there is to it!
 
 ==== Facts
 
+* LicenseName
 * Override
 * https://spdx.org/licenses/LGPL-2.1-only.html[SPDX] (all data [in this
 repository] is generated)
@@ -720,6 +721,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-2.1-only"
+                ],
+                "__impliedId": "LGPL-2.1-only"
+            },
+            "shortname": "LGPL-2.1-only",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

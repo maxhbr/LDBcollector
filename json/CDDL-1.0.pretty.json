@@ -59,6 +59,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CDDL-1.0"
+                ],
+                "__impliedId": "CDDL-1.0"
+            },
+            "shortname": "CDDL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Common Development and Distribution License 1.0",

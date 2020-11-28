@@ -66,6 +66,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/gnuplot.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -91,6 +93,16 @@
           "gnuplot"
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "gnuplot"
+                  ],
+                  "__impliedId": "gnuplot"
+              },
+              "shortname": "gnuplot",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "gnuplot License",

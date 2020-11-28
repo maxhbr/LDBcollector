@@ -103,6 +103,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/PostgreSQL.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -189,6 +191,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "PostgreSQL"
+                    ],
+                    "__impliedId": "PostgreSQL"
+                },
+                "shortname": "PostgreSQL",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

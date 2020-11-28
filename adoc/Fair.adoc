@@ -59,6 +59,7 @@ DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Fair.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -127,6 +128,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Fair"
+                ],
+                "__impliedId": "Fair"
+            },
+            "shortname": "Fair",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

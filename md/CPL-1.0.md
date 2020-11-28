@@ -185,6 +185,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX") (all data \[in
@@ -249,6 +251,16 @@ Raw Data
         ],
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CPL-1.0"
+                    ],
+                    "__impliedId": "CPL-1.0"
+                },
+                "shortname": "CPL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Common Public License 1.0",

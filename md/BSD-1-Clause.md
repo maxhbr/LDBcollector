@@ -59,6 +59,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-1-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -79,6 +81,16 @@ Raw Data
         ],
         "__impliedId": "BSD-1-Clause",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-1-Clause"
+                    ],
+                    "__impliedId": "BSD-1-Clause"
+                },
+                "shortname": "BSD-1-Clause",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 1-Clause License",

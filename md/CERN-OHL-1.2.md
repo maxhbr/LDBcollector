@@ -115,6 +115,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CERN-OHL-1.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -131,6 +133,16 @@ Raw Data
         ],
         "__impliedId": "CERN-OHL-1.2",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CERN-OHL-1.2"
+                    ],
+                    "__impliedId": "CERN-OHL-1.2"
+                },
+                "shortname": "CERN-OHL-1.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CERN Open Hardware Licence v1.2",

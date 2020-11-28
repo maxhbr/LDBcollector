@@ -43,6 +43,7 @@ PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/PSF-2.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psf-2.0.yml[Scancode]
@@ -59,6 +60,16 @@ repository] is generated)
     ],
     "__impliedId": "PSF-2.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PSF-2.0"
+                ],
+                "__impliedId": "PSF-2.0"
+            },
+            "shortname": "PSF-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Python Software Foundation License 2.0",

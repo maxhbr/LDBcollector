@@ -11,6 +11,16 @@
         "Crystal Stacker"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CrystalStacker"
+                ],
+                "__impliedId": "CrystalStacker"
+            },
+            "shortname": "CrystalStacker",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CrystalStacker License",

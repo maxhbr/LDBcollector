@@ -366,6 +366,7 @@ or implied.  See the License for the specific language governing rights and limi
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BitTorrent-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.0.yml[Scancode]
@@ -383,6 +384,16 @@ repository] is generated)
     ],
     "__impliedId": "BitTorrent-1.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BitTorrent-1.0"
+                ],
+                "__impliedId": "BitTorrent-1.0"
+            },
+            "shortname": "BitTorrent-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BitTorrent Open Source License v1.0",

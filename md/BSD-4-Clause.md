@@ -116,6 +116,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   Override
@@ -188,6 +190,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause"
+                    ],
+                    "__impliedId": "BSD-4-Clause"
+                },
+                "shortname": "BSD-4-Clause",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 4-Clause \"Original\" or \"Old\" License",

@@ -199,6 +199,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Motosoto.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -271,6 +273,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Motosoto"
+                    ],
+                    "__impliedId": "Motosoto"
+                },
+                "shortname": "Motosoto",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

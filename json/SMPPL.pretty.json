@@ -6,6 +6,16 @@
     ],
     "__impliedId": "SMPPL",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SMPPL"
+                ],
+                "__impliedId": "SMPPL"
+            },
+            "shortname": "SMPPL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Secure Messaging Protocol Public License",

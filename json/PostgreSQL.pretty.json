@@ -48,6 +48,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PostgreSQL"
+                ],
+                "__impliedId": "PostgreSQL"
+            },
+            "shortname": "PostgreSQL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PostgreSQL License",

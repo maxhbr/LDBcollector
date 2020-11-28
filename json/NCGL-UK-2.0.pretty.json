@@ -6,6 +6,16 @@
     ],
     "__impliedId": "NCGL-UK-2.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NCGL-UK-2.0"
+                ],
+                "__impliedId": "NCGL-UK-2.0"
+            },
+            "shortname": "NCGL-UK-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Non-Commercial Government Licence",

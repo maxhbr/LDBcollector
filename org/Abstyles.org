@@ -52,6 +52,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Abstyles.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -85,6 +87,16 @@
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Abstyles"
+                  ],
+                  "__impliedId": "Abstyles"
+              },
+              "shortname": "Abstyles",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Abstyles License",

@@ -10,6 +10,16 @@
         "Noweb"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Noweb"
+                ],
+                "__impliedId": "Noweb"
+            },
+            "shortname": "Noweb",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Noweb License",

@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Intel-ACPI"
+                ],
+                "__impliedId": "Intel-ACPI"
+            },
+            "shortname": "Intel-ACPI",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Intel ACPI Software License Agreement",

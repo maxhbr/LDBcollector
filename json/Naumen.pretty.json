@@ -47,6 +47,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Naumen"
+                ],
+                "__impliedId": "Naumen"
+            },
+            "shortname": "Naumen",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Naumen Public License",

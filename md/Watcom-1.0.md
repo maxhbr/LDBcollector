@@ -415,6 +415,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -486,6 +488,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Watcom-1.0"
+                    ],
+                    "__impliedId": "Watcom-1.0"
+                },
+                "shortname": "Watcom-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

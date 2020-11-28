@@ -171,6 +171,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Vim.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -201,6 +203,16 @@
           "Vim"
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Vim"
+                  ],
+                  "__impliedId": "Vim"
+              },
+              "shortname": "Vim",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Vim License",

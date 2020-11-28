@@ -78,6 +78,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX") (all
@@ -133,6 +135,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1-or-later"
+                    ],
+                    "__impliedId": "LGPL-2.1-or-later"
+                },
+                "shortname": "LGPL-2.1-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Lesser General Public License v2.1 or later",

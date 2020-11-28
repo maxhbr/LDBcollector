@@ -60,6 +60,7 @@ Permission is granted to anyone to use this software for any purpose, including 
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Info-ZIP.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -79,6 +80,16 @@ repository] is generated)
     ],
     "__impliedId": "Info-ZIP",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Info-ZIP"
+                ],
+                "__impliedId": "Info-ZIP"
+            },
+            "shortname": "Info-ZIP",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Info-ZIP License",

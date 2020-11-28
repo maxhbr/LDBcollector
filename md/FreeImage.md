@@ -175,6 +175,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/FreeImage.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -192,6 +194,16 @@ Raw Data
         ],
         "__impliedId": "FreeImage",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "FreeImage"
+                    ],
+                    "__impliedId": "FreeImage"
+                },
+                "shortname": "FreeImage",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FreeImage Public License v1.0",

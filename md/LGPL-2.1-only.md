@@ -634,6 +634,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/LGPL-2.1-only.html "SPDX") (all
@@ -739,6 +741,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.1-only"
+                    ],
+                    "__impliedId": "LGPL-2.1-only"
+                },
+                "shortname": "LGPL-2.1-only",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

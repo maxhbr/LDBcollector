@@ -54,6 +54,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ISC"
+                ],
+                "__impliedId": "ISC"
+            },
+            "shortname": "ISC",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ISC License",

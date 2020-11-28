@@ -136,6 +136,7 @@ permission of its copyright owner.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/AFL-1.2.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -163,6 +164,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-1.2"
+                ],
+                "__impliedId": "AFL-1.2"
+            },
+            "shortname": "AFL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Academic Free License v1.2",

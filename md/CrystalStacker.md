@@ -52,6 +52,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CrystalStacker.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -81,6 +83,16 @@ Raw Data
             "Crystal Stacker"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CrystalStacker"
+                    ],
+                    "__impliedId": "CrystalStacker"
+                },
+                "shortname": "CrystalStacker",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CrystalStacker License",

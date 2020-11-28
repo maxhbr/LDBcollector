@@ -53,6 +53,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CATOSL-1.1"
+                ],
+                "__impliedId": "CATOSL-1.1"
+            },
+            "shortname": "CATOSL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Computer Associates Trusted Open Source License 1.1",

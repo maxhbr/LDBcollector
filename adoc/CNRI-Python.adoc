@@ -74,6 +74,7 @@ Licensee. Alternately, in lieu of CNRI's License Agreement, Licensee may substit
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CNRI-Python.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -137,6 +138,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CNRI-Python"
+                ],
+                "__impliedId": "CNRI-Python"
+            },
+            "shortname": "CNRI-Python",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

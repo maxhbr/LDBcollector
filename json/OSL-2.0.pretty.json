@@ -21,6 +21,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OSL-2.0"
+                ],
+                "__impliedId": "OSL-2.0"
+            },
+            "shortname": "OSL-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Software License 2.0",

@@ -127,6 +127,7 @@ This product includes the Zend Engine, freely available at
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/PHP-3.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -201,6 +202,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PHP-3.0"
+                ],
+                "__impliedId": "PHP-3.0"
+            },
+            "shortname": "PHP-3.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

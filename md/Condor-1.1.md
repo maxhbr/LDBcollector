@@ -166,6 +166,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Condor-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -195,6 +197,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Condor-1.1"
+                    ],
+                    "__impliedId": "Condor-1.1"
+                },
+                "shortname": "Condor-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Condor Public License v1.1",

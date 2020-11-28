@@ -40,6 +40,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NTP-0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -56,6 +58,16 @@ Raw Data
         ],
         "__impliedId": "NTP-0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NTP-0"
+                    ],
+                    "__impliedId": "NTP-0"
+                },
+                "shortname": "NTP-0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NTP No Attribution",

@@ -106,6 +106,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-3.0-AT.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -122,6 +124,16 @@ Raw Data
         ],
         "__impliedId": "CC-BY-3.0-AT",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-3.0-AT"
+                    ],
+                    "__impliedId": "CC-BY-3.0-AT"
+                },
+                "shortname": "CC-BY-3.0-AT",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 3.0 Austria",

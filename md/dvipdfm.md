@@ -45,6 +45,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/dvipdfm.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -77,6 +79,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "dvipdfm"
+                    ],
+                    "__impliedId": "dvipdfm"
+                },
+                "shortname": "dvipdfm",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "dvipdfm License",

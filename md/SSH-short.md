@@ -42,6 +42,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SSH-short.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -59,6 +61,16 @@ Raw Data
         ],
         "__impliedId": "SSH-short",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SSH-short"
+                    ],
+                    "__impliedId": "SSH-short"
+                },
+                "shortname": "SSH-short",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SSH short notice",

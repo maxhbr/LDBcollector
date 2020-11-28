@@ -10,6 +10,16 @@
         "Glulxe"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Glulxe"
+                ],
+                "__impliedId": "Glulxe"
+            },
+            "shortname": "Glulxe",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Glulxe License",

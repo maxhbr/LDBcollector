@@ -545,6 +545,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CECILL-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -570,6 +572,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CECILL-2.0"
+                    ],
+                    "__impliedId": "CECILL-2.0"
+                },
+                "shortname": "CECILL-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "CeCILL Free Software License Agreement v2.0",

@@ -166,6 +166,7 @@ The End
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/NBPL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -192,6 +193,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NBPL-1.0"
+                ],
+                "__impliedId": "NBPL-1.0"
+            },
+            "shortname": "NBPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Net Boolean Public License v1",

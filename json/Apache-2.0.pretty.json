@@ -59,6 +59,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Apache-2.0"
+                ],
+                "__impliedId": "Apache-2.0"
+            },
+            "shortname": "Apache-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apache License 2.0",

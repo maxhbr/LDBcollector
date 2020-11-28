@@ -7,6 +7,16 @@
     ],
     "__impliedId": "YPL-1.1",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "YPL-1.1"
+                ],
+                "__impliedId": "YPL-1.1"
+            },
+            "shortname": "YPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Yahoo! Public License v1.1",

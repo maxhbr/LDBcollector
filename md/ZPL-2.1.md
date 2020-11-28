@@ -92,6 +92,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ZPL-2.1.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -125,6 +127,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ZPL-2.1"
+                    ],
+                    "__impliedId": "ZPL-2.1"
+                },
+                "shortname": "ZPL-2.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zope Public License 2.1",

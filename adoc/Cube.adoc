@@ -68,6 +68,7 @@ additional clause specific to Cube:
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Cube.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -93,6 +94,16 @@ Project Wiki]
         "Cube"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Cube"
+                ],
+                "__impliedId": "Cube"
+            },
+            "shortname": "Cube",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cube License",

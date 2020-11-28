@@ -67,6 +67,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -83,6 +85,16 @@ Raw Data
         ],
         "__impliedId": "BSD-3-Clause-Open-MPI",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-Open-MPI"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Open-MPI"
+                },
+                "shortname": "BSD-3-Clause-Open-MPI",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD 3-Clause Open MPI variant",

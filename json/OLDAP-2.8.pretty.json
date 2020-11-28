@@ -7,6 +7,16 @@
     ],
     "__impliedId": "OLDAP-2.8",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OLDAP-2.8"
+                ],
+                "__impliedId": "OLDAP-2.8"
+            },
+            "shortname": "OLDAP-2.8",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open LDAP Public License v2.8",

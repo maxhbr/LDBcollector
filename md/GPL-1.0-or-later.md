@@ -65,6 +65,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/GPL-1.0-or-later.html "SPDX") (all
@@ -112,6 +114,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-1.0-or-later"
+                    ],
+                    "__impliedId": "GPL-1.0-or-later"
+                },
+                "shortname": "GPL-1.0-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU General Public License v1.0 or later",

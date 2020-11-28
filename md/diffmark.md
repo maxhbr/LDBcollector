@@ -56,6 +56,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/diffmark.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -93,6 +95,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "diffmark"
+                    ],
+                    "__impliedId": "diffmark"
+                },
+                "shortname": "diffmark",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "diffmark license",

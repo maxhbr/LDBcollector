@@ -41,6 +41,16 @@
             },
             "domain_content": true
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC-BY-4.0"
+                ],
+                "__impliedId": "CC-BY-4.0"
+            },
+            "shortname": "CC-BY-4.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution 4.0 International",

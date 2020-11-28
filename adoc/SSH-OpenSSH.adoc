@@ -381,6 +381,7 @@ $OpenBSD: LICENCE,v 1.19 2004/08/30 09:18:08 markus Exp $
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/SSH-OpenSSH.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssh.yml[Scancode]
@@ -406,6 +407,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SSH-OpenSSH"
+                ],
+                "__impliedId": "SSH-OpenSSH"
+            },
+            "shortname": "SSH-OpenSSH",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SSH OpenSSH license",

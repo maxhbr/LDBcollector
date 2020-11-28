@@ -115,6 +115,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
@@ -208,6 +210,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause"
+                    ],
+                    "__impliedId": "BSD-2-Clause"
+                },
+                "shortname": "BSD-2-Clause",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

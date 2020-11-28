@@ -17,6 +17,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Parity-7.0.0"
+                ],
+                "__impliedId": "Parity-7.0.0"
+            },
+            "shortname": "Parity-7.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "The Parity Public License 7.0.0",

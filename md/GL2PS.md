@@ -56,6 +56,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -80,6 +82,16 @@ Raw Data
             "GL2PS"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "GL2PS"
+                    ],
+                    "__impliedId": "GL2PS"
+                },
+                "shortname": "GL2PS",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GL2PS License",

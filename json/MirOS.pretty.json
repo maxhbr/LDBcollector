@@ -50,6 +50,16 @@
             },
             "domain_content": true
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MirOS"
+                ],
+                "__impliedId": "MirOS"
+            },
+            "shortname": "MirOS",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "The MirOS Licence",

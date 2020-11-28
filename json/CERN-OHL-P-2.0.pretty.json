@@ -6,6 +6,16 @@
     ],
     "__impliedId": "CERN-OHL-P-2.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CERN-OHL-P-2.0"
+                ],
+                "__impliedId": "CERN-OHL-P-2.0"
+            },
+            "shortname": "CERN-OHL-P-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CERN Open Hardware Licence Version 2 - Permissive",

@@ -10,6 +10,16 @@
         "Leptonica"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Leptonica"
+                ],
+                "__impliedId": "Leptonica"
+            },
+            "shortname": "Leptonica",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Leptonica License",

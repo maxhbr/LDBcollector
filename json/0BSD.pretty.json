@@ -7,6 +7,16 @@
     ],
     "__impliedId": "0BSD",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "0BSD"
+                ],
+                "__impliedId": "0BSD"
+            },
+            "shortname": "0BSD",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD Zero Clause License",

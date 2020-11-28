@@ -163,6 +163,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/CDDL-1.1.html "SPDX") (all data
@@ -215,6 +217,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CDDL-1.1"
+                    ],
+                    "__impliedId": "CDDL-1.1"
+                },
+                "shortname": "CDDL-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Common Development and Distribution License 1.1",

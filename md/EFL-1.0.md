@@ -79,6 +79,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -112,6 +114,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EFL-1.0"
+                    ],
+                    "__impliedId": "EFL-1.0"
+                },
+                "shortname": "EFL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Eiffel Forum License v1.0",

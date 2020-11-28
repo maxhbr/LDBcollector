@@ -1,8 +1,8 @@
 {
     "__impliedNames": [
+        "X11",
         "ICU",
         "ICU License",
-        "X11",
         "X11 License",
         "scancode://x11-xconsortium",
         "X11-Style (X Consortium)",
@@ -10,6 +10,16 @@
     ],
     "__impliedId": "ICU",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "X11"
+                ],
+                "__impliedId": "X11"
+            },
+            "shortname": "X11",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "ICU License",

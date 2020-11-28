@@ -82,6 +82,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -119,6 +121,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OML"
+                    ],
+                    "__impliedId": "OML"
+                },
+                "shortname": "OML",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Market License",

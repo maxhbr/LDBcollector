@@ -295,6 +295,7 @@ Version 1.0 du 2006-09-05."
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CECILL-B.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -329,6 +330,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CECILL-B"
+                ],
+                "__impliedId": "CECILL-B"
+            },
+            "shortname": "CECILL-B",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CeCILL-B Free Software License Agreement",

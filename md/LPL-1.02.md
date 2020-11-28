@@ -136,6 +136,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/LPL-1.02.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -207,6 +209,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LPL-1.02"
+                    ],
+                    "__impliedId": "LPL-1.02"
+                },
+                "shortname": "LPL-1.02",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

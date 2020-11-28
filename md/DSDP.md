@@ -85,6 +85,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/DSDP.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -113,6 +115,16 @@ Raw Data
             "DSDP"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "DSDP"
+                    ],
+                    "__impliedId": "DSDP"
+                },
+                "shortname": "DSDP",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "DSDP License",

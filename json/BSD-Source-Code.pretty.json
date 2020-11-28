@@ -6,6 +6,16 @@
     ],
     "__impliedId": "BSD-Source-Code",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-Source-Code"
+                ],
+                "__impliedId": "BSD-Source-Code"
+            },
+            "shortname": "BSD-Source-Code",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD Source Code Attribution",

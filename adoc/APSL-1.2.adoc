@@ -328,6 +328,7 @@ License for the specific language governing rights and limitations under the Lic
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/APSL-1.2.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -371,6 +372,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APSL-1.2"
+                ],
+                "__impliedId": "APSL-1.2"
+            },
+            "shortname": "APSL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apple Public Source License 1.2",

@@ -71,6 +71,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/0BSD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -104,6 +106,16 @@ Raw Data
         ],
         "__impliedId": "0BSD",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "0BSD"
+                    ],
+                    "__impliedId": "0BSD"
+                },
+                "shortname": "0BSD",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "BSD Zero Clause License",

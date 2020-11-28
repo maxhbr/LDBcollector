@@ -11,6 +11,16 @@
         "HaskellReport"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "HaskellReport"
+                ],
+                "__impliedId": "HaskellReport"
+            },
+            "shortname": "HaskellReport",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Haskell Language Report License",

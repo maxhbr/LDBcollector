@@ -156,6 +156,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SHL-0.5.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -173,6 +175,16 @@ Raw Data
         ],
         "__impliedId": "SHL-0.5",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SHL-0.5"
+                    ],
+                    "__impliedId": "SHL-0.5"
+                },
+                "shortname": "SHL-0.5",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Solderpad Hardware License v0.5",

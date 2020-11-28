@@ -82,6 +82,7 @@ of said person's immediate fault when using the work as intended.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MirOS.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -157,6 +158,16 @@ Knowledge International]
                 ]
             },
             "domain_content": true
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MirOS"
+                ],
+                "__impliedId": "MirOS"
+            },
+            "shortname": "MirOS",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

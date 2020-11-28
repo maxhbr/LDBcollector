@@ -20,6 +20,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Plexus"
+                ],
+                "__impliedId": "Plexus"
+            },
+            "shortname": "Plexus",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Plexus Classworlds License",

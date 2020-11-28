@@ -113,6 +113,7 @@ THIS SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/ISC.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -198,6 +199,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ISC"
+                ],
+                "__impliedId": "ISC"
+            },
+            "shortname": "ISC",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

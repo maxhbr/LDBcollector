@@ -68,6 +68,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MIT-enna.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -93,6 +94,16 @@ Project Wiki]
         "MIT"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-enna"
+                ],
+                "__impliedId": "MIT-enna"
+            },
+            "shortname": "MIT-enna",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "enna License",

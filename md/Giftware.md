@@ -61,6 +61,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Giftware.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -98,6 +100,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Giftware"
+                    ],
+                    "__impliedId": "Giftware"
+                },
+                "shortname": "Giftware",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Giftware License",

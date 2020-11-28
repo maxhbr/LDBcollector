@@ -66,6 +66,7 @@ You are excused for unknowingly breaking 1, 2, or 3 if you contribute as require
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Parity-6.0.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -95,6 +96,16 @@ repository] is generated)
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Parity-6.0.0"
+                ],
+                "__impliedId": "Parity-6.0.0"
+            },
+            "shortname": "Parity-6.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "The Parity Public License 6.0.0",

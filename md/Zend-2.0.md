@@ -104,6 +104,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Zend-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -137,6 +139,16 @@ Raw Data
             "Zend"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Zend-2.0"
+                    ],
+                    "__impliedId": "Zend-2.0"
+                },
+                "shortname": "Zend-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zend License v2.0",

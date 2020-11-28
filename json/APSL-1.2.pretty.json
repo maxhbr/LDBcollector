@@ -26,6 +26,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "APSL-1.2"
+                ],
+                "__impliedId": "APSL-1.2"
+            },
+            "shortname": "APSL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Apple Public Source License 1.2",

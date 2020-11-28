@@ -69,6 +69,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NRL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -97,6 +99,16 @@ Raw Data
             "BSD with advertising"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NRL"
+                    ],
+                    "__impliedId": "NRL"
+                },
+                "shortname": "NRL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NRL License",

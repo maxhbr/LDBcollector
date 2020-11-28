@@ -114,6 +114,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OSL-2.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -157,6 +159,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSL-2.0"
+                    ],
+                    "__impliedId": "OSL-2.0"
+                },
+                "shortname": "OSL-2.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Software License 2.0",

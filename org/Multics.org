@@ -65,6 +65,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Multics.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -130,6 +132,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Multics"
+                  ],
+                  "__impliedId": "Multics"
+              },
+              "shortname": "Multics",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

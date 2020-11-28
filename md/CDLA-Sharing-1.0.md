@@ -124,6 +124,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CDLA-Sharing-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -141,6 +143,16 @@ Raw Data
         ],
         "__impliedId": "CDLA-Sharing-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CDLA-Sharing-1.0"
+                    ],
+                    "__impliedId": "CDLA-Sharing-1.0"
+                },
+                "shortname": "CDLA-Sharing-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Community Data License Agreement Sharing 1.0",

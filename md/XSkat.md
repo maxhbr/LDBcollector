@@ -66,6 +66,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/XSkat.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -98,6 +100,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "XSkat"
+                    ],
+                    "__impliedId": "XSkat"
+                },
+                "shortname": "XSkat",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XSkat License",

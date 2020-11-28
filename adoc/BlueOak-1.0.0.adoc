@@ -92,6 +92,7 @@ software or this license, under any kind of legal claim.***
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/BlueOak-1.0.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -110,6 +111,16 @@ repository] is generated)
     ],
     "__impliedId": "BlueOak-1.0.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BlueOak-1.0.0"
+                ],
+                "__impliedId": "BlueOak-1.0.0"
+            },
+            "shortname": "BlueOak-1.0.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Blue Oak Model License 1.0.0",

@@ -15,6 +15,16 @@
     ],
     "__hasPatentHint": false,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "WTFPL"
+                ],
+                "__impliedId": "WTFPL"
+            },
+            "shortname": "WTFPL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Do What The F*ck You Want To Public License",

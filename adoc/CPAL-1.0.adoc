@@ -181,6 +181,7 @@ Display of Attribution Information is [required/not required] in Larger Works wh
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/CPAL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -262,6 +263,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CPAL-1.0"
+                ],
+                "__impliedId": "CPAL-1.0"
+            },
+            "shortname": "CPAL-1.0",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

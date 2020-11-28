@@ -20,6 +20,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Ruby"
+                ],
+                "__impliedId": "Ruby"
+            },
+            "shortname": "Ruby",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Ruby License",

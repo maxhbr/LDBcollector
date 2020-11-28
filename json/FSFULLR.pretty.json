@@ -11,6 +11,16 @@
         "FSFULLR"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "FSFULLR"
+                ],
+                "__impliedId": "FSFULLR"
+            },
+            "shortname": "FSFULLR",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "FSF Unlimited License (with License Retention)",

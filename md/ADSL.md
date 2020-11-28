@@ -52,6 +52,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ADSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -80,6 +82,16 @@ Raw Data
             "ADSL"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ADSL"
+                    ],
+                    "__impliedId": "ADSL"
+                },
+                "shortname": "ADSL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Amazon Digital Services License",

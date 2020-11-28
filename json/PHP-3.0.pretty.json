@@ -48,6 +48,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "PHP-3.0"
+                ],
+                "__impliedId": "PHP-3.0"
+            },
+            "shortname": "PHP-3.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "PHP License v3.0",

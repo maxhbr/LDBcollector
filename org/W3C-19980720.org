@@ -101,6 +101,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/W3C-19980720.html][SPDX]] (all data [in
   this repository] is generated)
 
@@ -126,6 +128,16 @@
       ],
       "__impliedId": "W3C-19980720",
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "W3C-19980720"
+                  ],
+                  "__impliedId": "W3C-19980720"
+              },
+              "shortname": "W3C-19980720",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "W3C Software Notice and License (1998-07-20)",

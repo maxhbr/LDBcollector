@@ -25,6 +25,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.1"
+                ],
+                "__impliedId": "RPL-1.1"
+            },
+            "shortname": "RPL-1.1",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Reciprocal Public License 1.1",

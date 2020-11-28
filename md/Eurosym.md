@@ -56,6 +56,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Eurosym.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -80,6 +82,16 @@ Raw Data
             "Eurosym"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Eurosym"
+                    ],
+                    "__impliedId": "Eurosym"
+                },
+                "shortname": "Eurosym",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Eurosym License",

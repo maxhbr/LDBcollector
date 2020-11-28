@@ -59,6 +59,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "QPL-1.0"
+                ],
+                "__impliedId": "QPL-1.0"
+            },
+            "shortname": "QPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Q Public License 1.0",

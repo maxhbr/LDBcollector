@@ -113,6 +113,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OGTSL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -184,6 +186,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OGTSL"
+                    ],
+                    "__impliedId": "OGTSL"
+                },
+                "shortname": "OGTSL",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

@@ -89,6 +89,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-NC-ND-3.0-IGO.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -105,6 +107,16 @@ Raw Data
         ],
         "__impliedId": "CC-BY-NC-ND-3.0-IGO",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-NC-ND-3.0-IGO"
+                    ],
+                    "__impliedId": "CC-BY-NC-ND-3.0-IGO"
+                },
+                "shortname": "CC-BY-NC-ND-3.0-IGO",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO",

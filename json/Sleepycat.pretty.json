@@ -58,6 +58,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Sleepycat"
+                ],
+                "__impliedId": "Sleepycat"
+            },
+            "shortname": "Sleepycat",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sleepycat License",

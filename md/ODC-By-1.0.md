@@ -453,6 +453,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ODC-By-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -502,6 +504,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ODC-By-1.0"
+                    ],
+                    "__impliedId": "ODC-By-1.0"
+                },
+                "shortname": "ODC-By-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

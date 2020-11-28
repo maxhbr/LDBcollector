@@ -45,6 +45,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Xnet"
+                ],
+                "__impliedId": "Xnet"
+            },
+            "shortname": "Xnet",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "X.Net License",

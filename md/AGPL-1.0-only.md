@@ -164,6 +164,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/AGPL-1.0-only.html "SPDX") (all
@@ -212,6 +214,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-1.0-only"
+                    ],
+                    "__impliedId": "AGPL-1.0-only"
+                },
+                "shortname": "AGPL-1.0-only",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Affero General Public License v1.0 only",

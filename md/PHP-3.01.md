@@ -121,6 +121,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -153,6 +155,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "PHP-3.01"
+                    ],
+                    "__impliedId": "PHP-3.01"
+                },
+                "shortname": "PHP-3.01",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PHP License v3.01",

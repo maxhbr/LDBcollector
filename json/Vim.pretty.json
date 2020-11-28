@@ -12,6 +12,16 @@
         "Vim"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Vim"
+                ],
+                "__impliedId": "Vim"
+            },
+            "shortname": "Vim",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Vim License",

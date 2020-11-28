@@ -594,6 +594,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/RPSL-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -683,6 +685,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "RPSL-1.0"
+                    ],
+                    "__impliedId": "RPSL-1.0"
+                },
+                "shortname": "RPSL-1.0",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

@@ -233,6 +233,7 @@ EXHIBIT A -Mozilla Public License.
 
 ==== Facts
 
+* LicenseName
 * Override
 * https://spdx.org/licenses/MPL-1.1.html[SPDX] (all data [in this
 repository] is generated)
@@ -321,6 +322,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MPL-1.1"
+                ],
+                "__impliedId": "MPL-1.1"
+            },
+            "shortname": "MPL-1.1",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

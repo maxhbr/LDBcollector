@@ -23,6 +23,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OFL-1.0-RFN.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -35,6 +37,16 @@ Raw Data
         ],
         "__impliedId": "OFL-1.0-RFN",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OFL-1.0-RFN"
+                    ],
+                    "__impliedId": "OFL-1.0-RFN"
+                },
+                "shortname": "OFL-1.0-RFN",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SIL Open Font License 1.0 with Reserved Font Name",

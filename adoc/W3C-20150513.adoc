@@ -99,6 +99,7 @@ Notes
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/W3C-20150513.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -129,6 +130,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "W3C-20150513"
+                ],
+                "__impliedId": "W3C-20150513"
+            },
+            "shortname": "W3C-20150513",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "W3C Software Notice and Document License (2015-05-13)",

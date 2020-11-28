@@ -74,6 +74,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -124,6 +126,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-or-later"
+                    ],
+                    "__impliedId": "LGPL-2.0-or-later"
+                },
+                "shortname": "LGPL-2.0-or-later",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Library General Public License v2 or later",

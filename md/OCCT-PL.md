@@ -148,6 +148,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OCCT-PL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -168,6 +170,16 @@ Raw Data
         ],
         "__impliedId": "OCCT-PL",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OCCT-PL"
+                    ],
+                    "__impliedId": "OCCT-PL"
+                },
+                "shortname": "OCCT-PL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open CASCADE Technology Public License",

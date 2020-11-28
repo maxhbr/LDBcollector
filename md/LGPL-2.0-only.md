@@ -564,6 +564,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/LGPL-2.0-only.html "SPDX") (all
@@ -621,6 +623,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-only"
+                    ],
+                    "__impliedId": "LGPL-2.0-only"
+                },
+                "shortname": "LGPL-2.0-only",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "GNU Library General Public License v2 only",

@@ -87,6 +87,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/EUDatagrid.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -161,6 +163,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "EUDatagrid"
+                    ],
+                    "__impliedId": "EUDatagrid"
+                },
+                "shortname": "EUDatagrid",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

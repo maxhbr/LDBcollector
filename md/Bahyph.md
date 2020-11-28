@@ -53,6 +53,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Bahyph.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -81,6 +83,16 @@ Raw Data
             "Bahyph"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Bahyph"
+                    ],
+                    "__impliedId": "Bahyph"
+                },
+                "shortname": "Bahyph",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Bahyph License",

@@ -165,6 +165,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/PolyForm-Noncommercial-1.0.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -182,6 +184,16 @@ Raw Data
         ],
         "__impliedId": "PolyForm-Noncommercial-1.0.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "PolyForm-Noncommercial-1.0.0"
+                    ],
+                    "__impliedId": "PolyForm-Noncommercial-1.0.0"
+                },
+                "shortname": "PolyForm-Noncommercial-1.0.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "PolyForm Noncommercial License 1.0.0",

@@ -7,6 +7,16 @@
     ],
     "__impliedId": "SSH-short",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SSH-short"
+                ],
+                "__impliedId": "SSH-short"
+            },
+            "shortname": "SSH-short",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "SSH short notice",

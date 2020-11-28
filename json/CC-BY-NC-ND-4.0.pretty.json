@@ -21,6 +21,16 @@
     ],
     "__impliedNonCommercial": true,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC-BY-NC-ND-4.0"
+                ],
+                "__impliedId": "CC-BY-NC-ND-4.0"
+            },
+            "shortname": "CC-BY-NC-ND-4.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution Non Commercial No Derivatives 4.0 International",

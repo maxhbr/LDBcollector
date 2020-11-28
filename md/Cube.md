@@ -68,6 +68,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Cube.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -96,6 +98,16 @@ Raw Data
             "Cube"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Cube"
+                    ],
+                    "__impliedId": "Cube"
+                },
+                "shortname": "Cube",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Cube License",

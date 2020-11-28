@@ -172,6 +172,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CAL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -203,6 +205,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CAL-1.0"
+                    ],
+                    "__impliedId": "CAL-1.0"
+                },
+                "shortname": "CAL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Cryptographic Autonomy License 1.0",

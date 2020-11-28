@@ -80,6 +80,7 @@ California and by the laws of the United States of America.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Xnet.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -149,6 +150,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Xnet"
+                ],
+                "__impliedId": "Xnet"
+            },
+            "shortname": "Xnet",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

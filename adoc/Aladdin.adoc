@@ -109,6 +109,7 @@ If the unit or agency is the Department of Defense ("DOD"), the Program and its 
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Aladdin.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml[Scancode]
@@ -137,6 +138,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Aladdin"
+                ],
+                "__impliedId": "Aladdin"
+            },
+            "shortname": "Aladdin",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Aladdin Free Public License",

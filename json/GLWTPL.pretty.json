@@ -6,6 +6,16 @@
     ],
     "__impliedId": "GLWTPL",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "GLWTPL"
+                ],
+                "__impliedId": "GLWTPL"
+            },
+            "shortname": "GLWTPL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Good Luck With That Public License",

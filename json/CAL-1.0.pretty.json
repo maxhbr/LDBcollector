@@ -17,6 +17,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CAL-1.0"
+                ],
+                "__impliedId": "CAL-1.0"
+            },
+            "shortname": "CAL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Cryptographic Autonomy License 1.0",

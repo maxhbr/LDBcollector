@@ -110,6 +110,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -208,6 +210,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ISC"
+                    ],
+                    "__impliedId": "ISC"
+                },
+                "shortname": "ISC",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

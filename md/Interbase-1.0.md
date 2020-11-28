@@ -231,6 +231,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Interbase-1.0.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -248,6 +250,16 @@ Raw Data
         ],
         "__impliedId": "Interbase-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Interbase-1.0"
+                    ],
+                    "__impliedId": "Interbase-1.0"
+                },
+                "shortname": "Interbase-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Interbase Public License v1.0",

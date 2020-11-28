@@ -10,6 +10,16 @@
         "MIT"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-enna"
+                ],
+                "__impliedId": "MIT-enna"
+            },
+            "shortname": "MIT-enna",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "enna License",

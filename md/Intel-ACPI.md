@@ -159,6 +159,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Intel-ACPI.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -192,6 +194,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Intel-ACPI"
+                    ],
+                    "__impliedId": "Intel-ACPI"
+                },
+                "shortname": "Intel-ACPI",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Intel ACPI Software License Agreement",

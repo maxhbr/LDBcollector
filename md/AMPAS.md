@@ -55,6 +55,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/AMPAS.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -84,6 +86,16 @@ Raw Data
             "AMPAS BSD"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "AMPAS"
+                    ],
+                    "__impliedId": "AMPAS"
+                },
+                "shortname": "AMPAS",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Academy of Motion Picture Arts and Sciences BSD",

@@ -129,6 +129,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Apache-1.1.html "SPDX") (all data
@@ -222,6 +224,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Apache-1.1"
+                    ],
+                    "__impliedId": "Apache-1.1"
+                },
+                "shortname": "Apache-1.1",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

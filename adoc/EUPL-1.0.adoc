@@ -208,6 +208,7 @@ This licence shall be governed by the Belgian law if:
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/EUPL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -242,6 +243,16 @@ Policy]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.0"
+                ],
+                "__impliedId": "EUPL-1.0"
+            },
+            "shortname": "EUPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.0",

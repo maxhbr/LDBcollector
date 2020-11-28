@@ -17,6 +17,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC-BY-SA-2.5"
+                ],
+                "__impliedId": "CC-BY-SA-2.5"
+            },
+            "shortname": "CC-BY-SA-2.5",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Attribution Share Alike 2.5 Generic",

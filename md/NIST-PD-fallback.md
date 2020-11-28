@@ -59,6 +59,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/NIST-PD-fallback.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -76,6 +78,16 @@ Raw Data
         ],
         "__impliedId": "NIST-PD-fallback",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "NIST-PD-fallback"
+                    ],
+                    "__impliedId": "NIST-PD-fallback"
+                },
+                "shortname": "NIST-PD-fallback",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "NIST Public Domain Notice with license fallback",

@@ -6,6 +6,16 @@
     ],
     "__impliedId": "Caldera",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Caldera"
+                ],
+                "__impliedId": "Caldera"
+            },
+            "shortname": "Caldera",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Caldera License",

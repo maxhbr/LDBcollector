@@ -78,6 +78,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/O-UDA-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -94,6 +96,16 @@ Raw Data
         ],
         "__impliedId": "O-UDA-1.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "O-UDA-1.0"
+                    ],
+                    "__impliedId": "O-UDA-1.0"
+                },
+                "shortname": "O-UDA-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Use of Data Agreement v1.0",

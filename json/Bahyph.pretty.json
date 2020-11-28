@@ -10,6 +10,16 @@
         "Bahyph"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Bahyph"
+                ],
+                "__impliedId": "Bahyph"
+            },
+            "shortname": "Bahyph",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Bahyph License",

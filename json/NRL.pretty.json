@@ -10,6 +10,16 @@
         "BSD with advertising"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NRL"
+                ],
+                "__impliedId": "NRL"
+            },
+            "shortname": "NRL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NRL License",

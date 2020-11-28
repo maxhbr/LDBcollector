@@ -82,6 +82,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/iMatix.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -107,6 +109,16 @@ Raw Data
             "iMatix"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "iMatix"
+                    ],
+                    "__impliedId": "iMatix"
+                },
+                "shortname": "iMatix",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "iMatix Standard Function Library Agreement",

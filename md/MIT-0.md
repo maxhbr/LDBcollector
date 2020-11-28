@@ -60,6 +60,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -81,6 +83,16 @@ Raw Data
         ],
         "__impliedId": "MIT-0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-0"
+                    ],
+                    "__impliedId": "MIT-0"
+                },
+                "shortname": "MIT-0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "MIT No Attribution",

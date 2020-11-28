@@ -11,6 +11,16 @@
         "MIT"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-feh"
+                ],
+                "__impliedId": "MIT-feh"
+            },
+            "shortname": "MIT-feh",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "feh License",

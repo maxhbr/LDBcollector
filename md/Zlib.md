@@ -117,6 +117,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   Override
 
 -   [SPDX](https://spdx.org/licenses/Zlib.html "SPDX") (all data \[in
@@ -226,6 +228,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Zlib"
+                    ],
+                    "__impliedId": "Zlib"
+                },
+                "shortname": "Zlib",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

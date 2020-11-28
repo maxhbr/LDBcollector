@@ -58,6 +58,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/RSA-MD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -80,6 +82,16 @@ Raw Data
         ],
         "__impliedId": "RSA-MD",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "RSA-MD"
+                    ],
+                    "__impliedId": "RSA-MD"
+                },
+                "shortname": "RSA-MD",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "RSA Message-Digest License",

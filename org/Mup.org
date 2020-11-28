@@ -64,6 +64,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Mup.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -100,6 +102,16 @@
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Mup"
+                  ],
+                  "__impliedId": "Mup"
+              },
+              "shortname": "Mup",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Mup License",

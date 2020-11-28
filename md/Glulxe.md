@@ -41,6 +41,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Glulxe.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -65,6 +67,16 @@ Raw Data
             "Glulxe"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Glulxe"
+                    ],
+                    "__impliedId": "Glulxe"
+                },
+                "shortname": "Glulxe",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Glulxe License",

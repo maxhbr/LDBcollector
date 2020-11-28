@@ -185,6 +185,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -224,6 +226,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Artistic-1.0-Perl"
+                    ],
+                    "__impliedId": "Artistic-1.0-Perl"
+                },
+                "shortname": "Artistic-1.0-Perl",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Artistic License 1.0 (Perl)",

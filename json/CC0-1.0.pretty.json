@@ -38,6 +38,16 @@
             },
             "domain_content": true
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "CC0-1.0"
+                ],
+                "__impliedId": "CC0-1.0"
+            },
+            "shortname": "CC0-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Creative Commons Zero v1.0 Universal",

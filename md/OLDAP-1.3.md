@@ -184,6 +184,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OLDAP-1.3.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -213,6 +215,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OLDAP-1.3"
+                    ],
+                    "__impliedId": "OLDAP-1.3"
+                },
+                "shortname": "OLDAP-1.3",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License v1.3",

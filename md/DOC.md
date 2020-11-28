@@ -63,6 +63,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/DOC.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -92,6 +94,16 @@ Raw Data
             "DOC"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "DOC"
+                    ],
+                    "__impliedId": "DOC"
+                },
+                "shortname": "DOC",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "DOC License",

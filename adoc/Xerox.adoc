@@ -66,6 +66,7 @@ OF THE POSSIBILITY OF SUCH DAMAGES.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Xerox.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -100,6 +101,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Xerox"
+                ],
+                "__impliedId": "Xerox"
+            },
+            "shortname": "Xerox",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Xerox License",

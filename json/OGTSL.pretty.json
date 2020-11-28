@@ -44,6 +44,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OGTSL"
+                ],
+                "__impliedId": "OGTSL"
+            },
+            "shortname": "OGTSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open Group Test Suite License",

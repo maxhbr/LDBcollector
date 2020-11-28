@@ -17,6 +17,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "psfrag"
+                ],
+                "__impliedId": "psfrag"
+            },
+            "shortname": "psfrag",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "psfrag License",

@@ -99,6 +99,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CC-BY-1.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -126,6 +128,16 @@ Raw Data
             "Creative Commons Attribution License (CC-by), v1.0"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CC-BY-1.0"
+                    ],
+                    "__impliedId": "CC-BY-1.0"
+                },
+                "shortname": "CC-BY-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Creative Commons Attribution 1.0 Generic",

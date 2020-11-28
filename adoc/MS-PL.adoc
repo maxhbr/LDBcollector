@@ -155,6 +155,7 @@ non-infringement.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MS-PL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -237,6 +238,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-PL"
+                ],
+                "__impliedId": "MS-PL"
+            },
+            "shortname": "MS-PL",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

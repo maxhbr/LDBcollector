@@ -14,6 +14,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NBPL-1.0"
+                ],
+                "__impliedId": "NBPL-1.0"
+            },
+            "shortname": "NBPL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Net Boolean Public License v1",

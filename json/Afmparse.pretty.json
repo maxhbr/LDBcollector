@@ -11,6 +11,16 @@
         "Afmparse"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Afmparse"
+                ],
+                "__impliedId": "Afmparse"
+            },
+            "shortname": "Afmparse",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Afmparse License",

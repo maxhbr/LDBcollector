@@ -18,12 +18,13 @@ Number of facts: 4139
 Number of clusters: 2658
 ### Stats on Licenses:
 Number of Licenses: 414
-Number of facts: 1914
+Number of facts: 2328
     BlueOak License List: 228
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 164
     Google OSS Policy: 114
     Hitachi open-license: 55
+    LicenseName: 414
     Open Knowledge International: 90
     OpenChainPolicyTemplate: 88
     OpenSourceInitiative: 87

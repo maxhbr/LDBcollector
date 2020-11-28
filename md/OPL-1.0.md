@@ -380,6 +380,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -404,6 +406,16 @@ Raw Data
             "Open Publication License (OPL) v1.0"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OPL-1.0"
+                    ],
+                    "__impliedId": "OPL-1.0"
+                },
+                "shortname": "OPL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open Public License v1.0",

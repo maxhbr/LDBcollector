@@ -54,6 +54,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/Newsletr.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -90,6 +92,16 @@
           ]
       ],
       "facts": {
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Newsletr"
+                  ],
+                  "__impliedId": "Newsletr"
+              },
+              "shortname": "Newsletr",
+              "otherNames": []
+          },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,
               "spdxFullName": "Newsletr License",

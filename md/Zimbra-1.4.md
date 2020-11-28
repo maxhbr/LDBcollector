@@ -79,6 +79,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Zimbra-1.4.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -96,6 +98,16 @@ Raw Data
         ],
         "__impliedId": "Zimbra-1.4",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Zimbra-1.4"
+                    ],
+                    "__impliedId": "Zimbra-1.4"
+                },
+                "shortname": "Zimbra-1.4",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Zimbra Public License v1.4",

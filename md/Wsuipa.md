@@ -56,6 +56,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/Wsuipa.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -92,6 +94,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "Wsuipa"
+                    ],
+                    "__impliedId": "Wsuipa"
+                },
+                "shortname": "Wsuipa",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Wsuipa License",

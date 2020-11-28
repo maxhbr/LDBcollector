@@ -91,6 +91,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/mpich2.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -128,6 +130,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "mpich2"
+                    ],
+                    "__impliedId": "mpich2"
+                },
+                "shortname": "mpich2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "mpich2 License",

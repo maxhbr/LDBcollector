@@ -8,6 +8,16 @@
     ],
     "__impliedId": "MIT-CMU",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-CMU"
+                ],
+                "__impliedId": "MIT-CMU"
+            },
+            "shortname": "MIT-CMU",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "CMU License",

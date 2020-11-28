@@ -187,6 +187,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SNIA.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -219,6 +221,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SNIA"
+                    ],
+                    "__impliedId": "SNIA"
+                },
+                "shortname": "SNIA",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SNIA Public License 1.1",

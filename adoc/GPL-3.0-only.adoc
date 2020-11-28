@@ -12,12 +12,12 @@
 
 *Other Names:*
 
+* `+GPL-3.0-or-later+`
 * `+GPL-3.0+`
 * `+GPL3.0+`
 * `+GPL3+`
 * `+GPL (v3)+`
 * `+GNU General Public License Version 3+`
-* `+GPL-3.0-or-later+`
 * `+GPL-3.0++`
 * `+GPL3.0++`
 * `+GPL3++`
@@ -811,6 +811,7 @@ Public License instead of this License.  But first, please read
 
 ==== Facts
 
+* LicenseName
 * Override
 * Override
 * https://spdx.org/licenses/GPL-3.0-only.html[SPDX] (all data [in this
@@ -866,13 +867,13 @@ Knowledge International]
 ....
 {
     "__impliedNames": [
+        "GPL-3.0-or-later",
         "GPL-3.0-only",
         "GPL-3.0",
         "GPL3.0",
         "GPL3",
         "GPL (v3)",
         "GNU General Public License Version 3",
-        "GPL-3.0-or-later",
         "GPL-3.0+",
         "GPL3.0+",
         "GPL3+",
@@ -942,6 +943,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-3.0-or-later"
+                ],
+                "__impliedId": "GPL-3.0-or-later"
+            },
+            "shortname": "GPL-3.0-or-later",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

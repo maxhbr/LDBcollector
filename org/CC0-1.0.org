@@ -204,6 +204,8 @@
 
 *** Facts
 
+- LicenseName
+
 - [[https://spdx.org/licenses/CC0-1.0.html][SPDX]] (all data [in this
   repository] is generated)
 
@@ -269,6 +271,16 @@
                   ]
               },
               "domain_content": true
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "CC0-1.0"
+                  ],
+                  "__impliedId": "CC0-1.0"
+              },
+              "shortname": "CC0-1.0",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

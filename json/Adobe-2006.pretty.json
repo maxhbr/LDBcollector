@@ -11,6 +11,16 @@
         "Adobe"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Adobe-2006"
+                ],
+                "__impliedId": "Adobe-2006"
+            },
+            "shortname": "Adobe-2006",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Adobe Systems Incorporated Source Code License Agreement",

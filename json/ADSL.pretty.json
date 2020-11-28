@@ -10,6 +10,16 @@
         "ADSL"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "ADSL"
+                ],
+                "__impliedId": "ADSL"
+            },
+            "shortname": "ADSL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Amazon Digital Services License",

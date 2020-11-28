@@ -11,6 +11,16 @@
         "JasPer"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "JasPer-2.0"
+                ],
+                "__impliedId": "JasPer-2.0"
+            },
+            "shortname": "JasPer-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "JasPer License",

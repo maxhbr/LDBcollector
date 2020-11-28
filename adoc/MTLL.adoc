@@ -70,6 +70,7 @@ LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED "AS IS" FOR WHICH NO WARRANTIES A
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/MTLL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -103,6 +104,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MTLL"
+                ],
+                "__impliedId": "MTLL"
+            },
+            "shortname": "MTLL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Matrix Template Library License",

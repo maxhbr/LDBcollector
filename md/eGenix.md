@@ -87,6 +87,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/eGenix.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -116,6 +118,16 @@ Raw Data
             "eGenix"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "eGenix"
+                    ],
+                    "__impliedId": "eGenix"
+                },
+                "shortname": "eGenix",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "eGenix.com Public License 1.1.0",

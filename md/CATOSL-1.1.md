@@ -409,6 +409,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/CATOSL-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -485,6 +487,16 @@ Raw Data
                     ]
                 },
                 "domain_content": false
+            },
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "CATOSL-1.1"
+                    ],
+                    "__impliedId": "CATOSL-1.1"
+                },
+                "shortname": "CATOSL-1.1",
+                "otherNames": []
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,

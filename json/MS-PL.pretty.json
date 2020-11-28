@@ -50,6 +50,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-PL"
+                ],
+                "__impliedId": "MS-PL"
+            },
+            "shortname": "MS-PL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Microsoft Public License",

@@ -69,6 +69,7 @@ The views and conclusions contained in the software and documentation are those 
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/NRL.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -94,6 +95,16 @@ Project Wiki]
         "BSD with advertising"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NRL"
+                ],
+                "__impliedId": "NRL"
+            },
+            "shortname": "NRL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "NRL License",

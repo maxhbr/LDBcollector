@@ -58,6 +58,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "RPSL-1.0"
+                ],
+                "__impliedId": "RPSL-1.0"
+            },
+            "shortname": "RPSL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "RealNetworks Public Source License v1.0",

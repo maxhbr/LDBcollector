@@ -53,6 +53,7 @@ Permission is granted to anyone to use this software for any purpose on any comp
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Newsletr.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -86,6 +87,16 @@ Project Wiki]
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Newsletr"
+                ],
+                "__impliedId": "Newsletr"
+            },
+            "shortname": "Newsletr",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Newsletr License",

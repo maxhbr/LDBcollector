@@ -50,6 +50,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/APAFML.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -78,6 +80,16 @@ Raw Data
             "APAFML"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "APAFML"
+                    ],
+                    "__impliedId": "APAFML"
+                },
+                "shortname": "APAFML",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Adobe Postscript AFM License",

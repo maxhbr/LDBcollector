@@ -95,6 +95,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OLDAP-2.2.2.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -124,6 +126,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OLDAP-2.2.2"
+                    ],
+                    "__impliedId": "OLDAP-2.2.2"
+                },
+                "shortname": "OLDAP-2.2.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Open LDAP Public License 2.2.2",

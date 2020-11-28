@@ -134,6 +134,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/OFL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -166,6 +168,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "OFL-1.0"
+                    ],
+                    "__impliedId": "OFL-1.0"
+                },
+                "shortname": "OFL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SIL Open Font License 1.0",

@@ -190,6 +190,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SugarCRM-1.1.3.html "SPDX") (all
     data \[in this repository\] is generated)
 
@@ -207,6 +209,16 @@ Raw Data
         ],
         "__impliedId": "SugarCRM-1.1.3",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SugarCRM-1.1.3"
+                    ],
+                    "__impliedId": "SugarCRM-1.1.3"
+                },
+                "shortname": "SugarCRM-1.1.3",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "SugarCRM Public License v1.1.3",

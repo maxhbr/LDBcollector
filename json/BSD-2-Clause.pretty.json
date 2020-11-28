@@ -55,6 +55,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-2-Clause"
+                ],
+                "__impliedId": "BSD-2-Clause"
+            },
+            "shortname": "BSD-2-Clause",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "BSD 2-Clause \"Simplified\" License",

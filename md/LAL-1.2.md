@@ -28,6 +28,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/LAL-1.2.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -47,6 +49,16 @@ Raw Data
             "Licence Art Libre (Free Art License)"
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "LAL-1.2"
+                    ],
+                    "__impliedId": "LAL-1.2"
+                },
+                "shortname": "LAL-1.2",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Licence Art Libre 1.2",

@@ -48,6 +48,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "NGPL"
+                ],
+                "__impliedId": "NGPL"
+            },
+            "shortname": "NGPL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Nethack General Public License",

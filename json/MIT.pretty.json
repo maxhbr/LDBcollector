@@ -59,6 +59,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT"
+                ],
+                "__impliedId": "MIT"
+            },
+            "shortname": "MIT",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "MIT License",

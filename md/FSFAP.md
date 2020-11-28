@@ -52,6 +52,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/FSFAP.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -85,6 +87,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "FSFAP"
+                    ],
+                    "__impliedId": "FSFAP"
+                },
+                "shortname": "FSFAP",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "FSF All Permissive License",

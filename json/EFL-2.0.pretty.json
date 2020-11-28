@@ -50,6 +50,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EFL-2.0"
+                ],
+                "__impliedId": "EFL-2.0"
+            },
+            "shortname": "EFL-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Eiffel Forum License v2.0",

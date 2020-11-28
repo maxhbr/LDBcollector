@@ -329,6 +329,8 @@
 
 *** Facts
 
+- LicenseName
+
 - Override
 
 - [[https://spdx.org/licenses/Apache-2.0.html][SPDX]] (all data [in this
@@ -436,6 +438,16 @@
                   ]
               },
               "domain_content": false
+          },
+          "LicenseName": {
+              "implications": {
+                  "__impliedNames": [
+                      "Apache-2.0"
+                  ],
+                  "__impliedId": "Apache-2.0"
+              },
+              "shortname": "Apache-2.0",
+              "otherNames": []
           },
           "SPDX": {
               "isSPDXLicenseDeprecated": false,

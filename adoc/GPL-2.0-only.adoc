@@ -475,6 +475,7 @@ Public License instead of this License.
 
 ==== Facts
 
+* LicenseName
 * Override
 * Override
 * https://spdx.org/licenses/GPL-2.0-only.html[SPDX] (all data [in this
@@ -593,6 +594,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-2.0-only"
+                ],
+                "__impliedId": "GPL-2.0-only"
+            },
+            "shortname": "GPL-2.0-only",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

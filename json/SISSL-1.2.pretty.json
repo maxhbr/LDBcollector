@@ -7,6 +7,16 @@
     ],
     "__impliedId": "SISSL-1.2",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "SISSL-1.2"
+                ],
+                "__impliedId": "SISSL-1.2"
+            },
+            "shortname": "SISSL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Sun Industry Standards Source License v1.2",

@@ -233,6 +233,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/FTL.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -271,6 +273,16 @@ Raw Data
             ]
         ],
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "FTL"
+                    ],
+                    "__impliedId": "FTL"
+                },
+                "shortname": "FTL",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Freetype Project License",

@@ -168,6 +168,7 @@ TAPR may publish updated versions of the OHL which retain the same general provi
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/TAPR-OHL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tapr-ohl-1.0.yml[Scancode]
@@ -184,6 +185,16 @@ repository] is generated)
     ],
     "__impliedId": "TAPR-OHL-1.0",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "TAPR-OHL-1.0"
+                ],
+                "__impliedId": "TAPR-OHL-1.0"
+            },
+            "shortname": "TAPR-OHL-1.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "TAPR Open Hardware License v1.0",

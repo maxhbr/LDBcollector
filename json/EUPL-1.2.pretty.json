@@ -22,6 +22,16 @@
     ],
     "__hasPatentHint": true,
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.2"
+                ],
+                "__impliedId": "EUPL-1.2"
+            },
+            "shortname": "EUPL-1.2",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "European Union Public License 1.2",

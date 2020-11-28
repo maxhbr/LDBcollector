@@ -253,6 +253,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/copyleft-next-0.3.0.html "SPDX")
     (all data \[in this repository\] is generated)
 
@@ -269,6 +271,16 @@ Raw Data
         ],
         "__impliedId": "copyleft-next-0.3.0",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "copyleft-next-0.3.0"
+                    ],
+                    "__impliedId": "copyleft-next-0.3.0"
+                },
+                "shortname": "copyleft-next-0.3.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "copyleft-next 0.3.0",

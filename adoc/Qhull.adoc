@@ -61,6 +61,7 @@ This software includes Qhull from The Geometry Center. Qhull is copyrighted as n
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/Qhull.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
@@ -86,6 +87,16 @@ Project Wiki]
         "Qhull"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Qhull"
+                ],
+                "__impliedId": "Qhull"
+            },
+            "shortname": "Qhull",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Qhull License",

@@ -123,6 +123,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -173,6 +175,16 @@ Raw Data
         ],
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "ECL-1.0"
+                    ],
+                    "__impliedId": "ECL-1.0"
+                },
+                "shortname": "ECL-1.0",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Educational Community License v1.0",

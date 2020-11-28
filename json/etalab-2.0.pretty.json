@@ -14,6 +14,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "etalab-2.0"
+                ],
+                "__impliedId": "etalab-2.0"
+            },
+            "shortname": "etalab-2.0",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Etalab Open License 2.0",

@@ -6,6 +6,16 @@
     ],
     "__impliedId": "OCCT-PL",
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "OCCT-PL"
+                ],
+                "__impliedId": "OCCT-PL"
+            },
+            "shortname": "OCCT-PL",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Open CASCADE Technology Public License",

@@ -19,6 +19,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "MakeIndex"
+                ],
+                "__impliedId": "MakeIndex"
+            },
+            "shortname": "MakeIndex",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "MakeIndex License",

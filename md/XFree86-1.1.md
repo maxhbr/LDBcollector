@@ -85,6 +85,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -114,6 +116,16 @@ Raw Data
         "__impliedId": "XFree86-1.1",
         "__hasPatentHint": false,
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "XFree86-1.1"
+                    ],
+                    "__impliedId": "XFree86-1.1"
+                },
+                "shortname": "XFree86-1.1",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "XFree86 License 1.1",

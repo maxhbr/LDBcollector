@@ -10,6 +10,16 @@
         "GL2PS"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "GL2PS"
+                ],
+                "__impliedId": "GL2PS"
+            },
+            "shortname": "GL2PS",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GL2PS License",

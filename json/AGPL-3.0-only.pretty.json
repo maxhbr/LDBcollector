@@ -72,6 +72,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-3.0-only"
+                ],
+                "__impliedId": "AGPL-3.0-only"
+            },
+            "shortname": "AGPL-3.0-only",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "GNU Affero General Public License v3.0 only",

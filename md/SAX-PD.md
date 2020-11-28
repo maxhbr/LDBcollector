@@ -86,6 +86,8 @@ Raw Data
 
 ### Facts
 
+-   LicenseName
+
 -   [SPDX](https://spdx.org/licenses/SAX-PD.html "SPDX") (all data \[in
     this repository\] is generated)
 
@@ -102,6 +104,16 @@ Raw Data
         ],
         "__impliedId": "SAX-PD",
         "facts": {
+            "LicenseName": {
+                "implications": {
+                    "__impliedNames": [
+                        "SAX-PD"
+                    ],
+                    "__impliedId": "SAX-PD"
+                },
+                "shortname": "SAX-PD",
+                "otherNames": []
+            },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
                 "spdxFullName": "Sax Public Domain Notice",

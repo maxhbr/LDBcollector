@@ -42,6 +42,16 @@
             },
             "domain_content": false
         },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "Multics"
+                ],
+                "__impliedId": "Multics"
+            },
+            "shortname": "Multics",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "Multics License",

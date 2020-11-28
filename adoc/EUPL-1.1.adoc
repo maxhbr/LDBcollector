@@ -377,6 +377,7 @@ registered office inside a European Union country.
 
 ==== Facts
 
+* LicenseName
 * https://spdx.org/licenses/EUPL-1.1.html[SPDX] (all data [in this
 repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
@@ -461,6 +462,16 @@ Knowledge International]
                 ]
             },
             "domain_content": false
+        },
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.1"
+                ],
+                "__impliedId": "EUPL-1.1"
+            },
+            "shortname": "EUPL-1.1",
+            "otherNames": []
         },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,

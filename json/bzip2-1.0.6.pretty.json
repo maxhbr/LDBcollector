@@ -15,6 +15,16 @@
         ]
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "bzip2-1.0.6"
+                ],
+                "__impliedId": "bzip2-1.0.6"
+            },
+            "shortname": "bzip2-1.0.6",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "bzip2 and libbzip2 License v1.0.6",

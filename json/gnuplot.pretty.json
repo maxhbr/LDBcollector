@@ -10,6 +10,16 @@
         "gnuplot"
     ],
     "facts": {
+        "LicenseName": {
+            "implications": {
+                "__impliedNames": [
+                    "gnuplot"
+                ],
+                "__impliedId": "gnuplot"
+            },
+            "shortname": "gnuplot",
+            "otherNames": []
+        },
         "SPDX": {
             "isSPDXLicenseDeprecated": false,
             "spdxFullName": "gnuplot License",
