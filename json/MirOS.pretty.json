@@ -15,6 +15,12 @@
     ],
     "__impliedComments": [
         [
+            "Hitachi open-license",
+            [
+                "https://opensource.org/licenses/miros.html"
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license is OSI certified."
@@ -363,6 +369,14 @@
             "_implications": {
                 "__impliedNames": [
                     "MirOS License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "https://opensource.org/licenses/miros.html"
+                        ]
+                    ]
                 ],
                 "__impliedText": "/*-\r\n* Copyright © year, year, year, …\r\n* First M. Last <user@host.domain>\r\n*\r\n* Provided that these terms and disclaimer and all copyright notices\r\n* are retained or reproduced in an accompanying document, permission\r\n* is granted to deal in this work without restriction, including un‐\r\n* limited rights to use, publicly perform, distribute, sell, modify,\r\n* merge, give away, or sublicence.\r\n*\r\n* This work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\r\n* the utmost extent permitted by applicable law, neither express nor\r\n* implied; without malicious intent or gross negligence. In no event\r\n* may a licensor, author or contributor be held liable for indirect,\r\n* direct, other damage, loss, or other issues arising in any way out\r\n* of dealing in the work, even if advised of the possibility of such\r\n* damage or existence of a defect, except proven that it results out\r\n* of said person's immediate fault when using the work as intended.\r\n*/\r\n\r\nI_N_S_T_R_U_C_T_I_O_N_S_:_\r\nTo apply the template(¹) specify the years of copyright (separated by\r\ncomma, not as a range), the legal names of the copyright holders, and\r\nthe real names of the authors if different. Avoid adding text.\r\n\r\nR_A_T_I_O_N_A_L_E_:_\r\nThis licence is apt for any kind of work (such as source code, fonts,\r\ndocumentation, graphics, sound etc.) and the preferred terms for work\r\nadded to MirBSD. It has been drafted as universally usable equivalent\r\nof the \"historic permission notice\"⁽²⁾ adapted to Europen law because\r\nin some (droit d'auteur) countries authors cannot disclaim all liabi‐\r\nlities. Compliance to DFSG⁽³⁾ 1.1 is ensured, and GPLv2 compatibility\r\nis asserted unless advertising clauses are used. The MirOS Licence is\r\ncertified to conform to OKD⁽⁴⁾ 1.0 and OSD⁽⁵⁾ 1.9, and qualifies as a\r\nFree Software⁽⁶⁾ and also Free Documentation⁽⁷⁾ licence and is inclu‐\r\nded in some relevant lists⁽⁸⁾⁽⁹⁾⁽¹⁰⁾.\r\n\r\nWe believe you are not liable for work inserted which is intellectual\r\nproperty of third parties, if you were not aware of the fact, act ap‐\r\npropriately as soon as you become aware of that problem, seek an ami‐\r\ncable solution for all parties, and never knowingly distribute a work\r\nwithout being authorised to do so by its licensors.\r\n\r\nR_E_F_E_R_E_N_C_E_S_:_\r\n① also at http://mirbsd.de/MirOS-Licence\r\n② http://www.opensource.org/licenses/historical.php\r\n③ http://www.debian.org/social_contract#guidelines\r\n④ http://www.opendefinition.org/1.0\r\n⑤ http://www.opensource.org/docs/osd\r\n⑥ http://www.gnu.org/philosophy/free-sw.html\r\n⑦ http://www.gnu.org/philosophy/free-doc.html\r\n⑧ http://www.ifross.de/ifross_html/lizenzcenter.html\r\n⑨ http://www.opendefinition.org/licenses\r\n⑩ http://opensource.org/licenses/miros.html",
                 "__impliedURLs": [

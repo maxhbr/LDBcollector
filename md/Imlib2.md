@@ -18,6 +18,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “https://git.enlightenment.org/legacy/imlib2.git/tree/ and
+    https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 URLs
 ----
 
@@ -102,6 +108,14 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Imlib2"
+        ],
+        "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -405,6 +419,14 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "Imlib2 License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "https://git.enlightenment.org/legacy/imlib2.git/tree/ and https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING"
+                            ]
+                        ]
                     ],
                     "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy\r\nof this software and associated documentation files (the \"Software\"), to\r\ndeal in the Software without restriction, including without limitation the\r\nrights to use, copy, modify, merge, publish, distribute, sublicense, and/or\r\nsell copies of the Software, and to permit persons to whom the Software is\r\nfurnished to do so, subject to the following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be included in\r\nall copies of the Software and its Copyright notices. In addition publicly\r\ndocumented acknowledgment must be given that this software has been used if no\r\nsource code of this software is made available publicly. Making the source\r\navailable publicly means including the source for this software with the\r\ndistribution, or a method to get this software via some reasonable mechanism\r\n(electronic transfer via a network or media) as well as making an offer to\r\nsupply the source on request. This Copyright notice serves as an offer to\r\nsupply the source on on request as well. Instead of this, supplying\r\nacknowledgments of use of this software in either Copyright notices, Manuals,\r\nPublicity and Marketing documents or any documentation provided with any\r\nproduct containing this software. This License does not apply to any software\r\nthat links to the libraries provided by this software (statically or\r\ndynamically), but only to the software provided.\r\n\r\nPlease see the COPYING-PLAIN for a plain-english explanation of this notice\r\nand its intent.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\r\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL\r\nTHE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER \r\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\r\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
                     "__impliedURLs": [

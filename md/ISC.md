@@ -50,6 +50,11 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “https://www.isc.org/downloads/software-support-policy/isc-license/”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
     (CC0-1.0))
@@ -171,6 +176,12 @@ Raw Data
             "ISC license"
         ],
         "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                ]
+            ],
             [
                 "Scancode",
                 [
@@ -483,6 +494,14 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "ISC License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                            ]
+                        ]
                     ],
                     "__impliedText": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\r\nCopyright Â© 1995-2003 by Internet Software Consortium\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\r\n\r\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
                     "__impliedURLs": [

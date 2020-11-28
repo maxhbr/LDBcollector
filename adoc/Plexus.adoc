@@ -37,6 +37,10 @@ Project Wiki]
 
 === General Comments
 
+* ``"DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate
+credit can be found at "DOM4J Project http://www.dom4j.org/".'' (source:
+https://github.com/Hitachi/open-license[Hitachi open-license]
+(CDLA-Permissive-1.0))
 * ``Per Fedora, this is an Apache 1.1 derived license. Unfortunately,
 clause 4 is too broad, making it Free but GPL-incompatible. It does also
 replace the deprecated keys classworlds and apache-due-credit that were
@@ -138,6 +142,12 @@ Project Wiki]
         "Plexus"
     ],
     "__impliedComments": [
+        [
+            "Hitachi open-license",
+            [
+                "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+            ]
+        ],
         [
             "Scancode",
             [
@@ -404,6 +414,14 @@ Project Wiki]
             "_implications": {
                 "__impliedNames": [
                     "DOM4J License"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+                        ]
+                    ]
                 ],
                 "__impliedText": "Copyright 2001-2005 (C) MetaStuff, Ltd. \r\nAll Rights Reserved. \r\n\r\nRedistribution and use of this software and \r\nassociated documentation (\"Software\"), with \r\nor without modification, are permitted provided \r\nthat the following conditions are met: \r\n\r\n1. Redistributions of source code must retain \r\n   copyright statements and notices. Redistributions \r\n   must also contain a copy of this document. \r\n2. Redistributions in binary form must reproduce \r\n   the above copyright notice, this list of conditions \r\n   and the following disclaimer in the documentation \r\n   and/or other materials provided with the distribution. \r\n3. The name \"DOM4J\" must not be used to endorse or promote \r\n   products derived from this Software without prior written \r\n   permission of MetaStuff, Ltd. For written permission, \r\n   please contact dom4j-info@metastuff.com. \r\n4. Products derived from this Software may not be called \r\n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \r\n   prior written permission of MetaStuff, Ltd. DOM4J is a \r\n   registered trademark of MetaStuff, Ltd. \r\n5. Due credit should be given to the DOM4J Project \r\n   http://www.dom4j.org/ \r\n\r\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \r\n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \r\nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \r\nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \r\nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \r\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \r\nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \r\nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \r\n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \r\nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \r\nOF SUCH DAMAGE.",
                 "__impliedURLs": [

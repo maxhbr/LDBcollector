@@ -14,6 +14,12 @@
     ],
     "__impliedComments": [
         [
+            "Hitachi open-license",
+            [
+                "https://opensource.org/licenses/ecl1.php"
+            ]
+        ],
+        [
             "Scancode",
             [
                 "Per SPDX.org, this license is OSI certified."
@@ -350,6 +356,14 @@
             "_implications": {
                 "__impliedNames": [
                     "Educational Community License, Version 1.0"
+                ],
+                "__impliedComments": [
+                    [
+                        "Hitachi open-license",
+                        [
+                            "https://opensource.org/licenses/ecl1.php"
+                        ]
+                    ]
                 ],
                 "__impliedText": "The Educational Community License\r\n\r\nThis Educational Community License (the \"License\") applies to any original work\r\nof authorship (the \"Original Work\") whose owner (the \"Licensor\") has placed the\r\nfollowing notice immediately following the copyright notice for the Original\r\nWork:\r\n\r\n  Copyright (c) {year} {copyright holders}\r\n\r\n  Licensed under the Educational Community License version 1.0\r\n\r\nThis Original Work, including software, source code, documents, or other related\r\nitems, is being provided by the copyright holder(s) subject to the terms of the\r\nEducational Community License. By obtaining, using and/or copying this Original\r\nWork, you agree that you have read, understand, and will comply with the\r\nfollowing terms and conditions of the Educational Community License:\r\n\r\nPermission to use, copy, modify, merge, publish, distribute, and sublicense this\r\nOriginal Work and its documentation, with or without modification, for any\r\npurpose, and without fee or royalty to the copyright holder(s) is hereby granted,\r\nprovided that you include the following on ALL copies of the Original Work or\r\nportions thereof, including modifications or derivatives, that you make:\r\n\r\nThe full text of the Educational Community License in a location viewable to\r\nusers of the redistributed or derivative work.\r\n\r\nAny pre-existing intellectual property disclaimers, notices, or terms and\r\nconditions.\r\n\r\nNotice of any changes or modifications to the Original Work, including the date\r\nthe changes were made.\r\n\r\nAny modifications of the Original Work must be distributed in such a manner as to\r\navoid any confusion with the Original Work of the copyright holders.\r\n\r\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\r\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\r\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\r\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN\r\nAN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION\r\nWITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n\r\nThe name and trademarks of copyright holder(s) may NOT be used in advertising or\r\npublicity pertaining to the Original or Derivative Works without specific,\r\nwritten prior permission. Title to copyright in the Original Work and any\r\nassociated documentation will at all times remain with the copyright holders.",
                 "__impliedURLs": [
