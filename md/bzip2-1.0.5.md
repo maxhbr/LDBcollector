@@ -1,0 +1,160 @@
+bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
+===============================================
+
+[TABLE]
+
+Comments on (easy) usability
+----------------------------
+
+-   **↑**“Rating is: Bronze” (source: [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+General Comments
+----------------
+
+URLs
+----
+
+-   **SPDX:** http://spdx.org/licenses/bzip2-1.0.5.json
+
+-   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.html
+
+-   https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html
+
+-   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
+
+------------------------------------------------------------------------
+
+Raw Data
+--------
+
+### Facts
+
+-   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [BlueOak License
+    List](https://blueoakcouncil.org/list "BlueOak License List")
+    ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+### Raw JSON
+
+    {
+        "__impliedNames": [
+            "bzip2-1.0.5",
+            "bzip2 and libbzip2 License v1.0.5"
+        ],
+        "__impliedId": "bzip2-1.0.5",
+        "facts": {
+            "SPDX": {
+                "isSPDXLicenseDeprecated": false,
+                "spdxFullName": "bzip2 and libbzip2 License v1.0.5",
+                "spdxDetailsURL": "http://spdx.org/licenses/bzip2-1.0.5.json",
+                "_sourceURL": "https://spdx.org/licenses/bzip2-1.0.5.html",
+                "spdxLicIsOSIApproved": false,
+                "spdxSeeAlso": [
+                    "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html",
+                    "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.5",
+                        "bzip2 and libbzip2 License v1.0.5"
+                    ],
+                    "__impliedId": "bzip2-1.0.5",
+                    "__isOsiApproved": false,
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "http://spdx.org/licenses/bzip2-1.0.5.json"
+                        ],
+                        [
+                            null,
+                            "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
+                        ],
+                        [
+                            null,
+                            "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+                        ]
+                    ]
+                },
+                "spdxLicenseId": "bzip2-1.0.5"
+            },
+            "BlueOak License List": {
+                "BlueOakRating": "Bronze",
+                "url": "https://spdx.org/licenses/bzip2-1.0.5.html",
+                "isPermissive": true,
+                "_sourceURL": "https://blueoakcouncil.org/list",
+                "name": "bzip2 and libbzip2 License v1.0.5",
+                "id": "bzip2-1.0.5",
+                "_implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.5",
+                        "bzip2 and libbzip2 License v1.0.5"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "BlueOak License List",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "Rating is: Bronze"
+                            }
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "BlueOak License List",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "SPDX",
+                            "https://spdx.org/licenses/bzip2-1.0.5.html"
+                        ]
+                    ]
+                }
+            }
+        },
+        "__impliedJudgement": [
+            [
+                "BlueOak License List",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "Rating is: Bronze"
+                }
+            ]
+        ],
+        "__impliedCopyleft": [
+            [
+                "BlueOak License List",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
+        "__isOsiApproved": false,
+        "__impliedURLs": [
+            [
+                "SPDX",
+                "http://spdx.org/licenses/bzip2-1.0.5.json"
+            ],
+            [
+                null,
+                "https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html"
+            ],
+            [
+                null,
+                "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/bzip2-1.0.5.html"
+            ]
+        ]
+    }
+
+### Dot Cluster Graph
+
+[../dot/bzip2-1.0.5.svg](../dot/bzip2-1.0.5.svg "../dot/bzip2-1.0.5.svg")
