@@ -26,6 +26,15 @@
                     "Open Government Licence 1.0 (United Kingdom)"
                 ],
                 "__impliedId": "OGL-UK-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Open Knowledge International",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "The license issuperseded"
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -118,6 +127,15 @@
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Open Knowledge International",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "The license issuperseded"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -46,6 +46,10 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
+-   **↓**“The license isretired” (source: [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
+
 General Comments
 ----------------
 
@@ -429,6 +433,15 @@ Raw Data
                         "eclipse-1.0"
                     ],
                     "__impliedId": "EPL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Open Knowledge International",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "The license isretired"
+                            }
+                        ]
+                    ],
                     "__impliedURLs": [
                         [
                             null,
@@ -1375,6 +1388,13 @@ Raw Data
                 {
                     "tag": "NeutralJudgement",
                     "contents": "Google Classification is RECIPROCAL"
+                }
+            ],
+            [
+                "Open Knowledge International",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "The license isretired"
                 }
             ],
             [

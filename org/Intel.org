@@ -31,6 +31,11 @@
   [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
+- *↓*"The license isretired" (source:
+  [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
+  Knowledge International]]
+  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]]))
+
 - *↓*"This software licenses which is NOT OKAY for Fedora. Nothing in
   Fedora is permitted to use this license. It is either non-free or
   deprecated." (source:
@@ -222,6 +227,15 @@
                       "intel-osl"
                   ],
                   "__impliedId": "Intel",
+                  "__impliedJudgement": [
+                      [
+                          "Open Knowledge International",
+                          {
+                              "tag": "NegativeJudgement",
+                              "contents": "The license isretired"
+                          }
+                      ]
+                  ],
                   "__impliedURLs": [
                       [
                           null,
@@ -564,6 +578,13 @@
               {
                   "tag": "NegativeJudgement",
                   "contents": "This software licenses which is NOT OKAY for Fedora. Nothing in Fedora is permitted to use this license. It is either non-free or deprecated."
+              }
+          ],
+          [
+              "Open Knowledge International",
+              {
+                  "tag": "NegativeJudgement",
+                  "contents": "The license isretired"
               }
           ],
           [

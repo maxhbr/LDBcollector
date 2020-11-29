@@ -24,6 +24,10 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   **↓**“The license isretired” (source: [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
+
 General Comments
 ----------------
 
@@ -317,6 +321,15 @@ Raw Data
                         "Lucent Public License (\"Plan9\") 1.0"
                     ],
                     "__impliedId": "LPL-1.0",
+                    "__impliedJudgement": [
+                        [
+                            "Open Knowledge International",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "The license isretired"
+                            }
+                        ]
+                    ],
                     "__impliedURLs": [
                         [
                             null,
@@ -513,6 +526,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Rating is: Lead"
+                }
+            ],
+            [
+                "Open Knowledge International",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "The license isretired"
                 }
             ],
             [

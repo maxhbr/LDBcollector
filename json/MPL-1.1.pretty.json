@@ -57,6 +57,15 @@
                     "mozilla1.1"
                 ],
                 "__impliedId": "MPL-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Open Knowledge International",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "The license isretired"
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -890,6 +899,13 @@
             {
                 "tag": "NeutralJudgement",
                 "contents": "Google Classification is RECIPROCAL"
+            }
+        ],
+        [
+            "Open Knowledge International",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "The license isretired"
             }
         ],
         [

@@ -28,6 +28,15 @@
                     "Lucent Public License (\"Plan9\") 1.0"
                 ],
                 "__impliedId": "LPL-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Open Knowledge International",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "The license isretired"
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -224,6 +233,13 @@
             {
                 "tag": "NegativeJudgement",
                 "contents": "Rating is: Lead"
+            }
+        ],
+        [
+            "Open Knowledge International",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "The license isretired"
             }
         ],
         [

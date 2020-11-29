@@ -43,6 +43,10 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
+-   **↓**“The license isretired” (source: [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
+
 General Comments
 ----------------
 
@@ -258,6 +262,15 @@ Raw Data
                         "Apache Software License 1.1"
                     ],
                     "__impliedId": "Apache-1.1",
+                    "__impliedJudgement": [
+                        [
+                            "Open Knowledge International",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "The license isretired"
+                            }
+                        ]
+                    ],
                     "__impliedURLs": [
                         [
                             null,
@@ -773,6 +786,13 @@ Raw Data
                 {
                     "tag": "PositiveJudgement",
                     "contents": "Google Classification is NOTICE"
+                }
+            ],
+            [
+                "Open Knowledge International",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "The license isretired"
                 }
             ],
             [

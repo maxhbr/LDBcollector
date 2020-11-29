@@ -16,6 +16,11 @@
 
 === Comments on (easy) usability
 
+* **↓**``The license issuperseded'' (source:
+https://github.com/okfn/licenses/blob/master/licenses.csv[Open Knowledge
+International]
+(https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0]))
+
 === General Comments
 
 === URLs
@@ -180,6 +185,15 @@ Knowledge International]
                     "Open Government Licence 1.0 (United Kingdom)"
                 ],
                 "__impliedId": "OGL-UK-1.0",
+                "__impliedJudgement": [
+                    [
+                        "Open Knowledge International",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "The license issuperseded"
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -272,6 +286,15 @@ Knowledge International]
             }
         }
     },
+    "__impliedJudgement": [
+        [
+            "Open Knowledge International",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "The license issuperseded"
+            }
+        ]
+    ],
     "__impliedCopyleft": [
         [
             "Scancode",

@@ -43,6 +43,15 @@
                     "Apache Software License 1.1"
                 ],
                 "__impliedId": "Apache-1.1",
+                "__impliedJudgement": [
+                    [
+                        "Open Knowledge International",
+                        {
+                            "tag": "NegativeJudgement",
+                            "contents": "The license isretired"
+                        }
+                    ]
+                ],
                 "__impliedURLs": [
                     [
                         null,
@@ -558,6 +567,13 @@
             {
                 "tag": "PositiveJudgement",
                 "contents": "Google Classification is NOTICE"
+            }
+        ],
+        [
+            "Open Knowledge International",
+            {
+                "tag": "NegativeJudgement",
+                "contents": "The license isretired"
             }
         ],
         [

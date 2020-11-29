@@ -39,6 +39,10 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
+-   **↓**“The license isretired” (source: [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
+
 General Comments
 ----------------
 
@@ -593,6 +597,15 @@ Raw Data
                         "sun-issl"
                     ],
                     "__impliedId": "SISSL",
+                    "__impliedJudgement": [
+                        [
+                            "Open Knowledge International",
+                            {
+                                "tag": "NegativeJudgement",
+                                "contents": "The license isretired"
+                            }
+                        ]
+                    ],
                     "__impliedURLs": [
                         [
                             null,
@@ -1247,6 +1260,13 @@ Raw Data
                 {
                     "tag": "NegativeJudgement",
                     "contents": "Google Classification is CANNOT_BE_USED \"Code released under the Sun Industry Standards Source License (SISSL) cannot be used at Google. This license has terms that are very difficult to comply with (even Sun, before being acquired, ceased to use or recommend this license). Source files related to sFlow sometimes are released under this license, but are typically also available under a slightly less onerous sFlow License.\""
+                }
+            ],
+            [
+                "Open Knowledge International",
+                {
+                    "tag": "NegativeJudgement",
+                    "contents": "The license isretired"
                 }
             ],
             [
