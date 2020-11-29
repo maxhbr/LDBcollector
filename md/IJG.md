@@ -41,8 +41,8 @@ URLs
 
 -   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

@@ -44,7 +44,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *open-license:* http://open-license.hitachi.com/licenses/1260
 * http://www.opensource.org/licenses/Naumen
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

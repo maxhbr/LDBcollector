@@ -49,8 +49,8 @@ URLs
 
 -   http://www.opensource.org/licenses/Naumen
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

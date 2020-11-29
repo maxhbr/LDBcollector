@@ -47,8 +47,8 @@ URLs
 
 -   http://www.info-zip.org/license.html
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

@@ -32,8 +32,8 @@ URLs
 
 -   http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

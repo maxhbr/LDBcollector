@@ -48,7 +48,7 @@
 
 - http://www.info-zip.org/license.html
 
-** openLicenseDesc
+** Description from open-license
 
 #+BEGIN_EXAMPLE
   []

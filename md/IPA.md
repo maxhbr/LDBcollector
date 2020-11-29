@@ -43,8 +43,8 @@ URLs
 
 -   http://www.opensource.org/licenses/IPA
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

@@ -29,8 +29,8 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/313
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

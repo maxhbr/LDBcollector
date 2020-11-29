@@ -22,7 +22,7 @@
 * *open-license:* http://open-license.hitachi.com/licenses/453
 * https://creativecommons.org/licenses/by/3.0/us/legalcode
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

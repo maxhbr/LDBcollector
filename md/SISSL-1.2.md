@@ -57,8 +57,8 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/61
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

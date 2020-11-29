@@ -23,8 +23,8 @@ URLs
 
 -   https://creativecommons.org/licenses/by/3.0/us/legalcode
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

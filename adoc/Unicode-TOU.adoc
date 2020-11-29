@@ -28,7 +28,7 @@ https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/ 314''
 * *SPDX:* http://spdx.org/licenses/Unicode-TOU.json
 * *open-license:* http://open-license.hitachi.com/licenses/313
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

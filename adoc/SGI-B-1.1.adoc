@@ -30,7 +30,7 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *open-license:* http://open-license.hitachi.com/licenses/326
 * http://oss.sgi.com/projects/FreeB/
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

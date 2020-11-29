@@ -65,8 +65,8 @@ URLs
 
 -   http://www.opensource.org/licenses/IPL-1.0
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

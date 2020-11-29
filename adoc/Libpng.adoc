@@ -30,7 +30,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * *open-license:* http://open-license.hitachi.com/licenses/307
 * http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

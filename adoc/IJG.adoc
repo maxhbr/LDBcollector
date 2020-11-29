@@ -36,7 +36,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2
 * http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

@@ -33,8 +33,8 @@ URLs
 
 -   http://oss.sgi.com/projects/FreeB/
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

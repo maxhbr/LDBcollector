@@ -37,7 +37,7 @@ https://blueoakcouncil.org/list[BlueOak License List]
 * *SPDX:* https://spdx.org/licenses/Unicode-DFS-2016.html
 * *open-license:* http://open-license.hitachi.com/licenses/314
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []

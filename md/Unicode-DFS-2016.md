@@ -40,8 +40,8 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/314
 
-openLicenseDesc
----------------
+Description from open-license
+-----------------------------
 
     []
 

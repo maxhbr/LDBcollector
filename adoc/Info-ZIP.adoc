@@ -40,7 +40,7 @@ open-license] (CDLA-Permissive-1.0))
 * *open-license:* http://open-license.hitachi.com/licenses/1694
 * http://www.info-zip.org/license.html
 
-=== openLicenseDesc
+=== Description from open-license
 
 ....
 []
