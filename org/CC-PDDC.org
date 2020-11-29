@@ -36,11 +36,11 @@
 #+BEGIN_EXAMPLE
   Description: The work shall be in the public domain.
   Actions:
-  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/144", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/144", _action_name = Transmit the work., _action_description = }
-  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/145", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/145", _action_name = Use of copyrighted material, _action_description = }
-  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/146", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/146", _action_name = Modify the work., _action_description = }
-  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/147", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/147", _action_name = Distribute the work, _action_description = }
-  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/158", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/158", _action_name = Making use of copyrighted material, _action_description = }
+  - Transmit the work.
+  - Use of copyrighted material
+  - Modify the work.
+  - Distribute the work
+  - Making use of copyrighted material
 
 #+END_EXAMPLE
 
@@ -205,7 +205,7 @@
                               "name": "Making use of copyrighted material"
                           }
                       ],
-                      "_str": "Description: The work shall be in the public domain.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/144\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/144\", _action_name = Transmit the work., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/145\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/145\", _action_name = Use of copyrighted material, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/146\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/146\", _action_name = Modify the work., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/147\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/147\", _action_name = Distribute the work, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/158\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/158\", _action_name = Making use of copyrighted material, _action_description = }\n\n",
+                      "_str": "Description: The work shall be in the public domain.\nActions:\n- Transmit the work.\n- Use of copyrighted material\n- Modify the work.\n- Distribute the work\n- Making use of copyrighted material\n\n",
                       "conditions": null,
                       "description": "The work shall be in the public domain."
                   }
