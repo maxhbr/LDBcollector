@@ -82,7 +82,7 @@ instance Hashable LicenseFactClassifier
 urlify :: URL -> String -> Inlines
 urlify url text = P.link url text (P.text text)
 licensify :: Inlineable a =>  LicenseFactLicense -> a -> Inlines
-#if true
+#if false
 licensify _ inl = toInline inl
 #else
 licensify lic inl = toInline inl <> P.space <> P.text "(" <> toInline lic <> P.text ")"

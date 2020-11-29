@@ -26,6 +26,7 @@ import           Data.Map (Map)
 import           Data.Set (Set)
 import qualified Data.Set as S
 import qualified Data.Map as M
+import qualified Data.Text as T
 import           Data.Maybe (catMaybes, maybeToList)
 import qualified Data.Vector as V
 import           Network.URI (parseURI)
@@ -247,7 +248,11 @@ data OlCondition
   , _condition_conditionType :: OlConditionType
   , _condition_name :: OlText
   , _condition_description :: OlText
-  } deriving (Generic, Eq, Show)
+  } deriving (Generic, Eq)
+instance Show OlCondition where
+  show c = unwords ([ show (_condition_conditionType c) ++ ":"
+                    , show (_condition_name c)
+                    ] ++ map (\d -> "(" ++ d ++ ")") (olTextToList (_condition_description c)))
 instance Translateable OlCondition where
   getTranslateables c = getTranslateables (_condition_name c) `S.union` getTranslateables (_condition_description c)
   translate c = c { _condition_name = translate (_condition_name c)
@@ -283,7 +288,13 @@ data OlConditionTree
   = OlConditionTreeAnd [OlConditionTree]
   | OlConditionTreeOr [OlConditionTree]
   | OlConditionTreeLeaf OlCondition
-  deriving (Generic, Eq, Show)
+  deriving (Generic, Eq)
+addIndentation :: [String] -> [String]
+addIndentation = map (unlines . (map ("  " ++)) . lines)
+instance Show  OlConditionTree where
+  show (OlConditionTreeAnd as) = concat ("AND\n": (addIndentation (map show as)))
+  show (OlConditionTreeOr as)  = concat ("OR\n": (addIndentation (map show as)))
+  show (OlConditionTreeLeaf a) = show a
 instance Translateable OlConditionTree where
   getTranslateables (OlConditionTreeAnd as) = getTranslateables as
   getTranslateables (OlConditionTreeOr as)  = getTranslateables as
@@ -401,8 +412,9 @@ instance Show OlPermission where
       summary = map ("Summary: " ++) (olTextToList (_permission_summary p))
       description = map ("Description: " ++) (olTextToList (_permission_description p))
       actions = unlines ("Actions:" : (map (("- " ++) . show) (_permission_actions p)))
-      conditions = map (\cs -> unlines ["Conditions:", show cs])
-        (maybeToList (_permission_conditionHead p))
+      conditions = case _permission_conditionHead p of
+        Just cs -> ["Conditions:", show cs]
+        Nothing -> ["Conditions: None"]
     in unlines (summary ++ description ++ [actions] ++ conditions)
 instance Translateable OlPermission where
   getTranslateables p =
@@ -474,7 +486,7 @@ instance FromJSON OlLicense where
     <*> v .: "description"
     <*> v .: "permissions"
     <*> (fmap (getForOlRefs notices) (v .: "notices" :: Parser [OlRef]) :: Parser [OlNotice])
-    <*> v .: "content"
+    <*> fmap (T.filter (/= '\r')) (v .: "content" :: Parser Text)
 
 instance LicenseFactClassifiable OlLicense where
   getLicenseFactClassifier _ = olLFC

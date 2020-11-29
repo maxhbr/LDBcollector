@@ -3,7 +3,6 @@ packages:
 - .
 
 nix:
-  enable: true
   packages: [graphviz]
 
 extra-deps:

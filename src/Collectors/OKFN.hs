@@ -60,8 +60,11 @@ instance LicenseFactClassifiable OkfnFact where
   getLicenseFactClassifier _ = okfnLFC
 instance LFRaw OkfnFact where
   getImpliedNames (OkfnFact id _ _ _ _ _ _ _ _ title _ lIds) = CLSR (id : (T.unpack title : lIds))
-  getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _ _)      = mkRLSR o 40 id
-  getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url _)     = CLSR [(Nothing, T.unpack url)]
+  getImpliedId o@(OkfnFact id _ _ _ _ _ _ _ _ _ _ _)         = mkRLSR o 40 id
+  getImpliedURLs (OkfnFact _ _ _ _ _ _ _ _ _ _ url _)        = CLSR [(Nothing, T.unpack url)]
+  getImpliedJudgement o@(OkfnFact _ _ _ _ _ _ _ _ s _ _ _)   = if s == "active"
+    then NoSLSR
+    else mkSLSR o (NegativeJudgement ("The license is" ++ T.unpack s))
 instance FromNamedRecord OkfnFact where
   parseNamedRecord r = let
       handleBool :: Text -> Bool

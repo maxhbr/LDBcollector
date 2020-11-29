@@ -178,6 +178,17 @@ https://github.com/Hitachi/open-license
 
 **licensed under:** CDLA-Permissive-1.0
 
+### LicenseDB
+- https://licensedb.org/
+- https://github.com/warpr/licensedb/
+
+**licensed under:** CC0
+
+### Cavil
+- https://github.com/openSUSE/cavil
+
+**licensed under:** GPL-2.0
+
 ## Other possible Sources for license Metadata
   - ORT License highlighting
   - ...
@@ -188,6 +199,5 @@ https://github.com/Hitachi/open-license
     - might not contain the right kind of content
   - ~~tldrlegal.com~~
     - Can not be used, licensing is unclear.
-  - EUPL kompatible lizenzen: https://joinup.ec.europa.eu/collection/eupl/eupl-compatible-open-source-licences
+  - EUPL compatible open source licences: https://joinup.ec.europa.eu/collection/eupl/eupl-compatible-open-source-licences
   - https://vvlibri.org/fr/guide-de-lauteur-libre-gerer-des-licences-differentes-compatibilites-de-licences/tableau-de
-  - https://github.com/openSUSE/cavil under GPL-2.0
