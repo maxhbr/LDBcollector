@@ -65,8 +65,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+
+      OBLIGATION: Acknowledgements
+
 
 
     Description: Acknowledgements include "This product includes the Zend Engine, freely available at http://www.zend.com"
@@ -76,8 +78,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
+      OBLIGATION: Acknowledgements
+
 
 
     Description: "Zend", when using the name "Zend Engine". license@zend.comに連絡する.
@@ -85,14 +89,14 @@ Description from open-license
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
     Description: Acknowledgement is here: "The Zend Engine is freely available at http://www.zend.com"
     Actions:
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+    OBLIGATION: Acknowledgements
 
 (source: Hitachi open-license)
 
@@ -364,7 +368,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n\n",
+                        "_str": "Description: Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -389,7 +393,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n\n",
+                        "_str": "Description: Acknowledgements include \"This product includes the Zend Engine, freely available at http://www.zend.com\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -410,7 +414,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"Zend\", when using the name \"Zend Engine\". license@zend.comã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: \"Zend\", when using the name \"Zend Engine\". license@zend.comã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -423,7 +427,7 @@ Raw Data
                                 "name": "Create an advertising medium that describes the features and use of the software"
                             }
                         ],
-                        "_str": "Description: Acknowledgement is here: \"The Zend Engine is freely available at http://www.zend.com\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
+                        "_str": "Description: Acknowledgement is here: \"The Zend Engine is freely available at http://www.zend.com\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOBLIGATION: Acknowledgements\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"

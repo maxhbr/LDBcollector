@@ -63,9 +63,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/254", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/254", _condition_conditionType = RESTRICTION, _condition_name = We don't sell it alone., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/147", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/147", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+      RESTRICTION: We don't sell it alone.
+
+      OBLIGATION: Include a copyright notice in the license
+
+      OBLIGATION: Give you a copy of the relevant license.
+
 
 
     Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
@@ -79,8 +82,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/147", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/147", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+      OBLIGATION: Include a copyright notice in the license
+
+      OBLIGATION: Give you a copy of the relevant license.
+
 
 
     Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term "font software" refers to font files, data files, source files, build scripts, and documents.
@@ -88,7 +93,7 @@ Description from open-license
     - Use font names retained in modified font software (A retained font name is a name that is clearly identified as the retained font name with a copyright notice.)
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
     Description: The term "font software" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.
     Actions:
@@ -96,8 +101,10 @@ Description from open-license
 
     Conditions:
     OR
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+      OBLIGATION: Acknowledgements
+
+      REQUISITE: Get special permission in writing.
+
 
 
 (source: Hitachi open-license)
@@ -387,7 +394,7 @@ Raw Data
                                 "name": "Selling font software"
                             }
                         ],
-                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Selling font software\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/254\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/254\", _condition_conditionType = RESTRICTION, _condition_name = We don't sell it alone., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/147\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/147\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n\n\n",
+                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Selling font software\n\nConditions:\nAND\n  RESTRICTION: We don't sell it alone.\n\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -428,7 +435,7 @@ Raw Data
                                 "name": "Combining Modified Font Software"
                             }
                         ],
-                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Distributing font software (Distribute the acquired font software as is)\n- Distribute Modified Font Software\n- Embedding font software\n- Incorporate modified font software\n- Combining font software\n- Combining Modified Font Software\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/147\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/147\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n\n\n",
+                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Distributing font software (Distribute the acquired font software as is)\n- Distribute Modified Font Software\n- Embedding font software\n- Incorporate modified font software\n- Combining font software\n- Combining Modified Font Software\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -450,7 +457,7 @@ Raw Data
                                 "description": "A retained font name is a name that is clearly identified as the retained font name with a copyright notice."
                             }
                         ],
-                        "_str": "Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term \"font software\" refers to font files, data files, source files, build scripts, and documents.\nActions:\n- Use font names retained in modified font software (A retained font name is a name that is clearly identified as the retained font name with a copyright notice.)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term \"font software\" refers to font files, data files, source files, build scripts, and documents.\nActions:\n- Use font names retained in modified font software (A retained font name is a name that is clearly identified as the retained font name with a copyright notice.)\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -463,7 +470,7 @@ Raw Data
                                 "name": "Use the name of the copyright holder or author to endorse or promote the modified font software"
                             }
                         ],
-                        "_str": "Description: The term \"font software\" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.\nActions:\n- Use the name of the copyright holder or author to endorse or promote the modified font software\n\nConditions:\nOR\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n\n",
+                        "_str": "Description: The term \"font software\" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.\nActions:\n- Use the name of the copyright holder or author to endorse or promote the modified font software\n\nConditions:\nOR\n  OBLIGATION: Acknowledgements\n\n  REQUISITE: Get special permission in writing.\n\n\n\n",
                         "conditions": {
                             "OR": [
                                 {

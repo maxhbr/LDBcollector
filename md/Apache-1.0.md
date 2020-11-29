@@ -68,8 +68,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+
+      OBLIGATION: Acknowledgements
+
 
 
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
@@ -79,8 +81,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
+      OBLIGATION: Acknowledgements
+
 
 
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
@@ -88,21 +92,21 @@ Description from open-license
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+    OBLIGATION: Acknowledgements
 
     Description: "Apache Server" and "Apache Group", if you use the names "Apache Server" and "Apache Group". apache@apache.orgに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
     Description: "Apache", if you want to use the name "Apache". apache@apache.orgに連絡する.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 
@@ -414,7 +418,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -439,7 +443,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -460,7 +464,7 @@ Raw Data
                                 "name": "Create an advertising medium that describes the features and use of the software"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOBLIGATION: Acknowledgements\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -473,7 +477,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -486,7 +490,7 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

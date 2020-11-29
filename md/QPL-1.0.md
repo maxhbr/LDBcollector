@@ -100,7 +100,7 @@ Description from open-license
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/532", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/532", _condition_conditionType = OBLIGATION, _condition_name = Include copyright and trademark notices and disclaimers contained in the software, _condition_description = }
+    OBLIGATION: Include copyright and trademark notices and disclaimers contained in the software
 
     Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.
     Actions:
@@ -108,7 +108,8 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }
+      OBLIGATION: Include the copyright notice contained in the software
+
 
 
     Actions:
@@ -116,8 +117,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/534", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/534", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive the source code corresponding to the software., _condition_description = No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.}
+      OBLIGATION: Give you a copy of the relevant license.
+
+      OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
+
 
 
     Actions:
@@ -125,9 +128,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/534", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/534", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive the source code corresponding to the software., _condition_description = No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/535", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/535", _condition_conditionType = OBLIGATION, _condition_name = Apply this license to the entire modification, _condition_description = }
+      OBLIGATION: Give you a copy of the relevant license.
+
+      OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
+
+      OBLIGATION: Apply this license to the entire modification
+
 
 
     Actions:
@@ -135,9 +141,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/537", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/537", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive and use the source code corresponding to the item in question., _condition_description = No fee shall be charged in excess of the cost of transferring the data.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/538", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/538", _condition_conditionType = OBLIGATION, _condition_name = expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/539", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/539", _condition_conditionType = OBLIGATION, _condition_name = Supply copies of items not available to the general public to early developers of the software upon request from them., _condition_description = }
+      OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
+
+      OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
+
+      OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
+
 
 
 (source: Hitachi open-license)
@@ -547,7 +556,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/532\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/532\", _condition_conditionType = OBLIGATION, _condition_name = Include copyright and trademark notices and disclaimers contained in the software, _condition_description = }\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOBLIGATION: Include copyright and trademark notices and disclaimers contained in the software\n\n",
                         "conditions": {
                             "name": "Include copyright and trademark notices and disclaimers contained in the software",
                             "type": "OBLIGATION"
@@ -560,7 +569,7 @@ Raw Data
                                 "description": "Create a patch file or other format"
                             }
                         ],
-                        "_str": "Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.\nActions:\n- Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }\n\n\n",
+                        "_str": "Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.\nActions:\n- Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -578,7 +587,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/534\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/534\", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive the source code corresponding to the software., _condition_description = No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.}\n\n\n",
+                        "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -599,7 +608,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/534\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/534\", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive the source code corresponding to the software., _condition_description = No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/535\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/535\", _condition_conditionType = OBLIGATION, _condition_name = Apply this license to the entire modification, _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n  OBLIGATION: Apply this license to the entire modification\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -624,7 +633,7 @@ Raw Data
                                 "name": "Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)"
                             }
                         ],
-                        "_str": "Actions:\n- Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/537\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/537\", _condition_conditionType = OBLIGATION, _condition_name = Enables the recipient to receive and use the source code corresponding to the item in question., _condition_description = No fee shall be charged in excess of the cost of transferring the data.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/538\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/538\", _condition_conditionType = OBLIGATION, _condition_name = expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/539\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/539\", _condition_conditionType = OBLIGATION, _condition_name = Supply copies of items not available to the general public to early developers of the software upon request from them., _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)\n\nConditions:\nAND\n  OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)\n\n  OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.\n\n  OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

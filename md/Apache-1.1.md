@@ -81,35 +81,35 @@ Description from open-license
     - Distribution of Modified Source Code
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
     - Distribute the generated binaries from modified source code
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
     Description: The acknowledgements are here: "This product includes software developed by the Apache Software Foundation (http://www.apache.org/)." This acknowledgement may be included in the software itself.
     Actions:
     - Include end-user documentation in the distribution
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
+    OBLIGATION: Acknowledgements
 
     Description: To use the names "Apache" and "Apache Software Foundation". apache@apache.orgに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
     Description: "If you use the name "Apache". apache@apache.orgに連絡する.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 
@@ -498,7 +498,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -514,7 +514,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -526,7 +526,7 @@ Raw Data
                                 "name": "Include end-user documentation in the distribution"
                             }
                         ],
-                        "_str": "Description: The acknowledgements are here: \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\" This acknowledgement may be included in the software itself.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
+                        "_str": "Description: The acknowledgements are here: \"This product includes software developed by the Apache Software Foundation (http://www.apache.org/).\" This acknowledgement may be included in the software itself.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOBLIGATION: Acknowledgements\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -539,7 +539,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -552,7 +552,7 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

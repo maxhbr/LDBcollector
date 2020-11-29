@@ -50,8 +50,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/147", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/147", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
+      OBLIGATION: Include a copyright notice in the license
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
 
 
     Description: Relevant documentation for the software should be treated in the same way as for the software.
@@ -62,11 +64,15 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/147", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/147", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
+      OBLIGATION: Include a copyright notice in the license
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
       OR
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/21", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/21", _condition_conditionType = OBLIGATION, _condition_name = Attach the source code corresponding to the software in question., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/87", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/87", _condition_conditionType = OBLIGATION, _condition_name = Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner., _condition_description = }
+        OBLIGATION: Attach the source code corresponding to the software in question.
+      
+        OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+      
 
 
 
@@ -296,7 +302,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/147\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/147\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -323,7 +329,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/147\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/147\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n  OR\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/21\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/21\", _condition_conditionType = OBLIGATION, _condition_name = Attach the source code corresponding to the software in question., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/87\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/87\", _condition_conditionType = OBLIGATION, _condition_name = Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner., _condition_description = }\n\n\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n  \n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

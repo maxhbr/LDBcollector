@@ -79,14 +79,14 @@ Description from open-license
     - Present the executable generated from the modified source code
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
     Description: With permission of the copyright owner.
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 
@@ -341,7 +341,7 @@ Raw Data
                                 "name": "Present the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Selling Software\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
+                        "_str": "Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Selling Software\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -354,7 +354,7 @@ Raw Data
                                 "name": "Use the copyright holder's name in software promotions and advertisements"
                             }
                         ],
-                        "_str": "Description: With permission of the copyright owner.\nActions:\n- Use the copyright holder's name in software promotions and advertisements\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: With permission of the copyright owner.\nActions:\n- Use the copyright holder's name in software promotions and advertisements\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

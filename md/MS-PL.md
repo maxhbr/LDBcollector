@@ -97,8 +97,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
 
 
     Actions:
@@ -108,9 +110,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/179", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/179", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+
 
 
     Actions:
@@ -118,10 +123,14 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/179", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/179", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+
+      OBLIGATION: Give you a copy of the relevant license.
+
 
 
     Actions:
@@ -129,8 +138,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
 
 
     Actions:
@@ -140,9 +151,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/179", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/179", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+
 
 
     Actions:
@@ -150,10 +164,14 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/18", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/18", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/124", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/124", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/179", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/179", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+
+      OBLIGATION: Give you a copy of the relevant license.
+
 
 
 (source: Hitachi open-license)
@@ -532,7 +550,7 @@ Raw Data
                                 "description": "Use the obtained executable as is."
                             }
                         ],
-                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the retrieved executable (Use the obtained executable as is.)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n\n\n",
+                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the retrieved executable (Use the obtained executable as is.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -562,7 +580,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/179\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/179\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -588,7 +606,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/179\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/179\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -617,7 +635,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n\n\n",
+                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -644,7 +662,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/179\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/179\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -669,7 +687,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/18\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/18\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/124\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/124\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license., _condition_description = However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.}\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/179\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/179\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer contained in such software, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

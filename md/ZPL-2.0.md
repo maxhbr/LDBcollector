@@ -73,34 +73,36 @@ Description from open-license
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
     Description: "If you use the name "Zope Corporation (tm)". get permission from Zope Corporation.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+    REQUISITE: Get special permission in writing.
 
     Actions:
     - Modify the obtained source code.
 
     Conditions:
-    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/40", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/40", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }
+    OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
 
     Actions:
     - Distribution of Modified Source Code
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/40", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/40", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+
+      OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
+
 
 
     Actions:
@@ -108,8 +110,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/40", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/40", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
+      OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
+
 
 
 (source: Hitachi open-license)
@@ -433,7 +437,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -446,7 +450,7 @@ Raw Data
                                 "description": "Redistribute the fetched binaries as they are"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -458,7 +462,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"If you use the name \"Zope Corporation (tm)\". get permission from Zope Corporation.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
+                        "_str": "Description: \"If you use the name \"Zope Corporation (tm)\". get permission from Zope Corporation.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -471,7 +475,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/40\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/40\", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }\n\n",
+                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nOBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n",
                         "conditions": {
                             "name": "Indicate your changes and the date of your changes in the file where you made them.",
                             "type": "OBLIGATION"
@@ -483,7 +487,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/40\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/40\", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -503,7 +507,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/40\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/40\", _condition_conditionType = OBLIGATION, _condition_name = Indicate your changes and the date of your changes in the file where you made them., _condition_description = }\n\n\n",
+                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

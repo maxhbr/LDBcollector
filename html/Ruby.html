@@ -67,7 +67,7 @@ Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
 Conditions:
-OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/300&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/300&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include the original copyright notice and associated disclaimer in the software, _condition_description = }
+OBLIGATION: Include the original copyright notice and associated disclaimer in the software
 
 </code></pre>
 <pre><code>Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.
@@ -77,13 +77,18 @@ Actions:
 Conditions:
 AND
   OR
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/301&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/301&quot;, _condition_conditionType = OBLIGATION, _condition_name = You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software., _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/289&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/289&quot;, _condition_conditionType = RESTRICTION, _condition_name = Use only in your own corporation or organization., _condition_description = }
-  AND
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/302&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/302&quot;, _condition_conditionType = RESTRICTION, _condition_name = Giving non-standard binaries a different name than the standard version of the binary, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/264&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/264&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }
-
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/292&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/292&quot;, _condition_conditionType = RESTRICTION, _condition_name = Decide on a different method of distribution with the copyright holder, _condition_description = }
+    OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.
+  
+    RESTRICTION: Use only in your own corporation or organization.
+  
+    AND
+      RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
+    
+      OBLIGATION: Pass information on where the original software was obtained
+    
+  
+    RESTRICTION: Decide on a different method of distribution with the copyright holder
+  
 
 
 
@@ -97,13 +102,18 @@ Actions:
 
 Conditions:
 OR
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/264&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/264&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/21&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/21&quot;, _condition_conditionType = OBLIGATION, _condition_name = Attach the source code corresponding to the software in question., _condition_description = }
-  AND
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/302&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/302&quot;, _condition_conditionType = RESTRICTION, _condition_name = Giving non-standard binaries a different name than the standard version of the binary, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/264&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/264&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }
+  OBLIGATION: Pass information on where the original software was obtained
 
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/292&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/292&quot;, _condition_conditionType = RESTRICTION, _condition_name = Decide on a different method of distribution with the copyright holder, _condition_description = }
+  OBLIGATION: Attach the source code corresponding to the software in question.
+
+  AND
+    RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
+  
+    OBLIGATION: Pass information on where the original software was obtained
+  
+
+  RESTRICTION: Decide on a different method of distribution with the copyright holder
+
 
 
 </code></pre>
@@ -372,7 +382,7 @@ OR
                             &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/300\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/300\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include the original copyright notice and associated disclaimer in the software, _condition_description = }\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOBLIGATION: Include the original copyright notice and associated disclaimer in the software\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;name&quot;: &quot;Include the original copyright notice and associated disclaimer in the software&quot;,
                         &quot;type&quot;: &quot;OBLIGATION&quot;
@@ -385,7 +395,7 @@ OR
                             &quot;name&quot;: &quot;Modify the obtained source code.&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OR\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/301\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/301\&quot;, _condition_conditionType = OBLIGATION, _condition_name = You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software., _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/289\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/289\&quot;, _condition_conditionType = RESTRICTION, _condition_name = Use only in your own corporation or organization., _condition_description = }\n  AND\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/302\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/302\&quot;, _condition_conditionType = RESTRICTION, _condition_name = Giving non-standard binaries a different name than the standard version of the binary, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/264\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/264\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }\n\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/292\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/292\&quot;, _condition_conditionType = RESTRICTION, _condition_name = Decide on a different method of distribution with the copyright holder, _condition_description = }\n\n\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OR\n    OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.\n  \n    RESTRICTION: Use only in your own corporation or organization.\n  \n    AND\n      RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n    \n      OBLIGATION: Pass information on where the original software was obtained\n    \n  \n    RESTRICTION: Decide on a different method of distribution with the copyright holder\n  \n\n\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;AND&quot;: [
                             {
@@ -437,7 +447,7 @@ OR
                             &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n\nConditions:\nOR\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/264\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/264\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/21\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/21\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Attach the source code corresponding to the software in question., _condition_description = }\n  AND\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/302\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/302\&quot;, _condition_conditionType = RESTRICTION, _condition_name = Giving non-standard binaries a different name than the standard version of the binary, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/264\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/264\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Pass information on where the original software was obtained, _condition_description = }\n\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/292\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/292\&quot;, _condition_conditionType = RESTRICTION, _condition_name = Decide on a different method of distribution with the copyright holder, _condition_description = }\n\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software&#39;s LEGAL file.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n\nConditions:\nOR\n  OBLIGATION: Pass information on where the original software was obtained\n\n  OBLIGATION: Attach the source code corresponding to the software in question.\n\n  AND\n    RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n  \n    OBLIGATION: Pass information on where the original software was obtained\n  \n\n  RESTRICTION: Decide on a different method of distribution with the copyright holder\n\n\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;OR&quot;: [
                             {

@@ -63,8 +63,10 @@ Actions:
 
 Conditions:
 AND
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/55&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/55&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/1&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/1&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
+  OBLIGATION: Correctly indicate the origin of the software in question
+
+  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+
 
 
 </code></pre>
@@ -74,7 +76,7 @@ Actions:
 - Distribute the generated binaries from modified source code
 
 Conditions:
-OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/55&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/55&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }
+OBLIGATION: Correctly indicate the origin of the software in question
 
 </code></pre>
 <pre><code>Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
@@ -83,9 +85,12 @@ Actions:
 
 Conditions:
 AND
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/1&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/1&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/55&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/55&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }
-  OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/30&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/30&quot;, _condition_conditionType = OBLIGATION, _condition_name = Indicate that you have made the change yourself., _condition_description = }
+  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+
+  OBLIGATION: Correctly indicate the origin of the software in question
+
+  OBLIGATION: Indicate that you have made the change yourself.
+
 
 
 </code></pre>
@@ -93,7 +98,7 @@ AND
 - Use the author&#39;s name to endorse or promote the derived product
 
 Conditions:
-OlCondition {_condition_schemaVersion = &quot;0.1&quot;, _condition_uri = &quot;http://open-license.hitachi.com/conditions/3&quot;, _condition_baseUri = &quot;http://open-license.hitachi.com/&quot;, _condition_id = &quot;conditions/3&quot;, _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
+REQUISITE: Get special permission in writing.
 
 </code></pre>
 <p> (source: Hitachi open-license)</p>
@@ -304,7 +309,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                             &quot;description&quot;: &quot;Redistribute the code as it was obtained&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/55\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/55\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/1\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/1\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Correctly indicate the origin of the software in question\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;AND&quot;: [
                             {
@@ -329,7 +334,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                             &quot;name&quot;: &quot;Distribute the generated binaries from modified source code&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/55\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/55\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Correctly indicate the origin of the software in question\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;name&quot;: &quot;Correctly indicate the origin of the software in question&quot;,
                         &quot;type&quot;: &quot;OBLIGATION&quot;
@@ -342,7 +347,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                             &quot;name&quot;: &quot;Distribution of Modified Source Code&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/1\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/1\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/55\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/55\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Correctly indicate the origin of the software in question, _condition_description = }\n  OlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/30\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/30\&quot;, _condition_conditionType = OBLIGATION, _condition_name = Indicate that you have made the change yourself., _condition_description = }\n\n\n&quot;,
+                    &quot;_str&quot;: &quot;Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Correctly indicate the origin of the software in question\n\n  OBLIGATION: Indicate that you have made the change yourself.\n\n\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;AND&quot;: [
                             {
@@ -367,7 +372,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
                             &quot;name&quot;: &quot;Use the author&#39;s name to endorse or promote the derived product&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Actions:\n- Use the author&#39;s name to endorse or promote the derived product\n\nConditions:\nOlCondition {_condition_schemaVersion = \&quot;0.1\&quot;, _condition_uri = \&quot;http://open-license.hitachi.com/conditions/3\&quot;, _condition_baseUri = \&quot;http://open-license.hitachi.com/\&quot;, _condition_id = \&quot;conditions/3\&quot;, _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n&quot;,
+                    &quot;_str&quot;: &quot;Actions:\n- Use the author&#39;s name to endorse or promote the derived product\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;name&quot;: &quot;Get special permission in writing.&quot;,
                         &quot;type&quot;: &quot;REQUISITE&quot;

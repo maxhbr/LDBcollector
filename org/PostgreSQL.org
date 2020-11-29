@@ -105,7 +105,7 @@
   - Distribute the executable generated from the modified source code
 
   Conditions:
-  OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/238", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/238", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice and list of terms and conditions included in the license, _condition_description = }
+  OBLIGATION: Include a copyright notice and list of terms and conditions included in the license
 
 #+END_EXAMPLE
 
@@ -460,7 +460,7 @@
                               "name": "Distribute the executable generated from the modified source code"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/238\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/238\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice and list of terms and conditions included in the license, _condition_description = }\n\n",
+                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice and list of terms and conditions included in the license\n\n",
                       "conditions": {
                           "name": "Include a copyright notice and list of terms and conditions included in the license",
                           "type": "OBLIGATION"

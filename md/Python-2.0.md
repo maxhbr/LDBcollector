@@ -90,8 +90,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }
+      OBLIGATION: Give you a copy of the relevant license.
+
+      OBLIGATION: Include the copyright notice contained in the software
+
 
 
     Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
@@ -100,8 +102,10 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/172", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/172", _condition_conditionType = OBLIGATION, _condition_name = Include a summary of the changes you have made, _condition_description = }
+      OBLIGATION: Include the copyright notice contained in the software
+
+      OBLIGATION: Include a summary of the changes you have made
+
 
 
     Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
@@ -116,9 +120,12 @@ Description from open-license
 
     Conditions:
     AND
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }
-      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/172", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/172", _condition_conditionType = OBLIGATION, _condition_name = Include a summary of the changes you have made, _condition_description = }
+      OBLIGATION: Give you a copy of the relevant license.
+
+      OBLIGATION: Include the copyright notice contained in the software
+
+      OBLIGATION: Include a summary of the changes you have made
+
 
 
 (source: Hitachi open-license)
@@ -621,7 +628,7 @@ Raw Data
                                 "name": "Executing the fetched binary publicly"
                             }
                         ],
-                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Display the fetched binaries publicly\n- Executing the fetched binary publicly\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }\n\n\n",
+                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Display the fetched binaries publicly\n- Executing the fetched binary publicly\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include the copyright notice contained in the software\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -642,7 +649,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/172\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/172\", _condition_conditionType = OBLIGATION, _condition_name = Include a summary of the changes you have made, _condition_description = }\n\n\n",
+                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Include a summary of the changes you have made\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -681,7 +688,7 @@ Raw Data
                                 "name": "Combining the software with one's own work to produce and distribute the software or a work containing parts of the software"
                             }
                         ],
-                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Display the generated binaries from modified source code publicly\n- Executing the generated binaries from modified source code publicly\n- Combining the software with one's own work to produce and distribute the software or a work containing parts of the software\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/172\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/172\", _condition_conditionType = OBLIGATION, _condition_name = Include a summary of the changes you have made, _condition_description = }\n\n\n",
+                        "_str": "Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved.\"\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Display the generated binaries from modified source code publicly\n- Executing the generated binaries from modified source code publicly\n- Combining the software with one's own work to produce and distribute the software or a work containing parts of the software\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Include a summary of the changes you have made\n\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
