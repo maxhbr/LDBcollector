@@ -360,7 +360,6 @@ Knowledge International]
             }
         },
         "Hitachi open-license": {
-            "permissionsStr": "[]",
             "notices": [],
             "_sourceURL": "http://open-license.hitachi.com/licenses/248",
             "name": "IPA Font License Agreement v1.0",
