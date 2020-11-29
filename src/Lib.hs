@@ -29,6 +29,7 @@ import           Collectors.Cavil as X
 import           Collectors.ChooseALicense as X
 import           Collectors.DFSG as X
 import           Collectors.FedoraProjectWiki as X
+import           Collectors.Fossology as X
 import           Collectors.Gnu as X
 import           Collectors.Google as X
 import           Collectors.IfrOSS as X
@@ -89,6 +90,7 @@ mkCollectors conf@Configuration{cLFCs = chosenLFCs} =
   , (osadlLFC, loadOsadlFacts)
   , (calLFC, loadChooseALicenseFacts)
   , (fedoraLFC, loadFedoraFacts)
+  , (fossologyLFC, loadFossologyFacts)
   , (osiLFC, loadOSIFacts)
   , (oslcLFC, loadOslcFacts)
   , (wikipediaLFC, loadWikipediaFacts)

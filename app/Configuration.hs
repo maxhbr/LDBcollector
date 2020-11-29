@@ -19,6 +19,7 @@ configurationPriv = let
   otherLFCs =
     [ cavilLFC
     , osadlLFC
+    , fossologyLFC
     , gnuLFC
     , ifrOSSLFC
     ]
@@ -35,6 +36,7 @@ configuration = let
     -- , osadlLFC
     , calLFC
     , fedoraLFC
+    -- , fosslogyLFC
     , osiLFC
     , oslcLFC
     , olLFC
