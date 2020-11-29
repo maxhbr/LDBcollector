@@ -13,11 +13,14 @@ import qualified Prelude as P
 import           MyPrelude
 
 import qualified Data.Map as M
+import qualified Data.Maybe (catMaybes)
 import           Data.List (stripPrefix)
 import qualified Data.Text as T
 import qualified Data.Aeson.Lens as AL
 import           Data.Char (toLower)
 import           Data.Csv as C
+import qualified Data.Vector as V
+import qualified Control.Lens as L
 
 import           Model.License
 import           Model.LicenseClusterer
@@ -84,16 +87,17 @@ calculateDetails ratingRules (licName, lic) = let
 
 data Page
   = Page
-  { pLicenseDetails :: LicenseDetails
-  , pDescription    :: Maybe (WithSource String)
-  , pJudgements     :: [WithSource Judgement]
-  , pComments       :: [WithSource Text]
-  , pObligations    :: Maybe (WithSource LicenseObligations)
-  , pURLs           :: [(Maybe String, URL)]
-  , pOSADLRule      :: Maybe (WithSource Text)
-  , pText           :: Maybe (WithSource Text)
+  { pLicenseDetails  :: LicenseDetails
+  , pDescription     :: Maybe (WithSource String)
+  , pJudgements      :: [WithSource Judgement]
+  , pComments        :: [WithSource Text]
+  , pObligations     :: Maybe (WithSource LicenseObligations)
+  , pURLs            :: [(Maybe String, URL)]
+  , pOpenLicenseDesc :: Maybe (WithSource [Text])
+  , pOSADLRule       :: Maybe (WithSource Text)
+  , pText            :: Maybe (WithSource Text)
   -- raw data
-  , pLicense        :: License
+  , pLicense         :: License
   } deriving (Show, Generic)
 
 toPage :: RatingRules -> (LicenseName, (License, LicenseClusterTree)) -> (LicenseName, License, Page, LicenseClusterTree)
@@ -140,6 +144,14 @@ toPage ratingRules (licName, (lic, lct)) = let
           in cleanupForNub u1 == cleanupForNub u2
       in nubBy nubFun . sortBy sortFun $ unpackCLSR (getImpliedURLs lic)
 
+    openLicenseDescription :: Maybe (WithSource [Text])
+    openLicenseDescription = let
+        lfc = LFC "Hitachi open-license"
+      in case queryLicense lfc (AL.key "permissions" . AL._Array) lic of
+        Just values -> case map (L.^? (AL.key "_str" . AL._String)) (V.toList values) of
+                         openLicenseDescriptions' -> Just (WithSource lfc (catMaybes openLicenseDescriptions'))
+        Nothing         -> Nothing
+
     osadlRule = let
         lfc = LFC "OSADL License Checklist"
       in case queryLicense lfc (AL.key "osadlRule" . AL._String) lic of
@@ -162,6 +174,7 @@ toPage ratingRules (licName, (lic, lct)) = let
                 comments
                 obligations
                 urls
+                openLicenseDescription
                 osadlRule
                 text
                 lic

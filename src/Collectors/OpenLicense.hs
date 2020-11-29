@@ -198,7 +198,9 @@ data OlAction
   , _action_id :: String
   , _action_name :: OlText
   , _action_description :: OlText
-  } deriving (Generic, Eq, Show)
+  } deriving (Generic, Eq)
+instance Show OlAction where
+  show a = unwords (show (_action_name a) : (map (\d -> "(" ++ d ++ ")") (olTextToList (_action_description a))))
 instance Translateable OlAction where
   getTranslateables a = getTranslateables (_action_name a) `S.union` getTranslateables (_action_description a)
   translate a = a { _action_name = translate (_action_name a)
@@ -393,7 +395,15 @@ data OlPermission
   , _permission_description :: OlText
   , _permission_actions :: [OlAction]
   , _permission_conditionHead :: Maybe OlConditionTree
-  } deriving (Generic, Eq, Show)
+  } deriving (Generic, Eq)
+instance Show OlPermission where
+  show p = let
+      summary = map ("Summary: " ++) (olTextToList (_permission_summary p))
+      description = map ("Description: " ++) (olTextToList (_permission_description p))
+      actions = unlines ("Actions:" : (map (("- " ++) . show) (_permission_actions p)))
+      conditions = map (\cs -> unlines ["Conditions:", show cs])
+        (maybeToList (_permission_conditionHead p))
+    in unlines (summary ++ description ++ [actions] ++ conditions)
 instance Translateable OlPermission where
   getTranslateables p =
     getTranslateables (_permission_summary p)
@@ -409,6 +419,7 @@ instance ToJSON OlPermission where
                                 , "description" .= toJSON (_permission_description p)
                                 , "actions" .= toJSON (_permission_actions p)
                                 , "conditions" .= _permission_conditionHead p
+                                , "_str" .= show p
                                 ]
 instance FromJSON OlPermission where
   parseJSON = withObject "OlPermission" $ \v -> OlPermission
@@ -444,12 +455,12 @@ instance Translateable OlLicense where
     , _license_permissions = translate (_license_permissions l)
     , _license_notices = translate (_license_notices l) }
 instance ToJSON OlLicense where
-  toJSON l = objectWithoutEmpty [ "name"        .= toJSON (_license_name l)
-                                , "summary"     .= toJSON (_license_summary l)
-                                , "description" .= toJSON (_license_description l)
-                                , "permissions" .= toJSON (_license_permissions l)
-                                , "notices"     .= toJSON (_license_notices l)
-                                , "content"     .= toJSON (_license_content l)
+  toJSON l = objectWithoutEmpty [ "name"           .= toJSON (_license_name l)
+                                , "summary"        .= toJSON (_license_summary l)
+                                , "description"    .= toJSON (_license_description l)
+                                , "permissions"    .= toJSON (_license_permissions l)
+                                , "notices"        .= toJSON (_license_notices l)
+                                , "content"        .= toJSON (_license_content l)
                                 -- , "_id"         .= _license_id l
                                 ]
 instance FromJSON OlLicense where

@@ -104,6 +104,15 @@ renderURLs urls = let
                              (Just desc, url) -> P.para (P.strong (P.text (desc ++ ":")) <> P.space <> P.text url)
                              (Nothing, url)   -> P.para (P.text url)) urls)
 
+renderOpenLicenseDesc :: Maybe (WithSource [Text]) -> Blocks
+renderOpenLicenseDesc Nothing                 = mempty
+renderOpenLicenseDesc (Just openLicenseDescs) =
+  P.header 2 (P.text "Description from open-license")
+  <> foldMap (P.codeBlock . T.unpack) (unpackWithSource openLicenseDescs)
+  <> case openLicenseDescs of
+       WithSource lfc _ -> P.para (renderSource lfc)
+       WithoutSource _  -> mempty
+
 renderOSADLRule :: Maybe (WithSource Text) -> Blocks
 renderOSADLRule Nothing          = mempty
 renderOSADLRule (Just osadlRule) =
@@ -145,6 +154,7 @@ licenseToPandoc shortname page = let
           <> renderComments (pComments page)
           <> renderObligations (pObligations page)
           <> renderURLs (pURLs page)
+          <> renderOpenLicenseDesc (pOpenLicenseDesc page)
           <> renderOSADLRule (pOSADLRule page)
           <> renderText (pText page)
           <> renderRawData shortname (pLicense page)
