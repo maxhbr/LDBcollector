@@ -54,15 +54,49 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/1", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/1", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/3", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/3", _action_name = Modify the obtained source code., _action_description = }
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/4", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/4", _action_name = Using Modified Source Code, _action_description = }
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/6", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/6", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/8", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/8", _action_name = Use binaries generated from modified source code, _action_description = }
 
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/9", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/9", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/12", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/12", _action_name = Distribution of Modified Source Code, _action_description = }
+
+    Conditions:
+    OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })]
 
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/11", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/11", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/14", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/14", _action_name = Distribute the generated binaries from modified source code, _action_description = }
+
+    Conditions:
+    OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })]
+
+    Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/31", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/31", _action_name = Create an advertising medium that describes the features and use of the software, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })
 
     Description: "Apache Server" and "Apache Group", if you use the names "Apache Server" and "Apache Group". apache@apache.orgに連絡する.
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/29", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/29", _action_name = Use the name to endorse and promote derived products, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
 
     Description: "Apache", if you want to use the name "Apache". apache@apache.orgに連絡する.
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/30", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/30", _action_name = Use the name of the product or part of the name of the product from which it was derived, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
 
 (source: Hitachi open-license)
 
@@ -361,6 +395,7 @@ Raw Data
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
+                        "_str": "Actions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/1\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/1\", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/3\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/3\", _action_name = Modify the obtained source code., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/4\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/4\", _action_name = Using Modified Source Code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/6\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/6\", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/8\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/8\", _action_name = Use binaries generated from modified source code, _action_description = }\n\n",
                         "conditions": null
                     },
                     {
@@ -373,7 +408,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/9\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/9\", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/12\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/12\", _action_name = Distribution of Modified Source Code, _action_description = }\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })]\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -398,7 +433,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/11\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/11\", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/14\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/14\", _action_name = Distribute the generated binaries from modified source code, _action_description = }\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })]\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -419,7 +454,7 @@ Raw Data
                                 "name": "Create an advertising medium that describes the features and use of the software"
                             }
                         ],
-                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\n",
+                        "_str": "Description: The acknowledgements include \"This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/).\"\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/31\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/31\", _action_name = Create an advertising medium that describes the features and use of the software, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -432,7 +467,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\n",
+                        "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/29\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/29\", _action_name = Use the name to endorse and promote derived products, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -445,7 +480,7 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\n",
+                        "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/30\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/30\", _action_name = Use the name of the product or part of the name of the product from which it was derived, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

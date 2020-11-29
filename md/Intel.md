@@ -65,7 +65,33 @@ URLs
 Description from open-license
 -----------------------------
 
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/1", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/1", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/3", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/3", _action_name = Modify the obtained source code., _action_description = }
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/4", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/4", _action_name = Using Modified Source Code, _action_description = }
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/6", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/6", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/8", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/8", _action_name = Use binaries generated from modified source code, _action_description = }
+
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/9", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/9", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/12", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/12", _action_name = Distribution of Modified Source Code, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/11", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/11", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/14", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/14", _action_name = Distribute the generated binaries from modified source code, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })
+
     Description: "Intel Corporation" if you use the name "Intel Corporation".
+    Actions:
+    - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/156", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/156", _action_name = Use the author's name to endorse or promote the derived product, _action_description = }
+
+    Conditions:
+    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
 
 (source: Hitachi open-license)
 
@@ -366,6 +392,7 @@ Raw Data
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
+                        "_str": "Actions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/1\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/1\", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/3\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/3\", _action_name = Modify the obtained source code., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/4\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/4\", _action_name = Using Modified Source Code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/6\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/6\", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/8\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/8\", _action_name = Use binaries generated from modified source code, _action_description = }\n\n",
                         "conditions": null
                     },
                     {
@@ -378,6 +405,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
+                        "_str": "Actions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/9\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/9\", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/12\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/12\", _action_name = Distribution of Modified Source Code, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -393,6 +421,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
+                        "_str": "Actions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/11\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/11\", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/14\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/14\", _action_name = Distribute the generated binaries from modified source code, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -404,7 +433,7 @@ Raw Data
                                 "name": "Use the author's name to endorse or promote the derived product"
                             }
                         ],
-                        "_str": "Description: \"Intel Corporation\" if you use the name \"Intel Corporation\".\n",
+                        "_str": "Description: \"Intel Corporation\" if you use the name \"Intel Corporation\".\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/156\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/156\", _action_name = Use the author's name to endorse or promote the derived product, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

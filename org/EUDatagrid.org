@@ -51,23 +51,70 @@
 ** Description from open-license
 
 #+BEGIN_EXAMPLE
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/1", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/1", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/3", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/3", _action_name = Modify the obtained source code., _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/6", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/6", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/114", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/114", _action_name = Display the obtained source code, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/118", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/118", _action_name = Display the modified source code, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/287", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/287", _action_name = Display the retrieved binary, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/288", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/288", _action_name = Display the generated binary from the modified source code, _action_description = }
+
+#+END_EXAMPLE
+
+#+BEGIN_EXAMPLE
   Description: The same rights would be granted to sub-licenses.
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/4", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/4", _action_name = Using Modified Source Code, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/8", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/8", _action_name = Use binaries generated from modified source code, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/90", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/90", _action_name = Publish the modified source code., _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/277", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/277", _action_name = Publish the binary generated from the modified source code, _action_description = }
+
+  Conditions:
+  OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})
+
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
   Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/9", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/9", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/11", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/11", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}
+
+  Conditions:
+  OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
   Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/12", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/12", _action_name = Distribution of Modified Source Code, _action_description = }
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/14", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/14", _action_name = Distribute the generated binaries from modified source code, _action_description = }
+
+  Conditions:
+  OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})]
+
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
   Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/32", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/32", _action_name = Include end-user documentation in the distribution, _action_description = }
+
+  Conditions:
+  OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })
+
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
   Description: To use the names "EDG", "EDG Toolkit" and "EU DataGrid Project". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.
+  Actions:
+  - OlAction {_action_schemaVersion = "0.1", _action_uri = "http://open-license.hitachi.com/actions/557", _action_baseUri = "http://open-license.hitachi.com/", _action_id = "actions/557", _action_name = Use the name to endorse and promote software and derivative products, _action_description = }
+
+  Conditions:
+  OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+
 #+END_EXAMPLE
 
 (source: Hitachi open-license)
@@ -394,6 +441,7 @@
                               "name": "Display the generated binary from the modified source code"
                           }
                       ],
+                      "_str": "Actions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/1\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/1\", _action_name = Use the obtained source code without modification, _action_description = Use the fetched code as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/3\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/3\", _action_name = Modify the obtained source code., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/6\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/6\", _action_name = Use the retrieved binaries, _action_description = Use the fetched binary as it is.}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/114\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/114\", _action_name = Display the obtained source code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/118\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/118\", _action_name = Display the modified source code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/287\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/287\", _action_name = Display the retrieved binary, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/288\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/288\", _action_name = Display the generated binary from the modified source code, _action_description = }\n\n",
                       "conditions": null
                   },
                   {
@@ -411,7 +459,7 @@
                               "name": "Publish the binary generated from the modified source code"
                           }
                       ],
-                      "_str": "Description: The same rights would be granted to sub-licenses.\n",
+                      "_str": "Description: The same rights would be granted to sub-licenses.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/4\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/4\", _action_name = Using Modified Source Code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/8\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/8\", _action_name = Use binaries generated from modified source code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/90\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/90\", _action_name = Publish the modified source code., _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/277\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/277\", _action_name = Publish the binary generated from the modified source code, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})\n\n",
                       "conditions": {
                           "name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
                           "type": "RESTRICTION",
@@ -430,7 +478,7 @@
                               "description": "Redistribute the fetched binaries as they are"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\n",
+                      "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/9\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/9\", _action_name = Distribute the obtained source code without modification, _action_description = Redistribute the code as it was obtained}\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/11\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/11\", _action_name = Distribute the fetched binaries, _action_description = Redistribute the fetched binaries as they are}\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
                       "conditions": {
                           "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                           "type": "OBLIGATION"
@@ -446,7 +494,7 @@
                               "name": "Distribute the generated binaries from modified source code"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\n",
+                      "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/12\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/12\", _action_name = Distribution of Modified Source Code, _action_description = }\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/14\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/14\", _action_name = Distribute the generated binaries from modified source code, _action_description = }\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})]\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -468,7 +516,7 @@
                               "name": "Include end-user documentation in the distribution"
                           }
                       ],
-                      "_str": "Description: Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\n",
+                      "_str": "Description: Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/32\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/32\", _action_name = Include end-user documentation in the distribution, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })\n\n",
                       "conditions": {
                           "name": "Acknowledgements",
                           "type": "OBLIGATION"
@@ -481,7 +529,7 @@
                               "name": "Use the name to endorse and promote software and derivative products"
                           }
                       ],
-                      "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\n",
+                      "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\nActions:\n- OlAction {_action_schemaVersion = \"0.1\", _action_uri = \"http://open-license.hitachi.com/actions/557\", _action_baseUri = \"http://open-license.hitachi.com/\", _action_id = \"actions/557\", _action_name = Use the name to endorse and promote software and derivative products, _action_description = }\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
