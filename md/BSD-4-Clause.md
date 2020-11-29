@@ -91,6 +91,8 @@ Description from open-license
     - Use the retrieved binaries (Use the fetched binary as it is.)
     - Use binaries generated from modified source code
 
+    Conditions: None
+
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
     - Distribution of Modified Source Code
@@ -433,7 +435,7 @@ Raw Data
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/277",
-                "content": "Copyright (c) {{year}}, {{copyright holder}} \r\nAll rights reserved. \r\n\r\nRedistribution and use in source and binary forms, with or without \r\nmodification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright \r\n    notice, this list of conditions and the following disclaimer. \r\n    2. Redistributions in binary form must reproduce the above copyright \r\n    notice, this list of conditions and the following disclaimer in the \r\n    documentation and/or other materials provided with the distribution. \r\n    3. All advertising materials mentioning features or use of this software \r\n    must display the following acknowledgement: \r\n    This product includes software developed by {{the organization}}. \r\n    4. Neither the name of {{the organization nor the \r\n    names of its contributors}} may be used to endorse or promote products \r\n    derived from this software without specific prior written permission. \r\n\r\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \r\nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \r\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \r\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "content": "Copyright (c) {{year}}, {{copyright holder}} \nAll rights reserved. \n\nRedistribution and use in source and binary forms, with or without \nmodification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright \n    notice, this list of conditions and the following disclaimer. \n    2. Redistributions in binary form must reproduce the above copyright \n    notice, this list of conditions and the following disclaimer in the \n    documentation and/or other materials provided with the distribution. \n    3. All advertising materials mentioning features or use of this software \n    must display the following acknowledgement: \n    This product includes software developed by {{the organization}}. \n    4. Neither the name of {{the organization nor the \n    names of its contributors}} may be used to endorse or promote products \n    derived from this software without specific prior written permission. \n\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                 "name": "BSD 4-clause \"Original\" or \"Old\" License",
                 "permissions": [
                     {
@@ -456,7 +458,7 @@ Raw Data
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\n",
+                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
                         "conditions": null
                     },
                     {
@@ -469,7 +471,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -485,7 +487,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -497,7 +499,7 @@ Raw Data
                                 "name": "Create an advertising medium that describes the features and use of the software"
                             }
                         ],
-                        "_str": "Description: The text of the acknowledgement is here \"This product includes software developed by the <organization>.\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOBLIGATION: Acknowledgements\n\n",
+                        "_str": "Description: The text of the acknowledgement is here \"This product includes software developed by the <organization>.\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOBLIGATION: Acknowledgements\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -510,7 +512,7 @@ Raw Data
                                 "name": "Use the name of the owner or contributor to promote or sell the derived product"
                             }
                         ],
-                        "_str": "Actions:\n- Use the name of the owner or contributor to promote or sell the derived product\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
+                        "_str": "Actions:\n- Use the name of the owner or contributor to promote or sell the derived product\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -529,7 +531,7 @@ Raw Data
                             ]
                         ]
                     ],
-                    "__impliedText": "Copyright (c) {{year}}, {{copyright holder}} \r\nAll rights reserved. \r\n\r\nRedistribution and use in source and binary forms, with or without \r\nmodification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright \r\n    notice, this list of conditions and the following disclaimer. \r\n    2. Redistributions in binary form must reproduce the above copyright \r\n    notice, this list of conditions and the following disclaimer in the \r\n    documentation and/or other materials provided with the distribution. \r\n    3. All advertising materials mentioning features or use of this software \r\n    must display the following acknowledgement: \r\n    This product includes software developed by {{the organization}}. \r\n    4. Neither the name of {{the organization nor the \r\n    names of its contributors}} may be used to endorse or promote products \r\n    derived from this software without specific prior written permission. \r\n\r\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \r\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \r\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \r\nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \r\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \r\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \r\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \r\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \r\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedText": "Copyright (c) {{year}}, {{copyright holder}} \nAll rights reserved. \n\nRedistribution and use in source and binary forms, with or without \nmodification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright \n    notice, this list of conditions and the following disclaimer. \n    2. Redistributions in binary form must reproduce the above copyright \n    notice, this list of conditions and the following disclaimer in the \n    documentation and/or other materials provided with the distribution. \n    3. All advertising materials mentioning features or use of this software \n    must display the following acknowledgement: \n    This product includes software developed by {{the organization}}. \n    4. Neither the name of {{the organization nor the \n    names of its contributors}} may be used to endorse or promote products \n    derived from this software without specific prior written permission. \n\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                     "__impliedURLs": [
                         [
                             "open-license",

@@ -47,6 +47,7 @@ Actions:
 - Use the retrieved binaries (Use the fetched binary as it is.)
 - Use binaries generated from modified source code
 
+Conditions: None
 ....
 
 ....
@@ -59,7 +60,6 @@ AND
   OBLIGATION: Correctly indicate the origin of the software in question
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-
 ....
 
 ....
@@ -70,7 +70,6 @@ Actions:
 
 Conditions:
 OBLIGATION: Correctly indicate the origin of the software in question
-
 ....
 
 ....
@@ -84,7 +83,6 @@ AND
   OBLIGATION: Correctly indicate the origin of the software in question
   OBLIGATION: Indicate that you have made the change yourself.
 
-
 ....
 
 ....
@@ -93,7 +91,6 @@ Actions:
 
 Conditions:
 REQUISITE: Get special permission in writing.
-
 ....
 
 (source: Hitachi open-license)
@@ -286,7 +283,7 @@ repository] is generated)
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/381",
-            "content": "This program, \"bzip2\" and associated library \"libbzip2\", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions \r\n    and the following disclaimer.\r\n\r\n    2. The origin of this software must not be misrepresented; you must not claim that you wrote \r\n    the original software. If you use this software in a product, an acknowledgment in the product \r\n    documentation would be appreciated but is not required.\r\n\r\n    3. Altered source versions must be plainly marked as such, and must not be misrepresented as \r\n    being the original software.\r\n\r\n    4. The name of the author may not be used to endorse or promote products derived from this software \r\n    without specific prior written permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\nJulian Seward, Cambridge, UK.\r\n\r\njseward@acm.org",
+            "content": "This program, \"bzip2\" and associated library \"libbzip2\", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions \n    and the following disclaimer.\n\n    2. The origin of this software must not be misrepresented; you must not claim that you wrote \n    the original software. If you use this software in a product, an acknowledgment in the product \n    documentation would be appreciated but is not required.\n\n    3. Altered source versions must be plainly marked as such, and must not be misrepresented as \n    being the original software.\n\n    4. The name of the author may not be used to endorse or promote products derived from this software \n    without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nJulian Seward, Cambridge, UK.\n\njseward@acm.org",
             "name": "The bzip2 license",
             "permissions": [
                 {
@@ -306,7 +303,7 @@ repository] is generated)
                             "name": "Use binaries generated from modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\n",
+                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
                     "conditions": null
                 },
                 {
@@ -316,7 +313,7 @@ repository] is generated)
                             "description": "Redistribute the code as it was obtained"
                         }
                     ],
-                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n",
+                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -341,7 +338,7 @@ repository] is generated)
                             "name": "Distribute the generated binaries from modified source code"
                         }
                     ],
-                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Correctly indicate the origin of the software in question\n\n",
+                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Correctly indicate the origin of the software in question\n",
                     "conditions": {
                         "name": "Correctly indicate the origin of the software in question",
                         "type": "OBLIGATION"
@@ -354,7 +351,7 @@ repository] is generated)
                             "name": "Distribution of Modified Source Code"
                         }
                     ],
-                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Indicate that you have made the change yourself.\n\n\n",
+                    "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Indicate that you have made the change yourself.\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -379,7 +376,7 @@ repository] is generated)
                             "name": "Use the author's name to endorse or promote the derived product"
                         }
                     ],
-                    "_str": "Actions:\n- Use the author's name to endorse or promote the derived product\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
+                    "_str": "Actions:\n- Use the author's name to endorse or promote the derived product\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                     "conditions": {
                         "name": "Get special permission in writing.",
                         "type": "REQUISITE"
@@ -391,7 +388,7 @@ repository] is generated)
                     "The bzip2 license",
                     "bzip2-1.0.6"
                 ],
-                "__impliedText": "This program, \"bzip2\" and associated library \"libbzip2\", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \r\n\r\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions \r\n    and the following disclaimer.\r\n\r\n    2. The origin of this software must not be misrepresented; you must not claim that you wrote \r\n    the original software. If you use this software in a product, an acknowledgment in the product \r\n    documentation would be appreciated but is not required.\r\n\r\n    3. Altered source versions must be plainly marked as such, and must not be misrepresented as \r\n    being the original software.\r\n\r\n    4. The name of the author may not be used to endorse or promote products derived from this software \r\n    without specific prior written permission.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n\r\nJulian Seward, Cambridge, UK.\r\n\r\njseward@acm.org",
+                "__impliedText": "This program, \"bzip2\" and associated library \"libbzip2\", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions \n    and the following disclaimer.\n\n    2. The origin of this software must not be misrepresented; you must not claim that you wrote \n    the original software. If you use this software in a product, an acknowledgment in the product \n    documentation would be appreciated but is not required.\n\n    3. Altered source versions must be plainly marked as such, and must not be misrepresented as \n    being the original software.\n\n    4. The name of the author may not be used to endorse or promote products derived from this software \n    without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nJulian Seward, Cambridge, UK.\n\njseward@acm.org",
                 "__impliedURLs": [
                     [
                         "open-license",

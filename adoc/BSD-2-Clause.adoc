@@ -104,6 +104,7 @@ Actions:
 - Use the retrieved binaries (Use the fetched binary as it is.)
 - Use binaries generated from modified source code
 
+Conditions: None
 ....
 
 ....
@@ -113,7 +114,6 @@ Actions:
 
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
 ....
 
 ....
@@ -123,7 +123,6 @@ Actions:
 
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
 ....
 
 (source: Hitachi open-license)
@@ -443,7 +442,7 @@ Knowledge International]
                 }
             ],
             "_sourceURL": "http://open-license.hitachi.com/licenses/15",
-            "content": "The BSD 2-Clause License\r\n\r\n      The following is a BSD 2-Clause license template. To generate your own license, change \r\n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \r\n      and substitute your own.\r\n\r\n      Note: see also the BSD-3-Clause license.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+            "content": "The BSD 2-Clause License\n\n      The following is a BSD 2-Clause license template. To generate your own license, change \n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \n      and substitute your own.\n\n      Note: see also the BSD-3-Clause license.\n\n      This prelude is not part of the license.\n\nï¼OWNERï¼ = Regents of the University of California\nï¼ORGANIZATIONï¼ = University of California, Berkeley\nï¼YEARï¼ = 1998\n\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\n\nHere is the license template:\n\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   * Redistributions of source code must retain the above copyright notice, this list of \n     conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \n     conditions and the following disclaimer in the documentation and/or other materials \n     provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
             "name": "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
             "permissions": [
                 {
@@ -466,7 +465,7 @@ Knowledge International]
                             "name": "Use binaries generated from modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\n",
+                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
                     "conditions": null
                 },
                 {
@@ -479,7 +478,7 @@ Knowledge International]
                             "name": "Distribution of Modified Source Code"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
+                    "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n",
                     "conditions": {
                         "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                         "type": "OBLIGATION"
@@ -495,7 +494,7 @@ Knowledge International]
                             "name": "Distribute the generated binaries from modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n",
+                    "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n",
                     "conditions": {
                         "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                         "type": "OBLIGATION"
@@ -516,7 +515,7 @@ Knowledge International]
                         ]
                     ]
                 ],
-                "__impliedText": "The BSD 2-Clause License\r\n\r\n      The following is a BSD 2-Clause license template. To generate your own license, change \r\n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \r\n      and substitute your own.\r\n\r\n      Note: see also the BSD-3-Clause license.\r\n\r\n      This prelude is not part of the license.\r\n\r\nï¼OWNERï¼ = Regents of the University of California\r\nï¼ORGANIZATIONï¼ = University of California, Berkeley\r\nï¼YEARï¼ = 1998\r\n\r\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\r\n\r\nHere is the license template:\r\n\r\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\r\nAll rights reserved.\r\n\r\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n\r\n   * Redistributions of source code must retain the above copyright notice, this list of \r\n     conditions and the following disclaimer.\r\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \r\n     conditions and the following disclaimer in the documentation and/or other materials \r\n     provided with the distribution.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "__impliedText": "The BSD 2-Clause License\n\n      The following is a BSD 2-Clause license template. To generate your own license, change \n      the values of OWNER, ORGANIZATION and YEAR from their original values as given here, \n      and substitute your own.\n\n      Note: see also the BSD-3-Clause license.\n\n      This prelude is not part of the license.\n\nï¼OWNERï¼ = Regents of the University of California\nï¼ORGANIZATIONï¼ = University of California, Berkeley\nï¼YEARï¼ = 1998\n\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\n\nHere is the license template:\n\nCopyright (c) ï¼YEARï¼, ï¼OWNERï¼\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   * Redistributions of source code must retain the above copyright notice, this list of \n     conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \n     conditions and the following disclaimer in the documentation and/or other materials \n     provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
                 "__impliedURLs": [
                     [
                         "open-license",

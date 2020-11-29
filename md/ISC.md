@@ -107,6 +107,8 @@ Description from open-license
     - Use the retrieved executable (Use the obtained executable as is.)
     - Use the executable generated from the modified source code
 
+    Conditions: None
+
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -435,7 +437,7 @@ Raw Data
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/379",
-                "content": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\r\nCopyright Â© 1995-2003 by Internet Software Consortium\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\r\n\r\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "content": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\nCopyright Â© 1995-2003 by Internet Software Consortium\n\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
                 "name": "ISC License",
                 "permissions": [
                     {
@@ -472,7 +474,7 @@ Raw Data
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the object code generated from the modified source code\n- Use binaries generated from modified source code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\n",
+                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the object code generated from the modified source code\n- Use binaries generated from modified source code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions: None\n",
                         "conditions": null
                     },
                     {
@@ -506,7 +508,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -525,7 +527,7 @@ Raw Data
                             ]
                         ]
                     ],
-                    "__impliedText": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\r\nCopyright Â© 1995-2003 by Internet Software Consortium\r\n\r\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\r\n\r\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                    "__impliedText": "Copyright Â© 2004-<year> by Internet Systems Consortium, Inc. (âISCâ)\nCopyright Â© 1995-2003 by Internet Software Consortium\n\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED âAS ISâ AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
                     "__impliedURLs": [
                         [
                             "open-license",

@@ -69,6 +69,8 @@ Description from open-license
     - Use the retrieved binaries (Use the fetched binary as it is.)
     - Use binaries generated from modified source code
 
+    Conditions: None
+
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
@@ -102,7 +104,6 @@ Description from open-license
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
 
-
     Actions:
     - Distribute the generated binaries from modified source code
 
@@ -110,7 +111,6 @@ Description from open-license
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
 
 (source: Hitachi open-license)
 
@@ -403,7 +403,7 @@ Raw Data
                     }
                 ],
                 "_sourceURL": "http://open-license.hitachi.com/licenses/825",
-                "content": "Zope Public License (ZPL) Version 2.0\r\n-----------------------------------------------\r\n\r\nThis software is Copyright (c) Zope Corporation (tm) and\r\nContributors. All rights reserved.\r\n\r\nThis license has been certified as open source. It has also\r\nbeen designated as GPL compatible by the Free Software\r\nFoundation (FSF).\r\n\r\nRedistribution and use in source and binary forms, with or\r\nwithout modification, are permitted provided that the\r\nfollowing conditions are met:\r\n\r\n1. Redistributions in source code must retain the above\r\n   copyright notice, this list of conditions, and the following\r\n   disclaimer.\r\n\r\n2. Redistributions in binary form must reproduce the above\r\n   copyright notice, this list of conditions, and the following\r\n   disclaimer in the documentation and/or other materials\r\n   provided with the distribution.\r\n\r\n3. The name Zope Corporation (tm) must not be used to\r\n   endorse or promote products derived from this software\r\n   without prior written permission from Zope Corporation.\r\n\r\n4. The right to distribute this software or to use it for\r\n   any purpose does not give you the right to use Servicemarks\r\n   (sm) or Trademarks (tm) of Zope Corporation. Use of them is\r\n   covered in a separate agreement (see\r\n   http://www.zope.com/Marks).\r\n\r\n5. If any files are modified, you must cause the modified\r\n   files to carry prominent notices stating that you changed\r\n   the files and the date of any change.\r\n\r\nDisclaimer\r\n\r\n  THIS SOFTWARE IS PROVIDED BY ZOPE CORPORATION ``AS IS''\r\n  AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT\r\n  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\r\n  AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN\r\n  NO EVENT SHALL ZOPE CORPORATION OR ITS CONTRIBUTORS BE\r\n  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\r\n  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\r\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\r\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\r\n  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\n  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\r\n  DAMAGE.\r\n\r\n\r\nThis software consists of contributions made by Zope\r\nCorporation and many individuals on behalf of Zope\r\nCorporation.  Specific attributions are listed in the\r\naccompanying credits file.",
+                "content": "Zope Public License (ZPL) Version 2.0\n-----------------------------------------------\n\nThis software is Copyright (c) Zope Corporation (tm) and\nContributors. All rights reserved.\n\nThis license has been certified as open source. It has also\nbeen designated as GPL compatible by the Free Software\nFoundation (FSF).\n\nRedistribution and use in source and binary forms, with or\nwithout modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions in source code must retain the above\n   copyright notice, this list of conditions, and the following\n   disclaimer.\n\n2. Redistributions in binary form must reproduce the above\n   copyright notice, this list of conditions, and the following\n   disclaimer in the documentation and/or other materials\n   provided with the distribution.\n\n3. The name Zope Corporation (tm) must not be used to\n   endorse or promote products derived from this software\n   without prior written permission from Zope Corporation.\n\n4. The right to distribute this software or to use it for\n   any purpose does not give you the right to use Servicemarks\n   (sm) or Trademarks (tm) of Zope Corporation. Use of them is\n   covered in a separate agreement (see\n   http://www.zope.com/Marks).\n\n5. If any files are modified, you must cause the modified\n   files to carry prominent notices stating that you changed\n   the files and the date of any change.\n\nDisclaimer\n\n  THIS SOFTWARE IS PROVIDED BY ZOPE CORPORATION ``AS IS''\n  AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT\n  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\n  AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN\n  NO EVENT SHALL ZOPE CORPORATION OR ITS CONTRIBUTORS BE\n  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n  DAMAGE.\n\n\nThis software consists of contributions made by Zope\nCorporation and many individuals on behalf of Zope\nCorporation.  Specific attributions are listed in the\naccompanying credits file.",
                 "name": "Zope Public License (ZPL) Version 2.0",
                 "permissions": [
                     {
@@ -423,7 +423,7 @@ Raw Data
                                 "name": "Use binaries generated from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\n",
+                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
                         "conditions": null
                     },
                     {
@@ -433,7 +433,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -446,7 +446,7 @@ Raw Data
                                 "description": "Redistribute the fetched binaries as they are"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -458,7 +458,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"If you use the name \"Zope Corporation (tm)\". get permission from Zope Corporation.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
+                        "_str": "Description: \"If you use the name \"Zope Corporation (tm)\". get permission from Zope Corporation.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -471,7 +471,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nOBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n",
+                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nOBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n",
                         "conditions": {
                             "name": "Indicate your changes and the date of your changes in the file where you made them.",
                             "type": "OBLIGATION"
@@ -483,7 +483,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n",
+                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -503,7 +503,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n",
+                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -531,7 +531,7 @@ Raw Data
                             ]
                         ]
                     ],
-                    "__impliedText": "Zope Public License (ZPL) Version 2.0\r\n-----------------------------------------------\r\n\r\nThis software is Copyright (c) Zope Corporation (tm) and\r\nContributors. All rights reserved.\r\n\r\nThis license has been certified as open source. It has also\r\nbeen designated as GPL compatible by the Free Software\r\nFoundation (FSF).\r\n\r\nRedistribution and use in source and binary forms, with or\r\nwithout modification, are permitted provided that the\r\nfollowing conditions are met:\r\n\r\n1. Redistributions in source code must retain the above\r\n   copyright notice, this list of conditions, and the following\r\n   disclaimer.\r\n\r\n2. Redistributions in binary form must reproduce the above\r\n   copyright notice, this list of conditions, and the following\r\n   disclaimer in the documentation and/or other materials\r\n   provided with the distribution.\r\n\r\n3. The name Zope Corporation (tm) must not be used to\r\n   endorse or promote products derived from this software\r\n   without prior written permission from Zope Corporation.\r\n\r\n4. The right to distribute this software or to use it for\r\n   any purpose does not give you the right to use Servicemarks\r\n   (sm) or Trademarks (tm) of Zope Corporation. Use of them is\r\n   covered in a separate agreement (see\r\n   http://www.zope.com/Marks).\r\n\r\n5. If any files are modified, you must cause the modified\r\n   files to carry prominent notices stating that you changed\r\n   the files and the date of any change.\r\n\r\nDisclaimer\r\n\r\n  THIS SOFTWARE IS PROVIDED BY ZOPE CORPORATION ``AS IS''\r\n  AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT\r\n  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\r\n  AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN\r\n  NO EVENT SHALL ZOPE CORPORATION OR ITS CONTRIBUTORS BE\r\n  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\r\n  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\r\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\r\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\r\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\r\n  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\n  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\r\n  DAMAGE.\r\n\r\n\r\nThis software consists of contributions made by Zope\r\nCorporation and many individuals on behalf of Zope\r\nCorporation.  Specific attributions are listed in the\r\naccompanying credits file.",
+                    "__impliedText": "Zope Public License (ZPL) Version 2.0\n-----------------------------------------------\n\nThis software is Copyright (c) Zope Corporation (tm) and\nContributors. All rights reserved.\n\nThis license has been certified as open source. It has also\nbeen designated as GPL compatible by the Free Software\nFoundation (FSF).\n\nRedistribution and use in source and binary forms, with or\nwithout modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions in source code must retain the above\n   copyright notice, this list of conditions, and the following\n   disclaimer.\n\n2. Redistributions in binary form must reproduce the above\n   copyright notice, this list of conditions, and the following\n   disclaimer in the documentation and/or other materials\n   provided with the distribution.\n\n3. The name Zope Corporation (tm) must not be used to\n   endorse or promote products derived from this software\n   without prior written permission from Zope Corporation.\n\n4. The right to distribute this software or to use it for\n   any purpose does not give you the right to use Servicemarks\n   (sm) or Trademarks (tm) of Zope Corporation. Use of them is\n   covered in a separate agreement (see\n   http://www.zope.com/Marks).\n\n5. If any files are modified, you must cause the modified\n   files to carry prominent notices stating that you changed\n   the files and the date of any change.\n\nDisclaimer\n\n  THIS SOFTWARE IS PROVIDED BY ZOPE CORPORATION ``AS IS''\n  AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT\n  NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\n  AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN\n  NO EVENT SHALL ZOPE CORPORATION OR ITS CONTRIBUTORS BE\n  LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\n  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\n  LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\n  LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n  HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n  CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\n  OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\n  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH\n  DAMAGE.\n\n\nThis software consists of contributions made by Zope\nCorporation and many individuals on behalf of Zope\nCorporation.  Specific attributions are listed in the\naccompanying credits file.",
                     "__impliedURLs": [
                         [
                             "open-license",

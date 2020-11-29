@@ -53,6 +53,7 @@
   - Use the retrieved binaries (Use the fetched binary as it is.)
   - Use binaries generated from modified source code
 
+  Conditions: None
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
@@ -65,7 +66,6 @@
   AND
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
     OBLIGATION: Give you a copy of the relevant license.
-
 
 #+END_EXAMPLE
 
@@ -80,7 +80,6 @@
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
     OBLIGATION: Give you a copy of the relevant license.
 
-
 #+END_EXAMPLE
 
 #+BEGIN_EXAMPLE
@@ -90,7 +89,6 @@
 
   Conditions:
   REQUISITE: Get special permission in writing.
-
 #+END_EXAMPLE
 
 (source: Hitachi open-license)
@@ -289,7 +287,7 @@
                   }
               ],
               "_sourceURL": "http://open-license.hitachi.com/licenses/335",
-              "content": "The OpenLDAP Public License\r\n  Version 2.8, 17 August 2003\r\n\r\nRedistribution and use of this software and associated documentation\r\n(\"Software\"), with or without modification, are permitted provided\r\nthat the following conditions are met:\r\n\r\n1. Redistributions in source form must retain copyright statements\r\n   and notices,\r\n\r\n2. Redistributions in binary form must reproduce applicable copyright\r\n   statements and notices, this list of conditions, and the following\r\n   disclaimer in the documentation and/or other materials provided\r\n   with the distribution, and\r\n\r\n3. Redistributions must contain a verbatim copy of this document.\r\n\r\nThe OpenLDAP Foundation may revise this license from time to time.\r\nEach revision is distinguished by a version number.  You may use\r\nthis Software under terms of this license revision or under the\r\nterms of any subsequent revision of the license.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND ITS\r\nCONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\r\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT\r\nSHALL THE OPENLDAP FOUNDATION, ITS CONTRIBUTORS, OR THE AUTHOR(S)\r\nOR OWNER(S) OF THE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,\r\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\r\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\r\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\r\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN\r\nANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\nPOSSIBILITY OF SUCH DAMAGE.\r\n\r\nThe names of the authors and copyright holders must not be used in\r\nadvertising or otherwise to promote the sale, use or other dealing\r\nin this Software without specific, written prior permission.  Title\r\nto copyright in this Software shall at all times remain with copyright\r\nholders.\r\n\r\nOpenLDAP is a registered trademark of the OpenLDAP Foundation.\r\n\r\nCopyright 1999-2003 The OpenLDAP Foundation, Redwood City,\r\nCalifornia, USA.  All Rights Reserved.  Permission to copy and\r\ndistribute verbatim copies of this document is granted.",
+              "content": "The OpenLDAP Public License\n  Version 2.8, 17 August 2003\n\nRedistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided\nthat the following conditions are met:\n\n1. Redistributions in source form must retain copyright statements\n   and notices,\n\n2. Redistributions in binary form must reproduce applicable copyright\n   statements and notices, this list of conditions, and the following\n   disclaimer in the documentation and/or other materials provided\n   with the distribution, and\n\n3. Redistributions must contain a verbatim copy of this document.\n\nThe OpenLDAP Foundation may revise this license from time to time.\nEach revision is distinguished by a version number.  You may use\nthis Software under terms of this license revision or under the\nterms of any subsequent revision of the license.\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND ITS\nCONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT\nSHALL THE OPENLDAP FOUNDATION, ITS CONTRIBUTORS, OR THE AUTHOR(S)\nOR OWNER(S) OF THE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN\nANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n\nThe names of the authors and copyright holders must not be used in\nadvertising or otherwise to promote the sale, use or other dealing\nin this Software without specific, written prior permission.  Title\nto copyright in this Software shall at all times remain with copyright\nholders.\n\nOpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\nCopyright 1999-2003 The OpenLDAP Foundation, Redwood City,\nCalifornia, USA.  All Rights Reserved.  Permission to copy and\ndistribute verbatim copies of this document is granted.",
               "name": "The OpenLDAP Public License",
               "permissions": [
                   {
@@ -312,7 +310,7 @@
                               "name": "Use binaries generated from modified source code"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\n",
+                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
                       "conditions": null,
                       "description": "Relevant documentation for the software should be treated in the same way as for the software."
                   },
@@ -326,7 +324,7 @@
                               "name": "Distribution of Modified Source Code"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
+                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  OBLIGATION: Give you a copy of the relevant license.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -351,7 +349,7 @@
                               "name": "Distribute the generated binaries from modified source code"
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
+                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -372,7 +370,7 @@
                               "name": "Use the name of the author or copyright holder in advertising and promotion of the software"
                           }
                       ],
-                      "_str": "Description: The copyright of the software is held by the copyright holder.\nActions:\n- Use the name of the author or copyright holder in advertising and promotion of the software\n\nConditions:\nREQUISITE: Get special permission in writing.\n\n",
+                      "_str": "Description: The copyright of the software is held by the copyright holder.\nActions:\n- Use the name of the author or copyright holder in advertising and promotion of the software\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
@@ -393,7 +391,7 @@
                           ]
                       ]
                   ],
-                  "__impliedText": "The OpenLDAP Public License\r\n  Version 2.8, 17 August 2003\r\n\r\nRedistribution and use of this software and associated documentation\r\n(\"Software\"), with or without modification, are permitted provided\r\nthat the following conditions are met:\r\n\r\n1. Redistributions in source form must retain copyright statements\r\n   and notices,\r\n\r\n2. Redistributions in binary form must reproduce applicable copyright\r\n   statements and notices, this list of conditions, and the following\r\n   disclaimer in the documentation and/or other materials provided\r\n   with the distribution, and\r\n\r\n3. Redistributions must contain a verbatim copy of this document.\r\n\r\nThe OpenLDAP Foundation may revise this license from time to time.\r\nEach revision is distinguished by a version number.  You may use\r\nthis Software under terms of this license revision or under the\r\nterms of any subsequent revision of the license.\r\n\r\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND ITS\r\nCONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\r\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\r\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT\r\nSHALL THE OPENLDAP FOUNDATION, ITS CONTRIBUTORS, OR THE AUTHOR(S)\r\nOR OWNER(S) OF THE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,\r\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\r\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\r\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\r\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\r\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN\r\nANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\nPOSSIBILITY OF SUCH DAMAGE.\r\n\r\nThe names of the authors and copyright holders must not be used in\r\nadvertising or otherwise to promote the sale, use or other dealing\r\nin this Software without specific, written prior permission.  Title\r\nto copyright in this Software shall at all times remain with copyright\r\nholders.\r\n\r\nOpenLDAP is a registered trademark of the OpenLDAP Foundation.\r\n\r\nCopyright 1999-2003 The OpenLDAP Foundation, Redwood City,\r\nCalifornia, USA.  All Rights Reserved.  Permission to copy and\r\ndistribute verbatim copies of this document is granted.",
+                  "__impliedText": "The OpenLDAP Public License\n  Version 2.8, 17 August 2003\n\nRedistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided\nthat the following conditions are met:\n\n1. Redistributions in source form must retain copyright statements\n   and notices,\n\n2. Redistributions in binary form must reproduce applicable copyright\n   statements and notices, this list of conditions, and the following\n   disclaimer in the documentation and/or other materials provided\n   with the distribution, and\n\n3. Redistributions must contain a verbatim copy of this document.\n\nThe OpenLDAP Foundation may revise this license from time to time.\nEach revision is distinguished by a version number.  You may use\nthis Software under terms of this license revision or under the\nterms of any subsequent revision of the license.\n\nTHIS SOFTWARE IS PROVIDED BY THE OPENLDAP FOUNDATION AND ITS\nCONTRIBUTORS ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY\nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT\nSHALL THE OPENLDAP FOUNDATION, ITS CONTRIBUTORS, OR THE AUTHOR(S)\nOR OWNER(S) OF THE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,\nBUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER\nCAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN\nANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGE.\n\nThe names of the authors and copyright holders must not be used in\nadvertising or otherwise to promote the sale, use or other dealing\nin this Software without specific, written prior permission.  Title\nto copyright in this Software shall at all times remain with copyright\nholders.\n\nOpenLDAP is a registered trademark of the OpenLDAP Foundation.\n\nCopyright 1999-2003 The OpenLDAP Foundation, Redwood City,\nCalifornia, USA.  All Rights Reserved.  Permission to copy and\ndistribute verbatim copies of this document is granted.",
                   "__impliedURLs": [
                       [
                           "open-license",
