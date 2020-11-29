@@ -46,10 +46,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
-....
-[]
-....
-
 (source: Hitachi open-license)
 
 === Text

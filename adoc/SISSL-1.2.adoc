@@ -57,10 +57,6 @@ http://gridscheduler.sourceforge.net/Gridengine_SISSL_license.html
 
 === Description from open-license
 
-....
-[]
-....
-
 (source: Hitachi open-license)
 
 === Text

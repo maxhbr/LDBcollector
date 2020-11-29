@@ -39,10 +39,6 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === Description from open-license
 
-....
-[]
-....
-
 (source: Hitachi open-license)
 
 === Text

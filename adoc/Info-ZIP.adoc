@@ -42,10 +42,6 @@ open-license] (CDLA-Permissive-1.0))
 
 === Description from open-license
 
-....
-[]
-....
-
 (source: Hitachi open-license)
 
 === Text

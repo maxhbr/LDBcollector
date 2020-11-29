@@ -30,10 +30,6 @@ https://factbook.soft.hitachi.co.jp/production/db/legl_licenses/ 314''
 
 === Description from open-license
 
-....
-[]
-....
-
 (source: Hitachi open-license)
 
 === Text

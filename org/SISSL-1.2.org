@@ -59,10 +59,6 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  []
-#+END_EXAMPLE
-
 (source: Hitachi open-license)
 
 ** Text

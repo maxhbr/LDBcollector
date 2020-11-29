@@ -52,8 +52,6 @@ URLs
 Description from open-license
 -----------------------------
 
-    []
-
 (source: Hitachi open-license)
 
 Text
