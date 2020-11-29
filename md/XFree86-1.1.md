@@ -50,7 +50,7 @@ Description from open-license
     - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
 
     Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.
     Actions:
@@ -61,21 +61,21 @@ Description from open-license
     - Selling Software
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
 
     Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.
     Actions:
     - Include end-user documentation in the distribution
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
 
     Description: If you wish to use the name "The XFree86 Project, Inc.", obtain permission from The XFree86 Project, Inc.
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 (source: Hitachi open-license)
 
@@ -293,7 +293,7 @@ Raw Data
                                 "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -321,7 +321,7 @@ Raw Data
                                 "name": "Selling Software"
                             }
                         ],
-                        "_str": "Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n- Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Selling Software\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })\n\n",
+                        "_str": "Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n- Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Selling Software\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -334,7 +334,7 @@ Raw Data
                                 "name": "Include end-user documentation in the distribution"
                             }
                         ],
-                        "_str": "Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })\n\n",
+                        "_str": "Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -347,7 +347,7 @@ Raw Data
                                 "name": "Use the copyright holder's name in software promotions and advertisements"
                             }
                         ],
-                        "_str": "Description: If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc.\nActions:\n- Use the copyright holder's name in software promotions and advertisements\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: If you wish to use the name \"The XFree86 Project, Inc.\", obtain permission from The XFree86 Project, Inc.\nActions:\n- Use the copyright holder's name in software promotions and advertisements\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

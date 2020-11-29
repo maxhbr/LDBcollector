@@ -68,7 +68,7 @@ Description from open-license
     - Publish the binary generated from the modified source code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.}
 
     Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
     Actions:
@@ -76,7 +76,7 @@ Description from open-license
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
 
     Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
     Actions:
@@ -84,21 +84,24 @@ Description from open-license
     - Distribute the generated binaries from modified source code
 
     Conditions:
-    OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})]
+    AND
+      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
+      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/630", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/630", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.}
+
 
     Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
     Actions:
     - Include end-user documentation in the distribution
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
 
     Description: To use the names "EDG", "EDG Toolkit" and "EU DataGrid Project". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.
     Actions:
     - Use the name to endorse and promote software and derivative products
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 (source: Hitachi open-license)
 
@@ -442,7 +445,7 @@ Raw Data
                                 "name": "Publish the binary generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: The same rights would be granted to sub-licenses.\nActions:\n- Using Modified Source Code\n- Use binaries generated from modified source code\n- Publish the modified source code.\n- Publish the binary generated from the modified source code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})\n\n",
+                        "_str": "Description: The same rights would be granted to sub-licenses.\nActions:\n- Using Modified Source Code\n- Use binaries generated from modified source code\n- Publish the modified source code.\n- Publish the binary generated from the modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.}\n\n",
                         "conditions": {
                             "name": "A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license.",
                             "type": "RESTRICTION",
@@ -461,7 +464,7 @@ Raw Data
                                 "description": "Redistribute the fetched binaries as they are"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
+                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -477,7 +480,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.})]\n\n",
+                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/630\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/630\", _condition_conditionType = RESTRICTION, _condition_name = A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license., _condition_description = However, this does not include cases where a separate written license agreement is entered into with the User.}\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -499,7 +502,7 @@ Raw Data
                                 "name": "Include end-user documentation in the distribution"
                             }
                         ],
-                        "_str": "Description: Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })\n\n",
+                        "_str": "Description: Acknowledgements include \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\" If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.\nActions:\n- Include end-user documentation in the distribution\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -512,7 +515,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote software and derivative products"
                             }
                         ],
-                        "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

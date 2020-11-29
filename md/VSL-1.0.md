@@ -71,28 +71,28 @@ Description from open-license
     - Distribution of Modified Source Code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
 
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
     - Distribute the generated binaries from modified source code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
 
     Description: "VOCAL", "Vovida Open Communication Application Library", and "Vovida Open Communication Application Library (VOCAL)". vocal@vovida.orgに Contact.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
     Description: If you use the name "VOCAL". get permission from Vovida Networks, Inc.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 (source: Hitachi open-license)
 
@@ -418,7 +418,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -434,7 +434,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -446,7 +446,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -459,7 +459,7 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: If you use the name \"VOCAL\". get permission from Vovida Networks, Inc.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: If you use the name \"VOCAL\". get permission from Vovida Networks, Inc.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

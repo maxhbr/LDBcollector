@@ -83,7 +83,10 @@ Description from open-license
     - Distribution of Modified Source Code
 
     Conditions:
-    OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = })]
+    AND
+      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/68", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/68", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }
+      OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+
 
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
@@ -91,21 +94,21 @@ Description from open-license
     - Distribute the generated binaries from modified source code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
 
     Description: "If you want to use the name "DOM4J". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
     Description: "If you use the name "DOM4J", you have the permission of MetaStuff, Ltd." DOM4J" is a registered trademark of MetaStuff, Ltd.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 (source: Hitachi open-license)
 
@@ -398,7 +401,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = })]\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/68\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/68\", _condition_conditionType = OBLIGATION, _condition_name = Include the copyright notice contained in the software, _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -423,7 +426,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -436,7 +439,7 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
@@ -449,7 +452,7 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: \"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Description: \"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

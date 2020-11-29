@@ -96,27 +96,27 @@ Description from open-license
     - Distribution of Modified Source Code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/1", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/1", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }
 
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
     - Distribute the generated binaries from modified source code
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/2", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/2", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }
 
     Description: The text of the acknowledgement is here "This product includes software developed by the <organization>."
     Actions:
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/13", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/13", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }
 
     Actions:
     - Use the name of the owner or contributor to promote or sell the derived product
 
     Conditions:
-    OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+    OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 (source: Hitachi open-license)
 
@@ -469,7 +469,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = })\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/1\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/1\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer included in the license",
                             "type": "OBLIGATION"
@@ -485,7 +485,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = })\n\n",
+                        "_str": "Actions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/2\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/2\", _condition_conditionType = OBLIGATION, _condition_name = Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
                             "type": "OBLIGATION"
@@ -497,7 +497,7 @@ Raw Data
                                 "name": "Create an advertising medium that describes the features and use of the software"
                             }
                         ],
-                        "_str": "Description: The text of the acknowledgement is here \"This product includes software developed by the <organization>.\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = })\n\n",
+                        "_str": "Description: The text of the acknowledgement is here \"This product includes software developed by the <organization>.\"\nActions:\n- Create an advertising medium that describes the features and use of the software\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/13\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/13\", _condition_conditionType = OBLIGATION, _condition_name = Acknowledgements, _condition_description = }\n\n",
                         "conditions": {
                             "name": "Acknowledgements",
                             "type": "OBLIGATION"
@@ -510,7 +510,7 @@ Raw Data
                                 "name": "Use the name of the owner or contributor to promote or sell the derived product"
                             }
                         ],
-                        "_str": "Actions:\n- Use the name of the owner or contributor to promote or sell the derived product\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                        "_str": "Actions:\n- Use the name of the owner or contributor to promote or sell the derived product\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"

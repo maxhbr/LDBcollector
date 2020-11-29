@@ -65,7 +65,10 @@ Actions:
 - Distribute the executable generated from the modified source code
 
 Conditions:
-OlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/368", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/368", _condition_conditionType = OBLIGATION, _condition_name = Include credit to the copyright holder., _condition_description = })]
+AND
+  OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/8", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/8", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }
+  OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/368", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/368", _condition_conditionType = OBLIGATION, _condition_name = Include credit to the copyright holder., _condition_description = }
+
 
 ....
 
@@ -74,7 +77,7 @@ Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidat
 Actions:
 
 Conditions:
-OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })
+OlCondition {_condition_schemaVersion = "0.1", _condition_uri = "http://open-license.hitachi.com/conditions/3", _condition_baseUri = "http://open-license.hitachi.com/", _condition_id = "conditions/3", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }
 
 ....
 
@@ -333,7 +336,7 @@ Project Wiki]
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nOlConditionTreeAnd [OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }),OlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/368\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/368\", _condition_conditionType = OBLIGATION, _condition_name = Include credit to the copyright holder., _condition_description = })]\n\n",
+                    "_str": "Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/8\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/8\", _condition_conditionType = OBLIGATION, _condition_name = Give you a copy of the relevant license., _condition_description = }\n  OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/368\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/368\", _condition_conditionType = OBLIGATION, _condition_name = Include credit to the copyright holder., _condition_description = }\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -350,7 +353,7 @@ Project Wiki]
                 },
                 {
                     "actions": [],
-                    "_str": "Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidata.\nActions:\n\nConditions:\nOlConditionTreeLeaf (OlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = })\n\n",
+                    "_str": "Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidata.\nActions:\n\nConditions:\nOlCondition {_condition_schemaVersion = \"0.1\", _condition_uri = \"http://open-license.hitachi.com/conditions/3\", _condition_baseUri = \"http://open-license.hitachi.com/\", _condition_id = \"conditions/3\", _condition_conditionType = REQUISITE, _condition_name = Get special permission in writing., _condition_description = }\n\n",
                     "conditions": {
                         "name": "Get special permission in writing.",
                         "type": "REQUISITE"
