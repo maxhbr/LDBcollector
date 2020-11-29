@@ -131,9 +131,7 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
 
 
 ....
@@ -148,21 +146,13 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Include a summary of the changes you have made
-
   OR
     OBLIGATION: Make available to the original software copyright holder the corresponding source code for that software under this license. (The copyright holder of the original software may incorporate any modifications contained in the software into the original software.)
-  
     AND
       RESTRICTION: The installation of such software does not interfere with the installation and execution of the original software.
-    
       REQUISITE: Change the name of the software
-    
-  
     RESTRICTION: Allow the recipient of such software to make the corresponding source code for such software available to others under one of the following licenses Such license means this license, or the license terms applicable to such software, which requires the licensee to permit the licensee to copy, modify, and redistribute the software or its derivative works under the terms of this license or the license terms applicable to such software, and to make the source code of such software or its derivative works freely available for use at no charge, but without a fee for distribution A license that may impose a
-  
-
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
 
 
 ....
@@ -176,9 +166,7 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
 
 
 ....
@@ -641,7 +629,7 @@ Knowledge International]
                             "description": "Redistribute the code as it was obtained"
                         }
                     ],
-                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n\n",
+                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -669,7 +657,7 @@ Knowledge International]
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a summary of the changes you have made\n\n  OR\n    OBLIGATION: Make available to the original software copyright holder the corresponding source code for that software under this license. (The copyright holder of the original software may incorporate any modifications contained in the software into the original software.)\n  \n    AND\n      RESTRICTION: The installation of such software does not interfere with the installation and execution of the original software.\n    \n      REQUISITE: Change the name of the software\n    \n  \n    RESTRICTION: Allow the recipient of such software to make the corresponding source code for such software available to others under one of the following licenses Such license means this license, or the license terms applicable to such software, which requires the licensee to permit the licensee to copy, modify, and redistribute the software or its derivative works under the terms of this license or the license terms applicable to such software, and to make the source code of such software or its derivative works freely available for use at no charge, but without a fee for distribution A license that may impose a\n  \n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n\n",
+                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a summary of the changes you have made\n  OR\n    OBLIGATION: Make available to the original software copyright holder the corresponding source code for that software under this license. (The copyright holder of the original software may incorporate any modifications contained in the software into the original software.)\n    AND\n      RESTRICTION: The installation of such software does not interfere with the installation and execution of the original software.\n      REQUISITE: Change the name of the software\n    RESTRICTION: Allow the recipient of such software to make the corresponding source code for such software available to others under one of the following licenses Such license means this license, or the license terms applicable to such software, which requires the licensee to permit the licensee to copy, modify, and redistribute the software or its derivative works under the terms of this license or the license terms applicable to such software, and to make the source code of such software or its derivative works freely available for use at no charge, but without a fee for distribution A license that may impose a\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -721,7 +709,7 @@ Knowledge International]
                             "description": "Redistribute the obtained executable as-is"
                         }
                     ],
-                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution. If the source code is made available in an obsolete manner, notify the user on demand of the new method of distribution or stop distribution. You do not lose your rights under this license if you do so within 30 days of becoming aware of the invalidation.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n\n",
+                    "_str": "Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution. If the source code is made available in an obsolete manner, notify the user on demand of the new method of distribution or stop distribution. You do not lose your rights under this license if you do so within 30 days of becoming aware of the invalidation.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n",
                     "conditions": {
                         "AND": [
                             {

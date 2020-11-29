@@ -55,23 +55,14 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OR
         OBLIGATION: Attach the source code of the software that uses the software in question.
-      
         OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.
-      
         OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.
-      
-
       OR
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
-      
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
-      
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-      
-
 
 
     Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.
@@ -82,29 +73,17 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
       OR
         OBLIGATION: Attach the source code corresponding to the software in question.
-      
         OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.
-      
-
       OR
         OBLIGATION: Attach the source code of the software that uses the software in question.
-      
         OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.
-      
         OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.
-      
-
       OR
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
-      
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
-      
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-      
-
 
 
 (source: Hitachi open-license)
@@ -361,7 +340,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n  \n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n  \n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  \n\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n  \n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n  \n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n  \n\n\n\n",
+                        "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -414,7 +393,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\n  \n\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n  \n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n  \n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  \n\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n  \n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n  \n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n  \n\n\n\n",
+                        "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

@@ -121,9 +121,7 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
 
 
 ....
@@ -139,13 +137,9 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
   OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer
-
   OBLIGATION: Give you a copy of the relevant license.
-
 
 
 ....
@@ -161,19 +155,12 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
   OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer
-
   OBLIGATION: Give you a copy of the relevant license.
-
   OR
     OBLIGATION: Attach the source code corresponding to the software in question.
-  
     OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)
-  
-
 
 
 ....
@@ -186,13 +173,9 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
   OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer
-
   OBLIGATION: Indicate your changes and the date of the change.
-
 
 
 ....
@@ -208,15 +191,10 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
   OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer
-
   OBLIGATION: Give you a copy of the relevant license.
-
   OBLIGATION: Indicate your changes and the date of the change.
-
 
 
 ....
@@ -232,21 +210,13 @@ Actions:
 Conditions:
 AND
   RESTRICTION: Exercise rights in all current and future media and formats
-
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
-
   OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer
-
   OBLIGATION: Give you a copy of the relevant license.
-
   OBLIGATION: Indicate your changes and the date of the change.
-
   OR
     OBLIGATION: Attach the source code corresponding to the software in question.
-  
     OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)
-  
-
 
 
 ....
@@ -871,7 +841,7 @@ Knowledge International]
                             "name": "Use the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Description: rights in all present and future media, supports and formats as permitted by applicable law.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n\n\n",
+                    "_str": "Description: rights in all present and future media, supports and formats as permitted by applicable law.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -903,7 +873,7 @@ Knowledge International]
                             "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                         }
                     ],
-                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -943,7 +913,7 @@ Knowledge International]
                             "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                         }
                     ],
-                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Display the retrieved executable publicly\n- Publicly execute the retrieved executable\n- Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)\n  \n\n\n\n",
+                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Display the retrieved executable publicly\n- Publicly execute the retrieved executable\n- Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n  OBLIGATION: Give you a copy of the relevant license.\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -985,7 +955,7 @@ Knowledge International]
                             "name": "Modify the obtained source code."
                         }
                     ],
-                    "_str": "Description: â The rights shall be enforceable in all present and future media, supports and formats as permitted by applicable law.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n\n  OBLIGATION: Indicate your changes and the date of the change.\n\n\n\n",
+                    "_str": "Description: â The rights shall be enforceable in all present and future media, supports and formats as permitted by applicable law.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n  OBLIGATION: Indicate your changes and the date of the change.\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -1024,7 +994,7 @@ Knowledge International]
                             "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                         }
                     ],
-                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribution of Modified Source Code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Indicate your changes and the date of the change.\n\n\n\n",
+                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Distribution of Modified Source Code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Indicate your changes and the date of the change.\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -1067,7 +1037,7 @@ Knowledge International]
                             "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                         }
                     ],
-                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Publicly display the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n- Publicly execute executables generated from modified source code\n- Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Indicate your changes and the date of the change.\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)\n  \n\n\n\n",
+                    "_str": "Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.\nActions:\n- Publicly display the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n- Publicly execute executables generated from modified source code\n- Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: Exercise rights in all current and future media and formats\n  RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.\n  OBLIGATION: Include all statements referring to copyright, patents, trademarks, this license and disclaimer\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Indicate your changes and the date of the change.\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)\n\n\n",
                     "conditions": {
                         "AND": [
                             {

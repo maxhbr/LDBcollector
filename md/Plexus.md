@@ -85,9 +85,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include the copyright notice contained in the software
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: Relevant documentation for the software should be treated in the same way as for the software.
@@ -403,7 +401,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

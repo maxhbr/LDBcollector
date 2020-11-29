@@ -67,9 +67,7 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Give you a copy of the relevant license.
-
   OBLIGATION: Include credit to the copyright holder.
-
 
 
 ....
@@ -338,7 +336,7 @@ Project Wiki]
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include credit to the copyright holder.\n\n\n\n",
+                    "_str": "Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include credit to the copyright holder.\n\n\n",
                     "conditions": {
                         "AND": [
                             {

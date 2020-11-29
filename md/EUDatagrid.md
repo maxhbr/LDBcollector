@@ -86,9 +86,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
-
 
 
     Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
@@ -482,7 +480,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)\n\n\n\n",
+                        "_str": "Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.\nActions:\n- Distribution of Modified Source Code\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

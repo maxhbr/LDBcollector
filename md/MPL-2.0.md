@@ -125,9 +125,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
 
 
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
@@ -142,11 +140,8 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
       OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)
-
 
 
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
@@ -161,11 +156,8 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
 
 
     Actions:
@@ -182,17 +174,11 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
-
       RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
-
       OBLIGATION: Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents
-
 
 
 (source: Hitachi open-license)
@@ -910,7 +896,7 @@ Raw Data
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n\n",
+                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -948,7 +934,7 @@ Raw Data
                                 "name": "Executing Modified Source Code"
                             }
                         ],
-                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Display the obtained source code\n- Execute the obtained source code.\n- Display the modified source code\n- Executing Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n  OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)\n\n\n\n",
+                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Display the obtained source code\n- Execute the obtained source code.\n- Display the modified source code\n- Executing Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n  OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -991,7 +977,7 @@ Raw Data
                                 "name": "Execute the executable generated from the modified source code."
                             }
                         ],
-                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Display the retrieved executable.\n- Execute the obtained executable.\n- Display the executable generated from the modified source code.\n- Execute the executable generated from the modified source code.\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n\n\n\n",
+                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Display the retrieved executable.\n- Execute the obtained executable.\n- Display the executable generated from the modified source code.\n- Execute the executable generated from the modified source code.\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -1033,7 +1019,7 @@ Raw Data
                                 "name": "Distribute executables generated from modified source code under your own license."
                             }
                         ],
-                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the acquired executables under your own license\n- Distribute executables generated from modified source code under your own license.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n\n  RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.\n\n  RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.\n\n  OBLIGATION: Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents\n\n\n\n",
+                        "_str": "Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.\nActions:\n- Distribute the acquired executables under your own license\n- Distribute executables generated from modified source code under your own license.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)\n  OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.\n  RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.\n  RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.\n  OBLIGATION: Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

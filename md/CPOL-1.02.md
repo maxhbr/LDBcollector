@@ -54,9 +54,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.
-
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.
-
 
 
     Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term "executable" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software.
@@ -66,13 +64,9 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.
-
       OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
-
 
 
     Description: The author's permission must be obtained. You must obtain the author's permission to make the article available. The author is the person or entity that makes the software available under this license. The author is the person or entity that provides the software under this license. Source code refers to the source code or configuration file used to create the executable. The source code refers to the source code or configuration file used to create the executable.
@@ -111,17 +105,11 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.
-
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.
-
       OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
-
       OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license
-
       RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)
-
       OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license
-
 
 
     Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term "executable" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.
@@ -132,19 +120,12 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.
-
       OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
-
       OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license
-
       RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)
-
       OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license
-
 
 
 (source: Hitachi open-license)
@@ -395,7 +376,7 @@ Raw Data
                                 "name": "Use the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n\n\n\n",
+                        "_str": "Description: The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -416,7 +397,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n\n\n\n",
+                        "_str": "Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -502,7 +483,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Description: The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n\n  OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license\n\n  RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)\n\n  OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license\n\n\n\n",
+                        "_str": "Description: The term \"source code\" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n  OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license\n  RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)\n  OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -543,7 +524,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Distribution of Modified Source Code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n\n  OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license\n\n  RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)\n\n  OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license\n\n\n\n",
+                        "_str": "Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term \"executable\" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.\nActions:\n- Distribution of Modified Source Code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free author's copyright license is granted in accordance with this license.\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n  RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.\n  OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software\n  OBLIGATION: Include a copy of this license or a Uniform Resource Identifier (URI) identifying this license\n  RESTRICTION: Do not sublicense the software (Sublicense means that a person who has been granted this license re-grants the license so granted to a third party.)\n  OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

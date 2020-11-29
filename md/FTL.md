@@ -89,9 +89,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
       OBLIGATION: Acknowledgements
-
 
 
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
@@ -101,13 +99,9 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
       OBLIGATION: Give you a copy of the relevant license.
-
       OBLIGATION: Include the copyright notice contained in the software
-
       OBLIGATION: Acknowledgements
-
 
 
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
@@ -117,13 +111,9 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
       OBLIGATION: Indicate your changes in the materials that accompany the distribution.
-
       OBLIGATION: Include the copyright notice contained in the software
-
       OBLIGATION: Acknowledgements
-
 
 
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
@@ -133,15 +123,10 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
       OBLIGATION: Give you a copy of the relevant license.
-
       OBLIGATION: Indicate your changes in the materials that accompany the distribution.
-
       OBLIGATION: Include the copyright notice contained in the software
-
       OBLIGATION: Acknowledgements
-
 
 
     Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements." Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
@@ -152,9 +137,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
       OBLIGATION: Acknowledgements
-
 
 
     Description: You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: "FreeType Project", "FreeType Engine", "FreeType library", or "FreeType Distribution".
@@ -581,7 +564,7 @@ Raw Data
                                 "name": "Execute the obtained binary"
                             }
                         ],
-                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Display the obtained source code\n- Execute the obtained source code.\n- Display the modified source code\n- Executing Modified Source Code\n- Display the retrieved binary\n- Display the generated binary from the modified source code\n- Execute the generated binary from the modified source code\n- Execute the obtained binary\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
+                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Display the obtained source code\n- Execute the obtained source code.\n- Display the modified source code\n- Executing Modified Source Code\n- Display the retrieved binary\n- Display the generated binary from the modified source code\n- Execute the generated binary from the modified source code\n- Execute the obtained binary\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Acknowledgements\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -604,7 +587,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
+                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include the copyright notice contained in the software\n  OBLIGATION: Acknowledgements\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -634,7 +617,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
+                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n  OBLIGATION: Include the copyright notice contained in the software\n  OBLIGATION: Acknowledgements\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -664,7 +647,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n\n  OBLIGATION: Include the copyright notice contained in the software\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
+                        "_str": "Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: \"Portions of this software are copyrighted by The FreeType Project. \"Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Indicate your changes in the materials that accompany the distribution.\n  OBLIGATION: Include the copyright notice contained in the software\n  OBLIGATION: Acknowledgements\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -702,7 +685,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements.\" Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Acknowledgements\n\n\n\n",
+                        "_str": "Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements.\" Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Acknowledgements\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

@@ -159,9 +159,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: The source code includes all the source code of all modules, plus all the related interface definition files and scripts used to control the compilation and installation of the library.
@@ -171,11 +169,8 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-
 
 
     Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
@@ -186,17 +181,11 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
       OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.
-
       OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-
 
 
     Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
@@ -207,19 +196,12 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
       OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-
       OR
         OBLIGATION: Attach the source code corresponding to the software in question.
-      
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
-      
         OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-      
-
 
 
     Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
@@ -232,25 +214,15 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
       OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.
-
       OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-
       OR
         OBLIGATION: Attach the source code corresponding to the software in question.
-      
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
-      
         OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-      
-
 
 
 (source: Hitachi open-license)
@@ -1062,7 +1034,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -1083,7 +1055,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Description: The source code includes all the source code of all modules, plus all the related interface definition files and scripts used to control the compilation and installation of the library.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n\n\n\n",
+                        "_str": "Description: The source code includes all the source code of all modules, plus all the related interface definition files and scripts used to control the compilation and installation of the library.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -1112,7 +1084,7 @@ Raw Data
                                 "name": "Publish the modified source code."
                             }
                         ],
-                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribution of Modified Source Code\n- Publish the modified source code.\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n  OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.\n\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n\n\n\n",
+                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribution of Modified Source Code\n- Publish the modified source code.\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n  OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -1156,7 +1128,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  \n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n  \n\n\n\n",
+                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -1207,7 +1179,7 @@ Raw Data
                                 "name": "Present the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n  OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.\n\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  \n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n  \n\n\n\n",
+                        "_str": "Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.\nActions:\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n  OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.\n  OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)\n  OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

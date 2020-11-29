@@ -87,18 +87,11 @@ Conditions:
 AND
   OR
     OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.
-  
     RESTRICTION: Use only in your own corporation or organization.
-  
     AND
       RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
-    
       OBLIGATION: Pass information on where the original software was obtained
-    
-  
     RESTRICTION: Decide on a different method of distribution with the copyright holder
-  
-
 
 
 ....
@@ -114,17 +107,11 @@ Actions:
 Conditions:
 OR
   OBLIGATION: Pass information on where the original software was obtained
-
   OBLIGATION: Attach the source code corresponding to the software in question.
-
   AND
     RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
-  
     OBLIGATION: Pass information on where the original software was obtained
-  
-
   RESTRICTION: Decide on a different method of distribution with the copyright holder
-
 
 
 ....
@@ -425,7 +412,7 @@ Policy]
                             "name": "Modify the obtained source code."
                         }
                     ],
-                    "_str": "Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OR\n    OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.\n  \n    RESTRICTION: Use only in your own corporation or organization.\n  \n    AND\n      RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n    \n      OBLIGATION: Pass information on where the original software was obtained\n    \n  \n    RESTRICTION: Decide on a different method of distribution with the copyright holder\n  \n\n\n\n",
+                    "_str": "Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OR\n    OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.\n    RESTRICTION: Use only in your own corporation or organization.\n    AND\n      RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n      OBLIGATION: Pass information on where the original software was obtained\n    RESTRICTION: Decide on a different method of distribution with the copyright holder\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -477,7 +464,7 @@ Policy]
                             "name": "Distribute the generated binaries from modified source code"
                         }
                     ],
-                    "_str": "Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n\nConditions:\nOR\n  OBLIGATION: Pass information on where the original software was obtained\n\n  OBLIGATION: Attach the source code corresponding to the software in question.\n\n  AND\n    RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n  \n    OBLIGATION: Pass information on where the original software was obtained\n  \n\n  RESTRICTION: Decide on a different method of distribution with the copyright holder\n\n\n\n",
+                    "_str": "Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n\nConditions:\nOR\n  OBLIGATION: Pass information on where the original software was obtained\n  OBLIGATION: Attach the source code corresponding to the software in question.\n  AND\n    RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary\n    OBLIGATION: Pass information on where the original software was obtained\n  RESTRICTION: Decide on a different method of distribution with the copyright holder\n\n\n",
                     "conditions": {
                         "OR": [
                             {

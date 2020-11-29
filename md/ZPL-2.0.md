@@ -100,9 +100,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
 
 
     Actions:
@@ -111,9 +109,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
 
 
 (source: Hitachi open-license)
@@ -487,7 +483,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n\n",
+                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -507,7 +503,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n\n",
+                        "_str": "Actions:\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

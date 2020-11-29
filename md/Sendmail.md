@@ -71,14 +71,9 @@ Description from open-license
     AND
       OR
         OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution
-      
         OBLIGATION: Attach the source code corresponding to the software in question.
-      
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
-      
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
 
 
     Description: ●Source code refers to the complete, compilable and linkable Sendmail source code, including modifications. The contents of the copyright notice are here." Copyright (c) 1998-2004 Sendmail, Inc. all rights reserved."
@@ -90,14 +85,9 @@ Description from open-license
     AND
       OR
         OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution
-      
         OBLIGATION: Attach the source code corresponding to the software in question.
-      
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
-      
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
 
 
     Description: The use of "Sendmail, Inc.", "the University of California" and the Contributor's name. Sendmail" is a trademark of "Sendmail, Inc.
@@ -430,7 +420,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OR\n    OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution\n  \n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  \n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n\n",
+                        "_str": "Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OR\n    OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -467,7 +457,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: âSource code refers to the complete, compilable and linkable Sendmail source code, including modifications. The contents of the copyright notice are here.\" Copyright (c) 1998-2004 Sendmail, Inc. all rights reserved.\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OR\n    OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution\n  \n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  \n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n\n\n",
+                        "_str": "Description: âSource code refers to the complete, compilable and linkable Sendmail source code, including modifications. The contents of the copyright notice are here.\" Copyright (c) 1998-2004 Sendmail, Inc. all rights reserved.\"\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OR\n    OBLIGATION: Distribute for a fee not to exceed the reasonable cost of distribution\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

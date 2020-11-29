@@ -71,9 +71,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-
 
 
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
@@ -83,9 +81,7 @@ Description from open-license
     Conditions:
     AND
       REQUISITE: Get special permission in writing.
-
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-
 
 
 (source: Hitachi open-license)
@@ -390,7 +386,7 @@ Raw Data
                                 "name": "Present the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Selling Software\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)\n\n\n\n",
+                        "_str": "Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Selling Software\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -412,7 +408,7 @@ Raw Data
                                 "name": "Use the copyright holder's name to endorse or promote the derived product"
                             }
                         ],
-                        "_str": "Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Use the copyright holder's name to endorse or promote the derived product\n\nConditions:\nAND\n  REQUISITE: Get special permission in writing.\n\n  REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)\n\n\n\n",
+                        "_str": "Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.\nActions:\n- Use the copyright holder's name to endorse or promote the derived product\n\nConditions:\nAND\n  REQUISITE: Get special permission in writing.\n  REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

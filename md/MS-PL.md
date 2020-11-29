@@ -98,9 +98,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
 
 
     Actions:
@@ -111,11 +109,8 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
 
 
     Actions:
@@ -124,13 +119,9 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Actions:
@@ -139,9 +130,7 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
 
 
     Actions:
@@ -152,11 +141,8 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
 
 
     Actions:
@@ -165,13 +151,9 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
 (source: Hitachi open-license)
@@ -550,7 +532,7 @@ Raw Data
                                 "description": "Use the obtained executable as is."
                             }
                         ],
-                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the retrieved executable (Use the obtained executable as is.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n\n",
+                        "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use the retrieved executable (Use the obtained executable as is.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -580,7 +562,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n\n",
+                        "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -606,7 +588,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Actions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -635,7 +617,7 @@ Raw Data
                                 "name": "Modify the obtained source code."
                             }
                         ],
-                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n\n",
+                        "_str": "Actions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -662,7 +644,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n\n",
+                        "_str": "Actions:\n- Distribute the object code generated from the modified source code\n- Distribute the generated binaries from modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -687,7 +669,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Actions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

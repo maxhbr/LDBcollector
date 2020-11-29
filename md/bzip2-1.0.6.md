@@ -60,9 +60,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Correctly indicate the origin of the software in question
-
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
 
 
     Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
@@ -80,11 +78,8 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
       OBLIGATION: Correctly indicate the origin of the software in question
-
       OBLIGATION: Indicate that you have made the change yourself.
-
 
 
     Actions:
@@ -318,7 +313,7 @@ Raw Data
                                 "description": "Redistribute the code as it was obtained"
                             }
                         ],
-                        "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Correctly indicate the origin of the software in question\n\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n\n",
+                        "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -356,7 +351,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n\n  OBLIGATION: Correctly indicate the origin of the software in question\n\n  OBLIGATION: Indicate that you have made the change yourself.\n\n\n\n",
+                        "_str": "Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.\nActions:\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Correctly indicate the origin of the software in question\n  OBLIGATION: Indicate that you have made the change yourself.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

@@ -87,9 +87,7 @@
   Conditions:
   AND
     OBLIGATION: Give you a copy of the relevant license.
-
     OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-
 
 
 #+END_EXAMPLE
@@ -102,9 +100,7 @@
   Conditions:
   AND
     OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-
     OBLIGATION: Include a file to report the changes you make and the date of all changes
-
 
 
 #+END_EXAMPLE
@@ -125,11 +121,8 @@
   Conditions:
   AND
     OBLIGATION: Give you a copy of the relevant license.
-
     OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-
     OBLIGATION: Include a file to report the changes you make and the date of all changes
-
 
 
 #+END_EXAMPLE
@@ -487,7 +480,7 @@
                               "description": "Publish the obtained executable as is."
                           }
                       ],
-                      "_str": "Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Publish the acquired source code. (Publish the source code as it was obtained.)\n- Publish the retrieved object code (Publish the fetched object code as it is.)\n- Present the obtained executables. (Publish the obtained executable as is.)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n\n\n\n",
+                      "_str": "Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n- Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Publish the acquired source code. (Publish the source code as it was obtained.)\n- Publish the retrieved object code (Publish the fetched object code as it is.)\n- Present the obtained executables. (Publish the obtained executable as is.)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -508,7 +501,7 @@
                               "name": "Modify the obtained source code."
                           }
                       ],
-                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n\n  OBLIGATION: Include a file to report the changes you make and the date of all changes\n\n\n\n",
+                      "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Modify the obtained source code.\n\nConditions:\nAND\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n  OBLIGATION: Include a file to report the changes you make and the date of all changes\n\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -556,7 +549,7 @@
                               "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                           }
                       ],
-                      "_str": "Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n- Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n\n  OBLIGATION: Include a file to report the changes you make and the date of all changes\n\n\n\n",
+                      "_str": "Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.\nActions:\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute the executable generated from the modified source code\n- Publish the modified source code.\n- Present the object code generated from the modified source code.\n- Present the executable generated from the modified source code\n- Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property\n  OBLIGATION: Include a file to report the changes you make and the date of all changes\n\n\n",
                       "conditions": {
                           "AND": [
                               {

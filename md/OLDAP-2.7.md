@@ -61,9 +61,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: Relevant documentation for the software should be treated in the same way as for the software.
@@ -74,9 +72,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: The copyright of the software is held by the copyright holder.
@@ -320,7 +316,7 @@ Raw Data
                                 "name": "Distribution of Modified Source Code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -345,7 +341,7 @@ Raw Data
                                 "name": "Distribute the generated binaries from modified source code"
                             }
                         ],
-                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {

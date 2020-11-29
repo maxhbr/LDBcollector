@@ -104,7 +104,6 @@ AND
   OBLIGATION: Include the copyright notice contained in the software
 
 
-
 ....
 
 ....
@@ -114,9 +113,7 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Give you a copy of the relevant license.
-
   OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
-
 
 
 ....
@@ -128,11 +125,8 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Give you a copy of the relevant license.
-
   OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
-
   OBLIGATION: Apply this license to the entire modification
-
 
 
 ....
@@ -144,11 +138,8 @@ Actions:
 Conditions:
 AND
   OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
-
   OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
-
   OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
-
 
 
 ....
@@ -560,7 +551,7 @@ Knowledge International]
                             "description": "Create a patch file or other format"
                         }
                     ],
-                    "_str": "Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.\nActions:\n- Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n\n\n\n",
+                    "_str": "Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.\nActions:\n- Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -578,7 +569,7 @@ Knowledge International]
                             "description": "Redistribute the obtained executable as-is"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n\n\n",
+                    "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -599,7 +590,7 @@ Knowledge International]
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n  OBLIGATION: Apply this license to the entire modification\n\n\n\n",
+                    "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -624,7 +615,7 @@ Knowledge International]
                             "name": "Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)"
                         }
                     ],
-                    "_str": "Actions:\n- Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)\n\nConditions:\nAND\n  OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)\n\n  OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.\n\n  OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.\n\n\n\n",
+                    "_str": "Actions:\n- Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)\n\nConditions:\nAND\n  OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)\n  OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.\n  OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.\n\n\n",
                     "conditions": {
                         "AND": [
                             {

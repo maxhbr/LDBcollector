@@ -84,9 +84,7 @@ Actions:
 Conditions:
 AND
   RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
   RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
 
 
 ....
@@ -99,15 +97,10 @@ Actions:
 Conditions:
 AND
   RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
   RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
   OR
     OBLIGATION: Attach the source code corresponding to the software in question.
-  
     OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.
-  
-
 
 
 ....
@@ -123,11 +116,8 @@ Actions:
 Conditions:
 AND
   RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
   RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-
   OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.
-
 
 
 ....
@@ -441,7 +431,7 @@ Policy]
                             "name": "Publicly execute executables generated from modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the object code generated from the modified source code\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Display the retrieved object code publicly\n- Publicly execute the fetched object code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Publicly display the object code generated from the modified source code\n- Publicly execute the object code generated from the modified source code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n- Display the retrieved executable publicly\n- Publicly execute the retrieved executable\n- Publicly display the executable generated from modified source code\n- Publicly execute executables generated from modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n\n\n",
+                    "_str": "Actions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Using Modified Source Code\n- Use the retrieved object code (Use the fetched code as it is.)\n- Use the object code generated from the modified source code\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Display the obtained source code publicly\n- Executing the fetched source code publicly\n- Display the retrieved object code publicly\n- Publicly execute the fetched object code\n- Display modified source code publicly\n- Publicly execute the modified source code\n- Publicly display the object code generated from the modified source code\n- Publicly execute the object code generated from the modified source code\n- Use the retrieved executable (Use the obtained executable as is.)\n- Use the executable generated from the modified source code\n- Display the retrieved executable publicly\n- Publicly execute the retrieved executable\n- Publicly display the executable generated from modified source code\n- Publicly execute executables generated from modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -468,7 +458,7 @@ Policy]
                             "description": "Redistribute the obtained executable as-is"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n  \n    OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.\n  \n\n\n\n",
+                    "_str": "Actions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.\n\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -511,7 +501,7 @@ Policy]
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Description: Make sure the recipient knows that the change has been made.\nActions:\n- Modify the obtained source code.\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n\n  OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.\n\n\n\n",
+                    "_str": "Description: Make sure the recipient knows that the change has been made.\nActions:\n- Modify the obtained source code.\n- Distribution of Modified Source Code\n- Distribute the object code generated from the modified source code\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)\n  OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.\n\n\n",
                     "conditions": {
                         "AND": [
                             {

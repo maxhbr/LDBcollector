@@ -64,11 +64,8 @@ Description from open-license
     Conditions:
     AND
       RESTRICTION: We don't sell it alone.
-
       OBLIGATION: Include a copyright notice in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
@@ -83,9 +80,7 @@ Description from open-license
     Conditions:
     AND
       OBLIGATION: Include a copyright notice in the license
-
       OBLIGATION: Give you a copy of the relevant license.
-
 
 
     Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term "font software" refers to font files, data files, source files, build scripts, and documents.
@@ -102,9 +97,7 @@ Description from open-license
     Conditions:
     OR
       OBLIGATION: Acknowledgements
-
       REQUISITE: Get special permission in writing.
-
 
 
 (source: Hitachi open-license)
@@ -394,7 +387,7 @@ Raw Data
                                 "name": "Selling font software"
                             }
                         ],
-                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Selling font software\n\nConditions:\nAND\n  RESTRICTION: We don't sell it alone.\n\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Selling font software\n\nConditions:\nAND\n  RESTRICTION: We don't sell it alone.\n  OBLIGATION: Include a copyright notice in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -435,7 +428,7 @@ Raw Data
                                 "name": "Combining Modified Font Software"
                             }
                         ],
-                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Distributing font software (Distribute the acquired font software as is)\n- Distribute Modified Font Software\n- Embedding font software\n- Incorporate modified font software\n- Combining font software\n- Combining Modified Font Software\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice in the license\n\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n\n",
+                        "_str": "Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.\nActions:\n- Distributing font software (Distribute the acquired font software as is)\n- Distribute Modified Font Software\n- Embedding font software\n- Incorporate modified font software\n- Combining font software\n- Combining Modified Font Software\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice in the license\n  OBLIGATION: Give you a copy of the relevant license.\n\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -470,7 +463,7 @@ Raw Data
                                 "name": "Use the name of the copyright holder or author to endorse or promote the modified font software"
                             }
                         ],
-                        "_str": "Description: The term \"font software\" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.\nActions:\n- Use the name of the copyright holder or author to endorse or promote the modified font software\n\nConditions:\nOR\n  OBLIGATION: Acknowledgements\n\n  REQUISITE: Get special permission in writing.\n\n\n\n",
+                        "_str": "Description: The term \"font software\" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.\nActions:\n- Use the name of the copyright holder or author to endorse or promote the modified font software\n\nConditions:\nOR\n  OBLIGATION: Acknowledgements\n  REQUISITE: Get special permission in writing.\n\n\n",
                         "conditions": {
                             "OR": [
                                 {
