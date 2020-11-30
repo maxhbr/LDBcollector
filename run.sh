@@ -49,7 +49,7 @@ else
         git --git-dir="$outGit" commit -m "Commit generated output" || true
 
         if [[ "$PUSH" == "true" ]]; then
-            git --git-dir="$outGit" push --force "https://github.com/maxhbr/LDBcollector.git" master:generated
+            git --git-dir="$outGit" push --force "git@github.com:maxhbr/LDBcollector.git" master:generated
         fi
     fi
 fi

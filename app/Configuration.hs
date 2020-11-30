@@ -15,15 +15,7 @@ import Lib
 
 
 configurationPriv :: Configuration
-configurationPriv = let
-  otherLFCs =
-    [ cavilLFC
-    , osadlLFC
-    , fossologyLFC
-    , gnuLFC
-    , ifrOSSLFC
-    ]
-  in configuration { cLFCs = [] }
+configurationPriv = configuration { cLFCs = [] }
 
 configuration :: Configuration
 configuration = let
@@ -245,5 +237,4 @@ overrides =
            , ("LiLiQ-P-1.1", ["LiLiQ-P"])
            , ("LiLiQ-R-1.1", ["LiLiQ-R"])
            , ("LiLiQ-Rplus-1.1", ["LiLiQ-R+"])
-
            ]
