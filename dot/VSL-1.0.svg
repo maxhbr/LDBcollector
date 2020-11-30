@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="130.39,-580 130.39,-686 429.76,-686 429.76,-580 130.39,-580"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-580 135.59,-686 424.57,-686 424.57,-580 135.59,-580"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-412 135.59,-572 424.57,-572 424.57,-412 135.59,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 544.15,-572 544.15,-412 16,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 544.15,-404 544.15,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="96.59,-298 96.59,-404 463.56,-404 463.56,-298 96.59,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-130 135.59,-236 424.57,-236 424.57,-130 135.59,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="130.39,-184 130.39,-290 429.76,-290 429.76,-184 130.39,-184"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="96.59,-16 96.59,-122 463.56,-122 463.56,-16 96.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 424.57,-176 424.57,-16 135.59,-16"/>
 </g>
 <!-- VSL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -65,71 +65,71 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-660" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="280.08" y="-656.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
 </g>
-<!-- Vovida Software License v1.0(3) -->
+<!-- Vovida Software License 1.0(3) -->
 <g id="node5" class="node">
-<title>Vovida Software License v1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-606" rx="141.88" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-602.3" font-family="Times-Roman" font-size="14.00">Vovida Software License v1.0</text>
+<title>Vovida Software License 1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-606" rx="136.48" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-602.3" font-family="Times-Roman" font-size="14.00">Vovida Software License 1.0</text>
+</g>
+<!-- License :: OSI Approved :: Vovida Software License 1.0(4) -->
+<g id="node6" class="node">
+<title>License :: OSI Approved :: Vovida Software License 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-546" rx="256.15" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-542.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Vovida Software License 1.0</text>
+</g>
+<!-- The Vovida Software License, Version 1.0(4) -->
+<g id="node7" class="node">
+<title>The Vovida Software License, Version 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-492" rx="194.97" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-488.3" font-family="Times-Roman" font-size="14.00">The Vovida Software License, Version 1.0</text>
 </g>
 <!-- VSL&#45;1.0(4) -->
-<g id="node6" class="node">
-<title>VSL&#45;1.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-546" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-542.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
-</g>
-<!-- Vovida Software License 1.0(4) -->
-<g id="node7" class="node">
-<title>Vovida Software License 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-492" rx="136.48" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-488.3" font-family="Times-Roman" font-size="14.00">Vovida Software License 1.0</text>
-</g>
-<!-- scancode://vsl&#45;1.0(4) -->
 <g id="node8" class="node">
-<title>scancode://vsl&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-438" rx="92.88" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-434.3" font-family="Times-Roman" font-size="14.00">scancode://vsl&#45;1.0</text>
-</g>
-<!-- License :: OSI Approved :: Vovida Software License 1.0(5) -->
-<g id="node9" class="node">
-<title>License :: OSI Approved :: Vovida Software License 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-378" rx="256.15" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-374.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Vovida Software License 1.0</text>
-</g>
-<!-- The Vovida Software License, Version 1.0(5) -->
-<g id="node10" class="node">
-<title>The Vovida Software License, Version 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-324" rx="194.97" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-320.3" font-family="Times-Roman" font-size="14.00">The Vovida Software License, Version 1.0</text>
+<title>VSL&#45;1.0(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-438" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-434.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
 </g>
 <!-- VSL&#45;1.0(5) -->
-<g id="node11" class="node">
+<g id="node9" class="node">
 <title>VSL&#45;1.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-270" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-266.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-378" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-374.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
+</g>
+<!-- Vovida Software License, Version 1.0(5) -->
+<g id="node10" class="node">
+<title>Vovida Software License, Version 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-324" rx="175.47" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-320.3" font-family="Times-Roman" font-size="14.00">Vovida Software License, Version 1.0</text>
 </g>
 <!-- VSL&#45;1.0(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>VSL&#45;1.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-210" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-206.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-264" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-260.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
 </g>
-<!-- Vovida Software License 1.0(6) -->
-<g id="node13" class="node">
-<title>Vovida Software License 1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-156" rx="136.48" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-152.3" font-family="Times-Roman" font-size="14.00">Vovida Software License 1.0</text>
+<!-- Vovida Software License v1.0(6) -->
+<g id="node12" class="node">
+<title>Vovida Software License v1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-210" rx="141.88" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-206.3" font-family="Times-Roman" font-size="14.00">Vovida Software License v1.0</text>
 </g>
 <!-- VSL&#45;1.0(7) -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>VSL&#45;1.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-96" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-92.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="280.08" cy="-150" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-146.3" font-family="Times-Roman" font-size="14.00">VSL&#45;1.0</text>
 </g>
-<!-- Vovida Software License, Version 1.0(7) -->
+<!-- Vovida Software License 1.0(7) -->
+<g id="node14" class="node">
+<title>Vovida Software License 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-96" rx="136.48" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-92.3" font-family="Times-Roman" font-size="14.00">Vovida Software License 1.0</text>
+</g>
+<!-- scancode://vsl&#45;1.0(7) -->
 <g id="node15" class="node">
-<title>Vovida Software License, Version 1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="280.08" cy="-42" rx="175.47" ry="18"/>
-<text text-anchor="middle" x="280.08" y="-38.3" font-family="Times-Roman" font-size="14.00">Vovida Software License, Version 1.0</text>
+<title>scancode://vsl&#45;1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="280.08" cy="-42" rx="92.88" ry="18"/>
+<text text-anchor="middle" x="280.08" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://vsl&#45;1.0</text>
 </g>
 </g>
 </svg>

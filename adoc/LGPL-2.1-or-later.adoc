@@ -47,8 +47,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 * *Homepage:*
 http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
 * *SPDX:* http://spdx.org/licenses/LGPL-2.1-or-later.json
-* https://opensource.org/licenses/LGPL-2.1
 * https://spdx.org/licenses/LGPL-2.1-or-later.html
+* https://opensource.org/licenses/LGPL-2.1
 * http://www.gnu.org/copyleft/lesser.html
 * http://www.opensource.org/licenses/LGPL-2.1
 
@@ -70,13 +70,12 @@ You should have received a copy of the GNU Lesser General Public License along w
 
 * LicenseName
 * Override
-* https://spdx.org/licenses/LGPL-2.1-or-later.html[SPDX] (all data [in
-this repository] is generated)
 * https://blueoakcouncil.org/copyleft[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml[Scancode]
-(CC0-1.0)
-* https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml[finos/OSLC-handbook]
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
@@ -87,11 +86,12 @@ license-compatibility]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
+* https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
-(NOASSERTION)
+* https://spdx.org/licenses/LGPL-2.1-or-later.html[SPDX] (all data [in
+this repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -538,6 +538,10 @@ Policy]
     "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
     "__impliedURLs": [
         [
+            null,
+            "https://spdx.org/licenses/LGPL-2.1-or-later.html"
+        ],
+        [
             "SPDX",
             "http://spdx.org/licenses/LGPL-2.1-or-later.json"
         ],
@@ -548,10 +552,6 @@ Policy]
         [
             null,
             "https://opensource.org/licenses/LGPL-2.1"
-        ],
-        [
-            null,
-            "https://spdx.org/licenses/LGPL-2.1-or-later.html"
         ],
         [
             "Homepage",

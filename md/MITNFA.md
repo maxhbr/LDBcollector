@@ -36,9 +36,9 @@ URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/MITNFA
 
--   **SPDX:** http://spdx.org/licenses/MITNFA.json
-
 -   **SPDX:** https://spdx.org/licenses/MITNFA.html
+
+-   **SPDX:** http://spdx.org/licenses/MITNFA.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/698
 
@@ -130,15 +130,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MITNFA.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -148,15 +142,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/MITNFA.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "MITNFA",
             "MIT +no-false-attribs license",
+            "MIT +no-false-attribs License",
             "scancode://mit-no-false-attribs",
-            "MIT no false attribution License",
-            "MIT +no-false-attribs License"
+            "MIT no false attribution License"
         ],
         "__impliedId": "MITNFA",
         "__isFsfFree": true,
@@ -494,6 +494,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/MITNFA.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/698"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/MITNFA.json"
             ],
             [
@@ -501,16 +509,8 @@ Raw Data
                 "https://fedoraproject.org/wiki/Licensing/MITNFA"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/MITNFA.html"
-            ],
-            [
                 "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/MITNFA"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/698"
             ]
         ]
     }

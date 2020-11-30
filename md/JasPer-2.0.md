@@ -5,11 +5,11 @@ JasPer License (JasPer-2.0)
 
 **Other Names:**
 
+-   `JasPer License Version 2.0`
+
 -   `scancode://jasper-2.0`
 
 -   `JasPer 2.0`
-
--   `JasPer License Version 2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -31,9 +31,9 @@ URLs
 
 -   **Homepage:** http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 
--   **SPDX:** http://spdx.org/licenses/JasPer-2.0.json
-
 -   **SPDX:** https://spdx.org/licenses/JasPer-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/JasPer-2.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/764
 
@@ -151,15 +151,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/JasPer-2.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jasper-2.0.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -173,15 +167,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/JasPer-2.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jasper-2.0.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "JasPer-2.0",
             "JasPer License",
+            "JasPer License Version 2.0",
             "scancode://jasper-2.0",
-            "JasPer 2.0",
-            "JasPer License Version 2.0"
+            "JasPer 2.0"
         ],
         "__impliedId": "JasPer-2.0",
         "__isFsfFree": true,
@@ -530,6 +530,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/JasPer-2.0.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/764"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/JasPer-2.0.json"
             ],
             [
@@ -537,16 +545,8 @@ Raw Data
                 "http://www.ece.uvic.ca/~mdadams/jasper/LICENSE"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/JasPer-2.0.html"
-            ],
-            [
                 "Homepage",
                 "http://www.ece.uvic.ca/~frodo/jasper/LICENSE"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/764"
             ]
         ]
     }

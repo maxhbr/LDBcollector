@@ -43,11 +43,11 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-344 629.95,-344 629.95,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-184 135.59,-344 510.36,-344 510.36,-184 135.59,-184"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 510.36,-176 510.36,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 629.95,-176 629.95,-16 16,-16"/>
 </g>
 <!-- AGPL&#45;3.0&#45;only(2) -->
 <g id="node1" class="node">
@@ -169,17 +169,17 @@
 <ellipse fill="lightgray" stroke="lightgray" cx="322.97" cy="-318" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="322.97" y="-314.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
 </g>
-<!-- GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)(8) -->
+<!-- GNU Affero General Public License v3(8) -->
 <g id="node21" class="node">
-<title>GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)(8)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-264" rx="291.65" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-260.3" font-family="Times-Roman" font-size="14.00">GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)</text>
+<title>GNU Affero General Public License v3(8)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-264" rx="179.27" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-260.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3</text>
 </g>
-<!-- License :: OSI Approved :: GNU Affero General Public License v3(8) -->
+<!-- agpl&#45;v3(8) -->
 <g id="node22" class="node">
-<title>License :: OSI Approved :: GNU Affero General Public License v3(8)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-210" rx="298.95" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-206.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU Affero General Public License v3</text>
+<title>agpl&#45;v3(8)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-210" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-206.3" font-family="Times-Roman" font-size="14.00">agpl&#45;v3</text>
 </g>
 <!-- AGPL&#45;3.0(9) -->
 <g id="node23" class="node">
@@ -187,17 +187,17 @@
 <ellipse fill="lightgray" stroke="lightgray" cx="322.97" cy="-150" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="322.97" y="-146.3" font-family="Times-Roman" font-size="14.00">AGPL&#45;3.0</text>
 </g>
-<!-- GNU Affero General Public License v3(9) -->
+<!-- GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)(9) -->
 <g id="node24" class="node">
-<title>GNU Affero General Public License v3(9)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-96" rx="179.27" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-92.3" font-family="Times-Roman" font-size="14.00">GNU Affero General Public License v3</text>
+<title>GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)(9)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-96" rx="291.65" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-92.3" font-family="Times-Roman" font-size="14.00">GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL&#45;3.0)</text>
 </g>
-<!-- agpl&#45;v3(9) -->
+<!-- License :: OSI Approved :: GNU Affero General Public License v3(9) -->
 <g id="node25" class="node">
-<title>agpl&#45;v3(9)</title>
-<ellipse fill="white" stroke="white" cx="322.97" cy="-42" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="322.97" y="-38.3" font-family="Times-Roman" font-size="14.00">agpl&#45;v3</text>
+<title>License :: OSI Approved :: GNU Affero General Public License v3(9)</title>
+<ellipse fill="white" stroke="white" cx="322.97" cy="-42" rx="298.95" ry="18"/>
+<text text-anchor="middle" x="322.97" y="-38.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU Affero General Public License v3</text>
 </g>
 </g>
 </svg>

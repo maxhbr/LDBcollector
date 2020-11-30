@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="106.99,-244 106.99,-404 303.68,-404 303.68,-244 106.99,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 394.67,-404 394.67,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="121.94,-130 121.94,-236 288.73,-236 288.73,-130 121.94,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="121.94,-184 121.94,-290 288.73,-290 288.73,-184 121.94,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 394.67,-122 394.67,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="106.99,-16 106.99,-176 303.68,-176 303.68,-16 106.99,-16"/>
 </g>
 <!-- Libpng(1) -->
 <g id="node1" class="node">
@@ -73,41 +73,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="205.33" cy="-378" rx="41.69" ry="18"/>
 <text text-anchor="middle" x="205.33" y="-374.3" font-family="Times-Roman" font-size="14.00">Libpng</text>
 </g>
-<!-- Libpng License(4) -->
+<!-- libpng license (libpng&#45;1.2.6 and later)(4) -->
 <g id="node7" class="node">
-<title>Libpng License(4)</title>
-<ellipse fill="white" stroke="white" cx="205.33" cy="-324" rx="77.99" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-320.3" font-family="Times-Roman" font-size="14.00">Libpng License</text>
-</g>
-<!-- scancode://libpng(4) -->
-<g id="node8" class="node">
-<title>scancode://libpng(4)</title>
-<ellipse fill="white" stroke="white" cx="205.33" cy="-270" rx="90.18" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://libpng</text>
+<title>libpng license (libpng&#45;1.2.6 and later)(4)</title>
+<ellipse fill="white" stroke="white" cx="205.33" cy="-324" rx="181.17" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-320.3" font-family="Times-Roman" font-size="14.00">libpng license (libpng&#45;1.2.6 and later)</text>
 </g>
 <!-- Libpng(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>Libpng(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="205.33" cy="-210" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-206.3" font-family="Times-Roman" font-size="14.00">Libpng</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="205.33" cy="-264" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-260.3" font-family="Times-Roman" font-size="14.00">Libpng</text>
 </g>
 <!-- libpng License(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>libpng License(5)</title>
-<ellipse fill="white" stroke="white" cx="205.33" cy="-156" rx="75.29" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-152.3" font-family="Times-Roman" font-size="14.00">libpng License</text>
+<ellipse fill="white" stroke="white" cx="205.33" cy="-210" rx="75.29" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-206.3" font-family="Times-Roman" font-size="14.00">libpng License</text>
 </g>
 <!-- Libpng(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Libpng(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="205.33" cy="-96" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-92.3" font-family="Times-Roman" font-size="14.00">Libpng</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="205.33" cy="-150" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-146.3" font-family="Times-Roman" font-size="14.00">Libpng</text>
 </g>
-<!-- libpng license (libpng&#45;1.2.6 and later)(6) -->
+<!-- Libpng License(6) -->
+<g id="node11" class="node">
+<title>Libpng License(6)</title>
+<ellipse fill="white" stroke="white" cx="205.33" cy="-96" rx="77.99" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-92.3" font-family="Times-Roman" font-size="14.00">Libpng License</text>
+</g>
+<!-- scancode://libpng(6) -->
 <g id="node12" class="node">
-<title>libpng license (libpng&#45;1.2.6 and later)(6)</title>
-<ellipse fill="white" stroke="white" cx="205.33" cy="-42" rx="181.17" ry="18"/>
-<text text-anchor="middle" x="205.33" y="-38.3" font-family="Times-Roman" font-size="14.00">libpng license (libpng&#45;1.2.6 and later)</text>
+<title>scancode://libpng(6)</title>
+<ellipse fill="white" stroke="white" cx="205.33" cy="-42" rx="90.18" ry="18"/>
+<text text-anchor="middle" x="205.33" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://libpng</text>
 </g>
 </g>
 </svg>

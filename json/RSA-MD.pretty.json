@@ -1,8 +1,8 @@
 {
     "__impliedNames": [
         "RSA-MD",
-        "RSA Message-Digest License",
         "RSA Message-Digest License ",
+        "RSA Message-Digest License",
         "scancode://rsa-md5",
         "RSA-MD5 License"
     ],
@@ -152,15 +152,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/RSA-MD.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/RSA-MD.json"
         ],
         [
             null,
             "http://www.faqs.org/rfcs/rfc1321.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/RSA-MD.html"
         ],
         [
             "Homepage",

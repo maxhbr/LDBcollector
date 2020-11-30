@@ -191,15 +191,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/psutils.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/psutils.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/psutils"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/psutils.html"
         ],
         [
             "Homepage",

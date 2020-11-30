@@ -247,6 +247,10 @@
     "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
     "__impliedURLs": [
         [
+            null,
+            "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html"
+        ],
+        [
             "SPDX",
             "http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
         ],
@@ -257,10 +261,6 @@
         [
             null,
             "https://opensource.org/licenses/MPL-2.0"
-        ],
-        [
-            null,
-            "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html"
         ],
         [
             "Homepage",

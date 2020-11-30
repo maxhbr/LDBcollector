@@ -30,8 +30,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:*
 http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=df2cc1e21eb7c160695f5b7cffd6296c151ba188
-* *SPDX:* http://spdx.org/licenses/OLDAP-2.2.2.json
 * *SPDX:* https://spdx.org/licenses/OLDAP-2.2.2.html
+* *SPDX:* http://spdx.org/licenses/OLDAP-2.2.2.json
 
 === Text
 
@@ -96,15 +96,15 @@ distributed verbatim copies of this document is granted.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/OLDAP-2.2.2.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.2.2.yml[Scancode]
-(CC0-1.0)
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://spdx.org/licenses/OLDAP-2.2.2.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.2.2.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -292,15 +292,15 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OLDAP-2.2.2.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OLDAP-2.2.2.json"
         ],
         [
             null,
             "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=df2cc1e21eb7c160695f5b7cffd6296c151ba188"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OLDAP-2.2.2.html"
         ],
         [
             "Homepage",

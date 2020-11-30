@@ -201,15 +201,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OML.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OML.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Open_Market_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OML.html"
         ],
         [
             "Homepage",

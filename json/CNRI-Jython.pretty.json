@@ -164,15 +164,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/CNRI-Jython.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/CNRI-Jython.json"
         ],
         [
             null,
             "http://www.jython.org/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/CNRI-Jython.html"
         ],
         [
             "Homepage",

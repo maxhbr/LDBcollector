@@ -5,9 +5,9 @@ CeCILL-B Free Software License Agreement (CECILL-B)
 
 **Other Names:**
 
--   `scancode://cecill-b`
-
 -   `CeCILL-B License`
+
+-   `scancode://cecill-b`
 
 Comments on (easy) usability
 ----------------------------
@@ -34,9 +34,9 @@ URLs
 -   **Homepage:**
     http://www.cecill.info/licences/Licence\_CeCILL-B\_V1-fr.html
 
--   **SPDX:** http://spdx.org/licenses/CECILL-B.json
-
 -   **SPDX:** https://spdx.org/licenses/CECILL-B.html
+
+-   **SPDX:** http://spdx.org/licenses/CECILL-B.json
 
 -   http://www.cecill.info/licences/Licence\_CeCILL-B\_V1-en.html
 
@@ -300,15 +300,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/CECILL-B.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -318,14 +312,20 @@ Raw Data
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [SPDX](https://spdx.org/licenses/CECILL-B.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "CECILL-B",
             "CeCILL-B Free Software License Agreement",
-            "scancode://cecill-b",
-            "CeCILL-B License"
+            "CeCILL-B License",
+            "scancode://cecill-b"
         ],
         "__impliedId": "CECILL-B",
         "__isFsfFree": true,
@@ -554,15 +554,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/CECILL-B.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/CECILL-B.json"
             ],
             [
                 null,
                 "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/CECILL-B.html"
             ],
             [
                 "Homepage",

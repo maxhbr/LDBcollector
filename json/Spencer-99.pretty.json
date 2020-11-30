@@ -145,15 +145,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Spencer-99.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Spencer-99.json"
         ],
         [
             null,
             "http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Spencer-99.html"
         ],
         [
             "Homepage",

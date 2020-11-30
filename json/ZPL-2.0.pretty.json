@@ -2,12 +2,12 @@
     "__impliedNames": [
         "ZPL-2.0",
         "Zope Public License 2.0",
-        "scancode://zpl-2.0",
-        "ZPL 2.0",
         "The Zope Public License, Version 2.0",
         "Zope-2.0",
         "License :: OSI Approved :: Zope Public License",
-        "Zope Public License (ZPL) Version 2.0"
+        "Zope Public License (ZPL) Version 2.0",
+        "scancode://zpl-2.0",
+        "ZPL 2.0"
     ],
     "__impliedId": "ZPL-2.0",
     "__impliedComments": [
@@ -539,19 +539,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/ZPL-2.0.json"
-        ],
-        [
-            null,
-            "http://old.zope.org/Resources/License/ZPL-2.0"
+            "https://spdx.org/licenses/ZPL-2.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/ZPL-2.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/ZPL-2.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/825"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/ZPL-2.0.html"
+            "http://spdx.org/licenses/ZPL-2.0.json"
+        ],
+        [
+            null,
+            "http://old.zope.org/Resources/License/ZPL-2.0"
         ],
         [
             "Homepage",
@@ -564,14 +572,6 @@
         [
             null,
             "http://www.zope.com/Marks"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/ZPL-2.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/825"
         ]
     ]
 }

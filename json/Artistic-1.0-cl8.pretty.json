@@ -246,15 +246,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Artistic-1.0-cl8.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Artistic-1.0-cl8.json"
         ],
         [
             null,
             "https://opensource.org/licenses/Artistic-1.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Artistic-1.0-cl8.html"
         ],
         [
             "Homepage",

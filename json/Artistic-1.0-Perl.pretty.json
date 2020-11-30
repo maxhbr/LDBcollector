@@ -307,15 +307,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Artistic-1.0-Perl.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Artistic-1.0-Perl.json"
         ],
         [
             null,
             "http://dev.perl.org/licenses/artistic.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Artistic-1.0-Perl.html"
         ],
         [
             "Homepage",

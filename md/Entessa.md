@@ -5,13 +5,13 @@ Entessa Public License v1.0 (Entessa)
 
 **Other Names:**
 
--   `scancode://entessa-1.0`
-
--   `Entessa 1.0`
-
 -   `Entessa Public License`
 
 -   `Entessa Public License 1.0`
+
+-   `scancode://entessa-1.0`
+
+-   `Entessa 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -41,13 +41,13 @@ URLs
 
 -   **Homepage:** http://openseal.sourceforge.net/epl/index.html
 
--   **OSI Page:** http://opensource.org/licenses/entessa.php
-
 -   **OSI Page:** https://opensource.org/licenses/Entessa
 
--   **SPDX:** http://spdx.org/licenses/Entessa.json
+-   **OSI Page:** http://opensource.org/licenses/entessa.php
 
 -   **SPDX:** https://spdx.org/licenses/Entessa.html
+
+-   **SPDX:** http://spdx.org/licenses/Entessa.json
 
 -   http://sourceforge.net/softwaremap/?&fq\[\]=trove%3A397
 
@@ -110,22 +110,17 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Entessa.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -133,9 +128,14 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Entessa.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Entessa.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -143,10 +143,10 @@ Raw Data
         "__impliedNames": [
             "Entessa",
             "Entessa Public License v1.0",
-            "scancode://entessa-1.0",
-            "Entessa 1.0",
             "Entessa Public License",
-            "Entessa Public License 1.0"
+            "Entessa Public License 1.0",
+            "scancode://entessa-1.0",
+            "Entessa 1.0"
         ],
         "__impliedId": "Entessa",
         "__isFsfFree": true,
@@ -531,15 +531,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Entessa.json"
+                "https://spdx.org/licenses/Entessa.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Entessa"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/Entessa"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/Entessa.html"
+                "http://spdx.org/licenses/Entessa.json"
             ],
             [
                 "Homepage",
@@ -556,10 +560,6 @@ Raw Data
             [
                 null,
                 "http://sourceforge.net/softwaremap/?&fq[]=trove%3A397"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Entessa"
             ]
         ]
     }

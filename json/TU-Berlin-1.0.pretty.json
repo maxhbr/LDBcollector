@@ -156,15 +156,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TU-Berlin-1.0.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TU-Berlin-1.0.json"
         ],
         [
             null,
             "https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TU-Berlin-1.0.html"
         ],
         [
             "Homepage",

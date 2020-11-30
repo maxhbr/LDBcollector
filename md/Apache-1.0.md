@@ -43,9 +43,9 @@ URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
--   **SPDX:** http://spdx.org/licenses/Apache-1.0.json
-
 -   **SPDX:** https://spdx.org/licenses/Apache-1.0.html
+
+-   **SPDX:** http://spdx.org/licenses/Apache-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/13
 
@@ -172,15 +172,13 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.0.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -190,13 +188,15 @@ Raw Data
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Apache-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -214,8 +214,8 @@ Raw Data
         "__impliedId": "Apache-1.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ASL 1.0",
-            "The Apache Software License (ASL)"
+            "The Apache Software License (ASL)",
+            "ASL 1.0"
         ],
         "facts": {
             "LicenseName": {
@@ -607,6 +607,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Apache-1.0.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/13"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Apache-1.0.json"
             ],
             [
@@ -614,16 +622,8 @@ Raw Data
                 "http://www.apache.org/licenses/LICENSE-1.0"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/Apache-1.0.html"
-            ],
-            [
                 "Homepage",
                 "http://www.apache.org/licenses/"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/13"
             ]
         ]
     }

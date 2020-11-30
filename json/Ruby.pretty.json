@@ -2,9 +2,9 @@
     "__impliedNames": [
         "Ruby",
         "Ruby License",
-        "scancode://ruby",
         "Ruby License (1.9.2 and earlier)",
-        "Ruby License (1.9.3 and later)"
+        "Ruby License (1.9.3 and later)",
+        "scancode://ruby"
     ],
     "__impliedId": "Ruby",
     "__isFsfFree": true,
@@ -420,23 +420,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Ruby.json"
-        ],
-        [
-            null,
-            "http://www.ruby-lang.org/en/LICENSE.txt"
-        ],
-        [
-            "SPDX",
             "https://spdx.org/licenses/Ruby.html"
-        ],
-        [
-            "Homepage",
-            "http://www.ruby-lang.org/en/LICENSE.txt"
-        ],
-        [
-            null,
-            "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
         ],
         [
             "open-license",
@@ -445,6 +429,22 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/3"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/Ruby.json"
+        ],
+        [
+            null,
+            "http://www.ruby-lang.org/en/LICENSE.txt"
+        ],
+        [
+            "Homepage",
+            "http://www.ruby-lang.org/en/LICENSE.txt"
+        ],
+        [
+            null,
+            "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
         ]
     ]
 }

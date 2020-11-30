@@ -4,8 +4,8 @@
         "BSD (3 clause)",
         "BSD License (no advertising)",
         "BSD 3-Clause \"New\" or \"Revised\" License",
-        "scancode://bsd-new",
         "bsd-3-clause",
+        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
         "BSD-3",
         "BSD 3-Clause License",
         "BSD-3-clause",
@@ -13,13 +13,13 @@
         "Revised BSD License",
         "Modified BSD License",
         "New BSD License",
-        "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+        "scancode://bsd-new"
     ],
     "__impliedId": "BSD-3-Clause",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "BSD",
-        "The BSD-3-clause License"
+        "The BSD-3-clause License",
+        "BSD"
     ],
     "__impliedComments": [
         [
@@ -750,27 +750,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-3-Clause.json"
+            "https://spdx.org/licenses/BSD-3-Clause.html"
         ],
         [
             null,
             "https://opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-3-Clause.html"
-        ],
-        [
-            "Homepage",
-            "http://www.opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            "OSI Page",
-            "http://www.opensource.org/licenses/BSD-3-Clause"
-        ],
-        [
-            null,
-            "http://framework.zend.com/license/new-bsd"
         ],
         [
             "Wikipedia Page",
@@ -783,6 +767,22 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/14"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/BSD-3-Clause.json"
+        ],
+        [
+            "Homepage",
+            "http://www.opensource.org/licenses/BSD-3-Clause"
+        ],
+        [
+            "OSI Page",
+            "http://www.opensource.org/licenses/BSD-3-Clause"
+        ],
+        [
+            null,
+            "http://framework.zend.com/license/new-bsd"
         ]
     ]
 }

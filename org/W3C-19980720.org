@@ -9,11 +9,11 @@
 
 *Other Names:*
 
+- =W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)=
+
 - =scancode://w3c-software-19980720=
 
 - =W3C-SOFTWARE-19980720=
-
-- =W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)=
 
 ** Comments on (easy) usability
 
@@ -48,9 +48,9 @@
 - *Homepage:*
   http://www.w3.org/Consortium/Legal/copyright-software-19980720.html
 
-- *SPDX:* http://spdx.org/licenses/W3C-19980720.json
-
 - *SPDX:* https://spdx.org/licenses/W3C-19980720.html
+
+- *SPDX:* http://spdx.org/licenses/W3C-19980720.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/268
 
@@ -192,25 +192,25 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/W3C-19980720.html][SPDX]] (all data [in
-  this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-19980720.yml][Scancode]]
-  (CC0-1.0)
-
-- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
-  license-compatibility-checker]]
-  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/W3C-19980720.html][SPDX]] (all data [in
+  this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-19980720.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -219,9 +219,9 @@
       "__impliedNames": [
           "W3C-19980720",
           "W3C Software Notice and License (1998-07-20)",
+          "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
           "scancode://w3c-software-19980720",
-          "W3C-SOFTWARE-19980720",
-          "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
+          "W3C-SOFTWARE-19980720"
       ],
       "__impliedId": "W3C-19980720",
       "__impliedComments": [
@@ -603,6 +603,14 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/W3C-19980720.html"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/268"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/W3C-19980720.json"
           ],
           [
@@ -610,16 +618,8 @@
               "http://www.w3.org/Consortium/Legal/copyright-software-19980720.html"
           ],
           [
-              "SPDX",
-              "https://spdx.org/licenses/W3C-19980720.html"
-          ],
-          [
               "Homepage",
               "http://www.w3.org/Consortium/Legal/copyright-software-19980720.html"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/268"
           ]
       ]
   }

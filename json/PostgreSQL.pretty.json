@@ -2,9 +2,9 @@
     "__impliedNames": [
         "PostgreSQL",
         "PostgreSQL License",
-        "scancode://postgresql",
         "postgresql",
-        "The PostgreSQL Licence"
+        "The PostgreSQL Licence",
+        "scancode://postgresql"
     ],
     "__impliedId": "PostgreSQL",
     "__isFsfFree": true,
@@ -555,19 +555,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/PostgreSQL.json"
-        ],
-        [
-            null,
-            "http://www.postgresql.org/about/licence"
+            "https://spdx.org/licenses/PostgreSQL.html"
         ],
         [
             null,
             "https://opensource.org/licenses/PostgreSQL"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/PostgreSQL"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/608"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/PostgreSQL.html"
+            "http://spdx.org/licenses/PostgreSQL.json"
+        ],
+        [
+            null,
+            "http://www.postgresql.org/about/licence"
         ],
         [
             "Homepage",
@@ -580,14 +588,6 @@
         [
             null,
             "http://www.opensource.org/licenses/PostgreSQL"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/PostgreSQL"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/608"
         ]
     ]
 }

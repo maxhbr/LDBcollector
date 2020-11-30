@@ -23,27 +23,27 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="131.69,-694 131.69,-800 597.45,-800 597.45,-694 131.69,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="288.33,-694 288.33,-800 440.81,-800 440.81,-694 288.33,-694"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="195.38,-526 195.38,-686 533.76,-686 533.76,-526 195.38,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="168.74,-526 168.74,-686 560.4,-686 560.4,-526 168.74,-526"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="168.74,-358 168.74,-518 560.4,-518 560.4,-358 168.74,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 713.14,-518 713.14,-412 16,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="145.34,-244 145.34,-350 583.8,-350 583.8,-244 145.34,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="131.69,-298 131.69,-404 597.45,-404 597.45,-298 131.69,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="288.33,-130 288.33,-236 440.81,-236 440.81,-130 288.33,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="195.38,-130 195.38,-290 533.76,-290 533.76,-130 195.38,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 713.14,-122 713.14,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="145.34,-16 145.34,-122 583.8,-122 583.8,-16 145.34,-16"/>
 </g>
 <!-- W3C(1) -->
 <g id="node1" class="node">
@@ -69,71 +69,71 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-774" rx="31.7" ry="18"/>
 <text text-anchor="middle" x="364.57" y="-770.3" font-family="Times-Roman" font-size="14.00">W3C</text>
 </g>
-<!-- W3C Software Notice and License (2002&#45;12&#45;31)(3) -->
+<!-- W3C License(3) -->
 <g id="node5" class="node">
-<title>W3C Software Notice and License (2002&#45;12&#45;31)(3)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-720" rx="224.76" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-716.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License (2002&#45;12&#45;31)</text>
+<title>W3C License(3)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-720" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-716.3" font-family="Times-Roman" font-size="14.00">W3C License</text>
+</g>
+<!-- License :: OSI Approved :: W3C License(4) -->
+<g id="node6" class="node">
+<title>License :: OSI Approved :: W3C License(4)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-660" rx="187.67" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-656.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: W3C License</text>
+</g>
+<!-- The W3C Software Notice and License(4) -->
+<g id="node7" class="node">
+<title>The W3C Software Notice and License(4)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-606" rx="180.87" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-602.3" font-family="Times-Roman" font-size="14.00">The W3C Software Notice and License</text>
 </g>
 <!-- W3C(4) -->
-<g id="node6" class="node">
-<title>W3C(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-660" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-656.3" font-family="Times-Roman" font-size="14.00">W3C</text>
-</g>
-<!-- W3C Software Notice and License(4) -->
-<g id="node7" class="node">
-<title>W3C Software Notice and License(4)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-606" rx="161.37" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-602.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License</text>
-</g>
-<!-- scancode://w3c(4) -->
 <g id="node8" class="node">
-<title>scancode://w3c(4)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-552" rx="79.89" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-548.3" font-family="Times-Roman" font-size="14.00">scancode://w3c</text>
-</g>
-<!-- License :: OSI Approved :: W3C License(5) -->
-<g id="node9" class="node">
-<title>License :: OSI Approved :: W3C License(5)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-492" rx="187.67" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-488.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: W3C License</text>
-</g>
-<!-- The W3C Software Notice and License(5) -->
-<g id="node10" class="node">
-<title>The W3C Software Notice and License(5)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-438" rx="180.87" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-434.3" font-family="Times-Roman" font-size="14.00">The W3C Software Notice and License</text>
+<title>W3C(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-552" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-548.3" font-family="Times-Roman" font-size="14.00">W3C</text>
 </g>
 <!-- W3C(5) -->
-<g id="node11" class="node">
+<g id="node9" class="node">
 <title>W3C(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-384" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-380.3" font-family="Times-Roman" font-size="14.00">W3C</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-492" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-488.3" font-family="Times-Roman" font-size="14.00">W3C</text>
+</g>
+<!-- W3C Software Notice and License (became active on December 31 2002)(5) -->
+<g id="node10" class="node">
+<title>W3C Software Notice and License (became active on December 31 2002)(5)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-438" rx="340.64" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-434.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License (became active on December 31 2002)</text>
 </g>
 <!-- W3C(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>W3C(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-324" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-320.3" font-family="Times-Roman" font-size="14.00">W3C</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-378" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-374.3" font-family="Times-Roman" font-size="14.00">W3C</text>
 </g>
-<!-- W3C Software Notice and License 20021231(6) -->
-<g id="node13" class="node">
-<title>W3C Software Notice and License 20021231(6)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-270" rx="211.46" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-266.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License 20021231</text>
+<!-- W3C Software Notice and License (2002&#45;12&#45;31)(6) -->
+<g id="node12" class="node">
+<title>W3C Software Notice and License (2002&#45;12&#45;31)(6)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-324" rx="224.76" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-320.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License (2002&#45;12&#45;31)</text>
 </g>
 <!-- W3C(7) -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>W3C(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-210" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-206.3" font-family="Times-Roman" font-size="14.00">W3C</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-264" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-260.3" font-family="Times-Roman" font-size="14.00">W3C</text>
 </g>
-<!-- W3C License(7) -->
+<!-- W3C Software Notice and License(7) -->
+<g id="node14" class="node">
+<title>W3C Software Notice and License(7)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-210" rx="161.37" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-206.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License</text>
+</g>
+<!-- scancode://w3c(7) -->
 <g id="node15" class="node">
-<title>W3C License(7)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-156" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-152.3" font-family="Times-Roman" font-size="14.00">W3C License</text>
+<title>scancode://w3c(7)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-156" rx="79.89" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://w3c</text>
 </g>
 <!-- W3C(8) -->
 <g id="node16" class="node">
@@ -141,11 +141,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="364.57" cy="-96" rx="31.7" ry="18"/>
 <text text-anchor="middle" x="364.57" y="-92.3" font-family="Times-Roman" font-size="14.00">W3C</text>
 </g>
-<!-- W3C Software Notice and License (became active on December 31 2002)(8) -->
+<!-- W3C Software Notice and License 20021231(8) -->
 <g id="node17" class="node">
-<title>W3C Software Notice and License (became active on December 31 2002)(8)</title>
-<ellipse fill="white" stroke="white" cx="364.57" cy="-42" rx="340.64" ry="18"/>
-<text text-anchor="middle" x="364.57" y="-38.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License (became active on December 31 2002)</text>
+<title>W3C Software Notice and License 20021231(8)</title>
+<ellipse fill="white" stroke="white" cx="364.57" cy="-42" rx="211.46" ry="18"/>
+<text text-anchor="middle" x="364.57" y="-38.3" font-family="Times-Roman" font-size="14.00">W3C Software Notice and License 20021231</text>
 </g>
 </g>
 </svg>

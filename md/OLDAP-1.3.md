@@ -31,9 +31,9 @@ URLs
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1
 
--   **SPDX:** http://spdx.org/licenses/OLDAP-1.3.json
-
 -   **SPDX:** https://spdx.org/licenses/OLDAP-1.3.html
+
+-   **SPDX:** http://spdx.org/licenses/OLDAP-1.3.json
 
 Text
 ----
@@ -186,19 +186,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/OLDAP-1.3.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode")
-    (CC0-1.0)
-
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/OLDAP-1.3.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -385,15 +385,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/OLDAP-1.3.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/OLDAP-1.3.json"
             ],
             [
                 null,
                 "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/OLDAP-1.3.html"
             ],
             [
                 "Homepage",

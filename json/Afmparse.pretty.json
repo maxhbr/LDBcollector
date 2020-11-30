@@ -185,15 +185,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Afmparse.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Afmparse.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Afmparse"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Afmparse.html"
         ],
         [
             "Homepage",

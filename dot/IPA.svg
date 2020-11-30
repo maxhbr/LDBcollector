@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="73.84,-358 73.84,-518 292.63,-518 292.63,-358 73.84,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="91.39,-412 91.39,-518 275.08,-518 275.08,-412 91.39,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="91.39,-244 91.39,-350 275.08,-350 275.08,-244 91.39,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 350.47,-404 350.47,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="91.39,-130 91.39,-236 275.08,-236 275.08,-130 91.39,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="91.39,-184 91.39,-290 275.08,-290 275.08,-184 91.39,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 350.47,-122 350.47,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="73.84,-16 73.84,-176 292.63,-176 292.63,-16 73.84,-16"/>
 </g>
 <!-- IPA(1) -->
 <g id="node1" class="node">
@@ -61,53 +61,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-492" rx="27" ry="18"/>
 <text text-anchor="middle" x="183.24" y="-488.3" font-family="Times-Roman" font-size="14.00">IPA</text>
 </g>
-<!-- IPA Font License 1.0(3) -->
+<!-- IPA Font License(3) -->
 <g id="node5" class="node">
-<title>IPA Font License 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-438" rx="101.28" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-434.3" font-family="Times-Roman" font-size="14.00">IPA Font License 1.0</text>
-</g>
-<!-- scancode://ipa&#45;font(3) -->
-<g id="node6" class="node">
-<title>scancode://ipa&#45;font(3)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-384" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://ipa&#45;font</text>
+<title>IPA Font License(3)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-438" rx="83.69" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-434.3" font-family="Times-Roman" font-size="14.00">IPA Font License</text>
 </g>
 <!-- IPA(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>IPA(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-324" rx="27" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-320.3" font-family="Times-Roman" font-size="14.00">IPA</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-374.3" font-family="Times-Roman" font-size="14.00">IPA</text>
 </g>
-<!-- IPA Font License(4) -->
-<g id="node8" class="node">
-<title>IPA Font License(4)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-270" rx="83.69" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-266.3" font-family="Times-Roman" font-size="14.00">IPA Font License</text>
+<!-- IPA Font License Agreement v1.0(4) -->
+<g id="node7" class="node">
+<title>IPA Font License Agreement v1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-324" rx="159.47" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-320.3" font-family="Times-Roman" font-size="14.00">IPA Font License Agreement v1.0</text>
 </g>
 <!-- IPA(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>IPA(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-210" rx="27" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-206.3" font-family="Times-Roman" font-size="14.00">IPA</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-264" rx="27" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-260.3" font-family="Times-Roman" font-size="14.00">IPA</text>
 </g>
 <!-- IPA Font License(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>IPA Font License(5)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-156" rx="83.69" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-152.3" font-family="Times-Roman" font-size="14.00">IPA Font License</text>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-210" rx="83.69" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-206.3" font-family="Times-Roman" font-size="14.00">IPA Font License</text>
 </g>
 <!-- IPA(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>IPA(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-96" rx="27" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-92.3" font-family="Times-Roman" font-size="14.00">IPA</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="183.24" cy="-150" rx="27" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-146.3" font-family="Times-Roman" font-size="14.00">IPA</text>
 </g>
-<!-- IPA Font License Agreement v1.0(6) -->
+<!-- IPA Font License 1.0(6) -->
+<g id="node11" class="node">
+<title>IPA Font License 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-96" rx="101.28" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-92.3" font-family="Times-Roman" font-size="14.00">IPA Font License 1.0</text>
+</g>
+<!-- scancode://ipa&#45;font(6) -->
 <g id="node12" class="node">
-<title>IPA Font License Agreement v1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-42" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-38.3" font-family="Times-Roman" font-size="14.00">IPA Font License Agreement v1.0</text>
+<title>scancode://ipa&#45;font(6)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-42" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ipa&#45;font</text>
 </g>
 </g>
 </svg>

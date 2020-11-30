@@ -1,17 +1,17 @@
 {
     "__impliedNames": [
         "MirOS",
-        "The MirOS Licence",
         "MirOS License",
-        "scancode://mir-os",
+        "MirOS Licence",
         "The MirOS Licence (MirOS)",
-        "MirOS Licence"
+        "The MirOS Licence",
+        "scancode://mir-os"
     ],
     "__impliedId": "MirOS",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MirOS",
-        "The MirOS Licence"
+        "The MirOS Licence",
+        "MirOS"
     ],
     "__impliedComments": [
         [
@@ -505,15 +505,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MirOS.json"
+            "https://spdx.org/licenses/MirOS.html"
         ],
         [
             null,
             "https://opensource.org/licenses/MirOS"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/MirOS"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1554"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/MirOS.html"
+            "http://spdx.org/licenses/MirOS.json"
         ],
         [
             "Homepage",
@@ -526,14 +534,6 @@
         [
             null,
             "http://www.opensource.org/licenses/MirOS"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MirOS"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/1554"
         ]
     ]
 }

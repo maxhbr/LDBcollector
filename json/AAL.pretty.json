@@ -2,9 +2,9 @@
     "__impliedNames": [
         "AAL",
         "Attribution Assurance License",
-        "scancode://attribution",
+        "Attribution Assurance Licenses",
         "License :: OSI Approved :: Attribution Assurance License",
-        "Attribution Assurance Licenses"
+        "scancode://attribution"
     ],
     "__impliedId": "AAL",
     "__isFsfFree": true,
@@ -325,15 +325,23 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/AAL.html"
+        ],
+        [
+            null,
+            "https://opensource.org/licenses/AAL"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/AAL"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/AAL.json"
         ],
         [
             null,
             "https://opensource.org/licenses/attribution"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/AAL.html"
         ],
         [
             "Homepage",
@@ -346,14 +354,6 @@
         [
             null,
             "http://www.opensource.org/licenses/attribution"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/AAL"
-        ],
-        [
-            null,
-            "https://opensource.org/licenses/AAL"
         ]
     ]
 }

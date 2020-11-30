@@ -9,15 +9,15 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `Artistic License (v. 2.0)`
 
--   `scancode://artistic-2.0`
+-   `artistic-license-2.0`
 
 -   `Artistic License, Version 2.0`
 
 -   `License :: OSI Approved :: Artistic License`
 
--   `artistic-license-2.0`
-
 -   `The Artistic License 2.0`
+
+-   `scancode://artistic-2.0`
 
 Description
 -----------
@@ -84,14 +84,14 @@ URLs
 
 -   **Homepage:** http://www.perlfoundation.org/
 
+-   **OSI Page:** https://opensource.org/licenses/Artistic-2.0
+
 -   **OSI Page:**
     http://www.opensource.org/licenses/artistic-license-2.0.php
 
--   **OSI Page:** https://opensource.org/licenses/Artistic-2.0
+-   **SPDX:** https://spdx.org/licenses/Artistic-2.0.html
 
 -   **SPDX:** http://spdx.org/licenses/Artistic-2.0.json
-
--   **SPDX:** https://spdx.org/licenses/Artistic-2.0.html
 
 -   **open-license:** http://open-license.hitachi.com/licenses/562
 
@@ -251,30 +251,23 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-2.0.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -285,24 +278,31 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-2.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Artistic-2.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -312,18 +312,18 @@ Raw Data
             "Artistic 2.0",
             "Artistic License (v. 2.0)",
             "Artistic License 2.0",
-            "scancode://artistic-2.0",
             "artistic-2.0",
+            "artistic-license-2.0",
             "Artistic License, Version 2.0",
             "License :: OSI Approved :: Artistic License",
-            "artistic-license-2.0",
-            "The Artistic License 2.0"
+            "The Artistic License 2.0",
+            "scancode://artistic-2.0"
         ],
         "__impliedId": "Artistic-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "Artistic 2.0",
-            "Artistic License"
+            "Artistic License",
+            "Artistic 2.0"
         ],
         "__impliedComments": [
             [
@@ -1247,6 +1247,22 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Artistic-2.0.html"
+            ],
+            [
+                null,
+                "https://opensource.org/licenses/Artistic-2.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Artistic-2.0"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/562"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Artistic-2.0.json"
             ],
             [
@@ -1256,10 +1272,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/artistic-license-2.0"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Artistic-2.0.html"
             ],
             [
                 "Homepage",
@@ -1272,18 +1284,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/artistic-license-2.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Artistic-2.0"
-            ],
-            [
-                null,
-                "https://opensource.org/licenses/Artistic-2.0"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/562"
             ]
         ]
     }

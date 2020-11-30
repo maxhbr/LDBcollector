@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="92.69,-244 92.69,-350 415.47,-350 415.47,-244 92.69,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 492.16,-350 492.16,-244 16,-244"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="137.54,-130 137.54,-236 370.62,-236 370.62,-130 137.54,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="92.69,-130 92.69,-236 415.47,-236 415.47,-130 92.69,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 492.16,-122 492.16,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="137.54,-16 137.54,-122 370.62,-122 370.62,-16 137.54,-16"/>
 </g>
 <!-- OGL&#45;UK&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -41,11 +41,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="254.08" cy="-324" rx="63.09" ry="18"/>
 <text text-anchor="middle" x="254.08" y="-320.3" font-family="Times-Roman" font-size="14.00">OGL&#45;UK&#45;1.0</text>
 </g>
-<!-- Open Government Licence v1.0(2) -->
+<!-- Open Government Licence 1.0 (United Kingdom)(2) -->
 <g id="node3" class="node">
-<title>Open Government Licence v1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="254.08" cy="-270" rx="153.27" ry="18"/>
-<text text-anchor="middle" x="254.08" y="-266.3" font-family="Times-Roman" font-size="14.00">Open Government Licence v1.0</text>
+<title>Open Government Licence 1.0 (United Kingdom)(2)</title>
+<ellipse fill="white" stroke="white" cx="254.08" cy="-270" rx="230.16" ry="18"/>
+<text text-anchor="middle" x="254.08" y="-266.3" font-family="Times-Roman" font-size="14.00">Open Government Licence 1.0 (United Kingdom)</text>
 </g>
 <!-- OGL&#45;UK&#45;1.0(3) -->
 <g id="node4" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="254.08" cy="-210" rx="63.09" ry="18"/>
 <text text-anchor="middle" x="254.08" y="-206.3" font-family="Times-Roman" font-size="14.00">OGL&#45;UK&#45;1.0</text>
 </g>
-<!-- scancode://ogl&#45;uk&#45;1.0(3) -->
+<!-- Open Government Licence v1.0(3) -->
 <g id="node5" class="node">
-<title>scancode://ogl&#45;uk&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="254.08" cy="-156" rx="108.58" ry="18"/>
-<text text-anchor="middle" x="254.08" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://ogl&#45;uk&#45;1.0</text>
+<title>Open Government Licence v1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="254.08" cy="-156" rx="153.27" ry="18"/>
+<text text-anchor="middle" x="254.08" y="-152.3" font-family="Times-Roman" font-size="14.00">Open Government Licence v1.0</text>
 </g>
 <!-- OGL&#45;UK&#45;1.0(4) -->
 <g id="node6" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="254.08" cy="-96" rx="63.09" ry="18"/>
 <text text-anchor="middle" x="254.08" y="-92.3" font-family="Times-Roman" font-size="14.00">OGL&#45;UK&#45;1.0</text>
 </g>
-<!-- Open Government Licence 1.0 (United Kingdom)(4) -->
+<!-- scancode://ogl&#45;uk&#45;1.0(4) -->
 <g id="node7" class="node">
-<title>Open Government Licence 1.0 (United Kingdom)(4)</title>
-<ellipse fill="white" stroke="white" cx="254.08" cy="-42" rx="230.16" ry="18"/>
-<text text-anchor="middle" x="254.08" y="-38.3" font-family="Times-Roman" font-size="14.00">Open Government Licence 1.0 (United Kingdom)</text>
+<title>scancode://ogl&#45;uk&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="254.08" cy="-42" rx="108.58" ry="18"/>
+<text text-anchor="middle" x="254.08" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ogl&#45;uk&#45;1.0</text>
 </g>
 </g>
 </svg>

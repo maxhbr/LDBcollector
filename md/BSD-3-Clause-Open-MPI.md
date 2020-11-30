@@ -5,9 +5,9 @@ BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 **Other Names:**
 
--   `scancode://bsd-3-clause-open-mpi`
-
 -   `Open MPI License`
+
+-   `scancode://bsd-3-clause-open-mpi`
 
 Comments on (easy) usability
 ----------------------------
@@ -111,24 +111,24 @@ Raw Data
 
 -   LicenseName
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html "SPDX")
     (all data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml "Scancode")
     (CC0-1.0)
 
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "BSD-3-Clause-Open-MPI",
+            "Open MPI License",
             "BSD 3-Clause Open MPI variant",
-            "scancode://bsd-3-clause-open-mpi",
-            "Open MPI License"
+            "scancode://bsd-3-clause-open-mpi"
         ],
         "__impliedId": "BSD-3-Clause-Open-MPI",
         "__impliedComments": [
@@ -352,6 +352,10 @@ Raw Data
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright\n  notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright\n  notice, this list of conditions and the following disclaimer listed\n  in this license in the documentation and/or other materials\n  provided with the distribution.\n\n- Neither the name of the copyright holders nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nThe copyright holders provide no reassurances that the source code\nprovided does not infringe any patent, copyright, or any other\nintellectual property rights of third parties.  The copyright holders\ndisclaim any liability to any recipient for claims brought against\nrecipient by any third party for infringement of that parties\nintellectual property rights.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/831"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/BSD-3-Clause-Open-MPI.json"
             ],
@@ -366,10 +370,6 @@ Raw Data
             [
                 "Homepage",
                 "https://www.open-mpi.org/community/license.php"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/831"
             ]
         ]
     }

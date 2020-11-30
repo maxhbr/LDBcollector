@@ -43,9 +43,9 @@
 
 - *OSI Page:* http://opensource.org/licenses/Artistic-1.0
 
-- *SPDX:* http://spdx.org/licenses/Artistic-1.0-cl8.json
-
 - *SPDX:* https://spdx.org/licenses/Artistic-1.0-cl8.html
+
+- *SPDX:* http://spdx.org/licenses/Artistic-1.0-cl8.json
 
 - http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
@@ -165,21 +165,21 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/Artistic-1.0-cl8.html][SPDX]] (all data
-  [in this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml][Scancode]]
-  (CC0-1.0)
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]] (NOASSERTION)
 
 - [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
-- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]] (NOASSERTION)
+- [[https://spdx.org/licenses/Artistic-1.0-cl8.html][SPDX]] (all data
+  [in this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -432,15 +432,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/Artistic-1.0-cl8.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/Artistic-1.0-cl8.json"
           ],
           [
               null,
               "https://opensource.org/licenses/Artistic-1.0"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/Artistic-1.0-cl8.html"
           ],
           [
               "Homepage",

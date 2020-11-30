@@ -2,8 +2,8 @@
     "__impliedNames": [
         "XFree86-1.1",
         "XFree86 License 1.1",
-        "scancode://xfree86-1.1",
-        "XFree86 1.1 License"
+        "XFree86 1.1 License",
+        "scancode://xfree86-1.1"
     ],
     "__impliedId": "XFree86-1.1",
     "__hasPatentHint": false,
@@ -324,6 +324,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/XFree86-1.1.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/319"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/XFree86-1.1.json"
         ],
         [
@@ -331,16 +339,8 @@
             "http://www.xfree86.org/current/LICENSE4.html"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/XFree86-1.1.html"
-        ],
-        [
             "Homepage",
             "http://www.xfree86.org/current/LICENSE4.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/319"
         ]
     ]
 }

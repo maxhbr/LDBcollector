@@ -2,12 +2,12 @@
     "__impliedNames": [
         "LPPL-1.3c",
         "LaTeX Project Public License v1.3c",
-        "scancode://lppl-1.3c",
-        "LPPL 1.3c",
         "lppl-1.3c",
-        "LaTeX Project Public License, Version 1.3c",
         "LaTeX Project Public License 1.3c",
-        "LaTeX Project Public License Version 1.3c"
+        "LaTeX Project Public License, Version 1.3c",
+        "LaTeX Project Public License Version 1.3c",
+        "scancode://lppl-1.3c",
+        "LPPL 1.3c"
     ],
     "__impliedId": "LPPL-1.3c",
     "__impliedComments": [
@@ -738,27 +738,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/LPPL-1.3c.json"
-        ],
-        [
-            null,
-            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+            "https://spdx.org/licenses/LPPL-1.3c.html"
         ],
         [
             null,
             "https://opensource.org/licenses/LPPL-1.3c"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/LPPL-1.3c.html"
-        ],
-        [
-            "Homepage",
-            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
-        ],
-        [
-            null,
-            "http://www.opensource.org/licenses/LPPL-1.3c"
         ],
         [
             "OSI Page",
@@ -767,6 +751,22 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/649"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/LPPL-1.3c.json"
+        ],
+        [
+            null,
+            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+        ],
+        [
+            "Homepage",
+            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+        ],
+        [
+            null,
+            "http://www.opensource.org/licenses/LPPL-1.3c"
         ]
     ]
 }

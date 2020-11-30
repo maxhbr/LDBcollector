@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MTLL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MTLL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MTLL.html"
         ],
         [
             "Homepage",

@@ -28,9 +28,9 @@ URLs
 -   **Homepage:**
     https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h
 
--   **SPDX:** http://spdx.org/licenses/Linux-OpenIB.json
-
 -   **SPDX:** https://spdx.org/licenses/Linux-OpenIB.html
+
+-   **SPDX:** http://spdx.org/licenses/Linux-OpenIB.json
 
 -   https://github.com/spdx/license-list-XML/issues/620
 
@@ -65,12 +65,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/Linux-OpenIB.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode")
     (CC0-1.0)
@@ -250,15 +250,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Linux-OpenIB.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Linux-OpenIB.json"
             ],
             [
                 null,
                 "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Linux-OpenIB.html"
             ],
             [
                 "Homepage",

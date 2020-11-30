@@ -42,9 +42,9 @@ URLs
 -   **Homepage:**
     ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
 
--   **SPDX:** http://spdx.org/licenses/BSD-4-Clause-UC.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-4-Clause-UC.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-4-Clause-UC.json
 
 -   http://www.freebsd.org/copyright/license.html
 
@@ -132,26 +132,26 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode")
-    (CC0-1.0)
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [SPDX](https://spdx.org/licenses/BSD-4-Clause-UC.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original-uc.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -503,15 +503,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-4-Clause-UC.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-4-Clause-UC.json"
             ],
             [
                 null,
                 "http://www.freebsd.org/copyright/license.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-4-Clause-UC.html"
             ],
             [
                 "Homepage",

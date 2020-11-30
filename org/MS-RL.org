@@ -9,9 +9,9 @@
 
 *Other Names:*
 
-- =scancode://ms-rl=
-
 - =Microsoft Reciprocal License (MS-RL)=
+
+- =scancode://ms-rl=
 
 ** Description
 
@@ -81,17 +81,17 @@
 
 - *Homepage:* http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
 
-- *OSI Page:* http://www.opensource.org/licenses/ms-rl.html
-
 - *OSI Page:* https://opensource.org/licenses/MS-RL
+
+- *OSI Page:* http://www.opensource.org/licenses/ms-rl.html
 
 - *SPDX:* http://spdx.org/licenses/MS-RL.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/586
 
-- http://www.microsoft.com/opensource/licenses.mspx
-
 - https://spdx.org/licenses/MS-RL.html
+
+- http://www.microsoft.com/opensource/licenses.mspx
 
 - http://www.microsoft.com/en-us/openness/licenses.aspx#MRL
 
@@ -182,17 +182,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/MS-RL.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
-  (CC0-1.0)
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
@@ -200,9 +191,6 @@
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
-
-- [[https://opensource.org/licenses/][OpenSourceInitiative]]
-  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
   license-compatibility-checker]]
@@ -216,8 +204,20 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
+- [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
+
+- [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
+  (CC0-1.0)
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/MS-RL.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -226,9 +226,9 @@
       "__impliedNames": [
           "MS-RL",
           "Microsoft Reciprocal License",
-          "scancode://ms-rl",
           "ms-rl",
-          "Microsoft Reciprocal License (MS-RL)"
+          "Microsoft Reciprocal License (MS-RL)",
+          "scancode://ms-rl"
       ],
       "__impliedId": "MS-RL",
       "__isFsfFree": true,
@@ -888,20 +888,28 @@
       "__impliedText": "Microsoft Reciprocal License (Ms-RL)\n\nThis license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.\n\n1. Definitions\n      The terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\" have the same meaning here as under U.S. copyright law.\n      A \"contribution\" is the original software, or any additions or changes to the software.\n      A \"contributor\" is any person that distributes its contribution under this license.\n      \"Licensed patents\" are a contributor's patent claims that read directly on its contribution.\n\n2. Grant of Rights\n      (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.\n      (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.\n\n3. Conditions and Limitations\n      (A) Reciprocal Grants- For any file you distribute that contains code from the software (in source code or binary format), you must provide recipients the source code to that file along with a copy of this license, which license will govern that file. You may license other files that are entirely your own work and do not contain code from the software under any terms you choose.\n      (B) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.\n      (C) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.\n      (D) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.\n      (E) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.\n      (F) The software is licensed \"as-is.\" You bear the risk of using it. The contributors give no express warranties, guarantees, or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.",
       "__impliedURLs": [
           [
-              "SPDX",
-              "http://spdx.org/licenses/MS-RL.json"
-          ],
-          [
               null,
-              "http://www.microsoft.com/opensource/licenses.mspx"
+              "https://spdx.org/licenses/MS-RL.html"
           ],
           [
               null,
               "https://opensource.org/licenses/MS-RL"
           ],
           [
+              "OSI Page",
+              "https://opensource.org/licenses/MS-RL"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/586"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/MS-RL.json"
+          ],
+          [
               null,
-              "https://spdx.org/licenses/MS-RL.html"
+              "http://www.microsoft.com/opensource/licenses.mspx"
           ],
           [
               "Homepage",
@@ -918,14 +926,6 @@
           [
               null,
               "http://www.opensource.org/licenses/MS-RL"
-          ],
-          [
-              "OSI Page",
-              "https://opensource.org/licenses/MS-RL"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/586"
           ]
       ]
   }

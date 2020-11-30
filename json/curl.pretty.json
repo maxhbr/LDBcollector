@@ -156,15 +156,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/curl.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/curl.json"
         ],
         [
             null,
             "https://github.com/bagder/curl/blob/master/COPYING"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/curl.html"
         ],
         [
             "Homepage",

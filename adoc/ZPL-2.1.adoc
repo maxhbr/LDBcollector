@@ -11,9 +11,9 @@
 
 *Other Names:*
 
+* `+Zope Public License (ZPL) Version 2.1+`
 * `+scancode://zpl-2.1+`
 * `+ZPL 2.1+`
-* `+Zope Public License (ZPL) Version 2.1+`
 
 === Comments on (easy) usability
 
@@ -38,8 +38,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.zope.org/Resources/License/
-* *SPDX:* http://spdx.org/licenses/ZPL-2.1.json
 * *SPDX:* https://spdx.org/licenses/ZPL-2.1.html
+* *SPDX:* http://spdx.org/licenses/ZPL-2.1.json
 * *open-license:* http://open-license.hitachi.com/licenses/866
 * http://old.zope.org/Resources/ZPL/
 * http://www.zope.org/Resources/License/ZPL-2.1
@@ -172,23 +172,23 @@ OF SUCH DAMAGE.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/ZPL-2.1.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml[Scancode]
-(CC0-1.0)
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/ZPL-2.1.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -197,9 +197,9 @@ Policy]
     "__impliedNames": [
         "ZPL-2.1",
         "Zope Public License 2.1",
+        "Zope Public License (ZPL) Version 2.1",
         "scancode://zpl-2.1",
-        "ZPL 2.1",
-        "Zope Public License (ZPL) Version 2.1"
+        "ZPL 2.1"
     ],
     "__impliedId": "ZPL-2.1",
     "__impliedComments": [
@@ -608,15 +608,19 @@ Policy]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ZPL-2.1.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/866"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ZPL-2.1.json"
         ],
         [
             null,
             "http://old.zope.org/Resources/ZPL/"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ZPL-2.1.html"
         ],
         [
             "Homepage",
@@ -629,10 +633,6 @@ Policy]
         [
             null,
             "http://www.zope.org/Resources/ZPL"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/866"
         ]
     ]
 }

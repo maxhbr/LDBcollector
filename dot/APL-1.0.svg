@@ -19,19 +19,19 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-466 55,-572 338.77,-572 338.77,-466 55,-466"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-412 55,-572 338.77,-572 338.77,-412 55,-412"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="82.94,-298 82.94,-458 310.83,-458 310.83,-298 82.94,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 377.77,-404 377.77,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 377.77,-290 377.77,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-184 55,-290 338.77,-290 338.77,-184 55,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-16 55,-176 338.77,-176 338.77,-16 55,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="82.94,-16 82.94,-176 310.83,-176 310.83,-16 82.94,-16"/>
 </g>
 <!-- APL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -51,11 +51,11 @@
 <ellipse fill="white" stroke="white" cx="196.88" cy="-492" rx="133.78" ry="18"/>
 <text text-anchor="middle" x="196.88" y="-488.3" font-family="Times-Roman" font-size="14.00">Adaptive Public License 1.0</text>
 </g>
-<!-- APL 1.0(3) -->
+<!-- apl1.0(2) -->
 <g id="node4" class="node">
-<title>APL 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="196.88" cy="-432" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-428.3" font-family="Times-Roman" font-size="14.00">APL 1.0</text>
+<title>apl1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="196.88" cy="-438" rx="38.99" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-434.3" font-family="Times-Roman" font-size="14.00">apl1.0</text>
 </g>
 <!-- APL&#45;1.0(3) -->
 <g id="node5" class="node">
@@ -63,11 +63,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="196.88" cy="-378" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="196.88" y="-374.3" font-family="Times-Roman" font-size="14.00">APL&#45;1.0</text>
 </g>
-<!-- scancode://adapt&#45;1.0(3) -->
+<!-- Adaptive Public License, Version 1.0(3) -->
 <g id="node6" class="node">
-<title>scancode://adapt&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="196.88" cy="-324" rx="105.88" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://adapt&#45;1.0</text>
+<title>Adaptive Public License, Version 1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="196.88" cy="-324" rx="172.77" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-320.3" font-family="Times-Roman" font-size="14.00">Adaptive Public License, Version 1.0</text>
 </g>
 <!-- APL&#45;1.0(4) -->
 <g id="node7" class="node">
@@ -75,29 +75,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="196.88" cy="-264" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="196.88" y="-260.3" font-family="Times-Roman" font-size="14.00">APL&#45;1.0</text>
 </g>
-<!-- Adaptive Public License, Version 1.0(4) -->
+<!-- Adaptive Public License 1.0(4) -->
 <g id="node8" class="node">
-<title>Adaptive Public License, Version 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="196.88" cy="-210" rx="172.77" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Adaptive Public License, Version 1.0</text>
+<title>Adaptive Public License 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="196.88" cy="-210" rx="133.78" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Adaptive Public License 1.0</text>
+</g>
+<!-- APL 1.0(5) -->
+<g id="node9" class="node">
+<title>APL 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="196.88" cy="-150" rx="44.69" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-146.3" font-family="Times-Roman" font-size="14.00">APL 1.0</text>
 </g>
 <!-- APL&#45;1.0(5) -->
-<g id="node9" class="node">
-<title>APL&#45;1.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="196.88" cy="-150" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-146.3" font-family="Times-Roman" font-size="14.00">APL&#45;1.0</text>
-</g>
-<!-- Adaptive Public License 1.0(5) -->
 <g id="node10" class="node">
-<title>Adaptive Public License 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="196.88" cy="-96" rx="133.78" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-92.3" font-family="Times-Roman" font-size="14.00">Adaptive Public License 1.0</text>
+<title>APL&#45;1.0(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="196.88" cy="-96" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-92.3" font-family="Times-Roman" font-size="14.00">APL&#45;1.0</text>
 </g>
-<!-- apl1.0(5) -->
+<!-- scancode://adapt&#45;1.0(5) -->
 <g id="node11" class="node">
-<title>apl1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="196.88" cy="-42" rx="38.99" ry="18"/>
-<text text-anchor="middle" x="196.88" y="-38.3" font-family="Times-Roman" font-size="14.00">apl1.0</text>
+<title>scancode://adapt&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="196.88" cy="-42" rx="105.88" ry="18"/>
+<text text-anchor="middle" x="196.88" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://adapt&#45;1.0</text>
 </g>
 </g>
 </svg>

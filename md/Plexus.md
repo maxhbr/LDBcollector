@@ -5,11 +5,11 @@ Plexus Classworlds License (Plexus)
 
 **Other Names:**
 
+-   `DOM4J License`
+
 -   `scancode://dom4j`
 
 -   `Dom4j License`
-
--   `DOM4J License`
 
 Comments on (easy) usability
 ----------------------------
@@ -48,9 +48,9 @@ URLs
 
 -   **Homepage:** http://www.dom4j.org/
 
--   **SPDX:** http://spdx.org/licenses/Plexus.json
-
 -   **SPDX:** https://spdx.org/licenses/Plexus.html
+
+-   **SPDX:** http://spdx.org/licenses/Plexus.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/288
 
@@ -159,15 +159,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Plexus.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -180,15 +174,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/Plexus.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Plexus",
             "Plexus Classworlds License",
+            "DOM4J License",
             "scancode://dom4j",
-            "Dom4j License",
-            "DOM4J License"
+            "Dom4j License"
         ],
         "__impliedId": "Plexus",
         "__isFsfFree": true,
@@ -604,15 +604,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Plexus.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/288"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Plexus.json"
             ],
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Plexus.html"
             ],
             [
                 "Homepage",
@@ -637,10 +641,6 @@ Raw Data
             [
                 null,
                 "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/288"
             ]
         ]
     }

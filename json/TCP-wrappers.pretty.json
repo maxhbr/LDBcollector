@@ -187,15 +187,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TCP-wrappers.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TCP-wrappers.json"
         ],
         [
             null,
             "http://rc.quest.com/topics/openssh/license.php#tcpwrappers"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TCP-wrappers.html"
         ],
         [
             "Homepage",

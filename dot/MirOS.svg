@@ -19,7 +19,7 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="53.05,-526 53.05,-632 257.53,-632 257.53,-526 53.05,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="72.54,-526 72.54,-632 238.03,-632 238.03,-526 72.54,-526"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="57.6,-244 57.6,-404 252.98,-404 252.98,-244 57.6,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 294.58,-404 294.58,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 294.58,-236 294.58,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="53.05,-184 53.05,-290 257.53,-290 257.53,-184 53.05,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="72.54,-16 72.54,-122 238.03,-122 238.03,-16 72.54,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="57.6,-16 57.6,-176 252.98,-176 252.98,-16 57.6,-16"/>
 </g>
 <!-- MirOS(1) -->
 <g id="node1" class="node">
@@ -49,11 +49,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-606" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="155.29" y="-602.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- The MirOS Licence(2) -->
+<!-- MirOS License(2) -->
 <g id="node3" class="node">
-<title>The MirOS Licence(2)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-552" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-548.3" font-family="Times-Roman" font-size="14.00">The MirOS Licence</text>
+<title>MirOS License(2)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-552" rx="74.99" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-548.3" font-family="Times-Roman" font-size="14.00">MirOS License</text>
 </g>
 <!-- MirOS(3) -->
 <g id="node4" class="node">
@@ -61,11 +61,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-492" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="155.29" y="-488.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- MirOS License(3) -->
+<!-- MirOS Licence(3) -->
 <g id="node5" class="node">
-<title>MirOS License(3)</title>
+<title>MirOS Licence(3)</title>
 <ellipse fill="white" stroke="white" cx="155.29" cy="-438" rx="74.99" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-434.3" font-family="Times-Roman" font-size="14.00">MirOS License</text>
+<text text-anchor="middle" x="155.29" y="-434.3" font-family="Times-Roman" font-size="14.00">MirOS Licence</text>
 </g>
 <!-- MirOS(4) -->
 <g id="node6" class="node">
@@ -73,41 +73,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-378" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="155.29" y="-374.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- MirOS License(4) -->
+<!-- The MirOS Licence (MirOS)(4) -->
 <g id="node7" class="node">
-<title>MirOS License(4)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-324" rx="74.99" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-320.3" font-family="Times-Roman" font-size="14.00">MirOS License</text>
-</g>
-<!-- scancode://mir&#45;os(4) -->
-<g id="node8" class="node">
-<title>scancode://mir&#45;os(4)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-270" rx="89.88" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://mir&#45;os</text>
+<title>The MirOS Licence (MirOS)(4)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-324" rx="131.08" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-320.3" font-family="Times-Roman" font-size="14.00">The MirOS Licence (MirOS)</text>
 </g>
 <!-- MirOS(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>MirOS(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-210" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-206.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-264" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-260.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- The MirOS Licence (MirOS)(5) -->
-<g id="node10" class="node">
-<title>The MirOS Licence (MirOS)(5)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-156" rx="131.08" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-152.3" font-family="Times-Roman" font-size="14.00">The MirOS Licence (MirOS)</text>
+<!-- The MirOS Licence(5) -->
+<g id="node9" class="node">
+<title>The MirOS Licence(5)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-210" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-206.3" font-family="Times-Roman" font-size="14.00">The MirOS Licence</text>
 </g>
 <!-- MirOS(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>MirOS(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-96" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-92.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.29" cy="-150" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-146.3" font-family="Times-Roman" font-size="14.00">MirOS</text>
 </g>
-<!-- MirOS Licence(6) -->
+<!-- MirOS License(6) -->
+<g id="node11" class="node">
+<title>MirOS License(6)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-96" rx="74.99" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-92.3" font-family="Times-Roman" font-size="14.00">MirOS License</text>
+</g>
+<!-- scancode://mir&#45;os(6) -->
 <g id="node12" class="node">
-<title>MirOS Licence(6)</title>
-<ellipse fill="white" stroke="white" cx="155.29" cy="-42" rx="74.99" ry="18"/>
-<text text-anchor="middle" x="155.29" y="-38.3" font-family="Times-Roman" font-size="14.00">MirOS Licence</text>
+<title>scancode://mir&#45;os(6)</title>
+<ellipse fill="white" stroke="white" cx="155.29" cy="-42" rx="89.88" ry="18"/>
+<text text-anchor="middle" x="155.29" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://mir&#45;os</text>
 </g>
 </g>
 </svg>

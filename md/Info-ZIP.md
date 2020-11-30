@@ -5,13 +5,13 @@ Info-ZIP License (Info-ZIP)
 
 **Other Names:**
 
--   `scancode://info-zip`
-
 -   `Info-ZIP license (version 2009-Jan-02)`
 
 -   `Info-ZIP copyright and license (version 2005-Feb-10)`
 
 -   `Info-ZIP license (Version 2007-Mar-04)`
+
+-   `scancode://info-zip`
 
 Comments on (easy) usability
 ----------------------------
@@ -35,9 +35,9 @@ URLs
 
 -   **Homepage:** http://www.info-zip.org/doc/
 
--   **SPDX:** http://spdx.org/licenses/Info-ZIP.json
-
 -   **SPDX:** https://spdx.org/licenses/Info-ZIP.html
+
+-   **SPDX:** http://spdx.org/licenses/Info-ZIP.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/365
 
@@ -86,27 +86,27 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Info-ZIP.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Info-ZIP.html "SPDX") (all data
+    \[in this repository\] is generated)
+
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/info-zip.yml "Scancode")
     (CC0-1.0)
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
-
--   [Hitachi
-    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
-    (CDLA-Permissive-1.0)
 
 ### Raw JSON
 
@@ -114,11 +114,11 @@ Raw Data
         "__impliedNames": [
             "Info-ZIP",
             "Info-ZIP License",
-            "scancode://info-zip",
-            "Info-Zip License",
             "Info-ZIP license (version 2009-Jan-02)",
             "Info-ZIP copyright and license (version 2005-Feb-10)",
-            "Info-ZIP license (Version 2007-Mar-04)"
+            "Info-ZIP license (Version 2007-Mar-04)",
+            "scancode://info-zip",
+            "Info-Zip License"
         ],
         "__impliedId": "Info-ZIP",
         "__impliedComments": [
@@ -297,19 +297,7 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Info-ZIP.json"
-            ],
-            [
-                null,
-                "http://www.info-zip.org/license.html"
-            ],
-            [
-                "SPDX",
                 "https://spdx.org/licenses/Info-ZIP.html"
-            ],
-            [
-                "Homepage",
-                "http://www.info-zip.org/doc/"
             ],
             [
                 "open-license",
@@ -322,6 +310,18 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/1694"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/Info-ZIP.json"
+            ],
+            [
+                null,
+                "http://www.info-zip.org/license.html"
+            ],
+            [
+                "Homepage",
+                "http://www.info-zip.org/doc/"
             ]
         ]
     }

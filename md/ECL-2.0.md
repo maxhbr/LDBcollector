@@ -5,15 +5,15 @@ Educational Community License v2.0 (ECL-2.0)
 
 **Other Names:**
 
--   `scancode://ecl-2.0`
-
--   `ECL 2.0`
-
 -   `Educational Community License 2.0`
+
+-   `ecl2`
 
 -   `Educational Community License, Version 2.0`
 
--   `ecl2`
+-   `scancode://ecl-2.0`
+
+-   `ECL 2.0`
 
 Description
 -----------
@@ -68,13 +68,13 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/ecl2.php
 
--   **OSI Page:** http://opensource.org/licenses/ecl2.php
-
 -   **OSI Page:** https://opensource.org/licenses/ECL-2.0
 
--   **SPDX:** http://spdx.org/licenses/ECL-2.0.json
+-   **OSI Page:** http://opensource.org/licenses/ecl2.php
 
 -   **SPDX:** https://spdx.org/licenses/ECL-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/ECL-2.0.json
 
 Text
 ----
@@ -292,18 +292,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ECL-2.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml "Scancode")
-    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
@@ -311,9 +302,6 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -327,18 +315,30 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/ECL-2.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "ECL-2.0",
             "Educational Community License v2.0",
-            "scancode://ecl-2.0",
-            "ECL 2.0",
             "ecl-2.0",
             "Educational Community License 2.0",
+            "ecl2",
             "Educational Community License, Version 2.0",
-            "ecl2"
+            "scancode://ecl-2.0",
+            "ECL 2.0"
         ],
         "__impliedId": "ECL-2.0",
         "__isFsfFree": true,
@@ -826,15 +826,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/ECL-2.0.json"
+                "https://spdx.org/licenses/ECL-2.0.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/ECL-2.0"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/ECL-2.0"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/ECL-2.0.html"
+                "http://spdx.org/licenses/ECL-2.0.json"
             ],
             [
                 "Homepage",
@@ -847,10 +851,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/ECL-2.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/ECL-2.0"
             ]
         ]
     }

@@ -2,10 +2,10 @@
     "__impliedNames": [
         "ECL-1.0",
         "Educational Community License v1.0",
-        "scancode://ecl-1.0",
-        "ECL 1.0",
         "Educational Community License 1.0",
-        "Educational Community License, Version 1.0"
+        "Educational Community License, Version 1.0",
+        "scancode://ecl-1.0",
+        "ECL 1.0"
     ],
     "__impliedId": "ECL-1.0",
     "__isFsfFree": true,
@@ -514,15 +514,23 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ECL-1.0.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/ECL-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1545"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ECL-1.0.json"
         ],
         [
             null,
             "https://opensource.org/licenses/ECL-1.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ECL-1.0.html"
         ],
         [
             "Homepage",
@@ -535,14 +543,6 @@
         [
             null,
             "http://opensource.org/licenses/ECL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/ECL-1.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/1545"
         ]
     ]
 }

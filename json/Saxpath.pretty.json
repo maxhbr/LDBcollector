@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Saxpath.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Saxpath.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Saxpath_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Saxpath.html"
         ],
         [
             "Homepage",

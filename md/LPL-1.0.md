@@ -5,13 +5,13 @@ Lucent Public License Version 1.0 (LPL-1.0)
 
 **Other Names:**
 
--   `scancode://lucent-pl-1.0`
-
--   `Lucent Public License 1.0`
+-   `Lucent Public License ("Plan9") 1.0`
 
 -   `Lucent Public License, Plan 9, Version 1.0`
 
--   `Lucent Public License ("Plan9") 1.0`
+-   `scancode://lucent-pl-1.0`
+
+-   `Lucent Public License 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -38,9 +38,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/LPL-1.0
 
--   **SPDX:** http://spdx.org/licenses/LPL-1.0.json
-
 -   **SPDX:** https://spdx.org/licenses/LPL-1.0.html
+
+-   **SPDX:** http://spdx.org/licenses/LPL-1.0.json
 
 Text
 ----
@@ -272,22 +272,22 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/LPL-1.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.0.yml "Scancode")
-    (CC0-1.0)
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+-   [SPDX](https://spdx.org/licenses/LPL-1.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -295,10 +295,10 @@ Raw Data
         "__impliedNames": [
             "LPL-1.0",
             "Lucent Public License Version 1.0",
-            "scancode://lucent-pl-1.0",
-            "Lucent Public License 1.0",
+            "Lucent Public License (\"Plan9\") 1.0",
             "Lucent Public License, Plan 9, Version 1.0",
-            "Lucent Public License (\"Plan9\") 1.0"
+            "scancode://lucent-pl-1.0",
+            "Lucent Public License 1.0"
         ],
         "__impliedId": "LPL-1.0",
         "facts": {
@@ -559,15 +559,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/LPL-1.0.json"
+                "https://spdx.org/licenses/LPL-1.0.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/LPL-1.0"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/LPL-1.0"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/LPL-1.0.html"
+                "http://spdx.org/licenses/LPL-1.0.json"
             ],
             [
                 "Homepage",
@@ -580,10 +584,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/LPL-1.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/LPL-1.0"
             ]
         ]
     }

@@ -272,6 +272,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TCL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TCL.json"
         ],
         [
@@ -281,10 +285,6 @@
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/TCL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TCL.html"
         ],
         [
             "Homepage",

@@ -160,15 +160,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/BSD-1-Clause.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/BSD-1-Clause.json"
         ],
         [
             null,
             "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-1-Clause.html"
         ],
         [
             "Homepage",

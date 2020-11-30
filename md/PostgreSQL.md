@@ -5,9 +5,9 @@ PostgreSQL License (PostgreSQL)
 
 **Other Names:**
 
--   `scancode://postgresql`
-
 -   `The PostgreSQL Licence`
+
+-   `scancode://postgresql`
 
 Description
 -----------
@@ -58,13 +58,13 @@ URLs
 
 -   **Homepage:** http://www.postgresql.org/about/licence
 
--   **OSI Page:** http://www.opensource.org/licenses/postgresql
-
 -   **OSI Page:** https://opensource.org/licenses/PostgreSQL
 
--   **SPDX:** http://spdx.org/licenses/PostgreSQL.json
+-   **OSI Page:** http://www.opensource.org/licenses/postgresql
 
 -   **SPDX:** https://spdx.org/licenses/PostgreSQL.html
+
+-   **SPDX:** http://spdx.org/licenses/PostgreSQL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/608
 
@@ -134,18 +134,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/PostgreSQL.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml "Scancode")
-    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
@@ -153,9 +144,6 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -165,9 +153,21 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/PostgreSQL.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -175,9 +175,9 @@ Raw Data
         "__impliedNames": [
             "PostgreSQL",
             "PostgreSQL License",
-            "scancode://postgresql",
             "postgresql",
-            "The PostgreSQL Licence"
+            "The PostgreSQL Licence",
+            "scancode://postgresql"
         ],
         "__impliedId": "PostgreSQL",
         "__isFsfFree": true,
@@ -728,19 +728,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/PostgreSQL.json"
-            ],
-            [
-                null,
-                "http://www.postgresql.org/about/licence"
+                "https://spdx.org/licenses/PostgreSQL.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/PostgreSQL"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/PostgreSQL"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/608"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/PostgreSQL.html"
+                "http://spdx.org/licenses/PostgreSQL.json"
+            ],
+            [
+                null,
+                "http://www.postgresql.org/about/licence"
             ],
             [
                 "Homepage",
@@ -753,14 +761,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/PostgreSQL"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/PostgreSQL"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/608"
             ]
         ]
     }

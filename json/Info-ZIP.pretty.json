@@ -2,11 +2,11 @@
     "__impliedNames": [
         "Info-ZIP",
         "Info-ZIP License",
-        "scancode://info-zip",
-        "Info-Zip License",
         "Info-ZIP license (version 2009-Jan-02)",
         "Info-ZIP copyright and license (version 2005-Feb-10)",
-        "Info-ZIP license (Version 2007-Mar-04)"
+        "Info-ZIP license (Version 2007-Mar-04)",
+        "scancode://info-zip",
+        "Info-Zip License"
     ],
     "__impliedId": "Info-ZIP",
     "__impliedComments": [
@@ -185,19 +185,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Info-ZIP.json"
-        ],
-        [
-            null,
-            "http://www.info-zip.org/license.html"
-        ],
-        [
-            "SPDX",
             "https://spdx.org/licenses/Info-ZIP.html"
-        ],
-        [
-            "Homepage",
-            "http://www.info-zip.org/doc/"
         ],
         [
             "open-license",
@@ -210,6 +198,18 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/1694"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/Info-ZIP.json"
+        ],
+        [
+            null,
+            "http://www.info-zip.org/license.html"
+        ],
+        [
+            "Homepage",
+            "http://www.info-zip.org/doc/"
         ]
     ]
 }

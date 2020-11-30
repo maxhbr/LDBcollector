@@ -35,9 +35,9 @@ URLs
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Matrix\_Template\_Library\_License
 
--   **SPDX:** http://spdx.org/licenses/MTLL.json
-
 -   **SPDX:** https://spdx.org/licenses/MTLL.html
+
+-   **SPDX:** http://spdx.org/licenses/MTLL.json
 
 Text
 ----
@@ -73,19 +73,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MTLL.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [SPDX](https://spdx.org/licenses/MTLL.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mtll.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -291,15 +291,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/MTLL.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/MTLL.json"
             ],
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/MTLL.html"
             ],
             [
                 "Homepage",

@@ -5,13 +5,13 @@ NTP License (NTP)
 
 **Other Names:**
 
+-   `NTP License (NTP)`
+
 -   `scancode://ntpl`
 
 -   `scancode://mit-old-style-no-advert`
 
 -   `MIT Old Style no advertising`
-
--   `NTP License (NTP)`
 
 Comments on (easy) usability
 ----------------------------
@@ -40,13 +40,13 @@ URLs
 -   **Homepage:**
     http://fedoraproject.org/wiki/Licensing:MIT\#Old\_Style\_.28no\_advertising\_without\_permission.29
 
--   **OSI Page:** http://www.opensource.org/licenses/ntp-license.php
-
 -   **OSI Page:** https://opensource.org/licenses/NTP
 
--   **SPDX:** http://spdx.org/licenses/NTP.json
+-   **OSI Page:** http://www.opensource.org/licenses/ntp-license.php
 
 -   **SPDX:** https://spdx.org/licenses/NTP.html
+
+-   **SPDX:** http://spdx.org/licenses/NTP.json
 
 -   http://www.opensource.org/licenses/NTP
 
@@ -74,15 +74,22 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/NTP.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/NTP.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ntpl.yml "Scancode")
     (CC0-1.0)
@@ -90,23 +97,16 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-old-style-no-advert.yml "Scancode")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "NTP",
             "NTP License",
+            "NTP License (NTP)",
             "scancode://ntpl",
             "scancode://mit-old-style-no-advert",
-            "MIT Old Style no advertising",
-            "NTP License (NTP)"
+            "MIT Old Style no advertising"
         ],
         "__impliedId": "NTP",
         "__impliedComments": [
@@ -378,15 +378,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NTP.json"
+                "https://spdx.org/licenses/NTP.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/NTP"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/NTP"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/NTP.html"
+                "http://spdx.org/licenses/NTP.json"
             ],
             [
                 "Homepage",
@@ -407,10 +411,6 @@ Raw Data
             [
                 "Homepage",
                 "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/NTP"
             ]
         ]
     }

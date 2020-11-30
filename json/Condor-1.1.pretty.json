@@ -197,6 +197,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Condor-1.1.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Condor-1.1.json"
         ],
         [
@@ -206,10 +210,6 @@
         [
             null,
             "http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Condor-1.1.html"
         ],
         [
             "Homepage",

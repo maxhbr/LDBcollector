@@ -5,11 +5,11 @@ BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 **Other Names:**
 
+-   `Clear BSD`
+
 -   `scancode://clear-bsd`
 
 -   `Clear BSD License`
-
--   `Clear BSD`
 
 Description
 -----------
@@ -54,9 +54,9 @@ URLs
 
 -   **Homepage:** http://labs.metacarta.com/license-explanation.html
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Clear.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Clear.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Clear.json
 
 -   http://labs.metacarta.com/license-explanation.html\#license
 
@@ -102,21 +102,16 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Clear.html "SPDX")
-    (all data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/clear-bsd.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -126,9 +121,14 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Clear.html "SPDX")
+    (all data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/clear-bsd.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -136,10 +136,10 @@ Raw Data
         "__impliedNames": [
             "BSD-3-Clause-Clear",
             "BSD 3-Clause Clear License",
-            "scancode://clear-bsd",
-            "Clear BSD License",
             "bsd-3-clause-clear",
-            "Clear BSD"
+            "Clear BSD",
+            "scancode://clear-bsd",
+            "Clear BSD License"
         ],
         "__impliedId": "BSD-3-Clause-Clear",
         "__impliedAmbiguousNames": [
@@ -483,15 +483,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-3-Clause-Clear.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-3-Clause-Clear.json"
             ],
             [
                 null,
                 "http://labs.metacarta.com/license-explanation.html#license"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-3-Clause-Clear.html"
             ],
             [
                 "Homepage",

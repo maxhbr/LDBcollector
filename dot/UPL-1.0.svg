@@ -31,15 +31,15 @@
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="95.94,-420 95.94,-526 439.51,-526 439.51,-420 95.94,-420"/>
+<polygon fill="lightgray" stroke="lightgray" points="213.58,-420 213.58,-526 321.87,-526 321.87,-420 213.58,-420"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="165.49,-252 165.49,-412 369.97,-412 369.97,-252 165.49,-252"/>
+<polygon fill="lightgray" stroke="lightgray" points="95.94,-306 95.94,-412 439.51,-412 439.51,-306 95.94,-306"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="213.58,-138 213.58,-244 321.87,-244 321.87,-138 213.58,-138"/>
+<polygon fill="lightgray" stroke="lightgray" points="165.49,-138 165.49,-298 369.97,-298 369.97,-138 165.49,-138"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -81,29 +81,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="267.73" cy="-500" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="267.73" y="-496.3" font-family="Times-Roman" font-size="14.00">UPL&#45;1.0</text>
 </g>
-<!-- Universal Permissive License v1.0(5) -->
+<!-- upl&#45;1.0(5) -->
 <g id="node7" class="node">
-<title>Universal Permissive License v1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="267.73" cy="-446" rx="163.57" ry="18"/>
-<text text-anchor="middle" x="267.73" y="-442.3" font-family="Times-Roman" font-size="14.00">Universal Permissive License v1.0</text>
-</g>
-<!-- UPL 1.0(6) -->
-<g id="node8" class="node">
-<title>UPL 1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="267.73" cy="-386" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="267.73" y="-382.3" font-family="Times-Roman" font-size="14.00">UPL 1.0</text>
+<title>upl&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="267.73" cy="-446" rx="42.79" ry="18"/>
+<text text-anchor="middle" x="267.73" y="-442.3" font-family="Times-Roman" font-size="14.00">upl&#45;1.0</text>
 </g>
 <!-- UPL&#45;1.0(6) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>UPL&#45;1.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="267.73" cy="-332" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="267.73" y="-328.3" font-family="Times-Roman" font-size="14.00">UPL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="267.73" cy="-386" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="267.73" y="-382.3" font-family="Times-Roman" font-size="14.00">UPL&#45;1.0</text>
 </g>
-<!-- scancode://upl&#45;1.0(6) -->
+<!-- Universal Permissive License v1.0(6) -->
+<g id="node9" class="node">
+<title>Universal Permissive License v1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="267.73" cy="-332" rx="163.57" ry="18"/>
+<text text-anchor="middle" x="267.73" y="-328.3" font-family="Times-Roman" font-size="14.00">Universal Permissive License v1.0</text>
+</g>
+<!-- UPL 1.0(7) -->
 <g id="node10" class="node">
-<title>scancode://upl&#45;1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="267.73" cy="-278" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="267.73" y="-274.3" font-family="Times-Roman" font-size="14.00">scancode://upl&#45;1.0</text>
+<title>UPL 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="267.73" cy="-272" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="267.73" y="-268.3" font-family="Times-Roman" font-size="14.00">UPL 1.0</text>
 </g>
 <!-- UPL&#45;1.0(7) -->
 <g id="node11" class="node">
@@ -111,11 +111,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="267.73" cy="-218" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="267.73" y="-214.3" font-family="Times-Roman" font-size="14.00">UPL&#45;1.0</text>
 </g>
-<!-- upl&#45;1.0(7) -->
+<!-- scancode://upl&#45;1.0(7) -->
 <g id="node12" class="node">
-<title>upl&#45;1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="267.73" cy="-164" rx="42.79" ry="18"/>
-<text text-anchor="middle" x="267.73" y="-160.3" font-family="Times-Roman" font-size="14.00">upl&#45;1.0</text>
+<title>scancode://upl&#45;1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="267.73" cy="-164" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="267.73" y="-160.3" font-family="Times-Roman" font-size="14.00">scancode://upl&#45;1.0</text>
 </g>
 <!-- The Universal Permissive License (UPL), Version 1.0(8) -->
 <g id="node13" class="node">

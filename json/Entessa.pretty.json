@@ -2,10 +2,10 @@
     "__impliedNames": [
         "Entessa",
         "Entessa Public License v1.0",
-        "scancode://entessa-1.0",
-        "Entessa 1.0",
         "Entessa Public License",
-        "Entessa Public License 1.0"
+        "Entessa Public License 1.0",
+        "scancode://entessa-1.0",
+        "Entessa 1.0"
     ],
     "__impliedId": "Entessa",
     "__isFsfFree": true,
@@ -390,15 +390,19 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Entessa.json"
+            "https://spdx.org/licenses/Entessa.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Entessa"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Entessa"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Entessa.html"
+            "http://spdx.org/licenses/Entessa.json"
         ],
         [
             "Homepage",
@@ -415,10 +419,6 @@
         [
             null,
             "http://sourceforge.net/softwaremap/?&fq[]=trove%3A397"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Entessa"
         ]
     ]
 }

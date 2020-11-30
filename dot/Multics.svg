@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 221.78,-404 221.78,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="31.6,-298 31.6,-404 206.18,-404 206.18,-298 31.6,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="31.6,-130 31.6,-236 206.18,-236 206.18,-130 31.6,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="31.6,-184 31.6,-290 206.18,-290 206.18,-184 31.6,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="31.6,-16 31.6,-122 206.18,-122 206.18,-16 31.6,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 221.78,-176 221.78,-16 16,-16"/>
 </g>
 <!-- Multics(1) -->
 <g id="node1" class="node">
@@ -79,35 +79,35 @@
 <ellipse fill="white" stroke="white" cx="118.89" cy="-324" rx="79.09" ry="18"/>
 <text text-anchor="middle" x="118.89" y="-320.3" font-family="Times-Roman" font-size="14.00">Multics License</text>
 </g>
-<!-- scancode://multics(4) -->
-<g id="node8" class="node">
-<title>scancode://multics(4)</title>
-<ellipse fill="white" stroke="white" cx="118.89" cy="-270" rx="94.78" ry="18"/>
-<text text-anchor="middle" x="118.89" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://multics</text>
-</g>
 <!-- Multics(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>Multics(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="118.89" cy="-210" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="118.89" y="-206.3" font-family="Times-Roman" font-size="14.00">Multics</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="118.89" cy="-264" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="118.89" y="-260.3" font-family="Times-Roman" font-size="14.00">Multics</text>
 </g>
 <!-- Multics License(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Multics License(5)</title>
-<ellipse fill="white" stroke="white" cx="118.89" cy="-156" rx="79.09" ry="18"/>
-<text text-anchor="middle" x="118.89" y="-152.3" font-family="Times-Roman" font-size="14.00">Multics License</text>
+<ellipse fill="white" stroke="white" cx="118.89" cy="-210" rx="79.09" ry="18"/>
+<text text-anchor="middle" x="118.89" y="-206.3" font-family="Times-Roman" font-size="14.00">Multics License</text>
 </g>
 <!-- Multics(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Multics(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="118.89" cy="-96" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="118.89" y="-92.3" font-family="Times-Roman" font-size="14.00">Multics</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="118.89" cy="-150" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="118.89" y="-146.3" font-family="Times-Roman" font-size="14.00">Multics</text>
 </g>
 <!-- Multics License(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>Multics License(6)</title>
-<ellipse fill="white" stroke="white" cx="118.89" cy="-42" rx="79.09" ry="18"/>
-<text text-anchor="middle" x="118.89" y="-38.3" font-family="Times-Roman" font-size="14.00">Multics License</text>
+<ellipse fill="white" stroke="white" cx="118.89" cy="-96" rx="79.09" ry="18"/>
+<text text-anchor="middle" x="118.89" y="-92.3" font-family="Times-Roman" font-size="14.00">Multics License</text>
+</g>
+<!-- scancode://multics(6) -->
+<g id="node12" class="node">
+<title>scancode://multics(6)</title>
+<ellipse fill="white" stroke="white" cx="118.89" cy="-42" rx="94.78" ry="18"/>
+<text text-anchor="middle" x="118.89" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://multics</text>
 </g>
 </g>
 </svg>

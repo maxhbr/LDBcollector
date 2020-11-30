@@ -11,9 +11,9 @@
 
 *Other Names:*
 
+* `+PHP License, version 3.01+`
 * `+scancode://php-3.01+`
 * `+PHP License 3.01+`
-* `+PHP License, version 3.01+`
 
 === Comments on (easy) usability
 
@@ -36,8 +36,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.php.net/license/3_01.txt
-* *SPDX:* http://spdx.org/licenses/PHP-3.01.json
 * *SPDX:* https://spdx.org/licenses/PHP-3.01.html
+* *SPDX:* http://spdx.org/licenses/PHP-3.01.json
 * *open-license:* http://open-license.hitachi.com/licenses/812
 * http://www.php.net/software/
 * http://www.zend.com
@@ -186,19 +186,19 @@ PHP includes the Zend Engine, freely available at
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/PHP-3.01.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml[Scancode]
-(CC0-1.0)
-* https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml[finos/OSLC-handbook]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/PHP-3.01.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -207,9 +207,9 @@ license-compatibility-checker]
     "__impliedNames": [
         "PHP-3.01",
         "PHP License v3.01",
+        "PHP License, version 3.01",
         "scancode://php-3.01",
-        "PHP License 3.01",
-        "PHP License, version 3.01"
+        "PHP License 3.01"
     ],
     "__impliedId": "PHP-3.01",
     "__impliedComments": [
@@ -613,15 +613,19 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/PHP-3.01.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/812"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/PHP-3.01.json"
         ],
         [
             null,
             "http://www.php.net/license/3_01.txt"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/PHP-3.01.html"
         ],
         [
             "Homepage",
@@ -634,10 +638,6 @@ license-compatibility-checker]
         [
             null,
             "http://www.zend.com"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/812"
         ]
     ]
 }

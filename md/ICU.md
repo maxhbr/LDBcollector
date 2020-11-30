@@ -9,13 +9,13 @@ ICU License (ICU)
 
 -   `X11 License`
 
+-   `ICU License (ICU 1.8.1 and later)`
+
 -   `scancode://x11-xconsortium`
 
 -   `X11-Style (X Consortium)`
 
 -   `scancode://x11`
-
--   `ICU License (ICU 1.8.1 and later)`
 
 Comments on (easy) usability
 ----------------------------
@@ -34,13 +34,13 @@ URLs
 
 -   **Homepage:** http://www.xfree86.org/3.3.6/COPYRIGHT2.html
 
--   **SPDX:** http://spdx.org/licenses/ICU.json
-
--   **SPDX:** http://spdx.org/licenses/X11.json
-
 -   **SPDX:** https://spdx.org/licenses/ICU.html
 
 -   **SPDX:** https://spdx.org/licenses/X11.html
+
+-   **SPDX:** http://spdx.org/licenses/ICU.json
+
+-   **SPDX:** http://spdx.org/licenses/X11.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/297
 
@@ -127,12 +127,6 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ICU.html "SPDX") (all data \[in
-    this repository\] is generated)
-
--   [SPDX](https://spdx.org/licenses/X11.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
@@ -140,12 +134,6 @@ Raw Data
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml "Scancode")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml "Scancode")
-    (CC0-1.0)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -159,6 +147,18 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/ICU.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [SPDX](https://spdx.org/licenses/X11.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml "Scancode")
+    (CC0-1.0)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
@@ -167,10 +167,10 @@ Raw Data
             "ICU",
             "ICU License",
             "X11 License",
+            "ICU License (ICU 1.8.1 and later)",
             "scancode://x11-xconsortium",
             "X11-Style (X Consortium)",
-            "scancode://x11",
-            "ICU License (ICU 1.8.1 and later)"
+            "scancode://x11"
         ],
         "__impliedId": "ICU",
         "facts": {
@@ -468,6 +468,18 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/ICU.html"
+            ],
+            [
+                "SPDX",
+                "https://spdx.org/licenses/X11.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/297"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/ICU.json"
             ],
             [
@@ -483,14 +495,6 @@ Raw Data
                 "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/ICU.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/X11.html"
-            ],
-            [
                 "Homepage",
                 "http://www.xfree86.org/current/LICENSE5.html"
             ],
@@ -501,10 +505,6 @@ Raw Data
             [
                 null,
                 "http://www.xfree86.org/current/LICENSE5.html"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/297"
             ]
         ]
     }

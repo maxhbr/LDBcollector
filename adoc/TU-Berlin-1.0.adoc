@@ -26,8 +26,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:*
 https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT
-* *SPDX:* http://spdx.org/licenses/TU-Berlin-1.0.json
 * *SPDX:* https://spdx.org/licenses/TU-Berlin-1.0.html
+* *SPDX:* http://spdx.org/licenses/TU-Berlin-1.0.json
 * ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz
 
 === Text
@@ -51,10 +51,10 @@ improvements that may be of general interest.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/TU-Berlin-1.0.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
+* https://spdx.org/licenses/TU-Berlin-1.0.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin.yml[Scancode]
 (CC0-1.0)
 
@@ -219,15 +219,15 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TU-Berlin-1.0.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TU-Berlin-1.0.json"
         ],
         [
             null,
             "https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TU-Berlin-1.0.html"
         ],
         [
             "Homepage",

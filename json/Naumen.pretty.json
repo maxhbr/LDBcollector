@@ -2,8 +2,8 @@
     "__impliedNames": [
         "Naumen",
         "Naumen Public License",
-        "scancode://naumen",
-        "NAUMEN Public License"
+        "NAUMEN Public License",
+        "scancode://naumen"
     ],
     "__impliedId": "Naumen",
     "__isFsfFree": true,
@@ -373,15 +373,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Naumen.json"
+            "https://spdx.org/licenses/Naumen.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Naumen"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Naumen"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1260"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Naumen.html"
+            "http://spdx.org/licenses/Naumen.json"
         ],
         [
             "Homepage",
@@ -394,14 +402,6 @@
         [
             null,
             "http://www.opensource.org/licenses/Naumen"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Naumen"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/1260"
         ]
     ]
 }

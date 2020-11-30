@@ -201,15 +201,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/diffmark.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/diffmark.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/diffmark"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/diffmark.html"
         ],
         [
             "Homepage",

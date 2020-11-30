@@ -2,8 +2,8 @@
     "__impliedNames": [
         "CECILL-B",
         "CeCILL-B Free Software License Agreement",
-        "scancode://cecill-b",
-        "CeCILL-B License"
+        "CeCILL-B License",
+        "scancode://cecill-b"
     ],
     "__impliedId": "CECILL-B",
     "__isFsfFree": true,
@@ -232,15 +232,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/CECILL-B.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/CECILL-B.json"
         ],
         [
             null,
             "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/CECILL-B.html"
         ],
         [
             "Homepage",

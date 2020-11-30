@@ -207,15 +207,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Giftware.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Giftware.json"
         ],
         [
             null,
             "http://liballeg.org/license.html#allegro-4-the-giftware-license"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Giftware.html"
         ],
         [
             "Homepage",

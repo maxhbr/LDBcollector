@@ -5,9 +5,9 @@ XFree86 License 1.1 (XFree86-1.1)
 
 **Other Names:**
 
--   `scancode://xfree86-1.1`
-
 -   `XFree86 1.1 License`
+
+-   `scancode://xfree86-1.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -24,9 +24,9 @@ URLs
 
 -   **Homepage:** http://www.xfree86.org/current/LICENSE4.html
 
--   **SPDX:** http://spdx.org/licenses/XFree86-1.1.json
-
 -   **SPDX:** https://spdx.org/licenses/XFree86-1.1.html
+
+-   **SPDX:** http://spdx.org/licenses/XFree86-1.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/319
 
@@ -131,26 +131,26 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml "Scancode")
-    (CC0-1.0)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/XFree86-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -158,8 +158,8 @@ Raw Data
         "__impliedNames": [
             "XFree86-1.1",
             "XFree86 License 1.1",
-            "scancode://xfree86-1.1",
-            "XFree86 1.1 License"
+            "XFree86 1.1 License",
+            "scancode://xfree86-1.1"
         ],
         "__impliedId": "XFree86-1.1",
         "__hasPatentHint": false,
@@ -480,6 +480,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/XFree86-1.1.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/319"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/XFree86-1.1.json"
             ],
             [
@@ -487,16 +495,8 @@ Raw Data
                 "http://www.xfree86.org/current/LICENSE4.html"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/XFree86-1.1.html"
-            ],
-            [
                 "Homepage",
                 "http://www.xfree86.org/current/LICENSE4.html"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/319"
             ]
         ]
     }

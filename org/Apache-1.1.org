@@ -65,9 +65,9 @@
 
 - *OSI Page:* https://opensource.org/licenses/Apache-1.1
 
-- *SPDX:* http://spdx.org/licenses/Apache-1.1.json
-
 - *SPDX:* https://spdx.org/licenses/Apache-1.1.html
+
+- *SPDX:* http://spdx.org/licenses/Apache-1.1.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/12
 
@@ -193,18 +193,27 @@
 
 - Override
 
-- [[https://spdx.org/licenses/Apache-1.1.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml][Scancode]]
-  (CC0-1.0)
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]] (NOASSERTION)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
+- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
+  Policy]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
+
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
+  Knowledge International]]
+  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -212,23 +221,14 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
-- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
-  license-compatibility-checker]]
-  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
-
-- [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
-  Policy]]
-  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
-
-- [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
-  Knowledge International]]
-  ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
-
-- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]] (NOASSERTION)
-
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/Apache-1.1.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -247,8 +247,8 @@
       "__impliedId": "Apache-1.1",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
-          "ASL 1.1",
-          "The Apache Software License (ASL)"
+          "The Apache Software License (ASL)",
+          "ASL 1.1"
       ],
       "__impliedComments": [
           [
@@ -859,27 +859,11 @@
       "__impliedURLs": [
           [
               "SPDX",
-              "http://spdx.org/licenses/Apache-1.1.json"
-          ],
-          [
-              null,
-              "http://apache.org/licenses/LICENSE-1.1"
+              "https://spdx.org/licenses/Apache-1.1.html"
           ],
           [
               null,
               "https://opensource.org/licenses/Apache-1.1"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/Apache-1.1.html"
-          ],
-          [
-              "Homepage",
-              "http://www.apache.org/licenses/"
-          ],
-          [
-              null,
-              "http://opensource.org/licenses/Apache-1.1"
           ],
           [
               "OSI Page",
@@ -888,6 +872,22 @@
           [
               "open-license",
               "http://open-license.hitachi.com/licenses/12"
+          ],
+          [
+              "SPDX",
+              "http://spdx.org/licenses/Apache-1.1.json"
+          ],
+          [
+              null,
+              "http://apache.org/licenses/LICENSE-1.1"
+          ],
+          [
+              "Homepage",
+              "http://www.apache.org/licenses/"
+          ],
+          [
+              null,
+              "http://opensource.org/licenses/Apache-1.1"
           ]
       ]
   }

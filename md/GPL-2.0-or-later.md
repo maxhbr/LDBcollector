@@ -63,9 +63,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/GPL-2.0-or-later.json
 
--   https://opensource.org/licenses/GPL-2.0
-
 -   https://spdx.org/licenses/GPL-2.0-or-later.html
+
+-   https://opensource.org/licenses/GPL-2.0
 
 -   http://www.opensource.org/licenses/GPL-2.0
 
@@ -96,21 +96,20 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -121,13 +120,14 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -146,8 +146,8 @@ Raw Data
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "GNU General Public License",
-            "GPLv2+",
-            "The GNU General Public License (GPL)"
+            "The GNU General Public License (GPL)",
+            "GPLv2+"
         ],
         "__impliedComments": [
             [
@@ -604,6 +604,10 @@ Raw Data
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [
+                null,
+                "https://spdx.org/licenses/GPL-2.0-or-later.html"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/GPL-2.0-or-later.json"
             ],
@@ -614,10 +618,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/GPL-2.0"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/GPL-2.0-or-later.html"
             ],
             [
                 "Homepage",

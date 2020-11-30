@@ -217,15 +217,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/SMLNJ.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/SMLNJ.json"
         ],
         [
             null,
             "https://www.smlnj.org/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/SMLNJ.html"
         ],
         [
             "Homepage",

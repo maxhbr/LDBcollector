@@ -2,11 +2,11 @@
     "__impliedNames": [
         "CNRI-Python",
         "CNRI Python License",
-        "scancode://cnri-python-1.6",
-        "CNRI Python 1.6",
         "CNRI portion of the multi-part Python License",
         "License :: OSI Approved :: Python License (CNRI Python License)",
-        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+        "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
+        "scancode://cnri-python-1.6",
+        "CNRI Python 1.6"
     ],
     "__impliedId": "CNRI-Python",
     "__impliedComments": [
@@ -509,15 +509,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/CNRI-Python.json"
+            "https://spdx.org/licenses/CNRI-Python.html"
         ],
         [
             null,
             "https://opensource.org/licenses/CNRI-Python"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/CNRI-Python"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/292"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/CNRI-Python.html"
+            "http://spdx.org/licenses/CNRI-Python.json"
         ],
         [
             "Homepage",
@@ -530,14 +538,6 @@
         [
             null,
             "http://www.opensource.org/licenses/CNRI-Python"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/CNRI-Python"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/292"
         ]
     ]
 }

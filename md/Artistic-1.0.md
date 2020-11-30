@@ -7,13 +7,13 @@ Artistic License 1.0 (Artistic-1.0)
 
 -   `Artistic 1.0 (original)`
 
--   `scancode://artistic-1.0`
-
--   `Artistic 1.0`
-
 -   `Artistic License, Version 1.0`
 
 -   `Artistic License (Perl) 1.0`
+
+-   `scancode://artistic-1.0`
+
+-   `Artistic 1.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -73,13 +73,13 @@ URLs
 
 -   **Homepage:** http://www.perlfoundation.org/
 
--   **OSI Page:** http://opensource.org/licenses/artistic-license-1.0
-
 -   **OSI Page:** https://opensource.org/licenses/Artistic-1.0
 
--   **SPDX:** http://spdx.org/licenses/Artistic-1.0.json
+-   **OSI Page:** http://opensource.org/licenses/artistic-license-1.0
 
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0.html
+
+-   **SPDX:** http://spdx.org/licenses/Artistic-1.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/596
 
@@ -262,35 +262,29 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -298,6 +292,12 @@ Raw Data
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Artistic-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -306,10 +306,10 @@ Raw Data
             "Artistic-1.0",
             "Artistic 1.0 (original)",
             "Artistic License 1.0",
-            "scancode://artistic-1.0",
-            "Artistic 1.0",
             "Artistic License, Version 1.0",
-            "Artistic License (Perl) 1.0"
+            "Artistic License (Perl) 1.0",
+            "scancode://artistic-1.0",
+            "Artistic 1.0"
         ],
         "__impliedId": "Artistic-1.0",
         "__impliedAmbiguousNames": [
@@ -902,15 +902,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Artistic-1.0.html"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/Artistic-1.0"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/596"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/721"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Artistic-1.0.json"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Artistic-1.0"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Artistic-1.0.html"
             ],
             [
                 "Homepage",
@@ -931,18 +943,6 @@ Raw Data
             [
                 null,
                 "http://www.perlfoundation.org/artistic_license_1_0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Artistic-1.0"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/596"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/721"
             ]
         ]
     }

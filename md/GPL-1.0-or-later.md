@@ -69,27 +69,27 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/GPL-1.0-or-later.html "SPDX") (all
-    data \[in this repository\] is generated)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [librariesio
-    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
-    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/GPL-1.0-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -106,8 +106,8 @@ Raw Data
         "__impliedId": "GPL-1.0-or-later",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "GPL+",
-            "The GNU General Public License (GPL)"
+            "The GNU General Public License (GPL)",
+            "GPL+"
         ],
         "__impliedComments": [
             [

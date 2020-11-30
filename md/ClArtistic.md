@@ -30,9 +30,9 @@ URLs
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/ArtisticClarified
 
--   **SPDX:** http://spdx.org/licenses/ClArtistic.json
-
 -   **SPDX:** https://spdx.org/licenses/ClArtistic.html
+
+-   **SPDX:** http://spdx.org/licenses/ClArtistic.json
 
 -   http://gianluca.dellavedova.org/2011/01/03/clarified-artistic-license/
 
@@ -193,15 +193,9 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/ClArtistic.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -210,6 +204,12 @@ Raw Data
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/ClArtistic.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-clarified.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -449,6 +449,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/ClArtistic.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/ClArtistic.json"
             ],
             [
@@ -458,10 +462,6 @@ Raw Data
             [
                 null,
                 "http://www.ncftp.com/ncftp/doc/LICENSE.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/ClArtistic.html"
             ],
             [
                 "Homepage",

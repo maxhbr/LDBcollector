@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 276.38,-518 276.38,-412 16,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="103.09,-412 103.09,-518 189.29,-518 189.29,-412 103.09,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 276.38,-404 276.38,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 276.38,-404 276.38,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="103.09,-130 103.09,-236 189.29,-236 189.29,-130 103.09,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 276.38,-290 276.38,-184 16,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 276.38,-122 276.38,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 276.38,-176 276.38,-16 16,-16"/>
 </g>
 <!-- 0BSD(1) -->
 <g id="node1" class="node">
@@ -61,11 +61,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="146.19" cy="-492" rx="35.19" ry="18"/>
 <text text-anchor="middle" x="146.19" y="-488.3" font-family="Times-Roman" font-size="14.00">0BSD</text>
 </g>
-<!-- BSD Zero Clause License(3) -->
+<!-- 0bsd(3) -->
 <g id="node5" class="node">
-<title>BSD Zero Clause License(3)</title>
-<ellipse fill="white" stroke="white" cx="146.19" cy="-438" rx="122.38" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-434.3" font-family="Times-Roman" font-size="14.00">BSD Zero Clause License</text>
+<title>0bsd(3)</title>
+<ellipse fill="white" stroke="white" cx="146.19" cy="-438" rx="33.29" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-434.3" font-family="Times-Roman" font-size="14.00">0bsd</text>
 </g>
 <!-- 0BSD(4) -->
 <g id="node6" class="node">
@@ -79,35 +79,35 @@
 <ellipse fill="white" stroke="white" cx="146.19" cy="-324" rx="122.38" ry="18"/>
 <text text-anchor="middle" x="146.19" y="-320.3" font-family="Times-Roman" font-size="14.00">BSD Zero Clause License</text>
 </g>
-<!-- scancode://bsd&#45;zero(4) -->
-<g id="node8" class="node">
-<title>scancode://bsd&#45;zero(4)</title>
-<ellipse fill="white" stroke="white" cx="146.19" cy="-270" rx="100.98" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;zero</text>
-</g>
 <!-- 0BSD(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>0BSD(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="146.19" cy="-210" rx="35.19" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-206.3" font-family="Times-Roman" font-size="14.00">0BSD</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="146.19" cy="-264" rx="35.19" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-260.3" font-family="Times-Roman" font-size="14.00">0BSD</text>
 </g>
-<!-- 0bsd(5) -->
-<g id="node10" class="node">
-<title>0bsd(5)</title>
-<ellipse fill="white" stroke="white" cx="146.19" cy="-156" rx="33.29" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-152.3" font-family="Times-Roman" font-size="14.00">0bsd</text>
+<!-- BSD Zero Clause License(5) -->
+<g id="node9" class="node">
+<title>BSD Zero Clause License(5)</title>
+<ellipse fill="white" stroke="white" cx="146.19" cy="-210" rx="122.38" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-206.3" font-family="Times-Roman" font-size="14.00">BSD Zero Clause License</text>
 </g>
 <!-- 0BSD(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>0BSD(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="146.19" cy="-96" rx="35.19" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-92.3" font-family="Times-Roman" font-size="14.00">0BSD</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="146.19" cy="-150" rx="35.19" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-146.3" font-family="Times-Roman" font-size="14.00">0BSD</text>
 </g>
 <!-- BSD Zero Clause License(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>BSD Zero Clause License(6)</title>
-<ellipse fill="white" stroke="white" cx="146.19" cy="-42" rx="122.38" ry="18"/>
-<text text-anchor="middle" x="146.19" y="-38.3" font-family="Times-Roman" font-size="14.00">BSD Zero Clause License</text>
+<ellipse fill="white" stroke="white" cx="146.19" cy="-96" rx="122.38" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD Zero Clause License</text>
+</g>
+<!-- scancode://bsd&#45;zero(6) -->
+<g id="node12" class="node">
+<title>scancode://bsd&#45;zero(6)</title>
+<ellipse fill="white" stroke="white" cx="146.19" cy="-42" rx="100.98" ry="18"/>
+<text text-anchor="middle" x="146.19" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;zero</text>
 </g>
 </g>
 </svg>

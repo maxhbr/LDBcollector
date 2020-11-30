@@ -39,14 +39,14 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
-    \[in this repository\] is generated)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+-   [SPDX](https://spdx.org/licenses/LiLiQ-P-1.1.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 ### Raw JSON
 
@@ -54,8 +54,8 @@ Raw Data
         "__impliedNames": [
             "LiLiQ-P-1.1",
             "LiLiQ-P",
-            "Licence Libre du QuÃ©bec â Permissive version 1.1",
-            "Licence Libre du QuÃ©bec â Permissive, Version 1.1"
+            "Licence Libre du QuÃ©bec â Permissive, Version 1.1",
+            "Licence Libre du QuÃ©bec â Permissive version 1.1"
         ],
         "__impliedId": "LiLiQ-P-1.1",
         "facts": {
@@ -196,6 +196,10 @@ Raw Data
         "__isOsiApproved": true,
         "__impliedURLs": [
             [
+                "OSI Page",
+                "https://opensource.org/licenses/LiLiQ-P-1.1"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/LiLiQ-P-1.1.json"
             ],
@@ -206,10 +210,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/LiLiQ-P-1.1"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/LiLiQ-P-1.1"
             ]
         ]
     }

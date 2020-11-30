@@ -29,9 +29,9 @@ URLs
 
 -   **Homepage:** http://www.cs.wustl.edu/~schmidt/
 
--   **SPDX:** http://spdx.org/licenses/DOC.json
-
 -   **SPDX:** https://spdx.org/licenses/DOC.html
+
+-   **SPDX:** http://spdx.org/licenses/DOC.json
 
 -   http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 
@@ -65,19 +65,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/DOC.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ace-tao.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [SPDX](https://spdx.org/licenses/DOC.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ace-tao.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -273,6 +273,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/DOC.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/DOC.json"
             ],
             [
@@ -282,10 +286,6 @@ Raw Data
             [
                 null,
                 "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/DOC.html"
             ],
             [
                 "Homepage",

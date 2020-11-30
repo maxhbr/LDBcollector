@@ -2,9 +2,9 @@
     "__impliedNames": [
         "AFL-2.1",
         "Academic Free License v2.1",
+        "Academic Free License Version 2.1",
         "scancode://afl-2.1",
-        "AFL 2.1",
-        "Academic Free License Version 2.1"
+        "AFL 2.1"
     ],
     "__impliedId": "AFL-2.1",
     "__impliedComments": [
@@ -494,15 +494,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/AFL-2.1.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/588"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/AFL-2.1.json"
         ],
         [
             null,
             "http://opensource.linux-mirror.org/licenses/afl-2.1.txt"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/AFL-2.1.html"
         ],
         [
             "Homepage",
@@ -515,10 +519,6 @@
         [
             null,
             "http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/588"
         ]
     ]
 }

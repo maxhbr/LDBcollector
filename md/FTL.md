@@ -44,9 +44,9 @@ URLs
 
 -   **Homepage:** http://www.freetype.org/license.html
 
--   **SPDX:** http://spdx.org/licenses/FTL.json
-
 -   **SPDX:** https://spdx.org/licenses/FTL.html
+
+-   **SPDX:** http://spdx.org/licenses/FTL.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/763
 
@@ -321,27 +321,27 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/FTL.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
-    (CC0-1.0)
-
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/FTL.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -349,9 +349,9 @@ Raw Data
         "__impliedNames": [
             "FTL",
             "Freetype Project License",
+            "FreeType Project LICENSE",
             "scancode://freetype",
-            "FreeType Project License",
-            "FreeType Project LICENSE"
+            "FreeType Project License"
         ],
         "__impliedId": "FTL",
         "__impliedComments": [
@@ -856,6 +856,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/FTL.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/763"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/FTL.json"
             ],
             [
@@ -865,10 +873,6 @@ Raw Data
             [
                 null,
                 "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/FTL.html"
             ],
             [
                 "Homepage",
@@ -881,10 +885,6 @@ Raw Data
             [
                 null,
                 "http://www.freetype.org/"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/763"
             ]
         ]
     }

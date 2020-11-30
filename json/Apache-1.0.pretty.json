@@ -12,8 +12,8 @@
     "__impliedId": "Apache-1.0",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "ASL 1.0",
-        "The Apache Software License (ASL)"
+        "The Apache Software License (ASL)",
+        "ASL 1.0"
     ],
     "facts": {
         "LicenseName": {
@@ -405,6 +405,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Apache-1.0.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/13"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Apache-1.0.json"
         ],
         [
@@ -412,16 +420,8 @@
             "http://www.apache.org/licenses/LICENSE-1.0"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/Apache-1.0.html"
-        ],
-        [
             "Homepage",
             "http://www.apache.org/licenses/"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/13"
         ]
     ]
 }

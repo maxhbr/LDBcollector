@@ -5,13 +5,13 @@ NASA Open Source Agreement 1.3 (NASA-1.3)
 
 **Other Names:**
 
--   `scancode://nasa-1.3`
-
--   `NASA 1.3`
+-   `nasa1.3`
 
 -   `NASA Open Source Agreement, Version 1.3`
 
--   `nasa1.3`
+-   `scancode://nasa-1.3`
+
+-   `NASA 1.3`
 
 Comments on (easy) usability
 ----------------------------
@@ -39,9 +39,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/NASA-1.3
 
--   **SPDX:** http://spdx.org/licenses/NASA-1.3.json
-
 -   **SPDX:** https://spdx.org/licenses/NASA-1.3.html
+
+-   **SPDX:** http://spdx.org/licenses/NASA-1.3.json
 
 -   http://ti.arc.nasa.gov/opensource/nosa/
 
@@ -166,21 +166,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode")
-    (CC0-1.0)
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -190,16 +178,28 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "NASA-1.3",
             "NASA Open Source Agreement 1.3",
-            "scancode://nasa-1.3",
-            "NASA 1.3",
+            "nasa1.3",
             "NASA Open Source Agreement, Version 1.3",
-            "nasa1.3"
+            "scancode://nasa-1.3",
+            "NASA 1.3"
         ],
         "__impliedId": "NASA-1.3",
         "__impliedComments": [
@@ -508,19 +508,23 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/NASA-1.3.json"
-            ],
-            [
-                null,
-                "http://ti.arc.nasa.gov/opensource/nosa/"
+                "https://spdx.org/licenses/NASA-1.3.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/NASA-1.3"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/NASA-1.3"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/NASA-1.3.html"
+                "http://spdx.org/licenses/NASA-1.3.json"
+            ],
+            [
+                null,
+                "http://ti.arc.nasa.gov/opensource/nosa/"
             ],
             [
                 "Homepage",
@@ -533,10 +537,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/NASA-1.3"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/NASA-1.3"
             ]
         ]
     }

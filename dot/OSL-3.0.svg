@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-640 55,-746 333.57,-746 333.57,-640 55,-640"/>
+<polygon fill="lightgray" stroke="lightgray" points="139.49,-640 139.49,-746 249.08,-746 249.08,-640 139.49,-640"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="93.34,-472 93.34,-632 295.23,-632 295.23,-472 93.34,-472"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-526 55,-632 333.57,-632 333.57,-526 55,-526"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="139.49,-358 139.49,-464 249.08,-464 249.08,-358 139.49,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 372.57,-518 372.57,-412 16,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 372.57,-350 372.57,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-298 55,-404 333.57,-404 333.57,-298 55,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-130 55,-236 333.57,-236 333.57,-130 55,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="93.34,-130 93.34,-290 295.23,-290 295.23,-130 93.34,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -69,53 +69,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-720" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="194.28" y="-716.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
 </g>
-<!-- Open Software License 3.0(3) -->
+<!-- osl&#45;3.0(3) -->
 <g id="node5" class="node">
-<title>Open Software License 3.0(3)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-666" rx="131.08" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-662.3" font-family="Times-Roman" font-size="14.00">Open Software License 3.0</text>
-</g>
-<!-- OSL 3.0(4) -->
-<g id="node6" class="node">
-<title>OSL 3.0(4)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-606" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-602.3" font-family="Times-Roman" font-size="14.00">OSL 3.0</text>
+<title>osl&#45;3.0(3)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-666" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-662.3" font-family="Times-Roman" font-size="14.00">osl&#45;3.0</text>
 </g>
 <!-- OSL&#45;3.0(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>OSL&#45;3.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-552" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-548.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-606" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-602.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
 </g>
-<!-- scancode://osl&#45;3.0(4) -->
-<g id="node8" class="node">
-<title>scancode://osl&#45;3.0(4)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-498" rx="92.88" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-494.3" font-family="Times-Roman" font-size="14.00">scancode://osl&#45;3.0</text>
+<!-- Open Software License 3.0(4) -->
+<g id="node7" class="node">
+<title>Open Software License 3.0(4)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-552" rx="131.08" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-548.3" font-family="Times-Roman" font-size="14.00">Open Software License 3.0</text>
 </g>
 <!-- OSL&#45;3.0(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>OSL&#45;3.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-438" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-434.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-492" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-488.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
 </g>
-<!-- osl&#45;3.0(5) -->
-<g id="node10" class="node">
-<title>osl&#45;3.0(5)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-384" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-380.3" font-family="Times-Roman" font-size="14.00">osl&#45;3.0</text>
+<!-- Open Software License, Version 3.0(5) -->
+<g id="node9" class="node">
+<title>Open Software License, Version 3.0(5)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-438" rx="170.07" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-434.3" font-family="Times-Roman" font-size="14.00">Open Software License, Version 3.0</text>
 </g>
 <!-- OSL&#45;3.0(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>OSL&#45;3.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-324" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-320.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-378" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-374.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
 </g>
-<!-- Open Software License, Version 3.0(6) -->
+<!-- Open Software License 3.0(6) -->
+<g id="node11" class="node">
+<title>Open Software License 3.0(6)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-324" rx="131.08" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-320.3" font-family="Times-Roman" font-size="14.00">Open Software License 3.0</text>
+</g>
+<!-- OSL 3.0(7) -->
 <g id="node12" class="node">
-<title>Open Software License, Version 3.0(6)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-270" rx="170.07" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-266.3" font-family="Times-Roman" font-size="14.00">Open Software License, Version 3.0</text>
+<title>OSL 3.0(7)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-264" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-260.3" font-family="Times-Roman" font-size="14.00">OSL 3.0</text>
 </g>
 <!-- OSL&#45;3.0(7) -->
 <g id="node13" class="node">
@@ -123,11 +123,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="194.28" cy="-210" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="194.28" y="-206.3" font-family="Times-Roman" font-size="14.00">OSL&#45;3.0</text>
 </g>
-<!-- Open Software License 3.0(7) -->
+<!-- scancode://osl&#45;3.0(7) -->
 <g id="node14" class="node">
-<title>Open Software License 3.0(7)</title>
-<ellipse fill="white" stroke="white" cx="194.28" cy="-156" rx="131.08" ry="18"/>
-<text text-anchor="middle" x="194.28" y="-152.3" font-family="Times-Roman" font-size="14.00">Open Software License 3.0</text>
+<title>scancode://osl&#45;3.0(7)</title>
+<ellipse fill="white" stroke="white" cx="194.28" cy="-156" rx="92.88" ry="18"/>
+<text text-anchor="middle" x="194.28" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://osl&#45;3.0</text>
 </g>
 <!-- OSL&#45;3.0(8) -->
 <g id="node15" class="node">

@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="184.99,-412 184.99,-572 464.86,-572 464.86,-412 184.99,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 633.85,-572 633.85,-412 16,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 633.85,-404 633.85,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="94.64,-298 94.64,-404 555.2,-404 555.2,-298 94.64,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="212.93,-130 212.93,-236 436.91,-236 436.91,-130 212.93,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="212.93,-184 212.93,-290 436.91,-290 436.91,-184 212.93,-184"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="94.64,-16 94.64,-122 555.2,-122 555.2,-16 94.64,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="184.99,-16 184.99,-176 464.86,-176 464.86,-16 184.99,-16"/>
 </g>
 <!-- CNRI&#45;Python(1) -->
 <g id="node1" class="node">
@@ -71,11 +71,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-606" rx="67.69" ry="18"/>
 <text text-anchor="middle" x="324.92" y="-602.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
 </g>
-<!-- CNRI Python 1.6(4) -->
+<!-- CNRI portion of the multi&#45;part Python License(4) -->
 <g id="node6" class="node">
-<title>CNRI Python 1.6(4)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-546" rx="85.29" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-542.3" font-family="Times-Roman" font-size="14.00">CNRI Python 1.6</text>
+<title>CNRI portion of the multi&#45;part Python License(4)</title>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-546" rx="215.56" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-542.3" font-family="Times-Roman" font-size="14.00">CNRI portion of the multi&#45;part Python License</text>
 </g>
 <!-- CNRI&#45;Python(4) -->
 <g id="node7" class="node">
@@ -83,17 +83,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-492" rx="67.69" ry="18"/>
 <text text-anchor="middle" x="324.92" y="-488.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
 </g>
-<!-- scancode://cnri&#45;python&#45;1.6(4) -->
+<!-- License :: OSI Approved :: Python License (CNRI Python License)(4) -->
 <g id="node8" class="node">
-<title>scancode://cnri&#45;python&#45;1.6(4)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-438" rx="131.88" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-434.3" font-family="Times-Roman" font-size="14.00">scancode://cnri&#45;python&#45;1.6</text>
+<title>License :: OSI Approved :: Python License (CNRI Python License)(4)</title>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-438" rx="300.85" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-434.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Python License (CNRI Python License)</text>
 </g>
-<!-- CNRI portion of the multi&#45;part Python License(5) -->
+<!-- CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1(5) -->
 <g id="node9" class="node">
-<title>CNRI portion of the multi&#45;part Python License(5)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-378" rx="215.56" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-374.3" font-family="Times-Roman" font-size="14.00">CNRI portion of the multi&#45;part Python License</text>
+<title>CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1(5)</title>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-378" rx="222.06" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-374.3" font-family="Times-Roman" font-size="14.00">CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1</text>
 </g>
 <!-- CNRI&#45;Python(5) -->
 <g id="node10" class="node">
@@ -101,35 +101,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-324" rx="67.69" ry="18"/>
 <text text-anchor="middle" x="324.92" y="-320.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
 </g>
-<!-- License :: OSI Approved :: Python License (CNRI Python License)(5) -->
-<g id="node11" class="node">
-<title>License :: OSI Approved :: Python License (CNRI Python License)(5)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-270" rx="300.85" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-266.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Python License (CNRI Python License)</text>
-</g>
 <!-- CNRI Python License(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>CNRI Python License(6)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-210" rx="103.98" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-206.3" font-family="Times-Roman" font-size="14.00">CNRI Python License</text>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-264" rx="103.98" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-260.3" font-family="Times-Roman" font-size="14.00">CNRI Python License</text>
 </g>
 <!-- CNRI&#45;Python(6) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>CNRI&#45;Python(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-156" rx="67.69" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-152.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-210" rx="67.69" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-206.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
 </g>
-<!-- CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1(7) -->
-<g id="node14" class="node">
-<title>CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1(7)</title>
-<ellipse fill="white" stroke="white" cx="324.92" cy="-96" rx="222.06" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-92.3" font-family="Times-Roman" font-size="14.00">CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1</text>
+<!-- CNRI Python 1.6(7) -->
+<g id="node13" class="node">
+<title>CNRI Python 1.6(7)</title>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-150" rx="85.29" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-146.3" font-family="Times-Roman" font-size="14.00">CNRI Python 1.6</text>
 </g>
 <!-- CNRI&#45;Python(7) -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>CNRI&#45;Python(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-42" rx="67.69" ry="18"/>
-<text text-anchor="middle" x="324.92" y="-38.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="324.92" cy="-96" rx="67.69" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-92.3" font-family="Times-Roman" font-size="14.00">CNRI&#45;Python</text>
+</g>
+<!-- scancode://cnri&#45;python&#45;1.6(7) -->
+<g id="node15" class="node">
+<title>scancode://cnri&#45;python&#45;1.6(7)</title>
+<ellipse fill="white" stroke="white" cx="324.92" cy="-42" rx="131.88" ry="18"/>
+<text text-anchor="middle" x="324.92" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cnri&#45;python&#45;1.6</text>
 </g>
 </g>
 </svg>

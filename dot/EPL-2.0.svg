@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="30.95,-808 30.95,-914 299.13,-914 299.13,-808 30.95,-808"/>
+<polygon fill="lightgray" stroke="lightgray" points="112.19,-808 112.19,-914 217.88,-914 217.88,-808 112.19,-808"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="63.45,-640 63.45,-800 266.63,-800 266.63,-640 63.45,-640"/>
+<polygon fill="lightgray" stroke="lightgray" points="30.95,-640 30.95,-800 299.13,-800 299.13,-640 30.95,-640"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="112.19,-526 112.19,-632 217.88,-632 217.88,-526 112.19,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="30.95,-526 30.95,-632 299.13,-632 299.13,-526 30.95,-526"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="30.95,-412 30.95,-518 299.13,-518 299.13,-412 30.95,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 314.07,-518 314.07,-412 16,-412"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -43,11 +43,11 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="30.95,-130 30.95,-290 299.13,-290 299.13,-130 30.95,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="63.45,-130 63.45,-290 266.63,-290 266.63,-130 63.45,-130"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 314.07,-122 314.07,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="30.95,-16 30.95,-122 299.13,-122 299.13,-16 30.95,-16"/>
 </g>
 <!-- EPL&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -73,29 +73,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-888" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="165.04" y="-884.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- Eclipse Public License 2.0(3) -->
+<!-- epl&#45;2.0(3) -->
 <g id="node5" class="node">
-<title>Eclipse Public License 2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-834" rx="126.18" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-830.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
-</g>
-<!-- EPL 2.0(4) -->
-<g id="node6" class="node">
-<title>EPL 2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-774" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-770.3" font-family="Times-Roman" font-size="14.00">EPL 2.0</text>
+<title>epl&#45;2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-834" rx="42.49" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-830.3" font-family="Times-Roman" font-size="14.00">epl&#45;2.0</text>
 </g>
 <!-- EPL&#45;2.0(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>EPL&#45;2.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-720" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-716.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-774" rx="44.69" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-770.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- scancode://epl&#45;2.0(4) -->
+<!-- Eclipse Public License 2.0(4) -->
+<g id="node7" class="node">
+<title>Eclipse Public License 2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-720" rx="126.18" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-716.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
+</g>
+<!-- eclipse&#45;2.0(4) -->
 <g id="node8" class="node">
-<title>scancode://epl&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-666" rx="93.68" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-662.3" font-family="Times-Roman" font-size="14.00">scancode://epl&#45;2.0</text>
+<title>eclipse&#45;2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-666" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-662.3" font-family="Times-Roman" font-size="14.00">eclipse&#45;2.0</text>
 </g>
 <!-- EPL&#45;2.0(5) -->
 <g id="node9" class="node">
@@ -103,11 +103,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-606" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="165.04" y="-602.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- epl&#45;2.0(5) -->
+<!-- Eclipse Public License 2.0(5) -->
 <g id="node10" class="node">
-<title>epl&#45;2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-552" rx="42.49" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-548.3" font-family="Times-Roman" font-size="14.00">epl&#45;2.0</text>
+<title>Eclipse Public License 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-552" rx="126.18" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-548.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
 </g>
 <!-- EPL&#45;2.0(6) -->
 <g id="node11" class="node">
@@ -115,11 +115,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-492" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="165.04" y="-488.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- Eclipse Public License 2.0(6) -->
+<!-- Eclipse Public License &#45; v 2.0(6) -->
 <g id="node12" class="node">
-<title>Eclipse Public License 2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-438" rx="126.18" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-434.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
+<title>Eclipse Public License &#45; v 2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-438" rx="141.07" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-434.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License &#45; v 2.0</text>
 </g>
 <!-- EPL&#45;2.0(7) -->
 <g id="node13" class="node">
@@ -133,23 +133,23 @@
 <ellipse fill="white" stroke="white" cx="165.04" cy="-324" rx="126.18" ry="18"/>
 <text text-anchor="middle" x="165.04" y="-320.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
 </g>
-<!-- EPL&#45;2.0(8) -->
+<!-- EPL 2.0(8) -->
 <g id="node15" class="node">
-<title>EPL&#45;2.0(8)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-264" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-260.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
+<title>EPL 2.0(8)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-264" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-260.3" font-family="Times-Roman" font-size="14.00">EPL 2.0</text>
 </g>
-<!-- Eclipse Public License 2.0(8) -->
+<!-- EPL&#45;2.0(8) -->
 <g id="node16" class="node">
-<title>Eclipse Public License 2.0(8)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-210" rx="126.18" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-206.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
+<title>EPL&#45;2.0(8)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-210" rx="44.69" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-206.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- eclipse&#45;2.0(8) -->
+<!-- scancode://epl&#45;2.0(8) -->
 <g id="node17" class="node">
-<title>eclipse&#45;2.0(8)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-156" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-152.3" font-family="Times-Roman" font-size="14.00">eclipse&#45;2.0</text>
+<title>scancode://epl&#45;2.0(8)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-156" rx="93.68" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://epl&#45;2.0</text>
 </g>
 <!-- EPL&#45;2.0(9) -->
 <g id="node18" class="node">
@@ -157,11 +157,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="165.04" cy="-96" rx="44.69" ry="18"/>
 <text text-anchor="middle" x="165.04" y="-92.3" font-family="Times-Roman" font-size="14.00">EPL&#45;2.0</text>
 </g>
-<!-- Eclipse Public License &#45; v 2.0(9) -->
+<!-- Eclipse Public License 2.0(9) -->
 <g id="node19" class="node">
-<title>Eclipse Public License &#45; v 2.0(9)</title>
-<ellipse fill="white" stroke="white" cx="165.04" cy="-42" rx="141.07" ry="18"/>
-<text text-anchor="middle" x="165.04" y="-38.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License &#45; v 2.0</text>
+<title>Eclipse Public License 2.0(9)</title>
+<ellipse fill="white" stroke="white" cx="165.04" cy="-42" rx="126.18" ry="18"/>
+<text text-anchor="middle" x="165.04" y="-38.3" font-family="Times-Roman" font-size="14.00">Eclipse Public License 2.0</text>
 </g>
 </g>
 </svg>

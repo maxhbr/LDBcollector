@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+scancode://efl-2.0+`
-* `+EFL 2.0+`
 * `+Eiffel Forum License 2.0+`
 * `+Eiffel Forum License, Version 2+`
 * `+License :: OSI Approved :: Eiffel Forum License+`
+* `+scancode://efl-2.0+`
+* `+EFL 2.0+`
 
 === Comments on (easy) usability
 
@@ -39,10 +39,10 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.eiffel-nice.org/license/
-* *OSI Page:* http://www.opensource.org/licenses/ver2_eiffel.php
 * *OSI Page:* https://opensource.org/licenses/EFL-2.0
-* *SPDX:* http://spdx.org/licenses/EFL-2.0.json
+* *OSI Page:* http://www.opensource.org/licenses/ver2_eiffel.php
 * *SPDX:* https://spdx.org/licenses/EFL-2.0.html
+* *SPDX:* http://spdx.org/licenses/EFL-2.0.json
 * http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
 * http://amalasoft.com/downloads/ael/ds/LICENSE.txt
 * http://en.wikipedia.org/wiki/Eiffel_Forum_License
@@ -81,25 +81,25 @@ DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/EFL-2.0.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
+* https://spdx.org/licenses/EFL-2.0.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-2.0.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -108,11 +108,11 @@ Knowledge International]
     "__impliedNames": [
         "EFL-2.0",
         "Eiffel Forum License v2.0",
-        "scancode://efl-2.0",
-        "EFL 2.0",
         "Eiffel Forum License 2.0",
         "Eiffel Forum License, Version 2",
-        "License :: OSI Approved :: Eiffel Forum License"
+        "License :: OSI Approved :: Eiffel Forum License",
+        "scancode://efl-2.0",
+        "EFL 2.0"
     ],
     "__impliedId": "EFL-2.0",
     "__isFsfFree": true,
@@ -478,19 +478,23 @@ Knowledge International]
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/EFL-2.0.json"
-        ],
-        [
-            null,
-            "http://www.eiffel-nice.org/license/eiffel-forum-license-2.html"
+            "https://spdx.org/licenses/EFL-2.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/EFL-2.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/EFL-2.0"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/EFL-2.0.html"
+            "http://spdx.org/licenses/EFL-2.0.json"
+        ],
+        [
+            null,
+            "http://www.eiffel-nice.org/license/eiffel-forum-license-2.html"
         ],
         [
             "Homepage",
@@ -511,10 +515,6 @@ Knowledge International]
         [
             null,
             "http://opensource.org/licenses/EFL-2.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/EFL-2.0"
         ]
     ]
 }

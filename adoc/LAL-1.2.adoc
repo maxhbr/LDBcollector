@@ -28,10 +28,10 @@ Guidelines] (NOASSERTION))
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/LAL-1.2.html[SPDX] (all data [in this
-repository] is generated)
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
+* https://spdx.org/licenses/LAL-1.2.html[SPDX] (all data [in this
+repository] is generated)
 
 ==== Raw JSON
 

@@ -42,8 +42,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 * *Homepage:* http://openssl.org/source/license.html
 * *Homepage:* http://www.openssl.org/source/license.html
-* *SPDX:* http://spdx.org/licenses/OpenSSL.json
 * *SPDX:* https://spdx.org/licenses/OpenSSL.html
+* *SPDX:* http://spdx.org/licenses/OpenSSL.json
 * *open-license:* http://open-license.hitachi.com/licenses/279
 
 === Description from open-license
@@ -176,29 +176,29 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/OpenSSL.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml[Scancode]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml[finos/OSLC-handbook]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
-license-compatibility-checker]
-(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/OpenSSL.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml[Scancode]
+(CC0-1.0)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml[Scancode]
+(CC0-1.0)
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -719,15 +719,19 @@ Policy]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OpenSSL.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/279"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OpenSSL.json"
         ],
         [
             null,
             "http://www.openssl.org/source/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OpenSSL.html"
         ],
         [
             "Homepage",
@@ -736,10 +740,6 @@ Policy]
         [
             "Homepage",
             "http://www.openssl.org/source/license.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/279"
         ]
     ]
 }

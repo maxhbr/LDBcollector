@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 541.55,-350 541.55,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="55.65,-244 55.65,-350 501.91,-350 501.91,-244 55.65,-244"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="152.49,-130 152.49,-236 405.07,-236 405.07,-130 152.49,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 541.55,-236 541.55,-130 16,-130"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="55.65,-16 55.65,-122 501.91,-122 501.91,-16 55.65,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="152.49,-16 152.49,-122 405.07,-122 405.07,-16 152.49,-16"/>
 </g>
 <!-- CC&#45;BY&#45;SA&#45;2.5(1) -->
 <g id="node1" class="node">
@@ -57,11 +57,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="278.78" cy="-324" rx="69.59" ry="18"/>
 <text text-anchor="middle" x="278.78" y="-320.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;SA&#45;2.5</text>
 </g>
-<!-- Creative Commons Attribution Share Alike 2.5 Generic(3) -->
+<!-- Creative Commons Attribution&#45;ShareAlike 2.5(3) -->
 <g id="node5" class="node">
-<title>Creative Commons Attribution Share Alike 2.5 Generic(3)</title>
-<ellipse fill="white" stroke="white" cx="278.78" cy="-270" rx="254.55" ry="18"/>
-<text text-anchor="middle" x="278.78" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Share Alike 2.5 Generic</text>
+<title>Creative Commons Attribution&#45;ShareAlike 2.5(3)</title>
+<ellipse fill="white" stroke="white" cx="278.78" cy="-270" rx="215.26" ry="18"/>
+<text text-anchor="middle" x="278.78" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution&#45;ShareAlike 2.5</text>
 </g>
 <!-- CC&#45;BY&#45;SA&#45;2.5(4) -->
 <g id="node6" class="node">
@@ -69,11 +69,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="278.78" cy="-210" rx="69.59" ry="18"/>
 <text text-anchor="middle" x="278.78" y="-206.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;SA&#45;2.5</text>
 </g>
-<!-- scancode://cc&#45;by&#45;sa&#45;2.5(4) -->
+<!-- Creative Commons Attribution Share Alike 2.5 Generic(4) -->
 <g id="node7" class="node">
-<title>scancode://cc&#45;by&#45;sa&#45;2.5(4)</title>
-<ellipse fill="white" stroke="white" cx="278.78" cy="-156" rx="118.08" ry="18"/>
-<text text-anchor="middle" x="278.78" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;sa&#45;2.5</text>
+<title>Creative Commons Attribution Share Alike 2.5 Generic(4)</title>
+<ellipse fill="white" stroke="white" cx="278.78" cy="-156" rx="254.55" ry="18"/>
+<text text-anchor="middle" x="278.78" y="-152.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Share Alike 2.5 Generic</text>
 </g>
 <!-- CC&#45;BY&#45;SA&#45;2.5(5) -->
 <g id="node8" class="node">
@@ -81,11 +81,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="278.78" cy="-96" rx="69.59" ry="18"/>
 <text text-anchor="middle" x="278.78" y="-92.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;SA&#45;2.5</text>
 </g>
-<!-- Creative Commons Attribution&#45;ShareAlike 2.5(5) -->
+<!-- scancode://cc&#45;by&#45;sa&#45;2.5(5) -->
 <g id="node9" class="node">
-<title>Creative Commons Attribution&#45;ShareAlike 2.5(5)</title>
-<ellipse fill="white" stroke="white" cx="278.78" cy="-42" rx="215.26" ry="18"/>
-<text text-anchor="middle" x="278.78" y="-38.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution&#45;ShareAlike 2.5</text>
+<title>scancode://cc&#45;by&#45;sa&#45;2.5(5)</title>
+<ellipse fill="white" stroke="white" cx="278.78" cy="-42" rx="118.08" ry="18"/>
+<text text-anchor="middle" x="278.78" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;sa&#45;2.5</text>
 </g>
 </g>
 </svg>

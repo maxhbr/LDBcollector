@@ -12,8 +12,8 @@
 
 *Other Names:*
 
-* `+scancode://ms-pl+`
 * `+Microsoft Public License (MS-PL)+`
+* `+scancode://ms-pl+`
 
 === Description
 
@@ -85,10 +85,10 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt[c
 === URLs
 
 * *Homepage:* http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
-* *OSI Page:* http://www.opensource.org/licenses/ms-pl.html
 * *OSI Page:* https://opensource.org/licenses/MS-PL
-* *SPDX:* http://spdx.org/licenses/MS-PL.json
+* *OSI Page:* http://www.opensource.org/licenses/ms-pl.html
 * *SPDX:* https://spdx.org/licenses/MS-PL.html
+* *SPDX:* http://spdx.org/licenses/MS-PL.json
 * *open-license:* http://open-license.hitachi.com/licenses/66
 * http://www.microsoft.com/opensource/licenses.mspx
 * http://www.microsoft.com/en-us/openness/licenses.aspx#MPL
@@ -256,36 +256,36 @@ non-infringement.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/MS-PL.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode]
-(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/MS-PL.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml[Scancode]
+(CC0-1.0)
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -294,10 +294,10 @@ Knowledge International]
     "__impliedNames": [
         "MS-PL",
         "Microsoft Public License",
-        "scancode://ms-pl",
         "ms-pl",
         "Microsoft Public License (MS-PL)",
-        "Ms-PL"
+        "Ms-PL",
+        "scancode://ms-pl"
     ],
     "__impliedId": "MS-PL",
     "__isFsfFree": true,
@@ -1125,19 +1125,27 @@ Knowledge International]
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MS-PL.json"
-        ],
-        [
-            null,
-            "http://www.microsoft.com/opensource/licenses.mspx"
+            "https://spdx.org/licenses/MS-PL.html"
         ],
         [
             null,
             "https://opensource.org/licenses/MS-PL"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/MS-PL"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/66"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/MS-PL.html"
+            "http://spdx.org/licenses/MS-PL.json"
+        ],
+        [
+            null,
+            "http://www.microsoft.com/opensource/licenses.mspx"
         ],
         [
             "Homepage",
@@ -1154,14 +1162,6 @@ Knowledge International]
         [
             null,
             "http://www.opensource.org/licenses/MS-PL"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MS-PL"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/66"
         ]
     ]
 }

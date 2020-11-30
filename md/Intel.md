@@ -5,17 +5,17 @@ Intel Open Source License (Intel)
 
 **Other Names:**
 
--   `scancode://intel-bsd-export-control`
-
--   `Intel BSD - Export Control`
+-   `intel-osl`
 
 -   `The Intel Open Source License`
 
 -   `License :: OSI Approved :: Intel Open Source License`
 
--   `intel-osl`
-
 -   `Intel License Agreement`
+
+-   `scancode://intel-bsd-export-control`
+
+-   `Intel BSD - Export Control`
 
 Comments on (easy) usability
 ----------------------------
@@ -53,14 +53,14 @@ URLs
 -   **Homepage:**
     http://opensource.org/licenses/intel-open-source-license.html
 
+-   **OSI Page:** https://opensource.org/licenses/Intel
+
 -   **OSI Page:**
     http://www.opensource.org/licenses/intel-open-source-license.html
 
--   **OSI Page:** https://opensource.org/licenses/Intel
+-   **SPDX:** https://spdx.org/licenses/Intel.html
 
 -   **SPDX:** http://spdx.org/licenses/Intel.json
-
--   **SPDX:** https://spdx.org/licenses/Intel.html
 
 -   **open-license:** http://open-license.hitachi.com/licenses/663
 
@@ -147,30 +147,30 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -178,12 +178,12 @@ Raw Data
         "__impliedNames": [
             "Intel",
             "Intel Open Source License",
-            "scancode://intel-bsd-export-control",
-            "Intel BSD - Export Control",
+            "intel-osl",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
-            "intel-osl",
-            "Intel License Agreement"
+            "Intel License Agreement",
+            "scancode://intel-bsd-export-control",
+            "Intel BSD - Export Control"
         ],
         "__impliedId": "Intel",
         "__isFsfFree": true,
@@ -602,15 +602,23 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Intel.json"
+                "https://spdx.org/licenses/Intel.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Intel"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/Intel"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/663"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/Intel.html"
+                "http://spdx.org/licenses/Intel.json"
             ],
             [
                 "Homepage",
@@ -627,14 +635,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/intel-open-source-license.php"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Intel"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/663"
             ]
         ]
     }

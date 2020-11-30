@@ -25,9 +25,9 @@ URLs
 -   **Homepage:**
     http://git.denx.de/?p=u-boot.git;a=blob;f=arch/powerpc/cpu/ppc4xx/miiphy.c;h=297155fdafa064b955e53e9832de93bfb0cfb85b;hb=9fab4bf4cc077c21e43941866f3f2c196f28670d
 
--   **SPDX:** http://spdx.org/licenses/IBM-pibs.json
-
 -   **SPDX:** https://spdx.org/licenses/IBM-pibs.html
+
+-   **SPDX:** http://spdx.org/licenses/IBM-pibs.json
 
 Text
 ----
@@ -59,12 +59,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/IBM-pibs.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/IBM-pibs.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibm-pibs.yml "Scancode")
     (CC0-1.0)
@@ -218,15 +218,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/IBM-pibs.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/IBM-pibs.json"
             ],
             [
                 null,
                 "http://git.denx.de/?p=u-boot.git;a=blob;f=arch/powerpc/cpu/ppc4xx/miiphy.c;h=297155fdafa064b955e53e9832de93bfb0cfb85b;hb=9fab4bf4cc077c21e43941866f3f2c196f28670d"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/IBM-pibs.html"
             ],
             [
                 "Homepage",

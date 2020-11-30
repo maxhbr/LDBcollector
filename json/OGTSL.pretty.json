@@ -2,9 +2,9 @@
     "__impliedNames": [
         "OGTSL",
         "Open Group Test Suite License",
-        "scancode://opengroup",
         "The Open Group Test Suite License (OGTSL)",
-        "License :: OSI Approved :: Open Group Test Suite License"
+        "License :: OSI Approved :: Open Group Test Suite License",
+        "scancode://opengroup"
     ],
     "__impliedId": "OGTSL",
     "__impliedComments": [
@@ -323,19 +323,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/OGTSL.json"
-        ],
-        [
-            null,
-            "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt"
+            "https://spdx.org/licenses/OGTSL.html"
         ],
         [
             null,
             "https://opensource.org/licenses/OGTSL"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/OGTSL"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/OGTSL.html"
+            "http://spdx.org/licenses/OGTSL.json"
+        ],
+        [
+            null,
+            "http://www.opengroup.org/testing/downloads/The_Open_Group_TSL.txt"
         ],
         [
             "Homepage",
@@ -348,10 +352,6 @@
         [
             null,
             "http://www.opensource.org/licenses/OGTSL"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/OGTSL"
         ]
     ]
 }

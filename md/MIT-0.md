@@ -29,9 +29,9 @@ URLs
 -   **Homepage:**
     https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE
 
--   **SPDX:** http://spdx.org/licenses/MIT-0.json
-
 -   **SPDX:** https://spdx.org/licenses/MIT-0.html
+
+-   **SPDX:** http://spdx.org/licenses/MIT-0.json
 
 -   https://github.com/aws/mit-0
 
@@ -62,12 +62,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-0.yml "Scancode")
     (CC0-1.0)
@@ -258,6 +258,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/MIT-0.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/MIT-0.json"
             ],
             [
@@ -271,10 +275,6 @@ Raw Data
             [
                 null,
                 "https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/MIT-0.html"
             ],
             [
                 "Homepage",

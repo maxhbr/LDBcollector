@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-298 135.59,-458 447.96,-458 447.96,-298 135.59,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 567.55,-458 567.55,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 567.55,-290 567.55,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-184 135.59,-290 447.96,-290 447.96,-184 135.59,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-122 447.96,-122 447.96,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 447.96,-176 447.96,-16 135.59,-16"/>
 </g>
 <!-- OGTSL(1) -->
 <g id="node1" class="node">
@@ -67,53 +67,53 @@
 <ellipse fill="white" stroke="white" cx="291.78" cy="-492" rx="148.37" ry="18"/>
 <text text-anchor="middle" x="291.78" y="-488.3" font-family="Times-Roman" font-size="14.00">Open Group Test Suite License</text>
 </g>
-<!-- OGTSL(4) -->
+<!-- License :: OSI Approved :: Open Group Test Suite License(4) -->
 <g id="node6" class="node">
-<title>OGTSL(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-432" rx="40.89" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-428.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
+<title>License :: OSI Approved :: Open Group Test Suite License(4)</title>
+<ellipse fill="white" stroke="white" cx="291.78" cy="-432" rx="267.55" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Open Group Test Suite License</text>
 </g>
-<!-- Open Group Test Suite License(4) -->
+<!-- OGTSL(4) -->
 <g id="node7" class="node">
-<title>Open Group Test Suite License(4)</title>
-<ellipse fill="white" stroke="white" cx="291.78" cy="-378" rx="148.37" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-374.3" font-family="Times-Roman" font-size="14.00">Open Group Test Suite License</text>
+<title>OGTSL(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-378" rx="40.89" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-374.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
 </g>
-<!-- scancode://opengroup(4) -->
+<!-- The Open Group Test Suite License (OGTSL)(4) -->
 <g id="node8" class="node">
-<title>scancode://opengroup(4)</title>
-<ellipse fill="white" stroke="white" cx="291.78" cy="-324" rx="110.48" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://opengroup</text>
-</g>
-<!-- License :: OSI Approved :: Open Group Test Suite License(5) -->
-<g id="node9" class="node">
-<title>License :: OSI Approved :: Open Group Test Suite License(5)</title>
-<ellipse fill="white" stroke="white" cx="291.78" cy="-264" rx="267.55" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-260.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Open Group Test Suite License</text>
+<title>The Open Group Test Suite License (OGTSL)(4)</title>
+<ellipse fill="white" stroke="white" cx="291.78" cy="-324" rx="207.96" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-320.3" font-family="Times-Roman" font-size="14.00">The Open Group Test Suite License (OGTSL)</text>
 </g>
 <!-- OGTSL(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>OGTSL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-210" rx="40.89" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-206.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-264" rx="40.89" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-260.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
 </g>
-<!-- The Open Group Test Suite License (OGTSL)(5) -->
-<g id="node11" class="node">
-<title>The Open Group Test Suite License (OGTSL)(5)</title>
-<ellipse fill="white" stroke="white" cx="291.78" cy="-156" rx="207.96" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-152.3" font-family="Times-Roman" font-size="14.00">The Open Group Test Suite License (OGTSL)</text>
+<!-- Open Group Test Suite License(5) -->
+<g id="node10" class="node">
+<title>Open Group Test Suite License(5)</title>
+<ellipse fill="white" stroke="white" cx="291.78" cy="-210" rx="148.37" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-206.3" font-family="Times-Roman" font-size="14.00">Open Group Test Suite License</text>
 </g>
 <!-- OGTSL(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>OGTSL(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-96" rx="40.89" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-92.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="291.78" cy="-150" rx="40.89" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-146.3" font-family="Times-Roman" font-size="14.00">OGTSL</text>
 </g>
 <!-- Open Group Test Suite License(6) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>Open Group Test Suite License(6)</title>
-<ellipse fill="white" stroke="white" cx="291.78" cy="-42" rx="148.37" ry="18"/>
-<text text-anchor="middle" x="291.78" y="-38.3" font-family="Times-Roman" font-size="14.00">Open Group Test Suite License</text>
+<ellipse fill="white" stroke="white" cx="291.78" cy="-96" rx="148.37" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-92.3" font-family="Times-Roman" font-size="14.00">Open Group Test Suite License</text>
+</g>
+<!-- scancode://opengroup(6) -->
+<g id="node13" class="node">
+<title>scancode://opengroup(6)</title>
+<ellipse fill="white" stroke="white" cx="291.78" cy="-42" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="291.78" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://opengroup</text>
 </g>
 </g>
 </svg>

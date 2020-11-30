@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 186.69,-290 186.69,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 186.69,-290 186.69,-184 16,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 186.69,-122 186.69,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 186.69,-176 186.69,-16 16,-16"/>
 </g>
 <!-- TCL(1) -->
 <g id="node1" class="node">
@@ -75,23 +75,23 @@
 <ellipse fill="white" stroke="white" cx="101.34" cy="-210" rx="77.19" ry="18"/>
 <text text-anchor="middle" x="101.34" y="-206.3" font-family="Times-Roman" font-size="14.00">TCL/TK License</text>
 </g>
-<!-- scancode://tcl(4) -->
-<g id="node8" class="node">
-<title>scancode://tcl(4)</title>
-<ellipse fill="white" stroke="white" cx="101.34" cy="-156" rx="72.59" ry="18"/>
-<text text-anchor="middle" x="101.34" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://tcl</text>
-</g>
 <!-- TCL(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>TCL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="101.34" cy="-96" rx="27" ry="18"/>
-<text text-anchor="middle" x="101.34" y="-92.3" font-family="Times-Roman" font-size="14.00">TCL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="101.34" cy="-150" rx="27" ry="18"/>
+<text text-anchor="middle" x="101.34" y="-146.3" font-family="Times-Roman" font-size="14.00">TCL</text>
 </g>
 <!-- TCL/TK License(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>TCL/TK License(5)</title>
-<ellipse fill="white" stroke="white" cx="101.34" cy="-42" rx="77.19" ry="18"/>
-<text text-anchor="middle" x="101.34" y="-38.3" font-family="Times-Roman" font-size="14.00">TCL/TK License</text>
+<ellipse fill="white" stroke="white" cx="101.34" cy="-96" rx="77.19" ry="18"/>
+<text text-anchor="middle" x="101.34" y="-92.3" font-family="Times-Roman" font-size="14.00">TCL/TK License</text>
+</g>
+<!-- scancode://tcl(5) -->
+<g id="node10" class="node">
+<title>scancode://tcl(5)</title>
+<ellipse fill="white" stroke="white" cx="101.34" cy="-42" rx="72.59" ry="18"/>
+<text text-anchor="middle" x="101.34" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://tcl</text>
 </g>
 </g>
 </svg>

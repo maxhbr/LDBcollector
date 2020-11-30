@@ -23,9 +23,9 @@ URLs
 -   **Homepage:**
     https://github.com/infusion/PHP/blob/master/TSRM/LICENSE
 
--   **SPDX:** http://spdx.org/licenses/BSD-Source-Code.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-Source-Code.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-Source-Code.json
 
 -   https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt
 
@@ -65,12 +65,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/BSD-Source-Code.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/BSD-Source-Code.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-source-code.yml "Scancode")
     (CC0-1.0)
@@ -223,15 +223,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-Source-Code.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-Source-Code.json"
             ],
             [
                 null,
                 "https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-Source-Code.html"
             ],
             [
                 "Homepage",

@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Newsletr.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Newsletr.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Newsletr"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Newsletr.html"
         ],
         [
             "Homepage",

@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 295.88,-290 295.88,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="24.45,-184 24.45,-290 287.43,-290 287.43,-184 24.45,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="24.45,-16 24.45,-122 287.43,-122 287.43,-16 24.45,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 295.88,-176 295.88,-16 16,-16"/>
 </g>
 <!-- Artistic&#45;1.0&#45;Perl(1) -->
 <g id="node1" class="node">
@@ -63,35 +63,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-324" rx="81.49" ry="18"/>
 <text text-anchor="middle" x="155.94" y="-320.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0&#45;Perl</text>
 </g>
-<!-- Artistic&#45;1.0&#45;Perl(4) -->
+<!-- Artistic License 1.0 (Perl)(4) -->
 <g id="node6" class="node">
-<title>Artistic&#45;1.0&#45;Perl(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-264" rx="81.49" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-260.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0&#45;Perl</text>
+<title>Artistic License 1.0 (Perl)(4)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-264" rx="123.48" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-260.3" font-family="Times-Roman" font-size="14.00">Artistic License 1.0 (Perl)</text>
 </g>
-<!-- Artistic&#45;Perl&#45;1.0(4) -->
+<!-- Artistic&#45;1.0&#45;Perl(4) -->
 <g id="node7" class="node">
-<title>Artistic&#45;Perl&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-210" rx="81.49" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-206.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;Perl&#45;1.0</text>
-</g>
-<!-- scancode://artistic&#45;perl&#45;1.0(4) -->
-<g id="node8" class="node">
-<title>scancode://artistic&#45;perl&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-156" rx="131.88" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;perl&#45;1.0</text>
-</g>
-<!-- Artistic License 1.0 (Perl)(5) -->
-<g id="node9" class="node">
-<title>Artistic License 1.0 (Perl)(5)</title>
-<ellipse fill="white" stroke="white" cx="155.94" cy="-96" rx="123.48" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-92.3" font-family="Times-Roman" font-size="14.00">Artistic License 1.0 (Perl)</text>
+<title>Artistic&#45;1.0&#45;Perl(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-210" rx="81.49" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-206.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0&#45;Perl</text>
 </g>
 <!-- Artistic&#45;1.0&#45;Perl(5) -->
-<g id="node10" class="node">
+<g id="node8" class="node">
 <title>Artistic&#45;1.0&#45;Perl(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-42" rx="81.49" ry="18"/>
-<text text-anchor="middle" x="155.94" y="-38.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0&#45;Perl</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="155.94" cy="-150" rx="81.49" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-146.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;1.0&#45;Perl</text>
+</g>
+<!-- Artistic&#45;Perl&#45;1.0(5) -->
+<g id="node9" class="node">
+<title>Artistic&#45;Perl&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-96" rx="81.49" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-92.3" font-family="Times-Roman" font-size="14.00">Artistic&#45;Perl&#45;1.0</text>
+</g>
+<!-- scancode://artistic&#45;perl&#45;1.0(5) -->
+<g id="node10" class="node">
+<title>scancode://artistic&#45;perl&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="155.94" cy="-42" rx="131.88" ry="18"/>
+<text text-anchor="middle" x="155.94" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://artistic&#45;perl&#45;1.0</text>
 </g>
 </g>
 </svg>

@@ -14,12 +14,12 @@
 
 * `+MIT license (also X11)+`
 * `+The MIT License+`
-* `+scancode://mit+`
+* `+mit-license+`
 * `+MIT/Expat License+`
 * `+Expat+`
 * `+License :: OSI Approved :: MIT License+`
+* `+scancode://mit+`
 * `+MIT license / X11 license+`
-* `+mit-license+`
 
 === Description
 
@@ -97,10 +97,10 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[cho
 === URLs
 
 * *Homepage:* http://opensource.org/licenses/mit-license.php
-* *OSI Page:* http://www.opensource.org/licenses/MIT
 * *OSI Page:* https://opensource.org/licenses/mit
-* *SPDX:* http://spdx.org/licenses/MIT.json
+* *OSI Page:* http://www.opensource.org/licenses/MIT
 * *SPDX:* https://spdx.org/licenses/MIT.html
+* *SPDX:* http://spdx.org/licenses/MIT.json
 * *Wikipedia page:* https://en.wikipedia.org/wiki/MIT_License
 * *open-license:* http://open-license.hitachi.com/licenses/33
 * *tl;dr legal:* https://tldrlegal.com/license/mit-license
@@ -180,22 +180,17 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 * LicenseName
 * Override
-* https://spdx.org/licenses/MIT.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode]
-(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
-* https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml[finos/OSLC-handbook]
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
@@ -203,18 +198,23 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
-* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
-(NOASSERTION)
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/MIT.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml[Scancode]
+(CC0-1.0)
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -225,19 +225,19 @@ Knowledge International]
         "MIT license (also X11)",
         "The MIT License",
         "MIT License",
-        "scancode://mit",
         "mit",
+        "mit-license",
         "MIT/Expat License",
         "Expat",
         "License :: OSI Approved :: MIT License",
-        "MIT license / X11 license",
-        "mit-license"
+        "scancode://mit",
+        "MIT license / X11 license"
     ],
     "__impliedId": "MIT",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MIT",
-        "The MIT License"
+        "The MIT License",
+        "MIT"
     ],
     "__impliedComments": [
         [
@@ -1060,31 +1060,11 @@ Knowledge International]
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MIT.json"
+            "https://spdx.org/licenses/MIT.html"
         ],
         [
             null,
             "https://opensource.org/licenses/MIT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT.html"
-        ],
-        [
-            "Homepage",
-            "http://opensource.org/licenses/mit-license.php"
-        ],
-        [
-            "OSI Page",
-            "http://www.opensource.org/licenses/MIT"
-        ],
-        [
-            null,
-            "https://opensource.com/article/18/3/patent-grant-mit-license"
-        ],
-        [
-            null,
-            "https://opensource.com/article/19/4/history-mit-license"
         ],
         [
             "tl;dr legal",
@@ -1101,6 +1081,26 @@ Knowledge International]
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/33"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/MIT.json"
+        ],
+        [
+            "Homepage",
+            "http://opensource.org/licenses/mit-license.php"
+        ],
+        [
+            "OSI Page",
+            "http://www.opensource.org/licenses/MIT"
+        ],
+        [
+            null,
+            "https://opensource.com/article/18/3/patent-grant-mit-license"
+        ],
+        [
+            null,
+            "https://opensource.com/article/19/4/history-mit-license"
         ]
     ]
 }

@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="134.94,-412 134.94,-518 442.11,-518 442.11,-412 134.94,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="130.39,-412 130.39,-518 446.66,-518 446.66,-412 130.39,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="171.34,-298 171.34,-404 405.72,-404 405.72,-298 171.34,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 561.05,-404 561.05,-244 16,-244"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 561.05,-290 561.05,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="134.94,-130 134.94,-236 442.11,-236 442.11,-130 134.94,-130"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="130.39,-16 130.39,-122 446.66,-122 446.66,-16 130.39,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="171.34,-16 171.34,-122 405.72,-122 405.72,-16 171.34,-16"/>
 </g>
 <!-- AAL(1) -->
 <g id="node1" class="node">
@@ -61,11 +61,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="288.53" cy="-492" rx="28.7" ry="18"/>
 <text text-anchor="middle" x="288.53" y="-488.3" font-family="Times-Roman" font-size="14.00">AAL</text>
 </g>
-<!-- Attribution Assurance License(3) -->
+<!-- Attribution Assurance Licenses(3) -->
 <g id="node5" class="node">
-<title>Attribution Assurance License(3)</title>
-<ellipse fill="white" stroke="white" cx="288.53" cy="-438" rx="145.67" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-434.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance License</text>
+<title>Attribution Assurance Licenses(3)</title>
+<ellipse fill="white" stroke="white" cx="288.53" cy="-438" rx="150.27" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-434.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance Licenses</text>
 </g>
 <!-- AAL(4) -->
 <g id="node6" class="node">
@@ -73,29 +73,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="288.53" cy="-378" rx="28.7" ry="18"/>
 <text text-anchor="middle" x="288.53" y="-374.3" font-family="Times-Roman" font-size="14.00">AAL</text>
 </g>
-<!-- scancode://attribution(4) -->
+<!-- Attribution Assurance License(4) -->
 <g id="node7" class="node">
-<title>scancode://attribution(4)</title>
-<ellipse fill="white" stroke="white" cx="288.53" cy="-324" rx="109.38" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://attribution</text>
+<title>Attribution Assurance License(4)</title>
+<ellipse fill="white" stroke="white" cx="288.53" cy="-324" rx="145.67" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-320.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance License</text>
+</g>
+<!-- License :: OSI Approved :: Attribution Assurance License(4) -->
+<g id="node8" class="node">
+<title>License :: OSI Approved :: Attribution Assurance License(4)</title>
+<ellipse fill="white" stroke="white" cx="288.53" cy="-270" rx="264.55" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-266.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Attribution Assurance License</text>
 </g>
 <!-- AAL(5) -->
-<g id="node8" class="node">
+<g id="node9" class="node">
 <title>AAL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="288.53" cy="-264" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-260.3" font-family="Times-Roman" font-size="14.00">AAL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="288.53" cy="-210" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-206.3" font-family="Times-Roman" font-size="14.00">AAL</text>
 </g>
 <!-- Attribution Assurance License(5) -->
-<g id="node9" class="node">
-<title>Attribution Assurance License(5)</title>
-<ellipse fill="white" stroke="white" cx="288.53" cy="-210" rx="145.67" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-206.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance License</text>
-</g>
-<!-- License :: OSI Approved :: Attribution Assurance License(5) -->
 <g id="node10" class="node">
-<title>License :: OSI Approved :: Attribution Assurance License(5)</title>
-<ellipse fill="white" stroke="white" cx="288.53" cy="-156" rx="264.55" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-152.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Attribution Assurance License</text>
+<title>Attribution Assurance License(5)</title>
+<ellipse fill="white" stroke="white" cx="288.53" cy="-156" rx="145.67" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-152.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance License</text>
 </g>
 <!-- AAL(6) -->
 <g id="node11" class="node">
@@ -103,11 +103,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="288.53" cy="-96" rx="28.7" ry="18"/>
 <text text-anchor="middle" x="288.53" y="-92.3" font-family="Times-Roman" font-size="14.00">AAL</text>
 </g>
-<!-- Attribution Assurance Licenses(6) -->
+<!-- scancode://attribution(6) -->
 <g id="node12" class="node">
-<title>Attribution Assurance Licenses(6)</title>
-<ellipse fill="white" stroke="white" cx="288.53" cy="-42" rx="150.27" ry="18"/>
-<text text-anchor="middle" x="288.53" y="-38.3" font-family="Times-Roman" font-size="14.00">Attribution Assurance Licenses</text>
+<title>scancode://attribution(6)</title>
+<ellipse fill="white" stroke="white" cx="288.53" cy="-42" rx="109.38" ry="18"/>
+<text text-anchor="middle" x="288.53" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://attribution</text>
 </g>
 </g>
 </svg>

@@ -4,12 +4,12 @@
         "BSL (v1.0)",
         "BSL (v1)",
         "Boost Software License 1.0",
-        "scancode://boost-1.0",
-        "Boost 1.0",
         "bsl-1.0",
-        "Boost Software License 1.0 (BSL-1.0)",
         "bsl1.0",
-        "Boost Software License - Version 1.0"
+        "Boost Software License 1.0 (BSL-1.0)",
+        "Boost Software License - Version 1.0",
+        "scancode://boost-1.0",
+        "Boost 1.0"
     ],
     "__impliedId": "BSL-1.0",
     "__impliedComments": [
@@ -638,19 +638,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/BSL-1.0.json"
-        ],
-        [
-            null,
-            "http://www.boost.org/LICENSE_1_0.txt"
+            "https://spdx.org/licenses/BSL-1.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/BSL-1.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/BSL-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/390"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/BSL-1.0.html"
+            "http://spdx.org/licenses/BSL-1.0.json"
+        ],
+        [
+            null,
+            "http://www.boost.org/LICENSE_1_0.txt"
         ],
         [
             "Homepage",
@@ -667,14 +675,6 @@
         [
             null,
             "http://www.opensource.org/licenses/BSL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/BSL-1.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/390"
         ]
     ]
 }

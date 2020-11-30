@@ -19,19 +19,19 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="27.7,-412 27.7,-518 327.07,-518 327.07,-412 27.7,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-412 55,-518 299.78,-518 299.78,-412 55,-412"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="41.35,-244 41.35,-404 313.43,-404 313.43,-244 41.35,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 338.77,-404 338.77,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 338.77,-236 338.77,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="27.7,-184 27.7,-290 327.07,-290 327.07,-184 27.7,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-16 55,-122 299.78,-122 299.78,-16 55,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="41.35,-16 41.35,-176 313.43,-176 313.43,-16 41.35,-16"/>
 </g>
 <!-- Frameworx&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -39,11 +39,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-552" rx="77.99" ry="18"/>
 <text text-anchor="middle" x="177.39" y="-548.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
 </g>
-<!-- Frameworx Open License 1.0(2) -->
+<!-- Frameworx License 1.0(2) -->
 <g id="node2" class="node">
-<title>Frameworx Open License 1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="177.39" cy="-492" rx="141.88" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-488.3" font-family="Times-Roman" font-size="14.00">Frameworx Open License 1.0</text>
+<title>Frameworx License 1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="177.39" cy="-492" rx="114.28" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-488.3" font-family="Times-Roman" font-size="14.00">Frameworx License 1.0</text>
 </g>
 <!-- Frameworx&#45;1.0(2) -->
 <g id="node3" class="node">
@@ -51,11 +51,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-438" rx="77.99" ry="18"/>
 <text text-anchor="middle" x="177.39" y="-434.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
 </g>
-<!-- Frameworx 1.0(3) -->
+<!-- Frameworx License, Version 1.0(3) -->
 <g id="node4" class="node">
-<title>Frameworx 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="177.39" cy="-378" rx="77.19" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-374.3" font-family="Times-Roman" font-size="14.00">Frameworx 1.0</text>
+<title>Frameworx License, Version 1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="177.39" cy="-378" rx="153.27" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-374.3" font-family="Times-Roman" font-size="14.00">Frameworx License, Version 1.0</text>
 </g>
 <!-- Frameworx&#45;1.0(3) -->
 <g id="node5" class="node">
@@ -63,35 +63,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-324" rx="77.99" ry="18"/>
 <text text-anchor="middle" x="177.39" y="-320.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
 </g>
-<!-- scancode://frameworx&#45;1.0(3) -->
+<!-- Frameworx Open License 1.0(4) -->
 <g id="node6" class="node">
-<title>scancode://frameworx&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="177.39" cy="-270" rx="128.08" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://frameworx&#45;1.0</text>
-</g>
-<!-- Frameworx License, Version 1.0(4) -->
-<g id="node7" class="node">
-<title>Frameworx License, Version 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="177.39" cy="-210" rx="153.27" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-206.3" font-family="Times-Roman" font-size="14.00">Frameworx License, Version 1.0</text>
+<title>Frameworx Open License 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="177.39" cy="-264" rx="141.88" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-260.3" font-family="Times-Roman" font-size="14.00">Frameworx Open License 1.0</text>
 </g>
 <!-- Frameworx&#45;1.0(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>Frameworx&#45;1.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-156" rx="77.99" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-152.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-210" rx="77.99" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-206.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
 </g>
-<!-- Frameworx License 1.0(5) -->
-<g id="node9" class="node">
-<title>Frameworx License 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="177.39" cy="-96" rx="114.28" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-92.3" font-family="Times-Roman" font-size="14.00">Frameworx License 1.0</text>
+<!-- Frameworx 1.0(5) -->
+<g id="node8" class="node">
+<title>Frameworx 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="177.39" cy="-150" rx="77.19" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-146.3" font-family="Times-Roman" font-size="14.00">Frameworx 1.0</text>
 </g>
 <!-- Frameworx&#45;1.0(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Frameworx&#45;1.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-42" rx="77.99" ry="18"/>
-<text text-anchor="middle" x="177.39" y="-38.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="177.39" cy="-96" rx="77.99" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-92.3" font-family="Times-Roman" font-size="14.00">Frameworx&#45;1.0</text>
+</g>
+<!-- scancode://frameworx&#45;1.0(5) -->
+<g id="node10" class="node">
+<title>scancode://frameworx&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="177.39" cy="-42" rx="128.08" ry="18"/>
+<text text-anchor="middle" x="177.39" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://frameworx&#45;1.0</text>
 </g>
 </g>
 </svg>

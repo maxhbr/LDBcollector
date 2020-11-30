@@ -8,8 +8,8 @@
     "__impliedId": "zlib-acknowledgement",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "zlib with acknowledgement",
-        "The zlib/libpng License (Zlib)"
+        "The zlib/libpng License (Zlib)",
+        "zlib with acknowledgement"
     ],
     "__impliedComments": [
         [
@@ -259,15 +259,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/zlib-acknowledgement.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/zlib-acknowledgement.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/zlib-acknowledgement.html"
         ],
         [
             "Homepage",

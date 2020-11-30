@@ -2,9 +2,9 @@
     "__impliedNames": [
         "SGI-B-2.0",
         "SGI Free Software License B v2.0",
-        "scancode://sgi-freeb-2.0",
         "SGI Free Software License B 2.0",
-        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
+        "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
+        "scancode://sgi-freeb-2.0"
     ],
     "__impliedId": "SGI-B-2.0",
     "__isFsfFree": true,
@@ -345,15 +345,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/SGI-B-2.0.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/327"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/SGI-B-2.0.json"
         ],
         [
             null,
             "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/SGI-B-2.0.html"
         ],
         [
             "Homepage",
@@ -362,10 +366,6 @@
         [
             null,
             "http://oss.sgi.com/projects/FreeB/"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/327"
         ]
     ]
 }

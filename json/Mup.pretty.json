@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Mup.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Mup.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Mup"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Mup.html"
         ],
         [
             "Homepage",

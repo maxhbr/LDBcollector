@@ -7,11 +7,11 @@ Universal Permissive License v1.0 (UPL-1.0)
 
 -   `UPL`
 
+-   `The Universal Permissive License (UPL), Version 1.0`
+
 -   `scancode://upl-1.0`
 
 -   `UPL 1.0`
-
--   `The Universal Permissive License (UPL), Version 1.0`
 
 Description
 -----------
@@ -55,9 +55,9 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/UPL
 
--   **SPDX:** http://spdx.org/licenses/UPL-1.0.json
-
 -   **SPDX:** https://spdx.org/licenses/UPL-1.0.html
+
+-   **SPDX:** http://spdx.org/licenses/UPL-1.0.json
 
 -   http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626\#.VQsAeWTF8z0
 
@@ -114,24 +114,24 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml "Scancode")
-    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -140,10 +140,10 @@ Raw Data
             "UPL-1.0",
             "UPL",
             "Universal Permissive License v1.0",
-            "scancode://upl-1.0",
-            "UPL 1.0",
             "upl-1.0",
-            "The Universal Permissive License (UPL), Version 1.0"
+            "The Universal Permissive License (UPL), Version 1.0",
+            "scancode://upl-1.0",
+            "UPL 1.0"
         ],
         "__impliedId": "UPL-1.0",
         "facts": {
@@ -507,15 +507,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/UPL-1.0.html"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/UPL"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/UPL-1.0.json"
             ],
             [
                 null,
                 "https://opensource.org/licenses/UPL"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/UPL-1.0.html"
             ],
             [
                 "Homepage",
@@ -536,10 +540,6 @@ Raw Data
             [
                 null,
                 "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/UPL"
             ]
         ]
     }

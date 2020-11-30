@@ -173,12 +173,6 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/Vim.html][SPDX]] (all data [in this
-  repository] is generated)
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml][Scancode]]
-  (CC0-1.0)
-
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
@@ -190,16 +184,22 @@
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
+- [[https://spdx.org/licenses/Vim.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml][Scancode]]
+  (CC0-1.0)
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "Vim",
+          "vim",
           "Vim License",
           "scancode://vim",
-          "VIM License",
-          "vim"
+          "VIM License"
       ],
       "__impliedId": "Vim",
       "__isFsfFree": true,

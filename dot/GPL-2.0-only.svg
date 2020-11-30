@@ -43,11 +43,11 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 646.85,-290 646.85,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="170.04,-184 170.04,-290 492.81,-290 492.81,-184 170.04,-184"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="170.04,-16 170.04,-122 492.81,-122 492.81,-16 170.04,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 646.85,-176 646.85,-16 16,-16"/>
 </g>
 <!-- GPL&#45;2.0&#45;only(2) -->
 <g id="node1" class="node">
@@ -151,11 +151,11 @@
 <ellipse fill="white" stroke="white" cx="331.42" cy="-324" rx="42.79" ry="18"/>
 <text text-anchor="middle" x="331.42" y="-320.3" font-family="Times-Roman" font-size="14.00">gpl&#45;2.0</text>
 </g>
-<!-- GNU General Public License, Version 2.0(8) -->
+<!-- GNU General Public License 2.0(8) -->
 <g id="node18" class="node">
-<title>GNU General Public License, Version 2.0(8)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-264" rx="192.27" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-260.3" font-family="Times-Roman" font-size="14.00">GNU General Public License, Version 2.0</text>
+<title>GNU General Public License 2.0(8)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-264" rx="153.27" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-260.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 2.0</text>
 </g>
 <!-- GPL&#45;2.0(8) -->
 <g id="node19" class="node">
@@ -163,23 +163,23 @@
 <ellipse fill="lightgray" stroke="lightgray" cx="331.42" cy="-210" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="331.42" y="-206.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
 </g>
-<!-- License :: OSI Approved :: GNU General Public License v2 (GPLv2)(8) -->
+<!-- GNU General Public License, Version 2.0(9) -->
 <g id="node20" class="node">
-<title>License :: OSI Approved :: GNU General Public License v2 (GPLv2)(8)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-156" rx="307.35" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-152.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License v2 (GPLv2)</text>
-</g>
-<!-- GNU General Public License 2.0(9) -->
-<g id="node21" class="node">
-<title>GNU General Public License 2.0(9)</title>
-<ellipse fill="white" stroke="white" cx="331.42" cy="-96" rx="153.27" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-92.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 2.0</text>
+<title>GNU General Public License, Version 2.0(9)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-150" rx="192.27" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-146.3" font-family="Times-Roman" font-size="14.00">GNU General Public License, Version 2.0</text>
 </g>
 <!-- GPL&#45;2.0(9) -->
-<g id="node22" class="node">
+<g id="node21" class="node">
 <title>GPL&#45;2.0(9)</title>
-<ellipse fill="lightgray" stroke="lightgray" cx="331.42" cy="-42" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="331.42" y="-38.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
+<ellipse fill="lightgray" stroke="lightgray" cx="331.42" cy="-96" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-92.3" font-family="Times-Roman" font-size="14.00">GPL&#45;2.0</text>
+</g>
+<!-- License :: OSI Approved :: GNU General Public License v2 (GPLv2)(9) -->
+<g id="node22" class="node">
+<title>License :: OSI Approved :: GNU General Public License v2 (GPLv2)(9)</title>
+<ellipse fill="white" stroke="white" cx="331.42" cy="-42" rx="307.35" ry="18"/>
+<text text-anchor="middle" x="331.42" y="-38.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License v2 (GPLv2)</text>
 </g>
 </g>
 </svg>

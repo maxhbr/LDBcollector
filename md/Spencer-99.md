@@ -25,9 +25,9 @@ URLs
 -   **Homepage:**
     http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c
 
--   **SPDX:** http://spdx.org/licenses/Spencer-99.json
-
 -   **SPDX:** https://spdx.org/licenses/Spencer-99.html
+
+-   **SPDX:** http://spdx.org/licenses/Spencer-99.json
 
 Text
 ----
@@ -65,12 +65,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Spencer-99.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/Spencer-99.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/henry-spencer-1999.yml "Scancode")
     (CC0-1.0)
@@ -224,15 +224,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Spencer-99.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Spencer-99.json"
             ],
             [
                 null,
                 "http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Spencer-99.html"
             ],
             [
                 "Homepage",

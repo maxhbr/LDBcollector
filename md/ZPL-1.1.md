@@ -28,9 +28,9 @@ URLs
 
 -   **Homepage:** http://www.zope.org/Resources/License/
 
--   **SPDX:** http://spdx.org/licenses/ZPL-1.1.json
-
 -   **SPDX:** https://spdx.org/licenses/ZPL-1.1.html
+
+-   **SPDX:** http://spdx.org/licenses/ZPL-1.1.json
 
 -   http://old.zope.org/Resources/License/ZPL-1.1
 
@@ -110,23 +110,23 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ZPL-1.1.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-1.1.yml "Scancode")
-    (CC0-1.0)
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+-   [SPDX](https://spdx.org/licenses/ZPL-1.1.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-1.1.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -345,15 +345,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/ZPL-1.1.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/ZPL-1.1.json"
             ],
             [
                 null,
                 "http://old.zope.org/Resources/License/ZPL-1.1"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/ZPL-1.1.html"
             ],
             [
                 "Homepage",

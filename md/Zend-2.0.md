@@ -5,13 +5,13 @@ Zend License v2.0 (Zend-2.0)
 
 **Other Names:**
 
--   `scancode://zend-2.0`
-
--   `Zend Engine License 2.0`
-
 -   `Zend Engine License, Version 2.00`
 
 -   ` Zend-2.0`
+
+-   `scancode://zend-2.0`
+
+-   `Zend Engine License 2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -42,9 +42,9 @@ URLs
 -   **Homepage:**
     https://web.archive.org/web/20130517195954/http://www.zend.com/license/2\_00.txt
 
--   **SPDX:** http://spdx.org/licenses/Zend-2.0.json
-
 -   **SPDX:** https://spdx.org/licenses/Zend-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/Zend-2.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/837
 
@@ -164,15 +164,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Zend-2.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zend-2.0.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -186,16 +180,22 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/Zend-2.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zend-2.0.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Zend-2.0",
             "Zend License v2.0",
-            "scancode://zend-2.0",
-            "Zend Engine License 2.0",
             "Zend Engine License, Version 2.00",
-            " Zend-2.0"
+            " Zend-2.0",
+            "scancode://zend-2.0",
+            "Zend Engine License 2.0"
         ],
         "__impliedId": "Zend-2.0",
         "__isFsfFree": true,
@@ -559,6 +559,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Zend-2.0.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/837"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Zend-2.0.json"
             ],
             [
@@ -566,16 +574,8 @@ Raw Data
                 "https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/Zend-2.0.html"
-            ],
-            [
                 "Homepage",
                 "https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/837"
             ]
         ]
     }

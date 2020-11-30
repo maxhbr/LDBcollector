@@ -64,23 +64,23 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX")
-    (all data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX")
+    (all data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -333,6 +333,10 @@ Raw Data
         "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
         "__impliedURLs": [
             [
+                null,
+                "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json"
             ],
@@ -343,10 +347,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/MPL-2.0"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html"
             ],
             [
                 "Homepage",

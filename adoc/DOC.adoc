@@ -29,8 +29,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 === URLs
 
 * *Homepage:* http://www.cs.wustl.edu/~schmidt/
-* *SPDX:* http://spdx.org/licenses/DOC.json
 * *SPDX:* https://spdx.org/licenses/DOC.html
+* *SPDX:* http://spdx.org/licenses/DOC.json
 * http://www.cs.wustl.edu/~schmidt/ACE-copying.html
 * https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html
 
@@ -61,15 +61,15 @@ Back to the ACE home page.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/DOC.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ace-tao.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://spdx.org/licenses/DOC.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ace-tao.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -266,6 +266,10 @@ Project Wiki]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/DOC.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/DOC.json"
         ],
         [
@@ -275,10 +279,6 @@ Project Wiki]
         [
             null,
             "https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/DOC.html"
         ],
         [
             "Homepage",

@@ -28,9 +28,9 @@
 
 - *Homepage:* https://fedoraproject.org/wiki/Licensing/DSDP
 
-- *SPDX:* http://spdx.org/licenses/DSDP.json
-
 - *SPDX:* https://spdx.org/licenses/DSDP.html
+
+- *SPDX:* http://spdx.org/licenses/DSDP.json
 
 ** Text
 
@@ -88,14 +88,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/DSDP.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -108,6 +102,12 @@
 - [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
   license-compatibility]]
   ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
+- [[https://spdx.org/licenses/DSDP.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dsdp.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -338,15 +338,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/DSDP.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/DSDP.json"
           ],
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/DSDP"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/DSDP.html"
           ],
           [
               "Homepage",

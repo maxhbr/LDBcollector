@@ -26,8 +26,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 * *Homepage:*
 https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt
-* *SPDX:* http://spdx.org/licenses/TU-Berlin-2.0.json
 * *SPDX:* https://spdx.org/licenses/TU-Berlin-2.0.html
+* *SPDX:* http://spdx.org/licenses/TU-Berlin-2.0.json
 
 === Text
 
@@ -64,10 +64,10 @@ WARRANTY FOR THIS SOFTWARE.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/TU-Berlin-2.0.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
+* https://spdx.org/licenses/TU-Berlin-2.0.html[SPDX] (all data [in this
+repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin-2.0.yml[Scancode]
 (CC0-1.0)
 
@@ -227,15 +227,15 @@ repository] is generated)
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TU-Berlin-2.0.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TU-Berlin-2.0.json"
         ],
         [
             null,
             "https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TU-Berlin-2.0.html"
         ],
         [
             "Homepage",

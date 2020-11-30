@@ -2,10 +2,10 @@
     "__impliedNames": [
         "MS-PL",
         "Microsoft Public License",
-        "scancode://ms-pl",
         "ms-pl",
         "Microsoft Public License (MS-PL)",
-        "Ms-PL"
+        "Ms-PL",
+        "scancode://ms-pl"
     ],
     "__impliedId": "MS-PL",
     "__isFsfFree": true,
@@ -833,19 +833,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MS-PL.json"
-        ],
-        [
-            null,
-            "http://www.microsoft.com/opensource/licenses.mspx"
+            "https://spdx.org/licenses/MS-PL.html"
         ],
         [
             null,
             "https://opensource.org/licenses/MS-PL"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/MS-PL"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/66"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/MS-PL.html"
+            "http://spdx.org/licenses/MS-PL.json"
+        ],
+        [
+            null,
+            "http://www.microsoft.com/opensource/licenses.mspx"
         ],
         [
             "Homepage",
@@ -862,14 +870,6 @@
         [
             null,
             "http://www.opensource.org/licenses/MS-PL"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/MS-PL"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/66"
         ]
     ]
 }

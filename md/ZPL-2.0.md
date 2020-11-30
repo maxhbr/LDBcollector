@@ -5,10 +5,6 @@ Zope Public License 2.0 (ZPL-2.0)
 
 **Other Names:**
 
--   `scancode://zpl-2.0`
-
--   `ZPL 2.0`
-
 -   `The Zope Public License, Version 2.0`
 
 -   `Zope-2.0`
@@ -16,6 +12,10 @@ Zope Public License 2.0 (ZPL-2.0)
 -   `License :: OSI Approved :: Zope Public License`
 
 -   `Zope Public License (ZPL) Version 2.0`
+
+-   `scancode://zpl-2.0`
+
+-   `ZPL 2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -50,9 +50,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/ZPL-2.0
 
--   **SPDX:** http://spdx.org/licenses/ZPL-2.0.json
-
 -   **SPDX:** https://spdx.org/licenses/ZPL-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/ZPL-2.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/825
 
@@ -169,20 +169,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml "Scancode")
-    (CC0-1.0)
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -193,17 +185,25 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/ZPL-2.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -211,12 +211,12 @@ Raw Data
         "__impliedNames": [
             "ZPL-2.0",
             "Zope Public License 2.0",
-            "scancode://zpl-2.0",
-            "ZPL 2.0",
             "The Zope Public License, Version 2.0",
             "Zope-2.0",
             "License :: OSI Approved :: Zope Public License",
-            "Zope Public License (ZPL) Version 2.0"
+            "Zope Public License (ZPL) Version 2.0",
+            "scancode://zpl-2.0",
+            "ZPL 2.0"
         ],
         "__impliedId": "ZPL-2.0",
         "__impliedComments": [
@@ -748,19 +748,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/ZPL-2.0.json"
-            ],
-            [
-                null,
-                "http://old.zope.org/Resources/License/ZPL-2.0"
+                "https://spdx.org/licenses/ZPL-2.0.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/ZPL-2.0"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/ZPL-2.0"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/825"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/ZPL-2.0.html"
+                "http://spdx.org/licenses/ZPL-2.0.json"
+            ],
+            [
+                null,
+                "http://old.zope.org/Resources/License/ZPL-2.0"
             ],
             [
                 "Homepage",
@@ -773,14 +781,6 @@ Raw Data
             [
                 null,
                 "http://www.zope.com/Marks"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/ZPL-2.0"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/825"
             ]
         ]
     }

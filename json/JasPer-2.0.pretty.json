@@ -2,9 +2,9 @@
     "__impliedNames": [
         "JasPer-2.0",
         "JasPer License",
+        "JasPer License Version 2.0",
         "scancode://jasper-2.0",
-        "JasPer 2.0",
-        "JasPer License Version 2.0"
+        "JasPer 2.0"
     ],
     "__impliedId": "JasPer-2.0",
     "__isFsfFree": true,
@@ -353,6 +353,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/JasPer-2.0.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/764"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/JasPer-2.0.json"
         ],
         [
@@ -360,16 +368,8 @@
             "http://www.ece.uvic.ca/~mdadams/jasper/LICENSE"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/JasPer-2.0.html"
-        ],
-        [
             "Homepage",
             "http://www.ece.uvic.ca/~frodo/jasper/LICENSE"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/764"
         ]
     ]
 }

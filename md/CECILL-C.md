@@ -5,9 +5,9 @@ CeCILL-C Free Software License Agreement (CECILL-C)
 
 **Other Names:**
 
--   `scancode://cecill-c`
-
 -   `CeCILL-C License`
+
+-   `scancode://cecill-c`
 
 Comments on (easy) usability
 ----------------------------
@@ -292,32 +292,32 @@ Raw Data
 
 -   LicenseName
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [SPDX](https://spdx.org/licenses/CECILL-C.html "SPDX") (all data
     \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml "Scancode")
     (CC0-1.0)
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "CECILL-C",
+            "CeCILL-C License",
             "CeCILL-C Free Software License Agreement",
-            "scancode://cecill-c",
-            "CeCILL-C License"
+            "scancode://cecill-c"
         ],
         "__impliedId": "CECILL-C",
         "__isFsfFree": true,

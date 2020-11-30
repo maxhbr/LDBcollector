@@ -5,13 +5,13 @@ PHP License v3.0 (PHP-3.0)
 
 **Other Names:**
 
--   `scancode://php-3.0`
-
 -   `PHP License 3.0`
 
 -   `The PHP License, Version 3.0`
 
 -   `PHP License, version 3.0`
+
+-   `scancode://php-3.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -45,13 +45,13 @@ URLs
 
 -   **Homepage:** http://www.php.net/license/
 
--   **OSI Page:** http://www.opensource.org/licenses/php.html
-
 -   **OSI Page:** https://opensource.org/licenses/PHP-3.0
 
--   **SPDX:** http://spdx.org/licenses/PHP-3.0.json
+-   **OSI Page:** http://www.opensource.org/licenses/php.html
 
 -   **SPDX:** https://spdx.org/licenses/PHP-3.0.html
+
+-   **SPDX:** http://spdx.org/licenses/PHP-3.0.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/811
 
@@ -188,22 +188,25 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/PHP-3.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -211,21 +214,18 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/PHP-3.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -233,10 +233,10 @@ Raw Data
         "__impliedNames": [
             "PHP-3.0",
             "PHP License v3.0",
-            "scancode://php-3.0",
             "PHP License 3.0",
             "The PHP License, Version 3.0",
-            "PHP License, version 3.0"
+            "PHP License, version 3.0",
+            "scancode://php-3.0"
         ],
         "__impliedId": "PHP-3.0",
         "__isFsfFree": true,
@@ -818,19 +818,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/PHP-3.0.json"
-            ],
-            [
-                null,
-                "http://www.php.net/license/3_0.txt"
+                "https://spdx.org/licenses/PHP-3.0.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/PHP-3.0"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/PHP-3.0"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/811"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/PHP-3.0.html"
+                "http://spdx.org/licenses/PHP-3.0.json"
+            ],
+            [
+                null,
+                "http://www.php.net/license/3_0.txt"
             ],
             [
                 "Homepage",
@@ -843,14 +851,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/PHP-3.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/PHP-3.0"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/811"
             ]
         ]
     }

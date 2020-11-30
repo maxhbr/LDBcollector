@@ -5,11 +5,11 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 **Other Names:**
 
+-   `The bzip2 license`
+
 -   `scancode://bzip2-libbzip-2010`
 
 -   `bzip2 License 2010`
-
--   `The bzip2 license`
 
 Comments on (easy) usability
 ----------------------------
@@ -32,9 +32,9 @@ URLs
 -   **Homepage:**
     https://github.com/asimonov-im/bzip2/blob/master/LICENSE
 
--   **SPDX:** http://spdx.org/licenses/bzip2-1.0.6.json
-
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.6.html
+
+-   **SPDX:** http://spdx.org/licenses/bzip2-1.0.6.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/381
 
@@ -133,19 +133,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
-    (CC0-1.0)
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -153,9 +153,9 @@ Raw Data
         "__impliedNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
+            "The bzip2 license",
             "scancode://bzip2-libbzip-2010",
-            "bzip2 License 2010",
-            "The bzip2 license"
+            "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
         "__impliedComments": [
@@ -459,6 +459,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/bzip2-1.0.6.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/381"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/bzip2-1.0.6.json"
             ],
             [
@@ -470,20 +478,12 @@ Raw Data
                 "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/bzip2-1.0.6.html"
-            ],
-            [
                 "Homepage",
                 "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
             ],
             [
                 null,
                 "http://www.bzip.org/"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/381"
             ]
         ]
     }

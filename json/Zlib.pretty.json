@@ -3,20 +3,20 @@
         "Zlib",
         "zlib/libpng",
         "zlib License",
-        "scancode://zlib",
-        "ZLIB License",
         "zlib",
         "zlib/libpng License",
+        "zlib/libpng license",
+        "zlib-license",
         "The zlib/libpng License (Zlib)",
         "License :: OSI Approved :: zlib/libpng License",
-        "zlib/libpng license",
-        "zlib-license"
+        "scancode://zlib",
+        "ZLIB License"
     ],
     "__impliedId": "Zlib",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "zlib",
-        "The zlib/libpng License (Zlib)"
+        "The zlib/libpng License (Zlib)",
+        "zlib"
     ],
     "__impliedComments": [
         [
@@ -797,19 +797,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Zlib.json"
-        ],
-        [
-            null,
-            "http://www.zlib.net/zlib_license.html"
+            "https://spdx.org/licenses/Zlib.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Zlib"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Zlib"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/16"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Zlib.html"
+            "http://spdx.org/licenses/Zlib.json"
+        ],
+        [
+            null,
+            "http://www.zlib.net/zlib_license.html"
         ],
         [
             "Homepage",
@@ -822,14 +830,6 @@
         [
             null,
             "http://www.opensource.org/licenses/Zlib"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Zlib"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/16"
         ]
     ]
 }

@@ -5,11 +5,11 @@ Attribution Assurance License (AAL)
 
 **Other Names:**
 
--   `scancode://attribution`
+-   `Attribution Assurance Licenses`
 
 -   `License :: OSI Approved :: Attribution Assurance License`
 
--   `Attribution Assurance Licenses`
+-   `scancode://attribution`
 
 Comments on (easy) usability
 ----------------------------
@@ -42,9 +42,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/AAL
 
--   **SPDX:** http://spdx.org/licenses/AAL.json
-
 -   **SPDX:** https://spdx.org/licenses/AAL.html
+
+-   **SPDX:** http://spdx.org/licenses/AAL.json
 
 -   https://opensource.org/licenses/attribution
 
@@ -110,29 +110,29 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/AAL.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/AAL.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -140,9 +140,9 @@ Raw Data
         "__impliedNames": [
             "AAL",
             "Attribution Assurance License",
-            "scancode://attribution",
+            "Attribution Assurance Licenses",
             "License :: OSI Approved :: Attribution Assurance License",
-            "Attribution Assurance Licenses"
+            "scancode://attribution"
         ],
         "__impliedId": "AAL",
         "__isFsfFree": true,
@@ -463,15 +463,23 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/AAL.html"
+            ],
+            [
+                null,
+                "https://opensource.org/licenses/AAL"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/AAL"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/AAL.json"
             ],
             [
                 null,
                 "https://opensource.org/licenses/attribution"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/AAL.html"
             ],
             [
                 "Homepage",
@@ -484,14 +492,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/attribution"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/AAL"
-            ],
-            [
-                null,
-                "https://opensource.org/licenses/AAL"
             ]
         ]
     }

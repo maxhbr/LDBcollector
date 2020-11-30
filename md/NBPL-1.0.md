@@ -29,9 +29,9 @@ URLs
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894
 
--   **SPDX:** http://spdx.org/licenses/NBPL-1.0.json
-
 -   **SPDX:** https://spdx.org/licenses/NBPL-1.0.html
+
+-   **SPDX:** http://spdx.org/licenses/NBPL-1.0.json
 
 Text
 ----
@@ -168,12 +168,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/NBPL-1.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/NBPL-1.0.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nbpl-1.0.yml "Scancode")
     (CC0-1.0)
@@ -342,15 +342,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/NBPL-1.0.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/NBPL-1.0.json"
             ],
             [
                 null,
                 "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=37b4b3f6cc4bf34e1d3dec61e69914b9819d8894"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/NBPL-1.0.html"
             ],
             [
                 "Homepage",

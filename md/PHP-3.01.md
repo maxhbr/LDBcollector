@@ -5,11 +5,11 @@ PHP License v3.01 (PHP-3.01)
 
 **Other Names:**
 
+-   `PHP License, version 3.01`
+
 -   `scancode://php-3.01`
 
 -   `PHP License 3.01`
-
--   `PHP License, version 3.01`
 
 Comments on (easy) usability
 ----------------------------
@@ -37,9 +37,9 @@ URLs
 
 -   **Homepage:** http://www.php.net/license/3\_01.txt
 
--   **SPDX:** http://spdx.org/licenses/PHP-3.01.json
-
 -   **SPDX:** https://spdx.org/licenses/PHP-3.01.html
+
+-   **SPDX:** http://spdx.org/licenses/PHP-3.01.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/812
 
@@ -175,26 +175,26 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml "Scancode")
-    (CC0-1.0)
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml "finos/OSLC-handbook")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -202,9 +202,9 @@ Raw Data
         "__impliedNames": [
             "PHP-3.01",
             "PHP License v3.01",
+            "PHP License, version 3.01",
             "scancode://php-3.01",
-            "PHP License 3.01",
-            "PHP License, version 3.01"
+            "PHP License 3.01"
         ],
         "__impliedId": "PHP-3.01",
         "__impliedComments": [
@@ -608,15 +608,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/PHP-3.01.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/812"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/PHP-3.01.json"
             ],
             [
                 null,
                 "http://www.php.net/license/3_01.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/PHP-3.01.html"
             ],
             [
                 "Homepage",
@@ -629,10 +633,6 @@ Raw Data
             [
                 null,
                 "http://www.zend.com"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/812"
             ]
         ]
     }

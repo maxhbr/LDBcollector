@@ -88,12 +88,6 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/SAX-PD.html "SPDX") (all data \[in
-    this repository\] is generated)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml "Scancode")
-    (CC0-1.0)
-
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
@@ -101,6 +95,12 @@ Raw Data
 -   [librariesio
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/SAX-PD.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 

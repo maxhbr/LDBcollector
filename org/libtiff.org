@@ -33,9 +33,9 @@
 
 ** URLs
 
-- *SPDX:* http://spdx.org/licenses/libtiff.json
-
 - *SPDX:* https://spdx.org/licenses/libtiff.html
+
+- *SPDX:* http://spdx.org/licenses/libtiff.json
 
 - https://fedoraproject.org/wiki/Licensing/libtiff
 
@@ -70,14 +70,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/libtiff.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-tiff.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -86,6 +80,12 @@
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
+
+- [[https://spdx.org/licenses/libtiff.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-tiff.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -309,15 +309,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/libtiff.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/libtiff.json"
           ],
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/libtiff"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/libtiff.html"
           ]
       ]
   }

@@ -211,15 +211,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MIT-feh.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MIT-feh.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/MIT#feh"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT-feh.html"
         ],
         [
             "Homepage",

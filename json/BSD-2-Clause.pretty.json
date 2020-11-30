@@ -4,15 +4,15 @@
         "BSD (2 clause)",
         "BSD License (two clause)",
         "BSD 2-Clause \"Simplified\" License",
-        "scancode://bsd-simplified",
         "bsd-2-clause",
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
         "BSD-2",
         "BSD 2-Clause License",
         "BSD-2-clause",
         "Simplified BSD License",
         "FreeBSD License",
-        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
-        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
+        "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
+        "scancode://bsd-simplified"
     ],
     "__impliedId": "BSD-2-Clause",
     "__isFsfFree": true,
@@ -664,15 +664,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/BSD-2-Clause.json"
+            "https://spdx.org/licenses/BSD-2-Clause.html"
         ],
         [
             null,
             "https://opensource.org/licenses/BSD-2-Clause"
         ],
         [
+            "Wikipedia Page",
+            "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/BSD-2-Clause"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/15"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/BSD-2-Clause.html"
+            "http://spdx.org/licenses/BSD-2-Clause.json"
         ],
         [
             "Homepage",
@@ -689,18 +701,6 @@
         [
             null,
             "http://www.freebsd.org/copyright/copyright.html"
-        ],
-        [
-            "Wikipedia Page",
-            "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/BSD-2-Clause"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/15"
         ]
     ]
 }

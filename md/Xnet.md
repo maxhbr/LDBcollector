@@ -5,13 +5,13 @@ X.Net License (Xnet)
 
 **Other Names:**
 
--   `scancode://xnet`
-
--   `Altera License`
-
 -   `The X.Net, Inc. License`
 
 -   `License :: OSI Approved :: X.Net License`
+
+-   `scancode://xnet`
+
+-   `Altera License`
 
 Comments on (easy) usability
 ----------------------------
@@ -49,9 +49,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/Xnet
 
--   **SPDX:** http://spdx.org/licenses/Xnet.json
-
 -   **SPDX:** https://spdx.org/licenses/Xnet.html
+
+-   **SPDX:** http://spdx.org/licenses/Xnet.json
 
 Text
 ----
@@ -86,25 +86,13 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Xnet.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -114,16 +102,28 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Xnet.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Xnet",
             "X.Net License",
-            "scancode://xnet",
-            "Altera License",
             "The X.Net, Inc. License",
-            "License :: OSI Approved :: X.Net License"
+            "License :: OSI Approved :: X.Net License",
+            "scancode://xnet",
+            "Altera License"
         ],
         "__impliedId": "Xnet",
         "__impliedComments": [
@@ -471,15 +471,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Xnet.json"
+                "https://spdx.org/licenses/Xnet.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Xnet"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/Xnet"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/Xnet.html"
+                "http://spdx.org/licenses/Xnet.json"
             ],
             [
                 "Homepage",
@@ -492,10 +496,6 @@ Raw Data
             [
                 null,
                 "http://opensource.org/licenses/Xnet"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Xnet"
             ]
         ]
     }

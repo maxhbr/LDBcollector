@@ -69,9 +69,9 @@ URLs
 
 -   **OSI Page:** http://www.opensource.org/licenses/bsd-license.php
 
--   **SPDX:** http://spdx.org/licenses/BSD-4-Clause.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-4-Clause.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-4-Clause.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/277
 
@@ -167,15 +167,9 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/BSD-4-Clause.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode")
-    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
@@ -184,20 +178,26 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/BSD-4-Clause.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -206,10 +206,10 @@ Raw Data
             "BSD-4-Clause",
             "BSD License (original)",
             "BSD 4-Clause \"Original\" or \"Old\" License",
-            "scancode://bsd-original",
-            "BSD-Original",
             "bsd-4-clause",
-            "BSD 4-clause \"Original\" or \"Old\" License"
+            "BSD 4-clause \"Original\" or \"Old\" License",
+            "scancode://bsd-original",
+            "BSD-Original"
         ],
         "__impliedId": "BSD-4-Clause",
         "__isFsfFree": true,
@@ -829,15 +829,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-4-Clause.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/277"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-4-Clause.json"
             ],
             [
                 null,
                 "http://directory.fsf.org/wiki/License:BSD_4Clause"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-4-Clause.html"
             ],
             [
                 "Homepage",
@@ -854,10 +858,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/philosophy/bsd.html"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/277"
             ]
         ]
     }

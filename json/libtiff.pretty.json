@@ -217,15 +217,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/libtiff.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/libtiff.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/libtiff"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/libtiff.html"
         ]
     ]
 }

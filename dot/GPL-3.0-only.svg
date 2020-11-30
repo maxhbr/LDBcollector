@@ -51,11 +51,11 @@
 </g>
 <g id="clust11" class="cluster">
 <title>cluster_10</title>
-<polygon fill="lightgray" stroke="lightgray" points="32,-932 32,-1146 662.85,-1146 662.85,-932 32,-932"/>
+<polygon fill="lightgray" stroke="lightgray" points="186.04,-1040 186.04,-1146 508.81,-1146 508.81,-1040 186.04,-1040"/>
 </g>
 <g id="clust12" class="cluster">
 <title>cluster_11</title>
-<polygon fill="lightgray" stroke="lightgray" points="186.04,-818 186.04,-924 508.81,-924 508.81,-818 186.04,-818"/>
+<polygon fill="lightgray" stroke="lightgray" points="32,-818 32,-1032 662.85,-1032 662.85,-818 32,-818"/>
 </g>
 <g id="clust13" class="cluster">
 <title>cluster_12</title>
@@ -179,11 +179,11 @@
 <ellipse fill="white" stroke="white" cx="347.42" cy="-1180" rx="42.79" ry="18"/>
 <text text-anchor="middle" x="347.42" y="-1176.3" font-family="Times-Roman" font-size="14.00">gpl&#45;3.0</text>
 </g>
-<!-- GNU General Public License, Version 3.0(10) -->
+<!-- GNU General Public License 3.0(10) -->
 <g id="node18" class="node">
-<title>GNU General Public License, Version 3.0(10)</title>
-<ellipse fill="white" stroke="white" cx="347.42" cy="-1120" rx="192.27" ry="18"/>
-<text text-anchor="middle" x="347.42" y="-1116.3" font-family="Times-Roman" font-size="14.00">GNU General Public License, Version 3.0</text>
+<title>GNU General Public License 3.0(10)</title>
+<ellipse fill="white" stroke="white" cx="347.42" cy="-1120" rx="153.27" ry="18"/>
+<text text-anchor="middle" x="347.42" y="-1116.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 3.0</text>
 </g>
 <!-- GPL&#45;3.0(10) -->
 <g id="node19" class="node">
@@ -191,29 +191,29 @@
 <ellipse fill="lightgray" stroke="lightgray" cx="347.42" cy="-1066" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="347.42" y="-1062.3" font-family="Times-Roman" font-size="14.00">GPL&#45;3.0</text>
 </g>
-<!-- License :: OSI Approved :: GNU General Public License (GPL)(10) -->
+<!-- GNU General Public License, Version 3.0(11) -->
 <g id="node20" class="node">
-<title>License :: OSI Approved :: GNU General Public License (GPL)(10)</title>
-<ellipse fill="white" stroke="white" cx="347.42" cy="-1012" rx="282.15" ry="18"/>
-<text text-anchor="middle" x="347.42" y="-1008.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License (GPL)</text>
-</g>
-<!-- License :: OSI Approved :: GNU General Public License v3 (GPLv3)(10) -->
-<g id="node21" class="node">
-<title>License :: OSI Approved :: GNU General Public License v3 (GPLv3)(10)</title>
-<ellipse fill="white" stroke="white" cx="347.42" cy="-958" rx="307.35" ry="18"/>
-<text text-anchor="middle" x="347.42" y="-954.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License v3 (GPLv3)</text>
-</g>
-<!-- GNU General Public License 3.0(11) -->
-<g id="node22" class="node">
-<title>GNU General Public License 3.0(11)</title>
-<ellipse fill="white" stroke="white" cx="347.42" cy="-898" rx="153.27" ry="18"/>
-<text text-anchor="middle" x="347.42" y="-894.3" font-family="Times-Roman" font-size="14.00">GNU General Public License 3.0</text>
+<title>GNU General Public License, Version 3.0(11)</title>
+<ellipse fill="white" stroke="white" cx="347.42" cy="-1006" rx="192.27" ry="18"/>
+<text text-anchor="middle" x="347.42" y="-1002.3" font-family="Times-Roman" font-size="14.00">GNU General Public License, Version 3.0</text>
 </g>
 <!-- GPL&#45;3.0(11) -->
-<g id="node23" class="node">
+<g id="node21" class="node">
 <title>GPL&#45;3.0(11)</title>
-<ellipse fill="lightgray" stroke="lightgray" cx="347.42" cy="-844" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="347.42" y="-840.3" font-family="Times-Roman" font-size="14.00">GPL&#45;3.0</text>
+<ellipse fill="lightgray" stroke="lightgray" cx="347.42" cy="-952" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="347.42" y="-948.3" font-family="Times-Roman" font-size="14.00">GPL&#45;3.0</text>
+</g>
+<!-- License :: OSI Approved :: GNU General Public License (GPL)(11) -->
+<g id="node22" class="node">
+<title>License :: OSI Approved :: GNU General Public License (GPL)(11)</title>
+<ellipse fill="white" stroke="white" cx="347.42" cy="-898" rx="282.15" ry="18"/>
+<text text-anchor="middle" x="347.42" y="-894.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License (GPL)</text>
+</g>
+<!-- License :: OSI Approved :: GNU General Public License v3 (GPLv3)(11) -->
+<g id="node23" class="node">
+<title>License :: OSI Approved :: GNU General Public License v3 (GPLv3)(11)</title>
+<ellipse fill="white" stroke="white" cx="347.42" cy="-844" rx="307.35" ry="18"/>
+<text text-anchor="middle" x="347.42" y="-840.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: GNU General Public License v3 (GPLv3)</text>
 </g>
 <!-- GNU General Public License 3.0(12) -->
 <g id="node24" class="node">

@@ -33,8 +33,8 @@ Project Wiki]
 
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:LBNLBSD?rd=Licensing/LBNLBSD
-* *SPDX:* http://spdx.org/licenses/BSD-3-Clause-LBNL.json
 * *SPDX:* https://spdx.org/licenses/BSD-3-Clause-LBNL.html
+* *SPDX:* http://spdx.org/licenses/BSD-3-Clause-LBNL.json
 * https://fedoraproject.org/wiki/Licensing/LBNLBSD
 
 === Text
@@ -61,18 +61,18 @@ You are under no obligation whatsoever to provide any bug fixes, patches, or upg
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/BSD-3-Clause-LBNL.html[SPDX] (all data [in
-this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lbnl-bsd.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://spdx.org/licenses/BSD-3-Clause-LBNL.html[SPDX] (all data [in
+this repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lbnl-bsd.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -306,15 +306,15 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/BSD-3-Clause-LBNL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/BSD-3-Clause-LBNL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/LBNLBSD"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-3-Clause-LBNL.html"
         ],
         [
             "Homepage",

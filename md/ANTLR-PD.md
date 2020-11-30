@@ -5,9 +5,9 @@ ANTLR Software Rights Notice (ANTLR-PD)
 
 **Other Names:**
 
--   `scancode://antlr-pd`
-
 -   `ANTLR 2 License`
+
+-   `scancode://antlr-pd`
 
 Comments on (easy) usability
 ----------------------------
@@ -41,9 +41,9 @@ URLs
 
 -   **Homepage:** http://www.antlr2.org/
 
--   **SPDX:** http://spdx.org/licenses/ANTLR-PD.json
-
 -   **SPDX:** https://spdx.org/licenses/ANTLR-PD.html
+
+-   **SPDX:** http://spdx.org/licenses/ANTLR-PD.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/37
 
@@ -120,15 +120,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -138,14 +132,20 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/ANTLR-PD.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/antlr-pd.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "ANTLR-PD",
             "ANTLR Software Rights Notice",
-            "scancode://antlr-pd",
-            "ANTLR 2 License"
+            "ANTLR 2 License",
+            "scancode://antlr-pd"
         ],
         "__impliedId": "ANTLR-PD",
         "__isFsfFree": true,
@@ -452,15 +452,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/ANTLR-PD.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/37"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/ANTLR-PD.json"
             ],
             [
                 null,
                 "http://www.antlr2.org/license.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/ANTLR-PD.html"
             ],
             [
                 "Homepage",
@@ -469,10 +473,6 @@ Raw Data
             [
                 null,
                 "http://www.spdx.org/licenses/ANTLR-PD"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/37"
             ]
         ]
     }

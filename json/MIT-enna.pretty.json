@@ -204,15 +204,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MIT-enna.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MIT-enna.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/MIT#enna"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT-enna.html"
         ],
         [
             "Homepage",

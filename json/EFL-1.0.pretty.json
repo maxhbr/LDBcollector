@@ -2,9 +2,9 @@
     "__impliedNames": [
         "EFL-1.0",
         "Eiffel Forum License v1.0",
+        "The Eiffel Forum License, Version 1",
         "scancode://efl-1.0",
-        "EFL 1.0",
-        "The Eiffel Forum License, Version 1"
+        "EFL 1.0"
     ],
     "__impliedId": "EFL-1.0",
     "__impliedComments": [
@@ -267,6 +267,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/EFL-1.0.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/EFL-1.0"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/EFL-1.0.json"
         ],
         [
@@ -276,10 +284,6 @@
         [
             null,
             "https://opensource.org/licenses/EFL-1.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/EFL-1.0.html"
         ],
         [
             "Homepage",
@@ -292,10 +296,6 @@
         [
             null,
             "http://opensource.org/licenses/EFL-1.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/EFL-1.0"
         ]
     ]
 }

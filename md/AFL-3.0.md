@@ -5,15 +5,15 @@ Academic Free License v3.0 (AFL-3.0)
 
 **Other Names:**
 
--   `scancode://afl-3.0`
-
--   `AFL 3.0`
+-   `Academic Free License 3.0`
 
 -   `Academic Free License, Version 3.0`
 
 -   `License :: OSI Approved :: Academic Free License (AFL)`
 
--   `Academic Free License 3.0`
+-   `scancode://afl-3.0`
+
+-   `AFL 3.0`
 
 Description
 -----------
@@ -64,9 +64,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/AFL-3.0
 
--   **SPDX:** http://spdx.org/licenses/AFL-3.0.json
-
 -   **SPDX:** https://spdx.org/licenses/AFL-3.0.html
+
+-   **SPDX:** http://spdx.org/licenses/AFL-3.0.json
 
 -   http://www.rosenlaw.com/AFL3.0.htm
 
@@ -132,23 +132,15 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/AFL-3.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-3.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/afl-3.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -159,16 +151,24 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/AFL-3.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-3.0.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -176,12 +176,12 @@ Raw Data
         "__impliedNames": [
             "AFL-3.0",
             "Academic Free License v3.0",
-            "scancode://afl-3.0",
-            "AFL 3.0",
             "afl-3.0",
+            "Academic Free License 3.0",
             "Academic Free License, Version 3.0",
             "License :: OSI Approved :: Academic Free License (AFL)",
-            "Academic Free License 3.0"
+            "scancode://afl-3.0",
+            "AFL 3.0"
         ],
         "__impliedId": "AFL-3.0",
         "__impliedComments": [
@@ -724,6 +724,18 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/AFL-3.0.html"
+            ],
+            [
+                null,
+                "https://opensource.org/licenses/AFL-3.0"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/AFL-3.0"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/AFL-3.0.json"
             ],
             [
@@ -733,10 +745,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/afl-3.0"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/AFL-3.0.html"
             ],
             [
                 "Homepage",
@@ -753,14 +761,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/afl-3.0"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/AFL-3.0"
-            ],
-            [
-                null,
-                "https://opensource.org/licenses/AFL-3.0"
             ]
         ]
     }

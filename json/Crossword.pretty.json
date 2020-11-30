@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Crossword.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Crossword.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Crossword"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Crossword.html"
         ],
         [
             "Homepage",

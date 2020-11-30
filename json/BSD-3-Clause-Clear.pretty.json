@@ -2,10 +2,10 @@
     "__impliedNames": [
         "BSD-3-Clause-Clear",
         "BSD 3-Clause Clear License",
-        "scancode://clear-bsd",
-        "Clear BSD License",
         "bsd-3-clause-clear",
-        "Clear BSD"
+        "Clear BSD",
+        "scancode://clear-bsd",
+        "Clear BSD License"
     ],
     "__impliedId": "BSD-3-Clause-Clear",
     "__impliedAmbiguousNames": [
@@ -349,15 +349,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/BSD-3-Clause-Clear.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/BSD-3-Clause-Clear.json"
         ],
         [
             null,
             "http://labs.metacarta.com/license-explanation.html#license"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-3-Clause-Clear.html"
         ],
         [
             "Homepage",

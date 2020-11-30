@@ -190,15 +190,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Qhull.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Qhull.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Qhull"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Qhull.html"
         ],
         [
             "Homepage",

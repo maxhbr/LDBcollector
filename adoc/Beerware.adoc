@@ -38,8 +38,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 === URLs
 
 * *Homepage:* http://people.freebsd.org/~phk/
-* *SPDX:* http://spdx.org/licenses/Beerware.json
 * *SPDX:* https://spdx.org/licenses/Beerware.html
+* *SPDX:* http://spdx.org/licenses/Beerware.json
 * https://fedoraproject.org/wiki/Licensing/Beerware
 
 === Text
@@ -58,23 +58,23 @@ this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/Beerware.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
-license-compatibility-checker]
-(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://spdx.org/licenses/Beerware.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml[Scancode]
+(CC0-1.0)
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -370,6 +370,10 @@ Policy]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Beerware.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Beerware.json"
         ],
         [
@@ -379,10 +383,6 @@ Policy]
         [
             null,
             "https://people.freebsd.org/~phk/"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Beerware.html"
         ],
         [
             "Homepage",

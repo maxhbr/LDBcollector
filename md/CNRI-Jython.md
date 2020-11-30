@@ -22,9 +22,9 @@ URLs
 
 -   **Homepage:** http://www.jython.org/license.html
 
--   **SPDX:** http://spdx.org/licenses/CNRI-Jython.json
-
 -   **SPDX:** https://spdx.org/licenses/CNRI-Jython.html
+
+-   **SPDX:** http://spdx.org/licenses/CNRI-Jython.json
 
 Text
 ----
@@ -57,19 +57,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/CNRI-Jython.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-jython.yml "Scancode")
-    (CC0-1.0)
-
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/CNRI-Jython.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-jython.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -239,15 +239,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/CNRI-Jython.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/CNRI-Jython.json"
             ],
             [
                 null,
                 "http://www.jython.org/license.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/CNRI-Jython.html"
             ],
             [
                 "Homepage",

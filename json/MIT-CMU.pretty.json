@@ -219,6 +219,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MIT-CMU.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MIT-CMU.json"
         ],
         [
@@ -228,10 +232,6 @@
         [
             null,
             "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT-CMU.html"
         ],
         [
             "Homepage",

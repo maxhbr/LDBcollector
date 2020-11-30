@@ -47,11 +47,11 @@
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="111.54,-130 111.54,-236 254.93,-236 254.93,-130 111.54,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 350.47,-236 350.47,-130 16,-130"/>
 </g>
 <g id="clust11" class="cluster">
 <title>cluster_10</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 350.47,-122 350.47,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="111.54,-16 111.54,-122 254.93,-122 254.93,-16 111.54,-16"/>
 </g>
 <!-- X11(3) -->
 <g id="node1" class="node">
@@ -137,11 +137,11 @@
 <ellipse fill="orange" stroke="orange" cx="183.24" cy="-210" rx="27" ry="18"/>
 <text text-anchor="middle" x="183.24" y="-206.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License(9) -->
+<!-- ICU License (ICU 1.8.1 and later)(9) -->
 <g id="node15" class="node">
-<title>ICU License(9)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-156" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-152.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
+<title>ICU License (ICU 1.8.1 and later)(9)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-156" rx="159.47" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-152.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
 </g>
 <!-- ICU(10) -->
 <g id="node16" class="node">
@@ -149,11 +149,11 @@
 <ellipse fill="orange" stroke="orange" cx="183.24" cy="-96" rx="27" ry="18"/>
 <text text-anchor="middle" x="183.24" y="-92.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License (ICU 1.8.1 and later)(10) -->
+<!-- ICU License(10) -->
 <g id="node17" class="node">
-<title>ICU License (ICU 1.8.1 and later)(10)</title>
-<ellipse fill="white" stroke="white" cx="183.24" cy="-42" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="183.24" y="-38.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
+<title>ICU License(10)</title>
+<ellipse fill="white" stroke="white" cx="183.24" cy="-42" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="183.24" y="-38.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
 </g>
 </g>
 </svg>

@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="65.4,-412 65.4,-518 510.36,-518 510.36,-412 65.4,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="239.58,-412 239.58,-518 336.17,-518 336.17,-412 239.58,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="177.19,-244 177.19,-404 398.57,-404 398.57,-244 177.19,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="65.4,-298 65.4,-404 510.36,-404 510.36,-298 65.4,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="239.58,-130 239.58,-236 336.17,-236 336.17,-130 239.58,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="177.19,-130 177.19,-290 398.57,-290 398.57,-130 177.19,-130"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
@@ -55,47 +55,47 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-552" rx="40.09" ry="18"/>
 <text text-anchor="middle" x="287.88" y="-548.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
 </g>
-<!-- Do What The F*ck You Want To Public License(3) -->
-<g id="node4" class="node">
-<title>Do What The F*ck You Want To Public License(3)</title>
-<ellipse fill="white" stroke="white" cx="287.88" cy="-492" rx="214.46" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-488.3" font-family="Times-Roman" font-size="14.00">Do What The F*ck You Want To Public License</text>
-</g>
 <!-- WTFPL(3) -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>WTFPL(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-438" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-434.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-492" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-488.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
+</g>
+<!-- wtfpl(3) -->
+<g id="node5" class="node">
+<title>wtfpl(3)</title>
+<ellipse fill="white" stroke="white" cx="287.88" cy="-438" rx="33.29" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-434.3" font-family="Times-Roman" font-size="14.00">wtfpl</text>
+</g>
+<!-- Do What The F*ck You Want To Public License(4) -->
+<g id="node6" class="node">
+<title>Do What The F*ck You Want To Public License(4)</title>
+<ellipse fill="white" stroke="white" cx="287.88" cy="-378" rx="214.46" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-374.3" font-family="Times-Roman" font-size="14.00">Do What The F*ck You Want To Public License</text>
 </g>
 <!-- WTFPL(4) -->
-<g id="node6" class="node">
-<title>WTFPL(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-378" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-374.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
-</g>
-<!-- WTFPL 2.0(4) -->
 <g id="node7" class="node">
-<title>WTFPL 2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="287.88" cy="-324" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-320.3" font-family="Times-Roman" font-size="14.00">WTFPL 2.0</text>
-</g>
-<!-- scancode://wtfpl&#45;2.0(4) -->
-<g id="node8" class="node">
-<title>scancode://wtfpl&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="287.88" cy="-270" rx="102.88" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://wtfpl&#45;2.0</text>
+<title>WTFPL(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-324" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-320.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
 </g>
 <!-- WTFPL(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>WTFPL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-210" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-206.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="287.88" cy="-264" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-260.3" font-family="Times-Roman" font-size="14.00">WTFPL</text>
 </g>
-<!-- wtfpl(5) -->
+<!-- WTFPL 2.0(5) -->
+<g id="node9" class="node">
+<title>WTFPL 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="287.88" cy="-210" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-206.3" font-family="Times-Roman" font-size="14.00">WTFPL 2.0</text>
+</g>
+<!-- scancode://wtfpl&#45;2.0(5) -->
 <g id="node10" class="node">
-<title>wtfpl(5)</title>
-<ellipse fill="white" stroke="white" cx="287.88" cy="-156" rx="33.29" ry="18"/>
-<text text-anchor="middle" x="287.88" y="-152.3" font-family="Times-Roman" font-size="14.00">wtfpl</text>
+<title>scancode://wtfpl&#45;2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="287.88" cy="-156" rx="102.88" ry="18"/>
+<text text-anchor="middle" x="287.88" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://wtfpl&#45;2.0</text>
 </g>
 <!-- Do What The Fuck You Want To Public License (WTFPL) 2(6) -->
 <g id="node11" class="node">

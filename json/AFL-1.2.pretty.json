@@ -233,6 +233,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/AFL-1.2.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/AFL-1.2.json"
         ],
         [
@@ -242,10 +246,6 @@
         [
             null,
             "http://wayback.archive.org/web/20021204204652/http://www.opensource.org/licenses/academic.php"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/AFL-1.2.html"
         ],
         [
             "Homepage",

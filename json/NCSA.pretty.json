@@ -2,13 +2,13 @@
     "__impliedNames": [
         "NCSA",
         "University of Illinois/NCSA Open Source License",
-        "scancode://uoi-ncsa",
-        "NCSA Open Source License",
         "ncsa",
         "UIUC/NCSA",
+        "uoi-ncsa",
         "The University of Illinois/NCSA Open Source License",
         "License :: OSI Approved :: University of Illinois/NCSA Open Source License",
-        "uoi-ncsa"
+        "scancode://uoi-ncsa",
+        "NCSA Open Source License"
     ],
     "__impliedId": "NCSA",
     "__impliedComments": [
@@ -618,19 +618,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NCSA.json"
-        ],
-        [
-            null,
-            "http://otm.illinois.edu/uiuc_openSource"
+            "https://spdx.org/licenses/NCSA.html"
         ],
         [
             null,
             "https://opensource.org/licenses/NCSA"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/NCSA"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/684"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/NCSA.html"
+            "http://spdx.org/licenses/NCSA.json"
+        ],
+        [
+            null,
+            "http://otm.illinois.edu/uiuc_openSource"
         ],
         [
             "Homepage",
@@ -651,14 +659,6 @@
         [
             null,
             "http://www.stlinux.com/node/140"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/NCSA"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/684"
         ]
     ]
 }

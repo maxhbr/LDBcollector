@@ -207,15 +207,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/SWL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/SWL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/SWL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/SWL.html"
         ],
         [
             "Homepage",

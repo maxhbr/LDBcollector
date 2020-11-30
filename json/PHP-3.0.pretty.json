@@ -2,10 +2,10 @@
     "__impliedNames": [
         "PHP-3.0",
         "PHP License v3.0",
-        "scancode://php-3.0",
         "PHP License 3.0",
         "The PHP License, Version 3.0",
-        "PHP License, version 3.0"
+        "PHP License, version 3.0",
+        "scancode://php-3.0"
     ],
     "__impliedId": "PHP-3.0",
     "__isFsfFree": true,
@@ -587,19 +587,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/PHP-3.0.json"
-        ],
-        [
-            null,
-            "http://www.php.net/license/3_0.txt"
+            "https://spdx.org/licenses/PHP-3.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/PHP-3.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/PHP-3.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/811"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/PHP-3.0.html"
+            "http://spdx.org/licenses/PHP-3.0.json"
+        ],
+        [
+            null,
+            "http://www.php.net/license/3_0.txt"
         ],
         [
             "Homepage",
@@ -612,14 +620,6 @@
         [
             null,
             "http://www.opensource.org/licenses/PHP-3.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/PHP-3.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/811"
         ]
     ]
 }

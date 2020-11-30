@@ -207,15 +207,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/mpich2.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/mpich2.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/MIT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/mpich2.html"
         ],
         [
             "Homepage",

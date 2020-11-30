@@ -27,9 +27,9 @@ URLs
 -   **Homepage:**
     https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823
 
--   **SPDX:** http://spdx.org/licenses/BSD-1-Clause.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-1-Clause.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-1-Clause.json
 
 Text
 ----
@@ -61,12 +61,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/BSD-1-Clause.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/BSD-1-Clause.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-1-clause.yml "Scancode")
     (CC0-1.0)
@@ -235,15 +235,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-1-Clause.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-1-Clause.json"
             ],
             [
                 null,
                 "https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-1-Clause.html"
             ],
             [
                 "Homepage",

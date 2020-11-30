@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 589.65,-350 589.65,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="21.2,-244 21.2,-350 584.45,-350 584.45,-244 21.2,-244"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="176.54,-130 176.54,-236 429.11,-236 429.11,-130 176.54,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 589.65,-236 589.65,-130 16,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="21.2,-16 21.2,-122 584.45,-122 584.45,-16 21.2,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="176.54,-16 176.54,-122 429.11,-122 429.11,-16 176.54,-16"/>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -41,11 +41,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="302.83" cy="-324" rx="71.49" ry="18"/>
 <text text-anchor="middle" x="302.83" y="-320.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;1.0</text>
 </g>
-<!-- Creative Commons Attribution Non Commercial 1.0 Generic(2) -->
+<!-- Creative Comnons Attribution&#45;NonCommercial 1.0 Generic(2) -->
 <g id="node3" class="node">
-<title>Creative Commons Attribution Non Commercial 1.0 Generic(2)</title>
-<ellipse fill="white" stroke="white" cx="302.83" cy="-270" rx="278.65" ry="18"/>
-<text text-anchor="middle" x="302.83" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Non Commercial 1.0 Generic</text>
+<title>Creative Comnons Attribution&#45;NonCommercial 1.0 Generic(2)</title>
+<ellipse fill="white" stroke="white" cx="302.83" cy="-270" rx="273.75" ry="18"/>
+<text text-anchor="middle" x="302.83" y="-266.3" font-family="Times-Roman" font-size="14.00">Creative Comnons Attribution&#45;NonCommercial 1.0 Generic</text>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;1.0(3) -->
 <g id="node4" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="302.83" cy="-210" rx="71.49" ry="18"/>
 <text text-anchor="middle" x="302.83" y="-206.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;1.0</text>
 </g>
-<!-- scancode://cc&#45;by&#45;nc&#45;1.0(3) -->
+<!-- Creative Commons Attribution Non Commercial 1.0 Generic(3) -->
 <g id="node5" class="node">
-<title>scancode://cc&#45;by&#45;nc&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="302.83" cy="-156" rx="118.08" ry="18"/>
-<text text-anchor="middle" x="302.83" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;nc&#45;1.0</text>
+<title>Creative Commons Attribution Non Commercial 1.0 Generic(3)</title>
+<ellipse fill="white" stroke="white" cx="302.83" cy="-156" rx="278.65" ry="18"/>
+<text text-anchor="middle" x="302.83" y="-152.3" font-family="Times-Roman" font-size="14.00">Creative Commons Attribution Non Commercial 1.0 Generic</text>
 </g>
 <!-- CC&#45;BY&#45;NC&#45;1.0(4) -->
 <g id="node6" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="302.83" cy="-96" rx="71.49" ry="18"/>
 <text text-anchor="middle" x="302.83" y="-92.3" font-family="Times-Roman" font-size="14.00">CC&#45;BY&#45;NC&#45;1.0</text>
 </g>
-<!-- Creative Comnons Attribution&#45;NonCommercial 1.0 Generic(4) -->
+<!-- scancode://cc&#45;by&#45;nc&#45;1.0(4) -->
 <g id="node7" class="node">
-<title>Creative Comnons Attribution&#45;NonCommercial 1.0 Generic(4)</title>
-<ellipse fill="white" stroke="white" cx="302.83" cy="-42" rx="273.75" ry="18"/>
-<text text-anchor="middle" x="302.83" y="-38.3" font-family="Times-Roman" font-size="14.00">Creative Comnons Attribution&#45;NonCommercial 1.0 Generic</text>
+<title>scancode://cc&#45;by&#45;nc&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="302.83" cy="-42" rx="118.08" ry="18"/>
+<text text-anchor="middle" x="302.83" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cc&#45;by&#45;nc&#45;1.0</text>
 </g>
 </g>
 </svg>

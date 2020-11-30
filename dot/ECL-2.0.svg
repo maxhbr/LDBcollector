@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="49.8,-580 49.8,-686 421.97,-686 421.97,-580 49.8,-580"/>
+<polygon fill="lightgray" stroke="lightgray" points="181.74,-580 181.74,-686 290.03,-686 290.03,-580 181.74,-580"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="134.94,-412 134.94,-572 336.82,-572 336.82,-412 134.94,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="55,-412 55,-572 416.77,-572 416.77,-412 55,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="181.74,-298 181.74,-404 290.03,-404 290.03,-298 181.74,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 455.76,-404 455.76,-298 16,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 455.76,-290 455.76,-184 16,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="49.8,-184 49.8,-290 421.97,-290 421.97,-184 49.8,-184"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="55,-16 55,-176 416.77,-176 416.77,-16 55,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="134.94,-16 134.94,-176 336.82,-176 336.82,-16 134.94,-16"/>
 </g>
 <!-- ECL&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -65,29 +65,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-660" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-656.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
 </g>
-<!-- Educational Community License v2.0(3) -->
+<!-- ecl&#45;2.0(3) -->
 <g id="node5" class="node">
-<title>Educational Community License v2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-606" rx="178.17" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-602.3" font-family="Times-Roman" font-size="14.00">Educational Community License v2.0</text>
-</g>
-<!-- ECL 2.0(4) -->
-<g id="node6" class="node">
-<title>ECL 2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-546" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-542.3" font-family="Times-Roman" font-size="14.00">ECL 2.0</text>
+<title>ecl&#45;2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-606" rx="41.69" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-602.3" font-family="Times-Roman" font-size="14.00">ecl&#45;2.0</text>
 </g>
 <!-- ECL&#45;2.0(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>ECL&#45;2.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-492" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-488.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-546" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-542.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
 </g>
-<!-- scancode://ecl&#45;2.0(4) -->
+<!-- Educational Community License 2.0(4) -->
+<g id="node7" class="node">
+<title>Educational Community License 2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-492" rx="172.77" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-488.3" font-family="Times-Roman" font-size="14.00">Educational Community License 2.0</text>
+</g>
+<!-- ecl2(4) -->
 <g id="node8" class="node">
-<title>scancode://ecl&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-438" rx="92.88" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-434.3" font-family="Times-Roman" font-size="14.00">scancode://ecl&#45;2.0</text>
+<title>ecl2(4)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-438" rx="29.5" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-434.3" font-family="Times-Roman" font-size="14.00">ecl2</text>
 </g>
 <!-- ECL&#45;2.0(5) -->
 <g id="node9" class="node">
@@ -95,11 +95,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-378" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-374.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
 </g>
-<!-- ecl&#45;2.0(5) -->
+<!-- Educational Community License, Version 2.0(5) -->
 <g id="node10" class="node">
-<title>ecl&#45;2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-324" rx="41.69" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-320.3" font-family="Times-Roman" font-size="14.00">ecl&#45;2.0</text>
+<title>Educational Community License, Version 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-324" rx="211.76" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-320.3" font-family="Times-Roman" font-size="14.00">Educational Community License, Version 2.0</text>
 </g>
 <!-- ECL&#45;2.0(6) -->
 <g id="node11" class="node">
@@ -107,29 +107,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-264" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-260.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
 </g>
-<!-- Educational Community License, Version 2.0(6) -->
+<!-- Educational Community License v2.0(6) -->
 <g id="node12" class="node">
-<title>Educational Community License, Version 2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-210" rx="211.76" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Educational Community License, Version 2.0</text>
+<title>Educational Community License v2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-210" rx="178.17" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-206.3" font-family="Times-Roman" font-size="14.00">Educational Community License v2.0</text>
+</g>
+<!-- ECL 2.0(7) -->
+<g id="node13" class="node">
+<title>ECL 2.0(7)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-150" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-146.3" font-family="Times-Roman" font-size="14.00">ECL 2.0</text>
 </g>
 <!-- ECL&#45;2.0(7) -->
-<g id="node13" class="node">
-<title>ECL&#45;2.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-150" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-146.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
-</g>
-<!-- Educational Community License 2.0(7) -->
 <g id="node14" class="node">
-<title>Educational Community License 2.0(7)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-96" rx="172.77" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-92.3" font-family="Times-Roman" font-size="14.00">Educational Community License 2.0</text>
+<title>ECL&#45;2.0(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-96" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-92.3" font-family="Times-Roman" font-size="14.00">ECL&#45;2.0</text>
 </g>
-<!-- ecl2(7) -->
+<!-- scancode://ecl&#45;2.0(7) -->
 <g id="node15" class="node">
-<title>ecl2(7)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-42" rx="29.5" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-38.3" font-family="Times-Roman" font-size="14.00">ecl2</text>
+<title>scancode://ecl&#45;2.0(7)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-42" rx="92.88" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ecl&#45;2.0</text>
 </g>
 </g>
 </svg>

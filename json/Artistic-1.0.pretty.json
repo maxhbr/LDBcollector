@@ -3,10 +3,10 @@
         "Artistic-1.0",
         "Artistic 1.0 (original)",
         "Artistic License 1.0",
-        "scancode://artistic-1.0",
-        "Artistic 1.0",
         "Artistic License, Version 1.0",
-        "Artistic License (Perl) 1.0"
+        "Artistic License (Perl) 1.0",
+        "scancode://artistic-1.0",
+        "Artistic 1.0"
     ],
     "__impliedId": "Artistic-1.0",
     "__impliedAmbiguousNames": [
@@ -599,15 +599,27 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Artistic-1.0.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Artistic-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/596"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/721"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Artistic-1.0.json"
         ],
         [
             null,
             "https://opensource.org/licenses/Artistic-1.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Artistic-1.0.html"
         ],
         [
             "Homepage",
@@ -628,18 +640,6 @@
         [
             null,
             "http://www.perlfoundation.org/artistic_license_1_0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Artistic-1.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/596"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/721"
         ]
     ]
 }

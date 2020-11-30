@@ -224,15 +224,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/DSDP.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/DSDP.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/DSDP"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/DSDP.html"
         ],
         [
             "Homepage",

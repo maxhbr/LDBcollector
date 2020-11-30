@@ -5,11 +5,11 @@ Independent JPEG Group License (IJG)
 
 **Other Names:**
 
+-   `IJG License`
+
 -   `scancode://ijg`
 
 -   `JPEG License`
-
--   `IJG License`
 
 Comments on (easy) usability
 ----------------------------
@@ -31,9 +31,9 @@ URLs
 
 -   **Homepage:** http://fedoraproject.org/wiki/Licensing/IJG
 
--   **SPDX:** http://spdx.org/licenses/IJG.json
-
 -   **SPDX:** https://spdx.org/licenses/IJG.html
+
+-   **SPDX:** http://spdx.org/licenses/IJG.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/302
 
@@ -144,15 +144,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/IJG.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ijg.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -162,15 +156,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/IJG.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ijg.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "IJG",
             "Independent JPEG Group License",
+            "IJG License",
             "scancode://ijg",
-            "JPEG License",
-            "IJG License"
+            "JPEG License"
         ],
         "__impliedId": "IJG",
         "__isFsfFree": true,
@@ -383,15 +383,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/IJG.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/302"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/IJG.json"
             ],
             [
                 null,
                 "http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/IJG.html"
             ],
             [
                 "Homepage",
@@ -400,10 +404,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/302"
             ]
         ]
     }

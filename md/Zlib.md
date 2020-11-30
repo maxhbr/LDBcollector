@@ -7,17 +7,17 @@ zlib License (Zlib)
 
 -   `zlib/libpng`
 
--   `scancode://zlib`
-
 -   `zlib/libpng License`
+
+-   `zlib/libpng license`
+
+-   `zlib-license`
 
 -   `The zlib/libpng License (Zlib)`
 
 -   `License :: OSI Approved :: zlib/libpng License`
 
--   `zlib/libpng license`
-
--   `zlib-license`
+-   `scancode://zlib`
 
 Description
 -----------
@@ -75,13 +75,13 @@ URLs
 
 -   **Homepage:** http://www.zlib.net/
 
--   **OSI Page:** http://www.opensource.org/licenses/zlib-license.php
-
 -   **OSI Page:** https://opensource.org/licenses/Zlib
 
--   **SPDX:** http://spdx.org/licenses/Zlib.json
+-   **OSI Page:** http://www.opensource.org/licenses/zlib-license.php
 
 -   **SPDX:** https://spdx.org/licenses/Zlib.html
+
+-   **SPDX:** http://spdx.org/licenses/Zlib.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/16
 
@@ -178,25 +178,32 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Zlib.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -204,28 +211,21 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/zlib.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
-
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
-
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Zlib.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -234,20 +234,20 @@ Raw Data
             "Zlib",
             "zlib/libpng",
             "zlib License",
-            "scancode://zlib",
-            "ZLIB License",
             "zlib",
             "zlib/libpng License",
+            "zlib/libpng license",
+            "zlib-license",
             "The zlib/libpng License (Zlib)",
             "License :: OSI Approved :: zlib/libpng License",
-            "zlib/libpng license",
-            "zlib-license"
+            "scancode://zlib",
+            "ZLIB License"
         ],
         "__impliedId": "Zlib",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "zlib",
-            "The zlib/libpng License (Zlib)"
+            "The zlib/libpng License (Zlib)",
+            "zlib"
         ],
         "__impliedComments": [
             [
@@ -1028,19 +1028,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Zlib.json"
-            ],
-            [
-                null,
-                "http://www.zlib.net/zlib_license.html"
+                "https://spdx.org/licenses/Zlib.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Zlib"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/Zlib"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/16"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/Zlib.html"
+                "http://spdx.org/licenses/Zlib.json"
+            ],
+            [
+                null,
+                "http://www.zlib.net/zlib_license.html"
             ],
             [
                 "Homepage",
@@ -1053,14 +1061,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/Zlib"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Zlib"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/16"
             ]
         ]
     }

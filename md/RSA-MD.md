@@ -26,9 +26,9 @@ URLs
 
 -   **Homepage:** http://www.faqs.org/rfcs/rfc1321.html
 
--   **SPDX:** http://spdx.org/licenses/RSA-MD.json
-
 -   **SPDX:** https://spdx.org/licenses/RSA-MD.html
+
+-   **SPDX:** http://spdx.org/licenses/RSA-MD.json
 
 Text
 ----
@@ -60,12 +60,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/RSA-MD.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/RSA-MD.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rsa-md5.yml "Scancode")
     (CC0-1.0)
@@ -75,8 +75,8 @@ Raw Data
     {
         "__impliedNames": [
             "RSA-MD",
-            "RSA Message-Digest License",
             "RSA Message-Digest License ",
+            "RSA Message-Digest License",
             "scancode://rsa-md5",
             "RSA-MD5 License"
         ],
@@ -226,15 +226,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/RSA-MD.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/RSA-MD.json"
             ],
             [
                 null,
                 "http://www.faqs.org/rfcs/rfc1321.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/RSA-MD.html"
             ],
             [
                 "Homepage",

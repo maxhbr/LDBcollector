@@ -25,9 +25,9 @@ URLs
 -   **Homepage:**
     https://github.com/garyhouston/regex/blob/master/COPYRIGHT
 
--   **SPDX:** http://spdx.org/licenses/Spencer-94.json
-
 -   **SPDX:** https://spdx.org/licenses/Spencer-94.html
+
+-   **SPDX:** http://spdx.org/licenses/Spencer-94.json
 
 -   https://fedoraproject.org/wiki/Licensing/Henry\_Spencer\_Reg-Ex\_Library\_License
 
@@ -63,12 +63,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Spencer-94.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/Spencer-94.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml "Scancode")
     (CC0-1.0)
@@ -228,15 +228,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Spencer-94.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Spencer-94.json"
             ],
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Spencer-94.html"
             ],
             [
                 "Homepage",

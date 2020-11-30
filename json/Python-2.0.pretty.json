@@ -2,11 +2,11 @@
     "__impliedNames": [
         "Python-2.0",
         "Python License 2.0",
-        "scancode://python",
         "Python License, Version 2.0",
         "License :: OSI Approved :: Python Software Foundation License",
-        "Python Software Foundation License 2",
-        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2"
+        "PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2",
+        "scancode://python",
+        "Python Software Foundation License 2"
     ],
     "__impliedId": "Python-2.0",
     "__impliedComments": [
@@ -641,15 +641,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Python-2.0.json"
+            "https://spdx.org/licenses/Python-2.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Python-2.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Python-2.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/385"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Python-2.0.html"
+            "http://spdx.org/licenses/Python-2.0.json"
         ],
         [
             "Homepage",
@@ -666,14 +674,6 @@
         [
             null,
             "http://www.gnu.org/licenses/license-list.html#PythonOld"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Python-2.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/385"
         ]
     ]
 }

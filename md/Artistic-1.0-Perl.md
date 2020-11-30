@@ -43,9 +43,9 @@ URLs
 
 -   **Homepage:** http://dev.perl.org/licenses/artistic.html
 
--   **SPDX:** http://spdx.org/licenses/Artistic-1.0-Perl.json
-
 -   **SPDX:** https://spdx.org/licenses/Artistic-1.0-Perl.html
+
+-   **SPDX:** http://spdx.org/licenses/Artistic-1.0-Perl.json
 
 Text
 ----
@@ -187,26 +187,26 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode")
-    (CC0-1.0)
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml "finos/OSLC-handbook")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [SPDX](https://spdx.org/licenses/Artistic-1.0-Perl.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -519,15 +519,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Artistic-1.0-Perl.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Artistic-1.0-Perl.json"
             ],
             [
                 null,
                 "http://dev.perl.org/licenses/artistic.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Artistic-1.0-Perl.html"
             ],
             [
                 "Homepage",

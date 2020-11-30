@@ -9,7 +9,7 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 -   `BSD License (no advertising)`
 
--   `scancode://bsd-new`
+-   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
 
 -   `BSD-3`
 
@@ -23,7 +23,7 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 -   `New BSD License`
 
--   `BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)`
+-   `scancode://bsd-new`
 
 Description
 -----------
@@ -99,9 +99,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/BSD-3-Clause
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-3-Clause.json
 
 -   **Wikipedia Page:**
     https://en.wikipedia.org/wiki/BSD\_licenses\#3-clause
@@ -183,30 +183,23 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -217,21 +210,28 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -241,8 +241,8 @@ Raw Data
             "BSD (3 clause)",
             "BSD License (no advertising)",
             "BSD 3-Clause \"New\" or \"Revised\" License",
-            "scancode://bsd-new",
             "bsd-3-clause",
+            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)",
             "BSD-3",
             "BSD 3-Clause License",
             "BSD-3-clause",
@@ -250,13 +250,13 @@ Raw Data
             "Revised BSD License",
             "Modified BSD License",
             "New BSD License",
-            "BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"
+            "scancode://bsd-new"
         ],
         "__impliedId": "BSD-3-Clause",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "BSD",
-            "The BSD-3-clause License"
+            "The BSD-3-clause License",
+            "BSD"
         ],
         "__impliedComments": [
             [
@@ -987,27 +987,11 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-3-Clause.json"
+                "https://spdx.org/licenses/BSD-3-Clause.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/BSD-3-Clause"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-3-Clause.html"
-            ],
-            [
-                "Homepage",
-                "http://www.opensource.org/licenses/BSD-3-Clause"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/BSD-3-Clause"
-            ],
-            [
-                null,
-                "http://framework.zend.com/license/new-bsd"
             ],
             [
                 "Wikipedia Page",
@@ -1020,6 +1004,22 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/14"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/BSD-3-Clause.json"
+            ],
+            [
+                "Homepage",
+                "http://www.opensource.org/licenses/BSD-3-Clause"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/BSD-3-Clause"
+            ],
+            [
+                null,
+                "http://framework.zend.com/license/new-bsd"
             ]
         ]
     }

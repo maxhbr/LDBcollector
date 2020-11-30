@@ -182,6 +182,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MIT-0.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MIT-0.json"
         ],
         [
@@ -195,10 +199,6 @@
         [
             null,
             "https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT-0.html"
         ],
         [
             "Homepage",

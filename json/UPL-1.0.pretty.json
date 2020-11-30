@@ -3,10 +3,10 @@
         "UPL-1.0",
         "UPL",
         "Universal Permissive License v1.0",
-        "scancode://upl-1.0",
-        "UPL 1.0",
         "upl-1.0",
-        "The Universal Permissive License (UPL), Version 1.0"
+        "The Universal Permissive License (UPL), Version 1.0",
+        "scancode://upl-1.0",
+        "UPL 1.0"
     ],
     "__impliedId": "UPL-1.0",
     "facts": {
@@ -370,15 +370,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/UPL-1.0.html"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/UPL"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/UPL-1.0.json"
         ],
         [
             null,
             "https://opensource.org/licenses/UPL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/UPL-1.0.html"
         ],
         [
             "Homepage",
@@ -399,10 +403,6 @@
         [
             null,
             "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/UPL"
         ]
     ]
 }

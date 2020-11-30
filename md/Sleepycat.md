@@ -9,11 +9,11 @@ Sleepycat License (Sleepycat)
 
 -   `Sleepycat Software Product License`
 
--   `scancode://sleepycat`
-
 -   `The Sleepycat License`
 
 -   `License :: OSI Approved :: Sleepycat License`
+
+-   `scancode://sleepycat`
 
 Comments on (easy) usability
 ----------------------------
@@ -105,40 +105,40 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
-
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -148,9 +148,9 @@ Raw Data
             "Berkeley Database License",
             "Sleepycat Software Product License",
             "Sleepycat License",
-            "scancode://sleepycat",
             "The Sleepycat License",
-            "License :: OSI Approved :: Sleepycat License"
+            "License :: OSI Approved :: Sleepycat License",
+            "scancode://sleepycat"
         ],
         "__impliedId": "Sleepycat",
         "__isFsfFree": true,
@@ -590,16 +590,20 @@ Raw Data
         "__impliedText": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
-                "SPDX",
-                "http://spdx.org/licenses/Sleepycat.json"
+                null,
+                "https://spdx.org/licenses/Sleepycat.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Sleepycat"
             ],
             [
-                null,
-                "https://spdx.org/licenses/Sleepycat.html"
+                "OSI Page",
+                "https://opensource.org/licenses/Sleepycat"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/Sleepycat.json"
             ],
             [
                 "Homepage",
@@ -616,10 +620,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/sleepycat.php"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Sleepycat"
             ]
         ]
     }

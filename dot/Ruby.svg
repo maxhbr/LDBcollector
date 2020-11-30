@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="101.14,-412 101.14,-518 257.53,-518 257.53,-412 101.14,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-518 342.67,-518 342.67,-412 16,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="88.14,-244 88.14,-404 270.53,-404 270.53,-244 88.14,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="24.45,-298 24.45,-404 334.22,-404 334.22,-298 24.45,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 342.67,-236 342.67,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="101.14,-184 101.14,-290 257.53,-290 257.53,-184 101.14,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="24.45,-16 24.45,-122 334.22,-122 334.22,-16 24.45,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="88.14,-16 88.14,-176 270.53,-176 270.53,-16 88.14,-16"/>
 </g>
 <!-- Ruby(1) -->
 <g id="node1" class="node">
@@ -61,11 +61,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-492" rx="33.6" ry="18"/>
 <text text-anchor="middle" x="179.34" y="-488.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
 </g>
-<!-- Ruby License(3) -->
+<!-- Ruby License (1.9.2 and earlier)(3) -->
 <g id="node5" class="node">
-<title>Ruby License(3)</title>
-<ellipse fill="white" stroke="white" cx="179.34" cy="-438" rx="70.39" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-434.3" font-family="Times-Roman" font-size="14.00">Ruby License</text>
+<title>Ruby License (1.9.2 and earlier)(3)</title>
+<ellipse fill="white" stroke="white" cx="179.34" cy="-438" rx="155.17" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-434.3" font-family="Times-Roman" font-size="14.00">Ruby License (1.9.2 and earlier)</text>
 </g>
 <!-- Ruby(4) -->
 <g id="node6" class="node">
@@ -73,41 +73,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-378" rx="33.6" ry="18"/>
 <text text-anchor="middle" x="179.34" y="-374.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
 </g>
-<!-- Ruby License(4) -->
+<!-- Ruby License (1.9.3 and later)(4) -->
 <g id="node7" class="node">
-<title>Ruby License(4)</title>
-<ellipse fill="white" stroke="white" cx="179.34" cy="-324" rx="70.39" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-320.3" font-family="Times-Roman" font-size="14.00">Ruby License</text>
-</g>
-<!-- scancode://ruby(4) -->
-<g id="node8" class="node">
-<title>scancode://ruby(4)</title>
-<ellipse fill="white" stroke="white" cx="179.34" cy="-270" rx="83.39" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://ruby</text>
+<title>Ruby License (1.9.3 and later)(4)</title>
+<ellipse fill="white" stroke="white" cx="179.34" cy="-324" rx="146.77" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-320.3" font-family="Times-Roman" font-size="14.00">Ruby License (1.9.3 and later)</text>
 </g>
 <!-- Ruby(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>Ruby(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-210" rx="33.6" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-206.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-264" rx="33.6" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-260.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
 </g>
-<!-- Ruby License (1.9.2 and earlier)(5) -->
-<g id="node10" class="node">
-<title>Ruby License (1.9.2 and earlier)(5)</title>
-<ellipse fill="white" stroke="white" cx="179.34" cy="-156" rx="155.17" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-152.3" font-family="Times-Roman" font-size="14.00">Ruby License (1.9.2 and earlier)</text>
+<!-- Ruby License(5) -->
+<g id="node9" class="node">
+<title>Ruby License(5)</title>
+<ellipse fill="white" stroke="white" cx="179.34" cy="-210" rx="70.39" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-206.3" font-family="Times-Roman" font-size="14.00">Ruby License</text>
 </g>
 <!-- Ruby(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Ruby(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-96" rx="33.6" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-92.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="179.34" cy="-150" rx="33.6" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-146.3" font-family="Times-Roman" font-size="14.00">Ruby</text>
 </g>
-<!-- Ruby License (1.9.3 and later)(6) -->
+<!-- Ruby License(6) -->
+<g id="node11" class="node">
+<title>Ruby License(6)</title>
+<ellipse fill="white" stroke="white" cx="179.34" cy="-96" rx="70.39" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-92.3" font-family="Times-Roman" font-size="14.00">Ruby License</text>
+</g>
+<!-- scancode://ruby(6) -->
 <g id="node12" class="node">
-<title>Ruby License (1.9.3 and later)(6)</title>
-<ellipse fill="white" stroke="white" cx="179.34" cy="-42" rx="146.77" ry="18"/>
-<text text-anchor="middle" x="179.34" y="-38.3" font-family="Times-Roman" font-size="14.00">Ruby License (1.9.3 and later)</text>
+<title>scancode://ruby(6)</title>
+<ellipse fill="white" stroke="white" cx="179.34" cy="-42" rx="83.39" ry="18"/>
+<text text-anchor="middle" x="179.34" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ruby</text>
 </g>
 </g>
 </svg>

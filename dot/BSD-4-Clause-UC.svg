@@ -27,11 +27,11 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="109.59,-130 109.59,-290 385.57,-290 385.57,-130 109.59,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 479.16,-290 479.16,-184 16,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 479.16,-122 479.16,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="109.59,-16 109.59,-176 385.57,-176 385.57,-16 109.59,-16"/>
 </g>
 <!-- BSD&#45;4&#45;Clause&#45;UC(1) -->
 <g id="node1" class="node">
@@ -63,35 +63,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="247.58" cy="-324" rx="89.08" ry="18"/>
 <text text-anchor="middle" x="247.58" y="-320.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause&#45;UC</text>
 </g>
-<!-- BSD&#45;4&#45;Clause&#45;UC(4) -->
+<!-- BSD&#45;4&#45;Clause (University of California&#45;Specific)(4) -->
 <g id="node6" class="node">
-<title>BSD&#45;4&#45;Clause&#45;UC(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="247.58" cy="-264" rx="89.08" ry="18"/>
-<text text-anchor="middle" x="247.58" y="-260.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause&#45;UC</text>
+<title>BSD&#45;4&#45;Clause (University of California&#45;Specific)(4)</title>
+<ellipse fill="white" stroke="white" cx="247.58" cy="-264" rx="223.66" ry="18"/>
+<text text-anchor="middle" x="247.58" y="-260.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause (University of California&#45;Specific)</text>
 </g>
-<!-- BSD&#45;Original&#45;UC(4) -->
+<!-- BSD&#45;4&#45;Clause&#45;UC(4) -->
 <g id="node7" class="node">
-<title>BSD&#45;Original&#45;UC(4)</title>
-<ellipse fill="white" stroke="white" cx="247.58" cy="-210" rx="85.29" ry="18"/>
-<text text-anchor="middle" x="247.58" y="-206.3" font-family="Times-Roman" font-size="14.00">BSD&#45;Original&#45;UC</text>
-</g>
-<!-- scancode://bsd&#45;original&#45;uc(4) -->
-<g id="node8" class="node">
-<title>scancode://bsd&#45;original&#45;uc(4)</title>
-<ellipse fill="white" stroke="white" cx="247.58" cy="-156" rx="129.98" ry="18"/>
-<text text-anchor="middle" x="247.58" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;original&#45;uc</text>
-</g>
-<!-- BSD&#45;4&#45;Clause (University of California&#45;Specific)(5) -->
-<g id="node9" class="node">
-<title>BSD&#45;4&#45;Clause (University of California&#45;Specific)(5)</title>
-<ellipse fill="white" stroke="white" cx="247.58" cy="-96" rx="223.66" ry="18"/>
-<text text-anchor="middle" x="247.58" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause (University of California&#45;Specific)</text>
+<title>BSD&#45;4&#45;Clause&#45;UC(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="247.58" cy="-210" rx="89.08" ry="18"/>
+<text text-anchor="middle" x="247.58" y="-206.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause&#45;UC</text>
 </g>
 <!-- BSD&#45;4&#45;Clause&#45;UC(5) -->
-<g id="node10" class="node">
+<g id="node8" class="node">
 <title>BSD&#45;4&#45;Clause&#45;UC(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="247.58" cy="-42" rx="89.08" ry="18"/>
-<text text-anchor="middle" x="247.58" y="-38.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause&#45;UC</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="247.58" cy="-150" rx="89.08" ry="18"/>
+<text text-anchor="middle" x="247.58" y="-146.3" font-family="Times-Roman" font-size="14.00">BSD&#45;4&#45;Clause&#45;UC</text>
+</g>
+<!-- BSD&#45;Original&#45;UC(5) -->
+<g id="node9" class="node">
+<title>BSD&#45;Original&#45;UC(5)</title>
+<ellipse fill="white" stroke="white" cx="247.58" cy="-96" rx="85.29" ry="18"/>
+<text text-anchor="middle" x="247.58" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD&#45;Original&#45;UC</text>
+</g>
+<!-- scancode://bsd&#45;original&#45;uc(5) -->
+<g id="node10" class="node">
+<title>scancode://bsd&#45;original&#45;uc(5)</title>
+<ellipse fill="white" stroke="white" cx="247.58" cy="-42" rx="129.98" ry="18"/>
+<text text-anchor="middle" x="247.58" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;original&#45;uc</text>
 </g>
 </g>
 </svg>

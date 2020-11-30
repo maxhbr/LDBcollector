@@ -318,15 +318,19 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/HPND.json"
+            "https://spdx.org/licenses/HPND.html"
         ],
         [
             null,
             "https://opensource.org/licenses/HPND"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/HPND"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/HPND.html"
+            "http://spdx.org/licenses/HPND.json"
         ],
         [
             "Homepage",
@@ -339,10 +343,6 @@
         [
             null,
             "http://www.opensource.org/licenses/HPND"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/HPND"
         ]
     ]
 }

@@ -2,9 +2,9 @@
     "__impliedNames": [
         "Plexus",
         "Plexus Classworlds License",
+        "DOM4J License",
         "scancode://dom4j",
-        "Dom4j License",
-        "DOM4J License"
+        "Dom4j License"
     ],
     "__impliedId": "Plexus",
     "__isFsfFree": true,
@@ -420,15 +420,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Plexus.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/288"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Plexus.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Plexus.html"
         ],
         [
             "Homepage",
@@ -453,10 +457,6 @@
         [
             null,
             "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/288"
         ]
     ]
 }

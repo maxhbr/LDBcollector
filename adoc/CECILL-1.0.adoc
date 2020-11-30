@@ -276,13 +276,13 @@ Version 1 du 21/06/2004
 ==== Facts
 
 * LicenseName
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://spdx.org/licenses/CECILL-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.0.yml[Scancode]
 (CC0-1.0)
-* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
-license-compatibility-checker]
-(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 
 ==== Raw JSON
 

@@ -470,6 +470,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ImageMagick.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/873"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ImageMagick.json"
         ],
         [
@@ -477,16 +485,8 @@
             "http://www.imagemagick.org/script/license.php"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/ImageMagick.html"
-        ],
-        [
             "Homepage",
             "http://www.imagemagick.org/script/license.php"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/873"
         ]
     ]
 }

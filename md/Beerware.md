@@ -39,9 +39,9 @@ URLs
 
 -   **Homepage:** http://people.freebsd.org/~phk/
 
--   **SPDX:** http://spdx.org/licenses/Beerware.json
-
 -   **SPDX:** https://spdx.org/licenses/Beerware.html
+
+-   **SPDX:** http://spdx.org/licenses/Beerware.json
 
 -   https://fedoraproject.org/wiki/Licensing/Beerware
 
@@ -62,30 +62,30 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Beerware.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [SPDX](https://spdx.org/licenses/Beerware.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml "Scancode")
+    (CC0-1.0)
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 ### Raw JSON
 
@@ -380,6 +380,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Beerware.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Beerware.json"
             ],
             [
@@ -389,10 +393,6 @@ Raw Data
             [
                 null,
                 "https://people.freebsd.org/~phk/"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Beerware.html"
             ],
             [
                 "Homepage",

@@ -207,15 +207,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Xerox.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Xerox.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Xerox"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Xerox.html"
         ],
         [
             "Homepage",

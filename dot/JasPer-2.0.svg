@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="69.3,-298 69.3,-404 236.08,-404 236.08,-298 69.3,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 289.38,-404 289.38,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="38.1,-130 38.1,-290 267.28,-290 267.28,-130 38.1,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="69.3,-184 69.3,-290 236.08,-290 236.08,-184 69.3,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 289.38,-122 289.38,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="38.1,-16 38.1,-176 267.28,-176 267.28,-16 38.1,-16"/>
 </g>
 <!-- JasPer&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -51,11 +51,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-438" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="152.69" y="-434.3" font-family="Times-Roman" font-size="14.00">JasPer&#45;2.0</text>
 </g>
-<!-- JasPer License(3) -->
+<!-- JasPer License Version 2.0(3) -->
 <g id="node4" class="node">
-<title>JasPer License(3)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-378" rx="75.29" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-374.3" font-family="Times-Roman" font-size="14.00">JasPer License</text>
+<title>JasPer License Version 2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-378" rx="128.88" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-374.3" font-family="Times-Roman" font-size="14.00">JasPer License Version 2.0</text>
 </g>
 <!-- JasPer&#45;2.0(3) -->
 <g id="node5" class="node">
@@ -63,11 +63,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-324" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="152.69" y="-320.3" font-family="Times-Roman" font-size="14.00">JasPer&#45;2.0</text>
 </g>
-<!-- JasPer 2.0(4) -->
+<!-- JasPer License(4) -->
 <g id="node6" class="node">
-<title>JasPer 2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-264" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-260.3" font-family="Times-Roman" font-size="14.00">JasPer 2.0</text>
+<title>JasPer License(4)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-264" rx="75.29" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-260.3" font-family="Times-Roman" font-size="14.00">JasPer License</text>
 </g>
 <!-- JasPer&#45;2.0(4) -->
 <g id="node7" class="node">
@@ -75,23 +75,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-210" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="152.69" y="-206.3" font-family="Times-Roman" font-size="14.00">JasPer&#45;2.0</text>
 </g>
-<!-- scancode://jasper&#45;2.0(4) -->
+<!-- JasPer 2.0(5) -->
 <g id="node8" class="node">
-<title>scancode://jasper&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-156" rx="106.68" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://jasper&#45;2.0</text>
-</g>
-<!-- JasPer License Version 2.0(5) -->
-<g id="node9" class="node">
-<title>JasPer License Version 2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="152.69" cy="-96" rx="128.88" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-92.3" font-family="Times-Roman" font-size="14.00">JasPer License Version 2.0</text>
+<title>JasPer 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-150" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-146.3" font-family="Times-Roman" font-size="14.00">JasPer 2.0</text>
 </g>
 <!-- JasPer&#45;2.0(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>JasPer&#45;2.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-42" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="152.69" y="-38.3" font-family="Times-Roman" font-size="14.00">JasPer&#45;2.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="152.69" cy="-96" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-92.3" font-family="Times-Roman" font-size="14.00">JasPer&#45;2.0</text>
+</g>
+<!-- scancode://jasper&#45;2.0(5) -->
+<g id="node10" class="node">
+<title>scancode://jasper&#45;2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="152.69" cy="-42" rx="106.68" ry="18"/>
+<text text-anchor="middle" x="152.69" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://jasper&#45;2.0</text>
 </g>
 </g>
 </svg>

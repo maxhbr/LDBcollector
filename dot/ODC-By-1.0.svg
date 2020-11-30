@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 467.46,-350 467.46,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="21.85,-244 21.85,-350 461.61,-350 461.61,-244 21.85,-244"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="123.24,-130 123.24,-236 360.22,-236 360.22,-130 123.24,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 467.46,-236 467.46,-130 16,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="21.85,-16 21.85,-122 461.61,-122 461.61,-16 21.85,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="123.24,-16 123.24,-122 360.22,-122 360.22,-16 123.24,-16"/>
 </g>
 <!-- ODC&#45;By&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -35,17 +35,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="241.73" cy="-384" rx="63.89" ry="18"/>
 <text text-anchor="middle" x="241.73" y="-380.3" font-family="Times-Roman" font-size="14.00">ODC&#45;By&#45;1.0</text>
 </g>
-<!-- ODC&#45;By&#45;1.0(2) -->
+<!-- ODC&#45;BY&#45;1.0(2) -->
 <g id="node2" class="node">
-<title>ODC&#45;By&#45;1.0(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="241.73" cy="-324" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="241.73" y="-320.3" font-family="Times-Roman" font-size="14.00">ODC&#45;By&#45;1.0</text>
+<title>ODC&#45;BY&#45;1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="241.73" cy="-324" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="241.73" y="-320.3" font-family="Times-Roman" font-size="14.00">ODC&#45;BY&#45;1.0</text>
 </g>
-<!-- Open Data Commons Attribution License v1.0(2) -->
+<!-- Open Data Commons Attribution License 1.0(2) -->
 <g id="node3" class="node">
-<title>Open Data Commons Attribution License v1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="241.73" cy="-270" rx="217.96" ry="18"/>
-<text text-anchor="middle" x="241.73" y="-266.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Attribution License v1.0</text>
+<title>Open Data Commons Attribution License 1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="241.73" cy="-270" rx="211.76" ry="18"/>
+<text text-anchor="middle" x="241.73" y="-266.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Attribution License 1.0</text>
 </g>
 <!-- ODC&#45;By&#45;1.0(3) -->
 <g id="node4" class="node">
@@ -53,23 +53,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="241.73" cy="-210" rx="63.89" ry="18"/>
 <text text-anchor="middle" x="241.73" y="-206.3" font-family="Times-Roman" font-size="14.00">ODC&#45;By&#45;1.0</text>
 </g>
-<!-- scancode://odc&#45;by&#45;1.0(3) -->
+<!-- Open Data Commons Attribution License v1.0(3) -->
 <g id="node5" class="node">
-<title>scancode://odc&#45;by&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="241.73" cy="-156" rx="110.48" ry="18"/>
-<text text-anchor="middle" x="241.73" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://odc&#45;by&#45;1.0</text>
+<title>Open Data Commons Attribution License v1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="241.73" cy="-156" rx="217.96" ry="18"/>
+<text text-anchor="middle" x="241.73" y="-152.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Attribution License v1.0</text>
 </g>
-<!-- ODC&#45;BY&#45;1.0(4) -->
+<!-- ODC&#45;By&#45;1.0(4) -->
 <g id="node6" class="node">
-<title>ODC&#45;BY&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="241.73" cy="-96" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="241.73" y="-92.3" font-family="Times-Roman" font-size="14.00">ODC&#45;BY&#45;1.0</text>
+<title>ODC&#45;By&#45;1.0(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="241.73" cy="-96" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="241.73" y="-92.3" font-family="Times-Roman" font-size="14.00">ODC&#45;By&#45;1.0</text>
 </g>
-<!-- Open Data Commons Attribution License 1.0(4) -->
+<!-- scancode://odc&#45;by&#45;1.0(4) -->
 <g id="node7" class="node">
-<title>Open Data Commons Attribution License 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="241.73" cy="-42" rx="211.76" ry="18"/>
-<text text-anchor="middle" x="241.73" y="-38.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Attribution License 1.0</text>
+<title>scancode://odc&#45;by&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="241.73" cy="-42" rx="110.48" ry="18"/>
+<text text-anchor="middle" x="241.73" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://odc&#45;by&#45;1.0</text>
 </g>
 </g>
 </svg>

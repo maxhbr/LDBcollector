@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Bahyph"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Bahyph.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Bahyph"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Bahyph"
         ],
         [
             "Homepage",

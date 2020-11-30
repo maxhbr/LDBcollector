@@ -1,9 +1,9 @@
 {
     "__impliedNames": [
         "CECILL-C",
+        "CeCILL-C License",
         "CeCILL-C Free Software License Agreement",
-        "scancode://cecill-c",
-        "CeCILL-C License"
+        "scancode://cecill-c"
     ],
     "__impliedId": "CECILL-C",
     "__isFsfFree": true,

@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="35.5,-526 35.5,-632 249.08,-632 249.08,-526 35.5,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="71.9,-526 71.9,-632 212.68,-632 212.68,-526 71.9,-526"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="25.1,-358 25.1,-518 259.48,-518 259.48,-358 25.1,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="35.5,-412 35.5,-518 249.08,-518 249.08,-412 35.5,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="71.9,-244 71.9,-350 212.68,-350 212.68,-244 71.9,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 268.58,-404 268.58,-298 16,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 268.58,-236 268.58,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="35.5,-184 35.5,-290 249.08,-290 249.08,-184 35.5,-184"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="35.5,-16 35.5,-122 249.08,-122 249.08,-16 35.5,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="25.1,-16 25.1,-176 259.48,-176 259.48,-16 25.1,-16"/>
 </g>
 <!-- PostgreSQL(1) -->
 <g id="node1" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-606" rx="62.29" ry="18"/>
 <text text-anchor="middle" x="142.29" y="-602.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
 </g>
-<!-- PostgreSQL License(3) -->
+<!-- postgresql(3) -->
 <g id="node5" class="node">
-<title>PostgreSQL License(3)</title>
-<ellipse fill="white" stroke="white" cx="142.29" cy="-552" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-548.3" font-family="Times-Roman" font-size="14.00">PostgreSQL License</text>
+<title>postgresql(3)</title>
+<ellipse fill="white" stroke="white" cx="142.29" cy="-552" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-548.3" font-family="Times-Roman" font-size="14.00">postgresql</text>
 </g>
 <!-- PostgreSQL(4) -->
 <g id="node6" class="node">
@@ -83,47 +83,47 @@
 <ellipse fill="white" stroke="white" cx="142.29" cy="-438" rx="98.58" ry="18"/>
 <text text-anchor="middle" x="142.29" y="-434.3" font-family="Times-Roman" font-size="14.00">PostgreSQL License</text>
 </g>
-<!-- scancode://postgresql(4) -->
-<g id="node8" class="node">
-<title>scancode://postgresql(4)</title>
-<ellipse fill="white" stroke="white" cx="142.29" cy="-384" rx="109.38" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://postgresql</text>
-</g>
 <!-- PostgreSQL(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>PostgreSQL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-324" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-320.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-378" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-374.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
 </g>
-<!-- postgresql(5) -->
-<g id="node10" class="node">
-<title>postgresql(5)</title>
-<ellipse fill="white" stroke="white" cx="142.29" cy="-270" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-266.3" font-family="Times-Roman" font-size="14.00">postgresql</text>
+<!-- The PostgreSQL Licence(5) -->
+<g id="node9" class="node">
+<title>The PostgreSQL Licence(5)</title>
+<ellipse fill="white" stroke="white" cx="142.29" cy="-324" rx="118.08" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-320.3" font-family="Times-Roman" font-size="14.00">The PostgreSQL Licence</text>
 </g>
 <!-- PostgreSQL(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>PostgreSQL(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-210" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-206.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-264" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-260.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
 </g>
-<!-- The PostgreSQL Licence(6) -->
-<g id="node12" class="node">
-<title>The PostgreSQL Licence(6)</title>
-<ellipse fill="white" stroke="white" cx="142.29" cy="-156" rx="118.08" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-152.3" font-family="Times-Roman" font-size="14.00">The PostgreSQL Licence</text>
+<!-- PostgreSQL License(6) -->
+<g id="node11" class="node">
+<title>PostgreSQL License(6)</title>
+<ellipse fill="white" stroke="white" cx="142.29" cy="-210" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-206.3" font-family="Times-Roman" font-size="14.00">PostgreSQL License</text>
 </g>
 <!-- PostgreSQL(7) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>PostgreSQL(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-96" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-92.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="142.29" cy="-150" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-146.3" font-family="Times-Roman" font-size="14.00">PostgreSQL</text>
 </g>
 <!-- PostgreSQL License(7) -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>PostgreSQL License(7)</title>
-<ellipse fill="white" stroke="white" cx="142.29" cy="-42" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="142.29" y="-38.3" font-family="Times-Roman" font-size="14.00">PostgreSQL License</text>
+<ellipse fill="white" stroke="white" cx="142.29" cy="-96" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-92.3" font-family="Times-Roman" font-size="14.00">PostgreSQL License</text>
+</g>
+<!-- scancode://postgresql(7) -->
+<g id="node14" class="node">
+<title>scancode://postgresql(7)</title>
+<ellipse fill="white" stroke="white" cx="142.29" cy="-42" rx="109.38" ry="18"/>
+<text text-anchor="middle" x="142.29" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://postgresql</text>
 </g>
 </g>
 </svg>

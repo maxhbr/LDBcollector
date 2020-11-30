@@ -190,6 +190,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/eGenix.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/eGenix.json"
         ],
         [
@@ -199,10 +203,6 @@
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/eGenix.html"
         ],
         [
             "Homepage",

@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="34.2,-352 34.2,-458 397.27,-458 397.27,-352 34.2,-352"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 415.47,-458 415.47,-298 16,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="79.69,-184 79.69,-344 351.77,-344 351.77,-184 79.69,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="34.2,-184 34.2,-290 397.27,-290 397.27,-184 34.2,-184"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 415.47,-176 415.47,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="79.69,-16 79.69,-176 351.77,-176 351.77,-16 79.69,-16"/>
 </g>
 <!-- OGL&#45;Canada&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -35,23 +35,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="215.73" cy="-492" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="215.73" y="-488.3" font-family="Times-Roman" font-size="14.00">OGL&#45;Canada&#45;2.0</text>
 </g>
-<!-- OGL&#45;Canada&#45;2.0(2) -->
+<!-- OGL&#45;CA&#45;2.0(2) -->
 <g id="node2" class="node">
-<title>OGL&#45;Canada&#45;2.0(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="215.73" cy="-432" rx="85.29" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-428.3" font-family="Times-Roman" font-size="14.00">OGL&#45;Canada&#45;2.0</text>
+<title>OGL&#45;CA&#45;2.0(2)</title>
+<ellipse fill="white" stroke="white" cx="215.73" cy="-432" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-428.3" font-family="Times-Roman" font-size="14.00">OGL&#45;CA&#45;2.0</text>
 </g>
-<!-- Open Government Licence &#45; Canada(2) -->
+<!-- OGL&#45;Canada&#45;2.0(2) -->
 <g id="node3" class="node">
-<title>Open Government Licence &#45; Canada(2)</title>
-<ellipse fill="white" stroke="white" cx="215.73" cy="-378" rx="173.57" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-374.3" font-family="Times-Roman" font-size="14.00">Open Government Licence &#45; Canada</text>
+<title>OGL&#45;Canada&#45;2.0(2)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="215.73" cy="-378" rx="85.29" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-374.3" font-family="Times-Roman" font-size="14.00">OGL&#45;Canada&#45;2.0</text>
 </g>
-<!-- OGL Canada 2.0(3) -->
+<!-- Open Government License 2.0 (Canada)(2) -->
 <g id="node4" class="node">
-<title>OGL Canada 2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="215.73" cy="-318" rx="84.49" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-314.3" font-family="Times-Roman" font-size="14.00">OGL Canada 2.0</text>
+<title>Open Government License 2.0 (Canada)(2)</title>
+<ellipse fill="white" stroke="white" cx="215.73" cy="-324" rx="191.97" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-320.3" font-family="Times-Roman" font-size="14.00">Open Government License 2.0 (Canada)</text>
 </g>
 <!-- OGL&#45;Canada&#45;2.0(3) -->
 <g id="node5" class="node">
@@ -59,17 +59,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="215.73" cy="-264" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="215.73" y="-260.3" font-family="Times-Roman" font-size="14.00">OGL&#45;Canada&#45;2.0</text>
 </g>
-<!-- scancode://can&#45;ogl&#45;2.0&#45;en(3) -->
+<!-- Open Government Licence &#45; Canada(3) -->
 <g id="node6" class="node">
-<title>scancode://can&#45;ogl&#45;2.0&#45;en(3)</title>
-<ellipse fill="white" stroke="white" cx="215.73" cy="-210" rx="128.08" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-206.3" font-family="Times-Roman" font-size="14.00">scancode://can&#45;ogl&#45;2.0&#45;en</text>
+<title>Open Government Licence &#45; Canada(3)</title>
+<ellipse fill="white" stroke="white" cx="215.73" cy="-210" rx="173.57" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-206.3" font-family="Times-Roman" font-size="14.00">Open Government Licence &#45; Canada</text>
 </g>
-<!-- OGL&#45;CA&#45;2.0(4) -->
+<!-- OGL Canada 2.0(4) -->
 <g id="node7" class="node">
-<title>OGL&#45;CA&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="215.73" cy="-150" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-146.3" font-family="Times-Roman" font-size="14.00">OGL&#45;CA&#45;2.0</text>
+<title>OGL Canada 2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="215.73" cy="-150" rx="84.49" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-146.3" font-family="Times-Roman" font-size="14.00">OGL Canada 2.0</text>
 </g>
 <!-- OGL&#45;Canada&#45;2.0(4) -->
 <g id="node8" class="node">
@@ -77,11 +77,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="215.73" cy="-96" rx="85.29" ry="18"/>
 <text text-anchor="middle" x="215.73" y="-92.3" font-family="Times-Roman" font-size="14.00">OGL&#45;Canada&#45;2.0</text>
 </g>
-<!-- Open Government License 2.0 (Canada)(4) -->
+<!-- scancode://can&#45;ogl&#45;2.0&#45;en(4) -->
 <g id="node9" class="node">
-<title>Open Government License 2.0 (Canada)(4)</title>
-<ellipse fill="white" stroke="white" cx="215.73" cy="-42" rx="191.97" ry="18"/>
-<text text-anchor="middle" x="215.73" y="-38.3" font-family="Times-Roman" font-size="14.00">Open Government License 2.0 (Canada)</text>
+<title>scancode://can&#45;ogl&#45;2.0&#45;en(4)</title>
+<ellipse fill="white" stroke="white" cx="215.73" cy="-42" rx="128.08" ry="18"/>
+<text text-anchor="middle" x="215.73" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://can&#45;ogl&#45;2.0&#45;en</text>
 </g>
 </g>
 </svg>

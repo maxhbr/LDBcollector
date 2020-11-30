@@ -221,15 +221,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MIT-advertising.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MIT-advertising.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT-advertising.html"
         ],
         [
             "Homepage",

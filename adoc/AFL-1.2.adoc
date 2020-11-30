@@ -137,18 +137,18 @@ permission of its copyright owner.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/AFL-1.2.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml[Scancode]
-(CC0-1.0)
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://spdx.org/licenses/AFL-1.2.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -388,6 +388,10 @@ license-compatibility]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/AFL-1.2.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/AFL-1.2.json"
         ],
         [
@@ -397,10 +401,6 @@ license-compatibility]
         [
             null,
             "http://wayback.archive.org/web/20021204204652/http://www.opensource.org/licenses/academic.php"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/AFL-1.2.html"
         ],
         [
             "Homepage",

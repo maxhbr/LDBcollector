@@ -16,9 +16,9 @@ General Comments
 URLs
 ----
 
--   **SPDX:** http://spdx.org/licenses/bzip2-1.0.5.json
-
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.html
+
+-   **SPDX:** http://spdx.org/licenses/bzip2-1.0.5.json
 
 -   https://sourceware.org/bzip2/1.0.5/bzip2-manual-1.0.5.html
 
@@ -33,12 +33,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX") (all data
+    \[in this repository\] is generated)
 
 ### Raw JSON
 
@@ -150,6 +150,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/bzip2-1.0.5.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/bzip2-1.0.5.json"
             ],
             [
@@ -159,10 +163,6 @@ Raw Data
             [
                 null,
                 "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/bzip2-1.0.5.html"
             ]
         ]
     }

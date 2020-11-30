@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="229.18,-244 229.18,-404 442.76,-404 442.76,-244 229.18,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 655.94,-404 655.94,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="84.24,-130 84.24,-236 587.7,-236 587.7,-130 84.24,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="84.24,-184 84.24,-290 587.7,-290 587.7,-184 84.24,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 655.94,-122 655.94,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="229.18,-16 229.18,-176 442.76,-176 442.76,-16 229.18,-16"/>
 </g>
 <!-- CDDL&#45;1.1(1) -->
 <g id="node1" class="node">
@@ -67,35 +67,35 @@
 <ellipse fill="white" stroke="white" cx="335.97" cy="-438" rx="243.96" ry="18"/>
 <text text-anchor="middle" x="335.97" y="-434.3" font-family="Times-Roman" font-size="14.00">Common Development and Distribution License 1.1</text>
 </g>
-<!-- CDDL 1.1(4) -->
-<g id="node6" class="node">
-<title>CDDL 1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="335.97" cy="-378" rx="53.09" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-374.3" font-family="Times-Roman" font-size="14.00">CDDL 1.1</text>
-</g>
 <!-- CDDL&#45;1.1(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>CDDL&#45;1.1(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="335.97" cy="-324" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-320.3" font-family="Times-Roman" font-size="14.00">CDDL&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="335.97" cy="-378" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-374.3" font-family="Times-Roman" font-size="14.00">CDDL&#45;1.1</text>
 </g>
-<!-- scancode://cddl&#45;1.1(4) -->
-<g id="node8" class="node">
-<title>scancode://cddl&#45;1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="335.97" cy="-270" rx="98.58" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://cddl&#45;1.1</text>
+<!-- COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1(4) -->
+<g id="node7" class="node">
+<title>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="335.97" cy="-324" rx="311.94" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-320.3" font-family="Times-Roman" font-size="14.00">COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1</text>
 </g>
 <!-- CDDL&#45;1.1(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>CDDL&#45;1.1(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="335.97" cy="-210" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-206.3" font-family="Times-Roman" font-size="14.00">CDDL&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="335.97" cy="-264" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-260.3" font-family="Times-Roman" font-size="14.00">CDDL&#45;1.1</text>
 </g>
 <!-- Common Development and Distribution License 1.1(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Common Development and Distribution License 1.1(5)</title>
-<ellipse fill="white" stroke="white" cx="335.97" cy="-156" rx="243.96" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-152.3" font-family="Times-Roman" font-size="14.00">Common Development and Distribution License 1.1</text>
+<ellipse fill="white" stroke="white" cx="335.97" cy="-210" rx="243.96" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-206.3" font-family="Times-Roman" font-size="14.00">Common Development and Distribution License 1.1</text>
+</g>
+<!-- CDDL 1.1(6) -->
+<g id="node10" class="node">
+<title>CDDL 1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="335.97" cy="-150" rx="53.09" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-146.3" font-family="Times-Roman" font-size="14.00">CDDL 1.1</text>
 </g>
 <!-- CDDL&#45;1.1(6) -->
 <g id="node11" class="node">
@@ -103,11 +103,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="335.97" cy="-96" rx="53.89" ry="18"/>
 <text text-anchor="middle" x="335.97" y="-92.3" font-family="Times-Roman" font-size="14.00">CDDL&#45;1.1</text>
 </g>
-<!-- COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1(6) -->
+<!-- scancode://cddl&#45;1.1(6) -->
 <g id="node12" class="node">
-<title>COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1(6)</title>
-<ellipse fill="white" stroke="white" cx="335.97" cy="-42" rx="311.94" ry="18"/>
-<text text-anchor="middle" x="335.97" y="-38.3" font-family="Times-Roman" font-size="14.00">COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1</text>
+<title>scancode://cddl&#45;1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="335.97" cy="-42" rx="98.58" ry="18"/>
+<text text-anchor="middle" x="335.97" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://cddl&#45;1.1</text>
 </g>
 </g>
 </svg>

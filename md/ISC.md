@@ -5,13 +5,13 @@ ISC License (ISC)
 
 **Other Names:**
 
--   `scancode://isc`
+-   `isc-license`
 
 -   `ISC License (ISC)`
 
 -   `License :: OSI Approved :: ISC License (ISCL)`
 
--   `isc-license`
+-   `scancode://isc`
 
 Description
 -----------
@@ -73,13 +73,13 @@ URLs
 
 -   **Homepage:** https://www.isc.org/software/license
 
--   **OSI Page:** http://opensource.org/licenses/isc-license.txt
-
 -   **OSI Page:** https://opensource.org/licenses/ISC
 
--   **SPDX:** http://spdx.org/licenses/ISC.json
+-   **OSI Page:** http://opensource.org/licenses/isc-license.txt
 
 -   **SPDX:** https://spdx.org/licenses/ISC.html
+
+-   **SPDX:** http://spdx.org/licenses/ISC.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/ISC\_license
 
@@ -148,26 +148,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -178,24 +171,31 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -203,12 +203,12 @@ Raw Data
         "__impliedNames": [
             "ISC",
             "ISC License",
-            "scancode://isc",
             "isc",
+            "isc-license",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
-            "ISC license",
-            "isc-license"
+            "scancode://isc",
+            "ISC license"
         ],
         "__impliedId": "ISC",
         "__impliedAmbiguousNames": [
@@ -930,19 +930,31 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/ISC.json"
-            ],
-            [
-                null,
-                "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                "https://spdx.org/licenses/ISC.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/ISC"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/ISC"
+            ],
+            [
+                "Wikipedia page",
+                "https://en.wikipedia.org/wiki/ISC_license"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/379"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/ISC.html"
+                "http://spdx.org/licenses/ISC.json"
+            ],
+            [
+                null,
+                "https://www.isc.org/downloads/software-support-policy/isc-license/"
             ],
             [
                 "Homepage",
@@ -967,18 +979,6 @@ Raw Data
             [
                 null,
                 "https://www.isc.org/isc-license-1.0.html"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/ISC"
-            ],
-            [
-                "Wikipedia page",
-                "https://en.wikipedia.org/wiki/ISC_license"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/379"
             ]
         ]
     }

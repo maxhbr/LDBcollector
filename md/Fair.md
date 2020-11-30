@@ -5,9 +5,9 @@ Fair License (Fair)
 
 **Other Names:**
 
--   `scancode://fair`
-
 -   `Fair License (Fair)`
+
+-   `scancode://fair`
 
 Comments on (easy) usability
 ----------------------------
@@ -39,9 +39,9 @@ URLs
 
 -   **OSI Page:** https://opensource.org/licenses/Fair
 
--   **SPDX:** http://spdx.org/licenses/Fair.json
-
 -   **SPDX:** https://spdx.org/licenses/Fair.html
+
+-   **SPDX:** http://spdx.org/licenses/Fair.json
 
 -   http://fairlicense.org/
 
@@ -67,29 +67,29 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Fair.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Fair.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -97,8 +97,8 @@ Raw Data
         "__impliedNames": [
             "Fair",
             "Fair License",
-            "scancode://fair",
-            "Fair License (Fair)"
+            "Fair License (Fair)",
+            "scancode://fair"
         ],
         "__impliedId": "Fair",
         "__isFsfFree": true,
@@ -429,19 +429,23 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Fair.json"
-            ],
-            [
-                null,
-                "http://fairlicense.org/"
+                "https://spdx.org/licenses/Fair.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Fair"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/Fair"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/Fair.html"
+                "http://spdx.org/licenses/Fair.json"
+            ],
+            [
+                null,
+                "http://fairlicense.org/"
             ],
             [
                 "Homepage",
@@ -458,10 +462,6 @@ Raw Data
             [
                 null,
                 "http://rhid.com/fair"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/Fair"
             ]
         ]
     }

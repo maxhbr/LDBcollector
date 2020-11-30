@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="74.49,-298 74.49,-458 299.78,-458 299.78,-298 74.49,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 358.27,-458 358.27,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 358.27,-290 358.27,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="53.7,-184 53.7,-290 320.57,-290 320.57,-184 53.7,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="53.7,-16 53.7,-122 320.57,-122 320.57,-16 53.7,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="74.49,-16 74.49,-176 299.78,-176 299.78,-16 74.49,-16"/>
 </g>
 <!-- SimPL&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -51,23 +51,23 @@
 <ellipse fill="white" stroke="white" cx="187.14" cy="-492" rx="125.38" ry="18"/>
 <text text-anchor="middle" x="187.14" y="-488.3" font-family="Times-Roman" font-size="14.00">Simple Public License 2.0</text>
 </g>
-<!-- SimPL 2.0(3) -->
-<g id="node4" class="node">
-<title>SimPL 2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="187.14" cy="-432" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-428.3" font-family="Times-Roman" font-size="14.00">SimPL 2.0</text>
-</g>
 <!-- SimPL&#45;2.0(3) -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>SimPL&#45;2.0(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="187.14" cy="-378" rx="55.79" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-374.3" font-family="Times-Roman" font-size="14.00">SimPL&#45;2.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="187.14" cy="-432" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-428.3" font-family="Times-Roman" font-size="14.00">SimPL&#45;2.0</text>
 </g>
-<!-- scancode://simpl&#45;2.0(3) -->
+<!-- Simple Public License (SimPL&#45;2.0)(3) -->
+<g id="node5" class="node">
+<title>Simple Public License (SimPL&#45;2.0)(3)</title>
+<ellipse fill="white" stroke="white" cx="187.14" cy="-378" rx="163.27" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-374.3" font-family="Times-Roman" font-size="14.00">Simple Public License (SimPL&#45;2.0)</text>
+</g>
+<!-- Simple&#45;2.0(3) -->
 <g id="node6" class="node">
-<title>scancode://simpl&#45;2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="187.14" cy="-324" rx="104.78" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://simpl&#45;2.0</text>
+<title>Simple&#45;2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="187.14" cy="-324" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-320.3" font-family="Times-Roman" font-size="14.00">Simple&#45;2.0</text>
 </g>
 <!-- SimPL&#45;2.0(4) -->
 <g id="node7" class="node">
@@ -75,17 +75,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="187.14" cy="-264" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="187.14" y="-260.3" font-family="Times-Roman" font-size="14.00">SimPL&#45;2.0</text>
 </g>
-<!-- Simple Public License (SimPL&#45;2.0)(4) -->
+<!-- Simple Public License 2.0(4) -->
 <g id="node8" class="node">
-<title>Simple Public License (SimPL&#45;2.0)(4)</title>
-<ellipse fill="white" stroke="white" cx="187.14" cy="-210" rx="163.27" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-206.3" font-family="Times-Roman" font-size="14.00">Simple Public License (SimPL&#45;2.0)</text>
+<title>Simple Public License 2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="187.14" cy="-210" rx="125.38" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-206.3" font-family="Times-Roman" font-size="14.00">Simple Public License 2.0</text>
 </g>
-<!-- Simple&#45;2.0(4) -->
+<!-- SimPL 2.0(5) -->
 <g id="node9" class="node">
-<title>Simple&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="187.14" cy="-156" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-152.3" font-family="Times-Roman" font-size="14.00">Simple&#45;2.0</text>
+<title>SimPL 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="187.14" cy="-150" rx="55.79" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-146.3" font-family="Times-Roman" font-size="14.00">SimPL 2.0</text>
 </g>
 <!-- SimPL&#45;2.0(5) -->
 <g id="node10" class="node">
@@ -93,11 +93,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="187.14" cy="-96" rx="55.79" ry="18"/>
 <text text-anchor="middle" x="187.14" y="-92.3" font-family="Times-Roman" font-size="14.00">SimPL&#45;2.0</text>
 </g>
-<!-- Simple Public License 2.0(5) -->
+<!-- scancode://simpl&#45;2.0(5) -->
 <g id="node11" class="node">
-<title>Simple Public License 2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="187.14" cy="-42" rx="125.38" ry="18"/>
-<text text-anchor="middle" x="187.14" y="-38.3" font-family="Times-Roman" font-size="14.00">Simple Public License 2.0</text>
+<title>scancode://simpl&#45;2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="187.14" cy="-42" rx="104.78" ry="18"/>
+<text text-anchor="middle" x="187.14" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://simpl&#45;2.0</text>
 </g>
 </g>
 </svg>

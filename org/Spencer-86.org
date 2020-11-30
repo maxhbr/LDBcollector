@@ -26,9 +26,9 @@
 - *Homepage:*
   https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
 
-- *SPDX:* http://spdx.org/licenses/Spencer-86.json
-
 - *SPDX:* https://spdx.org/licenses/Spencer-86.html
+
+- *SPDX:* http://spdx.org/licenses/Spencer-86.json
 
 ** Text
 
@@ -62,11 +62,11 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/Spencer-86.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
+
+- [[https://spdx.org/licenses/Spencer-86.html][SPDX]] (all data [in this
+  repository] is generated)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/regexp.yml][Scancode]]
   (CC0-1.0)
@@ -221,15 +221,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/Spencer-86.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/Spencer-86.json"
           ],
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/Spencer-86.html"
           ],
           [
               "Homepage",

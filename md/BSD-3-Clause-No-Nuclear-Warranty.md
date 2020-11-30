@@ -31,10 +31,10 @@ URLs
     https://jogamp.org/git/?p=gluegen.git;a=blob\_plain;f=LICENSE.txt
 
 -   **SPDX:**
-    http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
+    https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html
 
 -   **SPDX:**
-    https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html
+    http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
 
 Text
 ----
@@ -80,19 +80,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html "SPDX")
-    (all data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
-    (CC0-1.0)
-
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html "SPDX")
+    (all data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -273,15 +273,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json"
             ],
             [
                 null,
                 "https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.html"
             ],
             [
                 "Homepage",

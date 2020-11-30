@@ -40,8 +40,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://dev.perl.org/licenses/artistic.html
-* *SPDX:* http://spdx.org/licenses/Artistic-1.0-Perl.json
 * *SPDX:* https://spdx.org/licenses/Artistic-1.0-Perl.html
+* *SPDX:* http://spdx.org/licenses/Artistic-1.0-Perl.json
 
 === Text
 
@@ -182,19 +182,19 @@ WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/Artistic-1.0-Perl.html[SPDX] (all data [in
-this repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml[Scancode]
-(CC0-1.0)
-* https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml[finos/OSLC-handbook]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
+(NOASSERTION)
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
-(NOASSERTION)
+* https://github.com/finos/OSLC-handbook/blob/master/src/Artistic-1.0-Perl.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://spdx.org/licenses/Artistic-1.0-Perl.html[SPDX] (all data [in
+this repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -508,15 +508,15 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Artistic-1.0-Perl.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Artistic-1.0-Perl.json"
         ],
         [
             null,
             "http://dev.perl.org/licenses/artistic.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Artistic-1.0-Perl.html"
         ],
         [
             "Homepage",

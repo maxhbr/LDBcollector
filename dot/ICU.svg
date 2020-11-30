@@ -31,15 +31,15 @@
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="127.54,-710 127.54,-816 270.93,-816 270.93,-710 127.54,-710"/>
+<polygon fill="lightgray" stroke="lightgray" points="32,-710 32,-816 366.47,-816 366.47,-710 32,-710"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="111.94,-542 111.94,-702 286.53,-702 286.53,-542 111.94,-542"/>
+<polygon fill="lightgray" stroke="lightgray" points="127.54,-596 127.54,-702 270.93,-702 270.93,-596 127.54,-596"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="32,-428 32,-534 366.47,-534 366.47,-428 32,-428"/>
+<polygon fill="lightgray" stroke="lightgray" points="111.94,-428 111.94,-588 286.53,-588 286.53,-428 111.94,-428"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -77,11 +77,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-790" rx="27" ry="18"/>
 <text text-anchor="middle" x="199.24" y="-786.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License(5) -->
+<!-- ICU License (ICU 1.8.1 and later)(5) -->
 <g id="node5" class="node">
-<title>ICU License(5)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-736" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-732.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
+<title>ICU License (ICU 1.8.1 and later)(5)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-736" rx="159.47" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-732.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
 </g>
 <!-- ICU(6) -->
 <g id="node6" class="node">
@@ -89,29 +89,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-676" rx="27" ry="18"/>
 <text text-anchor="middle" x="199.24" y="-672.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- X11 License(6) -->
+<!-- ICU License(6) -->
 <g id="node7" class="node">
-<title>X11 License(6)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-622" rx="65.79" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-618.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
-</g>
-<!-- scancode://x11(6) -->
-<g id="node8" class="node">
-<title>scancode://x11(6)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-568" rx="79.09" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-564.3" font-family="Times-Roman" font-size="14.00">scancode://x11</text>
+<title>ICU License(6)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-622" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-618.3" font-family="Times-Roman" font-size="14.00">ICU License</text>
 </g>
 <!-- ICU(7) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>ICU(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-508" rx="27" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-504.3" font-family="Times-Roman" font-size="14.00">ICU</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="199.24" cy="-562" rx="27" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-558.3" font-family="Times-Roman" font-size="14.00">ICU</text>
 </g>
-<!-- ICU License (ICU 1.8.1 and later)(7) -->
+<!-- X11 License(7) -->
+<g id="node9" class="node">
+<title>X11 License(7)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-508" rx="65.79" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-504.3" font-family="Times-Roman" font-size="14.00">X11 License</text>
+</g>
+<!-- scancode://x11(7) -->
 <g id="node10" class="node">
-<title>ICU License (ICU 1.8.1 and later)(7)</title>
-<ellipse fill="white" stroke="white" cx="199.24" cy="-454" rx="159.47" ry="18"/>
-<text text-anchor="middle" x="199.24" y="-450.3" font-family="Times-Roman" font-size="14.00">ICU License (ICU 1.8.1 and later)</text>
+<title>scancode://x11(7)</title>
+<ellipse fill="white" stroke="white" cx="199.24" cy="-454" rx="79.09" ry="18"/>
+<text text-anchor="middle" x="199.24" y="-450.3" font-family="Times-Roman" font-size="14.00">scancode://x11</text>
 </g>
 <!-- X11(8) -->
 <g id="node11" class="node">

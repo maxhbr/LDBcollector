@@ -2,10 +2,10 @@
     "__impliedNames": [
         "NTP",
         "NTP License",
+        "NTP License (NTP)",
         "scancode://ntpl",
         "scancode://mit-old-style-no-advert",
-        "MIT Old Style no advertising",
-        "NTP License (NTP)"
+        "MIT Old Style no advertising"
     ],
     "__impliedId": "NTP",
     "__impliedComments": [
@@ -277,15 +277,19 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NTP.json"
+            "https://spdx.org/licenses/NTP.html"
         ],
         [
             null,
             "https://opensource.org/licenses/NTP"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/NTP"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/NTP.html"
+            "http://spdx.org/licenses/NTP.json"
         ],
         [
             "Homepage",
@@ -306,10 +310,6 @@
         [
             "Homepage",
             "http://fedoraproject.org/wiki/Licensing:MIT#Old_Style_.28no_advertising_without_permission.29"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/NTP"
         ]
     ]
 }

@@ -2,10 +2,10 @@
     "__impliedNames": [
         "NetCDF",
         "NetCDF license",
-        "scancode://netcdf",
-        "NetCDF License",
         "NetCDF Copyright(version 2009)",
-        "NetCDF Copyright"
+        "NetCDF Copyright",
+        "scancode://netcdf",
+        "NetCDF License"
     ],
     "__impliedId": "NetCDF",
     "__isFsfFree": true,
@@ -303,19 +303,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/NetCDF.json"
-        ],
-        [
-            null,
-            "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
-        ],
-        [
-            "SPDX",
             "https://spdx.org/licenses/NetCDF.html"
-        ],
-        [
-            "Homepage",
-            "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
         ],
         [
             "open-license",
@@ -324,6 +312,18 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/921"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/NetCDF.json"
+        ],
+        [
+            null,
+            "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
+        ],
+        [
+            "Homepage",
+            "http://www.unidata.ucar.edu/software/netcdf/copyright.html"
         ]
     ]
 }

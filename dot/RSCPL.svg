@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="118.04,-298 118.04,-458 491.51,-458 491.51,-298 118.04,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 593.55,-458 593.55,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 593.55,-290 593.55,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-184 135.59,-290 473.96,-290 473.96,-184 135.59,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-122 473.96,-122 473.96,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="118.04,-16 118.04,-176 491.51,-176 491.51,-16 118.04,-16"/>
 </g>
 <!-- RSCPL(1) -->
 <g id="node1" class="node">
@@ -51,53 +51,53 @@
 <ellipse fill="white" stroke="white" cx="304.78" cy="-492" rx="161.37" ry="18"/>
 <text text-anchor="middle" x="304.78" y="-488.3" font-family="Times-Roman" font-size="14.00">Ricoh Source Code Public License</text>
 </g>
-<!-- RSCPL(3) -->
+<!-- License :: OSI Approved :: Ricoh Source Code Public License(3) -->
 <g id="node4" class="node">
-<title>RSCPL(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-432" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-428.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
+<title>License :: OSI Approved :: Ricoh Source Code Public License(3)</title>
+<ellipse fill="white" stroke="white" cx="304.78" cy="-432" rx="280.55" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Ricoh Source Code Public License</text>
 </g>
-<!-- Ricoh Source Code Public License 1.0(3) -->
+<!-- RSCPL(3) -->
 <g id="node5" class="node">
-<title>Ricoh Source Code Public License 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="304.78" cy="-378" rx="178.97" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-374.3" font-family="Times-Roman" font-size="14.00">Ricoh Source Code Public License 1.0</text>
+<title>RSCPL(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-378" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-374.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
 </g>
-<!-- scancode://ricoh&#45;1.0(3) -->
+<!-- The Ricoh Source Code Public License(3) -->
 <g id="node6" class="node">
-<title>scancode://ricoh&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="304.78" cy="-324" rx="102.88" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://ricoh&#45;1.0</text>
-</g>
-<!-- License :: OSI Approved :: Ricoh Source Code Public License(4) -->
-<g id="node7" class="node">
-<title>License :: OSI Approved :: Ricoh Source Code Public License(4)</title>
-<ellipse fill="white" stroke="white" cx="304.78" cy="-264" rx="280.55" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-260.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Ricoh Source Code Public License</text>
+<title>The Ricoh Source Code Public License(3)</title>
+<ellipse fill="white" stroke="white" cx="304.78" cy="-324" rx="180.87" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-320.3" font-family="Times-Roman" font-size="14.00">The Ricoh Source Code Public License</text>
 </g>
 <!-- RSCPL(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>RSCPL(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-210" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-206.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-264" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-260.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
 </g>
-<!-- The Ricoh Source Code Public License(4) -->
-<g id="node9" class="node">
-<title>The Ricoh Source Code Public License(4)</title>
-<ellipse fill="white" stroke="white" cx="304.78" cy="-156" rx="180.87" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-152.3" font-family="Times-Roman" font-size="14.00">The Ricoh Source Code Public License</text>
+<!-- Ricoh Source Code Public License(4) -->
+<g id="node8" class="node">
+<title>Ricoh Source Code Public License(4)</title>
+<ellipse fill="white" stroke="white" cx="304.78" cy="-210" rx="161.37" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-206.3" font-family="Times-Roman" font-size="14.00">Ricoh Source Code Public License</text>
 </g>
 <!-- RSCPL(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>RSCPL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-96" rx="39.79" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-92.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="304.78" cy="-150" rx="39.79" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-146.3" font-family="Times-Roman" font-size="14.00">RSCPL</text>
 </g>
-<!-- Ricoh Source Code Public License(5) -->
+<!-- Ricoh Source Code Public License 1.0(5) -->
+<g id="node10" class="node">
+<title>Ricoh Source Code Public License 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="304.78" cy="-96" rx="178.97" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-92.3" font-family="Times-Roman" font-size="14.00">Ricoh Source Code Public License 1.0</text>
+</g>
+<!-- scancode://ricoh&#45;1.0(5) -->
 <g id="node11" class="node">
-<title>Ricoh Source Code Public License(5)</title>
-<ellipse fill="white" stroke="white" cx="304.78" cy="-42" rx="161.37" ry="18"/>
-<text text-anchor="middle" x="304.78" y="-38.3" font-family="Times-Roman" font-size="14.00">Ricoh Source Code Public License</text>
+<title>scancode://ricoh&#45;1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="304.78" cy="-42" rx="102.88" ry="18"/>
+<text text-anchor="middle" x="304.78" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ricoh&#45;1.0</text>
 </g>
 </g>
 </svg>

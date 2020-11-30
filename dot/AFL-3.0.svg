@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="138.84,-694 138.84,-800 425.22,-800 425.22,-694 138.84,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="228.53,-694 228.53,-800 335.52,-800 335.52,-694 228.53,-694"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="183.04,-526 183.04,-686 381.02,-686 381.02,-526 183.04,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="144.04,-580 144.04,-686 420.02,-686 420.02,-580 144.04,-580"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="228.53,-412 228.53,-518 335.52,-518 335.52,-412 228.53,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 548.05,-572 548.05,-412 16,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 548.05,-404 548.05,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="138.84,-298 138.84,-404 425.22,-404 425.22,-298 138.84,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="144.04,-130 144.04,-236 420.02,-236 420.02,-130 144.04,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="183.04,-130 183.04,-290 381.02,-290 381.02,-130 183.04,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -69,41 +69,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-774" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="282.03" y="-770.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
 </g>
-<!-- Academic Free License v3.0(3) -->
+<!-- afl&#45;3.0(3) -->
 <g id="node5" class="node">
-<title>Academic Free License v3.0(3)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-720" rx="135.38" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-716.3" font-family="Times-Roman" font-size="14.00">Academic Free License v3.0</text>
-</g>
-<!-- AFL 3.0(4) -->
-<g id="node6" class="node">
-<title>AFL 3.0(4)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-660" rx="44.69" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-656.3" font-family="Times-Roman" font-size="14.00">AFL 3.0</text>
+<title>afl&#45;3.0(3)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-720" rx="40.09" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-716.3" font-family="Times-Roman" font-size="14.00">afl&#45;3.0</text>
 </g>
 <!-- AFL&#45;3.0(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>AFL&#45;3.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-606" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-602.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-660" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-656.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
 </g>
-<!-- scancode://afl&#45;3.0(4) -->
-<g id="node8" class="node">
-<title>scancode://afl&#45;3.0(4)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-552" rx="90.98" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-548.3" font-family="Times-Roman" font-size="14.00">scancode://afl&#45;3.0</text>
+<!-- Academic Free License 3.0(4) -->
+<g id="node7" class="node">
+<title>Academic Free License 3.0(4)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-606" rx="129.98" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-602.3" font-family="Times-Roman" font-size="14.00">Academic Free License 3.0</text>
 </g>
 <!-- AFL&#45;3.0(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>AFL&#45;3.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-492" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-488.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-546" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-542.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
 </g>
-<!-- afl&#45;3.0(5) -->
+<!-- Academic Free License, Version 3.0(5) -->
+<g id="node9" class="node">
+<title>Academic Free License, Version 3.0(5)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-492" rx="168.97" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-488.3" font-family="Times-Roman" font-size="14.00">Academic Free License, Version 3.0</text>
+</g>
+<!-- License :: OSI Approved :: Academic Free License (AFL)(5) -->
 <g id="node10" class="node">
-<title>afl&#45;3.0(5)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-438" rx="40.09" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-434.3" font-family="Times-Roman" font-size="14.00">afl&#45;3.0</text>
+<title>License :: OSI Approved :: Academic Free License (AFL)(5)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-438" rx="258.05" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-434.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Academic Free License (AFL)</text>
 </g>
 <!-- AFL&#45;3.0(6) -->
 <g id="node11" class="node">
@@ -111,17 +111,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-378" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="282.03" y="-374.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
 </g>
-<!-- Academic Free License, Version 3.0(6) -->
+<!-- Academic Free License v3.0(6) -->
 <g id="node12" class="node">
-<title>Academic Free License, Version 3.0(6)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-324" rx="168.97" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-320.3" font-family="Times-Roman" font-size="14.00">Academic Free License, Version 3.0</text>
+<title>Academic Free License v3.0(6)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-324" rx="135.38" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-320.3" font-family="Times-Roman" font-size="14.00">Academic Free License v3.0</text>
 </g>
-<!-- License :: OSI Approved :: Academic Free License (AFL)(6) -->
+<!-- AFL 3.0(7) -->
 <g id="node13" class="node">
-<title>License :: OSI Approved :: Academic Free License (AFL)(6)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-270" rx="258.05" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-266.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Academic Free License (AFL)</text>
+<title>AFL 3.0(7)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-264" rx="44.69" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-260.3" font-family="Times-Roman" font-size="14.00">AFL 3.0</text>
 </g>
 <!-- AFL&#45;3.0(7) -->
 <g id="node14" class="node">
@@ -129,11 +129,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="282.03" cy="-210" rx="45.49" ry="18"/>
 <text text-anchor="middle" x="282.03" y="-206.3" font-family="Times-Roman" font-size="14.00">AFL&#45;3.0</text>
 </g>
-<!-- Academic Free License 3.0(7) -->
+<!-- scancode://afl&#45;3.0(7) -->
 <g id="node15" class="node">
-<title>Academic Free License 3.0(7)</title>
-<ellipse fill="white" stroke="white" cx="282.03" cy="-156" rx="129.98" ry="18"/>
-<text text-anchor="middle" x="282.03" y="-152.3" font-family="Times-Roman" font-size="14.00">Academic Free License 3.0</text>
+<title>scancode://afl&#45;3.0(7)</title>
+<ellipse fill="white" stroke="white" cx="282.03" cy="-156" rx="90.98" ry="18"/>
+<text text-anchor="middle" x="282.03" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://afl&#45;3.0</text>
 </g>
 <!-- AFL&#45;3.0(8) -->
 <g id="node16" class="node">

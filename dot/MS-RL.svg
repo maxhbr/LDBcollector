@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="54.35,-472 54.35,-578 343.32,-578 343.32,-472 54.35,-472"/>
+<polygon fill="lightgray" stroke="lightgray" points="151.84,-472 151.84,-578 245.83,-578 245.83,-472 151.84,-472"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="105.69,-358 105.69,-464 291.98,-464 291.98,-358 105.69,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="54.35,-358 54.35,-464 343.32,-464 343.32,-358 54.35,-358"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="151.84,-244 151.84,-350 245.83,-350 245.83,-244 151.84,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-350 381.67,-350 381.67,-244 16,-244"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 381.67,-236 381.67,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="54.35,-130 54.35,-236 343.32,-236 343.32,-130 54.35,-130"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="54.35,-16 54.35,-122 343.32,-122 343.32,-16 54.35,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="105.69,-16 105.69,-122 291.98,-122 291.98,-16 105.69,-16"/>
 </g>
 <!-- MS&#45;RL(1) -->
 <g id="node1" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.83" cy="-552" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="198.83" y="-548.3" font-family="Times-Roman" font-size="14.00">MS&#45;RL</text>
 </g>
-<!-- Microsoft Reciprocal License(3) -->
+<!-- ms&#45;rl(3) -->
 <g id="node5" class="node">
-<title>Microsoft Reciprocal License(3)</title>
-<ellipse fill="white" stroke="white" cx="198.83" cy="-498" rx="136.48" ry="18"/>
-<text text-anchor="middle" x="198.83" y="-494.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License</text>
+<title>ms&#45;rl(3)</title>
+<ellipse fill="white" stroke="white" cx="198.83" cy="-498" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="198.83" y="-494.3" font-family="Times-Roman" font-size="14.00">ms&#45;rl</text>
 </g>
 <!-- MS&#45;RL(4) -->
 <g id="node6" class="node">
@@ -77,11 +77,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.83" cy="-438" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="198.83" y="-434.3" font-family="Times-Roman" font-size="14.00">MS&#45;RL</text>
 </g>
-<!-- scancode://ms&#45;rl(4) -->
+<!-- Microsoft Reciprocal License(4) -->
 <g id="node7" class="node">
-<title>scancode://ms&#45;rl(4)</title>
-<ellipse fill="white" stroke="white" cx="198.83" cy="-384" rx="85.29" ry="18"/>
-<text text-anchor="middle" x="198.83" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://ms&#45;rl</text>
+<title>Microsoft Reciprocal License(4)</title>
+<ellipse fill="white" stroke="white" cx="198.83" cy="-384" rx="136.48" ry="18"/>
+<text text-anchor="middle" x="198.83" y="-380.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License</text>
 </g>
 <!-- MS&#45;RL(5) -->
 <g id="node8" class="node">
@@ -89,11 +89,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.83" cy="-324" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="198.83" y="-320.3" font-family="Times-Roman" font-size="14.00">MS&#45;RL</text>
 </g>
-<!-- ms&#45;rl(5) -->
+<!-- Microsoft Reciprocal License (MS&#45;RL)(5) -->
 <g id="node9" class="node">
-<title>ms&#45;rl(5)</title>
-<ellipse fill="white" stroke="white" cx="198.83" cy="-270" rx="34.39" ry="18"/>
-<text text-anchor="middle" x="198.83" y="-266.3" font-family="Times-Roman" font-size="14.00">ms&#45;rl</text>
+<title>Microsoft Reciprocal License (MS&#45;RL)(5)</title>
+<ellipse fill="white" stroke="white" cx="198.83" cy="-270" rx="174.67" ry="18"/>
+<text text-anchor="middle" x="198.83" y="-266.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License (MS&#45;RL)</text>
 </g>
 <!-- MS&#45;RL(6) -->
 <g id="node10" class="node">
@@ -101,11 +101,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.83" cy="-210" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="198.83" y="-206.3" font-family="Times-Roman" font-size="14.00">MS&#45;RL</text>
 </g>
-<!-- Microsoft Reciprocal License (MS&#45;RL)(6) -->
+<!-- Microsoft Reciprocal License(6) -->
 <g id="node11" class="node">
-<title>Microsoft Reciprocal License (MS&#45;RL)(6)</title>
-<ellipse fill="white" stroke="white" cx="198.83" cy="-156" rx="174.67" ry="18"/>
-<text text-anchor="middle" x="198.83" y="-152.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License (MS&#45;RL)</text>
+<title>Microsoft Reciprocal License(6)</title>
+<ellipse fill="white" stroke="white" cx="198.83" cy="-156" rx="136.48" ry="18"/>
+<text text-anchor="middle" x="198.83" y="-152.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License</text>
 </g>
 <!-- MS&#45;RL(7) -->
 <g id="node12" class="node">
@@ -113,11 +113,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.83" cy="-96" rx="38.99" ry="18"/>
 <text text-anchor="middle" x="198.83" y="-92.3" font-family="Times-Roman" font-size="14.00">MS&#45;RL</text>
 </g>
-<!-- Microsoft Reciprocal License(7) -->
+<!-- scancode://ms&#45;rl(7) -->
 <g id="node13" class="node">
-<title>Microsoft Reciprocal License(7)</title>
-<ellipse fill="white" stroke="white" cx="198.83" cy="-42" rx="136.48" ry="18"/>
-<text text-anchor="middle" x="198.83" y="-38.3" font-family="Times-Roman" font-size="14.00">Microsoft Reciprocal License</text>
+<title>scancode://ms&#45;rl(7)</title>
+<ellipse fill="white" stroke="white" cx="198.83" cy="-42" rx="85.29" ry="18"/>
+<text text-anchor="middle" x="198.83" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ms&#45;rl</text>
 </g>
 </g>
 </svg>

@@ -9,7 +9,7 @@ MIT License (MIT)
 
 -   `The MIT License`
 
--   `scancode://mit`
+-   `mit-license`
 
 -   `MIT/Expat License`
 
@@ -17,9 +17,9 @@ MIT License (MIT)
 
 -   `License :: OSI Approved :: MIT License`
 
--   `MIT license / X11 license`
+-   `scancode://mit`
 
--   `mit-license`
+-   `MIT license / X11 license`
 
 Description
 -----------
@@ -92,13 +92,13 @@ URLs
 
 -   **Homepage:** http://opensource.org/licenses/mit-license.php
 
--   **OSI Page:** http://www.opensource.org/licenses/MIT
-
 -   **OSI Page:** https://opensource.org/licenses/mit
 
--   **SPDX:** http://spdx.org/licenses/MIT.json
+-   **OSI Page:** http://www.opensource.org/licenses/MIT
 
 -   **SPDX:** https://spdx.org/licenses/MIT.html
+
+-   **SPDX:** http://spdx.org/licenses/MIT.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/MIT\_License
 
@@ -179,30 +179,23 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/MIT.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -213,24 +206,31 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/MIT.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -240,19 +240,19 @@ Raw Data
             "MIT license (also X11)",
             "The MIT License",
             "MIT License",
-            "scancode://mit",
             "mit",
+            "mit-license",
             "MIT/Expat License",
             "Expat",
             "License :: OSI Approved :: MIT License",
-            "MIT license / X11 license",
-            "mit-license"
+            "scancode://mit",
+            "MIT license / X11 license"
         ],
         "__impliedId": "MIT",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MIT",
-            "The MIT License"
+            "The MIT License",
+            "MIT"
         ],
         "__impliedComments": [
             [
@@ -1075,31 +1075,11 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/MIT.json"
+                "https://spdx.org/licenses/MIT.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/MIT"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/MIT.html"
-            ],
-            [
-                "Homepage",
-                "http://opensource.org/licenses/mit-license.php"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/MIT"
-            ],
-            [
-                null,
-                "https://opensource.com/article/18/3/patent-grant-mit-license"
-            ],
-            [
-                null,
-                "https://opensource.com/article/19/4/history-mit-license"
             ],
             [
                 "tl;dr legal",
@@ -1116,6 +1096,26 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/33"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/MIT.json"
+            ],
+            [
+                "Homepage",
+                "http://opensource.org/licenses/mit-license.php"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/MIT"
+            ],
+            [
+                null,
+                "https://opensource.com/article/18/3/patent-grant-mit-license"
+            ],
+            [
+                null,
+                "https://opensource.com/article/19/4/history-mit-license"
             ]
         ]
     }

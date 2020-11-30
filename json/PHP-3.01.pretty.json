@@ -2,9 +2,9 @@
     "__impliedNames": [
         "PHP-3.01",
         "PHP License v3.01",
+        "PHP License, version 3.01",
         "scancode://php-3.01",
-        "PHP License 3.01",
-        "PHP License, version 3.01"
+        "PHP License 3.01"
     ],
     "__impliedId": "PHP-3.01",
     "__impliedComments": [
@@ -408,15 +408,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/PHP-3.01.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/812"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/PHP-3.01.json"
         ],
         [
             null,
             "http://www.php.net/license/3_01.txt"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/PHP-3.01.html"
         ],
         [
             "Homepage",
@@ -429,10 +433,6 @@
         [
             null,
             "http://www.zend.com"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/812"
         ]
     ]
 }

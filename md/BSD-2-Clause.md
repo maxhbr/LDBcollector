@@ -9,7 +9,7 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `BSD License (two clause)`
 
--   `scancode://bsd-simplified`
+-   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
 
 -   `BSD-2`
 
@@ -19,9 +19,9 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `FreeBSD License`
 
--   `BSD 2-Clause "Simplified" or "FreeBSD" License (BSD-2-Clause)`
-
 -   `BSD 2-Clause "Simplified" or "FreeBSD" License`
+
+-   `scancode://bsd-simplified`
 
 Description
 -----------
@@ -80,13 +80,13 @@ URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/BSD-2-Clause
 
--   **OSI Page:** http://opensource.org/licenses/bsd-license.php
-
 -   **OSI Page:** https://opensource.org/licenses/BSD-2-Clause
 
--   **SPDX:** http://spdx.org/licenses/BSD-2-Clause.json
+-   **OSI Page:** http://opensource.org/licenses/bsd-license.php
 
 -   **SPDX:** https://spdx.org/licenses/BSD-2-Clause.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-2-Clause.json
 
 -   **Wikipedia Page:**
     https://en.wikipedia.org/wiki/BSD\_licenses\#2-clause
@@ -160,21 +160,9 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
-    (CC0-1.0)
 
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
@@ -182,12 +170,6 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml "finos/OSLC-handbook")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -201,9 +183,27 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-2-Clause.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -213,15 +213,15 @@ Raw Data
             "BSD (2 clause)",
             "BSD License (two clause)",
             "BSD 2-Clause \"Simplified\" License",
-            "scancode://bsd-simplified",
             "bsd-2-clause",
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
             "BSD-2",
             "BSD 2-Clause License",
             "BSD-2-clause",
             "Simplified BSD License",
             "FreeBSD License",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)",
-            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License"
+            "BSD 2-Clause \"Simplified\" or \"FreeBSD\" License",
+            "scancode://bsd-simplified"
         ],
         "__impliedId": "BSD-2-Clause",
         "__isFsfFree": true,
@@ -873,15 +873,27 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/BSD-2-Clause.json"
+                "https://spdx.org/licenses/BSD-2-Clause.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/BSD-2-Clause"
             ],
             [
+                "Wikipedia Page",
+                "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
+            ],
+            [
+                "OSI Page",
+                "https://opensource.org/licenses/BSD-2-Clause"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/15"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/BSD-2-Clause.html"
+                "http://spdx.org/licenses/BSD-2-Clause.json"
             ],
             [
                 "Homepage",
@@ -898,18 +910,6 @@ Raw Data
             [
                 null,
                 "http://www.freebsd.org/copyright/copyright.html"
-            ],
-            [
-                "Wikipedia Page",
-                "https://en.wikipedia.org/wiki/BSD_licenses#2-clause"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/BSD-2-Clause"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/15"
             ]
         ]
     }

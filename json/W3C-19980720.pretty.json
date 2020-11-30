@@ -2,9 +2,9 @@
     "__impliedNames": [
         "W3C-19980720",
         "W3C Software Notice and License (1998-07-20)",
+        "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)",
         "scancode://w3c-software-19980720",
-        "W3C-SOFTWARE-19980720",
-        "W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)"
+        "W3C-SOFTWARE-19980720"
     ],
     "__impliedId": "W3C-19980720",
     "__impliedComments": [
@@ -386,6 +386,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/W3C-19980720.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/268"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/W3C-19980720.json"
         ],
         [
@@ -393,16 +401,8 @@
             "http://www.w3.org/Consortium/Legal/copyright-software-19980720.html"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/W3C-19980720.html"
-        ],
-        [
             "Homepage",
             "http://www.w3.org/Consortium/Legal/copyright-software-19980720.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/268"
         ]
     ]
 }

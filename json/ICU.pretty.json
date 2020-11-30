@@ -4,10 +4,10 @@
         "ICU License",
         "X11",
         "X11 License",
+        "ICU License (ICU 1.8.1 and later)",
         "scancode://x11-xconsortium",
         "X11-Style (X Consortium)",
-        "scancode://x11",
-        "ICU License (ICU 1.8.1 and later)"
+        "scancode://x11"
     ],
     "__impliedId": "ICU",
     "facts": {
@@ -305,6 +305,18 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ICU.html"
+        ],
+        [
+            "SPDX",
+            "https://spdx.org/licenses/X11.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/297"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ICU.json"
         ],
         [
@@ -320,14 +332,6 @@
             "http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/ICU.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/X11.html"
-        ],
-        [
             "Homepage",
             "http://www.xfree86.org/current/LICENSE5.html"
         ],
@@ -338,10 +342,6 @@
         [
             null,
             "http://www.xfree86.org/current/LICENSE5.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/297"
         ]
     ]
 }

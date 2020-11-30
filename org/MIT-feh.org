@@ -31,9 +31,9 @@
 - *Homepage:*
   https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#feh
 
-- *SPDX:* http://spdx.org/licenses/MIT-feh.json
-
 - *SPDX:* https://spdx.org/licenses/MIT-feh.html
+
+- *SPDX:* http://spdx.org/licenses/MIT-feh.json
 
 - https://fedoraproject.org/wiki/Licensing/MIT#feh
 
@@ -67,14 +67,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/MIT-feh.html][SPDX]] (all data [in this
-  repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-ack.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -83,6 +77,12 @@
 - [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://spdx.org/licenses/MIT-feh.html][SPDX]] (all data [in this
+  repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-ack.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -300,15 +300,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/MIT-feh.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/MIT-feh.json"
           ],
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/MIT#feh"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/MIT-feh.html"
           ],
           [
               "Homepage",

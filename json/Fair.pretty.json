@@ -2,8 +2,8 @@
     "__impliedNames": [
         "Fair",
         "Fair License",
-        "scancode://fair",
-        "Fair License (Fair)"
+        "Fair License (Fair)",
+        "scancode://fair"
     ],
     "__impliedId": "Fair",
     "__isFsfFree": true,
@@ -334,19 +334,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Fair.json"
-        ],
-        [
-            null,
-            "http://fairlicense.org/"
+            "https://spdx.org/licenses/Fair.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Fair"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Fair"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Fair.html"
+            "http://spdx.org/licenses/Fair.json"
+        ],
+        [
+            null,
+            "http://fairlicense.org/"
         ],
         [
             "Homepage",
@@ -363,10 +367,6 @@
         [
             null,
             "http://rhid.com/fair"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Fair"
         ]
     ]
 }

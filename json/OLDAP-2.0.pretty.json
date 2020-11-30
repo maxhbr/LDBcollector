@@ -181,15 +181,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OLDAP-2.0.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OLDAP-2.0.json"
         ],
         [
             null,
             "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=cbf50f4e1185a21abd4c0a54d3f4341fe28f36ea"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OLDAP-2.0.html"
         ],
         [
             "Homepage",

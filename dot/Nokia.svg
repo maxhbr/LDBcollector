@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="157.04,-298 157.04,-458 396.62,-458 396.62,-298 157.04,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 537.66,-458 537.66,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 537.66,-290 537.66,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="134.94,-184 134.94,-290 418.72,-290 418.72,-184 134.94,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="134.94,-16 134.94,-122 418.72,-122 418.72,-16 134.94,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="157.04,-16 157.04,-176 396.62,-176 396.62,-16 157.04,-16"/>
 </g>
 <!-- Nokia(1) -->
 <g id="node1" class="node">
@@ -51,11 +51,11 @@
 <ellipse fill="white" stroke="white" cx="276.83" cy="-492" rx="133.78" ry="18"/>
 <text text-anchor="middle" x="276.83" y="-488.3" font-family="Times-Roman" font-size="14.00">Nokia Open Source License</text>
 </g>
-<!-- NOKOS License 1.0a(3) -->
+<!-- License :: OSI Approved :: Nokia Open Source License(3) -->
 <g id="node4" class="node">
-<title>NOKOS License 1.0a(3)</title>
-<ellipse fill="white" stroke="white" cx="276.83" cy="-432" rx="102.88" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-428.3" font-family="Times-Roman" font-size="14.00">NOKOS License 1.0a</text>
+<title>License :: OSI Approved :: Nokia Open Source License(3)</title>
+<ellipse fill="white" stroke="white" cx="276.83" cy="-432" rx="252.66" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Nokia Open Source License</text>
 </g>
 <!-- Nokia(3) -->
 <g id="node5" class="node">
@@ -63,29 +63,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="276.83" cy="-378" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="276.83" y="-374.3" font-family="Times-Roman" font-size="14.00">Nokia</text>
 </g>
-<!-- scancode://nokos&#45;1.0a(3) -->
+<!-- Nokia Open Source License, Version 1.0a(3) -->
 <g id="node6" class="node">
-<title>scancode://nokos&#45;1.0a(3)</title>
-<ellipse fill="white" stroke="white" cx="276.83" cy="-324" rx="111.58" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://nokos&#45;1.0a</text>
-</g>
-<!-- License :: OSI Approved :: Nokia Open Source License(4) -->
-<g id="node7" class="node">
-<title>License :: OSI Approved :: Nokia Open Source License(4)</title>
-<ellipse fill="white" stroke="white" cx="276.83" cy="-264" rx="252.66" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-260.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Nokia Open Source License</text>
+<title>Nokia Open Source License, Version 1.0a(3)</title>
+<ellipse fill="white" stroke="white" cx="276.83" cy="-324" rx="195.77" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-320.3" font-family="Times-Roman" font-size="14.00">Nokia Open Source License, Version 1.0a</text>
 </g>
 <!-- Nokia(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>Nokia(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="276.83" cy="-210" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-206.3" font-family="Times-Roman" font-size="14.00">Nokia</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="276.83" cy="-264" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-260.3" font-family="Times-Roman" font-size="14.00">Nokia</text>
 </g>
-<!-- Nokia Open Source License, Version 1.0a(4) -->
+<!-- Nokia Open Source License(4) -->
+<g id="node8" class="node">
+<title>Nokia Open Source License(4)</title>
+<ellipse fill="white" stroke="white" cx="276.83" cy="-210" rx="133.78" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-206.3" font-family="Times-Roman" font-size="14.00">Nokia Open Source License</text>
+</g>
+<!-- NOKOS License 1.0a(5) -->
 <g id="node9" class="node">
-<title>Nokia Open Source License, Version 1.0a(4)</title>
-<ellipse fill="white" stroke="white" cx="276.83" cy="-156" rx="195.77" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-152.3" font-family="Times-Roman" font-size="14.00">Nokia Open Source License, Version 1.0a</text>
+<title>NOKOS License 1.0a(5)</title>
+<ellipse fill="white" stroke="white" cx="276.83" cy="-150" rx="102.88" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-146.3" font-family="Times-Roman" font-size="14.00">NOKOS License 1.0a</text>
 </g>
 <!-- Nokia(5) -->
 <g id="node10" class="node">
@@ -93,11 +93,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="276.83" cy="-96" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="276.83" y="-92.3" font-family="Times-Roman" font-size="14.00">Nokia</text>
 </g>
-<!-- Nokia Open Source License(5) -->
+<!-- scancode://nokos&#45;1.0a(5) -->
 <g id="node11" class="node">
-<title>Nokia Open Source License(5)</title>
-<ellipse fill="white" stroke="white" cx="276.83" cy="-42" rx="133.78" ry="18"/>
-<text text-anchor="middle" x="276.83" y="-38.3" font-family="Times-Roman" font-size="14.00">Nokia Open Source License</text>
+<title>scancode://nokos&#45;1.0a(5)</title>
+<ellipse fill="white" stroke="white" cx="276.83" cy="-42" rx="111.58" ry="18"/>
+<text text-anchor="middle" x="276.83" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://nokos&#45;1.0a</text>
 </g>
 </g>
 </svg>

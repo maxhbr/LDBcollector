@@ -55,15 +55,15 @@
 
 - LicenseName
 
+- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
+  Project Wiki]]
+  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
+
 - [[https://spdx.org/licenses/FSFAP.html][SPDX]] (all data [in this
   repository] is generated)
 
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml][Scancode]]
   (CC0-1.0)
-
-- [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
-  Project Wiki]]
-  ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
 
@@ -71,9 +71,9 @@
   {
       "__impliedNames": [
           "FSFAP",
+          "FSF All Permissive license",
           "FSF All Permissive License",
-          "scancode://fsf-ap",
-          "FSF All Permissive license"
+          "scancode://fsf-ap"
       ],
       "__impliedId": "FSFAP",
       "__isFsfFree": true,

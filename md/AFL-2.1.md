@@ -5,11 +5,11 @@ Academic Free License v2.1 (AFL-2.1)
 
 **Other Names:**
 
+-   `Academic Free License Version 2.1`
+
 -   `scancode://afl-2.1`
 
 -   `AFL 2.1`
-
--   `Academic Free License Version 2.1`
 
 Comments on (easy) usability
 ----------------------------
@@ -55,9 +55,9 @@ URLs
 
 -   **OSI Page:** http://opensource.org/licenses/afl-2.1.php
 
--   **SPDX:** http://spdx.org/licenses/AFL-2.1.json
-
 -   **SPDX:** https://spdx.org/licenses/AFL-2.1.html
+
+-   **SPDX:** http://spdx.org/licenses/AFL-2.1.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/588
 
@@ -188,15 +188,13 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode")
-    (CC0-1.0)
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -206,13 +204,15 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/AFL-2.1.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -220,9 +220,9 @@ Raw Data
         "__impliedNames": [
             "AFL-2.1",
             "Academic Free License v2.1",
+            "Academic Free License Version 2.1",
             "scancode://afl-2.1",
-            "AFL 2.1",
-            "Academic Free License Version 2.1"
+            "AFL 2.1"
         ],
         "__impliedId": "AFL-2.1",
         "__impliedComments": [
@@ -712,15 +712,19 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/AFL-2.1.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/588"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/AFL-2.1.json"
             ],
             [
                 null,
                 "http://opensource.linux-mirror.org/licenses/afl-2.1.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/AFL-2.1.html"
             ],
             [
                 "Homepage",
@@ -733,10 +737,6 @@ Raw Data
             [
                 null,
                 "http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/588"
             ]
         ]
     }

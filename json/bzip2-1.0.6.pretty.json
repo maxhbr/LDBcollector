@@ -2,9 +2,9 @@
     "__impliedNames": [
         "bzip2-1.0.6",
         "bzip2 and libbzip2 License v1.0.6",
+        "The bzip2 license",
         "scancode://bzip2-libbzip-2010",
-        "bzip2 License 2010",
-        "The bzip2 license"
+        "bzip2 License 2010"
     ],
     "__impliedId": "bzip2-1.0.6",
     "__impliedComments": [
@@ -308,6 +308,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/bzip2-1.0.6.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/381"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/bzip2-1.0.6.json"
         ],
         [
@@ -319,20 +327,12 @@
             "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/bzip2-1.0.6.html"
-        ],
-        [
             "Homepage",
             "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
         ],
         [
             null,
             "http://www.bzip.org/"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/381"
         ]
     ]
 }

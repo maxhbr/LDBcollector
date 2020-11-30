@@ -28,8 +28,8 @@ Project Wiki]
 === URLs
 
 * *Homepage:* http://www.tcl.tk/software/tcltk/license.html
-* *SPDX:* http://spdx.org/licenses/TCL.json
 * *SPDX:* https://spdx.org/licenses/TCL.html
+* *SPDX:* http://spdx.org/licenses/TCL.json
 * https://fedoraproject.org/wiki/Licensing/TCL
 
 === Text
@@ -84,20 +84,20 @@ terms specified in this license.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/TCL.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
-* https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml[finos/OSLC-handbook]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml[finos/OSLC-handbook]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://spdx.org/licenses/TCL.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -376,6 +376,10 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/TCL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/TCL.json"
         ],
         [
@@ -385,10 +389,6 @@ license-compatibility-checker]
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/TCL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/TCL.html"
         ],
         [
             "Homepage",

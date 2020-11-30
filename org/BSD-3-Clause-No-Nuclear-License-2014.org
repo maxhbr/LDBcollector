@@ -33,10 +33,10 @@
   https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
 - *SPDX:*
-  http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json
+  https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html
 
 - *SPDX:*
-  https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html
+  http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json
 
 - https://web.archive.org/web/20150906075957/https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
@@ -82,18 +82,18 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html][SPDX]]
-  (all data [in this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html][SPDX]]
+  (all data [in this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -276,15 +276,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.json"
           ],
           [
               null,
               "https://java.net/projects/javaeetutorial/pages/BerkeleyLicense"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License-2014.html"
           ],
           [
               "Homepage",

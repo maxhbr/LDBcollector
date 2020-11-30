@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="165.49,-862 165.49,-968 306.28,-968 306.28,-862 165.49,-862"/>
+<polygon fill="lightgray" stroke="lightgray" points="200.88,-862 200.88,-968 270.88,-968 270.88,-862 200.88,-862"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="153.79,-694 153.79,-854 317.97,-854 317.97,-694 153.79,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="165.49,-694 165.49,-854 306.28,-854 306.28,-694 165.49,-694"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="200.88,-580 200.88,-686 270.88,-686 270.88,-580 200.88,-580"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-526 16,-686 455.76,-686 455.76,-526 16,-526"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 455.76,-572 455.76,-412 16,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="165.49,-412 165.49,-518 306.28,-518 306.28,-412 165.49,-412"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -43,11 +43,11 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="168.09,-184 168.09,-290 303.68,-290 303.68,-184 168.09,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="153.79,-130 153.79,-290 317.97,-290 317.97,-130 153.79,-130"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="165.49,-16 165.49,-176 306.28,-176 306.28,-16 165.49,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="168.09,-16 168.09,-122 303.68,-122 303.68,-16 168.09,-16"/>
 </g>
 <!-- ISC(1) -->
 <g id="node1" class="node">
@@ -73,11 +73,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-942" rx="27" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-938.3" font-family="Times-Roman" font-size="14.00">ISC</text>
 </g>
-<!-- ISC License(3) -->
+<!-- isc(3) -->
 <g id="node5" class="node">
-<title>ISC License(3)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-888" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-884.3" font-family="Times-Roman" font-size="14.00">ISC License</text>
+<title>isc(3)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-888" rx="27" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-884.3" font-family="Times-Roman" font-size="14.00">isc</text>
 </g>
 <!-- ISC(4) -->
 <g id="node6" class="node">
@@ -91,11 +91,11 @@
 <ellipse fill="white" stroke="white" cx="235.88" cy="-774" rx="62.29" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-770.3" font-family="Times-Roman" font-size="14.00">ISC License</text>
 </g>
-<!-- scancode://isc(4) -->
+<!-- isc&#45;license(4) -->
 <g id="node8" class="node">
-<title>scancode://isc(4)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-720" rx="74.19" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-716.3" font-family="Times-Roman" font-size="14.00">scancode://isc</text>
+<title>isc&#45;license(4)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-720" rx="57.69" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-716.3" font-family="Times-Roman" font-size="14.00">isc&#45;license</text>
 </g>
 <!-- ISC(5) -->
 <g id="node9" class="node">
@@ -103,29 +103,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-660" rx="27" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-656.3" font-family="Times-Roman" font-size="14.00">ISC</text>
 </g>
-<!-- isc(5) -->
+<!-- ISC License (ISC)(5) -->
 <g id="node10" class="node">
-<title>isc(5)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-606" rx="27" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-602.3" font-family="Times-Roman" font-size="14.00">isc</text>
+<title>ISC License (ISC)(5)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-606" rx="87.18" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-602.3" font-family="Times-Roman" font-size="14.00">ISC License (ISC)</text>
+</g>
+<!-- License :: OSI Approved :: ISC License (ISCL)(5) -->
+<g id="node11" class="node">
+<title>License :: OSI Approved :: ISC License (ISCL)(5)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-552" rx="211.76" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-548.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: ISC License (ISCL)</text>
 </g>
 <!-- ISC(6) -->
-<g id="node11" class="node">
-<title>ISC(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-546" rx="27" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-542.3" font-family="Times-Roman" font-size="14.00">ISC</text>
-</g>
-<!-- ISC License (ISC)(6) -->
 <g id="node12" class="node">
-<title>ISC License (ISC)(6)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-492" rx="87.18" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-488.3" font-family="Times-Roman" font-size="14.00">ISC License (ISC)</text>
+<title>ISC(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-492" rx="27" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-488.3" font-family="Times-Roman" font-size="14.00">ISC</text>
 </g>
-<!-- License :: OSI Approved :: ISC License (ISCL)(6) -->
+<!-- ISC License(6) -->
 <g id="node13" class="node">
-<title>License :: OSI Approved :: ISC License (ISCL)(6)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-438" rx="211.76" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-434.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: ISC License (ISCL)</text>
+<title>ISC License(6)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-438" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-434.3" font-family="Times-Roman" font-size="14.00">ISC License</text>
 </g>
 <!-- ISC(7) -->
 <g id="node14" class="node">
@@ -145,29 +145,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-264" rx="27" ry="18"/>
 <text text-anchor="middle" x="235.88" y="-260.3" font-family="Times-Roman" font-size="14.00">ISC</text>
 </g>
-<!-- ISC license(8) -->
+<!-- ISC License(8) -->
 <g id="node17" class="node">
-<title>ISC license(8)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-210" rx="59.59" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-206.3" font-family="Times-Roman" font-size="14.00">ISC license</text>
+<title>ISC License(8)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-210" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-206.3" font-family="Times-Roman" font-size="14.00">ISC License</text>
+</g>
+<!-- scancode://isc(8) -->
+<g id="node18" class="node">
+<title>scancode://isc(8)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-156" rx="74.19" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://isc</text>
 </g>
 <!-- ISC(9) -->
-<g id="node18" class="node">
-<title>ISC(9)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-150" rx="27" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-146.3" font-family="Times-Roman" font-size="14.00">ISC</text>
-</g>
-<!-- ISC License(9) -->
 <g id="node19" class="node">
-<title>ISC License(9)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-96" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-92.3" font-family="Times-Roman" font-size="14.00">ISC License</text>
+<title>ISC(9)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="235.88" cy="-96" rx="27" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-92.3" font-family="Times-Roman" font-size="14.00">ISC</text>
 </g>
-<!-- isc&#45;license(9) -->
+<!-- ISC license(9) -->
 <g id="node20" class="node">
-<title>isc&#45;license(9)</title>
-<ellipse fill="white" stroke="white" cx="235.88" cy="-42" rx="57.69" ry="18"/>
-<text text-anchor="middle" x="235.88" y="-38.3" font-family="Times-Roman" font-size="14.00">isc&#45;license</text>
+<title>ISC license(9)</title>
+<ellipse fill="white" stroke="white" cx="235.88" cy="-42" rx="59.59" ry="18"/>
+<text text-anchor="middle" x="235.88" y="-38.3" font-family="Times-Roman" font-size="14.00">ISC license</text>
 </g>
 </g>
 </svg>

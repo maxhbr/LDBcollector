@@ -35,9 +35,9 @@ URLs
 
 -   **OSI Page:** http://opensource-definition.org/licenses/afl-2.0.html
 
--   **SPDX:** http://spdx.org/licenses/AFL-2.0.json
-
 -   **SPDX:** https://spdx.org/licenses/AFL-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/AFL-2.0.json
 
 -   http://wayback.archive.org/web/20060924134533/http://www.opensource.org/licenses/afl-2.0.txt
 
@@ -101,15 +101,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/AFL-2.0.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.0.yml "Scancode")
-    (CC0-1.0)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -118,6 +112,12 @@ Raw Data
 -   [librariesio
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/AFL-2.0.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.0.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -355,15 +355,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/AFL-2.0.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/AFL-2.0.json"
             ],
             [
                 null,
                 "http://wayback.archive.org/web/20060924134533/http://www.opensource.org/licenses/afl-2.0.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/AFL-2.0.html"
             ],
             [
                 "Homepage",

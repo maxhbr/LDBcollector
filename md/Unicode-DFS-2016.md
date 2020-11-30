@@ -5,11 +5,11 @@ Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
 
 **Other Names:**
 
+-   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
+
 -   `scancode://unicode-dfs-2016`
 
 -   `Unicode DFS 2016`
-
--   `UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE`
 
 Comments on (easy) usability
 ----------------------------
@@ -34,9 +34,9 @@ URLs
 
 -   **Homepage:** http://www.unicode.org/copyright.html
 
--   **SPDX:** http://spdx.org/licenses/Unicode-DFS-2016.json
-
 -   **SPDX:** https://spdx.org/licenses/Unicode-DFS-2016.html
+
+-   **SPDX:** http://spdx.org/licenses/Unicode-DFS-2016.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/314
 
@@ -116,15 +116,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Unicode-DFS-2016.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-dfs-2016.yml "Scancode")
-    (CC0-1.0)
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -134,15 +128,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/Unicode-DFS-2016.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unicode-dfs-2016.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Unicode-DFS-2016",
             "Unicode License Agreement - Data Files and Software (2016)",
+            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE",
             "scancode://unicode-dfs-2016",
-            "Unicode DFS 2016",
-            "UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE"
+            "Unicode DFS 2016"
         ],
         "__impliedId": "Unicode-DFS-2016",
         "facts": {
@@ -363,6 +363,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Unicode-DFS-2016.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/314"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Unicode-DFS-2016.json"
             ],
             [
@@ -370,16 +378,8 @@ Raw Data
                 "http://www.unicode.org/copyright.html"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/Unicode-DFS-2016.html"
-            ],
-            [
                 "Homepage",
                 "http://www.unicode.org/copyright.html"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/314"
             ]
         ]
     }

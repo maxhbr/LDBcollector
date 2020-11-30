@@ -31,11 +31,11 @@
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-252 24,-412 288.28,-412 288.28,-252 24,-252"/>
+<polygon fill="lightgray" stroke="lightgray" points="79.9,-306 79.9,-412 232.38,-412 232.38,-306 79.9,-306"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="79.9,-138 79.9,-244 232.38,-244 232.38,-138 79.9,-138"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-138 24,-298 288.28,-298 288.28,-138 24,-138"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -71,11 +71,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="156.14" cy="-446" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="156.14" y="-442.3" font-family="Times-Roman" font-size="14.00">MIT&#45;CMU</text>
 </g>
-<!-- CMU UC Regents License(5) -->
+<!-- CMU License(5) -->
 <g id="node6" class="node">
-<title>CMU UC Regents License(5)</title>
-<ellipse fill="white" stroke="white" cx="156.14" cy="-386" rx="124.28" ry="18"/>
-<text text-anchor="middle" x="156.14" y="-382.3" font-family="Times-Roman" font-size="14.00">CMU UC Regents License</text>
+<title>CMU License(5)</title>
+<ellipse fill="white" stroke="white" cx="156.14" cy="-386" rx="68.49" ry="18"/>
+<text text-anchor="middle" x="156.14" y="-382.3" font-family="Times-Roman" font-size="14.00">CMU License</text>
 </g>
 <!-- MIT&#45;CMU(5) -->
 <g id="node7" class="node">
@@ -83,23 +83,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="156.14" cy="-332" rx="50.89" ry="18"/>
 <text text-anchor="middle" x="156.14" y="-328.3" font-family="Times-Roman" font-size="14.00">MIT&#45;CMU</text>
 </g>
-<!-- scancode://cmu&#45;uc(5) -->
+<!-- CMU UC Regents License(6) -->
 <g id="node8" class="node">
-<title>scancode://cmu&#45;uc(5)</title>
-<ellipse fill="white" stroke="white" cx="156.14" cy="-278" rx="95.58" ry="18"/>
-<text text-anchor="middle" x="156.14" y="-274.3" font-family="Times-Roman" font-size="14.00">scancode://cmu&#45;uc</text>
-</g>
-<!-- CMU License(6) -->
-<g id="node9" class="node">
-<title>CMU License(6)</title>
-<ellipse fill="white" stroke="white" cx="156.14" cy="-218" rx="68.49" ry="18"/>
-<text text-anchor="middle" x="156.14" y="-214.3" font-family="Times-Roman" font-size="14.00">CMU License</text>
+<title>CMU UC Regents License(6)</title>
+<ellipse fill="white" stroke="white" cx="156.14" cy="-272" rx="124.28" ry="18"/>
+<text text-anchor="middle" x="156.14" y="-268.3" font-family="Times-Roman" font-size="14.00">CMU UC Regents License</text>
 </g>
 <!-- MIT&#45;CMU(6) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>MIT&#45;CMU(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="156.14" cy="-164" rx="50.89" ry="18"/>
-<text text-anchor="middle" x="156.14" y="-160.3" font-family="Times-Roman" font-size="14.00">MIT&#45;CMU</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="156.14" cy="-218" rx="50.89" ry="18"/>
+<text text-anchor="middle" x="156.14" y="-214.3" font-family="Times-Roman" font-size="14.00">MIT&#45;CMU</text>
+</g>
+<!-- scancode://cmu&#45;uc(6) -->
+<g id="node10" class="node">
+<title>scancode://cmu&#45;uc(6)</title>
+<ellipse fill="white" stroke="white" cx="156.14" cy="-164" rx="95.58" ry="18"/>
+<text text-anchor="middle" x="156.14" y="-160.3" font-family="Times-Roman" font-size="14.00">scancode://cmu&#45;uc</text>
 </g>
 <!-- CMU License(7) -->
 <g id="node11" class="node">

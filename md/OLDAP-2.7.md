@@ -5,11 +5,11 @@ Open LDAP Public License v2.7 (OLDAP-2.7)
 
 **Other Names:**
 
+-   `The OpenLDAP Public License`
+
 -   `scancode://openldap-2.7`
 
 -   `OpenLDAP Public License 2.7`
-
--   `The OpenLDAP Public License`
 
 Comments on (easy) usability
 ----------------------------
@@ -36,9 +36,9 @@ URLs
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2415c1df81556eeb39be6cad458ef87c534a2
 
--   **SPDX:** http://spdx.org/licenses/OLDAP-2.7.json
-
 -   **SPDX:** https://spdx.org/licenses/OLDAP-2.7.html
+
+-   **SPDX:** http://spdx.org/licenses/OLDAP-2.7.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/335
 
@@ -144,15 +144,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/OLDAP-2.7.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.7.yml "Scancode")
-    (CC0-1.0)
 
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
@@ -162,15 +156,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/OLDAP-2.7.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.7.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "OLDAP-2.7",
             "Open LDAP Public License v2.7",
+            "The OpenLDAP Public License",
             "scancode://openldap-2.7",
-            "OpenLDAP Public License 2.7",
-            "The OpenLDAP Public License"
+            "OpenLDAP Public License 2.7"
         ],
         "__impliedId": "OLDAP-2.7",
         "__impliedComments": [
@@ -479,6 +479,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/OLDAP-2.7.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/335"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/OLDAP-2.7.json"
             ],
             [
@@ -486,16 +494,8 @@ Raw Data
                 "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2415c1df81556eeb39be6cad458ef87c534a2"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/OLDAP-2.7.html"
-            ],
-            [
                 "Homepage",
                 "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2415c1df81556eeb39be6cad458ef87c534a2"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/335"
             ]
         ]
     }

@@ -53,9 +53,9 @@
 
 - *Homepage:* http://www.imagemagick.org/script/license.php
 
-- *SPDX:* http://spdx.org/licenses/ImageMagick.json
-
 - *SPDX:* https://spdx.org/licenses/ImageMagick.html
+
+- *SPDX:* http://spdx.org/licenses/ImageMagick.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/873
 
@@ -209,14 +209,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/ImageMagick.html][SPDX]] (all data [in
-  this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml][Scancode]]
-  (CC0-1.0)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -224,6 +218,12 @@
 
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/ImageMagick.html][SPDX]] (all data [in
+  this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -700,6 +700,14 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/ImageMagick.html"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/873"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/ImageMagick.json"
           ],
           [
@@ -707,16 +715,8 @@
               "http://www.imagemagick.org/script/license.php"
           ],
           [
-              "SPDX",
-              "https://spdx.org/licenses/ImageMagick.html"
-          ],
-          [
               "Homepage",
               "http://www.imagemagick.org/script/license.php"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/873"
           ]
       ]
   }

@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-312 24,-472 329.87,-472 329.87,-312 24,-312"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-366 24,-472 329.87,-472 329.87,-366 24,-366"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-198 24,-304 329.87,-304 329.87,-198 24,-198"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-252 24,-358 329.87,-358 329.87,-252 24,-252"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-84 24,-190 329.87,-190 329.87,-84 24,-84"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-84 24,-244 329.87,-244 329.87,-84 24,-84"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -71,35 +71,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="176.94" cy="-392" rx="62.29" ry="18"/>
 <text text-anchor="middle" x="176.94" y="-388.3" font-family="Times-Roman" font-size="14.00">EUDatagrid</text>
 </g>
-<!-- scancode://eu&#45;datagrid(4) -->
-<g id="node6" class="node">
-<title>scancode://eu&#45;datagrid(4)</title>
-<ellipse fill="white" stroke="white" cx="176.94" cy="-338" rx="114.28" ry="18"/>
-<text text-anchor="middle" x="176.94" y="-334.3" font-family="Times-Roman" font-size="14.00">scancode://eu&#45;datagrid</text>
-</g>
 <!-- EU DataGrid Software License(5) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>EU DataGrid Software License(5)</title>
-<ellipse fill="white" stroke="white" cx="176.94" cy="-278" rx="144.87" ry="18"/>
-<text text-anchor="middle" x="176.94" y="-274.3" font-family="Times-Roman" font-size="14.00">EU DataGrid Software License</text>
+<ellipse fill="white" stroke="white" cx="176.94" cy="-332" rx="144.87" ry="18"/>
+<text text-anchor="middle" x="176.94" y="-328.3" font-family="Times-Roman" font-size="14.00">EU DataGrid Software License</text>
 </g>
 <!-- EUDatagrid(5) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>EUDatagrid(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="176.94" cy="-224" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="176.94" y="-220.3" font-family="Times-Roman" font-size="14.00">EUDatagrid</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="176.94" cy="-278" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="176.94" y="-274.3" font-family="Times-Roman" font-size="14.00">EUDatagrid</text>
 </g>
 <!-- EU DataGrid Software License(6) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>EU DataGrid Software License(6)</title>
-<ellipse fill="white" stroke="white" cx="176.94" cy="-164" rx="144.87" ry="18"/>
-<text text-anchor="middle" x="176.94" y="-160.3" font-family="Times-Roman" font-size="14.00">EU DataGrid Software License</text>
+<ellipse fill="white" stroke="white" cx="176.94" cy="-218" rx="144.87" ry="18"/>
+<text text-anchor="middle" x="176.94" y="-214.3" font-family="Times-Roman" font-size="14.00">EU DataGrid Software License</text>
 </g>
 <!-- EUDatagrid(6) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>EUDatagrid(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="176.94" cy="-110" rx="62.29" ry="18"/>
-<text text-anchor="middle" x="176.94" y="-106.3" font-family="Times-Roman" font-size="14.00">EUDatagrid</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="176.94" cy="-164" rx="62.29" ry="18"/>
+<text text-anchor="middle" x="176.94" y="-160.3" font-family="Times-Roman" font-size="14.00">EUDatagrid</text>
+</g>
+<!-- scancode://eu&#45;datagrid(6) -->
+<g id="node10" class="node">
+<title>scancode://eu&#45;datagrid(6)</title>
+<ellipse fill="white" stroke="white" cx="176.94" cy="-110" rx="114.28" ry="18"/>
+<text text-anchor="middle" x="176.94" y="-106.3" font-family="Times-Roman" font-size="14.00">scancode://eu&#45;datagrid</text>
 </g>
 <!-- EU Datagrid Software License(7) -->
 <g id="node11" class="node">

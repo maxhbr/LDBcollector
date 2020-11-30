@@ -25,9 +25,9 @@ URLs
 -   **Homepage:**
     https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt
 
--   **SPDX:** http://spdx.org/licenses/TU-Berlin-2.0.json
-
 -   **SPDX:** https://spdx.org/licenses/TU-Berlin-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/TU-Berlin-2.0.json
 
 Text
 ----
@@ -65,12 +65,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/TU-Berlin-2.0.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [SPDX](https://spdx.org/licenses/TU-Berlin-2.0.html "SPDX") (all
+    data \[in this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin-2.0.yml "Scancode")
     (CC0-1.0)
@@ -230,15 +230,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/TU-Berlin-2.0.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/TU-Berlin-2.0.json"
             ],
             [
                 null,
                 "https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/TU-Berlin-2.0.html"
             ],
             [
                 "Homepage",

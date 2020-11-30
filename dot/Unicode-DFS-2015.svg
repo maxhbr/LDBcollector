@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="107.64,-298 107.64,-404 691.69,-404 691.69,-298 107.64,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 783.33,-404 783.33,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="249.98,-130 249.98,-290 549.35,-290 549.35,-130 249.98,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="107.64,-184 107.64,-290 691.69,-290 691.69,-184 107.64,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 783.33,-122 783.33,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="249.98,-16 249.98,-176 549.35,-176 549.35,-16 249.98,-16"/>
 </g>
 <!-- Unicode&#45;DFS&#45;2015(1) -->
 <g id="node1" class="node">
@@ -51,11 +51,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="399.67" cy="-438" rx="94.78" ry="18"/>
 <text text-anchor="middle" x="399.67" y="-434.3" font-family="Times-Roman" font-size="14.00">Unicode&#45;DFS&#45;2015</text>
 </g>
-<!-- Unicode License Agreement &#45; Data Files and Software (2015)(3) -->
+<!-- UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)(3) -->
 <g id="node4" class="node">
-<title>Unicode License Agreement &#45; Data Files and Software (2015)(3)</title>
-<ellipse fill="white" stroke="white" cx="399.67" cy="-378" rx="284.05" ry="18"/>
-<text text-anchor="middle" x="399.67" y="-374.3" font-family="Times-Roman" font-size="14.00">Unicode License Agreement &#45; Data Files and Software (2015)</text>
+<title>UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)(3)</title>
+<ellipse fill="white" stroke="white" cx="399.67" cy="-378" rx="375.83" ry="18"/>
+<text text-anchor="middle" x="399.67" y="-374.3" font-family="Times-Roman" font-size="14.00">UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)</text>
 </g>
 <!-- Unicode&#45;DFS&#45;2015(3) -->
 <g id="node5" class="node">
@@ -63,11 +63,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="399.67" cy="-324" rx="94.78" ry="18"/>
 <text text-anchor="middle" x="399.67" y="-320.3" font-family="Times-Roman" font-size="14.00">Unicode&#45;DFS&#45;2015</text>
 </g>
-<!-- Unicode DFS 2015(4) -->
+<!-- Unicode License Agreement &#45; Data Files and Software (2015)(4) -->
 <g id="node6" class="node">
-<title>Unicode DFS 2015(4)</title>
-<ellipse fill="white" stroke="white" cx="399.67" cy="-264" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="399.67" y="-260.3" font-family="Times-Roman" font-size="14.00">Unicode DFS 2015</text>
+<title>Unicode License Agreement &#45; Data Files and Software (2015)(4)</title>
+<ellipse fill="white" stroke="white" cx="399.67" cy="-264" rx="284.05" ry="18"/>
+<text text-anchor="middle" x="399.67" y="-260.3" font-family="Times-Roman" font-size="14.00">Unicode License Agreement &#45; Data Files and Software (2015)</text>
 </g>
 <!-- Unicode&#45;DFS&#45;2015(4) -->
 <g id="node7" class="node">
@@ -75,23 +75,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="399.67" cy="-210" rx="94.78" ry="18"/>
 <text text-anchor="middle" x="399.67" y="-206.3" font-family="Times-Roman" font-size="14.00">Unicode&#45;DFS&#45;2015</text>
 </g>
-<!-- scancode://unicode&#45;dfs&#45;2015(4) -->
+<!-- Unicode DFS 2015(5) -->
 <g id="node8" class="node">
-<title>scancode://unicode&#45;dfs&#45;2015(4)</title>
-<ellipse fill="white" stroke="white" cx="399.67" cy="-156" rx="141.88" ry="18"/>
-<text text-anchor="middle" x="399.67" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://unicode&#45;dfs&#45;2015</text>
-</g>
-<!-- UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)(5) -->
-<g id="node9" class="node">
-<title>UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)(5)</title>
-<ellipse fill="white" stroke="white" cx="399.67" cy="-96" rx="375.83" ry="18"/>
-<text text-anchor="middle" x="399.67" y="-92.3" font-family="Times-Roman" font-size="14.00">UNICODE, INC. LICENSE AGREEMENT &#45; DATA FILES AND SOFTWARE (since 2016)</text>
+<title>Unicode DFS 2015(5)</title>
+<ellipse fill="white" stroke="white" cx="399.67" cy="-150" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="399.67" y="-146.3" font-family="Times-Roman" font-size="14.00">Unicode DFS 2015</text>
 </g>
 <!-- Unicode&#45;DFS&#45;2015(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>Unicode&#45;DFS&#45;2015(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="399.67" cy="-42" rx="94.78" ry="18"/>
-<text text-anchor="middle" x="399.67" y="-38.3" font-family="Times-Roman" font-size="14.00">Unicode&#45;DFS&#45;2015</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="399.67" cy="-96" rx="94.78" ry="18"/>
+<text text-anchor="middle" x="399.67" y="-92.3" font-family="Times-Roman" font-size="14.00">Unicode&#45;DFS&#45;2015</text>
+</g>
+<!-- scancode://unicode&#45;dfs&#45;2015(5) -->
+<g id="node10" class="node">
+<title>scancode://unicode&#45;dfs&#45;2015(5)</title>
+<ellipse fill="white" stroke="white" cx="399.67" cy="-42" rx="141.88" ry="18"/>
+<text text-anchor="middle" x="399.67" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://unicode&#45;dfs&#45;2015</text>
 </g>
 </g>
 </svg>

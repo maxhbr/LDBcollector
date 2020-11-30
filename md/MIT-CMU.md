@@ -29,9 +29,9 @@ URLs
 
 -   **Homepage:** http://copyfree.org/licenses/cmu/license.txt
 
--   **SPDX:** http://spdx.org/licenses/MIT-CMU.json
-
 -   **SPDX:** https://spdx.org/licenses/MIT-CMU.html
+
+-   **SPDX:** http://spdx.org/licenses/MIT-CMU.json
 
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
 
@@ -63,25 +63,25 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml "Scancode")
     (CC0-1.0)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml "Scancode")
     (CC0-1.0)
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
 ### Raw JSON
 
@@ -306,6 +306,10 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/MIT-CMU.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/MIT-CMU.json"
             ],
             [
@@ -315,10 +319,6 @@ Raw Data
             [
                 null,
                 "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/MIT-CMU.html"
             ],
             [
                 "Homepage",

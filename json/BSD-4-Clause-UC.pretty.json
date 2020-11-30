@@ -346,15 +346,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/BSD-4-Clause-UC.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/BSD-4-Clause-UC.json"
         ],
         [
             null,
             "http://www.freebsd.org/copyright/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-4-Clause-UC.html"
         ],
         [
             "Homepage",

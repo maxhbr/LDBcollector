@@ -13,13 +13,13 @@ Apache License 2.0 (Apache-2.0)
 
 -   `Apache License, Version 2.0`
 
--   `scancode://apache-2.0`
-
--   `Apache 2.0`
+-   `apache2.0`
 
 -   `License :: OSI Approved :: Apache Software License`
 
--   `apache2.0`
+-   `scancode://apache-2.0`
+
+-   `Apache 2.0`
 
 Description
 -----------
@@ -104,13 +104,13 @@ URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
--   **OSI Page:** http://opensource.org/licenses/apache2.0.php
-
 -   **OSI Page:** https://opensource.org/licenses/Apache-2.0
 
--   **SPDX:** http://spdx.org/licenses/Apache-2.0.json
+-   **OSI Page:** http://opensource.org/licenses/apache2.0.php
 
 -   **SPDX:** https://spdx.org/licenses/Apache-2.0.html
+
+-   **SPDX:** http://spdx.org/licenses/Apache-2.0.json
 
 -   **Wikipedia page:** https://en.wikipedia.org/wiki/Apache\_License
 
@@ -415,30 +415,23 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
+
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -449,24 +442,31 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Apache-2.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Apache-2.0.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode")
+    (CC0-1.0)
+
+-   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 ### Raw JSON
 
@@ -478,17 +478,17 @@ Raw Data
             "ASL 2.0",
             "Apache License, Version 2.0",
             "Apache License 2.0",
-            "scancode://apache-2.0",
-            "Apache 2.0",
             "apache-2.0",
+            "apache2.0",
             "License :: OSI Approved :: Apache Software License",
-            "apache2.0"
+            "scancode://apache-2.0",
+            "Apache 2.0"
         ],
         "__impliedId": "Apache-2.0",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "ASL 2.0",
-            "The Apache Software License (ASL)"
+            "The Apache Software License (ASL)",
+            "ASL 2.0"
         ],
         "__impliedComments": [
             [
@@ -1490,31 +1490,11 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Apache-2.0.json"
-            ],
-            [
-                null,
-                "http://www.apache.org/licenses/LICENSE-2.0"
+                "https://spdx.org/licenses/Apache-2.0.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/Apache-2.0"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/Apache-2.0.html"
-            ],
-            [
-                "Homepage",
-                "http://www.apache.org/licenses/"
-            ],
-            [
-                "OSI Page",
-                "http://opensource.org/licenses/apache2.0.php"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/Apache-2.0"
             ],
             [
                 "tl;dr legal",
@@ -1531,6 +1511,26 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/11"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/Apache-2.0.json"
+            ],
+            [
+                null,
+                "http://www.apache.org/licenses/LICENSE-2.0"
+            ],
+            [
+                "Homepage",
+                "http://www.apache.org/licenses/"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/apache2.0.php"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/Apache-2.0"
             ]
         ]
     }

@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="47.2,-298 47.2,-404 334.87,-404 334.87,-298 47.2,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 366.07,-404 366.07,-298 16,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="47.2,-130 47.2,-290 334.87,-290 334.87,-130 47.2,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="47.2,-184 47.2,-290 334.87,-290 334.87,-184 47.2,-184"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 366.07,-122 366.07,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="47.2,-16 47.2,-176 334.87,-176 334.87,-16 47.2,-16"/>
 </g>
 <!-- gSOAP&#45;1.3b(1) -->
 <g id="node1" class="node">
@@ -35,11 +35,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="191.04" cy="-438" rx="64.99" ry="18"/>
 <text text-anchor="middle" x="191.04" y="-434.3" font-family="Times-Roman" font-size="14.00">gSOAP&#45;1.3b</text>
 </g>
-<!-- gSOAP Public License v1.3b(2) -->
+<!-- gSOAP Public License Version 1.3b(2) -->
 <g id="node2" class="node">
-<title>gSOAP Public License v1.3b(2)</title>
-<ellipse fill="white" stroke="white" cx="191.04" cy="-378" rx="135.68" ry="18"/>
-<text text-anchor="middle" x="191.04" y="-374.3" font-family="Times-Roman" font-size="14.00">gSOAP Public License v1.3b</text>
+<title>gSOAP Public License Version 1.3b(2)</title>
+<ellipse fill="white" stroke="white" cx="191.04" cy="-378" rx="167.07" ry="18"/>
+<text text-anchor="middle" x="191.04" y="-374.3" font-family="Times-Roman" font-size="14.00">gSOAP Public License Version 1.3b</text>
 </g>
 <!-- gSOAP&#45;1.3b(2) -->
 <g id="node3" class="node">
@@ -59,23 +59,23 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="191.04" cy="-210" rx="64.99" ry="18"/>
 <text text-anchor="middle" x="191.04" y="-206.3" font-family="Times-Roman" font-size="14.00">gSOAP&#45;1.3b</text>
 </g>
-<!-- scancode://gsoap&#45;1.3b(3) -->
+<!-- gSOAP Public License v1.3b(4) -->
 <g id="node6" class="node">
-<title>scancode://gsoap&#45;1.3b(3)</title>
-<ellipse fill="white" stroke="white" cx="191.04" cy="-156" rx="113.18" ry="18"/>
-<text text-anchor="middle" x="191.04" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://gsoap&#45;1.3b</text>
-</g>
-<!-- gSOAP Public License Version 1.3b(4) -->
-<g id="node7" class="node">
-<title>gSOAP Public License Version 1.3b(4)</title>
-<ellipse fill="white" stroke="white" cx="191.04" cy="-96" rx="167.07" ry="18"/>
-<text text-anchor="middle" x="191.04" y="-92.3" font-family="Times-Roman" font-size="14.00">gSOAP Public License Version 1.3b</text>
+<title>gSOAP Public License v1.3b(4)</title>
+<ellipse fill="white" stroke="white" cx="191.04" cy="-150" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="191.04" y="-146.3" font-family="Times-Roman" font-size="14.00">gSOAP Public License v1.3b</text>
 </g>
 <!-- gSOAP&#45;1.3b(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>gSOAP&#45;1.3b(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="191.04" cy="-42" rx="64.99" ry="18"/>
-<text text-anchor="middle" x="191.04" y="-38.3" font-family="Times-Roman" font-size="14.00">gSOAP&#45;1.3b</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="191.04" cy="-96" rx="64.99" ry="18"/>
+<text text-anchor="middle" x="191.04" y="-92.3" font-family="Times-Roman" font-size="14.00">gSOAP&#45;1.3b</text>
+</g>
+<!-- scancode://gsoap&#45;1.3b(4) -->
+<g id="node8" class="node">
+<title>scancode://gsoap&#45;1.3b(4)</title>
+<ellipse fill="white" stroke="white" cx="191.04" cy="-42" rx="113.18" ry="18"/>
+<text text-anchor="middle" x="191.04" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://gsoap&#45;1.3b</text>
 </g>
 </g>
 </svg>

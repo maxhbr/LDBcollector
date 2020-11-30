@@ -9,11 +9,11 @@
 
 *Other Names:*
 
+- =W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)=
+
 - =scancode://w3c-software-doc-20150513=
 
 - =W3C-SOFTWARE-DOC-20150513=
-
-- =W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)=
 
 ** Comments on (easy) usability
 
@@ -55,9 +55,9 @@
 - *Homepage:*
   https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document
 
-- *SPDX:* http://spdx.org/licenses/W3C-20150513.json
-
 - *SPDX:* https://spdx.org/licenses/W3C-20150513.html
+
+- *SPDX:* http://spdx.org/licenses/W3C-20150513.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/659
 
@@ -183,25 +183,25 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/W3C-20150513.html][SPDX]] (all data [in
-  this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml][Scancode]]
-  (CC0-1.0)
-
-- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
-  license-compatibility-checker]]
-  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/W3C-20150513.html][SPDX]] (all data [in
+  this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -210,9 +210,9 @@
       "__impliedNames": [
           "W3C-20150513",
           "W3C Software Notice and Document License (2015-05-13)",
+          "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)",
           "scancode://w3c-software-doc-20150513",
-          "W3C-SOFTWARE-DOC-20150513",
-          "W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)"
+          "W3C-SOFTWARE-DOC-20150513"
       ],
       "__impliedId": "W3C-20150513",
       "__impliedComments": [
@@ -599,6 +599,14 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/W3C-20150513.html"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/659"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/W3C-20150513.json"
           ],
           [
@@ -606,16 +614,8 @@
               "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
           ],
           [
-              "SPDX",
-              "https://spdx.org/licenses/W3C-20150513.html"
-          ],
-          [
               "Homepage",
               "https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/659"
           ]
       ]
   }

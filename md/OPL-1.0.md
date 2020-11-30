@@ -382,15 +382,15 @@ Raw Data
 
 -   LicenseName
 
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
+
 -   [SPDX](https://spdx.org/licenses/OPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/open-public.yml "Scancode")
     (CC0-1.0)
-
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
 
 ### Raw JSON
 

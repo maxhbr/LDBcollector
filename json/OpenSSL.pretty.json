@@ -514,15 +514,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OpenSSL.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/279"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OpenSSL.json"
         ],
         [
             null,
             "http://www.openssl.org/source/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OpenSSL.html"
         ],
         [
             "Homepage",
@@ -531,10 +535,6 @@
         [
             "Homepage",
             "http://www.openssl.org/source/license.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/279"
         ]
     ]
 }

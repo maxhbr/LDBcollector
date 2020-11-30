@@ -7,11 +7,11 @@ The MirOS Licence (MirOS)
 
 -   `MirOS License`
 
--   `scancode://mir-os`
+-   `MirOS Licence`
 
 -   `The MirOS Licence (MirOS)`
 
--   `MirOS Licence`
+-   `scancode://mir-os`
 
 Comments on (easy) usability
 ----------------------------
@@ -51,13 +51,13 @@ URLs
 
 -   **Homepage:** https://www.mirbsd.org/MirOS-Licence
 
--   **OSI Page:** http://opensource.org/licenses/miros.html
-
 -   **OSI Page:** https://opensource.org/licenses/MirOS
 
--   **SPDX:** http://spdx.org/licenses/MirOS.json
+-   **OSI Page:** http://opensource.org/licenses/miros.html
 
 -   **SPDX:** https://spdx.org/licenses/MirOS.html
+
+-   **SPDX:** http://spdx.org/licenses/MirOS.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1554
 
@@ -133,54 +133,54 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
-    (CC0-1.0)
-
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
--   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
--   [Open Knowledge
-    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
-    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
 
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [Open Knowledge
+    International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
+    ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
+    (CC0-1.0)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
     {
         "__impliedNames": [
             "MirOS",
-            "The MirOS Licence",
             "MirOS License",
-            "scancode://mir-os",
+            "MirOS Licence",
             "The MirOS Licence (MirOS)",
-            "MirOS Licence"
+            "The MirOS Licence",
+            "scancode://mir-os"
         ],
         "__impliedId": "MirOS",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
-            "MirOS",
-            "The MirOS Licence"
+            "The MirOS Licence",
+            "MirOS"
         ],
         "__impliedComments": [
             [
@@ -674,15 +674,23 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/MirOS.json"
+                "https://spdx.org/licenses/MirOS.html"
             ],
             [
                 null,
                 "https://opensource.org/licenses/MirOS"
             ],
             [
+                "OSI Page",
+                "https://opensource.org/licenses/MirOS"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/1554"
+            ],
+            [
                 "SPDX",
-                "https://spdx.org/licenses/MirOS.html"
+                "http://spdx.org/licenses/MirOS.json"
             ],
             [
                 "Homepage",
@@ -695,14 +703,6 @@ Raw Data
             [
                 null,
                 "http://www.opensource.org/licenses/MirOS"
-            ],
-            [
-                "OSI Page",
-                "https://opensource.org/licenses/MirOS"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/1554"
             ]
         ]
     }

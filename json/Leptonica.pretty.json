@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Leptonica.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Leptonica.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Leptonica"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Leptonica.html"
         ],
         [
             "Homepage",

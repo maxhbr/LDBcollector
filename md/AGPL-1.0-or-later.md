@@ -68,19 +68,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/AGPL-1.0-or-later.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
-    (CC0-1.0)
-
 -   [librariesio
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/AGPL-1.0-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -270,16 +270,16 @@ Raw Data
         "__impliedText": "This is free software; you can redistribute it and/or modify\nit under the terms of the AFFERO GENERAL PUBLIC LICENSE as published by\nAffero Inc; either version 1, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but\nWITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the \nAFFERO GENERAL PUBLIC LICENSE for more details.\n",
         "__impliedURLs": [
             [
+                null,
+                "https://spdx.org/licenses/AGPL-1.0-or-later.html"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/AGPL-1.0-or-later.json"
             ],
             [
                 null,
                 "http://www.affero.org/oagpl.html"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/AGPL-1.0-or-later.html"
             ],
             [
                 "Homepage",

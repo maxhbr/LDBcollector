@@ -9,15 +9,15 @@
 
 *Other Names:*
 
-- =scancode://cnri-python-1.6=
-
-- =CNRI Python 1.6=
-
 - =CNRI portion of the multi-part Python License=
 
 - =License :: OSI Approved :: Python License (CNRI Python License)=
 
 - =CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1=
+
+- =scancode://cnri-python-1.6=
+
+- =CNRI Python 1.6=
 
 ** Comments on (easy) usability
 
@@ -52,9 +52,9 @@
 
 - *OSI Page:* https://opensource.org/licenses/CNRI-Python
 
-- *SPDX:* http://spdx.org/licenses/CNRI-Python.json
-
 - *SPDX:* https://spdx.org/licenses/CNRI-Python.html
+
+- *SPDX:* http://spdx.org/licenses/CNRI-Python.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/292
 
@@ -167,20 +167,8 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/CNRI-Python.html][SPDX]] (all data [in
-  this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
-
-- [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
-  (CC0-1.0)
-
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml][Scancode]]
-  (CC0-1.0)
-
-- [[https://opensource.org/licenses/][OpenSourceInitiative]]
-  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
 - [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
   license-compatibility-checker]]
@@ -190,8 +178,20 @@
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
 
+- [[https://opensource.org/licenses/][OpenSourceInitiative]]
+  ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
+
+- [[https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods][OpenChainPolicyTemplate]]
+  (CC0-1.0)
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
+
+- [[https://spdx.org/licenses/CNRI-Python.html][SPDX]] (all data [in
+  this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -200,11 +200,11 @@
       "__impliedNames": [
           "CNRI-Python",
           "CNRI Python License",
-          "scancode://cnri-python-1.6",
-          "CNRI Python 1.6",
           "CNRI portion of the multi-part Python License",
           "License :: OSI Approved :: Python License (CNRI Python License)",
-          "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1"
+          "CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1",
+          "scancode://cnri-python-1.6",
+          "CNRI Python 1.6"
       ],
       "__impliedId": "CNRI-Python",
       "__impliedComments": [
@@ -707,15 +707,23 @@
       "__impliedURLs": [
           [
               "SPDX",
-              "http://spdx.org/licenses/CNRI-Python.json"
+              "https://spdx.org/licenses/CNRI-Python.html"
           ],
           [
               null,
               "https://opensource.org/licenses/CNRI-Python"
           ],
           [
+              "OSI Page",
+              "https://opensource.org/licenses/CNRI-Python"
+          ],
+          [
+              "open-license",
+              "http://open-license.hitachi.com/licenses/292"
+          ],
+          [
               "SPDX",
-              "https://spdx.org/licenses/CNRI-Python.html"
+              "http://spdx.org/licenses/CNRI-Python.json"
           ],
           [
               "Homepage",
@@ -728,14 +736,6 @@
           [
               null,
               "http://www.opensource.org/licenses/CNRI-Python"
-          ],
-          [
-              "OSI Page",
-              "https://opensource.org/licenses/CNRI-Python"
-          ],
-          [
-              "open-license",
-              "http://open-license.hitachi.com/licenses/292"
           ]
       ]
   }

@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-526 16,-632 303.68,-632 303.68,-526 16,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="39.4,-526 39.4,-632 280.28,-632 280.28,-526 39.4,-526"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="36.8,-358 36.8,-518 282.88,-518 282.88,-358 36.8,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="39.4,-412 39.4,-518 280.28,-518 280.28,-412 39.4,-412"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="39.4,-244 39.4,-350 280.28,-350 280.28,-244 39.4,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="21.85,-298 21.85,-404 297.83,-404 297.83,-298 21.85,-298"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="21.85,-130 21.85,-236 297.83,-236 297.83,-130 21.85,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-184 16,-290 303.68,-290 303.68,-184 16,-184"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="39.4,-16 39.4,-122 280.28,-122 280.28,-16 39.4,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="36.8,-16 36.8,-176 282.88,-176 282.88,-16 36.8,-16"/>
 </g>
 <!-- Entessa(1) -->
 <g id="node1" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-606" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="159.84" y="-602.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
 </g>
-<!-- Entessa Public License v1.0(3) -->
+<!-- Entessa Public License(3) -->
 <g id="node5" class="node">
-<title>Entessa Public License v1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-552" rx="135.68" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-548.3" font-family="Times-Roman" font-size="14.00">Entessa Public License v1.0</text>
+<title>Entessa Public License(3)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-552" rx="112.38" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-548.3" font-family="Times-Roman" font-size="14.00">Entessa Public License</text>
 </g>
 <!-- Entessa(4) -->
 <g id="node6" class="node">
@@ -77,53 +77,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-492" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="159.84" y="-488.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
 </g>
-<!-- Entessa 1.0(4) -->
+<!-- Entessa Public License(4) -->
 <g id="node7" class="node">
-<title>Entessa 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-438" rx="63.89" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-434.3" font-family="Times-Roman" font-size="14.00">Entessa 1.0</text>
-</g>
-<!-- scancode://entessa&#45;1.0(4) -->
-<g id="node8" class="node">
-<title>scancode://entessa&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-384" rx="115.08" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-380.3" font-family="Times-Roman" font-size="14.00">scancode://entessa&#45;1.0</text>
+<title>Entessa Public License(4)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-438" rx="112.38" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-434.3" font-family="Times-Roman" font-size="14.00">Entessa Public License</text>
 </g>
 <!-- Entessa(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>Entessa(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-324" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-320.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-378" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-374.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
 </g>
-<!-- Entessa Public License(5) -->
-<g id="node10" class="node">
-<title>Entessa Public License(5)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-270" rx="112.38" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-266.3" font-family="Times-Roman" font-size="14.00">Entessa Public License</text>
+<!-- Entessa Public License 1.0(5) -->
+<g id="node9" class="node">
+<title>Entessa Public License 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-324" rx="129.98" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-320.3" font-family="Times-Roman" font-size="14.00">Entessa Public License 1.0</text>
 </g>
 <!-- Entessa(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Entessa(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-210" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-206.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-264" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-260.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
 </g>
-<!-- Entessa Public License 1.0(6) -->
-<g id="node12" class="node">
-<title>Entessa Public License 1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-156" rx="129.98" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-152.3" font-family="Times-Roman" font-size="14.00">Entessa Public License 1.0</text>
+<!-- Entessa Public License v1.0(6) -->
+<g id="node11" class="node">
+<title>Entessa Public License v1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-210" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-206.3" font-family="Times-Roman" font-size="14.00">Entessa Public License v1.0</text>
 </g>
 <!-- Entessa(7) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>Entessa(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-96" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-92.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="159.84" cy="-150" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-146.3" font-family="Times-Roman" font-size="14.00">Entessa</text>
 </g>
-<!-- Entessa Public License(7) -->
+<!-- Entessa 1.0(7) -->
+<g id="node13" class="node">
+<title>Entessa 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-96" rx="63.89" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-92.3" font-family="Times-Roman" font-size="14.00">Entessa 1.0</text>
+</g>
+<!-- scancode://entessa&#45;1.0(7) -->
 <g id="node14" class="node">
-<title>Entessa Public License(7)</title>
-<ellipse fill="white" stroke="white" cx="159.84" cy="-42" rx="112.38" ry="18"/>
-<text text-anchor="middle" x="159.84" y="-38.3" font-family="Times-Roman" font-size="14.00">Entessa Public License</text>
+<title>scancode://entessa&#45;1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="159.84" cy="-42" rx="115.08" ry="18"/>
+<text text-anchor="middle" x="159.84" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://entessa&#45;1.0</text>
 </g>
 </g>
 </svg>

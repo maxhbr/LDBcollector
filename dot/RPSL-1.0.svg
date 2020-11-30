@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="57.8,-480 57.8,-586 463.76,-586 463.76,-480 57.8,-480"/>
+<polygon fill="lightgray" stroke="lightgray" points="63,-480 63,-586 458.56,-586 458.56,-480 63,-480"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="63,-312 63,-472 458.56,-472 458.56,-312 63,-312"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-366 24,-472 497.56,-472 497.56,-366 24,-366"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-198 24,-304 497.56,-304 497.56,-198 24,-198"/>
+<polygon fill="lightgray" stroke="lightgray" points="57.8,-252 57.8,-358 463.76,-358 463.76,-252 57.8,-252"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="63,-84 63,-190 458.56,-190 458.56,-84 63,-84"/>
+<polygon fill="lightgray" stroke="lightgray" points="63,-84 63,-244 458.56,-244 458.56,-84 63,-84"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -69,11 +69,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-560" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="260.78" y="-556.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
 </g>
-<!-- RealNetworks Public Source License v1.0(4) -->
+<!-- RealNetworks Public Source License 1.0(4) -->
 <g id="node5" class="node">
-<title>RealNetworks Public Source License v1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="260.78" cy="-506" rx="194.97" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-502.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License v1.0</text>
+<title>RealNetworks Public Source License 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="260.78" cy="-506" rx="189.57" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-502.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License 1.0</text>
 </g>
 <!-- RPSL&#45;1.0(5) -->
 <g id="node6" class="node">
@@ -81,41 +81,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-446" rx="51.19" ry="18"/>
 <text text-anchor="middle" x="260.78" y="-442.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
 </g>
-<!-- RealNetworks Public Source License 1.0(5) -->
+<!-- RealNetworks Public Source License, Version 1.0(5) -->
 <g id="node7" class="node">
-<title>RealNetworks Public Source License 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="260.78" cy="-392" rx="189.57" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-388.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License 1.0</text>
-</g>
-<!-- scancode://rpsl&#45;1.0(5) -->
-<g id="node8" class="node">
-<title>scancode://rpsl&#45;1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="260.78" cy="-338" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-334.3" font-family="Times-Roman" font-size="14.00">scancode://rpsl&#45;1.0</text>
+<title>RealNetworks Public Source License, Version 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="260.78" cy="-392" rx="228.56" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-388.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License, Version 1.0</text>
 </g>
 <!-- RPSL&#45;1.0(6) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>RPSL&#45;1.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-278" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-274.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-332" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-328.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
 </g>
-<!-- RealNetworks Public Source License, Version 1.0(6) -->
-<g id="node10" class="node">
-<title>RealNetworks Public Source License, Version 1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="260.78" cy="-224" rx="228.56" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-220.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License, Version 1.0</text>
+<!-- RealNetworks Public Source License v1.0(6) -->
+<g id="node9" class="node">
+<title>RealNetworks Public Source License v1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="260.78" cy="-278" rx="194.97" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-274.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License v1.0</text>
 </g>
 <!-- RPSL&#45;1.0(7) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>RPSL&#45;1.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-164" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-160.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="260.78" cy="-218" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-214.3" font-family="Times-Roman" font-size="14.00">RPSL&#45;1.0</text>
 </g>
 <!-- RealNetworks Public Source License 1.0(7) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>RealNetworks Public Source License 1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="260.78" cy="-110" rx="189.57" ry="18"/>
-<text text-anchor="middle" x="260.78" y="-106.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License 1.0</text>
+<ellipse fill="white" stroke="white" cx="260.78" cy="-164" rx="189.57" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-160.3" font-family="Times-Roman" font-size="14.00">RealNetworks Public Source License 1.0</text>
+</g>
+<!-- scancode://rpsl&#45;1.0(7) -->
+<g id="node12" class="node">
+<title>scancode://rpsl&#45;1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="260.78" cy="-110" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="260.78" y="-106.3" font-family="Times-Roman" font-size="14.00">scancode://rpsl&#45;1.0</text>
 </g>
 <!-- RealNetworks Public Source License V1.0(8) -->
 <g id="node13" class="node">

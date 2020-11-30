@@ -28,8 +28,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/Borceux
-* *SPDX:* http://spdx.org/licenses/Borceux.json
 * *SPDX:* https://spdx.org/licenses/Borceux.html
+* *SPDX:* http://spdx.org/licenses/Borceux.json
 
 === Text
 
@@ -62,15 +62,15 @@ francis dot borceux at uclouvain dot be.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/Borceux.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://spdx.org/licenses/Borceux.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -262,15 +262,15 @@ Project Wiki]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Borceux.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Borceux.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Borceux"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Borceux.html"
         ],
         [
             "Homepage",

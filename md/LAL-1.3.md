@@ -30,12 +30,12 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION)
+
+-   [SPDX](https://spdx.org/licenses/LAL-1.3.html "SPDX") (all data \[in
+    this repository\] is generated)
 
 ### Raw JSON
 

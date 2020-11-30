@@ -54,9 +54,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/LGPL-2.1-or-later.json
 
--   https://opensource.org/licenses/LGPL-2.1
-
 -   https://spdx.org/licenses/LGPL-2.1-or-later.html
+
+-   https://opensource.org/licenses/LGPL-2.1
 
 -   http://www.gnu.org/copyleft/lesser.html
 
@@ -82,17 +82,16 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml "Scancode")
-    (CC0-1.0)
+-   [Debian Free Software
+    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
+    (NOASSERTION)
 
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml "finos/OSLC-handbook")
+-   [Google OSS
+    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
 -   [HansHammel
@@ -107,13 +106,14 @@ Raw Data
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
 
--   [Google OSS
-    Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
--   [Debian Free Software
-    Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
-    (NOASSERTION)
+-   [SPDX](https://spdx.org/licenses/LGPL-2.1-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -559,6 +559,10 @@ Raw Data
         "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
         "__impliedURLs": [
             [
+                null,
+                "https://spdx.org/licenses/LGPL-2.1-or-later.html"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/LGPL-2.1-or-later.json"
             ],
@@ -569,10 +573,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/LGPL-2.1"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/LGPL-2.1-or-later.html"
             ],
             [
                 "Homepage",

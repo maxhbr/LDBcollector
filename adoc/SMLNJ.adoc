@@ -39,8 +39,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.smlnj.org//license.html
-* *SPDX:* http://spdx.org/licenses/SMLNJ.json
 * *SPDX:* https://spdx.org/licenses/SMLNJ.html
+* *SPDX:* http://spdx.org/licenses/SMLNJ.json
 * https://www.smlnj.org/license.html
 * http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
 * http://www2.cs.tum.edu/projects/cup/
@@ -73,15 +73,15 @@ connection with the use or performance of this software.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/SMLNJ.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://spdx.org/licenses/SMLNJ.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -305,15 +305,15 @@ Project Wiki]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/SMLNJ.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/SMLNJ.json"
         ],
         [
             null,
             "https://www.smlnj.org/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/SMLNJ.html"
         ],
         [
             "Homepage",

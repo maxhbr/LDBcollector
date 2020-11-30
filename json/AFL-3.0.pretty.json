@@ -2,12 +2,12 @@
     "__impliedNames": [
         "AFL-3.0",
         "Academic Free License v3.0",
-        "scancode://afl-3.0",
-        "AFL 3.0",
         "afl-3.0",
+        "Academic Free License 3.0",
         "Academic Free License, Version 3.0",
         "License :: OSI Approved :: Academic Free License (AFL)",
-        "Academic Free License 3.0"
+        "scancode://afl-3.0",
+        "AFL 3.0"
     ],
     "__impliedId": "AFL-3.0",
     "__impliedComments": [
@@ -550,6 +550,18 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/AFL-3.0.html"
+        ],
+        [
+            null,
+            "https://opensource.org/licenses/AFL-3.0"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/AFL-3.0"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/AFL-3.0.json"
         ],
         [
@@ -559,10 +571,6 @@
         [
             null,
             "https://opensource.org/licenses/afl-3.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/AFL-3.0.html"
         ],
         [
             "Homepage",
@@ -579,14 +587,6 @@
         [
             null,
             "http://www.opensource.org/licenses/afl-3.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/AFL-3.0"
-        ],
-        [
-            null,
-            "https://opensource.org/licenses/AFL-3.0"
         ]
     ]
 }

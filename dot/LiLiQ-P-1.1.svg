@@ -23,11 +23,11 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="19.25,-130 19.25,-236 501.91,-236 501.91,-130 19.25,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 505.16,-236 505.16,-130 16,-130"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 505.16,-122 505.16,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="19.25,-16 19.25,-122 501.91,-122 501.91,-16 19.25,-16"/>
 </g>
 <!-- LiLiQ&#45;P&#45;1.1(1) -->
 <g id="node1" class="node">
@@ -53,11 +53,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="260.58" cy="-210" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="260.58" y="-206.3" font-family="Times-Roman" font-size="14.00">LiLiQ&#45;P&#45;1.1</text>
 </g>
-<!-- Licence Libre du Québec – Permissive version 1.1(3) -->
+<!-- Licence Libre du Québec – Permissive, Version 1.1(3) -->
 <g id="node5" class="node">
-<title>Licence Libre du Québec – Permissive version 1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="260.58" cy="-156" rx="233.16" ry="18"/>
-<text text-anchor="middle" x="260.58" y="-152.3" font-family="Times-Roman" font-size="14.00">Licence Libre du Québec – Permissive version 1.1</text>
+<title>Licence Libre du Québec – Permissive, Version 1.1(3)</title>
+<ellipse fill="white" stroke="white" cx="260.58" cy="-156" rx="236.66" ry="18"/>
+<text text-anchor="middle" x="260.58" y="-152.3" font-family="Times-Roman" font-size="14.00">Licence Libre du Québec – Permissive, Version 1.1</text>
 </g>
 <!-- LiLiQ&#45;P&#45;1.1(4) -->
 <g id="node6" class="node">
@@ -65,11 +65,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="260.58" cy="-96" rx="59.59" ry="18"/>
 <text text-anchor="middle" x="260.58" y="-92.3" font-family="Times-Roman" font-size="14.00">LiLiQ&#45;P&#45;1.1</text>
 </g>
-<!-- Licence Libre du Québec – Permissive, Version 1.1(4) -->
+<!-- Licence Libre du Québec – Permissive version 1.1(4) -->
 <g id="node7" class="node">
-<title>Licence Libre du Québec – Permissive, Version 1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="260.58" cy="-42" rx="236.66" ry="18"/>
-<text text-anchor="middle" x="260.58" y="-38.3" font-family="Times-Roman" font-size="14.00">Licence Libre du Québec – Permissive, Version 1.1</text>
+<title>Licence Libre du Québec – Permissive version 1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="260.58" cy="-42" rx="233.16" ry="18"/>
+<text text-anchor="middle" x="260.58" y="-38.3" font-family="Times-Roman" font-size="14.00">Licence Libre du Québec – Permissive version 1.1</text>
 </g>
 </g>
 </svg>

@@ -27,19 +27,19 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="87.49,-910 87.49,-1016 499.96,-1016 499.96,-910 87.49,-910"/>
+<polygon fill="lightgray" stroke="lightgray" points="213.58,-910 213.58,-1016 373.87,-1016 373.87,-910 213.58,-910"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="184.99,-796 184.99,-902 402.47,-902 402.47,-796 184.99,-796"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-796 16,-902 571.45,-902 571.45,-796 16,-796"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="213.58,-682 213.58,-788 373.87,-788 373.87,-682 213.58,-682"/>
+<polygon fill="lightgray" stroke="lightgray" points="100.49,-358 100.49,-788 486.96,-788 486.96,-358 100.49,-358"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="100.49,-244 100.49,-674 486.96,-674 486.96,-244 100.49,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="87.49,-244 87.49,-350 499.96,-350 499.96,-244 87.49,-244"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -47,7 +47,7 @@
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 571.45,-122 571.45,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="184.99,-16 184.99,-122 402.47,-122 402.47,-16 184.99,-16"/>
 </g>
 <!-- BSD&#45;3&#45;Clause(1) -->
 <g id="node1" class="node">
@@ -85,89 +85,89 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-1050" rx="72.29" ry="18"/>
 <text text-anchor="middle" x="293.73" y="-1046.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
 </g>
-<!-- BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License(4) -->
-<g id="node7" class="node">
-<title>BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License(4)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-990" rx="198.47" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-986.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License</text>
-</g>
 <!-- BSD&#45;3&#45;Clause(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>BSD&#45;3&#45;Clause(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-936" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-932.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-990" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-986.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
+</g>
+<!-- bsd&#45;3&#45;clause(4) -->
+<g id="node8" class="node">
+<title>bsd&#45;3&#45;clause(4)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-936" rx="68.79" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-932.3" font-family="Times-Roman" font-size="14.00">bsd&#45;3&#45;clause</text>
+</g>
+<!-- BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)(5) -->
+<g id="node9" class="node">
+<title>BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)(5)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-876" rx="269.95" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-872.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)</text>
 </g>
 <!-- BSD&#45;3&#45;Clause(5) -->
-<g id="node9" class="node">
-<title>BSD&#45;3&#45;Clause(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-876" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-872.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
-</g>
-<!-- scancode://bsd&#45;new(5) -->
 <g id="node10" class="node">
-<title>scancode://bsd&#45;new(5)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-822" rx="100.98" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-818.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;new</text>
+<title>BSD&#45;3&#45;Clause(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-822" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-818.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
+</g>
+<!-- BSD 3&#45;Clause License(6) -->
+<g id="node11" class="node">
+<title>BSD 3&#45;Clause License(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-762" rx="108.58" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-758.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause License</text>
+</g>
+<!-- BSD&#45;3(6) -->
+<g id="node12" class="node">
+<title>BSD&#45;3(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-708" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-704.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3</text>
 </g>
 <!-- BSD&#45;3&#45;Clause(6) -->
-<g id="node11" class="node">
-<title>BSD&#45;3&#45;Clause(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-762" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-758.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
-</g>
-<!-- bsd&#45;3&#45;clause(6) -->
-<g id="node12" class="node">
-<title>bsd&#45;3&#45;clause(6)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-708" rx="68.79" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-704.3" font-family="Times-Roman" font-size="14.00">bsd&#45;3&#45;clause</text>
-</g>
-<!-- BSD 3&#45;Clause License(7) -->
 <g id="node13" class="node">
-<title>BSD 3&#45;Clause License(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-648" rx="108.58" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-644.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause License</text>
+<title>BSD&#45;3&#45;Clause(6)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-654" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-650.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
 </g>
-<!-- BSD&#45;3(7) -->
+<!-- BSD&#45;3&#45;clause(6) -->
 <g id="node14" class="node">
-<title>BSD&#45;3(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-594" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-590.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3</text>
+<title>BSD&#45;3&#45;clause(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-600" rx="70.69" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-596.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;clause</text>
+</g>
+<!-- License :: OSI Approved :: BSD License(6) -->
+<g id="node15" class="node">
+<title>License :: OSI Approved :: BSD License(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-546" rx="185.47" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-542.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: BSD License</text>
+</g>
+<!-- Modified BSD License(6) -->
+<g id="node16" class="node">
+<title>Modified BSD License(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-492" rx="107.48" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-488.3" font-family="Times-Roman" font-size="14.00">Modified BSD License</text>
+</g>
+<!-- New BSD License(6) -->
+<g id="node17" class="node">
+<title>New BSD License(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-438" rx="88.28" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-434.3" font-family="Times-Roman" font-size="14.00">New BSD License</text>
+</g>
+<!-- Revised BSD License(6) -->
+<g id="node18" class="node">
+<title>Revised BSD License(6)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-384" rx="103.98" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-380.3" font-family="Times-Roman" font-size="14.00">Revised BSD License</text>
+</g>
+<!-- BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License(7) -->
+<g id="node19" class="node">
+<title>BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License(7)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-324" rx="198.47" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-320.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License</text>
 </g>
 <!-- BSD&#45;3&#45;Clause(7) -->
-<g id="node15" class="node">
-<title>BSD&#45;3&#45;Clause(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-540" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-536.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
-</g>
-<!-- BSD&#45;3&#45;clause(7) -->
-<g id="node16" class="node">
-<title>BSD&#45;3&#45;clause(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-486" rx="70.69" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-482.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;clause</text>
-</g>
-<!-- License :: OSI Approved :: BSD License(7) -->
-<g id="node17" class="node">
-<title>License :: OSI Approved :: BSD License(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-432" rx="185.47" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: BSD License</text>
-</g>
-<!-- Modified BSD License(7) -->
-<g id="node18" class="node">
-<title>Modified BSD License(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-378" rx="107.48" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-374.3" font-family="Times-Roman" font-size="14.00">Modified BSD License</text>
-</g>
-<!-- New BSD License(7) -->
-<g id="node19" class="node">
-<title>New BSD License(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-324" rx="88.28" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-320.3" font-family="Times-Roman" font-size="14.00">New BSD License</text>
-</g>
-<!-- Revised BSD License(7) -->
 <g id="node20" class="node">
-<title>Revised BSD License(7)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-270" rx="103.98" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-266.3" font-family="Times-Roman" font-size="14.00">Revised BSD License</text>
+<title>BSD&#45;3&#45;Clause(7)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-270" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-266.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
 </g>
 <!-- BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License(8) -->
 <g id="node21" class="node">
@@ -181,17 +181,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-156" rx="72.29" ry="18"/>
 <text text-anchor="middle" x="293.73" y="-152.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
 </g>
-<!-- BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)(9) -->
-<g id="node23" class="node">
-<title>BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)(9)</title>
-<ellipse fill="white" stroke="white" cx="293.73" cy="-96" rx="269.95" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD 3&#45;Clause &quot;New&quot; or &quot;Revised&quot; License (BSD&#45;3&#45;Clause)</text>
-</g>
 <!-- BSD&#45;3&#45;Clause(9) -->
-<g id="node24" class="node">
+<g id="node23" class="node">
 <title>BSD&#45;3&#45;Clause(9)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-42" rx="72.29" ry="18"/>
-<text text-anchor="middle" x="293.73" y="-38.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="293.73" cy="-96" rx="72.29" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-92.3" font-family="Times-Roman" font-size="14.00">BSD&#45;3&#45;Clause</text>
+</g>
+<!-- scancode://bsd&#45;new(9) -->
+<g id="node24" class="node">
+<title>scancode://bsd&#45;new(9)</title>
+<ellipse fill="white" stroke="white" cx="293.73" cy="-42" rx="100.98" ry="18"/>
+<text text-anchor="middle" x="293.73" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://bsd&#45;new</text>
 </g>
 </g>
 </svg>

@@ -27,23 +27,23 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="156.39,-526 156.39,-686 360.87,-686 360.87,-526 156.39,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-526 16,-686 501.26,-686 501.26,-526 16,-526"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-358 16,-518 501.26,-518 501.26,-358 16,-358"/>
+<polygon fill="lightgray" stroke="lightgray" points="101.79,-412 101.79,-518 415.47,-518 415.47,-412 101.79,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="166.14,-244 166.14,-350 351.12,-350 351.12,-244 166.14,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="148.59,-298 148.59,-404 368.67,-404 368.67,-298 148.59,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="148.59,-130 148.59,-236 368.67,-236 368.67,-130 148.59,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="156.39,-130 156.39,-290 360.87,-290 360.87,-130 156.39,-130"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="101.79,-16 101.79,-122 415.47,-122 415.47,-16 101.79,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="166.14,-16 166.14,-122 351.12,-122 351.12,-16 166.14,-16"/>
 </g>
 <!-- QPL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -75,11 +75,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-720" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="258.63" y="-716.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
 </g>
-<!-- QPL 1.0(4) -->
+<!-- License :: OSI Approved :: Qt Public License (QPL)(4) -->
 <g id="node6" class="node">
-<title>QPL 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-660" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-656.3" font-family="Times-Roman" font-size="14.00">QPL 1.0</text>
+<title>License :: OSI Approved :: Qt Public License (QPL)(4)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-660" rx="234.76" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-656.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Qt Public License (QPL)</text>
 </g>
 <!-- QPL&#45;1.0(4) -->
 <g id="node7" class="node">
@@ -87,17 +87,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-606" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="258.63" y="-602.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
 </g>
-<!-- scancode://qpl&#45;1.0(4) -->
+<!-- The Q Public License Version (QPL&#45;1.0)(4) -->
 <g id="node8" class="node">
-<title>scancode://qpl&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-552" rx="94.48" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-548.3" font-family="Times-Roman" font-size="14.00">scancode://qpl&#45;1.0</text>
+<title>The Q Public License Version (QPL&#45;1.0)(4)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-552" rx="185.47" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-548.3" font-family="Times-Roman" font-size="14.00">The Q Public License Version (QPL&#45;1.0)</text>
 </g>
-<!-- License :: OSI Approved :: Qt Public License (QPL)(5) -->
+<!-- Q PUBLIC LICENSE version 1.0(5) -->
 <g id="node9" class="node">
-<title>License :: OSI Approved :: Qt Public License (QPL)(5)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-492" rx="234.76" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-488.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Qt Public License (QPL)</text>
+<title>Q PUBLIC LICENSE version 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-492" rx="148.67" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-488.3" font-family="Times-Roman" font-size="14.00">Q PUBLIC LICENSE version 1.0</text>
 </g>
 <!-- QPL&#45;1.0(5) -->
 <g id="node10" class="node">
@@ -105,41 +105,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-438" rx="46.29" ry="18"/>
 <text text-anchor="middle" x="258.63" y="-434.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
 </g>
-<!-- The Q Public License Version (QPL&#45;1.0)(5) -->
+<!-- Q Public License 1.0(6) -->
 <g id="node11" class="node">
-<title>The Q Public License Version (QPL&#45;1.0)(5)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-384" rx="185.47" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-380.3" font-family="Times-Roman" font-size="14.00">The Q Public License Version (QPL&#45;1.0)</text>
-</g>
-<!-- Q Public License(6) -->
-<g id="node12" class="node">
-<title>Q Public License(6)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-324" rx="84.49" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-320.3" font-family="Times-Roman" font-size="14.00">Q Public License</text>
+<title>Q Public License 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-378" rx="102.08" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-374.3" font-family="Times-Roman" font-size="14.00">Q Public License 1.0</text>
 </g>
 <!-- QPL&#45;1.0(6) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>QPL&#45;1.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-270" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-266.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-324" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-320.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
 </g>
-<!-- Q Public License 1.0(7) -->
-<g id="node14" class="node">
-<title>Q Public License 1.0(7)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-210" rx="102.08" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-206.3" font-family="Times-Roman" font-size="14.00">Q Public License 1.0</text>
+<!-- QPL 1.0(7) -->
+<g id="node13" class="node">
+<title>QPL 1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-264" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-260.3" font-family="Times-Roman" font-size="14.00">QPL 1.0</text>
 </g>
 <!-- QPL&#45;1.0(7) -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>QPL&#45;1.0(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-156" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-152.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="258.63" cy="-210" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-206.3" font-family="Times-Roman" font-size="14.00">QPL&#45;1.0</text>
 </g>
-<!-- Q PUBLIC LICENSE version 1.0(8) -->
+<!-- scancode://qpl&#45;1.0(7) -->
+<g id="node15" class="node">
+<title>scancode://qpl&#45;1.0(7)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-156" rx="94.48" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://qpl&#45;1.0</text>
+</g>
+<!-- Q Public License(8) -->
 <g id="node16" class="node">
-<title>Q PUBLIC LICENSE version 1.0(8)</title>
-<ellipse fill="white" stroke="white" cx="258.63" cy="-96" rx="148.67" ry="18"/>
-<text text-anchor="middle" x="258.63" y="-92.3" font-family="Times-Roman" font-size="14.00">Q PUBLIC LICENSE version 1.0</text>
+<title>Q Public License(8)</title>
+<ellipse fill="white" stroke="white" cx="258.63" cy="-96" rx="84.49" ry="18"/>
+<text text-anchor="middle" x="258.63" y="-92.3" font-family="Times-Roman" font-size="14.00">Q Public License</text>
 </g>
 <!-- QPL&#45;1.0(8) -->
 <g id="node17" class="node">

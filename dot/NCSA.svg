@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-802 135.59,-908 602.65,-908 602.65,-802 135.59,-802"/>
+<polygon fill="lightgray" stroke="lightgray" points="299.37,-748 299.37,-908 438.86,-908 438.86,-748 299.37,-748"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="227.23,-634 227.23,-794 511.01,-794 511.01,-634 227.23,-634"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-580 135.59,-740 602.65,-740 602.65,-580 135.59,-580"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="299.37,-466 299.37,-626 438.86,-626 438.86,-466 299.37,-466"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 722.24,-572 722.24,-412 16,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 722.24,-458 722.24,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-298 135.59,-404 602.65,-404 602.65,-298 135.59,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -43,7 +43,7 @@
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 602.65,-176 602.65,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="227.23,-16 227.23,-176 511.01,-176 511.01,-16 227.23,-16"/>
 </g>
 <!-- NCSA(1) -->
 <g id="node1" class="node">
@@ -69,53 +69,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-882" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="369.12" y="-878.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
 </g>
-<!-- University of Illinois/NCSA Open Source License(3) -->
+<!-- UIUC/NCSA(3) -->
 <g id="node5" class="node">
-<title>University of Illinois/NCSA Open Source License(3)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-828" rx="225.56" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-824.3" font-family="Times-Roman" font-size="14.00">University of Illinois/NCSA Open Source License</text>
+<title>UIUC/NCSA(3)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-828" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-824.3" font-family="Times-Roman" font-size="14.00">UIUC/NCSA</text>
+</g>
+<!-- ncsa(3) -->
+<g id="node6" class="node">
+<title>ncsa(3)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-774" rx="31.7" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-770.3" font-family="Times-Roman" font-size="14.00">ncsa</text>
 </g>
 <!-- NCSA(4) -->
-<g id="node6" class="node">
-<title>NCSA(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-768" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-764.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
-</g>
-<!-- NCSA Open Source License(4) -->
 <g id="node7" class="node">
-<title>NCSA Open Source License(4)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-714" rx="133.78" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-710.3" font-family="Times-Roman" font-size="14.00">NCSA Open Source License</text>
+<title>NCSA(4)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-714" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-710.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
 </g>
-<!-- scancode://uoi&#45;ncsa(4) -->
+<!-- University of Illinois/NCSA Open Source License(4) -->
 <g id="node8" class="node">
-<title>scancode://uoi&#45;ncsa(4)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-660" rx="100.18" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-656.3" font-family="Times-Roman" font-size="14.00">scancode://uoi&#45;ncsa</text>
+<title>University of Illinois/NCSA Open Source License(4)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-660" rx="225.56" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-656.3" font-family="Times-Roman" font-size="14.00">University of Illinois/NCSA Open Source License</text>
+</g>
+<!-- uoi&#45;ncsa(4) -->
+<g id="node9" class="node">
+<title>uoi&#45;ncsa(4)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-606" rx="48.99" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-602.3" font-family="Times-Roman" font-size="14.00">uoi&#45;ncsa</text>
+</g>
+<!-- License :: OSI Approved :: University of Illinois/NCSA Open Source License(5) -->
+<g id="node10" class="node">
+<title>License :: OSI Approved :: University of Illinois/NCSA Open Source License(5)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-546" rx="345.24" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-542.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: University of Illinois/NCSA Open Source License</text>
 </g>
 <!-- NCSA(5) -->
-<g id="node9" class="node">
-<title>NCSA(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-600" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-596.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
-</g>
-<!-- UIUC/NCSA(5) -->
-<g id="node10" class="node">
-<title>UIUC/NCSA(5)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-546" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-542.3" font-family="Times-Roman" font-size="14.00">UIUC/NCSA</text>
-</g>
-<!-- ncsa(5) -->
 <g id="node11" class="node">
-<title>ncsa(5)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-492" rx="31.7" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-488.3" font-family="Times-Roman" font-size="14.00">ncsa</text>
+<title>NCSA(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-492" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-488.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
 </g>
-<!-- License :: OSI Approved :: University of Illinois/NCSA Open Source License(6) -->
+<!-- The University of Illinois/NCSA Open Source License(5) -->
 <g id="node12" class="node">
-<title>License :: OSI Approved :: University of Illinois/NCSA Open Source License(6)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-432" rx="345.24" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: University of Illinois/NCSA Open Source License</text>
+<title>The University of Illinois/NCSA Open Source License(5)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-438" rx="245.06" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-434.3" font-family="Times-Roman" font-size="14.00">The University of Illinois/NCSA Open Source License</text>
 </g>
 <!-- NCSA(6) -->
 <g id="node13" class="node">
@@ -123,11 +123,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-378" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="369.12" y="-374.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
 </g>
-<!-- The University of Illinois/NCSA Open Source License(6) -->
+<!-- University of Illinois/NCSA Open Source License(6) -->
 <g id="node14" class="node">
-<title>The University of Illinois/NCSA Open Source License(6)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-324" rx="245.06" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-320.3" font-family="Times-Roman" font-size="14.00">The University of Illinois/NCSA Open Source License</text>
+<title>University of Illinois/NCSA Open Source License(6)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-324" rx="225.56" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-320.3" font-family="Times-Roman" font-size="14.00">University of Illinois/NCSA Open Source License</text>
 </g>
 <!-- NCSA(7) -->
 <g id="node15" class="node">
@@ -147,17 +147,17 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="369.12" cy="-150" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="369.12" y="-146.3" font-family="Times-Roman" font-size="14.00">NCSA</text>
 </g>
-<!-- University of Illinois/NCSA Open Source License(8) -->
+<!-- NCSA Open Source License(8) -->
 <g id="node18" class="node">
-<title>University of Illinois/NCSA Open Source License(8)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-96" rx="225.56" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-92.3" font-family="Times-Roman" font-size="14.00">University of Illinois/NCSA Open Source License</text>
+<title>NCSA Open Source License(8)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-96" rx="133.78" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-92.3" font-family="Times-Roman" font-size="14.00">NCSA Open Source License</text>
 </g>
-<!-- uoi&#45;ncsa(8) -->
+<!-- scancode://uoi&#45;ncsa(8) -->
 <g id="node19" class="node">
-<title>uoi&#45;ncsa(8)</title>
-<ellipse fill="white" stroke="white" cx="369.12" cy="-42" rx="48.99" ry="18"/>
-<text text-anchor="middle" x="369.12" y="-38.3" font-family="Times-Roman" font-size="14.00">uoi&#45;ncsa</text>
+<title>scancode://uoi&#45;ncsa(8)</title>
+<ellipse fill="white" stroke="white" cx="369.12" cy="-42" rx="100.18" ry="18"/>
+<text text-anchor="middle" x="369.12" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://uoi&#45;ncsa</text>
 </g>
 </g>
 </svg>

@@ -163,12 +163,6 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Vim.html "SPDX") (all data \[in
-    this repository\] is generated)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml "Scancode")
-    (CC0-1.0)
-
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
@@ -180,15 +174,21 @@ Raw Data
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [SPDX](https://spdx.org/licenses/Vim.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vim.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Vim",
+            "vim",
             "Vim License",
             "scancode://vim",
-            "VIM License",
-            "vim"
+            "VIM License"
         ],
         "__impliedId": "Vim",
         "__isFsfFree": true,

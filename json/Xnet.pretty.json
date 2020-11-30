@@ -2,10 +2,10 @@
     "__impliedNames": [
         "Xnet",
         "X.Net License",
-        "scancode://xnet",
-        "Altera License",
         "The X.Net, Inc. License",
-        "License :: OSI Approved :: X.Net License"
+        "License :: OSI Approved :: X.Net License",
+        "scancode://xnet",
+        "Altera License"
     ],
     "__impliedId": "Xnet",
     "__impliedComments": [
@@ -353,15 +353,19 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Xnet.json"
+            "https://spdx.org/licenses/Xnet.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Xnet"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Xnet"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Xnet.html"
+            "http://spdx.org/licenses/Xnet.json"
         ],
         [
             "Homepage",
@@ -374,10 +378,6 @@
         [
             null,
             "http://opensource.org/licenses/Xnet"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Xnet"
         ]
     ]
 }

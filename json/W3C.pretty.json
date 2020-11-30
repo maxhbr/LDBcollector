@@ -2,13 +2,13 @@
     "__impliedNames": [
         "W3C",
         "W3C Software Notice and License (2002-12-31)",
-        "scancode://w3c",
         "W3C Software Notice and License",
+        "W3C License",
         "The W3C Software Notice and License",
         "License :: OSI Approved :: W3C License",
-        "W3C Software Notice and License 20021231",
-        "W3C License",
-        "W3C Software Notice and License (became active on December 31 2002)"
+        "W3C Software Notice and License (became active on December 31 2002)",
+        "scancode://w3c",
+        "W3C Software Notice and License 20021231"
     ],
     "__impliedId": "W3C",
     "__isFsfFree": true,
@@ -606,19 +606,27 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/W3C.json"
-        ],
-        [
-            null,
-            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html"
+            "https://spdx.org/licenses/W3C.html"
         ],
         [
             null,
             "https://opensource.org/licenses/W3C"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/W3C"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/269"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/W3C.html"
+            "http://spdx.org/licenses/W3C.json"
+        ],
+        [
+            null,
+            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html"
         ],
         [
             "Homepage",
@@ -631,14 +639,6 @@
         [
             null,
             "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html http://www.opensource.org/licenses/W3C.php"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/W3C"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/269"
         ]
     ]
 }

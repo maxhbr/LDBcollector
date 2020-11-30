@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ADSL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ADSL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ADSL.html"
         ],
         [
             "Homepage",

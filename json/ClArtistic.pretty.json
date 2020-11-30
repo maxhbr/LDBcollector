@@ -234,6 +234,10 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ClArtistic.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ClArtistic.json"
         ],
         [
@@ -243,10 +247,6 @@
         [
             null,
             "http://www.ncftp.com/ncftp/doc/LICENSE.txt"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ClArtistic.html"
         ],
         [
             "Homepage",

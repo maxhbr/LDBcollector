@@ -278,15 +278,19 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Multics.json"
+            "https://spdx.org/licenses/Multics.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Multics"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Multics"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Multics.html"
+            "http://spdx.org/licenses/Multics.json"
         ],
         [
             "Homepage",
@@ -299,10 +303,6 @@
         [
             null,
             "http://www.opensource.org/licenses/Multics"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Multics"
         ]
     ]
 }

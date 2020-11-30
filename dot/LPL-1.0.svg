@@ -23,19 +23,19 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="52.4,-412 52.4,-518 390.77,-518 390.77,-412 52.4,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="45.25,-412 45.25,-518 397.92,-518 397.92,-412 45.25,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="88.79,-244 88.79,-404 354.37,-404 354.37,-244 88.79,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 427.16,-404 427.16,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-236 427.16,-236 427.16,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="52.4,-184 52.4,-290 390.77,-290 390.77,-184 52.4,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="45.25,-16 45.25,-122 397.92,-122 397.92,-16 45.25,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="88.79,-16 88.79,-176 354.37,-176 354.37,-16 88.79,-16"/>
 </g>
 <!-- LPL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -61,11 +61,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-492" rx="44.39" ry="18"/>
 <text text-anchor="middle" x="221.58" y="-488.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
 </g>
-<!-- Lucent Public License Version 1.0(3) -->
+<!-- Lucent Public License (&quot;Plan9&quot;) 1.0(3) -->
 <g id="node5" class="node">
-<title>Lucent Public License Version 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="221.58" cy="-438" rx="161.37" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-434.3" font-family="Times-Roman" font-size="14.00">Lucent Public License Version 1.0</text>
+<title>Lucent Public License (&quot;Plan9&quot;) 1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="221.58" cy="-438" rx="168.17" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-434.3" font-family="Times-Roman" font-size="14.00">Lucent Public License (&quot;Plan9&quot;) 1.0</text>
 </g>
 <!-- LPL&#45;1.0(4) -->
 <g id="node6" class="node">
@@ -73,41 +73,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-378" rx="44.39" ry="18"/>
 <text text-anchor="middle" x="221.58" y="-374.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
 </g>
-<!-- Lucent Public License 1.0(4) -->
+<!-- Lucent Public License, Plan 9, Version 1.0(4) -->
 <g id="node7" class="node">
-<title>Lucent Public License 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="221.58" cy="-324" rx="124.58" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-320.3" font-family="Times-Roman" font-size="14.00">Lucent Public License 1.0</text>
-</g>
-<!-- scancode://lucent&#45;pl&#45;1.0(4) -->
-<g id="node8" class="node">
-<title>scancode://lucent&#45;pl&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="221.58" cy="-270" rx="119.68" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://lucent&#45;pl&#45;1.0</text>
+<title>Lucent Public License, Plan 9, Version 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="221.58" cy="-324" rx="197.66" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-320.3" font-family="Times-Roman" font-size="14.00">Lucent Public License, Plan 9, Version 1.0</text>
 </g>
 <!-- LPL&#45;1.0(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>LPL&#45;1.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-210" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-206.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-264" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-260.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
 </g>
-<!-- Lucent Public License, Plan 9, Version 1.0(5) -->
-<g id="node10" class="node">
-<title>Lucent Public License, Plan 9, Version 1.0(5)</title>
-<ellipse fill="white" stroke="white" cx="221.58" cy="-156" rx="197.66" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-152.3" font-family="Times-Roman" font-size="14.00">Lucent Public License, Plan 9, Version 1.0</text>
+<!-- Lucent Public License Version 1.0(5) -->
+<g id="node9" class="node">
+<title>Lucent Public License Version 1.0(5)</title>
+<ellipse fill="white" stroke="white" cx="221.58" cy="-210" rx="161.37" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-206.3" font-family="Times-Roman" font-size="14.00">Lucent Public License Version 1.0</text>
 </g>
 <!-- LPL&#45;1.0(6) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>LPL&#45;1.0(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-96" rx="44.39" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-92.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="221.58" cy="-150" rx="44.39" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-146.3" font-family="Times-Roman" font-size="14.00">LPL&#45;1.0</text>
 </g>
-<!-- Lucent Public License (&quot;Plan9&quot;) 1.0(6) -->
+<!-- Lucent Public License 1.0(6) -->
+<g id="node11" class="node">
+<title>Lucent Public License 1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="221.58" cy="-96" rx="124.58" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-92.3" font-family="Times-Roman" font-size="14.00">Lucent Public License 1.0</text>
+</g>
+<!-- scancode://lucent&#45;pl&#45;1.0(6) -->
 <g id="node12" class="node">
-<title>Lucent Public License (&quot;Plan9&quot;) 1.0(6)</title>
-<ellipse fill="white" stroke="white" cx="221.58" cy="-42" rx="168.17" ry="18"/>
-<text text-anchor="middle" x="221.58" y="-38.3" font-family="Times-Roman" font-size="14.00">Lucent Public License (&quot;Plan9&quot;) 1.0</text>
+<title>scancode://lucent&#45;pl&#45;1.0(6)</title>
+<ellipse fill="white" stroke="white" cx="221.58" cy="-42" rx="119.68" ry="18"/>
+<text text-anchor="middle" x="221.58" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://lucent&#45;pl&#45;1.0</text>
 </g>
 </g>
 </svg>

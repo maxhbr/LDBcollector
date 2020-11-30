@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="40.05,-244 40.05,-404 262.73,-404 262.73,-244 40.05,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 286.78,-404 286.78,-298 16,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="49.8,-130 49.8,-236 252.98,-236 252.98,-130 49.8,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="49.8,-184 49.8,-290 252.98,-290 252.98,-184 49.8,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 286.78,-122 286.78,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="40.05,-16 40.05,-176 262.73,-176 262.73,-16 40.05,-16"/>
 </g>
 <!-- PHP&#45;3.01(1) -->
 <g id="node1" class="node">
@@ -67,11 +67,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-438" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="151.39" y="-434.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
 </g>
-<!-- PHP License 3.01(4) -->
+<!-- PHP License, version 3.01(4) -->
 <g id="node6" class="node">
-<title>PHP License 3.01(4)</title>
-<ellipse fill="white" stroke="white" cx="151.39" cy="-378" rx="88.28" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-374.3" font-family="Times-Roman" font-size="14.00">PHP License 3.01</text>
+<title>PHP License, version 3.01(4)</title>
+<ellipse fill="white" stroke="white" cx="151.39" cy="-378" rx="127.28" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-374.3" font-family="Times-Roman" font-size="14.00">PHP License, version 3.01</text>
 </g>
 <!-- PHP&#45;3.01(4) -->
 <g id="node7" class="node">
@@ -79,35 +79,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-324" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="151.39" y="-320.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
 </g>
-<!-- scancode://php&#45;3.01(4) -->
-<g id="node8" class="node">
-<title>scancode://php&#45;3.01(4)</title>
-<ellipse fill="white" stroke="white" cx="151.39" cy="-270" rx="103.18" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-266.3" font-family="Times-Roman" font-size="14.00">scancode://php&#45;3.01</text>
-</g>
 <!-- PHP License v3.01(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>PHP License v3.01(5)</title>
-<ellipse fill="white" stroke="white" cx="151.39" cy="-210" rx="93.68" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-206.3" font-family="Times-Roman" font-size="14.00">PHP License v3.01</text>
+<ellipse fill="white" stroke="white" cx="151.39" cy="-264" rx="93.68" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-260.3" font-family="Times-Roman" font-size="14.00">PHP License v3.01</text>
 </g>
 <!-- PHP&#45;3.01(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>PHP&#45;3.01(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-156" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-152.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-210" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-206.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
 </g>
-<!-- PHP License, version 3.01(6) -->
-<g id="node11" class="node">
-<title>PHP License, version 3.01(6)</title>
-<ellipse fill="white" stroke="white" cx="151.39" cy="-96" rx="127.28" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-92.3" font-family="Times-Roman" font-size="14.00">PHP License, version 3.01</text>
+<!-- PHP License 3.01(6) -->
+<g id="node10" class="node">
+<title>PHP License 3.01(6)</title>
+<ellipse fill="white" stroke="white" cx="151.39" cy="-150" rx="88.28" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-146.3" font-family="Times-Roman" font-size="14.00">PHP License 3.01</text>
 </g>
 <!-- PHP&#45;3.01(6) -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>PHP&#45;3.01(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-42" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="151.39" y="-38.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="151.39" cy="-96" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-92.3" font-family="Times-Roman" font-size="14.00">PHP&#45;3.01</text>
+</g>
+<!-- scancode://php&#45;3.01(6) -->
+<g id="node12" class="node">
+<title>scancode://php&#45;3.01(6)</title>
+<ellipse fill="white" stroke="white" cx="151.39" cy="-42" rx="103.18" ry="18"/>
+<text text-anchor="middle" x="151.39" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://php&#45;3.01</text>
 </g>
 </g>
 </svg>

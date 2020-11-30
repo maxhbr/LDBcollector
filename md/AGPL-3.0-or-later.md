@@ -65,11 +65,11 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/AGPL-3.0-or-later.json
 
+-   https://spdx.org/licenses/AGPL-3.0-or-later.html
+
 -   https://www.gnu.org/licenses/agpl.txt
 
 -   https://opensource.org/licenses/AGPL-3.0
-
--   https://spdx.org/licenses/AGPL-3.0-or-later.html
 
 -   http://www.fsf.org/licensing/licenses/agpl-3.0.html
 
@@ -104,26 +104,26 @@ Raw Data
 
 -   Override
 
--   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
-    data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml "finos/OSLC-handbook")
-    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
-
 -   [librariesio
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml "finos/OSLC-handbook")
+    ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
+    data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
+    (CC0-1.0)
 
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
@@ -615,6 +615,10 @@ Raw Data
         "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
         "__impliedURLs": [
             [
+                null,
+                "https://spdx.org/licenses/AGPL-3.0-or-later.html"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/AGPL-3.0-or-later.json"
             ],
@@ -625,10 +629,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/AGPL-3.0"
-            ],
-            [
-                null,
-                "https://spdx.org/licenses/AGPL-3.0-or-later.html"
             ],
             [
                 "Homepage",

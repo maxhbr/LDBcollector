@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/NLPL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/NLPL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/NLPL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/NLPL.html"
         ],
         [
             "Homepage",

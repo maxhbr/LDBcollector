@@ -2,9 +2,9 @@
     "__impliedNames": [
         "IJG",
         "Independent JPEG Group License",
+        "IJG License",
         "scancode://ijg",
-        "JPEG License",
-        "IJG License"
+        "JPEG License"
     ],
     "__impliedId": "IJG",
     "__isFsfFree": true,
@@ -217,15 +217,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/IJG.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/302"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/IJG.json"
         ],
         [
             null,
             "http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/IJG.html"
         ],
         [
             "Homepage",
@@ -234,10 +238,6 @@
         [
             null,
             "http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/302"
         ]
     ]
 }

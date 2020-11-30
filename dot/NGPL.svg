@@ -23,15 +23,15 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-298 135.59,-458 455.76,-458 455.76,-298 135.59,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 575.35,-458 575.35,-298 16,-298"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-130 16,-290 575.35,-290 575.35,-130 16,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-184 135.59,-290 455.76,-290 455.76,-184 135.59,-184"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-122 455.76,-122 455.76,-16 135.59,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="135.59,-16 135.59,-176 455.76,-176 455.76,-16 135.59,-16"/>
 </g>
 <!-- NGPL(1) -->
 <g id="node1" class="node">
@@ -51,53 +51,53 @@
 <ellipse fill="white" stroke="white" cx="295.68" cy="-492" rx="152.17" ry="18"/>
 <text text-anchor="middle" x="295.68" y="-488.3" font-family="Times-Roman" font-size="14.00">Nethack General Public License</text>
 </g>
-<!-- NGPL(3) -->
+<!-- License :: OSI Approved :: Nethack General Public License(3) -->
 <g id="node4" class="node">
-<title>NGPL(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-432" rx="34.39" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-428.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
+<title>License :: OSI Approved :: Nethack General Public License(3)</title>
+<ellipse fill="white" stroke="white" cx="295.68" cy="-432" rx="271.85" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Nethack General Public License</text>
 </g>
-<!-- Nethack General Public License(3) -->
+<!-- NGPL(3) -->
 <g id="node5" class="node">
-<title>Nethack General Public License(3)</title>
-<ellipse fill="white" stroke="white" cx="295.68" cy="-378" rx="152.17" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-374.3" font-family="Times-Roman" font-size="14.00">Nethack General Public License</text>
+<title>NGPL(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-378" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-374.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
 </g>
-<!-- scancode://ngpl(3) -->
+<!-- The Nethack General Public License(3) -->
 <g id="node6" class="node">
-<title>scancode://ngpl(3)</title>
-<ellipse fill="white" stroke="white" cx="295.68" cy="-324" rx="81.79" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-320.3" font-family="Times-Roman" font-size="14.00">scancode://ngpl</text>
-</g>
-<!-- License :: OSI Approved :: Nethack General Public License(4) -->
-<g id="node7" class="node">
-<title>License :: OSI Approved :: Nethack General Public License(4)</title>
-<ellipse fill="white" stroke="white" cx="295.68" cy="-264" rx="271.85" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-260.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Nethack General Public License</text>
+<title>The Nethack General Public License(3)</title>
+<ellipse fill="white" stroke="white" cx="295.68" cy="-324" rx="171.67" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-320.3" font-family="Times-Roman" font-size="14.00">The Nethack General Public License</text>
 </g>
 <!-- NGPL(4) -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>NGPL(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-210" rx="34.39" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-206.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-264" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-260.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
 </g>
-<!-- The Nethack General Public License(4) -->
-<g id="node9" class="node">
-<title>The Nethack General Public License(4)</title>
-<ellipse fill="white" stroke="white" cx="295.68" cy="-156" rx="171.67" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-152.3" font-family="Times-Roman" font-size="14.00">The Nethack General Public License</text>
+<!-- Nethack General Public License(4) -->
+<g id="node8" class="node">
+<title>Nethack General Public License(4)</title>
+<ellipse fill="white" stroke="white" cx="295.68" cy="-210" rx="152.17" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-206.3" font-family="Times-Roman" font-size="14.00">Nethack General Public License</text>
 </g>
 <!-- NGPL(5) -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>NGPL(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-96" rx="34.39" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-92.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="295.68" cy="-150" rx="34.39" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-146.3" font-family="Times-Roman" font-size="14.00">NGPL</text>
 </g>
 <!-- Nethack General Public License(5) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>Nethack General Public License(5)</title>
-<ellipse fill="white" stroke="white" cx="295.68" cy="-42" rx="152.17" ry="18"/>
-<text text-anchor="middle" x="295.68" y="-38.3" font-family="Times-Roman" font-size="14.00">Nethack General Public License</text>
+<ellipse fill="white" stroke="white" cx="295.68" cy="-96" rx="152.17" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-92.3" font-family="Times-Roman" font-size="14.00">Nethack General Public License</text>
+</g>
+<!-- scancode://ngpl(5) -->
+<g id="node11" class="node">
+<title>scancode://ngpl(5)</title>
+<ellipse fill="white" stroke="white" cx="295.68" cy="-42" rx="81.79" ry="18"/>
+<text text-anchor="middle" x="295.68" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://ngpl</text>
 </g>
 </g>
 </svg>

@@ -43,9 +43,9 @@
 - *Homepage:*
   https://fedoraproject.org/wiki/Licensing:ZlibWithAcknowledgement?rd=Licensing/ZlibWithAcknowledgement
 
-- *SPDX:* http://spdx.org/licenses/zlib-acknowledgement.json
-
 - *SPDX:* https://spdx.org/licenses/zlib-acknowledgement.html
+
+- *SPDX:* http://spdx.org/licenses/zlib-acknowledgement.json
 
 - https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
@@ -82,14 +82,11 @@
 
 - LicenseName
 
-- [[https://spdx.org/licenses/zlib-acknowledgement.html][SPDX]] (all
-  data [in this repository] is generated)
-
 - [[https://blueoakcouncil.org/list][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]])
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml][Scancode]]
-  (CC0-1.0)
+- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
+  Guidelines]] (NOASSERTION)
 
 - [[https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing][Fedora
   Project Wiki]]
@@ -99,8 +96,11 @@
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
-- [[https://wiki.debian.org/DFSGLicenses][Debian Free Software
-  Guidelines]] (NOASSERTION)
+- [[https://spdx.org/licenses/zlib-acknowledgement.html][SPDX]] (all
+  data [in this repository] is generated)
+
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml][Scancode]]
+  (CC0-1.0)
 
 *** Raw JSON
 
@@ -115,8 +115,8 @@
       "__impliedId": "zlib-acknowledgement",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
-          "zlib with acknowledgement",
-          "The zlib/libpng License (Zlib)"
+          "The zlib/libpng License (Zlib)",
+          "zlib with acknowledgement"
       ],
       "__impliedComments": [
           [
@@ -366,15 +366,15 @@
       "__impliedURLs": [
           [
               "SPDX",
+              "https://spdx.org/licenses/zlib-acknowledgement.html"
+          ],
+          [
+              "SPDX",
               "http://spdx.org/licenses/zlib-acknowledgement.json"
           ],
           [
               null,
               "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"
-          ],
-          [
-              "SPDX",
-              "https://spdx.org/licenses/zlib-acknowledgement.html"
           ],
           [
               "Homepage",

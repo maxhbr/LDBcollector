@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Cube.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Cube.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Cube"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Cube.html"
         ],
         [
             "Homepage",

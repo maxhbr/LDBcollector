@@ -23,23 +23,23 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="180.44,-976 180.44,-1082 447.31,-1082 447.31,-976 180.44,-976"/>
+<polygon fill="lightgray" stroke="lightgray" points="259.08,-976 259.08,-1082 368.67,-1082 368.67,-976 259.08,-976"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="209.03,-808 209.03,-968 418.72,-968 418.72,-808 209.03,-808"/>
+<polygon fill="lightgray" stroke="lightgray" points="180.44,-808 180.44,-968 447.31,-968 447.31,-808 180.44,-808"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="259.08,-694 259.08,-800 368.67,-800 368.67,-694 259.08,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-640 16,-800 611.75,-800 611.75,-640 16,-640"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-526 16,-686 611.75,-686 611.75,-526 16,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="180.44,-526 180.44,-632 447.31,-632 447.31,-526 180.44,-526"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="180.44,-412 180.44,-518 447.31,-518 447.31,-412 180.44,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="144.69,-412 144.69,-518 483.06,-518 483.06,-412 144.69,-412"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -47,11 +47,11 @@
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
-<polygon fill="lightgray" stroke="lightgray" points="180.44,-130 180.44,-290 447.31,-290 447.31,-130 180.44,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="209.03,-130 209.03,-290 418.72,-290 418.72,-130 209.03,-130"/>
 </g>
 <g id="clust11" class="cluster">
 <title>cluster_10</title>
-<polygon fill="lightgray" stroke="lightgray" points="144.69,-16 144.69,-122 483.06,-122 483.06,-16 144.69,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="180.44,-16 180.44,-122 447.31,-122 447.31,-16 180.44,-16"/>
 </g>
 <!-- MPL&#45;2.0(1) -->
 <g id="node1" class="node">
@@ -77,47 +77,47 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-1056" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="313.87" y="-1052.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- Mozilla Public License 2.0(3) -->
+<!-- mpl&#45;2.0(3) -->
 <g id="node5" class="node">
-<title>Mozilla Public License 2.0(3)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-1002" rx="125.38" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-998.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
-</g>
-<!-- MPL 2.0(4) -->
-<g id="node6" class="node">
-<title>MPL 2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-942" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-938.3" font-family="Times-Roman" font-size="14.00">MPL 2.0</text>
+<title>mpl&#45;2.0(3)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-1002" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-998.3" font-family="Times-Roman" font-size="14.00">mpl&#45;2.0</text>
 </g>
 <!-- MPL&#45;2.0(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>MPL&#45;2.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-888" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-884.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-942" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-938.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- scancode://mpl&#45;2.0(4) -->
+<!-- Mozilla Public License 2.0(4) -->
+<g id="node7" class="node">
+<title>Mozilla Public License 2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-888" rx="125.38" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-884.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
+</g>
+<!-- mozilla2.0(4) -->
 <g id="node8" class="node">
-<title>scancode://mpl&#45;2.0(4)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-834" rx="96.68" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-830.3" font-family="Times-Roman" font-size="14.00">scancode://mpl&#45;2.0</text>
+<title>mozilla2.0(4)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-834" rx="57.39" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-830.3" font-family="Times-Roman" font-size="14.00">mozilla2.0</text>
+</g>
+<!-- License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)(5) -->
+<g id="node9" class="node">
+<title>License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)(5)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-774" rx="289.75" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-770.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)</text>
 </g>
 <!-- MPL&#45;2.0(5) -->
-<g id="node9" class="node">
-<title>MPL&#45;2.0(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-774" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-770.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
-</g>
-<!-- mpl&#45;2.0(5) -->
 <g id="node10" class="node">
-<title>mpl&#45;2.0(5)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-720" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-716.3" font-family="Times-Roman" font-size="14.00">mpl&#45;2.0</text>
+<title>MPL&#45;2.0(5)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-720" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-716.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)(6) -->
+<!-- Mozilla Public License, Version 2.0(5) -->
 <g id="node11" class="node">
-<title>License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)(6)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-660" rx="289.75" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-656.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)</text>
+<title>Mozilla Public License, Version 2.0(5)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-666" rx="164.37" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-662.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License, Version 2.0</text>
 </g>
 <!-- MPL&#45;2.0(6) -->
 <g id="node12" class="node">
@@ -125,11 +125,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-606" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="313.87" y="-602.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- Mozilla Public License, Version 2.0(6) -->
+<!-- Mozilla Public License 2.0(6) -->
 <g id="node13" class="node">
-<title>Mozilla Public License, Version 2.0(6)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-552" rx="164.37" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-548.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License, Version 2.0</text>
+<title>Mozilla Public License 2.0(6)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-552" rx="125.38" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-548.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
 </g>
 <!-- MPL&#45;2.0(7) -->
 <g id="node14" class="node">
@@ -137,11 +137,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-492" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="313.87" y="-488.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- Mozilla Public License 2.0(7) -->
+<!-- Mozilla Public License Version 2.0(7) -->
 <g id="node15" class="node">
-<title>Mozilla Public License 2.0(7)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-438" rx="125.38" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-434.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
+<title>Mozilla Public License Version 2.0(7)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-438" rx="161.37" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-434.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License Version 2.0</text>
 </g>
 <!-- MPL&#45;2.0(8) -->
 <g id="node16" class="node">
@@ -155,23 +155,23 @@
 <ellipse fill="white" stroke="white" cx="313.87" cy="-324" rx="125.38" ry="18"/>
 <text text-anchor="middle" x="313.87" y="-320.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
 </g>
-<!-- MPL&#45;2.0(9) -->
+<!-- MPL 2.0(9) -->
 <g id="node18" class="node">
-<title>MPL&#45;2.0(9)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-264" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-260.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
+<title>MPL 2.0(9)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-264" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-260.3" font-family="Times-Roman" font-size="14.00">MPL 2.0</text>
 </g>
-<!-- Mozilla Public License 2.0(9) -->
+<!-- MPL&#45;2.0(9) -->
 <g id="node19" class="node">
-<title>Mozilla Public License 2.0(9)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-210" rx="125.38" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-206.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
+<title>MPL&#45;2.0(9)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-210" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-206.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- mozilla2.0(9) -->
+<!-- scancode://mpl&#45;2.0(9) -->
 <g id="node20" class="node">
-<title>mozilla2.0(9)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-156" rx="57.39" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-152.3" font-family="Times-Roman" font-size="14.00">mozilla2.0</text>
+<title>scancode://mpl&#45;2.0(9)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-156" rx="96.68" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://mpl&#45;2.0</text>
 </g>
 <!-- MPL&#45;2.0(10) -->
 <g id="node21" class="node">
@@ -179,11 +179,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="313.87" cy="-96" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="313.87" y="-92.3" font-family="Times-Roman" font-size="14.00">MPL&#45;2.0</text>
 </g>
-<!-- Mozilla Public License Version 2.0(10) -->
+<!-- Mozilla Public License 2.0(10) -->
 <g id="node22" class="node">
-<title>Mozilla Public License Version 2.0(10)</title>
-<ellipse fill="white" stroke="white" cx="313.87" cy="-42" rx="161.37" ry="18"/>
-<text text-anchor="middle" x="313.87" y="-38.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License Version 2.0</text>
+<title>Mozilla Public License 2.0(10)</title>
+<ellipse fill="white" stroke="white" cx="313.87" cy="-42" rx="125.38" ry="18"/>
+<text text-anchor="middle" x="313.87" y="-38.3" font-family="Times-Roman" font-size="14.00">Mozilla Public License 2.0</text>
 </g>
 </g>
 </svg>

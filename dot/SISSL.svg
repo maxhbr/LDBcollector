@@ -19,23 +19,23 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="147.29,-634 147.29,-740 585.75,-740 585.75,-634 147.29,-634"/>
+<polygon fill="lightgray" stroke="lightgray" points="152.49,-580 152.49,-740 580.55,-740 580.55,-580 152.49,-580"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="152.49,-466 152.49,-626 580.55,-626 580.55,-466 152.49,-466"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 717.04,-572 717.04,-412 16,-412"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 717.04,-458 717.04,-298 16,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="116.74,-298 116.74,-404 616.3,-404 616.3,-298 116.74,-298"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="152.49,-130 152.49,-290 580.55,-290 580.55,-130 152.49,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="147.29,-184 147.29,-290 585.75,-290 585.75,-184 147.29,-184"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="116.74,-16 116.74,-122 616.3,-122 616.3,-16 116.74,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="152.49,-16 152.49,-176 580.55,-176 580.55,-16 152.49,-16"/>
 </g>
 <!-- SISSL(1) -->
 <g id="node1" class="node">
@@ -49,35 +49,35 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-714" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="366.52" y="-710.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
 </g>
-<!-- Sun Industry Standards Source License v1.1(2) -->
+<!-- Sun Industry Standards Source License 1.1(2) -->
 <g id="node3" class="node">
-<title>Sun Industry Standards Source License v1.1(2)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-660" rx="211.46" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-656.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License v1.1</text>
+<title>Sun Industry Standards Source License 1.1(2)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-660" rx="206.06" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-656.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License 1.1</text>
+</g>
+<!-- sun&#45;issl(2) -->
+<g id="node4" class="node">
+<title>sun&#45;issl(2)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-606" rx="45.49" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-602.3" font-family="Times-Roman" font-size="14.00">sun&#45;issl</text>
+</g>
+<!-- License :: OSI Approved :: Sun Industry Standards Source License (SISSL)(3) -->
+<g id="node5" class="node">
+<title>License :: OSI Approved :: Sun Industry Standards Source License (SISSL)(3)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-546" rx="342.54" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-542.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Sun Industry Standards Source License (SISSL)</text>
 </g>
 <!-- SISSL(3) -->
-<g id="node4" class="node">
-<title>SISSL(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-600" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-596.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
-</g>
-<!-- Sun Industry Standards Source License 1.1(3) -->
-<g id="node5" class="node">
-<title>Sun Industry Standards Source License 1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-546" rx="206.06" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-542.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License 1.1</text>
-</g>
-<!-- scancode://sun&#45;sissl&#45;1.1(3) -->
 <g id="node6" class="node">
-<title>scancode://sun&#45;sissl&#45;1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-492" rx="119.68" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-488.3" font-family="Times-Roman" font-size="14.00">scancode://sun&#45;sissl&#45;1.1</text>
+<title>SISSL(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-492" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-488.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
 </g>
-<!-- License :: OSI Approved :: Sun Industry Standards Source License (SISSL)(4) -->
+<!-- Sun Industry Standards Source License(3) -->
 <g id="node7" class="node">
-<title>License :: OSI Approved :: Sun Industry Standards Source License (SISSL)(4)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-432" rx="342.54" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-428.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: Sun Industry Standards Source License (SISSL)</text>
+<title>Sun Industry Standards Source License(3)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-438" rx="188.47" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-434.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License</text>
 </g>
 <!-- SISSL(4) -->
 <g id="node8" class="node">
@@ -85,11 +85,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-378" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="366.52" y="-374.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
 </g>
-<!-- Sun Industry Standards Source License(4) -->
+<!-- Sun Industry Standards Source License Version 1.1(4) -->
 <g id="node9" class="node">
-<title>Sun Industry Standards Source License(4)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-324" rx="188.47" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-320.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License</text>
+<title>Sun Industry Standards Source License Version 1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-324" rx="241.56" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-320.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License Version 1.1</text>
 </g>
 <!-- SISSL(5) -->
 <g id="node10" class="node">
@@ -97,29 +97,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-264" rx="36.29" ry="18"/>
 <text text-anchor="middle" x="366.52" y="-260.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
 </g>
-<!-- Sun Industry Standards Source License 1.1(5) -->
+<!-- Sun Industry Standards Source License v1.1(5) -->
 <g id="node11" class="node">
-<title>Sun Industry Standards Source License 1.1(5)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-210" rx="206.06" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-206.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License 1.1</text>
-</g>
-<!-- sun&#45;issl(5) -->
-<g id="node12" class="node">
-<title>sun&#45;issl(5)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-156" rx="45.49" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-152.3" font-family="Times-Roman" font-size="14.00">sun&#45;issl</text>
+<title>Sun Industry Standards Source License v1.1(5)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-210" rx="211.46" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-206.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License v1.1</text>
 </g>
 <!-- SISSL(6) -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>SISSL(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-96" rx="36.29" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-92.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="366.52" cy="-150" rx="36.29" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-146.3" font-family="Times-Roman" font-size="14.00">SISSL</text>
 </g>
-<!-- Sun Industry Standards Source License Version 1.1(6) -->
+<!-- Sun Industry Standards Source License 1.1(6) -->
+<g id="node13" class="node">
+<title>Sun Industry Standards Source License 1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-96" rx="206.06" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-92.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License 1.1</text>
+</g>
+<!-- scancode://sun&#45;sissl&#45;1.1(6) -->
 <g id="node14" class="node">
-<title>Sun Industry Standards Source License Version 1.1(6)</title>
-<ellipse fill="white" stroke="white" cx="366.52" cy="-42" rx="241.56" ry="18"/>
-<text text-anchor="middle" x="366.52" y="-38.3" font-family="Times-Roman" font-size="14.00">Sun Industry Standards Source License Version 1.1</text>
+<title>scancode://sun&#45;sissl&#45;1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="366.52" cy="-42" rx="119.68" ry="18"/>
+<text text-anchor="middle" x="366.52" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://sun&#45;sissl&#45;1.1</text>
 </g>
 </g>
 </svg>

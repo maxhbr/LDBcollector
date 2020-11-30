@@ -2,9 +2,9 @@
     "__impliedNames": [
         "MITNFA",
         "MIT +no-false-attribs license",
+        "MIT +no-false-attribs License",
         "scancode://mit-no-false-attribs",
-        "MIT no false attribution License",
-        "MIT +no-false-attribs License"
+        "MIT no false attribution License"
     ],
     "__impliedId": "MITNFA",
     "__isFsfFree": true,
@@ -342,6 +342,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/MITNFA.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/698"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/MITNFA.json"
         ],
         [
@@ -349,16 +357,8 @@
             "https://fedoraproject.org/wiki/Licensing/MITNFA"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/MITNFA.html"
-        ],
-        [
             "Homepage",
             "https://fedoraproject.org/wiki/Licensing/MITNFA"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/698"
         ]
     ]
 }

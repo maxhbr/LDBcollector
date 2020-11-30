@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="143.39,-298 143.39,-404 431.06,-404 431.06,-298 143.39,-298"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-404 558.45,-404 558.45,-298 16,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="143.39,-130 143.39,-290 431.06,-290 431.06,-130 143.39,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="143.39,-184 143.39,-290 431.06,-290 431.06,-184 143.39,-184"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-122 558.45,-122 558.45,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="143.39,-16 143.39,-176 431.06,-176 431.06,-16 143.39,-16"/>
 </g>
 <!-- TMate(1) -->
 <g id="node1" class="node">
@@ -41,11 +41,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="287.23" cy="-378" rx="38.19" ry="18"/>
 <text text-anchor="middle" x="287.23" y="-374.3" font-family="Times-Roman" font-size="14.00">TMate</text>
 </g>
-<!-- TMate Open Source License(2) -->
+<!-- TMate Open Source License for &quot;TMate JavaSVN library&quot;(2) -->
 <g id="node3" class="node">
-<title>TMate Open Source License(2)</title>
-<ellipse fill="white" stroke="white" cx="287.23" cy="-324" rx="135.68" ry="18"/>
-<text text-anchor="middle" x="287.23" y="-320.3" font-family="Times-Roman" font-size="14.00">TMate Open Source License</text>
+<title>TMate Open Source License for &quot;TMate JavaSVN library&quot;(2)</title>
+<ellipse fill="white" stroke="white" cx="287.23" cy="-324" rx="263.45" ry="18"/>
+<text text-anchor="middle" x="287.23" y="-320.3" font-family="Times-Roman" font-size="14.00">TMate Open Source License for &quot;TMate JavaSVN library&quot;</text>
 </g>
 <!-- TMate(3) -->
 <g id="node4" class="node">
@@ -59,23 +59,23 @@
 <ellipse fill="white" stroke="white" cx="287.23" cy="-210" rx="135.68" ry="18"/>
 <text text-anchor="middle" x="287.23" y="-206.3" font-family="Times-Roman" font-size="14.00">TMate Open Source License</text>
 </g>
-<!-- scancode://tmate(3) -->
-<g id="node6" class="node">
-<title>scancode://tmate(3)</title>
-<ellipse fill="white" stroke="white" cx="287.23" cy="-156" rx="88.28" ry="18"/>
-<text text-anchor="middle" x="287.23" y="-152.3" font-family="Times-Roman" font-size="14.00">scancode://tmate</text>
-</g>
 <!-- TMate(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>TMate(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="287.23" cy="-96" rx="38.19" ry="18"/>
-<text text-anchor="middle" x="287.23" y="-92.3" font-family="Times-Roman" font-size="14.00">TMate</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="287.23" cy="-150" rx="38.19" ry="18"/>
+<text text-anchor="middle" x="287.23" y="-146.3" font-family="Times-Roman" font-size="14.00">TMate</text>
 </g>
-<!-- TMate Open Source License for &quot;TMate JavaSVN library&quot;(4) -->
+<!-- TMate Open Source License(4) -->
+<g id="node7" class="node">
+<title>TMate Open Source License(4)</title>
+<ellipse fill="white" stroke="white" cx="287.23" cy="-96" rx="135.68" ry="18"/>
+<text text-anchor="middle" x="287.23" y="-92.3" font-family="Times-Roman" font-size="14.00">TMate Open Source License</text>
+</g>
+<!-- scancode://tmate(4) -->
 <g id="node8" class="node">
-<title>TMate Open Source License for &quot;TMate JavaSVN library&quot;(4)</title>
-<ellipse fill="white" stroke="white" cx="287.23" cy="-42" rx="263.45" ry="18"/>
-<text text-anchor="middle" x="287.23" y="-38.3" font-family="Times-Roman" font-size="14.00">TMate Open Source License for &quot;TMate JavaSVN library&quot;</text>
+<title>scancode://tmate(4)</title>
+<ellipse fill="white" stroke="white" cx="287.23" cy="-42" rx="88.28" ry="18"/>
+<text text-anchor="middle" x="287.23" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://tmate</text>
 </g>
 </g>
 </svg>

@@ -204,15 +204,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/xinetd.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/xinetd.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Xinetd_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/xinetd.html"
         ],
         [
             "Homepage",

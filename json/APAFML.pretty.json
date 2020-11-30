@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/APAFML.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/APAFML.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/APAFML.html"
         ],
         [
             "Homepage",

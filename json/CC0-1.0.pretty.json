@@ -2,11 +2,11 @@
     "__impliedNames": [
         "CC0-1.0",
         "Creative Commons Zero v1.0 Universal",
-        "scancode://cc0-1.0",
         "cc0-1.0",
-        "Creative Commons Zero 1.0",
         "CC0 1.0",
-        "Creative Commons CC0 1.0 Universal"
+        "Creative Commons CC0 1.0 Universal",
+        "scancode://cc0-1.0",
+        "Creative Commons Zero 1.0"
     ],
     "__impliedId": "CC0-1.0",
     "__impliedComments": [
@@ -504,19 +504,7 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/CC0-1.0.json"
-        ],
-        [
-            null,
-            "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
-        ],
-        [
-            "SPDX",
             "https://spdx.org/licenses/CC0-1.0.html"
-        ],
-        [
-            "Homepage",
-            "http://creativecommons.org/publicdomain/zero/1.0/"
         ],
         [
             null,
@@ -525,6 +513,18 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/569"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/CC0-1.0.json"
+        ],
+        [
+            null,
+            "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
+        ],
+        [
+            "Homepage",
+            "http://creativecommons.org/publicdomain/zero/1.0/"
         ]
     ]
 }

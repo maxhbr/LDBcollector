@@ -37,8 +37,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.fastcgi.com/devkit/LICENSE.TERMS
-* *SPDX:* http://spdx.org/licenses/OML.json
 * *SPDX:* https://spdx.org/licenses/OML.html
+* *SPDX:* http://spdx.org/licenses/OML.json
 * https://fedoraproject.org/wiki/Licensing/Open_Market_License
 
 === Text
@@ -81,15 +81,15 @@ OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/OML.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://spdx.org/licenses/OML.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fastcgi-devkit.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -297,15 +297,15 @@ Project Wiki]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/OML.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/OML.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Open_Market_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/OML.html"
         ],
         [
             "Homepage",

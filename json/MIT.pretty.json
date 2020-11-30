@@ -4,19 +4,19 @@
         "MIT license (also X11)",
         "The MIT License",
         "MIT License",
-        "scancode://mit",
         "mit",
+        "mit-license",
         "MIT/Expat License",
         "Expat",
         "License :: OSI Approved :: MIT License",
-        "MIT license / X11 license",
-        "mit-license"
+        "scancode://mit",
+        "MIT license / X11 license"
     ],
     "__impliedId": "MIT",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "MIT",
-        "The MIT License"
+        "The MIT License",
+        "MIT"
     ],
     "__impliedComments": [
         [
@@ -839,31 +839,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/MIT.json"
+            "https://spdx.org/licenses/MIT.html"
         ],
         [
             null,
             "https://opensource.org/licenses/MIT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/MIT.html"
-        ],
-        [
-            "Homepage",
-            "http://opensource.org/licenses/mit-license.php"
-        ],
-        [
-            "OSI Page",
-            "http://www.opensource.org/licenses/MIT"
-        ],
-        [
-            null,
-            "https://opensource.com/article/18/3/patent-grant-mit-license"
-        ],
-        [
-            null,
-            "https://opensource.com/article/19/4/history-mit-license"
         ],
         [
             "tl;dr legal",
@@ -880,6 +860,26 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/33"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/MIT.json"
+        ],
+        [
+            "Homepage",
+            "http://opensource.org/licenses/mit-license.php"
+        ],
+        [
+            "OSI Page",
+            "http://www.opensource.org/licenses/MIT"
+        ],
+        [
+            null,
+            "https://opensource.com/article/18/3/patent-grant-mit-license"
+        ],
+        [
+            null,
+            "https://opensource.com/article/19/4/history-mit-license"
         ]
     ]
 }

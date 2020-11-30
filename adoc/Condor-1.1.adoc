@@ -29,8 +29,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* http://www.cs.wisc.edu/condor/license.html
-* *SPDX:* http://spdx.org/licenses/Condor-1.1.json
 * *SPDX:* https://spdx.org/licenses/Condor-1.1.html
+* *SPDX:* http://spdx.org/licenses/Condor-1.1.json
 * http://research.cs.wisc.edu/condor/license.html#condor
 * http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor
 
@@ -165,15 +165,15 @@ The Condor Team may publish revised and/or new versions of this
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/Condor-1.1.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml[Scancode]
-(CC0-1.0)
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://spdx.org/licenses/Condor-1.1.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -377,6 +377,10 @@ license-compatibility-checker]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Condor-1.1.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Condor-1.1.json"
         ],
         [
@@ -386,10 +390,6 @@ license-compatibility-checker]
         [
             null,
             "http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Condor-1.1.html"
         ],
         [
             "Homepage",

@@ -27,9 +27,9 @@ URLs
 -   **Homepage:**
     ftp://ftp.porcupine.org/pub/security/tcp\_wrappers\_license
 
--   **SPDX:** http://spdx.org/licenses/TCP-wrappers.json
-
 -   **SPDX:** https://spdx.org/licenses/TCP-wrappers.html
+
+-   **SPDX:** http://spdx.org/licenses/TCP-wrappers.json
 
 -   http://rc.quest.com/topics/openssh/license.php\#tcpwrappers
 
@@ -77,19 +77,19 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/TCP-wrappers.html "SPDX") (all data
-    \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcp-wrappers.yml "Scancode")
-    (CC0-1.0)
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
+
+-   [SPDX](https://spdx.org/licenses/TCP-wrappers.html "SPDX") (all data
+    \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcp-wrappers.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -282,15 +282,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/TCP-wrappers.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/TCP-wrappers.json"
             ],
             [
                 null,
                 "http://rc.quest.com/topics/openssh/license.php#tcpwrappers"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/TCP-wrappers.html"
             ],
             [
                 "Homepage",

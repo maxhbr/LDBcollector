@@ -5,9 +5,9 @@ libpng License (Libpng)
 
 **Other Names:**
 
--   `scancode://libpng`
-
 -   `libpng license (libpng-1.2.6 and later)`
+
+-   `scancode://libpng`
 
 Comments on (easy) usability
 ----------------------------
@@ -24,9 +24,9 @@ URLs
 
 -   **Homepage:** http://www.libpng.org/pub/png/libpng.html
 
--   **SPDX:** http://spdx.org/licenses/Libpng.json
-
 -   **SPDX:** https://spdx.org/licenses/Libpng.html
+
+-   **SPDX:** http://spdx.org/licenses/Libpng.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/307
 
@@ -158,15 +158,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Libpng.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/libpng.yml "Scancode")
-    (CC0-1.0)
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -175,15 +169,21 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/Libpng.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/libpng.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Libpng",
             "libpng License",
+            "libpng license (libpng-1.2.6 and later)",
             "scancode://libpng",
-            "Libpng License",
-            "libpng license (libpng-1.2.6 and later)"
+            "Libpng License"
         ],
         "__impliedId": "Libpng",
         "facts": {
@@ -396,6 +396,14 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/Libpng.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/307"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/Libpng.json"
             ],
             [
@@ -403,16 +411,8 @@ Raw Data
                 "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
             ],
             [
-                "SPDX",
-                "https://spdx.org/licenses/Libpng.html"
-            ],
-            [
                 "Homepage",
                 "http://www.libpng.org/pub/png/libpng.html"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/307"
             ]
         ]
     }

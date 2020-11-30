@@ -5,9 +5,9 @@ GL2PS License (GL2PS)
 
 **Other Names:**
 
--   `scancode://gl2ps`
-
 -   `GL2PS LICENSE, Version 2`
+
+-   `scancode://gl2ps`
 
 Comments on (easy) usability
 ----------------------------
@@ -104,12 +104,6 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
-    this repository\] is generated)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml "Scancode")
-    (CC0-1.0)
-
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
@@ -118,14 +112,20 @@ Raw Data
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
 
+-   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
-            "scancode://gl2ps",
-            "GL2PS LICENSE, Version 2"
+            "GL2PS LICENSE, Version 2",
+            "scancode://gl2ps"
         ],
         "__impliedId": "GL2PS",
         "__isFsfFree": true,
@@ -385,6 +385,10 @@ Raw Data
         "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
         "__impliedURLs": [
             [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/1560"
+            ],
+            [
                 "SPDX",
                 "http://spdx.org/licenses/GL2PS.json"
             ],
@@ -395,10 +399,6 @@ Raw Data
             [
                 "Homepage",
                 "http://www.geuz.org/gl2ps/COPYING.GL2PS"
-            ],
-            [
-                "open-license",
-                "http://open-license.hitachi.com/licenses/1560"
             ]
         ]
     }

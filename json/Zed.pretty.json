@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Zed.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Zed.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Zed"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Zed.html"
         ],
         [
             "Homepage",

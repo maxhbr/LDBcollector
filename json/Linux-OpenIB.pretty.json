@@ -171,15 +171,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Linux-OpenIB.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Linux-OpenIB.json"
         ],
         [
             null,
             "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Linux-OpenIB.html"
         ],
         [
             "Homepage",

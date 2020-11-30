@@ -5,11 +5,11 @@ Ruby License (Ruby)
 
 **Other Names:**
 
--   `scancode://ruby`
-
 -   `Ruby License (1.9.2 and earlier)`
 
 -   `Ruby License (1.9.3 and later)`
+
+-   `scancode://ruby`
 
 Comments on (easy) usability
 ----------------------------
@@ -50,9 +50,9 @@ URLs
 
 -   **Homepage:** http://www.ruby-lang.org/en/LICENSE.txt
 
--   **SPDX:** http://spdx.org/licenses/Ruby.json
-
 -   **SPDX:** https://spdx.org/licenses/Ruby.html
+
+-   **SPDX:** http://spdx.org/licenses/Ruby.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/2
 
@@ -179,28 +179,22 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/Ruby.html "SPDX") (all data \[in
-    this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
--   [HansHammel
-    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
-    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
-
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -208,6 +202,12 @@ Raw Data
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
+
+-   [SPDX](https://spdx.org/licenses/Ruby.html "SPDX") (all data \[in
+    this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -215,9 +215,9 @@ Raw Data
         "__impliedNames": [
             "Ruby",
             "Ruby License",
-            "scancode://ruby",
             "Ruby License (1.9.2 and earlier)",
-            "Ruby License (1.9.3 and later)"
+            "Ruby License (1.9.3 and later)",
+            "scancode://ruby"
         ],
         "__impliedId": "Ruby",
         "__isFsfFree": true,
@@ -633,23 +633,7 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
-                "http://spdx.org/licenses/Ruby.json"
-            ],
-            [
-                null,
-                "http://www.ruby-lang.org/en/LICENSE.txt"
-            ],
-            [
-                "SPDX",
                 "https://spdx.org/licenses/Ruby.html"
-            ],
-            [
-                "Homepage",
-                "http://www.ruby-lang.org/en/LICENSE.txt"
-            ],
-            [
-                null,
-                "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
             ],
             [
                 "open-license",
@@ -658,6 +642,22 @@ Raw Data
             [
                 "open-license",
                 "http://open-license.hitachi.com/licenses/3"
+            ],
+            [
+                "SPDX",
+                "http://spdx.org/licenses/Ruby.json"
+            ],
+            [
+                null,
+                "http://www.ruby-lang.org/en/LICENSE.txt"
+            ],
+            [
+                "Homepage",
+                "http://www.ruby-lang.org/en/LICENSE.txt"
+            ],
+            [
+                null,
+                "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
             ]
         ]
     }

@@ -27,23 +27,23 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="57.8,-594 57.8,-700 401.37,-700 401.37,-594 57.8,-594"/>
+<polygon fill="lightgray" stroke="lightgray" points="167.64,-594 167.64,-700 291.53,-700 291.53,-594 167.64,-594"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="120.19,-426 120.19,-586 338.97,-586 338.97,-426 120.19,-426"/>
+<polygon fill="lightgray" stroke="lightgray" points="63,-480 63,-586 396.17,-586 396.17,-480 63,-480"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="167.64,-312 167.64,-418 291.53,-418 291.53,-312 167.64,-312"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-366 24,-472 435.16,-472 435.16,-366 24,-366"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-198 24,-304 435.16,-304 435.16,-198 24,-198"/>
+<polygon fill="lightgray" stroke="lightgray" points="57.8,-252 57.8,-358 401.37,-358 401.37,-252 57.8,-252"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="63,-84 63,-190 396.17,-190 396.17,-84 63,-84"/>
+<polygon fill="lightgray" stroke="lightgray" points="120.19,-84 120.19,-244 338.97,-244 338.97,-84 120.19,-84"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_9</title>
@@ -73,53 +73,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-674" rx="53.89" ry="18"/>
 <text text-anchor="middle" x="229.58" y="-670.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
 </g>
-<!-- LaTeX Project Public License v1.3c(4) -->
+<!-- lppl&#45;1.3c(4) -->
 <g id="node5" class="node">
-<title>LaTeX Project Public License v1.3c(4)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-620" rx="163.57" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-616.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License v1.3c</text>
-</g>
-<!-- LPPL 1.3c(5) -->
-<g id="node6" class="node">
-<title>LPPL 1.3c(5)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-560" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-556.3" font-family="Times-Roman" font-size="14.00">LPPL 1.3c</text>
+<title>lppl&#45;1.3c(4)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-620" rx="50.09" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-616.3" font-family="Times-Roman" font-size="14.00">lppl&#45;1.3c</text>
 </g>
 <!-- LPPL&#45;1.3c(5) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>LPPL&#45;1.3c(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-506" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-502.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-560" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-556.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
 </g>
-<!-- scancode://lppl&#45;1.3c(5) -->
-<g id="node8" class="node">
-<title>scancode://lppl&#45;1.3c(5)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-452" rx="101.28" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-448.3" font-family="Times-Roman" font-size="14.00">scancode://lppl&#45;1.3c</text>
+<!-- LaTeX Project Public License 1.3c(5) -->
+<g id="node7" class="node">
+<title>LaTeX Project Public License 1.3c(5)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-506" rx="158.67" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-502.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License 1.3c</text>
 </g>
 <!-- LPPL&#45;1.3c(6) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>LPPL&#45;1.3c(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-392" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-388.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-446" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-442.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
 </g>
-<!-- lppl&#45;1.3c(6) -->
-<g id="node10" class="node">
-<title>lppl&#45;1.3c(6)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-338" rx="50.09" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-334.3" font-family="Times-Roman" font-size="14.00">lppl&#45;1.3c</text>
+<!-- LaTeX Project Public License, Version 1.3c(6) -->
+<g id="node9" class="node">
+<title>LaTeX Project Public License, Version 1.3c(6)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-392" rx="197.66" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-388.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License, Version 1.3c</text>
 </g>
 <!-- LPPL&#45;1.3c(7) -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>LPPL&#45;1.3c(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-278" rx="53.89" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-274.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-332" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-328.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
 </g>
-<!-- LaTeX Project Public License, Version 1.3c(7) -->
+<!-- LaTeX Project Public License v1.3c(7) -->
+<g id="node11" class="node">
+<title>LaTeX Project Public License v1.3c(7)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-278" rx="163.57" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-274.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License v1.3c</text>
+</g>
+<!-- LPPL 1.3c(8) -->
 <g id="node12" class="node">
-<title>LaTeX Project Public License, Version 1.3c(7)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-224" rx="197.66" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-220.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License, Version 1.3c</text>
+<title>LPPL 1.3c(8)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-218" rx="53.89" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-214.3" font-family="Times-Roman" font-size="14.00">LPPL 1.3c</text>
 </g>
 <!-- LPPL&#45;1.3c(8) -->
 <g id="node13" class="node">
@@ -127,11 +127,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="229.58" cy="-164" rx="53.89" ry="18"/>
 <text text-anchor="middle" x="229.58" y="-160.3" font-family="Times-Roman" font-size="14.00">LPPL&#45;1.3c</text>
 </g>
-<!-- LaTeX Project Public License 1.3c(8) -->
+<!-- scancode://lppl&#45;1.3c(8) -->
 <g id="node14" class="node">
-<title>LaTeX Project Public License 1.3c(8)</title>
-<ellipse fill="white" stroke="white" cx="229.58" cy="-110" rx="158.67" ry="18"/>
-<text text-anchor="middle" x="229.58" y="-106.3" font-family="Times-Roman" font-size="14.00">LaTeX Project Public License 1.3c</text>
+<title>scancode://lppl&#45;1.3c(8)</title>
+<ellipse fill="white" stroke="white" cx="229.58" cy="-110" rx="101.28" ry="18"/>
+<text text-anchor="middle" x="229.58" y="-106.3" font-family="Times-Roman" font-size="14.00">scancode://lppl&#45;1.3c</text>
 </g>
 <!-- LaTeX Project Public License Version 1.3c(9) -->
 <g id="node15" class="node">

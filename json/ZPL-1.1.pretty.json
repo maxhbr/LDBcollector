@@ -213,15 +213,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ZPL-1.1.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ZPL-1.1.json"
         ],
         [
             null,
             "http://old.zope.org/Resources/License/ZPL-1.1"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ZPL-1.1.html"
         ],
         [
             "Homepage",

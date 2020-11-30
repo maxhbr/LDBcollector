@@ -2,11 +2,11 @@
     "__impliedNames": [
         "VSL-1.0",
         "Vovida Software License v1.0",
-        "scancode://vsl-1.0",
         "Vovida Software License 1.0",
         "The Vovida Software License, Version 1.0",
         "License :: OSI Approved :: Vovida Software License 1.0",
-        "Vovida Software License, Version 1.0"
+        "Vovida Software License, Version 1.0",
+        "scancode://vsl-1.0"
     ],
     "__impliedId": "VSL-1.0",
     "__impliedComments": [
@@ -417,15 +417,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/VSL-1.0.json"
+            "https://spdx.org/licenses/VSL-1.0.html"
         ],
         [
             null,
             "https://opensource.org/licenses/VSL-1.0"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/VSL-1.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/1574"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/VSL-1.0.html"
+            "http://spdx.org/licenses/VSL-1.0.json"
         ],
         [
             "Homepage",
@@ -442,14 +450,6 @@
         [
             null,
             "http://www.vovida.org"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/VSL-1.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/1574"
         ]
     ]
 }

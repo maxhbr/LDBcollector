@@ -2,9 +2,9 @@
     "__impliedNames": [
         "FTL",
         "Freetype Project License",
+        "FreeType Project LICENSE",
         "scancode://freetype",
-        "FreeType Project License",
-        "FreeType Project LICENSE"
+        "FreeType Project License"
     ],
     "__impliedId": "FTL",
     "__impliedComments": [
@@ -509,6 +509,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/FTL.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/763"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/FTL.json"
         ],
         [
@@ -518,10 +526,6 @@
         [
             null,
             "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/FTL.html"
         ],
         [
             "Homepage",
@@ -534,10 +538,6 @@
         [
             null,
             "http://www.freetype.org/"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/763"
         ]
     ]
 }

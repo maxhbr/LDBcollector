@@ -2,9 +2,9 @@
     "__impliedNames": [
         "Libpng",
         "libpng License",
+        "libpng license (libpng-1.2.6 and later)",
         "scancode://libpng",
-        "Libpng License",
-        "libpng license (libpng-1.2.6 and later)"
+        "Libpng License"
     ],
     "__impliedId": "Libpng",
     "facts": {
@@ -217,6 +217,14 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Libpng.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/307"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Libpng.json"
         ],
         [
@@ -224,16 +232,8 @@
             "http://www.libpng.org/pub/png/src/libpng-LICENSE.txt"
         ],
         [
-            "SPDX",
-            "https://spdx.org/licenses/Libpng.html"
-        ],
-        [
             "Homepage",
             "http://www.libpng.org/pub/png/libpng.html"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/307"
         ]
     ]
 }

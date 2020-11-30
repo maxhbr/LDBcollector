@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Wsuipa.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Wsuipa.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Wsuipa"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Wsuipa.html"
         ],
         [
             "Homepage",

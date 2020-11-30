@@ -2,8 +2,8 @@
     "__impliedNames": [
         "ANTLR-PD",
         "ANTLR Software Rights Notice",
-        "scancode://antlr-pd",
-        "ANTLR 2 License"
+        "ANTLR 2 License",
+        "scancode://antlr-pd"
     ],
     "__impliedId": "ANTLR-PD",
     "__isFsfFree": true,
@@ -310,15 +310,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ANTLR-PD.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/37"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ANTLR-PD.json"
         ],
         [
             null,
             "http://www.antlr2.org/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ANTLR-PD.html"
         ],
         [
             "Homepage",
@@ -327,10 +331,6 @@
         [
             null,
             "http://www.spdx.org/licenses/ANTLR-PD"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/37"
         ]
     ]
 }

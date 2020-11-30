@@ -227,15 +227,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/BSD-3-Clause-LBNL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/BSD-3-Clause-LBNL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/LBNLBSD"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/BSD-3-Clause-LBNL.html"
         ],
         [
             "Homepage",

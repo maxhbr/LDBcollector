@@ -31,15 +31,15 @@
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-366 24,-526 372.77,-526 372.77,-366 24,-366"/>
+<polygon fill="lightgray" stroke="lightgray" points="98.09,-420 98.09,-526 298.68,-526 298.68,-420 98.09,-420"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="98.09,-252 98.09,-358 298.68,-358 298.68,-252 98.09,-252"/>
+<polygon fill="lightgray" stroke="lightgray" points="125.39,-306 125.39,-412 271.38,-412 271.38,-306 125.39,-306"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="125.39,-138 125.39,-244 271.38,-244 271.38,-138 125.39,-138"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-138 24,-298 372.77,-298 372.77,-138 24,-138"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
@@ -75,35 +75,35 @@
 <ellipse fill="white" stroke="white" cx="198.39" cy="-560" rx="64.99" ry="18"/>
 <text text-anchor="middle" x="198.39" y="-556.3" font-family="Times-Roman" font-size="14.00">NTP License</text>
 </g>
-<!-- MIT Old Style no advertising(5) -->
-<g id="node6" class="node">
-<title>MIT Old Style no advertising(5)</title>
-<ellipse fill="white" stroke="white" cx="198.39" cy="-500" rx="138.38" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-496.3" font-family="Times-Roman" font-size="14.00">MIT Old Style no advertising</text>
-</g>
 <!-- NTP(5) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>NTP(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="198.39" cy="-446" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-442.3" font-family="Times-Roman" font-size="14.00">NTP</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="198.39" cy="-500" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-496.3" font-family="Times-Roman" font-size="14.00">NTP</text>
 </g>
-<!-- scancode://mit&#45;old&#45;style&#45;no&#45;advert(5) -->
-<g id="node8" class="node">
-<title>scancode://mit&#45;old&#45;style&#45;no&#45;advert(5)</title>
-<ellipse fill="white" stroke="white" cx="198.39" cy="-392" rx="166.27" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-388.3" font-family="Times-Roman" font-size="14.00">scancode://mit&#45;old&#45;style&#45;no&#45;advert</text>
+<!-- NTP License (NTP)(5) -->
+<g id="node7" class="node">
+<title>NTP License (NTP)(5)</title>
+<ellipse fill="white" stroke="white" cx="198.39" cy="-446" rx="92.08" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-442.3" font-family="Times-Roman" font-size="14.00">NTP License (NTP)</text>
 </g>
 <!-- NTP(6) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>NTP(6)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="198.39" cy="-332" rx="28.7" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-328.3" font-family="Times-Roman" font-size="14.00">NTP</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="198.39" cy="-386" rx="28.7" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-382.3" font-family="Times-Roman" font-size="14.00">NTP</text>
 </g>
-<!-- NTP License (NTP)(6) -->
+<!-- NTP License(6) -->
+<g id="node9" class="node">
+<title>NTP License(6)</title>
+<ellipse fill="white" stroke="white" cx="198.39" cy="-332" rx="64.99" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-328.3" font-family="Times-Roman" font-size="14.00">NTP License</text>
+</g>
+<!-- MIT Old Style no advertising(7) -->
 <g id="node10" class="node">
-<title>NTP License (NTP)(6)</title>
-<ellipse fill="white" stroke="white" cx="198.39" cy="-278" rx="92.08" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-274.3" font-family="Times-Roman" font-size="14.00">NTP License (NTP)</text>
+<title>MIT Old Style no advertising(7)</title>
+<ellipse fill="white" stroke="white" cx="198.39" cy="-272" rx="138.38" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-268.3" font-family="Times-Roman" font-size="14.00">MIT Old Style no advertising</text>
 </g>
 <!-- NTP(7) -->
 <g id="node11" class="node">
@@ -111,11 +111,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="198.39" cy="-218" rx="28.7" ry="18"/>
 <text text-anchor="middle" x="198.39" y="-214.3" font-family="Times-Roman" font-size="14.00">NTP</text>
 </g>
-<!-- NTP License(7) -->
+<!-- scancode://mit&#45;old&#45;style&#45;no&#45;advert(7) -->
 <g id="node12" class="node">
-<title>NTP License(7)</title>
-<ellipse fill="white" stroke="white" cx="198.39" cy="-164" rx="64.99" ry="18"/>
-<text text-anchor="middle" x="198.39" y="-160.3" font-family="Times-Roman" font-size="14.00">NTP License</text>
+<title>scancode://mit&#45;old&#45;style&#45;no&#45;advert(7)</title>
+<ellipse fill="white" stroke="white" cx="198.39" cy="-164" rx="166.27" ry="18"/>
+<text text-anchor="middle" x="198.39" y="-160.3" font-family="Times-Roman" font-size="14.00">scancode://mit&#45;old&#45;style&#45;no&#45;advert</text>
 </g>
 <!-- NTP License(8) -->
 <g id="node13" class="node">

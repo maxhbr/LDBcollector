@@ -200,15 +200,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Rdisc.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Rdisc.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Rdisc.html"
         ],
         [
             "Homepage",

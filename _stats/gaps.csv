@@ -1,12 +1,563 @@
 lfc,names,ambiguousNames
 BlueOak License List,"[""BSD-2-Clause-FreeBSD"",""BSD 2-Clause FreeBSD License""]",[]
 BlueOak License List,"[""BSD-2-Clause-NetBSD"",""BSD 2-Clause NetBSD License""]",[]
+Debian Free Software Guidelines,"[""X-Oz License""]","[""X-Oz License""]"
+Debian Free Software Guidelines,"[""Creative Commons Sampling Plus (CC-sampling+), v1.0""]","[""Creative Commons Sampling Plus (CC-sampling+), v1.0""]"
+Debian Free Software Guidelines,"[""License for OpenPBS and Torque""]","[""License for OpenPBS and Torque""]"
+Debian Free Software Guidelines,"[""Swiss Ephemeris Public License""]","[""Swiss Ephemeris Public License""]"
+Debian Free Software Guidelines,"[""SPIN License""]","[""SPIN License""]"
+Fedora Project Wiki,"[""4Suite Copyright License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""Academic Free License""]","[""AFL""]"
+Fedora Project Wiki,"[""Affero General Public License 3.0 with Zarafa trademark exceptions""]","[""AGPLv3 with exceptions""]"
+Fedora Project Wiki,"[""App::s2p License""]","[""App-s2p""]"
+Fedora Project Wiki,"[""Array Input Method Public License""]","[""Array""]"
+Fedora Project Wiki,"[""Aspell-ru License""]","[""ARL""]"
+Fedora Project Wiki,"[""BeOpen Open Source License Agreement Version 1""]","[""BeOpen""]"
+Fedora Project Wiki,"[""Bibtex License""]","[""Bibtex""]"
+Fedora Project Wiki,"[""BitTorrent License""]","[""BitTorrent""]"
+Fedora Project Wiki,"[""Boost Software License""]","[""Boost""]"
+Fedora Project Wiki,"[""BSD + Patent""]","[""BSD-2-Clause-Patent""]"
+Fedora Project Wiki,"[""CeCILL License v1.1""]","[""CeCILL""]"
+Fedora Project Wiki,"[""CeCILL License v2""]","[""CeCILL""]"
+Fedora Project Wiki,"[""Celtx Public License (CePL)""]","[""Netscape""]"
+Fedora Project Wiki,"[""CMU License (BSD like)""]","[""MIT""]"
+Fedora Project Wiki,"[""CNRI License (Old Python)""]","[""CNRI""]"
+Fedora Project Wiki,"[""Common Development Distribution License 1.0""]","[""CDDL-1.0""]"
+Fedora Project Wiki,"[""Common Development Distribution License 1.1""]","[""CDDL-1.1""]"
+Fedora Project Wiki,"[""Common Public License""]","[""CPL""]"
+Fedora Project Wiki,"[""Condor Public License""]","[""Condor""]"
+Fedora Project Wiki,"[""Copyright Attribution Only""]","[""Copyright only""]"
+Fedora Project Wiki,"[""CPAL License 1.0""]","[""CPAL""]"
+Fedora Project Wiki,"[""CP/M License""]","[""CPM""]"
+Fedora Project Wiki,"[""CRC32 License""]","[""CRC32""]"
+Fedora Project Wiki,"[""Creative Commons BSD""]","[""BSD""]"
+Fedora Project Wiki,"[""Creative Commons GNU GPL""]","[""GPLv2+""]"
+Fedora Project Wiki,"[""Creative Commons GNU LGPL""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
+Fedora Project Wiki,"[""Cryptix General License""]","[""BSD""]"
+Fedora Project Wiki,"[""CUA Office Public License Version 1.0""]","[""MPLv1.1""]"
+Fedora Project Wiki,"[""DO WHATEVER PUBLIC LICENSE""]","[""DWPL""]"
+Fedora Project Wiki,"[""Docbook MIT License""]","[""DMIT""]"
+Fedora Project Wiki,"[""Eclipse Distribution License 1.0""]","[""BSD""]"
+Fedora Project Wiki,"[""eCos License v2.0""]","[""eCos""]"
+Fedora Project Wiki,"[""Fedora Directory Server License""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""FLTK License""]","[""LGPLv2 with exceptions""]"
+Fedora Project Wiki,"[""Fraunhofer FDK AAC License""]","[""FDK-AAC""]"
+Fedora Project Wiki,"[""FreeImage Public License""]","[""MPLv1.0""]"
+Fedora Project Wiki,"[""Freetype License""]","[""FTL""]"
+Fedora Project Wiki,"[""GNU General Public License (no version)""]","[""GPL+""]"
+Fedora Project Wiki,"[""GNU General Public License (no version), with Classpath exception""]","[""GPL+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License (no version), with font embedding exception""]","[""GPL+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 only, with Classpath exception""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 only, with font embedding exception""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with Classpath exception""]","[""GPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with font embedding exception""]","[""GPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 only, with Classpath exception""]","[""GPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 only, with font embedding exception""]","[""GPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with Classpath exception""]","[""GPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with font embedding exception""]","[""GPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License (no version)""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) only""]","[""LGPLv2""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1), with exceptions""]","[""LGPLv2 with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later""]","[""LGPLv2+""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later, with exceptions""]","[""LGPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 only, with exceptions""]","[""LGPLv3 with exceptions""]"
+Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 or later, with exceptions""]","[""LGPLv3+ with exceptions""]"
+Fedora Project Wiki,"[""Henry Spencer Reg-Ex Library License""]","[""HSRL""]"
+Fedora Project Wiki,"[""IBM Public License""]","[""IBM""]"
+Fedora Project Wiki,"[""Inner Net License""]","[""Inner-Net""]"
+Fedora Project Wiki,"[""Interbase Public License""]","[""Interbase""]"
+Fedora Project Wiki,"[""ISC License (Bind, DHCP Server)""]","[""ISC""]"
+Fedora Project Wiki,"[""Jabber Open Source License""]","[""Jabber""]"
+Fedora Project Wiki,"[""JPython License (old)""]","[""JPython""]"
+Fedora Project Wiki,"[""Julius License""]","[""Julius""]"
+Fedora Project Wiki,"[""Knuth License""]","[""Knuth""]"
+Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
+Fedora Project Wiki,"[""LEGO Open Source License Agreement""]","[""LOSLA""]"
+Fedora Project Wiki,"[""Lhcyr License""]","[""Lhcyr""]"
+Fedora Project Wiki,"[""Lisp Library General Public License""]","[""LLGPL""]"
+Fedora Project Wiki,"[""Logica Open Source License""]","[""Logica""]"
+Fedora Project Wiki,"[""Lucent Public License (Plan9)""]","[""LPL""]"
+Fedora Project Wiki,"[""mecab-ipadic license""]","[""mecab-ipadic""]"
+Fedora Project Wiki,"[""Metasploit Framework License (post 2006)""]","[""BSD""]"
+Fedora Project Wiki,"[""midnight License""]","[""midnight""]"
+Fedora Project Wiki,"[""mod_macro License""]","[""mod_macro""]"
+Fedora Project Wiki,"[""Mozilla Public License v1.0""]","[""MPLv1.0""]"
+Fedora Project Wiki,"[""Mozilla Public License v1.1""]","[""MPLv1.1""]"
+Fedora Project Wiki,"[""Mozilla Public License v2.0""]","[""MPLv2.0""]"
+Fedora Project Wiki,"[""MX4J License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""MySQL License""]","[""GPLv2 with exceptions""]"
+Fedora Project Wiki,"[""NCSA/University of Illinois Open Source License""]","[""NCSA""]"
+Fedora Project Wiki,"[""Neotonic Clearsilver License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""Netscape Public License""]","[""Netscape""]"
+Fedora Project Wiki,"[""Newmat License""]","[""Newmat""]"
+Fedora Project Wiki,"[""NIST Software License""]","[""NISTSL""]"
+Fedora Project Wiki,"[""Nmap License""]","[""Nmap""]"
+Fedora Project Wiki,"[""Nunit License""]","[""MIT with advertising""]"
+Fedora Project Wiki,"[""Open Government License""]","[""OGL""]"
+Fedora Project Wiki,"[""OpenLDAP License""]","[""OpenLDAP""]"
+Fedora Project Wiki,"[""OpenPBS License""]","[""OpenPBS""]"
+Fedora Project Wiki,"[""OReilly License""]","[""OReilly""]"
+Fedora Project Wiki,"[""Par License""]","[""Par""]"
+Fedora Project Wiki,"[""Perl License""]","[""GPL+ or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2 or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2+ or Artistic""]"
+Fedora Project Wiki,"[""Perl License (variant)""]","[""LGPLv2+ or Artistic""]"
+Fedora Project Wiki,"[""Phorum License""]","[""Phorum""]"
+Fedora Project Wiki,"[""PlainTeX License""]","[""PlainTeX""]"
+Fedora Project Wiki,"[""Public Domain""]","[""Public Domain""]"
+Fedora Project Wiki,"[""Python License""]","[""Python""]"
+Fedora Project Wiki,"[""Qwt License 1.0""]","[""LGPLv2+ with exceptions""]"
+Fedora Project Wiki,"[""QuickFix License""]","[""ASL 1.1""]"
+Fedora Project Wiki,"[""radvd License""]","[""radvd""]"
+Fedora Project Wiki,"[""REX License""]","[""REX""]"
+Fedora Project Wiki,"[""Rice BSD""]","[""RiceBSD""]"
+Fedora Project Wiki,"[""Romio License""]","[""Romio""]"
+Fedora Project Wiki,"[""RSA License""]","[""RSA""]"
+Fedora Project Wiki,"[""Rsfs License""]","[""Rsfs""]"
+Fedora Project Wiki,"[""Sequence Library License""]","[""Sequence""]"
+Fedora Project Wiki,"[""SciTech MGL Public License""]","[""STMPL""]"
+Fedora Project Wiki,"[""SCRIP License""]","[""SCRIP""]"
+Fedora Project Wiki,"[""SLIB License""]","[""SLIB""]"
+Fedora Project Wiki,"[""softSurfer License""]","[""softSurfer""]"
+Fedora Project Wiki,"[""Sun Public License""]","[""SPL""]"
+Fedora Project Wiki,"[""Teeworlds License""]","[""Teeworlds""]"
+Fedora Project Wiki,"[""Text-Tabs+Wrap License""]","[""TTWL""]"
+Fedora Project Wiki,"[""Thor Public License""]","[""TPL""]"
+Fedora Project Wiki,"[""Threeparttable License""]","[""Threeparttable""]"
+Fedora Project Wiki,"[""Time::ParseDate License""]","[""TPDL""]"
+Fedora Project Wiki,"[""Tolua License""]","[""Tolua""]"
+Fedora Project Wiki,"[""Transitive Grace Period Public Licence""]","[""TGPPL""]"
+Fedora Project Wiki,"[""Trusted Computing Group License""]","[""TCGL""]"
+Fedora Project Wiki,"[""Tumbolia Public License""]","[""Tumbolia""]"
+Fedora Project Wiki,"[""UCAR License""]","[""UCAR""]"
+Fedora Project Wiki,"[""Unicode Character Database Terms Of Use""]","[""UCD""]"
+Fedora Project Wiki,"[""Unicode License""]","[""Unicode""]"
+Fedora Project Wiki,"[""Universal Permissive License""]","[""UPL""]"
+Fedora Project Wiki,"[""Vita Nuova Liberal Source License""]","[""VNLSL""]"
+Fedora Project Wiki,"[""Vovida Software License v. 1.0""]","[""VSL""]"
+Fedora Project Wiki,"[""Webmin License""]","[""Webmin""]"
+Fedora Project Wiki,"[""wxWidgets Library License""]","[""wxWidgets""]"
+Fedora Project Wiki,"[""wxWindows Library License v 3.1""]","[""wxWindows""]"
+Fedora Project Wiki,"[""Yahoo Public License v 1.1""]","[""YPLv1.1""]"
+Fedora Project Wiki,"[""Zope Public License v 1.0""]","[""ZPLv1.0""]"
+Fedora Project Wiki,"[""Zope Public License v 2.0""]","[""ZPLv2.0""]"
+Fedora Project Wiki,"[""Zope Public License v 2.1""]","[""ZPLv2.1""]"
+Fedora Project Wiki,"[""9wm License (Original)""]",[]
+Fedora Project Wiki,"[""Adaptive Public License""]",[]
+Fedora Project Wiki,"[""Agere LT Modem Driver License""]",[]
+Fedora Project Wiki,"[""AMAP License""]",[]
+Fedora Project Wiki,"[""Amazon Software License""]",[]
+Fedora Project Wiki,"[""Apple iTunes License""]",[]
+Fedora Project Wiki,"[""Apple Quicktime License""]",[]
+Fedora Project Wiki,"[""Aptana Public License""]",[]
+Fedora Project Wiki,"[""AT&T Public License""]",[]
+Fedora Project Wiki,"[""C/Migemo License""]",[]
+Fedora Project Wiki,"[""CACert Root Distribution License""]",[]
+Fedora Project Wiki,"[""CodeProject Open License (CPOL)""]",[]
+Fedora Project Wiki,"[""Commons Clause""]",[]
+Fedora Project Wiki,"[""eCos Public License, v1.1""]",[]
+Fedora Project Wiki,"[""Eiffel Forum License 1.0""]",[]
+Fedora Project Wiki,"[""EMC2 License""]",[]
+Fedora Project Wiki,"[""European Union Public License v1.0""]",[]
+Fedora Project Wiki,"[""Frameworx License""]",[]
+Fedora Project Wiki,"[""Frontier Artistic License""]",[]
+Fedora Project Wiki,"[""GPL for Computer Programs of the Public Administration""]",[]
+Fedora Project Wiki,"[""gSOAP Public License""]",[]
+Fedora Project Wiki,"[""Hacktivismo Enhanced-Source Software License Agreement""]",[]
+Fedora Project Wiki,"[""Helix DNA Technology Binary Research Use License""]",[]
+Fedora Project Wiki,"[""HP Software License Terms""]",[]
+Fedora Project Wiki,"[""IBM Sample Code License""]",[]
+Fedora Project Wiki,"[""Intel IPW3945 Daemon License""]",[]
+Fedora Project Wiki,"[""Jahia Community Source License""]",[]
+Fedora Project Wiki,"[""lha license""]",[]
+Fedora Project Wiki,"[""License Agreement for Application Response Measurement (ARM) SDK""]",[]
+Fedora Project Wiki,"[""Maia Mailguard License""]",[]
+Fedora Project Wiki,"[""MAME License""]",[]
+Fedora Project Wiki,"[""MeepZor Consulting Public Licence""]",[]
+Fedora Project Wiki,"[""Metasploit Framework License (pre 2006)""]",[]
+Fedora Project Wiki,"[""Microsoft's Shared Source CLI/C#/Jscript License""]",[]
+Fedora Project Wiki,"[""MITRE Collaborative Virtual Workspace License (CVW)""]",[]
+Fedora Project Wiki,"[""MSNTP License""]",[]
+Fedora Project Wiki,"[""mrouted license (old)""]",[]
+Fedora Project Wiki,"[""NASA CDF License""]",[]
+Fedora Project Wiki,"[""NASA Open Source Agreement v1.3""]",[]
+Fedora Project Wiki,"[""OCLC Public Research License 2.0""]",[]
+Fedora Project Wiki,"[""Open Map License""]",[]
+Fedora Project Wiki,"[""Open Motif Public End User License""]",[]
+Fedora Project Wiki,"[""Open Public License""]",[]
+Fedora Project Wiki,"[""OSGi Specification License""]",[]
+Fedora Project Wiki,"[""Paul Hsieh Derivative License""]",[]
+Fedora Project Wiki,"[""Paul Hsieh Exposition License""]",[]
+Fedora Project Wiki,"[""Pine License""]",[]
+Fedora Project Wiki,"[""qmail License""]",[]
+Fedora Project Wiki,"[""Reciprocal Public License""]",[]
+Fedora Project Wiki,"[""Scilab License (OLD)""]",[]
+Fedora Project Wiki,"[""Server Side Public License v1 (SSPL)""]",[]
+Fedora Project Wiki,"[""SGI Free Software License B 1.1 or older""]",[]
+Fedora Project Wiki,"[""SGI GLX Public License 1.0""]",[]
+Fedora Project Wiki,"[""Siren14 License Agreement""]",[]
+Fedora Project Wiki,"[""Spin Commercial License""]",[]
+Fedora Project Wiki,"[""Squeak License""]",[]
+Fedora Project Wiki,"[""SystemC Open Source License""]",[]
+Fedora Project Wiki,"[""Sun Binary Code License Agreement""]",[]
+Fedora Project Wiki,"[""Sun Community Source License""]",[]
+Fedora Project Wiki,"[""Sun RPC License""]",[]
+Fedora Project Wiki,"[""Sun Solaris Source Code (Foundation Release) License""]",[]
+Fedora Project Wiki,"[""Terracotta Public License 1.0""]",[]
+Fedora Project Wiki,"[""TrueCrypt License""]",[]
+Fedora Project Wiki,"[""TORQUE v2.5+ Software License v1.0""]",[]
+Fedora Project Wiki,"[""University of Utah Public License""]",[]
+Fedora Project Wiki,"[""University of Washington Free Fork License""]",[]
+Fedora Project Wiki,"[""unrar license""]",[]
+Fedora Project Wiki,"[""Yahoo Public License 1.0""]",[]
+Fedora Project Wiki,"[""Zimbra Public License 1.3""]",[]
+Fedora Project Wiki,"[""SIL Open Font License 1.1 http://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png""]","[""OFL""]"
+Fedora Project Wiki,"[""Adobe/TUG Utopia license agreement""]","[""Utopia""]"
+Fedora Project Wiki,"[""AMS Bluesky Font License""]","[""AMS""]"
+Fedora Project Wiki,"[""Arphic Public License""]","[""Arphic""]"
+Fedora Project Wiki,"[""Baekmuk License""]","[""Baekmuk""]"
+Fedora Project Wiki,"[""Bitstream Vera Font License""]","[""Bitstream Vera""]"
+Fedora Project Wiki,"[""Charter License""]","[""Charter""]"
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""DoubleStroke Font License""]","[""DoubleStroke""]"
+Fedora Project Wiki,"[""ec Font License""]","[""ec""]"
+Fedora Project Wiki,"[""Elvish Font License""]","[""Elvish""]"
+Fedora Project Wiki,"[""GUST Font License""]","[""LPPL""]"
+Fedora Project Wiki,"[""Hack Open Font License""]","[""HOFL""]"
+Fedora Project Wiki,"[""Hershey Font License""]","[""Hershey""]"
+Fedora Project Wiki,"[""Liberation Font License""]","[""Liberation""]"
+Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
+Fedora Project Wiki,"[""Lucida Legal Notice""]","[""Lucida""]"
+Fedora Project Wiki,"[""MgOpen Font License""]","[""MgOpen""]"
+Fedora Project Wiki,"[""mplus Font License""]","[""mplus""]"
+Fedora Project Wiki,"[""ParaType Font License""]","[""PTFL""]"
+Fedora Project Wiki,"[""Punknova Font License""]","[""Punknova""]"
+Fedora Project Wiki,"[""STIX Fonts User License""]","[""STIX""]"
+Fedora Project Wiki,"[""Wadalab Font License""]","[""Wadalab""]"
+Fedora Project Wiki,"[""XANO Mincho Font License""]","[""XANO""]"
+Fedora Project Wiki,"[""DIP SIPA Font License""]",[]
+Fedora Project Wiki,"[""Larabie Fonts License""]",[]
+Fedora Project Wiki,"[""Literat Font License""]",[]
+Fedora Project Wiki,"[""Ubuntu Font License""]",[]
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-NoDerivs""]","[""CC-BY-ND""]"
+Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
+Fedora Project Wiki,"[""Design Science License""]","[""DSL""]"
+Fedora Project Wiki,"[""Distributed Management Task Force License""]","[""DMTF""]"
+Fedora Project Wiki,"[""EFF Open Audio License v1""]","[""OAL""]"
+Fedora Project Wiki,"[""Ethymonics Free Music License""]","[""EFML""]"
+Fedora Project Wiki,"[""Free Art License""]","[""Free Art""]"
+Fedora Project Wiki,"[""GeoGratis Licence Agreement""]","[""GeoGratis""]"
+Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
+Fedora Project Wiki,"[""License Ouverte""]","[""Ouverte""]"
+Fedora Project Wiki,"[""LinuxTag Green OpenMusic License""]","[""Green OpenMusic""]"
+Fedora Project Wiki,"[""Open Data Commons Public Domain Dedication and Licence""]","[""PDDL-1.0""]"
+Fedora Project Wiki,"[""Open Data License (GeoLite Country and GeoLite City databases)""]","[""BSD with advertising""]"
+Fedora Project Wiki,"[""CAcert Non-Related Persons Disclaimer and License""]",[]
+Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-NoDerivs""]",[]
+Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial""]",[]
+Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-ShareAlike""]",[]
+Fedora Project Wiki,"[""Creative Commons Sampling Plus 1.0""]",[]
+Fedora Project Wiki,"[""LinuxTag Yellow OpenMusic License""]",[]
+Fedora Project Wiki,"[""Apple's Common Documentation License, Version 1.0""]","[""CDL""]"
+Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
+Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
+Fedora Project Wiki,"[""FreeBSD Documentation License""]","[""FBSDDL""]"
+Fedora Project Wiki,"[""GNU Free Documentation License""]","[""GFDL""]"
+Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
+Fedora Project Wiki,"[""IEEE and Open Group Documentation License""]","[""IEEE""]"
+Fedora Project Wiki,"[""Linux Documentation Project License""]","[""LDPL""]"
+Fedora Project Wiki,"[""Old FSF Documentation License""]","[""OFSFDL""]"
+Fedora Project Wiki,"[""Open Publication License, v1.0""]","[""Open Publication""]"
+Fedora Project Wiki,"[""Public Use License, v1.0""]","[""Public Use""]"
+Fedora Project Wiki,"[""Verbatim License""]","[""Verbatim""]"
+Fedora Project Wiki,"[""Open Content License""]",[]
+Fedora Project Wiki,"[""Open Directory License""]",[]
+Fedora Project Wiki,"[""W3C Documentation License""]",[]
+Google OSS Policy,"[""BCL""]",[]
+Google OSS Policy,"[""Commons Clause""]",[]
+HansHammel license-compatibility-checker,"[""BSD-2-Clause-FreeBSD""]",[]
+HansHammel license-compatibility-checker,"[""BSD-2-Clause-NetBSD""]",[]
+HansHammel license-compatibility-checker,"[""LGPL-2.0""]",[]
+HansHammel license-compatibility-checker,"[""MS-LRL""]",[]
+librariesio license-compatibility,"[""ZPL-1.0""]",[]
+librariesio license-compatibility,"[""LGPL-2.0""]",[]
+librariesio license-compatibility,"[""LGPL-2.0+""]",[]
+Open Knowledge International,"[""met-office-cp"",""Met Office UK Climate Projections Licence Agreement""]",[]
+Open Knowledge International,"[""ukcrown"",""UK Crown Copyright""]",[]
+Open Knowledge International,"[""WXwindows"",""wxWindows Library License""]",[]
+Open Knowledge International,"[""mitre"",""MITRE Collaborative Virtual Workspace License (CVW License)""]",[]
+Open Knowledge International,"[""dli-model-use"",""Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence""]",[]
+Open Knowledge International,"[""geogratis"",""Geogratis""]",[]
+Open Knowledge International,"[""Against-DRM"",""Against DRM""]",[]
+Open Knowledge International,"[""DSL"",""Design Science License""]",[]
+Open Knowledge International,"[""FAL-1.3"",""Free Art License 1.3""]",[]
+Open Knowledge International,"[""GFDL-1.3-no-cover-texts-no-invariant-sections"",""GNU Free Documentation License 1.3 with no cover texts and no invariant sections""]",[]
+Open Knowledge International,"[""Talis"",""Talis Community License""]",[]
+Open Knowledge International,"[""hesa-withrights"",""Higher Education Statistics Agency Copyright with data.gov.uk rights""]",[]
+Open Knowledge International,"[""localauth-withrights"",""Local Authority Copyright with data.gov.uk rights""]",[]
+Open Knowledge International,"[""ukclickusepsi"",""UK Click Use PSI""]",[]
+Open Knowledge International,"[""ukcrown-withrights"",""UK Crown Copyright with data.gov.uk rights""]",[]
+Open Knowledge International,"[""ukpsi"",""UK PSI Public Sector Information""]",[]
+Open Knowledge International,"[""notspecified"",""License Not Specified""]",[]
+Open Knowledge International,"[""other-closed"",""Other (Not Open)""]",[]
+Open Knowledge International,"[""other-nc"",""Other (Non-Commercial)""]",[]
+Open Knowledge International,"[""LO-FR-2.0"",""Open License 2.0""]",[]
+Open Knowledge International,"[""other-at"",""Other (Attribution)""]",[]
+Open Knowledge International,"[""other-open"",""Other (Open)""]",[]
+Open Knowledge International,"[""other-pd"",""Other (Public Domain)""]",[]
+OpenSourceInitiative,"[""CVW"",""The MITRE Collaborative Virtual Workspace License"",""License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)""]",[]
+OpenSourceInitiative,"[""OPL-2.1"",""OSET Foundation Public License""]",[]
+OpenSourceInitiative,"[""WXwindows"",""The wxWindows Library Licence""]",[]
+OpenSourceInitiative,"[""jabberpl"",""Jabber Open Source License"",""License :: OSI Approved :: Jabber Open Source License""]",[]
 OpenChainPolicyTemplate,"[""BSD 3-Clause-Attribution""]",[]
 OpenChainPolicyTemplate,"[""CC-BY""]",[]
 OpenChainPolicyTemplate,"[""CC BY-SA""]",[]
 OpenChainPolicyTemplate,"[""CC0""]",[]
 OpenChainPolicyTemplate,"[""eCos-2.0""]",[]
 OpenChainPolicyTemplate,"[""WXwindows""]",[]
+Hitachi open-license,"[""ZSH License""]",[]
+Hitachi open-license,"[""OpenSymphony Software License, Version 1.1""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with \""CLASSPATH\"" EXCEPTION TO THE GPL VERSION 2 by Oracle""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with \""CLASSPATH\"" EXCEPTION TO THE GPL VERSION 2 by Sun Microsystems""]",[]
+Hitachi open-license,"[""JDOM License (license.txt v1.1 and earlier)""]",[]
+Hitachi open-license,"[""JDOM License (license.txt v1.11 and later)""]",[]
+Hitachi open-license,"[""Apache JServ Public License""]",[]
+Hitachi open-license,"[""CUP Parser Generator Copyright Notice, License, and Disclaimer""]",[]
+Hitachi open-license,"[""The Portion of \""Open Source License for Oracle Berkeley DB Java Edition\""""]",[]
+Hitachi open-license,"[""Original SSLeay License""]",[]
+Hitachi open-license,"[""W3C Document License (became active on December 31 2002)""]",[]
+Hitachi open-license,"[""W3C DOCUMENT NOTICE AND LICENSE (became active on April 05 1999)""]",[]
+Hitachi open-license,"[""Ant-Contrib License""]",[]
+Hitachi open-license,"[""Apache Jakarta Commons License""]",[]
+Hitachi open-license,"[""Minpack Copyright Notice""]",[]
+Hitachi open-license,"[""Apache Jakarta ORO License""]",[]
+Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.7.5""]",[]
+Hitachi open-license,"[""BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1""]",[]
+Hitachi open-license,"[""CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2""]",[]
+Hitachi open-license,"[""Apache BCEL License""]",[]
+Hitachi open-license,"[""IAIK PKCS#11 Wrapper License""]",[]
+Hitachi open-license,"[""Apache-SSL License""]",[]
+Hitachi open-license,"[""Apache Xerces License""]",[]
+Hitachi open-license,"[""Apache Axis License""]",[]
+Hitachi open-license,"[""The CyberNeko Software License, Version 1.0""]",[]
+Hitachi open-license,"[""Apache Tomcat License""]",[]
+Hitachi open-license,"[""Apache Jakarta Regexp License""]",[]
+Hitachi open-license,"[""Apache Crimson License""]",[]
+Hitachi open-license,"[""UPX License Agreement""]",[]
+Hitachi open-license,"[""XFree86 1.0 License"",""XFree86-1.0""]",[]
+Hitachi open-license,"[""GLX PUBLIC LICENSE (Version 1.0 (2/11/99))""]",[]
+Hitachi open-license,"[""CID FONT CODE PUBLIC LICENSE (Version 1.0 (3/31/99))""]",[]
+Hitachi open-license,"[""Bitstream Vera Fonts Copyright""]",[]
+Hitachi open-license,"[""Bigelow & Holmes Inc and URW++ GmbH Luxi font license""]",[]
+Hitachi open-license,"[""PCRE LICENCE (PCRE 4.5 and earlier)""]",[]
+Hitachi open-license,"[""Apache log4j License""]",[]
+Hitachi open-license,"[""Apache Commons License""]",[]
+Hitachi open-license,"[""Apache Turbine License""]",[]
+Hitachi open-license,"[""Apache Ant License""]",[]
+Hitachi open-license,"[""Apache Xalan License""]",[]
+Hitachi open-license,"[""Apache Tomcat Connectors License""]",[]
+Hitachi open-license,"[""Apache Forrest License""]",[]
+Hitachi open-license,"[""Apache XML Security License""]",[]
+Hitachi open-license,"[""RXTX License v 2.1""]",[]
+Hitachi open-license,"[""Streaming API for XML (JSR-173) Specification Reference Implementation License Agreement""]",[]
+Hitachi open-license,"[""Apache Software License, Version 1.1 (modified section 4)""]",[]
+Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON""]",[]
+Hitachi open-license,"[""The License for \""FREE_USE\""""]",[]
+Hitachi open-license,"[""Public Domain or Free License without conditions""]",[]
+Hitachi open-license,"[""PyGraphviz License""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (February 1, 2011)""]",[]
+Hitachi open-license,"[""License for WSDL Schema Files""]",[]
+Hitachi open-license,"[""Indiana University Extreme! Lab Software License""]",[]
+Hitachi open-license,"[""Apache FOP License""]",[]
+Hitachi open-license,"[""J2SSH Software License""]",[]
+Hitachi open-license,"[""CMU/UCD copyright notice""]",[]
+Hitachi open-license,"[""Cambridge Broadband Ltd. copyright notice""]",[]
+Hitachi open-license,"[""Fabasoft R&D Software GmbH & Co KG copyright notice""]",[]
+Hitachi open-license,"[""Apache Struts License""]",[]
+Hitachi open-license,"[""GCC RUNTIME LIBRARY EXCEPTION Version 3.1""]",[]
+Hitachi open-license,"[""GNU Free Documentation License Version 1.1"",""GFDL-1.1""]",[]
+Hitachi open-license,"[""Microsoft Limited Public License""]",[]
+Hitachi open-license,"[""Apache Jakarta BSF License""]",[]
+Hitachi open-license,"[""Copyright The Open Group""]",[]
+Hitachi open-license,"[""GNU Lesser Gerenal Public License Version 2.1 with unRAR restriction""]",[]
+Hitachi open-license,"[""Apache Jakarta Commons License (modified Section 4)""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (March 17, 2005)""]",[]
+Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.4""]",[]
+Hitachi open-license,"[""The OpenSymphony XWork License""]",[]
+Hitachi open-license,"[""OpenSymphony OGNL License""]",[]
+Hitachi open-license,"[""JLEX COPYRIGHT NOTICE, LICENSE AND DISCLAIMER""]",[]
+Hitachi open-license,"[""Apache Stylebook 1.0b3 for Xalan2 License""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (April 9, 2014)""]",[]
+Hitachi open-license,"[""H2 License - Version 1.0""]",[]
+Hitachi open-license,"[""The MX4J License, Version 1.0""]",[]
+Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.1.1""]",[]
+Hitachi open-license,"[""OpenSymphony SiteMesh License""]",[]
+Hitachi open-license,"[""Artistic License""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (April 14, 2010)""]",[]
+Hitachi open-license,"[""GNU Free Documentation License Version 1.2"",""GFDL-1.2""]",[]
+Hitachi open-license,"[""GNU Free Documentation License Version 1.3"",""GFDL-1.3""]",[]
+Hitachi open-license,"[""License agreement for matplotlib versions prior to 1.3.0""]",[]
+Hitachi open-license,"[""OpenSymphony WebWork License""]",[]
+Hitachi open-license,"[""Apache Commons License (modified Section 4)""]",[]
+Hitachi open-license,"[""OpenSymphony PropertySet License""]",[]
+Hitachi open-license,"[""Inner Net License, Version 2.00""]",[]
+Hitachi open-license,"[""Berkeley-based copyrights""]",[]
+Hitachi open-license,"[""MonetDB Public License Version 1.1""]",[]
+Hitachi open-license,"[""jaxen 1.1-beta License""]",[]
+Hitachi open-license,"[""Hypersonic SQL License""]",[]
+Hitachi open-license,"[""Freeware Public License""]",[]
+Hitachi open-license,"[""The Licence by \""MAGENTA Ltd\""""]",[]
+Hitachi open-license,"[""Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM), and CoSMIC(TM)""]",[]
+Hitachi open-license,"[""Subversion License (Subversion 1.6 and earlier)""]",[]
+Hitachi open-license,"[""Less License""]",[]
+Hitachi open-license,"[""Clarified Artistic License by NcFTP Software Inc.""]",[]
+Hitachi open-license,"[""Clarified Artistic License by perl6.org""]",[]
+Hitachi open-license,"[""Sun Project JXTA(TM) Software License""]",[]
+Hitachi open-license,"[""iWombat Software License, Version 1.1""]",[]
+Hitachi open-license,"[""Dynamic Drive DHTML scripts- Terms of Use (Last updated: May 22nd, 06)""]",[]
+Hitachi open-license,"[""Licensing conditions for Objective Caml(GNU Library General Public License version 2 with exception for run-time system and libraries)""]",[]
+Hitachi open-license,"[""OPEN GROUP PUBLIC LICENSE""]",[]
+Hitachi open-license,"[""Full Copyright Statement of the RFCs with \""BCP 78\"" by \""The Internet Society\""""]",[]
+Hitachi open-license,"[""Microsoft Platform and Application License""]",[]
+Hitachi open-license,"[""Sun Industry Standards Source License 1.0""]",[]
+Hitachi open-license,"[""Apache Avalon License""]",[]
+Hitachi open-license,"[""The Licence by \""Thomas E. Dickey\""""]",[]
+Hitachi open-license,"[""SQLJet Library Software License""]",[]
+Hitachi open-license,"[""SVNKit Library Software License""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (January 28, 2005)""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:CxImage version 6.0.0 02/Feb/2008""]",[]
+Hitachi open-license,"[""freebxml License, Version 1.1""]",[]
+Hitachi open-license,"[""Mattermost Compiled License""]",[]
+Hitachi open-license,"[""IOzone License""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE of \""PNG (Portable Network Graphics) Specification Version 1.0\""""]",[]
+Hitachi open-license,"[""TSRM license""]",[]
+Hitachi open-license,"[""ORACLE LINUX LICENSE AGREEMENT""]",[]
+Hitachi open-license,"[""ITU-T SOFTWARE TOOLS' GENERAL PUBLIC LICENSE""]",[]
+Hitachi open-license,"[""wxWindows Library Licence, Version 3.1"",""wxWindows""]",[]
+Hitachi open-license,"[""Legal Notice for all LLNL-contributed files""]",[]
+Hitachi open-license,"[""GNU LESSER GENERAL PUBLIC LICENSE Version 3 with SPECIAL EXCEPTION GRANTED BY COPYRIGHT HOLDERS""]",[]
+Hitachi open-license,"[""Freeglut Copyright""]",[]
+Hitachi open-license,"[""MySQL AB Exception for Free/Libre and Open Source Software-only Applications Using MySQL Client Libraries""]",[]
+Hitachi open-license,"[""The Copyright Notice of \""RFC5424 of IETF Network Working Group, as The Syslog Protocol\""""]",[]
+Hitachi open-license,"[""Boost Date-Time Library License""]",[]
+Hitachi open-license,"[""The exceptions to \""NVDA\""""]",[]
+Hitachi open-license,"[""krb5 License""]",[]
+Hitachi open-license,"[""License agreement for matplotlib versions prior to 0.98.2""]",[]
+Hitachi open-license,"[""AUTOCONF CONFIGURE SCRIPT EXCEPTION Version 3.0""]",[]
+Hitachi open-license,"[""License: permissive-short-disclaimer""]",[]
+Hitachi open-license,"[""License: permissive-long-disclaimer""]",[]
+Hitachi open-license,"[""License: permissive-without-disclaimer""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 2 with Autoconf exception""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 3 with Texinfo exception""]",[]
+Hitachi open-license,"[""License: permissive""]",[]
+Hitachi open-license,"[""Python 1.5.2 License""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 2 plus a special exception""]",[]
+Hitachi open-license,"[""QuickFIX Software License, Version 1.0""]",[]
+Hitachi open-license,"[""stunnel license""]",[]
+Hitachi open-license,"[""Rules for Resouces by ElvenSword""]",[]
+Hitachi open-license,"[""Apache-Style Software License for ColorBrewer software and ColorBrewer""]",[]
+Hitachi open-license,"[""Digia Qt LGPL Exception version 1.1""]",[]
+Hitachi open-license,"[""Open Government Licence for  public sector information, version 1.0""]",[]
+Hitachi open-license,"[""Qwt License, Version 1.0""]",[]
+Hitachi open-license,"[""Flask Artwork License""]",[]
+Hitachi open-license,"[""IMPORTANT NMAP LICENSE TERMS""]",[]
+Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the Go project by Google""]",[]
+Hitachi open-license,"[""Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), and CoSMIC(TM)(version 2007)""]",[]
+Hitachi open-license,"[""Proxool's licence""]",[]
+Hitachi open-license,"[""Unicode Terms of Use (since 2016)""]",[]
+Hitachi open-license,"[""UBUNTU FONT LICENCE Version 1.0""]",[]
+Hitachi open-license,"[""FOSS License Exception, Updated February 23, 2012""]",[]
+Hitachi open-license,"[""Additional Grant of Patent Rights Version 2 by Facebook, Inc.""]",[]
+Hitachi open-license,"[""Software License Agreement by \""Peter Norvig\""""]",[]
+Hitachi open-license,"[""The License included in \""Boehm-Weiser garbage collector\""""]",[]
+Hitachi open-license,"[""OpenJDK Assembly Exception""]",[]
+Hitachi open-license,"[""The NOTICE file of \""Apache Avalon\""""]",[]
+Hitachi open-license,"[""License agreement for matplotlib |version|""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with GNU C++ Library exception""]",[]
+Hitachi open-license,"[""Full Copyright Statement of the RFCs with \""BCP 78 and Copyrights and Patent Rights in RFCs\"" by \""The Internet Society\""""]",[]
+Hitachi open-license,"[""pgpool-II License""]",[]
+Hitachi open-license,"[""MIT License without disclaimer""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 3 with Autoconf exception""]",[]
+Hitachi open-license,"[""JPython 1.1.x Software License""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with exception added by the Free Software Foundation in version 2.2 of Bison""]",[]
+Hitachi open-license,"[""pybench License""]",[]
+Hitachi open-license,"[""JDBM LICENSE v1.00""]",[]
+Hitachi open-license,"[""Sequence Library License""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE SQUID_RAD_AUTH""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE SQUID_RAD_AUTH Documentation""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE CISTRON RADIUS""]",[]
+Hitachi open-license,"[""COPYRIGHT NOTICE LIVINGSTON RADIUS 1.16""]",[]
+Hitachi open-license,"[""SQL Workbench/J License, Version 1.0""]",[]
+Hitachi open-license,"[""Initial Developer's Public License Version 1.0""]",[]
+Hitachi open-license,"[""STLport License Agreement""]",[]
+Hitachi open-license,"[""TWAIN License""]",[]
+Hitachi open-license,"[""Arev Fonts Copyright""]",[]
+Hitachi open-license,"[""Liberation Font License""]",[]
+Hitachi open-license,"[""WordNet License""]",[]
+Hitachi open-license,"[""Software Licence Agreement by \""Institute of the Estonian Language\""""]",[]
+Hitachi open-license,"[""copyright information from original PCL sources""]",[]
+Hitachi open-license,"[""Gnuplot's copyright""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with GNU Compiler Collection exception, contributed by Jakub Jelinek""]",[]
+Hitachi open-license,"[""Inno Setup License""]",[]
+Hitachi open-license,"[""HAPROXY's license - 2006/06/15(GNU GENERAL PUBLIC LICENSE Version 2 with Exception)""]",[]
+Hitachi open-license,"[""HAPROXY's license - 2006/06/15(GNU LESSER GENERAL PUBLIC LICENSE Version 2.1 with Exception)""]",[]
+Hitachi open-license,"[""Creative Commons Attribution 2.1 Japan""]",[]
+Hitachi open-license,"[""The Notice of \""Apache log4net\""""]",[]
+Hitachi open-license,"[""unrar licence""]",[]
+Hitachi open-license,"[""License for Open Source Software Implementations of OCB""]",[]
+Hitachi open-license,"[""Log4r License""]",[]
+Hitachi open-license,"[""GNU GENERAL PUBLIC LICENSE, Version 3 with classpath exception""]",[]
+Hitachi open-license,"[""CUPS License Agreement(GNU General Public License (\""GPL\""), Version 2, with an exception for Apple operating systems)""]",[]
+Hitachi open-license,"[""CUPS License Agreement(GNU Library General Public License (\""LGPL\""), Version 2, with an exception for Apple operating systems)""]",[]
+Hitachi open-license,"[""Catharon Open Source LICENSE""]",[]
+Hitachi open-license,"[""Microsoft Permissive License""]",[]
+Hitachi open-license,"[""Xdebug License, version 1.01""]",[]
+Hitachi open-license,"[""OpenPBS (Portable Batch System) v2.3 Software License""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 2 with Autoconf Macro Exception""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 3 with Autoconf Macro Exception""]",[]
+Hitachi open-license,"[""compiler_rt License""]",[]
+Hitachi open-license,"[""Software Grant License Agreement for \""the software submitted by ARM to llvm.org (http://llvm.org) (\""LLVM\"")\""""]",[]
+Hitachi open-license,"[""BSD 2-Clause \""Simplified\"" or \""FreeBSD\"" License without disclaimer""]",[]
+Hitachi open-license,"[""Zope Public License (ZPL) Version 1.0"",""ZPL-1.0""]",[]
+Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the WebM Project by Google""]",[]
+Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception included in \""GnuPG\""""]",[]
+Hitachi open-license,"[""SMAIL GENERAL PUBLIC LICENSE""]",[]
+Hitachi open-license,"[""GNU General Public License Version 3 with exception added by the Free Software Foundation in version 2.2 of Bison""]",[]
+Hitachi open-license,"[""RIVERBANK COMPUTING LIMITED LICENSE AGREEMENT FOR SIP""]",[]
+Hitachi open-license,"[""LICENSE FOR THE Extreme! Lab""]",[]
+Hitachi open-license,"[""Eclipse Foundation Software User Agreement (November 22, 2017)""]",[]
+Hitachi open-license,"[""The License included in \""OpenLDAP\""""]",[]
+Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception included in \""GnuTLS\""""]",[]
+Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception""]",[]
+Hitachi open-license,"[""The License included in \""OpenLDAP Release Copyright\""""]",[]
+Hitachi open-license,"[""ICC Software License, Version 0.1""]",[]
+Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the gRPC project by Google""]",[]
+Hitachi open-license,"[""GNU General Public License Version 2 with exception added by the Free Software Foundation in version 1.24 of Bison""]",[]
+Hitachi open-license,"[""Paratype PT Sans Free Font License v1.00""]",[]
+Hitachi open-license,"[""Anti-Grain Geometry Public License""]",[]
+Hitachi open-license,"[""Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Australia""]",[]
+Hitachi open-license,"[""Unicode Terms of Use (Last Update 2018/1/6)""]",[]
+Hitachi open-license,"[""xmlproc license""]",[]
+Hitachi open-license,"[""Software License Agreement (BSD License) of \""CocoaLumberjack\""""]",[]
+Hitachi open-license,"[""BaKoMa Fonts Licence""]",[]
+Hitachi open-license,"[""c-ares license""]",[]
+Hitachi open-license,"[""Sequence Library License by Marc Strapetz""]",[]
+Hitachi open-license,"[""Krysalis jCharts License""]",[]
+Hitachi open-license,"[""The License included in \""Linux firmware\""""]",[]
+Hitachi open-license,"[""Apache SOAP License""]",[]
+Hitachi open-license,"[""vbAccelerator Software License""]",[]
+Hitachi open-license,"[""ARPHIC PUBLIC LICENSE""]",[]
+Hitachi open-license,"[""CUPS License Agreement(for Kerberos support code)""]",[]
+Hitachi open-license,"[""unRAR License by \""Eugene Roshal\""""]",[]
+Hitachi open-license,"[""STORAGE NETWORKING INDUSTRY ASSOCIATION PUBLIC LICENSE, Version 1.1""]",[]
+Hitachi open-license,"[""CUA Office Public License, Version 1.0""]",[]
+Hitachi open-license,"[""Exolab License""]",[]
+Hitachi open-license,"[""RHash License""]",[]
+Hitachi open-license,"[""GNU General Public License, Version 2 with OpenSSL Exception""]",[]
+Hitachi open-license,"[""GNU Lesser General Public  License, Version 2.1 with OpenSSL Exception""]",[]
 Scancode,"[""scancode://javascript-exception-2.0"",""Javascript exception to GPL 2.0""]",[]
 Scancode,"[""scancode://broadcom-linking-exception-2.0"",""Broadcom Linking Exception to GPL 2.0""]",[]
 Scancode,"[""scancode://ubc"",""University of British Columbia License""]",[]
@@ -1310,557 +1861,6 @@ Scancode,"[""scancode://w3c-software-20021231"",""W3C-SOFTWARE-20021231""]",[]
 Scancode,"[""scancode://nwhm"",""Non White Heterosexual Male""]",[]
 Scancode,"[""scancode://linking-exception-lgpl-3.0"",""Linking exception to LGPL 3.0""]",[]
 Scancode,"[""scancode://esri"",""Esri License""]",[]
-Fedora Project Wiki,"[""4Suite Copyright License""]","[""ASL 1.1""]"
-Fedora Project Wiki,"[""Academic Free License""]","[""AFL""]"
-Fedora Project Wiki,"[""Affero General Public License 3.0 with Zarafa trademark exceptions""]","[""AGPLv3 with exceptions""]"
-Fedora Project Wiki,"[""App::s2p License""]","[""App-s2p""]"
-Fedora Project Wiki,"[""Array Input Method Public License""]","[""Array""]"
-Fedora Project Wiki,"[""Aspell-ru License""]","[""ARL""]"
-Fedora Project Wiki,"[""BeOpen Open Source License Agreement Version 1""]","[""BeOpen""]"
-Fedora Project Wiki,"[""Bibtex License""]","[""Bibtex""]"
-Fedora Project Wiki,"[""BitTorrent License""]","[""BitTorrent""]"
-Fedora Project Wiki,"[""Boost Software License""]","[""Boost""]"
-Fedora Project Wiki,"[""BSD + Patent""]","[""BSD-2-Clause-Patent""]"
-Fedora Project Wiki,"[""CeCILL License v1.1""]","[""CeCILL""]"
-Fedora Project Wiki,"[""CeCILL License v2""]","[""CeCILL""]"
-Fedora Project Wiki,"[""Celtx Public License (CePL)""]","[""Netscape""]"
-Fedora Project Wiki,"[""CMU License (BSD like)""]","[""MIT""]"
-Fedora Project Wiki,"[""CNRI License (Old Python)""]","[""CNRI""]"
-Fedora Project Wiki,"[""Common Development Distribution License 1.0""]","[""CDDL-1.0""]"
-Fedora Project Wiki,"[""Common Development Distribution License 1.1""]","[""CDDL-1.1""]"
-Fedora Project Wiki,"[""Common Public License""]","[""CPL""]"
-Fedora Project Wiki,"[""Condor Public License""]","[""Condor""]"
-Fedora Project Wiki,"[""Copyright Attribution Only""]","[""Copyright only""]"
-Fedora Project Wiki,"[""CPAL License 1.0""]","[""CPAL""]"
-Fedora Project Wiki,"[""CP/M License""]","[""CPM""]"
-Fedora Project Wiki,"[""CRC32 License""]","[""CRC32""]"
-Fedora Project Wiki,"[""Creative Commons BSD""]","[""BSD""]"
-Fedora Project Wiki,"[""Creative Commons GNU GPL""]","[""GPLv2+""]"
-Fedora Project Wiki,"[""Creative Commons GNU LGPL""]","[""LGPLv2+""]"
-Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
-Fedora Project Wiki,"[""Cryptix General License""]","[""BSD""]"
-Fedora Project Wiki,"[""CUA Office Public License Version 1.0""]","[""MPLv1.1""]"
-Fedora Project Wiki,"[""DO WHATEVER PUBLIC LICENSE""]","[""DWPL""]"
-Fedora Project Wiki,"[""Docbook MIT License""]","[""DMIT""]"
-Fedora Project Wiki,"[""Eclipse Distribution License 1.0""]","[""BSD""]"
-Fedora Project Wiki,"[""eCos License v2.0""]","[""eCos""]"
-Fedora Project Wiki,"[""Fedora Directory Server License""]","[""GPLv2 with exceptions""]"
-Fedora Project Wiki,"[""FLTK License""]","[""LGPLv2 with exceptions""]"
-Fedora Project Wiki,"[""Fraunhofer FDK AAC License""]","[""FDK-AAC""]"
-Fedora Project Wiki,"[""FreeImage Public License""]","[""MPLv1.0""]"
-Fedora Project Wiki,"[""Freetype License""]","[""FTL""]"
-Fedora Project Wiki,"[""GNU General Public License (no version)""]","[""GPL+""]"
-Fedora Project Wiki,"[""GNU General Public License (no version), with Classpath exception""]","[""GPL+ with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License (no version), with font embedding exception""]","[""GPL+ with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v2.0 only, with Classpath exception""]","[""GPLv2 with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v2.0 only, with font embedding exception""]","[""GPLv2 with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with Classpath exception""]","[""GPLv2+ with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v2.0 or later, with font embedding exception""]","[""GPLv2+ with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v3.0 only, with Classpath exception""]","[""GPLv3 with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v3.0 only, with font embedding exception""]","[""GPLv3 with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with Classpath exception""]","[""GPLv3+ with exceptions""]"
-Fedora Project Wiki,"[""GNU General Public License v3.0 or later, with font embedding exception""]","[""GPLv3+ with exceptions""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License (no version)""]","[""LGPLv2+""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) only""]","[""LGPLv2""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1), with exceptions""]","[""LGPLv2 with exceptions""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later""]","[""LGPLv2+""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v2 (or 2.1) or later, with exceptions""]","[""LGPLv2+ with exceptions""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 only, with exceptions""]","[""LGPLv3 with exceptions""]"
-Fedora Project Wiki,"[""GNU Lesser General Public License v3.0 or later, with exceptions""]","[""LGPLv3+ with exceptions""]"
-Fedora Project Wiki,"[""Henry Spencer Reg-Ex Library License""]","[""HSRL""]"
-Fedora Project Wiki,"[""IBM Public License""]","[""IBM""]"
-Fedora Project Wiki,"[""Inner Net License""]","[""Inner-Net""]"
-Fedora Project Wiki,"[""Interbase Public License""]","[""Interbase""]"
-Fedora Project Wiki,"[""ISC License (Bind, DHCP Server)""]","[""ISC""]"
-Fedora Project Wiki,"[""Jabber Open Source License""]","[""Jabber""]"
-Fedora Project Wiki,"[""JPython License (old)""]","[""JPython""]"
-Fedora Project Wiki,"[""Julius License""]","[""Julius""]"
-Fedora Project Wiki,"[""Knuth License""]","[""Knuth""]"
-Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
-Fedora Project Wiki,"[""LEGO Open Source License Agreement""]","[""LOSLA""]"
-Fedora Project Wiki,"[""Lhcyr License""]","[""Lhcyr""]"
-Fedora Project Wiki,"[""Lisp Library General Public License""]","[""LLGPL""]"
-Fedora Project Wiki,"[""Logica Open Source License""]","[""Logica""]"
-Fedora Project Wiki,"[""Lucent Public License (Plan9)""]","[""LPL""]"
-Fedora Project Wiki,"[""mecab-ipadic license""]","[""mecab-ipadic""]"
-Fedora Project Wiki,"[""Metasploit Framework License (post 2006)""]","[""BSD""]"
-Fedora Project Wiki,"[""midnight License""]","[""midnight""]"
-Fedora Project Wiki,"[""mod_macro License""]","[""mod_macro""]"
-Fedora Project Wiki,"[""Mozilla Public License v1.0""]","[""MPLv1.0""]"
-Fedora Project Wiki,"[""Mozilla Public License v1.1""]","[""MPLv1.1""]"
-Fedora Project Wiki,"[""Mozilla Public License v2.0""]","[""MPLv2.0""]"
-Fedora Project Wiki,"[""MX4J License""]","[""ASL 1.1""]"
-Fedora Project Wiki,"[""MySQL License""]","[""GPLv2 with exceptions""]"
-Fedora Project Wiki,"[""NCSA/University of Illinois Open Source License""]","[""NCSA""]"
-Fedora Project Wiki,"[""Neotonic Clearsilver License""]","[""ASL 1.1""]"
-Fedora Project Wiki,"[""Netscape Public License""]","[""Netscape""]"
-Fedora Project Wiki,"[""Newmat License""]","[""Newmat""]"
-Fedora Project Wiki,"[""NIST Software License""]","[""NISTSL""]"
-Fedora Project Wiki,"[""Nmap License""]","[""Nmap""]"
-Fedora Project Wiki,"[""Nunit License""]","[""MIT with advertising""]"
-Fedora Project Wiki,"[""Open Government License""]","[""OGL""]"
-Fedora Project Wiki,"[""OpenLDAP License""]","[""OpenLDAP""]"
-Fedora Project Wiki,"[""OpenPBS License""]","[""OpenPBS""]"
-Fedora Project Wiki,"[""OReilly License""]","[""OReilly""]"
-Fedora Project Wiki,"[""Par License""]","[""Par""]"
-Fedora Project Wiki,"[""Perl License""]","[""GPL+ or Artistic""]"
-Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2 or Artistic""]"
-Fedora Project Wiki,"[""Perl License (variant)""]","[""GPLv2+ or Artistic""]"
-Fedora Project Wiki,"[""Perl License (variant)""]","[""LGPLv2+ or Artistic""]"
-Fedora Project Wiki,"[""Phorum License""]","[""Phorum""]"
-Fedora Project Wiki,"[""PlainTeX License""]","[""PlainTeX""]"
-Fedora Project Wiki,"[""Public Domain""]","[""Public Domain""]"
-Fedora Project Wiki,"[""Python License""]","[""Python""]"
-Fedora Project Wiki,"[""Qwt License 1.0""]","[""LGPLv2+ with exceptions""]"
-Fedora Project Wiki,"[""QuickFix License""]","[""ASL 1.1""]"
-Fedora Project Wiki,"[""radvd License""]","[""radvd""]"
-Fedora Project Wiki,"[""REX License""]","[""REX""]"
-Fedora Project Wiki,"[""Rice BSD""]","[""RiceBSD""]"
-Fedora Project Wiki,"[""Romio License""]","[""Romio""]"
-Fedora Project Wiki,"[""RSA License""]","[""RSA""]"
-Fedora Project Wiki,"[""Rsfs License""]","[""Rsfs""]"
-Fedora Project Wiki,"[""Sequence Library License""]","[""Sequence""]"
-Fedora Project Wiki,"[""SciTech MGL Public License""]","[""STMPL""]"
-Fedora Project Wiki,"[""SCRIP License""]","[""SCRIP""]"
-Fedora Project Wiki,"[""SLIB License""]","[""SLIB""]"
-Fedora Project Wiki,"[""softSurfer License""]","[""softSurfer""]"
-Fedora Project Wiki,"[""Sun Public License""]","[""SPL""]"
-Fedora Project Wiki,"[""Teeworlds License""]","[""Teeworlds""]"
-Fedora Project Wiki,"[""Text-Tabs+Wrap License""]","[""TTWL""]"
-Fedora Project Wiki,"[""Thor Public License""]","[""TPL""]"
-Fedora Project Wiki,"[""Threeparttable License""]","[""Threeparttable""]"
-Fedora Project Wiki,"[""Time::ParseDate License""]","[""TPDL""]"
-Fedora Project Wiki,"[""Tolua License""]","[""Tolua""]"
-Fedora Project Wiki,"[""Transitive Grace Period Public Licence""]","[""TGPPL""]"
-Fedora Project Wiki,"[""Trusted Computing Group License""]","[""TCGL""]"
-Fedora Project Wiki,"[""Tumbolia Public License""]","[""Tumbolia""]"
-Fedora Project Wiki,"[""UCAR License""]","[""UCAR""]"
-Fedora Project Wiki,"[""Unicode Character Database Terms Of Use""]","[""UCD""]"
-Fedora Project Wiki,"[""Unicode License""]","[""Unicode""]"
-Fedora Project Wiki,"[""Universal Permissive License""]","[""UPL""]"
-Fedora Project Wiki,"[""Vita Nuova Liberal Source License""]","[""VNLSL""]"
-Fedora Project Wiki,"[""Vovida Software License v. 1.0""]","[""VSL""]"
-Fedora Project Wiki,"[""Webmin License""]","[""Webmin""]"
-Fedora Project Wiki,"[""wxWidgets Library License""]","[""wxWidgets""]"
-Fedora Project Wiki,"[""wxWindows Library License v 3.1""]","[""wxWindows""]"
-Fedora Project Wiki,"[""Yahoo Public License v 1.1""]","[""YPLv1.1""]"
-Fedora Project Wiki,"[""Zope Public License v 1.0""]","[""ZPLv1.0""]"
-Fedora Project Wiki,"[""Zope Public License v 2.0""]","[""ZPLv2.0""]"
-Fedora Project Wiki,"[""Zope Public License v 2.1""]","[""ZPLv2.1""]"
-Fedora Project Wiki,"[""9wm License (Original)""]",[]
-Fedora Project Wiki,"[""Adaptive Public License""]",[]
-Fedora Project Wiki,"[""Agere LT Modem Driver License""]",[]
-Fedora Project Wiki,"[""AMAP License""]",[]
-Fedora Project Wiki,"[""Amazon Software License""]",[]
-Fedora Project Wiki,"[""Apple iTunes License""]",[]
-Fedora Project Wiki,"[""Apple Quicktime License""]",[]
-Fedora Project Wiki,"[""Aptana Public License""]",[]
-Fedora Project Wiki,"[""AT&T Public License""]",[]
-Fedora Project Wiki,"[""C/Migemo License""]",[]
-Fedora Project Wiki,"[""CACert Root Distribution License""]",[]
-Fedora Project Wiki,"[""CodeProject Open License (CPOL)""]",[]
-Fedora Project Wiki,"[""Commons Clause""]",[]
-Fedora Project Wiki,"[""eCos Public License, v1.1""]",[]
-Fedora Project Wiki,"[""Eiffel Forum License 1.0""]",[]
-Fedora Project Wiki,"[""EMC2 License""]",[]
-Fedora Project Wiki,"[""European Union Public License v1.0""]",[]
-Fedora Project Wiki,"[""Frameworx License""]",[]
-Fedora Project Wiki,"[""Frontier Artistic License""]",[]
-Fedora Project Wiki,"[""GPL for Computer Programs of the Public Administration""]",[]
-Fedora Project Wiki,"[""gSOAP Public License""]",[]
-Fedora Project Wiki,"[""Hacktivismo Enhanced-Source Software License Agreement""]",[]
-Fedora Project Wiki,"[""Helix DNA Technology Binary Research Use License""]",[]
-Fedora Project Wiki,"[""HP Software License Terms""]",[]
-Fedora Project Wiki,"[""IBM Sample Code License""]",[]
-Fedora Project Wiki,"[""Intel IPW3945 Daemon License""]",[]
-Fedora Project Wiki,"[""Jahia Community Source License""]",[]
-Fedora Project Wiki,"[""lha license""]",[]
-Fedora Project Wiki,"[""License Agreement for Application Response Measurement (ARM) SDK""]",[]
-Fedora Project Wiki,"[""Maia Mailguard License""]",[]
-Fedora Project Wiki,"[""MAME License""]",[]
-Fedora Project Wiki,"[""MeepZor Consulting Public Licence""]",[]
-Fedora Project Wiki,"[""Metasploit Framework License (pre 2006)""]",[]
-Fedora Project Wiki,"[""Microsoft's Shared Source CLI/C#/Jscript License""]",[]
-Fedora Project Wiki,"[""MITRE Collaborative Virtual Workspace License (CVW)""]",[]
-Fedora Project Wiki,"[""MSNTP License""]",[]
-Fedora Project Wiki,"[""mrouted license (old)""]",[]
-Fedora Project Wiki,"[""NASA CDF License""]",[]
-Fedora Project Wiki,"[""NASA Open Source Agreement v1.3""]",[]
-Fedora Project Wiki,"[""OCLC Public Research License 2.0""]",[]
-Fedora Project Wiki,"[""Open Map License""]",[]
-Fedora Project Wiki,"[""Open Motif Public End User License""]",[]
-Fedora Project Wiki,"[""Open Public License""]",[]
-Fedora Project Wiki,"[""OSGi Specification License""]",[]
-Fedora Project Wiki,"[""Paul Hsieh Derivative License""]",[]
-Fedora Project Wiki,"[""Paul Hsieh Exposition License""]",[]
-Fedora Project Wiki,"[""Pine License""]",[]
-Fedora Project Wiki,"[""qmail License""]",[]
-Fedora Project Wiki,"[""Reciprocal Public License""]",[]
-Fedora Project Wiki,"[""Scilab License (OLD)""]",[]
-Fedora Project Wiki,"[""Server Side Public License v1 (SSPL)""]",[]
-Fedora Project Wiki,"[""SGI Free Software License B 1.1 or older""]",[]
-Fedora Project Wiki,"[""SGI GLX Public License 1.0""]",[]
-Fedora Project Wiki,"[""Siren14 License Agreement""]",[]
-Fedora Project Wiki,"[""Spin Commercial License""]",[]
-Fedora Project Wiki,"[""Squeak License""]",[]
-Fedora Project Wiki,"[""SystemC Open Source License""]",[]
-Fedora Project Wiki,"[""Sun Binary Code License Agreement""]",[]
-Fedora Project Wiki,"[""Sun Community Source License""]",[]
-Fedora Project Wiki,"[""Sun RPC License""]",[]
-Fedora Project Wiki,"[""Sun Solaris Source Code (Foundation Release) License""]",[]
-Fedora Project Wiki,"[""Terracotta Public License 1.0""]",[]
-Fedora Project Wiki,"[""TrueCrypt License""]",[]
-Fedora Project Wiki,"[""TORQUE v2.5+ Software License v1.0""]",[]
-Fedora Project Wiki,"[""University of Utah Public License""]",[]
-Fedora Project Wiki,"[""University of Washington Free Fork License""]",[]
-Fedora Project Wiki,"[""unrar license""]",[]
-Fedora Project Wiki,"[""Yahoo Public License 1.0""]",[]
-Fedora Project Wiki,"[""Zimbra Public License 1.3""]",[]
-Fedora Project Wiki,"[""SIL Open Font License 1.1 http://scripts.sil.org/cms/sites/nrsi/media/OFL_logo_rect_color.png""]","[""OFL""]"
-Fedora Project Wiki,"[""Adobe/TUG Utopia license agreement""]","[""Utopia""]"
-Fedora Project Wiki,"[""AMS Bluesky Font License""]","[""AMS""]"
-Fedora Project Wiki,"[""Arphic Public License""]","[""Arphic""]"
-Fedora Project Wiki,"[""Baekmuk License""]","[""Baekmuk""]"
-Fedora Project Wiki,"[""Bitstream Vera Font License""]","[""Bitstream Vera""]"
-Fedora Project Wiki,"[""Charter License""]","[""Charter""]"
-Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
-Fedora Project Wiki,"[""DoubleStroke Font License""]","[""DoubleStroke""]"
-Fedora Project Wiki,"[""ec Font License""]","[""ec""]"
-Fedora Project Wiki,"[""Elvish Font License""]","[""Elvish""]"
-Fedora Project Wiki,"[""GUST Font License""]","[""LPPL""]"
-Fedora Project Wiki,"[""Hack Open Font License""]","[""HOFL""]"
-Fedora Project Wiki,"[""Hershey Font License""]","[""Hershey""]"
-Fedora Project Wiki,"[""Liberation Font License""]","[""Liberation""]"
-Fedora Project Wiki,"[""LaTeX Project Public License""]","[""LPPL""]"
-Fedora Project Wiki,"[""Lucida Legal Notice""]","[""Lucida""]"
-Fedora Project Wiki,"[""MgOpen Font License""]","[""MgOpen""]"
-Fedora Project Wiki,"[""mplus Font License""]","[""mplus""]"
-Fedora Project Wiki,"[""ParaType Font License""]","[""PTFL""]"
-Fedora Project Wiki,"[""Punknova Font License""]","[""Punknova""]"
-Fedora Project Wiki,"[""STIX Fonts User License""]","[""STIX""]"
-Fedora Project Wiki,"[""Wadalab Font License""]","[""Wadalab""]"
-Fedora Project Wiki,"[""XANO Mincho Font License""]","[""XANO""]"
-Fedora Project Wiki,"[""DIP SIPA Font License""]",[]
-Fedora Project Wiki,"[""Larabie Fonts License""]",[]
-Fedora Project Wiki,"[""Literat Font License""]",[]
-Fedora Project Wiki,"[""Ubuntu Font License""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
-Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
-Fedora Project Wiki,"[""Creative Commons Attribution-NoDerivs""]","[""CC-BY-ND""]"
-Fedora Project Wiki,"[""Creative Commons Zero 1.0 Universal""]","[""CC0""]"
-Fedora Project Wiki,"[""Design Science License""]","[""DSL""]"
-Fedora Project Wiki,"[""Distributed Management Task Force License""]","[""DMTF""]"
-Fedora Project Wiki,"[""EFF Open Audio License v1""]","[""OAL""]"
-Fedora Project Wiki,"[""Ethymonics Free Music License""]","[""EFML""]"
-Fedora Project Wiki,"[""Free Art License""]","[""Free Art""]"
-Fedora Project Wiki,"[""GeoGratis Licence Agreement""]","[""GeoGratis""]"
-Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
-Fedora Project Wiki,"[""License Ouverte""]","[""Ouverte""]"
-Fedora Project Wiki,"[""LinuxTag Green OpenMusic License""]","[""Green OpenMusic""]"
-Fedora Project Wiki,"[""Open Data Commons Public Domain Dedication and Licence""]","[""PDDL-1.0""]"
-Fedora Project Wiki,"[""Open Data License (GeoLite Country and GeoLite City databases)""]","[""BSD with advertising""]"
-Fedora Project Wiki,"[""CAcert Non-Related Persons Disclaimer and License""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-NoDerivs""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial""]",[]
-Fedora Project Wiki,"[""Creative Commons Attribution-NonCommercial-ShareAlike""]",[]
-Fedora Project Wiki,"[""Creative Commons Sampling Plus 1.0""]",[]
-Fedora Project Wiki,"[""LinuxTag Yellow OpenMusic License""]",[]
-Fedora Project Wiki,"[""Apple's Common Documentation License, Version 1.0""]","[""CDL""]"
-Fedora Project Wiki,"[""Creative Commons Attribution license""]","[""CC-BY""]"
-Fedora Project Wiki,"[""Creative Commons Attribution-ShareAlike""]","[""CC-BY-SA""]"
-Fedora Project Wiki,"[""FreeBSD Documentation License""]","[""FBSDDL""]"
-Fedora Project Wiki,"[""GNU Free Documentation License""]","[""GFDL""]"
-Fedora Project Wiki,"[""GNU General Public License""]","[""(See Note A)""]"
-Fedora Project Wiki,"[""IEEE and Open Group Documentation License""]","[""IEEE""]"
-Fedora Project Wiki,"[""Linux Documentation Project License""]","[""LDPL""]"
-Fedora Project Wiki,"[""Old FSF Documentation License""]","[""OFSFDL""]"
-Fedora Project Wiki,"[""Open Publication License, v1.0""]","[""Open Publication""]"
-Fedora Project Wiki,"[""Public Use License, v1.0""]","[""Public Use""]"
-Fedora Project Wiki,"[""Verbatim License""]","[""Verbatim""]"
-Fedora Project Wiki,"[""Open Content License""]",[]
-Fedora Project Wiki,"[""Open Directory License""]",[]
-Fedora Project Wiki,"[""W3C Documentation License""]",[]
-OpenSourceInitiative,"[""CVW"",""The MITRE Collaborative Virtual Workspace License"",""License :: OSI Approved :: MITRE Collaborative Virtual Workspace License (CVW)""]",[]
-OpenSourceInitiative,"[""OPL-2.1"",""OSET Foundation Public License""]",[]
-OpenSourceInitiative,"[""WXwindows"",""The wxWindows Library Licence""]",[]
-OpenSourceInitiative,"[""jabberpl"",""Jabber Open Source License"",""License :: OSI Approved :: Jabber Open Source License""]",[]
-HansHammel license-compatibility-checker,"[""BSD-2-Clause-FreeBSD""]",[]
-HansHammel license-compatibility-checker,"[""BSD-2-Clause-NetBSD""]",[]
-HansHammel license-compatibility-checker,"[""LGPL-2.0""]",[]
-HansHammel license-compatibility-checker,"[""MS-LRL""]",[]
-librariesio license-compatibility,"[""ZPL-1.0""]",[]
-librariesio license-compatibility,"[""LGPL-2.0""]",[]
-librariesio license-compatibility,"[""LGPL-2.0+""]",[]
 Wikipedia,"[""Affero General Public License 2.0""]",[]
 Wikipedia,"[""BSD License 3.0""]",[]
 Wikipedia,"[""Cryptix General License""]",[]
-Google OSS Policy,"[""BCL""]",[]
-Google OSS Policy,"[""Commons Clause""]",[]
-Open Knowledge International,"[""met-office-cp"",""Met Office UK Climate Projections Licence Agreement""]",[]
-Open Knowledge International,"[""ukcrown"",""UK Crown Copyright""]",[]
-Open Knowledge International,"[""WXwindows"",""wxWindows Library License""]",[]
-Open Knowledge International,"[""mitre"",""MITRE Collaborative Virtual Workspace License (CVW License)""]",[]
-Open Knowledge International,"[""dli-model-use"",""Statistics Canada: Data Liberation Initiative (DLI) - Model Data Use Licence""]",[]
-Open Knowledge International,"[""geogratis"",""Geogratis""]",[]
-Open Knowledge International,"[""Against-DRM"",""Against DRM""]",[]
-Open Knowledge International,"[""DSL"",""Design Science License""]",[]
-Open Knowledge International,"[""FAL-1.3"",""Free Art License 1.3""]",[]
-Open Knowledge International,"[""GFDL-1.3-no-cover-texts-no-invariant-sections"",""GNU Free Documentation License 1.3 with no cover texts and no invariant sections""]",[]
-Open Knowledge International,"[""Talis"",""Talis Community License""]",[]
-Open Knowledge International,"[""hesa-withrights"",""Higher Education Statistics Agency Copyright with data.gov.uk rights""]",[]
-Open Knowledge International,"[""localauth-withrights"",""Local Authority Copyright with data.gov.uk rights""]",[]
-Open Knowledge International,"[""ukclickusepsi"",""UK Click Use PSI""]",[]
-Open Knowledge International,"[""ukcrown-withrights"",""UK Crown Copyright with data.gov.uk rights""]",[]
-Open Knowledge International,"[""ukpsi"",""UK PSI Public Sector Information""]",[]
-Open Knowledge International,"[""notspecified"",""License Not Specified""]",[]
-Open Knowledge International,"[""other-closed"",""Other (Not Open)""]",[]
-Open Knowledge International,"[""other-nc"",""Other (Non-Commercial)""]",[]
-Open Knowledge International,"[""LO-FR-2.0"",""Open License 2.0""]",[]
-Open Knowledge International,"[""other-at"",""Other (Attribution)""]",[]
-Open Knowledge International,"[""other-open"",""Other (Open)""]",[]
-Open Knowledge International,"[""other-pd"",""Other (Public Domain)""]",[]
-Debian Free Software Guidelines,"[""X-Oz License""]","[""X-Oz License""]"
-Debian Free Software Guidelines,"[""Creative Commons Sampling Plus (CC-sampling+), v1.0""]","[""Creative Commons Sampling Plus (CC-sampling+), v1.0""]"
-Debian Free Software Guidelines,"[""License for OpenPBS and Torque""]","[""License for OpenPBS and Torque""]"
-Debian Free Software Guidelines,"[""Swiss Ephemeris Public License""]","[""Swiss Ephemeris Public License""]"
-Debian Free Software Guidelines,"[""SPIN License""]","[""SPIN License""]"
-Hitachi open-license,"[""ZSH License""]",[]
-Hitachi open-license,"[""OpenSymphony Software License, Version 1.1""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with \""CLASSPATH\"" EXCEPTION TO THE GPL VERSION 2 by Oracle""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with \""CLASSPATH\"" EXCEPTION TO THE GPL VERSION 2 by Sun Microsystems""]",[]
-Hitachi open-license,"[""JDOM License (license.txt v1.1 and earlier)""]",[]
-Hitachi open-license,"[""JDOM License (license.txt v1.11 and later)""]",[]
-Hitachi open-license,"[""Apache JServ Public License""]",[]
-Hitachi open-license,"[""CUP Parser Generator Copyright Notice, License, and Disclaimer""]",[]
-Hitachi open-license,"[""The Portion of \""Open Source License for Oracle Berkeley DB Java Edition\""""]",[]
-Hitachi open-license,"[""Original SSLeay License""]",[]
-Hitachi open-license,"[""W3C Document License (became active on December 31 2002)""]",[]
-Hitachi open-license,"[""W3C DOCUMENT NOTICE AND LICENSE (became active on April 05 1999)""]",[]
-Hitachi open-license,"[""Ant-Contrib License""]",[]
-Hitachi open-license,"[""Apache Jakarta Commons License""]",[]
-Hitachi open-license,"[""Minpack Copyright Notice""]",[]
-Hitachi open-license,"[""Apache Jakarta ORO License""]",[]
-Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.7.5""]",[]
-Hitachi open-license,"[""BEOPEN PYTHON OPEN SOURCE LICENSE AGREEMENT VERSION 1""]",[]
-Hitachi open-license,"[""CWI LICENSE AGREEMENT FOR PYTHON 0.9.0 THROUGH 1.2""]",[]
-Hitachi open-license,"[""Apache BCEL License""]",[]
-Hitachi open-license,"[""IAIK PKCS#11 Wrapper License""]",[]
-Hitachi open-license,"[""Apache-SSL License""]",[]
-Hitachi open-license,"[""Apache Xerces License""]",[]
-Hitachi open-license,"[""Apache Axis License""]",[]
-Hitachi open-license,"[""The CyberNeko Software License, Version 1.0""]",[]
-Hitachi open-license,"[""Apache Tomcat License""]",[]
-Hitachi open-license,"[""Apache Jakarta Regexp License""]",[]
-Hitachi open-license,"[""Apache Crimson License""]",[]
-Hitachi open-license,"[""UPX License Agreement""]",[]
-Hitachi open-license,"[""XFree86 1.0 License"",""XFree86-1.0""]",[]
-Hitachi open-license,"[""GLX PUBLIC LICENSE (Version 1.0 (2/11/99))""]",[]
-Hitachi open-license,"[""CID FONT CODE PUBLIC LICENSE (Version 1.0 (3/31/99))""]",[]
-Hitachi open-license,"[""Bitstream Vera Fonts Copyright""]",[]
-Hitachi open-license,"[""Bigelow & Holmes Inc and URW++ GmbH Luxi font license""]",[]
-Hitachi open-license,"[""PCRE LICENCE (PCRE 4.5 and earlier)""]",[]
-Hitachi open-license,"[""Apache log4j License""]",[]
-Hitachi open-license,"[""Apache Commons License""]",[]
-Hitachi open-license,"[""Apache Turbine License""]",[]
-Hitachi open-license,"[""Apache Ant License""]",[]
-Hitachi open-license,"[""Apache Xalan License""]",[]
-Hitachi open-license,"[""Apache Tomcat Connectors License""]",[]
-Hitachi open-license,"[""Apache Forrest License""]",[]
-Hitachi open-license,"[""Apache XML Security License""]",[]
-Hitachi open-license,"[""RXTX License v 2.1""]",[]
-Hitachi open-license,"[""Streaming API for XML (JSR-173) Specification Reference Implementation License Agreement""]",[]
-Hitachi open-license,"[""Apache Software License, Version 1.1 (modified section 4)""]",[]
-Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON""]",[]
-Hitachi open-license,"[""The License for \""FREE_USE\""""]",[]
-Hitachi open-license,"[""Public Domain or Free License without conditions""]",[]
-Hitachi open-license,"[""PyGraphviz License""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (February 1, 2011)""]",[]
-Hitachi open-license,"[""License for WSDL Schema Files""]",[]
-Hitachi open-license,"[""Indiana University Extreme! Lab Software License""]",[]
-Hitachi open-license,"[""Apache FOP License""]",[]
-Hitachi open-license,"[""J2SSH Software License""]",[]
-Hitachi open-license,"[""CMU/UCD copyright notice""]",[]
-Hitachi open-license,"[""Cambridge Broadband Ltd. copyright notice""]",[]
-Hitachi open-license,"[""Fabasoft R&D Software GmbH & Co KG copyright notice""]",[]
-Hitachi open-license,"[""Apache Struts License""]",[]
-Hitachi open-license,"[""GCC RUNTIME LIBRARY EXCEPTION Version 3.1""]",[]
-Hitachi open-license,"[""GNU Free Documentation License Version 1.1"",""GFDL-1.1""]",[]
-Hitachi open-license,"[""Microsoft Limited Public License""]",[]
-Hitachi open-license,"[""Apache Jakarta BSF License""]",[]
-Hitachi open-license,"[""Copyright The Open Group""]",[]
-Hitachi open-license,"[""GNU Lesser Gerenal Public License Version 2.1 with unRAR restriction""]",[]
-Hitachi open-license,"[""Apache Jakarta Commons License (modified Section 4)""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (March 17, 2005)""]",[]
-Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.4""]",[]
-Hitachi open-license,"[""The OpenSymphony XWork License""]",[]
-Hitachi open-license,"[""OpenSymphony OGNL License""]",[]
-Hitachi open-license,"[""JLEX COPYRIGHT NOTICE, LICENSE AND DISCLAIMER""]",[]
-Hitachi open-license,"[""Apache Stylebook 1.0b3 for Xalan2 License""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (April 9, 2014)""]",[]
-Hitachi open-license,"[""H2 License - Version 1.0""]",[]
-Hitachi open-license,"[""The MX4J License, Version 1.0""]",[]
-Hitachi open-license,"[""PSF LICENSE AGREEMENT FOR PYTHON 2.1.1""]",[]
-Hitachi open-license,"[""OpenSymphony SiteMesh License""]",[]
-Hitachi open-license,"[""Artistic License""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (April 14, 2010)""]",[]
-Hitachi open-license,"[""GNU Free Documentation License Version 1.2"",""GFDL-1.2""]",[]
-Hitachi open-license,"[""GNU Free Documentation License Version 1.3"",""GFDL-1.3""]",[]
-Hitachi open-license,"[""License agreement for matplotlib versions prior to 1.3.0""]",[]
-Hitachi open-license,"[""OpenSymphony WebWork License""]",[]
-Hitachi open-license,"[""Apache Commons License (modified Section 4)""]",[]
-Hitachi open-license,"[""OpenSymphony PropertySet License""]",[]
-Hitachi open-license,"[""Inner Net License, Version 2.00""]",[]
-Hitachi open-license,"[""Berkeley-based copyrights""]",[]
-Hitachi open-license,"[""MonetDB Public License Version 1.1""]",[]
-Hitachi open-license,"[""jaxen 1.1-beta License""]",[]
-Hitachi open-license,"[""Hypersonic SQL License""]",[]
-Hitachi open-license,"[""Freeware Public License""]",[]
-Hitachi open-license,"[""The Licence by \""MAGENTA Ltd\""""]",[]
-Hitachi open-license,"[""Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), DAnCE(TM), and CoSMIC(TM)""]",[]
-Hitachi open-license,"[""Subversion License (Subversion 1.6 and earlier)""]",[]
-Hitachi open-license,"[""Less License""]",[]
-Hitachi open-license,"[""Clarified Artistic License by NcFTP Software Inc.""]",[]
-Hitachi open-license,"[""Clarified Artistic License by perl6.org""]",[]
-Hitachi open-license,"[""Sun Project JXTA(TM) Software License""]",[]
-Hitachi open-license,"[""iWombat Software License, Version 1.1""]",[]
-Hitachi open-license,"[""Dynamic Drive DHTML scripts- Terms of Use (Last updated: May 22nd, 06)""]",[]
-Hitachi open-license,"[""Licensing conditions for Objective Caml(GNU Library General Public License version 2 with exception for run-time system and libraries)""]",[]
-Hitachi open-license,"[""OPEN GROUP PUBLIC LICENSE""]",[]
-Hitachi open-license,"[""Full Copyright Statement of the RFCs with \""BCP 78\"" by \""The Internet Society\""""]",[]
-Hitachi open-license,"[""Microsoft Platform and Application License""]",[]
-Hitachi open-license,"[""Sun Industry Standards Source License 1.0""]",[]
-Hitachi open-license,"[""Apache Avalon License""]",[]
-Hitachi open-license,"[""The Licence by \""Thomas E. Dickey\""""]",[]
-Hitachi open-license,"[""SQLJet Library Software License""]",[]
-Hitachi open-license,"[""SVNKit Library Software License""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (January 28, 2005)""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:CxImage version 6.0.0 02/Feb/2008""]",[]
-Hitachi open-license,"[""freebxml License, Version 1.1""]",[]
-Hitachi open-license,"[""Mattermost Compiled License""]",[]
-Hitachi open-license,"[""IOzone License""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE of \""PNG (Portable Network Graphics) Specification Version 1.0\""""]",[]
-Hitachi open-license,"[""TSRM license""]",[]
-Hitachi open-license,"[""ORACLE LINUX LICENSE AGREEMENT""]",[]
-Hitachi open-license,"[""ITU-T SOFTWARE TOOLS' GENERAL PUBLIC LICENSE""]",[]
-Hitachi open-license,"[""wxWindows Library Licence, Version 3.1"",""wxWindows""]",[]
-Hitachi open-license,"[""Legal Notice for all LLNL-contributed files""]",[]
-Hitachi open-license,"[""GNU LESSER GENERAL PUBLIC LICENSE Version 3 with SPECIAL EXCEPTION GRANTED BY COPYRIGHT HOLDERS""]",[]
-Hitachi open-license,"[""Freeglut Copyright""]",[]
-Hitachi open-license,"[""MySQL AB Exception for Free/Libre and Open Source Software-only Applications Using MySQL Client Libraries""]",[]
-Hitachi open-license,"[""The Copyright Notice of \""RFC5424 of IETF Network Working Group, as The Syslog Protocol\""""]",[]
-Hitachi open-license,"[""Boost Date-Time Library License""]",[]
-Hitachi open-license,"[""The exceptions to \""NVDA\""""]",[]
-Hitachi open-license,"[""krb5 License""]",[]
-Hitachi open-license,"[""License agreement for matplotlib versions prior to 0.98.2""]",[]
-Hitachi open-license,"[""AUTOCONF CONFIGURE SCRIPT EXCEPTION Version 3.0""]",[]
-Hitachi open-license,"[""License: permissive-short-disclaimer""]",[]
-Hitachi open-license,"[""License: permissive-long-disclaimer""]",[]
-Hitachi open-license,"[""License: permissive-without-disclaimer""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 2 with Autoconf exception""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 3 with Texinfo exception""]",[]
-Hitachi open-license,"[""License: permissive""]",[]
-Hitachi open-license,"[""Python 1.5.2 License""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 2 plus a special exception""]",[]
-Hitachi open-license,"[""QuickFIX Software License, Version 1.0""]",[]
-Hitachi open-license,"[""stunnel license""]",[]
-Hitachi open-license,"[""Rules for Resouces by ElvenSword""]",[]
-Hitachi open-license,"[""Apache-Style Software License for ColorBrewer software and ColorBrewer""]",[]
-Hitachi open-license,"[""Digia Qt LGPL Exception version 1.1""]",[]
-Hitachi open-license,"[""Open Government Licence for  public sector information, version 1.0""]",[]
-Hitachi open-license,"[""Qwt License, Version 1.0""]",[]
-Hitachi open-license,"[""Flask Artwork License""]",[]
-Hitachi open-license,"[""IMPORTANT NMAP LICENSE TERMS""]",[]
-Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the Go project by Google""]",[]
-Hitachi open-license,"[""Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), and CoSMIC(TM)(version 2007)""]",[]
-Hitachi open-license,"[""Proxool's licence""]",[]
-Hitachi open-license,"[""Unicode Terms of Use (since 2016)""]",[]
-Hitachi open-license,"[""UBUNTU FONT LICENCE Version 1.0""]",[]
-Hitachi open-license,"[""FOSS License Exception, Updated February 23, 2012""]",[]
-Hitachi open-license,"[""Additional Grant of Patent Rights Version 2 by Facebook, Inc.""]",[]
-Hitachi open-license,"[""Software License Agreement by \""Peter Norvig\""""]",[]
-Hitachi open-license,"[""The License included in \""Boehm-Weiser garbage collector\""""]",[]
-Hitachi open-license,"[""OpenJDK Assembly Exception""]",[]
-Hitachi open-license,"[""The NOTICE file of \""Apache Avalon\""""]",[]
-Hitachi open-license,"[""License agreement for matplotlib |version|""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with GNU C++ Library exception""]",[]
-Hitachi open-license,"[""Full Copyright Statement of the RFCs with \""BCP 78 and Copyrights and Patent Rights in RFCs\"" by \""The Internet Society\""""]",[]
-Hitachi open-license,"[""pgpool-II License""]",[]
-Hitachi open-license,"[""MIT License without disclaimer""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 3 with Autoconf exception""]",[]
-Hitachi open-license,"[""JPython 1.1.x Software License""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with exception added by the Free Software Foundation in version 2.2 of Bison""]",[]
-Hitachi open-license,"[""pybench License""]",[]
-Hitachi open-license,"[""JDBM LICENSE v1.00""]",[]
-Hitachi open-license,"[""Sequence Library License""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE SQUID_RAD_AUTH""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE SQUID_RAD_AUTH Documentation""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE CISTRON RADIUS""]",[]
-Hitachi open-license,"[""COPYRIGHT NOTICE LIVINGSTON RADIUS 1.16""]",[]
-Hitachi open-license,"[""SQL Workbench/J License, Version 1.0""]",[]
-Hitachi open-license,"[""Initial Developer's Public License Version 1.0""]",[]
-Hitachi open-license,"[""STLport License Agreement""]",[]
-Hitachi open-license,"[""TWAIN License""]",[]
-Hitachi open-license,"[""Arev Fonts Copyright""]",[]
-Hitachi open-license,"[""Liberation Font License""]",[]
-Hitachi open-license,"[""WordNet License""]",[]
-Hitachi open-license,"[""Software Licence Agreement by \""Institute of the Estonian Language\""""]",[]
-Hitachi open-license,"[""copyright information from original PCL sources""]",[]
-Hitachi open-license,"[""Gnuplot's copyright""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with GNU Compiler Collection exception, contributed by Jakub Jelinek""]",[]
-Hitachi open-license,"[""Inno Setup License""]",[]
-Hitachi open-license,"[""HAPROXY's license - 2006/06/15(GNU GENERAL PUBLIC LICENSE Version 2 with Exception)""]",[]
-Hitachi open-license,"[""HAPROXY's license - 2006/06/15(GNU LESSER GENERAL PUBLIC LICENSE Version 2.1 with Exception)""]",[]
-Hitachi open-license,"[""Creative Commons Attribution 2.1 Japan""]",[]
-Hitachi open-license,"[""The Notice of \""Apache log4net\""""]",[]
-Hitachi open-license,"[""unrar licence""]",[]
-Hitachi open-license,"[""License for Open Source Software Implementations of OCB""]",[]
-Hitachi open-license,"[""Log4r License""]",[]
-Hitachi open-license,"[""GNU GENERAL PUBLIC LICENSE, Version 3 with classpath exception""]",[]
-Hitachi open-license,"[""CUPS License Agreement(GNU General Public License (\""GPL\""), Version 2, with an exception for Apple operating systems)""]",[]
-Hitachi open-license,"[""CUPS License Agreement(GNU Library General Public License (\""LGPL\""), Version 2, with an exception for Apple operating systems)""]",[]
-Hitachi open-license,"[""Catharon Open Source LICENSE""]",[]
-Hitachi open-license,"[""Microsoft Permissive License""]",[]
-Hitachi open-license,"[""Xdebug License, version 1.01""]",[]
-Hitachi open-license,"[""OpenPBS (Portable Batch System) v2.3 Software License""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 2 with Autoconf Macro Exception""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 3 with Autoconf Macro Exception""]",[]
-Hitachi open-license,"[""compiler_rt License""]",[]
-Hitachi open-license,"[""Software Grant License Agreement for \""the software submitted by ARM to llvm.org (http://llvm.org) (\""LLVM\"")\""""]",[]
-Hitachi open-license,"[""BSD 2-Clause \""Simplified\"" or \""FreeBSD\"" License without disclaimer""]",[]
-Hitachi open-license,"[""Zope Public License (ZPL) Version 1.0"",""ZPL-1.0""]",[]
-Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the WebM Project by Google""]",[]
-Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception included in \""GnuPG\""""]",[]
-Hitachi open-license,"[""SMAIL GENERAL PUBLIC LICENSE""]",[]
-Hitachi open-license,"[""GNU General Public License Version 3 with exception added by the Free Software Foundation in version 2.2 of Bison""]",[]
-Hitachi open-license,"[""RIVERBANK COMPUTING LIMITED LICENSE AGREEMENT FOR SIP""]",[]
-Hitachi open-license,"[""LICENSE FOR THE Extreme! Lab""]",[]
-Hitachi open-license,"[""Eclipse Foundation Software User Agreement (November 22, 2017)""]",[]
-Hitachi open-license,"[""The License included in \""OpenLDAP\""""]",[]
-Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception included in \""GnuTLS\""""]",[]
-Hitachi open-license,"[""GNU General Public License version 3 with OpenSSL exception""]",[]
-Hitachi open-license,"[""The License included in \""OpenLDAP Release Copyright\""""]",[]
-Hitachi open-license,"[""ICC Software License, Version 0.1""]",[]
-Hitachi open-license,"[""Additional IP Rights Grant (Patents) of the gRPC project by Google""]",[]
-Hitachi open-license,"[""GNU General Public License Version 2 with exception added by the Free Software Foundation in version 1.24 of Bison""]",[]
-Hitachi open-license,"[""Paratype PT Sans Free Font License v1.00""]",[]
-Hitachi open-license,"[""Anti-Grain Geometry Public License""]",[]
-Hitachi open-license,"[""Creative Commons Attribution-NonCommercial-ShareAlike 2.5 Australia""]",[]
-Hitachi open-license,"[""Unicode Terms of Use (Last Update 2018/1/6)""]",[]
-Hitachi open-license,"[""xmlproc license""]",[]
-Hitachi open-license,"[""Software License Agreement (BSD License) of \""CocoaLumberjack\""""]",[]
-Hitachi open-license,"[""BaKoMa Fonts Licence""]",[]
-Hitachi open-license,"[""c-ares license""]",[]
-Hitachi open-license,"[""Sequence Library License by Marc Strapetz""]",[]
-Hitachi open-license,"[""Krysalis jCharts License""]",[]
-Hitachi open-license,"[""The License included in \""Linux firmware\""""]",[]
-Hitachi open-license,"[""Apache SOAP License""]",[]
-Hitachi open-license,"[""vbAccelerator Software License""]",[]
-Hitachi open-license,"[""ARPHIC PUBLIC LICENSE""]",[]
-Hitachi open-license,"[""CUPS License Agreement(for Kerberos support code)""]",[]
-Hitachi open-license,"[""unRAR License by \""Eugene Roshal\""""]",[]
-Hitachi open-license,"[""STORAGE NETWORKING INDUSTRY ASSOCIATION PUBLIC LICENSE, Version 1.1""]",[]
-Hitachi open-license,"[""CUA Office Public License, Version 1.0""]",[]
-Hitachi open-license,"[""Exolab License""]",[]
-Hitachi open-license,"[""RHash License""]",[]
-Hitachi open-license,"[""GNU General Public License, Version 2 with OpenSSL Exception""]",[]
-Hitachi open-license,"[""GNU Lesser General Public  License, Version 2.1 with OpenSSL Exception""]",[]

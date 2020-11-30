@@ -184,15 +184,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/NRL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/NRL.json"
         ],
         [
             null,
             "http://web.mit.edu/network/isakmp/nrllicense.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/NRL.html"
         ],
         [
             "Homepage",

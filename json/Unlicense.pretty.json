@@ -2,8 +2,8 @@
     "__impliedNames": [
         "Unlicense",
         "The Unlicense",
-        "scancode://unlicense",
         "unlicense",
+        "scancode://unlicense",
         "Unlicense 1"
     ],
     "__impliedId": "Unlicense",
@@ -546,23 +546,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Unlicense.json"
+            "https://spdx.org/licenses/Unlicense.html"
         ],
         [
             null,
             "https://unlicense.org/"
         ],
         [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/844"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Unlicense.html"
+            "http://spdx.org/licenses/Unlicense.json"
         ],
         [
             "Homepage",
             "http://unlicense.org/"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/844"
         ]
     ]
 }

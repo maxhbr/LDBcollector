@@ -151,15 +151,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Spencer-94.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Spencer-94.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Spencer-94.html"
         ],
         [
             "Homepage",

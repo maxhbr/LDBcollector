@@ -2,12 +2,12 @@
     "__impliedNames": [
         "Intel",
         "Intel Open Source License",
-        "scancode://intel-bsd-export-control",
-        "Intel BSD - Export Control",
+        "intel-osl",
         "The Intel Open Source License",
         "License :: OSI Approved :: Intel Open Source License",
-        "intel-osl",
-        "Intel License Agreement"
+        "Intel License Agreement",
+        "scancode://intel-bsd-export-control",
+        "Intel BSD - Export Control"
     ],
     "__impliedId": "Intel",
     "__isFsfFree": true,
@@ -426,15 +426,23 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Intel.json"
+            "https://spdx.org/licenses/Intel.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Intel"
         ],
         [
+            "OSI Page",
+            "https://opensource.org/licenses/Intel"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/663"
+        ],
+        [
             "SPDX",
-            "https://spdx.org/licenses/Intel.html"
+            "http://spdx.org/licenses/Intel.json"
         ],
         [
             "Homepage",
@@ -451,14 +459,6 @@
         [
             null,
             "https://opensource.org/licenses/intel-open-source-license.php"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Intel"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/663"
         ]
     ]
 }

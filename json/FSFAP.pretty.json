@@ -1,9 +1,9 @@
 {
     "__impliedNames": [
         "FSFAP",
+        "FSF All Permissive license",
         "FSF All Permissive License",
-        "scancode://fsf-ap",
-        "FSF All Permissive license"
+        "scancode://fsf-ap"
     ],
     "__impliedId": "FSFAP",
     "__isFsfFree": true,

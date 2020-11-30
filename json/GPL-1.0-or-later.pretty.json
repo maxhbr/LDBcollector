@@ -11,8 +11,8 @@
     "__impliedId": "GPL-1.0-or-later",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "GPL+",
-        "The GNU General Public License (GPL)"
+        "The GNU General Public License (GPL)",
+        "GPL+"
     ],
     "__impliedComments": [
         [

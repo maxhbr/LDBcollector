@@ -165,15 +165,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json"
         ],
         [
             null,
             "http://www.python.org/download/releases/1.6.1/download_win/"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/CNRI-Python-GPL-Compatible.html"
         ],
         [
             "Homepage",

@@ -4,18 +4,18 @@
         "Artistic 2.0",
         "Artistic License (v. 2.0)",
         "Artistic License 2.0",
-        "scancode://artistic-2.0",
         "artistic-2.0",
+        "artistic-license-2.0",
         "Artistic License, Version 2.0",
         "License :: OSI Approved :: Artistic License",
-        "artistic-license-2.0",
-        "The Artistic License 2.0"
+        "The Artistic License 2.0",
+        "scancode://artistic-2.0"
     ],
     "__impliedId": "Artistic-2.0",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "Artistic 2.0",
-        "Artistic License"
+        "Artistic License",
+        "Artistic 2.0"
     ],
     "__impliedComments": [
         [
@@ -939,6 +939,22 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Artistic-2.0.html"
+        ],
+        [
+            null,
+            "https://opensource.org/licenses/Artistic-2.0"
+        ],
+        [
+            "OSI Page",
+            "https://opensource.org/licenses/Artistic-2.0"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/562"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Artistic-2.0.json"
         ],
         [
@@ -948,10 +964,6 @@
         [
             null,
             "https://opensource.org/licenses/artistic-license-2.0"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Artistic-2.0.html"
         ],
         [
             "Homepage",
@@ -964,18 +976,6 @@
         [
             null,
             "http://www.opensource.org/licenses/artistic-license-2.0"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/Artistic-2.0"
-        ],
-        [
-            null,
-            "https://opensource.org/licenses/Artistic-2.0"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/562"
         ]
     ]
 }

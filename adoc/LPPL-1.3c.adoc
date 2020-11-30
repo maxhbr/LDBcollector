@@ -12,11 +12,11 @@
 
 *Other Names:*
 
+* `+LaTeX Project Public License 1.3c+`
+* `+LaTeX Project Public License, Version 1.3c+`
+* `+LaTeX Project Public License Version 1.3c+`
 * `+scancode://lppl-1.3c+`
 * `+LPPL 1.3c+`
-* `+LaTeX Project Public License, Version 1.3c+`
-* `+LaTeX Project Public License 1.3c+`
-* `+LaTeX Project Public License Version 1.3c+`
 
 === Description
 
@@ -99,8 +99,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.t
 
 * *Homepage:* http://www.latex-project.org/lppl/lppl-1-3c.txt
 * *OSI Page:* https://opensource.org/licenses/LPPL-1.3c
-* *SPDX:* http://spdx.org/licenses/LPPL-1.3c.json
 * *SPDX:* https://spdx.org/licenses/LPPL-1.3c.html
+* *SPDX:* http://spdx.org/licenses/LPPL-1.3c.json
 * *open-license:* http://open-license.hitachi.com/licenses/649
 * http://www.opensource.org/licenses/LPPL-1.3c
 
@@ -631,28 +631,28 @@ Important Recommendations
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/LPPL-1.3c.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
-(CC0-1.0)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml[Scancode]
-(CC0-1.0)
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
-* https://opensource.org/licenses/[OpenSourceInitiative]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
 license-compatibility-checker]
 (https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
-* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
-(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://opensource.org/licenses/[OpenSourceInitiative]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
+(CC0-1.0)
 * https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0)
+* https://spdx.org/licenses/LPPL-1.3c.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml[Scancode]
+(CC0-1.0)
+* https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
+(https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
 ==== Raw JSON
 
@@ -661,12 +661,12 @@ Knowledge International]
     "__impliedNames": [
         "LPPL-1.3c",
         "LaTeX Project Public License v1.3c",
-        "scancode://lppl-1.3c",
-        "LPPL 1.3c",
         "lppl-1.3c",
-        "LaTeX Project Public License, Version 1.3c",
         "LaTeX Project Public License 1.3c",
-        "LaTeX Project Public License Version 1.3c"
+        "LaTeX Project Public License, Version 1.3c",
+        "LaTeX Project Public License Version 1.3c",
+        "scancode://lppl-1.3c",
+        "LPPL 1.3c"
     ],
     "__impliedId": "LPPL-1.3c",
     "__impliedComments": [
@@ -1397,27 +1397,11 @@ Knowledge International]
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/LPPL-1.3c.json"
-        ],
-        [
-            null,
-            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+            "https://spdx.org/licenses/LPPL-1.3c.html"
         ],
         [
             null,
             "https://opensource.org/licenses/LPPL-1.3c"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/LPPL-1.3c.html"
-        ],
-        [
-            "Homepage",
-            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
-        ],
-        [
-            null,
-            "http://www.opensource.org/licenses/LPPL-1.3c"
         ],
         [
             "OSI Page",
@@ -1426,6 +1410,22 @@ Knowledge International]
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/649"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/LPPL-1.3c.json"
+        ],
+        [
+            null,
+            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+        ],
+        [
+            "Homepage",
+            "http://www.latex-project.org/lppl/lppl-1-3c.txt"
+        ],
+        [
+            null,
+            "http://www.opensource.org/licenses/LPPL-1.3c"
         ]
     ]
 }

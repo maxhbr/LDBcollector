@@ -30,9 +30,9 @@ URLs
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/BSD\_with\_Attribution
 
--   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Attribution.json
-
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause-Attribution.html
+
+-   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Attribution.json
 
 Text
 ----
@@ -75,15 +75,9 @@ Raw Data
 
 -   LicenseName
 
--   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Attribution.html "SPDX")
-    (all data \[in this repository\] is generated)
-
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-ack.yml "Scancode")
-    (CC0-1.0)
 
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
@@ -96,6 +90,12 @@ Raw Data
 -   [librariesio
     license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
     ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Attribution.html "SPDX")
+    (all data \[in this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-ack.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
@@ -326,15 +326,15 @@ Raw Data
         "__impliedURLs": [
             [
                 "SPDX",
+                "https://spdx.org/licenses/BSD-3-Clause-Attribution.html"
+            ],
+            [
+                "SPDX",
                 "http://spdx.org/licenses/BSD-3-Clause-Attribution.json"
             ],
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution"
-            ],
-            [
-                "SPDX",
-                "https://spdx.org/licenses/BSD-3-Clause-Attribution.html"
             ],
             [
                 "Homepage",

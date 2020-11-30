@@ -2,8 +2,8 @@
     "__impliedNames": [
         "0BSD",
         "BSD Zero Clause License",
-        "scancode://bsd-zero",
-        "0bsd"
+        "0bsd",
+        "scancode://bsd-zero"
     ],
     "__impliedId": "0BSD",
     "facts": {
@@ -292,15 +292,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/0BSD.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/0BSD.json"
         ],
         [
             null,
             "http://landley.net/toybox/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/0BSD.html"
         ],
         [
             "Homepage",

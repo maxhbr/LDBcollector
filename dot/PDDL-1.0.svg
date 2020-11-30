@@ -19,15 +19,15 @@
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_2</title>
-<polygon fill="lightgray" stroke="lightgray" points="101.79,-352 101.79,-458 545.45,-458 545.45,-352 101.79,-352"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-298 16,-458 631.25,-458 631.25,-298 16,-298"/>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="215.53,-184 215.53,-344 431.71,-344 431.71,-184 215.53,-184"/>
+<polygon fill="lightgray" stroke="lightgray" points="101.79,-184 101.79,-290 545.45,-290 545.45,-184 101.79,-184"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-16 16,-176 631.25,-176 631.25,-16 16,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="215.53,-16 215.53,-176 431.71,-176 431.71,-16 215.53,-16"/>
 </g>
 <!-- PDDL&#45;1.0(1) -->
 <g id="node1" class="node">
@@ -35,53 +35,53 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-492" rx="52.79" ry="18"/>
 <text text-anchor="middle" x="323.62" y="-488.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
 </g>
-<!-- ODC Public Domain Dedication &amp; License 1.0(2) -->
+<!-- ODC&#45;PDDL&#45;1.0(2) -->
 <g id="node2" class="node">
-<title>ODC Public Domain Dedication &amp; License 1.0(2)</title>
-<ellipse fill="white" stroke="white" cx="323.62" cy="-432" rx="213.66" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-428.3" font-family="Times-Roman" font-size="14.00">ODC Public Domain Dedication &amp; License 1.0</text>
+<title>ODC&#45;PDDL&#45;1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="323.62" cy="-432" rx="76.89" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-428.3" font-family="Times-Roman" font-size="14.00">ODC&#45;PDDL&#45;1.0</text>
+</g>
+<!-- Open Data Commons Public Domain Dedication and Licence 1.0(2) -->
+<g id="node3" class="node">
+<title>Open Data Commons Public Domain Dedication and Licence 1.0(2)</title>
+<ellipse fill="white" stroke="white" cx="323.62" cy="-378" rx="299.75" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-374.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Public Domain Dedication and Licence 1.0</text>
 </g>
 <!-- PDDL&#45;1.0(2) -->
-<g id="node3" class="node">
-<title>PDDL&#45;1.0(2)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-378" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-374.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
-</g>
-<!-- PDDL 1.0(3) -->
 <g id="node4" class="node">
-<title>PDDL 1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="323.62" cy="-318" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-314.3" font-family="Times-Roman" font-size="14.00">PDDL 1.0</text>
+<title>PDDL&#45;1.0(2)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-324" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-320.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
+</g>
+<!-- ODC Public Domain Dedication &amp; License 1.0(3) -->
+<g id="node5" class="node">
+<title>ODC Public Domain Dedication &amp; License 1.0(3)</title>
+<ellipse fill="white" stroke="white" cx="323.62" cy="-264" rx="213.66" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-260.3" font-family="Times-Roman" font-size="14.00">ODC Public Domain Dedication &amp; License 1.0</text>
 </g>
 <!-- PDDL&#45;1.0(3) -->
-<g id="node5" class="node">
-<title>PDDL&#45;1.0(3)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-264" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-260.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
-</g>
-<!-- scancode://pddl&#45;1.0(3) -->
 <g id="node6" class="node">
-<title>scancode://pddl&#45;1.0(3)</title>
-<ellipse fill="white" stroke="white" cx="323.62" cy="-210" rx="100.18" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-206.3" font-family="Times-Roman" font-size="14.00">scancode://pddl&#45;1.0</text>
+<title>PDDL&#45;1.0(3)</title>
+<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-210" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-206.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
 </g>
-<!-- ODC&#45;PDDL&#45;1.0(4) -->
+<!-- PDDL 1.0(4) -->
 <g id="node7" class="node">
-<title>ODC&#45;PDDL&#45;1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="323.62" cy="-150" rx="76.89" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-146.3" font-family="Times-Roman" font-size="14.00">ODC&#45;PDDL&#45;1.0</text>
-</g>
-<!-- Open Data Commons Public Domain Dedication and Licence 1.0(4) -->
-<g id="node8" class="node">
-<title>Open Data Commons Public Domain Dedication and Licence 1.0(4)</title>
-<ellipse fill="white" stroke="white" cx="323.62" cy="-96" rx="299.75" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-92.3" font-family="Times-Roman" font-size="14.00">Open Data Commons Public Domain Dedication and Licence 1.0</text>
+<title>PDDL 1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="323.62" cy="-150" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-146.3" font-family="Times-Roman" font-size="14.00">PDDL 1.0</text>
 </g>
 <!-- PDDL&#45;1.0(4) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>PDDL&#45;1.0(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-42" rx="52.79" ry="18"/>
-<text text-anchor="middle" x="323.62" y="-38.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="323.62" cy="-96" rx="52.79" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-92.3" font-family="Times-Roman" font-size="14.00">PDDL&#45;1.0</text>
+</g>
+<!-- scancode://pddl&#45;1.0(4) -->
+<g id="node9" class="node">
+<title>scancode://pddl&#45;1.0(4)</title>
+<ellipse fill="white" stroke="white" cx="323.62" cy="-42" rx="100.18" ry="18"/>
+<text text-anchor="middle" x="323.62" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://pddl&#45;1.0</text>
 </g>
 </g>
 </svg>

@@ -161,15 +161,15 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/Net-SNMP.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/Net-SNMP.json"
         ],
         [
             null,
             "http://net-snmp.sourceforge.net/about/license.html"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Net-SNMP.html"
         ],
         [
             "Homepage",

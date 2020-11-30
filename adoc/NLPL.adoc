@@ -37,8 +37,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === URLs
 
 * *Homepage:* https://fedoraproject.org/wiki/Licensing/NLPL
-* *SPDX:* http://spdx.org/licenses/NLPL.json
 * *SPDX:* https://spdx.org/licenses/NLPL.html
+* *SPDX:* http://spdx.org/licenses/NLPL.json
 
 === Text
 
@@ -65,15 +65,15 @@ or anything else.
 ==== Facts
 
 * LicenseName
-* https://spdx.org/licenses/NLPL.html[SPDX] (all data [in this
-repository] is generated)
 * https://blueoakcouncil.org/list[BlueOak License List]
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml[Scancode]
-(CC0-1.0)
 * https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing[Fedora
 Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
+* https://spdx.org/licenses/NLPL.html[SPDX] (all data [in this
+repository] is generated)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml[Scancode]
+(CC0-1.0)
 
 ==== Raw JSON
 
@@ -280,15 +280,15 @@ Project Wiki]
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/NLPL.html"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/NLPL.json"
         ],
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/NLPL"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/NLPL.html"
         ],
         [
             "Homepage",

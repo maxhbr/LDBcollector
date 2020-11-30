@@ -12,8 +12,8 @@
     "__impliedId": "Apache-1.1",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
-        "ASL 1.1",
-        "The Apache Software License (ASL)"
+        "The Apache Software License (ASL)",
+        "ASL 1.1"
     ],
     "__impliedComments": [
         [
@@ -624,27 +624,11 @@
     "__impliedURLs": [
         [
             "SPDX",
-            "http://spdx.org/licenses/Apache-1.1.json"
-        ],
-        [
-            null,
-            "http://apache.org/licenses/LICENSE-1.1"
+            "https://spdx.org/licenses/Apache-1.1.html"
         ],
         [
             null,
             "https://opensource.org/licenses/Apache-1.1"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/Apache-1.1.html"
-        ],
-        [
-            "Homepage",
-            "http://www.apache.org/licenses/"
-        ],
-        [
-            null,
-            "http://opensource.org/licenses/Apache-1.1"
         ],
         [
             "OSI Page",
@@ -653,6 +637,22 @@
         [
             "open-license",
             "http://open-license.hitachi.com/licenses/12"
+        ],
+        [
+            "SPDX",
+            "http://spdx.org/licenses/Apache-1.1.json"
+        ],
+        [
+            null,
+            "http://apache.org/licenses/LICENSE-1.1"
+        ],
+        [
+            "Homepage",
+            "http://www.apache.org/licenses/"
+        ],
+        [
+            null,
+            "http://opensource.org/licenses/Apache-1.1"
         ]
     ]
 }

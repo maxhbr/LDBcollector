@@ -2,9 +2,9 @@
     "__impliedNames": [
         "ZPL-2.1",
         "Zope Public License 2.1",
+        "Zope Public License (ZPL) Version 2.1",
         "scancode://zpl-2.1",
-        "ZPL 2.1",
-        "Zope Public License (ZPL) Version 2.1"
+        "ZPL 2.1"
     ],
     "__impliedId": "ZPL-2.1",
     "__impliedComments": [
@@ -413,15 +413,19 @@
     "__impliedURLs": [
         [
             "SPDX",
+            "https://spdx.org/licenses/ZPL-2.1.html"
+        ],
+        [
+            "open-license",
+            "http://open-license.hitachi.com/licenses/866"
+        ],
+        [
+            "SPDX",
             "http://spdx.org/licenses/ZPL-2.1.json"
         ],
         [
             null,
             "http://old.zope.org/Resources/ZPL/"
-        ],
-        [
-            "SPDX",
-            "https://spdx.org/licenses/ZPL-2.1.html"
         ],
         [
             "Homepage",
@@ -434,10 +438,6 @@
         [
             null,
             "http://www.zope.org/Resources/ZPL"
-        ],
-        [
-            "open-license",
-            "http://open-license.hitachi.com/licenses/866"
         ]
     ]
 }

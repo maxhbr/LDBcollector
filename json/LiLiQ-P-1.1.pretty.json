@@ -2,8 +2,8 @@
     "__impliedNames": [
         "LiLiQ-P-1.1",
         "LiLiQ-P",
-        "Licence Libre du Québec – Permissive version 1.1",
-        "Licence Libre du Québec – Permissive, Version 1.1"
+        "Licence Libre du Québec – Permissive, Version 1.1",
+        "Licence Libre du Québec – Permissive version 1.1"
     ],
     "__impliedId": "LiLiQ-P-1.1",
     "facts": {
@@ -144,6 +144,10 @@
     "__isOsiApproved": true,
     "__impliedURLs": [
         [
+            "OSI Page",
+            "https://opensource.org/licenses/LiLiQ-P-1.1"
+        ],
+        [
             "SPDX",
             "http://spdx.org/licenses/LiLiQ-P-1.1.json"
         ],
@@ -154,10 +158,6 @@
         [
             null,
             "http://opensource.org/licenses/LiLiQ-P-1.1"
-        ],
-        [
-            "OSI Page",
-            "https://opensource.org/licenses/LiLiQ-P-1.1"
         ]
     ]
 }

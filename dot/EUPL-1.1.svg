@@ -23,27 +23,27 @@
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_3</title>
-<polygon fill="lightgray" stroke="lightgray" points="185.63,-694 185.63,-800 535.71,-800 535.71,-694 185.63,-694"/>
+<polygon fill="lightgray" stroke="lightgray" points="300.67,-694 300.67,-800 420.67,-800 420.67,-694 300.67,-694"/>
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="253.23,-526 253.23,-686 468.11,-686 468.11,-526 253.23,-526"/>
+<polygon fill="lightgray" stroke="lightgray" points="185.63,-580 185.63,-686 535.71,-686 535.71,-580 185.63,-580"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="300.67,-412 300.67,-518 420.67,-518 420.67,-412 300.67,-412"/>
+<polygon fill="lightgray" stroke="lightgray" points="16,-412 16,-572 705.34,-572 705.34,-412 16,-412"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="16,-244 16,-404 705.34,-404 705.34,-244 16,-244"/>
+<polygon fill="lightgray" stroke="lightgray" points="175.24,-298 175.24,-404 546.1,-404 546.1,-298 175.24,-298"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
-<polygon fill="lightgray" stroke="lightgray" points="185.63,-130 185.63,-236 535.71,-236 535.71,-130 185.63,-130"/>
+<polygon fill="lightgray" stroke="lightgray" points="185.63,-184 185.63,-290 535.71,-290 535.71,-184 185.63,-184"/>
 </g>
 <g id="clust9" class="cluster">
 <title>cluster_8</title>
-<polygon fill="lightgray" stroke="lightgray" points="175.24,-16 175.24,-122 546.1,-122 546.1,-16 175.24,-16"/>
+<polygon fill="lightgray" stroke="lightgray" points="253.23,-16 253.23,-176 468.11,-176 468.11,-16 253.23,-16"/>
 </g>
 <!-- EUPL&#45;1.1(1) -->
 <g id="node1" class="node">
@@ -69,41 +69,41 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-774" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="360.67" y="-770.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
-<!-- European Union Public License 1.1(3) -->
+<!-- eupl&#45;1.1(3) -->
 <g id="node5" class="node">
-<title>European Union Public License 1.1(3)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-720" rx="167.07" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-716.3" font-family="Times-Roman" font-size="14.00">European Union Public License 1.1</text>
-</g>
-<!-- EUPL 1.1(4) -->
-<g id="node6" class="node">
-<title>EUPL 1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-660" rx="51.19" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-656.3" font-family="Times-Roman" font-size="14.00">EUPL 1.1</text>
+<title>eupl&#45;1.1(3)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-720" rx="48.19" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-716.3" font-family="Times-Roman" font-size="14.00">eupl&#45;1.1</text>
 </g>
 <!-- EUPL&#45;1.1(4) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>EUPL&#45;1.1(4)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-606" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-602.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-660" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-656.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
-<!-- scancode://eupl&#45;1.1(4) -->
-<g id="node8" class="node">
-<title>scancode://eupl&#45;1.1(4)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-552" rx="99.38" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-548.3" font-family="Times-Roman" font-size="14.00">scancode://eupl&#45;1.1</text>
+<!-- European Union Public License 1.1(4) -->
+<g id="node7" class="node">
+<title>European Union Public License 1.1(4)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-606" rx="167.07" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-602.3" font-family="Times-Roman" font-size="14.00">European Union Public License 1.1</text>
 </g>
 <!-- EUPL&#45;1.1(5) -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>EUPL&#45;1.1(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-492" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-488.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-546" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-542.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
-<!-- eupl&#45;1.1(5) -->
+<!-- European Union Public License, Version 1.1(5) -->
+<g id="node9" class="node">
+<title>European Union Public License, Version 1.1(5)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-492" rx="206.06" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-488.3" font-family="Times-Roman" font-size="14.00">European Union Public License, Version 1.1</text>
+</g>
+<!-- License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)(5) -->
 <g id="node10" class="node">
-<title>eupl&#45;1.1(5)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-438" rx="48.19" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-434.3" font-family="Times-Roman" font-size="14.00">eupl&#45;1.1</text>
+<title>License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)(5)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-438" rx="336.84" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-434.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)</text>
 </g>
 <!-- EUPL&#45;1.1(6) -->
 <g id="node11" class="node">
@@ -111,29 +111,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-378" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="360.67" y="-374.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
-<!-- European Union Public License, Version 1.1(6) -->
+<!-- European Union Public Licence, v.1.1(6) -->
 <g id="node12" class="node">
-<title>European Union Public License, Version 1.1(6)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-324" rx="206.06" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-320.3" font-family="Times-Roman" font-size="14.00">European Union Public License, Version 1.1</text>
-</g>
-<!-- License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)(6) -->
-<g id="node13" class="node">
-<title>License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)(6)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-270" rx="336.84" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-266.3" font-family="Times-Roman" font-size="14.00">License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)</text>
+<title>European Union Public Licence, v.1.1(6)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-324" rx="177.37" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-320.3" font-family="Times-Roman" font-size="14.00">European Union Public Licence, v.1.1</text>
 </g>
 <!-- EUPL&#45;1.1(7) -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>EUPL&#45;1.1(7)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-210" rx="51.99" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-206.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-264" rx="51.99" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-260.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
 <!-- European Union Public License 1.1(7) -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>European Union Public License 1.1(7)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-156" rx="167.07" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-152.3" font-family="Times-Roman" font-size="14.00">European Union Public License 1.1</text>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-210" rx="167.07" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-206.3" font-family="Times-Roman" font-size="14.00">European Union Public License 1.1</text>
+</g>
+<!-- EUPL 1.1(8) -->
+<g id="node15" class="node">
+<title>EUPL 1.1(8)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-150" rx="51.19" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-146.3" font-family="Times-Roman" font-size="14.00">EUPL 1.1</text>
 </g>
 <!-- EUPL&#45;1.1(8) -->
 <g id="node16" class="node">
@@ -141,11 +141,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="360.67" cy="-96" rx="51.99" ry="18"/>
 <text text-anchor="middle" x="360.67" y="-92.3" font-family="Times-Roman" font-size="14.00">EUPL&#45;1.1</text>
 </g>
-<!-- European Union Public Licence, v.1.1(8) -->
+<!-- scancode://eupl&#45;1.1(8) -->
 <g id="node17" class="node">
-<title>European Union Public Licence, v.1.1(8)</title>
-<ellipse fill="white" stroke="white" cx="360.67" cy="-42" rx="177.37" ry="18"/>
-<text text-anchor="middle" x="360.67" y="-38.3" font-family="Times-Roman" font-size="14.00">European Union Public Licence, v.1.1</text>
+<title>scancode://eupl&#45;1.1(8)</title>
+<ellipse fill="white" stroke="white" cx="360.67" cy="-42" rx="99.38" ry="18"/>
+<text text-anchor="middle" x="360.67" y="-38.3" font-family="Times-Roman" font-size="14.00">scancode://eupl&#45;1.1</text>
 </g>
 </g>
 </svg>

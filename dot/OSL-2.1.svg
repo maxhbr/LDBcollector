@@ -27,15 +27,15 @@
 </g>
 <g id="clust5" class="cluster">
 <title>cluster_4</title>
-<polygon fill="lightgray" stroke="lightgray" points="63,-366 63,-472 341.57,-472 341.57,-366 63,-366"/>
+<polygon fill="lightgray" stroke="lightgray" points="24,-366 24,-472 380.57,-472 380.57,-366 24,-366"/>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_5</title>
-<polygon fill="lightgray" stroke="lightgray" points="101.34,-198 101.34,-358 303.23,-358 303.23,-198 101.34,-198"/>
+<polygon fill="lightgray" stroke="lightgray" points="63,-252 63,-358 341.57,-358 341.57,-252 63,-252"/>
 </g>
 <g id="clust7" class="cluster">
 <title>cluster_6</title>
-<polygon fill="lightgray" stroke="lightgray" points="24,-84 24,-190 380.57,-190 380.57,-84 24,-84"/>
+<polygon fill="lightgray" stroke="lightgray" points="101.34,-84 101.34,-244 303.23,-244 303.23,-84 101.34,-84"/>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_7</title>
@@ -65,29 +65,29 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="202.28" cy="-446" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="202.28" y="-442.3" font-family="Times-Roman" font-size="14.00">OSL&#45;2.1</text>
 </g>
-<!-- Open Software License 2.1(4) -->
+<!-- Open Software License, Version 2.1(4) -->
 <g id="node5" class="node">
-<title>Open Software License 2.1(4)</title>
-<ellipse fill="white" stroke="white" cx="202.28" cy="-392" rx="131.08" ry="18"/>
-<text text-anchor="middle" x="202.28" y="-388.3" font-family="Times-Roman" font-size="14.00">Open Software License 2.1</text>
-</g>
-<!-- OSL 2.1(5) -->
-<g id="node6" class="node">
-<title>OSL 2.1(5)</title>
-<ellipse fill="white" stroke="white" cx="202.28" cy="-332" rx="46.29" ry="18"/>
-<text text-anchor="middle" x="202.28" y="-328.3" font-family="Times-Roman" font-size="14.00">OSL 2.1</text>
+<title>Open Software License, Version 2.1(4)</title>
+<ellipse fill="white" stroke="white" cx="202.28" cy="-392" rx="170.07" ry="18"/>
+<text text-anchor="middle" x="202.28" y="-388.3" font-family="Times-Roman" font-size="14.00">Open Software License, Version 2.1</text>
 </g>
 <!-- OSL&#45;2.1(5) -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>OSL&#45;2.1(5)</title>
-<ellipse fill="springgreen" stroke="springgreen" cx="202.28" cy="-278" rx="46.59" ry="18"/>
-<text text-anchor="middle" x="202.28" y="-274.3" font-family="Times-Roman" font-size="14.00">OSL&#45;2.1</text>
+<ellipse fill="springgreen" stroke="springgreen" cx="202.28" cy="-332" rx="46.59" ry="18"/>
+<text text-anchor="middle" x="202.28" y="-328.3" font-family="Times-Roman" font-size="14.00">OSL&#45;2.1</text>
 </g>
-<!-- scancode://osl&#45;2.1(5) -->
+<!-- Open Software License 2.1(5) -->
+<g id="node7" class="node">
+<title>Open Software License 2.1(5)</title>
+<ellipse fill="white" stroke="white" cx="202.28" cy="-278" rx="131.08" ry="18"/>
+<text text-anchor="middle" x="202.28" y="-274.3" font-family="Times-Roman" font-size="14.00">Open Software License 2.1</text>
+</g>
+<!-- OSL 2.1(6) -->
 <g id="node8" class="node">
-<title>scancode://osl&#45;2.1(5)</title>
-<ellipse fill="white" stroke="white" cx="202.28" cy="-224" rx="92.88" ry="18"/>
-<text text-anchor="middle" x="202.28" y="-220.3" font-family="Times-Roman" font-size="14.00">scancode://osl&#45;2.1</text>
+<title>OSL 2.1(6)</title>
+<ellipse fill="white" stroke="white" cx="202.28" cy="-218" rx="46.29" ry="18"/>
+<text text-anchor="middle" x="202.28" y="-214.3" font-family="Times-Roman" font-size="14.00">OSL 2.1</text>
 </g>
 <!-- OSL&#45;2.1(6) -->
 <g id="node9" class="node">
@@ -95,11 +95,11 @@
 <ellipse fill="springgreen" stroke="springgreen" cx="202.28" cy="-164" rx="46.59" ry="18"/>
 <text text-anchor="middle" x="202.28" y="-160.3" font-family="Times-Roman" font-size="14.00">OSL&#45;2.1</text>
 </g>
-<!-- Open Software License, Version 2.1(6) -->
+<!-- scancode://osl&#45;2.1(6) -->
 <g id="node10" class="node">
-<title>Open Software License, Version 2.1(6)</title>
-<ellipse fill="white" stroke="white" cx="202.28" cy="-110" rx="170.07" ry="18"/>
-<text text-anchor="middle" x="202.28" y="-106.3" font-family="Times-Roman" font-size="14.00">Open Software License, Version 2.1</text>
+<title>scancode://osl&#45;2.1(6)</title>
+<ellipse fill="white" stroke="white" cx="202.28" cy="-110" rx="92.88" ry="18"/>
+<text text-anchor="middle" x="202.28" y="-106.3" font-family="Times-Roman" font-size="14.00">scancode://osl&#45;2.1</text>
 </g>
 <!-- Open Software License, version 2.1(7) -->
 <g id="node11" class="node">

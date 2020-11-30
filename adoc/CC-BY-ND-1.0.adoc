@@ -89,13 +89,13 @@ Creative Commons may be contacted at http://creativecommons.org/.
 ==== Facts
 
 * LicenseName
+* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
+Policy]
+(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://spdx.org/licenses/CC-BY-ND-1.0.html[SPDX] (all data [in this
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cc-by-nd-1.0.yml[Scancode]
 (CC0-1.0)
-* https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
-Policy]
-(https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 
 ==== Raw JSON
 
