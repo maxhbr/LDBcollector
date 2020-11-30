@@ -16,13 +16,15 @@ category:            Development
 description:         Please see the README on GitHub at <https://github.com/maxhbr/LDBcollector#readme>
 
 dependencies:
-- base >= 4.7 && < 5
 - aeson
 - aeson-pretty
 - attoparsec
+- base >= 4.7 && < 5
+- base16-bytestring
 - bytestring
 - cassava
 - containers
+- cryptohash-md5
 - curl
 - directory
 - extra

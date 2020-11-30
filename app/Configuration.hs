@@ -23,7 +23,7 @@ configurationPriv = let
     , gnuLFC
     , ifrOSSLFC
     ]
-  in configuration { cLFCs = (cLFCs configuration) ++ otherLFCs }
+  in configuration { cLFCs = [] }
 
 configuration :: Configuration
 configuration = let

@@ -3,7 +3,6 @@ module Lib
   ( module X
   , readFacts
   , calculateLicenses, calculateSPDXLicenses
-  , writeLicenseJSONs
   , cleanupAndMakeOutputFolder
   , Configuration (..)
   , runLDBCore
@@ -53,6 +52,8 @@ import           Generators.GraphizWriter as X
 import           Generators.Stats as X
 import           Generators.FindClusters as X
 import           Generators.FactLicenses as X
+import           Generators.LicenseJsonsWriter as X
+import           Generators.FactJsonsWriter as X
 
 runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page, LicenseClusterTree)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do
@@ -127,20 +128,6 @@ calculateLicensesBySelector filterForIds facts = let
 
 calculateSPDXLicenses :: Facts -> IO [(LicenseName, (License, LicenseClusterTree))]
 calculateSPDXLicenses = calculateLicensesBySelector (\f -> getLicenseFactClassifier f == LFC "SPDX")
-
-writeLicenseJSONs :: FilePath -> [(LicenseName, License)] -> IO ()
-writeLicenseJSONs outputFolder licenses = do
-  let jsonOutputFolder = outputFolder </> "json"
-  createDirectory jsonOutputFolder
-  jsons <- mapM (\(i,l) -> let
-                    outputFile = i ++ ".json"
-                    pOutputFile = i ++ ".pretty.json"
-                in do
-                   BL.writeFile (jsonOutputFolder </> outputFile) (encode l)
-                   BL.writeFile (jsonOutputFolder </> pOutputFile) (encodePretty l)
-                   return outputFile) licenses
-  BL.writeFile (jsonOutputFolder </> "_all.json") (encodePretty licenses)
-  BL.writeFile (jsonOutputFolder </> "_index.json") (encodePretty jsons)
 
 cleanupAndMakeOutputFolder :: FilePath -> IO FilePath
 cleanupAndMakeOutputFolder outputFolder = do

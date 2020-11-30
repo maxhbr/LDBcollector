@@ -108,7 +108,7 @@ renderOpenLicenseDesc :: Maybe (WithSource [Text]) -> Blocks
 renderOpenLicenseDesc Nothing                 = mempty
 renderOpenLicenseDesc (Just openLicenseDescs) =
   P.header 2 (P.text "Description from open-license")
-  <> foldMap (P.codeBlock . T.unpack) (unpackWithSource openLicenseDescs)
+  <> P.bulletList (map (P.codeBlock . T.unpack) (unpackWithSource openLicenseDescs))
   <> case openLicenseDescs of
        WithSource lfc _ -> P.para (renderSource lfc)
        WithoutSource _  -> mempty

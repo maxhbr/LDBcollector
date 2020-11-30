@@ -27,6 +27,7 @@ handler outputFolder = (\facts input -> do
                            writeGraphizs outputFolder trees
 
                            writeCopyleftTable outputFolder licenses
+                           -- writeFactJSONs outputFolder facts
 
                            return outputFolder)
 

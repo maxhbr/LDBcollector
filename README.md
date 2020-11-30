@@ -189,7 +189,18 @@ https://github.com/Hitachi/open-license
 
 **licensed under:** GPL-2.0
 
+### license-compatibility-checker
+- https://github.com/HansHammel/license-compatibility-checker
+
+**licensed under:** MIT
+
+### librariesio: license-compatibility
+- https://github.com/librariesio/license-compatibility/
+
+**licensed under:** MIT
+
 ## Other possible Sources for license Metadata
+  - license-compatibility-checker: https://github.com/HansHammel/license-compatibility-checker (MIT)
   - ORT License highlighting
   - ...
   - FOSSology
