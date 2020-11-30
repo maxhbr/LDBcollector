@@ -38,6 +38,8 @@ import           Collectors.OSI as X
 import           Collectors.OSLC as X
 import           Collectors.OpenChainPolicyTemplate as X
 import           Collectors.OpenLicense as X
+import           Collectors.LicenseCompatibility as X
+import           Collectors.LicenseCompatibilityChecker as X
 import           Collectors.Override as X
 import           Collectors.SPDX as X
 import           Collectors.Scancode as X
@@ -94,6 +96,8 @@ mkCollectors conf@Configuration{cLFCs = chosenLFCs} =
   , (fossologyLFC, loadFossologyFacts)
   , (osiLFC, loadOSIFacts)
   , (oslcLFC, loadOslcFacts)
+  , (licenseCompatibilityCheckerLFC, loadLicenseCompatibilityCheckerFacts)
+  , (licenseCompatibilityLFC, loadLicenseCompatibilityFacts)
   , (wikipediaLFC, loadWikipediaFacts)
   , (googleLFC, loadGoogleFacts)
   , (okfnLFC, loadOkfnFacts)

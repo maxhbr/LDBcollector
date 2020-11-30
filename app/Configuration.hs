@@ -37,6 +37,8 @@ configuration = let
     , calLFC
     , fedoraLFC
     -- , fosslogyLFC
+    , licenseCompatibilityCheckerLFC
+    , licenseCompatibilityLFC
     , osiLFC
     , oslcLFC
     , olLFC
