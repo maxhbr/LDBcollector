@@ -54,26 +54,26 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: We hope that somewhere in the documentation of commercial products, research projects, etc., it will be noted in the credits that ANTLR or ANTLR-generated code is being used. I would like to see the header description of the source code of the software in question remain intact.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use the object code generated from the modified source code
-    - Use binaries generated from modified source code
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the generated binaries from modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
-    - Distribute the executable generated from the modified source code
+-   Description: We hope that somewhere in the documentation of commercial products, research projects, etc., it will be noted in the credits that ANTLR or ANTLR-generated code is being used. I would like to see the header description of the source code of the software in question remain intact.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use the object code generated from the modified source code
+        - Use binaries generated from modified source code
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the generated binaries from modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
+        - Distribute the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
 (source: Hitachi open-license)
 

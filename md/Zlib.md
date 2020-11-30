@@ -92,57 +92,57 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use the object code generated from the modified source code
-    - Use binaries generated from modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use the object code generated from the modified source code
+        - Use binaries generated from modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    AND
-      OBLIGATION: Correctly indicate the origin of the software in question
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          OBLIGATION: Correctly indicate the origin of the software in question
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-    Conditions:
-    OBLIGATION: Correctly indicate the origin of the software in question
+        Conditions:
+        OBLIGATION: Correctly indicate the origin of the software in question
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Modify the obtained source code.
-    - Distribute the object code generated from the modified source code
-    - Distribute the generated binaries from modified source code
-    - Distribute the executable generated from the modified source code
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Modify the obtained source code.
+        - Distribute the object code generated from the modified source code
+        - Distribute the generated binaries from modified source code
+        - Distribute the executable generated from the modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Correctly indicate the origin of the software in question
-      OBLIGATION: Indicate that you have made the change yourself.
+        Conditions:
+        AND
+          OBLIGATION: Correctly indicate the origin of the software in question
+          OBLIGATION: Indicate that you have made the change yourself.
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribution of Modified Source Code
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      OBLIGATION: Correctly indicate the origin of the software in question
-      OBLIGATION: Indicate that you have made the change yourself.
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          OBLIGATION: Correctly indicate the origin of the software in question
+          OBLIGATION: Indicate that you have made the change yourself.
+          OBLIGATION: Give you a copy of the relevant license.
 
 (source: Hitachi open-license)
 

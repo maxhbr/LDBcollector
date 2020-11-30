@@ -45,42 +45,42 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: The copyright of the software is held by the copyright holder.
-    Actions:
-    - Use the name of the author or copyright holder in advertising and promotion of the software
+-   Description: The copyright of the software is held by the copyright holder.
+        Actions:
+        - Use the name of the author or copyright holder in advertising and promotion of the software
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

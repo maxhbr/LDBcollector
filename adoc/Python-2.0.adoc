@@ -54,6 +54,8 @@ https://github.com/Hitachi/open-license[Hitachi open-license]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Treat software related documentation in the same way as software
 Actions:
@@ -72,7 +74,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
 Actions:
@@ -89,7 +92,8 @@ AND
   OBLIGATION: Include the copyright notice contained in the software
 
 ....
-
+* {blank}
++
 ....
 Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
 Actions:
@@ -101,7 +105,8 @@ AND
   OBLIGATION: Include a summary of the changes you have made
 
 ....
-
+* {blank}
++
 ....
 Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
 Actions:

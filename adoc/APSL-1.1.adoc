@@ -84,6 +84,8 @@ http://web.archive.org/web/20000901055846/http://www.opensource.apple.com/apsl/
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -96,7 +98,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.
 
 ....
-
+* {blank}
++
 ....
 Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -111,7 +114,8 @@ AND
   OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
 
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -127,7 +131,8 @@ AND
   RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the acquired object code for internal research and development (Redistribute the code as it was obtained)
@@ -141,7 +146,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -158,7 +164,8 @@ AND
   OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
 
 ....
-
+* {blank}
++
 ....
 Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -174,7 +181,8 @@ AND
   OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
 
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -192,7 +200,8 @@ AND
   RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
 
 ....
-
+* {blank}
++
 ....
 Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -209,7 +218,8 @@ AND
   OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
 
 ....
-
+* {blank}
++
 ....
 Description: A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html ● Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code).
 Actions:
@@ -229,7 +239,8 @@ AND
   OBLIGATION: Letting you know how to get your modifications.
 
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
 Actions:
@@ -249,7 +260,8 @@ AND
   OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.
 
 ....
-
+* {blank}
++
 ....
 Description: ●Information on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html ● Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts.
 Actions:
@@ -267,7 +279,8 @@ AND
   OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
@@ -278,7 +291,8 @@ AND
   OBLIGATION: Obtain the recipient's agreement to impose its own additional terms
 
 ....
-
+* {blank}
++
 ....
 Description: You may use "Apple", "Apple Computer", "Mac OS X", "Mac OS X Server", or any other trademark or product name that belongs to Apple. The URL for the guidelines provided by Apple can be found here: http://www.apple.com/legal/guidelinesfor3rdparties.html
 Actions:

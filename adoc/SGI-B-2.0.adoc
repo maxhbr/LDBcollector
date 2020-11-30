@@ -41,6 +41,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -54,7 +56,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL []. Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL [http://oss.sgi.com/projects/FreeB/].
 Actions:
@@ -78,7 +81,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Description: With permission of Silicon Graphics, Inc.
 Actions:

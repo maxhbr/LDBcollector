@@ -97,80 +97,80 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The term "Contributor" refers to the person or entity that distributes the software. The term "source code" refers to the source code of the software, documentation sources, configuration files and other files suitable for making changes.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Display the obtained source code publicly
-    - Executing the fetched source code publicly
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the retrieved object code publicly
-    - Publicly execute the fetched object code
-    - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display modified source code publicly
-    - Publicly execute the modified source code
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Publicly display the object code generated from the modified source code
-    - Publicly execute the object code generated from the modified source code
-    - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+-   Description: The term "Contributor" refers to the person or entity that distributes the software. The term "source code" refers to the source code of the software, documentation sources, configuration files and other files suitable for making changes.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Display the obtained source code publicly
+        - Executing the fetched source code publicly
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the retrieved object code publicly
+        - Publicly execute the fetched object code
+        - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display modified source code publicly
+        - Publicly execute the modified source code
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Publicly display the object code generated from the modified source code
+        - Publicly execute the object code generated from the modified source code
+        - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
 
-    Description: Contributors may include appropriate proprietary copyright notices, patents, trademarks, and attribution notices and related disclaimers. Contributor is the person or entity that distributes the software. Distribution includes making available a method of transferring a copy of the software. The term "source code" refers to the source code, documentation sources, configuration files, and other files suitable for making modifications to the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
+-   Description: Contributors may include appropriate proprietary copyright notices, patents, trademarks, and attribution notices and related disclaimers. Contributor is the person or entity that distributes the software. Distribution includes making available a method of transferring a copy of the software. The term "source code" refers to the source code, documentation sources, configuration files, and other files suitable for making modifications to the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-      OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      RESTRICTION: Combine with other software using files available under a second license other than the software, and if the initial contributor has attached EXHIBIT A of this license to the source code, the software is available under the second license (The second license refers to the GNU General Public License, Version 2.0, with exceptions and additions as identified by the initial contributor, and any subsequent versions of this license. A contributor is the person or entity that distributes the software.)
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
-      OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+          OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          RESTRICTION: Combine with other software using files available under a second license other than the software, and if the initial contributor has attached EXHIBIT A of this license to the source code, the software is available under the second license (The second license refers to the GNU General Public License, Version 2.0, with exceptions and additions as identified by the initial contributor, and any subsequent versions of this license. A contributor is the person or entity that distributes the software.)
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
+          OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
 
-    Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
-    Actions:
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the object code generated from the modified source code
+-   Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
+        Actions:
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the object code generated from the modified source code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-      OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+          OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
 
-    Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
-    Actions:
-    - Distribute the acquired object code under your own license
-    - Distribute object code generated from modified source code under your own license
+-   Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
+        Actions:
+        - Distribute the acquired object code under your own license
+        - Distribute object code generated from modified source code under your own license
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-      OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      RESTRICTION: all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose. (Contributor is the person or entity that distributes the Software.)
-      RESTRICTION: To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license. (Contributor is the person or entity that distributes the Software.)
-      RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
-      RESTRICTION: The recipient of such software is distributing it under a license that meets the terms of distribution of this license
-      OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+          OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          RESTRICTION: all warranties and conditions, express or implied, for the benefit of all contributors are validly disclaimed in their own license. The warranties or conditions herein include, but are not limited to, warranties or conditions of title, non-infringement, commercial applicability, and fitness for a particular purpose. (Contributor is the person or entity that distributes the Software.)
+          RESTRICTION: To the benefit of all contributors, any and all liability for loss of profits or other, direct, indirect, special, incidental, or consequential damages is effectively excluded under its own license. (Contributor is the person or entity that distributes the Software.)
+          RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
+          RESTRICTION: The recipient of such software is distributing it under a license that meets the terms of distribution of this license
+          OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
 
 (source: Hitachi open-license)
 

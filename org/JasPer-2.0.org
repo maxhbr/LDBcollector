@@ -42,53 +42,53 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Description: Relevant documentation for the software should be treated in the same way as for the software.
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Modify the obtained source code.
-  - Using Modified Source Code
-  - Use the retrieved object code (Use the fetched code as it is.)
-  - Use the object code generated from the modified source code
-  - Use the retrieved executable (Use the obtained executable as is.)
-  - Use the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: Relevant documentation for the software should be treated in the same way as for the software.
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Modify the obtained source code.
+    - Using Modified Source Code
+    - Use the retrieved object code (Use the fetched code as it is.)
+    - Use the object code generated from the modified source code
+    - Use the retrieved executable (Use the obtained executable as is.)
+    - Use the executable generated from the modified source code
 
-  Conditions:
-  REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-#+END_EXAMPLE
-
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-  - Distribute the obtained object code (Redistribute the code as it was obtained)
-  - Distribution of Modified Source Code
-  - Distribute the object code generated from the modified source code
-  - Selling Software
-  - Distribute the obtained executable (Redistribute the obtained executable as-is)
-  - Distribute the executable generated from the modified source code
-  - Publish the modified source code.
-  - Present the object code generated from the modified source code.
-  - Present the executable generated from the modified source code
-
-  Conditions:
-  AND
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+    Conditions:
     REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+    - Distribute the obtained object code (Redistribute the code as it was obtained)
+    - Distribution of Modified Source Code
+    - Distribute the object code generated from the modified source code
+    - Selling Software
+    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+    - Distribute the executable generated from the modified source code
+    - Publish the modified source code.
+    - Present the object code generated from the modified source code.
+    - Present the executable generated from the modified source code
 
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
-  Actions:
-  - Use the copyright holder's name to endorse or promote the derived product
+    Conditions:
+    AND
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
 
-  Conditions:
-  AND
-    REQUISITE: Get special permission in writing.
-    REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
+    Actions:
+    - Use the copyright holder's name to endorse or promote the derived product
+
+    Conditions:
+    AND
+      REQUISITE: Get special permission in writing.
+      REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
+
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

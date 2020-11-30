@@ -97,6 +97,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt[c
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -111,7 +113,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -129,7 +132,8 @@ AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)

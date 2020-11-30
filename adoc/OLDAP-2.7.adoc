@@ -40,6 +40,8 @@ http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -51,7 +53,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -64,7 +67,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -77,7 +81,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: The copyright of the software is held by the copyright holder.
 Actions:

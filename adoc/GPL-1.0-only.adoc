@@ -52,6 +52,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -63,7 +65,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy.
 Actions:
@@ -75,7 +78,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the source code of all modules.
 Actions:
@@ -88,7 +92,8 @@ AND
   OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy; you may offer a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -105,7 +110,8 @@ AND
   OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy.
 Actions:
@@ -122,7 +128,8 @@ AND
     OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the source code of all modules. Source code refers to the source code for all modules. You may charge a fee for the physical act of transferring a copy; you may offer a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:

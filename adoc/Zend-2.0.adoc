@@ -46,6 +46,8 @@ https://web.archive.org/web/20130517195954/http://www.zend.com/license/2_00.txt
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -56,7 +58,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Acknowledgements include "This product includes the Zend Engine, freely available at http://www.zend.com"
 Actions:
@@ -69,7 +72,8 @@ AND
   OBLIGATION: Acknowledgements
 
 ....
-
+* {blank}
++
 ....
 Description: Acknowledgements include "This product includes the Zend Engine, freely available at http://www.zend.com"
 Actions:
@@ -82,7 +86,8 @@ AND
   OBLIGATION: Acknowledgements
 
 ....
-
+* {blank}
++
 ....
 Description: "Zend", when using the name "Zend Engine". license@zend.comに連絡する.
 Actions:
@@ -91,7 +96,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: Acknowledgement is here: "The Zend Engine is freely available at http://www.zend.com"
 Actions:

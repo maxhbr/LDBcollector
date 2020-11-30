@@ -91,72 +91,72 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Description: Relevant documentation for the software should be treated in the same way as for the software.
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Using Modified Source Code
-  - Use the retrieved object code (Use the fetched code as it is.)
-  - Use the retrieved binaries (Use the fetched binary as it is.)
-  - Use the object code generated from the modified source code
-  - Use binaries generated from modified source code
-  - Use the retrieved executable (Use the obtained executable as is.)
-  - Use the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: Relevant documentation for the software should be treated in the same way as for the software.
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Using Modified Source Code
+    - Use the retrieved object code (Use the fetched code as it is.)
+    - Use the retrieved binaries (Use the fetched binary as it is.)
+    - Use the object code generated from the modified source code
+    - Use binaries generated from modified source code
+    - Use the retrieved executable (Use the obtained executable as is.)
+    - Use the executable generated from the modified source code
 
-  Conditions: None
-#+END_EXAMPLE
+    Conditions: None
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is here: http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.]$name_of_software: $distribution_URICopyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<- here ■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html ■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■"Beihang" can be found at http://ev.buaa.edu.cn/
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-  - Distribute the obtained object code (Redistribute the code as it was obtained)
-  - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-  - Distribute the obtained executable (Redistribute the obtained executable as-is)
+- #+BEGIN_EXAMPLE
+    Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is here: http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.]$name_of_software: $distribution_URICopyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<- here ■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html ■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■"Beihang" can be found at http://ev.buaa.edu.cn/
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+    - Distribute the obtained object code (Redistribute the code as it was obtained)
+    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+    - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-  Conditions:
-  AND
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+    Conditions:
+    AND
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this far■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■The link to "Beihang" is http://ev.buaa.edu.cn/● When you inform people of changes you have made, it is recommended to inform them of the URI to get the code.
-  Actions:
-  - Modify the obtained source code.
+- #+BEGIN_EXAMPLE
+    Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this far■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■The link to "Beihang" is http://ev.buaa.edu.cn/● When you inform people of changes you have made, it is recommended to inform them of the URI to get the code.
+    Actions:
+    - Modify the obtained source code.
 
-  Conditions:
-  AND
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-    OBLIGATION: Include a file to report the changes you make and the date of all changes
+    Conditions:
+    AND
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+      OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this far■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■The link to "Beihang" is http://ev.buaa.edu.cn/● When you inform people of changes you have made, it is recommended to inform them of the URI to get the code.
-  Actions:
-  - Distribution of Modified Source Code
-  - Distribute the object code generated from the modified source code
-  - Distribute the generated binaries from modified source code
-  - Distribute the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: The software's associated documentation should be treated in the same manner as the software. Include the W3C Software Short Notice (hypertext recommended, or text) in the body of the software's code, unless there is a disclaimer, notice, or clause at all. The link to the W3C Software Short Notice is http://www.w3.org/Consortium/Legal/2002/copyright-software-short-notice-20021231.html■W3C Software A Short Notice can be found here: here ->[This notice should be placed within redistributed or derivative software code when appropriate. formulation became active on December 31 2002, superseding the 1998 version.] $name_of_software: $distribution_URI Copyright © [$date-of-software ] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University, Beihang). This work is distributed under the W3C® Software License [1] in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.[1] http://www.w3.org/Consortium/Legal/2002/copyright-software- 20021231<-this far■"1998 Version" link to http://www.w3.org/Consortium/Legal/generic-copyright-notice-19980720.html■"Copyright" link to http Link to "World Wide Web Consortium" can be found at http://www.w3.org/ ■"Massachusetts Institute of Technology" link to www.w3.org/Consortium/Legal/ipr-notice The link to http://www.lcs.mit.edu/■"European Research Consortium for Informatics and Mathematics" can be found at http://www.ercim.org/■"Keio University" The link to http://www.keio.ac.jp/■The link to "Beihang" is http://ev.buaa.edu.cn/● When you inform people of changes you have made, it is recommended to inform them of the URI to get the code.
+    Actions:
+    - Distribution of Modified Source Code
+    - Distribute the object code generated from the modified source code
+    - Distribute the generated binaries from modified source code
+    - Distribute the executable generated from the modified source code
 
-  Conditions:
-  AND
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-    OBLIGATION: Include a file to report the changes you make and the date of all changes
+    Conditions:
+    AND
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+      OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The copyright to the software and related documentation is retained by the copyright holder at all times.
-  Actions:
-  - Using the copyright holder's name or trademark in software promotion and advertising
+- #+BEGIN_EXAMPLE
+    Description: The copyright to the software and related documentation is retained by the copyright holder at all times.
+    Actions:
+    - Using the copyright holder's name or trademark in software promotion and advertising
 
-  Conditions:
-  REQUISITE: Get special permission in writing.
-#+END_EXAMPLE
+    Conditions:
+    REQUISITE: Get special permission in writing.
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

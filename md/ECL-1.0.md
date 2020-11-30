@@ -58,67 +58,67 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Publish the acquired source code. (Publish the source code as it was obtained.)
-    - Publish the retrieved object code (Publish the fetched object code as it is.)
-    - Present the obtained executables. (Publish the obtained executable as is.)
+-   Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Publish the acquired source code. (Publish the source code as it was obtained.)
+        - Publish the retrieved object code (Publish the fetched object code as it is.)
+        - Present the obtained executables. (Publish the obtained executable as is.)
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Modify the obtained source code.
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
+        Conditions:
+        AND
+          OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-    Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
-    Actions:
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Distribute the executable generated from the modified source code
-    - Publish the modified source code.
-    - Present the object code generated from the modified source code.
-    - Present the executable generated from the modified source code
-    - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+-   Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
+        Actions:
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Distribute the executable generated from the modified source code
+        - Publish the modified source code.
+        - Present the object code generated from the modified source code.
+        - Present the executable generated from the modified source code
+        - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-    Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
-    Actions:
-    - Use the copyright holder's name in software promotions and advertisements
+-   Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
+        Actions:
+        - Use the copyright holder's name in software promotions and advertisements
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

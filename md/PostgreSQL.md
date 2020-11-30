@@ -71,29 +71,29 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
 
-    Conditions:
-    OBLIGATION: Include a copyright notice and list of terms and conditions included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice and list of terms and conditions included in the license
 
 (source: Hitachi open-license)
 

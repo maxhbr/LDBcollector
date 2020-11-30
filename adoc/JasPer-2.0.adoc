@@ -37,6 +37,8 @@ Project Wiki]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -51,7 +53,8 @@ Actions:
 Conditions:
 REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
 ....
-
+* {blank}
++
 ....
 Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
 Actions:
@@ -72,7 +75,8 @@ AND
   REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
 
 ....
-
+* {blank}
++
 ....
 Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
 Actions:

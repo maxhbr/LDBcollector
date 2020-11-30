@@ -125,115 +125,115 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Give you a copy of the relevant license.
-
-    Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
-    Actions:
-    - Modify the obtained source code.
-
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      RESTRICTION: The generated work is a software library
-      OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-      REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
-
-    Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
-    Actions:
-    - Distribution of Modified Source Code
-
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Give you a copy of the relevant license.
-      RESTRICTION: The generated work is a software library
-      OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-      OBLIGATION: License the library to third parties free of charge in accordance with the terms of such license.
-      OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-      REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
-
-    Summary: Distribute the library as a library by itself
-    Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
-    Actions:
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-      OR
-        OBLIGATION: Attach the source code corresponding to the library
-        OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-
-    Summary: Distribute the library as a library by itself
-    Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
-    Actions:
-    - Distribute the object code generated from the modified source code
-    - Distribute the executable generated from the modified source code
-
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Give you a copy of the relevant license.
-      RESTRICTION: The generated work is a software library
-      OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-      OBLIGATION: License the library to third parties free of charge in accordance with the terms of such license.
-      OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
-      REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
-      OR
-        OBLIGATION: Attach the source code corresponding to the library
-        OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-
-    Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy, or provide a warranty in exchange for a fee. If a work does not include such library, but is designed to work with such library by being compiled or linked to it, it shall not be considered a stand-alone derivative work of such library and is not covered by such license.
-    Actions:
-    - Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing. (The generated work contains a library or part of a library)
-
-    Conditions:
-    AND
-      REQUISITE: Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.
-      OBLIGATION: Indicate that the library is being used
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.
-      OR
+        Conditions:
         AND
-          OBLIGATION: Attach the source code corresponding to the library
-          OBLIGATION: Pass information that can be used to modify the library and put it into a distribution format. (If the distribution is in executable form, you can pass on at least the object code or source code of your work.)
-        OBLIGATION: Use an appropriate shared library mechanism to link with the library in question (A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.)
-        OBLIGATION: Provide a written statement, valid for at least three years, that you will provide the corresponding source code for the library and information that allows you to modify the library into a distributable form in exchange for a fee not to exceed the physical cost of distribution (If the distribution is in executable form, at least one of the object code or source code for your work will be passed on, in addition to the corresponding source code for the library.)
-        OBLIGATION: Make the distribution, the source code corresponding to the library, and the information that can be modified to form the distribution, available for download from the same place with equivalent access. (If the distribution is executable, at least one of the object code or source code for your work is available for download, in addition to the corresponding source code for the library.)
-        OBLIGATION: Verify that the recipient has received the source code corresponding to the library and information that can be used to modify the library into a distribution format, or has sent a copy itself. (If the distribution is executable, check whether you have received at least one of the object code or source code for your work, in addition to the corresponding source code for the library.)
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: A fee may be charged for the physical act of transferring a copy. A warranty may be provided in exchange for a fee.
-    Actions:
-    - Distribute portions of a library together with libraries not covered by the license in a single library
+-   Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OBLIGATION: Permit separate distribution of the library and the portion of the library not covered by the license
-      OBLIGATION: Pass an independent copy of the library in accordance with that license (Pass a copy of the entire library in question)
-      OBLIGATION: Indicate that the library is being used
-      OBLIGATION: Indicate where the library is located in a stand-alone form
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          RESTRICTION: The generated work is a software library
+          OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
+          REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
+
+-   Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
+        Actions:
+        - Distribution of Modified Source Code
+
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Give you a copy of the relevant license.
+          RESTRICTION: The generated work is a software library
+          OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
+          OBLIGATION: License the library to third parties free of charge in accordance with the terms of such license.
+          OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
+          REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
+
+-   Summary: Distribute the library as a library by itself
+        Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
+        Actions:
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
+          OR
+            OBLIGATION: Attach the source code corresponding to the library
+            OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
+
+-   Summary: Distribute the library as a library by itself
+        Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
+        Actions:
+        - Distribute the object code generated from the modified source code
+        - Distribute the executable generated from the modified source code
+
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Give you a copy of the relevant license.
+          RESTRICTION: The generated work is a software library
+          OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
+          OBLIGATION: License the library to third parties free of charge in accordance with the terms of such license.
+          OBLIGATION: If the library, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, then the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
+          REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
+          OR
+            OBLIGATION: Attach the source code corresponding to the library
+            OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
+
+-   Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy, or provide a warranty in exchange for a fee. If a work does not include such library, but is designed to work with such library by being compiled or linked to it, it shall not be considered a stand-alone derivative work of such library and is not covered by such license.
+        Actions:
+        - Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing. (The generated work contains a library or part of a library)
+
+        Conditions:
+        AND
+          REQUISITE: Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.
+          OBLIGATION: Indicate that the library is being used
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.
+          OR
+            AND
+              OBLIGATION: Attach the source code corresponding to the library
+              OBLIGATION: Pass information that can be used to modify the library and put it into a distribution format. (If the distribution is in executable form, you can pass on at least the object code or source code of your work.)
+            OBLIGATION: Use an appropriate shared library mechanism to link with the library in question (A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.)
+            OBLIGATION: Provide a written statement, valid for at least three years, that you will provide the corresponding source code for the library and information that allows you to modify the library into a distributable form in exchange for a fee not to exceed the physical cost of distribution (If the distribution is in executable form, at least one of the object code or source code for your work will be passed on, in addition to the corresponding source code for the library.)
+            OBLIGATION: Make the distribution, the source code corresponding to the library, and the information that can be modified to form the distribution, available for download from the same place with equivalent access. (If the distribution is executable, at least one of the object code or source code for your work is available for download, in addition to the corresponding source code for the library.)
+            OBLIGATION: Verify that the recipient has received the source code corresponding to the library and information that can be used to modify the library into a distribution format, or has sent a copy itself. (If the distribution is executable, check whether you have received at least one of the object code or source code for your work, in addition to the corresponding source code for the library.)
+
+-   Description: A fee may be charged for the physical act of transferring a copy. A warranty may be provided in exchange for a fee.
+        Actions:
+        - Distribute portions of a library together with libraries not covered by the license in a single library
+
+        Conditions:
+        AND
+          OBLIGATION: Permit separate distribution of the library and the portion of the library not covered by the license
+          OBLIGATION: Pass an independent copy of the library in accordance with that license (Pass a copy of the entire library in question)
+          OBLIGATION: Indicate that the library is being used
+          OBLIGATION: Indicate where the library is located in a stand-alone form
 
 (source: Hitachi open-license)
 

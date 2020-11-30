@@ -47,46 +47,46 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    AND
-      OBLIGATION: Correctly indicate the origin of the software in question
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        AND
+          OBLIGATION: Correctly indicate the origin of the software in question
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    OBLIGATION: Correctly indicate the origin of the software in question
+        Conditions:
+        OBLIGATION: Correctly indicate the origin of the software in question
 
-    Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
-    Actions:
-    - Distribution of Modified Source Code
+-   Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
+        Actions:
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Correctly indicate the origin of the software in question
-      OBLIGATION: Indicate that you have made the change yourself.
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Correctly indicate the origin of the software in question
+          OBLIGATION: Indicate that you have made the change yourself.
 
-    Actions:
-    - Use the author's name to endorse or promote the derived product
+-   Actions:
+        - Use the author's name to endorse or promote the derived product
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

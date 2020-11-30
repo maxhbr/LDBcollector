@@ -93,63 +93,63 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Display the obtained source code publicly
-    - Executing the fetched source code publicly
-    - Display the retrieved object code publicly
-    - Publicly execute the fetched object code
-    - Display modified source code publicly
-    - Publicly execute the modified source code
-    - Publicly display the object code generated from the modified source code
-    - Publicly execute the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
-    - Display the retrieved executable publicly
-    - Publicly execute the retrieved executable
-    - Publicly display the executable generated from modified source code
-    - Publicly execute executables generated from modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Display the obtained source code publicly
+        - Executing the fetched source code publicly
+        - Display the retrieved object code publicly
+        - Publicly execute the fetched object code
+        - Display modified source code publicly
+        - Publicly execute the modified source code
+        - Publicly display the object code generated from the modified source code
+        - Publicly execute the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
+        - Display the retrieved executable publicly
+        - Publicly execute the retrieved executable
+        - Publicly display the executable generated from modified source code
+        - Publicly execute executables generated from modified source code
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
 
-    Actions:
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+-   Actions:
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OR
-        OBLIGATION: Attach the source code corresponding to the software in question.
-        OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OR
+            OBLIGATION: Attach the source code corresponding to the software in question.
+            OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.
 
-    Description: Make sure the recipient knows that the change has been made.
-    Actions:
-    - Modify the obtained source code.
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the executable generated from the modified source code
-    - To make the executable generated from the modified source code available as an application intended for use across the network.
+-   Description: Make sure the recipient knows that the change has been made.
+        Actions:
+        - Modify the obtained source code.
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the executable generated from the modified source code
+        - To make the executable generated from the modified source code available as an application intended for use across the network.
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.
 
-    Actions:
-    - Use the contributor's name, trademark, or service mark to endorse or promote the derived product
+-   Actions:
+        - Use the contributor's name, trademark, or service mark to endorse or promote the derived product
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

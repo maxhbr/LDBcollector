@@ -45,53 +45,53 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Description: Relevant documentation for the software should be treated in the same way as for the software.
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Modify the obtained source code.
-  - Using Modified Source Code
-  - Use the retrieved object code (Use the fetched code as it is.)
-  - Use the object code generated from the modified source code
-  - Use the retrieved executable (Use the obtained executable as is.)
-  - Use the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: Relevant documentation for the software should be treated in the same way as for the software.
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Modify the obtained source code.
+    - Using Modified Source Code
+    - Use the retrieved object code (Use the fetched code as it is.)
+    - Use the object code generated from the modified source code
+    - Use the retrieved executable (Use the obtained executable as is.)
+    - Use the executable generated from the modified source code
 
-  Conditions: None
-#+END_EXAMPLE
+    Conditions: None
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-  - Distribute the obtained object code (Redistribute the code as it was obtained)
-  - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-  - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-  - Selling Software
-  - Distribute the obtained executable (Redistribute the obtained executable as-is)
-  - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+    - Distribute the obtained object code (Redistribute the code as it was obtained)
+    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+    - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+    - Selling Software
+    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+    - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
-  Conditions:
-  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-#+END_EXAMPLE
-
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
-  Actions:
-  - Distribution of Modified Source Code
-  - Distribute the object code generated from the modified source code
-  - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-  - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-  - Distribute the executable generated from the modified source code
-  - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-
-  Conditions:
-  AND
+    Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    OR
-      OBLIGATION: Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.
-      OBLIGATION: Delete the e-mail address or URL of the original author's bug report
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
+    Actions:
+    - Distribution of Modified Source Code
+    - Distribute the object code generated from the modified source code
+    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+    - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+    - Distribute the executable generated from the modified source code
+    - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+
+    Conditions:
+    AND
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      OR
+        OBLIGATION: Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.
+        OBLIGATION: Delete the e-mail address or URL of the original author's bug report
+
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

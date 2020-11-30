@@ -89,6 +89,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsl-1.0.txt
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Documentation accompanying the software should be treated in the same way as the software.
 Actions:
@@ -112,7 +114,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Documentation accompanying the software should be treated in the same way as the software.
 Actions:

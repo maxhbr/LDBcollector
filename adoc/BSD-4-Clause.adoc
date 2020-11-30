@@ -90,6 +90,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-claus
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -100,7 +102,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -109,7 +112,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -118,7 +122,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 ....
-
+* {blank}
++
 ....
 Description: The text of the acknowledgement is here "This product includes software developed by the <organization>."
 Actions:
@@ -127,7 +132,8 @@ Actions:
 Conditions:
 OBLIGATION: Acknowledgements
 ....
-
+* {blank}
++
 ....
 Actions:
 - Use the name of the owner or contributor to promote or sell the derived product

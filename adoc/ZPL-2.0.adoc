@@ -52,6 +52,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -61,7 +63,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -69,7 +72,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -77,7 +81,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 ....
-
+* {blank}
++
 ....
 Description: "If you use the name "Zope Corporation (tm)". get permission from Zope Corporation.
 Actions:
@@ -86,7 +91,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Actions:
 - Modify the obtained source code.
@@ -94,7 +100,8 @@ Actions:
 Conditions:
 OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribution of Modified Source Code
@@ -105,7 +112,8 @@ AND
   OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the generated binaries from modified source code

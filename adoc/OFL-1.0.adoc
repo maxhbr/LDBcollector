@@ -47,6 +47,8 @@ http://scripts.sil.org/cms/scripts/page.php?item_id=OFL10_web
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Font software refers to font files, data files, source files, build scripts, and documents.
 Actions:
@@ -56,7 +58,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
 Actions:
@@ -69,7 +72,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
 Actions:
@@ -86,7 +90,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term "font software" refers to font files, data files, source files, build scripts, and documents.
 Actions:
@@ -95,7 +100,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: The term "font software" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.
 Actions:

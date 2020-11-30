@@ -60,54 +60,54 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Treat related documents in the same way as data files and software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
-    - To use the acquired data file without modification (Use the fetched data files as they are.)
-    - Modify the acquired data file.
-    - Using Modified Data Files
+-   Description: Treat related documents in the same way as data files and software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
+        - To use the acquired data file without modification (Use the fetched data files as they are.)
+        - Modify the acquired data file.
+        - Using Modified Data Files
 
-    Conditions: None
+        Conditions: None
 
-    Description: Related documents are treated in the same way as data files.
-    Actions:
-    - Distribute the acquired data files without modification (Distribute the acquired data files as they are)
-    - Distribution of modified data files
-    - Selling data files
-    - I'm going to present the modified data file.
-    - Sell altered data files.
+-   Description: Related documents are treated in the same way as data files.
+        Actions:
+        - Distribute the acquired data files without modification (Distribute the acquired data files as they are)
+        - Distribution of modified data files
+        - Selling data files
+        - I'm going to present the modified data file.
+        - Sell altered data files.
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such data files.
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such data files.
 
-    Description: Related documentation should be treated in the same way as software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Selling Software
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
-    - Publish the modified source code.
-    - Present the object code generated from the modified source code.
-    - Present the executable generated from the modified source code
+-   Description: Related documentation should be treated in the same way as software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Selling Software
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
+        - Publish the modified source code.
+        - Present the object code generated from the modified source code.
+        - Present the executable generated from the modified source code
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
 
-    Actions:
-    - Use the copyright holder's name in software promotions and advertisements
-    - Use the copyright holder's name in data file promotions and advertisements.
+-   Actions:
+        - Use the copyright holder's name in software promotions and advertisements
+        - Use the copyright holder's name in data file promotions and advertisements.
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

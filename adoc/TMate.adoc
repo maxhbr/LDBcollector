@@ -37,6 +37,8 @@ https://github.com/Hitachi/open-license[Hitachi open-license]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -47,7 +49,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.
 Actions:
@@ -67,7 +70,8 @@ AND
     OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.
 Actions:

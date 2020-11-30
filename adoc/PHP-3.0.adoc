@@ -52,6 +52,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -62,7 +64,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Acknowledgements include "This product includes PHP, freely available from <http://www.php.net/>"
 Actions:
@@ -75,7 +78,8 @@ AND
   OBLIGATION: Acknowledgements
 
 ....
-
+* {blank}
++
 ....
 Description: Acknowledgements include "This product includes PHP, freely available from <http://www.php.net/>"
 Actions:
@@ -88,7 +92,8 @@ AND
   OBLIGATION: Acknowledgements
 
 ....
-
+* {blank}
++
 ....
 Description: "PHP" as the name is used. group@php.netに連絡する.
 Actions:
@@ -97,7 +102,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: To use the name "PHP", please refer to group@php.netの許可を取る. ● Instead of "PHP Foo" or "phpfoo", you can use "Foo for PHP" to indicate that your software works with PHP. Instead of using "PHP Foo" or "phpfoo", you can use "Foo for PHP" to indicate that the software runs with PHP.
 Actions:

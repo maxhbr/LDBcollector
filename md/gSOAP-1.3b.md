@@ -51,124 +51,124 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the obtained source code
-    - Execute the obtained source code.
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the obtained source code
+        - Execute the obtained source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
-    Actions:
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the retrieved executable.
-    - Execute the obtained executable.
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
+        Actions:
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the retrieved executable.
+        - Execute the obtained executable.
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
-    Actions:
-    - Modify the obtained source code.
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
-      OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
-      OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
+          OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
+          OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
-    Actions:
-    - Distribution of Modified Source Code
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the modified source code
-    - Executing Modified Source Code
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
+        Actions:
+        - Distribution of Modified Source Code
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the modified source code
+        - Executing Modified Source Code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
-      OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
-      OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
+          OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
+          OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
-    Actions:
-    - Distribute the executable generated from the modified source code
-    - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the executable generated from the modified source code.
-    - Execute the executable generated from the modified source code.
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to a person who has been granted this license to re-grant the license to a third party.
+        Actions:
+        - Distribute the executable generated from the modified source code
+        - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the executable generated from the modified source code.
+        - Execute the executable generated from the modified source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
-      OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
+          OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
 
-    Description: Early Developers are the individuals or entities listed as early developers in the source code notices required by EXHIBIT A.
-    Actions:
-    - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
+-   Description: Early Developers are the individuals or entities listed as early developers in the source code notices required by EXHIBIT A.
+        Actions:
+        - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
 
-    Conditions:
-    OBLIGATION: I do so at my own risk. (If you accept responsibility, you may do so at your own risk, but not on behalf of the initial developers or other contributors.)
+        Conditions:
+        OBLIGATION: I do so at my own risk. (If you accept responsibility, you may do so at your own risk, but not on behalf of the initial developers or other contributors.)
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
-    Actions:
-    - Distribute the acquired executables under your own license
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
+        Actions:
+        - Distribute the acquired executables under your own license
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
-      RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
-      OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
+          RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
+          OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
 
-    Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
-    Actions:
-    - Distribute executables generated from modified source code under your own license.
+-   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
+        Actions:
+        - Distribute executables generated from modified source code under your own license.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-      OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-      OBLIGATION: Include a file to report the changes you make and the date of all changes
-      OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
-      RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
-      RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
-      OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
+          OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
+          OBLIGATION: Include a file to report the changes you make and the date of all changes
+          OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
+          RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
+          RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
+          OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
 
 (source: Hitachi open-license)
 

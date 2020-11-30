@@ -31,6 +31,8 @@ Project Wiki]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -44,7 +46,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -58,7 +61,8 @@ AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:

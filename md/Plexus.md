@@ -69,47 +69,47 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
-    Description: "If you want to use the name "DOM4J". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.
-    Actions:
-    - Use the name to endorse and promote derived products
+-   Description: "If you want to use the name "DOM4J". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.
+        Actions:
+        - Use the name to endorse and promote derived products
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
-    Description: "If you use the name "DOM4J", you have the permission of MetaStuff, Ltd." DOM4J" is a registered trademark of MetaStuff, Ltd.
-    Actions:
-    - Use the name of the product or part of the name of the product from which it was derived
+-   Description: "If you use the name "DOM4J", you have the permission of MetaStuff, Ltd." DOM4J" is a registered trademark of MetaStuff, Ltd.
+        Actions:
+        - Use the name of the product or part of the name of the product from which it was derived
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

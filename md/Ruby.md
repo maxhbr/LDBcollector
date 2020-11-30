@@ -63,53 +63,53 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use the object code generated from the modified source code
-    - Use binaries generated from modified source code
+-   Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use the object code generated from the modified source code
+        - Use binaries generated from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    OBLIGATION: Include the original copyright notice and associated disclaimer in the software
+        Conditions:
+        OBLIGATION: Include the original copyright notice and associated disclaimer in the software
 
-    Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
-    Actions:
-    - Modify the obtained source code.
+-   Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OR
-        OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.
-        RESTRICTION: Use only in your own corporation or organization.
+        Conditions:
         AND
-          RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
+          OR
+            OBLIGATION: You may make your modifications freely available in one of the following ways: by posting them in the public domain, on Usenet or equivalent media, or by allowing the copyright holder to include them in the software. Make your modifications freely available in one of the following ways: by placing them in the public domain, by posting them on Usenet or similar media, or by allowing the copyright holder to include them in the software.
+            RESTRICTION: Use only in your own corporation or organization.
+            AND
+              RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
+              OBLIGATION: Pass information on where the original software was obtained
+            RESTRICTION: Decide on a different method of distribution with the copyright holder
+
+-   Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
+        Actions:
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the object code generated from the modified source code
+        - Distribute the generated binaries from modified source code
+
+        Conditions:
+        OR
           OBLIGATION: Pass information on where the original software was obtained
-        RESTRICTION: Decide on a different method of distribution with the copyright holder
-
-    Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
-    Actions:
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the object code generated from the modified source code
-    - Distribute the generated binaries from modified source code
-
-    Conditions:
-    OR
-      OBLIGATION: Pass information on where the original software was obtained
-      OBLIGATION: Attach the source code corresponding to the software in question.
-      AND
-        RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
-        OBLIGATION: Pass information on where the original software was obtained
-      RESTRICTION: Decide on a different method of distribution with the copyright holder
+          OBLIGATION: Attach the source code corresponding to the software in question.
+          AND
+            RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
+            OBLIGATION: Pass information on where the original software was obtained
+          RESTRICTION: Decide on a different method of distribution with the copyright holder
 
 (source: Hitachi open-license)
 

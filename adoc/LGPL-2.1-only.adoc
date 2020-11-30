@@ -116,6 +116,8 @@ https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
 Actions:
@@ -128,7 +130,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -140,7 +143,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
 Actions:
@@ -154,7 +158,8 @@ AND
   REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -171,7 +176,8 @@ AND
   REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
 
 ....
-
+* {blank}
++
 ....
 Summary: Distribute the library as a library by itself
 Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
@@ -189,7 +195,8 @@ AND
     OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
 
 ....
-
+* {blank}
++
 ....
 Summary: Distribute the library as a library by itself
 Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
@@ -211,7 +218,8 @@ AND
     OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes all the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license is passed along with the library. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy, or provide a warranty in exchange for a fee. If a work does not include such library, but is designed to work with such library by being compiled or linked to it, it shall not be considered a stand-alone derivative work of such library and is not covered by such license.
 Actions:
@@ -234,7 +242,8 @@ AND
     OBLIGATION: Verify that the recipient has received the source code corresponding to the library and information that can be used to modify the library into a distribution format, or has sent a copy itself. (If the distribution is executable, check whether you have received at least one of the object code or source code for your work, in addition to the corresponding source code for the library.)
 
 ....
-
+* {blank}
++
 ....
 Description: A fee may be charged for the physical act of transferring a copy. A warranty may be provided in exchange for a fee.
 Actions:

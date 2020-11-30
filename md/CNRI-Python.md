@@ -64,61 +64,61 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Treat software related documentation in the same way as software
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
-    - Analyze the obtained source code
-    - Analyze the modified source code
-    - Analyze the acquired binaries
-    - Analyze the binary generated from the retrieved source code
-    - Test the fetched source code
-    - Testing Modified Source Code
-    - Test the acquired binaries
-    - Test the generated binaries from modified source code
+-   Description: Treat software related documentation in the same way as software
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
+        - Analyze the obtained source code
+        - Analyze the modified source code
+        - Analyze the acquired binaries
+        - Analyze the binary generated from the retrieved source code
+        - Test the fetched source code
+        - Testing Modified Source Code
+        - Test the acquired binaries
+        - Test the generated binaries from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Display the obtained source code publicly
-    - Executing the fetched source code publicly
-    - Display the fetched binaries publicly
-    - Executing the fetched binary publicly
+-   Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Display the obtained source code publicly
+        - Executing the fetched source code publicly
+        - Display the fetched binaries publicly
+        - Executing the fetched binary publicly
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the copyright notice contained in the software
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the copyright notice contained in the software
 
-    Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
-    Actions:
-    - Modify the obtained source code.
+-   Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Include a summary of the changes you have made
+        Conditions:
+        AND
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Include a summary of the changes you have made
 
-    Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
-    Actions:
-    - Distribution of Modified Source Code
-    - Distribute the generated binaries from modified source code
-    - Display modified source code publicly
-    - Publicly execute the modified source code
-    - Display the generated binaries from modified source code publicly
-    - Executing the generated binaries from modified source code publicly
-    - Combining the software with one's own work to produce and distribute the software or a work containing parts of the software
+-   Description: The following text may be used in lieu of a copy of such license (except in quotation marks): "Python 1.6.1 is made available subject to the terms and conditions in CNRI. This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013. This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl .handle.net/1895.22/1013."●Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved "
+        Actions:
+        - Distribution of Modified Source Code
+        - Distribute the generated binaries from modified source code
+        - Display modified source code publicly
+        - Publicly execute the modified source code
+        - Display the generated binaries from modified source code publicly
+        - Executing the generated binaries from modified source code publicly
+        - Combining the software with one's own work to produce and distribute the software or a work containing parts of the software
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Include a summary of the changes you have made
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Include a summary of the changes you have made
 
 (source: Hitachi open-license)
 

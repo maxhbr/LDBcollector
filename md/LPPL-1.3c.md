@@ -99,81 +99,81 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+-   Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-    Conditions:
-    OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
-    nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
-    nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
+        Conditions:
+        OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
+        nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
+        nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
 
-    Actions:
-    - Modify the obtained source code.
+-   Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OR
-        RESTRICTION: The current maintainer of the software, the (A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.)
+        Conditions:
+        AND
+          OR
+            RESTRICTION: The current maintainer of the software, the (A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.)
+            AND
+              REQUISITE: Modify the original software copy
+              OBLIGATION: If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that (A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.)
+              OR
+                OBLIGATION: Including details of the changes you have made
+                OBLIGATION: Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes
+              RESTRICTION: Does not include information indicating that the original author or others provide support for the modifications (Unless you state that you will provide support for a variant)
+          OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
+          nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
+          nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
+
+-   Actions:
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the executable generated from the modified source code
+
+        Conditions:
+        AND
+          OR
+            RESTRICTION: The current maintainer of the software, the (A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.)
+            AND
+              REQUISITE: Modify the original software copy
+              OBLIGATION: If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that (A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.)
+              OR
+                OBLIGATION: Including details of the changes you have made
+                OBLIGATION: Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes
+              RESTRICTION: Does not include information indicating that the original author or others provide support for the modifications (Unless you state that you will provide support for a variant)
+              OR
+                OBLIGATION: Pass on a copy of the original software (It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.)
+                OBLIGATION: Pass information on where the original software was obtained
+          OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
+          nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
+          nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
+
+-   Actions:
+        - Distribute object code generated from modified source code under different licenses
+        - Distribute executables generated from modified source code under different licenses
+
+        Conditions:
         AND
           REQUISITE: Modify the original software copy
           OBLIGATION: If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that (A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.)
-          OR
-            OBLIGATION: Including details of the changes you have made
-            OBLIGATION: Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes
-          RESTRICTION: Does not include information indicating that the original author or others provide support for the modifications (Unless you state that you will provide support for a variant)
-      OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
-      nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
-      nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
-
-    Actions:
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the executable generated from the modified source code
-
-    Conditions:
-    AND
-      OR
-        RESTRICTION: The current maintainer of the software, the (A current maintainer is a person who has been nominated as a maintainer for the software. In the absence of an explicit candidate for maintainer, refers to the copyright holder under applicable law.)
-        AND
-          REQUISITE: Modify the original software copy
-          OBLIGATION: If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that (A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.)
-          OR
-            OBLIGATION: Including details of the changes you have made
-            OBLIGATION: Contains a reference to a file distributed as part of the software that contains a complete and accurate log of changes
+          OBLIGATION: Include a summary of the changes you have made
           RESTRICTION: Does not include information indicating that the original author or others provide support for the modifications (Unless you state that you will provide support for a variant)
           OR
             OBLIGATION: Pass on a copy of the original software (It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.)
             OBLIGATION: Pass information on where the original software was obtained
-      OBLIGATION: Include a copyright notice on each component of the software identifying the name and the year in which the software was created or last modified, the distribution of each component, and a statement that the modifications are subject to this license (This work may be distributed and/or modified under the onditions of the LaTeX Project. %% pig.dtx% opyright 2005 M. Y. Name% % This work may be distributed and/or modified under the onditions of the LaTeX Project Public License, either version 1.3% of this license or (at your option) any later version. % The latest version of this license is in% http://www.latex- project.org/lppl.txt
-      nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
-      nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
-
-    Actions:
-    - Distribute object code generated from modified source code under different licenses
-    - Distribute executables generated from modified source code under different licenses
-
-    Conditions:
-    AND
-      REQUISITE: Modify the original software copy
-      OBLIGATION: If a component of the original software directly replaces a component of the modification when used with the base interpreter, the user is clearly identified as a component of the modification when the replaced component is used interactively with the base interpreter make sure that (A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on an external component, which is not considered part of the base interpreter if that external component is specifically identified as being used interactively.)
-      OBLIGATION: Include a summary of the changes you have made
-      RESTRICTION: Does not include information indicating that the original author or others provide support for the modifications (Unless you state that you will provide support for a variant)
-      OR
-        OBLIGATION: Pass on a copy of the original software (It may be a method that allows the software and the original software to be retrieved from the same location by equivalent means of access.)
-        OBLIGATION: Pass information on where the original software was obtained
-      OBLIGATION: Notice in writing of the limitations of Chapter 6 of this license.
+          OBLIGATION: Notice in writing of the limitations of Chapter 6 of this license.
 
 (source: Hitachi open-license)
 

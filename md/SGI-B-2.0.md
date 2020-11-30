@@ -47,46 +47,46 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL []. Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL [http://oss.sgi.com/projects/FreeB/].
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Selling Software
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
-    - Publish the modified source code.
-    - Present the object code generated from the modified source code.
-    - Present the executable generated from the modified source code
-    - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+-   Description: Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL []. Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL [http://oss.sgi.com/projects/FreeB/].
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the acquired object code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the object code generated from the modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Selling Software
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
+        - Publish the modified source code.
+        - Present the object code generated from the modified source code.
+        - Present the executable generated from the modified source code
+        - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-    Description: With permission of Silicon Graphics, Inc.
-    Actions:
-    - Use the copyright holder's name in software promotions and advertisements
+-   Description: With permission of Silicon Graphics, Inc.
+        Actions:
+        - Use the copyright holder's name in software promotions and advertisements
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

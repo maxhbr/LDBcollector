@@ -130,6 +130,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/agpl-3.0.tx
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -140,7 +142,8 @@ Actions:
 Conditions:
 RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
@@ -153,7 +156,8 @@ AND
   RESTRICTION: You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.
 
 ....
-
+* {blank}
++
 ....
 Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
 Actions:
@@ -168,7 +172,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Modify the obtained source code.
@@ -181,7 +186,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
 ....
-
+* {blank}
++
 ....
 Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
 Actions:
@@ -204,7 +210,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
 ....
-
+* {blank}
++
 ....
 Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
 Actions:
@@ -222,7 +229,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
 ....
-
+* {blank}
++
 ....
 Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
 Actions:
@@ -247,7 +255,8 @@ AND
   OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
 
 ....
-
+* {blank}
++
 ....
 Description: This additional license provision may be a license document that is independent of this license or may be written as an exception to this license.
 Actions:
@@ -265,7 +274,8 @@ AND
   RESTRICTION: Include these license terms, or a reference to them in the file to which these additional license terms apply
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - The object code generated from the modified source code interacts with the remote user through a computer network.

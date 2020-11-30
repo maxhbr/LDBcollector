@@ -57,6 +57,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -68,7 +70,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -81,7 +84,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -91,7 +95,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 ....
-
+* {blank}
++
 ....
 Description: "If you want to use the name "DOM4J". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.
 Actions:
@@ -100,7 +105,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: "If you use the name "DOM4J", you have the permission of MetaStuff, Ltd." DOM4J" is a registered trademark of MetaStuff, Ltd.
 Actions:

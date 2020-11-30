@@ -80,131 +80,131 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
 
-    Description: The term "source code" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the obtained source code
-    - Execute the obtained source code.
+-   Description: The term "source code" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the obtained source code
+        - Execute the obtained source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: A sublicense means that the person who is granted this license re-grants the license to a third party. Sublicensing means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The source code is the source code, the source code, the documentation and the documentation. The term "source code" refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables.
-    Actions:
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the retrieved executable.
-    - Execute the obtained executable.
+-   Description: A sublicense means that the person who is granted this license re-grants the license to a third party. Sublicensing means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The source code is the source code, the source code, the documentation and the documentation. The term "source code" refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables.
+        Actions:
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Sublicense the acquired executable (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the retrieved executable.
+        - Execute the obtained executable.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OBLIGATION: Include a notice that the source code corresponding to the original software is available under this license
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OBLIGATION: Include a notice that the source code corresponding to the original software is available under this license
 
-    Description: Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A.
-    Actions:
-    - Modify the obtained source code.
+-   Description: Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OR
-        REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
-        OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
-        OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OR
+            REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
+            OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
+            OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
 
-    Description: The term "source code" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions. The term "standard" refers to the standard described in EXHIBIT B.
-    Actions:
-    - Distribution of Modified Source Code
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the modified source code
-    - Executing Modified Source Code
+-   Description: The term "source code" refers to the source code and related interface definition files and scripts used to control the compilation and installation of executables. A sublicense means that the person who is granted this license re-grants the license granted to a third party. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions. The term "standard" refers to the standard described in EXHIBIT B.
+        Actions:
+        - Distribution of Modified Source Code
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the modified source code
+        - Executing Modified Source Code
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OR
-        REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
-        OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
-        OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-      OBLIGATION: Give you a copy of the relevant license.
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OR
+            REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
+            OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
+            OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+          OBLIGATION: Give you a copy of the relevant license.
 
-    Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to the granting of a second license to a third party by the party that granted the license. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions: ● The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT B. The term "standard" refers to the standard described in EXHIBIT B.
-    Actions:
-    - Distribute the executable generated from the modified source code
-    - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the executable generated from the modified source code.
-    - Execute the executable generated from the modified source code.
+-   Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The term "executable" refers to any form of software other than source code. The term "sublicense" refers to the granting of a second license to a third party by the party that granted the license. The initial developer is the person or entity named as the initial developer in the source code notice required by EXHIBIT A. The standard is based on the following terms and conditions: ● The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT B. The term "standard" refers to the standard described in EXHIBIT B.
+        Actions:
+        - Distribute the executable generated from the modified source code
+        - Sublicense the generated executable from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the executable generated from the modified source code.
+        - Execute the executable generated from the modified source code.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OR
-        REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
-        OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
-        OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OR
+            REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
+            OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
+            OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
 
-    Description: An early developer is the person or entity listed as an early developer in a source code notice required by EXHIBIT A.
-    Actions:
-    - to provide support, warranty, indemnification, and other liability and rights not inconsistent with the license, for a fee, when you distribute the modified software
+-   Description: An early developer is the person or entity listed as an early developer in a source code notice required by EXHIBIT A.
+        Actions:
+        - to provide support, warranty, indemnification, and other liability and rights not inconsistent with the license, for a fee, when you distribute the modified software
 
-    Conditions:
-    OBLIGATION: I do so at my own risk. (If you accept liability, you may do so at your own risk, but not on behalf of the initial developers. If the initial developers are held liable or are required to pay compensation for their actions, it is necessary to prevent the initial developers from being damaged and to compensate them for the damage.)
+        Conditions:
+        OBLIGATION: I do so at my own risk. (If you accept liability, you may do so at your own risk, but not on behalf of the initial developers. If the initial developers are held liable or are required to pay compensation for their actions, it is necessary to prevent the initial developers from being damaged and to compensate them for the damage.)
 
-    Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard is based on the following principles Standards refer to those standards listed in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, "control" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation
-    Actions:
-    - Distribute executables generated from modified source code under your own license.
+-   Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard is based on the following principles Standards refer to those standards listed in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, "control" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation
+        Actions:
+        - Distribute executables generated from modified source code under your own license.
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OR
-        REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
-        OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
-        OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
-      RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
-      OBLIGATION: Indemnify the initial developer against any liability arising from the terms of the license it offers
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OR
+            REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
+            OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
+            OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
+          RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
+          OBLIGATION: Indemnify the initial developer against any liability arising from the terms of the license it offers
 
-    Description: Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The term "standard" refers to the standard described in EXHIBIT B. The term "initial developer" refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, "control" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation
-    Actions:
-    - Distribute modified source code under your own license
+-   Description: Source code refers to the source code and associated interface definition files and scripts used to control compilation and installation of executables. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The standard refers to the standard described in EXHIBIT B. The initial developer refers to the person or entity listed as the initial developer in the source code announcement required by EXHIBIT A. The term "standard" refers to the standard described in EXHIBIT B. The term "initial developer" refers to the person or entity listed as the initial developer in the source code notice required in EXHIBIT A. Self means the person or entity exercising its rights under this License in accordance with all of the terms of this License. In the case of a legal entity, self includes any entity that controls itself, is controlled by itself, or is an association of persons under common control with itself. For the purposes of this definition, "control" means any of the following (1) has the authority to direct or manage the corporation directly or indirectly by contract or otherwise; (2) has more than 50% of the outstanding shares or beneficial ownership of the corporation
+        Actions:
+        - Distribute modified source code under your own license
 
-    Conditions:
-    AND
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
-      RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
-      OR
-        REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
-        OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
-        OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
-      OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-      OBLIGATION: Give you a copy of the relevant license.
-      RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
-      OBLIGATION: Indemnify the initial developer against any liability arising from the terms of the license it offers
+        Conditions:
+        AND
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's copyright license is granted in accordance with this license.
+          RESTRICTION: A worldwide, non-exclusive, royalty-free initial developer's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the initial developer that are necessarily infringed by the initial developer's contributions alone or in combination with the software in question.)
+          OR
+            REQUISITE: Modification is subject to a standard issued 120 days prior to shipping the modification.
+            OBLIGATION: Publicly inform the public that if they do not comply with the standard issued 120 days prior to shipment of the Modification, within 30 days of the first shipment of the Modification, third parties may use the implementation of the Modification and the difference between the implementation and the standard protocol and the reference implementation of the Modification in accordance with this license at no charge.
+            OBLIGATION: If you do not comply with the standard published 120 days prior to shipping your modification, publicly notify the public that the source code of your modification is available to third parties free of charge in accordance with this license within 30 days of the first shipment of your modification.
+          OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
+          OBLIGATION: Give you a copy of the relevant license.
+          RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
+          OBLIGATION: Indemnify the initial developer against any liability arising from the terms of the license it offers
 
 (source: Hitachi open-license)
 

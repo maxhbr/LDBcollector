@@ -34,15 +34,15 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The work shall be in the public domain.
-    Actions:
-    - Transmit the work.
-    - Use of copyrighted material
-    - Modify the work.
-    - Distribute the work
-    - Making use of copyrighted material
+-   Description: The work shall be in the public domain.
+        Actions:
+        - Transmit the work.
+        - Use of copyrighted material
+        - Modify the work.
+        - Distribute the work
+        - Making use of copyrighted material
 
-    Conditions: None
+        Conditions: None
 
 (source: Hitachi open-license)
 

@@ -51,44 +51,44 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use the object code generated from the modified source code
-    - Use binaries generated from modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use the object code generated from the modified source code
+        - Use binaries generated from modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the generated binaries from modified source code
-    - Selling Software
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
-    - Publish the modified source code.
-    - Present the object code generated from the modified source code.
-    - Present the executable generated from the modified source code
+-   Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the generated binaries from modified source code
+        - Selling Software
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
+        - Publish the modified source code.
+        - Present the object code generated from the modified source code.
+        - Present the executable generated from the modified source code
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-    Description: With permission of the copyright owner.
-    Actions:
-    - Use the copyright holder's name in software promotions and advertisements
+-   Description: With permission of the copyright owner.
+        Actions:
+        - Use the copyright holder's name in software promotions and advertisements
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

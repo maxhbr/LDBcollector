@@ -46,6 +46,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.
 Actions:
@@ -57,7 +59,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.
 Actions:
@@ -73,7 +76,8 @@ AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
 ....
-
+* {blank}
++
 ....
 Description: ●Source code refers to the complete, compilable and linkable Sendmail source code, including modifications. The contents of the copyright notice are here." Copyright (c) 1998-2004 Sendmail, Inc. all rights reserved."
 Actions:
@@ -89,7 +93,8 @@ AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
 ....
-
+* {blank}
++
 ....
 Description: The use of "Sendmail, Inc.", "the University of California" and the Contributor's name. Sendmail" is a trademark of "Sendmail, Inc.
 Actions:

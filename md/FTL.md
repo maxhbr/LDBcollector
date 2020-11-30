@@ -61,86 +61,86 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Related documents should be treated in the same way as software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
+-   Description: Related documents should be treated in the same way as software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
 
-    Conditions:
-    RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+        Conditions:
+        RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
 
-    Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
-    Actions:
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Display the obtained source code
-    - Execute the obtained source code.
-    - Display the modified source code
-    - Executing Modified Source Code
-    - Display the retrieved binary
-    - Display the generated binary from the modified source code
-    - Execute the generated binary from the modified source code
-    - Execute the obtained binary
+-   Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
+        Actions:
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Display the obtained source code
+        - Execute the obtained source code.
+        - Display the modified source code
+        - Executing Modified Source Code
+        - Display the retrieved binary
+        - Display the generated binary from the modified source code
+        - Execute the generated binary from the modified source code
+        - Execute the obtained binary
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Acknowledgements
 
-    Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Acknowledgements
 
-    Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
-    Actions:
-    - Modify the obtained source code.
+-   Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Indicate your changes in the materials that accompany the distribution.
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Indicate your changes in the materials that accompany the distribution.
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Acknowledgements
 
-    Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
-    Actions:
-    - Distribution of Modified Source Code
+-   Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
+        Actions:
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Indicate your changes in the materials that accompany the distribution.
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Indicate your changes in the materials that accompany the distribution.
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Acknowledgements
 
-    Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements." Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
+-   Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements." Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    AND
-      RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
+          OBLIGATION: Acknowledgements
 
-    Description: You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: "FreeType Project", "FreeType Engine", "FreeType library", or "FreeType Distribution".
-    Actions:
-    - Use the names of authors and contributors in publicity and advertising.
+-   Description: You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: "FreeType Project", "FreeType Engine", "FreeType library", or "FreeType Distribution".
+        Actions:
+        - Use the names of authors and contributors in publicity and advertising.
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

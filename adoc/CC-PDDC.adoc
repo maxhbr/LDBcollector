@@ -31,6 +31,8 @@ https://github.com/Hitachi/open-license[Hitachi open-license]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The work shall be in the public domain.
 Actions:

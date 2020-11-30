@@ -137,92 +137,92 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Use the obtained source without modification. (The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes.)
-  - Modify the fetched source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Use Modified Source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Use the fetched object (Use the acquired object as it is. Objects are files that result from mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
-  - Using objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
-  - Display the acquired source publicly. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Publicly execute the acquired source. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Display the fetched object publicly (Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
-  - Publicly execute the fetched object (Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
-  - Publicly display the altered source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Run the modified source publicly. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
-  - Publicly display objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
-  - Publicly execute objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Use the obtained source without modification. (The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes.)
+    - Modify the fetched source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Use Modified Source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Use the fetched object (Use the acquired object as it is. Objects are files that result from mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
+    - Using objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
+    - Display the acquired source publicly. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Publicly execute the acquired source. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Display the fetched object publicly (Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
+    - Publicly execute the fetched object (Objects refer to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
+    - Publicly display the altered source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Run the modified source publicly. (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+    - Publicly display objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
+    - Publicly execute objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
 
-  Conditions:
-  AND
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
+    Conditions:
+    AND
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Sublicense the acquired source. (The term "source" refers to software source code, document sources, configuration files and other files suitable for making changes. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
-  - Sublicense the acquired objects (The term "object" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents and other media conversions. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
-  - Distribute the acquired source without modification (Redistribute the source as is. Redistribute the source code as it was obtained.)
-  - Distribute the fetched objects (Redistribute the acquired object as is. Objects are files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Sublicense the acquired source. (The term "source" refers to software source code, document sources, configuration files and other files suitable for making changes. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
+    - Sublicense the acquired objects (The term "object" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documents and other media conversions. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
+    - Distribute the acquired source without modification (Redistribute the source as is. Redistribute the source code as it was obtained.)
+    - Distribute the fetched objects (Redistribute the acquired object as is. Objects are files resulting from the mechanical transformation of the source, such as compiled object code, generated documents, and conversions to other media.)
 
-  Conditions:
-  AND
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
-    OBLIGATION: Give you a copy of the relevant license.
+    Conditions:
+    AND
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
+      OBLIGATION: Give you a copy of the relevant license.
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: A copyright notice for modifications may be added.
-  Actions:
-  - Sublicensing Modified Source (The term "source" refers to software source code, document sources, configuration files and other files suitable for making changes. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
-  - Distribution of Modified Source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
+- #+BEGIN_EXAMPLE
+    Description: A copyright notice for modifications may be added.
+    Actions:
+    - Sublicensing Modified Source (The term "source" refers to software source code, document sources, configuration files and other files suitable for making changes. The term "sublicense" refers to the granting of a second license to a third party by the person to whom the license was granted.)
+    - Distribution of Modified Source (Source refers to software source code, documentation sources, configuration files, and other files that are suitable for making changes.)
 
-  Conditions:
-  AND
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Indicate your changes in the file where you made them.
-    OBLIGATION: Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute (However, notices that do not relate to derivative works may be excluded.)
-    OBLIGATION: If the acquired software contains a text file equivalent to "NOTICE", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice. ((a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.)
+    Conditions:
+    AND
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Indicate your changes in the file where you made them.
+      OBLIGATION: Retain the copyright, patent, trademark, and attribution notices contained in the acquired source, even if the source is a derivative work that you distribute (However, notices that do not relate to derivative works may be excluded.)
+      OBLIGATION: If the acquired software contains a text file equivalent to "NOTICE", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice. ((a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.)
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: A copyright notice for modifications may be added.
-  Actions:
-  - Sublicense objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation and other media conversions. The term "sublicense" refers to the granting of a second license to a third party by the party that granted the license.)
-  - Distribute objects generated from the modified source (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
+- #+BEGIN_EXAMPLE
+    Description: A copyright notice for modifications may be added.
+    Actions:
+    - Sublicense objects generated from modified sources (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of the source, such as compiled object code, generated documentation and other media conversions. The term "sublicense" refers to the granting of a second license to a third party by the party that granted the license.)
+    - Distribute objects generated from the modified source (Source refers to files suitable for making changes, such as software source code, document sources, configuration files, etc. The term "object" refers to files resulting from the mechanical transformation of a source, such as compiled object code, generated documents, and conversions to other media.)
 
-  Conditions:
-  AND
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
-    RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Indicate your changes in the file where you made them.
-    OBLIGATION: If the acquired software contains a text file equivalent to "NOTICE", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice. ((a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.)
+    Conditions:
+    AND
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
+      RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's patent license is granted in accordance with such license. (However, it applies only to patent applications that are licensable by the contributor that are necessarily infringed by the use of the contributor's contributions, either alone or in combination with the applicable work product. In addition, upon formal filing of a patent action, including cross-claims and counterclaims, alleging that the use of the Contributor's Contributions, alone or in combination with the applicable work product, constitutes direct or indirect patent infringement, the litigant's or legal entity's license to do so shall terminate.)
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Indicate your changes in the file where you made them.
+      OBLIGATION: If the acquired software contains a text file equivalent to "NOTICE", include an attribution notice contained in said file for the derivative work as well. That notice shall be included in one or more of the following places (1) a NOTICE text file distributed as part of a Derivative Work, (2) source code or documentation distributed with the Derivative Work, or (3) an attribution generated by the Derivative Work if it is standard practice to include a Third Party Notice. ((a) notices that do not relate to the derivative work may be excluded (b) the content of the NOTICE text file is limited to informational purposes only. Notice of relevant attribution may be added alongside, or as an appendix to, the NOTICE text, provided that the added notice does not modify the license in question. A notice may be added alongside or as an appendix to a NOTICE text, provided that the added notice is not likely to be construed as a modification of the licence in question.)
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
+- #+BEGIN_EXAMPLE
+    Actions:
+    - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
 
-  Conditions:
-  OBLIGATION: I do so at my own risk. (If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.)
-#+END_EXAMPLE
+    Conditions:
+    OBLIGATION: I do so at my own risk. (If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.)
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications.
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Create additional or different license terms for the use, reproduction, or distribution of your modifications, or for the software as a whole, including your modifications.
 
-  Conditions:
-  RESTRICTION: Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.
-#+END_EXAMPLE
+    Conditions:
+    RESTRICTION: Ensure that its own use, copying and distribution of the Software is subject to the terms of the license in all respects other than as newly created.
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

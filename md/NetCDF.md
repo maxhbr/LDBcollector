@@ -48,37 +48,37 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Documentation accompanying the software should be treated in the same way as the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the object code generated from the modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: Documentation accompanying the software should be treated in the same way as the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the object code generated from the modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
+-   Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include credit to the copyright holder.
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include credit to the copyright holder.
 
-    Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidata.
-    Actions:
+-   Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidata.
+        Actions:
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

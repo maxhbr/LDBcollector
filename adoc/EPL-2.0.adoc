@@ -105,6 +105,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The term "Contributor" refers to the person or entity that distributes the software. The term "source code" refers to the source code of the software, documentation sources, configuration files and other files suitable for making changes.
 Actions:
@@ -133,7 +135,8 @@ AND
   REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
 
 ....
-
+* {blank}
++
 ....
 Description: Contributors may include appropriate proprietary copyright notices, patents, trademarks, and attribution notices and related disclaimers. Contributor is the person or entity that distributes the software. Distribution includes making available a method of transferring a copy of the software. The term "source code" refers to the source code, documentation sources, configuration files, and other files suitable for making modifications to the software.
 Actions:
@@ -153,7 +156,8 @@ AND
   OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
 
 ....
-
+* {blank}
++
 ....
 Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
 Actions:
@@ -170,7 +174,8 @@ AND
   OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
 
 ....
-
+* {blank}
++
 ....
 Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
 Actions:

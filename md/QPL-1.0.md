@@ -88,55 +88,55 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: The software may be used to compile, link, and execute legitimately developed application programs.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Description: The software may be used to compile, link, and execute legitimately developed application programs.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+-   Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-    Conditions:
-    OBLIGATION: Include copyright and trademark notices and disclaimers contained in the software
+        Conditions:
+        OBLIGATION: Include copyright and trademark notices and disclaimers contained in the software
 
-    Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.
-    Actions:
-    - Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)
+-   Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.
+        Actions:
+        - Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)
 
-    Conditions:
-    AND
-      OBLIGATION: Include the copyright notice contained in the software
+        Conditions:
+        AND
+          OBLIGATION: Include the copyright notice contained in the software
 
-    Actions:
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
+-   Actions:
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
 
-    Actions:
-    - Distribute the executable generated from the modified source code
+-   Actions:
+        - Distribute the executable generated from the modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
-      OBLIGATION: Apply this license to the entire modification
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
+          OBLIGATION: Apply this license to the entire modification
 
-    Actions:
-    - Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)
+-   Actions:
+        - Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)
 
-    Conditions:
-    AND
-      OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
-      OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
-      OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
+        Conditions:
+        AND
+          OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
+          OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
+          OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
 
 (source: Hitachi open-license)
 

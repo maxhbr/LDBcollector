@@ -50,6 +50,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -62,7 +64,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
 Actions:
@@ -82,7 +85,8 @@ AND
   OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
 
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -94,7 +98,8 @@ AND
   OBLIGATION: Include a file to report the changes you make and the date of all changes
 
 ....
-
+* {blank}
++
 ....
 Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
 Actions:
@@ -115,7 +120,8 @@ AND
   OBLIGATION: Include a file to report the changes you make and the date of all changes
 
 ....
-
+* {blank}
++
 ....
 Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
 Actions:

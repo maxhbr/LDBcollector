@@ -106,6 +106,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.t
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -117,7 +119,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -129,7 +132,8 @@ OBLIGATION: Include a copyright notice on each component of the software identif
 nd version 1.3 or later is part of all distributions of LaTeX% version 2005/12/01 or later.% % % This work has the LPPL maintenance status `maintained'. % % % The Current Maintainer of this work is M. Y. Name.
 nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
 ....
-
+* {blank}
++
 ....
 Actions:
 - Modify the obtained source code.
@@ -150,7 +154,8 @@ AND
   nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribution of Modified Source Code
@@ -176,7 +181,8 @@ AND
   nd the derived file pig.sty. In this example, the software has three files 'pig.dtx', 'pig.ins', 'pig.sty' ('pig.sty' is the file generated from 'pig.dtx' using 'pig.ins'), the base The interpreter is 'LaTeX-Format', the copyright holder, and the current maintainer is 'M.Y.Name'. The software is in the 'author-maintained' status if it is explicitly stated near the first copyright notice that only the copyright holder can maintain it, or if it is marked 'author-maintained'. The software is 'author-maintained' if there is a current maintainer who has indicated that they are willing to receive error reports for the software, e.g. by providing a valid e-mail address. The software will be changed from 'maintained' to 'unmaintained' if there is no current maintainer for the software, has not been contacted for six months by any means indicated by the current maintainer, or does not appear to have been maintained. A base interpreter is a program or process that is normally required to execute or interpret the software, in whole or in part. It depends on external components that are specifically identified as being used interactively, but are not considered part of the base interpreter. A current maintainer is a person who is a candidate to be a maintainer for the software. In the absence of a clear candidate for maintainer, refers to the copyright holder under applicable law.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute object code generated from modified source code under different licenses

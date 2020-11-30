@@ -84,6 +84,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.t
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.
 Actions:

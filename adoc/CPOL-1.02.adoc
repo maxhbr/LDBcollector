@@ -39,6 +39,8 @@ software's media, such as websites, magazines, CD-ROMs and DVDs.''
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The term "source code" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term "executable" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.
 Actions:
@@ -53,7 +55,8 @@ AND
   RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable license to use the author's patents is granted in accordance with this license.
 
 ....
-
+* {blank}
++
 ....
 Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term "executable" refers to any executable, binary file or configuration or data file included in the Software. The author refers to the person or entity providing the software under this license. The author refers to the person or entity that provides the software under this license. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software.
 Actions:
@@ -67,7 +70,8 @@ AND
   OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
 
 ....
-
+* {blank}
++
 ....
 Description: The author's permission must be obtained. You must obtain the author's permission to make the article available. The author is the person or entity that makes the software available under this license. The author is the person or entity that provides the software under this license. Source code refers to the source code or configuration file used to create the executable. The source code refers to the source code or configuration file used to create the executable.
 Actions:
@@ -76,7 +80,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: Author's permission.
 Actions:
@@ -85,7 +90,8 @@ Actions:
 Conditions:
 REQUISITE: Get special permission in writing.
 ....
-
+* {blank}
++
 ....
 Description: You may not sell the software by itself. The publisher does not sell the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term "executable" refers to any executable, binary file or configuration file included in the software, or any data file required for the software.
 Actions:
@@ -94,7 +100,8 @@ Actions:
 Conditions:
 RESTRICTION: We don't sell it alone.
 ....
-
+* {blank}
++
 ....
 Description: The software is not to be rented by itself. The publisher does not rent out the software alone, but treats related documents, white papers and articles distributed by the publisher in the same way as the software. The publisher is the provider of the media such as websites, magazines, CD-ROMs and DVDs related to the software. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author refers to the person or entity providing the software under this license. The source code refers to the source code or configuration file used to create the executable. The term "executable" refers to any executable, binary file or configuration file included in the software, or any data file required for the software.
 Actions:
@@ -103,7 +110,8 @@ Actions:
 Conditions:
 RESTRICTION: It's not rented out on its own.
 ....
-
+* {blank}
++
 ....
 Description: The term "source code" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term "executable" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.
 Actions:
@@ -120,7 +128,8 @@ AND
   OBLIGATION: Take no technical measures to restrict access to or use of the software in a way that would violate this license
 
 ....
-
+* {blank}
++
 ....
 Description: You are not required to make any changes to the software when you apply bug fixes, minor corrections or modifications obtained from the public domain or the author. You must treat related documentation, white papers and articles distributed by the Publisher in the same way as software. Source code refers to the source code and configuration files used to create the executable. The term "executable" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.
 Actions:

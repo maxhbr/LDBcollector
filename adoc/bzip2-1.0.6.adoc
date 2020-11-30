@@ -40,6 +40,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -49,7 +51,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
 Actions:
@@ -61,7 +64,8 @@ AND
   OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
 ....
-
+* {blank}
++
 ....
 Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
 Actions:
@@ -71,7 +75,8 @@ Actions:
 Conditions:
 OBLIGATION: Correctly indicate the origin of the software in question
 ....
-
+* {blank}
++
 ....
 Description: If used in a product, it would be nice to include an acknowledgement in the product documentation, but it is not required.
 Actions:
@@ -84,7 +89,8 @@ AND
   OBLIGATION: Indicate that you have made the change yourself.
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Use the author's name to endorse or promote the derived product

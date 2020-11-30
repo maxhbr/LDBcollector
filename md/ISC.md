@@ -96,31 +96,31 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved object code (Use the fetched code as it is.)
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use the object code generated from the modified source code
-    - Use binaries generated from modified source code
-    - Use the retrieved executable (Use the obtained executable as is.)
-    - Use the executable generated from the modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved object code (Use the fetched code as it is.)
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use the object code generated from the modified source code
+        - Use binaries generated from modified source code
+        - Use the retrieved executable (Use the obtained executable as is.)
+        - Use the executable generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the obtained object code (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribution of Modified Source Code
-    - Distribute the object code generated from the modified source code
-    - Distribute the generated binaries from modified source code
-    - Distribute the obtained executable (Redistribute the obtained executable as-is)
-    - Distribute the executable generated from the modified source code
+-   Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the obtained object code (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribution of Modified Source Code
+        - Distribute the object code generated from the modified source code
+        - Distribute the generated binaries from modified source code
+        - Distribute the obtained executable (Redistribute the obtained executable as-is)
+        - Distribute the executable generated from the modified source code
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
 (source: Hitachi open-license)
 

@@ -33,51 +33,51 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
-    - Publish the modified source code.
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
+        - Publish the modified source code.
 
-    Conditions: None
+        Conditions: None
 
-    Description: Relevant documentation for the software should be treated in the same way as for the software.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
-    - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+        - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicensing Modified Source Code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-    Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
-    - Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
-    - Selling Software
+-   Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
+        - Sublicense the acquired binaries (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Sublicense the generated binaries from modified source code (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
+        - Selling Software
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 
-    Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.
-    Actions:
-    - Include end-user documentation in the distribution
+-   Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.
+        Actions:
+        - Include end-user documentation in the distribution
 
-    Conditions:
-    OBLIGATION: Acknowledgements
+        Conditions:
+        OBLIGATION: Acknowledgements
 
-    Description: If you wish to use the name "The XFree86 Project, Inc.", obtain permission from The XFree86 Project, Inc.
-    Actions:
-    - Use the copyright holder's name in software promotions and advertisements
+-   Description: If you wish to use the name "The XFree86 Project, Inc.", obtain permission from The XFree86 Project, Inc.
+        Actions:
+        - Use the copyright holder's name in software promotions and advertisements
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

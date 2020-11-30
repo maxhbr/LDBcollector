@@ -107,6 +107,8 @@ http://www.opensource.org/licenses/artistic-license-2.0.php
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Source code refers to the source code, documentation and configuration files. Source code refers to source code, documentation and configuration files.
 Actions:
@@ -121,7 +123,8 @@ Actions:
 Conditions:
 RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.
 Actions:
@@ -133,7 +136,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.
 Actions:
@@ -153,7 +157,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 
 ....
-
+* {blank}
++
 ....
 Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution. If the source code is made available in an obsolete manner, notify the user on demand of the new method of distribution or stop distribution. You do not lose your rights under this license if you do so within 30 days of becoming aware of the invalidation.
 Actions:
@@ -166,7 +171,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Linking software with other software

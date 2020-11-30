@@ -73,20 +73,20 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
-    - Selling Software
-    - Publish the modified source code.
-    - Publish the binary generated from the modified source code
+-   Description: In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
+        - Selling Software
+        - Publish the modified source code.
+        - Publish the binary generated from the modified source code
 
-    Conditions: None
+        Conditions: None
 
 (source: Hitachi open-license)
 

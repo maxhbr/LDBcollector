@@ -48,6 +48,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: We hope that somewhere in the documentation of commercial products, research projects, etc., it will be noted in the credits that ANTLR or ANTLR-generated code is being used. I would like to see the header description of the source code of the software in question remain intact.
 Actions:

@@ -64,61 +64,61 @@ URLs
 Description from open-license
 -----------------------------
 
-    Description: Treat software related documentation in the same way as software
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
-    - Analyze the obtained source code
-    - Analyze the modified source code
-    - Analyze the acquired binaries
-    - Analyze the binary generated from the retrieved source code
-    - Test the fetched source code
-    - Testing Modified Source Code
-    - Test the acquired binaries
-    - Test the generated binaries from modified source code
+-   Description: Treat software related documentation in the same way as software
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
+        - Analyze the obtained source code
+        - Analyze the modified source code
+        - Analyze the acquired binaries
+        - Analyze the binary generated from the retrieved source code
+        - Test the fetched source code
+        - Testing Modified Source Code
+        - Test the acquired binaries
+        - Test the generated binaries from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Display the obtained source code publicly
-    - Executing the fetched source code publicly
-    - Display the fetched binaries publicly
-    - Executing the fetched binary publicly
+-   Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Display the obtained source code publicly
+        - Executing the fetched source code publicly
+        - Display the fetched binaries publicly
+        - Executing the fetched binary publicly
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the copyright notice contained in the software
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the copyright notice contained in the software
 
-    Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
-    Actions:
-    - Modify the obtained source code.
+-   Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
+        Actions:
+        - Modify the obtained source code.
 
-    Conditions:
-    AND
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Include a summary of the changes you have made
+        Conditions:
+        AND
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Include a summary of the changes you have made
 
-    Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
-    Actions:
-    - Distribution of Modified Source Code
-    - Distribute the generated binaries from modified source code
-    - Display modified source code publicly
-    - Publicly execute the modified source code
-    - Display the generated binaries from modified source code publicly
-    - Executing the generated binaries from modified source code publicly
-    - Combining the software with one's own work to produce and distribute the software or a work containing parts of the software
+-   Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
+        Actions:
+        - Distribution of Modified Source Code
+        - Distribute the generated binaries from modified source code
+        - Display modified source code publicly
+        - Publicly execute the modified source code
+        - Display the generated binaries from modified source code publicly
+        - Executing the generated binaries from modified source code publicly
+        - Combining the software with one's own work to produce and distribute the software or a work containing parts of the software
 
-    Conditions:
-    AND
-      OBLIGATION: Give you a copy of the relevant license.
-      OBLIGATION: Include the copyright notice contained in the software
-      OBLIGATION: Include a summary of the changes you have made
+        Conditions:
+        AND
+          OBLIGATION: Give you a copy of the relevant license.
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Include a summary of the changes you have made
 
 (source: Hitachi open-license)
 

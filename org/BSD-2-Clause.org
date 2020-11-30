@@ -107,34 +107,34 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Modify the obtained source code.
-  - Using Modified Source Code
-  - Use the retrieved binaries (Use the fetched binary as it is.)
-  - Use binaries generated from modified source code
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Modify the obtained source code.
+    - Using Modified Source Code
+    - Use the retrieved binaries (Use the fetched binary as it is.)
+    - Use binaries generated from modified source code
 
-  Conditions: None
-#+END_EXAMPLE
+    Conditions: None
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-  - Distribution of Modified Source Code
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+    - Distribution of Modified Source Code
 
-  Conditions:
-  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-#+END_EXAMPLE
+    Conditions:
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-  - Distribute the generated binaries from modified source code
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+    - Distribute the generated binaries from modified source code
 
-  Conditions:
-  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-#+END_EXAMPLE
+    Conditions:
+    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

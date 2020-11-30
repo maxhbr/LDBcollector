@@ -119,6 +119,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mpl-2.0.txt
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
 Actions:
@@ -134,7 +136,8 @@ AND
   RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
 Actions:
@@ -152,7 +155,8 @@ AND
   OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)
 
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
 Actions:
@@ -170,7 +174,8 @@ AND
   OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
@@ -178,7 +183,8 @@ Actions:
 Conditions:
 OBLIGATION: I do so at my own risk. (If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.)
 ....
-
+* {blank}
++
 ....
 Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
 Actions:

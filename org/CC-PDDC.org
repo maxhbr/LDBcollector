@@ -33,17 +33,17 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Description: The work shall be in the public domain.
-  Actions:
-  - Transmit the work.
-  - Use of copyrighted material
-  - Modify the work.
-  - Distribute the work
-  - Making use of copyrighted material
+- #+BEGIN_EXAMPLE
+    Description: The work shall be in the public domain.
+    Actions:
+    - Transmit the work.
+    - Use of copyrighted material
+    - Modify the work.
+    - Distribute the work
+    - Making use of copyrighted material
 
-  Conditions: None
-#+END_EXAMPLE
+    Conditions: None
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

@@ -132,6 +132,8 @@ https://tldrlegal.com/license/gnu-general-public-license-v2
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -143,7 +145,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -155,7 +158,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes all the source code of all modules, plus all the related interface definition files and scripts used to control the compilation and installation of the library.
 Actions:
@@ -168,7 +172,8 @@ AND
   OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -185,7 +190,8 @@ AND
   OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:
@@ -203,7 +209,8 @@ AND
     OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
 
 ....
-
+* {blank}
++
 ....
 Description: The source code includes the source code of all modules, plus all relevant interface definition files and scripts used to control the compilation and installation of the library. The license in question passes with the software. You may charge a fee for the physical act of transferring a copy, in exchange for a warranty in exchange for a fee. You may charge a fee for the physical act of transferring a copy; you may provide a warranty in exchange for a fee.
 Actions:

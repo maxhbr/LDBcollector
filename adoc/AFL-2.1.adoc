@@ -59,6 +59,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -87,7 +89,8 @@ AND
   RESTRICTION: An unrestricted, worldwide, royalty-free supplyable patent license is granted pursuant to this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -102,7 +105,8 @@ AND
     OBLIGATION: The location of the repository that provides the source code corresponding to the original software at a lower cost is listed immediately after the copyright notice that applies to the original software.
 
 ....
-
+* {blank}
++
 ....
 Description: Make sure the recipient knows that the change has been made.
 Actions:
@@ -118,7 +122,8 @@ AND
   OBLIGATION: Include a description of any copyrights, patents, and trademarks contained in the software, as well as any trademark notices, licensing notices, and attributions to the initial developer or contributors.
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Use the contributor's name, trademark, or service mark to endorse or promote the derived product

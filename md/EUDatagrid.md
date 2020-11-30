@@ -51,58 +51,58 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Display the obtained source code
-    - Display the modified source code
-    - Display the retrieved binary
-    - Display the generated binary from the modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Display the obtained source code
+        - Display the modified source code
+        - Display the retrieved binary
+        - Display the generated binary from the modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: The same rights would be granted to sub-licenses.
-    Actions:
-    - Using Modified Source Code
-    - Use binaries generated from modified source code
-    - Publish the modified source code.
-    - Publish the binary generated from the modified source code
+-   Description: The same rights would be granted to sub-licenses.
+        Actions:
+        - Using Modified Source Code
+        - Use binaries generated from modified source code
+        - Publish the modified source code.
+        - Publish the binary generated from the modified source code
 
-    Conditions:
-    RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
+        Conditions:
+        RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
 
-    Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+-   Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
 
-    Conditions:
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 
-    Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
-    Actions:
-    - Distribution of Modified Source Code
-    - Distribute the generated binaries from modified source code
+-   Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
+        Actions:
+        - Distribution of Modified Source Code
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
 
-    Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
-    Actions:
-    - Include end-user documentation in the distribution
+-   Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
+        Actions:
+        - Include end-user documentation in the distribution
 
-    Conditions:
-    OBLIGATION: Acknowledgements
+        Conditions:
+        OBLIGATION: Acknowledgements
 
-    Description: To use the names "EDG", "EDG Toolkit" and "EU DataGrid Project". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.
-    Actions:
-    - Use the name to endorse and promote software and derivative products
+-   Description: To use the names "EDG", "EDG Toolkit" and "EU DataGrid Project". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.
+        Actions:
+        - Use the name to endorse and promote software and derivative products
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

@@ -56,71 +56,71 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Description: Relevant documentation for the software should be treated in the same way as for the software.
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Using Modified Source Code
-  - Use the retrieved object code (Use the fetched code as it is.)
-  - Use the retrieved binaries (Use the fetched binary as it is.)
-  - Use binaries generated from modified source code
-  - Use the retrieved executable (Use the obtained executable as is.)
-  - Use the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: Relevant documentation for the software should be treated in the same way as for the software.
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Using Modified Source Code
+    - Use the retrieved object code (Use the fetched code as it is.)
+    - Use the retrieved binaries (Use the fetched binary as it is.)
+    - Use binaries generated from modified source code
+    - Use the retrieved executable (Use the obtained executable as is.)
+    - Use the executable generated from the modified source code
 
-  Conditions: None
-#+END_EXAMPLE
+    Conditions: None
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/. The link to "Keio University" can be found at http://www.keio.ac.jp/. inria.fr/■"Keio University".
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-  - Distribute the obtained object code (Redistribute the code as it was obtained)
-  - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-  - Distribute the obtained executable (Redistribute the obtained executable as-is)
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/. The link to "Keio University" can be found at http://www.keio.ac.jp/. inria.fr/■"Keio University".
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+    - Distribute the obtained object code (Redistribute the code as it was obtained)
+    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+    - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
-  Conditions:
-  AND
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+    Conditions:
+    AND
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/● It is recommended that you give them a URI indicating where you will get your code when you inform them of the changes you have made. The link to inria.fr/■"Keio University" can be found at http://www.keio.ac.jp/. It is recommended that you provide a URI indicating the location of the code when informing people of changes you have made.
-  Actions:
-  - Modify the obtained source code.
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/● It is recommended that you give them a URI indicating where you will get your code when you inform them of the changes you have made. The link to inria.fr/■"Keio University" can be found at http://www.keio.ac.jp/. It is recommended that you provide a URI indicating the location of the code when informing people of changes you have made.
+    Actions:
+    - Modify the obtained source code.
 
-  Conditions:
-  AND
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-    OBLIGATION: Include a file to report the changes you make and the date of all changes
+    Conditions:
+    AND
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+      OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/● It is recommended that you give them a URI indicating where you will get your code when you inform them of the changes you have made. The link to inria.fr/■"Keio University" can be found at http://www.keio.ac.jp/. It is recommended that you provide a URI indicating the location of the code when informing people of changes you have made.
-  Actions:
-  - Distribution of Modified Source Code
-  - Distribute the object code generated from the modified source code
-  - Distribute the generated binaries from modified source code
-  - Distribute the executable generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Description: The relevant documentation for the software should be treated in the same way as the software. If there are no disclaimers, notices, or terms, include the following notes (hypertext is recommended, or text) in the body of the software's code. Click here for the notes: here -> "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"<- Here is a link to the "World Wide Web Consortium" at http://www.w3.org/■"Massachusetts Institute of Technology" can be found at http://www.lcs.mit.edu/■"Institut National de Recherche en Informatique et en Automatique" can be found at http://www. inria.fr/■"Keio University" can be found at http://www.lcs.mit.edu/● It is recommended that you give them a URI indicating where you will get your code when you inform them of the changes you have made. The link to inria.fr/■"Keio University" can be found at http://www.keio.ac.jp/. It is recommended that you provide a URI indicating the location of the code when informing people of changes you have made.
+    Actions:
+    - Distribution of Modified Source Code
+    - Distribute the object code generated from the modified source code
+    - Distribute the generated binaries from modified source code
+    - Distribute the executable generated from the modified source code
 
-  Conditions:
-  AND
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-    OBLIGATION: Include a file to report the changes you make and the date of all changes
+    Conditions:
+    AND
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
+      OBLIGATION: Include a file to report the changes you make and the date of all changes
 
-#+END_EXAMPLE
+  #+END_EXAMPLE
 
-#+BEGIN_EXAMPLE
-  Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
-  Actions:
-  - Using the copyright holder's name or trademark in software promotion and advertising
+- #+BEGIN_EXAMPLE
+    Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
+    Actions:
+    - Using the copyright holder's name or trademark in software promotion and advertising
 
-  Conditions:
-  REQUISITE: Get special permission in writing.
-#+END_EXAMPLE
+    Conditions:
+    REQUISITE: Get special permission in writing.
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

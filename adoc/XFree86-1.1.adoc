@@ -32,6 +32,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -44,7 +46,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -56,7 +59,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Description: Display in the same place and in the same format as other copyright notices, licenses and disclaimers. Treat relevant documentation for the Software in the same way as for the Software.
 Actions:
@@ -69,7 +73,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 ....
-
+* {blank}
++
 ....
 Description: This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors" in the same location and with the same acknowledgements as other third parties. format. This acknowledgement may be included in the software itself, in the same place and in the same format as other third party acknowledgements.
 Actions:
@@ -78,7 +83,8 @@ Actions:
 Conditions:
 OBLIGATION: Acknowledgements
 ....
-
+* {blank}
++
 ....
 Description: If you wish to use the name "The XFree86 Project, Inc.", obtain permission from The XFree86 Project, Inc.
 Actions:

@@ -40,6 +40,8 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -55,7 +57,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
 Actions:
@@ -75,7 +78,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Description: With permission of the copyright owner.
 Actions:

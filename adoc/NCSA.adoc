@@ -92,6 +92,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt[ch
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: Relevant documentation for the software should be treated in the same way as for the software.
 Actions:
@@ -103,7 +105,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
 Actions:
@@ -116,7 +119,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
 ....
-
+* {blank}
++
 ....
 Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
 Actions:
@@ -130,7 +134,8 @@ Actions:
 Conditions:
 OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
 ....
-
+* {blank}
++
 ....
 Actions:
 - Use the name of the owner or contributor to promote or sell the derived product

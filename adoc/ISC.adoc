@@ -96,6 +96,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt[cho
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -110,7 +112,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)

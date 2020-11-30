@@ -110,6 +110,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.1.tx
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: rights in all present and future media, supports and formats as permitted by applicable law.
 Actions:
@@ -124,7 +126,8 @@ AND
   RESTRICTION: A non-exclusive, royalty-free license to use the licensor's patents to the extent necessary to exercise the rights granted to the software under this license.
 
 ....
-
+* {blank}
++
 ....
 Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.
 Actions:
@@ -141,7 +144,8 @@ AND
   OBLIGATION: Give you a copy of the relevant license.
 
 ....
-
+* {blank}
++
 ....
 Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.
 Actions:
@@ -161,7 +165,8 @@ AND
     OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)
 
 ....
-
+* {blank}
++
 ....
 Description: ● The rights shall be enforceable in all present and future media, supports and formats as permitted by applicable law.
 Actions:
@@ -175,7 +180,8 @@ AND
   OBLIGATION: Indicate your changes and the date of the change.
 
 ....
-
+* {blank}
++
 ....
 Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.
 Actions:
@@ -193,7 +199,8 @@ AND
   OBLIGATION: Indicate your changes and the date of the change.
 
 ....
-
+* {blank}
++
 ....
 Description: You may exercise your rights in all present and future media, supports and formats to the extent permitted by applicable law. If you offer to download such software from a remote location or otherwise use electronic communications to distribute such software, the distribution channel or medium, such as a web site, may provide the public, at a minimum, with a copy of the licensor's, the license, and the method of acquisition to which the licensee has access. and shall provide information consistent with applicable law.
 Actions:
@@ -214,7 +221,8 @@ AND
     OBLIGATION: Indicates a repository where the source code for the software can be used freely. (Indicates a repository that is available for as long as you continue to distribute the software)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.

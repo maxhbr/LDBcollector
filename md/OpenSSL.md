@@ -52,55 +52,55 @@ URLs
 Description from open-license
 -----------------------------
 
-    Actions:
-    - Use the obtained source code without modification (Use the fetched code as it is.)
-    - Modify the obtained source code.
-    - Using Modified Source Code
-    - Use the retrieved binaries (Use the fetched binary as it is.)
-    - Use binaries generated from modified source code
+-   Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
 
-    Conditions: None
+        Conditions: None
 
-    Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
-    Actions:
-    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-    - Distribution of Modified Source Code
+-   Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+          OBLIGATION: Acknowledgements
 
-    Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
-    Actions:
-    - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
-    - Distribute the generated binaries from modified source code
+-   Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
 
-    Conditions:
-    AND
-      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-      OBLIGATION: Acknowledgements
+        Conditions:
+        AND
+          OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+          OBLIGATION: Acknowledgements
 
-    Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
-    Actions:
-    - Create an advertising medium that describes the features and use of the software
+-   Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
+        Actions:
+        - Create an advertising medium that describes the features and use of the software
 
-    Conditions:
-    OBLIGATION: Acknowledgements
+        Conditions:
+        OBLIGATION: Acknowledgements
 
-    Description: "OpenSSL Toolkit" and "OpenSSL Project". openssl-core@openssl.orgに連絡する.
-    Actions:
-    - Use the name to endorse and promote derived products
+-   Description: "OpenSSL Toolkit" and "OpenSSL Project". openssl-core@openssl.orgに連絡する.
+        Actions:
+        - Use the name to endorse and promote derived products
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
-    Description: To use the name "OpenSSL". Get written permission from the OpenSSL Project.
-    Actions:
-    - Use the name of the product or part of the name of the product from which it was derived
+-   Description: To use the name "OpenSSL". Get written permission from the OpenSSL Project.
+        Actions:
+        - Use the name of the product or part of the name of the product from which it was derived
 
-    Conditions:
-    REQUISITE: Get special permission in writing.
+        Conditions:
+        REQUISITE: Get special permission in writing.
 
 (source: Hitachi open-license)
 

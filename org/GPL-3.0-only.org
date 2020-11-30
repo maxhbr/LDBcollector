@@ -160,141 +160,141 @@
 
 ** Description from open-license
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Use the obtained source code without modification (Use the fetched code as it is.)
-  - Using Modified Source Code
-  - Use the retrieved object code (Use the fetched code as it is.)
-  - Use the object code generated from the modified source code
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Use the obtained source code without modification (Use the fetched code as it is.)
+    - Using Modified Source Code
+    - Use the retrieved object code (Use the fetched code as it is.)
+    - Use the object code generated from the modified source code
 
-  Conditions:
-  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-#+END_EXAMPLE
-
-#+BEGIN_EXAMPLE
-  Actions:
-  - Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
-  - Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
-
-  Conditions:
-  AND
-    OBLIGATION: Distribution of the parts of the work not covered by your copyright is subject to this license.
-    RESTRICTION: Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.
-    RESTRICTION: You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.
-
-#+END_EXAMPLE
-
-#+BEGIN_EXAMPLE
-  Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
-  Actions:
-  - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
-
-  Conditions:
-  AND
-    REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
-    REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    OBLIGATION: Give you a copy of the relevant license.
+    Conditions:
     RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
+    - Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
 
-#+BEGIN_EXAMPLE
-  Actions:
-  - Modify the obtained source code.
+    Conditions:
+    AND
+      OBLIGATION: Distribution of the parts of the work not covered by your copyright is subject to this license.
+      RESTRICTION: Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.
+      RESTRICTION: You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.
 
-  Conditions:
-  AND
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    OBLIGATION: Indicate your changes and the date of the change.
-    OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-    RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
+    Actions:
+    - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
-#+BEGIN_EXAMPLE
-  Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
-  Actions:
-  - Distribution of Modified Source Code
+    Conditions:
+    AND
+      REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
+      REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      OBLIGATION: Give you a copy of the relevant license.
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
-  Conditions:
-  AND
-    REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
-    REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Indicate your changes and the date of the change.
-    OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
-    OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-    RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Actions:
+    - Modify the obtained source code.
 
-#+BEGIN_EXAMPLE
-  Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
-  Actions:
-  - Distribute the obtained object code (Redistribute the code as it was obtained)
+    Conditions:
+    AND
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      OBLIGATION: Indicate your changes and the date of the change.
+      OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
-  Conditions:
-  AND
-    REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
-    REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
-    OR
-      OBLIGATION: Attach the source code corresponding to the software in question.
-      OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support
-      OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.
-      OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-      OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
-    OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
-    RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
+    Actions:
+    - Distribution of Modified Source Code
 
-#+BEGIN_EXAMPLE
-  Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
-  Actions:
-  - Distribute the object code generated from the modified source code
+    Conditions:
+    AND
+      REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
+      REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Indicate your changes and the date of the change.
+      OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
+      OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
-  Conditions:
-  AND
-    REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
-    OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
-    OR
-      OBLIGATION: Attach the source code corresponding to the software in question.
-      OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support
-      OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.
-      OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-      OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
-    OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-    OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
-    OBLIGATION: Indicate your changes and the date of the change.
-    OBLIGATION: Give you a copy of the relevant license.
-    OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-    REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
-    RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
+    Actions:
+    - Distribute the obtained object code (Redistribute the code as it was obtained)
 
-#+BEGIN_EXAMPLE
-  Description: This additional license provision may be a license document that is independent of this license or may be written as an exception to this license.
-  Actions:
-  - Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it.
+    Conditions:
+    AND
+      REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
+      REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
+      OR
+        OBLIGATION: Attach the source code corresponding to the software in question.
+        OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support
+        OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.
+        OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
+        OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
+      OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
 
-  Conditions:
-  AND
-    OR
-      RESTRICTION: disclaiming any warranty or limiting liability that differs from the terms of this license.
-      RESTRICTION: require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions
-      RESTRICTION: Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version
-      RESTRICTION: Restrict the use of the name of the licensor or author of the section you add for promotional purposes
-      RESTRICTION: To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.
-      RESTRICTION: Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her
-    RESTRICTION: Include these license terms, or a reference to them in the file to which these additional license terms apply
+  #+END_EXAMPLE
 
-#+END_EXAMPLE
+- #+BEGIN_EXAMPLE
+    Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
+    Actions:
+    - Distribute the object code generated from the modified source code
+
+    Conditions:
+    AND
+      REQUISITE: Waive the legal right to prohibit circumvention of technological protection measures to the extent that the exercise of rights under this license would affect you.
+      OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
+      OR
+        OBLIGATION: Attach the source code corresponding to the software in question.
+        OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support
+        OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.
+        OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
+        OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
+      OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
+      OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
+      OBLIGATION: Indicate your changes and the date of the change.
+      OBLIGATION: Give you a copy of the relevant license.
+      OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
+      REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
+      RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
+
+  #+END_EXAMPLE
+
+- #+BEGIN_EXAMPLE
+    Description: This additional license provision may be a license document that is independent of this license or may be written as an exception to this license.
+    Actions:
+    - Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it.
+
+    Conditions:
+    AND
+      OR
+        RESTRICTION: disclaiming any warranty or limiting liability that differs from the terms of this license.
+        RESTRICTION: require you to maintain intact certain reasonable legal notices or authorship statements contained in your additions, or similar notices on the software, including your additions
+        RESTRICTION: Make it a clause that requires you not to misrepresent the original author of the portions you add, or to indicate in a reasonable manner that they are different from the original version
+        RESTRICTION: Restrict the use of the name of the licensor or author of the section you add for promotional purposes
+        RESTRICTION: To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.
+        RESTRICTION: Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her
+      RESTRICTION: Include these license terms, or a reference to them in the file to which these additional license terms apply
+
+  #+END_EXAMPLE
 
 (source: Hitachi open-license)
 

@@ -74,6 +74,8 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 
 === Description from open-license
 
+* {blank}
++
 ....
 Description: The software may be used to compile, link, and execute legitimately developed application programs.
 Actions:
@@ -85,7 +87,8 @@ Actions:
 
 Conditions: None
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -93,7 +96,8 @@ Actions:
 Conditions:
 OBLIGATION: Include copyright and trademark notices and disclaimers contained in the software
 ....
-
+* {blank}
++
 ....
 Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.
 Actions:
@@ -104,7 +108,8 @@ AND
   OBLIGATION: Include the copyright notice contained in the software
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the obtained executable (Redistribute the obtained executable as-is)
@@ -115,7 +120,8 @@ AND
   OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Distribute the executable generated from the modified source code
@@ -127,7 +133,8 @@ AND
   OBLIGATION: Apply this license to the entire modification
 
 ....
-
+* {blank}
++
 ....
 Actions:
 - Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)

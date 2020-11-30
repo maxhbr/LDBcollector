@@ -99,6 +99,8 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt
 
 === Description from open-license
 
+* {blank}
++
 ....
 Actions:
 - Reproduce the work.
