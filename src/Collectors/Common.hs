@@ -26,3 +26,16 @@ logThatOneHasFoundFacts name fs = hPutStrLn stderr $ "### " ++ name ++ " has fou
 
 logThatFileContainedFact :: FilePath -> LicenseFact -> IO ()
 logThatFileContainedFact file f = hPutStrLn stderr $ "### the file " ++ file ++ " contained fact for: " ++ show (getImpliedNames f)
+
+--------------------------------------------------------------------------------
+--
+data CollectorUpdateMethod
+  = ScriptCollectorUpdateMethod FilePath
+  | ManualCollectorUpdateMethod String -- description
+  | DirectPullUpdateMethod String -- description
+  deriving (Eq, Show)
+class (LicenseFactClassifiable a) => Collector a where
+  loadFacts :: a -> IO Facts
+  -- metadata
+  getCollectorUpdateMethod :: a -> CollectorUpdateMethod
+  getCollectorVersion :: a -> LicenseFactVersion

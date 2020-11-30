@@ -116,5 +116,8 @@ maybeAddLicense (Just lfl) (LFCWithURL url brc) = LFCWithURLAndLicense url lfl b
  -}
 class LicenseFactClassifiable a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
+  matchesLicenseFactClassifier :: a -> LicenseFactClassifier -> Bool
+  matchesLicenseFactClassifier a lfl = (getLicenseFactClassifier a) == lfl
+
 getLicenseFactLicense :: LicenseFactClassifiable a => a -> LicenseFactLicense
 getLicenseFactLicense = extractLFL . getLicenseFactClassifier

@@ -28,6 +28,7 @@ licenseCompatibilityCheckerLFC = let
   url = "https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json"
   lic = LFLWithURL "https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" "MIT"
   in LFCWithURLAndLicense url lic "HansHammel license-compatibility-checker"
+
 {-
 -- https://github.com/HansHammel/license-compatibility-checker
 {
@@ -73,8 +74,6 @@ instance FromJSON LicenseCompatibilityCheckerJSON where
     <*> v .: "Weakly Protective"
     <*> v .: "Strongly Protective"
     <*> v .: "Network Protective"
-
-
 
 data LicenseCompatibilityCheckerFact
   = LicenseCompatibilityCheckerFact
