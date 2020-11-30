@@ -1,0 +1,10 @@
+---
+approved: unknown
+fedora_abbrev: ''
+fedora_name: ''
+id: '396'
+license_text: ''
+name: Open LDAP Public License v2.7
+spdx_abbrev: OLDAP-2.7
+spdx_name: Open LDAP Public License v2.7
+url: http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2415c1df81556eeb39be6cad458ef87c534a2

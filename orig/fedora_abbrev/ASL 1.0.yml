@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: ASL 1.0
+fedora_name: Apache Software License 1.0
+id: '33'
+license_text: ''
+name: Apache Software License 1.0
+spdx_abbrev: Apache-1.0
+spdx_name: Apache License 1.0
+url: http://www.apache.org/licenses/LICENSE-1.0

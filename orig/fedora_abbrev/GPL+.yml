@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: GPL+
+fedora_name: GNU General Public License v1.0 or later
+id: '223'
+license_text: ''
+name: GNU General Public License v1.0 or later
+spdx_abbrev: GPL-1.0+
+spdx_name: GNU General Public License v1.0 or later
+url: http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html

@@ -1,0 +1,10 @@
+---
+approved: unknown
+fedora_abbrev: ''
+fedora_name: ''
+id: '165'
+license_text: ''
+name: curl License
+spdx_abbrev: curl
+spdx_name: curl License
+url: https://github.com/bagder/curl/blob/master/COPYING

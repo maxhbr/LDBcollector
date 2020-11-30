@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: gnuplot
+fedora_name: gnuplot License
+id: '251'
+license_text: ''
+name: gnuplot License
+spdx_abbrev: gnuplot
+spdx_name: gnuplot License
+url: https://fedoraproject.org/wiki/Licensing/Gnuplot

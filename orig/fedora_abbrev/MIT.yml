@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: MIT
+fedora_name: mpich2 License
+id: '342'
+license_text: ''
+name: mpich2 License
+spdx_abbrev: mpich2
+spdx_name: mpich2 License
+url: https://fedoraproject.org/wiki/Licensing/MIT

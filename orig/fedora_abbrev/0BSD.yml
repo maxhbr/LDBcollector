@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: 0BSD
+fedora_name: Zero-Clause BSD
+id: '84'
+license_text: ''
+name: BSD Zero Clause License
+spdx_abbrev: 0BSD
+spdx_name: BSD Zero Clause License
+url: https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD

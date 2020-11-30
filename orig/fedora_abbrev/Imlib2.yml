@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: Imlib2
+fedora_name: Imlib2 License
+id: '270'
+license_text: ''
+name: Imlib2 License
+spdx_abbrev: Imlib2
+spdx_name: Imlib2 License
+url: http://trac.enlightenment.org/e/browser/trunk/imlib2/COPYING

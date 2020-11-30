@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: xinetd
+fedora_name: xinetd License
+id: '544'
+license_text: ''
+name: xinetd License
+spdx_abbrev: xinetd
+spdx_name: xinetd License
+url: https://fedoraproject.org/wiki/Licensing/Xinetd_License

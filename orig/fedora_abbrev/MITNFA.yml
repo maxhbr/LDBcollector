@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: MITNFA
+fedora_name: MIT +no-false-attribs license
+id: '330'
+license_text: ''
+name: MIT +no-false-attribs license
+spdx_abbrev: MITNFA
+spdx_name: MIT +no-false-attribs license
+url: https://fedoraproject.org/wiki/Licensing/MITNFA

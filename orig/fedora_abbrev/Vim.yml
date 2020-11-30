@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: Vim
+fedora_name: Vim License
+id: '529'
+license_text: ''
+name: Vim License
+spdx_abbrev: Vim
+spdx_name: Vim License
+url: http://vimdoc.sourceforge.net/htmldoc/uganda.html

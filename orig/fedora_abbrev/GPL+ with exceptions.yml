@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: GPL+ with exceptions
+fedora_name: GNU General Public License v2.0 only, with font embedding exception
+id: '566'
+license_text: ''
+name: GNU General Public License v2.0 w/Font exception
+spdx_abbrev: GPL-2.0-with-font-exception
+spdx_name: GNU General Public License v2.0 w/Font exception
+url: http://www.gnu.org/licenses/gpl-faq.html#FontException

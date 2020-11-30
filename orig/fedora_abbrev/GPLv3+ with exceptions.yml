@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: GPLv3+ with exceptions
+fedora_name: GNU General Public License v3.0 or later, with font embedding exception
+id: '235'
+license_text: ''
+name: GNU General Public License v3.0 or later, with font embedding exception
+spdx_abbrev: ''
+spdx_name: ''
+url: http://www.gnu.org/licenses/gpl-faq.html#FontException

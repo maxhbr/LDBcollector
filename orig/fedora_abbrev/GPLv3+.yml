@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: GPLv3+
+fedora_name: GNU General Public License v3.0 or later
+id: '233'
+license_text: ''
+name: GNU General Public License v3.0 or later
+spdx_abbrev: GPL-3.0+
+spdx_name: GNU General Public License v3.0 or later
+url: https://www.gnu.org/licenses/gpl.html

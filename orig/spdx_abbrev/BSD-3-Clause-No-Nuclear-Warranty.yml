@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: ''
+fedora_name: ''
+id: '75'
+license_text: ''
+name: BSD 3-Clause No Nuclear Warranty
+spdx_abbrev: BSD-3-Clause-No-Nuclear-Warranty
+spdx_name: BSD 3-Clause No Nuclear Warranty
+url: https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt

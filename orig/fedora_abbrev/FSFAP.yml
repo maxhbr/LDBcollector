@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: FSFAP
+fedora_name: FSF All Permissive license
+id: '592'
+license_text: ''
+name: FSF All Permissive license
+spdx_abbrev: FSFAP
+spdx_name: FSF All Permissive License
+url: https://fedoraproject.org/wiki/Licensing/FSFAP

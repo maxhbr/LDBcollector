@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: CDDL-1.0
+fedora_name: Common Development Distribution License 1.0
+id: '111'
+license_text: ''
+name: Common Development and Distribution License 1.0
+spdx_abbrev: CDDL-1.0
+spdx_name: Common Development and Distribution License 1.0
+url: http://repository.jboss.org/licenses/cddl.txt

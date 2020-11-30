@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: NetCDF
+fedora_name: NetCDF license
+id: '356'
+license_text: ''
+name: NetCDF license
+spdx_abbrev: NetCDF
+spdx_name: NetCDF license
+url: http://www.unidata.ucar.edu/software/netcdf/copyright.html

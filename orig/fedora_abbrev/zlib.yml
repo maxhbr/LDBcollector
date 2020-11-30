@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: zlib
+fedora_name: zlib/libpng License
+id: '557'
+license_text: ''
+name: zlib/libpng License
+spdx_abbrev: Zlib
+spdx_name: zlib License
+url: http://www.zlib.net/zlib_license.html

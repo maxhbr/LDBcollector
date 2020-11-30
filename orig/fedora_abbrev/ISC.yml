@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: ISC
+fedora_name: ISC License (Bind, DHCP Server)
+id: '280'
+license_text: ''
+name: ISC License (Bind, DHCP Server)
+spdx_abbrev: ISC
+spdx_name: ISC License
+url: http://www.isc.org/downloads/software-support-policy/isc-license/

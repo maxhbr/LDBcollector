@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: MIT with advertising
+fedora_name: Nunit License
+id: '373'
+license_text: ''
+name: Nunit License
+spdx_abbrev: Nunit
+spdx_name: Nunit License
+url: https://fedoraproject.org/wiki/Licensing/Nunit

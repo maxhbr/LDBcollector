@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: GPLv2+
+fedora_name: GNU General Public License v2.0 or later
+id: '227'
+license_text: ''
+name: GNU General Public License v2.0 or later
+spdx_abbrev: GPL-2.0+
+spdx_name: GNU General Public License v2.0 or later
+url: https://spdx.org/licenses/GPL-2.0+.html

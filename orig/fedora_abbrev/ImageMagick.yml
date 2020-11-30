@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: ImageMagick
+fedora_name: ImageMagick License
+id: '268'
+license_text: ''
+name: ImageMagick License
+spdx_abbrev: ImageMagick
+spdx_name: ImageMagick License
+url: http://www.imagemagick.org/script/license.php

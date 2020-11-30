@@ -1,0 +1,10 @@
+---
+approved: unknown
+fedora_abbrev: ''
+fedora_name: ''
+id: '392'
+license_text: ''
+name: Open LDAP Public License v2.3
+spdx_abbrev: OLDAP-2.3
+spdx_name: Open LDAP Public License v2.3
+url: http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=d32cf54a32d581ab475d23c810b0a7fbaf8d63c3

@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: ASL 2.0
+fedora_name: Apache Software License 2.0
+id: '577'
+license_text: ''
+name: apache-2.0
+spdx_abbrev: Apache-2.0
+spdx_name: Apache License 2.0
+url: http://www.apache.org/licenses/LICENSE-2.0

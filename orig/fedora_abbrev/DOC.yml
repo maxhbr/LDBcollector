@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: DOC
+fedora_name: DOC License
+id: '169'
+license_text: ''
+name: DOC License
+spdx_abbrev: DOC
+spdx_name: DOC License
+url: http://www.cs.wustl.edu/~schmidt/ACE-copying.html

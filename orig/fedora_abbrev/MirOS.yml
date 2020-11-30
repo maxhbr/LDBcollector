@@ -1,0 +1,10 @@
+---
+approved: 'yes'
+fedora_abbrev: MirOS
+fedora_name: MirOS License
+id: '327'
+license_text: ''
+name: MirOS License
+spdx_abbrev: MirOS
+spdx_name: MirOS Licence
+url: http://www.opensource.org/licenses/MirOS
