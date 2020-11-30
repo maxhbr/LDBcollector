@@ -160,6 +160,7 @@ The End</code></pre>
 <li><p><a href="https://spdx.org/licenses/Artistic-1.0-cl8.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -291,6 +292,22 @@ The End</code></pre>
                 ]
             }
         },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Artistic-1.0-cl8&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;WeakCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;WeakCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;Artistic-1.0-cl8&quot;,
+            &quot;copyleftkind&quot;: &quot;WeakCopyleft&quot;
+        },
         &quot;Debian Free Software Guidelines&quot;: {
             &quot;LicenseName&quot;: &quot;Artistic License&quot;,
             &quot;State&quot;: &quot;DFSGCompatible&quot;,
@@ -379,6 +396,10 @@ The End</code></pre>
         [
             &quot;BlueOak License List&quot;,
             &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;WeakCopyleft&quot;
         ],
         [
             &quot;Scancode&quot;,

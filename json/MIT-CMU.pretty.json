@@ -95,6 +95,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "MIT-CMU"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "MIT-CMU",
+            "copyleftkind": "NoCopyleft"
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/MIT-CMU.html",
@@ -186,6 +202,10 @@
     "__impliedCopyleft": [
         [
             "BlueOak License List",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

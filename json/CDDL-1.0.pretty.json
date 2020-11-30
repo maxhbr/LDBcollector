@@ -189,6 +189,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "CDDL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "CDDL-1.0",
+            "copyleftkind": "WeakCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -848,6 +864,10 @@
     "__impliedCopyleft": [
         [
             "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "WeakCopyleft"
         ],
         [

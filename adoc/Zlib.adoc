@@ -215,6 +215,9 @@ Project Wiki]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/zlib.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
@@ -438,6 +441,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Zlib"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Zlib",
+            "copyleftkind": "NoCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -957,6 +976,10 @@ Knowledge International]
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

@@ -106,6 +106,10 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 ### Raw JSON
 
     {
@@ -225,6 +229,22 @@ Raw Data
                     ]
                 }
             },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "xinetd"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "xinetd",
+                "copyleftkind": "NoCopyleft"
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/xinetd.html",
@@ -281,6 +301,10 @@ Raw Data
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
+                "NoCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
                 "NoCopyleft"
             ],
             [

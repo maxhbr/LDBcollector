@@ -132,6 +132,14 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -204,6 +212,22 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "OSL-1.1"
+            },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSL-1.1"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft"
+                },
+                "licensename": "OSL-1.1",
+                "copyleftkind": "SaaSCopyleft"
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",
@@ -281,6 +305,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "OSL-1.1"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "OSL-1.1",
+                "copyleftkind": "StrongCopyleft"
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "Open Software License (OSL) v1.1",
@@ -394,8 +434,16 @@ Raw Data
                 "SaaSCopyleft"
             ],
             [
+                "HansHammel license-compatibility-checker",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "SaaSCopyleft"
             ]
         ],
         "__calculatedCopyleft": "SaaSCopyleft",

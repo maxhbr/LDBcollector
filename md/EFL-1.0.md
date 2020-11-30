@@ -94,6 +94,10 @@ Raw Data
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 ### Raw JSON
 
     {
@@ -227,6 +231,22 @@ Raw Data
                     ]
                 }
             },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "EFL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "EFL-1.0",
+                "copyleftkind": "NoCopyleft"
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/EFL-1.0.html",
@@ -332,6 +352,10 @@ Raw Data
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
+                "NoCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
                 "NoCopyleft"
             ],
             [

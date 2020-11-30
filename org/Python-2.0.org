@@ -357,6 +357,14 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Python-2.0.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
@@ -471,6 +479,22 @@
               },
               "spdxLicenseId": "Python-2.0"
           },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "Python-2.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "Python-2.0",
+              "copyleftkind": "NoCopyleft"
+          },
           "Scancode": {
               "otherUrls": [
                   "http://opensource.org/licenses/PythonSoftFoundation.php",
@@ -527,6 +551,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "Python-2.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "Python-2.0",
+              "copyleftkind": "NoCopyleft"
           },
           "OpenChainPolicyTemplate": {
               "isSaaSDeemed": "no",
@@ -967,7 +1007,15 @@
               "NoCopyleft"
           ],
           [
+              "HansHammel license-compatibility-checker",
+              "NoCopyleft"
+          ],
+          [
               "Scancode",
+              "NoCopyleft"
+          ],
+          [
+              "librariesio license-compatibility",
               "NoCopyleft"
           ]
       ],

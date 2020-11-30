@@ -711,6 +711,10 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -805,6 +809,22 @@
                   ]
               },
               "spdxLicenseId": "LGPL-2.0-only"
+          },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "LGPL-2.0-only"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "WeakCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "WeakCopyleft"
+              },
+              "licensename": "LGPL-2.0-only",
+              "copyleftkind": "WeakCopyleft"
           },
           "Scancode": {
               "otherUrls": [
@@ -1471,6 +1491,10 @@
           ],
           [
               "Scancode",
+              "WeakCopyleft"
+          ],
+          [
+              "librariesio license-compatibility",
               "WeakCopyleft"
           ]
       ],

@@ -138,6 +138,22 @@
             },
             "spdxLicenseId": "LGPL-3.0-only"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-3.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "LGPL-3.0",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "See Matrix",
             "rating": "Good",
@@ -241,6 +257,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-3.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "LGPL-3.0",
+            "copyleftkind": "WeakCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -1280,7 +1312,15 @@
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "WeakCopyleft"
         ]
     ],

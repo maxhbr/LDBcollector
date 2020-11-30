@@ -5,8 +5,8 @@
 |Key |Value
 |Fullname |Microsoft Public License
 |Shortname |MS-PL
-|Rating |Go
-|Classification |NoCopyleft
+|Rating |Unknown, probably Attention or Stop or No-Go
+|Classification |WeakCopyleft
 |Has Patent Hint |False
 |===
 
@@ -273,6 +273,9 @@ Project Wiki]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
@@ -496,6 +499,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-PL"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "MS-PL",
+            "copyleftkind": "WeakCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -1052,11 +1071,15 @@ Knowledge International]
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
             "NoCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "NoCopyleft",
+    "__calculatedCopyleft": "WeakCopyleft",
     "__obligations": {
         "limitations": [
             {

@@ -145,6 +145,10 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-4-Clause-UC.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -281,6 +285,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-4-Clause-UC"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "BSD-4-Clause-UC",
+                "copyleftkind": "NoCopyleft"
             },
             "Override": {
                 "oNonCommecrial": null,
@@ -466,6 +486,10 @@ Raw Data
             ],
             [
                 "Google OSS Policy",
+                "NoCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
                 "NoCopyleft"
             ],
             [

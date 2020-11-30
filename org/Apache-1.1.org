@@ -212,6 +212,10 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -429,6 +433,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "Apache-1.1"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "Apache-1.1",
+              "copyleftkind": "NoCopyleft"
           },
           "Debian Free Software Guidelines": {
               "LicenseName": "The Apache Software License (ASL)",
@@ -822,6 +842,10 @@
           ],
           [
               "Google OSS Policy",
+              "NoCopyleft"
+          ],
+          [
+              "HansHammel license-compatibility-checker",
               "NoCopyleft"
           ],
           [

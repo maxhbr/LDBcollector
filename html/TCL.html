@@ -95,6 +95,7 @@ terms specified in this license.</code></pre>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tcl.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/TCL.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -230,6 +231,22 @@ terms specified in this license.</code></pre>
                 ]
             }
         },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;TCL&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;TCL&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
         &quot;BlueOak License List&quot;: {
             &quot;BlueOakRating&quot;: &quot;Bronze&quot;,
             &quot;url&quot;: &quot;https://spdx.org/licenses/TCL.html&quot;,
@@ -338,6 +355,10 @@ terms specified in this license.</code></pre>
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;BlueOak License List&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
         ],
         [

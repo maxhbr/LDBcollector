@@ -61,6 +61,22 @@
             },
             "spdxLicenseId": "OSL-1.1"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "OSL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "OSL-1.1",
+            "copyleftkind": "SaaSCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -137,6 +153,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "OSL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "OSL-1.1",
+            "copyleftkind": "StrongCopyleft"
         },
         "Debian Free Software Guidelines": {
             "LicenseName": "Open Software License (OSL) v1.1",
@@ -250,8 +282,16 @@
             "SaaSCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "SaaSCopyleft",

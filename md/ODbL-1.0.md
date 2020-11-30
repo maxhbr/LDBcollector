@@ -609,6 +609,14 @@ Raw Data
 -   [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/odbl-1.0.txt "choosealicense.com")
     ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -694,6 +702,22 @@ Raw Data
                 },
                 "spdxLicenseId": "ODbL-1.0"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "ODbL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "ODbL-1.0",
+                "copyleftkind": "StrongCopyleft"
+            },
             "Scancode": {
                 "otherUrls": null,
                 "homepageUrl": "http://www.opendatacommons.org/licenses/odbl/1.0/",
@@ -730,6 +754,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "ODbL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "ODbL-1.0",
+                "copyleftkind": "StrongCopyleft"
             },
             "choosealicense.com": {
                 "limitations": [
@@ -822,11 +862,19 @@ Raw Data
         },
         "__impliedCopyleft": [
             [
+                "HansHammel license-compatibility-checker",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {

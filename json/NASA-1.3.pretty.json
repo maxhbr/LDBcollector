@@ -167,6 +167,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "NASA-1.3"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "NASA-1.3",
+            "copyleftkind": "WeakCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -282,6 +298,10 @@
         [
             "BlueOak License List",
             "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
         ],
         [
             "Scancode",

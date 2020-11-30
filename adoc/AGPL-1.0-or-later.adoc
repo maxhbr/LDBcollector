@@ -70,6 +70,9 @@ this repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml[Scancode]
 (CC0-1.0)
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 
 ==== Raw JSON
 
@@ -139,6 +142,22 @@ this repository] is generated)
                 ]
             },
             "spdxLicenseId": "AGPL-1.0-or-later"
+        },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-1.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "AGPL-1.0-or-later",
+            "copyleftkind": "SaaSCopyleft"
         },
         "Scancode": {
             "otherUrls": null,
@@ -233,6 +252,10 @@ this repository] is generated)
         [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "SaaSCopyleft",

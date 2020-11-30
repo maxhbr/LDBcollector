@@ -75,6 +75,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-bsd-no-nuclear.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 ### Raw JSON
 
     {
@@ -161,8 +165,31 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause-No-Nuclear-License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "BSD-3-Clause-No-Nuclear-License",
+                "copyleftkind": "NoCopyleft"
             }
         },
+        "__impliedCopyleft": [
+            [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
         "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\nRedistribution of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\nRedistribution in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\nNeither the name of Sun Microsystems, Inc. nor the names of contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nThis software is provided \"AS IS,\" without a warranty of any kind. ALL\nEXPRESS OR IMPLIED CONDITIONS, REPRESENTATIONS AND WARRANTIES, INCLUDING\nANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR\nPURPOSE OR NON-INFRINGEMENT, ARE HEREBY EXCLUDED. SUN MICROSYSTEMS, INC.\n(\"SUN\") AND ITS LICENSORS SHALL NOT BE LIABLE FOR ANY DAMAGES SUFFERED\nBY LICENSEE AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THIS\nSOFTWARE OR ITS DERIVATIVES. IN NO EVENT WILL SUN OR ITS LICENSORS BE\nLIABLE FOR ANY LOST REVENUE, PROFIT OR DATA, OR FOR DIRECT, INDIRECT,\nSPECIAL, CONSEQUENTIAL, INCIDENTAL OR PUNITIVE DAMAGES, HOWEVER CAUSED\nAND REGARDLESS OF THE THEORY OF LIABILITY, ARISING OUT OF THE USE OF OR\nINABILITY TO USE THIS SOFTWARE, EVEN IF SUN HAS BEEN ADVISED OF THE\nPOSSIBILITY OF SUCH DAMAGES.\n\nYou acknowledge that this software is not designed, licensed or intended\nfor use in the design, construction, operation or maintenance of any\nnuclear facility.",
         "__impliedURLs": [

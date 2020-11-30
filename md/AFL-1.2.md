@@ -150,6 +150,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.2.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 ### Raw JSON
 
     {
@@ -222,6 +230,22 @@ Raw Data
                 },
                 "spdxLicenseId": "AFL-1.2"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "AFL-1.2"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "AFL-1.2",
+                "copyleftkind": "NoCopyleft"
+            },
             "Scancode": {
                 "otherUrls": [
                     "http://wayback.archive.org/web/20021204204652/http://www.opensource.org/licenses/academic.php",
@@ -277,6 +301,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "AFL-1.2"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "AFL-1.2",
+                "copyleftkind": "NoCopyleft"
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
@@ -337,7 +377,15 @@ Raw Data
                 "NoCopyleft"
             ],
             [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ],
+            [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
                 "NoCopyleft"
             ]
         ],

@@ -17,11 +17,11 @@
 </tr>
 <tr class="odd">
 <td><p>Rating</p></td>
-<td><p>Go</p></td>
+<td><p>Unknown, probably Attention or Stop or No-Go</p></td>
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
-<td><p>NoCopyleft</p></td>
+<td><p>WeakCopyleft</p></td>
 </tr>
 <tr class="odd">
 <td><p>Has Patent Hint</p></td>
@@ -237,6 +237,7 @@ non-infringement.</code></pre>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/Ms-PL.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
@@ -452,6 +453,22 @@ non-infringement.</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;MS-PL&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;WeakCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;WeakCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;MS-PL&quot;,
+            &quot;copyleftkind&quot;: &quot;WeakCopyleft&quot;
         },
         &quot;OpenChainPolicyTemplate&quot;: {
             &quot;isSaaSDeemed&quot;: &quot;no&quot;,
@@ -1008,11 +1025,15 @@ non-infringement.</code></pre>
             &quot;NoCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;WeakCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;NoCopyleft&quot;
         ]
     ],
-    &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
+    &quot;__calculatedCopyleft&quot;: &quot;WeakCopyleft&quot;,
     &quot;__obligations&quot;: {
         &quot;limitations&quot;: [
             {

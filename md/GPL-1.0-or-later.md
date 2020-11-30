@@ -79,6 +79,10 @@ Raw Data
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -152,6 +156,22 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "GPL-1.0-or-later"
+            },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-1.0-or-later"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "GPL-1.0-or-later",
+                "copyleftkind": "StrongCopyleft"
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",
@@ -326,9 +346,13 @@ Raw Data
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "Copyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__isOsiApproved": false,
         "__impliedText": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
         "__impliedURLs": [

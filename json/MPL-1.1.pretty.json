@@ -128,6 +128,22 @@
             },
             "spdxLicenseId": "MPL-1.1"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "MPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "MPL-1.1",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.opensource.org/licenses/MPL-1.1",
@@ -187,6 +203,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "MPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "MPL-1.1",
+            "copyleftkind": "WeakCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -922,7 +954,15 @@
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "WeakCopyleft"
         ]
     ],

@@ -73,6 +73,22 @@
             },
             "spdxLicenseId": "LGPL-2.0-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-2.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "LGPL-2.0-or-later",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
@@ -345,6 +361,10 @@
         ],
         [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "WeakCopyleft"
         ]
     ],

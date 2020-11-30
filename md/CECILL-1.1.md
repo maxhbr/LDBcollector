@@ -548,6 +548,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 ### Raw JSON
 
     {
@@ -656,9 +660,29 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "CECILL-1.1"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "CECILL-1.1",
+                "copyleftkind": "NoCopyleft"
             }
         },
         "__impliedCopyleft": [
+            [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ],
             [
                 "Scancode",
                 "WeakCopyleft"

@@ -169,6 +169,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "Artistic-1.0",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Debian Free Software Guidelines": {
             "LicenseName": "Artistic License",
             "State": "DFSGCompatible",
@@ -567,6 +583,10 @@
         [
             "Google OSS Policy",
             "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
         ],
         [
             "Scancode",

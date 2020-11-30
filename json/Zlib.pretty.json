@@ -206,6 +206,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Zlib"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Zlib",
+            "copyleftkind": "NoCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "permissive",
@@ -724,6 +740,10 @@
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

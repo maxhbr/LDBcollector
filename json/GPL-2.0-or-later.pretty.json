@@ -84,6 +84,22 @@
             },
             "spdxLicenseId": "GPL-2.0-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-2.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "GPL-2.0-or-later",
+            "copyleftkind": "StrongCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "N/A",
             "rating": "Good",
@@ -173,6 +189,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-2.0+"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "GPL-2.0+",
+            "copyleftkind": "StrongCopyleft"
         },
         "Debian Free Software Guidelines": {
             "LicenseName": "The GNU General Public License (GPL)",
@@ -422,8 +454,16 @@
             "StrongCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "StrongCopyleft"
         ]
     ],
     "__calculatedCopyleft": "StrongCopyleft",

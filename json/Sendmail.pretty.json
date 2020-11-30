@@ -151,6 +151,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Sendmail"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Sendmail",
+            "copyleftkind": "NoCopyleft"
+        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -315,6 +331,10 @@
         ]
     ],
     "__impliedCopyleft": [
+        [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "NoCopyleft"

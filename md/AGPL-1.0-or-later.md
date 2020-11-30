@@ -78,6 +78,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
     (CC0-1.0)
 
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 ### Raw JSON
 
     {
@@ -145,6 +149,22 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "AGPL-1.0-or-later"
+            },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "AGPL-1.0-or-later"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "SaaSCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "SaaSCopyleft"
+                },
+                "licensename": "AGPL-1.0-or-later",
+                "copyleftkind": "SaaSCopyleft"
             },
             "Scancode": {
                 "otherUrls": null,
@@ -239,6 +259,10 @@ Raw Data
             [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "SaaSCopyleft"
             ]
         ],
         "__calculatedCopyleft": "SaaSCopyleft",

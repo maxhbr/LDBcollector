@@ -223,6 +223,12 @@ repository] is generated)
 (CC0-1.0)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -333,6 +339,22 @@ Knowledge International]
             },
             "spdxLicenseId": "RPL-1.5"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.5"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "RPL-1.5",
+            "copyleftkind": "SaaSCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.gnu.org/licenses/license-list.html#RPL",
@@ -397,6 +419,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.5"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "RPL-1.5",
+            "copyleftkind": "StrongCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -509,8 +547,16 @@ Knowledge International]
             "MaximalCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "MaximalCopyleft",

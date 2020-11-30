@@ -209,6 +209,14 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -342,6 +350,22 @@ Raw Data
                 },
                 "spdxLicenseId": "BSD-3-Clause"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "BSD-3-Clause",
+                "copyleftkind": "NoCopyleft"
+            },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",
                 "rating": "Good",
@@ -430,6 +454,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "BSD-3-Clause"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "BSD-3-Clause",
+                "copyleftkind": "NoCopyleft"
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -893,7 +933,15 @@ Raw Data
                 "NoCopyleft"
             ],
             [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ],
+            [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
                 "NoCopyleft"
             ]
         ],

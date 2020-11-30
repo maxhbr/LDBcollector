@@ -79,6 +79,10 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 ### Raw JSON
 
     {
@@ -178,6 +182,22 @@ Raw Data
                     ]
                 }
             },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "MIT-CMU"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "MIT-CMU",
+                "copyleftkind": "NoCopyleft"
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
                 "url": "https://spdx.org/licenses/MIT-CMU.html",
@@ -269,6 +289,10 @@ Raw Data
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
+                "NoCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
                 "NoCopyleft"
             ],
             [

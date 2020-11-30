@@ -21,7 +21,7 @@
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
-<td><p>Copyleft</p></td>
+<td><p>StrongCopyleft</p></td>
 </tr>
 </tbody>
 </table>
@@ -63,6 +63,7 @@ You should have received a copy of the GNU General Public License along with thi
 <li><p><a href="https://spdx.org/licenses/GPL-1.0-or-later.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
 </ul>
@@ -130,6 +131,22 @@ You should have received a copy of the GNU General Public License along with thi
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;GPL-1.0-or-later&quot;
+        },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;GPL-1.0-or-later&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;GPL-1.0-or-later&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;Yes&quot;,
@@ -304,9 +321,13 @@ You should have received a copy of the GNU General Public License along with thi
         [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;StrongCopyleft&quot;
         ]
     ],
-    &quot;__calculatedCopyleft&quot;: &quot;Copyleft&quot;,
+    &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;,
     &quot;__isOsiApproved&quot;: false,
     &quot;__impliedText&quot;: &quot;This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.&quot;,
     &quot;__impliedURLs&quot;: [

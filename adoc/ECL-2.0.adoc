@@ -318,6 +318,12 @@ Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
@@ -429,6 +435,22 @@ Knowledge International]
             },
             "spdxLicenseId": "ECL-2.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "ECL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "ECL-2.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -517,6 +539,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "ECL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "ECL-2.0",
+            "copyleftkind": "NoCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -724,7 +762,15 @@ Knowledge International]
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

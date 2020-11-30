@@ -192,6 +192,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "EPL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "EPL-2.0",
+            "copyleftkind": "StrongCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -822,11 +838,15 @@
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "WeakCopyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {

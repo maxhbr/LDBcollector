@@ -188,6 +188,9 @@ repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-doc-20150513.yml[Scancode]
 (CC0-1.0)
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -305,6 +308,22 @@ Policy]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "W3C-20150513"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "W3C-20150513",
+            "copyleftkind": "NoCopyleft"
         },
         "Hitachi open-license": {
             "summary": "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
@@ -557,6 +576,10 @@ Policy]
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

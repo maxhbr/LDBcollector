@@ -205,6 +205,12 @@ Project Wiki]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/BSD-3-Clause.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -334,6 +340,22 @@ Knowledge International]
             },
             "spdxLicenseId": "BSD-3-Clause"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "BSD-3-Clause",
+            "copyleftkind": "NoCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "Yes",
             "rating": "Good",
@@ -422,6 +444,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "BSD-3-Clause",
+            "copyleftkind": "NoCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -885,7 +923,15 @@ Knowledge International]
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

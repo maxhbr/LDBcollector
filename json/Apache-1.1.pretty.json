@@ -199,6 +199,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Apache-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Apache-1.1",
+            "copyleftkind": "NoCopyleft"
+        },
         "Debian Free Software Guidelines": {
             "LicenseName": "The Apache Software License (ASL)",
             "State": "DFSGCompatible",
@@ -591,6 +607,10 @@
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

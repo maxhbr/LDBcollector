@@ -63,6 +63,22 @@
             },
             "spdxLicenseId": "AFL-2.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "AFL-2.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://wayback.archive.org/web/20060924134533/http://www.opensource.org/licenses/afl-2.0.txt",
@@ -123,6 +139,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "AFL-2.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/AFL-2.0.html",
@@ -182,7 +214,15 @@
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

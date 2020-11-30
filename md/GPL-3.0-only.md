@@ -999,6 +999,26 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/GPL-3.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -1170,6 +1190,22 @@ Raw Data
                 },
                 "spdxLicenseId": "GPL-3.0-only"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-3.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "GPL-3.0",
+                "copyleftkind": "StrongCopyleft"
+            },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "See Matrix",
                 "rating": "Good",
@@ -1268,6 +1304,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "GPL-3.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "GPL-3.0",
+                "copyleftkind": "StrongCopyleft"
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -2250,8 +2302,16 @@ Raw Data
                 "StrongCopyleft"
             ],
             [
+                "HansHammel license-compatibility-checker",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "Copyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "StrongCopyleft"
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",

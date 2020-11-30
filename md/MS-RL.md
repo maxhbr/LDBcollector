@@ -187,6 +187,14 @@ Raw Data
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -313,6 +321,22 @@ Raw Data
                 },
                 "spdxLicenseId": "MS-RL"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "MS-RL"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "MS-RL",
+                "copyleftkind": "StrongCopyleft"
+            },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",
                 "rating": "Good",
@@ -411,6 +435,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "MS-RL"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "StrongCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "StrongCopyleft"
+                },
+                "licensename": "MS-RL",
+                "copyleftkind": "StrongCopyleft"
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -766,11 +806,19 @@ Raw Data
                 "WeakCopyleft"
             ],
             [
+                "HansHammel license-compatibility-checker",
+                "StrongCopyleft"
+            ],
+            [
                 "Scancode",
                 "WeakCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
+                "StrongCopyleft"
             ]
         ],
-        "__calculatedCopyleft": "WeakCopyleft",
+        "__calculatedCopyleft": "StrongCopyleft",
         "__obligations": {
             "limitations": [
                 {

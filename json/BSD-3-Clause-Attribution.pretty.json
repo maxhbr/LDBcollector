@@ -50,6 +50,22 @@
             },
             "spdxLicenseId": "BSD-3-Clause-Attribution"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-Attribution"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "BSD-3-Clause-Attribution",
+            "copyleftkind": "NoCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": null,
             "rating": "Good",
@@ -116,6 +132,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-3-Clause-Attribution"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "BSD-3-Clause-Attribution",
+            "copyleftkind": "NoCopyleft"
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/BSD-3-Clause-Attribution.html",
@@ -175,7 +207,15 @@
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

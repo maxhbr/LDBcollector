@@ -94,6 +94,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 ### Raw JSON
 
     {
@@ -143,6 +151,22 @@ Raw Data
                 },
                 "spdxLicenseId": "SAX-PD"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "SAX-PD"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "SAX-PD",
+                "copyleftkind": "NoCopyleft"
+            },
             "Scancode": {
                 "otherUrls": null,
                 "homepageUrl": "http://www.saxproject.org/copying.html",
@@ -179,11 +203,35 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "SAX-PD"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "SAX-PD",
+                "copyleftkind": "NoCopyleft"
             }
         },
         "__impliedCopyleft": [
             [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ],
+            [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
                 "NoCopyleft"
             ]
         ],

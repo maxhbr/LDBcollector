@@ -163,6 +163,8 @@ the accompanying credits file.</code></pre>
 <li><p><a href="https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods" title="OpenChainPolicyTemplate">OpenChainPolicyTemplate</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
@@ -276,6 +278,22 @@ the accompanying credits file.</code></pre>
             },
             &quot;spdxLicenseId&quot;: &quot;ZPL-2.0&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ZPL-2.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;ZPL-2.0&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
                 &quot;http://old.zope.org/Resources/License/ZPL-2.0&quot;,
@@ -341,6 +359,22 @@ the accompanying credits file.</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ZPL-2.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;ZPL-2.0&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         },
         &quot;OpenChainPolicyTemplate&quot;: {
             &quot;isSaaSDeemed&quot;: &quot;no&quot;,
@@ -659,7 +693,15 @@ the accompanying credits file.</code></pre>
             &quot;NoCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
             &quot;NoCopyleft&quot;
         ]
     ],

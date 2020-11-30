@@ -129,6 +129,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "BSD-4-Clause-UC"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "BSD-4-Clause-UC",
+            "copyleftkind": "NoCopyleft"
+        },
         "Override": {
             "oNonCommecrial": null,
             "implications": {
@@ -313,6 +329,10 @@
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

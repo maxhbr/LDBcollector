@@ -260,6 +260,14 @@
 - [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt][choosealicense.com]]
   ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
@@ -366,6 +374,22 @@
               },
               "spdxLicenseId": "CC0-1.0"
           },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "CC0-1.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "CC0-1.0",
+              "copyleftkind": "NoCopyleft"
+          },
           "Scancode": {
               "otherUrls": [
                   "https://creativecommons.org/publicdomain/zero/1.0/legalcode"
@@ -408,6 +432,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "CC0-1.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "CC0-1.0",
+              "copyleftkind": "NoCopyleft"
           },
           "Hitachi open-license": {
               "summary": "http://creativecommons.org/publicdomain/zero/1.0/legalcodeãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
@@ -694,7 +734,15 @@
               "NoCopyleft"
           ],
           [
+              "HansHammel license-compatibility-checker",
+              "NoCopyleft"
+          ],
+          [
               "Scancode",
+              "NoCopyleft"
+          ],
+          [
+              "librariesio license-compatibility",
               "NoCopyleft"
           ]
       ],

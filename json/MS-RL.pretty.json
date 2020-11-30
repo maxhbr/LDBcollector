@@ -114,6 +114,22 @@
             },
             "spdxLicenseId": "MS-RL"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-RL"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "MS-RL",
+            "copyleftkind": "StrongCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -212,6 +228,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "MS-RL"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "MS-RL",
+            "copyleftkind": "StrongCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -567,11 +599,19 @@
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "StrongCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "WeakCopyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {

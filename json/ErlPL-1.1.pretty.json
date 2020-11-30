@@ -132,6 +132,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "ErlPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "ErlPL-1.1",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Hitachi open-license": {
             "notices": [
                 {
@@ -591,6 +607,10 @@
     "__impliedCopyleft": [
         [
             "BlueOak License List",
+            "WeakCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "WeakCopyleft"
         ],
         [

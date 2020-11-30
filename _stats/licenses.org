@@ -30,24 +30,32 @@
 - SPDX ["AFL-1.1","Academic Free License v1.1"] []
 - BlueOak License List ["AFL-1.1","Academic Free License v1.1"] []
 - Scancode ["AFL-1.1","scancode://afl-1.1","AFL 1.1"] []
+- HansHammel license-compatibility-checker ["AFL-1.1"] []
+- librariesio license-compatibility ["AFL-1.1"] []
 
 * AFL-1.2
 - LicenseName ["AFL-1.2"] []
 - SPDX ["AFL-1.2","Academic Free License v1.2"] []
 - BlueOak License List ["AFL-1.2","Academic Free License v1.2"] []
 - Scancode ["AFL-1.2","scancode://afl-1.2","AFL 1.2"] []
+- HansHammel license-compatibility-checker ["AFL-1.2"] []
+- librariesio license-compatibility ["AFL-1.2"] []
 
 * AFL-2.0
 - LicenseName ["AFL-2.0"] []
 - SPDX ["AFL-2.0","Academic Free License v2.0"] []
 - BlueOak License List ["AFL-2.0","Academic Free License v2.0"] []
 - Scancode ["AFL-2.0","scancode://afl-2.0","AFL 2.0"] []
+- HansHammel license-compatibility-checker ["AFL-2.0"] []
+- librariesio license-compatibility ["AFL-2.0"] []
 
 * AFL-2.1
 - LicenseName ["AFL-2.1"] []
 - SPDX ["AFL-2.1","Academic Free License v2.1"] []
 - BlueOak License List ["AFL-2.1","Academic Free License v2.1"] []
 - Scancode ["AFL-2.1","scancode://afl-2.1","AFL 2.1"] []
+- HansHammel license-compatibility-checker ["AFL-2.1"] []
+- librariesio license-compatibility ["AFL-2.1"] []
 - Google OSS Policy ["AFL-2.1"] []
 - Hitachi open-license ["Academic Free License Version 2.1","AFL-2.1"] []
 
@@ -59,6 +67,8 @@
 - Scancode ["AFL-3.0","scancode://afl-3.0","AFL 3.0"] []
 - choosealicense.com ["afl-3.0","AFL-3.0"] []
 - OpenSourceInitiative ["AFL-3.0","Academic Free License, Version 3.0","License :: OSI Approved :: Academic Free License (AFL)"] []
+- HansHammel license-compatibility-checker ["AFL-3.0"] []
+- librariesio license-compatibility ["AFL-3.0"] []
 - Wikipedia ["AFL-3.0","Academic Free License 3.0"] []
 - Google OSS Policy ["AFL-3.0"] []
 - Open Knowledge International ["AFL-3.0","Academic Free License 3.0"] []
@@ -70,6 +80,9 @@
 - BlueOak License List ["AGPL-1.0-only","Affero General Public License v1.0 only"] ["Affero General Public License"]
 - Scancode ["AGPL-1.0-only","scancode://agpl-1.0","AGPL 1.0"] []
 - Fedora Project Wiki ["Affero General Public License 1.0"] ["AGPLv1"]
+- HansHammel license-compatibility-checker ["AGPL-1.0"] []
+- librariesio license-compatibility ["AGPL-1.0"] []
+- librariesio license-compatibility ["AGPL-1.0-only"] []
 - Google OSS Policy ["AGPL-1.0"] []
 
 * AGPL-1.0-or-later
@@ -77,6 +90,7 @@
 - SPDX ["AGPL-1.0-or-later","Affero General Public License v1.0 or later"] []
 - BlueOak License List ["AGPL-1.0-or-later","Affero General Public License v1.0 or later"] ["Affero General Public License"]
 - Scancode ["AGPL-1.0-or-later","scancode://agpl-1.0-plus","AGPL 1.0 or later"] []
+- librariesio license-compatibility ["AGPL-1.0-or-later"] []
 
 * AGPL-3.0-only
 - LicenseName ["AGPL-3.0-only"] []
@@ -89,6 +103,9 @@
 - Fedora Project Wiki ["Affero General Public License 3.0"] ["AGPLv3"]
 - OpenSourceInitiative ["AGPL-3.0","GNU AFFERO GENERAL PUBLIC LICENSE, Version 3 (AGPL-3.0)","License :: OSI Approved :: GNU Affero General Public License v3"] []
 - finos/OSLC-handbook ["AGPL-3.0-only"] []
+- HansHammel license-compatibility-checker ["AGPL-3.0"] []
+- librariesio license-compatibility ["AGPL-3.0"] []
+- librariesio license-compatibility ["AGPL-3.0-only"] []
 - Google OSS Policy ["AGPL-3.0"] []
 - Open Knowledge International ["AGPL-3.0","GNU Affero General Public License v3","agpl-v3"] []
 - Debian Free Software Guidelines ["AGPL-3.0-only"] ["GNU AFFERO GENERAL PUBLIC LICENSE (AGPL-3)"]
@@ -102,6 +119,7 @@
 - Scancode ["AGPL-3.0-or-later","scancode://agpl-3.0-plus","AGPL 3.0 or later"] []
 - Fedora Project Wiki ["Affero General Public License 3.0 or later"] ["AGPLv3+"]
 - finos/OSLC-handbook ["AGPL-3.0-or-later"] []
+- librariesio license-compatibility ["AGPL-3.0-or-later"] []
 - Wikipedia ["AGPL-3.0-or-later","GNU Affero General Public License 3.0"] []
 
 * AMDPLPA
@@ -145,6 +163,7 @@
 - SPDX ["APL-1.0","Adaptive Public License 1.0"] []
 - Scancode ["APL-1.0","scancode://adapt-1.0","APL 1.0"] []
 - OpenSourceInitiative ["APL-1.0","Adaptive Public License, Version 1.0"] []
+- HansHammel license-compatibility-checker ["APL-1.0"] []
 - Open Knowledge International ["APL-1.0","Adaptive Public License 1.0","apl1.0"] []
 
 * APSL-1.0
@@ -153,6 +172,7 @@
 - BlueOak License List ["APSL-1.0","Apple Public Source License 1.0"] ["Apple Public Source License"]
 - Scancode ["APSL-1.0","scancode://apsl-1.0","APSL 1.0"] []
 - Fedora Project Wiki ["Apple Public Source License 1.0"] []
+- HansHammel license-compatibility-checker ["APSL-1.0"] []
 - Debian Free Software Guidelines ["APSL-1.0"] ["Apple Public Source License (APSL)"]
 
 * APSL-1.1
@@ -161,6 +181,7 @@
 - BlueOak License List ["APSL-1.1","Apple Public Source License 1.1"] ["Apple Public Source License"]
 - Scancode ["APSL-1.1","scancode://apsl-1.1","APSL 1.1"] []
 - Fedora Project Wiki ["Apple Public Source License 1.1"] []
+- HansHammel license-compatibility-checker ["APSL-1.1"] []
 - Debian Free Software Guidelines ["APSL-1.1"] ["Apple Public Source License (APSL)"]
 - Hitachi open-license ["APPLE PUBLIC SOURCE LICENSE, Version 1.1","APSL-1.1"] []
 
@@ -170,6 +191,7 @@
 - BlueOak License List ["APSL-1.2","Apple Public Source License 1.2"] ["Apple Public Source License"]
 - Scancode ["APSL-1.2","scancode://apsl-1.2","APSL 1.2"] []
 - Fedora Project Wiki ["Apple Public Source License 1.2"] []
+- HansHammel license-compatibility-checker ["APSL-1.2"] []
 - Debian Free Software Guidelines ["APSL-1.2"] ["Apple Public Source License (APSL)"]
 
 * APSL-2.0
@@ -180,6 +202,7 @@
 - Scancode ["APSL-2.0","scancode://apsl-2.0","APSL 2.0"] []
 - Fedora Project Wiki ["Apple Public Source License 2.0"] ["APSL 2.0"]
 - OpenSourceInitiative ["APSL-2.0","Apple Public Source License, Version 2.0","License :: OSI Approved :: Apple Public Source License"] []
+- HansHammel license-compatibility-checker ["APSL-2.0"] []
 - Wikipedia ["Apple Public Source License 2.0"] []
 - Google OSS Policy ["APSL-2.0"] []
 - Open Knowledge International ["APSL-2.0","Apple Public Source License 2.0"] []
@@ -224,6 +247,7 @@
 - BlueOak License List ["Apache-1.0","Apache License 1.0"] []
 - Scancode ["Apache-1.0","scancode://apache-1.0","Apache 1.0"] []
 - Fedora Project Wiki ["Apache Software License 1.0"] ["ASL 1.0"]
+- HansHammel license-compatibility-checker ["Apache-1.0"] []
 - Debian Free Software Guidelines ["Apache-1.0"] ["The Apache Software License (ASL)"]
 - Hitachi open-license ["Apache Software License, Version 1.0"] []
 
@@ -236,6 +260,7 @@
 - Fedora Project Wiki ["Apache Software License 1.1"] ["ASL 1.1"]
 - OpenSourceInitiative ["Apache-1.1","Apache Software License, Version 1.1"] []
 - finos/OSLC-handbook ["Apache-1.1","Apache Software License 1.1"] []
+- HansHammel license-compatibility-checker ["Apache-1.1"] []
 - Google OSS Policy ["Apache-1.1"] []
 - Open Knowledge International ["Apache-1.1","Apache Software License 1.1"] []
 - Debian Free Software Guidelines ["Apache-1.1"] ["The Apache Software License (ASL)"]
@@ -252,6 +277,8 @@
 - Fedora Project Wiki ["Apache Software License 2.0"] ["ASL 2.0"]
 - OpenSourceInitiative ["Apache-2.0","Apache License, Version 2.0","License :: OSI Approved :: Apache Software License"] []
 - finos/OSLC-handbook ["Apache-2.0","Apache Software License 2.0"] []
+- HansHammel license-compatibility-checker ["Apache-2.0"] []
+- librariesio license-compatibility ["Apache-2.0"] []
 - Wikipedia ["Apache-2.0","Apache License 2.0"] []
 - Google OSS Policy ["Apache-2.0"] []
 - Open Knowledge International ["Apache-2.0","Apache Software License 2.0","apache2.0"] []
@@ -266,6 +293,7 @@
 - Scancode ["Artistic-1.0","scancode://artistic-1.0","Artistic 1.0"] []
 - Fedora Project Wiki ["Artistic 1.0 (original)"] []
 - OpenSourceInitiative ["Artistic-1.0","Artistic License, Version 1.0"] []
+- HansHammel license-compatibility-checker ["Artistic-1.0"] []
 - Google OSS Policy ["Artistic-1.0"] []
 - Debian Free Software Guidelines ["Artistic-1.0"] ["Artistic License"]
 - Hitachi open-license ["Artistic License 1.0"] []
@@ -277,6 +305,7 @@
 - BlueOak License List ["Artistic-1.0-Perl","Artistic License 1.0 (Perl)"] []
 - Scancode ["Artistic-1.0-Perl","scancode://artistic-perl-1.0","Artistic-Perl-1.0"] []
 - finos/OSLC-handbook ["Artistic-1.0-Perl","Artistic License 1.0 (Perl)"] []
+- HansHammel license-compatibility-checker ["Artistic-1.0-Perl"] []
 - Debian Free Software Guidelines ["Artistic-1.0-Perl"] ["Artistic License"]
 
 * Artistic-1.0-cl8
@@ -284,6 +313,7 @@
 - SPDX ["Artistic-1.0-cl8","Artistic License 1.0 w/clause 8"] []
 - BlueOak License List ["Artistic-1.0-cl8","Artistic License 1.0 w/clause 8"] []
 - Scancode ["Artistic-1.0-cl8","scancode://artistic-1.0-cl8","Artistic 1.0 w/clause 8"] []
+- HansHammel license-compatibility-checker ["Artistic-1.0-cl8"] []
 - Debian Free Software Guidelines ["Artistic-1.0-cl8"] ["Artistic License"]
 
 * Artistic-2.0
@@ -297,6 +327,8 @@
 - Fedora Project Wiki ["Artistic 2.0"] ["Artistic 2.0"]
 - OpenSourceInitiative ["Artistic-2.0","Artistic License, Version 2.0","License :: OSI Approved :: Artistic License"] []
 - finos/OSLC-handbook ["Artistic-2.0","Artistic License 2.0"] []
+- HansHammel license-compatibility-checker ["Artistic-2.0"] []
+- librariesio license-compatibility ["Artistic-2.0"] []
 - Wikipedia ["Artistic-2.0","Artistic License 2.0"] []
 - Google OSS Policy ["Artistic-2.0"] []
 - Open Knowledge International ["Artistic-2.0","Artistic License 2.0","artistic-license-2.0"] []
@@ -321,6 +353,8 @@
 - Fedora Project Wiki ["BSD License (two clause)"] ["BSD"]
 - OpenSourceInitiative ["BSD-2","BSD 2-Clause License","BSD-2-clause","BSD-2-Clause","Simplified BSD License","FreeBSD License"] []
 - finos/OSLC-handbook ["BSD-2-Clause","BSD 2-Clause \"Simplified\" License"] []
+- HansHammel license-compatibility-checker ["BSD-2-Clause"] []
+- librariesio license-compatibility ["BSD-2-Clause"] []
 - Open Knowledge International ["BSD-2-Clause","BSD 2-Clause \"Simplified\" or \"FreeBSD\" License (BSD-2-Clause)"] []
 - Hitachi open-license ["BSD 2-Clause \"Simplified\" or \"FreeBSD\" License","BSD-2-Clause"] []
 
@@ -347,6 +381,8 @@
 - Fedora Project Wiki ["BSD License (no advertising)"] ["BSD"]
 - OpenSourceInitiative ["BSD-3","BSD 3-Clause License","BSD-3-clause","BSD-3-Clause","License :: OSI Approved :: BSD License","Revised BSD License","Modified BSD License","New BSD License"] []
 - finos/OSLC-handbook ["BSD-3-Clause","BSD 3-Clause \"New\" or \"Revised\" License"] []
+- HansHammel license-compatibility-checker ["BSD-3-Clause"] []
+- librariesio license-compatibility ["BSD-3-Clause"] []
 - Google OSS Policy ["BSD-3-Clause"] []
 - Open Knowledge International ["BSD-3-Clause","BSD 3-Clause \"New\" or \"Revised\" License (BSD-3-Clause)"] []
 - Debian Free Software Guidelines ["BSD-3-Clause"] ["The BSD-3-clause License"]
@@ -358,6 +394,8 @@
 - BlueOak License List ["BSD-3-Clause-Attribution","BSD with attribution"] []
 - Scancode ["BSD-3-Clause-Attribution","scancode://bsd-ack","BSD Acknowledgment License"] []
 - Fedora Project Wiki ["BSD with attribution"] ["BSD with attribution"]
+- HansHammel license-compatibility-checker ["BSD-3-Clause-Attribution"] []
+- librariesio license-compatibility ["BSD-3-Clause-Attribution"] []
 
 * BSD-3-Clause-Clear
 - LicenseName ["BSD-3-Clause-Clear"] []
@@ -366,6 +404,8 @@
 - OpenChainPolicyTemplate ["BSD-3-Clause-Clear"] []
 - Scancode ["BSD-3-Clause-Clear","scancode://clear-bsd","Clear BSD License"] []
 - choosealicense.com ["bsd-3-clause-clear","BSD-3-Clause-Clear","Clear BSD"] []
+- HansHammel license-compatibility-checker ["BSD-3-Clause-Clear"] []
+- librariesio license-compatibility ["BSD-3-Clause-Clear"] []
 - Debian Free Software Guidelines ["BSD-3-Clause-Clear"] ["The BSD-3-clause License"]
 
 * BSD-3-Clause-LBNL
@@ -374,23 +414,27 @@
 - BlueOak License List ["BSD-3-Clause-LBNL","Lawrence Berkeley National Labs BSD variant license"] []
 - Scancode ["BSD-3-Clause-LBNL","scancode://lbnl-bsd","LBNL BSD Variant"] []
 - Fedora Project Wiki ["Lawrence Berkeley National Labs BSD variant license"] ["LBNL BSD"]
+- HansHammel license-compatibility-checker ["BSD-3-Clause-LBNL"] []
 
 * BSD-3-Clause-No-Nuclear-License
 - LicenseName ["BSD-3-Clause-No-Nuclear-License"] []
 - SPDX ["BSD-3-Clause-No-Nuclear-License","BSD 3-Clause No Nuclear License"] []
 - Scancode ["BSD-3-Clause-No-Nuclear-License","scancode://sun-bsd-no-nuclear","Sun BSD-Style with Nuclear Restrictions"] []
+- HansHammel license-compatibility-checker ["BSD-3-Clause-No-Nuclear-License"] []
 
 * BSD-3-Clause-No-Nuclear-License-2014
 - LicenseName ["BSD-3-Clause-No-Nuclear-License-2014"] []
 - SPDX ["BSD-3-Clause-No-Nuclear-License-2014","BSD 3-Clause No Nuclear License 2014"] []
 - BlueOak License List ["BSD-3-Clause-No-Nuclear-License-2014","BSD 3-Clause No Nuclear License 2014"] []
 - Scancode ["BSD-3-Clause-No-Nuclear-License-2014","scancode://oracle-bsd-no-nuclear","Oracle BSD-Style with Nuclear Restrictions"] []
+- HansHammel license-compatibility-checker ["BSD-3-Clause-No-Nuclear-License-2014"] []
 
 * BSD-3-Clause-No-Nuclear-Warranty
 - LicenseName ["BSD-3-Clause-No-Nuclear-Warranty"] []
 - SPDX ["BSD-3-Clause-No-Nuclear-Warranty","BSD 3-Clause No Nuclear Warranty"] []
 - BlueOak License List ["BSD-3-Clause-No-Nuclear-Warranty","BSD 3-Clause No Nuclear Warranty"] []
 - Scancode ["BSD-3-Clause-No-Nuclear-Warranty","scancode://bsd-3-clause-no-nuclear-warranty","BSD 3-Clause No Nuclear Warranty"] []
+- HansHammel license-compatibility-checker ["BSD-3-Clause-No-Nuclear-Warranty"] []
 
 * BSD-3-Clause-Open-MPI
 - LicenseName ["BSD-3-Clause-Open-MPI"] []
@@ -408,6 +452,7 @@
 - choosealicense.com ["bsd-4-clause","BSD-4-Clause"] []
 - Fedora Project Wiki ["BSD License (original)"] ["BSD with advertising"]
 - finos/OSLC-handbook ["BSD-4-Clause","BSD 4-Clause \"Original\" or \"Old\" License"] []
+- HansHammel license-compatibility-checker ["BSD-4-Clause"] []
 - Google OSS Policy ["BSD-4-Clause"] []
 - Hitachi open-license ["BSD 4-clause \"Original\" or \"Old\" License"] []
 
@@ -418,6 +463,7 @@
 - BlueOak License List ["BSD-4-Clause-UC","BSD-4-Clause (University of California-Specific)"] []
 - Scancode ["BSD-4-Clause-UC","scancode://bsd-original-uc","BSD-Original-UC"] []
 - finos/OSLC-handbook ["BSD-4-Clause-UC","BSD-4-Clause (University of California-Specific)"] []
+- HansHammel license-compatibility-checker ["BSD-4-Clause-UC"] []
 - Google OSS Policy ["BSD-4-Clause-UC"] []
 
 * BSD-Protection
@@ -469,6 +515,7 @@
 - BlueOak License List ["Beerware","Beerware License"] []
 - Scancode ["Beerware","scancode://beerware","Beer-Ware License"] []
 - Fedora Project Wiki ["Beerware License"] ["Beerware"]
+- HansHammel license-compatibility-checker ["Beerware"] []
 - Wikipedia ["Beerware","Beerware 42"] []
 - Google OSS Policy ["Beerware"] []
 
@@ -476,11 +523,13 @@
 - LicenseName ["BitTorrent-1.0"] []
 - SPDX ["BitTorrent-1.0","BitTorrent Open Source License v1.0"] []
 - Scancode ["BitTorrent-1.0","scancode://bittorrent-1.0","BitTorrent 1.0"] []
+- HansHammel license-compatibility-checker ["BitTorrent-1.0"] []
 
 * BitTorrent-1.1
 - LicenseName ["BitTorrent-1.1"] []
 - SPDX ["BitTorrent-1.1","BitTorrent Open Source License v1.1"] []
 - Scancode ["BitTorrent-1.1","scancode://bittorrent-1.1","BitTorrent 1.1"] []
+- HansHammel license-compatibility-checker ["BitTorrent-1.1"] []
 - Open Knowledge International ["BitTorrent-1.1","BitTorrent Open Source License 1.1"] []
 
 * BlueOak-1.0.0
@@ -514,6 +563,7 @@
 - Scancode ["CATOSL-1.1","scancode://ca-tosl-1.1","CA Trusted Open Source License 1.1"] []
 - Fedora Project Wiki ["Computer Associates Trusted Open Source License 1.1"] ["CATOSL"]
 - OpenSourceInitiative ["CATOSL-1.1","Computer Associates Trusted Open Source License, Version 1.1"] []
+- HansHammel license-compatibility-checker ["CATOSL-1.1"] []
 - Open Knowledge International ["CATOSL-1.1","Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)","ca-tosl1.1"] []
 
 * CC-BY-1.0
@@ -798,6 +848,8 @@
 - BlueOak License List ["CC0-1.0","Creative Commons Zero v1.0 Universal"] []
 - Scancode ["CC0-1.0","scancode://cc0-1.0"] []
 - choosealicense.com ["cc0-1.0","CC0-1.0"] []
+- HansHammel license-compatibility-checker ["CC0-1.0"] []
+- librariesio license-compatibility ["CC0-1.0"] []
 - Wikipedia ["CC0-1.0","Creative Commons Zero 1.0"] []
 - Google OSS Policy ["CC0-1.0"] []
 - Open Knowledge International ["CC0-1.0","CC0 1.0"] []
@@ -811,6 +863,7 @@
 - Scancode ["CDDL-1.0","scancode://cddl-1.0","CDDL 1.0"] []
 - OpenSourceInitiative ["CDDL-1.0","Common Development and Distribution License, Version 1.0"] []
 - finos/OSLC-handbook ["CDDL-1.0","Common Development and Distribution License 1.0"] []
+- HansHammel license-compatibility-checker ["CDDL-1.0"] []
 - Wikipedia ["CDDL-1.0","Common Development and Distribution License 1.0"] []
 - Google OSS Policy ["CDDL-1.0"] []
 - Open Knowledge International ["CDDL-1.0","Common Development and Distribution License 1.0","cddl1"] []
@@ -823,6 +876,7 @@
 - BlueOak License List ["CDDL-1.1","Common Development and Distribution License 1.1"] ["Common Development and Distribution License"]
 - Scancode ["CDDL-1.1","scancode://cddl-1.1","CDDL 1.1"] []
 - finos/OSLC-handbook ["CDDL-1.1","Common Development and Distribution License 1.1"] []
+- HansHammel license-compatibility-checker ["CDDL-1.1"] []
 - Google OSS Policy ["CDDL-1.1"] []
 - Hitachi open-license ["COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1","CDDL-1.1"] []
 
@@ -840,16 +894,19 @@
 - LicenseName ["CECILL-1.0"] []
 - SPDX ["CECILL-1.0","CeCILL Free Software License Agreement v1.0"] []
 - Scancode ["CECILL-1.0","scancode://cecill-1.0","CeCILL 1.0"] []
+- HansHammel license-compatibility-checker ["CECILL-1.0"] []
 
 * CECILL-1.1
 - LicenseName ["CECILL-1.1"] []
 - SPDX ["CECILL-1.1","CeCILL Free Software License Agreement v1.1"] []
 - Scancode ["CECILL-1.1","scancode://cecill-1.1","CeCILL 1.1 English"] []
+- HansHammel license-compatibility-checker ["CECILL-1.1"] []
 
 * CECILL-2.0
 - LicenseName ["CECILL-2.0"] []
 - SPDX ["CECILL-2.0","CeCILL Free Software License Agreement v2.0"] []
 - Scancode ["CECILL-2.0","scancode://cecill-2.0","CeCILL 2.0"] []
+- HansHammel license-compatibility-checker ["CECILL-2.0"] []
 
 * CECILL-2.1
 - LicenseName ["CECILL-2.1"] []
@@ -858,6 +915,7 @@
 - Scancode ["CECILL-2.1","scancode://cecill-2.1","CeCILL 2.1"] []
 - choosealicense.com ["cecill-2.1","CECILL-2.1"] []
 - OpenSourceInitiative ["CECILL-2.1","Cea Cnrs Inria Logiciel Libre License, Version 2.1","License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)"] []
+- HansHammel license-compatibility-checker ["CECILL-2.1"] []
 - Wikipedia ["CeCILL-2.1","CeCILL 2.1"] []
 - Open Knowledge International ["CECILL-2.1","CeCILL License 2.1"] []
 
@@ -867,12 +925,14 @@
 - BlueOak License List ["CECILL-B","CeCILL-B Free Software License Agreement"] []
 - Scancode ["CECILL-B","scancode://cecill-b","CeCILL-B License"] []
 - Fedora Project Wiki ["CeCILL-B License"] ["CeCILL-B"]
+- HansHammel license-compatibility-checker ["CECILL-B"] []
 
 * CECILL-C
 - LicenseName ["CECILL-C"] []
 - SPDX ["CECILL-C","CeCILL-C Free Software License Agreement"] []
 - Scancode ["CECILL-C","scancode://cecill-c","CeCILL-C License"] []
 - Fedora Project Wiki ["CeCILL-C License"] ["CeCILL-C"]
+- HansHammel license-compatibility-checker ["CECILL-C"] []
 - Google OSS Policy ["CECILL-C"] []
 
 * CERN-OHL-1.1
@@ -905,6 +965,7 @@
 - SPDX ["CNRI-Jython","CNRI Jython License"] []
 - BlueOak License List ["CNRI-Jython","CNRI Jython License"] []
 - Scancode ["CNRI-Jython","scancode://cnri-jython","CNRI Jython License"] []
+- HansHammel license-compatibility-checker ["CNRI-Jython"] []
 
 * CNRI-Python
 - LicenseName ["CNRI-Python"] []
@@ -913,6 +974,7 @@
 - OpenChainPolicyTemplate ["CNRI-Python"] []
 - Scancode ["CNRI-Python","scancode://cnri-python-1.6","CNRI Python 1.6"] []
 - OpenSourceInitiative ["CNRI-Python","CNRI portion of the multi-part Python License","License :: OSI Approved :: Python License (CNRI Python License)"] []
+- HansHammel license-compatibility-checker ["CNRI-Python"] []
 - Open Knowledge International ["CNRI-Python","CNRI Python License"] []
 - Hitachi open-license ["CNRI LICENSE AGREEMENT FOR PYTHON 1.6.1","CNRI-Python"] []
 
@@ -921,6 +983,7 @@
 - SPDX ["CNRI-Python-GPL-Compatible","CNRI Python Open Source GPL Compatible License Agreement"] []
 - BlueOak License List ["CNRI-Python-GPL-Compatible","CNRI Python Open Source GPL Compatible License Agreement"] []
 - Scancode ["CNRI-Python-GPL-Compatible","scancode://cnri-python-1.6.1","CNRI Python 1.6.1"] []
+- HansHammel license-compatibility-checker ["CNRI-Python-GPL-Compatible"] []
 
 * CPAL-1.0
 - LicenseName ["CPAL-1.0"] []
@@ -929,6 +992,7 @@
 - OpenChainPolicyTemplate ["CPAL-1.0"] []
 - Scancode ["CPAL-1.0","scancode://cpal-1.0","CPAL 1.0"] []
 - OpenSourceInitiative ["CPAL-1.0","Common Public Attribution License Version 1.0 (CPAL-1.0)"] []
+- HansHammel license-compatibility-checker ["CPAL-1.0"] []
 - Google OSS Policy ["CPAL-1.0"] []
 - Open Knowledge International ["CPAL-1.0","Common Public Attribution License 1.0","cpal_1.0"] []
 - Debian Free Software Guidelines ["CPAL-1.0"] ["Common Public Attribution License"]
@@ -940,6 +1004,7 @@
 - BlueOak License List ["CPL-1.0","Common Public License 1.0"] ["Common Public License"]
 - Scancode ["CPL-1.0","scancode://cpl-1.0","CPL 1.0"] []
 - OpenSourceInitiative ["CPL-1.0","Common Public License, Version 1.0","CPL","License :: OSI Approved :: Common Public License"] []
+- HansHammel license-compatibility-checker ["CPL-1.0"] []
 - Wikipedia ["CPL-1.0","Common Public License 1.0"] []
 - Google OSS Policy ["CPL-1.0"] []
 - Debian Free Software Guidelines ["CPL-1.0"] ["Common Public License (CPL), Version 1.0"]
@@ -957,6 +1022,7 @@
 - OpenChainPolicyTemplate ["CUA-OPL-1.0"] []
 - Scancode ["CUA-OPL-1.0","scancode://cua-opl-1.0"] []
 - OpenSourceInitiative ["CUA-OPL-1.0","CUA Office Public License"] []
+- HansHammel license-compatibility-checker ["CUA-OPL-1.0"] []
 - Open Knowledge International ["CUA-OPL-1.0","CUA Office Public License 1.0"] []
 
 * Caldera
@@ -971,12 +1037,14 @@
 - BlueOak License List ["ClArtistic","Clarified Artistic License"] []
 - Scancode ["ClArtistic","scancode://artistic-clarified","Clarified Artistic License"] []
 - Fedora Project Wiki ["Artistic (clarified)"] ["Artistic clarified"]
+- HansHammel license-compatibility-checker ["ClArtistic"] []
 
 * Condor-1.1
 - LicenseName ["Condor-1.1"] []
 - SPDX ["Condor-1.1","Condor Public License v1.1"] []
 - BlueOak License List ["Condor-1.1","Condor Public License v1.1"] []
 - Scancode ["Condor-1.1","scancode://condor-1.1","Condor Public License 1.1"] []
+- HansHammel license-compatibility-checker ["Condor-1.1"] []
 
 * Crossword
 - LicenseName ["Crossword"] []
@@ -1017,6 +1085,8 @@
 - BlueOak License List ["DSDP","DSDP License"] []
 - Scancode ["DSDP","scancode://dsdp","DSDP License"] []
 - Fedora Project Wiki ["DSDP License"] ["DSDP"]
+- HansHammel license-compatibility-checker ["DSDP"] []
+- librariesio license-compatibility ["DSDP"] []
 
 * Dotseqn
 - LicenseName ["Dotseqn"] []
@@ -1043,6 +1113,8 @@
 - choosealicense.com ["ecl-2.0","ECL-2.0"] []
 - Fedora Project Wiki ["Educational Community License 2.0"] ["ECL 2.0"]
 - OpenSourceInitiative ["ECL-2.0","Educational Community License, Version 2.0"] []
+- HansHammel license-compatibility-checker ["ECL-2.0"] []
+- librariesio license-compatibility ["ECL-2.0"] []
 - Open Knowledge International ["ECL-2.0","Educational Community License 2.0","ecl2"] []
 
 * EFL-1.0
@@ -1051,6 +1123,7 @@
 - BlueOak License List ["EFL-1.0","Eiffel Forum License v1.0"] []
 - Scancode ["EFL-1.0","scancode://efl-1.0","EFL 1.0"] []
 - OpenSourceInitiative ["EFL-1.0","The Eiffel Forum License, Version 1"] []
+- HansHammel license-compatibility-checker ["EFL-1.0"] []
 
 * EFL-2.0
 - LicenseName ["EFL-2.0"] []
@@ -1060,6 +1133,7 @@
 - Scancode ["EFL-2.0","scancode://efl-2.0","EFL 2.0"] []
 - Fedora Project Wiki ["Eiffel Forum License 2.0"] ["EFL 2.0"]
 - OpenSourceInitiative ["EFL-2.0","Eiffel Forum License, Version 2","License :: OSI Approved :: Eiffel Forum License"] []
+- HansHammel license-compatibility-checker ["EFL-2.0"] []
 - Open Knowledge International ["EFL-2.0","Eiffel Forum License 2.0"] []
 
 * EPICS
@@ -1078,6 +1152,8 @@
 - Fedora Project Wiki ["Eclipse Public License 1.0"] ["EPL-1.0"]
 - OpenSourceInitiative ["EPL-1.0","Eclipse Public License, Version 1.0"] []
 - finos/OSLC-handbook ["EPL-1.0","Eclipse Public License 1.0"] []
+- HansHammel license-compatibility-checker ["EPL-1.0"] []
+- librariesio license-compatibility ["EPL-1.0"] []
 - Google OSS Policy ["EPL-1.0"] []
 - Open Knowledge International ["EPL-1.0","Eclipse Public License 1.0","eclipse-1.0"] []
 - Debian Free Software Guidelines ["EPL-1.0"] ["Eclipse Public License - 1.0"]
@@ -1092,6 +1168,7 @@
 - choosealicense.com ["epl-2.0","EPL-2.0"] []
 - Fedora Project Wiki ["Eclipse Public License 2.0"] ["EPL-2.0"]
 - finos/OSLC-handbook ["EPL-2.0","Eclipse Public License 2.0"] []
+- HansHammel license-compatibility-checker ["EPL-2.0"] []
 - Wikipedia ["EPL-2.0","Eclipse Public License 2.0"] []
 - Google OSS Policy ["EPL-2.0"] []
 - Open Knowledge International ["EPL-2.0","Eclipse Public License 2.0","eclipse-2.0"] []
@@ -1112,6 +1189,7 @@
 - SPDX ["EUPL-1.0","European Union Public License 1.0"] []
 - BlueOak License List ["EUPL-1.0","European Union Public License 1.0"] ["European Union Public License"]
 - Scancode ["EUPL-1.0","scancode://eupl-1.0","EUPL 1.0"] []
+- HansHammel license-compatibility-checker ["EUPL-1.0"] []
 - Google OSS Policy ["EUPL-1.0"] []
 
 * EUPL-1.1
@@ -1123,6 +1201,7 @@
 - choosealicense.com ["eupl-1.1","EUPL-1.1"] []
 - Fedora Project Wiki ["European Union Public License 1.1"] ["EUPL 1.1"]
 - OpenSourceInitiative ["EUPL-1.1","European Union Public License, Version 1.1","License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)"] []
+- HansHammel license-compatibility-checker ["EUPL-1.1"] []
 - Google OSS Policy ["EUPL-1.1"] []
 - Open Knowledge International ["EUPL-1.1","European Union Public License 1.1"] []
 - Hitachi open-license ["European Union Public Licence, v.1.1","EUPL-1.1"] []
@@ -1154,6 +1233,7 @@
 - BlueOak License List ["ErlPL-1.1","Erlang Public License v1.1"] ["Erlang Public License"]
 - Scancode ["ErlPL-1.1","scancode://erlangpl-1.1","Erlang Public License 1.1"] []
 - Fedora Project Wiki ["Erlang Public License 1.1"] ["ERPL"]
+- HansHammel license-compatibility-checker ["ErlPL-1.1"] []
 - Hitachi open-license ["ERLANG PUBLIC LICENSE Version 1.1","ErlPL-1.1"] []
 
 * Eurosym
@@ -1185,6 +1265,7 @@
 - SPDX ["FTL","Freetype Project License"] []
 - BlueOak License List ["FTL","Freetype Project License"] []
 - Scancode ["FTL","scancode://freetype","FreeType Project License"] []
+- HansHammel license-compatibility-checker ["FTL"] []
 - Google OSS Policy ["FTL"] []
 - Hitachi open-license ["FreeType Project LICENSE"] []
 
@@ -1313,6 +1394,8 @@
 - SPDX ["GPL-1.0-only","GNU General Public License v1.0 only"] []
 - Scancode ["GPL-1.0-only","scancode://gpl-1.0","GPL 1.0"] []
 - Fedora Project Wiki ["GNU General Public License v1.0 only"] ["GPLv1"]
+- HansHammel license-compatibility-checker ["GPL-1.0"] []
+- librariesio license-compatibility ["GPL-1.0-only"] []
 - Google OSS Policy ["GPL-1.0-only"] []
 - Debian Free Software Guidelines ["GPL-1.0-only"] ["The GNU General Public License (GPL)"]
 - Hitachi open-license ["GNU General Public License Version 1"] []
@@ -1323,6 +1406,7 @@
 - SPDX ["GPL-1.0-or-later","GNU General Public License v1.0 or later"] []
 - Scancode ["GPL-1.0-or-later","scancode://gpl-1.0-plus","GPL 1.0 or later"] []
 - Fedora Project Wiki ["GNU General Public License v1.0 or later"] ["GPL+"]
+- librariesio license-compatibility ["GPL-1.0-or-later"] []
 - Google OSS Policy ["GPL-1.0-or-later"] []
 - Debian Free Software Guidelines ["GPL-1.0-or-later"] ["The GNU General Public License (GPL)"]
 
@@ -1338,6 +1422,9 @@
 - Fedora Project Wiki ["GNU General Public License v2.0 only"] ["GPLv2"]
 - OpenSourceInitiative ["GPL-2.0","GNU General Public License, Version 2.0","License :: OSI Approved :: GNU General Public License v2 (GPLv2)"] []
 - finos/OSLC-handbook ["GPL-2.0-only"] []
+- HansHammel license-compatibility-checker ["GPL-2.0"] []
+- librariesio license-compatibility ["GPL-2.0"] []
+- librariesio license-compatibility ["GPL-2.0-only"] []
 - Google OSS Policy ["GPL-2.0-only"] []
 - Open Knowledge International ["GPL-2.0","GNU General Public License 2.0"] []
 - Debian Free Software Guidelines ["GPL-2.0-only"] ["The GNU General Public License (GPL)"]
@@ -1351,6 +1438,8 @@
 - Scancode ["GPL-2.0-or-later","scancode://gpl-2.0-plus","GPL 2.0 or later"] []
 - Fedora Project Wiki ["GNU General Public License v2.0 or later"] ["GPLv2+"]
 - finos/OSLC-handbook ["GPL-2.0-or-later"] []
+- HansHammel license-compatibility-checker ["GPL-2.0+"] []
+- librariesio license-compatibility ["GPL-2.0-or-later"] []
 - Google OSS Policy ["GPL-2.0-or-later"] []
 - Debian Free Software Guidelines ["GPL-2.0-or-later"] ["The GNU General Public License (GPL)"]
 
@@ -1371,6 +1460,11 @@
 - OpenSourceInitiative ["GPL-3.0","GNU General Public License, Version 3.0","License :: OSI Approved :: GNU General Public License (GPL)","License :: OSI Approved :: GNU General Public License v3 (GPLv3)"] []
 - finos/OSLC-handbook ["GPL-3.0-only"] []
 - finos/OSLC-handbook ["GPL-3.0-or-later"] []
+- HansHammel license-compatibility-checker ["GPL-3.0"] []
+- HansHammel license-compatibility-checker ["GPL-3.0+"] []
+- librariesio license-compatibility ["GPL-3.0"] []
+- librariesio license-compatibility ["GPL-3.0-only"] []
+- librariesio license-compatibility ["GPL-3.0-or-later"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
 - Google OSS Policy ["GPL-3.0-only"] []
 - Google OSS Policy ["GPL-3.0-or-later"] []
@@ -1397,6 +1491,11 @@
 - OpenSourceInitiative ["GPL-3.0","GNU General Public License, Version 3.0","License :: OSI Approved :: GNU General Public License (GPL)","License :: OSI Approved :: GNU General Public License v3 (GPLv3)"] []
 - finos/OSLC-handbook ["GPL-3.0-only"] []
 - finos/OSLC-handbook ["GPL-3.0-or-later"] []
+- HansHammel license-compatibility-checker ["GPL-3.0"] []
+- HansHammel license-compatibility-checker ["GPL-3.0+"] []
+- librariesio license-compatibility ["GPL-3.0"] []
+- librariesio license-compatibility ["GPL-3.0-only"] []
+- librariesio license-compatibility ["GPL-3.0-or-later"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
 - Google OSS Policy ["GPL-3.0-only"] []
 - Google OSS Policy ["GPL-3.0-or-later"] []
@@ -1466,6 +1565,8 @@
 - BlueOak License List ["X11","X11 License"] []
 - Scancode ["X11","scancode://x11-xconsortium","X11-Style (X Consortium)"] []
 - Scancode ["ICU","scancode://x11","X11 License"] []
+- HansHammel license-compatibility-checker ["X11"] []
+- HansHammel license-compatibility-checker ["ICU"] []
 - Hitachi open-license ["ICU License (ICU 1.8.1 and later)","ICU"] []
 
 * IJG
@@ -1483,6 +1584,7 @@
 - Scancode ["IPA","scancode://ipa-font","IPA Font License 1.0"] []
 - Fedora Project Wiki ["IPA Font License"] ["IPA"]
 - OpenSourceInitiative ["IPA","IPA Font License"] []
+- HansHammel license-compatibility-checker ["IPA"] []
 - Open Knowledge International ["IPA","IPA Font License"] []
 - Hitachi open-license ["IPA Font License Agreement v1.0","IPA"] []
 
@@ -1493,6 +1595,7 @@
 - OpenChainPolicyTemplate ["IPL-1.0"] []
 - Scancode ["IPL-1.0","scancode://ibmpl-1.0","IPL 1.0"] []
 - OpenSourceInitiative ["IPL-1.0","IBM Public License, Version 1.0","License :: OSI Approved :: IBM Public License"] []
+- HansHammel license-compatibility-checker ["IPL-1.0"] []
 - Wikipedia ["IPL-1.0","IBM Public License 1.0"] []
 - Google OSS Policy ["IPL-1.0"] []
 - Open Knowledge International ["IPL-1.0","IBM Public License 1.0","ibmpl"] []
@@ -1508,6 +1611,8 @@
 - choosealicense.com ["isc","ISC"] []
 - OpenSourceInitiative ["ISC","ISC License (ISC)","License :: OSI Approved :: ISC License (ISCL)"] []
 - finos/OSLC-handbook ["ISC","ISC License"] []
+- HansHammel license-compatibility-checker ["ISC"] []
+- librariesio license-compatibility ["ISC"] []
 - Wikipedia ["ISC","ISC license"] []
 - Google OSS Policy ["ISC"] []
 - Open Knowledge International ["ISC","ISC License","isc-license"] []
@@ -1558,6 +1663,7 @@
 - LicenseName ["Interbase-1.0"] []
 - SPDX ["Interbase-1.0","Interbase Public License v1.0"] []
 - Scancode ["Interbase-1.0","scancode://interbase-1.0","Interbase Public License 1.0"] []
+- HansHammel license-compatibility-checker ["Interbase-1.0"] []
 - Hitachi open-license ["InterBase Public License, Version 1.0","Interbase-1.0"] []
 - Hitachi open-license ["INTERBASE PUBLIC LICENSE, Version 1.0 by \"Borland Software Corporation\"","Interbase-1.0"] []
 
@@ -1580,6 +1686,7 @@
 - BlueOak License List ["JasPer-2.0","JasPer License"] []
 - Scancode ["JasPer-2.0","scancode://jasper-2.0","JasPer 2.0"] []
 - Fedora Project Wiki ["JasPer License"] ["JasPer"]
+- HansHammel license-compatibility-checker ["JasPer-2.0"] []
 - Hitachi open-license ["JasPer License Version 2.0","JasPer-2.0"] []
 
 * LAL-1.2
@@ -1599,6 +1706,7 @@
 - BlueOak License List ["LGPL-2.0-only","GNU Library General Public License v2 only"] ["GNU Library General Public License"]
 - Scancode ["LGPL-2.0-only","scancode://lgpl-2.0","LGPL 2.0"] []
 - finos/OSLC-handbook ["LGPL-2.0-only"] []
+- librariesio license-compatibility ["LGPL-2.0-only"] []
 - Google OSS Policy ["LGPL-2.0-only"] []
 - Debian Free Software Guidelines ["LGPL-2.0-only"] ["The GNU Lesser General Public License (LGPL)"]
 - Hitachi open-license ["GNU Library General Public License Version 2"] []
@@ -1609,6 +1717,7 @@
 - BlueOak License List ["LGPL-2.0-or-later","GNU Library General Public License v2 or later"] ["GNU Library General Public License"]
 - Scancode ["LGPL-2.0-or-later","scancode://lgpl-2.0-plus","LGPL 2.0 or later"] []
 - finos/OSLC-handbook ["LGPL-2.0-or-later"] []
+- librariesio license-compatibility ["LGPL-2.0-or-later"] []
 - Google OSS Policy ["LGPL-2.0-or-later"] []
 - Debian Free Software Guidelines ["LGPL-2.0-or-later"] ["The GNU Lesser General Public License (LGPL)"]
 
@@ -1622,6 +1731,9 @@
 - choosealicense.com ["lgpl-2.1","LGPL-2.1","GNU LGPLv2.1"] []
 - OpenSourceInitiative ["LGPL-2.1","GNU Lesser General Public License, Version 2.1","License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)"] []
 - finos/OSLC-handbook ["LGPL-2.1-only"] []
+- HansHammel license-compatibility-checker ["LGPL-2.1"] []
+- librariesio license-compatibility ["LGPL-2.1"] []
+- librariesio license-compatibility ["LGPL-2.1-only"] []
 - Google OSS Policy ["LGPL-2.1-only"] []
 - Open Knowledge International ["LGPL-2.1","GNU Lesser General Public License 2.1"] []
 - Debian Free Software Guidelines ["LGPL-2.1-only"] ["The GNU Lesser General Public License (LGPL)"]
@@ -1634,6 +1746,9 @@
 - BlueOak License List ["LGPL-2.1-or-later","GNU Lesser General Public License v2.1 or later"] ["GNU Library General Public License"]
 - Scancode ["LGPL-2.1-or-later","scancode://lgpl-2.1-plus","LGPL 2.1 or later"] []
 - finos/OSLC-handbook ["LGPL-2.1-or-later"] []
+- HansHammel license-compatibility-checker ["LGPL-2.1+"] []
+- librariesio license-compatibility ["LGPL-2.1+"] []
+- librariesio license-compatibility ["LGPL-2.1-or-later"] []
 - Google OSS Policy ["LGPL-2.1-or-later"] []
 - Debian Free Software Guidelines ["LGPL-2.1-or-later"] ["The GNU Lesser General Public License (LGPL)"]
 
@@ -1654,6 +1769,14 @@
 - OpenSourceInitiative ["LGPL-3.0","GNU Lesser General Public License, Version 3.0","License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)","License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"] []
 - finos/OSLC-handbook ["LGPL-3.0-only"] []
 - finos/OSLC-handbook ["LGPL-3.0-or-later"] []
+- HansHammel license-compatibility-checker ["LGPL-3.0"] []
+- HansHammel license-compatibility-checker ["LGPL-3.0+"] []
+- librariesio license-compatibility ["LGPL-3.0"] []
+- librariesio license-compatibility ["LGPL-3.0"] []
+- librariesio license-compatibility ["LGPL-3.0+"] []
+- librariesio license-compatibility ["LGPL-3.0-only"] []
+- librariesio license-compatibility ["LGPL-3.0-only"] []
+- librariesio license-compatibility ["LGPL-3.0-or-later"] []
 - Wikipedia ["LGPL-3.0-or-later","GNU Lesser General Public License 3.0"] []
 - Google OSS Policy ["LGPL-3.0-only"] []
 - Google OSS Policy ["LGPL-3.0-or-later"] []
@@ -1679,6 +1802,14 @@
 - OpenSourceInitiative ["LGPL-3.0","GNU Lesser General Public License, Version 3.0","License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)","License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)"] []
 - finos/OSLC-handbook ["LGPL-3.0-only"] []
 - finos/OSLC-handbook ["LGPL-3.0-or-later"] []
+- HansHammel license-compatibility-checker ["LGPL-3.0"] []
+- HansHammel license-compatibility-checker ["LGPL-3.0+"] []
+- librariesio license-compatibility ["LGPL-3.0"] []
+- librariesio license-compatibility ["LGPL-3.0"] []
+- librariesio license-compatibility ["LGPL-3.0+"] []
+- librariesio license-compatibility ["LGPL-3.0-only"] []
+- librariesio license-compatibility ["LGPL-3.0-only"] []
+- librariesio license-compatibility ["LGPL-3.0-or-later"] []
 - Wikipedia ["LGPL-3.0-or-later","GNU Lesser General Public License 3.0"] []
 - Google OSS Policy ["LGPL-3.0-only"] []
 - Google OSS Policy ["LGPL-3.0-or-later"] []
@@ -1714,21 +1845,25 @@
 - LicenseName ["LPPL-1.0"] []
 - SPDX ["LPPL-1.0","LaTeX Project Public License v1.0"] []
 - Scancode ["LPPL-1.0","scancode://lppl-1.0","LPPL 1.0"] []
+- HansHammel license-compatibility-checker ["LPPL-1.0"] []
 
 * LPPL-1.1
 - LicenseName ["LPPL-1.1"] []
 - SPDX ["LPPL-1.1","LaTeX Project Public License v1.1"] []
 - Scancode ["LPPL-1.1","scancode://lppl-1.1","LPPL 1.1"] []
+- HansHammel license-compatibility-checker ["LPPL-1.1"] []
 
 * LPPL-1.2
 - LicenseName ["LPPL-1.2"] []
 - SPDX ["LPPL-1.2","LaTeX Project Public License v1.2"] []
 - Scancode ["LPPL-1.2","scancode://lppl-1.2","LPPL 1.2"] []
+- HansHammel license-compatibility-checker ["LPPL-1.2"] []
 
 * LPPL-1.3a
 - LicenseName ["LPPL-1.3a"] []
 - SPDX ["LPPL-1.3a","LaTeX Project Public License v1.3a"] []
 - Scancode ["LPPL-1.3a","scancode://lppl-1.3a","LPPL 1.3a"] []
+- HansHammel license-compatibility-checker ["LPPL-1.3a"] []
 
 * LPPL-1.3c
 - LicenseName ["LPPL-1.3c"] []
@@ -1738,6 +1873,7 @@
 - Scancode ["LPPL-1.3c","scancode://lppl-1.3c","LPPL 1.3c"] []
 - choosealicense.com ["lppl-1.3c","LPPL-1.3c"] []
 - OpenSourceInitiative ["LPPL-1.3c","LaTeX Project Public License, Version 1.3c"] []
+- HansHammel license-compatibility-checker ["LPPL-1.3c"] []
 - Wikipedia ["LaTeX Project Public License 1.3c"] []
 - Open Knowledge International ["LPPL-1.3c","LaTeX Project Public License 1.3c"] []
 - Hitachi open-license ["LaTeX Project Public License Version 1.3c"] []
@@ -1801,6 +1937,8 @@
 - Fedora Project Wiki ["MIT license (also X11)"] ["MIT"]
 - OpenSourceInitiative ["MIT","MIT/Expat License","Expat","License :: OSI Approved :: MIT License"] []
 - finos/OSLC-handbook ["MIT","MIT License"] []
+- HansHammel license-compatibility-checker ["MIT"] []
+- librariesio license-compatibility ["MIT"] []
 - Wikipedia ["MIT","MIT license / X11 license"] []
 - Google OSS Policy ["MIT"] []
 - Open Knowledge International ["MIT","MIT License","mit-license"] []
@@ -1820,6 +1958,7 @@
 - Scancode ["MIT-CMU","scancode://cmu-uc","CMU UC Regents License"] []
 - Scancode ["scancode://cmu-template","CMU License"] []
 - finos/OSLC-handbook ["MIT-CMU","CMU License"] []
+- HansHammel license-compatibility-checker ["MIT-CMU"] []
 
 * MIT-advertising
 - LicenseName ["MIT-advertising"] []
@@ -1827,6 +1966,7 @@
 - BlueOak License List ["MIT-advertising","Enlightenment License (e16)"] []
 - Scancode ["MIT-advertising","scancode://enlightenment","EFL MIT-Style License"] []
 - Fedora Project Wiki ["Enlightenment License (e16)"] ["MIT with advertising"]
+- HansHammel license-compatibility-checker ["MIT-advertising"] []
 
 * MIT-enna
 - LicenseName ["MIT-enna"] []
@@ -1834,6 +1974,7 @@
 - BlueOak License List ["MIT-enna","enna License"] []
 - Scancode ["MIT-enna","scancode://enna","enna License"] []
 - Fedora Project Wiki ["enna License"] ["MIT"]
+- HansHammel license-compatibility-checker ["MIT-enna"] []
 
 * MIT-feh
 - LicenseName ["MIT-feh"] []
@@ -1841,6 +1982,7 @@
 - BlueOak License List ["MIT-feh","feh License"] []
 - Scancode ["MIT-feh","scancode://mit-ack","MIT Acknowledgment License"] []
 - Fedora Project Wiki ["feh License"] ["MIT"]
+- HansHammel license-compatibility-checker ["MIT-feh"] []
 
 * MITNFA
 - LicenseName ["MITNFA"] []
@@ -1858,6 +2000,8 @@
 - Scancode ["MPL-1.0","scancode://mpl-1.0","MPL 1.0"] []
 - OpenSourceInitiative ["MPL-1.0","Mozilla Public License, Version 1.0","License :: OSI Approved :: Mozilla Public License 1.0 (MPL)"] []
 - finos/OSLC-handbook ["MPL-1.0","Mozilla Public License 1.0"] []
+- HansHammel license-compatibility-checker ["MPL-1.0"] []
+- librariesio license-compatibility ["MPL-1.0"] []
 - Google OSS Policy ["MPL-1.0"] []
 - Open Knowledge International ["MPL-1.0","Mozilla Public License 1.0"] []
 - Debian Free Software Guidelines ["MPL-1.0"] ["Mozilla Public License (MPL)"]
@@ -1871,6 +2015,8 @@
 - Scancode ["MPL-1.1","scancode://mpl-1.1","MPL 1.1"] []
 - OpenSourceInitiative ["MPL-1.1","Mozilla Public License, Version 1.1","License :: OSI Approved :: Mozilla Public License 1.1 (MPL 1.1)"] []
 - finos/OSLC-handbook ["MPL-1.1","Mozilla Public License 1.1"] []
+- HansHammel license-compatibility-checker ["MPL-1.1"] []
+- librariesio license-compatibility ["MPL-1.1"] []
 - Google OSS Policy ["MPL-1.1"] []
 - Open Knowledge International ["MPL-1.1","Mozilla Public License 1.1","mozilla1.1"] []
 - Debian Free Software Guidelines ["MPL-1.1"] ["Mozilla Public License (MPL)"]
@@ -1885,6 +2031,8 @@
 - choosealicense.com ["mpl-2.0","MPL-2.0"] []
 - OpenSourceInitiative ["MPL-2.0","Mozilla Public License, Version 2.0","License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)"] []
 - finos/OSLC-handbook ["MPL-2.0","Mozilla Public License 2.0"] []
+- HansHammel license-compatibility-checker ["MPL-2.0"] []
+- librariesio license-compatibility ["MPL-2.0"] []
 - Wikipedia ["MPL-2.0","Mozilla Public License 2.0"] []
 - Google OSS Policy ["MPL-2.0"] []
 - Open Knowledge International ["MPL-2.0","Mozilla Public License 2.0","mozilla2.0"] []
@@ -1896,6 +2044,7 @@
 - SPDX ["MPL-2.0-no-copyleft-exception","Mozilla Public License 2.0 (no copyleft exception)"] []
 - BlueOak License List ["MPL-2.0-no-copyleft-exception","Mozilla Public License 2.0 (no copyleft exception)"] ["Mozilla Public License"]
 - Scancode ["MPL-2.0-no-copyleft-exception","scancode://mpl-2.0-no-copyleft-exception","MPL 2.0 with no copyleft exception"] []
+- HansHammel license-compatibility-checker ["MPL-2.0-no-copyleft-exception"] []
 - Debian Free Software Guidelines ["MPL-2.0-no-copyleft-exception"] ["Mozilla Public License (MPL)"]
 
 * MS-PL
@@ -1908,6 +2057,7 @@
 - Fedora Project Wiki ["Microsoft Public License"] ["MS-PL"]
 - OpenSourceInitiative ["MS-PL","Microsoft Public License (MS-PL)"] []
 - finos/OSLC-handbook ["Ms-PL","Microsoft Public License"] []
+- HansHammel license-compatibility-checker ["MS-PL"] []
 - Wikipedia ["MS-PL","Microsoft Public License"] []
 - Google OSS Policy ["MS-PL"] []
 - Open Knowledge International ["MS-PL","Microsoft Public License"] []
@@ -1922,6 +2072,8 @@
 - choosealicense.com ["ms-rl","MS-RL"] []
 - Fedora Project Wiki ["Microsoft Reciprocal License"] ["MS-RL"]
 - OpenSourceInitiative ["MS-RL","Microsoft Reciprocal License (MS-RL)"] []
+- HansHammel license-compatibility-checker ["MS-RL"] []
+- librariesio license-compatibility ["MS-RL"] []
 - Open Knowledge International ["MS-RL","Microsoft Reciprocal License"] []
 - Hitachi open-license ["Microsoft Reciprocal License"] []
 
@@ -1957,6 +2109,7 @@
 - Scancode ["Motosoto","scancode://motosoto-0.9.1","Motosoto 0.9.1"] []
 - Fedora Project Wiki ["Motosoto License"] ["Motosoto"]
 - OpenSourceInitiative ["Motosoto","Motosoto Open Source License, Version 0.9.1","License :: OSI Approved :: Motosoto License"] []
+- HansHammel license-compatibility-checker ["Motosoto"] []
 - Open Knowledge International ["Motosoto","Motosoto License"] []
 
 * MulanPSL-1.0
@@ -1992,6 +2145,7 @@
 - OpenChainPolicyTemplate ["NASA-1.3"] []
 - Scancode ["NASA-1.3","scancode://nasa-1.3","NASA 1.3"] []
 - OpenSourceInitiative ["NASA-1.3","NASA Open Source Agreement, Version 1.3"] []
+- HansHammel license-compatibility-checker ["NASA-1.3"] []
 - Open Knowledge International ["NASA-1.3","NASA Open Source Agreement 1.3","nasa1.3"] []
 
 * NBPL-1.0
@@ -2054,6 +2208,7 @@
 - SPDX ["NOSL","Netizen Open Source License"] []
 - Scancode ["NOSL","scancode://nosl-1.0","NOSL 1.0"] []
 - Fedora Project Wiki ["Netizen Open Source License"] ["NOSL"]
+- HansHammel license-compatibility-checker ["NOSL"] []
 
 * NPL-1.0
 - LicenseName ["NPL-1.0"] []
@@ -2108,6 +2263,7 @@
 - Scancode ["Naumen","scancode://naumen","NAUMEN Public License"] []
 - Fedora Project Wiki ["Naumen Public License"] ["Naumen"]
 - OpenSourceInitiative ["Naumen","NAUMEN Public License"] []
+- HansHammel license-compatibility-checker ["Naumen"] []
 - Open Knowledge International ["Naumen","Naumen Public License"] []
 - Hitachi open-license ["NAUMEN Public License"] []
 
@@ -2140,6 +2296,7 @@
 - Scancode ["Nokia","scancode://nokos-1.0a","NOKOS License 1.0a"] []
 - Fedora Project Wiki ["Nokia Open Source License"] ["Nokia"]
 - OpenSourceInitiative ["Nokia","Nokia Open Source License, Version 1.0a","License :: OSI Approved :: Nokia Open Source License"] []
+- HansHammel license-compatibility-checker ["Nokia"] []
 - Open Knowledge International ["Nokia","Nokia Open Source License"] []
 
 * Noweb
@@ -2178,6 +2335,8 @@
 - SPDX ["ODbL-1.0","ODC Open Database License v1.0"] []
 - Scancode ["ODbL-1.0","scancode://odbl-1.0","ODbL 1.0"] []
 - choosealicense.com ["odbl-1.0","ODbL-1.0","ODbL"] []
+- HansHammel license-compatibility-checker ["ODbL-1.0"] []
+- librariesio license-compatibility ["ODbL-1.0"] []
 - Open Knowledge International ["ODbL-1.0","Open Data Commons Open Database License 1.0"] []
 
 * OFL-1.0
@@ -2259,90 +2418,105 @@
 - SPDX ["OLDAP-1.1","Open LDAP Public License v1.1"] []
 - BlueOak License List ["OLDAP-1.1","Open LDAP Public License v1.1"] []
 - Scancode ["OLDAP-1.1","scancode://openldap-1.1","OpenLDAP Public License 1.1"] []
+- HansHammel license-compatibility-checker ["OLDAP-1.1"] []
 
 * OLDAP-1.2
 - LicenseName ["OLDAP-1.2"] []
 - SPDX ["OLDAP-1.2","Open LDAP Public License v1.2"] []
 - BlueOak License List ["OLDAP-1.2","Open LDAP Public License v1.2"] []
 - Scancode ["OLDAP-1.2","scancode://openldap-1.2","OpenLDAP Public License 1.2"] []
+- HansHammel license-compatibility-checker ["OLDAP-1.2"] []
 
 * OLDAP-1.3
 - LicenseName ["OLDAP-1.3"] []
 - SPDX ["OLDAP-1.3","Open LDAP Public License v1.3"] []
 - BlueOak License List ["OLDAP-1.3","Open LDAP Public License v1.3"] []
 - Scancode ["OLDAP-1.3","scancode://openldap-1.3","OpenLDAP Public License 1.3"] []
+- HansHammel license-compatibility-checker ["OLDAP-1.3"] []
 
 * OLDAP-1.4
 - LicenseName ["OLDAP-1.4"] []
 - SPDX ["OLDAP-1.4","Open LDAP Public License v1.4"] []
 - BlueOak License List ["OLDAP-1.4","Open LDAP Public License v1.4"] []
 - Scancode ["OLDAP-1.4","scancode://openldap-1.4","OpenLDAP Public License 1.4"] []
+- HansHammel license-compatibility-checker ["OLDAP-1.4"] []
 
 * OLDAP-2.0
 - LicenseName ["OLDAP-2.0"] []
 - SPDX ["OLDAP-2.0","Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)"] []
 - BlueOak License List ["OLDAP-2.0","Open LDAP Public License v2.0 (or possibly 2.0A and 2.0B)"] []
 - Scancode ["OLDAP-2.0","scancode://openldap-2.0","OpenLDAP Public License 2.0"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.0"] []
 
 * OLDAP-2.0.1
 - LicenseName ["OLDAP-2.0.1"] []
 - SPDX ["OLDAP-2.0.1","Open LDAP Public License v2.0.1"] []
 - BlueOak License List ["OLDAP-2.0.1","Open LDAP Public License v2.0.1"] []
 - Scancode ["OLDAP-2.0.1","scancode://openldap-2.0.1","OpenLDAP Public License 2.0.1"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.0.1"] []
 
 * OLDAP-2.1
 - LicenseName ["OLDAP-2.1"] []
 - SPDX ["OLDAP-2.1","Open LDAP Public License v2.1"] []
 - BlueOak License List ["OLDAP-2.1","Open LDAP Public License v2.1"] []
 - Scancode ["OLDAP-2.1","scancode://openldap-2.1","OpenLDAP Public License 2.1"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.1"] []
 
 * OLDAP-2.2
 - LicenseName ["OLDAP-2.2"] []
 - SPDX ["OLDAP-2.2","Open LDAP Public License v2.2"] []
 - BlueOak License List ["OLDAP-2.2","Open LDAP Public License v2.2"] []
 - Scancode ["OLDAP-2.2","scancode://openldap-2.2","OpenLDAP Public License 2.2"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.2"] []
 
 * OLDAP-2.2.1
 - LicenseName ["OLDAP-2.2.1"] []
 - SPDX ["OLDAP-2.2.1","Open LDAP Public License v2.2.1"] []
 - BlueOak License List ["OLDAP-2.2.1","Open LDAP Public License v2.2.1"] []
 - Scancode ["OLDAP-2.2.1","scancode://openldap-2.2.1","OpenLDAP Public License 2.2.1"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.2.1"] []
 
 * OLDAP-2.2.2
 - LicenseName ["OLDAP-2.2.2"] []
 - SPDX ["OLDAP-2.2.2","Open LDAP Public License 2.2.2"] []
 - BlueOak License List ["OLDAP-2.2.2","Open LDAP Public License 2.2.2"] []
 - Scancode ["OLDAP-2.2.2","scancode://openldap-2.2.2","OpenLDAP Public License 2.2.2"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.2.2"] []
 
 * OLDAP-2.3
 - LicenseName ["OLDAP-2.3"] []
 - SPDX ["OLDAP-2.3","Open LDAP Public License v2.3"] []
 - BlueOak License List ["OLDAP-2.3","Open LDAP Public License v2.3"] []
 - Scancode ["OLDAP-2.3","scancode://openldap-2.3","OpenLDAP Public License 2.3"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.3"] []
 
 * OLDAP-2.4
 - LicenseName ["OLDAP-2.4"] []
 - SPDX ["OLDAP-2.4","Open LDAP Public License v2.4"] []
 - BlueOak License List ["OLDAP-2.4","Open LDAP Public License v2.4"] []
 - Scancode ["OLDAP-2.4","scancode://openldap-2.4","OpenLDAP Public License 2.4"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.4"] []
 
 * OLDAP-2.5
 - LicenseName ["OLDAP-2.5"] []
 - SPDX ["OLDAP-2.5","Open LDAP Public License v2.5"] []
 - BlueOak License List ["OLDAP-2.5","Open LDAP Public License v2.5"] []
 - Scancode ["OLDAP-2.5","scancode://openldap-2.5","OpenLDAP Public License 2.5"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.5"] []
 
 * OLDAP-2.6
 - LicenseName ["OLDAP-2.6"] []
 - SPDX ["OLDAP-2.6","Open LDAP Public License v2.6"] []
 - BlueOak License List ["OLDAP-2.6","Open LDAP Public License v2.6"] []
 - Scancode ["OLDAP-2.6","scancode://openldap-2.6","OpenLDAP Public License 2.6"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.6"] []
 
 * OLDAP-2.7
 - LicenseName ["OLDAP-2.7"] []
 - SPDX ["OLDAP-2.7","Open LDAP Public License v2.7"] []
 - BlueOak License List ["OLDAP-2.7","Open LDAP Public License v2.7"] []
 - Scancode ["OLDAP-2.7","scancode://openldap-2.7","OpenLDAP Public License 2.7"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.7"] []
 - Hitachi open-license ["The OpenLDAP Public License","OLDAP-2.7"] []
 
 * OLDAP-2.8
@@ -2350,6 +2524,7 @@
 - SPDX ["OLDAP-2.8","Open LDAP Public License v2.8"] []
 - BlueOak License List ["OLDAP-2.8","Open LDAP Public License v2.8"] []
 - Scancode ["OLDAP-2.8","scancode://openldap-2.8","OpenLDAP Public License 2.8"] []
+- HansHammel license-compatibility-checker ["OLDAP-2.8"] []
 
 * OML
 - LicenseName ["OML"] []
@@ -2377,6 +2552,8 @@
 - Scancode ["OSL-1.0","scancode://osl-1.0","OSL 1.0"] []
 - Fedora Project Wiki ["Open Software License 1.0"] ["OSL 1.0"]
 - OpenSourceInitiative ["OSL-1.0","Open Software License, Version 1.0"] []
+- HansHammel license-compatibility-checker ["OSL-1.0"] []
+- librariesio license-compatibility ["OSL-1.0"] []
 - Google OSS Policy ["OSL-1.0"] []
 
 * OSL-1.1
@@ -2385,6 +2562,8 @@
 - BlueOak License List ["OSL-1.1","Open Software License 1.1"] ["Open Software License"]
 - Scancode ["OSL-1.1","scancode://osl-1.1","OSL 1.1"] []
 - Fedora Project Wiki ["Open Software License 1.1"] ["OSL 1.1"]
+- HansHammel license-compatibility-checker ["OSL-1.1"] []
+- librariesio license-compatibility ["OSL-1.1"] []
 - Google OSS Policy ["OSL-1.1"] []
 - Debian Free Software Guidelines ["OSL-1.1"] ["Open Software License (OSL) v1.1"]
 
@@ -2394,6 +2573,8 @@
 - BlueOak License List ["OSL-2.0","Open Software License 2.0"] ["Open Software License"]
 - Scancode ["OSL-2.0","scancode://osl-2.0","OSL 2.0"] []
 - Fedora Project Wiki ["Open Software License 2.0"] ["OSL 2.0"]
+- HansHammel license-compatibility-checker ["OSL-2.0"] []
+- librariesio license-compatibility ["OSL-2.0"] []
 - Google OSS Policy ["OSL-2.0"] []
 
 * OSL-2.1
@@ -2403,6 +2584,8 @@
 - Scancode ["OSL-2.1","scancode://osl-2.1","OSL 2.1"] []
 - Fedora Project Wiki ["Open Software License 2.1"] ["OSL 2.1"]
 - OpenSourceInitiative ["OSL-2.1","Open Software License, Version 2.1"] []
+- HansHammel license-compatibility-checker ["OSL-2.1"] []
+- librariesio license-compatibility ["OSL-2.1"] []
 - Google OSS Policy ["OSL-2.1"] []
 - Hitachi open-license ["Open Software License, version 2.1"] []
 
@@ -2415,6 +2598,8 @@
 - choosealicense.com ["osl-3.0","OSL-3.0"] []
 - Fedora Project Wiki ["Open Software License 3.0"] ["OSL 3.0"]
 - OpenSourceInitiative ["OSL-3.0","Open Software License, Version 3.0"] []
+- HansHammel license-compatibility-checker ["OSL-3.0"] []
+- librariesio license-compatibility ["OSL-3.0"] []
 - Wikipedia ["OSL-3.0","Open Software License 3.0"] []
 - Google OSS Policy ["OSL-3.0"] []
 - Open Knowledge International ["OSL-3.0","Open Software License 3.0"] []
@@ -2427,6 +2612,7 @@
 - Scancode ["OpenSSL","scancode://openssl-ssleay","OpenSSL/SSLeay License"] []
 - Fedora Project Wiki ["OpenSSL License"] ["OpenSSL"]
 - finos/OSLC-handbook ["OpenSSL","OpenSSL License"] []
+- HansHammel license-compatibility-checker ["OpenSSL"] []
 - Wikipedia ["OpenSSL","OpenSSL license"] []
 - Google OSS Policy ["OpenSSL"] []
 - Hitachi open-license ["OpenSSL License"] []
@@ -2435,6 +2621,8 @@
 - LicenseName ["PDDL-1.0"] []
 - SPDX ["PDDL-1.0","ODC Public Domain Dedication & License 1.0"] []
 - Scancode ["PDDL-1.0","scancode://pddl-1.0","PDDL 1.0"] []
+- HansHammel license-compatibility-checker ["PDDL-1.0"] []
+- librariesio license-compatibility ["PDDL-1.0"] []
 - Open Knowledge International ["PDDL-1.0","Open Data Commons Public Domain Dedication and Licence 1.0","ODC-PDDL-1.0"] []
 
 * PHP-3.0
@@ -2446,6 +2634,7 @@
 - Fedora Project Wiki ["PHP License v3.0"] ["PHP"]
 - OpenSourceInitiative ["PHP-3.0","The PHP License, Version 3.0"] []
 - finos/OSLC-handbook ["PHP-3.0","PHP License v3.0"] []
+- HansHammel license-compatibility-checker ["PHP-3.0"] []
 - Google OSS Policy ["PHP-3.0"] []
 - Open Knowledge International ["PHP-3.0","PHP License 3.0"] []
 - Hitachi open-license ["PHP License, version 3.0","PHP-3.0"] []
@@ -2456,6 +2645,7 @@
 - BlueOak License List ["PHP-3.01","PHP License v3.01"] []
 - Scancode ["PHP-3.01","scancode://php-3.01","PHP License 3.01"] []
 - finos/OSLC-handbook ["PHP-3.01","PHP License v3.01"] []
+- HansHammel license-compatibility-checker ["PHP-3.01"] []
 - Hitachi open-license ["PHP License, version 3.01","PHP-3.01"] []
 
 * PSF-2.0
@@ -2515,6 +2705,8 @@
 - Scancode ["Python-2.0","scancode://python","Python License 2.0"] []
 - OpenSourceInitiative ["Python-2.0","Python License, Version 2.0","License :: OSI Approved :: Python Software Foundation License"] []
 - finos/OSLC-handbook ["Python-2.0","Python License 2.0"] []
+- HansHammel license-compatibility-checker ["Python-2.0"] []
+- librariesio license-compatibility ["Python-2.0"] []
 - Wikipedia ["Python-2.0","Python Software Foundation License 2"] []
 - Google OSS Policy ["Python-2.0"] []
 - Open Knowledge International ["Python-2.0","Python License 2.0"] []
@@ -2545,6 +2737,7 @@
 - LicenseName ["RHeCos-1.1"] []
 - SPDX ["RHeCos-1.1","Red Hat eCos Public License v1.1"] []
 - Scancode ["RHeCos-1.1","scancode://ecosrh-1.1","Red Hat eCos Public License 1.1"] []
+- HansHammel license-compatibility-checker ["RHeCos-1.1"] []
 
 * RPL-1.1
 - LicenseName ["RPL-1.1"] []
@@ -2552,6 +2745,8 @@
 - BlueOak License List ["RPL-1.1","Reciprocal Public License 1.1"] ["Reciprocal Public License"]
 - Scancode ["RPL-1.1","scancode://rpl-1.1","RPL 1.1"] []
 - OpenSourceInitiative ["RPL-1.1","Reciprocal Public License, Version 1.1"] []
+- HansHammel license-compatibility-checker ["RPL-1.1"] []
+- librariesio license-compatibility ["RPL-1.1"] []
 
 * RPL-1.5
 - LicenseName ["RPL-1.5"] []
@@ -2560,6 +2755,8 @@
 - OpenChainPolicyTemplate ["RPL-1.5"] []
 - Scancode ["RPL-1.5","scancode://rpl-1.5","RPL 1.5"] []
 - OpenSourceInitiative ["RPL-1.5","Reciprocal Public License, Version 1.5"] []
+- HansHammel license-compatibility-checker ["RPL-1.5"] []
+- librariesio license-compatibility ["RPL-1.5"] []
 - Open Knowledge International ["RPL-1.5","Reciprocal Public License 1.5"] []
 
 * RPSL-1.0
@@ -2586,6 +2783,7 @@
 - Scancode ["RSCPL","scancode://ricoh-1.0","Ricoh Source Code Public License 1.0"] []
 - Fedora Project Wiki ["Ricoh Source Code Public License"] []
 - OpenSourceInitiative ["RSCPL","The Ricoh Source Code Public License","License :: OSI Approved :: Ricoh Source Code Public License"] []
+- HansHammel license-compatibility-checker ["RSCPL"] []
 - Open Knowledge International ["RSCPL","Ricoh Source Code Public License"] []
 
 * Rdisc
@@ -2601,6 +2799,7 @@
 - BlueOak License List ["Ruby","Ruby License"] []
 - Scancode ["Ruby","scancode://ruby","Ruby License"] []
 - Fedora Project Wiki ["Ruby License"] ["Ruby"]
+- HansHammel license-compatibility-checker ["Ruby"] []
 - Google OSS Policy ["Ruby"] []
 - Hitachi open-license ["Ruby License (1.9.2 and earlier)","Ruby"] []
 - Hitachi open-license ["Ruby License (1.9.3 and later)","Ruby"] []
@@ -2609,6 +2808,8 @@
 - LicenseName ["SAX-PD"] []
 - SPDX ["SAX-PD","Sax Public Domain Notice"] []
 - Scancode ["SAX-PD","scancode://sax-pd"] []
+- HansHammel license-compatibility-checker ["SAX-PD"] []
+- librariesio license-compatibility ["SAX-PD"] []
 
 * SCEA
 - LicenseName ["SCEA"] []
@@ -2651,6 +2852,7 @@
 - Scancode ["SISSL","scancode://sun-sissl-1.1","Sun Industry Standards Source License 1.1"] []
 - Fedora Project Wiki ["Sun Industry Standards Source License"] ["SISSL"]
 - OpenSourceInitiative ["SISSL","Sun Industry Standards Source License","License :: OSI Approved :: Sun Industry Standards Source License (SISSL)"] []
+- HansHammel license-compatibility-checker ["SISSL"] []
 - Google OSS Policy ["SISSL"] []
 - Open Knowledge International ["SISSL","Sun Industry Standards Source License 1.1","sun-issl"] []
 - Hitachi open-license ["Sun Industry Standards Source License Version 1.1","SISSL"] []
@@ -2659,6 +2861,7 @@
 - LicenseName ["SISSL-1.2"] []
 - SPDX ["SISSL-1.2","Sun Industry Standards Source License v1.2"] []
 - Scancode ["SISSL-1.2","scancode://sun-sissl-1.2","Sun Industry Standards Source License 1.2"] []
+- HansHammel license-compatibility-checker ["SISSL-1.2"] []
 - Google OSS Policy ["SISSL-1.2"] []
 - Hitachi open-license ["Sun Industry Standards Source License - Version 1.2","SISSL-1.2"] []
 
@@ -2687,6 +2890,7 @@
 - OpenChainPolicyTemplate ["SPL-1.0"] []
 - Scancode ["SPL-1.0","scancode://spl-1.0","SPL 1.0"] []
 - OpenSourceInitiative ["SPL-1.0","Sun Public License, Version 1.0","License :: OSI Approved :: Sun Public License"] []
+- HansHammel license-compatibility-checker ["SPL-1.0"] []
 - Open Knowledge International ["SPL-1.0","Sun Public License 1.0"] []
 - Hitachi open-license ["SUN PUBLIC LICENSE Version 1.0"] []
 
@@ -2724,6 +2928,7 @@
 - SPDX ["Sendmail","Sendmail License"] []
 - Scancode ["Sendmail","scancode://sendmail","Sendmail License"] []
 - Fedora Project Wiki ["Sendmail License"] ["Sendmail"]
+- HansHammel license-compatibility-checker ["Sendmail"] []
 - Hitachi open-license ["SENDMAIL LICENSE (version 2004)","Sendmail"] []
 - Hitachi open-license ["SENDMAIL LICENSE (version 2012)","Sendmail"] []
 - Hitachi open-license ["SENDMAIL LICENSE (version 1998)","Sendmail"] []
@@ -2750,6 +2955,7 @@
 - Scancode ["Sleepycat","scancode://sleepycat","Sleepycat License"] []
 - Fedora Project Wiki ["Sleepycat Software Product License"] ["Sleepycat"]
 - OpenSourceInitiative ["Sleepycat","The Sleepycat License","License :: OSI Approved :: Sleepycat License"] []
+- HansHammel license-compatibility-checker ["Sleepycat"] []
 - Wikipedia ["Sleepycat","Sleepycat License"] []
 - Google OSS Policy ["Sleepycat"] []
 - Open Knowledge International ["Sleepycat","Sleepycat License"] []
@@ -2776,6 +2982,7 @@
 - LicenseName ["SugarCRM-1.1.3"] []
 - SPDX ["SugarCRM-1.1.3","SugarCRM Public License v1.1.3"] []
 - Scancode ["SugarCRM-1.1.3","scancode://sugarcrm-1.1.3","SugarCRM Public License 1.1.3"] []
+- HansHammel license-compatibility-checker ["SugarCRM-1.1.3"] []
 
 * TAPR-OHL-1.0
 - LicenseName ["TAPR-OHL-1.0"] []
@@ -2789,6 +2996,7 @@
 - Scancode ["TCL","scancode://tcl","TCL/TK License"] []
 - Fedora Project Wiki ["TCL/TK License"] ["TCL"]
 - finos/OSLC-handbook ["TCL","TCL/TK License"] []
+- HansHammel license-compatibility-checker ["TCL"] []
 
 * TCP-wrappers
 - LicenseName ["TCP-wrappers"] []
@@ -2875,6 +3083,8 @@
 - Scancode ["Unlicense","scancode://unlicense"] []
 - choosealicense.com ["unlicense","Unlicense"] []
 - Fedora Project Wiki ["Unlicense"] ["Unlicense"]
+- HansHammel license-compatibility-checker ["Unlicense"] []
+- librariesio license-compatibility ["Unlicense"] []
 - Wikipedia ["Unlicense","Unlicense 1"] []
 - Google OSS Policy ["Unlicense"] []
 - Open Knowledge International ["Unlicense"] []
@@ -2902,6 +3112,7 @@
 - Scancode ["Vim","scancode://vim","VIM License"] []
 - choosealicense.com ["vim","Vim"] []
 - Fedora Project Wiki ["Vim License"] ["Vim"]
+- HansHammel license-compatibility-checker ["Vim"] []
 
 * W3C
 - LicenseName ["W3C"] []
@@ -2911,6 +3122,7 @@
 - Scancode ["W3C","scancode://w3c","W3C Software Notice and License"] []
 - Fedora Project Wiki ["W3C Software Notice and License"] ["W3C"]
 - OpenSourceInitiative ["W3C","The W3C Software Notice and License","License :: OSI Approved :: W3C License"] []
+- HansHammel license-compatibility-checker ["W3C"] []
 - Wikipedia ["W3C","W3C Software Notice and License 20021231"] []
 - Google OSS Policy ["W3C"] []
 - Open Knowledge International ["W3C","W3C License"] []
@@ -2921,6 +3133,7 @@
 - SPDX ["W3C-19980720","W3C Software Notice and License (1998-07-20)"] []
 - BlueOak License List ["W3C-19980720","W3C Software Notice and License (1998-07-20)"] []
 - Scancode ["W3C-19980720","scancode://w3c-software-19980720","W3C-SOFTWARE-19980720"] []
+- HansHammel license-compatibility-checker ["W3C-19980720"] []
 - Google OSS Policy ["W3C-19980720"] []
 - Hitachi open-license ["W3C SOFTWARE NOTICE AND LICENSE (became active on August 14 1998)","W3C-19980720"] []
 
@@ -2929,6 +3142,7 @@
 - SPDX ["W3C-20150513","W3C Software Notice and Document License (2015-05-13)"] []
 - BlueOak License List ["W3C-20150513","W3C Software Notice and Document License (2015-05-13)"] []
 - Scancode ["W3C-20150513","scancode://w3c-software-doc-20150513","W3C-SOFTWARE-DOC-20150513"] []
+- HansHammel license-compatibility-checker ["W3C-20150513"] []
 - Google OSS Policy ["W3C-20150513"] []
 - Hitachi open-license ["W3C SOFTWARE AND DOCUMENT NOTICE AND LICENSE (become active on May 13, 2015)","W3C-20150513"] []
 
@@ -2940,6 +3154,8 @@
 - Scancode ["WTFPL","scancode://wtfpl-2.0","WTFPL 2.0"] []
 - choosealicense.com ["wtfpl","WTFPL"] []
 - Fedora Project Wiki ["Do What The F*ck You Want To Public License"] ["WTFPL"]
+- HansHammel license-compatibility-checker ["WTFPL"] []
+- librariesio license-compatibility ["WTFPL"] []
 - Wikipedia ["WTFPL","Do What The Fuck You Want To Public License (WTFPL) 2"] []
 - Google OSS Policy ["WTFPL"] []
 - Debian Free Software Guidelines ["WTFPL"] ["DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE"]
@@ -2951,6 +3167,7 @@
 - Scancode ["Watcom-1.0","scancode://sybase","Open Watcom 1.0"] []
 - Fedora Project Wiki ["Sybase Open Watcom Public License 1.0"] []
 - OpenSourceInitiative ["Watcom-1.0","The Sybase Open Source Licence"] []
+- HansHammel license-compatibility-checker ["Watcom-1.0"] []
 - Google OSS Policy ["Watcom-1.0"] []
 - Open Knowledge International ["Watcom-1.0","Sybase Open Watcom Public License 1.0"] []
 
@@ -2969,6 +3186,8 @@
 - BlueOak License List ["X11","X11 License"] []
 - Scancode ["X11","scancode://x11-xconsortium","X11-Style (X Consortium)"] []
 - Scancode ["ICU","scancode://x11","X11 License"] []
+- HansHammel license-compatibility-checker ["X11"] []
+- HansHammel license-compatibility-checker ["ICU"] []
 - Hitachi open-license ["ICU License (ICU 1.8.1 and later)","ICU"] []
 
 * XFree86-1.1
@@ -2976,6 +3195,7 @@
 - SPDX ["XFree86-1.1","XFree86 License 1.1"] []
 - BlueOak License List ["XFree86-1.1","XFree86 License 1.1"] []
 - Scancode ["XFree86-1.1","scancode://xfree86-1.1","XFree86 License 1.1"] []
+- HansHammel license-compatibility-checker ["XFree86-1.1"] []
 - Wikipedia ["XFree86-1.1","XFree86 1.1 License"] []
 - Hitachi open-license ["XFree86 1.1 License"] []
 
@@ -3007,17 +3227,20 @@
 - LicenseName ["YPL-1.0"] []
 - SPDX ["YPL-1.0","Yahoo! Public License v1.0"] []
 - Scancode ["YPL-1.0","scancode://ypl-1.0","YPL 1.0"] []
+- HansHammel license-compatibility-checker ["YPL-1.0"] []
 
 * YPL-1.1
 - LicenseName ["YPL-1.1"] []
 - SPDX ["YPL-1.1","Yahoo! Public License v1.1"] []
 - Scancode ["YPL-1.1","scancode://ypl-1.1","YPL 1.1"] []
+- HansHammel license-compatibility-checker ["YPL-1.1"] []
 
 * ZPL-1.1
 - LicenseName ["ZPL-1.1"] []
 - SPDX ["ZPL-1.1","Zope Public License 1.1"] []
 - BlueOak License List ["ZPL-1.1","Zope Public License 1.1"] []
 - Scancode ["ZPL-1.1","scancode://zpl-1.1","ZPL 1.1"] []
+- HansHammel license-compatibility-checker ["ZPL-1.1"] []
 - Google OSS Policy ["ZPL-1.1"] []
 
 * ZPL-2.0
@@ -3027,6 +3250,8 @@
 - OpenChainPolicyTemplate ["ZPL-2.0"] []
 - Scancode ["ZPL-2.0","scancode://zpl-2.0","ZPL 2.0"] []
 - OpenSourceInitiative ["ZPL-2.0","The Zope Public License, Version 2.0","Zope-2.0","License :: OSI Approved :: Zope Public License"] []
+- HansHammel license-compatibility-checker ["ZPL-2.0"] []
+- librariesio license-compatibility ["ZPL-2.0"] []
 - Google OSS Policy ["ZPL-2.0"] []
 - Open Knowledge International ["ZPL-2.0","Zope Public License 2.0"] []
 - Hitachi open-license ["Zope Public License (ZPL) Version 2.0","ZPL-2.0"] []
@@ -3036,6 +3261,8 @@
 - SPDX ["ZPL-2.1","Zope Public License 2.1"] []
 - BlueOak License List ["ZPL-2.1","Zope Public License 2.1"] []
 - Scancode ["ZPL-2.1","scancode://zpl-2.1","ZPL 2.1"] []
+- HansHammel license-compatibility-checker ["ZPL-2.1"] []
+- librariesio license-compatibility ["ZPL-2.1"] []
 - Google OSS Policy ["ZPL-2.1"] []
 - Hitachi open-license ["Zope Public License (ZPL) Version 2.1","ZPL-2.1"] []
 
@@ -3059,11 +3286,13 @@
 - LicenseName ["Zimbra-1.3"] []
 - SPDX ["Zimbra-1.3","Zimbra Public License v1.3"] []
 - Scancode ["Zimbra-1.3","scancode://zimbra-1.3","Zimbra PL 1.3"] []
+- HansHammel license-compatibility-checker ["Zimbra-1.3"] []
 
 * Zimbra-1.4
 - LicenseName ["Zimbra-1.4"] []
 - SPDX ["Zimbra-1.4","Zimbra Public License v1.4"] []
 - Scancode ["Zimbra-1.4","scancode://zimbra-1.4","Zimbra PL 1.4"] []
+- HansHammel license-compatibility-checker ["Zimbra-1.4"] []
 
 * Zlib
 - LicenseName ["Zlib"] []
@@ -3076,6 +3305,7 @@
 - Fedora Project Wiki ["zlib/libpng License"] ["zlib"]
 - OpenSourceInitiative ["Zlib","The zlib/libpng License (Zlib)","License :: OSI Approved :: zlib/libpng License"] []
 - finos/OSLC-handbook ["zlib","zlib License"] []
+- HansHammel license-compatibility-checker ["Zlib"] []
 - Wikipedia ["Zlib","zlib/libpng license"] []
 - Google OSS Policy ["Zlib"] []
 - Open Knowledge International ["Zlib","zlib/libpng license","zlib-license"] []
@@ -3144,6 +3374,7 @@
 - LicenseName ["gSOAP-1.3b"] []
 - SPDX ["gSOAP-1.3b","gSOAP Public License v1.3b"] []
 - Scancode ["gSOAP-1.3b","scancode://gsoap-1.3b","gSOAP Public License v1.3b"] []
+- HansHammel license-compatibility-checker ["gSOAP-1.3b"] []
 - Hitachi open-license ["gSOAP Public License Version 1.3b","gSOAP-1.3b"] []
 
 * gnuplot
@@ -3157,6 +3388,7 @@
 - SPDX ["iMatix","iMatix Standard Function Library Agreement"] []
 - Scancode ["iMatix","scancode://sfl-license","SFL License Agreement"] []
 - Fedora Project Wiki ["iMatix Standard Function Library Agreement"] ["iMatix"]
+- HansHammel license-compatibility-checker ["iMatix"] []
 
 * libpng-2.0
 - LicenseName ["libpng-2.0"] []
@@ -3202,6 +3434,7 @@
 - BlueOak License List ["xinetd","xinetd License"] []
 - Scancode ["xinetd","scancode://xinetd","xinetd License"] []
 - Fedora Project Wiki ["xinetd License"] ["xinetd"]
+- HansHammel license-compatibility-checker ["xinetd"] []
 
 * xpp
 - LicenseName ["xpp"] []
@@ -3216,5 +3449,6 @@
 - BlueOak License List ["zlib-acknowledgement","zlib/libpng License with Acknowledgement"] []
 - Scancode ["zlib-acknowledgement","scancode://zlib-acknowledgement","ZLIB License with Acknowledgment"] []
 - Fedora Project Wiki ["zlib/libpng License with Acknowledgement"] ["zlib with acknowledgement"]
+- HansHammel license-compatibility-checker ["zlib-acknowledgement"] []
 - Debian Free Software Guidelines ["zlib-acknowledgement"] ["The zlib/libpng License (Zlib)"]
 

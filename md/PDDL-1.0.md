@@ -183,6 +183,14 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/pddl-1.0.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
@@ -270,6 +278,22 @@ Raw Data
                 },
                 "spdxLicenseId": "PDDL-1.0"
             },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "PDDL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "PDDL-1.0",
+                "copyleftkind": "NoCopyleft"
+            },
             "Scancode": {
                 "otherUrls": [
                     "http://opendatacommons.org/licenses/pddl/1.0/"
@@ -312,11 +336,35 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "PDDL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft"
+                },
+                "licensename": "PDDL-1.0",
+                "copyleftkind": "NoCopyleft"
             }
         },
         "__impliedCopyleft": [
             [
+                "HansHammel license-compatibility-checker",
+                "NoCopyleft"
+            ],
+            [
                 "Scancode",
+                "NoCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
                 "NoCopyleft"
             ]
         ],

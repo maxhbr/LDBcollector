@@ -21,7 +21,7 @@
 </tr>
 <tr class="even">
 <td><p>Classification</p></td>
-<td><p>Copyleft</p></td>
+<td><p>StrongCopyleft</p></td>
 </tr>
 </tbody>
 </table>
@@ -630,6 +630,8 @@ terms of this License.</code></pre>
 <li><p><a href="https://spdx.org/licenses/ODbL-1.0.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/odbl-1.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/odbl-1.0.txt" title="choosealicense.com">choosealicense.com</a> (<a href="https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -712,6 +714,22 @@ terms of this License.</code></pre>
             },
             &quot;spdxLicenseId&quot;: &quot;ODbL-1.0&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ODbL-1.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;ODbL-1.0&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
+        },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: null,
             &quot;homepageUrl&quot;: &quot;http://www.opendatacommons.org/licenses/odbl/1.0/&quot;,
@@ -748,6 +766,22 @@ terms of this License.</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;ODbL-1.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;ODbL-1.0&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
         },
         &quot;choosealicense.com&quot;: {
             &quot;limitations&quot;: [
@@ -840,11 +874,19 @@ terms of this License.</code></pre>
     },
     &quot;__impliedCopyleft&quot;: [
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;StrongCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;StrongCopyleft&quot;
         ]
     ],
-    &quot;__calculatedCopyleft&quot;: &quot;Copyleft&quot;,
+    &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;,
     &quot;__obligations&quot;: {
         &quot;limitations&quot;: [
             {

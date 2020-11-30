@@ -6,7 +6,7 @@
 |Fullname |Eclipse Public License 1.0
 |Shortname |EPL-1.0
 |Rating |Unknown, probably Attention or Stop or No-Go
-|Classification |WeakCopyleft
+|Classification |StrongCopyleft
 |===
 
 *Other Names:*
@@ -381,6 +381,12 @@ Project Wiki]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/EPL-1.0.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -526,6 +532,22 @@ Knowledge International]
             },
             "spdxLicenseId": "EPL-1.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "EPL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "EPL-1.0",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -614,6 +636,22 @@ Knowledge International]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "EPL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "EPL-1.0",
+            "copyleftkind": "StrongCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -1433,11 +1471,19 @@ Knowledge International]
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "WeakCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "WeakCopyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {

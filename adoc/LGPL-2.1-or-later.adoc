@@ -78,6 +78,15 @@ this repository] is generated)
 (CC0-1.0)
 * https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.1.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -170,6 +179,22 @@ Policy]
             },
             "spdxLicenseId": "LGPL-2.1-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-2.1+"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "LGPL-2.1+",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.gnu.org/copyleft/lesser.html",
@@ -235,6 +260,22 @@ Policy]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "LGPL-2.1+"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "LGPL-2.1+",
+            "copyleftkind": "WeakCopyleft"
         },
         "Debian Free Software Guidelines": {
             "LicenseName": "The GNU Lesser General Public License (LGPL)",
@@ -480,7 +521,15 @@ Policy]
             "WeakCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
+        [
             "Scancode",
+            "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "WeakCopyleft"
         ]
     ],

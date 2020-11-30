@@ -163,6 +163,7 @@ SUCH DAMAGE.
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/Apache-1.1.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
@@ -369,6 +370,22 @@ SUCH DAMAGE.
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Apache-1.1&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;Apache-1.1&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         },
         &quot;Debian Free Software Guidelines&quot;: {
             &quot;LicenseName&quot;: &quot;The Apache Software License (ASL)&quot;,
@@ -762,6 +779,10 @@ SUCH DAMAGE.
         ],
         [
             &quot;Google OSS Policy&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
         ],
         [

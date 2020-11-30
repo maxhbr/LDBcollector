@@ -188,6 +188,7 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $</code></pre>
 <li><p><a href="https://spdx.org/licenses/Sendmail.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
@@ -345,6 +346,22 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Sendmail&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;Sendmail&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         },
         &quot;Hitachi open-license&quot;: {
             &quot;notices&quot;: [
@@ -510,6 +527,10 @@ $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $</code></pre>
         ]
     ],
     &quot;__impliedCopyleft&quot;: [
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;NoCopyleft&quot;
+        ],
         [
             &quot;Scancode&quot;,
             &quot;NoCopyleft&quot;

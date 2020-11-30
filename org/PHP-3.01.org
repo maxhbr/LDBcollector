@@ -199,6 +199,10 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/PHP-3.01.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
 
@@ -326,6 +330,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "PHP-3.01"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "PHP-3.01",
+              "copyleftkind": "NoCopyleft"
           },
           "Hitachi open-license": {
               "notices": [
@@ -582,6 +602,10 @@
       "__impliedCopyleft": [
           [
               "BlueOak License List",
+              "NoCopyleft"
+          ],
+          [
+              "HansHammel license-compatibility-checker",
               "NoCopyleft"
           ],
           [

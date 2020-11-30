@@ -121,6 +121,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Apache-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Apache-1.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Debian Free Software Guidelines": {
             "LicenseName": "The Apache Software License (ASL)",
             "State": "DFSGCompatible",
@@ -372,6 +388,10 @@
     "__impliedCopyleft": [
         [
             "BlueOak License List",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

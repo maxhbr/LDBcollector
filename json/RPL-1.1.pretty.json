@@ -73,6 +73,22 @@
             },
             "spdxLicenseId": "RPL-1.1"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "RPL-1.1",
+            "copyleftkind": "SaaSCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://www.gnu.org/licenses/license-list.html#RPL",
@@ -132,6 +148,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "RPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "RPL-1.1",
+            "copyleftkind": "StrongCopyleft"
         },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/RPL-1.1.html",
@@ -231,8 +263,16 @@
             "MaximalCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "MaximalCopyleft",

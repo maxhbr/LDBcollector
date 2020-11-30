@@ -118,6 +118,22 @@
             },
             "spdxLicenseId": "Apache-2.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "Apache-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Apache-2.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -206,6 +222,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Apache-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Apache-2.0",
+            "copyleftkind": "NoCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -920,7 +952,15 @@
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

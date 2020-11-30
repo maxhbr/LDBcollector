@@ -188,6 +188,7 @@ the following restrictions:
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/zlib.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
@@ -402,6 +403,22 @@ the following restrictions:
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;Zlib&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;Zlib&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         },
         &quot;OpenChainPolicyTemplate&quot;: {
             &quot;isSaaSDeemed&quot;: &quot;no&quot;,
@@ -921,6 +938,10 @@ the following restrictions:
         ],
         [
             &quot;Google OSS Policy&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
         ],
         [

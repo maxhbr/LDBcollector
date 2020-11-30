@@ -117,6 +117,22 @@
             },
             "spdxLicenseId": "Artistic-2.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Artistic-2.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "Yes",
             "rating": "Good",
@@ -205,6 +221,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "Artistic-2.0",
+            "copyleftkind": "NoCopyleft"
         },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
@@ -841,8 +873,16 @@
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
             "WeakCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "WeakCopyleft",

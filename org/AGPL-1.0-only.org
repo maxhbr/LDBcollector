@@ -182,6 +182,18 @@
   Project Wiki]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -254,6 +266,22 @@
               },
               "spdxLicenseId": "AGPL-1.0-only"
           },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "AGPL-1.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft"
+              },
+              "licensename": "AGPL-1.0",
+              "copyleftkind": "SaaSCopyleft"
+          },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "NO",
               "rating": "Good",
@@ -319,6 +347,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "AGPL-1.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft"
+              },
+              "licensename": "AGPL-1.0",
+              "copyleftkind": "SaaSCopyleft"
           },
           "Override": {
               "oNonCommecrial": null,
@@ -424,8 +468,16 @@
               "SaaSCopyleft"
           ],
           [
+              "HansHammel license-compatibility-checker",
+              "SaaSCopyleft"
+          ],
+          [
               "Scancode",
               "Copyleft"
+          ],
+          [
+              "librariesio license-compatibility",
+              "SaaSCopyleft"
           ]
       ],
       "__calculatedCopyleft": "SaaSCopyleft",

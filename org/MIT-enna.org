@@ -84,6 +84,10 @@
   Project Wiki]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 *** Raw JSON
 
 #+BEGIN_EXAMPLE
@@ -204,6 +208,22 @@
                   ]
               }
           },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "MIT-enna"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "MIT-enna",
+              "copyleftkind": "NoCopyleft"
+          },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
               "url": "https://spdx.org/licenses/MIT-enna.html",
@@ -260,6 +280,10 @@
       "__impliedCopyleft": [
           [
               "BlueOak License List",
+              "NoCopyleft"
+          ],
+          [
+              "HansHammel license-compatibility-checker",
               "NoCopyleft"
           ],
           [

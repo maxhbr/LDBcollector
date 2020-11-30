@@ -68,6 +68,22 @@
             },
             "spdxLicenseId": "AFL-1.2"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-1.2"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "AFL-1.2",
+            "copyleftkind": "NoCopyleft"
+        },
         "Scancode": {
             "otherUrls": [
                 "http://wayback.archive.org/web/20021204204652/http://www.opensource.org/licenses/academic.php",
@@ -123,6 +139,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "AFL-1.2"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "AFL-1.2",
+            "copyleftkind": "NoCopyleft"
         },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
@@ -183,7 +215,15 @@
             "NoCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
+        [
             "Scancode",
+            "NoCopyleft"
+        ],
+        [
+            "librariesio license-compatibility",
             "NoCopyleft"
         ]
     ],

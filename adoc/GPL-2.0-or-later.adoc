@@ -94,6 +94,12 @@ Project Wiki]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml[finos/OSLC-handbook]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
+* https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
+license-compatibility]
+(https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
 * https://opensource.google.com/docs/thirdparty/licenses/[Google OSS
 Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
@@ -189,6 +195,22 @@ Policy]
             },
             "spdxLicenseId": "GPL-2.0-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-2.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "GPL-2.0-or-later",
+            "copyleftkind": "StrongCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "N/A",
             "rating": "Good",
@@ -278,6 +300,22 @@ Policy]
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "GPL-2.0+"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "GPL-2.0+",
+            "copyleftkind": "StrongCopyleft"
         },
         "Debian Free Software Guidelines": {
             "LicenseName": "The GNU General Public License (GPL)",
@@ -527,8 +565,16 @@ Policy]
             "StrongCopyleft"
         ],
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "StrongCopyleft"
         ]
     ],
     "__calculatedCopyleft": "StrongCopyleft",

@@ -107,6 +107,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "W3C-20150513"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "W3C-20150513",
+            "copyleftkind": "NoCopyleft"
+        },
         "Hitachi open-license": {
             "summary": "http://www.w3.org/Consortium/Legal/2015/copyright-software-and-document",
             "notices": [
@@ -358,6 +374,10 @@
         ],
         [
             "Google OSS Policy",
+            "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
             "NoCopyleft"
         ],
         [

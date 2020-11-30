@@ -77,6 +77,22 @@
             },
             "spdxLicenseId": "ODbL-1.0"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "ODbL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "ODbL-1.0",
+            "copyleftkind": "StrongCopyleft"
+        },
         "Scancode": {
             "otherUrls": null,
             "homepageUrl": "http://www.opendatacommons.org/licenses/odbl/1.0/",
@@ -113,6 +129,22 @@
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "ODbL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "ODbL-1.0",
+            "copyleftkind": "StrongCopyleft"
         },
         "choosealicense.com": {
             "limitations": [
@@ -205,11 +237,19 @@
     },
     "__impliedCopyleft": [
         [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
+        ],
+        [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "StrongCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "Copyleft",
+    "__calculatedCopyleft": "StrongCopyleft",
     "__obligations": {
         "limitations": [
             {

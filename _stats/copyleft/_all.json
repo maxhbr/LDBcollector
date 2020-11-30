@@ -4,6 +4,7 @@
             "BlueOak License List"
         ],
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ]
     },
@@ -17,7 +18,8 @@
     },
     "ErlPL-1.1": {
         "WeakCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -28,6 +30,7 @@
             "BlueOak License List"
         ],
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ]
     },
@@ -41,7 +44,8 @@
     },
     "Ruby": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
             "Scancode"
@@ -57,7 +61,16 @@
     },
     "OLDAP-1.3": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "CECILL-1.1": {
+        "NoCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
             "Scancode"
@@ -65,10 +78,29 @@
     },
     "APSL-2.0": {
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
+        ]
+    },
+    "APL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "MS-PL": {
+        "NoCopyleft": [
+            "BlueOak License List",
+            "Google OSS Policy",
+            "Scancode"
+        ],
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ]
     },
     "QPL-1.0": {
@@ -76,6 +108,15 @@
             "BlueOak License List"
         ],
         "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "ODbL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
             "Scancode"
         ]
     },
@@ -89,7 +130,41 @@
     },
     "GPL-3.0-only": {
         "StrongCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "LPPL-1.0": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Vim": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "CECILL-C": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "GPL-1.0-or-later": {
+        "StrongCopyleft": [
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
@@ -105,9 +180,18 @@
     },
     "OLDAP-1.4": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "LPPL-1.3a": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
             "Scancode"
         ]
     },
@@ -119,17 +203,50 @@
             "Scancode"
         ]
     },
+    "EPL-2.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ]
+    },
     "OSL-2.1": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
         ]
     },
     "OSL-3.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Interbase-1.0": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "RHeCos-1.1": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -137,7 +254,17 @@
     },
     "AGPL-3.0-only": {
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "LPPL-1.1": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -145,15 +272,27 @@
     },
     "AGPL-1.0-or-later": {
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
         ]
     },
     "EUPL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
             "BlueOak License List"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "Motosoto": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -167,9 +306,21 @@
             "Scancode"
         ]
     },
+    "YPL-1.1": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
     "OSL-2.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
@@ -181,20 +332,29 @@
             "Google OSS Policy"
         ],
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ]
     },
     "RPL-1.5": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "WeakCopyleft": [
             "Scancode"
         ],
         "MaximalCopyleft": [
             "BlueOak License List"
+        ],
+        "SaaSCopyleft": [
+            "librariesio license-compatibility"
         ]
     },
     "GPL-2.0-or-later": {
         "StrongCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
@@ -209,6 +369,9 @@
         ]
     },
     "CPAL-1.0": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
             "BlueOak License List"
         ],
@@ -217,6 +380,9 @@
         ]
     },
     "APSL-1.0": {
+        "NoCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "WeakCopyleft": [
             "Scancode"
         ],
@@ -232,6 +398,14 @@
             "Scancode"
         ]
     },
+    "CECILL-2.1": {
+        "NoCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
     "RPSL-1.0": {
         "WeakCopyleft": [
             "Scancode"
@@ -241,6 +415,9 @@
         ]
     },
     "EUPL-1.1": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "WeakCopyleft": [
             "Scancode"
         ],
@@ -253,6 +430,7 @@
             "BlueOak License List"
         ],
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ]
     },
@@ -260,13 +438,20 @@
         "NoCopyleft": [
             "BlueOak License List"
         ],
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "Copyleft": [
             "Scancode"
         ]
     },
     "OSL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
@@ -275,18 +460,26 @@
     "Artistic-2.0": {
         "NoCopyleft": [
             "BlueOak License List",
-            "Google OSS Policy"
+            "Google OSS Policy",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
         ],
         "WeakCopyleft": [
             "Scancode"
         ]
     },
     "RPL-1.1": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "WeakCopyleft": [
             "Scancode"
         ],
         "MaximalCopyleft": [
             "BlueOak License List"
+        ],
+        "SaaSCopyleft": [
+            "librariesio license-compatibility"
         ]
     },
     "Parity-7.0.0": {
@@ -299,9 +492,19 @@
     },
     "OLDAP-1.1": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
+    "CPL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "BlueOak License List",
             "Scancode"
         ]
     },
@@ -313,17 +516,62 @@
             "Scancode"
         ]
     },
+    "CECILL-2.0": {
+        "NoCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
     "APSL-1.1": {
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ],
         "SaaSCopyleft": [
             "BlueOak License List"
         ]
     },
+    "MS-RL": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode"
+        ]
+    },
+    "SugarCRM-1.1.3": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "IPA": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "Scancode"
+        ]
+    },
     "GPL-3.0-or-later": {
         "StrongCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "LPPL-1.2": {
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -338,9 +586,21 @@
             "Scancode"
         ]
     },
+    "GPL-1.0-only": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
     "Sleepycat": {
         "StrongCopyleft": [
             "BlueOak License List"
+        ],
+        "WeakCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -359,6 +619,7 @@
             "BlueOak License List"
         ],
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ]
     },
@@ -380,15 +641,39 @@
     },
     "GPL-2.0-only": {
         "StrongCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
         ]
     },
+    "EPL-1.0": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
+        "WeakCopyleft": [
+            "BlueOak License List",
+            "Scancode",
+            "librariesio license-compatibility"
+        ]
+    },
     "OSL-1.1": {
+        "StrongCopyleft": [
+            "HansHammel license-compatibility-checker"
+        ],
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
+        ],
+        "Copyleft": [
+            "Scancode"
+        ]
+    },
+    "CECILL-1.0": {
+        "NoCopyleft": [
+            "HansHammel license-compatibility-checker"
         ],
         "Copyleft": [
             "Scancode"
@@ -404,6 +689,7 @@
     },
     "APSL-1.2": {
         "WeakCopyleft": [
+            "HansHammel license-compatibility-checker",
             "Scancode"
         ],
         "SaaSCopyleft": [
@@ -412,7 +698,8 @@
     },
     "OLDAP-1.2": {
         "NoCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker"
         ],
         "WeakCopyleft": [
             "Scancode"
@@ -420,7 +707,9 @@
     },
     "AGPL-1.0-only": {
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "HansHammel license-compatibility-checker",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"
@@ -428,7 +717,8 @@
     },
     "AGPL-3.0-or-later": {
         "SaaSCopyleft": [
-            "BlueOak License List"
+            "BlueOak License List",
+            "librariesio license-compatibility"
         ],
         "Copyleft": [
             "Scancode"

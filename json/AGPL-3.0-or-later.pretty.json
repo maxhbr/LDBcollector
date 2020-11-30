@@ -87,6 +87,22 @@
             },
             "spdxLicenseId": "AGPL-3.0-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-3.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "AGPL-3.0-or-later",
+            "copyleftkind": "SaaSCopyleft"
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "NO",
             "rating": "Good",
@@ -456,6 +472,10 @@
         [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "SaaSCopyleft",

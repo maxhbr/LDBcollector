@@ -106,6 +106,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "EUPL-1.0",
+            "copyleftkind": "StrongCopyleft"
+        },
         "BlueOak License List": {
             "url": "https://spdx.org/licenses/EUPL-1.0.html",
             "familyName": "European Union Public License",
@@ -179,6 +195,10 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
         ],
         [
             "Scancode",

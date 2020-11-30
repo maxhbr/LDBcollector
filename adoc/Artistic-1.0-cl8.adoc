@@ -165,6 +165,9 @@ this repository] is generated)
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml[Scancode]
 (CC0-1.0)
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 * https://wiki.debian.org/DFSGLicenses[Debian Free Software Guidelines]
 (NOASSERTION)
 
@@ -299,6 +302,22 @@ this repository] is generated)
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "Artistic-1.0-cl8"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "Artistic-1.0-cl8",
+            "copyleftkind": "WeakCopyleft"
+        },
         "Debian Free Software Guidelines": {
             "LicenseName": "Artistic License",
             "State": "DFSGCompatible",
@@ -387,6 +406,10 @@ this repository] is generated)
         [
             "BlueOak License List",
             "NoCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
         ],
         [
             "Scancode",

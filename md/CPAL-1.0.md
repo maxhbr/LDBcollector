@@ -365,6 +365,10 @@ Raw Data
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -558,6 +562,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "CPAL-1.0"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft"
+                },
+                "licensename": "CPAL-1.0",
+                "copyleftkind": "WeakCopyleft"
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "yes",
@@ -1173,6 +1193,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "SaaSCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
+                "WeakCopyleft"
             ],
             [
                 "Scancode",

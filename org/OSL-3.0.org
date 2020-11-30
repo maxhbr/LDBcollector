@@ -185,6 +185,14 @@
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
@@ -312,6 +320,22 @@
               },
               "spdxLicenseId": "OSL-3.0"
           },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "OSL-3.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft"
+              },
+              "licensename": "OSL-3.0",
+              "copyleftkind": "SaaSCopyleft"
+          },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "NO",
               "rating": "Good",
@@ -415,6 +439,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "OSL-3.0"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "StrongCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "StrongCopyleft"
+              },
+              "licensename": "OSL-3.0",
+              "copyleftkind": "StrongCopyleft"
           },
           "OpenChainPolicyTemplate": {
               "isSaaSDeemed": "yes",
@@ -699,8 +739,16 @@
               "SaaSCopyleft"
           ],
           [
+              "HansHammel license-compatibility-checker",
+              "StrongCopyleft"
+          ],
+          [
               "Scancode",
               "Copyleft"
+          ],
+          [
+              "librariesio license-compatibility",
+              "SaaSCopyleft"
           ]
       ],
       "__calculatedCopyleft": "SaaSCopyleft",

@@ -136,6 +136,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "CECILL-2.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "CECILL-2.1",
+            "copyleftkind": "NoCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -330,6 +346,10 @@
         ]
     ],
     "__impliedCopyleft": [
+        [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
+        ],
         [
             "Scancode",
             "WeakCopyleft"

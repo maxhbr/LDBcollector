@@ -227,6 +227,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "EUPL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "StrongCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "StrongCopyleft"
+            },
+            "licensename": "EUPL-1.1",
+            "copyleftkind": "StrongCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -803,6 +819,10 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "StrongCopyleft"
         ],
         [
             "Scancode",

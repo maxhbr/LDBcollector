@@ -357,6 +357,10 @@ Raw Data
 -   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.yml "Scancode")
     (CC0-1.0)
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -456,6 +460,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "gSOAP-1.3b"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft"
+                },
+                "licensename": "gSOAP-1.3b",
+                "copyleftkind": "WeakCopyleft"
             },
             "Hitachi open-license": {
                 "summary": "http://www.cs.fsu.edu/~engelen/license.html",
@@ -874,6 +894,10 @@ Raw Data
             }
         },
         "__impliedCopyleft": [
+            [
+                "HansHammel license-compatibility-checker",
+                "WeakCopyleft"
+            ],
             [
                 "Scancode",
                 "WeakCopyleft"

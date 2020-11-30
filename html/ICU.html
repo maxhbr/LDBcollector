@@ -130,6 +130,8 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-xconsortium.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -227,6 +229,22 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;X11&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;X11&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         },
         &quot;Hitachi open-license&quot;: {
             &quot;notices&quot;: [
@@ -407,6 +425,10 @@ X Window System is a trademark of X Consortium, Inc.</code></pre>
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;BlueOak License List&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
         ],
         [

@@ -103,6 +103,8 @@ David Megginson, Megginson Technologies Ltd.
 <li><p>LicenseName</p></li>
 <li><p><a href="https://spdx.org/licenses/SAX-PD.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sax-pd.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -152,6 +154,22 @@ David Megginson, Megginson Technologies Ltd.
             },
             &quot;spdxLicenseId&quot;: &quot;SAX-PD&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;SAX-PD&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;SAX-PD&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: null,
             &quot;homepageUrl&quot;: &quot;http://www.saxproject.org/copying.html&quot;,
@@ -188,11 +206,35 @@ David Megginson, Megginson Technologies Ltd.
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;SAX-PD&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;SAX-PD&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         }
     },
     &quot;__impliedCopyleft&quot;: [
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
             &quot;NoCopyleft&quot;
         ]
     ],

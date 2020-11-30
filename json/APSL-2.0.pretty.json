@@ -185,6 +185,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "APSL-2.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "APSL-2.0",
+            "copyleftkind": "WeakCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "copyleft",
@@ -389,6 +405,10 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
         ],
         [
             "Scancode",

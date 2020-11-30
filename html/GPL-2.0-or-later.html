@@ -78,6 +78,8 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.</code></pre>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/GPL-2.0.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
 </ul>
@@ -168,6 +170,22 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.</code></pre>
             },
             &quot;spdxLicenseId&quot;: &quot;GPL-2.0-or-later&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;GPL-2.0-or-later&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;GPL-2.0-or-later&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
+        },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;N/A&quot;,
             &quot;rating&quot;: &quot;Good&quot;,
@@ -257,6 +275,22 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.</code></pre>
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;GPL-2.0+&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;GPL-2.0+&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
         },
         &quot;Debian Free Software Guidelines&quot;: {
             &quot;LicenseName&quot;: &quot;The GNU General Public License (GPL)&quot;,
@@ -506,8 +540,16 @@ Street, Fifth Floor, Boston, MA  02110-1301, USA.</code></pre>
             &quot;StrongCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;StrongCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;StrongCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;,

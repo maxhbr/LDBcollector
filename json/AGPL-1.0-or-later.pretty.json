@@ -64,6 +64,22 @@
             },
             "spdxLicenseId": "AGPL-1.0-or-later"
         },
+        "librariesio license-compatibility": {
+            "implications": {
+                "__impliedNames": [
+                    "AGPL-1.0-or-later"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "librariesio license-compatibility",
+                        "SaaSCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "SaaSCopyleft"
+            },
+            "licensename": "AGPL-1.0-or-later",
+            "copyleftkind": "SaaSCopyleft"
+        },
         "Scancode": {
             "otherUrls": null,
             "homepageUrl": "http://www.affero.org/oagpl.html",
@@ -157,6 +173,10 @@
         [
             "Scancode",
             "Copyleft"
+        ],
+        [
+            "librariesio license-compatibility",
+            "SaaSCopyleft"
         ]
     ],
     "__calculatedCopyleft": "SaaSCopyleft",

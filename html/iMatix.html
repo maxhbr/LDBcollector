@@ -93,6 +93,7 @@ The Product is provided as free software, in the hope that it will be useful. It
 <li><p><a href="https://spdx.org/licenses/iMatix.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sfl-license.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -223,6 +224,22 @@ The Product is provided as free software, in the hope that it will be useful. It
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;iMatix&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;iMatix&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
         }
     },
     &quot;__impliedJudgement&quot;: [
@@ -235,6 +252,10 @@ The Product is provided as free software, in the hope that it will be useful. It
         ]
     ],
     &quot;__impliedCopyleft&quot;: [
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;NoCopyleft&quot;
+        ],
         [
             &quot;Scancode&quot;,
             &quot;NoCopyleft&quot;

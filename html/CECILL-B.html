@@ -302,6 +302,7 @@ Version 1.0 du 2006-09-05.&quot;</code></pre>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
 <pre><code>{
@@ -449,6 +450,22 @@ Version 1.0 du 2006-09-05.&quot;</code></pre>
                 ]
             }
         },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;CECILL-B&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;CECILL-B&quot;,
+            &quot;copyleftkind&quot;: &quot;NoCopyleft&quot;
+        },
         &quot;BlueOak License List&quot;: {
             &quot;BlueOakRating&quot;: &quot;Lead&quot;,
             &quot;url&quot;: &quot;https://spdx.org/licenses/CECILL-B.html&quot;,
@@ -505,6 +522,10 @@ Version 1.0 du 2006-09-05.&quot;</code></pre>
     &quot;__impliedCopyleft&quot;: [
         [
             &quot;BlueOak License List&quot;,
+            &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
         ],
         [

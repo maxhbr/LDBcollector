@@ -121,6 +121,10 @@
 - [[https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml][finos/OSLC-handbook]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json][librariesio
+  license-compatibility]]
+  ([[https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt][MIT]])
+
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
@@ -215,6 +219,22 @@
                   ]
               },
               "spdxLicenseId": "AGPL-3.0-or-later"
+          },
+          "librariesio license-compatibility": {
+              "implications": {
+                  "__impliedNames": [
+                      "AGPL-3.0-or-later"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "librariesio license-compatibility",
+                          "SaaSCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "SaaSCopyleft"
+              },
+              "licensename": "AGPL-3.0-or-later",
+              "copyleftkind": "SaaSCopyleft"
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "NO",
@@ -585,6 +605,10 @@
           [
               "Scancode",
               "Copyleft"
+          ],
+          [
+              "librariesio license-compatibility",
+              "SaaSCopyleft"
           ]
       ],
       "__calculatedCopyleft": "SaaSCopyleft",

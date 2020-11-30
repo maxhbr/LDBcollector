@@ -88,6 +88,7 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/AGPL-3.0.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -179,6 +180,22 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;AGPL-3.0-or-later&quot;
+        },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;AGPL-3.0-or-later&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;SaaSCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;AGPL-3.0-or-later&quot;,
+            &quot;copyleftkind&quot;: &quot;SaaSCopyleft&quot;
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
@@ -549,6 +566,10 @@ along with this program.  If not, see &lt;http://www.gnu.org/licenses/&gt;.
         [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;SaaSCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;,

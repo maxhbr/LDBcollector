@@ -105,6 +105,8 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
 <li><p><a href="https://blueoakcouncil.org/copyleft" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.1.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://wiki.debian.org/DFSGLicenses" title="Debian Free Software Guidelines">Debian Free Software Guidelines</a> (NOASSERTION)</p></li>
 </ul>
@@ -171,6 +173,22 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;OSL-1.1&quot;
+        },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;OSL-1.1&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;SaaSCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;OSL-1.1&quot;,
+            &quot;copyleftkind&quot;: &quot;SaaSCopyleft&quot;
         },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
@@ -248,6 +266,22 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;OSL-1.1&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;OSL-1.1&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
         },
         &quot;Debian Free Software Guidelines&quot;: {
             &quot;LicenseName&quot;: &quot;Open Software License (OSL) v1.1&quot;,
@@ -361,8 +395,16 @@ This license is Copyright (C) 2002 Lawrence E. Rosen. All rights reserved. Permi
             &quot;SaaSCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;StrongCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;SaaSCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;,

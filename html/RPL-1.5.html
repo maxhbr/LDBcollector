@@ -218,6 +218,8 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
 <li><p><a href="https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods" title="OpenChainPolicyTemplate">OpenChainPolicyTemplate</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://opensource.org/licenses/" title="OpenSourceInitiative">OpenSourceInitiative</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://github.com/okfn/licenses/blob/master/licenses.csv" title="Open Knowledge International">Open Knowledge International</a> (<a href="https://opendatacommons.org/licenses/pddl/1-0/" title="PDDL-1.0">PDDL-1.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -324,6 +326,22 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
             },
             &quot;spdxLicenseId&quot;: &quot;RPL-1.5&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;RPL-1.5&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;SaaSCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;RPL-1.5&quot;,
+            &quot;copyleftkind&quot;: &quot;SaaSCopyleft&quot;
+        },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: [
                 &quot;http://www.gnu.org/licenses/license-list.html#RPL&quot;,
@@ -388,6 +406,22 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;RPL-1.5&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;StrongCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;StrongCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;RPL-1.5&quot;,
+            &quot;copyleftkind&quot;: &quot;StrongCopyleft&quot;
         },
         &quot;OpenChainPolicyTemplate&quot;: {
             &quot;isSaaSDeemed&quot;: &quot;no&quot;,
@@ -500,8 +534,16 @@ The User-Visible Attribution Notice below, when provided, must appear in each us
             &quot;MaximalCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;StrongCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;WeakCopyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;SaaSCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;MaximalCopyleft&quot;,

@@ -156,6 +156,9 @@ NO WARRANTY
 <li><p><a href="https://blueoakcouncil.org/copyleft" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing" title="Fedora Project Wiki">Fedora Project Wiki</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
+<li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json" title="librariesio license-compatibility">librariesio license-compatibility</a> (<a href="https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -224,6 +227,22 @@ NO WARRANTY
             },
             &quot;spdxLicenseId&quot;: &quot;AGPL-1.0-only&quot;
         },
+        &quot;librariesio license-compatibility&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;AGPL-1.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;librariesio license-compatibility&quot;,
+                        &quot;SaaSCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;AGPL-1.0&quot;,
+            &quot;copyleftkind&quot;: &quot;SaaSCopyleft&quot;
+        },
         &quot;Fedora Project Wiki&quot;: {
             &quot;GPLv2 Compat?&quot;: &quot;NO&quot;,
             &quot;rating&quot;: &quot;Good&quot;,
@@ -289,6 +308,22 @@ NO WARRANTY
                     ]
                 ]
             }
+        },
+        &quot;HansHammel license-compatibility-checker&quot;: {
+            &quot;implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;AGPL-1.0&quot;
+                ],
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;HansHammel license-compatibility-checker&quot;,
+                        &quot;SaaSCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;
+            },
+            &quot;licensename&quot;: &quot;AGPL-1.0&quot;,
+            &quot;copyleftkind&quot;: &quot;SaaSCopyleft&quot;
         },
         &quot;Override&quot;: {
             &quot;oNonCommecrial&quot;: null,
@@ -394,8 +429,16 @@ NO WARRANTY
             &quot;SaaSCopyleft&quot;
         ],
         [
+            &quot;HansHammel license-compatibility-checker&quot;,
+            &quot;SaaSCopyleft&quot;
+        ],
+        [
             &quot;Scancode&quot;,
             &quot;Copyleft&quot;
+        ],
+        [
+            &quot;librariesio license-compatibility&quot;,
+            &quot;SaaSCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;SaaSCopyleft&quot;,

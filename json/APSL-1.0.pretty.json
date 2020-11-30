@@ -148,6 +148,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "APSL-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft"
+            },
+            "licensename": "APSL-1.0",
+            "copyleftkind": "NoCopyleft"
+        },
         "Debian Free Software Guidelines": {
             "LicenseName": "Apple Public Source License (APSL)",
             "State": "DFSGInCompatible",
@@ -239,6 +255,10 @@
         [
             "BlueOak License List",
             "SaaSCopyleft"
+        ],
+        [
+            "HansHammel license-compatibility-checker",
+            "NoCopyleft"
         ],
         [
             "Scancode",

@@ -89,6 +89,10 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/LGPL-2.0.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [librariesio
+    license-compatibility](https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json "librariesio license-compatibility")
+    ([MIT](https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -173,6 +177,22 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "LGPL-2.0-or-later"
+            },
+            "librariesio license-compatibility": {
+                "implications": {
+                    "__impliedNames": [
+                        "LGPL-2.0-or-later"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "librariesio license-compatibility",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft"
+                },
+                "licensename": "LGPL-2.0-or-later",
+                "copyleftkind": "WeakCopyleft"
             },
             "Scancode": {
                 "otherUrls": [
@@ -446,6 +466,10 @@ Raw Data
             ],
             [
                 "Scancode",
+                "WeakCopyleft"
+            ],
+            [
+                "librariesio license-compatibility",
                 "WeakCopyleft"
             ]
         ],

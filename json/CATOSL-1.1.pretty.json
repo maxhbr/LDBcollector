@@ -190,6 +190,22 @@
                 ]
             }
         },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "CATOSL-1.1"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "CATOSL-1.1",
+            "copyleftkind": "WeakCopyleft"
+        },
         "OpenChainPolicyTemplate": {
             "isSaaSDeemed": "no",
             "licenseType": "permissive",
@@ -267,6 +283,10 @@
         ]
     ],
     "__impliedCopyleft": [
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
         [
             "Scancode",
             "WeakCopyleft"

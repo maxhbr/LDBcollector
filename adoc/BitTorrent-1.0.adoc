@@ -371,6 +371,9 @@ or implied.  See the License for the specific language governing rights and limi
 repository] is generated)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.0.yml[Scancode]
 (CC0-1.0)
+* https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json[HansHammel
+license-compatibility-checker]
+(https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE[MIT])
 
 ==== Raw JSON
 
@@ -465,9 +468,29 @@ repository] is generated)
                     ]
                 ]
             }
+        },
+        "HansHammel license-compatibility-checker": {
+            "implications": {
+                "__impliedNames": [
+                    "BitTorrent-1.0"
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "HansHammel license-compatibility-checker",
+                        "WeakCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "WeakCopyleft"
+            },
+            "licensename": "BitTorrent-1.0",
+            "copyleftkind": "WeakCopyleft"
         }
     },
     "__impliedCopyleft": [
+        [
+            "HansHammel license-compatibility-checker",
+            "WeakCopyleft"
+        ],
         [
             "Scancode",
             "WeakCopyleft"

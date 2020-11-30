@@ -201,6 +201,10 @@
 - [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c-software-19980720.yml][Scancode]]
   (CC0-1.0)
 
+- [[https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json][HansHammel
+  license-compatibility-checker]]
+  ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
+
 - [[https://opensource.google.com/docs/thirdparty/licenses/][Google OSS
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -305,6 +309,22 @@
                       ]
                   ]
               }
+          },
+          "HansHammel license-compatibility-checker": {
+              "implications": {
+                  "__impliedNames": [
+                      "W3C-19980720"
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "HansHammel license-compatibility-checker",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft"
+              },
+              "licensename": "W3C-19980720",
+              "copyleftkind": "NoCopyleft"
           },
           "Hitachi open-license": {
               "summary": "http://www.w3.org/Consortium/Legal/copyright-software-19980720",
@@ -566,6 +586,10 @@
           ],
           [
               "Google OSS Policy",
+              "NoCopyleft"
+          ],
+          [
+              "HansHammel license-compatibility-checker",
               "NoCopyleft"
           ],
           [

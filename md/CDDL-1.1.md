@@ -300,6 +300,10 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/CDDL-1.1.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [HansHammel
+    license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
+    ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -438,6 +442,22 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "HansHammel license-compatibility-checker": {
+                "implications": {
+                    "__impliedNames": [
+                        "CDDL-1.1"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "HansHammel license-compatibility-checker",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft"
+                },
+                "licensename": "CDDL-1.1",
+                "copyleftkind": "WeakCopyleft"
             },
             "Hitachi open-license": {
                 "summary": "Venue shall be within Santa Clara County, California, and subject to the provisions of California law, the Federal Court for the Northern District of California, and the jurisdiction of the state courts of California.",
@@ -1002,6 +1022,10 @@ Raw Data
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
+                "WeakCopyleft"
+            ],
+            [
+                "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
             ],
             [
