@@ -3,7 +3,8 @@
 {-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE TemplateHaskell #-}
 module Collectors.BlueOak
-  ( loadBlueOakFacts
+  ( blueOakCollector
+  , loadBlueOakFacts
   , loadBlueOakFactsFromString
   , decodeBlueOakData -- for testing
   , blueOakLFC
@@ -12,7 +13,6 @@ module Collectors.BlueOak
 import qualified Prelude as P
 import           MyPrelude hiding (id)
 
-import qualified Data.Text as T
 import qualified Data.Vector as V
 import qualified Data.Map as M
 import qualified Data.ByteString
@@ -199,3 +199,11 @@ loadBlueOakFacts = let
   in do
     logThatFactsAreLoadedFrom "Blue Oak Council License List"
     return (loadBlueOakFactsFromString (B.fromStrict blueOakFile) V.++ loadBlueOakCopyleftFactsFromString (B.fromStrict blueOakCopyleftFile))
+
+-- #############################################################################
+-- #  source  ##################################################################
+-- #############################################################################
+
+blueOakCollector :: Collector
+blueOakCollector =
+  DefaultCollectorContainer blueOakLFC loadBlueOakFacts (ScriptCollectorUpdateMethod "./data/blue-oak-council.update.sh") (LFCVersion "2020-11-15")

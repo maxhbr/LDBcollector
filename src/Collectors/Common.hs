@@ -34,8 +34,12 @@ data CollectorUpdateMethod
   | ManualCollectorUpdateMethod String -- description
   | DirectPullUpdateMethod String -- description
   deriving (Eq, Show)
-class (LicenseFactClassifiable a) => Collector a where
-  loadFacts :: a -> IO Facts
-  -- metadata
-  getCollectorUpdateMethod :: a -> CollectorUpdateMethod
-  getCollectorVersion :: a -> LicenseFactVersion
+data Collector
+  = DefaultCollectorContainer
+  { getCollectorLicenseFactClassifier :: LicenseFactClassifier
+  , loadFacts :: IO Facts
+  , getCollectorUpdateMethod :: CollectorUpdateMethod
+  , getCollectorVersion :: LicenseFactVersion
+  }
+instance LicenseFactClassifiable Collector where
+  getLicenseFactClassifier = getCollectorLicenseFactClassifier

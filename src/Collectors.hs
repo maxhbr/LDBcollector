@@ -5,7 +5,7 @@ module Collectors
 
 import           Model.License as X
 
-import           Collectors.Common as X (Collector)
+import           Collectors.Common as X (Collector (..))
 import           Collectors.Override as X
 
 import           Collectors.BlueOak as X
@@ -31,8 +31,10 @@ import           Collectors.Wikipedia as X
 
 
 allCollectors :: [(LicenseFactClassifier, IO Facts)]
-allCollectors =
-  [ (blueOakLFC, loadBlueOakFacts)
+allCollectors = let
+  toTpl c = (getLicenseFactClassifier c, loadFacts c)
+  in
+  [ toTpl blueOakCollector
   , (cavilLFC, loadCavilFacts)
   , (calLFC, loadChooseALicenseFacts)
   , (dfsgLFC, loadDFSGFacts)
