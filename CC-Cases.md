@@ -33,35 +33,35 @@ Link: https://www.rv.hessenrecht.hessen.de/bshe/document/LARE200000593
 
 Kein Schadensersatz bei Verletzung von CC-BY 2.0
 
-Link: www.ifross.de/Fremdartikel/AG_Aschaffenburg_Urteil_126C837-19.pdf
+Link: www.ifross.org/Fremdartikel/AG_Aschaffenburg_Urteil_126C837-19.pdf
 
 
 ### AG Hamburg, Urteil v. 24.05.2019, Az. 32 C 83/19
 
 Kein Schadensersatz bei Verletzung von CC-BY-SA 2.0
 
-Link: www.ifross.de/Fremdartikel/AG_Hamburg_Urteil_32C83-19.pdf
+Link: www.ifross.org/Fremdartikel/AG_Hamburg_Urteil_32C83-19.pdf
 
 
 ### AG Würzburg, Urteil v. 18.12.2018, Az. 18 C 611/18
 
 Rechtsmissbräuchliche Durchsetzung von CC-Lizenzen
 
-Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
+Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_CC_2018.pdf
 
 
 ### AG Würzburg, Urteil v. 11.10.2018, Az. 17 C 1149/18
 
 Erfolgreiche Feststellungsklage bei Ansprüchen auf Schadensersatz wegen ..Verletzung von CC-BY-SA 3.0
 
-Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_17C1149-18.pdf
+Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_17C1149-18.pdf
 
 
 ### LG Köln, Urteil v. 08.11.2018, Az. 14 S 50/16
 
 Feststellungsklage abgewiesen wg Schadensersatz bei Verletzung von CC BY-SA 3.0
 
-Link: http://www.ifross.de/Fremdartikel/LG_Koeln_Urteil_14S50-16.pdf
+Link: http://www.ifross.org/Fremdartikel/LG_Koeln_Urteil_14S50-16.pdf
 
 
 ### LG Frankfurt, Urteil v. 16.08.2018, Az. 2-03 O 32/17
@@ -82,21 +82,21 @@ Link: https://openjur.de/u/2153856.html
 
 Keine wirksame Abmahnung bei Geltendmachung einer Verletzung einer Creative Commons Lizenz durch "Verband zum Schutz geistigen Eigentums im Internet" 
 
-Link: www.ifross.de/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf
+Link: www.ifross.org/Fremdartikel/AG_Kiel_Urteil_111C7-17.pdf
 
 
 ### AG Bochum, Urteil v. 11.04.2018, Az. 70 C 471/17
 
 Kommerzielle Nutzung von Werken unter CC-BY-NC 3.0 und Höhe Schadensersatz EUR 100,- 
 
-Link: www.ifross.de/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf
+Link: www.ifross.org/Fremdartikel/AG_Bochum_Urteil_70C471-17.pdf
 
 
 ### AG Würzburg, Urteil v. 23.01.2018, Az. 34 C 1105/17
 
 Erfolgreiche Feststellungsklage nach Schadensersatzforderung wegen Verletzung von CC-BY-SA 3.0 
 
-Link: www.ifross.de/Fremdartikel/AG_Wuerzburg_Urteil_34C1105-17.pdf
+Link: www.ifross.org/Fremdartikel/AG_Wuerzburg_Urteil_34C1105-17.pdf
 
 
 ### LG Köln, Urteil v. 08.06.2017, Az. 14 O 331/15
@@ -117,7 +117,7 @@ Link: https://dejure.org/ext/f812818c4cb65cf07438646d5442c684
 
 Feststellungsklage stattgegeben wg Schadensersatz bei Verletzung von CC BY-SA 3.0
 
-Link: http://www.ifross.de/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf
+Link: http://www.ifross.org/Fremdartikel/AG_Koeln_Urteil_148C307-16.pdf
 
 
 ### OLG Köln, Urteil v. 29.06.2016, Az. 6 W 72/16
@@ -138,7 +138,7 @@ Link: http://tlmd.in/u/1603
 
 Verwirkung einer Vertragsstrafe wegen Verletzung von CC-Lizenz
 
-Link: http://ifross.de/Fremdartikel/LG_Muenchen_I_Urteil_21S2269-14.pdf
+Link: http://ifross.org/Fremdartikel/LG_Muenchen_I_Urteil_21S2269-14.pdf
 
 
 ### OLG Köln, Urteil v. 31.10.2014, Az. 6 U 60/14
@@ -159,7 +159,7 @@ Link: http://www.lhr-law.de/wp-content/uploads/2014/03/geschwärztes-Urteil-LG-K
 
 Verletzung von CC-BY-SA 3.0 wegen Mouseovers und Zusprechung von Schadensersatz
 
-Link: http://www.ifross.de/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf
+Link: http://www.ifross.org/Fremdartikel/AG_Muenchen_Urteil_155C29842-12.pdf
 
 
 ### LG Köln, 23.07.2013 - 28 O 325/13	
@@ -176,7 +176,7 @@ Link: https://dejure.org/2013,42561
 
 GEMA-Vermutung und Creative Commons 
 
-Link: http://ifross.de/Fremdartikel/LG_Frankfurt_2-03S11-12.pdf
+Link: http://ifross.org/Fremdartikel/LG_Frankfurt_2-03S11-12.pdf
 
 
 ### AG Frankfurt am Main, Urteil v. 27.08.2012, Az. 32 C 1286/12-48
