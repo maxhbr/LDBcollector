@@ -102,29 +102,29 @@ Link: http://openjur.de/u/69386.html
 
 Welte ./. Skype Technologies S.A.
 
-Link: http://www.ifross.de/Fremdartikel/LGMuenchenUrteil.pdf
+Link: http://www.ifross.org/Fremdartikel/LGMuenchenUrteil.pdf
 
 #### LG Frankfurt a.M., Urteil v. 06.09.2006, Az. 2-6 O 224/06
 
 Welte ./. D-Link Deutschland GmbH
 
-Link: http://www.ifross.de/Fremdartikel/urteil_lg_frankfurt_gpl.pdf
+Link: http://www.ifross.org/Fremdartikel/urteil_lg_frankfurt_gpl.pdf
 
-English translation: http://www.ifross.de/Fremdartikel/judgment_dc_frankfurt_gpl.pdf
+English translation: http://www.ifross.org/Fremdartikel/judgment_dc_frankfurt_gpl.pdf
 
 #### LG Berlin, Beschluss v. 21.02.2006, Az. 16 O 134/06
 
 WLAN-Router
 
-Link: http://www.ifross.de/Fremdartikel/LG%20Berlin%20GPL-Entscheidung21.2.06.pdf
+Link: http://www.ifross.org/Fremdartikel/LG%20Berlin%20GPL-Entscheidung21.2.06.pdf
 
 #### LG München I, Urteil v. 19.05.2004, Az. 21 O 6123/04
 
 Welte ./. Sitecom Deutschland GmbH
 
-Link: http://www.ifross.de/Fremdartikel/urteil_lg_muenchen_gpl.pdf
+Link: http://www.ifross.org/Fremdartikel/urteil_lg_muenchen_gpl.pdf
 
-English translation: http://www.ifross.de/Fremdartikel/judgment_dc_munich_gpl.pdf
+English translation: http://www.ifross.org/Fremdartikel/judgment_dc_munich_gpl.pdf
 
 ___
 
@@ -142,7 +142,7 @@ Link: http://www.ifross.org/sites/default/files/OLG Duesseldorf satco europe v D
 
 xt: commerce
 
-Link: http://www.ifross.de/Fremdartikel/OLGDuesseldorfxtcommerce.pdf
+Link: http://www.ifross.org/Fremdartikel/OLGDuesseldorfxtcommerce.pdf
 
 #### BPatG, Beschluss v. 17.12.2009, Az. 25 W (pat) 65/08
 
