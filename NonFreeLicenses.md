@@ -20,6 +20,7 @@ The licenses listed here originate from the Free Software environment or appear 
 1. Microsoft Limited Community License (Ms-LCL): https://web.archive.org/web/20070427113623/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedcommunitylicense.mspx
 1. Microsoft Reference License (Ms-RefL): https://web.archive.org/web/20080429223250/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/referencelicense.mspx
 1. Microsoft Limited Reciprocal License (Ms-LRL): https://web.archive.org/web/20080406030222/http://www.microsoft.com:80/resources/sharedsource/licensingbasics/limitedreciprocallicense.mspx
+1. Nagios Open Software License (v. 1.3): https://github.com/NagiosEnterprises/ncpa/blob/master/LICENSE.rst
 1. Open Public License: http://wyatterp.com/opl.html (Einordnung umstritten)
 1. Open RTLinux Patent License (v. 1.0): http://web.archive.org/web/20010821220004/rtlinux.com/PATENT_LICENSE
 1. Oracle Binary Code License Agreement for the Java SE Platform Products and JavaFX: https://www.oracle.com/downloads/licenses/binary-code-license.html
