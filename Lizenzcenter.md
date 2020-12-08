@@ -153,6 +153,7 @@ proprietäre Software überführen.
 1. Suneido Free Software License: http://suneido.com/wp-content/uploads/delightful-downloads/2014/10/free_license.txt
 1. Tcl/Tk License Terms: http://www.tcl.tk/software/tcltk/license.html
 1. Tea Software License: http://teatrove.sourceforge.net/license.html
+1. The "No problem Bugroff" license: http://tunes.org/legalese/bugroff.html
 1. The SpeechWorks Public License (v. 1.1 ): http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt
 1. Trusster Open Source License (v. 1.0a): https://github.com/trusster/trusster/blob/master/truss/cpp/src/truss_verification_top.cpp
 1. Udanax Open-Source License: http://udanax.xanadu.com/license.html
@@ -242,6 +243,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. Salutation Public License: http://web.archive.org/web/20050323201906/http://www.salutation.org/lite/lite_license.htm
 1. Software AG License Terms (Quip License) (v. 1.3): http://www.cse.uconn.edu/~dqg/cse350/xml/quip/License.txt
 1. Transitive Grace Period Public Licence (v. 1.0): https://github.com/zcash/halo2/blob/main/LICENSE-TGPPL
+1. vhf Public License: https://calrec.com/wp-content/uploads/2018/02/vhf-public-license-License-A.docx
 1. VOSTROM Public License for Open Source: http://pwhois.org/license.who
 
 
@@ -306,6 +308,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Bremer Lizenz für freie Softwarebibliotheken (OSCI-Lizenz) (v. 1.0): http://www1.osci.de/sixcms/media.php/13/Bremer_Lizenz.pdf (.pdf-Dokument)
 1. CeCILL-C Free Software License Agreement: http://www.cecill.info/licences/Licence_CeCILL-C_V1-en.html
 1. Code Project Open License (CPOL) (v. 1.02): https://www.codeproject.com/info/cpol10.aspx
+1. Common UNIX Printing System License Agreement: https://opensource.apple.com/source/cups/cups-69/LICENSE.html
 1. Contrat de License de Logiciel Libre CeCILL-C: http://www.cecill.info/licences/Licence_CeCILL-C_V1-fr.html
 1. Cougaar Open Source License Agreement: https://web.archive.org/web/20060618122747/http://cougaar.org:80/docman/view.php/17/126/old_cosl_license.html (Einordnung unklar)
 1. Eclipse Public License (v. 2.0): https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.html
