@@ -54,7 +54,7 @@ Link: https://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2016/I_8_O_294_15_Urt
 
 Wiederholungsgefahr bei Verletzung der GPL-3.0 (Ziffer 8 Abs. 3 GPL-3.0)
 
-Link: http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr, http://www.landesrecht.sachsen-anhalt.de/jportal/portal/t/1mr1/page/bssahprod.psml?doc.hl=1&doc.id=JURE150012453&documentnumber=1&showdoccase=1&doc.part=L
+Link: http://www.ifross.org/artikel/lg-halle-erneute-lizenz-nach-ziffer-8-abs-3-gplv3-beseitigt-nicht-wiederholungsgefahr, https://www.landesrecht.sachsen-anhalt.de/bsst/document/JURE150012453
 
 #### LG Hannover, Urteil v. 21.07.2015, Az. 18 O 159/15
 
