@@ -13,6 +13,8 @@ Apache License 2.0 (Apache-2.0)
 
 -   `Apache License, Version 2.0`
 
+-   `ALv2`
+
 -   `apache2.0`
 
 -   `License :: OSI Approved :: Apache Software License`
@@ -477,6 +479,7 @@ Raw Data
             "Apache Software License 2.0",
             "ASL 2.0",
             "Apache License, Version 2.0",
+            "ALv2",
             "Apache License 2.0",
             "apache-2.0",
             "apache2.0",
@@ -758,7 +761,8 @@ Raw Data
                         "Apache (v2.0)",
                         "Apache Software License 2.0",
                         "ASL 2.0",
-                        "Apache License, Version 2.0"
+                        "Apache License, Version 2.0",
+                        "ALv2"
                     ],
                     "__impliedId": "Apache-2.0"
                 },
@@ -767,7 +771,8 @@ Raw Data
                     "Apache (v2.0)",
                     "Apache Software License 2.0",
                     "ASL 2.0",
-                    "Apache License, Version 2.0"
+                    "Apache License, Version 2.0",
+                    "ALv2"
                 ],
                 "oDescription": null,
                 "oJudgement": null,
