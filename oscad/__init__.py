@@ -45,11 +45,11 @@ def piwik_from_settings(settings):
 
 
 def oscad_settings(request):
-    return request.registry.settings.oscad_settings
+    return request.registry.settings['oscad_settings']
 
 
 def piwik(request):
-    return request.registry.settings.piwik
+    return request.registry.settings['piwik']
 
 
 def add_toplevel_link(config, route_name, link_text):
@@ -134,8 +134,8 @@ def main(global_config, **settings):
         settings.get('jquery_location', static_prefix + '/jquery'),
         'jquery')
 
-    config.registry.settings.oscad_settings = oscad_default_settings
-    config.registry.settings.piwik = piwik_from_settings(settings)
+    config.registry.settings['oscad_settings'] = oscad_default_settings
+    config.registry.settings['piwik'] = piwik_from_settings(settings)
 
     config.add_route('index', '')
     config.add_route('request', 'request')
