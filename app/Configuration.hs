@@ -206,6 +206,7 @@ overrides =
            , ("Apache-2.0", [ "Apache (v2.0)"
                             , "Apache Software License 2.0", "ASL 2.0"
                             , "Apache License, Version 2.0"
+                            , "ALv2"
                             ])
            , ("BSL-1.0", [ "BSL (v1)"
                          ])

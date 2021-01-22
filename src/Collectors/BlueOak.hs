@@ -206,4 +206,4 @@ loadBlueOakFacts = let
 
 blueOakCollector :: Collector
 blueOakCollector =
-  DefaultCollectorContainer blueOakLFC loadBlueOakFacts (ScriptCollectorUpdateMethod "./data/blue-oak-council.update.sh") (LFCVersion "2020-11-15")
+  DefaultCollectorContainer blueOakLFC loadBlueOakFacts (ScriptCollectorUpdateMethod "./data/blue-oak-council.update.sh") (LFVersion "2020-11-15")

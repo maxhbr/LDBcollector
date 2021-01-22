@@ -200,6 +200,8 @@ https://github.com/Hitachi/open-license
 **licensed under:** MIT
 
 ## Other possible Sources for license Metadata
+  - [Telekom] (O)pen (S)ource (Li)cense (C)ompendium: https://github.com/telekom/oslic (CC-By-Sa-3.0)
+    - https://telekom.github.io/oslic/releases/oslic.pdf
   - license-compatibility-checker: https://github.com/HansHammel/license-compatibility-checker (MIT)
   - ORT License highlighting
   - ...
