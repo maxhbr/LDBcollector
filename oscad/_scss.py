@@ -1,20 +1,23 @@
+from itertools import product
 import logging
 from pkg_resources import resource_exists, resource_string
 import os.path
+from pathlib import PurePath
 
 from zope.interface import implementer
-from itertools import product
 
 from pyramid.interfaces import ITemplateRenderer
 from pyramid.asset import resolve_asset_spec
 from pyramid.view import view_config
-from pyramid.httpexceptions import HTTPNotFound
 
-from scss import Scss, SourceFile, dequote, SassRule, config as scss_config
-from scss.errors import SassError
+from scss import config as scss_config
+from scss.namespace import Namespace
+from scss.extension.api import Extension
+from scss.extension.core import CoreExtension
+from scss.extension.compass import CompassExtension
+from scss.compiler import Compiler, SourceFile
 
-Logger = logging.getLogger('oscad_scss')
-scss_config.STATIC_URL = ''
+logger = logging.getLogger('oscad_scss')
 
 # Parts of the following code are adapted from the PyScss project
 # (https://github.com/Kronuz/pyScss) which is
@@ -22,166 +25,108 @@ scss_config.STATIC_URL = ''
 # and is licensed under the MIT license. You can find a full copy of its
 # license in the root of this project in the file LICENSE_PYSCSS
 
-
-class ScssNotFound(Exception):
-    pass
+scss_config.STATIC_URL = ''
 
 
-class OscadScss(Scss):
-    def Compilation(self, scss_string=None, scss_file=None,
-                    super_selector=None, filename=None, is_sass=None,
-                    line_numbers=True, source_file=None):
-        if super_selector:
-            self.super_selector = super_selector + ' '
-        self.reset()
+class AssetSpecOrigin(object):
+    def __init__(self, pname, parts):
+        self.pname = pname
+        self.parts = parts
 
-        if scss_string is not None:
-            source_file = SourceFile.from_string(scss_string, filename, is_sass, line_numbers)
-        elif scss_file is not None:
-            source_file = SourceFile.from_filename(scss_file, filename, is_sass, line_numbers)
+    @classmethod
+    def from_assetspec(cls, assetspec):
+        pname, basepath = resolve_asset_spec(assetspec)
+        parts = os.path.split(basepath)
+        return cls(pname=pname, parts=parts)
 
-        if source_file is not None:
-            # Clear the existing list of files
-            self.source_files = []
-            self.source_file_index = dict()
+    def relative_to(self, relpath):
+        return self.pname + ':' + \
+                os.path.join(*(self.parts + os.path.split(relpath)[:-1]))
 
-            self.source_files.append(source_file)
-            self.source_file_index[source_file.filename] = source_file
+    def __truediv__(self, other):
+        return AssetSpecOrigin(
+            pname=self.pname,
+            parts=self.parts + os.path.split(other),
+        )
 
-        # this will compile and manage rule: child objects inside of a node
-        self.parse_children()
+    def __str__(self):
+        return self.pname + ':' + os.path.join(*self.parts)
 
-        # this will manage @extends
-        self.apply_extends()
-
-        rules_by_file, css_files = self.parse_properties()
-
-        all_rules = 0
-        all_selectors = 0
-        exceeded = ''
-        final_cont = ''
-        files = len(css_files)
-        for source_file in css_files:
-            rules = rules_by_file[source_file]
-            fcont, total_rules, total_selectors = self.create_css(rules)
-            all_rules += total_rules
-            all_selectors += total_selectors
-            if files > 1 and self.scss_opts.get('debug_info', False):
-                if source_file.is_string:
-                    final_cont += "/* %s %s generated add up to a total of %s %s accumulated%s */\n" % (
-                        total_selectors,
-                        'selector' if total_selectors == 1 else 'selectors',
-                        all_selectors,
-                        'selector' if all_selectors == 1 else 'selectors',
-                        exceeded)
-                else:
-                    final_cont += "/* %s %s generated from '%s' add up to a total of %s %s accumulated%s */\n" % (
-                        total_selectors,
-                        'selector' if total_selectors == 1 else 'selectors',
-                        source_file.filename,
-                        all_selectors,
-                        'selector' if all_selectors == 1 else 'selectors',
-                        exceeded)
-            final_cont += fcont
-
-        return final_cont
-
-    def _load_file(self, rule, name):
-
-        name, ext = os.path.splitext(name)
-        if ext:
-            search_exts = [ext]
-        else:
-            search_exts = ['.scss', '.sass']
-
-        dirname, name = os.path.split(name)
-
-        seen_paths = []
+    def __repr__(self):
+        return '<{}: {}>'.format(
+            self.__class__,
+            str(self),
+        )
 
 
-        # search_path is an assetspec
-        # relpath is relative to the parent
-        # dirname is from the import statement
-        # name is the file itself
+class CoreFunctions(Extension):
+    name = 'core-functions'
+    namespace = CoreExtension.namespace
 
-        for search_path in self.search_paths:
-            for relpath in [rule.source_file.parent_dir]:
-            # for basepath in [rule.source_file.parent_dir]:
 
-                full_path = os.path.join(search_path, relpath, dirname)
+class CompassFunctions(Extension):
+    name = 'compass-functions'
+    namespace = CompassExtension.namespace
 
-                if full_path in seen_paths:
-                    continue
-                seen_paths.append(full_path)
 
-                for prefix, suffix in product(('_', ''), search_exts):
-                    full_filename = os.path.join(
-                        full_path, prefix + name + suffix)
+class OscadScssExtension(Extension):
+    name = 'oscad'
+    namespace = Namespace()
 
-                    pname, filename = resolve_asset_spec(full_filename)
-                    if resource_exists(pname, filename):
-                        content = resource_string(pname,
-                                                  filename).decode('utf-8')
-                        return (filename,
-                                os.path.join(relpath, dirname),
-                                content,
-                                seen_paths)
+    def __init__(self, asset_path):
+        self.asset_path = asset_path
 
-        return None, None, None, seen_paths
+    def handle_import(self, name, compilation, rule):
+        origin = rule.source_file.origin
+        relpath = rule.source_file.relpath
 
-    def _do_import(self, rule, scope, block):
-        """
-        Implements @import
-        Load and import mixins and functions and rules
-        """
-        # Protect against going to prohibited places...
-        if any(scary_token in block.argument for
-               scary_token in ('..', '://', 'url(')):
-            rule.properties.append((block.prop, None))
-            return
+        dirname, basename = os.path.split(name)
 
-        names = block.argument.split(',')
-        for name in names:
-            name = dequote(name.strip())
+        search_path = []
+        if isinstance(origin, AssetSpecOrigin):
+            search_path.append(origin.relative_to(relpath))
+        elif origin is not None:
+            raise ValueError("Origin is invalid")
+        search_path.extend(self.asset_path)
 
-            full_name, relpath, content, seen_paths = self._load_file(rule, name)
+        for asset_location, prefix, suffix in product(
+            search_path,
+            ('_', ''),
+            list(compilation.compiler.dynamic_extensions)
+        ):
 
-            if full_name is None:
-                load_paths_msg =\
-                    "\nLoad paths:\n\t%s" % "\n\t".join(seen_paths)
-                raise ScssNotFound(
-                    "File to import not found or unreadable: '%s' (%s)%s",
-                    name, rule.file_and_line, load_paths_msg)
+            filename = prefix + basename + suffix
+            full_filename = os.path.join(
+                asset_location, dirname, filename)
 
-            source_file = SourceFile(full_name,
-                                     content)
-            source_file.parent_dir = relpath
-
-            import_key = (name, source_file.parent_dir)
-            if rule.namespace.has_import(import_key):
-                # If already imported in this scope, skip
-                continue
-
-            _rule = SassRule(
-                source_file=source_file,
-                lineno=block.lineno,
-                import_key=import_key,
-                unparsed_contents=source_file.contents,
-
-                # rule
-                options=rule.options,
-                properties=rule.properties,
-                extends_selectors=rule.extends_selectors,
-                ancestry=rule.ancestry,
-                namespace=rule.namespace,
-            )
-            rule.namespace.add_import(import_key,
-                                      rule.import_key, rule.file_and_line)
-            self.manage_children(_rule, scope)
+            pname, asset_filename = resolve_asset_spec(full_filename)
+            if resource_exists(pname, asset_filename):
+                content = resource_string(pname,
+                                          asset_filename).decode('utf-8')
+                return SourceFile(
+                    origin=AssetSpecOrigin.from_assetspec(asset_location),
+                    relpath=PurePath(dirname, filename),
+                    contents=content,
+                    encoding='utf-8',
+                )
 
 
 def renderer_factory(info):
     return ScssRenderer(info, {})
+
+
+class OscadScssCompiler(object):
+    def __init__(self, asset_path):
+        self._compiler = Compiler(extensions=[OscadScssExtension(asset_path),
+                                              CoreFunctions,
+                                              CompassFunctions])
+
+    def compile_from_path(self, filename, icon_font_path):
+        return self._compiler.compile_string(
+            '$icon-font-path: "{0}";\n'
+            '@import "{1}"'.format(
+                icon_font_path,
+                filename))
 
 
 @implementer(ITemplateRenderer)
@@ -192,6 +137,8 @@ class ScssRenderer(object):
         self.cache = {}
         self.info = info
         self.options = options
+        asset_path = self.info.settings['scss.asset_path'].split()
+        self.compiler = OscadScssCompiler(asset_path)
 
     def __call__(self, scss, system):
         request = system.get('request')
@@ -206,21 +153,11 @@ class ScssRenderer(object):
         if css is not None:
             return css
 
-        asset_path = self.info.settings['scss.asset_path'].split()
-        parser = OscadScss(scss_opts=self.options,
-                           search_paths=asset_path)
-
         dirname, filename = os.path.split(scss)
-        try:
-            source_file = SourceFile('split',
-                                     '$icon-font-path: "{0}";\n'
-                                     '@import "{1}"'.format(
-                                         request.static_path('bootstrap/fonts/'),
-                                         filename))
-            source_file.parent_dir = dirname
-            css = parser.compile(source_file=source_file)
-        except SassError as e:
-            raise HTTPNotFound(e)
+        css = self.compiler.compile_from_path(
+                filename,
+                request.static_path('bootstrap/fonts/'),
+        )
 
         self.cache[request.url] = css
         return css
