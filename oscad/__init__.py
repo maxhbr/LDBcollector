@@ -1,7 +1,7 @@
 from collections import namedtuple
 
 from pyramid.config import Configurator
-from pyramid.session import SignedCookieSessionFactory
+from pyramid.session import SignedCookieSessionFactory, JSONSerializer
 from pyramid.settings import asbool
 
 import jinja2
@@ -117,7 +117,10 @@ def main(global_config, **settings):
     config.add_renderer('scss', ScssRenderer)
 
     config.set_locale_negotiator(locale_negotiator)
-    config.set_session_factory(SignedCookieSessionFactory(''))
+    config.set_session_factory(SignedCookieSessionFactory(
+        '',
+        httponly=True,
+        serializer=JSONSerializer))
     config.add_subscriber('oscad.subscribers.add_renderer_globals',
                           'pyramid.events.BeforeRender')
     config.add_subscriber('oscad.subscribers.jsonify',
