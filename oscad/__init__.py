@@ -8,7 +8,7 @@ import jinja2
 
 from .subscribers import locale_negotiator
 from .util import load_themes, htmlize
-from ._scss import renderer_factory
+from ._scss import ScssRenderer
 from . import version
 
 __version__ = version.__version__
@@ -114,7 +114,7 @@ def main(global_config, **settings):
     config.add_request_method(piwik, property=True)
     config.add_request_method(oslic_chapter_url)
 
-    config.add_renderer('scss', renderer_factory)
+    config.add_renderer('scss', ScssRenderer)
 
     config.set_locale_negotiator(locale_negotiator)
     config.set_session_factory(SignedCookieSessionFactory(''))

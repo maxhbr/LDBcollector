@@ -6,7 +6,7 @@ from pathlib import PurePath
 
 from zope.interface import implementer
 
-from pyramid.interfaces import ITemplateRenderer
+from pyramid.interfaces import IRendererFactory, IRenderer
 from pyramid.asset import resolve_asset_spec
 from pyramid.view import view_config
 
@@ -111,10 +111,6 @@ class OscadScssExtension(Extension):
                 )
 
 
-def renderer_factory(info):
-    return ScssRenderer(info, {})
-
-
 class OscadScssCompiler(object):
     def __init__(self, asset_path):
         self._compiler = Compiler(extensions=[OscadScssExtension(asset_path),
@@ -129,14 +125,13 @@ class OscadScssCompiler(object):
                 filename))
 
 
-@implementer(ITemplateRenderer)
+@implementer(IRendererFactory, IRenderer)
 class ScssRenderer(object):
     cache = None
 
-    def __init__(self, info, options):
+    def __init__(self, info):
         self.cache = {}
         self.info = info
-        self.options = options
         asset_path = self.info.settings['scss.asset_path'].split()
         self.compiler = OscadScssCompiler(asset_path)
 
