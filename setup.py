@@ -18,7 +18,7 @@ class PyTest(TestCommand):
         self.test_suite = True
 
     def run_tests(self):
-        #import here, cause outside the eggs aren't loaded
+        # import here, cause outside the eggs aren't loaded
         import pytest
         errno = pytest.main(self.test_args)
         exit(errno)
@@ -46,6 +46,9 @@ extras_require = {
     'dev': [
         'pyramid_debugtoolbar',
         'flake8',
+        'pytest',
+        'webtest',
+        'requests',
     ],
     'serve': [
         'waitress',
