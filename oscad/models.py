@@ -79,12 +79,12 @@ class OSUC(object):
 
     def get_lsuc(self, license):
 
-        l = data.licenses.get(license)
+        L = data.licenses.get(license)
 
-        if l is None:
+        if L is None:
             raise InvalidLicense(license)
 
-        name = l.get(self.number)
+        name = L.get(self.number)
         if name is None:
             return None
 
@@ -160,12 +160,12 @@ class LSUC(object):
         if store is None:
             return None
 
-        l = store['license']
+        L = store['license']
 
-        license_info = LicenseInfo(name=l['name'],
-                                   specification=l['specification'],
-                                   abbreviation=l['abbreviation'],
-                                   release=l['release'])
+        license_info = LicenseInfo(name=L['name'],
+                                   specification=L['specification'],
+                                   abbreviation=L['abbreviation'],
+                                   release=L['release'])
         o = store['oslic']
 
         oslic_info = OSLiCInfo(protection=o['protection'],

@@ -10,6 +10,7 @@ def load_data(name):
 def load_file(fileobj):
     return yaml.safe_load(fileobj)
 
+
 licenses = load_data('licenses')
 parameters = load_data('parameters')
 licensenames = load_data('licensenames')

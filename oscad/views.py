@@ -144,7 +144,7 @@ def components(request):
         return Locale(tag).get_display_name(request.locale_name)
 
     return {
-        'langs': [(l, display_name(l)) for l in avail if l != 'en']
+        'langs': [(L, display_name(L)) for L in avail if L != 'en']
     }
 
 
