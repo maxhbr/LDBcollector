@@ -16,7 +16,7 @@ ___
 
 #### OLG Karlsruhe, Urteil v. 13.11.2020, Az. 6 U 60/20
 
-Wordpress Theme: viraler Effekt der GPL-2.0 (automatische erstreckung der Lizenzierung) oder nur Lizenzverletzung und Wegfall der eingeräumten Rechte
+Wordpress Theme: viraler Effekt der GPL-2.0 (automatische Erstreckung der Lizenzierung) oder nur Lizenzverletzung und Wegfall der eingeräumten Rechte
 
 Link: https://www.junit.de/2020/wp-content/uploads/OLG-Karlsruhe-27012021.pdf
 
