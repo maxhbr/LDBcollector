@@ -39,6 +39,9 @@ jobs:
     #       ${{ runner.os }}-build-
     #       ${{ runner.os }}-
 
+    - run: |
+        sudo apt-get update
+        sudo apt-get install -y graphviz
     - run: stack build
     - run: stack test
     - run: ./run.sh
