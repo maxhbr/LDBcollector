@@ -1251,9 +1251,11 @@ FAQ</a>.</p></dd>
 -- containsFactOfClass (License fs) t = (\f -> getLicenseFactClassifier f == t) `any` fs
 containsFactOfType :: License -> Text -> Bool
 containsFactOfType (License fs) t = (\f -> case getLicenseFactClassifier f of
-                                        EmptyLFC         -> False
-                                        LFC bcs          -> bcs == t
-                                        LFCWithURL _ bcs -> bcs == t) `any` fs
+                                        EmptyLFC                     -> False
+                                        LFC bcs                      -> bcs == t
+                                        LFCWithURL _ bcs             -> bcs == t
+                                        LFCWithLicense _ bcs         -> bcs == t
+                                        LFCWithURLAndLicense _ _ bcs -> bcs == t) `any` fs
 
 getFactData :: License -> LicenseFactClassifier -> Maybe Value
 getFactData (License fs) classifier = case V.find (\f -> getLicenseFactClassifier f == classifier) fs of

@@ -1,11 +1,17 @@
-resolver: lts-14.21
+resolver: lts-17.2
 packages:
 - .
 
 nix:
-  packages: [graphviz]
+  packages: [graphviz, zlib.dev, zlib.out, curlFull]
 
 extra-deps:
-- partial-order-0.2.0.0@sha256:a0d6ddc9ebcfa965a5cbcff1d06d46a79d44ea5a0335c583c2a51bcb41334487,2275
+- pandoc-2.11.0.4@sha256:93cbbb6ecb898c04ed3563ffae425cdc8caa3587d30259947bbe4cf0123c1097,39390
+- citeproc-0.1.0.3@sha256:c73f601fad72d6d74312ae55895e16e2425d86467a16d9a6d1156c6c78d04b62,5395
+- commonmark-0.1.0.2@sha256:fbff7a2ade0ce7d699964a87f765e503a3a9e22542c05f0f02ba7aad64e38af4,3278
+- commonmark-extensions-0.2.0.1@sha256:647aa8dba5fd46984ddedc15c3693c9c4d9655503d42006576bd8f0dadf8cd39,3176
+- commonmark-pandoc-0.2.0.1@sha256:529c6e2c6cabf61558b66a28123eafc1d90d3324be29819f59f024e430312c1f,1105
+- doctemplates-0.8.2@sha256:91a7627e539782885119565f55339a8603513ff63eeed665434a2d1fb6bc7cba,3111
+# - partial-order-0.2.0.0@sha256:a0d6ddc9ebcfa965a5cbcff1d06d46a79d44ea5a0335c583c2a51bcb41334487,2275
 
 ghc-options: {"$locals": -ddump-to-file -ddump-hi}

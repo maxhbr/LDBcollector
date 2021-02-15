@@ -6,6 +6,7 @@ module Model.LicenseProperties.Rating
 import qualified Prelude as P
 import           MyPrelude
 
+import qualified Data.Text as T
 import qualified Text.Pandoc as P
 import qualified Text.Pandoc.Builder as P
 
@@ -21,16 +22,16 @@ ratingMoreGeneralThan widerRating (RUnknown rs)   = all (widerRating `ratingMore
 ratingMoreGeneralThan (RUnknown rs) smallerRating = any (`ratingMoreGeneralThan` smallerRating) rs
 ratingMoreGeneralThan widerRating smallerRating   = widerRating == smallerRating
 instance Show Rating where
-  show RGo                                       = "Go"
+  show RGo                                        = "Go"
   show RAttention                                 = "Attention"
-  show RStop                                     = "Stop"
-  show RNoGo                                     = "No-Go"
-  show (RUnknown [])                             = "Unknown, no option left"
+  show RStop                                      = "Stop"
+  show RNoGo                                      = "No-Go"
+  show (RUnknown [])                              = "Unknown, no option left"
   show (RUnknown [RGo, RAttention, RStop, RNoGo]) = "Unknown"
-  show (RUnknown possibilities)                  = "Unknown, probably " ++ intercalate " or " (map show possibilities)
+  show (RUnknown possibilities)                   = "Unknown, probably " ++ intercalate " or " (map show possibilities)
 instance ToJSON Rating
 instance Inlineable Rating where
-  toInline = P.text . show
+  toInline = P.text . T.pack . show
 
 -- to keep track of current possibilities
 data RatingState

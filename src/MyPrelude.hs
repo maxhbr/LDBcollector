@@ -2,7 +2,7 @@
 {-# LANGUAGE LambdaCase #-}
 module MyPrelude
     ( module X
-    , tShow
+    , tShow, pShow
     , mergeAeson, mergeAesonL
     , Inlineable (..), Blockable (..)
     , createDirectoryIfNotExists
@@ -30,8 +30,19 @@ import           System.Directory as X
 import           System.FilePath as X
 import           System.IO as X (hPutStrLn, stderr)
 
+import qualified Text.Pandoc as P
+import qualified Text.Pandoc.Builder as P
+import qualified Data.Typeable as Ty
+
 tShow :: (Show a) => a -> Text
 tShow = T.pack . show
+
+pShow :: (Show a, Ty.Typeable a) => a -> P.Inlines
+pShow a = P.text $ if Ty.typeOf a == Ty.typeOf (T.pack "" :: Text)
+                   then fromMaybe "failed to cast Text in pShow" (Ty.cast a :: Maybe Text)
+                   else T.pack $ if Ty.typeOf a == Ty.typeOf ("" :: String)
+                        then fromMaybe "failed to cast String in pShow" (Ty.cast a :: Maybe String)
+                        else show a
 
 -- copied from: https://stackoverflow.com/a/44409320
 -- answered by: Willem Van Onsem

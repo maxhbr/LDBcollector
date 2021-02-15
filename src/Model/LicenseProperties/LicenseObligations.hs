@@ -75,6 +75,6 @@ instance ToJSON LicenseObligations where
 instance Blockable LicenseObligations where
   toBlock (LicenseObligations rights conditions limitations) = P.simpleTable (map (P.para . P.text)
                                                                               ["Rights:", "Conditions:", "Limitations:"])
-                                                                             [[ P.bulletList (map (P.para . P.text . show) rights)
-                                                                              ,  P.bulletList (map (P.para . P.text . show) conditions)
-                                                                              , P.bulletList (map (P.para . P.text . show) limitations) ]]
+                                                                             [[ P.bulletList (map (P.para . pShow) rights)
+                                                                              ,  P.bulletList (map (P.para . pShow) conditions)
+                                                                              , P.bulletList (map (P.para . pShow) limitations) ]]

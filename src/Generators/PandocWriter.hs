@@ -17,6 +17,7 @@ import qualified Data.Map as M
 import           Data.List (stripPrefix)
 import qualified Data.Text as T
 import qualified Data.Text.IO as T
+import qualified Data.Text.Encoding as T
 import           Data.Aeson.Encode.Pretty (encodePretty)
 import           Data.ByteString.Lazy.Char8 (unpack)
 import qualified Data.Aeson.Lens as AL
@@ -47,21 +48,21 @@ renderDetails details = let
                          Nothing -> []
                          Just nc -> [["Is Non-Commercial", show nc]]
   in P.simpleTable [P.para (P.text "Key"), P.para (P.text "Value")]
-    (map (map (P.para . P.text))
+    (map (map (P.para . pShow))
       ([ ["Fullname", ldFullname details]
        , ["Shortname", ldShortname details]
        , ["Rating", show (ldRating details)]
        ] ++ copyleftRow ++ patentRow ++ nonCommercialRow))
     <> if not (null (ldOtherNames details))
        then P.para (P.strong (P.text "Other Names:"))
-            <> P.bulletList (map (P.para . P.code) (ldOtherNames details))
+            <> P.bulletList (map (P.para . P.code . T.pack) (ldOtherNames details))
        else mempty
 
 renderDescription :: Maybe (WithSource String) -> Blocks
 renderDescription Nothing = mempty
 renderDescription (Just desc) =
   P.header 2 (P.text "Description")
-  <> P.blockQuote (P.para (P.text (unpackWithSource desc)))
+  <> P.blockQuote (P.para (pShow (unpackWithSource desc)))
   <> case desc of
        WithSource lfc _ -> P.para (renderSource  lfc)
        WithoutSource _  -> mempty
@@ -70,9 +71,9 @@ renderJudgements :: [WithSource Judgement] -> Blocks
 renderJudgements jdgs = let
     fun' :: Judgement -> Inlines -> Blocks
     fun' j i = P.para (case j of
-                          PositiveJudgement d -> P.strong (P.text "↑") <> P.doubleQuoted (P.text d) <> i
-                          NeutralJudgement d  -> P.doubleQuoted (P.text d) <> i
-                          NegativeJudgement d -> P.strong (P.text "↓") <> P.doubleQuoted (P.text d) <> i )
+                          PositiveJudgement d -> P.strong (P.text "↑") <> P.doubleQuoted (pShow d) <> i
+                          NeutralJudgement d  -> P.doubleQuoted (pShow d) <> i
+                          NegativeJudgement d -> P.strong (P.text "↓") <> P.doubleQuoted (pShow d) <> i )
     fun old (WithoutSource j) = old ++ [fun' j mempty]
     fun old (WithSource k j)  = old ++ [fun' j (renderSource k)]
   in P.header 2 (P.text "Comments on (easy) usability")
@@ -81,7 +82,7 @@ renderJudgements jdgs = let
 renderComments :: [WithSource Text] -> Blocks
 renderComments cs = let
     fun' :: Text -> Inlines -> Blocks
-    fun' c i = P.para (P.doubleQuoted (P.text (T.unpack c)) <> i)
+    fun' c i = P.para (P.doubleQuoted (P.text c) <> i)
     fun old (WithoutSource c) = old ++ [fun' c mempty]
     fun old (WithSource k c)  = old ++ [fun' c (renderSource k)]
   in P.header 2 (P.text "General Comments")
@@ -101,14 +102,14 @@ renderURLs [] = mempty
 renderURLs urls = let
   in P.header 2 (P.text "URLs")
     <> P.bulletList (map (\case
-                             (Just desc, url) -> P.para (P.strong (P.text (desc ++ ":")) <> P.space <> P.text url)
-                             (Nothing, url)   -> P.para (P.text url)) urls)
+                             (Just desc, url) -> P.para (P.strong (pShow (desc ++ ":")) <> P.space <> P.text (T.pack url))
+                             (Nothing, url)   -> P.para (P.text (T.pack url))) urls)
 
 renderOpenLicenseDesc :: Maybe (WithSource [Text]) -> Blocks
 renderOpenLicenseDesc Nothing                 = mempty
 renderOpenLicenseDesc (Just openLicenseDescs) =
   P.header 2 (P.text "Description from open-license")
-  <> P.bulletList (map (P.codeBlock . T.unpack) (unpackWithSource openLicenseDescs))
+  <> P.bulletList (map P.codeBlock (unpackWithSource openLicenseDescs))
   <> case openLicenseDescs of
        WithSource lfc _ -> P.para (renderSource lfc)
        WithoutSource _  -> mempty
@@ -117,7 +118,7 @@ renderOSADLRule :: Maybe (WithSource Text) -> Blocks
 renderOSADLRule Nothing          = mempty
 renderOSADLRule (Just osadlRule) =
   P.header 2 (P.text "OSADL Rule")
-  <> P.codeBlock (T.unpack (unpackWithSource osadlRule))
+  <> P.codeBlock (unpackWithSource osadlRule)
   <> case osadlRule of
        WithSource lfc _ -> P.para (renderSource lfc)
        WithoutSource _  -> mempty
@@ -126,7 +127,7 @@ renderText :: Maybe (WithSource Text) -> Blocks
 renderText Nothing = mempty
 renderText (Just text) =
   P.header 2 (P.text "Text")
-  <> P.codeBlock (T.unpack (unpackWithSource text))
+  <> P.codeBlock (unpackWithSource text)
 
 
 renderRawData :: LicenseName -> License -> Blocks
@@ -137,17 +138,17 @@ renderRawData shortname lic@(License facts) = let
      <> P.header 3 (P.text "Facts")
      <> lfcs
      <> P.header 3 (P.text "Raw JSON")
-     <> P.codeBlock (unpack (encodePretty lic))
+     <> P.codeBlock ((T.decodeUtf8 . BL.toStrict . encodePretty) lic)
      <> P.header 3 (P.text "Dot Cluster Graph")
      <> P.para (let
                    dotPath = "../dot" </> shortname ++ ".svg"
-                 in P.link dotPath dotPath (P.text dotPath))
+                 in P.link (T.pack dotPath) (T.pack dotPath) (pShow dotPath))
 
 licenseToPandoc :: LicenseName -> Page -> Pandoc
 licenseToPandoc shortname page = let
     fullname = (ldFullname . pLicenseDetails) page
     headerLine = fullname ++ " (" ++ shortname ++ ")"
-  in P.doc $ P.header 1 (P.text headerLine)
+  in P.doc $ P.header 1 (pShow headerLine)
           <> renderDetails (pLicenseDetails page)
           <> renderDescription (pDescription page)
           <> renderJudgements (pJudgements page)
@@ -191,7 +192,7 @@ writeHtmlIndex index pages = let
     renderFun :: Page -> Blocks
     renderFun page = let
         shortname = (ldShortname . pLicenseDetails) page
-        link = P.link (shortname ++ ".html") shortname (P.text shortname)
+        link = P.link (T.pack (shortname ++ ".html")) (T.pack shortname) (pShow shortname)
       in P.para link
     list :: Blocks
     list = (P.bulletList . map renderFun) pages

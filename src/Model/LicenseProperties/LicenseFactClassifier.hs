@@ -44,9 +44,9 @@ extractLFLName (LFLWithText _ name) = name
 
 instance Inlineable LicenseFactLicense where
   toInline EmptyLFL              = mempty
-  toInline (LFL name)            = P.text name
-  toInline (LFLWithURL url name) = P.link url name (P.text name)
-  toInline (LFLWithText _ name)  = P.text name
+  toInline (LFL name)            = (P.text . T.pack) name
+  toInline (LFLWithURL url name) = P.link (T.pack url) (T.pack name) ((P.text . T.pack) name)
+  toInline (LFLWithText _ name)  = (P.text . T.pack) name
 
 {- #############################################################################
  - LicenseFactClassifier
@@ -80,7 +80,7 @@ instance ToJSONKey LicenseFactClassifier
 instance Hashable LicenseFactClassifier
 
 urlify :: URL -> String -> Inlines
-urlify url text = P.link url text (P.text text)
+urlify url text = P.link (T.pack url) (T.pack text) (pShow text)
 licensify :: Inlineable a =>  LicenseFactLicense -> a -> Inlines
 #if true
 licensify _ inl = toInline inl
@@ -90,7 +90,7 @@ licensify lic inl = toInline inl <> P.space <> P.text "(" <> toInline lic <> P.t
 
 instance Inlineable LicenseFactClassifier where
   toInline EmptyLFC                           = mempty
-  toInline lfc@(LFC _)                        = P.text (show lfc)
+  toInline lfc@(LFC _)                        = pShow lfc
   toInline lfc@(LFCWithURL url _)             = urlify url (show lfc)
   toInline (LFCWithLicense lic brc)           = licensify lic (LFC brc)
   toInline (LFCWithURLAndLicense url lic brc) = licensify lic (LFCWithURL url brc)
@@ -117,7 +117,7 @@ maybeAddLicense (Just lfl) (LFCWithURL url brc) = LFCWithURLAndLicense url lfl b
 class LicenseFactClassifiable a where
   getLicenseFactClassifier :: a -> LicenseFactClassifier
   matchesLicenseFactClassifier :: a -> LicenseFactClassifier -> Bool
-  matchesLicenseFactClassifier a lfl = (getLicenseFactClassifier a) == lfl
+  matchesLicenseFactClassifier a lfl = getLicenseFactClassifier a == lfl
 
 getLicenseFactLicense :: LicenseFactClassifiable a => a -> LicenseFactLicense
 getLicenseFactLicense = extractLFL . getLicenseFactClassifier
