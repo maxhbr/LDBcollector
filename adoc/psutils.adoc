@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://psutils+`
-* `+PS Utilities License+`
+* `scancode://psutils`
+* `PS Utilities License`
 
 === Comments on (easy) usability
 

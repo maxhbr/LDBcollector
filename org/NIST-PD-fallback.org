@@ -1,11 +1,10 @@
 * NIST Public Domain Notice with license fallback (NIST-PD-fallback)
-
-| Key              | Value                                             |
-|------------------+---------------------------------------------------|
-| Fullname         | NIST Public Domain Notice with license fallback   |
-| Shortname        | NIST-PD-fallback                                  |
-| Rating           | Unknown, probably Attention or Stop or No-Go      |
-| Classification   | NoCopyleft                                        |
+| Key            | Value                                           |
+|----------------+-------------------------------------------------|
+| Fullname       | NIST Public Domain Notice with license fallback |
+| Shortname      | NIST-PD-fallback                                |
+| Rating         | Unknown, probably Attention or Stop or No-Go    |
+| Classification | NoCopyleft                                      |
 
 *Other Names:*
 
@@ -27,7 +26,6 @@
 - https://github.com/usnistgov/fipy/blob/86aaa5c2ba2c6f1be19593c5986071cf6568cc34/LICENSE.rst
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software was developed by employees of the National Institute of Standards
   and Technology (NIST), an agency of the Federal Government and is being made
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -69,7 +66,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -193,5 +189,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NIST-PD-fallback.svg]]

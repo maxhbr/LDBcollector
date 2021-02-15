@@ -1,11 +1,10 @@
 * Giftware License (Giftware)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Giftware License                  |
-| Shortname        | Giftware                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Giftware License                |
+| Shortname      | Giftware                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -43,7 +42,6 @@
 - http://liballeg.org/license.html#allegro-4-the-giftware-license
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Allegro 4 (the giftware license)
 
@@ -59,7 +57,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -78,7 +75,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -308,5 +304,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Giftware.svg]]

@@ -1,12 +1,11 @@
 * The Unlicense (Unlicense)
-
-| Key               | Value           |
-|-------------------+-----------------|
-| Fullname          | The Unlicense   |
-| Shortname         | Unlicense       |
-| Rating            | Go              |
-| Classification    | NoCopyleft      |
-| Has Patent Hint   | False           |
+| Key             | Value         |
+|-----------------+---------------|
+| Fullname        | The Unlicense |
+| Shortname       | Unlicense     |
+| Rating          | Go            |
+| Classification  | NoCopyleft    |
+| Has Patent Hint | False         |
 
 *Other Names:*
 
@@ -56,17 +55,15 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:   | Limitations:   |
-|--------------------+---------------+----------------|
-| - private-use      |               | - liability    |
-|                    |               |                |
-| - commercial-use   |               | - warranty     |
-|                    |               |                |
-| - modifications    |               |                |
-|                    |               |                |
-| - distribution     |               |                |
-                                                     
+| Rights:          | Conditions: | Limitations: |
+|------------------+-------------+--------------|
+| - private-use    |             | - liability  |
+|                  |             |              |
+| - commercial-use |             | - warranty   |
+|                  |             |              |
+| - modifications  |             |              |
+|                  |             |              |
+| - distribution   |             |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.txt][choosealicense.com]]
@@ -104,7 +101,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This is free and unencumbered software released into the public domain.
 
@@ -135,7 +131,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -182,7 +177,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -755,5 +749,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Unlicense.svg]]

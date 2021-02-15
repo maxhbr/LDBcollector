@@ -1,11 +1,10 @@
 * AMD's plpa_map.c License (AMDPLPA)
-
-| Key              | Value                      |
-|------------------+----------------------------|
-| Fullname         | AMD's plpa_map.c License   |
-| Shortname        | AMDPLPA                    |
-| Rating           | Go                         |
-| Classification   | NoCopyleft                 |
+| Key            | Value                    |
+|----------------+--------------------------|
+| Fullname       | AMD's plpa_map.c License |
+| Shortname      | AMDPLPA                  |
+| Rating         | Go                       |
+| Classification | NoCopyleft               |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - *SPDX:* http://spdx.org/licenses/AMDPLPA.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in any form of this material and any product thereof including
   software in source or binary forms, along with any related documentation, with or
@@ -123,7 +121,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -142,7 +139,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -350,5 +346,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AMDPLPA.svg]]

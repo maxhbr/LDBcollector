@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://fsf-unlimited+`
-* `+FSF-Unlimited+`
+* `scancode://fsf-unlimited`
+* `FSF-Unlimited`
 
 === Comments on (easy) usability
 

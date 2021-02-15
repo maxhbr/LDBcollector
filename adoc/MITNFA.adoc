@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mit-no-false-attribs+`
-* `+MIT no false attribution License+`
+* `scancode://mit-no-false-attribs`
+* `MIT no false attribution License`
 
 === Comments on (easy) usability
 

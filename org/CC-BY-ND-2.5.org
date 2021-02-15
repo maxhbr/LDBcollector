@@ -1,10 +1,9 @@
 * Creative Commons Attribution No Derivatives 2.5 Generic (CC-BY-ND-2.5)
-
-| Key         | Value                                                     |
-|-------------+-----------------------------------------------------------|
-| Fullname    | Creative Commons Attribution No Derivatives 2.5 Generic   |
-| Shortname   | CC-BY-ND-2.5                                              |
-| Rating      | Unknown, probably Attention or Stop or No-Go              |
+| Key       | Value                                                   |
+|-----------+---------------------------------------------------------|
+| Fullname  | Creative Commons Attribution No Derivatives 2.5 Generic |
+| Shortname | CC-BY-ND-2.5                                            |
+| Rating    | Unknown, probably Attention or Stop or No-Go            |
 
 *Other Names:*
 
@@ -28,7 +27,6 @@
 - https://creativecommons.org/licenses/by-nd/2.5/legalcode
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Attribution-NoDerivs 2.5
 
@@ -90,7 +88,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -106,7 +103,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -240,5 +236,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-BY-ND-2.5.svg]]

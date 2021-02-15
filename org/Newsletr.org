@@ -1,11 +1,10 @@
 * Newsletr License (Newsletr)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Newsletr License                  |
-| Shortname        | Newsletr                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Newsletr License                |
+| Shortname      | Newsletr                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - *SPDX:* http://spdx.org/licenses/Newsletr.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:
 
@@ -51,7 +49,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -70,7 +67,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -293,5 +289,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Newsletr.svg]]

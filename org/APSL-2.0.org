@@ -1,12 +1,11 @@
 * Apple Public Source License 2.0 (APSL-2.0)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Apple Public Source License 2.0                |
-| Shortname         | APSL-2.0                                       |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | SaaSCopyleft                                   |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Apple Public Source License 2.0              |
+| Shortname       | APSL-2.0                                     |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | SaaSCopyleft                                 |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -73,7 +72,6 @@
 - https://spdx.org/licenses/APSL-2.0.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   APPLE PUBLIC SOURCE LICENSE
   Version 2.0 - August 6, 2003
@@ -180,7 +178,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -223,7 +220,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -679,5 +675,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APSL-2.0.svg]]

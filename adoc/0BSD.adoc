@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-zero+`
+* `scancode://bsd-zero`
 
 === Description
 

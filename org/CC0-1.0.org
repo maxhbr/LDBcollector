@@ -1,12 +1,11 @@
 * Creative Commons Zero v1.0 Universal (CC0-1.0)
-
-| Key               | Value                                  |
-|-------------------+----------------------------------------|
-| Fullname          | Creative Commons Zero v1.0 Universal   |
-| Shortname         | CC0-1.0                                |
-| Rating            | Go                                     |
-| Classification    | NoCopyleft                             |
-| Has Patent Hint   | False                                  |
+| Key             | Value                                |
+|-----------------+--------------------------------------|
+| Fullname        | Creative Commons Zero v1.0 Universal |
+| Shortname       | CC0-1.0                              |
+| Rating          | Go                                   |
+| Classification  | NoCopyleft                           |
+| Has Patent Hint | False                                |
 
 *Other Names:*
 
@@ -69,17 +68,15 @@
   (CDLA-Permissive-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:   | Limitations:      |
-|--------------------+---------------+-------------------|
-| - commercial-use   |               | - liability       |
-|                    |               |                   |
-| - modifications    |               | - trademark-use   |
-|                    |               |                   |
-| - distribution     |               | - patent-use      |
-|                    |               |                   |
-| - private-use      |               | - warranty        |
-                                                        
+| Rights:          | Conditions: | Limitations:    |
+|------------------+-------------+-----------------|
+| - commercial-use |             | - liability     |
+|                  |             |                 |
+| - modifications  |             | - trademark-use |
+|                  |             |                 |
+| - distribution   |             | - patent-use    |
+|                  |             |                 |
+| - private-use    |             | - warranty      |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc0-1.0.txt][choosealicense.com]]
@@ -115,7 +112,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Creative Commons Legal Code
 
@@ -243,7 +239,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -283,7 +278,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -300,8 +294,8 @@
           [
               "Hitachi open-license",
               [
-                  "http://creativecommons.org/publicdomain/zero/1.0/legalcodeãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
-                  "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+                  "http://creativecommons.org/publicdomain/zero/1.0/legalcodeこのサイトからLegalCodeを参照できる.",
+                  "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
               ]
           ]
       ],
@@ -450,22 +444,22 @@
               "copyleftkind": "NoCopyleft"
           },
           "Hitachi open-license": {
-              "summary": "http://creativecommons.org/publicdomain/zero/1.0/legalcodeãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
+              "summary": "http://creativecommons.org/publicdomain/zero/1.0/legalcodeこのサイトからLegalCodeを参照できる.",
               "notices": [
                   {
                       "content": "If any part of the waiver is found to be legally invalid under applicable law, the waiver will be preserved to the maximum extent permitted, taking into account copyright and related rights. To the extent so determined, to the extent that the waiver has been made, the copyright and related rights to the work shall be enforced on a worldwide basis, for the maximum period of time provided by applicable law and treaty, including future extensions, in present and future media and reproductions, and for all purposes, including commercial and advertising purposes, royalties A free, non-exclusive, irrevocable, unconditional, unconditional license that cannot be assigned or sublicensed.",
-                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
                   },
                   {
                       "content": "To the fullest extent not in violation of applicable law, you expressly and irrevocably and unconditionally waive any and all copyrights and related rights, claims and demands, known or unknown, including those that may arise in the future, to the Copyrighted Material. This waiver is made on a worldwide basis and for the maximum period specified in applicable law and in the Treaty, including any future extensions, in present and future media and copies, and for all purposes, including commercial and advertising purposes.",
-                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
                   },
                   {
                       "content": "I understand and accept that Creative Commons is not a party to this license and has no obligations to fulfill with respect to this license or the use of the Work."
                   },
                   {
                       "content": "No liability is assumed for the existence of any third party rights that may apply to the work or its use, including, without limitation, copyright and related rights.",
-                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+                      "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
                   },
                   {
                       "content": "the work is provided \"as-is\" and makes no representations or warranties, express, implied, statutory or otherwise, regarding the work. The warranties are the fullest extent permitted under applicable law, including, but not limited to, the warranties of title, commercial applicability, fitness for a particular purpose, non-infringement, defects, including latent ones, accuracy, and the absence of errors, whether discoverable or not.",
@@ -516,8 +510,8 @@
                       [
                           "Hitachi open-license",
                           [
-                              "http://creativecommons.org/publicdomain/zero/1.0/legalcodeãã®ãµã¤ãããLegalCodeãåç§ã§ãã.",
-                              "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+                              "http://creativecommons.org/publicdomain/zero/1.0/legalcodeこのサイトからLegalCodeを参照できる.",
+                              "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
                           ]
                       ]
                   ],
@@ -529,7 +523,7 @@
                       ]
                   ]
               },
-              "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; â similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
+              "description": "The copyrights and related rights applicable to the works protected under this license are: - The right to reproduce, modify, distribute, perform, exhibit, transmit, and translate the work; - Moral rights retained by the original author or performer; - Publicity rights attached to the likenesses or likenesses of persons depicted in the work; and The right to privacy; - The right to protect against unfair competition in respect of the work in accordance with this licence; - The right to protect the extraction, dissemination, use and re-use of data contained in the work; - A Directive of the European Parliament/Council of Ministers on the legal protection of databases, including revised and successor versions (EC Database Directive) and national systems; ● similar rights under applicable laws, treaties and national legislation, other than the above, including, but not limited to, database rights under the"
           },
           "BlueOak License List": {
               "BlueOakRating": "Bronze",
@@ -818,5 +812,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC0-1.0.svg]]

@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+Frameworx License 1.0+`
-* `+Frameworx License, Version 1.0+`
-* `+scancode://frameworx-1.0+`
-* `+Frameworx 1.0+`
+* `Frameworx License 1.0`
+* `Frameworx License, Version 1.0`
+* `scancode://frameworx-1.0`
+* `Frameworx 1.0`
 
 === Comments on (easy) usability
 

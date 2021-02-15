@@ -12,12 +12,12 @@
 
 *Other Names:*
 
-* `+Common Public License, Version 1.0+`
-* `+CPL+`
-* `+License :: OSI Approved :: Common Public License+`
-* `+Common Public License Version 1.0+`
-* `+scancode://cpl-1.0+`
-* `+CPL 1.0+`
+* `Common Public License, Version 1.0`
+* `CPL`
+* `License :: OSI Approved :: Common Public License`
+* `Common Public License Version 1.0`
+* `scancode://cpl-1.0`
+* `CPL 1.0`
 
 === Comments on (easy) usability
 

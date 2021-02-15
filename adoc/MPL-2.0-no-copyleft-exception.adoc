@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mpl-2.0-no-copyleft-exception+`
-* `+MPL 2.0 with no copyleft exception+`
+* `scancode://mpl-2.0-no-copyleft-exception`
+* `MPL 2.0 with no copyleft exception`
 
 === Comments on (easy) usability
 

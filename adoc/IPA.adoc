@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+IPA Font License Agreement v1.0+`
-* `+scancode://ipa-font+`
-* `+IPA Font License 1.0+`
+* `IPA Font License Agreement v1.0`
+* `scancode://ipa-font`
+* `IPA Font License 1.0`
 
 === Comments on (easy) usability
 

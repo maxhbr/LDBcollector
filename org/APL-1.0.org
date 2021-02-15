@@ -1,11 +1,10 @@
 * Adaptive Public License 1.0 (APL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Adaptive Public License 1.0                    |
-| Shortname        | APL-1.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Adaptive Public License 1.0                  |
+| Shortname      | APL-1.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - http://www.opensource.org/licenses/APL-1.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   ADAPTIVE PUBLIC LICENSE
   Version 1.0
@@ -390,7 +388,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -413,7 +410,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -685,5 +681,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APL-1.0.svg]]

@@ -1,11 +1,10 @@
 * Blue Oak Model License 1.0.0 (BlueOak-1.0.0)
-
-| Key              | Value                          |
-|------------------+--------------------------------|
-| Fullname         | Blue Oak Model License 1.0.0   |
-| Shortname        | BlueOak-1.0.0                  |
-| Rating           | Go                             |
-| Classification   | NoCopyleft                     |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | Blue Oak Model License 1.0.0 |
+| Shortname      | BlueOak-1.0.0                |
+| Rating         | Go                           |
+| Classification | NoCopyleft                   |
 
 *Other Names:*
 
@@ -26,7 +25,6 @@
 - *SPDX:* http://spdx.org/licenses/BlueOak-1.0.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   # Blue Oak Model License
 
@@ -88,7 +86,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -103,7 +100,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -272,5 +268,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BlueOak-1.0.0.svg]]

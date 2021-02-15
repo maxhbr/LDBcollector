@@ -1,11 +1,10 @@
 * Attribution Assurance License (AAL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Attribution Assurance License     |
-| Shortname        | AAL                               |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Attribution Assurance License   |
+| Shortname      | AAL                             |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -52,7 +51,6 @@
 - http://www.opensource.org/licenses/attribution
 
 ** Text
-
 #+BEGIN_EXAMPLE
   PROFESSIONAL IDENTIFICATION * URL
   "PROMOTIONAL SLOGAN FOR AUTHOR'S PROFESSIONAL PRACTICE"
@@ -106,7 +104,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -135,7 +132,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -499,5 +495,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AAL.svg]]

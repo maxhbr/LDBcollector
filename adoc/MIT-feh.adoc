@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mit-ack+`
-* `+MIT Acknowledgment License+`
+* `scancode://mit-ack`
+* `MIT Acknowledgment License`
 
 === Comments on (easy) usability
 

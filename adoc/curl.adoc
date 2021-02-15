@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://curl+`
+* `scancode://curl`
 
 === Comments on (easy) usability
 

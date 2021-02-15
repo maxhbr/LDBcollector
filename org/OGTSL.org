@@ -1,11 +1,10 @@
 * Open Group Test Suite License (OGTSL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Open Group Test Suite License     |
-| Shortname        | OGTSL                             |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Open Group Test Suite License   |
+| Shortname      | OGTSL                           |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -53,7 +52,6 @@
 - http://www.opensource.org/licenses/OGTSL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Open Group Test Suite License
 
@@ -112,7 +110,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -141,7 +138,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -503,5 +499,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OGTSL.svg]]

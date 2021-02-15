@@ -1,11 +1,10 @@
 * Abstyles License (Abstyles)
-
-| Key              | Value              |
-|------------------+--------------------|
-| Fullname         | Abstyles License   |
-| Shortname        | Abstyles           |
-| Rating           | Unknown            |
-| Classification   | NoCopyleft         |
+| Key            | Value            |
+|----------------+------------------|
+| Fullname       | Abstyles License |
+| Shortname      | Abstyles         |
+| Rating         | Unknown          |
+| Classification | NoCopyleft       |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - *SPDX:* http://spdx.org/licenses/Abstyles.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This program is distributed WITHOUT ANY WARRANTY, express or implied.  
 
@@ -49,7 +47,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -65,7 +62,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -237,5 +233,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Abstyles.svg]]

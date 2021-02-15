@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bahyph+`
+* `scancode://bahyph`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * FSF Unlimited License (FSFUL)
-
-| Key              | Value                   |
-|------------------+-------------------------|
-| Fullname         | FSF Unlimited License   |
-| Shortname        | FSFUL                   |
-| Rating           | Unknown                 |
-| Classification   | NoCopyleft              |
+| Key            | Value                 |
+|----------------+-----------------------|
+| Fullname       | FSF Unlimited License |
+| Shortname      | FSFUL                 |
+| Rating         | Unknown               |
+| Classification | NoCopyleft            |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This configure script is free software; the Free Software Foundation gives
   unlimited permission to copy, distribute and modify it.
@@ -40,7 +38,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -56,7 +53,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -213,5 +209,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/FSFUL.svg]]

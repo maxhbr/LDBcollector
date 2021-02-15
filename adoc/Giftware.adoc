@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://allegro-4+`
-* `+Allegro 4 License+`
+* `scancode://allegro-4`
+* `Allegro 4 License`
 
 === Comments on (easy) usability
 

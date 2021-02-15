@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://scea-1.0+`
-* `+SCEA Shared Source License 1.0+`
+* `scancode://scea-1.0`
+* `SCEA Shared Source License 1.0`
 
 === Comments on (easy) usability
 

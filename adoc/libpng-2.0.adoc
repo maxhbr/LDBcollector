@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://libpng-v2+`
-* `+LIbpng License v2+`
+* `scancode://libpng-v2`
+* `LIbpng License v2`
 
 === Comments on (easy) usability
 

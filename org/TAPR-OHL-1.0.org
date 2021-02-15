@@ -1,11 +1,10 @@
 * TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | TAPR Open Hardware License v1.0                |
-| Shortname        | TAPR-OHL-1.0                                   |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | TAPR Open Hardware License v1.0              |
+| Shortname      | TAPR-OHL-1.0                                 |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -22,7 +21,6 @@
 - *SPDX:* http://spdx.org/licenses/TAPR-OHL-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The TAPR Open Hardware License Version 1.0 (May 25, 2007) Copyright 2007 TAPR - http://www.tapr.org/OHL
 
@@ -164,7 +162,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -176,7 +173,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -296,5 +292,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TAPR-OHL-1.0.svg]]

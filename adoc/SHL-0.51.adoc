@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://shl-0.51+`
+* `scancode://shl-0.51`
 
 === Comments on (easy) usability
 

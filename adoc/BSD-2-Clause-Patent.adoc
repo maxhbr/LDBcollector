@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://bsd-plus-patent+`
-* `+BSD-2-Clause Plus Patent+`
+* `scancode://bsd-plus-patent`
+* `BSD-2-Clause Plus Patent`
 
 === Comments on (easy) usability
 

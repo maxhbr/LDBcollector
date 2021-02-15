@@ -1,11 +1,10 @@
 * SNIA Public License 1.1 (SNIA)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | SNIA Public License 1.1                        |
-| Shortname        | SNIA                                           |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | SNIA Public License 1.1                      |
+| Shortname      | SNIA                                         |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -54,7 +53,6 @@
 - *SPDX:* http://spdx.org/licenses/SNIA.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   STORAGE NETWORKING INDUSTRY ASSOCIATION
   PUBLIC LICENSE
@@ -183,7 +181,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -199,7 +196,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -371,5 +367,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/SNIA.svg]]

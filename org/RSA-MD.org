@@ -1,11 +1,10 @@
 * RSA Message-Digest License (RSA-MD)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | RSA Message-Digest License        |
-| Shortname        | RSA-MD                            |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | RSA Message-Digest License      |
+| Shortname      | RSA-MD                          |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - *SPDX:* http://spdx.org/licenses/RSA-MD.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   License to copy and use this software is granted provided that it
   is identified as the "RSA Data Security, Inc. MD5 Message-Digest
@@ -56,7 +54,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -71,7 +68,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -246,5 +242,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/RSA-MD.svg]]

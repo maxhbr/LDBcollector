@@ -1,11 +1,10 @@
 * BSD Source Code Attribution (BSD-Source-Code)
-
-| Key              | Value                         |
-|------------------+-------------------------------|
-| Fullname         | BSD Source Code Attribution   |
-| Shortname        | BSD-Source-Code               |
-| Rating           | Go                            |
-| Classification   | NoCopyleft                    |
+| Key            | Value                       |
+|----------------+-----------------------------|
+| Fullname       | BSD Source Code Attribution |
+| Shortname      | BSD-Source-Code             |
+| Rating         | Go                          |
+| Classification | NoCopyleft                  |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
@@ -60,7 +58,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -75,7 +72,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -242,5 +238,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-Source-Code.svg]]

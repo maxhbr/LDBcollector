@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://latex2e+`
+* `scancode://latex2e`
 
 === Comments on (easy) usability
 

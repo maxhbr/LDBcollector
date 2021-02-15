@@ -1,11 +1,10 @@
 * SSH short notice (SSH-short)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | SSH short notice                               |
-| Shortname        | SSH-short                                      |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | SSH short notice                             |
+| Shortname      | SSH-short                                    |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -28,7 +27,6 @@
 - https://joinup.ec.europa.eu/svn/lesoll/trunk/italc/lib/src/dsa_key.cpp
 
 ** Text
-
 #+BEGIN_EXAMPLE
   As far as I am concerned, the code I have written for this software
   can be used freely for any purpose.  Any derived versions of this
@@ -40,7 +38,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -52,7 +49,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -193,5 +189,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/SSH-short.svg]]

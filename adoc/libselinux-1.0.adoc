@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://selinux-nsa-declaration-1.0+`
-* `+selinux-nsa-declaration-1.0+`
+* `scancode://selinux-nsa-declaration-1.0`
+* `selinux-nsa-declaration-1.0`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * Vim License (Vim)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Vim License                                    |
-| Shortname        | Vim                                            |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Vim License                                  |
+| Shortname      | Vim                                          |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -34,17 +33,15 @@
 ** General Comments
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:   |
-|--------------------+-----------------------+----------------|
-| - commercial-use   | - include-copyright   |                |
-|                    |                       |                |
-| - modifications    | - document-changes    |                |
-|                    |                       |                |
-| - distribution     | - disclose-source     |                |
-|                    |                       |                |
-| - private-use      | - same-license        |                |
-                                                             
+| Rights:          | Conditions:         | Limitations: |
+|------------------+---------------------+--------------|
+| - commercial-use | - include-copyright |              |
+|                  |                     |              |
+| - modifications  | - document-changes  |              |
+|                  |                     |              |
+| - distribution   | - disclose-source   |              |
+|                  |                     |              |
+| - private-use    | - same-license      |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt][choosealicense.com]]
@@ -59,7 +56,6 @@
 - http://www.vim.org/docs.php
 
 ** Text
-
 #+BEGIN_EXAMPLE
   VIM LICENSE
 
@@ -168,7 +164,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -191,7 +186,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -488,5 +482,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Vim.svg]]

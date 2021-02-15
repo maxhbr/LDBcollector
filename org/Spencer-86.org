@@ -1,11 +1,10 @@
 * Spencer License 86 (Spencer-86)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Spencer License 86                |
-| Shortname        | Spencer-86                        |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Spencer License 86              |
+| Shortname      | Spencer-86                      |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - *SPDX:* http://spdx.org/licenses/Spencer-86.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Not derived from licensed software.
 
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -72,7 +69,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -240,5 +236,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Spencer-86.svg]]

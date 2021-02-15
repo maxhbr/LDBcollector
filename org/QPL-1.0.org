@@ -1,12 +1,11 @@
 * Q Public License 1.0 (QPL-1.0)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Q Public License 1.0                           |
-| Shortname         | QPL-1.0                                        |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | StrongCopyleft                                 |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Q Public License 1.0                         |
+| Shortname       | QPL-1.0                                      |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | StrongCopyleft                               |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -117,7 +116,6 @@
     Conditions:
     AND
       OBLIGATION: Include the copyright notice contained in the software
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -128,7 +126,6 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -140,7 +137,6 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
       OBLIGATION: Apply this license to the entire modification
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -152,13 +148,11 @@
       OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
       OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
       OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Q Public License Version 1.0
 
@@ -212,7 +206,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -254,7 +247,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -591,7 +583,7 @@
                               "description": "Redistribute the obtained executable as-is"
                           }
                       ],
-                      "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
+                      "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -601,7 +593,7 @@
                               {
                                   "name": "Enables the recipient to receive the source code corresponding to the software.",
                                   "type": "OBLIGATION",
-                                  "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                  "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                               }
                           ]
                       }
@@ -612,7 +604,7 @@
                               "name": "Distribute the executable generated from the modified source code"
                           }
                       ],
-                      "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
+                      "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -622,7 +614,7 @@
                               {
                                   "name": "Enables the recipient to receive the source code corresponding to the software.",
                                   "type": "OBLIGATION",
-                                  "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                  "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                               },
                               {
                                   "name": "Apply this license to the entire modification",
@@ -898,5 +890,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/QPL-1.0.svg]]

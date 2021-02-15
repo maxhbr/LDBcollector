@@ -1,11 +1,10 @@
 * Educational Community License v2.0 (ECL-2.0)
-
-| Key              | Value                                |
-|------------------+--------------------------------------|
-| Fullname         | Educational Community License v2.0   |
-| Shortname        | ECL-2.0                              |
-| Rating           | Go                                   |
-| Classification   | NoCopyleft                           |
+| Key            | Value                              |
+|----------------+------------------------------------|
+| Fullname       | Educational Community License v2.0 |
+| Shortname      | ECL-2.0                            |
+| Rating         | Go                                 |
+| Classification | NoCopyleft                         |
 
 *Other Names:*
 
@@ -58,19 +57,17 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:      |
-|--------------------+-----------------------+-------------------|
-| - commercial-use   | - include-copyright   | - trademark-use   |
-|                    |                       |                   |
-| - modifications    | - document-changes    | - liability       |
-|                    |                       |                   |
-| - distribution     |                       | - warranty        |
-|                    |                       |                   |
-| - patent-use       |                       |                   |
-|                    |                       |                   |
-| - private-use      |                       |                   |
-                                                                
+| Rights:          | Conditions:         | Limitations:    |
+|------------------+---------------------+-----------------|
+| - commercial-use | - include-copyright | - trademark-use |
+|                  |                     |                 |
+| - modifications  | - document-changes  | - liability     |
+|                  |                     |                 |
+| - distribution   |                     | - warranty      |
+|                  |                     |                 |
+| - patent-use     |                     |                 |
+|                  |                     |                 |
+| - private-use    |                     |                 |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt][choosealicense.com]]
@@ -89,7 +86,6 @@
 - *SPDX:* http://spdx.org/licenses/ECL-2.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
                Educational Community License
                   Version 2.0, April 2007
@@ -299,7 +295,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -339,7 +334,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -869,5 +863,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ECL-2.0.svg]]

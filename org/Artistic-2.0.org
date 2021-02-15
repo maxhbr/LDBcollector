@@ -1,12 +1,11 @@
 * Artistic License 2.0 (Artistic-2.0)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Artistic License 2.0                           |
-| Shortname         | Artistic-2.0                                   |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | WeakCopyleft                                   |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Artistic License 2.0                         |
+| Shortname       | Artistic-2.0                                 |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | WeakCopyleft                                 |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -74,19 +73,17 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:      |
-|--------------------+-----------------------+-------------------|
-| - commercial-use   | - include-copyright   | - liability       |
-|                    |                       |                   |
-| - modifications    | - document-changes    | - trademark-use   |
-|                    |                       |                   |
-| - distribution     |                       | - warranty        |
-|                    |                       |                   |
-| - patent-use       |                       |                   |
-|                    |                       |                   |
-| - private-use      |                       |                   |
-                                                                
+| Rights:          | Conditions:         | Limitations:    |
+|------------------+---------------------+-----------------|
+| - commercial-use | - include-copyright | - liability     |
+|                  |                     |                 |
+| - modifications  | - document-changes  | - trademark-use |
+|                  |                     |                 |
+| - distribution   |                     | - warranty      |
+|                  |                     |                 |
+| - patent-use     |                     |                 |
+|                  |                     |                 |
+| - private-use    |                     |                 |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt][choosealicense.com]]
@@ -139,7 +136,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -159,7 +155,6 @@
           REQUISITE: Change the name of the software
         RESTRICTION: Allow the recipient of such software to make the corresponding source code for such software available to others under one of the following licenses Such license means this license, or the license terms applicable to such software, which requires the licensee to permit the licensee to copy, modify, and redistribute the software or its derivative works under the terms of this license or the license terms applicable to such software, and to make the source code of such software or its derivative works freely available for use at no charge, but without a fee for distribution A license that may impose a
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -172,7 +167,6 @@
     AND
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -188,7 +182,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Copyright (c) 2000-2006, The Perl Foundation.
 
@@ -268,7 +261,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -326,7 +318,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1312,5 +1303,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Artistic-2.0.svg]]

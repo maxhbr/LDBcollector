@@ -516,12 +516,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote software and derivative products"
                             }
                         ],
-                        "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees."
+                        "description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees."
                     }
                 ],
                 "_implications": {

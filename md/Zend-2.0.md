@@ -410,12 +410,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"Zend\", when using the name \"Zend Engine\". license@zend.comã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: \"Zend\", when using the name \"Zend Engine\". license@zend.comに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "\"Zend\", when using the name \"Zend Engine\". license@zend.comã«é£çµ¡ãã."
+                        "description": "\"Zend\", when using the name \"Zend Engine\". license@zend.comに連絡する."
                     },
                     {
                         "actions": [

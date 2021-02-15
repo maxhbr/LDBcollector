@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://copyleft-next-0.3.0+`
+* `scancode://copyleft-next-0.3.0`
 
 === Comments on (easy) usability
 

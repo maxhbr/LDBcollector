@@ -1,11 +1,10 @@
 * CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
-
-| Key              | Value                                               |
-|------------------+-----------------------------------------------------|
-| Fullname         | CERN Open Hardware Licence Version 2 - Permissive   |
-| Shortname        | CERN-OHL-P-2.0                                      |
-| Rating           | Unknown, probably Attention or Stop or No-Go        |
-| Classification   | NoCopyleft                                          |
+| Key            | Value                                             |
+|----------------+---------------------------------------------------|
+| Fullname       | CERN Open Hardware Licence Version 2 - Permissive |
+| Shortname      | CERN-OHL-P-2.0                                    |
+| Rating         | Unknown, probably Attention or Stop or No-Go      |
+| Classification | NoCopyleft                                        |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - https://ohwr.org/project/cernohl/wikis/uploads/0be6f561d2b4a686c5765c74be32daf9/CERN_OHL_rationale.pdf
 
 ** Text
-
 #+BEGIN_EXAMPLE
   CERN Open Hardware Licence Version 2 - Permissive
 
@@ -237,7 +235,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -249,7 +246,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -400,5 +396,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CERN-OHL-P-2.0.svg]]

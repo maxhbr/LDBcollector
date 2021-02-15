@@ -1,12 +1,11 @@
 * Mozilla Public License 2.0 (MPL-2.0)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Mozilla Public License 2.0                     |
-| Shortname         | MPL-2.0                                        |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | WeakCopyleft                                   |
-| Has Patent Hint   | True                                           |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Mozilla Public License 2.0                   |
+| Shortname       | MPL-2.0                                      |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | WeakCopyleft                                 |
+| Has Patent Hint | True                                         |
 
 *Other Names:*
 
@@ -84,19 +83,17 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:            | Limitations:      |
-|--------------------+------------------------+-------------------|
-| - commercial-use   | - disclose-source      | - liability       |
-|                    |                        |                   |
-| - modifications    | - include-copyright    | - trademark-use   |
-|                    |                        |                   |
-| - distribution     | - same-license--file   | - warranty        |
-|                    |                        |                   |
-| - patent-use       |                        |                   |
-|                    |                        |                   |
-| - private-use      |                        |                   |
-                                                                 
+| Rights:          | Conditions:          | Limitations:    |
+|------------------+----------------------+-----------------|
+| - commercial-use | - disclose-source    | - liability     |
+|                  |                      |                 |
+| - modifications  | - include-copyright  | - trademark-use |
+|                  |                      |                 |
+| - distribution   | - same-license--file | - warranty      |
+|                  |                      |                 |
+| - patent-use     |                      |                 |
+|                  |                      |                 |
+| - private-use    |                      |                 |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mpl-2.0.txt][choosealicense.com]]
@@ -135,7 +132,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -153,7 +149,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -171,7 +166,6 @@
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -196,13 +190,11 @@
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
       RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
       OBLIGATION: Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Mozilla Public License Version 2.0
   ==================================
@@ -582,7 +574,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -634,7 +625,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1626,5 +1616,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MPL-2.0.svg]]

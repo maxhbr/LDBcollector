@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+Apache (v1.0)+`
-* `+Apache Software License 1.0+`
-* `+ASL 1.0+`
-* `+Apache Software License, Version 1.0+`
-* `+scancode://apache-1.0+`
-* `+Apache 1.0+`
+* `Apache (v1.0)`
+* `Apache Software License 1.0`
+* `ASL 1.0`
+* `Apache Software License, Version 1.0`
+* `scancode://apache-1.0`
+* `Apache 1.0`
 
 === Comments on (easy) usability
 
@@ -495,12 +495,12 @@ repository] is generated)
                             "name": "Use the name to endorse and promote derived products"
                         }
                     ],
-                    "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                    "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                     "conditions": {
                         "name": "Get special permission in writing.",
                         "type": "REQUISITE"
                     },
-                    "description": "\"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã."
+                    "description": "\"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgに連絡する."
                 },
                 {
                     "actions": [
@@ -508,12 +508,12 @@ repository] is generated)
                             "name": "Use the name of the product or part of the name of the product from which it was derived"
                         }
                     ],
-                    "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                    "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgに連絡する.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                     "conditions": {
                         "name": "Get special permission in writing.",
                         "type": "REQUISITE"
                     },
-                    "description": "\"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã."
+                    "description": "\"Apache\", if you want to use the name \"Apache\". apache@apache.orgに連絡する."
                 }
             ],
             "_implications": {

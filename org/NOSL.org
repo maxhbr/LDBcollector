@@ -1,11 +1,10 @@
 * Netizen Open Source License (NOSL)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Netizen Open Source License                    |
-| Shortname        | NOSL                                           |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Netizen Open Source License                  |
+| Shortname      | NOSL                                         |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - http://bits.netizen.com.au/licenses/NOSL/nosl.txt
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Netizen Open Source License (NOSL) is a license based on the Mozilla Public License (MPL).
 
@@ -523,7 +521,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -543,7 +540,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -720,5 +716,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NOSL.svg]]

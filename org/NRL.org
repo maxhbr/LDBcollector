@@ -1,11 +1,10 @@
 * NRL License (NRL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | NRL License                       |
-| Shortname        | NRL                               |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | NRL License                     |
+| Shortname      | NRL                             |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/NRL.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   NRL License
   COPYRIGHT NOTICE
@@ -67,7 +65,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -86,7 +83,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -293,5 +289,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NRL.svg]]

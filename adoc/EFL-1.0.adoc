@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+The Eiffel Forum License, Version 1+`
-* `+scancode://efl-1.0+`
-* `+EFL 1.0+`
+* `The Eiffel Forum License, Version 1`
+* `scancode://efl-1.0`
+* `EFL 1.0`
 
 === Comments on (easy) usability
 

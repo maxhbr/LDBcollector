@@ -1,11 +1,10 @@
 * GNU General Public License v2.0 only (GPL-2.0-only)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GNU General Public License v2.0 only           |
-| Shortname        | GPL-2.0-only                                   |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GNU General Public License v2.0 only         |
+| Shortname      | GPL-2.0-only                                 |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -101,17 +100,15 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:   |
-|--------------------+-----------------------+----------------|
-| - commercial-use   | - include-copyright   | - liability    |
-|                    |                       |                |
-| - modifications    | - document-changes    | - warranty     |
-|                    |                       |                |
-| - distribution     | - disclose-source     |                |
-|                    |                       |                |
-| - private-use      | - same-license        |                |
-                                                             
+| Rights:          | Conditions:         | Limitations: |
+|------------------+---------------------+--------------|
+| - commercial-use | - include-copyright | - liability  |
+|                  |                     |              |
+| - modifications  | - document-changes  | - warranty   |
+|                  |                     |              |
+| - distribution   | - disclose-source   |              |
+|                  |                     |              |
+| - private-use    | - same-license      |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-2.0.txt][choosealicense.com]]
@@ -172,7 +169,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -185,7 +181,6 @@
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -202,7 +197,6 @@
       OBLIGATION: License the software to third parties free of charge in accordance with the terms of such license.
       OBLIGATION: If the software, or a part of it, cannot be explicitly treated as independent from the work to which the license other than the license in question applies, or is not treated as such, the license in question will be applied to the entire work and licensed to a third party free of charge. (Often, it is a condition spoken of in the context of static and dynamic linkage of source code, object code, and executables)
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -220,7 +214,6 @@
         OBLIGATION: Attach the source code corresponding to the software in question.
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
         OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -243,13 +236,11 @@
         OBLIGATION: Attach the source code corresponding to the software in question.
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
         OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
                       GNU GENERAL PUBLIC LICENSE
                          Version 2, June 1991
@@ -595,7 +586,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -656,7 +646,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1543,7 +1532,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Notice of modifications",
-                      "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                      "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                       "termType": "condition"
                   },
                   {
@@ -1805,5 +1794,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GPL-2.0-only.svg]]

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mit-export-control+`
-* `+MIT with Export Control+`
+* `scancode://mit-export-control`
+* `MIT with Export Control`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * libpng License (Libpng)
-
-| Key              | Value            |
-|------------------+------------------|
-| Fullname         | libpng License   |
-| Shortname        | Libpng           |
-| Rating           | Go               |
-| Classification   | NoCopyleft       |
+| Key            | Value          |
+|----------------+----------------|
+| Fullname       | libpng License |
+| Shortname      | Libpng         |
+| Rating         | Go             |
+| Classification | NoCopyleft     |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This copy of the libpng notices is provided for your convenience.  In case of
   any discrepancy between this copy and the notices in the file png.h that is
@@ -153,7 +151,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -174,7 +171,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -418,5 +414,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Libpng.svg]]

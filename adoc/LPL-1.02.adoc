@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Lucent Public License 1.02+`
-* `+Lucent Public License, Version 1.02+`
-* `+scancode://lucent-pl-1.02+`
+* `Lucent Public License 1.02`
+* `Lucent Public License, Version 1.02`
+* `scancode://lucent-pl-1.02`
 
 === Comments on (easy) usability
 

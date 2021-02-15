@@ -440,12 +440,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd."
+                        "description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd."
                     },
                     {
                         "actions": [
@@ -530,7 +530,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {
@@ -542,7 +542,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {

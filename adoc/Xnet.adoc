@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+The X.Net, Inc. License+`
-* `+License :: OSI Approved :: X.Net License+`
-* `+scancode://xnet+`
-* `+Altera License+`
+* `The X.Net, Inc. License`
+* `License :: OSI Approved :: X.Net License`
+* `scancode://xnet`
+* `Altera License`
 
 === Comments on (easy) usability
 

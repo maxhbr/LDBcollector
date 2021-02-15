@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+The OpenLDAP Public License+`
-* `+scancode://openldap-2.7+`
-* `+OpenLDAP Public License 2.7+`
+* `The OpenLDAP Public License`
+* `scancode://openldap-2.7`
+* `OpenLDAP Public License 2.7`
 
 === Comments on (easy) usability
 

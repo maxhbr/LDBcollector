@@ -1,11 +1,10 @@
 * BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | BSD 3-Clause No Nuclear License                |
-| Shortname        | BSD-3-Clause-No-Nuclear-License                |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | BSD 3-Clause No Nuclear License              |
+| Shortname      | BSD-3-Clause-No-Nuclear-License              |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -26,7 +25,6 @@
 - https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
@@ -64,7 +62,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -80,7 +77,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -211,5 +207,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-3-Clause-No-Nuclear-License.svg]]

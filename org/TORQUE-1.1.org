@@ -1,11 +1,10 @@
 * TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | TORQUE v2.5+ Software License v1.1             |
-| Shortname        | TORQUE-1.1                                     |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | TORQUE v2.5+ Software License v1.1           |
+| Shortname      | TORQUE-1.1                                   |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -47,7 +46,6 @@
 - *SPDX:* http://spdx.org/licenses/TORQUE-1.1.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   TORQUE v2.5+ Software License v1.1
   Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
@@ -79,7 +77,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -95,7 +92,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -268,5 +264,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TORQUE-1.1.svg]]

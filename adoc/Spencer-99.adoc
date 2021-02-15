@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://henry-spencer-1999+`
-* `+Henry Spencer License 1999+`
+* `scancode://henry-spencer-1999`
+* `Henry Spencer License 1999`
 
 === Comments on (easy) usability
 

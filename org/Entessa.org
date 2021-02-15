@@ -1,11 +1,10 @@
 * Entessa Public License v1.0 (Entessa)
-
-| Key              | Value                         |
-|------------------+-------------------------------|
-| Fullname         | Entessa Public License v1.0   |
-| Shortname        | Entessa                       |
-| Rating           | Go                            |
-| Classification   | NoCopyleft                    |
+| Key            | Value                       |
+|----------------+-----------------------------|
+| Fullname       | Entessa Public License v1.0 |
+| Shortname      | Entessa                     |
+| Rating         | Go                          |
+| Classification | NoCopyleft                  |
 
 *Other Names:*
 
@@ -53,7 +52,6 @@
 - http://sourceforge.net/softwaremap/?&fq[]=trove%3A397
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Entessa Public License Version. 1.0
 
@@ -106,7 +104,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -138,7 +135,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -439,7 +435,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -451,7 +447,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -567,5 +563,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Entessa.svg]]

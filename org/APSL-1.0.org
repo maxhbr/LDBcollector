@@ -1,11 +1,10 @@
 * Apple Public Source License 1.0 (APSL-1.0)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Apple Public Source License 1.0   |
-| Shortname        | APSL-1.0                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | SaaSCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Apple Public Source License 1.0 |
+| Shortname      | APSL-1.0                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | SaaSCopyleft                    |
 
 *Other Names:*
 
@@ -63,7 +62,6 @@
 - https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   APPLE PUBLIC SOURCE LICENSE
   		     Version 1.0 - March 16, 1999
@@ -440,7 +438,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -466,7 +463,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -760,5 +756,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APSL-1.0.svg]]

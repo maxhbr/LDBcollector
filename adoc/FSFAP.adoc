@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://fsf-ap+`
+* `scancode://fsf-ap`
 
 === Comments on (easy) usability
 

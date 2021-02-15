@@ -1,11 +1,10 @@
 * Amazon Digital Services License (ADSL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Amazon Digital Services License   |
-| Shortname        | ADSL                              |
-| Rating           | Go                                |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Amazon Digital Services License |
+| Shortname      | ADSL                            |
+| Rating         | Go                              |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -34,7 +33,6 @@
 - *SPDX:* http://spdx.org/licenses/ADSL.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software code is made available "AS IS" without warranties of any kind.
 
@@ -50,7 +48,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -69,7 +66,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -276,5 +272,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ADSL.svg]]

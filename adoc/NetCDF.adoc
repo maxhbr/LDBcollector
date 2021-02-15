@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+NetCDF Copyright(version 2009)+`
-* `+NetCDF Copyright+`
-* `+scancode://netcdf+`
+* `NetCDF Copyright(version 2009)`
+* `NetCDF Copyright`
+* `scancode://netcdf`
 
 === Comments on (easy) usability
 
@@ -89,7 +89,6 @@ REQUISITE: Get special permission in writing.
 === Text
 
 ....
-
 Portions of this software were developed by the Unidata Program at the
 University Corporation for Atmospheric Research.
 

@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://nlpl+`
+* `scancode://nlpl`
 
 === Comments on (easy) usability
 

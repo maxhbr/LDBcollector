@@ -1,11 +1,10 @@
 * Eurosym License (Eurosym)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Eurosym License                                |
-| Shortname        | Eurosym                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Eurosym License                              |
+| Shortname      | Eurosym                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - https://fedoraproject.org/wiki/Licensing/Eurosym
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Licence Version 2
 
@@ -54,7 +52,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -70,7 +67,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -232,5 +228,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Eurosym.svg]]

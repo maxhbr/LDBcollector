@@ -1,11 +1,10 @@
 * Academic Free License v1.2 (AFL-1.2)
-
-| Key              | Value                        |
-|------------------+------------------------------|
-| Fullname         | Academic Free License v1.2   |
-| Shortname        | AFL-1.2                      |
-| Rating           | Go                           |
-| Classification   | NoCopyleft                   |
+| Key            | Value                      |
+|----------------+----------------------------|
+| Fullname       | Academic Free License v1.2 |
+| Shortname      | AFL-1.2                    |
+| Rating         | Go                         |
+| Classification | NoCopyleft                 |
 
 *Other Names:*
 
@@ -43,7 +42,6 @@
 - http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Academic Free License
   		Version 1.2
@@ -131,13 +129,11 @@
   Permission is hereby granted to copy and distribute this license without 
   modification. This license may not be modified without the express written 
   permission of its copyright owner.
-
 #+END_EXAMPLE
 
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -160,7 +156,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -424,5 +419,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AFL-1.2.svg]]

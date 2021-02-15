@@ -54,8 +54,8 @@ Raw Data
         "__impliedNames": [
             "LiLiQ-Rplus-1.1",
             "LiLiQ-R+",
-            "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte, Version 1.1",
-            "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1"
+            "Licence Libre du Québec – Réciprocité forte, Version 1.1",
+            "Licence Libre du Québec – Réciprocité forte version 1.1"
         ],
         "__impliedId": "LiLiQ-Rplus-1.1",
         "facts": {
@@ -71,7 +71,7 @@ Raw Data
             },
             "SPDX": {
                 "isSPDXLicenseDeprecated": false,
-                "spdxFullName": "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1",
+                "spdxFullName": "Licence Libre du Québec – Réciprocité forte version 1.1",
                 "spdxDetailsURL": "http://spdx.org/licenses/LiLiQ-Rplus-1.1.json",
                 "_sourceURL": "https://spdx.org/licenses/LiLiQ-Rplus-1.1.html",
                 "spdxLicIsOSIApproved": true,
@@ -82,7 +82,7 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "LiLiQ-Rplus-1.1",
-                        "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte version 1.1"
+                        "Licence Libre du Québec – Réciprocité forte version 1.1"
                     ],
                     "__impliedId": "LiLiQ-Rplus-1.1",
                     "__impliedJudgement": [
@@ -118,7 +118,7 @@ Raw Data
                 "freedomOrDeath": "no",
                 "typeCopyleft": "yes",
                 "_sourceURL": "https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods",
-                "name": "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte",
+                "name": "Licence Libre du Québec – Réciprocité forte",
                 "commercialUse": true,
                 "spdxId": "LiLiQ-R+",
                 "_implications": {
@@ -156,7 +156,7 @@ Raw Data
                 "identifiers": [],
                 "superseded_by": null,
                 "_sourceURL": "https://opensource.org/licenses/",
-                "name": "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte, Version 1.1",
+                "name": "Licence Libre du Québec – Réciprocité forte, Version 1.1",
                 "other_names": [],
                 "keywords": [
                     "international",
@@ -173,7 +173,7 @@ Raw Data
                 "_implications": {
                     "__impliedNames": [
                         "LiLiQ-R+",
-                        "Licence Libre du QuÃ©bec â RÃ©ciprocitÃ© forte, Version 1.1"
+                        "Licence Libre du Québec – Réciprocité forte, Version 1.1"
                     ],
                     "__impliedURLs": [
                         [

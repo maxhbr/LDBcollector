@@ -1,11 +1,10 @@
 * GNU Free Documentation License v1.2 only (GFDL-1.2-only)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GNU Free Documentation License v1.2 only       |
-| Shortname        | GFDL-1.2-only                                  |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GNU Free Documentation License v1.2 only     |
+| Shortname      | GFDL-1.2-only                                |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -34,7 +33,6 @@
 - *SPDX:* http://spdx.org/licenses/GFDL-1.2-only.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   GNU Free Documentation License
   		  Version 1.2, November 2002
@@ -438,7 +436,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -453,7 +450,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -635,5 +631,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GFDL-1.2-only.svg]]

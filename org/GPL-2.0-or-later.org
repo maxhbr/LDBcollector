@@ -1,11 +1,10 @@
 * GNU General Public License v2.0 or later (GPL-2.0-or-later)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GNU General Public License v2.0 or later       |
-| Shortname        | GPL-2.0-or-later                               |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GNU General Public License v2.0 or later     |
+| Shortname      | GPL-2.0-or-later                             |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -70,7 +69,6 @@
 - http://www.opensource.org/licenses/GPL-2.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This program is free software; you can redistribute it and/or modify it under
   the terms of the GNU General Public License as published by the Free Software
@@ -89,7 +87,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -128,7 +125,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -457,7 +453,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Notice of modifications",
-                      "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                      "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                       "termType": "condition"
                   },
                   {
@@ -631,5 +627,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GPL-2.0-or-later.svg]]

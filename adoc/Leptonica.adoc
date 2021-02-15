@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://leptonica+`
+* `scancode://leptonica`
 
 === Comments on (easy) usability
 

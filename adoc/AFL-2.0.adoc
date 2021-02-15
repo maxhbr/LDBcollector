@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://afl-2.0+`
-* `+AFL 2.0+`
+* `scancode://afl-2.0`
+* `AFL 2.0`
 
 === Comments on (easy) usability
 

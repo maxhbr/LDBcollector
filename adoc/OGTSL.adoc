@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+The Open Group Test Suite License (OGTSL)+`
-* `+License :: OSI Approved :: Open Group Test Suite License+`
-* `+scancode://opengroup+`
+* `The Open Group Test Suite License (OGTSL)`
+* `License :: OSI Approved :: Open Group Test Suite License`
+* `scancode://opengroup`
 
 === Comments on (easy) usability
 

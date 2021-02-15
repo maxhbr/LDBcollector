@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://standard-ml-nj+`
-* `+Standard ML of New Jersey+`
+* `scancode://standard-ml-nj`
+* `Standard ML of New Jersey`
 
 === Comments on (easy) usability
 

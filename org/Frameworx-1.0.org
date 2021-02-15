@@ -1,11 +1,10 @@
 * Frameworx Open License 1.0 (Frameworx-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Frameworx Open License 1.0                     |
-| Shortname        | Frameworx-1.0                                  |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Frameworx Open License 1.0                   |
+| Shortname      | Frameworx-1.0                                |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -41,7 +40,6 @@
 - http://www.opensource.org/licenses/Frameworx-1.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   THE FRAMEWORX OPEN LICENSE 1.0
   This License Agreement, The Frameworx Open License 1.0, has been entered into between The Frameworx Company and you, the licensee hereunder, effective as of Your acceptance of the Frameworx Code Base or an Downstream Distribution (each as defined below).
@@ -112,7 +110,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -134,7 +131,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -399,5 +395,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Frameworx-1.0.svg]]

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://apsl-1.0+`
-* `+APSL 1.0+`
+* `scancode://apsl-1.0`
+* `APSL 1.0`
 
 === Comments on (easy) usability
 

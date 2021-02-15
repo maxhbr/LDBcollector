@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+ANTLR 2 License+`
-* `+scancode://antlr-pd+`
+* `ANTLR 2 License`
+* `scancode://antlr-pd`
 
 === Comments on (easy) usability
 

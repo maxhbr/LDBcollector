@@ -1,11 +1,10 @@
 * Creative Commons Attribution 1.0 Generic (CC-BY-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Creative Commons Attribution 1.0 Generic       |
-| Shortname        | CC-BY-1.0                                      |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Creative Commons Attribution 1.0 Generic     |
+| Shortname      | CC-BY-1.0                                    |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - https://creativecommons.org/licenses/by/1.0/legalcode
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Attribution 1.0
 
@@ -97,7 +95,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -116,7 +113,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -309,5 +305,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-BY-1.0.svg]]

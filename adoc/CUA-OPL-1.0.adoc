@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+CUA Office Public License 1.0+`
-* `+CUA Office Public License+`
-* `+scancode://cua-opl-1.0+`
+* `CUA Office Public License 1.0`
+* `CUA Office Public License`
+* `scancode://cua-opl-1.0`
 
 === Comments on (easy) usability
 

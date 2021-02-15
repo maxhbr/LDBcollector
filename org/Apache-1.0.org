@@ -1,11 +1,10 @@
 * Apache License 1.0 (Apache-1.0)
-
-| Key              | Value                |
-|------------------+----------------------|
-| Fullname         | Apache License 1.0   |
-| Shortname        | Apache-1.0           |
-| Rating           | Go                   |
-| Classification   | NoCopyleft           |
+| Key            | Value              |
+|----------------+--------------------|
+| Fullname       | Apache License 1.0 |
+| Shortname      | Apache-1.0         |
+| Rating         | Go                 |
+| Classification | NoCopyleft         |
 
 *Other Names:*
 
@@ -75,7 +74,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Acknowledgements
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -88,7 +86,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Acknowledgements
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -121,7 +118,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -179,7 +175,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -210,7 +205,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -505,12 +499,12 @@
                               "name": "Use the name to endorse and promote derived products"
                           }
                       ],
-                      "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: \"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "\"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgã«é£çµ¡ãã."
+                      "description": "\"Apache Server\" and \"Apache Group\", if you use the names \"Apache Server\" and \"Apache Group\". apache@apache.orgに連絡する."
                   },
                   {
                       "actions": [
@@ -518,12 +512,12 @@
                               "name": "Use the name of the product or part of the name of the product from which it was derived"
                           }
                       ],
-                      "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: \"Apache\", if you want to use the name \"Apache\". apache@apache.orgに連絡する.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "\"Apache\", if you want to use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã."
+                      "description": "\"Apache\", if you want to use the name \"Apache\". apache@apache.orgに連絡する."
                   }
               ],
               "_implications": {
@@ -642,5 +636,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Apache-1.0.svg]]

@@ -1,12 +1,11 @@
 * Python License 2.0 (Python-2.0)
-
-| Key               | Value                |
-|-------------------+----------------------|
-| Fullname          | Python License 2.0   |
-| Shortname         | Python-2.0           |
-| Rating            | Go                   |
-| Classification    | NoCopyleft           |
-| Has Patent Hint   | False                |
+| Key             | Value              |
+|-----------------+--------------------|
+| Fullname        | Python License 2.0 |
+| Shortname       | Python-2.0         |
+| Rating          | Go                 |
+| Classification  | NoCopyleft         |
+| Has Patent Hint | False              |
 
 *Other Names:*
 
@@ -98,7 +97,6 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -110,7 +108,6 @@
     AND
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Include a summary of the changes you have made
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -129,13 +126,11 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Include a summary of the changes you have made
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
   --------------------------------------------
@@ -334,7 +329,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -380,7 +374,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -935,7 +928,7 @@
               "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Python-2.0.yaml",
               "name": "Python License 2.0",
               "nameFromFilename": "Python-2.0",
-              "notes": "This is a license âstackâ comprised of various licenses that apply to Python as it has developed over the years.",
+              "notes": "This is a license “stack” comprised of various licenses that apply to Python as it has developed over the years.",
               "_implications": {
                   "__impliedNames": [
                       "Python-2.0",
@@ -1064,5 +1057,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Python-2.0.svg]]

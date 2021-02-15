@@ -1,11 +1,10 @@
 * GNU General Public License v1.0 or later (GPL-1.0-or-later)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GNU General Public License v1.0 or later       |
-| Shortname        | GPL-1.0-or-later                               |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GNU General Public License v1.0 or later     |
+| Shortname      | GPL-1.0-or-later                             |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -51,7 +50,6 @@
 - *SPDX:* http://spdx.org/licenses/GPL-1.0-or-later.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.
 
@@ -63,7 +61,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -92,7 +89,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -374,5 +370,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GPL-1.0-or-later.svg]]

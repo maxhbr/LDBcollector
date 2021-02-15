@@ -1,11 +1,10 @@
 * Apache License 1.1 (Apache-1.1)
-
-| Key              | Value                |
-|------------------+----------------------|
-| Fullname         | Apache License 1.1   |
-| Shortname        | Apache-1.1           |
-| Rating           | Attention            |
-| Classification   | NoCopyleft           |
+| Key            | Value              |
+|----------------+--------------------|
+| Fullname       | Apache License 1.1 |
+| Shortname      | Apache-1.1         |
+| Rating         | Attention          |
+| Classification | NoCopyleft         |
 
 *Other Names:*
 
@@ -134,7 +133,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Apache Software License, Version 1.1
 
@@ -186,7 +184,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -231,7 +228,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -586,12 +582,12 @@
                               "name": "Use the name to endorse and promote derived products"
                           }
                       ],
-                      "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã."
+                      "description": "To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgに連絡する."
                   },
                   {
                       "actions": [
@@ -599,12 +595,12 @@
                               "name": "Use the name of the product or part of the name of the product from which it was derived"
                           }
                       ],
-                      "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgに連絡する.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "\"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã."
+                      "description": "\"If you use the name \"Apache\". apache@apache.orgに連絡する."
                   }
               ],
               "_implications": {
@@ -711,7 +707,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -723,7 +719,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -894,5 +890,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Apache-1.1.svg]]

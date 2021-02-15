@@ -1,11 +1,10 @@
 * Glulxe License (Glulxe)
-
-| Key              | Value            |
-|------------------+------------------|
-| Fullname         | Glulxe License   |
-| Shortname        | Glulxe           |
-| Rating           | Unknown          |
-| Classification   | NoCopyleft       |
+| Key            | Value          |
+|----------------+----------------|
+| Fullname       | Glulxe License |
+| Shortname      | Glulxe         |
+| Rating         | Unknown        |
+| Classification | NoCopyleft     |
 
 *Other Names:*
 
@@ -27,7 +26,6 @@
 - *SPDX:* http://spdx.org/licenses/Glulxe.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   You may copy and distribute it freely, by any means and under any conditions,
   as long as the code and documentation is not changed. You may also incorporate
@@ -39,7 +37,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -55,7 +52,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -211,5 +207,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Glulxe.svg]]

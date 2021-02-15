@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-protection+`
+* `scancode://bsd-protection`
 
 === Comments on (easy) usability
 

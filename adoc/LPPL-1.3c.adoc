@@ -12,11 +12,11 @@
 
 *Other Names:*
 
-* `+LaTeX Project Public License 1.3c+`
-* `+LaTeX Project Public License, Version 1.3c+`
-* `+LaTeX Project Public License Version 1.3c+`
-* `+scancode://lppl-1.3c+`
-* `+LPPL 1.3c+`
+* `LaTeX Project Public License 1.3c`
+* `LaTeX Project Public License, Version 1.3c`
+* `LaTeX Project Public License Version 1.3c`
+* `scancode://lppl-1.3c`
+* `LPPL 1.3c`
 
 === Description
 

@@ -1,11 +1,10 @@
 * diffmark license (diffmark)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | diffmark license                  |
-| Shortname        | diffmark                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | diffmark license                |
+| Shortname      | diffmark                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -44,7 +43,6 @@
 - *SPDX:* http://spdx.org/licenses/diffmark.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   1. you can do what you want with it
   2. I refuse any responsibility for the consequences
@@ -53,7 +51,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -72,7 +69,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -296,5 +292,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/diffmark.svg]]

@@ -12,12 +12,12 @@
 
 *Other Names:*
 
-* `+Q Public License+`
-* `+The Q Public License Version (QPL-1.0)+`
-* `+License :: OSI Approved :: Qt Public License (QPL)+`
-* `+Q PUBLIC LICENSE version 1.0+`
-* `+scancode://qpl-1.0+`
-* `+QPL 1.0+`
+* `Q Public License`
+* `The Q Public License Version (QPL-1.0)`
+* `License :: OSI Approved :: Qt Public License (QPL)`
+* `Q PUBLIC LICENSE version 1.0`
+* `scancode://qpl-1.0`
+* `QPL 1.0`
 
 === Comments on (easy) usability
 
@@ -572,7 +572,7 @@ repository] is generated)
                             "description": "Redistribute the obtained executable as-is"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
+                    "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -582,7 +582,7 @@ repository] is generated)
                             {
                                 "name": "Enables the recipient to receive the source code corresponding to the software.",
                                 "type": "OBLIGATION",
-                                "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                             }
                         ]
                     }
@@ -593,7 +593,7 @@ repository] is generated)
                             "name": "Distribute the executable generated from the modified source code"
                         }
                     ],
-                    "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
+                    "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
                     "conditions": {
                         "AND": [
                             {
@@ -603,7 +603,7 @@ repository] is generated)
                             {
                                 "name": "Enables the recipient to receive the source code corresponding to the software.",
                                 "type": "OBLIGATION",
-                                "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                             },
                             {
                                 "name": "Apply this license to the entire modification",

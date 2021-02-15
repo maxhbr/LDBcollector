@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://apafml+`
+* `scancode://apafml`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * DSDP License (DSDP)
-
-| Key              | Value          |
-|------------------+----------------|
-| Fullname         | DSDP License   |
-| Shortname        | DSDP           |
-| Rating           | Go             |
-| Classification   | NoCopyleft     |
+| Key            | Value        |
+|----------------+--------------|
+| Fullname       | DSDP License |
+| Shortname      | DSDP         |
+| Rating         | Go           |
+| Classification | NoCopyleft   |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/DSDP.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   COPYRIGHT NOTIFICATION
 
@@ -83,7 +81,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -110,7 +107,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -357,5 +353,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/DSDP.svg]]

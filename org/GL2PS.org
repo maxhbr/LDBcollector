@@ -1,11 +1,10 @@
 * GL2PS License (GL2PS)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GL2PS License                                  |
-| Shortname        | GL2PS                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GL2PS License                                |
+| Shortname      | GL2PS                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -57,7 +56,6 @@
     AND
       OBLIGATION: Include a copyright notice in the license
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -74,13 +72,11 @@
       OR
         OBLIGATION: Attach the source code corresponding to the software in question.
         OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   GL2PS LICENSE Version 2, November 2003
 
@@ -107,7 +103,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -126,7 +121,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -413,5 +407,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GL2PS.svg]]

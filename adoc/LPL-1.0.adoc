@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+Lucent Public License ("Plan9") 1.0+`
-* `+Lucent Public License, Plan 9, Version 1.0+`
-* `+scancode://lucent-pl-1.0+`
-* `+Lucent Public License 1.0+`
+* `Lucent Public License ("Plan9") 1.0`
+* `Lucent Public License, Plan 9, Version 1.0`
+* `scancode://lucent-pl-1.0`
+* `Lucent Public License 1.0`
 
 === Comments on (easy) usability
 

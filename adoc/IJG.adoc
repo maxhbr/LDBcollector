@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+IJG License+`
-* `+scancode://ijg+`
-* `+JPEG License+`
+* `IJG License`
+* `scancode://ijg`
+* `JPEG License`
 
 === Comments on (easy) usability
 

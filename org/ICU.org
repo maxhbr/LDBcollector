@@ -1,11 +1,10 @@
 * ICU License (ICU)
-
-| Key              | Value         |
-|------------------+---------------|
-| Fullname         | ICU License   |
-| Shortname        | ICU           |
-| Rating           | Go            |
-| Classification   | NoCopyleft    |
+| Key            | Value       |
+|----------------+-------------|
+| Fullname       | ICU License |
+| Shortname      | ICU         |
+| Rating         | Go          |
+| Classification | NoCopyleft  |
 
 *Other Names:*
 
@@ -99,7 +98,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is hereby granted, free of charge, to any person obtaining a copy of
   this software and associated documentation files (the "Software"), to deal in
@@ -128,7 +126,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -163,7 +160,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -515,5 +511,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ICU.svg]]

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Microsoft Reciprocal License (MS-RL)+`
-* `+scancode://ms-rl+`
+* `Microsoft Reciprocal License (MS-RL)`
+* `scancode://ms-rl`
 
 === Description
 

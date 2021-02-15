@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+intel-osl+`
-* `+The Intel Open Source License+`
-* `+License :: OSI Approved :: Intel Open Source License+`
-* `+Intel License Agreement+`
-* `+scancode://intel-bsd-export-control+`
-* `+Intel BSD - Export Control+`
+* `intel-osl`
+* `The Intel Open Source License`
+* `License :: OSI Approved :: Intel Open Source License`
+* `Intel License Agreement`
+* `scancode://intel-bsd-export-control`
+* `Intel BSD - Export Control`
 
 === Comments on (easy) usability
 

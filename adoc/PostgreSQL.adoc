@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+The PostgreSQL Licence+`
-* `+scancode://postgresql+`
+* `The PostgreSQL Licence`
+* `scancode://postgresql`
 
 === Description
 

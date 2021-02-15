@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://psfrag+`
+* `scancode://psfrag`
 
 === Comments on (easy) usability
 

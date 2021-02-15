@@ -1,11 +1,10 @@
 * NIST Public Domain Notice (NIST-PD)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | NIST Public Domain Notice                      |
-| Shortname        | NIST-PD                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | NIST Public Domain Notice                    |
+| Shortname      | NIST-PD                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -28,7 +27,6 @@
 - https://github.com/usnistgov/jsip
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Conditions Of Use
 
@@ -55,7 +53,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -67,7 +64,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -205,5 +201,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NIST-PD.svg]]

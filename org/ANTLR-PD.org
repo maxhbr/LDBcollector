@@ -1,11 +1,10 @@
 * ANTLR Software Rights Notice (ANTLR-PD)
-
-| Key              | Value                          |
-|------------------+--------------------------------|
-| Fullname         | ANTLR Software Rights Notice   |
-| Shortname        | ANTLR-PD                       |
-| Rating           | Go                             |
-| Classification   | NoCopyleft                     |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | ANTLR Software Rights Notice |
+| Shortname      | ANTLR-PD                     |
+| Rating         | Go                           |
+| Classification | NoCopyleft                   |
 
 *Other Names:*
 
@@ -80,7 +79,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   ANTLR SOFTWARE RIGHTS
 
@@ -117,7 +115,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -139,7 +136,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -480,5 +476,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ANTLR-PD.svg]]

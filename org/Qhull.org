@@ -1,11 +1,10 @@
 * Qhull License (Qhull)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Qhull License                     |
-| Shortname        | Qhull                             |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Qhull License                   |
+| Shortname      | Qhull                           |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - https://fedoraproject.org/wiki/Licensing/Qhull
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Qhull, Copyright (c) 1993-2003
 
@@ -60,7 +58,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -79,7 +76,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -292,5 +288,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Qhull.svg]]

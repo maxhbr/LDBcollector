@@ -1,12 +1,11 @@
 * Creative Commons Attribution Non Commercial 3.0 Unported
 (CC-BY-NC-3.0)
-
-| Key                 | Value                                                      |
-|---------------------+------------------------------------------------------------|
-| Fullname            | Creative Commons Attribution Non Commercial 3.0 Unported   |
-| Shortname           | CC-BY-NC-3.0                                               |
-| Rating              | No-Go                                                      |
-| Is Non-Commercial   | True                                                       |
+| Key               | Value                                                    |
+|-------------------+----------------------------------------------------------|
+| Fullname          | Creative Commons Attribution Non Commercial 3.0 Unported |
+| Shortname         | CC-BY-NC-3.0                                             |
+| Rating            | No-Go                                                    |
+| Is Non-Commercial | True                                                     |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - https://creativecommons.org/licenses/by-nc/3.0/legalcode
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Creative Commons Legal Code
 
@@ -381,7 +379,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -402,7 +399,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -615,5 +611,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-BY-NC-3.0.svg]]

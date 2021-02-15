@@ -12,11 +12,11 @@
 
 *Other Names:*
 
-* `+Berkeley Database License+`
-* `+Sleepycat Software Product License+`
-* `+The Sleepycat License+`
-* `+License :: OSI Approved :: Sleepycat License+`
-* `+scancode://sleepycat+`
+* `Berkeley Database License`
+* `Sleepycat Software Product License`
+* `The Sleepycat License`
+* `License :: OSI Approved :: Sleepycat License`
+* `scancode://sleepycat`
 
 === Comments on (easy) usability
 

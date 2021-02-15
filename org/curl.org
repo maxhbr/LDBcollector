@@ -1,11 +1,10 @@
 * curl License (curl)
-
-| Key              | Value          |
-|------------------+----------------|
-| Fullname         | curl License   |
-| Shortname        | curl           |
-| Rating           | Go             |
-| Classification   | NoCopyleft     |
+| Key            | Value        |
+|----------------+--------------|
+| Fullname       | curl License |
+| Shortname      | curl         |
+| Rating         | Go           |
+| Classification | NoCopyleft   |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - http://curl.haxx.se/legal/licmix.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, modify, and distribute this software for any purpose
   with or without fee is hereby granted, provided that the above copyright
@@ -54,7 +52,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -69,7 +66,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -252,5 +248,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/curl.svg]]

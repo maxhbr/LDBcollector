@@ -1,11 +1,10 @@
 * gnuplot License (gnuplot)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | gnuplot License                                |
-| Shortname        | gnuplot                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | gnuplot License                              |
+| Shortname      | gnuplot                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - https://fedoraproject.org/wiki/Licensing/Gnuplot
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, and distribute this software and its documentation for
   any purpose with or without fee is hereby granted, provided that the above
@@ -63,7 +61,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -79,7 +76,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -241,5 +237,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/gnuplot.svg]]

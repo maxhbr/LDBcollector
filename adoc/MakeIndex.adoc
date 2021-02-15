@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://makeindex+`
-* `+MakeIndex Distribution Notice+`
+* `scancode://makeindex`
+* `MakeIndex Distribution Notice`
 
 === Comments on (easy) usability
 

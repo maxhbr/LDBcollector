@@ -1,11 +1,10 @@
 * No Limit Public License (NLPL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | No Limit Public License           |
-| Shortname        | NLPL                              |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | No Limit Public License         |
+| Shortname      | NLPL                            |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -42,7 +41,6 @@
 - *SPDX:* http://spdx.org/licenses/NLPL.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   NO LIMIT PUBLIC LICENSE
              Version 0, June 2012
@@ -62,7 +60,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -81,7 +78,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -304,5 +300,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NLPL.svg]]

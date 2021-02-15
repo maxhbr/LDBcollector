@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-2-clause-views+`
+* `scancode://bsd-2-clause-views`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * Spencer License 99 (Spencer-99)
-
-| Key              | Value                |
-|------------------+----------------------|
-| Fullname         | Spencer License 99   |
-| Shortname        | Spencer-99           |
-| Rating           | Go                   |
-| Classification   | NoCopyleft           |
+| Key            | Value              |
+|----------------+--------------------|
+| Fullname       | Spencer License 99 |
+| Shortname      | Spencer-99         |
+| Rating         | Go                 |
+| Classification | NoCopyleft         |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - *SPDX:* http://spdx.org/licenses/Spencer-99.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Development of this software was funded, in part, by Cray Research Inc.,
   UUNET Communications Services Inc., Sun Microsystems Inc., and Scriptics
@@ -61,7 +59,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -76,7 +73,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -244,5 +240,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Spencer-99.svg]]

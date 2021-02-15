@@ -1,11 +1,10 @@
 * Zope Public License 2.0 (ZPL-2.0)
-
-| Key              | Value                     |
-|------------------+---------------------------|
-| Fullname         | Zope Public License 2.0   |
-| Shortname        | ZPL-2.0                   |
-| Rating           | Go                        |
-| Classification   | NoCopyleft                |
+| Key            | Value                   |
+|----------------+-------------------------|
+| Fullname       | Zope Public License 2.0 |
+| Shortname      | ZPL-2.0                 |
+| Rating         | Go                      |
+| Classification | NoCopyleft              |
 
 *Other Names:*
 
@@ -115,7 +114,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -126,13 +124,11 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This license has been certified as open source. It has also been designated as
   GPL compatible by the Free Software Foundation (FSF).
@@ -181,7 +177,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -221,7 +216,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -448,7 +442,7 @@
               "summary": "https://opensource.org/licenses/ZPL-2.0",
               "notices": [
                   {
-                      "content": "To use Zope Corporation's service marks and trademarks, please visit http://www.zope.com/Marksã«ããå¥ã®å¥ç´æ¸ãé©ç¨ããã."
+                      "content": "To use Zope Corporation's service marks and trademarks, please visit http://www.zope.com/Marksにある別の契約書が適用される."
                   },
                   {
                       "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
@@ -803,5 +797,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ZPL-2.0.svg]]

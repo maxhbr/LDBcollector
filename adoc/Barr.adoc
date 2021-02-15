@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://barr-tex+`
-* `+Barr TeX License+`
+* `scancode://barr-tex`
+* `Barr TeX License`
 
 === Comments on (easy) usability
 

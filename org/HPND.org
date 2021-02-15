@@ -1,11 +1,10 @@
 * Historical Permission Notice and Disclaimer (HPND)
-
-| Key              | Value                                         |
-|------------------+-----------------------------------------------|
-| Fullname         | Historical Permission Notice and Disclaimer   |
-| Shortname        | HPND                                          |
-| Rating           | Unknown, probably Stop or No-Go               |
-| Classification   | NoCopyleft                                    |
+| Key            | Value                                       |
+|----------------+---------------------------------------------|
+| Fullname       | Historical Permission Notice and Disclaimer |
+| Shortname      | HPND                                        |
+| Rating         | Unknown, probably Stop or No-Go             |
+| Classification | NoCopyleft                                  |
 
 *Other Names:*
 
@@ -46,7 +45,6 @@
 - http://www.opensource.org/licenses/HPND
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, modify and distribute this software and its
   documentation for any purpose and without fee is hereby granted,
@@ -71,7 +69,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -100,7 +97,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -453,5 +449,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/HPND.svg]]

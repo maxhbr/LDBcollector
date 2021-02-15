@@ -10,8 +10,8 @@
 
 *Other Names:*
 
-* `+scancode://sgi-fslb-1.0+`
-* `+SGI Free Software License B 1.0+`
+* `scancode://sgi-fslb-1.0`
+* `SGI Free Software License B 1.0`
 
 === Comments on (easy) usability
 
@@ -29,7 +29,6 @@ https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/lice
 === Text
 
 ....
-
 
 SGI FREE SOFTWARE LICENSE B
 (Version 1.0 1/25/2000)

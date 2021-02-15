@@ -1,12 +1,11 @@
 * Beerware License (Beerware)
-
-| Key               | Value                             |
-|-------------------+-----------------------------------|
-| Fullname          | Beerware License                  |
-| Shortname         | Beerware                          |
-| Rating            | Unknown, probably Stop or No-Go   |
-| Classification    | NoCopyleft                        |
-| Has Patent Hint   | False                             |
+| Key             | Value                           |
+|-----------------+---------------------------------|
+| Fullname        | Beerware License                |
+| Shortname       | Beerware                        |
+| Rating          | Unknown, probably Stop or No-Go |
+| Classification  | NoCopyleft                      |
+| Has Patent Hint | False                           |
 
 *Other Names:*
 
@@ -48,7 +47,6 @@
 - https://fedoraproject.org/wiki/Licensing/Beerware
 
 ** Text
-
 #+BEGIN_EXAMPLE
   "THE BEER-WARE LICENSE" (Revision 42):
   <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
@@ -59,7 +57,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -89,7 +86,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -405,5 +401,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Beerware.svg]]

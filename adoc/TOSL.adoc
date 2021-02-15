@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://tosl+`
-* `+TOSL 1.0a+`
+* `scancode://tosl`
+* `TOSL 1.0a`
 
 === Comments on (easy) usability
 

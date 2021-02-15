@@ -1,11 +1,10 @@
 * Latex2e License (Latex2e)
-
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | Latex2e License   |
-| Shortname        | Latex2e           |
-| Rating           | Unknown           |
-| Classification   | NoCopyleft        |
+| Key            | Value           |
+|----------------+-----------------|
+| Fullname       | Latex2e License |
+| Shortname      | Latex2e         |
+| Rating         | Unknown         |
+| Classification | NoCopyleft      |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - *SPDX:* http://spdx.org/licenses/Latex2e.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is granted to make and distribute verbatim copies of this
   manual provided the copyright notice and this permission notice are
@@ -50,7 +48,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -66,7 +63,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -238,5 +234,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Latex2e.svg]]

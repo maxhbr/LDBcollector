@@ -1,11 +1,10 @@
 * BitTorrent Open Source License v1.1 (BitTorrent-1.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | BitTorrent Open Source License v1.1            |
-| Shortname        | BitTorrent-1.1                                 |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | BitTorrent Open Source License v1.1          |
+| Shortname      | BitTorrent-1.1                               |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - http://directory.fsf.org/wiki/License:BitTorrentOSL1.1
 
 ** Text
-
 #+BEGIN_EXAMPLE
   BitTorrent Open Source License
 
@@ -184,7 +182,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -204,7 +201,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -394,5 +390,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BitTorrent-1.1.svg]]

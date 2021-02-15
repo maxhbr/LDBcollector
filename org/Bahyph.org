@@ -1,11 +1,10 @@
 * Bahyph License (Bahyph)
-
-| Key              | Value            |
-|------------------+------------------|
-| Fullname         | Bahyph License   |
-| Shortname        | Bahyph           |
-| Rating           | Go               |
-| Classification   | NoCopyleft       |
+| Key            | Value          |
+|----------------+----------------|
+| Fullname       | Bahyph License |
+| Shortname      | Bahyph         |
+| Rating         | Go             |
+| Classification | NoCopyleft     |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Bahyph.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   COPYRIGHT NOTICE   
 
@@ -51,7 +49,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -70,7 +67,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -277,5 +273,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Bahyph.svg]]

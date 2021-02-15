@@ -1,12 +1,11 @@
 * Common Public License 1.0 (CPL-1.0)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Common Public License 1.0                      |
-| Shortname         | CPL-1.0                                        |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | StrongCopyleft                                 |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Common Public License 1.0                    |
+| Shortname       | CPL-1.0                                      |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | StrongCopyleft                               |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -105,7 +104,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -121,7 +119,6 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -137,7 +134,6 @@
       OBLIGATION: Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -156,7 +152,6 @@
       OBLIGATION: Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -171,7 +166,6 @@
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -188,7 +182,6 @@
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -205,7 +198,6 @@
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -225,13 +217,11 @@
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Common Public License - v 1.0
 
@@ -329,7 +319,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -364,7 +353,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1253,5 +1241,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CPL-1.0.svg]]

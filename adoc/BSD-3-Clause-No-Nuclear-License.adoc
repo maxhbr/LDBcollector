@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://sun-bsd-no-nuclear+`
-* `+Sun BSD-Style with Nuclear Restrictions+`
+* `scancode://sun-bsd-no-nuclear`
+* `Sun BSD-Style with Nuclear Restrictions`
 
 === Comments on (easy) usability
 

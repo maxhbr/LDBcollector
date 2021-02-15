@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://npl-1.0+`
-* `+NPL 1.0+`
+* `scancode://npl-1.0`
+* `NPL 1.0`
 
 === Comments on (easy) usability
 

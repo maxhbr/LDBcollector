@@ -1,11 +1,10 @@
 * Red Hat eCos Public License v1.1 (RHeCos-1.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Red Hat eCos Public License v1.1               |
-| Shortname        | RHeCos-1.1                                     |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Red Hat eCos Public License v1.1             |
+| Shortname      | RHeCos-1.1                                   |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -24,7 +23,6 @@
 - *SPDX:* http://spdx.org/licenses/RHeCos-1.1.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Red Hat eCos Public License v1.1
 
@@ -470,7 +468,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -486,7 +483,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -621,5 +617,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/RHeCos-1.1.svg]]

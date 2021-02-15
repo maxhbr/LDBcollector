@@ -1,11 +1,10 @@
 * Open Software License 2.0 (OSL-2.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Open Software License 2.0                      |
-| Shortname        | OSL-2.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | SaaSCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Open Software License 2.0                    |
+| Shortname      | OSL-2.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | SaaSCopyleft                                 |
 
 *Other Names:*
 
@@ -60,7 +59,6 @@
 - http://www.gnu.org/licenses/license-list.html#OSL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Open Software License v. 2.0
 
@@ -112,7 +110,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -143,7 +140,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -462,5 +458,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OSL-2.0.svg]]

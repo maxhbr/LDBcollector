@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://zlib-acknowledgement+`
-* `+ZLIB License with Acknowledgment+`
+* `scancode://zlib-acknowledgement`
+* `ZLIB License with Acknowledgment`
 
 === Comments on (easy) usability
 

@@ -31,9 +31,9 @@
 </table>
 <p><strong>Other Names:</strong></p>
 <ul>
-<li><p><code>scancode://openssl</code></p></li>
 <li><p><code>scancode://openssl-ssleay</code></p></li>
 <li><p><code>OpenSSL/SSLeay License</code></p></li>
+<li><p><code>scancode://openssl</code></p></li>
 </ul>
 <h2>Comments on (easy) usability</h2>
 <ul>
@@ -43,12 +43,12 @@
 </ul>
 <h2>General Comments</h2>
 <ul>
-<li><p>“This is the OpenSSL license proper, without the SSLEay part. The SPDX OpenSSL identifier does not apply here. Instead it matches the openssl- ssleay license. ” (source: <a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml" title="Scancode">Scancode</a> (CC0-1.0))</p></li>
+<li><p>“Per SPDX.org, the OpenSSL toolkit stays under a dual license, i.e. both the conditions of the OpenSSL License and the original SSLeay license apply to the toolkit. ” (source: <a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml" title="Scancode">Scancode</a> (CC0-1.0))</p></li>
 </ul>
 <h2>URLs</h2>
 <ul>
-<li><p><strong>Homepage:</strong> http://openssl.org/source/license.html</p></li>
 <li><p><strong>Homepage:</strong> http://www.openssl.org/source/license.html</p></li>
+<li><p><strong>Homepage:</strong> http://openssl.org/source/license.html</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/OpenSSL.html</p></li>
 <li><p><strong>SPDX:</strong> http://spdx.org/licenses/OpenSSL.json</p></li>
 <li><p><strong>open-license:</strong> http://open-license.hitachi.com/licenses/279</p></li>
@@ -110,12 +110,24 @@ REQUISITE: Get special permission in writing.
 </ul>
 <p> (source: Hitachi open-license)</p>
 <h2>Text</h2>
-<pre><code>Redistribution and use in source and binary forms, with or without
+<pre><code>LICENSE ISSUES
+  ==============
+
+  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of
+  the OpenSSL License and the original SSLeay license apply to the toolkit.
+  See below for the actual license texts. Actually both licenses are BSD-style
+  Open Source licenses. In case of any license issues related to OpenSSL
+  please contact openssl-core@openssl.org.
+
+  OpenSSL License
+  ---------------
+
+Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
 are met:
 
 1. Redistributions of source code must retain the above copyright
-   notice, this list of conditions and the following disclaimer.
+   notice, this list of conditions and the following disclaimer. 
 
 2. Redistributions in binary form must reproduce the above copyright
    notice, this list of conditions and the following disclaimer in
@@ -125,12 +137,12 @@ are met:
 3. All advertising materials mentioning features or use of this
    software must display the following acknowledgment:
    &quot;This product includes software developed by the OpenSSL Project
-   for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)&quot;
+   for use in the OpenSSL Toolkit. (http://www.openssl.org/)&quot;
 
 4. The names &quot;OpenSSL Toolkit&quot; and &quot;OpenSSL Project&quot; must not be used to
    endorse or promote products derived from this software without
    prior written permission. For written permission, please contact
-   licensing@OpenSSL.org.
+   openssl-core@openssl.org.
 
 5. Products derived from this software may not be called &quot;OpenSSL&quot;
    nor may &quot;OpenSSL&quot; appear in their names without prior written
@@ -139,7 +151,7 @@ are met:
 6. Redistributions of any form whatsoever must retain the following
    acknowledgment:
    &quot;This product includes software developed by the OpenSSL Project
-   for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)&quot;
+   for use in the OpenSSL Toolkit (http://www.openssl.org/)&quot;
 
 THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY
 EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
@@ -153,7 +165,71 @@ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
 ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
 OF THE POSSIBILITY OF SUCH DAMAGE.
-</code></pre>
+
+
+This product includes cryptographic software written by Eric Young
+(eay@cryptsoft.com).  This product includes software written by Tim
+Hudson (tjh@cryptsoft.com).
+
+
+ Original SSLeay License
+ -----------------------
+
+Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+All rights reserved.
+
+This package is an SSL implementation written
+by Eric Young (eay@cryptsoft.com).
+The implementation was written so as to conform with Netscapes SSL.
+
+This library is free for commercial and non-commercial use as long as
+the following conditions are aheared to.  The following conditions
+apply to all code found in this distribution, be it the RC4, RSA,
+lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+included with this distribution is covered by the same copyright terms
+except that the holder is Tim Hudson (tjh@cryptsoft.com).
+
+Copyright remains Eric Young&#39;s, and as such any Copyright notices in
+the code are not to be removed.
+If this package is used in a product, Eric Young should be given attribution
+as the author of the parts of the library used.
+This can be in the form of a textual message at program startup or
+in documentation (online or textual) provided with the package.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+1. Redistributions of source code must retain the copyright
+   notice, this list of conditions and the following disclaimer.
+2. Redistributions in binary form must reproduce the above copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+3. All advertising materials mentioning features or use of this software
+   must display the following acknowledgement:
+   &quot;This product includes cryptographic software written by
+    Eric Young (eay@cryptsoft.com)&quot;
+   The word &#39;cryptographic&#39; can be left out if the rouines from the library
+   being used are not cryptographic related :-).
+4. If you include any Windows specific code (or a derivative thereof) from 
+   the apps directory (application code) you must include an acknowledgement:
+   &quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)&quot;
+
+THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGE.
+
+The licence and distribution terms for any publically available version or
+derivative of this code cannot be changed.  i.e. this code cannot simply be
+copied and put under another distribution licence
+[including the GNU Public Licence.]</code></pre>
 <hr />
 <h2>Raw Data</h2>
 <h3>Facts</h3>
@@ -166,8 +242,8 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
 <li><p><a href="https://github.com/finos/OSLC-handbook/blob/master/src/OpenSSL.yaml" title="finos/OSLC-handbook">finos/OSLC-handbook</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/OpenSSL.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
-<li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
+<li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -175,9 +251,9 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     &quot;__impliedNames&quot;: [
         &quot;OpenSSL&quot;,
         &quot;OpenSSL License&quot;,
-        &quot;scancode://openssl&quot;,
         &quot;scancode://openssl-ssleay&quot;,
         &quot;OpenSSL/SSLeay License&quot;,
+        &quot;scancode://openssl&quot;,
         &quot;OpenSSL license&quot;
     ],
     &quot;__impliedId&quot;: &quot;OpenSSL&quot;,
@@ -189,7 +265,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         [
             &quot;Scancode&quot;,
             [
-                &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;
+                &quot;Per SPDX.org, the OpenSSL toolkit stays under a dual license, i.e. both the\nconditions of the OpenSSL License and the original SSLeay license apply to\nthe toolkit.\n&quot;
             ]
         ]
     ],
@@ -264,31 +340,31 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
             }
         },
         &quot;Scancode&quot;: {
-            &quot;otherUrls&quot;: [
-                &quot;http://www.openssl.org/source/license.html&quot;
-            ],
-            &quot;homepageUrl&quot;: &quot;http://openssl.org/source/license.html&quot;,
-            &quot;shortName&quot;: &quot;OpenSSL License&quot;,
+            &quot;otherUrls&quot;: null,
+            &quot;homepageUrl&quot;: &quot;http://www.openssl.org/source/license.html&quot;,
+            &quot;shortName&quot;: &quot;OpenSSL/SSLeay License&quot;,
             &quot;textUrls&quot;: null,
-            &quot;text&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   licensing@OpenSSL.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+            &quot;text&quot;: &quot;LICENSE ISSUES\n  ==============\n\n  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of\n  the OpenSSL License and the original SSLeay license apply to the toolkit.\n  See below for the actual license texts. Actually both licenses are BSD-style\n  Open Source licenses. In case of any license issues related to OpenSSL\n  please contact openssl-core@openssl.org.\n\n  OpenSSL License\n  ---------------\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   openssl-core@openssl.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThis product includes cryptographic software written by Eric Young\n(eay@cryptsoft.com).  This product includes software written by Tim\nHudson (tjh@cryptsoft.com).\n\n\n Original SSLeay License\n -----------------------\n\nCopyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\nAll rights reserved.\n\nThis package is an SSL implementation written\nby Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n4. If you include any Windows specific code (or a derivative thereof) from \n   the apps directory (application code) you must include an acknowledgement:\n   \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
             &quot;category&quot;: &quot;Permissive&quot;,
             &quot;osiUrl&quot;: null,
             &quot;owner&quot;: &quot;OpenSSL&quot;,
-            &quot;_sourceURL&quot;: &quot;https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl.yml&quot;,
-            &quot;key&quot;: &quot;openssl&quot;,
-            &quot;name&quot;: &quot;OpenSSL License&quot;,
-            &quot;spdxId&quot;: null,
-            &quot;notes&quot;: &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;,
+            &quot;_sourceURL&quot;: &quot;https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-ssleay.yml&quot;,
+            &quot;key&quot;: &quot;openssl-ssleay&quot;,
+            &quot;name&quot;: &quot;OpenSSL/SSLeay License&quot;,
+            &quot;spdxId&quot;: &quot;OpenSSL&quot;,
+            &quot;notes&quot;: &quot;Per SPDX.org, the OpenSSL toolkit stays under a dual license, i.e. both the\nconditions of the OpenSSL License and the original SSLeay license apply to\nthe toolkit.\n&quot;,
             &quot;_implications&quot;: {
                 &quot;__impliedNames&quot;: [
-                    &quot;scancode://openssl&quot;,
-                    &quot;OpenSSL License&quot;
+                    &quot;scancode://openssl-ssleay&quot;,
+                    &quot;OpenSSL/SSLeay License&quot;,
+                    &quot;OpenSSL&quot;
                 ],
+                &quot;__impliedId&quot;: &quot;OpenSSL&quot;,
                 &quot;__impliedComments&quot;: [
                     [
                         &quot;Scancode&quot;,
                         [
-                            &quot;This is the OpenSSL license proper, without the SSLEay part. The SPDX\nOpenSSL identifier does not apply here. Instead it matches the openssl-\nssleay license.\n&quot;
+                            &quot;Per SPDX.org, the OpenSSL toolkit stays under a dual license, i.e. both the\nconditions of the OpenSSL License and the original SSLeay license apply to\nthe toolkit.\n&quot;
                         ]
                     ]
                 ],
@@ -299,14 +375,10 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                     ]
                 ],
                 &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
-                &quot;__impliedText&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   licensing@OpenSSL.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+                &quot;__impliedText&quot;: &quot;LICENSE ISSUES\n  ==============\n\n  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of\n  the OpenSSL License and the original SSLeay license apply to the toolkit.\n  See below for the actual license texts. Actually both licenses are BSD-style\n  Open Source licenses. In case of any license issues related to OpenSSL\n  please contact openssl-core@openssl.org.\n\n  OpenSSL License\n  ---------------\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   openssl-core@openssl.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThis product includes cryptographic software written by Eric Young\n(eay@cryptsoft.com).  This product includes software written by Tim\nHudson (tjh@cryptsoft.com).\n\n\n Original SSLeay License\n -----------------------\n\nCopyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\nAll rights reserved.\n\nThis package is an SSL implementation written\nby Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n4. If you include any Windows specific code (or a derivative thereof) from \n   the apps directory (application code) you must include an acknowledgement:\n   \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
                 &quot;__impliedURLs&quot;: [
                     [
                         &quot;Homepage&quot;,
-                        &quot;http://openssl.org/source/license.html&quot;
-                    ],
-                    [
-                        null,
                         &quot;http://www.openssl.org/source/license.html&quot;
                     ]
                 ]
@@ -434,12 +506,12 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                             &quot;name&quot;: &quot;Use the name to endorse and promote derived products&quot;
                         }
                     ],
-                    &quot;_str&quot;: &quot;Description: \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot;. openssl-core@openssl.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n&quot;,
+                    &quot;_str&quot;: &quot;Description: \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot;. openssl-core@openssl.orgに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n&quot;,
                     &quot;conditions&quot;: {
                         &quot;name&quot;: &quot;Get special permission in writing.&quot;,
                         &quot;type&quot;: &quot;REQUISITE&quot;
                     },
-                    &quot;description&quot;: &quot;\&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot;. openssl-core@openssl.orgã«é£çµ¡ãã.&quot;
+                    &quot;description&quot;: &quot;\&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot;. openssl-core@openssl.orgに連絡する.&quot;
                 },
                 {
                     &quot;actions&quot;: [
@@ -539,7 +611,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                     ],
                     &quot;termSeeAlso&quot;: null,
                     &quot;termDescription&quot;: &quot;Provide copy of license&quot;,
-                    &quot;termComplianceNotes&quot;: &quot;For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ&quot;,
+                    &quot;termComplianceNotes&quot;: &quot;For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”&quot;,
                     &quot;termType&quot;: &quot;condition&quot;
                 },
                 {
@@ -551,7 +623,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
                     ],
                     &quot;termSeeAlso&quot;: null,
                     &quot;termDescription&quot;: &quot;Provide copyright notice&quot;,
-                    &quot;termComplianceNotes&quot;: &quot;For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ&quot;,
+                    &quot;termComplianceNotes&quot;: &quot;For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”&quot;,
                     &quot;termType&quot;: &quot;condition&quot;
                 },
                 {
@@ -683,7 +755,7 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
     ],
     &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
     &quot;__isOsiApproved&quot;: false,
-    &quot;__impliedText&quot;: &quot;Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.OpenSSL.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   licensing@OpenSSL.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.OpenSSL.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n&quot;,
+    &quot;__impliedText&quot;: &quot;LICENSE ISSUES\n  ==============\n\n  The OpenSSL toolkit stays under a dual license, i.e. both the conditions of\n  the OpenSSL License and the original SSLeay license apply to the toolkit.\n  See below for the actual license texts. Actually both licenses are BSD-style\n  Open Source licenses. In case of any license issues related to OpenSSL\n  please contact openssl-core@openssl.org.\n\n  OpenSSL License\n  ---------------\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer. \n\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in\n   the documentation and/or other materials provided with the\n   distribution.\n\n3. All advertising materials mentioning features or use of this\n   software must display the following acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit. (http://www.openssl.org/)\&quot;\n\n4. The names \&quot;OpenSSL Toolkit\&quot; and \&quot;OpenSSL Project\&quot; must not be used to\n   endorse or promote products derived from this software without\n   prior written permission. For written permission, please contact\n   openssl-core@openssl.org.\n\n5. Products derived from this software may not be called \&quot;OpenSSL\&quot;\n   nor may \&quot;OpenSSL\&quot; appear in their names without prior written\n   permission of the OpenSSL Project.\n\n6. Redistributions of any form whatsoever must retain the following\n   acknowledgment:\n   \&quot;This product includes software developed by the OpenSSL Project\n   for use in the OpenSSL Toolkit (http://www.openssl.org/)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS&#39;&#39; AND ANY\nEXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\nPURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR\nITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT\nNOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,\nSTRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\nARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED\nOF THE POSSIBILITY OF SUCH DAMAGE.\n\n\nThis product includes cryptographic software written by Eric Young\n(eay@cryptsoft.com).  This product includes software written by Tim\nHudson (tjh@cryptsoft.com).\n\n\n Original SSLeay License\n -----------------------\n\nCopyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)\nAll rights reserved.\n\nThis package is an SSL implementation written\nby Eric Young (eay@cryptsoft.com).\nThe implementation was written so as to conform with Netscapes SSL.\n\nThis library is free for commercial and non-commercial use as long as\nthe following conditions are aheared to.  The following conditions\napply to all code found in this distribution, be it the RC4, RSA,\nlhash, DES, etc., code; not just the SSL code.  The SSL documentation\nincluded with this distribution is covered by the same copyright terms\nexcept that the holder is Tim Hudson (tjh@cryptsoft.com).\n\nCopyright remains Eric Young&#39;s, and as such any Copyright notices in\nthe code are not to be removed.\nIf this package is used in a product, Eric Young should be given attribution\nas the author of the parts of the library used.\nThis can be in the form of a textual message at program startup or\nin documentation (online or textual) provided with the package.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n1. Redistributions of source code must retain the copyright\n   notice, this list of conditions and the following disclaimer.\n2. Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the distribution.\n3. All advertising materials mentioning features or use of this software\n   must display the following acknowledgement:\n   \&quot;This product includes cryptographic software written by\n    Eric Young (eay@cryptsoft.com)\&quot;\n   The word &#39;cryptographic&#39; can be left out if the rouines from the library\n   being used are not cryptographic related :-).\n4. If you include any Windows specific code (or a derivative thereof) from \n   the apps directory (application code) you must include an acknowledgement:\n   \&quot;This product includes software written by Tim Hudson (tjh@cryptsoft.com)\&quot;\n\nTHIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS&#39;&#39; AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\nFOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\nOR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\nOUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\nSUCH DAMAGE.\n\nThe licence and distribution terms for any publically available version or\nderivative of this code cannot be changed.  i.e. this code cannot simply be\ncopied and put under another distribution licence\n[including the GNU Public Licence.]&quot;,
     &quot;__impliedURLs&quot;: [
         [
             &quot;SPDX&quot;,
@@ -703,11 +775,11 @@ OF THE POSSIBILITY OF SUCH DAMAGE.
         ],
         [
             &quot;Homepage&quot;,
-            &quot;http://openssl.org/source/license.html&quot;
+            &quot;http://www.openssl.org/source/license.html&quot;
         ],
         [
             &quot;Homepage&quot;,
-            &quot;http://www.openssl.org/source/license.html&quot;
+            &quot;http://openssl.org/source/license.html&quot;
         ]
     ]
 }</code></pre>

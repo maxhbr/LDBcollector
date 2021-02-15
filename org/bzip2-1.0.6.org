@@ -1,11 +1,10 @@
 * bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
-
-| Key              | Value                               |
-|------------------+-------------------------------------|
-| Fullname         | bzip2 and libbzip2 License v1.0.6   |
-| Shortname        | bzip2-1.0.6                         |
-| Rating           | Go                                  |
-| Classification   | NoCopyleft                          |
+| Key            | Value                             |
+|----------------+-----------------------------------|
+| Fullname       | bzip2 and libbzip2 License v1.0.6 |
+| Shortname      | bzip2-1.0.6                       |
+| Rating         | Go                                |
+| Classification | NoCopyleft                        |
 
 *Other Names:*
 
@@ -65,7 +64,6 @@
     AND
       OBLIGATION: Correctly indicate the origin of the software in question
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -88,7 +86,6 @@
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Correctly indicate the origin of the software in question
       OBLIGATION: Indicate that you have made the change yourself.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -102,7 +99,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -139,7 +135,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -157,7 +152,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -500,5 +494,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/bzip2-1.0.6.svg]]

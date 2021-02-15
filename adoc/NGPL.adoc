@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+The Nethack General Public License+`
-* `+License :: OSI Approved :: Nethack General Public License+`
-* `+scancode://ngpl+`
+* `The Nethack General Public License`
+* `License :: OSI Approved :: Nethack General Public License`
+* `scancode://ngpl`
 
 === Comments on (easy) usability
 

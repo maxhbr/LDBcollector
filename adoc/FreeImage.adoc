@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://freeimage-1.0+`
-* `+FreeImage Public License 1.0+`
+* `scancode://freeimage-1.0`
+* `FreeImage Public License 1.0`
 
 === Comments on (easy) usability
 

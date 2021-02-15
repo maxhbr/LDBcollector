@@ -1,11 +1,10 @@
 * BSD with attribution (BSD-3-Clause-Attribution)
-
-| Key              | Value                      |
-|------------------+----------------------------|
-| Fullname         | BSD with attribution       |
-| Shortname        | BSD-3-Clause-Attribution   |
-| Rating           | Go                         |
-| Classification   | NoCopyleft                 |
+| Key            | Value                    |
+|----------------+--------------------------|
+| Fullname       | BSD with attribution     |
+| Shortname      | BSD-3-Clause-Attribution |
+| Rating         | Go                       |
+| Classification | NoCopyleft               |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - *SPDX:* http://spdx.org/licenses/BSD-3-Clause-Attribution.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without modification,
   are permitted provided that the following conditions are met:
@@ -71,7 +69,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -98,7 +95,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -346,5 +342,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-3-Clause-Attribution.svg]]

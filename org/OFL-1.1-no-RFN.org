@@ -1,10 +1,9 @@
 * SIL Open Font License 1.1 with no Reserved Font Name (OFL-1.1-no-RFN)
-
-| Key         | Value                                                  |
-|-------------+--------------------------------------------------------|
-| Fullname    | SIL Open Font License 1.1 with no Reserved Font Name   |
-| Shortname   | OFL-1.1-no-RFN                                         |
-| Rating      | Unknown, probably Attention or Stop or No-Go           |
+| Key       | Value                                                |
+|-----------+------------------------------------------------------|
+| Fullname  | SIL Open Font License 1.1 with no Reserved Font Name |
+| Shortname | OFL-1.1-no-RFN                                       |
+| Rating    | Unknown, probably Attention or Stop or No-Go         |
 
 ** Comments on (easy) usability
 
@@ -25,7 +24,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -34,7 +32,6 @@
   this repository] is generated)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -125,5 +122,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OFL-1.1-no-RFN.svg]]

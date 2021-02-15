@@ -1,11 +1,10 @@
 * Zed License (Zed)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Zed License                       |
-| Shortname        | Zed                               |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Zed License                     |
+| Shortname      | Zed                             |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Zed.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   You may copy and distribute this file freely. Any queries and complaints should
   be forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this
@@ -43,7 +41,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -62,7 +59,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -269,5 +265,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Zed.svg]]

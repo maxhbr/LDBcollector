@@ -12,13 +12,13 @@
 
 *Other Names:*
 
-* `+Artistic 2.0+`
-* `+Artistic License (v. 2.0)+`
-* `+artistic-license-2.0+`
-* `+Artistic License, Version 2.0+`
-* `+License :: OSI Approved :: Artistic License+`
-* `+The Artistic License 2.0+`
-* `+scancode://artistic-2.0+`
+* `Artistic 2.0`
+* `Artistic License (v. 2.0)`
+* `artistic-license-2.0`
+* `Artistic License, Version 2.0`
+* `License :: OSI Approved :: Artistic License`
+* `The Artistic License 2.0`
+* `scancode://artistic-2.0`
 
 === Description
 

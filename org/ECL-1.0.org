@@ -1,12 +1,11 @@
 * Educational Community License v1.0 (ECL-1.0)
-
-| Key               | Value                                |
-|-------------------+--------------------------------------|
-| Fullname          | Educational Community License v1.0   |
-| Shortname         | ECL-1.0                              |
-| Rating            | Go                                   |
-| Classification    | NoCopyleft                           |
-| Has Patent Hint   | False                                |
+| Key             | Value                              |
+|-----------------+------------------------------------|
+| Fullname        | Educational Community License v1.0 |
+| Shortname       | ECL-1.0                            |
+| Rating          | Go                                 |
+| Classification  | NoCopyleft                         |
+| Has Patent Hint | False                              |
 
 *Other Names:*
 
@@ -89,7 +88,6 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -101,7 +99,6 @@
     AND
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
       OBLIGATION: Include a file to report the changes you make and the date of all changes
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -122,7 +119,6 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
       OBLIGATION: Include a file to report the changes you make and the date of all changes
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -137,7 +133,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Educational Community License 1.0
 
@@ -198,7 +193,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -226,7 +220,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -779,5 +772,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ECL-1.0.svg]]

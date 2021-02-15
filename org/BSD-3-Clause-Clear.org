@@ -1,11 +1,10 @@
 * BSD 3-Clause Clear License (BSD-3-Clause-Clear)
-
-| Key              | Value                        |
-|------------------+------------------------------|
-| Fullname         | BSD 3-Clause Clear License   |
-| Shortname        | BSD-3-Clause-Clear           |
-| Rating           | Go                           |
-| Classification   | NoCopyleft                   |
+| Key            | Value                      |
+|----------------+----------------------------|
+| Fullname       | BSD 3-Clause Clear License |
+| Shortname      | BSD-3-Clause-Clear         |
+| Rating         | Go                         |
+| Classification | NoCopyleft                 |
 
 *Other Names:*
 
@@ -43,17 +42,15 @@
 ** General Comments
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:   |
-|--------------------+-----------------------+----------------|
-| - commercial-use   | - include-copyright   | - liability    |
-|                    |                       |                |
-| - modifications    |                       | - patent-use   |
-|                    |                       |                |
-| - distribution     |                       | - warranty     |
-|                    |                       |                |
-| - private-use      |                       |                |
-                                                             
+| Rights:          | Conditions:         | Limitations: |
+|------------------+---------------------+--------------|
+| - commercial-use | - include-copyright | - liability  |
+|                  |                     |              |
+| - modifications  |                     | - patent-use |
+|                  |                     |              |
+| - distribution   |                     | - warranty   |
+|                  |                     |              |
+| - private-use    |                     |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt][choosealicense.com]]
@@ -70,7 +67,6 @@
 - http://labs.metacarta.com/license-explanation.html#license
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted (subject to the limitations in the
@@ -106,7 +102,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -138,7 +133,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -510,5 +504,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-3-Clause-Clear.svg]]

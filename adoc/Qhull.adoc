@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://qhull+`
+* `scancode://qhull`
 
 === Comments on (easy) usability
 

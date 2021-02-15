@@ -1,12 +1,11 @@
 * BSD 3-Clause No Nuclear License 2014
 (BSD-3-Clause-No-Nuclear-License-2014)
-
-| Key              | Value                                  |
-|------------------+----------------------------------------|
-| Fullname         | BSD 3-Clause No Nuclear License 2014   |
-| Shortname        | BSD-3-Clause-No-Nuclear-License-2014   |
-| Rating           | Go                                     |
-| Classification   | NoCopyleft                             |
+| Key            | Value                                |
+|----------------+--------------------------------------|
+| Fullname       | BSD 3-Clause No Nuclear License 2014 |
+| Shortname      | BSD-3-Clause-No-Nuclear-License-2014 |
+| Rating         | Go                                   |
+| Classification | NoCopyleft                           |
 
 *Other Names:*
 
@@ -41,7 +40,6 @@
 - https://web.archive.org/web/20150906075957/https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Use is subject to license terms.
 
@@ -77,7 +75,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -96,7 +93,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -299,5 +295,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-3-Clause-No-Nuclear-License-2014.svg]]

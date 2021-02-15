@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://nosl-1.0+`
-* `+NOSL 1.0+`
+* `scancode://nosl-1.0`
+* `NOSL 1.0`
 
 === Comments on (easy) usability
 

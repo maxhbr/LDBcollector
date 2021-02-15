@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://diffmark+`
+* `scancode://diffmark`
 
 === Comments on (easy) usability
 

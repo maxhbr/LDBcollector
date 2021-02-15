@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://ampas+`
-* `+AMPAS BSD-Style License+`
+* `scancode://ampas`
+* `AMPAS BSD-Style License`
 
 === Comments on (easy) usability
 

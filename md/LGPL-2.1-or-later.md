@@ -407,7 +407,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Retain notices on all files",
-                        "termComplianceNotes": "Source files usually have a standard license header that includes a copyright notice and disclaimer of warranty. This is also were you determine if the license is âor laterâ or the specific version only",
+                        "termComplianceNotes": "Source files usually have a standard license header that includes a copyright notice and disclaimer of warranty. This is also were you determine if the license is “or later” or the specific version only",
                         "termType": "condition"
                     },
                     {
@@ -417,7 +417,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Notice of modifications",
-                        "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                        "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                         "termType": "condition"
                     },
                     {
@@ -466,7 +466,7 @@ Raw Data
                             "www.softwarefreedom.org/resources/2014/SFLC-Guide_to_GPL_Compliance_2d_ed.html#lgpl[SFLC Compliance Guide]",
                             "https://copyleft.org/guide/comprehensive-gpl-guidech11.html#x14-9600010[Copyleft Guide]"
                         ],
-                        "termDescription": "Allows dynamic linking of code with âa work that uses the Libraryâ under a different license, under certain conditions.",
+                        "termDescription": "Allows dynamic linking of code with “a work that uses the Library” under a different license, under certain conditions.",
                         "termComplianceNotes": "Terms of the other license must permit reverse engineering and debugging; must provide a copy of the license and prominent notice that the Library is used; must provide source code via one of the options in section 6 of the license. Also must include any data and utility programs needed for reproducing the executable, but this need not include anything that is normally distributed with the major components of the operating system. For more information about LGPL-2.1 compliance and this condition in particular, see the references provided or consult your open source legal counsel.",
                         "termType": "other"
                     },

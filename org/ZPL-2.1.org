@@ -1,11 +1,10 @@
 * Zope Public License 2.1 (ZPL-2.1)
-
-| Key              | Value                     |
-|------------------+---------------------------|
-| Fullname         | Zope Public License 2.1   |
-| Shortname        | ZPL-2.1                   |
-| Rating           | Go                        |
-| Classification   | NoCopyleft                |
+| Key            | Value                   |
+|----------------+-------------------------|
+| Fullname       | Zope Public License 2.1 |
+| Shortname      | ZPL-2.1                 |
+| Rating         | Go                      |
+| Classification | NoCopyleft              |
 
 *Other Names:*
 
@@ -106,7 +105,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -117,13 +115,11 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This license has been certified as open source. It has also been designated as
   GPL compatible by the Free Software Foundation (FSF).
@@ -168,7 +164,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -198,7 +193,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -646,5 +640,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ZPL-2.1.svg]]

@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+RealNetworks Public Source License 1.0+`
-* `+RealNetworks Public Source License, Version 1.0+`
-* `+scancode://rpsl-1.0+`
+* `RealNetworks Public Source License 1.0`
+* `RealNetworks Public Source License, Version 1.0`
+* `scancode://rpsl-1.0`
 
 === Comments on (easy) usability
 

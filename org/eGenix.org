@@ -1,11 +1,10 @@
 * eGenix.com Public License 1.1.0 (eGenix)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | eGenix.com Public License 1.1.0   |
-| Shortname        | eGenix                            |
-| Rating           | Go                                |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | eGenix.com Public License 1.1.0 |
+| Shortname      | eGenix                          |
+| Rating         | Go                              |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   EGENIX.COM PUBLIC LICENSE AGREEMENT 
   Version 1.1.0 
@@ -85,7 +83,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -104,7 +101,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -321,5 +317,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/eGenix.svg]]

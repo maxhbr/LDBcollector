@@ -1,11 +1,10 @@
 * DOC License (DOC)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | DOC License                       |
-| Shortname        | DOC                               |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | DOC License                     |
+| Shortname      | DOC                             |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), and CoSMIC(TM)
 
@@ -61,7 +59,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -80,7 +77,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -297,5 +293,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/DOC.svg]]

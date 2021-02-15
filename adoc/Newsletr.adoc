@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://newsletr+`
+* `scancode://newsletr`
 
 === Comments on (easy) usability
 

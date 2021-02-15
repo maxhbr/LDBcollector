@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://tatu-ylonen+`
-* `+Tatu Ylonen License+`
+* `scancode://tatu-ylonen`
+* `Tatu Ylonen License`
 
 === Comments on (easy) usability
 

@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+BSD License (original)+`
-* `+scancode://bsd-original+`
-* `+BSD-Original+`
+* `BSD License (original)`
+* `scancode://bsd-original`
+* `BSD-Original`
 
 === Description
 
@@ -684,7 +684,7 @@ repository] is generated)
                     ],
                     "termSeeAlso": null,
                     "termDescription": "Provide copy of license",
-                    "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                    "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                     "termType": "condition"
                 },
                 {
@@ -696,7 +696,7 @@ repository] is generated)
                     ],
                     "termSeeAlso": null,
                     "termDescription": "Provide copyright notice",
-                    "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                    "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                     "termType": "condition"
                 },
                 {

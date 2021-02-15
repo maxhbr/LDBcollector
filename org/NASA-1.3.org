@@ -1,11 +1,10 @@
 * NASA Open Source Agreement 1.3 (NASA-1.3)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | NASA Open Source Agreement 1.3    |
-| Shortname        | NASA-1.3                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | NASA Open Source Agreement 1.3  |
+| Shortname      | NASA-1.3                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -51,7 +50,6 @@
 - http://www.opensource.org/licenses/NASA-1.3
 
 ** Text
-
 #+BEGIN_EXAMPLE
   NASA OPEN SOURCE AGREEMENT VERSION 1.3
 
@@ -162,7 +160,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -191,7 +188,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -544,5 +540,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NASA-1.3.svg]]

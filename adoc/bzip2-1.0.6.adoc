@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+The bzip2 license+`
-* `+scancode://bzip2-libbzip-2010+`
-* `+bzip2 License 2010+`
+* `The bzip2 license`
+* `scancode://bzip2-libbzip-2010`
+* `bzip2 License 2010`
 
 === Comments on (easy) usability
 

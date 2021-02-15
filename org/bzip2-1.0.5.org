@@ -1,11 +1,10 @@
 * bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
-
-| Key              | Value                               |
-|------------------+-------------------------------------|
-| Fullname         | bzip2 and libbzip2 License v1.0.5   |
-| Shortname        | bzip2-1.0.5                         |
-| Rating           | Go                                  |
-| Classification   | NoCopyleft                          |
+| Key            | Value                             |
+|----------------+-----------------------------------|
+| Fullname       | bzip2 and libbzip2 License v1.0.5 |
+| Shortname      | bzip2-1.0.5                       |
+| Rating         | Go                                |
+| Classification | NoCopyleft                        |
 
 ** Comments on (easy) usability
 
@@ -28,7 +27,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -40,7 +38,6 @@
   this repository] is generated)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -169,5 +166,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/bzip2-1.0.5.svg]]

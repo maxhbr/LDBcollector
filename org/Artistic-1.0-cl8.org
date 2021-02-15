@@ -1,11 +1,10 @@
 * Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Artistic License 1.0 w/clause 8   |
-| Shortname        | Artistic-1.0-cl8                  |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Artistic License 1.0 w/clause 8 |
+| Shortname      | Artistic-1.0-cl8                |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -50,7 +49,6 @@
 - http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Preamble
 
@@ -160,7 +158,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -182,7 +179,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -459,5 +455,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Artistic-1.0-cl8.svg]]

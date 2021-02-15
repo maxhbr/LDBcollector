@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+The Ricoh Source Code Public License+`
-* `+License :: OSI Approved :: Ricoh Source Code Public License+`
-* `+scancode://ricoh-1.0+`
-* `+Ricoh Source Code Public License 1.0+`
+* `The Ricoh Source Code Public License`
+* `License :: OSI Approved :: Ricoh Source Code Public License`
+* `scancode://ricoh-1.0`
+* `Ricoh Source Code Public License 1.0`
 
 === Comments on (easy) usability
 

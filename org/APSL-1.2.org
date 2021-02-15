@@ -1,11 +1,10 @@
 * Apple Public Source License 1.2 (APSL-1.2)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Apple Public Source License 1.2   |
-| Shortname        | APSL-1.2                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | SaaSCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Apple Public Source License 1.2 |
+| Shortname      | APSL-1.2                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | SaaSCopyleft                    |
 
 *Other Names:*
 
@@ -70,7 +69,6 @@
 - https://fedoraproject.org/wiki/Licensing/Apple_Public_Source_License_1.2
 
 ** Text
-
 #+BEGIN_EXAMPLE
   APPLE PUBLIC SOURCE LICENSE
   Version 1.2 - January 4, 2001
@@ -334,7 +332,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -360,7 +357,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -684,5 +680,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APSL-1.2.svg]]

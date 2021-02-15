@@ -1,11 +1,10 @@
 * Afmparse License (Afmparse)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Afmparse License                  |
-| Shortname        | Afmparse                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Afmparse License                |
+| Shortname      | Afmparse                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Afmparse.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This file may be freely copied and redistributed as long as:  
 
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -76,7 +73,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -284,5 +280,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Afmparse.svg]]

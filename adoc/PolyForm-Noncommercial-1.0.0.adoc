@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+scancode://polyform-noncommercial-1.0.0+`
+* `scancode://polyform-noncommercial-1.0.0`
 
 === Comments on (easy) usability
 

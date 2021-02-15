@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://agpl-1.0-plus+`
-* `+AGPL 1.0 or later+`
+* `scancode://agpl-1.0-plus`
+* `AGPL 1.0 or later`
 
 === Comments on (easy) usability
 

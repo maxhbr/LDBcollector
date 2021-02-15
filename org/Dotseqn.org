@@ -1,11 +1,10 @@
 * Dotseqn License (Dotseqn)
-
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | Dotseqn License   |
-| Shortname        | Dotseqn           |
-| Rating           | Unknown           |
-| Classification   | NoCopyleft        |
+| Key            | Value           |
+|----------------+-----------------|
+| Fullname       | Dotseqn License |
+| Shortname      | Dotseqn         |
+| Rating         | Unknown         |
+| Classification | NoCopyleft      |
 
 *Other Names:*
 
@@ -27,7 +26,6 @@
 - *SPDX:* http://spdx.org/licenses/Dotseqn.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \documentclass).
 
@@ -37,7 +35,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -53,7 +50,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -209,5 +205,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Dotseqn.svg]]

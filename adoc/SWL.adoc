@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://swl+`
-* `+Scheme Widget Library (SWL) Software License+`
+* `scancode://swl`
+* `Scheme Widget Library (SWL) Software License`
 
 === Comments on (easy) usability
 

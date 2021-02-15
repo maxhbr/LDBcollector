@@ -1,11 +1,10 @@
 * Sendmail License 8.23 (Sendmail-8.23)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Sendmail License 8.23                          |
-| Shortname        | Sendmail-8.23                                  |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Sendmail License 8.23                        |
+| Shortname      | Sendmail-8.23                                |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -25,7 +24,6 @@
 - https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf
 
 ** Text
-
 #+BEGIN_EXAMPLE
   SENDMAIL LICENSE 
   The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. 
@@ -67,7 +65,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -79,7 +76,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -213,5 +209,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Sendmail-8.23.svg]]

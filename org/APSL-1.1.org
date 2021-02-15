@@ -1,11 +1,10 @@
 * Apple Public Source License 1.1 (APSL-1.1)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Apple Public Source License 1.1   |
-| Shortname        | APSL-1.1                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | SaaSCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Apple Public Source License 1.1 |
+| Shortname      | APSL-1.1                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | SaaSCopyleft                    |
 
 *Other Names:*
 
@@ -105,7 +104,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -120,7 +118,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.
       OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -136,7 +133,6 @@
       OBLIGATION: The notes to this license are posted verbatim.
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -150,7 +146,6 @@
       OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software
       OBLIGATION: The notes to this license are posted verbatim.
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -167,7 +162,6 @@
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
       OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -183,7 +177,6 @@
       OBLIGATION: The notes to this license are posted verbatim.
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -201,7 +194,6 @@
       OBLIGATION: The notes to this license are posted verbatim.
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -218,7 +210,6 @@
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license
       OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -238,7 +229,6 @@
       OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice
       OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)
       OBLIGATION: Letting you know how to get your modifications.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -258,7 +248,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.
       OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -276,7 +265,6 @@
       OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)
       OBLIGATION: Letting you know how to get your modifications.
       OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -287,7 +275,6 @@
     AND
       OBLIGATION: I'm responsible for my own. (If problems arise, including problems associated with distribution, we will deal with them ourselves.)
       OBLIGATION: Obtain the recipient's agreement to impose its own additional terms
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -302,7 +289,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   APPLE PUBLIC SOURCE LICENSE
   Version 1.1 - April 19,1999
@@ -681,7 +667,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -710,7 +695,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1011,7 +995,7 @@
                               "name": "Use object code generated from modified source code for internal research and development"
                           }
                       ],
-                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Modify the acquired source code for internal research and development\n- Use of modified source code for internal research and development\n- Use object code generated from modified source code for internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
+                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Modify the acquired source code for internal research and development\n- Use of modified source code for internal research and development\n- Use object code generated from modified source code for internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1028,7 +1012,7 @@
                               }
                           ]
                       },
-                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
                   },
                   {
                       "actions": [
@@ -1107,7 +1091,7 @@
                               "name": "Distribute modified source code for internal research and development."
                           }
                       ],
-                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Distribute modified source code for internal research and development.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
+                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Distribute modified source code for internal research and development.\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1140,7 +1124,7 @@
                               }
                           ]
                       },
-                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
                   },
                   {
                       "actions": [
@@ -1148,7 +1132,7 @@
                               "name": "Distribute object code generated from modified source code for internal research and development"
                           }
                       ],
-                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Distribute object code generated from modified source code for internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
+                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Distribute object code generated from modified source code for internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1177,7 +1161,7 @@
                               }
                           ]
                       },
-                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
                   },
                   {
                       "actions": [
@@ -1231,7 +1215,7 @@
                               "name": "Use of modified source code for purposes other than internal research and development"
                           }
                       ],
-                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Use of modified source code for purposes other than internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
+                      "_str": "Description: A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).\nActions:\n- Use of modified source code for purposes other than internal research and development\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1264,7 +1248,7 @@
                               }
                           ]
                       },
-                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. â Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
+                      "description": "A copy of the EXHIBIT A notice shall be included in each file of source code of the Modification. ● Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code)."
                   },
                   {
                       "actions": [
@@ -1276,7 +1260,7 @@
                               "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                           }
                       ],
-                      "_str": "Description: A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html â Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code).\nActions:\n- Distribute modified source code for purposes other than internal research and development.\n- Sublicense modified source code for non-internal research and development (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n  OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)\n  OBLIGATION: Letting you know how to get your modifications.\n\n",
+                      "_str": "Description: A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html ● Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code).\nActions:\n- Distribute modified source code for purposes other than internal research and development.\n- Sublicense modified source code for non-internal research and development (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Include any copyright notice, proprietary notices and disclaimers contained in such software\n  OBLIGATION: The notes to this license are posted verbatim.\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: Does not present or impose conditions that alter or limit the rights of the recipient to exercise under this license\n  OBLIGATION: Include a copy of the changes you made, the date of all changes, a file reporting the original version, and a copy of the EXHIBIT A notice\n  OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)\n  OBLIGATION: Letting you know how to get your modifications.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1318,7 +1302,7 @@
                               }
                           ]
                       },
-                      "description": "A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html â Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code)."
+                      "description": "A copy of the EXHIBIT A notice must be included in each file of the source code of the modifications. You may obtain your modifications by completing and presenting the information at the following URL: http://www.apple.com/publicsource/modifications.html ● Source code is the source code for all modules included in the software, the Refers to the scripts used to control the compilation and installation of all relevant interface definition files and executables (object code)."
                   },
                   {
                       "actions": [
@@ -1389,7 +1373,7 @@
                               "description": "Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party."
                           }
                       ],
-                      "_str": "Description: âInformation on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html â Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts.\nActions:\n- Distribute object code generated from modified source code for purposes other than internal research and development.\n- Sublicense object code generated from modified source code for non-internal research and development (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute executables generated from modified source code for non-internal research and development.\n- Sublicense executables generated from modified source code for non-internal research and development. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)\n  OBLIGATION: Letting you know how to get your modifications.\n  OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.\n\n",
+                      "_str": "Description: ●Information on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html ● Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts.\nActions:\n- Distribute object code generated from modified source code for purposes other than internal research and development.\n- Sublicense object code generated from modified source code for non-internal research and development (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n- Distribute executables generated from modified source code for non-internal research and development.\n- Sublicense executables generated from modified source code for non-internal research and development. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free patent license of the copyright holder is granted in accordance with this license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free copyright license is granted in accordance with this license.\n  OBLIGATION: Make the source code of the modifications publicly available in electronic form for a period of time during the deployment of the software or twelve (12) months from the date of first deployment, whichever is longer. (Deployment means to use, sublicense or distribute the Software for purposes other than internal research and development. This includes, but is not limited to, any use or distribution within one's own company or organization other than for use in research and development of the Software, and any direct or indirect sublicense or distribution of the Software in any form to third parties. The software is made available by downloading or otherwise making it available from a website.)\n  OBLIGATION: Letting you know how to get your modifications.\n  OBLIGATION: Include a notice prominently in the code and related documentation stating that the source code for the software is available under this license, and information on how and where to obtain the source code.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1415,7 +1399,7 @@
                               }
                           ]
                       },
-                      "description": "âInformation on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html â Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts."
+                      "description": "●Information on how to obtain the modifications is provided by completing and presenting the information listed at the following URL. http://www.apple.com/publicsource/modifications.html ● Source code for all modules included in the software, all relevant interface definition files, compilation of executables (object code) and installation control scripts."
                   },
                   {
                       "actions": [
@@ -1590,5 +1574,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APSL-1.1.svg]]

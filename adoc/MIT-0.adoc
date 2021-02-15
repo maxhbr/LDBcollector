@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mit-0+`
-* `+MIT-0-Clause+`
+* `scancode://mit-0`
+* `MIT-0-Clause`
 
 === Comments on (easy) usability
 

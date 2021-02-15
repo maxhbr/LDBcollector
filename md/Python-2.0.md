@@ -924,7 +924,7 @@ Raw Data
                 "_sourceURL": "https://github.com/finos/OSLC-handbook/blob/master/src/Python-2.0.yaml",
                 "name": "Python License 2.0",
                 "nameFromFilename": "Python-2.0",
-                "notes": "This is a license âstackâ comprised of various licenses that apply to Python as it has developed over the years.",
+                "notes": "This is a license “stack” comprised of various licenses that apply to Python as it has developed over the years.",
                 "_implications": {
                     "__impliedNames": [
                         "Python-2.0",

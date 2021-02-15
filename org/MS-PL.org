@@ -1,12 +1,11 @@
 * Microsoft Public License (MS-PL)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Microsoft Public License                       |
-| Shortname         | MS-PL                                          |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | WeakCopyleft                                   |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Microsoft Public License                     |
+| Shortname       | MS-PL                                        |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | WeakCopyleft                                 |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -61,19 +60,17 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:      |
-|--------------------+-----------------------+-------------------|
-| - commercial-use   | - include-copyright   | - warranty        |
-|                    |                       |                   |
-| - modifications    |                       | - trademark-use   |
-|                    |                       |                   |
-| - distribution     |                       |                   |
-|                    |                       |                   |
-| - patent-use       |                       |                   |
-|                    |                       |                   |
-| - private-use      |                       |                   |
-                                                                
+| Rights:          | Conditions:         | Limitations:    |
+|------------------+---------------------+-----------------|
+| - commercial-use | - include-copyright | - warranty      |
+|                  |                     |                 |
+| - modifications  |                     | - trademark-use |
+|                  |                     |                 |
+| - distribution   |                     |                 |
+|                  |                     |                 |
+| - patent-use     |                     |                 |
+|                  |                     |                 |
+| - private-use    |                     |                 |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt][choosealicense.com]]
@@ -112,7 +109,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -126,7 +122,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -139,7 +134,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -150,7 +144,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -164,7 +157,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -177,13 +169,11 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Microsoft Public License (Ms-PL)
 
@@ -250,7 +240,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -299,7 +288,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1179,5 +1167,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MS-PL.svg]]

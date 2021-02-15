@@ -1,11 +1,10 @@
 * FSF All Permissive License (FSFAP)
-
-| Key              | Value                        |
-|------------------+------------------------------|
-| Fullname         | FSF All Permissive License   |
-| Shortname        | FSFAP                        |
-| Rating           | Unknown                      |
-| Classification   | NoCopyleft                   |
+| Key            | Value                      |
+|----------------+----------------------------|
+| Fullname       | FSF All Permissive License |
+| Shortname      | FSFAP                      |
+| Rating         | Unknown                    |
+| Classification | NoCopyleft                 |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - https://fedoraproject.org/wiki/Licensing/FSFAP
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Copying and distribution of this file, with or without modification, are
   permitted in any medium without royalty provided the copyright notice
@@ -50,7 +48,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -66,7 +63,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -272,5 +268,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/FSFAP.svg]]

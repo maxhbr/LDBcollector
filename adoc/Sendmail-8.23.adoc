@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://sendmail-8.23+`
+* `scancode://sendmail-8.23`
 
 === Comments on (easy) usability
 

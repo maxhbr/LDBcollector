@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+GPL-2.0++`
-* `+GPL2.0++`
-* `+GPL2++`
-* `+GPL (v2 or later)+`
-* `+scancode://gpl-2.0-plus+`
-* `+GPL 2.0 or later+`
+* `GPL-2.0+`
+* `GPL2.0+`
+* `GPL2+`
+* `GPL (v2 or later)`
+* `scancode://gpl-2.0-plus`
+* `GPL 2.0 or later`
 
 === Comments on (easy) usability
 
@@ -436,7 +436,7 @@ this repository] is generated)
                     ],
                     "termSeeAlso": null,
                     "termDescription": "Notice of modifications",
-                    "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                    "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                     "termType": "condition"
                 },
                 {

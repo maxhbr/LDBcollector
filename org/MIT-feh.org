@@ -1,11 +1,10 @@
 * feh License (MIT-feh)
-
-| Key              | Value         |
-|------------------+---------------|
-| Fullname         | feh License   |
-| Shortname        | MIT-feh       |
-| Rating           | Go            |
-| Classification   | NoCopyleft    |
+| Key            | Value       |
+|----------------+-------------|
+| Fullname       | feh License |
+| Shortname      | MIT-feh     |
+| Rating         | Go          |
+| Classification | NoCopyleft  |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - https://fedoraproject.org/wiki/Licensing/MIT#feh
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is hereby granted, free of charge, to any person obtaining a copy of this
   software and associated documentation files (the "Software"), to deal in the Software
@@ -62,7 +60,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -85,7 +82,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -319,5 +315,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MIT-feh.svg]]

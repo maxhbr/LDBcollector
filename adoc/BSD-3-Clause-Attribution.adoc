@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://bsd-ack+`
-* `+BSD Acknowledgment License+`
+* `scancode://bsd-ack`
+* `BSD Acknowledgment License`
 
 === Comments on (easy) usability
 

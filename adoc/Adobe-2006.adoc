@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://adobe-scl+`
-* `+Adobe Source Code License 2006+`
+* `scancode://adobe-scl`
+* `Adobe Source Code License 2006`
 
 === Comments on (easy) usability
 

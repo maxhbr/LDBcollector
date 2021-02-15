@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://rdisc+`
+* `scancode://rdisc`
 
 === Comments on (easy) usability
 

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://artistic-1.0-cl8+`
-* `+Artistic 1.0 w/clause 8+`
+* `scancode://artistic-1.0-cl8`
+* `Artistic 1.0 w/clause 8`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * Zope Public License 1.1 (ZPL-1.1)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Zope Public License 1.1           |
-| Shortname        | ZPL-1.1                           |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Zope Public License 1.1         |
+| Shortname      | ZPL-1.1                         |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - http://www.zope.com/
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Zope Public License (ZPL) Version 1.1
 
@@ -107,7 +105,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -130,7 +127,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -370,5 +366,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ZPL-1.1.svg]]

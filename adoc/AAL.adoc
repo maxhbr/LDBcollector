@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Attribution Assurance Licenses+`
-* `+License :: OSI Approved :: Attribution Assurance License+`
-* `+scancode://attribution+`
+* `Attribution Assurance Licenses`
+* `License :: OSI Approved :: Attribution Assurance License`
+* `scancode://attribution`
 
 === Comments on (easy) usability
 

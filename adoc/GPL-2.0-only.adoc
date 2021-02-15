@@ -11,18 +11,18 @@
 
 *Other Names:*
 
-* `+GPL-2.0+`
-* `+GPL2.0+`
-* `+GPL2+`
-* `+GPL (v2)+`
-* `+GNU General Public License Version 2+`
-* `+gpl-2.0+`
-* `+GNU GPLv2+`
-* `+GNU General Public License 2.0+`
-* `+GNU General Public License, Version 2.0+`
-* `+License :: OSI Approved :: GNU General Public License v2 (GPLv2)+`
-* `+scancode://gpl-2.0+`
-* `+GPL 2.0+`
+* `GPL-2.0`
+* `GPL2.0`
+* `GPL2`
+* `GPL (v2)`
+* `GNU General Public License Version 2`
+* `gpl-2.0`
+* `GNU GPLv2`
+* `GNU General Public License 2.0`
+* `GNU General Public License, Version 2.0`
+* `License :: OSI Approved :: GNU General Public License v2 (GPLv2)`
+* `scancode://gpl-2.0`
+* `GPL 2.0`
 
 === Description
 
@@ -1514,7 +1514,7 @@ repository] is generated)
                     ],
                     "termSeeAlso": null,
                     "termDescription": "Notice of modifications",
-                    "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                    "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                     "termType": "condition"
                 },
                 {

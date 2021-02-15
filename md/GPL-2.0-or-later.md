@@ -458,7 +458,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Notice of modifications",
-                        "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                        "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                         "termType": "condition"
                     },
                     {

@@ -1,11 +1,10 @@
 * MIT +no-false-attribs license (MITNFA)
-
-| Key              | Value                           |
-|------------------+---------------------------------|
-| Fullname         | MIT +no-false-attribs license   |
-| Shortname        | MITNFA                          |
-| Rating           | Go                              |
-| Classification   | NoCopyleft                      |
+| Key            | Value                         |
+|----------------+-------------------------------|
+| Fullname       | MIT +no-false-attribs license |
+| Shortname      | MITNFA                        |
+| Rating         | Go                            |
+| Classification | NoCopyleft                    |
 
 *Other Names:*
 
@@ -90,13 +89,11 @@
       OR
         OBLIGATION: Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.
         OBLIGATION: Delete the e-mail address or URL of the original author's bug report
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is hereby granted, free of charge, to any person
   obtaining a copy of this software and associated documentation
@@ -132,7 +129,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -154,7 +150,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -523,5 +518,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MITNFA.svg]]

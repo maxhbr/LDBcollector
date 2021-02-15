@@ -1,11 +1,10 @@
 * NTP No Attribution (NTP-0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | NTP No Attribution                             |
-| Shortname        | NTP-0                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | NTP No Attribution                           |
+| Shortname      | NTP-0                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -23,7 +22,6 @@
 - *SPDX:* http://spdx.org/licenses/NTP-0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, modify, and distribute this software and
   its documentation for any purpose is hereby granted, provided that
@@ -38,7 +36,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -50,7 +47,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -164,5 +160,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NTP-0.svg]]

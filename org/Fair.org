@@ -1,11 +1,10 @@
 * Fair License (Fair)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Fair License                      |
-| Shortname        | Fair                              |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Fair License                    |
+| Shortname      | Fair                            |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -51,7 +50,6 @@
 - http://rhid.com/fair
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Usage of the works is permitted provided that this instrument is retained with
   the works, so that any entity that uses the works is notified of this
@@ -63,7 +61,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -92,7 +89,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -469,5 +465,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Fair.svg]]

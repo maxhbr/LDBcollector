@@ -1,11 +1,10 @@
 * Mup License (Mup)
-
-| Key              | Value         |
-|------------------+---------------|
-| Fullname         | Mup License   |
-| Shortname        | Mup           |
-| Rating           | Go            |
-| Classification   | NoCopyleft    |
+| Key            | Value       |
+|----------------+-------------|
+| Fullname       | Mup License |
+| Shortname      | Mup         |
+| Rating         | Go          |
+| Classification | NoCopyleft  |
 
 *Other Names:*
 
@@ -42,7 +41,6 @@
 - https://fedoraproject.org/wiki/Licensing/Mup
 
 ** Text
-
 #+BEGIN_EXAMPLE
 
   Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -61,7 +59,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -80,7 +77,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -303,5 +299,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Mup.svg]]

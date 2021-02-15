@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://fsf-free+`
-* `+FSF Free Software License+`
+* `scancode://fsf-free`
+* `FSF Free Software License`
 
 === Comments on (easy) usability
 

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://egenix-1.1.0+`
-* `+eGenix Public License 1.1.0+`
+* `scancode://egenix-1.1.0`
+* `eGenix Public License 1.1.0`
 
 === Comments on (easy) usability
 

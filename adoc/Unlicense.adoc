@@ -12,8 +12,8 @@
 
 *Other Names:*
 
-* `+scancode://unlicense+`
-* `+Unlicense 1+`
+* `scancode://unlicense`
+* `Unlicense 1`
 
 === Description
 

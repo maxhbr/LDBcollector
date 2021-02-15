@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Ruby License (1.9.2 and earlier)+`
-* `+Ruby License (1.9.3 and later)+`
-* `+scancode://ruby+`
+* `Ruby License (1.9.2 and earlier)`
+* `Ruby License (1.9.3 and later)`
+* `scancode://ruby`
 
 === Comments on (easy) usability
 
@@ -124,7 +124,6 @@ OR
 === Text
 
 ....
-
   1. You may make and give away verbatim copies of the source form of the
      software without restriction, provided that you duplicate all of the
      original copyright notices and associated disclaimers.

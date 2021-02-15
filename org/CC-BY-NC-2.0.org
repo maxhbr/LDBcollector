@@ -1,11 +1,10 @@
 * Creative Commons Attribution Non Commercial 2.0 Generic (CC-BY-NC-2.0)
-
-| Key                 | Value                                                     |
-|---------------------+-----------------------------------------------------------|
-| Fullname            | Creative Commons Attribution Non Commercial 2.0 Generic   |
-| Shortname           | CC-BY-NC-2.0                                              |
-| Rating              | No-Go                                                     |
-| Is Non-Commercial   | True                                                      |
+| Key               | Value                                                   |
+|-------------------+---------------------------------------------------------|
+| Fullname          | Creative Commons Attribution Non Commercial 2.0 Generic |
+| Shortname         | CC-BY-NC-2.0                                            |
+| Rating            | No-Go                                                   |
+| Is Non-Commercial | True                                                    |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - https://creativecommons.org/licenses/by-nc/2.0/legalcode
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Attribution-NonCommercial 2.0
 
@@ -105,7 +103,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -126,7 +123,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -339,5 +335,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-BY-NC-2.0.svg]]

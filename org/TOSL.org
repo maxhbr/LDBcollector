@@ -1,11 +1,10 @@
 * Trusster Open Source License (TOSL)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Trusster Open Source License                   |
-| Shortname        | TOSL                                           |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Trusster Open Source License                 |
+| Shortname      | TOSL                                         |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -45,7 +44,6 @@
 - *SPDX:* http://spdx.org/licenses/TOSL.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Trusster Open Source License version 1.0a (TRUST) 
   copyright (c) 2006 Mike Mintz and Robert Ekendahl. All rights reserved.
@@ -86,7 +84,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -102,7 +99,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -275,5 +271,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TOSL.svg]]

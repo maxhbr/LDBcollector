@@ -1,12 +1,11 @@
 * CERN Open Hardware Licence Version 2 - Weakly Reciprocal
 (CERN-OHL-W-2.0)
-
-| Key              | Value                                                      |
-|------------------+------------------------------------------------------------|
-| Fullname         | CERN Open Hardware Licence Version 2 - Weakly Reciprocal   |
-| Shortname        | CERN-OHL-W-2.0                                             |
-| Rating           | Unknown, probably Attention or Stop or No-Go               |
-| Classification   | WeakCopyleft                                               |
+| Key            | Value                                                    |
+|----------------+----------------------------------------------------------|
+| Fullname       | CERN Open Hardware Licence Version 2 - Weakly Reciprocal |
+| Shortname      | CERN-OHL-W-2.0                                           |
+| Rating         | Unknown, probably Attention or Stop or No-Go             |
+| Classification | WeakCopyleft                                             |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
 
 ** Text
-
 #+BEGIN_EXAMPLE
   CERN Open Hardware Licence Version 2 - Weakly Reciprocal
 
@@ -348,7 +346,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -360,7 +357,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -502,5 +498,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CERN-OHL-W-2.0.svg]]

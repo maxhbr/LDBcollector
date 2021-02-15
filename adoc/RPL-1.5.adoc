@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Reciprocal Public License, Version 1.5+`
-* `+scancode://rpl-1.5+`
-* `+RPL 1.5+`
+* `Reciprocal Public License, Version 1.5`
+* `scancode://rpl-1.5`
+* `RPL 1.5`
 
 === Comments on (easy) usability
 
@@ -252,7 +252,7 @@ repository] is generated)
         [
             "BlueOak License List",
             [
-                "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
             ]
         ],
         [
@@ -469,7 +469,7 @@ repository] is generated)
                     [
                         "BlueOak License List",
                         [
-                            "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                            "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
                         ]
                     ]
                 ],

@@ -1,11 +1,10 @@
 * BSD 1-Clause License (BSD-1-Clause)
-
-| Key              | Value                  |
-|------------------+------------------------|
-| Fullname         | BSD 1-Clause License   |
-| Shortname        | BSD-1-Clause           |
-| Rating           | Go                     |
-| Classification   | NoCopyleft             |
+| Key            | Value                |
+|----------------+----------------------|
+| Fullname       | BSD 1-Clause License |
+| Shortname      | BSD-1-Clause         |
+| Rating         | Go                   |
+| Classification | NoCopyleft           |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/BSD-1-Clause.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -72,7 +69,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -255,5 +251,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-1-Clause.svg]]

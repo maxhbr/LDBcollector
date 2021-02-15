@@ -1,11 +1,10 @@
 * Barr License (Barr)
-
-| Key              | Value          |
-|------------------+----------------|
-| Fullname         | Barr License   |
-| Shortname        | Barr           |
-| Rating           | Go             |
-| Classification   | NoCopyleft     |
+| Key            | Value        |
+|----------------+--------------|
+| Fullname       | Barr License |
+| Shortname      | Barr         |
+| Rating         | Go           |
+| Classification | NoCopyleft   |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - *SPDX:* http://spdx.org/licenses/Barr.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This is a package of commutative diagram macros built on top of Xy-pic  by
   Michael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely
@@ -50,7 +48,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -69,7 +66,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -277,5 +273,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Barr.svg]]

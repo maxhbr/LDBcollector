@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://bittorrent-1.0+`
-* `+BitTorrent 1.0+`
+* `scancode://bittorrent-1.0`
+* `BitTorrent 1.0`
 
 === Comments on (easy) usability
 

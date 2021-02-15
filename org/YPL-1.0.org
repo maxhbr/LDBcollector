@@ -1,11 +1,10 @@
 * Yahoo! Public License v1.0 (YPL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Yahoo! Public License v1.0                     |
-| Shortname        | YPL-1.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Yahoo! Public License v1.0                   |
+| Shortname      | YPL-1.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -25,7 +24,6 @@
 - *SPDX:* http://spdx.org/licenses/YPL-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Yahoo! Public License, Version 1.0 (YPL)
 
@@ -200,7 +198,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -216,7 +213,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -351,5 +347,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/YPL-1.0.svg]]

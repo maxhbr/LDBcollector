@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+scancode://cmu-uc+`
-* `+CMU UC Regents License+`
-* `+scancode://cmu-template+`
+* `scancode://cmu-template`
+* `scancode://cmu-uc`
+* `CMU UC Regents License`
 
 === Comments on (easy) usability
 
@@ -25,9 +25,9 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === URLs
 
+* *Homepage:* http://copyfree.org/licenses/cmu/license.txt
 * *Homepage:*
 https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
-* *Homepage:* http://copyfree.org/licenses/cmu/license.txt
 * *SPDX:* https://spdx.org/licenses/MIT-CMU.html
 * *SPDX:* http://spdx.org/licenses/MIT-CMU.json
 * https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
@@ -36,20 +36,14 @@ https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
 
 ....
 Permission to use, copy, modify and distribute this software and its
-documentation for any purpose and without fee is hereby granted, provided that
-the above copyright notice appears in all copies and that both that copyright
-notice and this permission notice appear in supporting documentation, and that
-the name of CMU and The Regents of the University of California not be used in
-advertising or publicity pertaining to distribution of the software without
-specific written permission.
+documentation is hereby granted, provided that both the copyright notice and
+this permission notice appear in all copies of the software, derivative works
+or modified versions, and any portions thereof, and that both notices appear
+in supporting documentation.
 
-CMU AND THE REGENTS OF THE UNIVERSITY OF CALIFORNIA DISCLAIM ALL WARRANTIES WITH
-REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
-FITNESS. IN NO EVENT SHALL CMU OR THE REGENTS OF THE UNIVERSITY OF CALIFORNIA BE
-LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-WHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
-OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
-CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+COPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS "AS IS" CONDITION.
+COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES
+WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
 ....
 
 '''''
@@ -68,9 +62,9 @@ license-compatibility-checker]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://spdx.org/licenses/MIT-CMU.html[SPDX] (all data [in this
 repository] is generated)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml[Scancode]
-(CC0-1.0)
 * https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml[Scancode]
+(CC0-1.0)
+* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml[Scancode]
 (CC0-1.0)
 
 ==== Raw JSON
@@ -80,9 +74,9 @@ repository] is generated)
     "__impliedNames": [
         "MIT-CMU",
         "CMU License",
+        "scancode://cmu-template",
         "scancode://cmu-uc",
-        "CMU UC Regents License",
-        "scancode://cmu-template"
+        "CMU UC Regents License"
     ],
     "__impliedId": "MIT-CMU",
     "facts": {
@@ -131,28 +125,24 @@ repository] is generated)
             "spdxLicenseId": "MIT-CMU"
         },
         "Scancode": {
-            "otherUrls": [
-                "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"
-            ],
-            "homepageUrl": "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style",
-            "shortName": "CMU UC Regents License",
+            "otherUrls": null,
+            "homepageUrl": "http://copyfree.org/licenses/cmu/license.txt",
+            "shortName": "CMU License",
             "textUrls": null,
-            "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided that\nthe above copyright notice appears in all copies and that both that copyright\nnotice and this permission notice appear in supporting documentation, and that\nthe name of CMU and The Regents of the University of California not be used in\nadvertising or publicity pertaining to distribution of the software without\nspecific written permission.\n\nCMU AND THE REGENTS OF THE UNIVERSITY OF CALIFORNIA DISCLAIM ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL CMU OR THE REGENTS OF THE UNIVERSITY OF CALIFORNIA BE\nLIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION\nOF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n",
+            "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
             "category": "Permissive",
             "osiUrl": null,
             "owner": "Carnegie Mellon University",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml",
-            "key": "cmu-uc",
-            "name": "Carnegie Mellon UC Regents License",
-            "spdxId": "MIT-CMU",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml",
+            "key": "cmu-template",
+            "name": "Carnegie Mellon Template License",
+            "spdxId": null,
             "notes": null,
             "_implications": {
                 "__impliedNames": [
-                    "scancode://cmu-uc",
-                    "CMU UC Regents License",
-                    "MIT-CMU"
+                    "scancode://cmu-template",
+                    "CMU License"
                 ],
-                "__impliedId": "MIT-CMU",
                 "__impliedCopyleft": [
                     [
                         "Scancode",
@@ -160,15 +150,11 @@ repository] is generated)
                     ]
                 ],
                 "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided that\nthe above copyright notice appears in all copies and that both that copyright\nnotice and this permission notice appear in supporting documentation, and that\nthe name of CMU and The Regents of the University of California not be used in\nadvertising or publicity pertaining to distribution of the software without\nspecific written permission.\n\nCMU AND THE REGENTS OF THE UNIVERSITY OF CALIFORNIA DISCLAIM ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL CMU OR THE REGENTS OF THE UNIVERSITY OF CALIFORNIA BE\nLIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION\nOF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n",
+                "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
                 "__impliedURLs": [
                     [
                         "Homepage",
-                        "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style"
-                    ],
-                    [
-                        null,
-                        "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"
+                        "http://copyfree.org/licenses/cmu/license.txt"
                     ]
                 ]
             }
@@ -293,7 +279,7 @@ repository] is generated)
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted, provided that\nthe above copyright notice appears in all copies and that both that copyright\nnotice and this permission notice appear in supporting documentation, and that\nthe name of CMU and The Regents of the University of California not be used in\nadvertising or publicity pertaining to distribution of the software without\nspecific written permission.\n\nCMU AND THE REGENTS OF THE UNIVERSITY OF CALIFORNIA DISCLAIM ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL CMU OR THE REGENTS OF THE UNIVERSITY OF CALIFORNIA BE\nLIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION\nOF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n",
+    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -313,11 +299,11 @@ repository] is generated)
         ],
         [
             "Homepage",
-            "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style"
+            "http://copyfree.org/licenses/cmu/license.txt"
         ],
         [
             "Homepage",
-            "http://copyfree.org/licenses/cmu/license.txt"
+            "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style"
         ]
     ]
 }

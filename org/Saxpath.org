@@ -1,11 +1,10 @@
 * Saxpath License (Saxpath)
-
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | Saxpath License   |
-| Shortname        | Saxpath           |
-| Rating           | Go                |
-| Classification   | NoCopyleft        |
+| Key            | Value           |
+|----------------+-----------------|
+| Fullname       | Saxpath License |
+| Shortname      | Saxpath         |
+| Rating         | Go              |
+| Classification | NoCopyleft      |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - *SPDX:* http://spdx.org/licenses/Saxpath.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without modification,
   re permitted provided that the following conditions are met:
@@ -84,7 +82,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -103,7 +100,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -326,5 +322,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Saxpath.svg]]

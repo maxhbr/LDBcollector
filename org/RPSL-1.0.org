@@ -1,11 +1,10 @@
 * RealNetworks Public Source License v1.0 (RPSL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | RealNetworks Public Source License v1.0        |
-| Shortname        | RPSL-1.0                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | SaaSCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | RealNetworks Public Source License v1.0      |
+| Shortname      | RPSL-1.0                                     |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | SaaSCopyleft                                 |
 
 *Other Names:*
 
@@ -66,7 +65,6 @@
 - http://www.opensource.org/licenses/RPSL-1.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   RealNetworks Public Source License Version 1.0
   (Rev. Date October 28, 2002)
@@ -590,7 +588,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -622,7 +619,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -1028,5 +1024,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/RPSL-1.0.svg]]

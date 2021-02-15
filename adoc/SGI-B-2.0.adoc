@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+SGI Free Software License B 2.0+`
-* `+SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)+`
-* `+scancode://sgi-freeb-2.0+`
+* `SGI Free Software License B 2.0`
+* `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
+* `scancode://sgi-freeb-2.0`
 
 === Comments on (easy) usability
 

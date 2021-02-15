@@ -1,11 +1,10 @@
 * Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO
 (CC-BY-NC-ND-3.0-IGO)
-
-| Key         | Value                                                                |
-|-------------+----------------------------------------------------------------------|
-| Fullname    | Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO   |
-| Shortname   | CC-BY-NC-ND-3.0-IGO                                                  |
-| Rating      | Unknown, probably Attention or Stop or No-Go                         |
+| Key       | Value                                                              |
+|-----------+--------------------------------------------------------------------|
+| Fullname  | Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO |
+| Shortname | CC-BY-NC-ND-3.0-IGO                                                |
+| Rating    | Unknown, probably Attention or Stop or No-Go                       |
 
 *Other Names:*
 
@@ -24,7 +23,6 @@
 - https://creativecommons.org/licenses/by-nc-nd/3.0/igo/legalcode
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Attribution-NonCommercial-NoDerivs 3.0 IGO
 
@@ -87,7 +85,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -99,7 +96,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -199,5 +195,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-BY-NC-ND-3.0-IGO.svg]]

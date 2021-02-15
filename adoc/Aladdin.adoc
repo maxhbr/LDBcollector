@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://afpl-8.0+`
-* `+Aladdin FPL v8+`
+* `scancode://afpl-8.0`
+* `Aladdin FPL v8`
 
 === Comments on (easy) usability
 

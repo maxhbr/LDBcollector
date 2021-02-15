@@ -1,11 +1,10 @@
 * gSOAP Public License v1.3b (gSOAP-1.3b)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | gSOAP Public License v1.3b                     |
-| Shortname        | gSOAP-1.3b                                     |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | gSOAP Public License v1.3b                   |
+| Shortname      | gSOAP-1.3b                                   |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -62,7 +61,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -79,7 +77,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -95,7 +92,6 @@
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -111,7 +107,6 @@
       OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
       OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
       OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -131,7 +126,6 @@
       OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
       OBLIGATION: Include a copyright license granted pursuant to such license and a text file entitled "LEGAL" if the contributor knows that a license based on the intellectual property rights of a third party is required to exercise the patent license (Describe the rights and the third parties who claim them in sufficient detail so that persons to whom such licenses grant copyright and patent licenses can be contacted. Promptly revise any new information regarding the rights of third parties and take reasonable steps to revise any "LEGAL" contained in such software for subsequent distribution and to communicate that information to the recipients of the source code corresponding to such software. If the Contributor's modified source code contains an Application Programming Interface (API) and has obtained information about patent licenses reasonably believed to be necessary to implement such API, such information shall be included in the LEGAL.)
       OBLIGATION: Copy the notice of EXHIBIT A to each file in the source code. (If the structure of the file makes it impossible to place the notice in a specific source code file, include the notice where the user would like to see it (e.g., in a related directory).)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -149,7 +143,6 @@
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Include a file to report the changes you make and the date of all changes
       OBLIGATION: Prominently state that the modified source code is derived directly or indirectly from the source code provided by the initial developer in the source code and in any notices in the executable or related documentation explaining the origin or ownership of the software.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -174,7 +167,6 @@
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
       RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
       OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -192,13 +184,11 @@
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
       RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
       OBLIGATION: Indemnify the initial developer or contributor against any liability arising out of the terms of the license they offer
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   gSOAP Public License
 
@@ -371,7 +361,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -390,7 +379,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -953,5 +941,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/gSOAP-1.3b.svg]]

@@ -1,11 +1,10 @@
 * FreeImage Public License v1.0 (FreeImage)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | FreeImage Public License v1.0                  |
-| Shortname        | FreeImage                                      |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | FreeImage Public License v1.0                |
+| Shortname      | FreeImage                                    |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -24,7 +23,6 @@
 - *SPDX:* http://spdx.org/licenses/FreeImage.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   FreeImage Public License - Version 1.0
   ---------------------------------------------
@@ -173,7 +171,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -185,7 +182,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -300,5 +296,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/FreeImage.svg]]

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://hs-regexp+`
-* `+Henry Spencer Regexp License+`
+* `scancode://hs-regexp`
+* `Henry Spencer Regexp License`
 
 === Comments on (easy) usability
 

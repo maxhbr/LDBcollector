@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://adobe-glyph+`
-* `+Adobe Glyph License+`
+* `scancode://adobe-glyph`
+* `Adobe Glyph License`
 
 === Comments on (easy) usability
 

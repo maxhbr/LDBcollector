@@ -1,11 +1,10 @@
 * Spencer License 94 (Spencer-94)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Spencer License 94                |
-| Shortname        | Spencer-94                        |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Spencer License 94              |
+| Shortname      | Spencer-94                      |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software is not subject to any license of the American Telephone and
   Telegraph Company or of the Regents of the University of California.
@@ -58,7 +56,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -73,7 +70,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -247,5 +243,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Spencer-94.svg]]

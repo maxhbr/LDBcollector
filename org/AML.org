@@ -1,11 +1,10 @@
 * Apple MIT License (AML)
-
-| Key              | Value               |
-|------------------+---------------------|
-| Fullname         | Apple MIT License   |
-| Shortname        | AML                 |
-| Rating           | Go                  |
-| Classification   | NoCopyleft          |
+| Key            | Value             |
+|----------------+-------------------|
+| Fullname       | Apple MIT License |
+| Shortname      | AML               |
+| Rating         | Go                |
+| Classification | NoCopyleft        |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/AML.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   IMPORTANT: This Apple software is supplied to you by Apple Computer, Inc. ("Apple") in consideration of your agreement to the following terms, and your use, installation, modification or redistribution of this Apple software constitutes acceptance of these terms. If you do not agree with these terms, please do not use, install, modify or redistribute this Apple software.
 
@@ -47,7 +45,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -66,7 +63,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -273,5 +269,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AML.svg]]

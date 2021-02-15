@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://vostrom+`
-* `+VOSTROM Public License+`
+* `scancode://vostrom`
+* `VOSTROM Public License`
 
 === Comments on (easy) usability
 

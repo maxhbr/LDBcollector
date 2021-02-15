@@ -1,11 +1,10 @@
 * Condor Public License v1.1 (Condor-1.1)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Condor Public License v1.1        |
-| Shortname        | Condor-1.1                        |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Condor Public License v1.1      |
+| Shortname      | Condor-1.1                      |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor
 
 ** Text
-
 #+BEGIN_EXAMPLE
   CONDOR PUBLIC LICENSE
 
@@ -164,7 +162,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -183,7 +180,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -407,5 +403,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Condor-1.1.svg]]

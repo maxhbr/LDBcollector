@@ -1,11 +1,10 @@
 * libselinux public domain notice (libselinux-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | libselinux public domain notice                |
-| Shortname        | libselinux-1.0                                 |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | libselinux public domain notice              |
+| Shortname      | libselinux-1.0                               |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -25,7 +24,6 @@
 - *SPDX:* http://spdx.org/licenses/libselinux-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This library (libselinux) is public domain software, i.e. not copyrighted.
 
@@ -53,7 +51,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -65,7 +62,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -180,5 +176,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/libselinux-1.0.svg]]

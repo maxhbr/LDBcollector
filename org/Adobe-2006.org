@@ -1,11 +1,10 @@
 * Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
-
-| Key              | Value                                                      |
-|------------------+------------------------------------------------------------|
-| Fullname         | Adobe Systems Incorporated Source Code License Agreement   |
-| Shortname        | Adobe-2006                                                 |
-| Rating           | Unknown, probably Stop or No-Go                            |
-| Classification   | NoCopyleft                                                 |
+| Key            | Value                                                    |
+|----------------+----------------------------------------------------------|
+| Fullname       | Adobe Systems Incorporated Source Code License Agreement |
+| Shortname      | Adobe-2006                                               |
+| Rating         | Unknown, probably Stop or No-Go                          |
+| Classification | NoCopyleft                                               |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - *SPDX:* http://spdx.org/licenses/Adobe-2006.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Please read this Source Code License Agreement carefully before using the source
   code.
@@ -69,7 +67,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -88,7 +85,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -302,5 +298,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Adobe-2006.svg]]

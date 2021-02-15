@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://cc-by-nc-2.5+`
+* `scancode://cc-by-nc-2.5`
 
 === Comments on (easy) usability
 

@@ -154,7 +154,7 @@ Raw Data
                 "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Crossword",
                 "shortName": "Crossword License",
                 "textUrls": null,
-                "text": "Copyright (C) 1995-2009 Gerd Neugebauer\n ÃÂ \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
+                "text": "Copyright (C) 1995-2009 Gerd Neugebauer\n Â \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
                 "category": "Permissive",
                 "osiUrl": null,
                 "owner": "Gerd Neugebauer",
@@ -177,7 +177,7 @@ Raw Data
                         ]
                     ],
                     "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n Â \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
+                    "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n  \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
                     "__impliedURLs": [
                         [
                             "Homepage",
@@ -251,7 +251,7 @@ Raw Data
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n Â \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
+        "__impliedText": "Copyright (C) 1995-2009 Gerd Neugebauer\n  \ncwpuzzle.dtx is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY. No author or distributor  accepts responsibility to anyone for the\nconsequences of using it or for whether it serves any particular purpose  or\nworks at all, unless he says so in writing.\n\nEveryone is granted permission to copy, modify and redistribute cwpuzzle.dtx,\nprovided this copyright notice is preserved and any modifications are indicated.",
         "__impliedURLs": [
             [
                 "SPDX",

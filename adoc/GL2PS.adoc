@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+GL2PS LICENSE, Version 2+`
-* `+scancode://gl2ps+`
+* `GL2PS LICENSE, Version 2`
+* `scancode://gl2ps`
 
 === Comments on (easy) usability
 

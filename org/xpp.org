@@ -1,11 +1,10 @@
 * XPP License (xpp)
-
-| Key              | Value         |
-|------------------+---------------|
-| Fullname         | XPP License   |
-| Shortname        | xpp           |
-| Rating           | Go            |
-| Classification   | NoCopyleft    |
+| Key            | Value       |
+|----------------+-------------|
+| Fullname       | XPP License |
+| Shortname      | xpp         |
+| Rating         | Go          |
+| Classification | NoCopyleft  |
 
 *Other Names:*
 
@@ -37,7 +36,6 @@
 - https://fedoraproject.org/wiki/Licensing/xpp
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Indiana University Extreme! Lab Software License, Version 1.2
 
@@ -100,7 +98,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -119,7 +116,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -327,5 +323,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/xpp.svg]]

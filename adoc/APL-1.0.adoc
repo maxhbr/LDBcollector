@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+apl1.0+`
-* `+Adaptive Public License, Version 1.0+`
-* `+scancode://adapt-1.0+`
-* `+APL 1.0+`
+* `apl1.0`
+* `Adaptive Public License, Version 1.0`
+* `scancode://adapt-1.0`
+* `APL 1.0`
 
 === Comments on (easy) usability
 

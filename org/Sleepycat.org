@@ -1,12 +1,11 @@
 * Sleepycat License (Sleepycat)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | Sleepycat License                              |
-| Shortname         | Sleepycat                                      |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | StrongCopyleft                                 |
-| Has Patent Hint   | False                                          |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | Sleepycat License                            |
+| Shortname       | Sleepycat                                    |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | StrongCopyleft                               |
+| Has Patent Hint | False                                        |
 
 *Other Names:*
 
@@ -63,7 +62,6 @@
 - http://www.opensource.org/licenses/sleepycat.php
 
 ** Text
-
 #+BEGIN_EXAMPLE
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions
@@ -100,7 +98,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -142,7 +139,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -628,5 +624,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Sleepycat.svg]]

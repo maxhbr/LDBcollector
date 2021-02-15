@@ -12,9 +12,9 @@
 
 *Other Names:*
 
-* `+scancode://wtfpl-2.0+`
-* `+WTFPL 2.0+`
-* `+Do What The Fuck You Want To Public License (WTFPL) 2+`
+* `scancode://wtfpl-2.0`
+* `WTFPL 2.0`
+* `Do What The Fuck You Want To Public License (WTFPL) 2`
 
 === Description
 

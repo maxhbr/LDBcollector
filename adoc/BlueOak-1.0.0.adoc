@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://blueoak-1.0.0+`
+* `scancode://blueoak-1.0.0`
 
 === Comments on (easy) usability
 

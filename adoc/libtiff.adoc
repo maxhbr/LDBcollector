@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://x11-tiff+`
-* `+X11-Style (Tiff)+`
+* `scancode://x11-tiff`
+* `X11-Style (Tiff)`
 
 === Comments on (easy) usability
 

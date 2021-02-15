@@ -1,12 +1,11 @@
 * Mozilla Public License 2.0 (no copyleft exception)
 (MPL-2.0-no-copyleft-exception)
-
-| Key              | Value                                                |
-|------------------+------------------------------------------------------|
-| Fullname         | Mozilla Public License 2.0 (no copyleft exception)   |
-| Shortname        | MPL-2.0-no-copyleft-exception                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go         |
-| Classification   | WeakCopyleft                                         |
+| Key            | Value                                              |
+|----------------+----------------------------------------------------|
+| Fullname       | Mozilla Public License 2.0 (no copyleft exception) |
+| Shortname      | MPL-2.0-no-copyleft-exception                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go       |
+| Classification | WeakCopyleft                                       |
 
 *Other Names:*
 
@@ -48,7 +47,6 @@
 - https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -79,7 +76,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -358,5 +354,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MPL-2.0-no-copyleft-exception.svg]]

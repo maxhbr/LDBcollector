@@ -10,7 +10,7 @@
 
 *Other Names:*
 
-* `+scancode://cc-by-nd-2.5+`
+* `scancode://cc-by-nd-2.5`
 
 === Comments on (easy) usability
 

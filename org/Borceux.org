@@ -1,11 +1,10 @@
 * Borceux license (Borceux)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Borceux license                   |
-| Shortname        | Borceux                           |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Borceux license                 |
+| Shortname      | Borceux                         |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Borceux.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Copyright 1993 Francis Borceux
   You may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:
@@ -59,7 +57,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -78,7 +75,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -286,5 +282,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Borceux.svg]]

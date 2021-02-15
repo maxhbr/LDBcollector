@@ -1,11 +1,10 @@
 * Open LDAP Public License 2.2.2 (OLDAP-2.2.2)
-
-| Key              | Value                            |
-|------------------+----------------------------------|
-| Fullname         | Open LDAP Public License 2.2.2   |
-| Shortname        | OLDAP-2.2.2                      |
-| Rating           | Go                               |
-| Classification   | NoCopyleft                       |
+| Key            | Value                          |
+|----------------+--------------------------------|
+| Fullname       | Open LDAP Public License 2.2.2 |
+| Shortname      | OLDAP-2.2.2                    |
+| Rating         | Go                             |
+| Classification | NoCopyleft                     |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - *SPDX:* http://spdx.org/licenses/OLDAP-2.2.2.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The OpenLDAP Public License 
   Version 2.2.2, 28 July 2000 
@@ -93,7 +91,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -112,7 +109,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -316,5 +312,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OLDAP-2.2.2.svg]]

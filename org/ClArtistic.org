@@ -1,11 +1,10 @@
 * Clarified Artistic License (ClArtistic)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Clarified Artistic License        |
-| Shortname        | ClArtistic                        |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Clarified Artistic License      |
+| Shortname      | ClArtistic                      |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -39,7 +38,6 @@
 - http://www.ncftp.com/ncftp/doc/LICENSE.txt
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Clarified Artistic License
 
@@ -186,7 +184,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -211,7 +208,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -472,5 +468,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/ClArtistic.svg]]

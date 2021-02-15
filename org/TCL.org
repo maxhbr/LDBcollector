@@ -1,11 +1,10 @@
 * TCL/TK License (TCL)
-
-| Key              | Value            |
-|------------------+------------------|
-| Fullname         | TCL/TK License   |
-| Shortname        | TCL              |
-| Rating           | Go               |
-| Classification   | NoCopyleft       |
+| Key            | Value          |
+|----------------+----------------|
+| Fullname       | TCL/TK License |
+| Shortname      | TCL            |
+| Rating         | Go             |
+| Classification | NoCopyleft     |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - https://fedoraproject.org/wiki/Licensing/TCL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software is copyrighted by the Regents of the University of
   California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState
@@ -82,7 +80,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -108,7 +105,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -411,5 +407,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TCL.svg]]

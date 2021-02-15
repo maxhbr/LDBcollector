@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://imlib2+`
+* `scancode://imlib2`
 
 === Comments on (easy) usability
 

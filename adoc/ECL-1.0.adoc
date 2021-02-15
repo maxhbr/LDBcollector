@@ -12,10 +12,10 @@
 
 *Other Names:*
 
-* `+Educational Community License 1.0+`
-* `+Educational Community License, Version 1.0+`
-* `+scancode://ecl-1.0+`
-* `+ECL 1.0+`
+* `Educational Community License 1.0`
+* `Educational Community License, Version 1.0`
+* `scancode://ecl-1.0`
+* `ECL 1.0`
 
 === Comments on (easy) usability
 

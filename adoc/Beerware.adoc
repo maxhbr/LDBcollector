@@ -12,9 +12,9 @@
 
 *Other Names:*
 
-* `+scancode://beerware+`
-* `+Beer-Ware License+`
-* `+Beerware 42+`
+* `scancode://beerware`
+* `Beer-Ware License`
+* `Beerware 42`
 
 === Comments on (easy) usability
 

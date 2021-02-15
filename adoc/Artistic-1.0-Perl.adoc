@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://artistic-perl-1.0+`
-* `+Artistic-Perl-1.0+`
+* `scancode://artistic-perl-1.0`
+* `Artistic-Perl-1.0`
 
 === Comments on (easy) usability
 

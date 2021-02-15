@@ -1,11 +1,10 @@
 * Netscape Public License v1.0 (NPL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Netscape Public License v1.0                   |
-| Shortname        | NPL-1.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Netscape Public License v1.0                 |
+| Shortname      | NPL-1.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - http://www.mozilla.org/NPL/
 
 ** Text
-
 #+BEGIN_EXAMPLE
   NETSCAPE PUBLIC LICENSE
   Version 1.0
@@ -177,7 +175,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -193,7 +190,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -351,5 +347,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NPL-1.0.svg]]

@@ -1,11 +1,10 @@
 * dvipdfm License (dvipdfm)
-
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | dvipdfm License   |
-| Shortname        | dvipdfm           |
-| Rating           | Unknown           |
-| Classification   | NoCopyleft        |
+| Key            | Value           |
+|----------------+-----------------|
+| Fullname       | dvipdfm License |
+| Shortname      | dvipdfm         |
+| Rating         | Unknown         |
+| Classification | NoCopyleft      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/dvipdfm.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   A modified version of this file may be distributed, but it should be distributed
   with a *different* name. Changed files must be distributed *together with a
@@ -43,7 +41,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -59,7 +56,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -231,5 +227,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/dvipdfm.svg]]

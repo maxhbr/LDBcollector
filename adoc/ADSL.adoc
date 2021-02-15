@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://adsl+`
+* `scancode://adsl`
 
 === Comments on (easy) usability
 

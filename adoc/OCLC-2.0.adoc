@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+oclc2+`
-* `+The OCLC Research Public License, Version 2.0+`
-* `+scancode://oclc-2.0+`
+* `oclc2`
+* `The OCLC Research Public License, Version 2.0`
+* `scancode://oclc-2.0`
 
 === Comments on (easy) usability
 

@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://fastcgi-devkit+`
-* `+FastCGI DevKit+`
+* `scancode://fastcgi-devkit`
+* `FastCGI DevKit`
 
 === Comments on (easy) usability
 

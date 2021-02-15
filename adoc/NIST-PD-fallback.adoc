@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://nist-pd-fallback+`
-* `+NIST Public Domain Notice with fallback+`
+* `scancode://nist-pd-fallback`
+* `NIST Public Domain Notice with fallback`
 
 === Comments on (easy) usability
 

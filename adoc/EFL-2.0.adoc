@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+Eiffel Forum License 2.0+`
-* `+Eiffel Forum License, Version 2+`
-* `+License :: OSI Approved :: Eiffel Forum License+`
-* `+scancode://efl-2.0+`
-* `+EFL 2.0+`
+* `Eiffel Forum License 2.0`
+* `Eiffel Forum License, Version 2`
+* `License :: OSI Approved :: Eiffel Forum License`
+* `scancode://efl-2.0`
+* `EFL 2.0`
 
 === Comments on (easy) usability
 

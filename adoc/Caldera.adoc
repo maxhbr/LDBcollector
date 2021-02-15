@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://caldera+`
+* `scancode://caldera`
 
 === Comments on (easy) usability
 

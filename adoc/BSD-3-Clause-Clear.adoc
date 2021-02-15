@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Clear BSD+`
-* `+scancode://clear-bsd+`
-* `+Clear BSD License+`
+* `Clear BSD`
+* `scancode://clear-bsd`
+* `Clear BSD License`
 
 === Description
 

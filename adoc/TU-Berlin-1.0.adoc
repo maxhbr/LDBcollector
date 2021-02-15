@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://tu-berlin+`
-* `+TU Berlin License 1.0+`
+* `scancode://tu-berlin`
+* `TU Berlin License 1.0`
 
 === Comments on (easy) usability
 

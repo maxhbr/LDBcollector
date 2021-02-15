@@ -1,10 +1,9 @@
 * PolyForm Noncommercial License 1.0.0 (PolyForm-Noncommercial-1.0.0)
-
-| Key         | Value                                          |
-|-------------+------------------------------------------------|
-| Fullname    | PolyForm Noncommercial License 1.0.0           |
-| Shortname   | PolyForm-Noncommercial-1.0.0                   |
-| Rating      | Unknown, probably Attention or Stop or No-Go   |
+| Key       | Value                                        |
+|-----------+----------------------------------------------|
+| Fullname  | PolyForm Noncommercial License 1.0.0         |
+| Shortname | PolyForm-Noncommercial-1.0.0                 |
+| Rating    | Unknown, probably Attention or Stop or No-Go |
 
 *Other Names:*
 
@@ -23,7 +22,6 @@
 - https://polyformproject.org/licenses/noncommercial/1.0.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   # Polyform Noncommercial License 1.0.0
 
@@ -161,7 +159,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -173,7 +170,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -280,5 +276,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/PolyForm-Noncommercial-1.0.0.svg]]

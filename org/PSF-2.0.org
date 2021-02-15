@@ -1,11 +1,10 @@
 * Python Software Foundation License 2.0 (PSF-2.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Python Software Foundation License 2.0         |
-| Shortname        | PSF-2.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Python Software Foundation License 2.0       |
+| Shortname      | PSF-2.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -22,7 +21,6 @@
 - *SPDX:* http://spdx.org/licenses/PSF-2.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 
@@ -39,7 +37,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -51,7 +48,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -165,5 +161,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/PSF-2.0.svg]]

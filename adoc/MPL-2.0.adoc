@@ -12,12 +12,12 @@
 
 *Other Names:*
 
-* `+mozilla2.0+`
-* `+Mozilla Public License, Version 2.0+`
-* `+License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)+`
-* `+Mozilla Public License Version 2.0+`
-* `+scancode://mpl-2.0+`
-* `+MPL 2.0+`
+* `mozilla2.0`
+* `Mozilla Public License, Version 2.0`
+* `License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)`
+* `Mozilla Public License Version 2.0`
+* `scancode://mpl-2.0`
+* `MPL 2.0`
 
 === Description
 

@@ -11,10 +11,10 @@
 
 *Other Names:*
 
-* `+Simple-2.0+`
-* `+Simple Public License (SimPL-2.0)+`
-* `+scancode://simpl-2.0+`
-* `+SimPL 2.0+`
+* `Simple-2.0`
+* `Simple Public License (SimPL-2.0)`
+* `scancode://simpl-2.0`
+* `SimPL 2.0`
 
 === Comments on (easy) usability
 

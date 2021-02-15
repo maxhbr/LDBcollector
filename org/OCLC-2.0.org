@@ -1,11 +1,10 @@
 * OCLC Research Public License 2.0 (OCLC-2.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | OCLC Research Public License 2.0               |
-| Shortname        | OCLC-2.0                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | OCLC Research Public License 2.0             |
+| Shortname      | OCLC-2.0                                     |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -41,7 +40,6 @@
 - http://www.opensource.org/licenses/OCLC-2.0
 
 ** Text
-
 #+BEGIN_EXAMPLE
   OCLC Research Public License 2.0
   Terms & Conditions Of Use
@@ -233,7 +231,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -255,7 +252,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -536,5 +532,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OCLC-2.0.svg]]

@@ -1,11 +1,10 @@
 * CUA Office Public License v1.0 (CUA-OPL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | CUA Office Public License v1.0                 |
-| Shortname        | CUA-OPL-1.0                                    |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | CUA Office Public License v1.0               |
+| Shortname      | CUA-OPL-1.0                                  |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - *SPDX:* http://spdx.org/licenses/CUA-OPL-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   CUA Office Public License Version 1.0
   1. Definitions.
@@ -513,7 +511,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -539,7 +536,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -823,5 +819,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CUA-OPL-1.0.svg]]

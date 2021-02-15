@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://sax-pd+`
+* `scancode://sax-pd`
 
 === Comments on (easy) usability
 

@@ -12,8 +12,8 @@
 
 *Other Names:*
 
-* `+Microsoft Public License (MS-PL)+`
-* `+scancode://ms-pl+`
+* `Microsoft Public License (MS-PL)`
+* `scancode://ms-pl`
 
 === Description
 

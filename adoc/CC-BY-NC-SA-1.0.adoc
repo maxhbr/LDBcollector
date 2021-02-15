@@ -15,7 +15,7 @@ Generic
 
 *Other Names:*
 
-* `+scancode://cc-by-nc-sa-1.0+`
+* `scancode://cc-by-nc-sa-1.0`
 
 === Comments on (easy) usability
 

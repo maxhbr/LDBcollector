@@ -1,11 +1,10 @@
 * Academy of Motion Picture Arts and Sciences BSD (AMPAS)
-
-| Key              | Value                                             |
-|------------------+---------------------------------------------------|
-| Fullname         | Academy of Motion Picture Arts and Sciences BSD   |
-| Shortname        | AMPAS                                             |
-| Rating           | Go                                                |
-| Classification   | NoCopyleft                                        |
+| Key            | Value                                           |
+|----------------+-------------------------------------------------|
+| Fullname       | Academy of Motion Picture Arts and Sciences BSD |
+| Shortname      | AMPAS                                           |
+| Rating         | Go                                              |
+| Classification | NoCopyleft                                      |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - *SPDX:* http://spdx.org/licenses/AMPAS.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
 
@@ -53,7 +51,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -72,7 +69,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -280,5 +276,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AMPAS.svg]]

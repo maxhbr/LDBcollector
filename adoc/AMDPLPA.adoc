@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://amdplpa+`
-* `+AMD PLPA License+`
+* `scancode://amdplpa`
+* `AMD PLPA License`
 
 === Comments on (easy) usability
 

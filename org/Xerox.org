@@ -1,11 +1,10 @@
 * Xerox License (Xerox)
-
-| Key              | Value           |
-|------------------+-----------------|
-| Fullname         | Xerox License   |
-| Shortname        | Xerox           |
-| Rating           | Go              |
-| Classification   | NoCopyleft      |
+| Key            | Value         |
+|----------------+---------------|
+| Fullname       | Xerox License |
+| Shortname      | Xerox         |
+| Rating         | Go            |
+| Classification | NoCopyleft    |
 
 *Other Names:*
 
@@ -44,7 +43,6 @@
 - https://fedoraproject.org/wiki/Licensing/Xerox
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Use and copying of this software and preparation of derivative works
   based upon this software are permitted. Any copy of this software or of
@@ -66,7 +64,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -85,7 +82,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -315,5 +311,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Xerox.svg]]

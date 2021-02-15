@@ -1,11 +1,10 @@
 * xinetd License (xinetd)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | xinetd License                    |
-| Shortname        | xinetd                            |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | xinetd License                  |
+| Shortname      | xinetd                          |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/xinetd.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   xinetd License
 
@@ -87,7 +85,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -110,7 +107,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -337,5 +333,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/xinetd.svg]]

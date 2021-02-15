@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://indiana-extreme-1.2+`
-* `+Indiana Extreme License 1.2+`
+* `scancode://indiana-extreme-1.2`
+* `Indiana Extreme License 1.2`
 
 === Comments on (easy) usability
 

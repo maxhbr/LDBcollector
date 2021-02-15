@@ -1,11 +1,10 @@
 * Open Public License v1.0 (OPL-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Open Public License v1.0                       |
-| Shortname        | OPL-1.0                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Open Public License v1.0                     |
+| Shortname      | OPL-1.0                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - https://fedoraproject.org/wiki/Licensing/Open_Public_License
 
 ** Text
-
 #+BEGIN_EXAMPLE
   OPEN PUBLIC LICENSE
   Version 1.0
@@ -377,7 +375,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -392,7 +389,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -558,5 +554,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OPL-1.0.svg]]

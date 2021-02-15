@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)+`
-* `+ca-tosl1.1+`
-* `+Computer Associates Trusted Open Source License, Version 1.1+`
-* `+scancode://ca-tosl-1.1+`
-* `+CA Trusted Open Source License 1.1+`
+* `Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)`
+* `ca-tosl1.1`
+* `Computer Associates Trusted Open Source License, Version 1.1`
+* `scancode://ca-tosl-1.1`
+* `CA Trusted Open Source License 1.1`
 
 === Comments on (easy) usability
 

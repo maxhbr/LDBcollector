@@ -1,11 +1,10 @@
 * VOSTROM Public License for Open Source (VOSTROM)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | VOSTROM Public License for Open Source         |
-| Shortname        | VOSTROM                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | VOSTROM Public License for Open Source       |
+| Shortname      | VOSTROM                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -32,7 +31,6 @@
 - https://fedoraproject.org/wiki/Licensing/VOSTROM
 
 ** Text
-
 #+BEGIN_EXAMPLE
   VOSTROM Public License for Open Source
   ----------
@@ -98,7 +96,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -114,7 +111,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -277,5 +273,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/VOSTROM.svg]]

@@ -429,12 +429,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"PHP\" as the name is used. group@php.netã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: \"PHP\" as the name is used. group@php.netに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "\"PHP\" as the name is used. group@php.netã«é£çµ¡ãã."
+                        "description": "\"PHP\" as the name is used. group@php.netに連絡する."
                     },
                     {
                         "actions": [
@@ -442,12 +442,12 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: To use the name \"PHP\", please refer to group@php.netã®è¨±å¯ãåã. â Instead of \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that your software works with PHP. Instead of using \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that the software runs with PHP.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: To use the name \"PHP\", please refer to group@php.netの許可を取る. ● Instead of \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that your software works with PHP. Instead of using \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that the software runs with PHP.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "To use the name \"PHP\", please refer to group@php.netã®è¨±å¯ãåã. â Instead of \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that your software works with PHP. Instead of using \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that the software runs with PHP."
+                        "description": "To use the name \"PHP\", please refer to group@php.netの許可を取る. ● Instead of \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that your software works with PHP. Instead of using \"PHP Foo\" or \"phpfoo\", you can use \"Foo for PHP\" to indicate that the software runs with PHP."
                     }
                 ],
                 "_implications": {
@@ -511,7 +511,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {
@@ -523,7 +523,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {

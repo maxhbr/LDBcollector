@@ -1,11 +1,10 @@
 * Cube License (Cube)
-
-| Key              | Value          |
-|------------------+----------------|
-| Fullname         | Cube License   |
-| Shortname        | Cube           |
-| Rating           | Go             |
-| Classification   | NoCopyleft     |
+| Key            | Value        |
+|----------------+--------------|
+| Fullname       | Cube License |
+| Shortname      | Cube         |
+| Rating         | Go           |
+| Classification | NoCopyleft   |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Cube.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Cube game engine source code, 20 dec 2003 release.
 
@@ -66,7 +64,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -85,7 +82,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -292,5 +288,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Cube.svg]]

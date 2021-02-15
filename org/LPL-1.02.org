@@ -1,11 +1,10 @@
 * Lucent Public License v1.02 (LPL-1.02)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Lucent Public License v1.02       |
-| Shortname        | LPL-1.02                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Lucent Public License v1.02     |
+| Shortname      | LPL-1.02                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -49,7 +48,6 @@
 - http://www.opensource.org/licenses/LPL-1.02
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Lucent Public License Version 1.02
 
@@ -135,7 +133,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -164,7 +161,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -517,5 +513,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/LPL-1.02.svg]]

@@ -1,11 +1,10 @@
 * Computer Associates Trusted Open Source License 1.1 (CATOSL-1.1)
-
-| Key              | Value                                                 |
-|------------------+-------------------------------------------------------|
-| Fullname         | Computer Associates Trusted Open Source License 1.1   |
-| Shortname        | CATOSL-1.1                                            |
-| Rating           | Unknown, probably Attention or Stop or No-Go          |
-| Classification   | WeakCopyleft                                          |
+| Key            | Value                                               |
+|----------------+-----------------------------------------------------|
+| Fullname       | Computer Associates Trusted Open Source License 1.1 |
+| Shortname      | CATOSL-1.1                                          |
+| Rating         | Unknown, probably Attention or Stop or No-Go        |
+| Classification | WeakCopyleft                                        |
 
 *Other Names:*
 
@@ -47,7 +46,6 @@
 - *SPDX:* http://spdx.org/licenses/CATOSL-1.1.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Computer Associates Trusted Open Source License
 
@@ -407,7 +405,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -437,7 +434,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -766,5 +762,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CATOSL-1.1.svg]]

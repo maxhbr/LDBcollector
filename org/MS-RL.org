@@ -1,11 +1,10 @@
 * Microsoft Reciprocal License (MS-RL)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Microsoft Reciprocal License                   |
-| Shortname        | MS-RL                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Microsoft Reciprocal License                 |
+| Shortname      | MS-RL                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -59,19 +58,17 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:            | Limitations:      |
-|--------------------+------------------------+-------------------|
-| - commercial-use   | - disclose-source      | - warranty        |
-|                    |                        |                   |
-| - modifications    | - include-copyright    | - trademark-use   |
-|                    |                        |                   |
-| - distribution     | - same-license--file   |                   |
-|                    |                        |                   |
-| - patent-use       |                        |                   |
-|                    |                        |                   |
-| - private-use      |                        |                   |
-                                                                 
+| Rights:          | Conditions:          | Limitations:    |
+|------------------+----------------------+-----------------|
+| - commercial-use | - disclose-source    | - warranty      |
+|                  |                      |                 |
+| - modifications  | - include-copyright  | - trademark-use |
+|                  |                      |                 |
+| - distribution   | - same-license--file |                 |
+|                  |                      |                 |
+| - patent-use     |                      |                 |
+|                  |                      |                 |
+| - private-use    |                      |                 |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt][choosealicense.com]]
@@ -111,7 +108,6 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -129,7 +125,6 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Provide the source code corresponding to the software or a file containing the software or a part of it.
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -143,13 +138,11 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Microsoft Reciprocal License (Ms-RL)
 
@@ -177,7 +170,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -220,7 +212,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -932,5 +923,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MS-RL.svg]]

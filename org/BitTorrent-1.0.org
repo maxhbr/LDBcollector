@@ -1,11 +1,10 @@
 * BitTorrent Open Source License v1.0 (BitTorrent-1.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | BitTorrent Open Source License v1.0            |
-| Shortname        | BitTorrent-1.0                                 |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | BitTorrent Open Source License v1.0          |
+| Shortname      | BitTorrent-1.0                               |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -26,7 +25,6 @@
 - http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?r1=1.1&r2=1.1.1.1&diff_format=s
 
 ** Text
-
 #+BEGIN_EXAMPLE
   BitTorrent Open Source License
 
@@ -358,13 +356,11 @@
 
   Software distributed under the License is distributed on an AS IS basis, WITHOUT WARRANTY OF ANY KIND, either express
   or implied.  See the License for the specific language governing rights and limitations under the License.
-
 #+END_EXAMPLE
 
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -380,7 +376,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -521,5 +516,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BitTorrent-1.0.svg]]

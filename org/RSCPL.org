@@ -1,11 +1,10 @@
 * Ricoh Source Code Public License (RSCPL)
-
-| Key              | Value                              |
-|------------------+------------------------------------|
-| Fullname         | Ricoh Source Code Public License   |
-| Shortname        | RSCPL                              |
-| Rating           | Unknown, probably Stop or No-Go    |
-| Classification   | WeakCopyleft                       |
+| Key            | Value                            |
+|----------------+----------------------------------|
+| Fullname       | Ricoh Source Code Public License |
+| Shortname      | RSCPL                            |
+| Rating         | Unknown, probably Stop or No-Go  |
+| Classification | WeakCopyleft                     |
 
 *Other Names:*
 
@@ -49,7 +48,6 @@
 - http://www.opensource.org/licenses/RSCPL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Ricoh Source Code Public License
 
@@ -188,7 +186,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -218,7 +215,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -552,5 +548,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/RSCPL.svg]]

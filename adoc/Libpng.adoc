@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+libpng license (libpng-1.2.6 and later)+`
-* `+scancode://libpng+`
+* `libpng license (libpng-1.2.6 and later)`
+* `scancode://libpng`
 
 === Comments on (easy) usability
 

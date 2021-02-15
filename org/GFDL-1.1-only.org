@@ -1,11 +1,10 @@
 * GNU Free Documentation License v1.1 only (GFDL-1.1-only)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | GNU Free Documentation License v1.1 only       |
-| Shortname        | GFDL-1.1-only                                  |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | GNU Free Documentation License v1.1 only     |
+| Shortname      | GFDL-1.1-only                                |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - http://www.lysator.liu.se/~kjell-e/tekla/linux/security/fdl.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   GNU Free Documentation License
   		   Version 1.1, March 2000
@@ -397,7 +395,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -412,7 +409,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -603,5 +599,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GFDL-1.1-only.svg]]

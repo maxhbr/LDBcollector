@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://enna+`
+* `scancode://enna`
 
 === Comments on (easy) usability
 

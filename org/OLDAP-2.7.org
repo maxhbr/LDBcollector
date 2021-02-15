@@ -1,11 +1,10 @@
 * Open LDAP Public License v2.7 (OLDAP-2.7)
-
-| Key              | Value                           |
-|------------------+---------------------------------|
-| Fullname         | Open LDAP Public License v2.7   |
-| Shortname        | OLDAP-2.7                       |
-| Rating           | Go                              |
-| Classification   | NoCopyleft                      |
+| Key            | Value                         |
+|----------------+-------------------------------|
+| Fullname       | Open LDAP Public License v2.7 |
+| Shortname      | OLDAP-2.7                     |
+| Rating         | Go                            |
+| Classification | NoCopyleft                    |
 
 *Other Names:*
 
@@ -66,7 +65,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -79,7 +77,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -94,7 +91,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The OpenLDAP Public License 
   Version 2.7, 7 September 2001 
@@ -148,7 +144,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -170,7 +165,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -510,5 +504,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OLDAP-2.7.svg]]

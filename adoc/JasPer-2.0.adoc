@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+JasPer License Version 2.0+`
-* `+scancode://jasper-2.0+`
-* `+JasPer 2.0+`
+* `JasPer License Version 2.0`
+* `scancode://jasper-2.0`
+* `JasPer 2.0`
 
 === Comments on (easy) usability
 

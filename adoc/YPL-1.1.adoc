@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://ypl-1.1+`
-* `+YPL 1.1+`
+* `scancode://ypl-1.1`
+* `YPL 1.1`
 
 === Comments on (easy) usability
 

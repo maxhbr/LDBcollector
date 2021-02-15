@@ -11,11 +11,11 @@
 
 *Other Names:*
 
-* `+Artistic 1.0 (original)+`
-* `+Artistic License, Version 1.0+`
-* `+Artistic License (Perl) 1.0+`
-* `+scancode://artistic-1.0+`
-* `+Artistic 1.0+`
+* `Artistic 1.0 (original)`
+* `Artistic License, Version 1.0`
+* `Artistic License (Perl) 1.0`
+* `scancode://artistic-1.0`
+* `Artistic 1.0`
 
 === Comments on (easy) usability
 

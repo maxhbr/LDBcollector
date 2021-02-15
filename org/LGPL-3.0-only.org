@@ -1,12 +1,11 @@
 * GNU Lesser General Public License v3.0 only (LGPL-3.0-only)
-
-| Key               | Value                                          |
-|-------------------+------------------------------------------------|
-| Fullname          | GNU Lesser General Public License v3.0 only    |
-| Shortname         | LGPL-3.0-only                                  |
-| Rating            | Unknown, probably Attention or Stop or No-Go   |
-| Classification    | WeakCopyleft                                   |
-| Has Patent Hint   | True                                           |
+| Key             | Value                                        |
+|-----------------+----------------------------------------------|
+| Fullname        | GNU Lesser General Public License v3.0 only  |
+| Shortname       | LGPL-3.0-only                                |
+| Rating          | Unknown, probably Attention or Stop or No-Go |
+| Classification  | WeakCopyleft                                 |
+| Has Patent Hint | True                                         |
 
 *Other Names:*
 
@@ -48,13 +47,13 @@
 
 - =License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)=
 
-- =scancode://lgpl-3.0=
-
-- =LGPL 3.0=
-
 - =scancode://lgpl-3.0-plus=
 
 - =LGPL 3.0 or later=
+
+- =scancode://lgpl-3.0=
+
+- =LGPL 3.0=
 
 ** Description
 
@@ -126,23 +125,21 @@
 
 - "Per SPDX.org, this license was released 29 June 2007. This license is
   OSI Certified. " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]]
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0-plus.yml][Scancode]]
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:               | Limitations:   |
-|--------------------+---------------------------+----------------|
-| - commercial-use   | - include-copyright       | - liability    |
-|                    |                           |                |
-| - modifications    | - disclose-source         | - warranty     |
-|                    |                           |                |
-| - distribution     | - document-changes        |                |
-|                    |                           |                |
-| - patent-use       | - same-license--library   |                |
-|                    |                           |                |
-| - private-use      |                           |                |
-                                                                 
+| Rights:          | Conditions:             | Limitations: |
+|------------------+-------------------------+--------------|
+| - commercial-use | - include-copyright     | - liability  |
+|                  |                         |              |
+| - modifications  | - disclose-source       | - warranty   |
+|                  |                         |              |
+| - distribution   | - document-changes      |              |
+|                  |                         |              |
+| - patent-use     | - same-license--library |              |
+|                  |                         |              |
+| - private-use    |                         |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-3.0.txt][choosealicense.com]]
@@ -150,9 +147,9 @@
 
 ** URLs
 
-- *Homepage:* http://www.gnu.org/licenses/lgpl-3.0.html
-
 - *Homepage:* http://www.gnu.org/licenses/lgpl-3.0-standalone.html
+
+- *Homepage:* http://www.gnu.org/licenses/lgpl-3.0.html
 
 - *OSI Page:* https://opensource.org/licenses/LGPL-3.0
 
@@ -173,9 +170,9 @@
 
 - http://www.gnu.org/copyleft/lesser.html
 
-- http://www.gnu.org/licenses/why-not-lgpl.html
-
 - http://www.opensource.org/licenses/LGPL-3.0
+
+- http://www.gnu.org/licenses/why-not-lgpl.html
 
 ** Description from open-license
 
@@ -200,7 +197,6 @@
       OBLIGATION: Distribution of the parts of the work not covered by your copyright is subject to this license.
       RESTRICTION: Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.
       RESTRICTION: You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -213,7 +209,6 @@
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -227,7 +222,6 @@
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       RESTRICTION: In the modified part, a feature refers to a function or data provided by the application that uses the feature (except for what is passed as an argument when the feature is called). (An application is software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications refer to software that uses the interface provided by the library, but excludes software that is created by modifying the library. A library is any software other than an application or software that combines or links an application and a library.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -249,7 +243,6 @@
           OBLIGATION: Distributed in accordance with this license (Subject to this license and the GNU General Public License Version 3.)
           REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
         OBLIGATION: Distributed under the GNU General Public License Version 3 (No additional terms of this license applicable to such copies of the software are allowed.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -270,7 +263,6 @@
         OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
       OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -299,7 +291,6 @@
           OBLIGATION: Distributed in accordance with this license (Subject to this license and the GNU General Public License Version 3.)
           REQUISITE: Make a good faith effort to ensure that the features contained in the library function as a library without the need for a specific function or data table in the application program that uses the features.
         OBLIGATION: Distributed under the GNU General Public License Version 3 (No additional terms of this license applicable to such copies of the software are allowed.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -317,7 +308,6 @@
         RESTRICTION: To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.
         RESTRICTION: Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her
       RESTRICTION: Include these license terms, or a reference to them in the file to which these additional license terms apply
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -331,7 +321,6 @@
       OBLIGATION: Indicate that the library is being used
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -357,7 +346,6 @@
         OBLIGATION: If peer-to-peer transmission is used, notify the other peers of the distribution, the corresponding source code for the library, and the location where the information that allows the library to be modified to form the distribution is available free of charge. (The term "library" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term "application" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)
         OBLIGATION: Use an appropriate shared library mechanism to link with the library in question (A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.)
       OBLIGATION: In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format. (The term "library" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term "application" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: ● Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -371,185 +359,22 @@
       OBLIGATION: Pass an independent copy of the library in accordance with that license (Pass a copy of the entire library in question)
       OBLIGATION: Indicate that the library is being used
       OBLIGATION: Indicate where the library is located in a stand-alone form
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
-                     GNU LESSER GENERAL PUBLIC LICENSE
-                         Version 3, 29 June 2007
+  This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.
 
-   Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>
-   Everyone is permitted to copy and distribute verbatim copies
-   of this license document, but changing it is not allowed.
+  This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.
 
-
-    This version of the GNU Lesser General Public License incorporates
-  the terms and conditions of version 3 of the GNU General Public
-  License, supplemented by the additional permissions listed below.
-
-    0. Additional Definitions.
-
-    As used herein, "this License" refers to version 3 of the GNU Lesser
-  General Public License, and the "GNU GPL" refers to version 3 of the GNU
-  General Public License.
-
-    "The Library" refers to a covered work governed by this License,
-  other than an Application or a Combined Work as defined below.
-
-    An "Application" is any work that makes use of an interface provided
-  by the Library, but which is not otherwise based on the Library.
-  Defining a subclass of a class defined by the Library is deemed a mode
-  of using an interface provided by the Library.
-
-    A "Combined Work" is a work produced by combining or linking an
-  Application with the Library.  The particular version of the Library
-  with which the Combined Work was made is also called the "Linked
-  Version".
-
-    The "Minimal Corresponding Source" for a Combined Work means the
-  Corresponding Source for the Combined Work, excluding any source code
-  for portions of the Combined Work that, considered in isolation, are
-  based on the Application, and not on the Linked Version.
-
-    The "Corresponding Application Code" for a Combined Work means the
-  object code and/or source code for the Application, including any data
-  and utility programs needed for reproducing the Combined Work from the
-  Application, but excluding the System Libraries of the Combined Work.
-
-    1. Exception to Section 3 of the GNU GPL.
-
-    You may convey a covered work under sections 3 and 4 of this License
-  without being bound by section 3 of the GNU GPL.
-
-    2. Conveying Modified Versions.
-
-    If you modify a copy of the Library, and, in your modifications, a
-  facility refers to a function or data to be supplied by an Application
-  that uses the facility (other than as an argument passed when the
-  facility is invoked), then you may convey a copy of the modified
-  version:
-
-     a) under this License, provided that you make a good faith effort to
-     ensure that, in the event an Application does not supply the
-     function or data, the facility still operates, and performs
-     whatever part of its purpose remains meaningful, or
-
-     b) under the GNU GPL, with none of the additional permissions of
-     this License applicable to that copy.
-
-    3. Object Code Incorporating Material from Library Header Files.
-
-    The object code form of an Application may incorporate material from
-  a header file that is part of the Library.  You may convey such object
-  code under terms of your choice, provided that, if the incorporated
-  material is not limited to numerical parameters, data structure
-  layouts and accessors, or small macros, inline functions and templates
-  (ten or fewer lines in length), you do both of the following:
-
-     a) Give prominent notice with each copy of the object code that the
-     Library is used in it and that the Library and its use are
-     covered by this License.
-
-     b) Accompany the object code with a copy of the GNU GPL and this license
-     document.
-
-    4. Combined Works.
-
-    You may convey a Combined Work under terms of your choice that,
-  taken together, effectively do not restrict modification of the
-  portions of the Library contained in the Combined Work and reverse
-  engineering for debugging such modifications, if you also do each of
-  the following:
-
-     a) Give prominent notice with each copy of the Combined Work that
-     the Library is used in it and that the Library and its use are
-     covered by this License.
-
-     b) Accompany the Combined Work with a copy of the GNU GPL and this license
-     document.
-
-     c) For a Combined Work that displays copyright notices during
-     execution, include the copyright notice for the Library among
-     these notices, as well as a reference directing the user to the
-     copies of the GNU GPL and this license document.
-
-     d) Do one of the following:
-
-         0) Convey the Minimal Corresponding Source under the terms of this
-         License, and the Corresponding Application Code in a form
-         suitable for, and under terms that permit, the user to
-         recombine or relink the Application with a modified version of
-         the Linked Version to produce a modified Combined Work, in the
-         manner specified by section 6 of the GNU GPL for conveying
-         Corresponding Source.
-
-         1) Use a suitable shared library mechanism for linking with the
-         Library.  A suitable mechanism is one that (a) uses at run time
-         a copy of the Library already present on the user's computer
-         system, and (b) will operate properly with a modified version
-         of the Library that is interface-compatible with the Linked
-         Version.
-
-     e) Provide Installation Information, but only if you would otherwise
-     be required to provide such information under section 6 of the
-     GNU GPL, and only to the extent that such information is
-     necessary to install and execute a modified version of the
-     Combined Work produced by recombining or relinking the
-     Application with a modified version of the Linked Version. (If
-     you use option 4d0, the Installation Information must accompany
-     the Minimal Corresponding Source and Corresponding Application
-     Code. If you use option 4d1, you must provide the Installation
-     Information in the manner specified by section 6 of the GNU GPL
-     for conveying Corresponding Source.)
-
-    5. Combined Libraries.
-
-    You may place library facilities that are a work based on the
-  Library side by side in a single library together with other library
-  facilities that are not Applications and are not covered by this
-  License, and convey such a combined library under terms of your
-  choice, if you do both of the following:
-
-     a) Accompany the combined library with a copy of the same work based
-     on the Library, uncombined with any other library facilities,
-     conveyed under the terms of this License.
-
-     b) Give prominent notice with the combined library that part of it
-     is a work based on the Library, and explaining where to find the
-     accompanying uncombined form of the same work.
-
-    6. Revised Versions of the GNU Lesser General Public License.
-
-    The Free Software Foundation may publish revised and/or new versions
-  of the GNU Lesser General Public License from time to time. Such new
-  versions will be similar in spirit to the present version, but may
-  differ in detail to address new problems or concerns.
-
-    Each version is given a distinguishing version number. If the
-  Library as you received it specifies that a certain numbered version
-  of the GNU Lesser General Public License "or any later version"
-  applies to it, you have the option of following the terms and
-  conditions either of that published version or of any later version
-  published by the Free Software Foundation. If the Library as you
-  received it does not specify a version number of the GNU Lesser
-  General Public License, you may choose any version of the GNU Lesser
-  General Public License ever published by the Free Software Foundation.
-
-    If the Library as you received it specifies that a proxy can decide
-  whether future versions of the GNU Lesser General Public License shall
-  apply, that proxy's public statement of acceptance of any version is
-  permanent authorization for you to choose that version for the
-  Library.
+  You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #+END_EXAMPLE
 
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -646,17 +471,16 @@
 - [[https://spdx.org/licenses/LGPL-3.0-or-later.html][SPDX]] (all data
   [in this repository] is generated)
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]]
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0-plus.yml][Scancode]]
   (CC0-1.0)
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0-plus.yml][Scancode]]
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml][Scancode]]
   (CC0-1.0)
 
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -681,10 +505,10 @@
           "GNU Lesser General Public License, Version 3.0",
           "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
           "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",
-          "scancode://lgpl-3.0",
-          "LGPL 3.0",
           "scancode://lgpl-3.0-plus",
-          "LGPL 3.0 or later"
+          "LGPL 3.0 or later",
+          "scancode://lgpl-3.0",
+          "LGPL 3.0"
       ],
       "__impliedId": "LGPL-3.0-only",
       "__isFsfFree": true,
@@ -846,30 +670,29 @@
           "Scancode": {
               "otherUrls": [
                   "http://www.gnu.org/copyleft/lesser.html",
-                  "http://www.gnu.org/licenses/why-not-lgpl.html",
                   "http://www.opensource.org/licenses/LGPL-3.0",
                   "https://opensource.org/licenses/LGPL-3.0",
                   "https://www.gnu.org/licenses/lgpl-3.0-standalone.html"
               ],
-              "homepageUrl": "http://www.gnu.org/licenses/lgpl-3.0.html",
-              "shortName": "LGPL 3.0",
+              "homepageUrl": "http://www.gnu.org/licenses/lgpl-3.0-standalone.html",
+              "shortName": "LGPL 3.0 or later",
               "textUrls": null,
-              "text": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
+              "text": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
               "category": "Copyleft Limited",
-              "osiUrl": "http://www.opensource.org/licenses/lgpl-3.0.html",
+              "osiUrl": null,
               "owner": "Free Software Foundation (FSF)",
-              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0.yml",
-              "key": "lgpl-3.0",
-              "name": "GNU Lesser General Public License 3.0",
-              "spdxId": "LGPL-3.0-only",
+              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-3.0-plus.yml",
+              "key": "lgpl-3.0-plus",
+              "name": "GNU Lesser General Public License 3.0 or later",
+              "spdxId": "LGPL-3.0-or-later",
               "notes": "Per SPDX.org, this license was released 29 June 2007. This license is OSI\nCertified.\n",
               "_implications": {
                   "__impliedNames": [
-                      "scancode://lgpl-3.0",
-                      "LGPL 3.0",
-                      "LGPL-3.0-only"
+                      "scancode://lgpl-3.0-plus",
+                      "LGPL 3.0 or later",
+                      "LGPL-3.0-or-later"
                   ],
-                  "__impliedId": "LGPL-3.0-only",
+                  "__impliedId": "LGPL-3.0-or-later",
                   "__impliedComments": [
                       [
                           "Scancode",
@@ -885,23 +708,15 @@
                       ]
                   ],
                   "__calculatedCopyleft": "WeakCopyleft",
-                  "__impliedText": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
+                  "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
                   "__impliedURLs": [
                       [
                           "Homepage",
-                          "http://www.gnu.org/licenses/lgpl-3.0.html"
-                      ],
-                      [
-                          "OSI Page",
-                          "http://www.opensource.org/licenses/lgpl-3.0.html"
+                          "http://www.gnu.org/licenses/lgpl-3.0-standalone.html"
                       ],
                       [
                           null,
                           "http://www.gnu.org/copyleft/lesser.html"
-                      ],
-                      [
-                          null,
-                          "http://www.gnu.org/licenses/why-not-lgpl.html"
                       ],
                       [
                           null,
@@ -1017,7 +832,7 @@
                   },
                   {
                       "content": "Violation of this license shall result in automatic termination of all rights under this license, except that the license to the person or entity that received the software distributed by the violator shall remain in effect. However, the license to the person or entity receiving the software distributed by the offending party shall remain in effect.",
-                      "description": "In the event of cessation of all acts in violation of this license, the license granted by a particular copyright holder shall be restored on an interim basis until such time as the copyright holder expressly states that it is finally terminated. It shall also be permanently restored if the copyright holder has not been notified of the violation by reasonable means within 60 days of the cessation of all conduct in violation of this license. The license granted by the copyright holder shall be permanently reinstated if the specific copyright holder has been notified of the violation by reasonable means, if it is the first notice from that copyright holder with respect to the violation of this license and the violation is remedied within thirty (30) days after receipt of such notice; and â The license granted by the copyright holder shall be permanently reinstated. If the rights are not permanently reinstated, no new license for the software can be obtained."
+                      "description": "In the event of cessation of all acts in violation of this license, the license granted by a particular copyright holder shall be restored on an interim basis until such time as the copyright holder expressly states that it is finally terminated. It shall also be permanently restored if the copyright holder has not been notified of the violation by reasonable means within 60 days of the cessation of all conduct in violation of this license. The license granted by the copyright holder shall be permanently reinstated if the specific copyright holder has been notified of the violation by reasonable means, if it is the first notice from that copyright holder with respect to the violation of this license and the violation is remedied within thirty (30) days after receipt of such notice; and ● The license granted by the copyright holder shall be permanently reinstated. If the rights are not permanently reinstated, no new license for the software can be obtained."
                   },
                   {
                       "content": "Each time such software is redistributed by any person who receives such software under such license, the recipient shall automatically obtain permission from the original licensee to copy, distribute or modify the software under the terms and conditions and restrictions specified in such license. All persons who receive such software under such license shall not impose any further restrictions on the recipient's exercise of the rights granted herein. All persons who receive such software under such license shall have no responsibility to enforce compliance by third parties with such license."
@@ -1029,10 +844,10 @@
                       "content": "No patent action shall be brought with respect to the Software, including cross-claims and counterclaims."
                   },
                   {
-                      "content": "If you distribute the software in a country knowing on reasonable grounds that distribution of the software or use of the software by the recipient in that country without a patent agreement in place would infringe certain patent rights valid in that country, the source code corresponding to the software is If the software is not free to the public and cannot be copied in accordance with this license, you will either: â Make the source code corresponding to such software available free of charge to the public on a network server or through any means readily accessible to the public; or â Make the corresponding source code for such software available free of charge pursuant to this License on a network server available to the public or through any means readily accessible to the public; â Do not enjoy the benefits of such an agreement with respect to such software; or â Do not use any downstream Recipient also ensures that such agreement applies in accordance with this license"
+                      "content": "If you distribute the software in a country knowing on reasonable grounds that distribution of the software or use of the software by the recipient in that country without a patent agreement in place would infringe certain patent rights valid in that country, the source code corresponding to the software is If the software is not free to the public and cannot be copied in accordance with this license, you will either: ● Make the source code corresponding to such software available free of charge to the public on a network server or through any means readily accessible to the public; or ● Make the corresponding source code for such software available free of charge pursuant to this License on a network server available to the public or through any means readily accessible to the public; ● Do not enjoy the benefits of such an agreement with respect to such software; or ● Do not use any downstream Recipient also ensures that such agreement applies in accordance with this license"
                   },
                   {
-                      "content": "With respect to a third party engaged in the business of distributing software, and with respect to the software (or any copy made from the software) that you distribute, or with respect to a particular product that contains the software or that is bundled with the software, you promise to pay the third party for the software. You may not distribute the software to any party that receives the software if you have agreed with that third party as to what that third party is granting you: â The agreement on the patent does not include any rights granted under this license. â the scope of the agreement on the patent does not include the rights granted under this license; â the agreement on the patent prohibits the exercise of the rights granted under this license; â the agreement on the patent conditions the non-exercise of the rights granted under this license on the non-exercise of the rights granted under this license.",
+                      "content": "With respect to a third party engaged in the business of distributing software, and with respect to the software (or any copy made from the software) that you distribute, or with respect to a particular product that contains the software or that is bundled with the software, you promise to pay the third party for the software. You may not distribute the software to any party that receives the software if you have agreed with that third party as to what that third party is granting you: ● The agreement on the patent does not include any rights granted under this license. ● the scope of the agreement on the patent does not include the rights granted under this license; ● the agreement on the patent prohibits the exercise of the rights granted under this license; ● the agreement on the patent conditions the non-exercise of the rights granted under this license on the non-exercise of the rights granted under this license.",
                       "description": "However, this does not apply if such an agreement or contract was made prior to March 28, 2007."
                   },
                   {
@@ -1123,7 +938,7 @@
                               "description": "Redistribute the code as it was obtained"
                           }
                       ],
-                      "_str": "Description: You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n",
+                      "_str": "Description: You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: ● You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1141,7 +956,7 @@
                               }
                           ]
                       },
-                      "description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
+                      "description": "You must give me a copy of this license and the GNU General Public License Version 3 with the software. You may copy and distribute a copy of the GNU General Public License Version 3 with the software, provided that you keep intact all of the following conditions: ● You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
                   },
                   {
                       "actions": [
@@ -1252,7 +1067,7 @@
                               "description": "Redistribute the code as it was obtained"
                           }
                       ],
-                      "_str": "Description: Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support\n    OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.\n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n    OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.\n  OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n",
+                      "_str": "Description: Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: ● You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee.\nActions:\n- Distribute the obtained object code (Redistribute the code as it was obtained)\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: A statement that the source code corresponding to the software will be provided in a physical medium to those holding the object code in exchange for a fee not to exceed the physical cost of distribution, for a period of at least three years, or a repairable part of the model of the product in which the object code is embedded. Pass a valid written statement for a period of time whichever is longer, while providing or providing customer support\n    OBLIGATION: A statement that the source code corresponding to the software will be provided free of charge from a network server to those holding the object code, for at least three years, or while providing repair parts and customer support for the model of the product in which the object code is embedded. Whichever period is longer, I will give you a valid written statement.\n    OBLIGATION: Allow object code or executable and source code to be downloaded from the same location with equivalent access to the object code or executable\n    OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.\n  OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1304,7 +1119,7 @@
                               }
                           ]
                       },
-                      "description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: â You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
+                      "description": "Source code means the source code for generating, installing and executing executable object code, all the source code necessary to modify the object code, and the scripts for controlling these tasks. I give you this license and a copy of the GNU General Public License Version 3 with the software. You may copy and distribute the software under the terms of this license, provided that you keep intact all of the following conditions: ● You keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. You may charge a fee for the physical act of transferring a copy; you may not charge a fee for the physical act of transferring a copy. You may provide support or warranty in exchange for a fee."
                   },
                   {
                       "actions": [
@@ -1485,7 +1300,7 @@
                               "description": "The generated work contains a library or part of a library"
                           }
                       ],
-                      "_str": "Description: A library is something other than an application or software that combines or links an application with a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. This license and a copy of the GNU General Public License Version 3 go with the distribution. You must keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. Source code means the source code for generating, installing and executing executable object code, all of the source code necessary to modify the object code, and the scripts that control these operations. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may charge a fee for the physical act of transferring a copy; you may provide support or warranty in exchange for a fee.\nActions:\n- Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing. (The generated work contains a library or part of a library)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  REQUISITE: Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.\n  OBLIGATION: Indicate that the library is being used\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.\n  OR\n    AND\n      OBLIGATION: Attach the source code corresponding to the library\n      OBLIGATION: Pass information that can be used to modify the library and put it into a distribution format. (A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The term \"application\" refers to software that uses the interfaces provided by the library, except for software that has been modified from the library. Distributions are software that combines or links libraries and applications. Source code means the source code to create, install, and execute executable object code, as well as any modifications to the object code necessary to create, install, and execute the object code. All of the source code and the scripts that control these tasks.)\n    OBLIGATION: Provide the one holding the distribution, in exchange for a fee not to exceed the physical cost of providing it, the source code corresponding to the library and the information that can be used to modify the library into the form of the distribution on a physical medium for at least three years, or Pass a valid written statement for a period of time during the provision of repair parts or customer support for the model of the product in which it is incorporated, whichever is longer (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: provide free of charge to the one holding the distribution from a network server with the source code corresponding to the library and information that allows the library to be modified into the form of the distribution, for at least three years, or to provide repair parts for the model of the product in which the distribution is embedded, or Pass a valid written statement for the duration of providing customer support, whichever is longer (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: Make the distribution, the source code corresponding to the library and the information that can be modified to form the distribution, available for download from the same place with equivalent access. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: If peer-to-peer transmission is used, notify the other peers of the distribution, the corresponding source code for the library, and the location where the information that allows the library to be modified to form the distribution is available free of charge. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: Use an appropriate shared library mechanism to link with the library in question (A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.)\n  OBLIGATION: In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: â Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement.)\n\n",
+                      "_str": "Description: A library is something other than an application or software that combines or links an application with a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. A library is a software program that uses an interface provided by the library, except for software that has been modified by the library. This license and a copy of the GNU General Public License Version 3 go with the distribution. You must keep a notice that the GNU General Public License Version 3, plus any additional terms added to this license and others, apply to you. Source code means the source code for generating, installing and executing executable object code, all of the source code necessary to modify the object code, and the scripts that control these operations. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may charge a fee for the physical act of transferring a copy; you may provide support or warranty in exchange for a fee.\nActions:\n- Combine or link the library with one's own work to produce a work containing the library or part of the library, and distribute the produced work on terms of one's choosing. (The generated work contains a library or part of a library)\n\nConditions:\nAND\n  RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)\n  REQUISITE: Permission to modify the distribution for the customer's own use and to reverse engineer it to debug those modifications.\n  OBLIGATION: Indicate that the library is being used\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: If the distribution makes a copyright notice at runtime, include a copyright notice for the library in the notice, as well as a reference statement indicating where to obtain a copy of the license.\n  OR\n    AND\n      OBLIGATION: Attach the source code corresponding to the library\n      OBLIGATION: Pass information that can be used to modify the library and put it into a distribution format. (A library is something other than an application or software that combines or links an application and a library. Application refers to software that uses the interface provided by the library, but excludes software that has been modified from the library. Applications are software that uses the interfaces provided by the library, except for software that is created by modifying the library. The term \"application\" refers to software that uses the interfaces provided by the library, except for software that has been modified from the library. Distributions are software that combines or links libraries and applications. Source code means the source code to create, install, and execute executable object code, as well as any modifications to the object code necessary to create, install, and execute the object code. All of the source code and the scripts that control these tasks.)\n    OBLIGATION: Provide the one holding the distribution, in exchange for a fee not to exceed the physical cost of providing it, the source code corresponding to the library and the information that can be used to modify the library into the form of the distribution on a physical medium for at least three years, or Pass a valid written statement for a period of time during the provision of repair parts or customer support for the model of the product in which it is incorporated, whichever is longer (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: provide free of charge to the one holding the distribution from a network server with the source code corresponding to the library and information that allows the library to be modified into the form of the distribution, for at least three years, or to provide repair parts for the model of the product in which the distribution is embedded, or Pass a valid written statement for the duration of providing customer support, whichever is longer (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: Make the distribution, the source code corresponding to the library and the information that can be modified to form the distribution, available for download from the same place with equivalent access. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: If peer-to-peer transmission is used, notify the other peers of the distribution, the corresponding source code for the library, and the location where the information that allows the library to be modified to form the distribution is available free of charge. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined in the library is considered to be one of the uses of interfaces provided in the library. Source code refers to the source code for generating, installing and executing object code, all the source code necessary for modifying object code, and the scripts for controlling these operations. Pass at least one of the object code or source code corresponding to the application included in the distribution, along with the source code corresponding to the library in question.)\n    OBLIGATION: Use an appropriate shared library mechanism to link with the library in question (A modified version of the library will work properly even if the user installs a modified version of the library, as long as the modified version is interface-compatible with the one distributed by the user. If a user installs a modified version of a library, the modified version of the library will work properly as long as the modified version is interface-compatible with the distributed version.)\n  OBLIGATION: In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format. (The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: ● Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement.)\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -1558,7 +1373,7 @@
                               {
                                   "name": "In the case of a product on which the distribution is installed and which is considered to be a personal tangible object for personal, family, or household use, or a product designed or sold for installation in a dwelling, the necessary modifications to the library to install and execute a modified version of the distribution in the form of the distribution. Document and provide all of the necessary information, including procedures and authentication keys, in a publicly available format.",
                                   "type": "OBLIGATION",
-                                  "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: â Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement."
+                                  "description": "The term \"library\" refers to software that combines or links libraries and applications. A library is anything other than an application or software that combines or links an application with a library. The term \"application\" refers to software that uses the interface provided by the library. Applications refer to software that uses the interfaces provided by the library, but excludes software that is created by modifying the library. The definition of subclasses of classes defined by the library is considered to be one of the uses of the interfaces provided by the library. This section does not apply to the following cases: ● Except that no one may install a modified version of the distribution in the product in question. If there is any doubt as to whether or not a product is applicable, it shall be deemed to meet this requirement."
                               }
                           ]
                       },
@@ -1779,7 +1594,7 @@
                   "warranty"
               ],
               "_sourceURL": "https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-3.0.txt",
-              "content": "---\ntitle: GNU Lesser General Public License v3.0\nspdx-id: LGPL-3.0\nnickname: GNU LGPLv3\nredirect_from: /licenses/lgpl-v3/\n\ndescription: Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work.\n\nhow: This license is an additional set of permissions to the <a href=\"/licenses/gpl-3.0\">GNU GPLv3</a> license. Follow the instructions to apply the GNU GPLv3, in the root of your source code. Then add another file named COPYING.LESSER and copy the text.\n\nnote: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the <a href=\"/licenses/gpl-3.0\">GNU GPLv3 license</a>. Insert the word Ã¢ÂÂLesserÃ¢ÂÂ before Ã¢ÂÂGeneralÃ¢ÂÂ in all three places in the boilerplate notice to make sure that you refer to the GNU LGPLv3 and not the GNU GPLv3.\n\nusing:\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - patent-use\n  - private-use\n\nconditions:\n  - include-copyright\n  - disclose-source\n  - document-changes\n  - same-license--library\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\n                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
+              "content": "---\ntitle: GNU Lesser General Public License v3.0\nspdx-id: LGPL-3.0\nnickname: GNU LGPLv3\nredirect_from: /licenses/lgpl-v3/\n\ndescription: Permissions of this copyleft license are conditioned on making available complete source code of licensed works and modifications under the same license or the GNU GPLv3. Copyright and license notices must be preserved. Contributors provide an express grant of patent rights. However, a larger work using the licensed work through interfaces provided by the licensed work may be distributed under different terms and without source code for the larger work.\n\nhow: This license is an additional set of permissions to the <a href=\"/licenses/gpl-3.0\">GNU GPLv3</a> license. Follow the instructions to apply the GNU GPLv3, in the root of your source code. Then add another file named COPYING.LESSER and copy the text.\n\nnote: The Free Software Foundation recommends taking the additional step of adding a boilerplate notice to the top of each file. The boilerplate can be found at the end of the <a href=\"/licenses/gpl-3.0\">GNU GPLv3 license</a>. Insert the word âLesserâ before âGeneralâ in all three places in the boilerplate notice to make sure that you refer to the GNU LGPLv3 and not the GNU GPLv3.\n\nusing:\n\npermissions:\n  - commercial-use\n  - modifications\n  - distribution\n  - patent-use\n  - private-use\n\nconditions:\n  - include-copyright\n  - disclose-source\n  - document-changes\n  - same-license--library\n\nlimitations:\n  - liability\n  - warranty\n\n---\n\n                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
               "name": "lgpl-3.0",
               "hidden": null,
               "spdxId": "LGPL-3.0",
@@ -2038,7 +1853,7 @@
           ]
       },
       "__isOsiApproved": true,
-      "__impliedText": "                   GNU LESSER GENERAL PUBLIC LICENSE\n                       Version 3, 29 June 2007\n\n Copyright (C) 2007 Free Software Foundation, Inc. <https://fsf.org/>\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\n  This version of the GNU Lesser General Public License incorporates\nthe terms and conditions of version 3 of the GNU General Public\nLicense, supplemented by the additional permissions listed below.\n\n  0. Additional Definitions.\n\n  As used herein, \"this License\" refers to version 3 of the GNU Lesser\nGeneral Public License, and the \"GNU GPL\" refers to version 3 of the GNU\nGeneral Public License.\n\n  \"The Library\" refers to a covered work governed by this License,\nother than an Application or a Combined Work as defined below.\n\n  An \"Application\" is any work that makes use of an interface provided\nby the Library, but which is not otherwise based on the Library.\nDefining a subclass of a class defined by the Library is deemed a mode\nof using an interface provided by the Library.\n\n  A \"Combined Work\" is a work produced by combining or linking an\nApplication with the Library.  The particular version of the Library\nwith which the Combined Work was made is also called the \"Linked\nVersion\".\n\n  The \"Minimal Corresponding Source\" for a Combined Work means the\nCorresponding Source for the Combined Work, excluding any source code\nfor portions of the Combined Work that, considered in isolation, are\nbased on the Application, and not on the Linked Version.\n\n  The \"Corresponding Application Code\" for a Combined Work means the\nobject code and/or source code for the Application, including any data\nand utility programs needed for reproducing the Combined Work from the\nApplication, but excluding the System Libraries of the Combined Work.\n\n  1. Exception to Section 3 of the GNU GPL.\n\n  You may convey a covered work under sections 3 and 4 of this License\nwithout being bound by section 3 of the GNU GPL.\n\n  2. Conveying Modified Versions.\n\n  If you modify a copy of the Library, and, in your modifications, a\nfacility refers to a function or data to be supplied by an Application\nthat uses the facility (other than as an argument passed when the\nfacility is invoked), then you may convey a copy of the modified\nversion:\n\n   a) under this License, provided that you make a good faith effort to\n   ensure that, in the event an Application does not supply the\n   function or data, the facility still operates, and performs\n   whatever part of its purpose remains meaningful, or\n\n   b) under the GNU GPL, with none of the additional permissions of\n   this License applicable to that copy.\n\n  3. Object Code Incorporating Material from Library Header Files.\n\n  The object code form of an Application may incorporate material from\na header file that is part of the Library.  You may convey such object\ncode under terms of your choice, provided that, if the incorporated\nmaterial is not limited to numerical parameters, data structure\nlayouts and accessors, or small macros, inline functions and templates\n(ten or fewer lines in length), you do both of the following:\n\n   a) Give prominent notice with each copy of the object code that the\n   Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the object code with a copy of the GNU GPL and this license\n   document.\n\n  4. Combined Works.\n\n  You may convey a Combined Work under terms of your choice that,\ntaken together, effectively do not restrict modification of the\nportions of the Library contained in the Combined Work and reverse\nengineering for debugging such modifications, if you also do each of\nthe following:\n\n   a) Give prominent notice with each copy of the Combined Work that\n   the Library is used in it and that the Library and its use are\n   covered by this License.\n\n   b) Accompany the Combined Work with a copy of the GNU GPL and this license\n   document.\n\n   c) For a Combined Work that displays copyright notices during\n   execution, include the copyright notice for the Library among\n   these notices, as well as a reference directing the user to the\n   copies of the GNU GPL and this license document.\n\n   d) Do one of the following:\n\n       0) Convey the Minimal Corresponding Source under the terms of this\n       License, and the Corresponding Application Code in a form\n       suitable for, and under terms that permit, the user to\n       recombine or relink the Application with a modified version of\n       the Linked Version to produce a modified Combined Work, in the\n       manner specified by section 6 of the GNU GPL for conveying\n       Corresponding Source.\n\n       1) Use a suitable shared library mechanism for linking with the\n       Library.  A suitable mechanism is one that (a) uses at run time\n       a copy of the Library already present on the user's computer\n       system, and (b) will operate properly with a modified version\n       of the Library that is interface-compatible with the Linked\n       Version.\n\n   e) Provide Installation Information, but only if you would otherwise\n   be required to provide such information under section 6 of the\n   GNU GPL, and only to the extent that such information is\n   necessary to install and execute a modified version of the\n   Combined Work produced by recombining or relinking the\n   Application with a modified version of the Linked Version. (If\n   you use option 4d0, the Installation Information must accompany\n   the Minimal Corresponding Source and Corresponding Application\n   Code. If you use option 4d1, you must provide the Installation\n   Information in the manner specified by section 6 of the GNU GPL\n   for conveying Corresponding Source.)\n\n  5. Combined Libraries.\n\n  You may place library facilities that are a work based on the\nLibrary side by side in a single library together with other library\nfacilities that are not Applications and are not covered by this\nLicense, and convey such a combined library under terms of your\nchoice, if you do both of the following:\n\n   a) Accompany the combined library with a copy of the same work based\n   on the Library, uncombined with any other library facilities,\n   conveyed under the terms of this License.\n\n   b) Give prominent notice with the combined library that part of it\n   is a work based on the Library, and explaining where to find the\n   accompanying uncombined form of the same work.\n\n  6. Revised Versions of the GNU Lesser General Public License.\n\n  The Free Software Foundation may publish revised and/or new versions\nof the GNU Lesser General Public License from time to time. Such new\nversions will be similar in spirit to the present version, but may\ndiffer in detail to address new problems or concerns.\n\n  Each version is given a distinguishing version number. If the\nLibrary as you received it specifies that a certain numbered version\nof the GNU Lesser General Public License \"or any later version\"\napplies to it, you have the option of following the terms and\nconditions either of that published version or of any later version\npublished by the Free Software Foundation. If the Library as you\nreceived it does not specify a version number of the GNU Lesser\nGeneral Public License, you may choose any version of the GNU Lesser\nGeneral Public License ever published by the Free Software Foundation.\n\n  If the Library as you received it specifies that a proxy can decide\nwhether future versions of the GNU Lesser General Public License shall\napply, that proxy's public statement of acceptance of any version is\npermanent authorization for you to choose that version for the\nLibrary.\n",
+      "__impliedText": "This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 3.0 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA",
       "__impliedURLs": [
           [
               null,
@@ -2078,6 +1893,18 @@
           ],
           [
               "Homepage",
+              "http://www.gnu.org/licenses/lgpl-3.0-standalone.html"
+          ],
+          [
+              null,
+              "http://www.gnu.org/copyleft/lesser.html"
+          ],
+          [
+              null,
+              "http://www.opensource.org/licenses/LGPL-3.0"
+          ],
+          [
+              "Homepage",
               "http://www.gnu.org/licenses/lgpl-3.0.html"
           ],
           [
@@ -2086,24 +1913,11 @@
           ],
           [
               null,
-              "http://www.gnu.org/copyleft/lesser.html"
-          ],
-          [
-              null,
               "http://www.gnu.org/licenses/why-not-lgpl.html"
-          ],
-          [
-              null,
-              "http://www.opensource.org/licenses/LGPL-3.0"
-          ],
-          [
-              "Homepage",
-              "http://www.gnu.org/licenses/lgpl-3.0-standalone.html"
           ]
       ]
   }
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/LGPL-3.0-only.svg]]

@@ -1,11 +1,10 @@
 * EU DataGrid Software License (EUDatagrid)
-
-| Key              | Value                          |
-|------------------+--------------------------------|
-| Fullname         | EU DataGrid Software License   |
-| Shortname        | EUDatagrid                     |
-| Rating           | Unknown                        |
-| Classification   | NoCopyleft                     |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | EU DataGrid Software License |
+| Shortname      | EUDatagrid                   |
+| Rating         | Unknown                      |
+| Classification | NoCopyleft                   |
 
 *Other Names:*
 
@@ -95,7 +94,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -119,7 +117,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   EU DataGrid Software License
 
@@ -151,7 +148,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -180,7 +176,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -528,12 +523,12 @@
                               "name": "Use the name to endorse and promote software and derivative products"
                           }
                       ],
-                      "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.\nActions:\n- Use the name to endorse and promote software and derivative products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chã«é£çµ¡ãã. The same rights will be granted to sub-licensees."
+                      "description": "To use the names \"EDG\", \"EDG Toolkit\" and \"EU DataGrid Project\". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees."
                   }
               ],
               "_implications": {
@@ -669,5 +664,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/EUDatagrid.svg]]

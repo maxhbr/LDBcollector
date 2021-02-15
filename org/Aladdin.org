@@ -1,11 +1,10 @@
 * Aladdin Free Public License (Aladdin)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Aladdin Free Public License       |
-| Shortname        | Aladdin                           |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | Copyleft                          |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Aladdin Free Public License     |
+| Shortname      | Aladdin                         |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | Copyleft                        |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - *SPDX:* http://spdx.org/licenses/Aladdin.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Aladdin Free Public License 
   (Version 8, November 18, 1999) 
@@ -106,7 +104,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -122,7 +119,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -285,5 +281,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Aladdin.svg]]

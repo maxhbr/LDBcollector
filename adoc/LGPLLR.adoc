@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://lgpllr+`
+* `scancode://lgpllr`
 
 === Comments on (easy) usability
 

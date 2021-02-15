@@ -1,11 +1,10 @@
 * Lucent Public License Version 1.0 (LPL-1.0)
-
-| Key              | Value                               |
-|------------------+-------------------------------------|
-| Fullname         | Lucent Public License Version 1.0   |
-| Shortname        | LPL-1.0                             |
-| Rating           | Unknown, probably Stop or No-Go     |
-| Classification   | WeakCopyleft                        |
+| Key            | Value                             |
+|----------------+-----------------------------------|
+| Fullname       | Lucent Public License Version 1.0 |
+| Shortname      | LPL-1.0                           |
+| Rating         | Unknown, probably Stop or No-Go   |
+| Classification | WeakCopyleft                      |
 
 *Other Names:*
 
@@ -45,7 +44,6 @@
 - *SPDX:* http://spdx.org/licenses/LPL-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Lucent Public License Version 1.0
 
@@ -269,7 +267,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -291,7 +288,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -592,5 +588,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/LPL-1.0.svg]]

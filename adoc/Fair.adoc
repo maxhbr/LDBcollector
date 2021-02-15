@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Fair License (Fair)+`
-* `+scancode://fair+`
+* `Fair License (Fair)`
+* `scancode://fair`
 
 === Comments on (easy) usability
 

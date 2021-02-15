@@ -710,7 +710,7 @@ Raw Data
                         ]
                     ]
                 },
-                "description": "Code released under the Sybase Open Watcom Public License version 1.0 cannot be used at Google. Provision 12.1Â© terminates the license if any patent litigation is filed against Sybase or any contributor, including cross claims and counterclaims, without limiting the scope of this provision to patent litigation concerning the specific software being licensed. This provision goes too far in restricting the exercise of Googleâs patent rights and is therefore prohibited at Google."
+                "description": "Code released under the Sybase Open Watcom Public License version 1.0 cannot be used at Google. Provision 12.1© terminates the license if any patent litigation is filed against Sybase or any contributor, including cross claims and counterclaims, without limiting the scope of this provision to patent litigation concerning the specific software being licensed. This provision goes too far in restricting the exercise of Google’s patent rights and is therefore prohibited at Google."
             }
         },
         "__impliedJudgement": [

@@ -1,11 +1,10 @@
 * mpich2 License (mpich2)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | mpich2 License                    |
-| Shortname        | mpich2                            |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | mpich2 License                  |
+| Shortname      | mpich2                          |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -43,7 +42,6 @@
 - https://fedoraproject.org/wiki/Licensing/MIT
 
 ** Text
-
 #+BEGIN_EXAMPLE
   COPYRIGHT
 
@@ -88,7 +86,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -107,7 +104,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -337,5 +333,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/mpich2.svg]]

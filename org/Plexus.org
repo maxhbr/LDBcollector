@@ -1,11 +1,10 @@
 * Plexus Classworlds License (Plexus)
-
-| Key              | Value                        |
-|------------------+------------------------------|
-| Fullname         | Plexus Classworlds License   |
-| Shortname        | Plexus                       |
-| Rating           | Go                           |
-| Classification   | NoCopyleft                   |
+| Key            | Value                      |
+|----------------+----------------------------|
+| Fullname       | Plexus Classworlds License |
+| Shortname      | Plexus                     |
+| Rating         | Go                         |
+| Classification | NoCopyleft                 |
 
 *Other Names:*
 
@@ -90,7 +89,6 @@
     AND
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -124,7 +122,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use of this software and associated documentation
   ("Software"), with or without modification, are permitted provided that the
@@ -159,13 +156,11 @@
   ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
   (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
   THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
 #+END_EXAMPLE
 
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -190,7 +185,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -450,12 +444,12 @@
                               "name": "Use the name to endorse and promote derived products"
                           }
                       ],
-                      "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comã«é£çµ¡ãã¦ and get permission from MetaStuff, Ltd."
+                      "description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd."
                   },
                   {
                       "actions": [
@@ -540,7 +534,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -552,7 +546,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -657,5 +651,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Plexus.svg]]

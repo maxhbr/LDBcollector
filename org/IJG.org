@@ -1,11 +1,10 @@
 * Independent JPEG Group License (IJG)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Independent JPEG Group License    |
-| Shortname        | IJG                               |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Independent JPEG Group License  |
+| Shortname      | IJG                             |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -47,7 +46,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   LEGAL ISSUES
   ============
@@ -139,7 +137,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -161,7 +158,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -409,5 +405,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/IJG.svg]]

@@ -1,11 +1,10 @@
 * BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | BSD 3-Clause Open MPI variant                  |
-| Shortname        | BSD-3-Clause-Open-MPI                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | BSD 3-Clause Open MPI variant                |
+| Shortname      | BSD-3-Clause-Open-MPI                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -73,7 +72,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
@@ -114,7 +112,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -129,7 +126,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -384,5 +380,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-3-Clause-Open-MPI.svg]]

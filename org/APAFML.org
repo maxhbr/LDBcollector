@@ -1,11 +1,10 @@
 * Adobe Postscript AFM License (APAFML)
-
-| Key              | Value                          |
-|------------------+--------------------------------|
-| Fullname         | Adobe Postscript AFM License   |
-| Shortname        | APAFML                         |
-| Rating           | Go                             |
-| Classification   | NoCopyleft                     |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | Adobe Postscript AFM License |
+| Shortname      | APAFML                       |
+| Rating         | Go                           |
+| Classification | NoCopyleft                   |
 
 *Other Names:*
 
@@ -34,7 +33,6 @@
 - *SPDX:* http://spdx.org/licenses/APAFML.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,
   and distributed for any purpose and without charge, with or without
@@ -48,7 +46,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -67,7 +64,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -274,5 +270,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/APAFML.svg]]

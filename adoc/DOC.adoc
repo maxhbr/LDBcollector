@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://ace-tao+`
-* `+ACE TAO License+`
+* `scancode://ace-tao`
+* `ACE TAO License`
 
 === Comments on (easy) usability
 

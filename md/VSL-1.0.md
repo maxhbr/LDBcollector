@@ -448,12 +448,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgに Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "\"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact."
+                        "description": "\"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgに Contact."
                     },
                     {
                         "actions": [

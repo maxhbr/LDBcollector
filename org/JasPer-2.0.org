@@ -1,11 +1,10 @@
 * JasPer License (JasPer-2.0)
-
-| Key              | Value            |
-|------------------+------------------|
-| Fullname         | JasPer License   |
-| Shortname        | JasPer-2.0       |
-| Rating           | Go               |
-| Classification   | NoCopyleft       |
+| Key            | Value          |
+|----------------+----------------|
+| Fullname       | JasPer License |
+| Shortname      | JasPer-2.0     |
+| Rating         | Go             |
+| Classification | NoCopyleft     |
 
 *Other Names:*
 
@@ -75,7 +74,6 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -87,13 +85,11 @@
     AND
       REQUISITE: Get special permission in writing.
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   JasPer License Version 2.0
 
@@ -154,7 +150,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -180,7 +175,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -560,5 +554,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/JasPer-2.0.svg]]

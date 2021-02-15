@@ -1,12 +1,11 @@
 * zlib License (Zlib)
-
-| Key               | Value          |
-|-------------------+----------------|
-| Fullname          | zlib License   |
-| Shortname         | Zlib           |
-| Rating            | Go             |
-| Classification    | NoCopyleft     |
-| Has Patent Hint   | False          |
+| Key             | Value        |
+|-----------------+--------------|
+| Fullname        | zlib License |
+| Shortname       | Zlib         |
+| Rating          | Go           |
+| Classification  | NoCopyleft   |
+| Has Patent Hint | False        |
 
 *Other Names:*
 
@@ -65,17 +64,15 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:                   | Limitations:   |
-|--------------------+-------------------------------+----------------|
-| - commercial-use   | - include-copyright--source   | - liability    |
-|                    |                               |                |
-| - modifications    | - document-changes            | - warranty     |
-|                    |                               |                |
-| - distribution     |                               |                |
-|                    |                               |                |
-| - private-use      |                               |                |
-                                                                     
+| Rights:          | Conditions:                 | Limitations: |
+|------------------+-----------------------------+--------------|
+| - commercial-use | - include-copyright--source | - liability  |
+|                  |                             |              |
+| - modifications  | - document-changes          | - warranty   |
+|                  |                             |              |
+| - distribution   |                             |              |
+|                  |                             |              |
+| - private-use    |                             |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/zlib.txt][choosealicense.com]]
@@ -124,7 +121,6 @@
     AND
       OBLIGATION: Correctly indicate the origin of the software in question
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -150,7 +146,6 @@
     AND
       OBLIGATION: Correctly indicate the origin of the software in question
       OBLIGATION: Indicate that you have made the change yourself.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -163,13 +158,11 @@
       OBLIGATION: Correctly indicate the origin of the software in question
       OBLIGATION: Indicate that you have made the change yourself.
       OBLIGATION: Give you a copy of the relevant license.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software is provided 'as-is', without any express or implied warranty. In no
   event will the authors be held liable for any damages arising from the use of this
@@ -193,7 +186,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -247,7 +239,6 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -541,7 +532,7 @@
                   }
               ],
               "_sourceURL": "http://open-license.hitachi.com/licenses/16",
-              "content": "The zlib/libpng License\n\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \n        the original software. If you use this software in a product, an acknowledgment in the product \n        documentation  would be appreciated but is not required.\n\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \n         the original software.\n\n      3. This notice may not be removed or altered from any source distribution.",
+              "content": "The zlib/libpng License\n\nCopyright (c) ＜year＞ ＜copyright holders＞\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \n        the original software. If you use this software in a product, an acknowledgment in the product \n        documentation  would be appreciated but is not required.\n\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \n         the original software.\n\n      3. This notice may not be removed or altered from any source distribution.",
               "name": "zlib/libpng license",
               "permissions": [
                   {
@@ -682,7 +673,7 @@
                   "__impliedNames": [
                       "zlib/libpng license"
                   ],
-                  "__impliedText": "The zlib/libpng License\n\nCopyright (c) ï¼yearï¼ ï¼copyright holdersï¼\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \n        the original software. If you use this software in a product, an acknowledgment in the product \n        documentation  would be appreciated but is not required.\n\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \n         the original software.\n\n      3. This notice may not be removed or altered from any source distribution.",
+                  "__impliedText": "The zlib/libpng License\n\nCopyright (c) ＜year＞ ＜copyright holders＞\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \n        the original software. If you use this software in a product, an acknowledgment in the product \n        documentation  would be appreciated but is not required.\n\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \n         the original software.\n\n      3. This notice may not be removed or altered from any source distribution.",
                   "__impliedURLs": [
                       [
                           "open-license",
@@ -1087,5 +1078,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Zlib.svg]]

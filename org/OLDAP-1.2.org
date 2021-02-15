@@ -1,11 +1,10 @@
 * Open LDAP Public License v1.2 (OLDAP-1.2)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Open LDAP Public License v1.2     |
-| Shortname        | OLDAP-1.2                         |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Open LDAP Public License v1.2   |
+| Shortname      | OLDAP-1.2                       |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -37,7 +36,6 @@
 - *SPDX:* http://spdx.org/licenses/OLDAP-1.2.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The OpenLDAP Public License 
 
@@ -175,7 +173,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -194,7 +191,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -398,5 +394,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OLDAP-1.2.svg]]

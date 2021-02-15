@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://mpich+`
-* `+MPICH License+`
+* `scancode://mpich`
+* `MPICH License`
 
 === Comments on (easy) usability
 

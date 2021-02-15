@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Crystal Stacker License+`
-* `+scancode://crystal-stacker+`
+* `Crystal Stacker License`
+* `scancode://crystal-stacker`
 
 === Comments on (easy) usability
 

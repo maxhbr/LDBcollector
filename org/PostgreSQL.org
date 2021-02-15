@@ -1,11 +1,10 @@
 * PostgreSQL License (PostgreSQL)
-
-| Key              | Value                |
-|------------------+----------------------|
-| Fullname         | PostgreSQL License   |
-| Shortname        | PostgreSQL           |
-| Rating           | Go                   |
-| Classification   | NoCopyleft           |
+| Key            | Value              |
+|----------------+--------------------|
+| Fullname       | PostgreSQL License |
+| Shortname      | PostgreSQL         |
+| Rating         | Go                 |
+| Classification | NoCopyleft         |
 
 *Other Names:*
 
@@ -49,17 +48,15 @@
   (CC0-1.0))
 
 ** Obligations
-
-| Rights:            | Conditions:           | Limitations:   |
-|--------------------+-----------------------+----------------|
-| - commercial-use   | - include-copyright   | - liability    |
-|                    |                       |                |
-| - modifications    |                       | - warranty     |
-|                    |                       |                |
-| - distribution     |                       |                |
-|                    |                       |                |
-| - private-use      |                       |                |
-                                                             
+| Rights:          | Conditions:         | Limitations: |
+|------------------+---------------------+--------------|
+| - commercial-use | - include-copyright | - liability  |
+|                  |                     |              |
+| - modifications  |                     | - warranty   |
+|                  |                     |              |
+| - distribution   |                     |              |
+|                  |                     |              |
+| - private-use    |                     |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt][choosealicense.com]]
@@ -112,7 +109,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   PostgreSQL is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
@@ -143,7 +139,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -182,7 +177,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -780,5 +774,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/PostgreSQL.svg]]

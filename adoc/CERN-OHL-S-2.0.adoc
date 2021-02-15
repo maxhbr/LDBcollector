@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://cern-ohl-s-2.0+`
+* `scancode://cern-ohl-s-2.0`
 
 === Comments on (easy) usability
 

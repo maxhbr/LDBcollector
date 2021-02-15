@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://regexp+`
-* `+Regexp License+`
+* `scancode://regexp`
+* `Regexp License`
 
 === Comments on (easy) usability
 

@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+RSA Message-Digest License +`
-* `+scancode://rsa-md5+`
-* `+RSA-MD5 License+`
+* `RSA Message-Digest License `
+* `scancode://rsa-md5`
+* `RSA-MD5 License`
 
 === Comments on (easy) usability
 

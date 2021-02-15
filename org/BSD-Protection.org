@@ -1,11 +1,10 @@
 * BSD Protection License (BSD-Protection)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | BSD Protection License                         |
-| Shortname        | BSD-Protection                                 |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | BSD Protection License                       |
+| Shortname      | BSD-Protection                               |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - https://spdx.org/licenses/BSD-Protection.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   BSD Protection License
   February 2002
@@ -170,7 +168,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -189,7 +186,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -400,5 +396,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-Protection.svg]]

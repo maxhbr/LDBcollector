@@ -266,7 +266,7 @@ Raw Data
             [
                 "BlueOak License List",
                 [
-                    "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                    "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
                 ]
             ],
             [
@@ -483,7 +483,7 @@ Raw Data
                         [
                             "BlueOak License List",
                             [
-                                "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                                "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
                             ]
                         ]
                     ],

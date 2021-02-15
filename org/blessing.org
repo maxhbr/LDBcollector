@@ -1,11 +1,10 @@
 * SQLite Blessing (blessing)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | SQLite Blessing                                |
-| Shortname        | blessing                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | SQLite Blessing                              |
+| Shortname      | blessing                                     |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -24,7 +23,6 @@
 - https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The author disclaims copyright to this source code.
   In place of a legal notice, here is a blessing:
@@ -36,7 +34,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -48,7 +45,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -182,5 +178,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/blessing.svg]]

@@ -1,11 +1,10 @@
 * Nethack General Public License (NGPL)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Nethack General Public License                 |
-| Shortname        | NGPL                                           |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Nethack General Public License               |
+| Shortname      | NGPL                                         |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -43,7 +42,6 @@
 - http://www.opensource.org/licenses/NGPL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Nethack General Public License
   Copyright (c) 1989 M. Stephenson
@@ -84,7 +82,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -110,7 +107,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -411,5 +407,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NGPL.svg]]

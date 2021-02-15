@@ -1,11 +1,10 @@
 * Affero General Public License v1.0 or later (AGPL-1.0-or-later)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Affero General Public License v1.0 or later    |
-| Shortname        | AGPL-1.0-or-later                              |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | SaaSCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Affero General Public License v1.0 or later  |
+| Shortname      | AGPL-1.0-or-later                            |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | SaaSCopyleft                                 |
 
 *Other Names:*
 
@@ -48,7 +47,6 @@
 - https://spdx.org/licenses/AGPL-1.0-or-later.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This is free software; you can redistribute it and/or modify
   it under the terms of the AFFERO GENERAL PUBLIC LICENSE as published by
@@ -63,7 +61,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -82,7 +79,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -290,5 +286,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/AGPL-1.0-or-later.svg]]

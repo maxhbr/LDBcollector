@@ -1,11 +1,10 @@
 * Noweb License (Noweb)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Noweb License                                  |
-| Shortname        | Noweb                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Noweb License                                |
+| Shortname      | Noweb                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - https://fedoraproject.org/wiki/Licensing/Noweb
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Noweb is protected by copyright.  It is not public-domain
   software or shareware, and it is not protected by a ``copyleft''
@@ -57,7 +55,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -73,7 +70,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -235,5 +231,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Noweb.svg]]

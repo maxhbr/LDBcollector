@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://lppl-1.2+`
-* `+LPPL 1.2+`
+* `scancode://lppl-1.2`
+* `LPPL 1.2`
 
 === Comments on (easy) usability
 

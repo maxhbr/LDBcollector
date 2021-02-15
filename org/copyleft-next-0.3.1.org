@@ -1,11 +1,10 @@
 * copyleft-next 0.3.1 (copyleft-next-0.3.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | copyleft-next 0.3.1                            |
-| Shortname        | copyleft-next-0.3.1                            |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | copyleft-next 0.3.1                          |
+| Shortname      | copyleft-next-0.3.1                          |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -25,7 +24,6 @@
 - https://github.com/copyleft-next/copyleft-next/blob/master/Releases/copyleft-next-0.3.1
 
 ** Text
-
 #+BEGIN_EXAMPLE
   copyleft-next 0.3.1 ("this License")
   Release date: 2016-04-29
@@ -252,7 +250,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -264,7 +261,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -384,5 +380,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/copyleft-next-0.3.1.svg]]

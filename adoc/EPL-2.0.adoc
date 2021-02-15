@@ -12,10 +12,10 @@
 
 *Other Names:*
 
-* `+eclipse-2.0+`
-* `+Eclipse Public License - v 2.0+`
-* `+scancode://epl-2.0+`
-* `+EPL 2.0+`
+* `eclipse-2.0`
+* `Eclipse Public License - v 2.0`
+* `scancode://epl-2.0`
+* `EPL 2.0`
 
 === Description
 

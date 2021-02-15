@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://enlightenment+`
-* `+EFL MIT-Style License+`
+* `scancode://enlightenment`
+* `EFL MIT-Style License`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * Imlib2 License (Imlib2)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Imlib2 License                                 |
-| Shortname        | Imlib2                                         |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Imlib2 License                               |
+| Shortname      | Imlib2                                       |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -65,7 +64,6 @@
     Conditions:
     AND
       OBLIGATION: Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -94,13 +92,11 @@
           OBLIGATION: Attach the source code corresponding to the software in question.
           OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
           OBLIGATION: Provide source code for the software upon request
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Imlib2 License 
 
@@ -140,7 +136,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -159,7 +154,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -534,5 +528,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Imlib2.svg]]

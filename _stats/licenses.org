@@ -1470,8 +1470,8 @@
 - Hitachi open-license ["GNU General Public License Version 3"] []
 - SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - SPDX ["GPL-3.0-or-later","GNU General Public License v3.0 or later"] []
-- Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Scancode ["GPL-3.0-or-later","scancode://gpl-3.0-plus","GPL 3.0 or later"] []
+- Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
 
 * GPL-3.0-or-later
@@ -1501,8 +1501,8 @@
 - Hitachi open-license ["GNU General Public License Version 3"] []
 - SPDX ["GPL-3.0-only","GNU General Public License v3.0 only"] []
 - SPDX ["GPL-3.0-or-later","GNU General Public License v3.0 or later"] []
-- Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Scancode ["GPL-3.0-or-later","scancode://gpl-3.0-plus","GPL 3.0 or later"] []
+- Scancode ["GPL-3.0-only","scancode://gpl-3.0","GPL 3.0"] []
 - Wikipedia ["GPL-3.0-or-later","GNU General Public License 3.0"] []
 
 * Giftware
@@ -1537,8 +1537,8 @@
 * HPND-sell-variant
 - LicenseName ["HPND-sell-variant"] []
 - SPDX ["HPND-sell-variant","Historical Permission Notice and Disclaimer - sell variant"] []
-- Scancode ["HPND-sell-variant","scancode://x11-keith-packard","X11-Style (Keith Packard)"] []
 - Scancode ["scancode://historical-sell-variant","Historical Permission Notice and Disclaimer - sell variant"] []
+- Scancode ["HPND-sell-variant","scancode://x11-keith-packard","X11-Style (Keith Packard)"] []
 
 * HaskellReport
 - LicenseName ["HaskellReport"] []
@@ -1781,8 +1781,8 @@
 - Hitachi open-license ["GNU Lesser General Public License Version 3"] []
 - SPDX ["LGPL-3.0-only","GNU Lesser General Public License v3.0 only"] []
 - SPDX ["LGPL-3.0-or-later","GNU Lesser General Public License v3.0 or later"] []
-- Scancode ["LGPL-3.0-only","scancode://lgpl-3.0","LGPL 3.0"] []
 - Scancode ["LGPL-3.0-or-later","scancode://lgpl-3.0-plus","LGPL 3.0 or later"] []
+- Scancode ["LGPL-3.0-only","scancode://lgpl-3.0","LGPL 3.0"] []
 - Wikipedia ["LGPL-3.0-or-later","GNU Lesser General Public License 3.0"] []
 
 * LGPL-3.0-or-later
@@ -1814,8 +1814,8 @@
 - Hitachi open-license ["GNU Lesser General Public License Version 3"] []
 - SPDX ["LGPL-3.0-only","GNU Lesser General Public License v3.0 only"] []
 - SPDX ["LGPL-3.0-or-later","GNU Lesser General Public License v3.0 or later"] []
-- Scancode ["LGPL-3.0-only","scancode://lgpl-3.0","LGPL 3.0"] []
 - Scancode ["LGPL-3.0-or-later","scancode://lgpl-3.0-plus","LGPL 3.0 or later"] []
+- Scancode ["LGPL-3.0-only","scancode://lgpl-3.0","LGPL 3.0"] []
 - Wikipedia ["LGPL-3.0-or-later","GNU Lesser General Public License 3.0"] []
 
 * LGPLLR
@@ -1957,8 +1957,8 @@
 - HansHammel license-compatibility-checker ["MIT-CMU"] []
 - finos/OSLC-handbook ["MIT-CMU","CMU License"] []
 - SPDX ["MIT-CMU","CMU License"] []
-- Scancode ["MIT-CMU","scancode://cmu-uc","CMU UC Regents License"] []
 - Scancode ["scancode://cmu-template","CMU License"] []
+- Scancode ["MIT-CMU","scancode://cmu-uc","CMU UC Regents License"] []
 
 * MIT-advertising
 - LicenseName ["MIT-advertising"] []
@@ -2247,8 +2247,8 @@
 - OpenSourceInitiative ["NTP","NTP License (NTP)"] []
 - OpenChainPolicyTemplate ["NTP"] []
 - SPDX ["NTP","NTP License"] []
-- Scancode ["scancode://ntpl","NTP License"] []
 - Scancode ["NTP","scancode://mit-old-style-no-advert","MIT Old Style no advertising"] []
+- Scancode ["scancode://ntpl","NTP License"] []
 
 * NTP-0
 - LicenseName ["NTP-0"] []
@@ -2613,8 +2613,8 @@
 - finos/OSLC-handbook ["OpenSSL","OpenSSL License"] []
 - Hitachi open-license ["OpenSSL License"] []
 - SPDX ["OpenSSL","OpenSSL License"] []
-- Scancode ["scancode://openssl","OpenSSL License"] []
 - Scancode ["OpenSSL","scancode://openssl-ssleay","OpenSSL/SSLeay License"] []
+- Scancode ["scancode://openssl","OpenSSL License"] []
 - Wikipedia ["OpenSSL","OpenSSL license"] []
 
 * PDDL-1.0

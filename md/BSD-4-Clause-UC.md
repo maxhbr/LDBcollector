@@ -398,7 +398,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {
@@ -410,7 +410,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     }
                 ],

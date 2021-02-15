@@ -1,11 +1,10 @@
 * TMate Open Source License (TMate)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | TMate Open Source License                      |
-| Shortname        | TMate                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | TMate Open Source License                    |
+| Shortname      | TMate                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -68,7 +67,6 @@
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -91,13 +89,11 @@
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This license applies to all portions of TMate SVNKit library, which 
   are not externally-maintained libraries (e.g. Ganymed SSH library).
@@ -149,7 +145,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -171,7 +166,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -347,7 +341,7 @@
                               "name": "Distribution of Modified Source Code"
                           }
                       ],
-                      "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n",
+                      "_str": "Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -388,7 +382,7 @@
                               }
                           ]
                       },
-                      "description": "The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã."
+                      "description": "The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する."
                   },
                   {
                       "actions": [
@@ -400,7 +394,7 @@
                               "name": "Distribute the generated binaries from modified source code"
                           }
                       ],
-                      "_str": "Description: The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n",
+                      "_str": "Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nAND\n  OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n  OR\n    OBLIGATION: Attach the source code corresponding to the software in question.\n    OBLIGATION: Tell them that the corresponding source code for the software is available in exchange for a fee for the cost of distribution.\n  OR\n    OBLIGATION: Attach the source code of the software that uses the software in question.\n    OBLIGATION: Tell them that the source code for the software that uses the software is available in exchange for a fee of about the cost of distribution.\n    OBLIGATION: Obtain express permission from the copyright holder not to redistribute the source code of software that uses the software.\n  OR\n    OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.\n    OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available\n    OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.\n\n",
                       "conditions": {
                           "AND": [
                               {
@@ -453,7 +447,7 @@
                               }
                           ]
                       },
-                      "description": "The source code is redistributed under reasonable conditions. â Permission may be obtained from the copyright holder at support@svnkit.comã«é£çµ¡ãã."
+                      "description": "The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する."
                   }
               ],
               "_implications": {
@@ -522,5 +516,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TMate.svg]]

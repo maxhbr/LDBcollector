@@ -1,11 +1,10 @@
 * XSkat License (XSkat)
-
-| Key              | Value           |
-|------------------+-----------------|
-| Fullname         | XSkat License   |
-| Shortname        | XSkat           |
-| Rating           | Unknown         |
-| Classification   | NoCopyleft      |
+| Key            | Value         |
+|----------------+---------------|
+| Fullname       | XSkat License |
+| Shortname      | XSkat         |
+| Rating         | Unknown       |
+| Classification | NoCopyleft    |
 
 *Other Names:*
 
@@ -42,7 +41,6 @@
 - *SPDX:* http://spdx.org/licenses/XSkat.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This program is free software; you can redistribute it freely.
   Use it at your own risk; there is NO WARRANTY.
@@ -62,7 +60,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -78,7 +75,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -250,5 +246,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/XSkat.svg]]

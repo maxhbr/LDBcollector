@@ -1,11 +1,10 @@
 * Ruby License (Ruby)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Ruby License                                   |
-| Shortname        | Ruby                                           |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Ruby License                                 |
+| Shortname      | Ruby                                         |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -100,7 +99,6 @@
           RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
           OBLIGATION: Pass information on where the original software was obtained
         RESTRICTION: Decide on a different method of distribution with the copyright holder
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -119,13 +117,11 @@
         RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
         OBLIGATION: Pass information on where the original software was obtained
       RESTRICTION: Decide on a different method of distribution with the copyright holder
-
   #+END_EXAMPLE
 
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
 
     1. You may make and give away verbatim copies of the source form of the
@@ -185,7 +181,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -218,7 +213,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -673,5 +667,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Ruby.svg]]

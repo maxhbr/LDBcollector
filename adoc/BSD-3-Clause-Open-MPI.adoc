@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Open MPI License+`
-* `+scancode://bsd-3-clause-open-mpi+`
+* `Open MPI License`
+* `scancode://bsd-3-clause-open-mpi`
 
 === Comments on (easy) usability
 

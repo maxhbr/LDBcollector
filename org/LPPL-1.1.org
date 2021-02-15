@@ -1,11 +1,10 @@
 * LaTeX Project Public License v1.1 (LPPL-1.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | LaTeX Project Public License v1.1              |
-| Shortname        | LPPL-1.1                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | WeakCopyleft                                   |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | LaTeX Project Public License v1.1            |
+| Shortname      | LPPL-1.1                                     |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | WeakCopyleft                                 |
 
 *Other Names:*
 
@@ -28,7 +27,6 @@
 - *SPDX:* http://spdx.org/licenses/LPPL-1.1.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The LaTeX Project Public License
   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -336,7 +334,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -352,7 +349,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -503,5 +499,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/LPPL-1.1.svg]]

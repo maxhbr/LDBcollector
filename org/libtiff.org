@@ -1,11 +1,10 @@
 * libtiff License (libtiff)
-
-| Key              | Value             |
-|------------------+-------------------|
-| Fullname         | libtiff License   |
-| Shortname        | libtiff           |
-| Rating           | Go                |
-| Classification   | NoCopyleft        |
+| Key            | Value           |
+|----------------+-----------------|
+| Fullname       | libtiff License |
+| Shortname      | libtiff         |
+| Rating         | Go              |
+| Classification | NoCopyleft      |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - https://fedoraproject.org/wiki/Licensing/libtiff
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, modify, distribute, and sell this software and its
   documentation for any purpose is hereby granted without fee, provided
@@ -65,7 +63,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -88,7 +85,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -324,5 +320,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/libtiff.svg]]

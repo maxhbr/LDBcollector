@@ -1,11 +1,10 @@
 * Wsuipa License (Wsuipa)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Wsuipa License                    |
-| Shortname        | Wsuipa                            |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Wsuipa License                  |
+| Shortname      | Wsuipa                          |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -38,7 +37,6 @@
 - *SPDX:* http://spdx.org/licenses/Wsuipa.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
   Guenther and pointers to this file were added to all source files.
@@ -54,7 +52,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -73,7 +70,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -296,5 +292,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Wsuipa.svg]]

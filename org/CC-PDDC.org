@@ -1,11 +1,10 @@
 * Creative Commons Public Domain Dedication and Certification (CC-PDDC)
-
-| Key              | Value                                                         |
-|------------------+---------------------------------------------------------------|
-| Fullname         | Creative Commons Public Domain Dedication and Certification   |
-| Shortname        | CC-PDDC                                                       |
-| Rating           | Unknown, probably Attention or Stop or No-Go                  |
-| Classification   | NoCopyleft                                                    |
+| Key            | Value                                                       |
+|----------------+-------------------------------------------------------------|
+| Fullname       | Creative Commons Public Domain Dedication and Certification |
+| Shortname      | CC-PDDC                                                     |
+| Rating         | Unknown, probably Attention or Stop or No-Go                |
+| Classification | NoCopyleft                                                  |
 
 *Other Names:*
 
@@ -48,7 +47,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The person or persons who have associated work with this document (the "Dedicator" or "Certifier") hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the "Work") to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a "dedicator" below.
 
@@ -62,7 +60,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -77,7 +74,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -265,5 +261,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CC-PDDC.svg]]

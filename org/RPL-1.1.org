@@ -1,11 +1,10 @@
 * Reciprocal Public License 1.1 (RPL-1.1)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Reciprocal Public License 1.1                  |
-| Shortname        | RPL-1.1                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | MaximalCopyleft                                |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Reciprocal Public License 1.1                |
+| Shortname      | RPL-1.1                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | MaximalCopyleft                              |
 
 *Other Names:*
 
@@ -46,7 +45,6 @@
 - http://www.gnu.org/licenses/license-list.html#RPL
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Reciprocal Public License, version 1.1 
 
@@ -213,7 +211,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -239,7 +236,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -257,7 +253,7 @@
           [
               "BlueOak License List",
               [
-                  "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                  "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
               ]
           ],
           [
@@ -426,7 +422,7 @@
                       [
                           "BlueOak License List",
                           [
-                              "Maximal copyleft licenses answer the question âWhen does the license require you to share?â differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
+                              "Maximal copyleft licenses answer the question “When does the license require you to share?” differently than other families. Maximal copyleft licenses require you to share software you make with others, and to license that software alike when you do."
                           ]
                       ]
                   ],
@@ -555,5 +551,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/RPL-1.1.svg]]

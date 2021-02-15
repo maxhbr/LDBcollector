@@ -1,11 +1,10 @@
 * Solderpad Hardware License v0.5 (SHL-0.5)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Solderpad Hardware License v0.5                |
-| Shortname        | SHL-0.5                                        |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Solderpad Hardware License v0.5              |
+| Shortname      | SHL-0.5                                      |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -22,7 +21,6 @@
 - *SPDX:* http://spdx.org/licenses/SHL-0.5.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   SOLDERPAD HARDWARE LICENSE version 0.5
 
@@ -154,7 +152,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -166,7 +163,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -287,5 +283,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/SHL-0.5.svg]]

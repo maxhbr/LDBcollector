@@ -1,11 +1,10 @@
 * Haskell Language Report License (HaskellReport)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Haskell Language Report License   |
-| Shortname        | HaskellReport                     |
-| Rating           | Unknown                           |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Haskell Language Report License |
+| Shortname      | HaskellReport                   |
+| Rating         | Unknown                         |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -30,7 +29,6 @@
 - *SPDX:* http://spdx.org/licenses/HaskellReport.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The authors intend this Report to belong to the entire Haskell community, and
   so we grant permission to copy and distribute it for any purpose, provided that
@@ -43,7 +41,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -59,7 +56,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -216,5 +212,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/HaskellReport.svg]]

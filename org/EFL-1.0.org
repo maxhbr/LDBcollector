@@ -1,11 +1,10 @@
 * Eiffel Forum License v1.0 (EFL-1.0)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Eiffel Forum License v1.0         |
-| Shortname        | EFL-1.0                           |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Eiffel Forum License v1.0       |
+| Shortname      | EFL-1.0                         |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -47,7 +46,6 @@
 - http://www.eiffel-nice.org/license/forum.txt
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Eiffel Forum License, version 1
 
@@ -77,7 +75,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -99,7 +96,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -405,5 +401,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/EFL-1.0.svg]]

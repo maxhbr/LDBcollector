@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://lbnl-bsd+`
-* `+LBNL BSD Variant+`
+* `scancode://lbnl-bsd`
+* `LBNL BSD Variant`
 
 === Comments on (easy) usability
 

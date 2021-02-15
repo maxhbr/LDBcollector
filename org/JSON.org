@@ -1,11 +1,10 @@
 * JSON License (JSON)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | JSON License                      |
-| Shortname        | JSON                              |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | JSON License                    |
+| Shortname      | JSON                            |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - http://www.gnu.org/licenses/license-list.html#JSON
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission is hereby granted, free of charge, to any person obtaining a
   copy of this software and associated documentation files (the
@@ -67,7 +65,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -90,7 +87,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -317,5 +313,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/JSON.svg]]

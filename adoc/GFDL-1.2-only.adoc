@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://gfdl-1.2+`
-* `+GFDL 1.2+`
+* `scancode://gfdl-1.2`
+* `GFDL 1.2`
 
 === Comments on (easy) usability
 

@@ -1,11 +1,10 @@
 * GNU Free Documentation License v1.1 or later - invariants
 (GFDL-1.1-invariants-or-later)
-
-| Key         | Value                                                       |
-|-------------+-------------------------------------------------------------|
-| Fullname    | GNU Free Documentation License v1.1 or later - invariants   |
-| Shortname   | GFDL-1.1-invariants-or-later                                |
-| Rating      | Unknown, probably Attention or Stop or No-Go                |
+| Key       | Value                                                     |
+|-----------+-----------------------------------------------------------|
+| Fullname  | GNU Free Documentation License v1.1 or later - invariants |
+| Shortname | GFDL-1.1-invariants-or-later                              |
+| Rating    | Unknown, probably Attention or Stop or No-Go              |
 
 ** Comments on (easy) usability
 
@@ -20,7 +19,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -29,7 +27,6 @@
   (all data [in this repository] is generated)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -93,5 +90,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GFDL-1.1-invariants-or-later.svg]]

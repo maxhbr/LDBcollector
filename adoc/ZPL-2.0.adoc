@@ -11,12 +11,12 @@
 
 *Other Names:*
 
-* `+The Zope Public License, Version 2.0+`
-* `+Zope-2.0+`
-* `+License :: OSI Approved :: Zope Public License+`
-* `+Zope Public License (ZPL) Version 2.0+`
-* `+scancode://zpl-2.0+`
-* `+ZPL 2.0+`
+* `The Zope Public License, Version 2.0`
+* `Zope-2.0`
+* `License :: OSI Approved :: Zope Public License`
+* `Zope Public License (ZPL) Version 2.0`
+* `scancode://zpl-2.0`
+* `ZPL 2.0`
 
 === Comments on (easy) usability
 
@@ -434,7 +434,7 @@ repository] is generated)
             "summary": "https://opensource.org/licenses/ZPL-2.0",
             "notices": [
                 {
-                    "content": "To use Zope Corporation's service marks and trademarks, please visit http://www.zope.com/Marksã«ããå¥ã®å¥ç´æ¸ãé©ç¨ããã."
+                    "content": "To use Zope Corporation's service marks and trademarks, please visit http://www.zope.com/Marksにある別の契約書が適用される."
                 },
                 {
                     "content": "the software is provided \"as-is\" and without warranty of any kind, either express or implied, including, but not limited to, the implied warranties of commercial usability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",

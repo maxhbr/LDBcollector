@@ -471,7 +471,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Retain notices on all files",
-                        "termComplianceNotes": "Source files usually have a standard license header that includes a copyright notice and disclaimer of warranty. This is also where you determine if the license is âor laterâ or the specific version only",
+                        "termComplianceNotes": "Source files usually have a standard license header that includes a copyright notice and disclaimer of warranty. This is also where you determine if the license is “or later” or the specific version only",
                         "termType": "condition"
                     },
                     {
@@ -481,7 +481,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Notice of modifications",
-                        "termComplianceNotes": "Modified files must have âprominent notices that you changed the filesâ and a date",
+                        "termComplianceNotes": "Modified files must have “prominent notices that you changed the files” and a date",
                         "termType": "condition"
                     },
                     {

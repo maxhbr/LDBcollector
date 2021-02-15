@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://jpnic-idnkit+`
-* `+JPNIC idnkit License+`
+* `scancode://jpnic-idnkit`
+* `JPNIC idnkit License`
 
 === Comments on (easy) usability
 

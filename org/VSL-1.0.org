@@ -1,11 +1,10 @@
 * Vovida Software License v1.0 (VSL-1.0)
-
-| Key              | Value                          |
-|------------------+--------------------------------|
-| Fullname         | Vovida Software License v1.0   |
-| Shortname        | VSL-1.0                        |
-| Rating           | Go                             |
-| Classification   | NoCopyleft                     |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | Vovida Software License v1.0 |
+| Shortname      | VSL-1.0                      |
+| Rating         | Go                           |
+| Classification | NoCopyleft                   |
 
 *Other Names:*
 
@@ -109,7 +108,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Vovida Software License v. 1.0
 
@@ -169,7 +167,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -197,7 +194,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -457,12 +453,12 @@
                               "name": "Use the name to endorse and promote derived products"
                           }
                       ],
-                      "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                      "_str": "Description: \"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgに Contact.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                       "conditions": {
                           "name": "Get special permission in writing.",
                           "type": "REQUISITE"
                       },
-                      "description": "\"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgã« Contact."
+                      "description": "\"VOCAL\", \"Vovida Open Communication Application Library\", and \"Vovida Open Communication Application Library (VOCAL)\". vocal@vovida.orgに Contact."
                   },
                   {
                       "actions": [
@@ -657,5 +653,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/VSL-1.0.svg]]

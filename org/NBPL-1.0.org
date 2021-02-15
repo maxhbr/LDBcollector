@@ -1,11 +1,10 @@
 * Net Boolean Public License v1 (NBPL-1.0)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Net Boolean Public License v1     |
-| Shortname        | NBPL-1.0                          |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Net Boolean Public License v1   |
+| Shortname      | NBPL-1.0                        |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -34,7 +33,6 @@
 - *SPDX:* http://spdx.org/licenses/NBPL-1.0.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The Net Boolean Public License 
 
@@ -163,7 +161,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -178,7 +175,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -361,5 +357,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/NBPL-1.0.svg]]

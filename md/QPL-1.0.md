@@ -576,7 +576,7 @@ Raw Data
                                 "description": "Redistribute the obtained executable as-is"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
+                        "_str": "Actions:\n- Distribute the obtained executable (Redistribute the obtained executable as-is)\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -586,7 +586,7 @@ Raw Data
                                 {
                                     "name": "Enables the recipient to receive the source code corresponding to the software.",
                                     "type": "OBLIGATION",
-                                    "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                    "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                                 }
                             ]
                         }
@@ -597,7 +597,7 @@ Raw Data
                                 "name": "Distribute the executable generated from the modified source code"
                             }
                         ],
-                        "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
+                        "_str": "Actions:\n- Distribute the executable generated from the modified source code\n\nConditions:\nAND\n  OBLIGATION: Give you a copy of the relevant license.\n  OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)\n  OBLIGATION: Apply this license to the entire modification\n\n",
                         "conditions": {
                             "AND": [
                                 {
@@ -607,7 +607,7 @@ Raw Data
                                 {
                                     "name": "Enables the recipient to receive the source code corresponding to the software.",
                                     "type": "OBLIGATION",
-                                    "description": "No fee shall be charged in excess of the cost of transferring the data. â Conspicuous inclusion of a notice regarding these terms and conditions."
+                                    "description": "No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions."
                                 },
                                 {
                                     "name": "Apply this license to the entire modification",

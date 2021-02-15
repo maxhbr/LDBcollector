@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://borceux+`
+* `scancode://borceux`
 
 === Comments on (easy) usability
 

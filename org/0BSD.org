@@ -1,11 +1,10 @@
 * BSD Zero Clause License (0BSD)
-
-| Key              | Value                     |
-|------------------+---------------------------|
-| Fullname         | BSD Zero Clause License   |
-| Shortname        | 0BSD                      |
-| Rating           | Go                        |
-| Classification   | NoCopyleft                |
+| Key            | Value                   |
+|----------------+-------------------------|
+| Fullname       | BSD Zero Clause License |
+| Shortname      | 0BSD                    |
+| Rating         | Go                      |
+| Classification | NoCopyleft              |
 
 *Other Names:*
 
@@ -36,17 +35,15 @@
 ** General Comments
 
 ** Obligations
-
-| Rights:            | Conditions:   | Limitations:   |
-|--------------------+---------------+----------------|
-| - commercial-use   |               | - liability    |
-|                    |               |                |
-| - distribution     |               | - warranty     |
-|                    |               |                |
-| - modifications    |               |                |
-|                    |               |                |
-| - private-use      |               |                |
-                                                     
+| Rights:          | Conditions: | Limitations: |
+|------------------+-------------+--------------|
+| - commercial-use |             | - liability  |
+|                  |             |              |
+| - distribution   |             | - warranty   |
+|                  |             |              |
+| - modifications  |             |              |
+|                  |             |              |
+| - private-use    |             |              |
 
 (source:
 [[https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt][choosealicense.com]]
@@ -61,7 +58,6 @@
 - *SPDX:* http://spdx.org/licenses/0BSD.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Permission to use, copy, modify, and/or distribute this software for any
   purpose with or without fee is hereby granted.
@@ -78,7 +74,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -105,7 +100,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -420,5 +414,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/0BSD.svg]]

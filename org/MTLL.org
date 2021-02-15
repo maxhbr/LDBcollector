@@ -1,11 +1,10 @@
 * Matrix Template Library License (MTLL)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Matrix Template Library License   |
-| Shortname        | MTLL                              |
-| Rating           | Go                                |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Matrix Template Library License |
+| Shortname      | MTLL                            |
+| Rating         | Go                              |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -40,7 +39,6 @@
 - *SPDX:* http://spdx.org/licenses/MTLL.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Software License for MTL
 
@@ -68,7 +66,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -87,7 +84,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -310,5 +306,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/MTLL.svg]]

@@ -1,11 +1,10 @@
 * 3dfx Glide License (Glide)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | 3dfx Glide License                             |
-| Shortname        | Glide                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | Copyleft                                       |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | 3dfx Glide License                           |
+| Shortname      | Glide                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | Copyleft                                     |
 
 *Other Names:*
 
@@ -29,7 +28,6 @@
 - *SPDX:* http://spdx.org/licenses/Glide.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   3DFX GLIDE Source Code General Public License
 
@@ -288,7 +286,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -304,7 +301,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -461,5 +457,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Glide.svg]]

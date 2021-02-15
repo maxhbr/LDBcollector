@@ -1,11 +1,10 @@
 * Open Government Licence v3.0 (OGL-UK-3.0)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Open Government Licence v3.0                   |
-| Shortname        | OGL-UK-3.0                                     |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Open Government Licence v3.0                 |
+| Shortname      | OGL-UK-3.0                                   |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -27,7 +26,6 @@
 - http://www.nationalarchives.gov.uk/doc/open-government-licence/
 
 ** Text
-
 #+BEGIN_EXAMPLE
   You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
   Using Information under this licence
@@ -106,7 +104,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -125,7 +122,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -302,5 +298,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/OGL-UK-3.0.svg]]

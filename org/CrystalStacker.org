@@ -1,11 +1,10 @@
 * CrystalStacker License (CrystalStacker)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | CrystalStacker License            |
-| Shortname        | CrystalStacker                    |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | CrystalStacker License          |
+| Shortname      | CrystalStacker                  |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -36,7 +35,6 @@
 - *SPDX:* http://spdx.org/licenses/CrystalStacker.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it's original form in your distribution. Please see the "Contacting Us" section of this document if you need to contact us for any reason.
 
@@ -50,7 +48,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -69,7 +66,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -277,5 +273,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/CrystalStacker.svg]]

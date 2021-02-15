@@ -1,11 +1,10 @@
 * IPA Font License (IPA)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | IPA Font License                               |
-| Shortname        | IPA                                            |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | StrongCopyleft                                 |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | IPA Font License                             |
+| Shortname      | IPA                                          |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | StrongCopyleft                               |
 
 *Other Names:*
 
@@ -49,7 +48,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   IPA Font License Agreement v1.0 
    
@@ -140,7 +138,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -173,7 +170,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -517,5 +513,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/IPA.svg]]

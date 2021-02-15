@@ -574,12 +574,12 @@ Raw Data
                                 "name": "Use the name to endorse and promote derived products"
                             }
                         ],
-                        "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgに連絡する.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgã«é£çµ¡ãã."
+                        "description": "To use the names \"Apache\" and \"Apache Software Foundation\". apache@apache.orgに連絡する."
                     },
                     {
                         "actions": [
@@ -587,12 +587,12 @@ Raw Data
                                 "name": "Use the name of the product or part of the name of the product from which it was derived"
                             }
                         ],
-                        "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "_str": "Description: \"If you use the name \"Apache\". apache@apache.orgに連絡する.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
                         "conditions": {
                             "name": "Get special permission in writing.",
                             "type": "REQUISITE"
                         },
-                        "description": "\"If you use the name \"Apache\". apache@apache.orgã«é£çµ¡ãã."
+                        "description": "\"If you use the name \"Apache\". apache@apache.orgに連絡する."
                     }
                 ],
                 "_implications": {
@@ -699,7 +699,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copy of license",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {
@@ -711,7 +711,7 @@ Raw Data
                         ],
                         "termSeeAlso": null,
                         "termDescription": "Provide copyright notice",
-                        "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                        "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                         "termType": "condition"
                     },
                     {

@@ -1,11 +1,10 @@
 * Lesser General Public License For Linguistic Resources (LGPLLR)
-
-| Key              | Value                                                    |
-|------------------+----------------------------------------------------------|
-| Fullname         | Lesser General Public License For Linguistic Resources   |
-| Shortname        | LGPLLR                                                   |
-| Rating           | Unknown, probably Attention or Stop or No-Go             |
-| Classification   | WeakCopyleft                                             |
+| Key            | Value                                                  |
+|----------------+--------------------------------------------------------|
+| Fullname       | Lesser General Public License For Linguistic Resources |
+| Shortname      | LGPLLR                                                 |
+| Rating         | Unknown, probably Attention or Stop or No-Go           |
+| Classification | WeakCopyleft                                           |
 
 *Other Names:*
 
@@ -22,7 +21,6 @@
 - *SPDX:* http://spdx.org/licenses/LGPLLR.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Lesser General Public License For Linguistic Resources
 
@@ -259,7 +257,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -271,7 +268,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -385,5 +381,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/LGPLLR.svg]]

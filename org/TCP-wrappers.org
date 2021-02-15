@@ -1,11 +1,10 @@
 * TCP Wrappers License (TCP-wrappers)
-
-| Key              | Value                  |
-|------------------+------------------------|
-| Fullname         | TCP Wrappers License   |
-| Shortname        | TCP-wrappers           |
-| Rating           | Go                     |
-| Classification   | NoCopyleft             |
+| Key            | Value                |
+|----------------+----------------------|
+| Fullname       | TCP Wrappers License |
+| Shortname      | TCP-wrappers         |
+| Rating         | Go                   |
+| Classification | NoCopyleft           |
 
 *Other Names:*
 
@@ -35,7 +34,6 @@
 - http://rc.quest.com/topics/openssh/license.php#tcpwrappers
 
 ** Text
-
 #+BEGIN_EXAMPLE
   -----BEGIN PGP SIGNED MESSAGE-----
 
@@ -73,7 +71,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -92,7 +89,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -302,5 +298,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/TCP-wrappers.svg]]

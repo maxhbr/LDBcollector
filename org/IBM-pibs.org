@@ -1,11 +1,10 @@
 * IBM PowerPC Initialization and Boot Software (IBM-pibs)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | IBM PowerPC Initialization and Boot Software   |
-| Shortname        | IBM-pibs                                       |
-| Rating           | Go                                             |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | IBM PowerPC Initialization and Boot Software |
+| Shortname      | IBM-pibs                                     |
+| Rating         | Go                                           |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -31,7 +30,6 @@
 - *SPDX:* http://spdx.org/licenses/IBM-pibs.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This source code has been made available to you by IBM on an AS-IS
   basis.  Anyone receiving this source is licensed under IBM copyrights to
@@ -55,7 +53,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -70,7 +67,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -238,5 +234,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/IBM-pibs.svg]]

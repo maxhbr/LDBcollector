@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://glide+`
-* `+3DFX GLIDE+`
+* `scancode://glide`
+* `3DFX GLIDE`
 
 === Comments on (easy) usability
 

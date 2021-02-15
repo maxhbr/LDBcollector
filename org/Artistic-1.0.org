@@ -1,11 +1,10 @@
 * Artistic License 1.0 (Artistic-1.0)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Artistic License 1.0              |
-| Shortname        | Artistic-1.0                      |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Artistic License 1.0            |
+| Shortname      | Artistic-1.0                    |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -128,7 +127,6 @@
           RESTRICTION: Give a non-standard executable a different name than the standard executable. (Avoid conflicts with the name of the standard executable)
           RESTRICTION: Attach a separate page to the non-standard executable version of the manual that specifies the differences from the standard version
         RESTRICTION: Decide on a different method of distribution with the copyright holder
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -149,7 +147,6 @@
         RESTRICTION: Attach a separate page to the non-standard executable version of the manual that specifies the differences from the standard version
         OBLIGATION: Describe where to get the standard version in a manual or other document that specifies the differences from the standard version.
       RESTRICTION: Decide on a different method of distribution with the copyright holder
-
   #+END_EXAMPLE
 
 - #+BEGIN_EXAMPLE
@@ -163,7 +160,6 @@
 (source: Hitachi open-license)
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Preamble
 
@@ -267,7 +263,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -308,7 +303,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -958,5 +952,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Artistic-1.0.svg]]

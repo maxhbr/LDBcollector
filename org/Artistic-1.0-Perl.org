@@ -1,11 +1,10 @@
 * Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Artistic License 1.0 (Perl)       |
-| Shortname        | Artistic-1.0-Perl                 |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | WeakCopyleft                      |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Artistic License 1.0 (Perl)     |
+| Shortname      | Artistic-1.0-Perl               |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | WeakCopyleft                    |
 
 *Other Names:*
 
@@ -47,7 +46,6 @@
 - *SPDX:* http://spdx.org/licenses/Artistic-1.0-Perl.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   The "Artistic License"
 
@@ -181,7 +179,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -206,7 +203,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -536,5 +532,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Artistic-1.0-Perl.svg]]

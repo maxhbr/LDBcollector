@@ -1,11 +1,10 @@
 * Good Luck With That Public License (GLWTPL)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Good Luck With That Public License             |
-| Shortname        | GLWTPL                                         |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Good Luck With That Public License           |
+| Shortname      | GLWTPL                                       |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -24,7 +23,6 @@
 - https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85
 
 ** Text
-
 #+BEGIN_EXAMPLE
   GLWT(Good Luck With That) Public License 
   Copyright (c) Everyone, except Author
@@ -55,7 +53,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -67,7 +64,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -187,5 +183,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/GLWTPL.svg]]

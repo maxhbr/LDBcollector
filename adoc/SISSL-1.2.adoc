@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Sun Industry Standards Source License - Version 1.2+`
-* `+scancode://sun-sissl-1.2+`
-* `+Sun Industry Standards Source License 1.2+`
+* `Sun Industry Standards Source License - Version 1.2`
+* `scancode://sun-sissl-1.2`
+* `Sun Industry Standards Source License 1.2`
 
 === Comments on (easy) usability
 

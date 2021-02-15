@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://osl-2.0+`
-* `+OSL 2.0+`
+* `scancode://osl-2.0`
+* `OSL 2.0`
 
 === Comments on (easy) usability
 

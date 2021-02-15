@@ -1,11 +1,10 @@
 * BSD-4-Clause (University of California-Specific) (BSD-4-Clause-UC)
-
-| Key              | Value                                              |
-|------------------+----------------------------------------------------|
-| Fullname         | BSD-4-Clause (University of California-Specific)   |
-| Shortname        | BSD-4-Clause-UC                                    |
-| Rating           | Attention                                          |
-| Classification   | NoCopyleft                                         |
+| Key            | Value                                            |
+|----------------+--------------------------------------------------|
+| Fullname       | BSD-4-Clause (University of California-Specific) |
+| Shortname      | BSD-4-Clause-UC                                  |
+| Rating         | Attention                                        |
+| Classification | NoCopyleft                                       |
 
 *Other Names:*
 
@@ -55,7 +54,6 @@
 - http://www.gnu.org/philosophy/bsd.html
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without modification,
   are permitted provided that the following conditions are met:
@@ -127,7 +125,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -155,7 +152,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -400,7 +396,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copy of license",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   },
                   {
@@ -412,7 +408,7 @@
                       ],
                       "termSeeAlso": null,
                       "termDescription": "Provide copyright notice",
-                      "termComplianceNotes": "For binary distributions, this information must be provided in âthe documentation and/or other materials provided with the distributionâ",
+                      "termComplianceNotes": "For binary distributions, this information must be provided in “the documentation and/or other materials provided with the distribution”",
                       "termType": "condition"
                   }
               ],
@@ -532,5 +528,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-4-Clause-UC.svg]]

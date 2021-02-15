@@ -1,11 +1,10 @@
 * BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
-
-| Key              | Value                              |
-|------------------+------------------------------------|
-| Fullname         | BSD-2-Clause Plus Patent License   |
-| Shortname        | BSD-2-Clause-Patent                |
-| Rating           | Go                                 |
-| Classification   | NoCopyleft                         |
+| Key            | Value                            |
+|----------------+----------------------------------|
+| Fullname       | BSD-2-Clause Plus Patent License |
+| Shortname      | BSD-2-Clause-Patent              |
+| Rating         | Go                               |
+| Classification | NoCopyleft                       |
 
 *Other Names:*
 
@@ -41,7 +40,6 @@
 - *SPDX:* http://spdx.org/licenses/BSD-2-Clause-Patent.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
@@ -97,7 +95,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -115,7 +112,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -338,5 +334,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/BSD-2-Clause-Patent.svg]]

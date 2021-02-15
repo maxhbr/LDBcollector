@@ -1,11 +1,10 @@
 * Leptonica License (Leptonica)
-
-| Key              | Value                             |
-|------------------+-----------------------------------|
-| Fullname         | Leptonica License                 |
-| Shortname        | Leptonica                         |
-| Rating           | Unknown, probably Stop or No-Go   |
-| Classification   | NoCopyleft                        |
+| Key            | Value                           |
+|----------------+---------------------------------|
+| Fullname       | Leptonica License               |
+| Shortname      | Leptonica                       |
+| Rating         | Unknown, probably Stop or No-Go |
+| Classification | NoCopyleft                      |
 
 *Other Names:*
 
@@ -33,7 +32,6 @@
 - *SPDX:* http://spdx.org/licenses/Leptonica.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.
 
@@ -47,7 +45,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -66,7 +63,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -273,5 +269,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/Leptonica.svg]]

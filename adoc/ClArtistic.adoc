@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+Artistic (clarified)+`
-* `+scancode://artistic-clarified+`
+* `Artistic (clarified)`
+* `scancode://artistic-clarified`
 
 === Comments on (easy) usability
 

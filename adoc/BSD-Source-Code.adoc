@@ -11,7 +11,7 @@
 
 *Other Names:*
 
-* `+scancode://bsd-source-code+`
+* `scancode://bsd-source-code`
 
 === Comments on (easy) usability
 

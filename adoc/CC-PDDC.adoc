@@ -11,9 +11,9 @@
 
 *Other Names:*
 
-* `+Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification+`
-* `+scancode://cc-pd+`
-* `+CC-PD+`
+* `Creative Commons Copyright-Only Dedication (based on United States law) or Public Domain Certification`
+* `scancode://cc-pd`
+* `CC-PD`
 
 === Comments on (easy) usability
 

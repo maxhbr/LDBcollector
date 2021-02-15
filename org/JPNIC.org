@@ -1,11 +1,10 @@
 * Japan Network Information Center License (JPNIC)
-
-| Key              | Value                                          |
-|------------------+------------------------------------------------|
-| Fullname         | Japan Network Information Center License       |
-| Shortname        | JPNIC                                          |
-| Rating           | Unknown, probably Attention or Stop or No-Go   |
-| Classification   | NoCopyleft                                     |
+| Key            | Value                                        |
+|----------------+----------------------------------------------|
+| Fullname       | Japan Network Information Center License     |
+| Shortname      | JPNIC                                        |
+| Rating         | Unknown, probably Attention or Stop or No-Go |
+| Classification | NoCopyleft                                   |
 
 *Other Names:*
 
@@ -28,7 +27,6 @@
 - https://jprs.co.jp/idn/
 
 ** Text
-
 #+BEGIN_EXAMPLE
   By using this file, you agree to the terms and conditions set forth bellow.
 
@@ -68,13 +66,11 @@
      WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
      OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
      ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-
 #+END_EXAMPLE
 
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -86,7 +82,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -216,5 +211,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/JPNIC.svg]]

@@ -1,11 +1,10 @@
 * SCEA Shared Source License (SCEA)
-
-| Key              | Value                        |
-|------------------+------------------------------|
-| Fullname         | SCEA Shared Source License   |
-| Shortname        | SCEA                         |
-| Rating           | Unknown                      |
-| Classification   | NoCopyleft                   |
+| Key            | Value                      |
+|----------------+----------------------------|
+| Fullname       | SCEA Shared Source License |
+| Shortname      | SCEA                       |
+| Rating         | Unknown                    |
+| Classification | NoCopyleft                 |
 
 *Other Names:*
 
@@ -29,7 +28,6 @@
 - *SPDX:* http://spdx.org/licenses/SCEA.json
 
 ** Text
-
 #+BEGIN_EXAMPLE
   SCEA Shared Source License 1.0
 
@@ -96,7 +94,6 @@
 --------------
 
 ** Raw Data
-
 *** Facts
 
 - LicenseName
@@ -112,7 +109,6 @@
   (CC0-1.0)
 
 *** Raw JSON
-
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
@@ -269,5 +265,4 @@
 #+END_EXAMPLE
 
 *** Dot Cluster Graph
-
 [[../dot/SCEA.svg]]

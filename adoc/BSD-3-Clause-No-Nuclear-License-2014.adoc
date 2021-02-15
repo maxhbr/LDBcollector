@@ -11,8 +11,8 @@
 
 *Other Names:*
 
-* `+scancode://oracle-bsd-no-nuclear+`
-* `+Oracle BSD-Style with Nuclear Restrictions+`
+* `scancode://oracle-bsd-no-nuclear`
+* `Oracle BSD-Style with Nuclear Restrictions`
 
 === Comments on (easy) usability
 
