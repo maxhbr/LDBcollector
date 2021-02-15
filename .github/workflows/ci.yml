@@ -17,29 +17,23 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    # - uses: cachix/install-nix-action@v12
-    # - uses: cachix/cachix-action@v8
-    #   with:
-    #     name: maxhbr
-    #     signingKey: '${{ secrets.CACHIX_SIGNING_KEY }}'
-
     - uses: actions/setup-haskell@v1
       with:
         ghc-version: '8.10.3'
         enable-stack: true
         stack-version: 'latest'
 
-    # - name: Cache
-    #   uses: actions/cache@v1
-    #   env:
-    #     cache-name: cache-stack
-    #   with:
-    #     path: ~/.stack-work
-    #     key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/*.stack-work') }}-${{ hashFiles('**/package.yaml') }}
-    #     restore-keys: |
-    #       ${{ runner.os }}-build-${{ env.cache-name }}-
-    #       ${{ runner.os }}-build-
-    #       ${{ runner.os }}-
+    - name: Cache
+      uses: actions/cache@v1
+      env:
+        cache-name: cache-stack
+      with:
+        path: ~/.stack
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/*.stack-work') }}-${{ hashFiles('**/package.yaml') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
 
     - run: |
         sudo apt-get update
