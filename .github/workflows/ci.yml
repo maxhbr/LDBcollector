@@ -28,8 +28,10 @@ jobs:
       env:
         cache-name: cache-stack
       with:
-        path: ~/.stack
-        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/*.stack-work') }}-${{ hashFiles('**/package.yaml') }}
+        path:
+          - ~/.stack
+          - .stack-work
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package.yaml') }}
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
@@ -44,5 +46,5 @@ jobs:
     - run: stack exec LDBcollector-exe
     - uses: actions/upload-artifact@v2
       with:
-        name: exec-yacp-exe-result
+        name: LDBcollector-exe-result
         path: _generated
