@@ -11,16 +11,39 @@ categories:
 - name: non-commercial
 - name: allows-commercial
 - name: rating:Go
+- name: right:commercial-use
+- name: right:distribution
+- name: right:modifications
+- name: right:private-use
+- name: limitation:liability
+- name: limitation:warranty
 - name: maybe-rating:Stop
 - name: maybe-rating:No-Go
+- name: right:patent-use
+- name: condition:include-copyright
+- name: condition:document-changes
+- name: limitation:trademark-use
 - name: maybe-rating:Attention
+- name: condition:disclose-source
+- name: condition:network-use-disclose
+- name: condition:same-license
 - name: maybe-rating:Go
 - name: rating:Attention
+- name: limitation:patent-use
+- name: condition:include-copyright--source
 - name: rating:No-Go
+- name: condition:same-license--library
+- name: condition:same-license--file
 categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:private-use
+  - limitation:liability
+  - limitation:warranty
   id: 0BSD
 - categories:
   - permissive
@@ -51,6 +74,16 @@ categorizations:
   - permissive
   - has-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - right:patent-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
   id: AFL-3.0
 - categories:
   - saas-copyleft
@@ -72,6 +105,18 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: AGPL-3.0-only
 - categories:
   - saas-copyleft
@@ -175,6 +220,16 @@ categorizations:
   - permissive
   - has-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
   id: Apache-2.0
 - categories:
   - weak-copyleft
@@ -201,6 +256,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
   id: Artistic-2.0
 - categories:
   - permissive
@@ -209,6 +274,13 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: BSD-2-Clause
 - categories:
   - permissive
@@ -223,6 +295,13 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: BSD-3-Clause
 - categories:
   - permissive
@@ -231,6 +310,14 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:patent-use
+  - limitation:warranty
   id: BSD-3-Clause-Clear
 - categories:
   - permissive
@@ -259,6 +346,13 @@ categorizations:
 - categories:
   - permissive
   - rating:Attention
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: BSD-4-Clause
 - categories:
   - permissive
@@ -279,6 +373,13 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright--source
+  - limitation:liability
+  - limitation:warranty
   id: BSL-1.0
 - categories:
   - permissive
@@ -383,6 +484,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:patent-use
+  - limitation:warranty
   id: CC-BY-4.0
 - categories:
   - non-commercial
@@ -521,6 +632,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:same-license
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:patent-use
+  - limitation:warranty
   id: CC-BY-SA-4.0
 - categories:
   - permissive
@@ -532,6 +654,14 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:patent-use
+  - limitation:warranty
   id: CC0-1.0
 - categories:
   - weak-copyleft
@@ -588,6 +718,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - right:patent-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: CECILL-2.1
 - categories:
   - permissive
@@ -732,6 +872,16 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
   id: ECL-2.0
 - categories:
   - permissive
@@ -756,6 +906,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: EPL-1.0
 - categories:
   - strong-copyleft
@@ -764,6 +924,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: EPL-2.0
 - categories:
   - permissive
@@ -785,6 +955,19 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
   id: EUPL-1.1
 - categories:
   - saas-copyleft
@@ -793,6 +976,19 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
   id: EUPL-1.2
 - categories:
   - permissive
@@ -991,6 +1187,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: GPL-2.0-only
 - categories:
   - strong-copyleft
@@ -1006,6 +1212,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: GPL-3.0-only
 - categories:
   - strong-copyleft
@@ -1014,6 +1231,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: GPL-3.0-only
 - categories:
   - permissive
@@ -1088,6 +1316,13 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: ISC
 - categories:
   - permissive
@@ -1166,6 +1401,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
   id: LGPL-2.1-only
 - categories:
   - weak-copyleft
@@ -1181,6 +1426,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
   id: LGPL-3.0-only
 - categories:
   - weak-copyleft
@@ -1189,6 +1445,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:same-license--library
+  - limitation:liability
+  - limitation:warranty
   id: LGPL-3.0-only
 - categories:
   - weak-copyleft
@@ -1244,6 +1511,15 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - limitation:liability
+  - limitation:warranty
   id: LPPL-1.3c
 - categories:
   - permissive
@@ -1284,6 +1560,13 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: MIT
 - categories:
   - permissive
@@ -1330,6 +1613,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license--file
+  - limitation:liability
+  - limitation:trademark-use
+  - limitation:warranty
   id: MPL-2.0
 - categories:
   - weak-copyleft
@@ -1345,6 +1639,14 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - limitation:warranty
+  - limitation:trademark-use
   id: MS-PL
 - categories:
   - strong-copyleft
@@ -1352,6 +1654,16 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license--file
+  - limitation:warranty
+  - limitation:trademark-use
   id: MS-RL
 - categories:
   - permissive
@@ -1416,6 +1728,13 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: NCSA
 - categories:
   - weak-copyleft
@@ -1553,6 +1872,17 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:private-use
+  - condition:disclose-source
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:patent-use
+  - limitation:trademark-use
+  - limitation:warranty
   id: ODbL-1.0
 - categories:
   - permissive
@@ -1577,6 +1907,14 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:private-use
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - condition:include-copyright
+  - condition:same-license
+  - limitation:liability
+  - limitation:warranty
   id: OFL-1.1
 - categories:
   - maybe-rating:Attention
@@ -1749,6 +2087,19 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:distribution
+  - right:modifications
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - condition:disclose-source
+  - condition:document-changes
+  - condition:network-use-disclose
+  - condition:same-license
+  - limitation:trademark-use
+  - limitation:liability
+  - limitation:warranty
   id: OSL-3.0
 - categories:
   - permissive
@@ -1806,6 +2157,13 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: PostgreSQL
 - categories:
   - permissive
@@ -2083,6 +2441,14 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:patent-use
+  - right:private-use
+  - condition:include-copyright
+  - limitation:liability
+  - limitation:warranty
   id: UPL-1.0
 - categories:
   - permissive
@@ -2101,6 +2467,12 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:private-use
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - limitation:liability
+  - limitation:warranty
   id: Unlicense
 - categories:
   - copyleft
@@ -2118,6 +2490,14 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright
+  - condition:document-changes
+  - condition:disclose-source
+  - condition:same-license
   id: Vim
 - categories:
   - permissive
@@ -2139,6 +2519,10 @@ categorizations:
   - has-no-patent-hint
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
   id: WTFPL
 - categories:
   - weak-copyleft
@@ -2229,6 +2613,14 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - right:commercial-use
+  - right:modifications
+  - right:distribution
+  - right:private-use
+  - condition:include-copyright--source
+  - condition:document-changes
+  - limitation:liability
+  - limitation:warranty
   id: Zlib
 - categories:
   - permissive
