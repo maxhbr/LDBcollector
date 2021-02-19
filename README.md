@@ -202,6 +202,8 @@ https://github.com/Hitachi/open-license
 ## Other possible Sources for license Metadata
   - [Telekom] (O)pen (S)ource (Li)cense (C)ompendium: https://github.com/telekom/oslic (CC-By-Sa-3.0)
     - https://telekom.github.io/oslic/releases/oslic.pdf
+    - https://github.com/AmadeusITGroup/oscad2/tree/master/oscad_data/data
+    - https://github.com/telekom/oscad
   - license-compatibility-checker: https://github.com/HansHammel/license-compatibility-checker (MIT)
   - ORT License highlighting
   - ...

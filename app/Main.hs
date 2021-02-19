@@ -25,6 +25,7 @@ handler outputFolder = (\facts input -> do
                            writeDetails outputFolder pages
                            writePandocs outputFolder pages
                            writeGraphizs outputFolder trees
+                           writeOrtLicenseClassificationYml outputFolder pages
 
                            writeCopyleftTable outputFolder licenses
                            -- writeFactJSONs outputFolder facts
