@@ -1,0 +1,1391 @@
+categories:
+- name: strong-copyleft
+- name: copyleft
+- name: weak-copyleft
+- name: saas-copyleft
+- name: maximal-copyleft
+- name: maybe-copyleft
+- name: permissive
+- name: has-patent-hint
+- name: has-no-patent-hint
+- name: non-commercial
+- name: allows-commercial
+categorizations:
+- categories:
+  - permissive
+  id: 0BSD
+- categories:
+  - permissive
+  id: AAL
+- categories:
+  - permissive
+  id: ADSL
+- categories:
+  - permissive
+  id: AFL-1.1
+- categories:
+  - permissive
+  id: AFL-1.2
+- categories:
+  - permissive
+  id: AFL-2.0
+- categories:
+  - permissive
+  id: AFL-2.1
+- categories:
+  - permissive
+  - has-patent-hint
+  id: AFL-3.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: AGPL-1.0-only
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: AGPL-1.0-or-later
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: AGPL-3.0-only
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  id: AGPL-3.0-or-later
+- categories:
+  - permissive
+  id: AMDPLPA
+- categories:
+  - permissive
+  id: AML
+- categories:
+  - permissive
+  id: AMPAS
+- categories:
+  - permissive
+  id: ANTLR-PD
+- categories:
+  - permissive
+  id: APAFML
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: APL-1.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: APSL-1.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: APSL-1.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: APSL-1.2
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: APSL-2.0
+- categories:
+  - permissive
+  id: Abstyles
+- categories:
+  - permissive
+  id: Adobe-2006
+- categories:
+  - permissive
+  id: Adobe-Glyph
+- categories:
+  - permissive
+  id: Afmparse
+- categories:
+  - copyleft
+  id: Aladdin
+- categories:
+  - permissive
+  id: Apache-1.0
+- categories:
+  - permissive
+  id: Apache-1.1
+- categories:
+  - permissive
+  - has-patent-hint
+  id: Apache-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Artistic-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Artistic-1.0-Perl
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Artistic-1.0-cl8
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: Artistic-2.0
+- categories:
+  - permissive
+  id: BSD-1-Clause
+- categories:
+  - permissive
+  id: BSD-2-Clause
+- categories:
+  - permissive
+  id: BSD-2-Clause-Patent
+- categories:
+  - permissive
+  id: BSD-2-Clause-Views
+- categories:
+  - permissive
+  id: BSD-3-Clause
+- categories:
+  - permissive
+  id: BSD-3-Clause-Attribution
+- categories:
+  - permissive
+  id: BSD-3-Clause-Clear
+- categories:
+  - permissive
+  id: BSD-3-Clause-LBNL
+- categories:
+  - permissive
+  id: BSD-3-Clause-No-Nuclear-License
+- categories:
+  - permissive
+  id: BSD-3-Clause-No-Nuclear-License-2014
+- categories:
+  - permissive
+  id: BSD-3-Clause-No-Nuclear-Warranty
+- categories:
+  - permissive
+  id: BSD-3-Clause-Open-MPI
+- categories:
+  - permissive
+  id: BSD-4-Clause
+- categories:
+  - permissive
+  id: BSD-4-Clause-UC
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: BSD-Protection
+- categories:
+  - permissive
+  id: BSD-Source-Code
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: BSL-1.0
+- categories:
+  - permissive
+  id: Bahyph
+- categories:
+  - permissive
+  id: Barr
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: Beerware
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: BitTorrent-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: BitTorrent-1.1
+- categories:
+  - permissive
+  id: BlueOak-1.0.0
+- categories:
+  - permissive
+  id: Borceux
+- categories:
+  - maximal-copyleft
+  - copyleft
+  id: CAL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CAL-1.0-Combined-Work-Exception
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CATOSL-1.1
+- categories:
+  - permissive
+  id: CC-BY-1.0
+- categories:
+  - permissive
+  id: CC-BY-2.0
+- categories:
+  - permissive
+  id: CC-BY-2.5
+- categories:
+  - permissive
+  id: CC-BY-3.0
+- categories:
+  - permissive
+  id: CC-BY-3.0-AT
+- categories: []
+  id: CC-BY-3.0-US
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: CC-BY-4.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-1.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-2.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-2.5
+- categories:
+  - non-commercial
+  id: CC-BY-NC-3.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-4.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-ND-1.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-ND-2.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-ND-2.5
+- categories:
+  - non-commercial
+  id: CC-BY-NC-ND-3.0
+- categories: []
+  id: CC-BY-NC-ND-3.0-IGO
+- categories:
+  - non-commercial
+  id: CC-BY-NC-ND-4.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-SA-1.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-SA-2.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-SA-2.5
+- categories:
+  - non-commercial
+  id: CC-BY-NC-SA-3.0
+- categories:
+  - non-commercial
+  id: CC-BY-NC-SA-4.0
+- categories: []
+  id: CC-BY-ND-1.0
+- categories: []
+  id: CC-BY-ND-2.0
+- categories: []
+  id: CC-BY-ND-2.5
+- categories: []
+  id: CC-BY-ND-3.0
+- categories: []
+  id: CC-BY-ND-4.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: CC-BY-SA-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: CC-BY-SA-2.0
+- categories: []
+  id: CC-BY-SA-2.0-UK
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: CC-BY-SA-2.5
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: CC-BY-SA-3.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CC-BY-SA-3.0-AT
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: CC-BY-SA-4.0
+- categories:
+  - permissive
+  id: CC-PDDC
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: CC0-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: CDDL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CDDL-1.1
+- categories:
+  - permissive
+  id: CDLA-Permissive-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CDLA-Sharing-1.0
+- categories:
+  - copyleft
+  id: CECILL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CECILL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CECILL-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: CECILL-2.1
+- categories:
+  - permissive
+  id: CECILL-B
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CECILL-C
+- categories:
+  - permissive
+  id: CERN-OHL-1.1
+- categories:
+  - permissive
+  id: CERN-OHL-1.2
+- categories:
+  - permissive
+  id: CERN-OHL-P-2.0
+- categories:
+  - copyleft
+  id: CERN-OHL-S-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CERN-OHL-W-2.0
+- categories:
+  - permissive
+  id: CNRI-Jython
+- categories:
+  - permissive
+  id: CNRI-Python
+- categories:
+  - permissive
+  id: CNRI-Python-GPL-Compatible
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: CPAL-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: CPL-1.0
+- categories: []
+  id: CPOL-1.02
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: CUA-OPL-1.0
+- categories:
+  - permissive
+  id: Caldera
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: ClArtistic
+- categories:
+  - permissive
+  id: Condor-1.1
+- categories:
+  - permissive
+  id: Crossword
+- categories:
+  - permissive
+  id: CrystalStacker
+- categories:
+  - permissive
+  id: Cube
+- categories:
+  - copyleft
+  id: D-FSL-1.0
+- categories:
+  - permissive
+  id: DOC
+- categories:
+  - permissive
+  id: DSDP
+- categories:
+  - permissive
+  id: Dotseqn
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: ECL-1.0
+- categories:
+  - permissive
+  id: ECL-2.0
+- categories:
+  - permissive
+  id: EFL-1.0
+- categories:
+  - permissive
+  id: EFL-2.0
+- categories:
+  - permissive
+  id: EPICS
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: EPL-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  id: EPL-2.0
+- categories:
+  - permissive
+  id: EUDatagrid
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: EUPL-1.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: EUPL-1.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  id: EUPL-1.2
+- categories:
+  - permissive
+  id: Entessa
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: ErlPL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Eurosym
+- categories:
+  - permissive
+  id: FSFAP
+- categories:
+  - permissive
+  id: FSFUL
+- categories:
+  - permissive
+  id: FSFULLR
+- categories:
+  - permissive
+  id: FTL
+- categories:
+  - permissive
+  id: Fair
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Frameworx-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: FreeImage
+- categories: []
+  id: GFDL-1.1-invariants-only
+- categories: []
+  id: GFDL-1.1-invariants-or-later
+- categories: []
+  id: GFDL-1.1-no-invariants-only
+- categories: []
+  id: GFDL-1.1-no-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.1-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.1-or-later
+- categories: []
+  id: GFDL-1.2-invariants-only
+- categories: []
+  id: GFDL-1.2-invariants-or-later
+- categories: []
+  id: GFDL-1.2-no-invariants-only
+- categories: []
+  id: GFDL-1.2-no-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.2-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.2-or-later
+- categories: []
+  id: GFDL-1.3-invariants-only
+- categories: []
+  id: GFDL-1.3-invariants-or-later
+- categories: []
+  id: GFDL-1.3-no-invariants-only
+- categories: []
+  id: GFDL-1.3-no-invariants-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.3-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GFDL-1.3-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: GL2PS
+- categories:
+  - permissive
+  id: GLWTPL
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: GPL-1.0-only
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: GPL-1.0-or-later
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: GPL-2.0-only
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: GPL-2.0-or-later
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  id: GPL-3.0-only
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-patent-hint
+  id: GPL-3.0-only
+- categories:
+  - permissive
+  id: Giftware
+- categories:
+  - copyleft
+  id: Glide
+- categories:
+  - permissive
+  id: Glulxe
+- categories:
+  - permissive
+  id: HPND
+- categories:
+  - permissive
+  id: HPND-sell-variant
+- categories:
+  - permissive
+  id: HaskellReport
+- categories: []
+  id: Hippocratic-2.1
+- categories:
+  - permissive
+  id: IBM-pibs
+- categories:
+  - permissive
+  id: ICU
+- categories:
+  - permissive
+  id: IJG
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: IPA
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: IPL-1.0
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: ISC
+- categories:
+  - permissive
+  id: ImageMagick
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Imlib2
+- categories:
+  - permissive
+  id: Info-ZIP
+- categories:
+  - permissive
+  id: Intel
+- categories:
+  - permissive
+  id: Intel-ACPI
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Interbase-1.0
+- categories:
+  - permissive
+  id: JPNIC
+- categories:
+  - permissive
+  id: JSON
+- categories:
+  - permissive
+  id: JasPer-2.0
+- categories: []
+  id: LAL-1.2
+- categories: []
+  id: LAL-1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LGPL-2.0-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LGPL-2.0-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LGPL-2.1-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LGPL-2.1-or-later
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  id: LGPL-3.0-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  id: LGPL-3.0-only
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LGPLLR
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPL-1.02
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPPL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPPL-1.2
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: LPPL-1.3a
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: LPPL-1.3c
+- categories:
+  - permissive
+  id: Latex2e
+- categories:
+  - permissive
+  id: Leptonica
+- categories: []
+  id: LiLiQ-P-1.1
+- categories: []
+  id: LiLiQ-R-1.1
+- categories: []
+  id: LiLiQ-Rplus-1.1
+- categories:
+  - permissive
+  id: Libpng
+- categories:
+  - permissive
+  id: Linux-OpenIB
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: MIT
+- categories:
+  - permissive
+  id: MIT-0
+- categories:
+  - permissive
+  id: MIT-CMU
+- categories:
+  - permissive
+  id: MIT-advertising
+- categories:
+  - permissive
+  id: MIT-enna
+- categories:
+  - permissive
+  id: MIT-feh
+- categories:
+  - permissive
+  id: MITNFA
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: MPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: MPL-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-patent-hint
+  id: MPL-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: MPL-2.0-no-copyleft-exception
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: MS-PL
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: MS-RL
+- categories:
+  - permissive
+  id: MTLL
+- categories:
+  - copyleft
+  id: MakeIndex
+- categories:
+  - permissive
+  id: MirOS
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Motosoto
+- categories:
+  - permissive
+  id: MulanPSL-1.0
+- categories:
+  - permissive
+  id: MulanPSL-2.0
+- categories:
+  - permissive
+  id: Multics
+- categories:
+  - permissive
+  id: Mup
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: NASA-1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: NBPL-1.0
+- categories: []
+  id: NCGL-UK-2.0
+- categories:
+  - permissive
+  id: NCSA
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: NGPL
+- categories:
+  - permissive
+  id: NIST-PD
+- categories:
+  - permissive
+  id: NIST-PD-fallback
+- categories:
+  - permissive
+  id: NLOD-1.0
+- categories:
+  - permissive
+  id: NLPL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: NOSL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: NPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: NPL-1.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: NPOSL-3.0
+- categories:
+  - permissive
+  id: NRL
+- categories:
+  - permissive
+  id: NTP
+- categories:
+  - permissive
+  id: NTP-0
+- categories:
+  - permissive
+  id: Naumen
+- categories:
+  - permissive
+  id: Net-SNMP
+- categories:
+  - permissive
+  id: NetCDF
+- categories:
+  - permissive
+  id: Newsletr
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Nokia
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Noweb
+- categories:
+  - permissive
+  id: O-UDA-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OCCT-PL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OCLC-2.0
+- categories:
+  - permissive
+  id: ODC-By-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: ODbL-1.0
+- categories:
+  - permissive
+  id: OFL-1.0
+- categories: []
+  id: OFL-1.0-RFN
+- categories: []
+  id: OFL-1.0-no-RFN
+- categories:
+  - permissive
+  id: OFL-1.1
+- categories: []
+  id: OFL-1.1-RFN
+- categories: []
+  id: OFL-1.1-no-RFN
+- categories:
+  - permissive
+  id: OGC-1.0
+- categories:
+  - permissive
+  id: OGL-Canada-2.0
+- categories:
+  - permissive
+  id: OGL-UK-1.0
+- categories:
+  - permissive
+  id: OGL-UK-2.0
+- categories:
+  - permissive
+  id: OGL-UK-3.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OGTSL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OLDAP-1.1
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OLDAP-1.2
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OLDAP-1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OLDAP-1.4
+- categories:
+  - permissive
+  id: OLDAP-2.0
+- categories:
+  - permissive
+  id: OLDAP-2.0.1
+- categories:
+  - permissive
+  id: OLDAP-2.1
+- categories:
+  - permissive
+  id: OLDAP-2.2
+- categories:
+  - permissive
+  id: OLDAP-2.2.1
+- categories:
+  - permissive
+  id: OLDAP-2.2.2
+- categories:
+  - permissive
+  id: OLDAP-2.3
+- categories:
+  - permissive
+  id: OLDAP-2.4
+- categories:
+  - permissive
+  id: OLDAP-2.5
+- categories:
+  - permissive
+  id: OLDAP-2.6
+- categories:
+  - permissive
+  id: OLDAP-2.7
+- categories:
+  - permissive
+  id: OLDAP-2.8
+- categories:
+  - permissive
+  id: OML
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: OSET-PL-2.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: OSL-1.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: OSL-1.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: OSL-2.0
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: OSL-2.1
+- categories:
+  - saas-copyleft
+  - copyleft
+  - has-patent-hint
+  id: OSL-3.0
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: OpenSSL
+- categories:
+  - permissive
+  id: PDDL-1.0
+- categories:
+  - permissive
+  id: PHP-3.0
+- categories:
+  - permissive
+  id: PHP-3.01
+- categories:
+  - permissive
+  id: PSF-2.0
+- categories:
+  - maximal-copyleft
+  - copyleft
+  id: Parity-6.0.0
+- categories:
+  - maximal-copyleft
+  - copyleft
+  id: Parity-7.0.0
+- categories:
+  - permissive
+  id: Plexus
+- categories: []
+  id: PolyForm-Noncommercial-1.0.0
+- categories: []
+  id: PolyForm-Small-Business-1.0.0
+- categories:
+  - permissive
+  id: PostgreSQL
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: Python-2.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: QPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Qhull
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: RHeCos-1.1
+- categories:
+  - maximal-copyleft
+  - copyleft
+  id: RPL-1.1
+- categories:
+  - maximal-copyleft
+  - copyleft
+  id: RPL-1.5
+- categories:
+  - saas-copyleft
+  - copyleft
+  id: RPSL-1.0
+- categories:
+  - permissive
+  id: RSA-MD
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: RSCPL
+- categories:
+  - permissive
+  id: Rdisc
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Ruby
+- categories:
+  - permissive
+  id: SAX-PD
+- categories:
+  - permissive
+  id: SCEA
+- categories: []
+  id: SGI-B-1.0
+- categories:
+  - permissive
+  id: SGI-B-1.1
+- categories:
+  - permissive
+  id: SGI-B-2.0
+- categories:
+  - permissive
+  id: SHL-0.5
+- categories:
+  - permissive
+  id: SHL-0.51
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: SISSL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: SISSL-1.2
+- categories:
+  - permissive
+  id: SMLNJ
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: SMPPL
+- categories:
+  - copyleft
+  id: SNIA
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: SPL-1.0
+- categories:
+  - permissive
+  id: SSH-OpenSSH
+- categories:
+  - permissive
+  id: SSH-short
+- categories: []
+  id: SSPL-1.0
+- categories:
+  - permissive
+  id: SWL
+- categories:
+  - permissive
+  id: Saxpath
+- categories:
+  - permissive
+  id: Sendmail
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Sendmail-8.23
+- categories:
+  - copyleft
+  id: SimPL-2.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  - has-no-patent-hint
+  id: Sleepycat
+- categories:
+  - permissive
+  id: Spencer-86
+- categories:
+  - permissive
+  id: Spencer-94
+- categories:
+  - permissive
+  id: Spencer-99
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: SugarCRM-1.1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: TAPR-OHL-1.0
+- categories:
+  - permissive
+  id: TCL
+- categories:
+  - permissive
+  id: TCP-wrappers
+- categories:
+  - copyleft
+  id: TMate
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: TORQUE-1.1
+- categories:
+  - copyleft
+  id: TOSL
+- categories:
+  - permissive
+  id: TU-Berlin-1.0
+- categories:
+  - permissive
+  id: TU-Berlin-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: UCL-1.0
+- categories:
+  - permissive
+  id: UPL-1.0
+- categories:
+  - permissive
+  id: Unicode-DFS-2015
+- categories:
+  - permissive
+  id: Unicode-DFS-2016
+- categories: []
+  id: Unicode-TOU
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: Unlicense
+- categories:
+  - copyleft
+  id: VOSTROM
+- categories:
+  - permissive
+  id: VSL-1.0
+- categories:
+  - strong-copyleft
+  - copyleft
+  id: Vim
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: W3C
+- categories:
+  - permissive
+  id: W3C-19980720
+- categories:
+  - permissive
+  id: W3C-20150513
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: WTFPL
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Watcom-1.0
+- categories:
+  - permissive
+  id: Wsuipa
+- categories:
+  - permissive
+  id: ICU
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: XFree86-1.1
+- categories:
+  - permissive
+  id: XSkat
+- categories:
+  - permissive
+  id: Xerox
+- categories:
+  - permissive
+  id: Xnet
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: YPL-1.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: YPL-1.1
+- categories:
+  - permissive
+  id: ZPL-1.1
+- categories:
+  - permissive
+  id: ZPL-2.0
+- categories:
+  - permissive
+  id: ZPL-2.1
+- categories:
+  - permissive
+  id: Zed
+- categories:
+  - permissive
+  id: Zend-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Zimbra-1.3
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: Zimbra-1.4
+- categories:
+  - permissive
+  - has-no-patent-hint
+  id: Zlib
+- categories:
+  - permissive
+  id: blessing
+- categories:
+  - permissive
+  id: bzip2-1.0.5
+- categories:
+  - permissive
+  id: bzip2-1.0.6
+- categories:
+  - copyleft
+  id: copyleft-next-0.3.0
+- categories:
+  - copyleft
+  id: copyleft-next-0.3.1
+- categories:
+  - permissive
+  id: curl
+- categories:
+  - permissive
+  id: diffmark
+- categories:
+  - permissive
+  id: dvipdfm
+- categories:
+  - permissive
+  id: eGenix
+- categories:
+  - permissive
+  id: etalab-2.0
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: gSOAP-1.3b
+- categories:
+  - weak-copyleft
+  - copyleft
+  id: gnuplot
+- categories:
+  - permissive
+  id: iMatix
+- categories:
+  - permissive
+  id: libpng-2.0
+- categories:
+  - permissive
+  id: libselinux-1.0
+- categories:
+  - permissive
+  id: libtiff
+- categories:
+  - permissive
+  id: mpich2
+- categories:
+  - permissive
+  id: psfrag
+- categories:
+  - permissive
+  id: psutils
+- categories:
+  - permissive
+  id: xinetd
+- categories:
+  - permissive
+  id: xpp
+- categories:
+  - permissive
+  id: zlib-acknowledgement
