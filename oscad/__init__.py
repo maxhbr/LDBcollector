@@ -121,7 +121,7 @@ def main(global_config, **settings):
     config.set_session_factory(SignedCookieSessionFactory(
         '',
         httponly=True,
-        serializer=JSONSerializer))
+        serializer=JSONSerializer()))
     config.add_subscriber('oscad.subscribers.add_renderer_globals',
                           'pyramid.events.BeforeRender')
     config.add_subscriber('oscad.subscribers.jsonify',
