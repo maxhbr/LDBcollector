@@ -38,7 +38,7 @@ Schadensersatz bei Verletzung der GPL
 
 Link: https://www.justiz.nrw.de/nrwe/olgs/hamm/j2017/4_U_72_16_Urteil_20170613.html
 
-#### LG Köln, Urteil v. 20.10.2017, Az. 14 O 188/17 (nicht rechtskräftig, im Berufungsverfaren erledigt)
+#### LG Köln, Urteil v. 20.10.2017, Az. 14 O 188/17 (nicht rechtskräftig, im Berufungsverfahren erledigt)
 
 Unterlassungstenor bei GPL-Verletzung
 
