@@ -216,3 +216,4 @@ https://github.com/Hitachi/open-license
     - Can not be used, licensing is unclear.
   - EUPL compatible open source licences: https://joinup.ec.europa.eu/collection/eupl/eupl-compatible-open-source-licences
   - https://vvlibri.org/fr/guide-de-lauteur-libre-gerer-des-licences-differentes-compatibilites-de-licences/tableau-de
+  - https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker

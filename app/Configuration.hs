@@ -230,7 +230,7 @@ overrides =
            , ("ClArtistic", [ "Artistic (clarified)"
                             ])
            , ("Artistic-2.0", [ "Artistic 2.0"
-                              ,"Artistic License (v. 2.0)"
+                              , "Artistic License (v. 2.0)"
                               ])
 
            -- link to missing versions in OpenChainPolicyTemplate
