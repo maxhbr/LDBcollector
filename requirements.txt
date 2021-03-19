@@ -1,6 +1,6 @@
 Babel==2.9.0
 hupper==1.10.2
-Jinja2==2.11.2
+Jinja2==2.11.3
 MarkupSafe==1.1.1
 PasteDeploy==2.1.1
 plaster==1.0
