@@ -379,3 +379,4 @@ werden zumeist bei Programmen verwendet, die ursprünglich proprietär vertriebe
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 2.0): https://web.archive.org/web/20060924224843/https://www.helixcommunity.org/content/rcsl
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 3.0): https://web.archive.org/web/20141226113418/https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
+1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
