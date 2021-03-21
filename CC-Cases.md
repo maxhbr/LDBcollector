@@ -202,11 +202,40 @@ ___
 ___
 
 
-### United States District Court for the District of Columbia, 2015-08-18, Case No. 14-1043 (ABJ)
+### US Court of Appeals for the 9th Circuit, 2019-12-27, Case No. D.C. No. 2:17-cv-07435-JFW-E
 
-Drauglis v. Kappa Map Group, LLC
+Great Minds v. Office Depot, Inc.
 
-Link: https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1:2014cv01043/166825/39/0.pdf?ts=1439987006
+Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international
+
+Link: https://law.justia.com/cases/federal/appellate-courts/ca9/18-55331/18-55331-2019-12-27.html
+
+
+### US District Court, Eastern District of Kentucky Central Division, 2018-07-10, Case No. 5:2017cv00173
+
+Philpot v. LM Communications II of South Carolina, Inc.
+
+Durchsetzung vonn CC-BY-2.0 Generic wegen unterlassener Urhebernennung
+
+Link: https://law.justia.com/cases/federal/district-courts/kentucky/kyedce/5:2017cv00173/82876/80/
+
+
+### US District Court, Central District of California, 2018-01-18, Case No. CV 17-7435-JFW (Ex)
+
+Great Minds v. Office Depot, Inc.
+
+Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international
+
+Link: https://creativecommons.org/wp-content/uploads/2018/03/2018-01-18-40-Decision-granting-dismissal-of-infringement-claim.pdf
+
+
+### U.S. District Court for the Eastern District of Virginia, 2018-01-08, Case No. 1:17-cv-822
+
+Philpot v Media Research Center Inc.
+
+Durchsetzung vonn CC-BY-3.0 wegen unterlassener Urhebernennung, fair use
+
+Link: https://creativecommons.org/wp-content/uploads/2018/03/Philpot-v.-Media-Research-Ctr-decision.pdf
 
 
 ### US District Court, E.D. New York, 2017-02-24, Case No. 16-CV-1462 (DRH)(ARL)
@@ -217,6 +246,22 @@ dismissal
 Kopien durch kommerziellen Anbieter im Auftrag des nicht-kommerziell handelnden Lizenznehmers als nicht-kommerzielle Nutzung i.S.v. Creative Commons 4.0-BY-NC-SA international
 
 Link: https://creativecommons.org/2017/02/24/update-great-minds-v-fedex-office-litigation-involving-nc-sa/, https://drive.google.com/file/d/0B0HBOY8b2doEdmpkMU4ya2dKM28/view
+
+
+### United States District Court for the District of Columbia, 2015-08-18, Case No. 14-1043 (ABJ)
+
+Drauglis v. Kappa Map Group, LLC
+
+Link: https://cases.justia.com/federal/district-courts/district-of-columbia/dcdce/1:2014cv01043/166825/39/0.pdf?ts=1439987006
+
+
+### United States District Court for the Northern Distict of Texas, 2015-08-18, Case No. 3:2007cv01767
+
+Chang et al v. Virgin Mobile USA LLC et al
+
+Link: https://law.justia.com/cases/federal/district-courts/texas/txndce/3:2007cv01767/171558/68/
+
+
 
 ___
 ## Spanien
