@@ -84,12 +84,13 @@ proprietäre Software überführen.
 1. Eiffel Forum License (v. 1.0): http://www.eiffel-nice.org/license/forum.txt
 1. Eiffel Forum License (v. 2.0): http://www.eiffel-nice.org/license/eiffel-forum-license-2.html
 1. Entessa Public License (v. 1.0): http://web.archive.org/web/20050419215723/www.openseal.org/epl/
-1. EU DataGrid Software License (v. 2.0): https://web.archive.org/web/20021229214435/http://eu-datagrid.web.cern.ch:80/eu-datagrid/license.html
+1. EU DataGrid Software License (v. 2.0): https://web.archive.org/web/20021229214435/http://eu-datagrid.web.cern.ch:80/eu-datagrid/license.html [EUDatagrid]
 1. Fair License: https://web.archive.org/web/20040803105645/http://rhid.com/fair
 1. Free Fuzzy Logic Library Open Source License: http://ffll.sourceforge.net/license.txt
 1. FreeType Project License: http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT
 1. FSF Unlimited License: https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
 1. Galen Open Source License (GOSL): http://www.opengalen.org/gosl.html
+1. GD License: https://libgd.github.io/manuals/2.3.0/files/license-txt.html [GD]
 1. Globus Toolkit Public License: https://web.archive.org/web/20070626151228/http://tyne.dl.ac.uk/StarterKit/gt2/toolkit/download/license.html
 1. Globus Toolkit Public License (GTPL) (v. 2.0): http://www.globus.org/toolkit/license.html
 1. ICU License: https://web.archive.org/web/20080524220901/http://source.icu-project.org:80/repos/icu/icu/trunk/license.html
