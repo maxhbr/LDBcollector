@@ -282,7 +282,7 @@ Sofern Modifikationen der Software unter MPLartigen Lizenzen in eigenen Dateien 
 1. Open Telecom Public License: http://www.ifross.de/Fremdartikel/otpl.htm
 1. Openbravo Public License: http://www.openbravo.com/legal/license.html
 1. OpenC++ License Terms: http://opencxx.sourceforge.net/license/
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
+1. RedHat eCos Public License (RHEPL) (v. 1.1): http://ecos.sourceware.org/old-license.html
 1. Ricoh Source Code Public License: http://web.archive.org/web/20060427194554/http://www.risource.org/RPL/RPL-1.0A.shtml
 1. SNIA Public License Version (v.1.1): https://web.archive.org/web/20050214120435/https://www.snia.org/smi/developers/open_source
 1. SugarCRM Public License (v. 1.1.3): https://web.archive.org/web/20160622020613/http://www.sugarcrm.com/page/sugarcrm-public-license/en
@@ -379,4 +379,4 @@ werden zumeist bei Programmen verwendet, die ursprünglich proprietär vertriebe
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 2.0): https://web.archive.org/web/20060924224843/https://www.helixcommunity.org/content/rcsl
 1. RealNetworks Community Source License - Research and Development Use (RCSL R&D) (v 3.0): https://web.archive.org/web/20141226113418/https://helixcommunity.org/content/rcsl
 1. RealNetworks Public Source License (RPSL) (v. 1.0): https://community.helixcommunity.org/content/rpsl
-1. RedHat eCos Public License (v. 1.1): http://ecos.sourceware.org/old-license.html
+1. RedHat eCos Public License (RHEPL) (v. 1.1): http://ecos.sourceware.org/old-license.html
