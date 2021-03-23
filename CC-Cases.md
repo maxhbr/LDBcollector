@@ -233,7 +233,7 @@ Link: https://creativecommons.org/wp-content/uploads/2018/03/2018-01-18-40-Decis
 
 Philpot v Media Research Center Inc.
 
-Durchsetzung vonn CC-BY-3.0 wegen unterlassener Urhebernennung, fair use
+Durchsetzung von CC-BY-3.0 wegen unterlassener Urhebernennung, fair use
 
 Link: https://creativecommons.org/wp-content/uploads/2018/03/Philpot-v.-Media-Research-Ctr-decision.pdf
 
