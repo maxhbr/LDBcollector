@@ -7,9 +7,11 @@ The licenses listed here originate from the Free Software environment or appear 
 1. "Anti 996" License (v. 1.0): https://github.com/996icu/996.ICU/blob/master/LICENSE
 1. AT&T Source Code Agreement (v. 1.2D): http://web.archive.org/web/20050424024245/http://www.research.att.com/sw/license/ast-open.html
 1. Business Source License 1.1: https://mariadb.com/bsl11/
+1. Code Project Open License (CPOL) 1.02: https://www.codeproject.com/info/cpol10.aspx
 1. Commons Clause: https://commonsclause.com/
 1. Confluent Community License (v. 1.0): https://www.confluent.io/confluent-community-license/
 1. CrossPoint Quelltext Lizenz (alt): http://www.crosspoint.de/oldlicense.html
+1. Elastic License 2.0 (ELv2): https://www.elastic.co/de/licensing/elastic-license
 1. Enhydra Public License (v. 1.1): http://ksoap.objectweb.org/software/license/index.html (Einordnung umstritten)
 1. Hacktivismo Enhanced-Source Software License Agreement (v. 0.1) (HESSLA): http://www.hacktivismo.com/about/hessla.php
 1. Jahia Community Source License (JSCL) (v.012): http://www.jahia.org/jahia/Jahia/pid/145
