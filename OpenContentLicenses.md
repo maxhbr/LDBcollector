@@ -1,6 +1,6 @@
-## Open Content Licenses
+## Open Content Lizenzen
 
-The licenses listed below seek to apply the basic idea underlying Free Software to transfer to other categories of work. Since there is no generally accepted Open Content Definition, the licenses are very heterogeneous.
+Die im Folgenden aufgeführten Lizenzen versuchen, den Grundgedanken, der der Freien Software zu Grunde liegt, auch auf andere Werkgattungen zu übertragen. Da keine allgemein anerkannte Open Content Definition besteht, sind die Lizenzen sehr heterogen.
 
 1. Apple's Common Documentation License (v. 1.0): https://web.archive.org/web/20060323013933/https://opensource.apple.com/cdl/
 1. Creative Commons Attribution 1.0: http://creativecommons.org/licenses/by/1.0/legalcode
