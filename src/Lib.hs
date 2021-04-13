@@ -37,6 +37,7 @@ import           Generators.FactLicenses as X
 import           Generators.LicenseJsonsWriter as X
 import           Generators.FactJsonsWriter as X
 import           Generators.OrtLicenseClassificationYml as X
+import           Generators.FlictWriter as X
 
 runLDBCore :: Configuration -> (Facts -> [(LicenseName, License, Page, LicenseClusterTree)] -> IO FilePath) -> IO ()
 runLDBCore configuration handler = do

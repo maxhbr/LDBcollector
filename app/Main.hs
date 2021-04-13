@@ -22,6 +22,7 @@ handler outputFolder = (\facts input -> do
                            let trees = map (\(ln, _, _, t) -> (ln, t)) input
 
                            writeLicenseJSONs outputFolder licenses
+                           writeFlictLicenseTranslationJSON outputFolder licenses
                            writeDetails outputFolder pages
                            writePandocs outputFolder pages
                            writeGraphizs outputFolder trees
@@ -29,6 +30,7 @@ handler outputFolder = (\facts input -> do
 
                            writeCopyleftTable outputFolder licenses
                            -- writeFactJSONs outputFolder facts
+
 
                            return outputFolder)
 
