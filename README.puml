@@ -1,0 +1,57 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor white
+    ' Shadowing 0.0
+  }
+  :depth(0) {
+    FontSize 20
+  }
+  :depth(1) {
+      BackGroundColor white
+  }
+  boxless {
+    FontColor darkgreen
+  }
+}
+</style>
+* <b>LDBcollector</b>
+--_ external input
+---_ SPDX License List
+---_ OSI license List
+---_ Scancode license List
+---_ OSADL license checklist
+---_ ChooseALicense.com
+---_ Blue Oak Council License List
+---_ Wikipedia comparison of licenses
+---_ Fedora Project Wiki
+---_ Open Chain Policy Template
+---_ OSLC-Handbook
+---_ Google Open Source Policy
+---_ Open Knowledge International
+---_ DFSG license list
+---_ FSF / GNU license list
+---_ ifrOSS
+---_ Hitachi open-license
+---_ Cavil
+---_ license-compatibility-checker
+---_ librariesio license-compatibility
+--_ internal input
+---_ configuration
+---_ manual overwrites
+---_ classification rules
+++ <b>Raw Data as JSON</b>
+++ License name clusters
+++_ Rendered Data
++++ org-mode
++++ AsciiDoc
++++ Markdown
++++ HTML
++++_ ... (via Pandoc)
+++ Comparison of conflicting statements
+++_ Tool Inputs
++++ ORT: license-classifications.yml
++++ Flict: translation.json
+++_ ... (via plugins)
+@endmindmap
