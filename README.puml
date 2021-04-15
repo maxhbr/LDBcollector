@@ -37,10 +37,9 @@ mindmapDiagram {
 ---_ Cavil
 ---_ license-compatibility-checker
 ---_ librariesio license-compatibility
---_ internal input
----_ configuration
----_ manual overwrites
----_ classification rules
+--_ configuration
+--_ manual overwrites
+--_ classification rules
 ++ <b>Raw Data as JSON</b>
 ++ License name clusters
 ++_ Rendered Data
