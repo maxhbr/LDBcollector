@@ -11,9 +11,9 @@ mindmapDiagram {
   :depth(1) {
       BackGroundColor white
   }
-  boxless {
-    FontColor darkgreen
-  }
+  # boxless {
+  #   FontColor darkgreen
+  # }
 }
 </style>
 * <b>LDBcollector</b>
