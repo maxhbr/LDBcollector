@@ -17,7 +17,7 @@ mindmapDiagram {
 }
 </style>
 * <b>LDBcollector</b>
---_ external input
+--_ <b> </b>
 ---_ SPDX License List
 ---_ OSI license List
 ---_ Scancode license List
@@ -40,7 +40,7 @@ mindmapDiagram {
 --_ configuration
 --_ manual overwrites
 --_ classification rules
-++ <b>Raw Data as JSON</b>
+++ Raw Data as JSON
 ++ License name clusters
 ++_ Rendered Data
 +++ org-mode
