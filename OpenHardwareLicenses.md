@@ -10,4 +10,4 @@
 1. Solderpad Hardware License (SHL) (v. 0.5): http://solderpad.org/licenses/SHL-0.5/
 1. Solderpad Hardware License (SHL) (v. 0.51): http://solderpad.org/licenses/SHL-0.51/
 1. Solderpad Hardware License (SHL) (v. 2.0): http://solderpad.org/licenses/SHL-2.0/
-1. TAPR Open Hardware License (TAPR OHL) (v.1.0): http://www.tapr.org/TAPR_Open_Hardware_License_v1.0.txt
+1. TAPR Open Hardware License (TAPR OHL) (v.1.0): https://spdx.org/licenses/TAPR-OHL-1.0.html
