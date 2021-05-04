@@ -3,10 +3,6 @@ psfrag License (psfrag)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://psfrag`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -18,27 +14,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per Fedora, this license is considered Free, but GPL-incompatible
-    only when used for TeX files. In all other use cases, this may not
-    be true. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
 
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/psfrag
-
 -   **SPDX:** http://spdx.org/licenses/psfrag.json
 
-Text
-----
-
-    This system is distributed in the hope that it will be useful, but WITHOUT ANY
-    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
-    A PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and
-    it doesn't work! If this file is modified by anyone but the authors, those
-    changes and their authors must be explicitly stated HERE.
+-   https://fedoraproject.org/wiki/Licensing/psfrag
 
 ------------------------------------------------------------------------
 
@@ -56,28 +37,16 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/psfrag.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "psfrag",
-            "psfrag License",
-            "scancode://psfrag"
+            "psfrag License"
         ],
         "__impliedId": "psfrag",
         "__impliedAmbiguousNames": [
             "psfrag"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-                ]
-            ]
         ],
         "facts": {
             "LicenseName": {
@@ -146,51 +115,6 @@ Raw Data
                         ]
                     ]
                 }
-            },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/psfrag",
-                "shortName": "psfrag License",
-                "textUrls": null,
-                "text": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "Craig Barratt",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psfrag.yml",
-                "key": "psfrag",
-                "name": "psfrag License",
-                "spdxId": "psfrag",
-                "notes": "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://psfrag",
-                        "psfrag License",
-                        "psfrag"
-                    ],
-                    "__impliedId": "psfrag",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per Fedora, this license is considered Free, but GPL-incompatible only when\nused for TeX files. In all other use cases, this may not be true.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://fedoraproject.org/wiki/Licensing/psfrag"
-                        ]
-                    ]
-                }
             }
         },
         "__impliedJudgement": [
@@ -202,15 +126,7 @@ Raw Data
                 }
             ]
         ],
-        "__impliedCopyleft": [
-            [
-                "Scancode",
-                "NoCopyleft"
-            ]
-        ],
-        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This system is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\nA PARTICULAR PURPOSE. Don't come complaining to us if you modify this file and\nit doesn't work! If this file is modified by anyone but the authors, those\nchanges and their authors must be explicitly stated HERE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -218,10 +134,6 @@ Raw Data
             ],
             [
                 null,
-                "https://fedoraproject.org/wiki/Licensing/psfrag"
-            ],
-            [
-                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/psfrag"
             ]
         ]

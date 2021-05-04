@@ -13,10 +13,6 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 -   `GPL (v2 or later)`
 
--   `scancode://gpl-2.0-plus`
-
--   `GPL 2.0 or later`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -50,40 +46,16 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
--   “Per SPDX.org, this license was released June 1991 This license is
-    OSI certified. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:**
-    http://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
 
 -   **SPDX:** http://spdx.org/licenses/GPL-2.0-or-later.json
 
 -   https://spdx.org/licenses/GPL-2.0-or-later.html
 
+-   https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
+
 -   https://opensource.org/licenses/GPL-2.0
-
--   http://www.opensource.org/licenses/GPL-2.0
-
-Text
-----
-
-    This program is free software; you can redistribute it and/or modify it under
-    the terms of the GNU General Public License as published by the Free Software
-    Foundation; either version 2 of the License, or (at your option) any later
-    version.
-
-    This program is distributed in the hope that it will be useful, but WITHOUT ANY
-    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-    PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along with
-    this program; if not, write to the Free Software Foundation, Inc., 51 Franklin
-    Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ------------------------------------------------------------------------
 
@@ -126,9 +98,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
@@ -138,9 +107,7 @@ Raw Data
             "GPL2.0+",
             "GPL2+",
             "GPL (v2 or later)",
-            "GNU General Public License v2.0 or later",
-            "scancode://gpl-2.0-plus",
-            "GPL 2.0 or later"
+            "GNU General Public License v2.0 or later"
         ],
         "__impliedId": "GPL-2.0-or-later",
         "__isFsfFree": true,
@@ -154,12 +121,6 @@ Raw Data
                 "BlueOak License List",
                 [
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
-                ]
-            ],
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
                 ]
             ]
         ],
@@ -258,67 +219,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://www.opensource.org/licenses/GPL-2.0",
-                    "https://opensource.org/licenses/GPL-2.0",
-                    "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
-                ],
-                "homepageUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html",
-                "shortName": "GPL 2.0 or later",
-                "textUrls": null,
-                "text": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
-                "category": "Copyleft",
-                "osiUrl": null,
-                "owner": "Free Software Foundation (FSF)",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml",
-                "key": "gpl-2.0-plus",
-                "name": "GNU General Public License 2.0 or later",
-                "spdxId": "GPL-2.0-or-later",
-                "notes": "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://gpl-2.0-plus",
-                        "GPL 2.0 or later",
-                        "GPL-2.0-or-later"
-                    ],
-                    "__impliedId": "GPL-2.0-or-later",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license was released June 1991 This license is OSI\ncertified.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft",
-                    "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
-                        ],
-                        [
-                            null,
-                            "http://www.opensource.org/licenses/GPL-2.0"
-                        ],
-                        [
-                            null,
-                            "https://opensource.org/licenses/GPL-2.0"
-                        ],
-                        [
-                            null,
-                            "https://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
                         ]
                     ]
                 }
@@ -591,17 +491,12 @@ Raw Data
                 "StrongCopyleft"
             ],
             [
-                "Scancode",
-                "Copyleft"
-            ],
-            [
                 "librariesio license-compatibility",
                 "StrongCopyleft"
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "This program is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free Software\nFoundation; either version 2 of the License, or (at your option) any later\nversion.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with\nthis program; if not, write to the Free Software Foundation, Inc., 51 Franklin\nStreet, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [
                 null,
@@ -618,14 +513,6 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/GPL-2.0"
-            ],
-            [
-                "Homepage",
-                "http://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/GPL-2.0"
             ]
         ]
     }

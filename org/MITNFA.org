@@ -6,12 +6,6 @@
 | Rating         | Go                            |
 | Classification | NoCopyleft                    |
 
-*Other Names:*
-
-- =scancode://mit-no-false-attribs=
-
-- =MIT no false attribution License=
-
 ** Comments on (easy) usability
 
 - *↑*"Rating is: Bronze" (source:
@@ -25,22 +19,15 @@
 
 ** General Comments
 
-- "Per Fedora, this license is based on the MIT license, but contains an
-  additional section covering the removal of attributions in certain
-  modification scenarios. It is Free and GPL-compatible. Use License
-  MITNFA " (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml][Scancode]]
-  (CC0-1.0))
-
 ** URLs
-
-- *Homepage:* https://fedoraproject.org/wiki/Licensing/MITNFA
 
 - *SPDX:* https://spdx.org/licenses/MITNFA.html
 
 - *SPDX:* http://spdx.org/licenses/MITNFA.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/698
+
+- https://fedoraproject.org/wiki/Licensing/MITNFA
 
 ** Description from open-license
 
@@ -95,6 +82,18 @@
 
 ** Text
 #+BEGIN_EXAMPLE
+  Copyright 2013, NAN contributors:
+    - Rod Vagg <https://github.com/rvagg>
+    - Benjamin Byholm <https://github.com/kkoopa>
+    - Trevor Norris <https://github.com/trevnorris>
+    - Nathan Rajlich <https://github.com/TooTallNate>
+    - Brett Lawson <https://github.com/brett19>
+    - Ben Noordhuis <https://github.com/bnoordhuis>
+  (the "Original Author")
+  All rights reserved.
+
+  MIT +no-false-attribs License
+
   Permission is hereby granted, free of charge, to any person
   obtaining a copy of this software and associated documentation
   files (the "Software"), to deal in the Software without
@@ -124,6 +123,11 @@
   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
   OTHER DEALINGS IN THE SOFTWARE.
+
+
+  Except where noted, this license applies to any and all software
+  programs and associated documentation files created by the
+  Original Author, when distributed with the Software.
 #+END_EXAMPLE
 
 --------------
@@ -146,31 +150,18 @@
 - [[https://spdx.org/licenses/MITNFA.html][SPDX]] (all data [in this
   repository] is generated)
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml][Scancode]]
-  (CC0-1.0)
-
 *** Raw JSON
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "MITNFA",
           "MIT +no-false-attribs license",
-          "MIT +no-false-attribs License",
-          "scancode://mit-no-false-attribs",
-          "MIT no false attribution License"
+          "MIT +no-false-attribs License"
       ],
       "__impliedId": "MITNFA",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "MITNFA"
-      ],
-      "__impliedComments": [
-          [
-              "Scancode",
-              [
-                  "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
-              ]
-          ]
       ],
       "facts": {
           "LicenseName": {
@@ -237,51 +228,6 @@
                               "tag": "PositiveJudgement",
                               "contents": "This software Licenses is OK for Fedora"
                           }
-                      ]
-                  ]
-              }
-          },
-          "Scancode": {
-              "otherUrls": null,
-              "homepageUrl": "https://fedoraproject.org/wiki/Licensing/MITNFA",
-              "shortName": "MIT no false attribution License",
-              "textUrls": null,
-              "text": "Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author's bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
-              "category": "Permissive",
-              "osiUrl": null,
-              "owner": "npm Registry",
-              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml",
-              "key": "mit-no-false-attribs",
-              "name": "MIT with no false attribution License",
-              "spdxId": "MITNFA",
-              "notes": "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "scancode://mit-no-false-attribs",
-                      "MIT no false attribution License",
-                      "MITNFA"
-                  ],
-                  "__impliedId": "MITNFA",
-                  "__impliedComments": [
-                      [
-                          "Scancode",
-                          [
-                              "Per Fedora, this license is based on the MIT license, but contains an\nadditional section covering the removal of attributions in certain\nmodification scenarios. It is Free and GPL-compatible. Use License MITNFA\n"
-                          ]
-                      ]
-                  ],
-                  "__impliedCopyleft": [
-                      [
-                          "Scancode",
-                          "NoCopyleft"
-                      ]
-                  ],
-                  "__calculatedCopyleft": "NoCopyleft",
-                  "__impliedText": "Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author's bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
-                  "__impliedURLs": [
-                      [
-                          "Homepage",
-                          "https://fedoraproject.org/wiki/Licensing/MITNFA"
                       ]
                   ]
               }
@@ -483,15 +429,11 @@
           [
               "BlueOak License List",
               "NoCopyleft"
-          ],
-          [
-              "Scancode",
-              "NoCopyleft"
           ]
       ],
       "__calculatedCopyleft": "NoCopyleft",
       "__isOsiApproved": false,
-      "__impliedText": "Permission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author's bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.",
+      "__impliedText": "Copyright 2013, NAN contributors:\n  - Rod Vagg <https://github.com/rvagg>\n  - Benjamin Byholm <https://github.com/kkoopa>\n  - Trevor Norris <https://github.com/trevnorris>\n  - Nathan Rajlich <https://github.com/TooTallNate>\n  - Brett Lawson <https://github.com/brett19>\n  - Ben Noordhuis <https://github.com/bnoordhuis>\n(the \"Original Author\")\nAll rights reserved.\n\nMIT +no-false-attribs License\n\nPermission is hereby granted, free of charge, to any person\nobtaining a copy of this software and associated documentation\nfiles (the \"Software\"), to deal in the Software without\nrestriction, including without limitation the rights to use,\ncopy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the\nSoftware is furnished to do so, subject to the following\nconditions:\n\nThe above copyright notice and this permission notice shall be\nincluded in all copies or substantial portions of the Software.\n\nDistributions of all or part of the Software intended to be used\nby the recipients as they would use the unmodified Software,\ncontaining modifications that substantially alter, remove, or\ndisable functionality of the Software, outside of the documented\nconfiguration mechanisms provided by the Software, shall be\nmodified such that the Original Author's bug reporting email\naddresses and urls are either replaced with the contact information\nof the parties responsible for the changes, or removed entirely.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES\nOF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND\nNONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT\nHOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,\nWHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\nFROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\n\nExcept where noted, this license applies to any and all software\nprograms and associated documentation files created by the\nOriginal Author, when distributed with the Software.",
       "__impliedURLs": [
           [
               "SPDX",
@@ -507,10 +449,6 @@
           ],
           [
               null,
-              "https://fedoraproject.org/wiki/Licensing/MITNFA"
-          ],
-          [
-              "Homepage",
               "https://fedoraproject.org/wiki/Licensing/MITNFA"
           ]
       ]

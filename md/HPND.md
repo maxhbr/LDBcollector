@@ -3,10 +3,6 @@ Historical Permission Notice and Disclaimer (HPND)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://historical`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -26,45 +22,14 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per SPDX.org, this license is OSI certified. This license has been
-    voluntarily deprecated by its author. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:** http://www.opensource.org/licenses/historical.php
 
 -   **OSI Page:** https://opensource.org/licenses/HPND
 
 -   **SPDX:** https://spdx.org/licenses/HPND.html
 
 -   **SPDX:** http://spdx.org/licenses/HPND.json
-
--   http://www.opensource.org/licenses/HPND
-
-Text
-----
-
-    Permission to use, copy, modify and distribute this software and its
-    documentation for any purpose and without fee is hereby granted,
-    provided that the above copyright notice appear in all copies, and
-    that both that copyright notice and this permission notice
-    appear in supporting documentation, and that the name of copyright
-    holder or related entities not be used in advertising or publicity
-    pertaining to distribution of the software without specific, written
-    prior permission. Copyright holder makes no representations about
-    the suitability of this software for any purpose. It is provided "as is"
-    without express or implied warranty.
-
-    Copyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
-    SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
-    FITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY
-    SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
-    RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
-    CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
-    CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -96,29 +61,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/HPND.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "HPND",
-            "Historical Permission Notice and Disclaimer",
-            "scancode://historical"
+            "Historical Permission Notice and Disclaimer"
         ],
         "__impliedId": "HPND",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "MIT"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
-                ]
-            ]
         ],
         "facts": {
             "Open Knowledge International": {
@@ -222,66 +175,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://www.opensource.org/licenses/HPND",
-                    "https://opensource.org/licenses/HPND"
-                ],
-                "homepageUrl": "http://www.opensource.org/licenses/historical.php",
-                "shortName": "Historical Permission Notice and Disclaimer",
-                "textUrls": null,
-                "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-                "category": "Permissive",
-                "osiUrl": "http://www.opensource.org/licenses/historical.php",
-                "owner": "OSI - Open Source Initiative",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml",
-                "key": "historical",
-                "name": "Historical Permission Notice and Disclaimer",
-                "spdxId": "HPND",
-                "notes": "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://historical",
-                        "Historical Permission Notice and Disclaimer",
-                        "HPND"
-                    ],
-                    "__impliedId": "HPND",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license is OSI certified. This license has been\nvoluntarily deprecated by its author.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.opensource.org/licenses/historical.php"
-                        ],
-                        [
-                            "OSI Page",
-                            "http://www.opensource.org/licenses/historical.php"
-                        ],
-                        [
-                            null,
-                            "http://www.opensource.org/licenses/HPND"
-                        ],
-                        [
-                            null,
-                            "https://opensource.org/licenses/HPND"
                         ]
                     ]
                 }
@@ -409,15 +302,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies, and\nthat both that copyright notice and this permission notice\nappear in supporting documentation, and that the name of copyright\nholder or related entities not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission. Copyright holder makes no representations about\nthe suitability of this software for any purpose. It is provided \"as is\"\nwithout express or implied warranty.\n\nCopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS\nSOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY\nSPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER\nRESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF\nCONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN\nCONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -434,18 +322,6 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/HPND.json"
-            ],
-            [
-                "Homepage",
-                "http://www.opensource.org/licenses/historical.php"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/historical.php"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/HPND"
             ]
         ]
     }

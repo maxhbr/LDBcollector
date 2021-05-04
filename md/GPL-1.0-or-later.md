@@ -11,10 +11,6 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 -   `GPL1+`
 
--   `scancode://gpl-1.0-plus`
-
--   `GPL 1.0 or later`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -37,26 +33,12 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per SPDX.org, this license was released February 1989.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
 
--   **Homepage:**
-    http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html
-
 -   **SPDX:** http://spdx.org/licenses/GPL-1.0-or-later.json
 
-Text
-----
-
-    This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+-   https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html
 
 ------------------------------------------------------------------------
 
@@ -88,9 +70,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/GPL-1.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
@@ -99,23 +78,13 @@ Raw Data
             "GPL-1.0+",
             "GPL1.0+",
             "GPL1+",
-            "GNU General Public License v1.0 or later",
-            "scancode://gpl-1.0-plus",
-            "GPL 1.0 or later"
+            "GNU General Public License v1.0 or later"
         ],
         "__impliedId": "GPL-1.0-or-later",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The GNU General Public License (GPL)",
             "GPL+"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license was released February 1989."
-                ]
-            ]
         ],
         "facts": {
             "LicenseName": {
@@ -198,57 +167,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
-                ],
-                "homepageUrl": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
-                "shortName": "GPL 1.0 or later",
-                "textUrls": null,
-                "text": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
-                "category": "Copyleft",
-                "osiUrl": null,
-                "owner": "Free Software Foundation (FSF)",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml",
-                "key": "gpl-1.0-plus",
-                "name": "GNU General Public License 1.0 or later",
-                "spdxId": "GPL-1.0-or-later",
-                "notes": "Per SPDX.org, this license was released February 1989.",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://gpl-1.0-plus",
-                        "GPL 1.0 or later",
-                        "GPL-1.0-or-later"
-                    ],
-                    "__impliedId": "GPL-1.0-or-later",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license was released February 1989."
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft",
-                    "__impliedText": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
-                        ],
-                        [
-                            null,
-                            "https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
                         ]
                     ]
                 }
@@ -344,17 +262,12 @@ Raw Data
         ],
         "__impliedCopyleft": [
             [
-                "Scancode",
-                "Copyleft"
-            ],
-            [
                 "librariesio license-compatibility",
                 "StrongCopyleft"
             ]
         ],
         "__calculatedCopyleft": "StrongCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.\n\nYou should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -363,10 +276,6 @@ Raw Data
             [
                 null,
                 "https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
-            ],
-            [
-                "Homepage",
-                "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html"
             ]
         ]
     }

@@ -9,10 +9,6 @@ X.Net License (Xnet)
 
 -   `License :: OSI Approved :: X.Net License`
 
--   `scancode://xnet`
-
--   `Altera License`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -37,45 +33,14 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per SPDX.org, this license is OSI certified. This License has been
-    voluntarily deprecated by its author. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:** http://www.opensource.org/licenses/xnet.php
 
 -   **OSI Page:** https://opensource.org/licenses/Xnet
 
 -   **SPDX:** https://spdx.org/licenses/Xnet.html
 
 -   **SPDX:** http://spdx.org/licenses/Xnet.json
-
-Text
-----
-
-    Permission is hereby granted, free of charge, to any person obtaining a copy
-    of this software and associated documentation files (the "Software"), to deal
-    in the Software without restriction, including without limitation the rights
-    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-    copies of the Software, and to permit persons to whom the Software is
-    furnished to do so, subject to the following conditions:
-
-    The above copyright notice and this permission notice shall be included in
-    all copies or substantial portions of the Software.
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-    THE SOFTWARE.
-
-    This agreement shall be governed in all respects by the laws of the State of
-    California and by the laws of the United States of America.
 
 ------------------------------------------------------------------------
 
@@ -111,9 +76,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Xnet.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
@@ -121,19 +83,9 @@ Raw Data
             "Xnet",
             "X.Net License",
             "The X.Net, Inc. License",
-            "License :: OSI Approved :: X.Net License",
-            "scancode://xnet",
-            "Altera License"
+            "License :: OSI Approved :: X.Net License"
         ],
         "__impliedId": "Xnet",
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
-                ]
-            ]
-        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -233,66 +185,6 @@ Raw Data
                     ]
                 },
                 "Notes": "Deprecated license"
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://opensource.org/licenses/Xnet",
-                    "https://opensource.org/licenses/Xnet"
-                ],
-                "homepageUrl": "http://www.opensource.org/licenses/xnet.php",
-                "shortName": "Altera License",
-                "textUrls": null,
-                "text": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\nThis agreement shall be governed in all respects by the laws of the State of\nCalifornia and by the laws of the United States of America.",
-                "category": "Permissive",
-                "osiUrl": "http://www.opensource.org/licenses/xnet.php",
-                "owner": "Altera Corporation",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xnet.yml",
-                "key": "xnet",
-                "name": "Altera License",
-                "spdxId": "Xnet",
-                "notes": "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://xnet",
-                        "Altera License",
-                        "Xnet"
-                    ],
-                    "__impliedId": "Xnet",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license is OSI certified. This License has been\nvoluntarily deprecated by its author.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\nThis agreement shall be governed in all respects by the laws of the State of\nCalifornia and by the laws of the United States of America.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.opensource.org/licenses/xnet.php"
-                        ],
-                        [
-                            "OSI Page",
-                            "http://www.opensource.org/licenses/xnet.php"
-                        ],
-                        [
-                            null,
-                            "http://opensource.org/licenses/Xnet"
-                        ],
-                        [
-                            null,
-                            "https://opensource.org/licenses/Xnet"
-                        ]
-                    ]
-                }
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -459,15 +351,10 @@ Raw Data
             [
                 "Google OSS Policy",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE.\n\nThis agreement shall be governed in all respects by the laws of the State of\nCalifornia and by the laws of the United States of America.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -484,18 +371,6 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/Xnet.json"
-            ],
-            [
-                "Homepage",
-                "http://www.opensource.org/licenses/xnet.php"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/xnet.php"
-            ],
-            [
-                null,
-                "http://opensource.org/licenses/Xnet"
             ]
         ]
     }

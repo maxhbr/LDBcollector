@@ -1,8 +1,7 @@
 {
     "__impliedNames": [
         "Zed",
-        "Zed License",
-        "scancode://zed"
+        "Zed License"
     ],
     "__impliedId": "Zed",
     "__isFsfFree": true,
@@ -78,43 +77,6 @@
                 ]
             }
         },
-        "Scancode": {
-            "otherUrls": null,
-            "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Zed",
-            "shortName": "Zed License",
-            "textUrls": null,
-            "text": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
-            "category": "Permissive",
-            "osiUrl": null,
-            "owner": "Jim Davies",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zed.yml",
-            "key": "zed",
-            "name": "Zed License",
-            "spdxId": "Zed",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "scancode://zed",
-                    "Zed License",
-                    "Zed"
-                ],
-                "__impliedId": "Zed",
-                "__impliedCopyleft": [
-                    [
-                        "Scancode",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
-                "__impliedURLs": [
-                    [
-                        "Homepage",
-                        "https://fedoraproject.org/wiki/Licensing/Zed"
-                    ]
-                ]
-            }
-        },
         "BlueOak License List": {
             "BlueOakRating": "Lead",
             "url": "https://spdx.org/licenses/Zed.html",
@@ -172,15 +134,10 @@
         [
             "BlueOak License List",
             "NoCopyleft"
-        ],
-        [
-            "Scancode",
-            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -192,10 +149,6 @@
         ],
         [
             null,
-            "https://fedoraproject.org/wiki/Licensing/Zed"
-        ],
-        [
-            "Homepage",
             "https://fedoraproject.org/wiki/Licensing/Zed"
         ]
     ]

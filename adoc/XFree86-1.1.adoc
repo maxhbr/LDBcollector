@@ -13,7 +13,6 @@
 *Other Names:*
 
 * `XFree86 1.1 License`
-* `scancode://xfree86-1.1`
 
 === Comments on (easy) usability
 
@@ -25,10 +24,10 @@ https://blueoakcouncil.org/list[BlueOak License List]
 
 === URLs
 
-* *Homepage:* http://www.xfree86.org/current/LICENSE4.html
 * *SPDX:* https://spdx.org/licenses/XFree86-1.1.html
 * *SPDX:* http://spdx.org/licenses/XFree86-1.1.json
 * *open-license:* http://open-license.hitachi.com/licenses/319
+* http://www.xfree86.org/current/LICENSE4.html
 
 === Description from open-license
 
@@ -99,43 +98,22 @@ REQUISITE: Get special permission in writing.
 === Text
 
 ....
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
+Version 1.1 of XFree86® Project Licence.
 
-1. Redistributions of source code must retain the above copyright notice, this
-list of conditions, and the following disclaimer.
+Copyright (C) 1994-2004 The XFree86 Project, Inc.
+All rights reserved.
 
-2. Redistributions in binary form must reproduce the above copyright notice,
-this list of conditions and the following disclaimer in the documentation and/or
-other materials provided with the distribution, and in the same place and form
-as other copyright, license and disclaimer information.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-3. The end-user documentation included with the redistribution, if any, must
-include the following acknowledgment: "This product includes software developed
-by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors", in
-the same place and form as other third-party acknowledgments. Alternately, this
-acknowledgment may appear in the software itself, in the same form and location
-as other such third-party acknowledgments.
+1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
 
-4. Except as contained in this notice, the name of The XFree86 Project, Inc
-shall not be used in advertising or otherwise to promote the sale, use or other
-dealings in this Software without prior written authorization from The XFree86
-Project, Inc.
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution, and in the same place and form as other copyright, license and disclaimer information.
 
-THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,
-INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
-FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86
-PROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
-SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
-BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
-IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY
-OF SUCH DAMAGE.
+3. The end-user documentation included with the redistribution, if any, must include the following acknowledgment: "This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors", in the same place and form as other third-party acknowledgments. Alternately, this acknowledgment may appear in the software itself, in the same form and location as other such third-party acknowledgments.
+
+4. Except as contained in this notice, the name of The XFree86 Project, Inc shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from The XFree86 Project, Inc.
+
+THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86 PROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ....
 
 '''''
@@ -154,8 +132,6 @@ license-compatibility-checker]
 (CDLA-Permissive-1.0)
 * https://spdx.org/licenses/XFree86-1.1.html[SPDX] (all data [in this
 repository] is generated)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml[Scancode]
-(CC0-1.0)
 * https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses[Wikipedia]
 (https://creativecommons.org/licenses/by-sa/3.0/legalcode[CC-BY-SA-3.0])
 
@@ -166,8 +142,7 @@ repository] is generated)
     "__impliedNames": [
         "XFree86-1.1",
         "XFree86 License 1.1",
-        "XFree86 1.1 License",
-        "scancode://xfree86-1.1"
+        "XFree86 1.1 License"
     ],
     "__impliedId": "XFree86-1.1",
     "__hasPatentHint": false,
@@ -210,43 +185,6 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "XFree86-1.1"
-        },
-        "Scancode": {
-            "otherUrls": null,
-            "homepageUrl": "http://www.xfree86.org/current/LICENSE4.html",
-            "shortName": "XFree86 License 1.1",
-            "textUrls": null,
-            "text": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution, and in the same place and form\nas other copyright, license and disclaimer information.\n\n3. The end-user documentation included with the redistribution, if any, must\ninclude the following acknowledgment: \"This product includes software developed\nby The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in\nthe same place and form as other third-party acknowledgments. Alternately, this\nacknowledgment may appear in the software itself, in the same form and location\nas other such third-party acknowledgments.\n\n4. Except as contained in this notice, the name of The XFree86 Project, Inc\nshall not be used in advertising or otherwise to promote the sale, use or other\ndealings in this Software without prior written authorization from The XFree86\nProject, Inc.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86\nPROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.",
-            "category": "Permissive",
-            "osiUrl": null,
-            "owner": "XFree86 Project, Inc",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml",
-            "key": "xfree86-1.1",
-            "name": "XFree86 License 1.1",
-            "spdxId": "XFree86-1.1",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "scancode://xfree86-1.1",
-                    "XFree86 License 1.1",
-                    "XFree86-1.1"
-                ],
-                "__impliedId": "XFree86-1.1",
-                "__impliedCopyleft": [
-                    [
-                        "Scancode",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution, and in the same place and form\nas other copyright, license and disclaimer information.\n\n3. The end-user documentation included with the redistribution, if any, must\ninclude the following acknowledgment: \"This product includes software developed\nby The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in\nthe same place and form as other third-party acknowledgments. Alternately, this\nacknowledgment may appear in the software itself, in the same form and location\nas other such third-party acknowledgments.\n\n4. Except as contained in this notice, the name of The XFree86 Project, Inc\nshall not be used in advertising or otherwise to promote the sale, use or other\ndealings in this Software without prior written authorization from The XFree86\nProject, Inc.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86\nPROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.",
-                "__impliedURLs": [
-                    [
-                        "Homepage",
-                        "http://www.xfree86.org/current/LICENSE4.html"
-                    ]
-                ]
-            }
         },
         "HansHammel license-compatibility-checker": {
             "implications": {
@@ -476,15 +414,11 @@ repository] is generated)
         [
             "HansHammel license-compatibility-checker",
             "NoCopyleft"
-        ],
-        [
-            "Scancode",
-            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a copy of\nthis software and associated documentation files (the \"Software\"), to deal in\nthe Software without restriction, including without limitation the rights to\nuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of\nthe Software, and to permit persons to whom the Software is furnished to do so,\nsubject to the following conditions:\n\n1. Redistributions of source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution, and in the same place and form\nas other copyright, license and disclaimer information.\n\n3. The end-user documentation included with the redistribution, if any, must\ninclude the following acknowledgment: \"This product includes software developed\nby The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in\nthe same place and form as other third-party acknowledgments. Alternately, this\nacknowledgment may appear in the software itself, in the same form and location\nas other such third-party acknowledgments.\n\n4. Except as contained in this notice, the name of The XFree86 Project, Inc\nshall not be used in advertising or otherwise to promote the sale, use or other\ndealings in this Software without prior written authorization from The XFree86\nProject, Inc.\n\nTHIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES,\nINCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86\nPROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\nCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING\nIN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY\nOF SUCH DAMAGE.",
+    "__impliedText": "Version 1.1 of XFree86® Project Licence.\n\nCopyright (C) 1994-2004 The XFree86 Project, Inc.\nAll rights reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\n1. Redistributions of source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution, and in the same place and form as other copyright, license and disclaimer information.\n\n3. The end-user documentation included with the redistribution, if any, must include the following acknowledgment: \"This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors\", in the same place and form as other third-party acknowledgments. Alternately, this acknowledgment may appear in the software itself, in the same form and location as other such third-party acknowledgments.\n\n4. Except as contained in this notice, the name of The XFree86 Project, Inc shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from The XFree86 Project, Inc.\n\nTHIS SOFTWARE IS PROVIDED \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE XFREE86 PROJECT, INC OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -500,10 +434,6 @@ repository] is generated)
         ],
         [
             null,
-            "http://www.xfree86.org/current/LICENSE4.html"
-        ],
-        [
-            "Homepage",
             "http://www.xfree86.org/current/LICENSE4.html"
         ]
     ]

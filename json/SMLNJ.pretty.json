@@ -1,22 +1,12 @@
 {
     "__impliedNames": [
         "SMLNJ",
-        "Standard ML of New Jersey License",
-        "scancode://standard-ml-nj",
-        "Standard ML of New Jersey"
+        "Standard ML of New Jersey License"
     ],
     "__impliedId": "SMLNJ",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "MIT"
-    ],
-    "__impliedComments": [
-        [
-            "Scancode",
-            [
-                "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
-            ]
-        ]
     ],
     "facts": {
         "LicenseName": {
@@ -87,67 +77,6 @@
                 ]
             }
         },
-        "Scancode": {
-            "otherUrls": [
-                "http://www.gnu.org/licenses/license-list.html#StandardMLofNJ",
-                "http://www2.cs.tum.edu/projects/cup/",
-                "https://www.smlnj.org/license.html"
-            ],
-            "homepageUrl": "http://www.smlnj.org//license.html",
-            "shortName": "Standard ML of New Jersey",
-            "textUrls": null,
-            "text": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and that\nboth the copyright notice and this permission notice and warranty\ndisclaimer appear in supporting documentation, and that the names of the\nauthors or their employers not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.\n\nThe authors and their employers disclaim all warranties with regard to\nthis software, including all implied warranties of merchantability and\nfitness. In no event shall the authors or their employers be liable for\nany special, indirect or consequential damages or any damages whatsoever\nresulting from loss of use, data or profits, whether in an action of\ncontract, negligence or other tortious action, arising out of or in\nconnection with the use or performance of this software.",
-            "category": "Permissive",
-            "osiUrl": null,
-            "owner": "Alcatel-Lucent",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml",
-            "key": "standard-ml-nj",
-            "name": "Standard ML of New Jersey",
-            "spdxId": "SMLNJ",
-            "notes": "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n",
-            "_implications": {
-                "__impliedNames": [
-                    "scancode://standard-ml-nj",
-                    "Standard ML of New Jersey",
-                    "SMLNJ"
-                ],
-                "__impliedId": "SMLNJ",
-                "__impliedComments": [
-                    [
-                        "Scancode",
-                        [
-                            "per SPDX.org, SPDX ended up with this license on the license list twice\nonce as of v1.17 with the short identifier SMLNJ and then added (again) as\nof v1.20 with the short identifier StandardML-NJ. The former list entry has\nbeen deprecated. Here, this license is not verbatim the SPDX SMLMJ, but\ninstead the more generic variant as used in the Java CUP parser generator\nthat has no specific references to Lucent and Bell Labs and is therefore a\nbetter choice for reuse.\n"
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "Scancode",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and that\nboth the copyright notice and this permission notice and warranty\ndisclaimer appear in supporting documentation, and that the names of the\nauthors or their employers not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.\n\nThe authors and their employers disclaim all warranties with regard to\nthis software, including all implied warranties of merchantability and\nfitness. In no event shall the authors or their employers be liable for\nany special, indirect or consequential damages or any damages whatsoever\nresulting from loss of use, data or profits, whether in an action of\ncontract, negligence or other tortious action, arising out of or in\nconnection with the use or performance of this software.",
-                "__impliedURLs": [
-                    [
-                        "Homepage",
-                        "http://www.smlnj.org//license.html"
-                    ],
-                    [
-                        null,
-                        "http://www.gnu.org/licenses/license-list.html#StandardMLofNJ"
-                    ],
-                    [
-                        null,
-                        "http://www2.cs.tum.edu/projects/cup/"
-                    ],
-                    [
-                        null,
-                        "https://www.smlnj.org/license.html"
-                    ]
-                ]
-            }
-        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/SMLNJ.html",
@@ -205,15 +134,10 @@
         [
             "BlueOak License List",
             "NoCopyleft"
-        ],
-        [
-            "Scancode",
-            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "Permission to use, copy, modify, and distribute this software and its\ndocumentation for any purpose and without fee is hereby granted,\nprovided that the above copyright notice appear in all copies and that\nboth the copyright notice and this permission notice and warranty\ndisclaimer appear in supporting documentation, and that the names of the\nauthors or their employers not be used in advertising or publicity\npertaining to distribution of the software without specific, written\nprior permission.\n\nThe authors and their employers disclaim all warranties with regard to\nthis software, including all implied warranties of merchantability and\nfitness. In no event shall the authors or their employers be liable for\nany special, indirect or consequential damages or any damages whatsoever\nresulting from loss of use, data or profits, whether in an action of\ncontract, negligence or other tortious action, arising out of or in\nconnection with the use or performance of this software.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -226,18 +150,6 @@
         [
             null,
             "https://www.smlnj.org/license.html"
-        ],
-        [
-            "Homepage",
-            "http://www.smlnj.org//license.html"
-        ],
-        [
-            null,
-            "http://www.gnu.org/licenses/license-list.html#StandardMLofNJ"
-        ],
-        [
-            null,
-            "http://www2.cs.tum.edu/projects/cup/"
         ]
     ]
 }

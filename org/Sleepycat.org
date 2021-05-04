@@ -17,8 +17,6 @@
 
 - =License :: OSI Approved :: Sleepycat License=
 
-- =scancode://sleepycat=
-
 ** Comments on (easy) usability
 
 - *↑*"Is OSI Approved" (source:
@@ -43,57 +41,13 @@
   (source: [[https://blueoakcouncil.org/copyleft][BlueOak License List]]
   ([[https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE][CC0-1.0]]))
 
-- "Per SPDX.org, this license is OSI certified" (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml][Scancode]]
-  (CC0-1.0))
-
 ** URLs
-
-- *Homepage:* http://opensource.org/licenses/sleepycat.html
 
 - *OSI Page:* https://opensource.org/licenses/Sleepycat
 
 - *SPDX:* http://spdx.org/licenses/Sleepycat.json
 
 - https://spdx.org/licenses/Sleepycat.html
-
-- http://www.opensource.org/licenses/Sleepycat
-
-- http://www.opensource.org/licenses/sleepycat.php
-
-** Text
-#+BEGIN_EXAMPLE
-   Redistribution and use in source and binary forms, with or without
-   modification, are permitted provided that the following conditions
-   are met:
-   1. Redistributions of source code must retain the above copyright
-      notice, this list of conditions and the following disclaimer.
-   2. Redistributions in binary form must reproduce the above copyright
-      notice, this list of conditions and the following disclaimer in the
-      documentation and/or other materials provided with the distribution.
-   3. Redistributions in any form must be accompanied by information on
-      how to obtain complete source code for the DB software and any
-      accompanying software that uses the DB software.  The source code
-      must either be included in the distribution or be available for no
-      more than the cost of distribution plus a nominal fee, and must be
-      freely redistributable under reasonable conditions.  For an
-      executable file, complete source code means the source code for all
-      modules it contains.  It does not include source code for modules or
-      files that typically accompany the major components of the operating
-      system on which the executable file runs.
-
-   THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS
-   OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-   WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
-   NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION
-   BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
-   CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
-   SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
-   INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-   THE POSSIBILITY OF SUCH DAMAGE.
-#+END_EXAMPLE
 
 --------------
 
@@ -132,9 +86,6 @@
 - [[https://spdx.org/licenses/Sleepycat.html][SPDX]] (all data [in this
   repository] is generated)
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml][Scancode]]
-  (CC0-1.0)
-
 - [[https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses][Wikipedia]]
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
@@ -147,8 +98,7 @@
           "Sleepycat Software Product License",
           "Sleepycat License",
           "The Sleepycat License",
-          "License :: OSI Approved :: Sleepycat License",
-          "scancode://sleepycat"
+          "License :: OSI Approved :: Sleepycat License"
       ],
       "__impliedId": "Sleepycat",
       "__isFsfFree": true,
@@ -161,12 +111,6 @@
               "BlueOak License List",
               [
                   "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
-              ]
-          ],
-          [
-              "Scancode",
-              [
-                  "Per SPDX.org, this license is OSI certified"
               ]
           ]
       ],
@@ -273,71 +217,6 @@
                               "tag": "PositiveJudgement",
                               "contents": "This software Licenses is OK for Fedora"
                           }
-                      ]
-                  ]
-              }
-          },
-          "Scancode": {
-              "otherUrls": [
-                  "http://www.opensource.org/licenses/Sleepycat",
-                  "http://www.opensource.org/licenses/sleepycat.php",
-                  "https://opensource.org/licenses/Sleepycat"
-              ],
-              "homepageUrl": "http://opensource.org/licenses/sleepycat.html",
-              "shortName": "Sleepycat License",
-              "textUrls": null,
-              "text": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
-              "category": "Copyleft",
-              "osiUrl": "http://opensource.org/licenses/sleepycat.html",
-              "owner": "Oracle Corporation",
-              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml",
-              "key": "sleepycat",
-              "name": "Sleepycat License (Berkeley Database License)",
-              "spdxId": "Sleepycat",
-              "notes": "Per SPDX.org, this license is OSI certified",
-              "_implications": {
-                  "__impliedNames": [
-                      "scancode://sleepycat",
-                      "Sleepycat License",
-                      "Sleepycat"
-                  ],
-                  "__impliedId": "Sleepycat",
-                  "__impliedComments": [
-                      [
-                          "Scancode",
-                          [
-                              "Per SPDX.org, this license is OSI certified"
-                          ]
-                      ]
-                  ],
-                  "__impliedCopyleft": [
-                      [
-                          "Scancode",
-                          "Copyleft"
-                      ]
-                  ],
-                  "__calculatedCopyleft": "Copyleft",
-                  "__impliedText": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
-                  "__impliedURLs": [
-                      [
-                          "Homepage",
-                          "http://opensource.org/licenses/sleepycat.html"
-                      ],
-                      [
-                          "OSI Page",
-                          "http://opensource.org/licenses/sleepycat.html"
-                      ],
-                      [
-                          null,
-                          "http://www.opensource.org/licenses/Sleepycat"
-                      ],
-                      [
-                          null,
-                          "http://www.opensource.org/licenses/sleepycat.php"
-                      ],
-                      [
-                          null,
-                          "https://opensource.org/licenses/Sleepycat"
                       ]
                   ]
               }
@@ -577,15 +456,10 @@
           [
               "HansHammel license-compatibility-checker",
               "WeakCopyleft"
-          ],
-          [
-              "Scancode",
-              "Copyleft"
           ]
       ],
       "__calculatedCopyleft": "StrongCopyleft",
       "__isOsiApproved": true,
-      "__impliedText": " Redistribution and use in source and binary forms, with or without\n modification, are permitted provided that the following conditions\n are met:\n 1. Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n 2. Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n 3. Redistributions in any form must be accompanied by information on\n    how to obtain complete source code for the DB software and any\n    accompanying software that uses the DB software.  The source code\n    must either be included in the distribution or be available for no\n    more than the cost of distribution plus a nominal fee, and must be\n    freely redistributable under reasonable conditions.  For an\n    executable file, complete source code means the source code for all\n    modules it contains.  It does not include source code for modules or\n    files that typically accompany the major components of the operating\n    system on which the executable file runs.\n\n THIS SOFTWARE IS PROVIDED BY ORACLE CORPORATION ``AS IS'' AND ANY EXPRESS\n OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\n WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR\n NON-INFRINGEMENT, ARE DISCLAIMED.  IN NO EVENT SHALL ORACLE CORPORATION\n BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\n CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\n SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\n INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\n CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\n ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\n THE POSSIBILITY OF SUCH DAMAGE.",
       "__impliedURLs": [
           [
               null,
@@ -602,22 +476,6 @@
           [
               "SPDX",
               "http://spdx.org/licenses/Sleepycat.json"
-          ],
-          [
-              "Homepage",
-              "http://opensource.org/licenses/sleepycat.html"
-          ],
-          [
-              "OSI Page",
-              "http://opensource.org/licenses/sleepycat.html"
-          ],
-          [
-              null,
-              "http://www.opensource.org/licenses/Sleepycat"
-          ],
-          [
-              null,
-              "http://www.opensource.org/licenses/sleepycat.php"
           ]
       ]
   }

@@ -3,10 +3,6 @@ Wsuipa License (Wsuipa)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://wsuipa`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -22,32 +18,14 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per Fedora, this license was found on the "wsuipa" component of
-    texlive 2010. It is Free, but GPL-incompatible. ” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/Wsuipa
 
 -   **SPDX:** https://spdx.org/licenses/Wsuipa.html
 
 -   **SPDX:** http://spdx.org/licenses/Wsuipa.json
 
-Text
-----
-
-    This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
-    Guenther and pointers to this file were added to all source files.
-
-    Unlimited copying and redistribution of each of the files is permitted as long
-    as the file is not modified. Modifications, and redistribution of modified
-    versions, are also permitted, but only if the resulting file is renamed.
-
-    The copyright holder is Washington State University. The original author of the
-    fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
+-   https://fedoraproject.org/wiki/Licensing/Wsuipa
 
 ------------------------------------------------------------------------
 
@@ -69,29 +47,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Wsuipa.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Wsuipa",
-            "Wsuipa License",
-            "scancode://wsuipa"
+            "Wsuipa License"
         ],
         "__impliedId": "Wsuipa",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Wsuipa"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
-                ]
-            ]
         ],
         "facts": {
             "LicenseName": {
@@ -162,51 +128,6 @@ Raw Data
                     ]
                 }
             },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Wsuipa",
-                "shortName": "Wsuipa License",
-                "textUrls": null,
-                "text": "This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "Washington State University",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml",
-                "key": "wsuipa",
-                "name": "Wsuipa License",
-                "spdxId": "Wsuipa",
-                "notes": "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://wsuipa",
-                        "Wsuipa License",
-                        "Wsuipa"
-                    ],
-                    "__impliedId": "Wsuipa",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per Fedora, this license was found on the \"wsuipa\" component of texlive\n2010. It is Free, but GPL-incompatible.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://fedoraproject.org/wiki/Licensing/Wsuipa"
-                        ]
-                    ]
-                }
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Wsuipa.html",
@@ -264,15 +185,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean\nGuenther and pointers to this file were added to all source files.\n\nUnlimited copying and redistribution of each of the files is permitted as long\nas the file is not modified. Modifications, and redistribution of modified\nversions, are also permitted, but only if the resulting file is renamed.\n\nThe copyright holder is Washington State University. The original author of the\nfonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -284,10 +200,6 @@ Raw Data
             ],
             [
                 null,
-                "https://fedoraproject.org/wiki/Licensing/Wsuipa"
-            ],
-            [
-                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Wsuipa"
             ]
         ]

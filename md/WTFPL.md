@@ -5,10 +5,6 @@ Do What The F\*ck You Want To Public License (WTFPL)
 
 **Other Names:**
 
--   `scancode://wtfpl-2.0`
-
--   `WTFPL 2.0`
-
 -   `Do What The Fuck You Want To Public License (WTFPL) 2`
 
 Description
@@ -62,8 +58,6 @@ Obligations
 URLs
 ----
 
--   **Homepage:** http://sam.zoy.org/wtfpl/
-
 -   **SPDX:** https://spdx.org/licenses/WTFPL.html
 
 -   **SPDX:** http://spdx.org/licenses/WTFPL.json
@@ -71,25 +65,6 @@ URLs
 -   http://www.wtfpl.net/about/
 
 -   http://sam.zoy.org/wtfpl/COPYING
-
--   http://fedoraproject.org/wiki/Licensing/WTFPL
-
-Text
-----
-
-    DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-                        Version 2, December 2004
-
-     Copyright (C) 2004 Sam Hocevar
-      14 rue de Plaisance, 75014 Paris, France
-     Everyone is permitted to copy and distribute verbatim or modified
-     copies of this license document, and changing it is allowed as long
-     as the name is changed.
-
-                DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
-       TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
-
-      0. You just DO WHAT THE FUCK YOU WANT TO.
 
 ------------------------------------------------------------------------
 
@@ -133,9 +108,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/WTFPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wtfpl-2.0.yml "Scancode")
-    (CC0-1.0)
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -146,8 +118,6 @@ Raw Data
             "WTFPL",
             "Do What The F*ck You Want To Public License",
             "wtfpl",
-            "scancode://wtfpl-2.0",
-            "WTFPL 2.0",
             "Do What The Fuck You Want To Public License (WTFPL) 2"
         ],
         "__impliedId": "WTFPL",
@@ -243,54 +213,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://fedoraproject.org/wiki/Licensing/WTFPL",
-                    "http://www.wtfpl.net/about/"
-                ],
-                "homepageUrl": "http://sam.zoy.org/wtfpl/",
-                "shortName": "WTFPL 2.0",
-                "textUrls": null,
-                "text": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.",
-                "category": "Public Domain",
-                "osiUrl": null,
-                "owner": "Sam Hocevar",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wtfpl-2.0.yml",
-                "key": "wtfpl-2.0",
-                "name": "WTFPL 2.0",
-                "spdxId": "WTFPL",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://wtfpl-2.0",
-                        "WTFPL 2.0",
-                        "WTFPL"
-                    ],
-                    "__impliedId": "WTFPL",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://sam.zoy.org/wtfpl/"
-                        ],
-                        [
-                            null,
-                            "http://fedoraproject.org/wiki/Licensing/WTFPL"
-                        ],
-                        [
-                            null,
-                            "http://www.wtfpl.net/about/"
                         ]
                     ]
                 }
@@ -539,10 +461,6 @@ Raw Data
                 "NoCopyleft"
             ],
             [
-                "Scancode",
-                "NoCopyleft"
-            ],
-            [
                 "librariesio license-compatibility",
                 "NoCopyleft"
             ]
@@ -571,7 +489,6 @@ Raw Data
             "conditions": []
         },
         "__isOsiApproved": false,
-        "__impliedText": "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n                    Version 2, December 2004\n\n Copyright (C) 2004 Sam Hocevar\n  14 rue de Plaisance, 75014 Paris, France\n Everyone is permitted to copy and distribute verbatim or modified\n copies of this license document, and changing it is allowed as long\n as the name is changed.\n\n            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. You just DO WHAT THE FUCK YOU WANT TO.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -588,14 +505,6 @@ Raw Data
             [
                 null,
                 "http://sam.zoy.org/wtfpl/COPYING"
-            ],
-            [
-                "Homepage",
-                "http://sam.zoy.org/wtfpl/"
-            ],
-            [
-                null,
-                "http://fedoraproject.org/wiki/Licensing/WTFPL"
             ]
         ]
     }

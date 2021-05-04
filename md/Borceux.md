@@ -3,10 +3,6 @@ Borceux license (Borceux)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://borceux`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -25,34 +21,11 @@ General Comments
 URLs
 ----
 
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/Borceux
-
 -   **SPDX:** https://spdx.org/licenses/Borceux.html
 
 -   **SPDX:** http://spdx.org/licenses/Borceux.json
 
-Text
-----
-
-    Copyright 1993 Francis Borceux
-    You may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:
-
-    README
-    compatibility/OldDiagram
-    compatibility/OldMaxiDiagram
-    compatibility/OldMicroDiagram
-    compatibility/OldMiniDiagram
-    compatibility/OldMultipleArrows
-    diagram/Diagram
-    diagram/MaxiDiagram
-    diagram/MicroDiagram
-    diagram/MiniDiagram
-    diagram/MultipleArrows
-    user-guides/Diagram_Mode_d_Emploi
-    user-guides/Diagram_Read_Me
-
-    Of course no support is guaranteed, but the author will attempt to assist with problems.  Current email address:
-    francis dot borceux at uclouvain dot be.
+-   https://fedoraproject.org/wiki/Licensing/Borceux
 
 ------------------------------------------------------------------------
 
@@ -74,17 +47,12 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Borceux.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Borceux",
-            "Borceux license",
-            "scancode://borceux",
-            "Borceux License"
+            "Borceux license"
         ],
         "__impliedId": "Borceux",
         "__isFsfFree": true,
@@ -160,43 +128,6 @@ Raw Data
                     ]
                 }
             },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Borceux",
-                "shortName": "Borceux License",
-                "textUrls": null,
-                "text": "Copyright 1993 Francis Borceux\nYou may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:\n\nREADME\ncompatibility/OldDiagram\ncompatibility/OldMaxiDiagram\ncompatibility/OldMicroDiagram\ncompatibility/OldMiniDiagram\ncompatibility/OldMultipleArrows\ndiagram/Diagram\ndiagram/MaxiDiagram\ndiagram/MicroDiagram\ndiagram/MiniDiagram\ndiagram/MultipleArrows\nuser-guides/Diagram_Mode_d_Emploi\nuser-guides/Diagram_Read_Me\n\nOf course no support is guaranteed, but the author will attempt to assist with problems.  Current email address:\nfrancis dot borceux at uclouvain dot be.",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "Francis Borceux",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/borceux.yml",
-                "key": "borceux",
-                "name": "Borceux License",
-                "spdxId": "Borceux",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://borceux",
-                        "Borceux License",
-                        "Borceux"
-                    ],
-                    "__impliedId": "Borceux",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Copyright 1993 Francis Borceux\nYou may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:\n\nREADME\ncompatibility/OldDiagram\ncompatibility/OldMaxiDiagram\ncompatibility/OldMicroDiagram\ncompatibility/OldMiniDiagram\ncompatibility/OldMultipleArrows\ndiagram/Diagram\ndiagram/MaxiDiagram\ndiagram/MicroDiagram\ndiagram/MiniDiagram\ndiagram/MultipleArrows\nuser-guides/Diagram_Mode_d_Emploi\nuser-guides/Diagram_Read_Me\n\nOf course no support is guaranteed, but the author will attempt to assist with problems.  Current email address:\nfrancis dot borceux at uclouvain dot be.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://fedoraproject.org/wiki/Licensing/Borceux"
-                        ]
-                    ]
-                }
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Borceux.html",
@@ -254,15 +185,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Copyright 1993 Francis Borceux\nYou may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:\n\nREADME\ncompatibility/OldDiagram\ncompatibility/OldMaxiDiagram\ncompatibility/OldMicroDiagram\ncompatibility/OldMiniDiagram\ncompatibility/OldMultipleArrows\ndiagram/Diagram\ndiagram/MaxiDiagram\ndiagram/MicroDiagram\ndiagram/MiniDiagram\ndiagram/MultipleArrows\nuser-guides/Diagram_Mode_d_Emploi\nuser-guides/Diagram_Read_Me\n\nOf course no support is guaranteed, but the author will attempt to assist with problems.  Current email address:\nfrancis dot borceux at uclouvain dot be.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -274,10 +200,6 @@ Raw Data
             ],
             [
                 null,
-                "https://fedoraproject.org/wiki/Licensing/Borceux"
-            ],
-            [
-                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Borceux"
             ]
         ]

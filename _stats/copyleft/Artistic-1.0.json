@@ -4,7 +4,6 @@
         "Google OSS Policy"
     ],
     "WeakCopyleft": [
-        "HansHammel license-compatibility-checker",
-        "Scancode"
+        "HansHammel license-compatibility-checker"
     ]
 }

@@ -3,23 +3,11 @@ Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://historical-sell-variant`
-
--   `scancode://x11-keith-packard`
-
--   `X11-Style (Keith Packard)`
-
 Comments on (easy) usability
 ----------------------------
 
 General Comments
 ----------------
-
--   “this is actually the same as the x11-keith-packard” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
-    (CC0-1.0))
 
 URLs
 ----
@@ -27,29 +15,6 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/HPND-sell-variant.json
 
 -   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth\_gss/gss\_generic\_token.c?h=v4.19
-
--   http://www.freedesktop.org/software/fontconfig/release/
-
-Text
-----
-
-    Permission to use, copy, modify, distribute, and sell this software and its
-    documentation for any purpose is hereby granted without fee, provided that the
-    above copyright notice appears in all copies, and that both that the copyright
-    notice and this permission notice appear in supporting documentation , and that
-    the name of copyright holder or related entities not be used in advertising
-    or publicity pertaining to distribution of the software without specific,
-    written prior permission.
-
-    copyright holder makes no representations about the suitability of this software
-    for any purpose. It is provided "as is" without express or implied warranty.
-
-    copyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
-    INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.
-    IN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR
-    CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
-    DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
-    ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -63,31 +28,14 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/HPND-sell-variant.html "SPDX") (all
     data \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
-    (CC0-1.0)
-
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-keith-packard.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "HPND-sell-variant",
-            "Historical Permission Notice and Disclaimer - sell variant",
-            "scancode://historical-sell-variant",
-            "scancode://x11-keith-packard",
-            "X11-Style (Keith Packard)"
+            "Historical Permission Notice and Disclaimer - sell variant"
         ],
         "__impliedId": "HPND-sell-variant",
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "this is actually the same as the x11-keith-packard"
-                ]
-            ]
-        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -127,62 +75,9 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "HPND-sell-variant"
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19"
-                ],
-                "homepageUrl": null,
-                "shortName": "Historical Permission Notice and Disclaimer - sell variant",
-                "textUrls": null,
-                "text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that the\nabove copyright notice appears in all copies, and that both that the copyright\nnotice and this permission notice appear in supporting documentation , and that\nthe name of copyright holder or related entities not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\ncopyright holder makes no representations about the suitability of this software\nfor any purpose. It is provided \"as is\" without express or implied warranty.\n\ncopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.\nIN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS\nACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "Unspecified",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml",
-                "key": "historical-sell-variant",
-                "name": "Historical Permission Notice and Disclaimer - sell variant",
-                "spdxId": null,
-                "notes": "this is actually the same as the x11-keith-packard",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://historical-sell-variant",
-                        "Historical Permission Notice and Disclaimer - sell variant"
-                    ],
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "this is actually the same as the x11-keith-packard"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that the\nabove copyright notice appears in all copies, and that both that the copyright\nnotice and this permission notice appear in supporting documentation , and that\nthe name of copyright holder or related entities not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\ncopyright holder makes no representations about the suitability of this software\nfor any purpose. It is provided \"as is\" without express or implied warranty.\n\ncopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.\nIN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS\nACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
-                    "__impliedURLs": [
-                        [
-                            null,
-                            "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19"
-                        ]
-                    ]
-                }
             }
         },
-        "__impliedCopyleft": [
-            [
-                "Scancode",
-                "NoCopyleft"
-            ]
-        ],
-        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided that the\nabove copyright notice appears in all copies, and that both that the copyright\nnotice and this permission notice appear in supporting documentation , and that\nthe name of copyright holder or related entities not be used in advertising\nor publicity pertaining to distribution of the software without specific,\nwritten prior permission.\n\ncopyright holder makes no representations about the suitability of this software\nfor any purpose. It is provided \"as is\" without express or implied warranty.\n\ncopyright holder DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,\nINCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS.\nIN NO EVENT SHALL copyright holder BE LIABLE FOR ANY SPECIAL, INDIRECT OR\nCONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,\nDATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS\nACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -191,10 +86,6 @@ Raw Data
             [
                 null,
                 "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/net/sunrpc/auth_gss/gss_generic_token.c?h=v4.19"
-            ],
-            [
-                null,
-                "http://www.freedesktop.org/software/fontconfig/release/"
             ]
         ]
     }

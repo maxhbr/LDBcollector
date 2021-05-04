@@ -5,10 +5,6 @@ Beerware License (Beerware)
 
 **Other Names:**
 
--   `scancode://beerware`
-
--   `Beer-Ware License`
-
 -   `Beerware 42`
 
 Comments on (easy) usability
@@ -37,21 +33,13 @@ General Comments
 URLs
 ----
 
--   **Homepage:** http://people.freebsd.org/~phk/
-
 -   **SPDX:** https://spdx.org/licenses/Beerware.html
 
 -   **SPDX:** http://spdx.org/licenses/Beerware.json
 
 -   https://fedoraproject.org/wiki/Licensing/Beerware
 
-Text
-----
-
-    "THE BEER-WARE LICENSE" (Revision 42):
-    <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
-    can do whatever you want with this stuff. If we meet some day, and you think
-    this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
+-   https://people.freebsd.org/~phk/
 
 ------------------------------------------------------------------------
 
@@ -81,9 +69,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Beerware.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml "Scancode")
-    (CC0-1.0)
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -93,8 +78,6 @@ Raw Data
         "__impliedNames": [
             "Beerware",
             "Beerware License",
-            "scancode://beerware",
-            "Beer-Ware License",
             "Beerware 42"
         ],
         "__impliedId": "Beerware",
@@ -173,49 +156,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "https://people.freebsd.org/~phk/"
-                ],
-                "homepageUrl": "http://people.freebsd.org/~phk/",
-                "shortName": "Beer-Ware License",
-                "textUrls": null,
-                "text": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "FreeBSD",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml",
-                "key": "beerware",
-                "name": "Beer-Ware License",
-                "spdxId": "Beerware",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://beerware",
-                        "Beer-Ware License",
-                        "Beerware"
-                    ],
-                    "__impliedId": "Beerware",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://people.freebsd.org/~phk/"
-                        ],
-                        [
-                            null,
-                            "https://people.freebsd.org/~phk/"
                         ]
                     ]
                 }
@@ -368,15 +308,10 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "\"THE BEER-WARE LICENSE\" (Revision 42):\n<phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -393,10 +328,6 @@ Raw Data
             [
                 null,
                 "https://people.freebsd.org/~phk/"
-            ],
-            [
-                "Homepage",
-                "http://people.freebsd.org/~phk/"
             ]
         ]
     }

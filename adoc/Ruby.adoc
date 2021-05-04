@@ -5,15 +5,14 @@
 |Key |Value
 |Fullname |Ruby License
 |Shortname |Ruby
-|Rating |Unknown, probably Attention or Stop or No-Go
-|Classification |WeakCopyleft
+|Rating |Go
+|Classification |NoCopyleft
 |===
 
 *Other Names:*
 
 * `Ruby License (1.9.2 and earlier)`
 * `Ruby License (1.9.3 and later)`
-* `scancode://ruby`
 
 === Comments on (easy) usability
 
@@ -34,25 +33,14 @@ Policy]
 * ``https://www.ruby-lang.org/en/about/license.txt'' (source:
 https://github.com/Hitachi/open-license[Hitachi open-license]
 (CDLA-Permissive-1.0))
-* ``This version of the Ruby license is the latest found in the dual
-license COPYING dated from 2010-09-15 Per SPDX.org, Ruby is
-disjunctively licensed project that allows the choice of this license
-and another. The other license choice has changed over time (from GPL
-originally, to BSD-2-Clause currently), so one needs to be aware of that
-change. The Ruby License itself is un-versioned, but has varied a bit
-over the years, the last substantive variation being in 2002. ''
-(source:
-https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml[Scancode]
-(CC0-1.0))
 
 === URLs
 
-* *Homepage:* http://www.ruby-lang.org/en/LICENSE.txt
 * *SPDX:* https://spdx.org/licenses/Ruby.html
 * *SPDX:* http://spdx.org/licenses/Ruby.json
 * *open-license:* http://open-license.hitachi.com/licenses/2
 * *open-license:* http://open-license.hitachi.com/licenses/3
-* https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING
+* http://www.ruby-lang.org/en/LICENSE.txt
 
 === Description from open-license
 
@@ -124,6 +112,10 @@ OR
 === Text
 
 ....
+Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.jp>.
+You can redistribute it and/or modify it under either the terms of the GPL
+version 2 (see the file GPL), or the conditions below:
+
   1. You may make and give away verbatim copies of the source form of the
      software without restriction, provided that you duplicate all of the
      original copyright notices and associated disclaimers.
@@ -133,8 +125,8 @@ OR
 
        a) place your modifications in the Public Domain or otherwise
           make them Freely Available, such as by posting said
-          modifications to Usenet or an equivalent medium, or by allowing
-          the author to include your modifications in the software.
+	  modifications to Usenet or an equivalent medium, or by allowing
+	  the author to include your modifications in the software.
 
        b) use the modified software only within your corporation or
           organization.
@@ -148,11 +140,11 @@ OR
      provided that you do at least ONE of the following:
 
        a) distribute the binaries and library files of the software,
-          together with instructions (in the manual page or equivalent)
-          on where to get the original distribution.
+	  together with instructions (in the manual page or equivalent)
+	  on where to get the original distribution.
 
        b) accompany the distribution with the machine-readable source of
-          the software.
+	  the software.
 
        c) give non-standard binaries non-standard names, with
           instructions on where to get the original software distribution.
@@ -166,9 +158,9 @@ OR
      For the list of those files and their copying conditions, see the
      file LEGAL.
 
-  5. The scripts and library files supplied as input to or produced as
+  5. The scripts and library files supplied as input to or produced as 
      output from the software do not automatically fall under the
-     copyright of the software, but belong to whomever generated them,
+     copyright of the software, but belong to whomever generated them, 
      and may be sold commercially, and may be aggregated with this
      software.
 
@@ -202,8 +194,6 @@ license-compatibility-checker]
 (CDLA-Permissive-1.0)
 * https://spdx.org/licenses/Ruby.html[SPDX] (all data [in this
 repository] is generated)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml[Scancode]
-(CC0-1.0)
 
 ==== Raw JSON
 
@@ -213,8 +203,7 @@ repository] is generated)
         "Ruby",
         "Ruby License",
         "Ruby License (1.9.2 and earlier)",
-        "Ruby License (1.9.3 and later)",
-        "scancode://ruby"
+        "Ruby License (1.9.3 and later)"
     ],
     "__impliedId": "Ruby",
     "__isFsfFree": true,
@@ -226,12 +215,6 @@ repository] is generated)
             "Hitachi open-license",
             [
                 "https://www.ruby-lang.org/en/about/license.txt"
-            ]
-        ],
-        [
-            "Scancode",
-            [
-                "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
             ]
         ]
     ],
@@ -300,57 +283,6 @@ repository] is generated)
                             "tag": "PositiveJudgement",
                             "contents": "This software Licenses is OK for Fedora"
                         }
-                    ]
-                ]
-            }
-        },
-        "Scancode": {
-            "otherUrls": [
-                "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
-            ],
-            "homepageUrl": "http://www.ruby-lang.org/en/LICENSE.txt",
-            "shortName": "Ruby License",
-            "textUrls": null,
-            "text": "\n  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.",
-            "category": "Copyleft Limited",
-            "osiUrl": null,
-            "owner": "Ruby",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml",
-            "key": "ruby",
-            "name": "Ruby License",
-            "spdxId": "Ruby",
-            "notes": "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n",
-            "_implications": {
-                "__impliedNames": [
-                    "scancode://ruby",
-                    "Ruby License",
-                    "Ruby"
-                ],
-                "__impliedId": "Ruby",
-                "__impliedComments": [
-                    [
-                        "Scancode",
-                        [
-                            "This version of the Ruby license is the latest found in the dual license\nCOPYING dated from 2010-09-15 Per SPDX.org, Ruby is disjunctively licensed\nproject that allows the choice of this license and another. The other\nlicense choice has changed over time (from GPL originally, to BSD-2-Clause\ncurrently), so one needs to be aware of that change. The Ruby License\nitself is un-versioned, but has varied a bit over the years, the last\nsubstantive variation being in 2002.\n"
-                        ]
-                    ]
-                ],
-                "__impliedCopyleft": [
-                    [
-                        "Scancode",
-                        "WeakCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "WeakCopyleft",
-                "__impliedText": "\n  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.",
-                "__impliedURLs": [
-                    [
-                        "Homepage",
-                        "http://www.ruby-lang.org/en/LICENSE.txt"
-                    ],
-                    [
-                        null,
-                        "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
                     ]
                 ]
             }
@@ -618,15 +550,11 @@ repository] is generated)
         [
             "HansHammel license-compatibility-checker",
             "NoCopyleft"
-        ],
-        [
-            "Scancode",
-            "WeakCopyleft"
         ]
     ],
-    "__calculatedCopyleft": "WeakCopyleft",
+    "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "\n  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n          modifications to Usenet or an equivalent medium, or by allowing\n          the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n          together with instructions (in the manual page or equivalent)\n          on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n          the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as\n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them,\n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.",
+    "__impliedText": "Ruby is copyrighted free software by Yukihiro Matsumoto <matz@netlab.jp>.\nYou can redistribute it and/or modify it under either the terms of the GPL\nversion 2 (see the file GPL), or the conditions below:\n\n  1. You may make and give away verbatim copies of the source form of the\n     software without restriction, provided that you duplicate all of the\n     original copyright notices and associated disclaimers.\n\n  2. You may modify your copy of the software in any way, provided that\n     you do at least ONE of the following:\n\n       a) place your modifications in the Public Domain or otherwise\n          make them Freely Available, such as by posting said\n\t  modifications to Usenet or an equivalent medium, or by allowing\n\t  the author to include your modifications in the software.\n\n       b) use the modified software only within your corporation or\n          organization.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  3. You may distribute the software in object code or binary form,\n     provided that you do at least ONE of the following:\n\n       a) distribute the binaries and library files of the software,\n\t  together with instructions (in the manual page or equivalent)\n\t  on where to get the original distribution.\n\n       b) accompany the distribution with the machine-readable source of\n\t  the software.\n\n       c) give non-standard binaries non-standard names, with\n          instructions on where to get the original software distribution.\n\n       d) make other distribution arrangements with the author.\n\n  4. You may modify and include the part of the software into any other\n     software (possibly commercial).  But some files in the distribution\n     are not written by the author, so that they are not under these terms.\n\n     For the list of those files and their copying conditions, see the\n     file LEGAL.\n\n  5. The scripts and library files supplied as input to or produced as \n     output from the software do not automatically fall under the\n     copyright of the software, but belong to whomever generated them, \n     and may be sold commercially, and may be aggregated with this\n     software.\n\n  6. THIS SOFTWARE IS PROVIDED \"AS IS\" AND WITHOUT ANY EXPRESS OR\n     IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED\n     WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR\n     PURPOSE.\n",
     "__impliedURLs": [
         [
             "SPDX",
@@ -647,14 +575,6 @@ repository] is generated)
         [
             null,
             "http://www.ruby-lang.org/en/LICENSE.txt"
-        ],
-        [
-            "Homepage",
-            "http://www.ruby-lang.org/en/LICENSE.txt"
-        ],
-        [
-            null,
-            "https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING"
         ]
     ]
 }

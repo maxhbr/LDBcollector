@@ -7,10 +7,6 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 -   `BSD License (original)`
 
--   `scancode://bsd-original`
-
--   `BSD-Original`
-
 Description
 -----------
 
@@ -48,11 +44,6 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
--   “Per SPDX.org, this license was rescinded by the author on 22
-    July 1999.” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode")
-    (CC0-1.0))
-
 Obligations
 -----------
 
@@ -65,10 +56,6 @@ Obligations
 URLs
 ----
 
--   **Homepage:** http://www.xfree86.org/3.3.6/COPYRIGHT2.html
-
--   **OSI Page:** http://www.opensource.org/licenses/bsd-license.php
-
 -   **SPDX:** https://spdx.org/licenses/BSD-4-Clause.html
 
 -   **SPDX:** http://spdx.org/licenses/BSD-4-Clause.json
@@ -76,10 +63,6 @@ URLs
 -   **open-license:** http://open-license.hitachi.com/licenses/277
 
 -   http://directory.fsf.org/wiki/License:BSD\_4Clause
-
--   http://www.fsf.org/licensing/essays/bsd.html
-
--   http://www.gnu.org/philosophy/bsd.html
 
 Description from open-license
 -----------------------------
@@ -125,34 +108,34 @@ Description from open-license
 Text
 ----
 
-    Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions are met:
+    Copyright (c) {{year}}, {{copyright holder}} 
+    All rights reserved. 
 
-    1. Redistributions of source code must retain the above copyright notice,
-    this list of conditions and the following disclaimer.
+    Redistribution and use in source and binary forms, with or without 
+    modification, are permitted provided that the following conditions are met: 
 
-    2. Redistributions in binary form must reproduce the above copyright notice,
-    this list of conditions and the following disclaimer in the documentation
-    and/or other materials provided with the distribution.
+        1. Redistributions of source code must retain the above copyright 
+        notice, this list of conditions and the following disclaimer. 
+        2. Redistributions in binary form must reproduce the above copyright 
+        notice, this list of conditions and the following disclaimer in the 
+        documentation and/or other materials provided with the distribution. 
+        3. All advertising materials mentioning features or use of this software 
+        must display the following acknowledgement: 
+        This product includes software developed by {{the organization}}. 
+        4. Neither the name of {{the organization nor the 
+        names of its contributors}} may be used to endorse or promote products 
+        derived from this software without specific prior written permission. 
 
-    3. All advertising materials mentioning features or use of this software
-    must display the following acknowledgement: This product includes software
-    developed by the <organization>.
-
-    4. Neither the name of the <organization> nor the names of its contributors
-    may be used to endorse or promote products derived from this software
-    without specific prior written permission.
-
-    THIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR
-    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-    MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO
-    EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,
-    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,
-    OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
-    EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    THIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} "AS IS" AND ANY 
+    EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED 
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE 
+    DISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY 
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES 
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND 
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT 
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 
@@ -196,9 +179,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/BSD-4-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
@@ -207,9 +187,7 @@ Raw Data
             "BSD License (original)",
             "BSD 4-Clause \"Original\" or \"Old\" License",
             "bsd-4-clause",
-            "BSD 4-clause \"Original\" or \"Old\" License",
-            "scancode://bsd-original",
-            "BSD-Original"
+            "BSD 4-clause \"Original\" or \"Old\" License"
         ],
         "__impliedId": "BSD-4-Clause",
         "__isFsfFree": true,
@@ -235,12 +213,6 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "BSD-4-Clause"
-                ]
-            ],
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
                 ]
             ]
         ],
@@ -309,71 +281,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://directory.fsf.org/wiki/License:BSD_4Clause",
-                    "http://www.fsf.org/licensing/essays/bsd.html",
-                    "http://www.gnu.org/philosophy/bsd.html"
-                ],
-                "homepageUrl": "http://www.xfree86.org/3.3.6/COPYRIGHT2.html",
-                "shortName": "BSD-Original",
-                "textUrls": null,
-                "text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software\nmust display the following acknowledgement: This product includes software\ndeveloped by the <organization>.\n\n4. Neither the name of the <organization> nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                "category": "Permissive",
-                "osiUrl": "http://www.opensource.org/licenses/bsd-license.php",
-                "owner": "Regents of the University of California",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml",
-                "key": "bsd-original",
-                "name": "BSD-Original",
-                "spdxId": "BSD-4-Clause",
-                "notes": "Per SPDX.org, this license was rescinded by the author on 22 July 1999.",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://bsd-original",
-                        "BSD-Original",
-                        "BSD-4-Clause"
-                    ],
-                    "__impliedId": "BSD-4-Clause",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license was rescinded by the author on 22 July 1999."
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software\nmust display the following acknowledgement: This product includes software\ndeveloped by the <organization>.\n\n4. Neither the name of the <organization> nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
-                        ],
-                        [
-                            "OSI Page",
-                            "http://www.opensource.org/licenses/bsd-license.php"
-                        ],
-                        [
-                            null,
-                            "http://directory.fsf.org/wiki/License:BSD_4Clause"
-                        ],
-                        [
-                            null,
-                            "http://www.fsf.org/licensing/essays/bsd.html"
-                        ],
-                        [
-                            null,
-                            "http://www.gnu.org/philosophy/bsd.html"
                         ]
                     ]
                 }
@@ -781,10 +688,6 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
@@ -825,7 +728,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": false,
-        "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice,\nthis list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. All advertising materials mentioning features or use of this software\nmust display the following acknowledgement: This product includes software\ndeveloped by the <organization>.\n\n4. Neither the name of the <organization> nor the names of its contributors\nmay be used to endorse or promote products derived from this software\nwithout specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY <COPYRIGHT HOLDER> ''AS IS'' AND ANY EXPRESS OR\nIMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO\nEVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA,\nOR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,\nEVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__impliedText": "Copyright (c) {{year}}, {{copyright holder}} \nAll rights reserved. \n\nRedistribution and use in source and binary forms, with or without \nmodification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright \n    notice, this list of conditions and the following disclaimer. \n    2. Redistributions in binary form must reproduce the above copyright \n    notice, this list of conditions and the following disclaimer in the \n    documentation and/or other materials provided with the distribution. \n    3. All advertising materials mentioning features or use of this software \n    must display the following acknowledgement: \n    This product includes software developed by {{the organization}}. \n    4. Neither the name of {{the organization nor the \n    names of its contributors}} may be used to endorse or promote products \n    derived from this software without specific prior written permission. \n\nTHIS SOFTWARE IS PROVIDED BY {{COPYRIGHT HOLDER}} \"AS IS\" AND ANY \nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED \nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE \nDISCLAIMED. IN NO EVENT SHALL {{COPYRIGHT HOLDER}} BE LIABLE FOR ANY \nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES \n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; \nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND \nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS \nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -842,22 +745,6 @@ Raw Data
             [
                 null,
                 "http://directory.fsf.org/wiki/License:BSD_4Clause"
-            ],
-            [
-                "Homepage",
-                "http://www.xfree86.org/3.3.6/COPYRIGHT2.html"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/bsd-license.php"
-            ],
-            [
-                null,
-                "http://www.fsf.org/licensing/essays/bsd.html"
-            ],
-            [
-                null,
-                "http://www.gnu.org/philosophy/bsd.html"
             ]
         ]
     }

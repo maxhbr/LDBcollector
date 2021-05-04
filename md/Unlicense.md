@@ -5,8 +5,6 @@ The Unlicense (Unlicense)
 
 **Other Names:**
 
--   `scancode://unlicense`
-
 -   `Unlicense 1`
 
 Description
@@ -46,10 +44,6 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
--   “Per SPDX.org, this is a public domain dedication” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode")
-    (CC0-1.0))
-
 Obligations
 -----------
 
@@ -62,13 +56,13 @@ Obligations
 URLs
 ----
 
--   **Homepage:** http://unlicense.org/
-
 -   **SPDX:** https://spdx.org/licenses/Unlicense.html
 
 -   **SPDX:** http://spdx.org/licenses/Unlicense.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/844
+
+-   https://unlicense.org/
 
 Description from open-license
 -----------------------------
@@ -164,9 +158,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Unlicense.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode")
-    (CC0-1.0)
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -177,7 +168,6 @@ Raw Data
             "Unlicense",
             "The Unlicense",
             "unlicense",
-            "scancode://unlicense",
             "Unlicense 1"
         ],
         "__impliedId": "Unlicense",
@@ -190,12 +180,6 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "http://unlicense.org/"
-                ]
-            ],
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this is a public domain dedication"
                 ]
             ]
         ],
@@ -318,51 +302,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "http://unlicense.org/",
-                "shortName": "Unlicense",
-                "textUrls": null,
-                "text": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>",
-                "category": "Public Domain",
-                "osiUrl": null,
-                "owner": "Unlicense",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml",
-                "key": "unlicense",
-                "name": "Unlicense",
-                "spdxId": "Unlicense",
-                "notes": "Per SPDX.org, this is a public domain dedication",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://unlicense",
-                        "Unlicense",
-                        "Unlicense"
-                    ],
-                    "__impliedId": "Unlicense",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this is a public domain dedication"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This is free and unencumbered software released into the public domain.\n\nAnyone is free to copy, modify, publish, use, compile, sell, or\ndistribute this software, either in source code form or as a compiled\nbinary, for any purpose, commercial or non-commercial, and by any\nmeans.\n\nIn jurisdictions that recognize copyright laws, the author or authors\nof this software dedicate any and all copyright interest in the\nsoftware to the public domain. We make this dedication for the benefit\nof the public at large and to the detriment of our heirs and\nsuccessors. We intend this dedication to be an overt act of\nrelinquishment in perpetuity of all present and future rights to this\nsoftware under copyright law.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR\nOTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,\nARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR\nOTHER DEALINGS IN THE SOFTWARE.\n\nFor more information, please refer to <http://unlicense.org/>",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://unlicense.org/"
                         ]
                     ]
                 }
@@ -675,10 +614,6 @@ Raw Data
                 "NoCopyleft"
             ],
             [
-                "Scancode",
-                "NoCopyleft"
-            ],
-            [
                 "librariesio license-compatibility",
                 "NoCopyleft"
             ]
@@ -733,10 +668,6 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/Unlicense.json"
-            ],
-            [
-                "Homepage",
-                "http://unlicense.org/"
             ]
         ]
     }

@@ -3,10 +3,6 @@ diffmark license (diffmark)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://diffmark`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -22,32 +18,14 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per Fedora, this extremely minimal and permissive license was found
-    in diffmark (0.08). While poorly written, our interpretation of the
-    text permits use, modification, and distribution. It also permits
-    wearing it as a hat or eating it for lunch, although neither of
-    those cases are recommended. This would perhaps be considered
-    Copyright only, except that no requirement of retention of copyright
-    is present, and the copyright holder is disclaiming liability
-    (albeit, poorly). This license is Free, and GPL compatible. ”
-    (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/diffmark
 
 -   **SPDX:** https://spdx.org/licenses/diffmark.html
 
 -   **SPDX:** http://spdx.org/licenses/diffmark.json
 
-Text
-----
-
-    1. you can do what you want with it
-    2. I refuse any responsibility for the consequences
+-   https://fedoraproject.org/wiki/Licensing/diffmark
 
 ------------------------------------------------------------------------
 
@@ -69,30 +47,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/diffmark.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "diffmark",
-            "diffmark license",
-            "scancode://diffmark",
-            "diffmark License"
+            "diffmark license"
         ],
         "__impliedId": "diffmark",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "diffmark"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
-                ]
-            ]
         ],
         "facts": {
             "LicenseName": {
@@ -163,51 +128,6 @@ Raw Data
                     ]
                 }
             },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/diffmark",
-                "shortName": "diffmark License",
-                "textUrls": null,
-                "text": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
-                "category": "Public Domain",
-                "osiUrl": null,
-                "owner": "Unspecified",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml",
-                "key": "diffmark",
-                "name": "diffmark License",
-                "spdxId": "diffmark",
-                "notes": "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://diffmark",
-                        "diffmark License",
-                        "diffmark"
-                    ],
-                    "__impliedId": "diffmark",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per Fedora, this extremely minimal and permissive license was found in\ndiffmark (0.08). While poorly written, our interpretation of the text\npermits use, modification, and distribution. It also permits wearing it as\na hat or eating it for lunch, although neither of those cases are\nrecommended. This would perhaps be considered Copyright only, except that\nno requirement of retention of copyright is present, and the copyright\nholder is disclaiming liability (albeit, poorly). This license is Free, and\nGPL compatible.\n"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://fedoraproject.org/wiki/Licensing/diffmark"
-                        ]
-                    ]
-                }
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/diffmark.html",
@@ -265,15 +185,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "1. you can do what you want with it\n2. I refuse any responsibility for the consequences",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -285,10 +200,6 @@ Raw Data
             ],
             [
                 null,
-                "https://fedoraproject.org/wiki/Licensing/diffmark"
-            ],
-            [
-                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/diffmark"
             ]
         ]

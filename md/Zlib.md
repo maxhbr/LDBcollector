@@ -17,8 +17,6 @@ zlib License (Zlib)
 
 -   `License :: OSI Approved :: zlib/libpng License`
 
--   `scancode://zlib`
-
 Description
 -----------
 
@@ -57,10 +55,6 @@ Comments on (easy) usability
 General Comments
 ----------------
 
--   “Per SPDX.org, this is OSI certified” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode")
-    (CC0-1.0))
-
 Obligations
 -----------
 
@@ -73,11 +67,7 @@ Obligations
 URLs
 ----
 
--   **Homepage:** http://www.zlib.net/
-
 -   **OSI Page:** https://opensource.org/licenses/Zlib
-
--   **OSI Page:** http://www.opensource.org/licenses/zlib-license.php
 
 -   **SPDX:** https://spdx.org/licenses/Zlib.html
 
@@ -86,8 +76,6 @@ URLs
 -   **open-license:** http://open-license.hitachi.com/licenses/16
 
 -   http://www.zlib.net/zlib\_license.html
-
--   http://www.opensource.org/licenses/Zlib
 
 Description from open-license
 -----------------------------
@@ -149,23 +137,22 @@ Description from open-license
 Text
 ----
 
-    This software is provided 'as-is', without any express or implied warranty. In no
-    event will the authors be held liable for any damages arising from the use of this
-    software.
+    The zlib/libpng License
 
-    Permission is granted to anyone to use this software for any purpose, including
-    commercial applications, and to alter it and redistribute it freely, subject to
-    the following restrictions:
+    Copyright (c) ＜year＞ ＜copyright holders＞
 
-    1. The origin of this software must not be misrepresented; you must not claim that
-       you wrote the original software. If you use this software in a product, an
-       acknowledgment in the product documentation would be appreciated but is not
-       required.
+    This software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.
 
-    2. Altered source versions must be plainly marked as such, and must not be
-       misrepresented as being the original software.
+    Permission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:
 
-    3. This notice may not be removed or altered from any source distribution.
+          1. The origin of this software must not be misrepresented; you must not claim that you wrote  
+            the original software. If you use this software in a product, an acknowledgment in the product 
+            documentation  would be appreciated but is not required.
+
+          2. Altered source versions must be plainly marked as such, and must not be misrepresented as being 
+             the original software.
+
+          3. This notice may not be removed or altered from any source distribution.
 
 ------------------------------------------------------------------------
 
@@ -221,9 +208,6 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Zlib.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml "Scancode")
-    (CC0-1.0)
-
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -239,23 +223,13 @@ Raw Data
             "zlib/libpng license",
             "zlib-license",
             "The zlib/libpng License (Zlib)",
-            "License :: OSI Approved :: zlib/libpng License",
-            "scancode://zlib",
-            "ZLIB License"
+            "License :: OSI Approved :: zlib/libpng License"
         ],
         "__impliedId": "Zlib",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "The zlib/libpng License (Zlib)",
             "zlib"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this is OSI certified"
-                ]
-            ]
         ],
         "__hasPatentHint": false,
         "facts": {
@@ -368,71 +342,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://www.opensource.org/licenses/Zlib",
-                    "http://www.zlib.net/zlib_license.html",
-                    "https://opensource.org/licenses/Zlib"
-                ],
-                "homepageUrl": "http://www.zlib.net/",
-                "shortName": "ZLIB License",
-                "textUrls": null,
-                "text": "This software is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of this\nsoftware.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim that\n   you wrote the original software. If you use this software in a product, an\n   acknowledgment in the product documentation would be appreciated but is not\n   required.\n\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.\n",
-                "category": "Permissive",
-                "osiUrl": "http://www.opensource.org/licenses/zlib-license.php",
-                "owner": "zlib",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib.yml",
-                "key": "zlib",
-                "name": "ZLIB License",
-                "spdxId": "Zlib",
-                "notes": "Per SPDX.org, this is OSI certified",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://zlib",
-                        "ZLIB License",
-                        "Zlib"
-                    ],
-                    "__impliedId": "Zlib",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this is OSI certified"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of this\nsoftware.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim that\n   you wrote the original software. If you use this software in a product, an\n   acknowledgment in the product documentation would be appreciated but is not\n   required.\n\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.\n",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.zlib.net/"
-                        ],
-                        [
-                            "OSI Page",
-                            "http://www.opensource.org/licenses/zlib-license.php"
-                        ],
-                        [
-                            null,
-                            "http://www.opensource.org/licenses/Zlib"
-                        ],
-                        [
-                            null,
-                            "http://www.zlib.net/zlib_license.html"
-                        ],
-                        [
-                            null,
-                            "https://opensource.org/licenses/Zlib"
                         ]
                     ]
                 }
@@ -976,10 +885,6 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
@@ -1024,7 +929,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": true,
-        "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In no\nevent will the authors be held liable for any damages arising from the use of this\nsoftware.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim that\n   you wrote the original software. If you use this software in a product, an\n   acknowledgment in the product documentation would be appreciated but is not\n   required.\n\n2. Altered source versions must be plainly marked as such, and must not be\n   misrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.\n",
+        "__impliedText": "The zlib/libpng License\n\nCopyright (c) ＜year＞ ＜copyright holders＞\n\nThis software is provided 'as-is', without any express or implied warranty. In no event will the authors be held liable for any damages arising from the use of this software.\n\nPermission is granted to anyone to use this software for any purpose, including commercial applications, and to alter it and redistribute it freely, subject to the following restrictions:\n\n      1. The origin of this software must not be misrepresented; you must not claim that you wrote  \n        the original software. If you use this software in a product, an acknowledgment in the product \n        documentation  would be appreciated but is not required.\n\n      2. Altered source versions must be plainly marked as such, and must not be misrepresented as being \n         the original software.\n\n      3. This notice may not be removed or altered from any source distribution.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -1049,18 +954,6 @@ Raw Data
             [
                 null,
                 "http://www.zlib.net/zlib_license.html"
-            ],
-            [
-                "Homepage",
-                "http://www.zlib.net/"
-            ],
-            [
-                "OSI Page",
-                "http://www.opensource.org/licenses/zlib-license.php"
-            ],
-            [
-                null,
-                "http://www.opensource.org/licenses/Zlib"
             ]
         ]
     }

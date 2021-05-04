@@ -3,10 +3,6 @@ Afmparse License (Afmparse)
 
 [TABLE]
 
-**Other Names:**
-
--   `scancode://afmparse`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -25,32 +21,11 @@ General Comments
 URLs
 ----
 
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/Afmparse
-
 -   **SPDX:** https://spdx.org/licenses/Afmparse.html
 
 -   **SPDX:** http://spdx.org/licenses/Afmparse.json
 
-Text
-----
-
-    This file may be freely copied and redistributed as long as:  
-
-         1) This entire notice continues to be included in the file,  
-
-         2) If the file has been modified in any way, a notice of such modification
-         is conspicuously indicated.
-
-    PostScript, Display PostScript,and Adobe are registered trademarks of Adobe
-    Systems Incorporated.
-
-    THE INFORMATION BELOW IS FURNISHED AS IS, IS SUBJECT TO CHANGE WITHOUT NOTICE,
-    AND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ADOBE SYSTEMS INCORPORATED. ADOBE
-    SYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR LIABILITY FOR ANY ERRORS OR
-    INACCURACIES, MAKES NO WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR STATUTORY) WITH
-    RESPECT TO THIS INFORMATION, AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD
-    PARTY RIGHTS.
+-   https://fedoraproject.org/wiki/Licensing/Afmparse
 
 ------------------------------------------------------------------------
 
@@ -72,17 +47,12 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Afmparse.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afmparse.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Afmparse",
-            "Afmparse License",
-            "scancode://afmparse",
-            "afmparse License"
+            "Afmparse License"
         ],
         "__impliedId": "Afmparse",
         "__isFsfFree": true,
@@ -158,43 +128,6 @@ Raw Data
                     ]
                 }
             },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Afmparse",
-                "shortName": "afmparse License",
-                "textUrls": null,
-                "text": "This file may be freely copied and redistributed as long as:  \n\n     1) This entire notice continues to be included in the file,  \n\n     2) If the file has been modified in any way, a notice of such modification\n     is conspicuously indicated.\n\nPostScript, Display PostScript,and Adobe are registered trademarks of Adobe\nSystems Incorporated.\n\nTHE INFORMATION BELOW IS FURNISHED AS IS, IS SUBJECT TO CHANGE WITHOUT NOTICE,\nAND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ADOBE SYSTEMS INCORPORATED. ADOBE\nSYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR LIABILITY FOR ANY ERRORS OR\nINACCURACIES, MAKES NO WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR STATUTORY) WITH\nRESPECT TO THIS INFORMATION, AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD\nPARTY RIGHTS.",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "Adobe Systems",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afmparse.yml",
-                "key": "afmparse",
-                "name": "afmparse License",
-                "spdxId": "Afmparse",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://afmparse",
-                        "afmparse License",
-                        "Afmparse"
-                    ],
-                    "__impliedId": "Afmparse",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "This file may be freely copied and redistributed as long as:  \n\n     1) This entire notice continues to be included in the file,  \n\n     2) If the file has been modified in any way, a notice of such modification\n     is conspicuously indicated.\n\nPostScript, Display PostScript,and Adobe are registered trademarks of Adobe\nSystems Incorporated.\n\nTHE INFORMATION BELOW IS FURNISHED AS IS, IS SUBJECT TO CHANGE WITHOUT NOTICE,\nAND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ADOBE SYSTEMS INCORPORATED. ADOBE\nSYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR LIABILITY FOR ANY ERRORS OR\nINACCURACIES, MAKES NO WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR STATUTORY) WITH\nRESPECT TO THIS INFORMATION, AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD\nPARTY RIGHTS.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "https://fedoraproject.org/wiki/Licensing/Afmparse"
-                        ]
-                    ]
-                }
-            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Afmparse.html",
@@ -252,15 +185,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This file may be freely copied and redistributed as long as:  \n\n     1) This entire notice continues to be included in the file,  \n\n     2) If the file has been modified in any way, a notice of such modification\n     is conspicuously indicated.\n\nPostScript, Display PostScript,and Adobe are registered trademarks of Adobe\nSystems Incorporated.\n\nTHE INFORMATION BELOW IS FURNISHED AS IS, IS SUBJECT TO CHANGE WITHOUT NOTICE,\nAND SHOULD NOT BE CONSTRUED AS A COMMITMENT BY ADOBE SYSTEMS INCORPORATED. ADOBE\nSYSTEMS INCORPORATED ASSUMES NO RESPONSIBILITY OR LIABILITY FOR ANY ERRORS OR\nINACCURACIES, MAKES NO WARRANTY OF ANY KIND (EXPRESS, IMPLIED OR STATUTORY) WITH\nRESPECT TO THIS INFORMATION, AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD\nPARTY RIGHTS.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -272,10 +200,6 @@ Raw Data
             ],
             [
                 null,
-                "https://fedoraproject.org/wiki/Licensing/Afmparse"
-            ],
-            [
-                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Afmparse"
             ]
         ]

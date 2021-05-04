@@ -7,8 +7,6 @@ TMate Open Source License (TMate)
 
 -   `TMate Open Source License for "TMate JavaSVN library"`
 
--   `scancode://tmate`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -26,8 +24,6 @@ General Comments
 
 URLs
 ----
-
--   **Homepage:** http://svnkit.com/licensing.html
 
 -   **SPDX:** http://spdx.org/licenses/TMate.json
 
@@ -91,13 +87,15 @@ Description from open-license
 Text
 ----
 
+    The TMate Open Source License.
+
     This license applies to all portions of TMate SVNKit library, which 
     are not externally-maintained libraries (e.g. Ganymed SSH library).
 
     All the source code and compiled classes in package org.tigris.subversion.javahl
     except SvnClient class are covered by the license in JAVAHL-LICENSE file
 
-    Copyright (c) 2004-2009 TMate Software. All rights reserved.
+    Copyright (c) 2004-2012 TMate Software. All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification, 
     are permitted provided that the following conditions are met:
@@ -161,17 +159,13 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/TMate.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tmate.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "TMate",
             "TMate Open Source License",
-            "TMate Open Source License for \"TMate JavaSVN library\"",
-            "scancode://tmate"
+            "TMate Open Source License for \"TMate JavaSVN library\""
         ],
         "__impliedId": "TMate",
         "__isFsfFree": true,
@@ -251,43 +245,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "http://svnkit.com/licensing.html",
-                "shortName": "TMate Open Source License",
-                "textUrls": null,
-                "text": "This license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2009 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                "category": "Copyleft",
-                "osiUrl": null,
-                "owner": "SVNKit (TMate)",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tmate.yml",
-                "key": "tmate",
-                "name": "TMate Open Source License",
-                "spdxId": "TMate",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://tmate",
-                        "TMate Open Source License",
-                        "TMate"
-                    ],
-                    "__impliedId": "TMate",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "Copyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "Copyleft",
-                    "__impliedText": "This license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2009 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://svnkit.com/licensing.html"
                         ]
                     ]
                 }
@@ -480,15 +437,8 @@ Raw Data
                 }
             ]
         ],
-        "__impliedCopyleft": [
-            [
-                "Scancode",
-                "Copyleft"
-            ]
-        ],
-        "__calculatedCopyleft": "Copyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2009 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__impliedText": "The TMate Open Source License.\n\nThis license applies to all portions of TMate SVNKit library, which \nare not externally-maintained libraries (e.g. Ganymed SSH library).\n\nAll the source code and compiled classes in package org.tigris.subversion.javahl\nexcept SvnClient class are covered by the license in JAVAHL-LICENSE file\n\nCopyright (c) 2004-2012 TMate Software. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, \nare permitted provided that the following conditions are met:\n\n    * Redistributions of source code must retain the above copyright notice, \n      this list of conditions and the following disclaimer.\n      \n    * Redistributions in binary form must reproduce the above copyright notice, \n      this list of conditions and the following disclaimer in the documentation \n      and/or other materials provided with the distribution.\n      \n    * Redistributions in any form must be accompanied by information on how to \n      obtain complete source code for the software that uses SVNKit and any \n      accompanying software that uses the software that uses SVNKit. The source \n      code must either be included in the distribution or be available for no \n      more than the cost of distribution plus a nominal fee, and must be freely \n      redistributable under reasonable conditions. For an executable file, complete \n      source code means the source code for all modules it contains. It does not \n      include source code for modules or files that typically accompany the major \n      components of the operating system on which the executable file runs.\n      \n    * Redistribution in any form without redistributing source code for software \n      that uses SVNKit is possible only when such redistribution is explictly permitted \n      by TMate Software. Please, contact TMate Software at support@svnkit.com to \n      get such permission.\n\nTHIS SOFTWARE IS PROVIDED BY TMATE SOFTWARE ``AS IS'' AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF \nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT, ARE \nDISCLAIMED. \n\nIN NO EVENT SHALL TMATE SOFTWARE BE LIABLE FOR ANY DIRECT, INDIRECT, \nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT \nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR \nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE \nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF \nADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
                 "open-license",
@@ -505,10 +455,6 @@ Raw Data
             [
                 null,
                 "http://svnkit.com/license.html"
-            ],
-            [
-                "Homepage",
-                "http://svnkit.com/licensing.html"
             ]
         ]
     }

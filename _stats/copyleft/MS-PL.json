@@ -1,8 +1,7 @@
 {
     "NoCopyleft": [
         "BlueOak License List",
-        "Google OSS Policy",
-        "Scancode"
+        "Google OSS Policy"
     ],
     "WeakCopyleft": [
         "HansHammel license-compatibility-checker"

@@ -5,11 +5,7 @@ SGI Free Software License B v2.0 (SGI-B-2.0)
 
 **Other Names:**
 
--   `SGI Free Software License B 2.0`
-
 -   `SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)`
-
--   `scancode://sgi-freeb-2.0`
 
 Comments on (easy) usability
 ----------------------------
@@ -18,23 +14,11 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
--   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
-    Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
-
 General Comments
 ----------------
 
--   “Per SPDX.org, this license was released 18 Sept 2008” (source:
-    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml "Scancode")
-    (CC0-1.0))
-
 URLs
 ----
-
--   **Homepage:**
-    http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
 
 -   **SPDX:** https://spdx.org/licenses/SGI-B-2.0.html
 
@@ -42,7 +26,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/327
 
--   http://oss.sgi.com/projects/FreeB/
+-   http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf
 
 Description from open-license
 -----------------------------
@@ -93,31 +77,17 @@ Description from open-license
 Text
 ----
 
-    Permission is hereby granted, free of charge, to any person obtaining a
-    copy of this software and associated documentation files (the
-    "Software"), to deal in the Software without restriction, including
-    without limitation the rights to use, copy, modify, merge, publish,
-    distribute, sublicense, and/or sell copies of the Software, and to
-    permit persons to whom the Software is furnished to do so, subject to
-    the following conditions:
+    SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)
 
-    The above copyright notice including the dates of first publication and
-    either this permission notice or a reference to
-    http://oss.sgi.com/projects/FreeB/ shall be included in all copies or
-    substantial portions of the Software.
+    Copyright (C) [dates of first publication] Silicon Graphics, Inc. All Rights Reserved.
 
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-    IN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,
-    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-    OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
-    THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
-    Except as contained in this notice, the name of Silicon Graphics, Inc.
-    shall not be used in advertising or otherwise to promote the sale, use
-    or other dealings in this Software without prior written authorization
-    from Silicon Graphics, Inc.
+    The above copyright notice including the dates of first publication and either this permission notice or a reference to http://oss.sgi.com/projects/FreeB/ shall be included in all copies or substantial portions of the Software. 
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+    Except as contained in this notice, the name of Silicon Graphics, Inc. shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from Silicon Graphics, Inc.
 
 ------------------------------------------------------------------------
 
@@ -132,10 +102,6 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
--   [Fedora Project
-    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
-    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
-
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -143,32 +109,15 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/SGI-B-2.0.html "SPDX") (all data
     \[in this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "SGI-B-2.0",
             "SGI Free Software License B v2.0",
-            "SGI Free Software License B 2.0",
-            "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)",
-            "scancode://sgi-freeb-2.0"
+            "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
         ],
         "__impliedId": "SGI-B-2.0",
-        "__isFsfFree": true,
-        "__impliedAmbiguousNames": [
-            "MIT"
-        ],
-        "__impliedComments": [
-            [
-                "Scancode",
-                [
-                    "Per SPDX.org, this license was released 18 Sept 2008"
-                ]
-            ]
-        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -208,86 +157,6 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "SGI-B-2.0"
-            },
-            "Fedora Project Wiki": {
-                "GPLv2 Compat?": "Yes",
-                "rating": "Good",
-                "Upstream URL": "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf",
-                "GPLv3 Compat?": "Yes",
-                "Short Name": "MIT",
-                "licenseType": "license",
-                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
-                "Full Name": "SGI Free Software License B 2.0",
-                "FSF Free?": "Yes",
-                "_implications": {
-                    "__impliedNames": [
-                        "SGI Free Software License B 2.0"
-                    ],
-                    "__isFsfFree": true,
-                    "__impliedAmbiguousNames": [
-                        "MIT"
-                    ],
-                    "__impliedJudgement": [
-                        [
-                            "Fedora Project Wiki",
-                            {
-                                "tag": "PositiveJudgement",
-                                "contents": "This software Licenses is OK for Fedora"
-                            }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": [
-                    "http://oss.sgi.com/projects/FreeB/"
-                ],
-                "homepageUrl": "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf",
-                "shortName": "SGI Free Software License B 2.0",
-                "textUrls": null,
-                "text": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
-                "category": "Permissive",
-                "osiUrl": null,
-                "owner": "SGI - Silicon Graphics",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.yml",
-                "key": "sgi-freeb-2.0",
-                "name": "SGI Free Software License B v2.0",
-                "spdxId": "SGI-B-2.0",
-                "notes": "Per SPDX.org, this license was released 18 Sept 2008",
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://sgi-freeb-2.0",
-                        "SGI Free Software License B 2.0",
-                        "SGI-B-2.0"
-                    ],
-                    "__impliedId": "SGI-B-2.0",
-                    "__impliedComments": [
-                        [
-                            "Scancode",
-                            [
-                                "Per SPDX.org, this license was released 18 Sept 2008"
-                            ]
-                        ]
-                    ],
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "NoCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "NoCopyleft",
-                    "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
-                        ],
-                        [
-                            null,
-                            "http://oss.sgi.com/projects/FreeB/"
-                        ]
-                    ]
-                }
             },
             "Hitachi open-license": {
                 "notices": [
@@ -470,28 +339,17 @@ Raw Data
                     "tag": "PositiveJudgement",
                     "contents": "Rating is: Bronze"
                 }
-            ],
-            [
-                "Fedora Project Wiki",
-                {
-                    "tag": "PositiveJudgement",
-                    "contents": "This software Licenses is OK for Fedora"
-                }
             ]
         ],
         "__impliedCopyleft": [
             [
                 "BlueOak License List",
                 "NoCopyleft"
-            ],
-            [
-                "Scancode",
-                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Permission is hereby granted, free of charge, to any person obtaining a\ncopy of this software and associated documentation files (the\n\"Software\"), to deal in the Software without restriction, including\nwithout limitation the rights to use, copy, modify, merge, publish,\ndistribute, sublicense, and/or sell copies of the Software, and to\npermit persons to whom the Software is furnished to do so, subject to\nthe following conditions:\n\nThe above copyright notice including the dates of first publication and\neither this permission notice or a reference to\nhttp://oss.sgi.com/projects/FreeB/ shall be included in all copies or\nsubstantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS\nOR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\nIN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR\nTHE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc.\nshall not be used in advertising or otherwise to promote the sale, use\nor other dealings in this Software without prior written authorization\nfrom Silicon Graphics, Inc.\n",
+        "__impliedText": "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)\n\nCopyright (C) [dates of first publication] Silicon Graphics, Inc. All Rights Reserved.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice including the dates of first publication and either this permission notice or a reference to http://oss.sgi.com/projects/FreeB/ shall be included in all copies or substantial portions of the Software. \n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL SILICON GRAPHICS, INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\nExcept as contained in this notice, the name of Silicon Graphics, Inc. shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from Silicon Graphics, Inc.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -508,14 +366,6 @@ Raw Data
             [
                 null,
                 "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
-            ],
-            [
-                "Homepage",
-                "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf"
-            ],
-            [
-                null,
-                "http://oss.sgi.com/projects/FreeB/"
             ]
         ]
     }

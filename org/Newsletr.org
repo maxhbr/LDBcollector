@@ -6,10 +6,6 @@
 | Rating         | Unknown, probably Stop or No-Go |
 | Classification | NoCopyleft                      |
 
-*Other Names:*
-
-- =scancode://newsletr=
-
 ** Comments on (easy) usability
 
 - *↑*"This software Licenses is OK for Fedora" (source:
@@ -23,28 +19,13 @@
 
 ** General Comments
 
-- "Per Fedora, This is a zlib variant, less restrictive. It was found on
-  the component of texlive 2010. It is Free and GPL-compatible. "
-  (source:
-  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml][Scancode]]
-  (CC0-1.0))
-
 ** URLs
-
-- *Homepage:* https://fedoraproject.org/wiki/Licensing/Newsletr
 
 - *SPDX:* https://spdx.org/licenses/Newsletr.html
 
 - *SPDX:* http://spdx.org/licenses/Newsletr.json
 
-** Text
-#+BEGIN_EXAMPLE
-  Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:
-
-  1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-  2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.
-#+END_EXAMPLE
+- https://fedoraproject.org/wiki/Licensing/Newsletr
 
 --------------
 
@@ -63,29 +44,17 @@
 - [[https://spdx.org/licenses/Newsletr.html][SPDX]] (all data [in this
   repository] is generated)
 
-- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml][Scancode]]
-  (CC0-1.0)
-
 *** Raw JSON
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "Newsletr",
-          "Newsletr License",
-          "scancode://newsletr"
+          "Newsletr License"
       ],
       "__impliedId": "Newsletr",
       "__isFsfFree": true,
       "__impliedAmbiguousNames": [
           "Newsletr"
-      ],
-      "__impliedComments": [
-          [
-              "Scancode",
-              [
-                  "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
-              ]
-          ]
       ],
       "facts": {
           "LicenseName": {
@@ -156,51 +125,6 @@
                   ]
               }
           },
-          "Scancode": {
-              "otherUrls": null,
-              "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Newsletr",
-              "shortName": "Newsletr License",
-              "textUrls": null,
-              "text": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
-              "category": "Permissive",
-              "osiUrl": null,
-              "owner": "Hunter Goatley",
-              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml",
-              "key": "newsletr",
-              "name": "Newsletr License",
-              "spdxId": "Newsletr",
-              "notes": "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n",
-              "_implications": {
-                  "__impliedNames": [
-                      "scancode://newsletr",
-                      "Newsletr License",
-                      "Newsletr"
-                  ],
-                  "__impliedId": "Newsletr",
-                  "__impliedComments": [
-                      [
-                          "Scancode",
-                          [
-                              "Per Fedora, This is a zlib variant, less restrictive. It was found on the\ncomponent of texlive 2010. It is Free and GPL-compatible.\n"
-                          ]
-                      ]
-                  ],
-                  "__impliedCopyleft": [
-                      [
-                          "Scancode",
-                          "NoCopyleft"
-                      ]
-                  ],
-                  "__calculatedCopyleft": "NoCopyleft",
-                  "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
-                  "__impliedURLs": [
-                      [
-                          "Homepage",
-                          "https://fedoraproject.org/wiki/Licensing/Newsletr"
-                      ]
-                  ]
-              }
-          },
           "BlueOak License List": {
               "BlueOakRating": "Lead",
               "url": "https://spdx.org/licenses/Newsletr.html",
@@ -258,15 +182,10 @@
           [
               "BlueOak License List",
               "NoCopyleft"
-          ],
-          [
-              "Scancode",
-              "NoCopyleft"
           ]
       ],
       "__calculatedCopyleft": "NoCopyleft",
       "__isOsiApproved": false,
-      "__impliedText": "Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:\n\n1. This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n2. Altered versions must be plainly marked as such, and must not be misrepresented as being the original software.",
       "__impliedURLs": [
           [
               "SPDX",
@@ -278,10 +197,6 @@
           ],
           [
               null,
-              "https://fedoraproject.org/wiki/Licensing/Newsletr"
-          ],
-          [
-              "Homepage",
               "https://fedoraproject.org/wiki/Licensing/Newsletr"
           ]
       ]

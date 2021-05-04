@@ -7,8 +7,6 @@ GL2PS License (GL2PS)
 
 -   `GL2PS LICENSE, Version 2`
 
--   `scancode://gl2ps`
-
 Comments on (easy) usability
 ----------------------------
 
@@ -23,11 +21,11 @@ General Comments
 URLs
 ----
 
--   **Homepage:** http://www.geuz.org/gl2ps/COPYING.GL2PS
-
 -   **SPDX:** http://spdx.org/licenses/GL2PS.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1560
+
+-   http://www.geuz.org/gl2ps/COPYING.GL2PS
 
 Description from open-license
 -----------------------------
@@ -74,24 +72,28 @@ Description from open-license
 Text
 ----
 
-    GL2PS LICENSE Version 2, November 2003
+                               GL2PS LICENSE
+                          Version 2, November 2003
 
-    Copyright (C) 2003, Christophe Geuzaine
+                  Copyright (C) 2003, Christophe Geuzaine
 
-    Permission to use, copy, and distribute this software and its documentation
-    for any purpose with or without fee is hereby granted, provided that the
-    copyright notice appear in all copies and that both that copyright notice and 
-    his permission notice appear in supporting documentation.
+    Permission to use, copy, and distribute this software and its
+    documentation for any purpose with or without fee is hereby granted,
+    provided that the copyright notice appear in all copies and that both
+    that copyright notice and this permission notice appear in supporting
+    documentation.
 
-    Permission to modify and distribute modified versions of this software is
-    granted, provided that:
+    Permission to modify and distribute modified versions of this software
+    is granted, provided that:
 
-    1) the modifications are licensed under the same terms as this software;
+    1) the modifications are licensed under the same terms as this
+    software;
 
-    2) you make available the source code of any modifications that you distribute,
-    either on the same media as you distribute any executable or other form of this
-    software, or via a mechanism generally accepted in the software development
-    community for the electronic transfer of data.
+    2) you make available the source code of any modifications that you
+    distribute, either on the same media as you distribute any executable
+    or other form of this software, or via a mechanism generally accepted
+    in the software development community for the electronic transfer of
+    data.
 
     This software is provided "as is" without express or implied warranty.
 
@@ -115,17 +117,13 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/GL2PS.html "SPDX") (all data \[in
     this repository\] is generated)
 
--   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml "Scancode")
-    (CC0-1.0)
-
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GL2PS",
             "GL2PS License",
-            "GL2PS LICENSE, Version 2",
-            "scancode://gl2ps"
+            "GL2PS LICENSE, Version 2"
         ],
         "__impliedId": "GL2PS",
         "__isFsfFree": true,
@@ -197,43 +195,6 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
-                        ]
-                    ]
-                }
-            },
-            "Scancode": {
-                "otherUrls": null,
-                "homepageUrl": "http://www.geuz.org/gl2ps/COPYING.GL2PS",
-                "shortName": "GL2PS License",
-                "textUrls": null,
-                "text": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
-                "category": "Copyleft Limited",
-                "osiUrl": null,
-                "owner": "Christophe Geuzaine",
-                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gl2ps.yml",
-                "key": "gl2ps",
-                "name": "GL2PS License",
-                "spdxId": "GL2PS",
-                "notes": null,
-                "_implications": {
-                    "__impliedNames": [
-                        "scancode://gl2ps",
-                        "GL2PS License",
-                        "GL2PS"
-                    ],
-                    "__impliedId": "GL2PS",
-                    "__impliedCopyleft": [
-                        [
-                            "Scancode",
-                            "WeakCopyleft"
-                        ]
-                    ],
-                    "__calculatedCopyleft": "WeakCopyleft",
-                    "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
-                    "__impliedURLs": [
-                        [
-                            "Homepage",
-                            "http://www.geuz.org/gl2ps/COPYING.GL2PS"
                         ]
                     ]
                 }
@@ -374,15 +335,8 @@ Raw Data
                 }
             ]
         ],
-        "__impliedCopyleft": [
-            [
-                "Scancode",
-                "WeakCopyleft"
-            ]
-        ],
-        "__calculatedCopyleft": "WeakCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "GL2PS LICENSE Version 2, November 2003\n\nCopyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its documentation\nfor any purpose with or without fee is hereby granted, provided that the\ncopyright notice appear in all copies and that both that copyright notice and \nhis permission notice appear in supporting documentation.\n\nPermission to modify and distribute modified versions of this software is\ngranted, provided that:\n\n1) the modifications are licensed under the same terms as this software;\n\n2) you make available the source code of any modifications that you distribute,\neither on the same media as you distribute any executable or other form of this\nsoftware, or via a mechanism generally accepted in the software development\ncommunity for the electronic transfer of data.\n\nThis software is provided \"as is\" without express or implied warranty.",
+        "__impliedText": "                           GL2PS LICENSE\n                      Version 2, November 2003\n\n              Copyright (C) 2003, Christophe Geuzaine\n\nPermission to use, copy, and distribute this software and its\ndocumentation for any purpose with or without fee is hereby granted,\nprovided that the copyright notice appear in all copies and that both\nthat copyright notice and this permission notice appear in supporting\ndocumentation.\n\nPermission to modify and distribute modified versions of this software\nis granted, provided that:\n\n1) the modifications are licensed under the same terms as this\nsoftware;\n\n2) you make available the source code of any modifications that you\ndistribute, either on the same media as you distribute any executable\nor other form of this software, or via a mechanism generally accepted\nin the software development community for the electronic transfer of\ndata.\n\nThis software is provided \"as is\" without express or implied warranty.",
         "__impliedURLs": [
             [
                 "open-license",
@@ -394,10 +348,6 @@ Raw Data
             ],
             [
                 null,
-                "http://www.geuz.org/gl2ps/COPYING.GL2PS"
-            ],
-            [
-                "Homepage",
                 "http://www.geuz.org/gl2ps/COPYING.GL2PS"
             ]
         ]

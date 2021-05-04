@@ -9,11 +9,6 @@
 |Classification |NoCopyleft
 |===
 
-*Other Names:*
-
-* `scancode://x11-tiff`
-* `X11-Style (Tiff)`
-
 === Comments on (easy) usability
 
 * **↑**``Google Classification is NOTICE'' (source:
@@ -36,29 +31,6 @@ Project Wiki]
 * *SPDX:* http://spdx.org/licenses/libtiff.json
 * https://fedoraproject.org/wiki/Licensing/libtiff
 
-=== Text
-
-....
-Permission to use, copy, modify, distribute, and sell this software and its
-documentation for any purpose is hereby granted without fee, provided
-that (i) the above copyright notices and this permission notice appear in
-all copies of the software and related documentation, and (ii) the names of
-Sam Leffler and Silicon Graphics may not be used in any advertising or
-publicity relating to the software without the specific, prior written
-permission of Sam Leffler and Silicon Graphics.
-
-THE SOFTWARE IS PROVIDED "AS-IS" AND WITHOUT WARRANTY OF ANY KIND, 
-EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY 
-WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  
-
-IN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR
-ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,
-OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
-WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
-LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
-OF THIS SOFTWARE.
-....
-
 '''''
 
 === Raw Data
@@ -76,8 +48,6 @@ Policy]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://spdx.org/licenses/libtiff.html[SPDX] (all data [in this
 repository] is generated)
-* https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-tiff.yml[Scancode]
-(CC0-1.0)
 
 ==== Raw JSON
 
@@ -85,9 +55,7 @@ repository] is generated)
 {
     "__impliedNames": [
         "libtiff",
-        "libtiff License",
-        "scancode://x11-tiff",
-        "X11-Style (Tiff)"
+        "libtiff License"
     ],
     "__impliedId": "libtiff",
     "__isFsfFree": true,
@@ -161,38 +129,6 @@ repository] is generated)
                         }
                     ]
                 ]
-            }
-        },
-        "Scancode": {
-            "otherUrls": null,
-            "homepageUrl": null,
-            "shortName": "X11-Style (Tiff)",
-            "textUrls": null,
-            "text": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
-            "category": "Permissive",
-            "osiUrl": null,
-            "owner": "SGI - Silicon Graphics",
-            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/x11-tiff.yml",
-            "key": "x11-tiff",
-            "name": "X11-Style (Tiff)",
-            "spdxId": "libtiff",
-            "notes": null,
-            "_implications": {
-                "__impliedNames": [
-                    "scancode://x11-tiff",
-                    "X11-Style (Tiff)",
-                    "libtiff"
-                ],
-                "__impliedId": "libtiff",
-                "__impliedCopyleft": [
-                    [
-                        "Scancode",
-                        "NoCopyleft"
-                    ]
-                ],
-                "__calculatedCopyleft": "NoCopyleft",
-                "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
-                "__impliedURLs": []
             }
         },
         "BlueOak License List": {
@@ -289,15 +225,10 @@ repository] is generated)
         [
             "Google OSS Policy",
             "NoCopyleft"
-        ],
-        [
-            "Scancode",
-            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
-    "__impliedText": "Permission to use, copy, modify, distribute, and sell this software and its\ndocumentation for any purpose is hereby granted without fee, provided\nthat (i) the above copyright notices and this permission notice appear in\nall copies of the software and related documentation, and (ii) the names of\nSam Leffler and Silicon Graphics may not be used in any advertising or\npublicity relating to the software without the specific, prior written\npermission of Sam Leffler and Silicon Graphics.\n\nTHE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND, \nEXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY \nWARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.  \n\nIN NO EVENT SHALL SAM LEFFLER OR SILICON GRAPHICS BE LIABLE FOR\nANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND,\nOR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,\nWHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF \nLIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE \nOF THIS SOFTWARE.",
     "__impliedURLs": [
         [
             "SPDX",
