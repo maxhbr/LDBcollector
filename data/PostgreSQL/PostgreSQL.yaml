@@ -1,0 +1,8 @@
+---
+approved: yes
+fedora_abbrev: PostgreSQL
+fedora_name: PostgreSQL License
+name: PostgreSQL License
+spdx_abbrev: PostgreSQL
+spdx_name: PostgreSQL License
+url: http://www.postgresql.org/about/licence

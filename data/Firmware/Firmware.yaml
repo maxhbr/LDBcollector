@@ -1,0 +1,5 @@
+---
+approved: yes
+fedora_name: Redistributable, no modification permitted
+name: Firmware
+url: https://docs.fedoraproject.org/en-US/packaging-guidelines/LicensingGuidelines/#_firmware

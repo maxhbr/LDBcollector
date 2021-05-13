@@ -1,0 +1,27 @@
+# Each license file must be in a *.yaml file with these fields.  If a
+# field has no value, exclude it from the entry.  Do not use quote
+# marks around strings.  There should be one license per file.  The
+# name of the file is generally the short abbreviation of the license,
+# with underscores replacing spaces.
+
+---
+# This field can be "yes" or "no"
+approved: yes|no
+
+# The established Fedora license abbreviation, if available.  e.g.,
+# the GNU General Public License v2.0 or later is called GPLv2+ in
+# Fedora.
+fedora_abbrev: STRING
+
+# The full name of the license as Fedora documents it, if available.
+fedora_name: STRING
+
+# The SPDX (https://spdx.org/licenses) license abbreviation, if
+# available.
+spdx_abbrev: STRING
+
+# The full name of the license in the SPDX listing, if available.
+spdx_name: STRING
+
+# A URL to the full text of the license, if available.
+url: URL

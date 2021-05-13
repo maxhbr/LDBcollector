@@ -1,0 +1,8 @@
+---
+approved: yes
+fedora_abbrev: Boost
+fedora_name: Boost Software License
+name: Boost Software License 1.0
+spdx_abbrev: BSL-1.0
+spdx_name: Boost Software License 1.0
+url: http://www.boost.org/LICENSE_1_0.txt

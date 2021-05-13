@@ -1,0 +1,8 @@
+---
+approved: yes
+fedora_abbrev: Sendmail
+fedora_name: Sendmail License
+name: Sendmail License
+spdx_abbrev: Sendmail
+spdx_name: Sendmail License
+url: http://www.sendmail.com/pdfs/open_source/sendmail_license.pdf

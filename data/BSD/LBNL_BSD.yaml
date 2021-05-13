@@ -1,0 +1,8 @@
+---
+approved: yes
+fedora_abbrev: LBNL BSD
+fedora_name: Lawrence Berkeley National Labs BSD variant license
+name: Lawrence Berkeley National Labs BSD variant license
+spdx_abbrev: BSD-3-Clause-LBNL
+spdx_name: Lawrence Berkeley National Labs BSD variant license
+url: https://fedoraproject.org/wiki/Licensing/LBNLBSD

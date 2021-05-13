@@ -1,0 +1,8 @@
+---
+approved: yes
+fedora_abbrev: zlib with acknowledgement
+fedora_name: zlib/libpng License with Acknowledgement
+name: zlib/libpng License with Acknowledgement
+spdx_abbrev: zlib-acknowledgement
+spdx_name: zlib/libpng License with Acknowledgement
+url: https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
