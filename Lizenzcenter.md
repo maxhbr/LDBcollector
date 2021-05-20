@@ -225,7 +225,7 @@ Die hier aufgeführten Lizenzen enthalten die verschiedenen GPL-Versionen und da
 1. European Union Public Licence (v. 1.1): https://joinup.ec.europa.eu/page/eupl-text-11-12
 1. European Union Public Licence (v. 1.2): https://joinup.ec.europa.eu/page/eupl-text-11-12
 1. German Free Software License: https://www.hbz-nrw.de/produkte/open-access/lizenzen/dfsl/german-free-software-license
-1. IBM Public License: http://oss.software.ibm.com:80/developerworks/opensource/license10.html
+1. IBM Public License: https://web.archive.org/web/20020202140635/http://oss.software.ibm.com:80/developerworks/opensource/license10.html
 1. Intel Open Source License: https://opensource.org/licenses/intel-open-source-license.php
 1. IPA Font License: https://ipafont.ipa.go.jp/old/ipafont/download.html#en
 1. No Limit Public License: http://spdx.org/licenses/NLPL
