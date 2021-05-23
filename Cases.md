@@ -96,7 +96,7 @@ Link: http://www.ifross.org/sites/default/files/LG%20Berlin%20AVM%20v%20Cybits_0
 
 adhoc dataservice GmbH ./. Buhl Data Service GmbH
 
-Link: http://www.telemedicus.info/urteile/Urheberrecht/Open-Source/1148-LG-Bochum-Az-I-8-O-29309-Ansprueche-bei-Verletzung-der-LGPL.html
+Link: http://www.justiz.nrw.de/nrwe/lgs/bochum/lg_bochum/j2011/8_O_293_09teilurteil20110120.html
 
 #### LG Hamburg, Urteil v. 10.12.2010, Az. 406 O 50/10
 
@@ -154,7 +154,7 @@ Link: http://www.ifross.org/Fremdartikel/OLGDuesseldorfxtcommerce.pdf
 
 „Linuxwerkstatt“ (§ 8 Abs. 2 Nr. 1 MarkenG)
 
-Link: http://www.bundespatentgericht.de/bpatg/leitsaetze/marken/25065_08.pdf
+Link: http://juris.bundespatentgericht.de/cgi-bin/rechtsprechung/document.py?Gericht=bpatg&Art=en&sid=37cfeadf3527936f099645d4c681e018&nr=29946&pos=10&anz=19&Blank=1.pdf
 
 #### BPatG, Beschluss v. 30.09.2008, Az. 33 W (pat) 1/07
 
