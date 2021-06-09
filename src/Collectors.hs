@@ -13,6 +13,7 @@ import           Collectors.Cavil as X
 import           Collectors.ChooseALicense as X
 import           Collectors.DFSG as X
 import           Collectors.FedoraProjectWiki as X
+import           Collectors.FOSSLight as X
 import           Collectors.Fossology as X
 import           Collectors.Gnu as X
 import           Collectors.Google as X
@@ -39,6 +40,7 @@ allCollectors = let
   , (calLFC, loadChooseALicenseFacts)
   , (dfsgLFC, loadDFSGFacts)
   , (fedoraLFC, loadFedoraFacts)
+  , (fossLightLFC, loadFOSSLightFacts)
   , (fossologyLFC, loadFossologyFacts)
   , (gnuLFC, loadGnuFacts)
   , (googleLFC, loadGoogleFacts)

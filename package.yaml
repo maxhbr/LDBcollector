@@ -43,6 +43,8 @@ dependencies:
 - pandoc
 - pandoc-types
 - raw-strings-qq
+- sqlite-simple
+- temporary
 - text
 - transformers
 - unordered-containers

@@ -1,0 +1,2 @@
+docker-entrypoint-initdb.d
+out/*.sql
