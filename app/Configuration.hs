@@ -28,6 +28,7 @@ configuration = let
     -- , osadlLFC
     , calLFC
     , fedoraLFC
+    -- , fossLightLFC 
     -- , fosslogyLFC
     , licenseCompatibilityCheckerLFC
     , licenseCompatibilityLFC
