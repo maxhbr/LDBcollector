@@ -3,6 +3,10 @@ Multics License (Multics)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://multics`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -17,14 +21,41 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:** http://www.multicians.org/
+
 -   **OSI Page:** https://opensource.org/licenses/Multics
+
+-   **OSI Page:** http://opensource.org/licenses/multics.txt
 
 -   **SPDX:** https://spdx.org/licenses/Multics.html
 
 -   **SPDX:** http://spdx.org/licenses/Multics.json
+
+-   http://www.opensource.org/licenses/Multics
+
+Text
+----
+
+    Permission to use, copy, modify, and distribute these programs and their
+    documentation for any purpose and without fee is hereby granted,provided
+    that the below copyright notice and historical background appear in all
+    copies and that both the copyright notice and historical background and
+    this permission notice appear in supporting documentation, and that
+    the names of MIT, HIS, BULL or BULL HN not be used in advertising or
+    publicity pertaining to distribution of the programs without specific
+    prior written permission.
+    Copyright 1972 by Massachusetts Institute of Technology and Honeywell Information
+    Systems Inc.
+    Copyright 2006 by BULL HN Information Systems Inc.
+    Copyright 2006 by Bull SAS
+    All Rights Reserved
 
 ------------------------------------------------------------------------
 
@@ -52,14 +83,26 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Multics.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Multics",
-            "Multics License"
+            "Multics License",
+            "scancode://multics"
         ],
         "__impliedId": "Multics",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -136,6 +179,66 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Multics"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.opensource.org/licenses/Multics",
+                    "https://opensource.org/licenses/Multics"
+                ],
+                "homepageUrl": "http://www.multicians.org/",
+                "shortName": "Multics License",
+                "textUrls": null,
+                "text": "Permission to use, copy, modify, and distribute these programs and their\ndocumentation for any purpose and without fee is hereby granted,provided\nthat the below copyright notice and historical background appear in all\ncopies and that both the copyright notice and historical background and\nthis permission notice appear in supporting documentation, and that\nthe names of MIT, HIS, BULL or BULL HN not be used in advertising or\npublicity pertaining to distribution of the programs without specific\nprior written permission.\nCopyright 1972 by Massachusetts Institute of Technology and Honeywell Information\nSystems Inc.\nCopyright 2006 by BULL HN Information Systems Inc.\nCopyright 2006 by Bull SAS\nAll Rights Reserved",
+                "category": "Permissive",
+                "osiUrl": "http://opensource.org/licenses/multics.txt",
+                "owner": "Multics",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml",
+                "key": "multics",
+                "name": "Multics License",
+                "spdxId": "Multics",
+                "notes": "Per SPDX.org, this license is OSI certified.",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://multics",
+                        "Multics License",
+                        "Multics"
+                    ],
+                    "__impliedId": "Multics",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Permission to use, copy, modify, and distribute these programs and their\ndocumentation for any purpose and without fee is hereby granted,provided\nthat the below copyright notice and historical background appear in all\ncopies and that both the copyright notice and historical background and\nthis permission notice appear in supporting documentation, and that\nthe names of MIT, HIS, BULL or BULL HN not be used in advertising or\npublicity pertaining to distribution of the programs without specific\nprior written permission.\nCopyright 1972 by Massachusetts Institute of Technology and Honeywell Information\nSystems Inc.\nCopyright 2006 by BULL HN Information Systems Inc.\nCopyright 2006 by Bull SAS\nAll Rights Reserved",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.multicians.org/"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/multics.txt"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/Multics"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/Multics"
+                        ]
+                    ]
+                }
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -253,10 +356,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
+        "__impliedText": "Permission to use, copy, modify, and distribute these programs and their\ndocumentation for any purpose and without fee is hereby granted,provided\nthat the below copyright notice and historical background appear in all\ncopies and that both the copyright notice and historical background and\nthis permission notice appear in supporting documentation, and that\nthe names of MIT, HIS, BULL or BULL HN not be used in advertising or\npublicity pertaining to distribution of the programs without specific\nprior written permission.\nCopyright 1972 by Massachusetts Institute of Technology and Honeywell Information\nSystems Inc.\nCopyright 2006 by BULL HN Information Systems Inc.\nCopyright 2006 by Bull SAS\nAll Rights Reserved",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -273,6 +381,18 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/Multics.json"
+            ],
+            [
+                "Homepage",
+                "http://www.multicians.org/"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/multics.txt"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/Multics"
             ]
         ]
     }

@@ -27,10 +27,10 @@ categories:
 - name: condition:disclose-source
 - name: condition:network-use-disclose
 - name: condition:same-license
+- name: maybe-rating:Go
 - name: rating:Attention
 - name: limitation:patent-use
 - name: condition:include-copyright--source
-- name: maybe-rating:Go
 - name: rating:No-Go
 - name: condition:same-license--library
 - name: condition:same-license--file
@@ -180,6 +180,8 @@ categorizations:
   - maybe-rating:No-Go
   id: APSL-2.0
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -190,6 +192,8 @@ categorizations:
   - maybe-rating:No-Go
   id: Adobe-2006
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -200,6 +204,7 @@ categorizations:
   - maybe-rating:No-Go
   id: Afmparse
 - categories:
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Aladdin
@@ -245,9 +250,12 @@ categorizations:
   - maybe-rating:No-Go
   id: Artistic-1.0-cl8
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - has-no-patent-hint
-  - rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - right:commercial-use
   - right:modifications
   - right:distribution
@@ -279,6 +287,7 @@ categorizations:
   - rating:Go
   id: BSD-2-Clause-Patent
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -329,6 +338,7 @@ categorizations:
   - rating:Go
   id: BSD-3-Clause-No-Nuclear-Warranty
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -416,6 +426,8 @@ categorizations:
   - maybe-rating:No-Go
   id: CAL-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -455,6 +467,7 @@ categorizations:
   - maybe-rating:No-Go
   id: CC-BY-3.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -606,6 +619,8 @@ categorizations:
   - maybe-rating:No-Go
   id: CC-BY-SA-3.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -630,6 +645,7 @@ categorizations:
   - limitation:warranty
   id: CC-BY-SA-4.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -663,37 +679,42 @@ categorizations:
   - maybe-rating:No-Go
   id: CDDL-1.1
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CDLA-Permissive-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CDLA-Sharing-1.0
 - categories:
-  - permissive
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CECILL-1.0
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CECILL-1.1
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CECILL-2.0
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - has-no-patent-hint
-  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -721,26 +742,32 @@ categorizations:
   - maybe-rating:No-Go
   id: CECILL-C
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CERN-OHL-1.1
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CERN-OHL-1.2
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CERN-OHL-P-2.0
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: CERN-OHL-S-2.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -785,6 +812,7 @@ categorizations:
   - maybe-rating:No-Go
   id: CUA-OPL-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -815,6 +843,7 @@ categorizations:
   - rating:Go
   id: Cube
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -829,6 +858,8 @@ categorizations:
   - rating:Go
   id: DSDP
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -863,6 +894,8 @@ categorizations:
   - maybe-rating:No-Go
   id: EFL-2.0
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -903,6 +936,8 @@ categorizations:
   - limitation:warranty
   id: EPL-2.0
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -967,21 +1002,29 @@ categorizations:
   - maybe-rating:No-Go
   id: ErlPL-1.1
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Eurosym
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: FSFAP
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: FSFUL
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -996,11 +1039,15 @@ categorizations:
   - maybe-rating:No-Go
   id: Fair
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Frameworx-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1026,11 +1073,15 @@ categorizations:
   - maybe-rating:No-Go
   id: GFDL-1.1-no-invariants-or-later
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: GFDL-1.1-only
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1056,11 +1107,15 @@ categorizations:
   - maybe-rating:No-Go
   id: GFDL-1.2-no-invariants-or-later
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: GFDL-1.2-only
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1086,21 +1141,28 @@ categorizations:
   - maybe-rating:No-Go
   id: GFDL-1.3-no-invariants-or-later
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: GFDL-1.3-only
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: GFDL-1.3-or-later
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: GL2PS
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1187,11 +1249,14 @@ categorizations:
   - maybe-rating:No-Go
   id: Giftware
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Glide
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1202,11 +1267,14 @@ categorizations:
   - maybe-rating:No-Go
   id: HPND
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: HPND-sell-variant
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1261,6 +1329,8 @@ categorizations:
   - rating:Go
   id: ImageMagick
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1273,6 +1343,8 @@ categorizations:
   - permissive
   id: Intel
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1285,6 +1357,7 @@ categorizations:
   - maybe-rating:No-Go
   id: Interbase-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1385,17 +1458,21 @@ categorizations:
   - limitation:warranty
   id: LGPL-3.0-only
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: LGPLLR
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: LPL-1.0
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: LPL-1.02
@@ -1445,6 +1522,8 @@ categorizations:
   - limitation:warranty
   id: LPPL-1.3c
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1591,6 +1670,7 @@ categorizations:
   - rating:Go
   id: MTLL
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1608,11 +1688,14 @@ categorizations:
   - maybe-rating:No-Go
   id: Motosoto
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: MulanPSL-1.0
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1632,7 +1715,8 @@ categorizations:
   - maybe-rating:No-Go
   id: NASA-1.3
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: NBPL-1.0
@@ -1653,21 +1737,26 @@ categorizations:
   - limitation:warranty
   id: NCSA
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: NGPL
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: NIST-PD
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: NIST-PD-fallback
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1685,11 +1774,15 @@ categorizations:
   - maybe-rating:No-Go
   id: NOSL
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: NPL-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - has-no-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
@@ -1712,6 +1805,7 @@ categorizations:
   - rating:Go
   id: NTP
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1741,25 +1835,33 @@ categorizations:
   - maybe-rating:No-Go
   id: Nokia
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Noweb
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: O-UDA-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OCCT-PL
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OCLC-2.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1783,6 +1885,8 @@ categorizations:
   - limitation:warranty
   id: ODbL-1.0
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1798,6 +1902,8 @@ categorizations:
   - maybe-rating:No-Go
   id: OFL-1.0-no-RFN
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1821,52 +1927,62 @@ categorizations:
   - maybe-rating:No-Go
   id: OFL-1.1-no-RFN
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGC-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGL-Canada-2.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGL-UK-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGL-UK-2.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGL-UK-3.0
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OGTSL
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OLDAP-1.1
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OLDAP-1.2
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OLDAP-1.3
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OLDAP-1.4
@@ -1923,11 +2039,15 @@ categorizations:
   - rating:Go
   id: OML
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: OPL-1.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2001,6 +2121,7 @@ categorizations:
   - rating:Go
   id: PHP-3.01
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2058,7 +2179,8 @@ categorizations:
   - maybe-rating:No-Go
   id: QPL-1.0
 - categories:
-  - permissive
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Qhull
@@ -2107,8 +2229,11 @@ categorizations:
   - maybe-rating:No-Go
   id: Rdisc
 - categories:
-  - permissive
-  - rating:Go
+  - weak-copyleft
+  - copyleft
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   id: Ruby
 - categories:
   - permissive
@@ -2117,6 +2242,8 @@ categorizations:
   - maybe-rating:No-Go
   id: SAX-PD
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2127,6 +2254,7 @@ categorizations:
   - maybe-rating:No-Go
   id: SGI-B-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2136,11 +2264,13 @@ categorizations:
   - rating:Go
   id: SGI-B-2.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: SHL-0.5
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2164,11 +2294,14 @@ categorizations:
   - rating:Go
   id: SMLNJ
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: SMPPL
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2181,11 +2314,13 @@ categorizations:
   - maybe-rating:No-Go
   id: SPL-1.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: SSH-OpenSSH
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2211,11 +2346,14 @@ categorizations:
   - maybe-rating:No-Go
   id: Sendmail
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: Sendmail-8.23
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2250,6 +2388,8 @@ categorizations:
   - maybe-rating:No-Go
   id: SugarCRM-1.1.3
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2263,16 +2403,20 @@ categorizations:
   - rating:Go
   id: TCP-wrappers
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: TMate
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: TORQUE-1.1
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2288,6 +2432,8 @@ categorizations:
   - maybe-rating:No-Go
   id: TU-Berlin-2.0
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2329,6 +2475,7 @@ categorizations:
   - limitation:warranty
   id: Unlicense
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2391,13 +2538,15 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
-  id: X11
+  id: ICU
 - categories:
   - permissive
   - has-no-patent-hint
   - rating:Go
   id: XFree86-1.1
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2474,6 +2623,7 @@ categorizations:
   - limitation:warranty
   id: Zlib
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2487,11 +2637,13 @@ categorizations:
   - rating:Go
   id: bzip2-1.0.6
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: copyleft-next-0.3.0
 - categories:
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2506,6 +2658,8 @@ categorizations:
   - maybe-rating:No-Go
   id: diffmark
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2515,6 +2669,7 @@ categorizations:
   - rating:Go
   id: eGenix
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2527,6 +2682,8 @@ categorizations:
   - maybe-rating:No-Go
   id: gSOAP-1.3b
 - categories:
+  - weak-copyleft
+  - copyleft
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2539,11 +2696,13 @@ categorizations:
   - maybe-rating:No-Go
   id: iMatix
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   id: libpng-2.0
 - categories:
+  - permissive
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2558,6 +2717,8 @@ categorizations:
   - maybe-rating:No-Go
   id: mpich2
 - categories:
+  - permissive
+  - maybe-rating:Go
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go

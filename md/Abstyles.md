@@ -3,6 +3,10 @@ Abstyles License (Abstyles)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://abstyles`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -14,12 +18,31 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “the latext2e, verbatim-manual and abstyles are similar licenses”
+    (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/Abstyles
+
 -   **SPDX:** http://spdx.org/licenses/Abstyles.json
 
--   https://fedoraproject.org/wiki/Licensing/Abstyles
+Text
+----
+
+    This program is distributed WITHOUT ANY WARRANTY, express or implied.  
+
+    Permission is granted to make and distribute verbatim copies of this
+    document provided that the copyright notice and this permission notice are
+    preserved on all copies.
+
+    Permission is granted to copy and distribute modified versions of this
+    document under the conditions for verbatim copying, provided that the
+    entire resulting derived work is distributed under the terms of a
+    permission notice identical to this one.
 
 ------------------------------------------------------------------------
 
@@ -37,17 +60,29 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Abstyles.html "SPDX") (all data
     \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Abstyles",
-            "Abstyles License"
+            "Abstyles License",
+            "scancode://abstyles"
         ],
         "__impliedId": "Abstyles",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Abstyles"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "the latext2e, verbatim-manual and abstyles are similar licenses"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -117,6 +152,51 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Abstyles",
+                "shortName": "Abstyles License",
+                "textUrls": null,
+                "text": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "CTAN",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml",
+                "key": "abstyles",
+                "name": "Abstyles License",
+                "spdxId": "Abstyles",
+                "notes": "the latext2e, verbatim-manual and abstyles are similar licenses",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://abstyles",
+                        "Abstyles License",
+                        "Abstyles"
+                    ],
+                    "__impliedId": "Abstyles",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "the latext2e, verbatim-manual and abstyles are similar licenses"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Abstyles"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -128,7 +208,15 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "This program is distributed WITHOUT ANY WARRANTY, express or implied.  \n\nPermission is granted to make and distribute verbatim copies of this\ndocument provided that the copyright notice and this permission notice are\npreserved on all copies.\n\nPermission is granted to copy and distribute modified versions of this\ndocument under the conditions for verbatim copying, provided that the\nentire resulting derived work is distributed under the terms of a\npermission notice identical to this one.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -136,6 +224,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/Abstyles"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Abstyles"
             ]
         ]

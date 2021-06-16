@@ -3,6 +3,10 @@ dvipdfm License (dvipdfm)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://dvipdfm`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -14,12 +18,25 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per Fedora, "should" does not mean "must", and there are implied
+    rights for unlimited copying and distribution rights for unmodified
+    versions. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/dvipdfm
+
 -   **SPDX:** http://spdx.org/licenses/dvipdfm.json
 
--   https://fedoraproject.org/wiki/Licensing/dvipdfm
+Text
+----
+
+    A modified version of this file may be distributed, but it should be distributed
+    with a *different* name. Changed files must be distributed *together with a
+    complete and unchanged* distribution of these files.
 
 ------------------------------------------------------------------------
 
@@ -37,17 +54,29 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/dvipdfm.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "dvipdfm",
-            "dvipdfm License"
+            "dvipdfm License",
+            "scancode://dvipdfm"
         ],
         "__impliedId": "dvipdfm",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "dvipdfm"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -117,6 +146,51 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/dvipdfm",
+                "shortName": "dvipdfm License",
+                "textUrls": null,
+                "text": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Unspecified",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml",
+                "key": "dvipdfm",
+                "name": "dvipdfm License",
+                "spdxId": "dvipdfm",
+                "notes": "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://dvipdfm",
+                        "dvipdfm License",
+                        "dvipdfm"
+                    ],
+                    "__impliedId": "dvipdfm",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per Fedora, \"should\" does not mean \"must\", and there are implied rights for\nunlimited copying and distribution rights for unmodified versions.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/dvipdfm"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -128,7 +202,15 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "A modified version of this file may be distributed, but it should be distributed\nwith a *different* name. Changed files must be distributed *together with a\ncomplete and unchanged* distribution of these files.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -136,6 +218,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/dvipdfm"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/dvipdfm"
             ]
         ]

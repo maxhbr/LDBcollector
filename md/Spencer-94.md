@@ -3,6 +3,12 @@ Spencer License 94 (Spencer-94)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://hs-regexp`
+
+-   `Henry Spencer Regexp License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -16,11 +22,37 @@ General Comments
 URLs
 ----
 
+-   **Homepage:**
+    https://github.com/garyhouston/regex/blob/master/COPYRIGHT
+
 -   **SPDX:** https://spdx.org/licenses/Spencer-94.html
 
 -   **SPDX:** http://spdx.org/licenses/Spencer-94.json
 
 -   https://fedoraproject.org/wiki/Licensing/Henry\_Spencer\_Reg-Ex\_Library\_License
+
+Text
+----
+
+    This software is not subject to any license of the American Telephone and
+    Telegraph Company or of the Regents of the University of California.
+
+    Permission is granted to anyone to use this software for any purpose on any
+    computer system, and to alter it and redistribute it, subject to the following
+    restrictions:
+
+    1. The author is not responsible for the consequences of use of this software,
+    no matter how awful, even if they arise from flaws in it.
+
+    2. The origin of this software must not be misrepresented, either by explicit
+    claim or by omission. Since few users ever read sources, credits must appear in
+    the documentation.
+
+    3. Altered versions must be plainly marked as such, and must not be
+    misrepresented as being the original software. Since few users ever read
+    sources, credits must appear in the documentation.
+
+    4. This notice may not be removed or altered.
 
 ------------------------------------------------------------------------
 
@@ -38,12 +70,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Spencer-94.html "SPDX") (all data
     \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Spencer-94",
-            "Spencer License 94"
+            "Spencer License 94",
+            "scancode://hs-regexp",
+            "Henry Spencer Regexp License"
         ],
         "__impliedId": "Spencer-94",
         "facts": {
@@ -85,6 +122,49 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Spencer-94"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
+                ],
+                "homepageUrl": "https://github.com/garyhouston/regex/blob/master/COPYRIGHT",
+                "shortName": "Henry Spencer Regexp License",
+                "textUrls": null,
+                "text": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Henry Spencer",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hs-regexp.yml",
+                "key": "hs-regexp",
+                "name": "Henry Spencer Regexp License",
+                "spdxId": "Spencer-94",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://hs-regexp",
+                        "Henry Spencer Regexp License",
+                        "Spencer-94"
+                    ],
+                    "__impliedId": "Spencer-94",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://github.com/garyhouston/regex/blob/master/COPYRIGHT"
+                        ],
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
@@ -136,10 +216,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "This software is not subject to any license of the American Telephone and\nTelegraph Company or of the Regents of the University of California.\n\nPermission is granted to anyone to use this software for any purpose on any\ncomputer system, and to alter it and redistribute it, subject to the following\nrestrictions:\n\n1. The author is not responsible for the consequences of use of this software,\nno matter how awful, even if they arise from flaws in it.\n\n2. The origin of this software must not be misrepresented, either by explicit\nclaim or by omission. Since few users ever read sources, credits must appear in\nthe documentation.\n\n3. Altered versions must be plainly marked as such, and must not be\nmisrepresented as being the original software. Since few users ever read\nsources, credits must appear in the documentation.\n\n4. This notice may not be removed or altered.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -152,6 +237,10 @@ Raw Data
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License"
+            ],
+            [
+                "Homepage",
+                "https://github.com/garyhouston/regex/blob/master/COPYRIGHT"
             ]
         ]
     }

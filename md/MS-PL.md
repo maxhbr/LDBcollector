@@ -7,6 +7,8 @@ Microsoft Public License (MS-PL)
 
 -   `Microsoft Public License (MS-PL)`
 
+-   `scancode://ms-pl`
+
 Description
 -----------
 
@@ -49,6 +51,10 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “also known as Microsoft Permissive License (Ms-PL) v1.1” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode")
+    (CC0-1.0))
+
 Obligations
 -----------
 
@@ -61,7 +67,12 @@ Obligations
 URLs
 ----
 
+-   **Homepage:**
+    http://www.microsoft.com/opensource/licenses.mspx\#Ms-PL
+
 -   **OSI Page:** https://opensource.org/licenses/MS-PL
+
+-   **OSI Page:** http://www.opensource.org/licenses/ms-pl.html
 
 -   **SPDX:** https://spdx.org/licenses/MS-PL.html
 
@@ -70,6 +81,10 @@ URLs
 -   **open-license:** http://open-license.hitachi.com/licenses/66
 
 -   http://www.microsoft.com/opensource/licenses.mspx
+
+-   http://www.microsoft.com/en-us/openness/licenses.aspx\#MPL
+
+-   http://www.opensource.org/licenses/MS-PL
 
 Description from open-license
 -----------------------------
@@ -140,25 +155,66 @@ Description from open-license
 Text
 ----
 
-    This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
+    Microsoft Public License (Ms-PL)
+
+    This license governs use of the accompanying software. If you use the software,
+    you accept this license. If you do not accept the license, do not use the
+    software.
 
     1. Definitions
-    The terms "reproduce," "reproduction," "derivative works," and "distribution" have the
-    same meaning here as under U.S. copyright law.
-    A "contribution" is the original software, or any additions or changes to the software.
-    A "contributor" is any person that distributes its contribution under this license.
-    "Licensed patents" are a contributor's patent claims that read directly on its contribution.
+
+    The terms "reproduce," "reproduction," "derivative works," and "distribution"
+    have the same meaning here as under U.S. copyright law.
+
+    A "contribution" is the original software, or any additions or changes to the
+    software.
+
+    A "contributor" is any person that distributes its contribution under this
+    license.
+
+    "Licensed patents" are a contributor's patent claims that read directly on its
+    contribution.
 
     2. Grant of Rights
-    (A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.
-    (B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.
+
+    (A) Copyright Grant- Subject to the terms of this license, including the license
+    conditions and limitations in section 3, each contributor grants you a non-
+    exclusive, worldwide, royalty-free copyright license to reproduce its
+    contribution, prepare derivative works of its contribution, and distribute its
+    contribution or any derivative works that you create.
+
+    (B) Patent Grant- Subject to the terms of this license, including the license
+    conditions and limitations in section 3, each contributor grants you a non-
+    exclusive, worldwide, royalty-free license under its licensed patents to make,
+    have made, use, sell, offer for sale, import, and/or otherwise dispose of its
+    contribution in the software or derivative works of the contribution in the
+    software.
 
     3. Conditions and Limitations
-    (A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.
-    (B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.
-    (C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
-    (D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
-    (E) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
+
+    (A) No Trademark License- This license does not grant you rights to use any
+    contributors' name, logo, or trademarks.
+
+    (B) If you bring a patent claim against any contributor over patents that you
+    claim are infringed by the software, your patent license from such contributor
+    to the software ends automatically.
+
+    (C) If you distribute any portion of the software, you must retain all
+    copyright, patent, trademark, and attribution notices that are present in the
+    software.
+
+    (D) If you distribute any portion of the software in source code form, you may
+    do so only under this license by including a complete copy of this license with
+    your distribution. If you distribute any portion of the software in compiled or
+    object code form, you may only do so under a license that complies with this
+    license.
+
+    (E) The software is licensed "as-is." You bear the risk of using it. The
+    contributors give no express warranties, guarantees, or conditions. You may have
+    additional consumer rights under your local laws which this license cannot
+    change. To the extent permitted under your local laws, the contributors exclude
+    the implied warranties of merchantability, fitness for a particular purpose and
+    non-infringement.
 
 ------------------------------------------------------------------------
 
@@ -208,6 +264,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/MS-PL.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode")
+    (CC0-1.0)
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -219,7 +278,8 @@ Raw Data
             "Microsoft Public License",
             "ms-pl",
             "Microsoft Public License (MS-PL)",
-            "Ms-PL"
+            "Ms-PL",
+            "scancode://ms-pl"
         ],
         "__impliedId": "MS-PL",
         "__isFsfFree": true,
@@ -231,6 +291,12 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "The term \"duplication,\" \"derivative works\" and \"distribution\" are the same as in the U.S. Copyright Act. The term \"contribution\" refers to the original software, or any addition or modification to the original software. The term \"contributor\" refers to the person who distributes the contributions under this license. A licensed patent refers to the Contributor's patent claims readable directly from the Contribution. This license does not authorize the use of the Contributor's name, logo or trademarks."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "also known as Microsoft Permissive License (Ms-PL) v1.1"
                 ]
             ]
         ],
@@ -342,6 +408,76 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.microsoft.com/en-us/openness/licenses.aspx#MPL",
+                    "http://www.microsoft.com/opensource/licenses.mspx",
+                    "http://www.opensource.org/licenses/MS-PL",
+                    "https://opensource.org/licenses/MS-PL"
+                ],
+                "homepageUrl": "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL",
+                "shortName": "MS-PL",
+                "textUrls": null,
+                "text": "Microsoft Public License (Ms-PL)\n\nThis license governs use of the accompanying software. If you use the software,\nyou accept this license. If you do not accept the license, do not use the\nsoftware.\n\n1. Definitions\n\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\"\nhave the same meaning here as under U.S. copyright law.\n\nA \"contribution\" is the original software, or any additions or changes to the\nsoftware.\n\nA \"contributor\" is any person that distributes its contribution under this\nlicense.\n\n\"Licensed patents\" are a contributor's patent claims that read directly on its\ncontribution.\n\n2. Grant of Rights\n\n(A) Copyright Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free copyright license to reproduce its\ncontribution, prepare derivative works of its contribution, and distribute its\ncontribution or any derivative works that you create.\n\n(B) Patent Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free license under its licensed patents to make,\nhave made, use, sell, offer for sale, import, and/or otherwise dispose of its\ncontribution in the software or derivative works of the contribution in the\nsoftware.\n\n3. Conditions and Limitations\n\n(A) No Trademark License- This license does not grant you rights to use any\ncontributors' name, logo, or trademarks.\n\n(B) If you bring a patent claim against any contributor over patents that you\nclaim are infringed by the software, your patent license from such contributor\nto the software ends automatically.\n\n(C) If you distribute any portion of the software, you must retain all\ncopyright, patent, trademark, and attribution notices that are present in the\nsoftware.\n\n(D) If you distribute any portion of the software in source code form, you may\ndo so only under this license by including a complete copy of this license with\nyour distribution. If you distribute any portion of the software in compiled or\nobject code form, you may only do so under a license that complies with this\nlicense.\n\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The\ncontributors give no express warranties, guarantees, or conditions. You may have\nadditional consumer rights under your local laws which this license cannot\nchange. To the extent permitted under your local laws, the contributors exclude\nthe implied warranties of merchantability, fitness for a particular purpose and\nnon-infringement.",
+                "category": "Permissive",
+                "osiUrl": "http://www.opensource.org/licenses/ms-pl.html",
+                "owner": "Microsoft",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml",
+                "key": "ms-pl",
+                "name": "Microsoft Public License",
+                "spdxId": "MS-PL",
+                "notes": "also known as Microsoft Permissive License (Ms-PL) v1.1",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://ms-pl",
+                        "MS-PL",
+                        "MS-PL"
+                    ],
+                    "__impliedId": "MS-PL",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "also known as Microsoft Permissive License (Ms-PL) v1.1"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Microsoft Public License (Ms-PL)\n\nThis license governs use of the accompanying software. If you use the software,\nyou accept this license. If you do not accept the license, do not use the\nsoftware.\n\n1. Definitions\n\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\"\nhave the same meaning here as under U.S. copyright law.\n\nA \"contribution\" is the original software, or any additions or changes to the\nsoftware.\n\nA \"contributor\" is any person that distributes its contribution under this\nlicense.\n\n\"Licensed patents\" are a contributor's patent claims that read directly on its\ncontribution.\n\n2. Grant of Rights\n\n(A) Copyright Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free copyright license to reproduce its\ncontribution, prepare derivative works of its contribution, and distribute its\ncontribution or any derivative works that you create.\n\n(B) Patent Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free license under its licensed patents to make,\nhave made, use, sell, offer for sale, import, and/or otherwise dispose of its\ncontribution in the software or derivative works of the contribution in the\nsoftware.\n\n3. Conditions and Limitations\n\n(A) No Trademark License- This license does not grant you rights to use any\ncontributors' name, logo, or trademarks.\n\n(B) If you bring a patent claim against any contributor over patents that you\nclaim are infringed by the software, your patent license from such contributor\nto the software ends automatically.\n\n(C) If you distribute any portion of the software, you must retain all\ncopyright, patent, trademark, and attribution notices that are present in the\nsoftware.\n\n(D) If you distribute any portion of the software in source code form, you may\ndo so only under this license by including a complete copy of this license with\nyour distribution. If you distribute any portion of the software in compiled or\nobject code form, you may only do so under a license that complies with this\nlicense.\n\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The\ncontributors give no express warranties, guarantees, or conditions. You may have\nadditional consumer rights under your local laws which this license cannot\nchange. To the extent permitted under your local laws, the contributors exclude\nthe implied warranties of merchantability, fitness for a particular purpose and\nnon-infringement.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://www.opensource.org/licenses/ms-pl.html"
+                        ],
+                        [
+                            null,
+                            "http://www.microsoft.com/en-us/openness/licenses.aspx#MPL"
+                        ],
+                        [
+                            null,
+                            "http://www.microsoft.com/opensource/licenses.mspx"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/MS-PL"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/MS-PL"
                         ]
                     ]
                 }
@@ -919,6 +1055,10 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
@@ -963,7 +1103,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": true,
-        "__impliedText": "This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.\n\n1. Definitions\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\" have the\nsame meaning here as under U.S. copyright law.\nA \"contribution\" is the original software, or any additions or changes to the software.\nA \"contributor\" is any person that distributes its contribution under this license.\n\"Licensed patents\" are a contributor's patent claims that read directly on its contribution.\n\n2. Grant of Rights\n(A) Copyright Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free copyright license to reproduce its contribution, prepare derivative works of its contribution, and distribute its contribution or any derivative works that you create.\n(B) Patent Grant- Subject to the terms of this license, including the license conditions and limitations in section 3, each contributor grants you a non-exclusive, worldwide, royalty-free license under its licensed patents to make, have made, use, sell, offer for sale, import, and/or otherwise dispose of its contribution in the software or derivative works of the contribution in the software.\n\n3. Conditions and Limitations\n(A) No Trademark License- This license does not grant you rights to use any contributors' name, logo, or trademarks.\n(B) If you bring a patent claim against any contributor over patents that you claim are infringed by the software, your patent license from such contributor to the software ends automatically.\n(C) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.\n(D) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The contributors give no express warranties, guarantees or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.",
+        "__impliedText": "Microsoft Public License (Ms-PL)\n\nThis license governs use of the accompanying software. If you use the software,\nyou accept this license. If you do not accept the license, do not use the\nsoftware.\n\n1. Definitions\n\nThe terms \"reproduce,\" \"reproduction,\" \"derivative works,\" and \"distribution\"\nhave the same meaning here as under U.S. copyright law.\n\nA \"contribution\" is the original software, or any additions or changes to the\nsoftware.\n\nA \"contributor\" is any person that distributes its contribution under this\nlicense.\n\n\"Licensed patents\" are a contributor's patent claims that read directly on its\ncontribution.\n\n2. Grant of Rights\n\n(A) Copyright Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free copyright license to reproduce its\ncontribution, prepare derivative works of its contribution, and distribute its\ncontribution or any derivative works that you create.\n\n(B) Patent Grant- Subject to the terms of this license, including the license\nconditions and limitations in section 3, each contributor grants you a non-\nexclusive, worldwide, royalty-free license under its licensed patents to make,\nhave made, use, sell, offer for sale, import, and/or otherwise dispose of its\ncontribution in the software or derivative works of the contribution in the\nsoftware.\n\n3. Conditions and Limitations\n\n(A) No Trademark License- This license does not grant you rights to use any\ncontributors' name, logo, or trademarks.\n\n(B) If you bring a patent claim against any contributor over patents that you\nclaim are infringed by the software, your patent license from such contributor\nto the software ends automatically.\n\n(C) If you distribute any portion of the software, you must retain all\ncopyright, patent, trademark, and attribution notices that are present in the\nsoftware.\n\n(D) If you distribute any portion of the software in source code form, you may\ndo so only under this license by including a complete copy of this license with\nyour distribution. If you distribute any portion of the software in compiled or\nobject code form, you may only do so under a license that complies with this\nlicense.\n\n(E) The software is licensed \"as-is.\" You bear the risk of using it. The\ncontributors give no express warranties, guarantees, or conditions. You may have\nadditional consumer rights under your local laws which this license cannot\nchange. To the extent permitted under your local laws, the contributors exclude\nthe implied warranties of merchantability, fitness for a particular purpose and\nnon-infringement.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -988,6 +1128,22 @@ Raw Data
             [
                 null,
                 "http://www.microsoft.com/opensource/licenses.mspx"
+            ],
+            [
+                "Homepage",
+                "http://www.microsoft.com/opensource/licenses.mspx#Ms-PL"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/ms-pl.html"
+            ],
+            [
+                null,
+                "http://www.microsoft.com/en-us/openness/licenses.aspx#MPL"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/MS-PL"
             ]
         ]
     }

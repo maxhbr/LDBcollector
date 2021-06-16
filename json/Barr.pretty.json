@@ -1,7 +1,9 @@
 {
     "__impliedNames": [
         "Barr",
-        "Barr License"
+        "Barr License",
+        "scancode://barr-tex",
+        "Barr TeX License"
     ],
     "__impliedId": "Barr",
     "__isFsfFree": true,
@@ -77,6 +79,43 @@
                 ]
             }
         },
+        "Scancode": {
+            "otherUrls": null,
+            "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Barr",
+            "shortName": "Barr TeX License",
+            "textUrls": null,
+            "text": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
+            "category": "Permissive",
+            "osiUrl": null,
+            "owner": "Michael Barr",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/barr-tex.yml",
+            "key": "barr-tex",
+            "name": "Barr TeX License",
+            "spdxId": "Barr",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "scancode://barr-tex",
+                    "Barr TeX License",
+                    "Barr"
+                ],
+                "__impliedId": "Barr",
+                "__impliedCopyleft": [
+                    [
+                        "Scancode",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedText": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
+                "__impliedURLs": [
+                    [
+                        "Homepage",
+                        "https://fedoraproject.org/wiki/Licensing/Barr"
+                    ]
+                ]
+            }
+        },
         "BlueOak License List": {
             "BlueOakRating": "Bronze",
             "url": "https://spdx.org/licenses/Barr.html",
@@ -134,10 +173,15 @@
         [
             "BlueOak License List",
             "NoCopyleft"
+        ],
+        [
+            "Scancode",
+            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
+    "__impliedText": "This is a package of commutative diagram macros built on top of Xy-pic  by\nMichael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely\ndistributed, unchanged, for non-commercial or commercial  use. If changed, it\nmust be renamed. Inclusion in a commercial  software package is also permitted,\nbut I would appreciate receiving a  free copy for my personal examination and\nuse. There are no guarantees  that this package is good for anything. I have\ntested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason\nit will not work  with AMSTeX, I have not tested it.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -149,6 +193,10 @@
         ],
         [
             null,
+            "https://fedoraproject.org/wiki/Licensing/Barr"
+        ],
+        [
+            "Homepage",
             "https://fedoraproject.org/wiki/Licensing/Barr"
         ]
     ]

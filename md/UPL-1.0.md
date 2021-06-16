@@ -9,6 +9,10 @@ Universal Permissive License v1.0 (UPL-1.0)
 
 -   `The Universal Permissive License (UPL), Version 1.0`
 
+-   `scancode://upl-1.0`
+
+-   `UPL 1.0`
+
 Description
 -----------
 
@@ -49,11 +53,55 @@ Obligations
 URLs
 ----
 
--   **OSI Page:** https://opensource.org/licenses/UPL
+-   **Homepage:** http://opensource.org/licenses/UPL
 
 -   **SPDX:** https://spdx.org/licenses/UPL-1.0.html
 
 -   **SPDX:** http://spdx.org/licenses/UPL-1.0.json
+
+-   http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626\#.VQsAeWTF8z0
+
+-   https://oss.oracle.com/licenses/upl/index.html
+
+-   https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
+
+Text
+----
+
+    The Universal Permissive License (UPL), Version 1.0
+
+    Subject to the condition set forth below, permission is hereby granted to any
+    person obtaining a copy of this software, associated documentation and/or data
+    (collectively the "Software"), free of charge and under any and all copyright
+    rights in the Software, and any and all patent rights owned or freely licensable
+    by each licensor hereunder covering either
+
+    (i) the unmodified Software as contributed to or provided by such licensor, or 
+    (ii) the Larger Works (as defined below), to deal in both
+
+     (a) the Software, and
+     (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if
+         one is included with the Software (each a "Larger Work" to which the
+         Software is contributed by such licensors),
+
+    without restriction, including without limitation the rights to copy, create
+    derivative works of, display, perform, and distribute the Software and make,
+    use, sell, offer for sale, import, export, have made, and have sold the Software
+    and the Larger Work(s), and to sublicense the foregoing rights on either these
+    or other terms.
+
+    This license is subject to the following condition:
+
+    The above copyright notice and either this complete permission notice or at a
+    minimum a reference to the UPL must be included in all copies or substantial
+    portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -82,6 +130,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
@@ -90,7 +141,9 @@ Raw Data
             "UPL",
             "Universal Permissive License v1.0",
             "upl-1.0",
-            "The Universal Permissive License (UPL), Version 1.0"
+            "The Universal Permissive License (UPL), Version 1.0",
+            "scancode://upl-1.0",
+            "UPL 1.0"
         ],
         "__impliedId": "UPL-1.0",
         "facts": {
@@ -141,6 +194,68 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "UPL-1.0"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0",
+                    "https://opensource.org/licenses/UPL",
+                    "https://oss.oracle.com/licenses/upl/index.html",
+                    "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
+                ],
+                "homepageUrl": "http://opensource.org/licenses/UPL",
+                "shortName": "UPL 1.0",
+                "textUrls": null,
+                "text": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+                "category": "Permissive",
+                "osiUrl": "http://opensource.org/licenses/UPL",
+                "owner": "Oracle Corporation",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/upl-1.0.yml",
+                "key": "upl-1.0",
+                "name": "Universal Permissive License (UPL) v1.0",
+                "spdxId": "UPL-1.0",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://upl-1.0",
+                        "UPL 1.0",
+                        "UPL-1.0"
+                    ],
+                    "__impliedId": "UPL-1.0",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://opensource.org/licenses/UPL"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/UPL"
+                        ],
+                        [
+                            null,
+                            "http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/UPL"
+                        ],
+                        [
+                            null,
+                            "https://oss.oracle.com/licenses/upl/index.html"
+                        ],
+                        [
+                            null,
+                            "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
+                        ]
+                    ]
+                }
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -340,6 +455,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
@@ -384,6 +503,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": true,
+        "__impliedText": "The Universal Permissive License (UPL), Version 1.0\n\nSubject to the condition set forth below, permission is hereby granted to any\nperson obtaining a copy of this software, associated documentation and/or data\n(collectively the \"Software\"), free of charge and under any and all copyright\nrights in the Software, and any and all patent rights owned or freely licensable\nby each licensor hereunder covering either\n\n(i) the unmodified Software as contributed to or provided by such licensor, or \n(ii) the Larger Works (as defined below), to deal in both\n\n (a) the Software, and\n (b) any piece of software and/or hardware listed in the lrgrwrks.txt file if\n     one is included with the Software (each a \"Larger Work\" to which the\n     Software is contributed by such licensors),\n\nwithout restriction, including without limitation the rights to copy, create\nderivative works of, display, perform, and distribute the Software and make,\nuse, sell, offer for sale, import, export, have made, and have sold the Software\nand the Larger Work(s), and to sublicense the foregoing rights on either these\nor other terms.\n\nThis license is subject to the following condition:\n\nThe above copyright notice and either this complete permission notice or at a\nminimum a reference to the UPL must be included in all copies or substantial\nportions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS\nFOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR\nCOPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER\nIN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN\nCONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -400,6 +520,26 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/UPL"
+            ],
+            [
+                "Homepage",
+                "http://opensource.org/licenses/UPL"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/UPL"
+            ],
+            [
+                null,
+                "http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0"
+            ],
+            [
+                null,
+                "https://oss.oracle.com/licenses/upl/index.html"
+            ],
+            [
+                null,
+                "https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf"
             ]
         ]
     }

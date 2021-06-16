@@ -5,6 +5,8 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 **Other Names:**
 
+-   `W3C Software Notice and License`
+
 -   `W3C License`
 
 -   `The W3C Software Notice and License`
@@ -12,6 +14,8 @@ W3C Software Notice and License (2002-12-31) (W3C)
 -   `License :: OSI Approved :: W3C License`
 
 -   `W3C Software Notice and License (became active on December 31 2002)`
+
+-   `scancode://w3c`
 
 -   `W3C Software Notice and License 20021231`
 
@@ -29,6 +33,11 @@ Comments on (easy) usability
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
+
+-   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
+    Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
 General Comments
 ----------------
@@ -54,8 +63,16 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “Per SPDX.org, this license was released 13 December 2002. This
+    license is OSI certified. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:**
+    http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
 
 -   **OSI Page:** https://opensource.org/licenses/W3C
 
@@ -66,6 +83,11 @@ URLs
 -   **open-license:** http://open-license.hitachi.com/licenses/269
 
 -   http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
+
+-   http://www.opensource.org/licenses/W3C
+
+-   http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
+    http://www.opensource.org/licenses/W3C.php
 
 Description from open-license
 -----------------------------
@@ -129,44 +151,40 @@ Description from open-license
 Text
 ----
 
-    W3C Software Notice and License
+    By obtaining, using and/or copying this work, you (the licensee) agree that you
+    have read, understood, and will comply with the following terms and conditions.
 
-    This work (and included software, documentation such as READMEs, or other related items) is being provided by the copyright holders under the following license.
+    Permission to copy, modify, and distribute this software and its documentation,
+    with or without modification, for any purpose and without fee or royalty is
+    hereby granted, provided that you include the following on ALL copies of the
+    software and documentation or portions thereof, including modifications:
 
+    The full text of this NOTICE in a location viewable to users of the
+    redistributed or derivative work.
 
-    License
+    Any pre-existing intellectual property disclaimers, notices, or terms and
+    conditions. If none exist, the W3C Software Short Notice should be included
+    (hypertext is preferred, text is permitted) within the body of any redistributed
+    or derivative code.
 
-    By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.
-
-    Permission to copy, modify, and distribute this software and its documentation, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications:
-
-        •The full text of this NOTICE in a location viewable to users of the redistributed or 
-        derivative work.
-
-        •Any pre-existing intellectual property disclaimers, notices, or terms and conditions. 
-        If none exist, the W3C Software Short Notice should be included (hypertext is 
-        preferred, text is permitted) within the body of any redistributed or 
-        derivative code.
-
-        •Notice of any changes or modifications to the files, including the date changes 
-        were made. (We recommend you provide URIs to the location from which the code 
-        is derived.)
-
+    Notice of any changes or modifications to the files, including the date changes
+    were made. (We recommend you provide URIs to the location from which the code is
+    derived.)
 
     Disclaimers
+    THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE
+    NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT
+    THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY
+    PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
 
-    THIS SOFTWARE AND DOCUMENTATION IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.
+    COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR
+    CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
 
-    COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.
-
-    The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.
-
-
-    Notes
-
-    This version: http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
-
-    This formulation of W3C's notice and license became active on December 31 2002. This version removes the copyright ownership notice such that this license can be used with materials other than those owned by the W3C, reflects that ERCIM is now a host of the W3C, includes references to this specific dated version of the license, and removes the ambiguous grant of "use". Otherwise, this version is the same as the previous version and is written so as to preserve the Free Software Foundation's assessment of GPL compatibility and OSI's certification under the Open Source Definition.
+    The name and trademarks of copyright holders may NOT be used in advertising or
+    publicity pertaining to the software without specific, written prior permission.
+    Title to copyright in this software and any associated documentation will at all
+    times remain with copyright holders.
 
 ------------------------------------------------------------------------
 
@@ -180,6 +198,10 @@ Raw Data
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [Fedora Project
+    Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
+    ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
 -   [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -206,6 +228,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/W3C.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode")
+    (CC0-1.0)
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -215,19 +240,31 @@ Raw Data
         "__impliedNames": [
             "W3C",
             "W3C Software Notice and License (2002-12-31)",
+            "W3C Software Notice and License",
             "W3C License",
             "The W3C Software Notice and License",
             "License :: OSI Approved :: W3C License",
             "W3C Software Notice and License (became active on December 31 2002)",
+            "scancode://w3c",
             "W3C Software Notice and License 20021231"
         ],
         "__impliedId": "W3C",
+        "__isFsfFree": true,
+        "__impliedAmbiguousNames": [
+            "W3C"
+        ],
         "__impliedComments": [
             [
                 "Hitachi open-license",
                 [
                     "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
                     "\"W3C Software Short Notice\" can be found at http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html \"previous version\" can be found at http The link for \"Free Software Foundation's assessment of GPL compatibility\" can be found at http://www. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at www.w3.org/Consortium/Legal/copyright-software-19980720. gnu.org/philosophy/license-list.html#GPLCompatibleLicenses \"OSI's certification\" can be found at http://www.opensource.org/licenses/W3C.php.\" The link for \"Open Source Definition\" is http://www.opensource.org/docs/definition.php"
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
                 ]
             ]
         ],
@@ -313,6 +350,101 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "W3C"
+            },
+            "Fedora Project Wiki": {
+                "GPLv2 Compat?": "Yes",
+                "rating": "Good",
+                "Upstream URL": "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+                "GPLv3 Compat?": "Yes",
+                "Short Name": "W3C",
+                "licenseType": "license",
+                "_sourceURL": "https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing",
+                "Full Name": "W3C Software Notice and License",
+                "FSF Free?": "Yes",
+                "_implications": {
+                    "__impliedNames": [
+                        "W3C Software Notice and License"
+                    ],
+                    "__isFsfFree": true,
+                    "__impliedAmbiguousNames": [
+                        "W3C"
+                    ],
+                    "__impliedJudgement": [
+                        [
+                            "Fedora Project Wiki",
+                            {
+                                "tag": "PositiveJudgement",
+                                "contents": "This software Licenses is OK for Fedora"
+                            }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.opensource.org/licenses/W3C",
+                    "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html",
+                    "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html http://www.opensource.org/licenses/W3C.php",
+                    "https://opensource.org/licenses/W3C"
+                ],
+                "homepageUrl": "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231",
+                "shortName": "W3C Software Notice and License",
+                "textUrls": null,
+                "text": "By obtaining, using and/or copying this work, you (the licensee) agree that you\nhave read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this software and its documentation,\nwith or without modification, for any purpose and without fee or royalty is\nhereby granted, provided that you include the following on ALL copies of the\nsoftware and documentation or portions thereof, including modifications:\n\nThe full text of this NOTICE in a location viewable to users of the\nredistributed or derivative work.\n\nAny pre-existing intellectual property disclaimers, notices, or terms and\nconditions. If none exist, the W3C Software Short Notice should be included\n(hypertext is preferred, text is permitted) within the body of any redistributed\nor derivative code.\n\nNotice of any changes or modifications to the files, including the date changes\nwere made. (We recommend you provide URIs to the location from which the code is\nderived.)\n\nDisclaimers\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE\nNO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED\nTO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT\nTHE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY\nPATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the software without specific, written prior permission.\nTitle to copyright in this software and any associated documentation will at all\ntimes remain with copyright holders.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "W3C - World Wide Web Consortium",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml",
+                "key": "w3c",
+                "name": "W3C Software Notice and License",
+                "spdxId": "W3C",
+                "notes": "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://w3c",
+                        "W3C Software Notice and License",
+                        "W3C"
+                    ],
+                    "__impliedId": "W3C",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license was released 13 December 2002. This license is\nOSI certified.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "By obtaining, using and/or copying this work, you (the licensee) agree that you\nhave read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this software and its documentation,\nwith or without modification, for any purpose and without fee or royalty is\nhereby granted, provided that you include the following on ALL copies of the\nsoftware and documentation or portions thereof, including modifications:\n\nThe full text of this NOTICE in a location viewable to users of the\nredistributed or derivative work.\n\nAny pre-existing intellectual property disclaimers, notices, or terms and\nconditions. If none exist, the W3C Software Short Notice should be included\n(hypertext is preferred, text is permitted) within the body of any redistributed\nor derivative code.\n\nNotice of any changes or modifications to the files, including the date changes\nwere made. (We recommend you provide URIs to the location from which the code is\nderived.)\n\nDisclaimers\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE\nNO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED\nTO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT\nTHE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY\nPATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the software without specific, written prior permission.\nTitle to copyright in this software and any associated documentation will at all\ntimes remain with copyright holders.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/W3C"
+                        ],
+                        [
+                            null,
+                            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html"
+                        ],
+                        [
+                            null,
+                            "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html http://www.opensource.org/licenses/W3C.php"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/W3C"
+                        ]
+                    ]
+                }
             },
             "HansHammel license-compatibility-checker": {
                 "implications": {
@@ -667,6 +799,13 @@ Raw Data
                 }
             ],
             [
+                "Fedora Project Wiki",
+                {
+                    "tag": "PositiveJudgement",
+                    "contents": "This software Licenses is OK for Fedora"
+                }
+            ],
+            [
                 "Google OSS Policy",
                 {
                     "tag": "PositiveJudgement",
@@ -693,11 +832,15 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "W3C Software Notice and License\n\nThis work (and included software, documentation such as READMEs, or other related items) is being provided by the copyright holders under the following license.\n\n\nLicense\n\nBy obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this software and its documentation, with or without modification, for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the software and documentation or portions thereof, including modifications:\n\n    •The full text of this NOTICE in a location viewable to users of the redistributed or \n    derivative work.\n\n    •Any pre-existing intellectual property disclaimers, notices, or terms and conditions. \n    If none exist, the W3C Software Short Notice should be included (hypertext is \n    preferred, text is permitted) within the body of any redistributed or \n    derivative code.\n\n    •Notice of any changes or modifications to the files, including the date changes \n    were made. (We recommend you provide URIs to the location from which the code \n    is derived.)\n\n\nDisclaimers\n\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to the software without specific, written prior permission. Title to copyright in this software and any associated documentation will at all times remain with copyright holders.\n\n\nNotes\n\nThis version: http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231\n\nThis formulation of W3C's notice and license became active on December 31 2002. This version removes the copyright ownership notice such that this license can be used with materials other than those owned by the W3C, reflects that ERCIM is now a host of the W3C, includes references to this specific dated version of the license, and removes the ambiguous grant of \"use\". Otherwise, this version is the same as the previous version and is written so as to preserve the Free Software Foundation's assessment of GPL compatibility and OSI's certification under the Open Source Definition.",
+        "__impliedText": "By obtaining, using and/or copying this work, you (the licensee) agree that you\nhave read, understood, and will comply with the following terms and conditions.\n\nPermission to copy, modify, and distribute this software and its documentation,\nwith or without modification, for any purpose and without fee or royalty is\nhereby granted, provided that you include the following on ALL copies of the\nsoftware and documentation or portions thereof, including modifications:\n\nThe full text of this NOTICE in a location viewable to users of the\nredistributed or derivative work.\n\nAny pre-existing intellectual property disclaimers, notices, or terms and\nconditions. If none exist, the W3C Software Short Notice should be included\n(hypertext is preferred, text is permitted) within the body of any redistributed\nor derivative code.\n\nNotice of any changes or modifications to the files, including the date changes\nwere made. (We recommend you provide URIs to the location from which the code is\nderived.)\n\nDisclaimers\nTHIS SOFTWARE AND DOCUMENTATION IS PROVIDED \"AS IS,\" AND COPYRIGHT HOLDERS MAKE\nNO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED\nTO, WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT\nTHE USE OF THE SOFTWARE OR DOCUMENTATION WILL NOT INFRINGE ANY THIRD PARTY\nPATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS.\n\nCOPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR\nCONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE SOFTWARE OR DOCUMENTATION.\n\nThe name and trademarks of copyright holders may NOT be used in advertising or\npublicity pertaining to the software without specific, written prior permission.\nTitle to copyright in this software and any associated documentation will at all\ntimes remain with copyright holders.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -722,6 +865,18 @@ Raw Data
             [
                 null,
                 "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html"
+            ],
+            [
+                "Homepage",
+                "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/W3C"
+            ],
+            [
+                null,
+                "http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html http://www.opensource.org/licenses/W3C.php"
             ]
         ]
     }

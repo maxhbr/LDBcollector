@@ -1,13 +1,23 @@
 {
     "__impliedNames": [
         "zlib-acknowledgement",
-        "zlib/libpng License with Acknowledgement"
+        "zlib/libpng License with Acknowledgement",
+        "scancode://zlib-acknowledgement",
+        "ZLIB License with Acknowledgment"
     ],
     "__impliedId": "zlib-acknowledgement",
     "__isFsfFree": true,
     "__impliedAmbiguousNames": [
         "The zlib/libpng License (Zlib)",
         "zlib with acknowledgement"
+    ],
+    "__impliedComments": [
+        [
+            "Scancode",
+            [
+                "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
+            ]
+        ]
     ],
     "facts": {
         "LicenseName": {
@@ -74,6 +84,57 @@
                             "tag": "PositiveJudgement",
                             "contents": "This software Licenses is OK for Fedora"
                         }
+                    ]
+                ]
+            }
+        },
+        "Scancode": {
+            "otherUrls": [
+                "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"
+            ],
+            "homepageUrl": "https://fedoraproject.org/wiki/Licensing:ZlibWithAcknowledgement?rd=Licensing/ZlibWithAcknowledgement",
+            "shortName": "ZLIB License with Acknowledgment",
+            "textUrls": null,
+            "text": "This software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim\nthat you wrote the original software. If you use this software in a product, an\nacknowledgment (see the following) in the product documentation is required.\n\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James\nW. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002\nPhilip A. Craig\n\n2. Altered source versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.",
+            "category": "Permissive",
+            "osiUrl": null,
+            "owner": "Charlie Poole",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml",
+            "key": "zlib-acknowledgement",
+            "name": "ZLIB License with Acknowledgment",
+            "spdxId": "zlib-acknowledgement",
+            "notes": "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n",
+            "_implications": {
+                "__impliedNames": [
+                    "scancode://zlib-acknowledgement",
+                    "ZLIB License with Acknowledgment",
+                    "zlib-acknowledgement"
+                ],
+                "__impliedId": "zlib-acknowledgement",
+                "__impliedComments": [
+                    [
+                        "Scancode",
+                        [
+                            "Per Fedora, this license is the same as zlib, except that it requires that\nan acknowledgement be made in the product documentation. For Fedora, this\nis our Release notes, so if you have any packages which use this license,\nyou MUST be sure to have the appropriate acknowledgement in the release\nnotes.\n"
+                        ]
+                    ]
+                ],
+                "__impliedCopyleft": [
+                    [
+                        "Scancode",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim\nthat you wrote the original software. If you use this software in a product, an\nacknowledgment (see the following) in the product documentation is required.\n\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James\nW. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002\nPhilip A. Craig\n\n2. Altered source versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.",
+                "__impliedURLs": [
+                    [
+                        "Homepage",
+                        "https://fedoraproject.org/wiki/Licensing:ZlibWithAcknowledgement?rd=Licensing/ZlibWithAcknowledgement"
+                    ],
+                    [
+                        null,
+                        "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"
                     ]
                 ]
             }
@@ -186,10 +247,15 @@
         [
             "HansHammel license-compatibility-checker",
             "NoCopyleft"
+        ],
+        [
+            "Scancode",
+            "NoCopyleft"
         ]
     ],
     "__calculatedCopyleft": "NoCopyleft",
     "__isOsiApproved": false,
+    "__impliedText": "This software is provided 'as-is', without any express or implied warranty. In\nno event will the authors be held liable for any damages arising from the use of\nthis software.\n\nPermission is granted to anyone to use this software for any purpose, including\ncommercial applications, and to alter it and redistribute it freely, subject to\nthe following restrictions:\n\n1. The origin of this software must not be misrepresented; you must not claim\nthat you wrote the original software. If you use this software in a product, an\nacknowledgment (see the following) in the product documentation is required.\n\nPortions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James\nW. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002\nPhilip A. Craig\n\n2. Altered source versions must be plainly marked as such, and must not be\nmisrepresented as being the original software.\n\n3. This notice may not be removed or altered from any source distribution.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -202,6 +268,10 @@
         [
             null,
             "https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement"
+        ],
+        [
+            "Homepage",
+            "https://fedoraproject.org/wiki/Licensing:ZlibWithAcknowledgement?rd=Licensing/ZlibWithAcknowledgement"
         ]
     ]
 }

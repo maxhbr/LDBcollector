@@ -3,6 +3,10 @@ curl License (curl)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://curl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -16,11 +20,34 @@ General Comments
 URLs
 ----
 
+-   **Homepage:** http://curl.haxx.se/
+
 -   **SPDX:** https://spdx.org/licenses/curl.html
 
 -   **SPDX:** http://spdx.org/licenses/curl.json
 
 -   https://github.com/bagder/curl/blob/master/COPYING
+
+-   http://curl.haxx.se/legal/licmix.html
+
+Text
+----
+
+    Permission to use, copy, modify, and distribute this software for any purpose
+    with or without fee is hereby granted, provided that the above copyright
+    notice and this permission notice appear in all copies.
+     
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN
+    NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
+    DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
+    OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE
+    OR OTHER DEALINGS IN THE SOFTWARE.
+     
+    Except as contained in this notice, the name of a copyright holder shall not
+    be used in advertising or otherwise to promote the sale, use or other dealings
+    in this Software without prior written authorization of the copyright holder.
 
 ------------------------------------------------------------------------
 
@@ -38,12 +65,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/curl.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/curl.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "curl",
-            "curl License"
+            "curl License",
+            "scancode://curl",
+            "cURL License"
         ],
         "__impliedId": "curl",
         "facts": {
@@ -85,6 +117,54 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "curl"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://curl.haxx.se/legal/licmix.html",
+                    "https://github.com/bagder/curl/blob/master/COPYING"
+                ],
+                "homepageUrl": "http://curl.haxx.se/",
+                "shortName": "cURL License",
+                "textUrls": null,
+                "text": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "cURL",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/curl.yml",
+                "key": "curl",
+                "name": "cURL License",
+                "spdxId": "curl",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://curl",
+                        "cURL License",
+                        "curl"
+                    ],
+                    "__impliedId": "curl",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://curl.haxx.se/"
+                        ],
+                        [
+                            null,
+                            "http://curl.haxx.se/legal/licmix.html"
+                        ],
+                        [
+                            null,
+                            "https://github.com/bagder/curl/blob/master/COPYING"
+                        ]
+                    ]
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
@@ -136,10 +216,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "Permission to use, copy, modify, and distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright\nnotice and this permission notice appear in all copies.\n \nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN\nNO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,\nDAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR\nOTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE\nOR OTHER DEALINGS IN THE SOFTWARE.\n \nExcept as contained in this notice, the name of a copyright holder shall not\nbe used in advertising or otherwise to promote the sale, use or other dealings\nin this Software without prior written authorization of the copyright holder.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -152,6 +237,14 @@ Raw Data
             [
                 null,
                 "https://github.com/bagder/curl/blob/master/COPYING"
+            ],
+            [
+                "Homepage",
+                "http://curl.haxx.se/"
+            ],
+            [
+                null,
+                "http://curl.haxx.se/legal/licmix.html"
             ]
         ]
     }

@@ -3,6 +3,10 @@ FSF All Permissive License (FSFAP)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://fsf-ap`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -14,12 +18,32 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per Fedora, This is a simple permissive license, created by the
+    FSF. It is Free and GPL compatible. The FSF recommends it for "small
+    supporting files, short manuals (under 300 lines long) and rough
+    documentation (README files, INSTALL files, etc.)". ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:**
+    http://www.gnu.org/prep/maintain/html\_node/License-Notices-for-Other-Files.html
+
 -   **SPDX:** http://spdx.org/licenses/FSFAP.json
 
--   https://www.gnu.org/prep/maintain/html\_node/License-Notices-for-Other-Files.html
+-   http://www.gnu.org/software/autoconf-archive/ax\_lib\_readline.html
+
+-   https://fedoraproject.org/wiki/Licensing/FSFAP
+
+Text
+----
+
+    Copying and distribution of this file, with or without modification, are
+    permitted in any medium without royalty provided the copyright notice
+    and this notice are preserved. This file is offered as-is, without any
+    warranty.
 
 ------------------------------------------------------------------------
 
@@ -37,18 +61,30 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/FSFAP.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "FSFAP",
             "FSF All Permissive license",
-            "FSF All Permissive License"
+            "FSF All Permissive License",
+            "scancode://fsf-ap"
         ],
         "__impliedId": "FSFAP",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "FSFAP"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -118,6 +154,72 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html",
+                    "http://www.gnu.org/software/autoconf-archive/ax_lib_readline.html",
+                    "https://fedoraproject.org/wiki/Licensing/FSFAP",
+                    "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+                ],
+                "homepageUrl": "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html",
+                "shortName": "FSF All Permissive License",
+                "textUrls": null,
+                "text": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Free Software Foundation (FSF)",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml",
+                "key": "fsf-ap",
+                "name": "FSF All Permissive License",
+                "spdxId": "FSFAP",
+                "notes": "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://fsf-ap",
+                        "FSF All Permissive License",
+                        "FSFAP"
+                    ],
+                    "__impliedId": "FSFAP",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per Fedora, This is a simple permissive license, created by the FSF. It is\nFree and GPL compatible. The FSF recommends it for \"small supporting files,\nshort manuals (under 300 lines long) and rough documentation (README files,\nINSTALL files, etc.)\".\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+                        ],
+                        [
+                            null,
+                            "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+                        ],
+                        [
+                            null,
+                            "http://www.gnu.org/software/autoconf-archive/ax_lib_readline.html"
+                        ],
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing/FSFAP"
+                        ],
+                        [
+                            null,
+                            "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+                        ]
+                    ]
+                }
             }
         },
         "__impliedJudgement": [
@@ -129,7 +231,15 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "Copying and distribution of this file, with or without modification, are\npermitted in any medium without royalty provided the copyright notice\nand this notice are preserved. This file is offered as-is, without any\nwarranty.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -138,6 +248,22 @@ Raw Data
             [
                 null,
                 "https://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+            ],
+            [
+                null,
+                "http://www.gnu.org/prep/maintain/html_node/License-Notices-for-Other-Files.html"
+            ],
+            [
+                null,
+                "http://www.gnu.org/software/autoconf-archive/ax_lib_readline.html"
+            ],
+            [
+                null,
+                "https://fedoraproject.org/wiki/Licensing/FSFAP"
             ]
         ]
     }

@@ -1,6 +1,7 @@
 {
     "WeakCopyleft": [
-        "HansHammel license-compatibility-checker"
+        "HansHammel license-compatibility-checker",
+        "Scancode"
     ],
     "SaaSCopyleft": [
         "BlueOak License List"

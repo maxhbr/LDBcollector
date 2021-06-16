@@ -3,6 +3,10 @@ Rdisc License (Rdisc)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://rdisc`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -18,14 +22,33 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per Fedora, this is a permissive style license from Sun, Free and
+    GPL compatible. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:**
+    https://fedoraproject.org/wiki/Licensing/Rdisc\_License
 
 -   **SPDX:** https://spdx.org/licenses/Rdisc.html
 
 -   **SPDX:** http://spdx.org/licenses/Rdisc.json
 
--   https://fedoraproject.org/wiki/Licensing/Rdisc\_License
+Text
+----
+
+    Rdisc (this program) was developed by Sun Microsystems, Inc. and is provided for unrestricted use provided that this legend is included on all tape media and as a part of the software program in whole or part. Users may copy or modify Rdisc without charge, and they may freely distribute it.
+
+    RDISC IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE.
+
+    Rdisc is provided with no support and without any obligation on the part of Sun Microsystems, Inc. to assist in its use, correction, modification or enhancement.
+
+    SUN MICROSYSTEMS, INC. SHALL HAVE NO LIABILITY WITH RESPECT TO THE INFRINGEMENT OF COPYRIGHTS, TRADE SECRETS OR ANY PATENTS BY RDISC OR ANY PART THEREOF.
+
+    In no event will Sun Microsystems, Inc. be liable for any lost revenue or profits or other special, indirect and consequential damages, even if Sun has been advised of the possibility of such damages.
 
 ------------------------------------------------------------------------
 
@@ -47,17 +70,29 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Rdisc.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Rdisc",
-            "Rdisc License"
+            "Rdisc License",
+            "scancode://rdisc"
         ],
         "__impliedId": "Rdisc",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Rdisc"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -128,6 +163,51 @@ Raw Data
                     ]
                 }
             },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Rdisc_License",
+                "shortName": "Rdisc License",
+                "textUrls": null,
+                "text": "Rdisc (this program) was developed by Sun Microsystems, Inc. and is provided for unrestricted use provided that this legend is included on all tape media and as a part of the software program in whole or part. Users may copy or modify Rdisc without charge, and they may freely distribute it.\n\nRDISC IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE.\n\nRdisc is provided with no support and without any obligation on the part of Sun Microsystems, Inc. to assist in its use, correction, modification or enhancement.\n\nSUN MICROSYSTEMS, INC. SHALL HAVE NO LIABILITY WITH RESPECT TO THE INFRINGEMENT OF COPYRIGHTS, TRADE SECRETS OR ANY PATENTS BY RDISC OR ANY PART THEREOF.\n\nIn no event will Sun Microsystems, Inc. be liable for any lost revenue or profits or other special, indirect and consequential damages, even if Sun has been advised of the possibility of such damages.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Oracle (Sun)",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml",
+                "key": "rdisc",
+                "name": "Rdisc License",
+                "spdxId": "Rdisc",
+                "notes": "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://rdisc",
+                        "Rdisc License",
+                        "Rdisc"
+                    ],
+                    "__impliedId": "Rdisc",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per Fedora, this is a permissive style license from Sun, Free and GPL\ncompatible.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Rdisc (this program) was developed by Sun Microsystems, Inc. and is provided for unrestricted use provided that this legend is included on all tape media and as a part of the software program in whole or part. Users may copy or modify Rdisc without charge, and they may freely distribute it.\n\nRDISC IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE.\n\nRdisc is provided with no support and without any obligation on the part of Sun Microsystems, Inc. to assist in its use, correction, modification or enhancement.\n\nSUN MICROSYSTEMS, INC. SHALL HAVE NO LIABILITY WITH RESPECT TO THE INFRINGEMENT OF COPYRIGHTS, TRADE SECRETS OR ANY PATENTS BY RDISC OR ANY PART THEREOF.\n\nIn no event will Sun Microsystems, Inc. be liable for any lost revenue or profits or other special, indirect and consequential damages, even if Sun has been advised of the possibility of such damages.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
+                        ]
+                    ]
+                }
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Rdisc.html",
@@ -185,10 +265,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "Rdisc (this program) was developed by Sun Microsystems, Inc. and is provided for unrestricted use provided that this legend is included on all tape media and as a part of the software program in whole or part. Users may copy or modify Rdisc without charge, and they may freely distribute it.\n\nRDISC IS PROVIDED AS IS WITH NO WARRANTIES OF ANY KIND INCLUDING THE WARRANTIES OF DESIGN, MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE, OR ARISING FROM A COURSE OF DEALING, USAGE OR TRADE PRACTICE.\n\nRdisc is provided with no support and without any obligation on the part of Sun Microsystems, Inc. to assist in its use, correction, modification or enhancement.\n\nSUN MICROSYSTEMS, INC. SHALL HAVE NO LIABILITY WITH RESPECT TO THE INFRINGEMENT OF COPYRIGHTS, TRADE SECRETS OR ANY PATENTS BY RDISC OR ANY PART THEREOF.\n\nIn no event will Sun Microsystems, Inc. be liable for any lost revenue or profits or other special, indirect and consequential damages, even if Sun has been advised of the possibility of such damages.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -200,6 +285,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Rdisc_License"
             ]
         ]

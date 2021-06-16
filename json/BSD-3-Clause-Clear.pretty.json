@@ -3,7 +3,9 @@
         "BSD-3-Clause-Clear",
         "BSD 3-Clause Clear License",
         "bsd-3-clause-clear",
-        "Clear BSD"
+        "Clear BSD",
+        "scancode://clear-bsd",
+        "Clear BSD License"
     ],
     "__impliedId": "BSD-3-Clause-Clear",
     "__impliedAmbiguousNames": [
@@ -64,6 +66,43 @@
             },
             "licensename": "BSD-3-Clause-Clear",
             "copyleftkind": "NoCopyleft"
+        },
+        "Scancode": {
+            "otherUrls": null,
+            "homepageUrl": "http://labs.metacarta.com/license-explanation.html",
+            "shortName": "Clear BSD License",
+            "textUrls": null,
+            "text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted (subject to the limitations in the\ndisclaimer below) provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the\n   distribution.\n\n * Neither the name of {Owner Organization} nor the names of its\n   contributors may be used to endorse or promote products derived\n   from this software without specific prior written permission.\n\nNO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE\nGRANTED BY THIS LICENSE.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT\nHOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+            "category": "Permissive",
+            "osiUrl": null,
+            "owner": "MetaCarta",
+            "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/clear-bsd.yml",
+            "key": "clear-bsd",
+            "name": "Clear BSD License",
+            "spdxId": "BSD-3-Clause-Clear",
+            "notes": null,
+            "_implications": {
+                "__impliedNames": [
+                    "scancode://clear-bsd",
+                    "Clear BSD License",
+                    "BSD-3-Clause-Clear"
+                ],
+                "__impliedId": "BSD-3-Clause-Clear",
+                "__impliedCopyleft": [
+                    [
+                        "Scancode",
+                        "NoCopyleft"
+                    ]
+                ],
+                "__calculatedCopyleft": "NoCopyleft",
+                "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted (subject to the limitations in the\ndisclaimer below) provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the\n   distribution.\n\n * Neither the name of {Owner Organization} nor the names of its\n   contributors may be used to endorse or promote products derived\n   from this software without specific prior written permission.\n\nNO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE\nGRANTED BY THIS LICENSE.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT\nHOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "__impliedURLs": [
+                    [
+                        "Homepage",
+                        "http://labs.metacarta.com/license-explanation.html"
+                    ]
+                ]
+            }
         },
         "HansHammel license-compatibility-checker": {
             "implications": {
@@ -256,6 +295,10 @@
             "NoCopyleft"
         ],
         [
+            "Scancode",
+            "NoCopyleft"
+        ],
+        [
             "librariesio license-compatibility",
             "NoCopyleft"
         ]
@@ -302,6 +345,7 @@
         ]
     },
     "__isOsiApproved": false,
+    "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted (subject to the limitations in the\ndisclaimer below) provided that the following conditions are met:\n\n * Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n * Redistributions in binary form must reproduce the above copyright\n   notice, this list of conditions and the following disclaimer in the\n   documentation and/or other materials provided with the\n   distribution.\n\n * Neither the name of {Owner Organization} nor the names of its\n   contributors may be used to endorse or promote products derived\n   from this software without specific prior written permission.\n\nNO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE\nGRANTED BY THIS LICENSE.  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT\nHOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED\nWARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\nLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR\nBUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE\nOR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN\nIF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
     "__impliedURLs": [
         [
             "SPDX",
@@ -314,6 +358,10 @@
         [
             null,
             "http://labs.metacarta.com/license-explanation.html#license"
+        ],
+        [
+            "Homepage",
+            "http://labs.metacarta.com/license-explanation.html"
         ]
     ]
 }

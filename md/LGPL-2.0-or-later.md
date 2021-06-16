@@ -3,6 +3,12 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://lgpl-2.0-plus`
+
+-   `LGPL 2.0 or later`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -29,14 +35,37 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   “Per SPDX.org, this license was released June 1991. This license has
+    been superseded by LGPL v2.1 ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html
 
 -   **SPDX:** http://spdx.org/licenses/LGPL-2.0-or-later.json
 
 -   https://spdx.org/licenses/LGPL-2.0-or-later.html
 
 -   https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
+
+Text
+----
+
+    This library is free software; you can redistribute it and/or modify it under
+    the terms of the GNU Library General Public License as published by the Free
+    Software Foundation; either version 2 of the License, or (at your option) any
+    later version.
+
+    This library is distributed in the hope that it will be useful, but WITHOUT ANY
+    WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+    PARTICULAR PURPOSE.  See the GNU Library General Public License for more details.
+
+    You should have received a copy of the GNU Library General Public License along
+    with this library; if not, write to the Free Software Foundation, Inc., 51
+    Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
 
 ------------------------------------------------------------------------
 
@@ -69,12 +98,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/LGPL-2.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "LGPL-2.0-or-later",
-            "GNU Library General Public License v2 or later"
+            "GNU Library General Public License v2 or later",
+            "scancode://lgpl-2.0-plus",
+            "LGPL 2.0 or later"
         ],
         "__impliedId": "LGPL-2.0-or-later",
         "__impliedAmbiguousNames": [
@@ -86,6 +120,12 @@ Raw Data
                 "BlueOak License List",
                 [
                     "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
                 ]
             ]
         ],
@@ -153,6 +193,57 @@ Raw Data
                 },
                 "licensename": "LGPL-2.0-or-later",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+                ],
+                "homepageUrl": "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html",
+                "shortName": "LGPL 2.0 or later",
+                "textUrls": null,
+                "text": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
+                "category": "Copyleft Limited",
+                "osiUrl": null,
+                "owner": "Free Software Foundation (FSF)",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml",
+                "key": "lgpl-2.0-plus",
+                "name": "GNU Library General Public License 2.0 or later",
+                "spdxId": "LGPL-2.0-or-later",
+                "notes": "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://lgpl-2.0-plus",
+                        "LGPL 2.0 or later",
+                        "LGPL-2.0-or-later"
+                    ],
+                    "__impliedId": "LGPL-2.0-or-later",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license was released June 1991. This license has been\nsuperseded by LGPL v2.1\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html"
+                        ],
+                        [
+                            null,
+                            "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+                        ]
+                    ]
+                }
             },
             "Debian Free Software Guidelines": {
                 "LicenseName": "The GNU Lesser General Public License (LGPL)",
@@ -374,12 +465,17 @@ Raw Data
                 "WeakCopyleft"
             ],
             [
+                "Scancode",
+                "WeakCopyleft"
+            ],
+            [
                 "librariesio license-compatibility",
                 "WeakCopyleft"
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
         "__isOsiApproved": true,
+        "__impliedText": "This library is free software; you can redistribute it and/or modify it under\nthe terms of the GNU Library General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your option) any\nlater version.\n\nThis library is distributed in the hope that it will be useful, but WITHOUT ANY\nWARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A\nPARTICULAR PURPOSE.  See the GNU Library General Public License for more details.\n\nYou should have received a copy of the GNU Library General Public License along\nwith this library; if not, write to the Free Software Foundation, Inc., 51\nFranklin St, Fifth Floor, Boston, MA  02110-1301, USA.",
         "__impliedURLs": [
             [
                 null,
@@ -392,6 +488,10 @@ Raw Data
             [
                 null,
                 "https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html"
             ]
         ]
     }

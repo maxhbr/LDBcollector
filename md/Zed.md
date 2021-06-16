@@ -3,6 +3,10 @@ Zed License (Zed)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://zed`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -21,11 +25,18 @@ General Comments
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/Zed
+
 -   **SPDX:** https://spdx.org/licenses/Zed.html
 
 -   **SPDX:** http://spdx.org/licenses/Zed.json
 
--   https://fedoraproject.org/wiki/Licensing/Zed
+Text
+----
+
+    You may copy and distribute this file freely. Any queries and complaints should
+    be forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this
+    file, please do not distribute the results under the name `zed-csp.sty'.
 
 ------------------------------------------------------------------------
 
@@ -47,12 +58,16 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Zed.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zed.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Zed",
-            "Zed License"
+            "Zed License",
+            "scancode://zed"
         ],
         "__impliedId": "Zed",
         "__isFsfFree": true,
@@ -128,6 +143,43 @@ Raw Data
                     ]
                 }
             },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Zed",
+                "shortName": "Zed License",
+                "textUrls": null,
+                "text": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Jim Davies",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zed.yml",
+                "key": "zed",
+                "name": "Zed License",
+                "spdxId": "Zed",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://zed",
+                        "Zed License",
+                        "Zed"
+                    ],
+                    "__impliedId": "Zed",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Zed"
+                        ]
+                    ]
+                }
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Zed.html",
@@ -185,10 +237,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "You may copy and distribute this file freely. Any queries and complaints should\nbe forwarded to Jim.Davies@comlab.ox.ac.uk. If you make any changes to this\nfile, please do not distribute the results under the name `zed-csp.sty'.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -200,6 +257,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/Zed"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Zed"
             ]
         ]

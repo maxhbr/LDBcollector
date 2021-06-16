@@ -3,6 +3,10 @@ No Limit Public License (NLPL)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://nlpl`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -18,14 +22,40 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per Fedora, there is a certain irony in a Frenchman writing a
+    license that isn't wholly applicable in France, due to Moral Rights.
+    But I digress. This license is basically the same as the WTFPL (with
+    slightly less profanity). It is Free and GPL-Compatible. A copy of
+    the license text was taken from http://imapsync.lamiral.info/COPYING
+    on 2012-07-09. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/NLPL
 
 -   **SPDX:** https://spdx.org/licenses/NLPL.html
 
 -   **SPDX:** http://spdx.org/licenses/NLPL.json
 
--   https://fedoraproject.org/wiki/Licensing/NLPL
+Text
+----
+
+    NO LIMIT PUBLIC LICENSE
+               Version 0, June 2012
+
+    Gilles LAMIRAL
+    La Billais
+    35580 Baulon
+    France
+
+                     NO LIMIT PUBLIC LICENSE
+    Terms and conditions for copying, distribution, modification
+    or anything else.
+
+      0. No limit to do anything with this work and this license.
 
 ------------------------------------------------------------------------
 
@@ -47,17 +77,29 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/NLPL.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "NLPL",
-            "No Limit Public License"
+            "No Limit Public License",
+            "scancode://nlpl"
         ],
         "__impliedId": "NLPL",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "NLPL"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -128,6 +170,51 @@ Raw Data
                     ]
                 }
             },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/NLPL",
+                "shortName": "NLPL",
+                "textUrls": null,
+                "text": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
+                "category": "Public Domain",
+                "osiUrl": null,
+                "owner": "Gilles Lamiral",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml",
+                "key": "nlpl",
+                "name": "No Limit Public License",
+                "spdxId": "NLPL",
+                "notes": "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://nlpl",
+                        "NLPL",
+                        "NLPL"
+                    ],
+                    "__impliedId": "NLPL",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per Fedora, there is a certain irony in a Frenchman writing a license that\nisn't wholly applicable in France, due to Moral Rights. But I digress. This\nlicense is basically the same as the WTFPL (with slightly less profanity).\nIt is Free and GPL-Compatible. A copy of the license text was taken from\nhttp://imapsync.lamiral.info/COPYING on 2012-07-09.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/NLPL"
+                        ]
+                    ]
+                }
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/NLPL.html",
@@ -185,10 +272,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "NO LIMIT PUBLIC LICENSE\n           Version 0, June 2012\n\nGilles LAMIRAL\nLa Billais\n35580 Baulon\nFrance\n\n                 NO LIMIT PUBLIC LICENSE\nTerms and conditions for copying, distribution, modification\nor anything else.\n\n  0. No limit to do anything with this work and this license.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -200,6 +292,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/NLPL"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/NLPL"
             ]
         ]

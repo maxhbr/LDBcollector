@@ -3,6 +3,14 @@ CMU License (MIT-CMU)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://cmu-template`
+
+-   `scancode://cmu-uc`
+
+-   `CMU UC Regents License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -16,13 +24,29 @@ General Comments
 URLs
 ----
 
+-   **Homepage:** http://copyfree.org/licenses/cmu/license.txt
+
+-   **Homepage:**
+    https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT\#CMU\_Style
+
 -   **SPDX:** https://spdx.org/licenses/MIT-CMU.html
 
 -   **SPDX:** http://spdx.org/licenses/MIT-CMU.json
 
--   https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT\#CMU\_Style
-
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
+
+Text
+----
+
+    Permission to use, copy, modify and distribute this software and its
+    documentation is hereby granted, provided that both the copyright notice and
+    this permission notice appear in all copies of the software, derivative works
+    or modified versions, and any portions thereof, and that both notices appear
+    in supporting documentation.
+
+    COPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS "AS IS" CONDITION.
+    COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES
+    WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -47,12 +71,21 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/MIT-CMU.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml "Scancode")
+    (CC0-1.0)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-uc.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "MIT-CMU",
-            "CMU License"
+            "CMU License",
+            "scancode://cmu-template",
+            "scancode://cmu-uc",
+            "CMU UC Regents License"
         ],
         "__impliedId": "MIT-CMU",
         "facts": {
@@ -99,6 +132,41 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MIT-CMU"
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "http://copyfree.org/licenses/cmu/license.txt",
+                "shortName": "CMU License",
+                "textUrls": null,
+                "text": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Carnegie Mellon University",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cmu-template.yml",
+                "key": "cmu-template",
+                "name": "Carnegie Mellon Template License",
+                "spdxId": null,
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://cmu-template",
+                        "CMU License"
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://copyfree.org/licenses/cmu/license.txt"
+                        ]
+                    ]
+                }
             },
             "HansHammel license-compatibility-checker": {
                 "implications": {
@@ -212,10 +280,15 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "Permission to use, copy, modify and distribute this software and its\ndocumentation is hereby granted, provided that both the copyright notice and\nthis permission notice appear in all copies of the software, derivative works\nor modified versions, and any portions thereof, and that both notices appear\nin supporting documentation.\n\nCOPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS \"AS IS\" CONDITION.\nCOPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES\nWHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -232,6 +305,14 @@ Raw Data
             [
                 null,
                 "https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE"
+            ],
+            [
+                "Homepage",
+                "http://copyfree.org/licenses/cmu/license.txt"
+            ],
+            [
+                "Homepage",
+                "https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style"
             ]
         ]
     }

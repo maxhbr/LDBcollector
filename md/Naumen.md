@@ -3,6 +3,10 @@ Naumen Public License (Naumen)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://naumen`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -26,8 +30,14 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://www.opensource.org/licenses/naumen.php
 
 -   **OSI Page:** https://opensource.org/licenses/Naumen
 
@@ -37,6 +47,8 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1260
 
+-   http://www.opensource.org/licenses/Naumen
+
 Description from open-license
 -----------------------------
 
@@ -45,46 +57,27 @@ Description from open-license
 Text
 ----
 
-    NAUMEN Public License (Naumen)
+    NAUMEN Public License
 
     This software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.
 
-    Redistribution and use in source and binary forms, with or without modification,
-    are permitted provided that the following conditions are met:
+    Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
-    1. Redistributions in source code must retain the above copyright notice, this
-    list of conditions, and the following disclaimer.
+    1. Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.
 
-    2. Redistributions in binary form must reproduce the above copyright notice, this
-    list of conditions, and the following disclaimer in the documentation and/or
-    other materials provided with the distribution.
+    2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.
 
-    3. The name NAUMEN (tm) must not be used to endorse or promote products derived
-    from this software without prior written permission from NAUMEN.
+    3. The name NAUMEN (tm) must not be used to endorse or promote products derived from this software without prior written permission from NAUMEN.
 
-    4. The right to distribute this software or to use it for any purpose does not
-    give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.
+    4. The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.
 
-    5. If any files originating from NAUMEN or Contributors are modified, you must
-    cause the modified files to carry prominent notices stating that you changed the
-    files and the date of any change.
+    5. If any files originating from NAUMEN or Contributors are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.
 
     Disclaimer:
 
-          THIS SOFTWARE IS PROVIDED BY NAUMEN "AS IS" AND ANY EXPRESSED OR IMPLIED
-          WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
-          MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+        THIS SOFTWARE IS PROVIDED BY NAUMEN "AS IS" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
 
-    IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
-    INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
-    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
-    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
-    OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF
-    THE POSSIBILITY OF SUCH DAMAGE.
-
-    This software consists of contributions made by NAUMEN and Contributors. Specific
-    attributions are listed in the accompanying credits file.
+    This software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.
 
 ------------------------------------------------------------------------
 
@@ -124,13 +117,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Naumen.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Naumen",
             "Naumen Public License",
-            "NAUMEN Public License"
+            "NAUMEN Public License",
+            "scancode://naumen"
         ],
         "__impliedId": "Naumen",
         "__isFsfFree": true,
@@ -142,6 +139,12 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/Naumen"
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
                 ]
             ]
         ],
@@ -247,6 +250,66 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.opensource.org/licenses/Naumen",
+                    "https://opensource.org/licenses/Naumen"
+                ],
+                "homepageUrl": "http://www.opensource.org/licenses/naumen.php",
+                "shortName": "NAUMEN Public License",
+                "textUrls": null,
+                "text": "NAUMEN Public License\n\nThis software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name NAUMEN (tm) must not be used to endorse or promote products derived from this software without prior written permission from NAUMEN.\n\n4. The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.\n\n5. If any files originating from NAUMEN or Contributors are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.\n\nDisclaimer:\n\n    THIS SOFTWARE IS PROVIDED BY NAUMEN \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n\nThis software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.",
+                "category": "Permissive",
+                "osiUrl": "http://www.opensource.org/licenses/naumen.php",
+                "owner": "OSI - Open Source Initiative",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/naumen.yml",
+                "key": "naumen",
+                "name": "NAUMEN Public License",
+                "spdxId": "Naumen",
+                "notes": "Per SPDX.org, this license is OSI certified.",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://naumen",
+                        "NAUMEN Public License",
+                        "Naumen"
+                    ],
+                    "__impliedId": "Naumen",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "NAUMEN Public License\n\nThis software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name NAUMEN (tm) must not be used to endorse or promote products derived from this software without prior written permission from NAUMEN.\n\n4. The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.\n\n5. If any files originating from NAUMEN or Contributors are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.\n\nDisclaimer:\n\n    THIS SOFTWARE IS PROVIDED BY NAUMEN \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n\nThis software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.opensource.org/licenses/naumen.php"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://www.opensource.org/licenses/naumen.php"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/Naumen"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/Naumen"
                         ]
                     ]
                 }
@@ -422,11 +485,15 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "NAUMEN Public License (Naumen)\n\nThis software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n1. Redistributions in source code must retain the above copyright notice, this\nlist of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this\nlist of conditions, and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\n3. The name NAUMEN (tm) must not be used to endorse or promote products derived\nfrom this software without prior written permission from NAUMEN.\n\n4. The right to distribute this software or to use it for any purpose does not\ngive you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.\n\n5. If any files originating from NAUMEN or Contributors are modified, you must\ncause the modified files to carry prominent notices stating that you changed the\nfiles and the date of any change.\n\nDisclaimer:\n\n      THIS SOFTWARE IS PROVIDED BY NAUMEN \"AS IS\" AND ANY EXPRESSED OR IMPLIED\n      WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF\n      MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.\n\nIN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,\nINCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR\nOTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF\nTHE POSSIBILITY OF SUCH DAMAGE.\n\nThis software consists of contributions made by NAUMEN and Contributors. Specific\nattributions are listed in the accompanying credits file.",
+        "__impliedText": "NAUMEN Public License\n\nThis software is Copyright (c) NAUMEN (tm) and Contributors. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n1. Redistributions in source code must retain the above copyright notice, this list of conditions, and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions, and the following disclaimer in the documentation and/or other materials provided with the distribution.\n\n3. The name NAUMEN (tm) must not be used to endorse or promote products derived from this software without prior written permission from NAUMEN.\n\n4. The right to distribute this software or to use it for any purpose does not give you the right to use Servicemarks (sm) or Trademarks (tm) of NAUMEN.\n\n5. If any files originating from NAUMEN or Contributors are modified, you must cause the modified files to carry prominent notices stating that you changed the files and the date of any change.\n\nDisclaimer:\n\n    THIS SOFTWARE IS PROVIDED BY NAUMEN \"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL NAUMEN OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. \n\nThis software consists of contributions made by NAUMEN and Contributors. Specific attributions are listed in the accompanying credits file.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -447,6 +514,18 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/Naumen.json"
+            ],
+            [
+                "Homepage",
+                "http://www.opensource.org/licenses/naumen.php"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/naumen.php"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/Naumen"
             ]
         ]
     }

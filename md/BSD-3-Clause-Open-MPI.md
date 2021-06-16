@@ -7,6 +7,8 @@ BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 -   `Open MPI License`
 
+-   `scancode://bsd-3-clause-open-mpi`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -20,11 +22,11 @@ General Comments
 URLs
 ----
 
+-   **Homepage:** https://www.open-mpi.org/community/license.php
+
 -   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Open-MPI.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/831
-
--   https://www.open-mpi.org/community/license.php
 
 -   http://www.netlib.org/lapack/LICENSE.txt
 
@@ -64,61 +66,6 @@ Description from open-license
 
 Text
 ----
-
-    Open MPI is distributed under the "New BSD license"[http://www.opensource.org/licenses/bsd-license.php], listed below. 
-    ----------------------------------------
-    Most files in this release are marked with the copyrights of the
-    organizations who have edited them.  The copyrights below are in no
-    particular order and generally reflect members of the Open MPI core
-    team who have contributed code to this release.  The copyrights for
-    code used under license from other parties are included in the
-    corresponding files.
-
-    Copyright (c) 2004-2010 The Trustees of Indiana University and Indiana
-                            University Research and Technology
-                            Corporation.  All rights reserved.
-    Copyright (c) 2004-2010 The University of Tennessee and The University
-                            of Tennessee Research Foundation.  All rights
-                            reserved.
-    Copyright (c) 2004-2010 High Performance Computing Center Stuttgart, 
-                            University of Stuttgart.  All rights reserved.
-    Copyright (c) 2004-2008 The Regents of the University of California.
-                            All rights reserved.
-    Copyright (c) 2006-2010 Los Alamos National Security, LLC.  All rights
-                            reserved. 
-    Copyright (c) 2006-2010 Cisco Systems, Inc.  All rights reserved.
-    Copyright (c) 2006-2010 Voltaire, Inc. All rights reserved.
-    Copyright (c) 2006-2011 Sandia National Laboratories. All rights reserved.
-    Copyright (c) 2006-2010 Sun Microsystems, Inc.  All rights reserved.
-                            Use is subject to license terms.
-    Copyright (c) 2006-2010 The University of Houston. All rights reserved.
-    Copyright (c) 2006-2009 Myricom, Inc.  All rights reserved.
-    Copyright (c) 2007-2008 UT-Battelle, LLC. All rights reserved.
-    Copyright (c) 2007-2010 IBM Corporation.  All rights reserved.
-    Copyright (c) 1998-2005 Forschungszentrum Juelich, Juelich Supercomputing 
-                            Centre, Federal Republic of Germany
-    Copyright (c) 2005-2008 ZIH, TU Dresden, Federal Republic of Germany
-    Copyright (c) 2007      Evergrid, Inc. All rights reserved.
-    Copyright (c) 2008      Chelsio, Inc.  All rights reserved.
-    Copyright (c) 2008-2009 Institut National de Recherche en
-                            Informatique.  All rights reserved.
-    Copyright (c) 2007      Lawrence Livermore National Security, LLC.
-                            All rights reserved.
-    Copyright (c) 2007-2009 Mellanox Technologies.  All rights reserved.
-    Copyright (c) 2006-2010 QLogic Corporation.  All rights reserved.
-    Copyright (c) 2008-2010 Oak Ridge National Labs.  All rights reserved.
-    Copyright (c) 2006-2010 Oracle and/or its affiliates.  All rights reserved.
-    Copyright (c) 2009      Bull SAS.  All rights reserved.
-    Copyright (c) 2010      ARM ltd.  All rights reserved.
-    Copyright (c) 2010-2011 Alex Brick <bricka@ccs.neu.edu>.  All rights reserved.
-    Copyright (c) 2013-2014 Intel, Inc. All rights reserved.
-    Copyright (c) 2011-2014 NVIDIA Corporation.  All rights reserved.
-
-    $COPYRIGHT$
-
-    Additional copyrights may follow
-
-    $HEADER$
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -171,13 +118,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause-Open-MPI.html "SPDX")
     (all data \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "BSD-3-Clause-Open-MPI",
             "Open MPI License",
-            "BSD 3-Clause Open MPI variant"
+            "BSD 3-Clause Open MPI variant",
+            "scancode://bsd-3-clause-open-mpi"
         ],
         "__impliedId": "BSD-3-Clause-Open-MPI",
         "__impliedComments": [
@@ -232,6 +183,54 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-3-Clause-Open-MPI"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "https://www.open-mpi.org/community/license.php",
+                    "http://www.netlib.org/lapack/LICENSE.txt"
+                ],
+                "homepageUrl": "https://www.open-mpi.org/community/license.php",
+                "shortName": "BSD 3-Clause Open MPI variant",
+                "textUrls": null,
+                "text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright\n  notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright\n  notice, this list of conditions and the following disclaimer listed\n  in this license in the documentation and/or other materials\n  provided with the distribution.\n\n- Neither the name of the copyright holders nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nThe copyright holders provide no reassurances that the source code\nprovided does not infringe any patent, copyright, or any other\nintellectual property rights of third parties.  The copyright holders\ndisclaim any liability to any recipient for claims brought against\nrecipient by any third party for infringement of that parties\nintellectual property rights.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Open MPI",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-open-mpi.yml",
+                "key": "bsd-3-clause-open-mpi",
+                "name": "BSD 3-Clause Open MPI variant",
+                "spdxId": "BSD-3-Clause-Open-MPI",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://bsd-3-clause-open-mpi",
+                        "BSD 3-Clause Open MPI variant",
+                        "BSD-3-Clause-Open-MPI"
+                    ],
+                    "__impliedId": "BSD-3-Clause-Open-MPI",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright\n  notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright\n  notice, this list of conditions and the following disclaimer listed\n  in this license in the documentation and/or other materials\n  provided with the distribution.\n\n- Neither the name of the copyright holders nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nThe copyright holders provide no reassurances that the source code\nprovided does not infringe any patent, copyright, or any other\nintellectual property rights of third parties.  The copyright holders\ndisclaim any liability to any recipient for claims brought against\nrecipient by any third party for infringement of that parties\nintellectual property rights.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://www.open-mpi.org/community/license.php"
+                        ],
+                        [
+                            null,
+                            "https://www.open-mpi.org/community/license.php"
+                        ],
+                        [
+                            null,
+                            "http://www.netlib.org/lapack/LICENSE.txt"
+                        ]
+                    ]
+                }
             },
             "Hitachi open-license": {
                 "summary": "http://www.open-mpi.org/community/license.php",
@@ -342,8 +341,15 @@ Raw Data
                 }
             }
         },
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "NoCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "Open MPI is distributed under the \"New BSD license\"[http://www.opensource.org/licenses/bsd-license.php], listed below. \n----------------------------------------\nMost files in this release are marked with the copyrights of the\norganizations who have edited them.  The copyrights below are in no\nparticular order and generally reflect members of the Open MPI core\nteam who have contributed code to this release.  The copyrights for\ncode used under license from other parties are included in the\ncorresponding files.\n\nCopyright (c) 2004-2010 The Trustees of Indiana University and Indiana\n                        University Research and Technology\n                        Corporation.  All rights reserved.\nCopyright (c) 2004-2010 The University of Tennessee and The University\n                        of Tennessee Research Foundation.  All rights\n                        reserved.\nCopyright (c) 2004-2010 High Performance Computing Center Stuttgart, \n                        University of Stuttgart.  All rights reserved.\nCopyright (c) 2004-2008 The Regents of the University of California.\n                        All rights reserved.\nCopyright (c) 2006-2010 Los Alamos National Security, LLC.  All rights\n                        reserved. \nCopyright (c) 2006-2010 Cisco Systems, Inc.  All rights reserved.\nCopyright (c) 2006-2010 Voltaire, Inc. All rights reserved.\nCopyright (c) 2006-2011 Sandia National Laboratories. All rights reserved.\nCopyright (c) 2006-2010 Sun Microsystems, Inc.  All rights reserved.\n                        Use is subject to license terms.\nCopyright (c) 2006-2010 The University of Houston. All rights reserved.\nCopyright (c) 2006-2009 Myricom, Inc.  All rights reserved.\nCopyright (c) 2007-2008 UT-Battelle, LLC. All rights reserved.\nCopyright (c) 2007-2010 IBM Corporation.  All rights reserved.\nCopyright (c) 1998-2005 Forschungszentrum Juelich, Juelich Supercomputing \n                        Centre, Federal Republic of Germany\nCopyright (c) 2005-2008 ZIH, TU Dresden, Federal Republic of Germany\nCopyright (c) 2007      Evergrid, Inc. All rights reserved.\nCopyright (c) 2008      Chelsio, Inc.  All rights reserved.\nCopyright (c) 2008-2009 Institut National de Recherche en\n                        Informatique.  All rights reserved.\nCopyright (c) 2007      Lawrence Livermore National Security, LLC.\n                        All rights reserved.\nCopyright (c) 2007-2009 Mellanox Technologies.  All rights reserved.\nCopyright (c) 2006-2010 QLogic Corporation.  All rights reserved.\nCopyright (c) 2008-2010 Oak Ridge National Labs.  All rights reserved.\nCopyright (c) 2006-2010 Oracle and/or its affiliates.  All rights reserved.\nCopyright (c) 2009      Bull SAS.  All rights reserved.\nCopyright (c) 2010      ARM ltd.  All rights reserved.\nCopyright (c) 2010-2011 Alex Brick <bricka@ccs.neu.edu>.  All rights reserved.\nCopyright (c) 2013-2014 Intel, Inc. All rights reserved.\nCopyright (c) 2011-2014 NVIDIA Corporation.  All rights reserved.\n\n$COPYRIGHT$\n\nAdditional copyrights may follow\n\n$HEADER$\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright\n  notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright\n  notice, this list of conditions and the following disclaimer listed\n  in this license in the documentation and/or other materials\n  provided with the distribution.\n\n- Neither the name of the copyright holders nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nThe copyright holders provide no reassurances that the source code\nprovided does not infringe any patent, copyright, or any other\nintellectual property rights of third parties.  The copyright holders\ndisclaim any liability to any recipient for claims brought against\nrecipient by any third party for infringement of that parties\nintellectual property rights.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n- Redistributions of source code must retain the above copyright\n  notice, this list of conditions and the following disclaimer.\n\n- Redistributions in binary form must reproduce the above copyright\n  notice, this list of conditions and the following disclaimer listed\n  in this license in the documentation and/or other materials\n  provided with the distribution.\n\n- Neither the name of the copyright holders nor the names of its\n  contributors may be used to endorse or promote products derived from\n  this software without specific prior written permission.\n\nThe copyright holders provide no reassurances that the source code\nprovided does not infringe any patent, copyright, or any other\nintellectual property rights of third parties.  The copyright holders\ndisclaim any liability to any recipient for claims brought against\nrecipient by any third party for infringement of that parties\nintellectual property rights.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT\nOWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,\nSPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT\nLIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,\nDATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY\nTHEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\nOF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
                 "open-license",
@@ -360,6 +366,10 @@ Raw Data
             [
                 null,
                 "http://www.netlib.org/lapack/LICENSE.txt"
+            ],
+            [
+                "Homepage",
+                "https://www.open-mpi.org/community/license.php"
             ]
         ]
     }

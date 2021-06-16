@@ -3,6 +3,12 @@ Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exceptio
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://mpl-2.0-no-copyleft-exception`
+
+-   `MPL 2.0 with no copyleft exception`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -25,17 +31,29 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   “Per SPDX.org, this license was released in January 2012. This
+    license list entry is for use when the MPL's Exhibit B, which
+    removes the Sec 3.3 copyleft exception. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://www.mozilla.org/MPL/2.0/
+
+-   **OSI Page:** http://opensource.org/licenses/MPL-2.0
 
 -   **SPDX:**
     http://spdx.org/licenses/MPL-2.0-no-copyleft-exception.json
 
 -   https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
--   http://www.mozilla.org/MPL/2.0/
+Text
+----
 
--   https://opensource.org/licenses/MPL-2.0
+    This Source Code Form is "Incompatible With Secondary Licenses", as
+    defined by the Mozilla Public License, v. 2.0.
 
 ------------------------------------------------------------------------
 
@@ -61,12 +79,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX")
     (all data \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "MPL-2.0-no-copyleft-exception",
-            "Mozilla Public License 2.0 (no copyleft exception)"
+            "Mozilla Public License 2.0 (no copyleft exception)",
+            "scancode://mpl-2.0-no-copyleft-exception",
+            "MPL 2.0 with no copyleft exception"
         ],
         "__impliedId": "MPL-2.0-no-copyleft-exception",
         "__impliedAmbiguousNames": [
@@ -78,6 +101,12 @@ Raw Data
                 "BlueOak License List",
                 [
                     "Weak copyleft licenses require sharing changes and additions to the licensed software when you give copies to others."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
                 ]
             ]
         ],
@@ -134,6 +163,61 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MPL-2.0-no-copyleft-exception"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "https://opensource.org/licenses/MPL-2.0"
+                ],
+                "homepageUrl": "http://www.mozilla.org/MPL/2.0/",
+                "shortName": "MPL 2.0 with no copyleft exception",
+                "textUrls": null,
+                "text": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
+                "category": "Copyleft Limited",
+                "osiUrl": "http://opensource.org/licenses/MPL-2.0",
+                "owner": "Mozilla",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml",
+                "key": "mpl-2.0-no-copyleft-exception",
+                "name": "Mozilla Public License 2.0 (no copyleft exception)",
+                "spdxId": "MPL-2.0-no-copyleft-exception",
+                "notes": "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://mpl-2.0-no-copyleft-exception",
+                        "MPL 2.0 with no copyleft exception",
+                        "MPL-2.0-no-copyleft-exception"
+                    ],
+                    "__impliedId": "MPL-2.0-no-copyleft-exception",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license was released in January 2012. This license list\nentry is for use when the MPL's Exhibit B, which removes the Sec 3.3\ncopyleft exception.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.mozilla.org/MPL/2.0/"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/MPL-2.0"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/MPL-2.0"
+                        ]
+                    ]
+                }
             },
             "HansHammel license-compatibility-checker": {
                 "implications": {
@@ -238,10 +322,15 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
+            ],
+            [
+                "Scancode",
+                "WeakCopyleft"
             ]
         ],
         "__calculatedCopyleft": "WeakCopyleft",
         "__isOsiApproved": true,
+        "__impliedText": "This Source Code Form is \"Incompatible With Secondary Licenses\", as\ndefined by the Mozilla Public License, v. 2.0.\n",
         "__impliedURLs": [
             [
                 null,
@@ -258,6 +347,14 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/MPL-2.0"
+            ],
+            [
+                "Homepage",
+                "http://www.mozilla.org/MPL/2.0/"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/MPL-2.0"
             ]
         ]
     }

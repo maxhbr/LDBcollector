@@ -31,6 +31,8 @@
 </table>
 <p><strong>Other Names:</strong></p>
 <ul>
+<li><p><code>scancode://beerware</code></p></li>
+<li><p><code>Beer-Ware License</code></p></li>
 <li><p><code>Beerware 42</code></p></li>
 </ul>
 <h2>Comments on (easy) usability</h2>
@@ -44,11 +46,17 @@
 </ul>
 <h2>URLs</h2>
 <ul>
+<li><p><strong>Homepage:</strong> http://people.freebsd.org/~phk/</p></li>
 <li><p><strong>SPDX:</strong> https://spdx.org/licenses/Beerware.html</p></li>
 <li><p><strong>SPDX:</strong> http://spdx.org/licenses/Beerware.json</p></li>
 <li><p>https://fedoraproject.org/wiki/Licensing/Beerware</p></li>
-<li><p>https://people.freebsd.org/~phk/</p></li>
 </ul>
+<h2>Text</h2>
+<pre><code>&quot;THE BEER-WARE LICENSE&quot; (Revision 42):
+&lt;phk@FreeBSD.ORG&gt; wrote this file. As long as you retain this notice you
+can do whatever you want with this stuff. If we meet some day, and you think
+this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
+</code></pre>
 <hr />
 <h2>Raw Data</h2>
 <h3>Facts</h3>
@@ -59,6 +67,7 @@
 <li><p><a href="https://opensource.google.com/docs/thirdparty/licenses/" title="Google OSS Policy">Google OSS Policy</a> (<a href="https://creativecommons.org/licenses/by/4.0/legalcode" title="CC-BY-4.0">CC-BY-4.0</a>)</p></li>
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
 <li><p><a href="https://spdx.org/licenses/Beerware.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
+<li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses" title="Wikipedia">Wikipedia</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/legalcode" title="CC-BY-SA-3.0">CC-BY-SA-3.0</a>)</p></li>
 </ul>
 <h3>Raw JSON</h3>
@@ -66,6 +75,8 @@
     &quot;__impliedNames&quot;: [
         &quot;Beerware&quot;,
         &quot;Beerware License&quot;,
+        &quot;scancode://beerware&quot;,
+        &quot;Beer-Ware License&quot;,
         &quot;Beerware 42&quot;
     ],
     &quot;__impliedId&quot;: &quot;Beerware&quot;,
@@ -144,6 +155,49 @@
                             &quot;tag&quot;: &quot;PositiveJudgement&quot;,
                             &quot;contents&quot;: &quot;This software Licenses is OK for Fedora&quot;
                         }
+                    ]
+                ]
+            }
+        },
+        &quot;Scancode&quot;: {
+            &quot;otherUrls&quot;: [
+                &quot;https://people.freebsd.org/~phk/&quot;
+            ],
+            &quot;homepageUrl&quot;: &quot;http://people.freebsd.org/~phk/&quot;,
+            &quot;shortName&quot;: &quot;Beer-Ware License&quot;,
+            &quot;textUrls&quot;: null,
+            &quot;text&quot;: &quot;\&quot;THE BEER-WARE LICENSE\&quot; (Revision 42):\n&lt;phk@FreeBSD.ORG&gt; wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n&quot;,
+            &quot;category&quot;: &quot;Permissive&quot;,
+            &quot;osiUrl&quot;: null,
+            &quot;owner&quot;: &quot;FreeBSD&quot;,
+            &quot;_sourceURL&quot;: &quot;https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/beerware.yml&quot;,
+            &quot;key&quot;: &quot;beerware&quot;,
+            &quot;name&quot;: &quot;Beer-Ware License&quot;,
+            &quot;spdxId&quot;: &quot;Beerware&quot;,
+            &quot;notes&quot;: null,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;scancode://beerware&quot;,
+                    &quot;Beer-Ware License&quot;,
+                    &quot;Beerware&quot;
+                ],
+                &quot;__impliedId&quot;: &quot;Beerware&quot;,
+                &quot;__impliedCopyleft&quot;: [
+                    [
+                        &quot;Scancode&quot;,
+                        &quot;NoCopyleft&quot;
+                    ]
+                ],
+                &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
+                &quot;__impliedText&quot;: &quot;\&quot;THE BEER-WARE LICENSE\&quot; (Revision 42):\n&lt;phk@FreeBSD.ORG&gt; wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n&quot;,
+                &quot;__impliedURLs&quot;: [
+                    [
+                        &quot;Homepage&quot;,
+                        &quot;http://people.freebsd.org/~phk/&quot;
+                    ],
+                    [
+                        null,
+                        &quot;https://people.freebsd.org/~phk/&quot;
                     ]
                 ]
             }
@@ -296,10 +350,15 @@
         [
             &quot;HansHammel license-compatibility-checker&quot;,
             &quot;NoCopyleft&quot;
+        ],
+        [
+            &quot;Scancode&quot;,
+            &quot;NoCopyleft&quot;
         ]
     ],
     &quot;__calculatedCopyleft&quot;: &quot;NoCopyleft&quot;,
     &quot;__isOsiApproved&quot;: false,
+    &quot;__impliedText&quot;: &quot;\&quot;THE BEER-WARE LICENSE\&quot; (Revision 42):\n&lt;phk@FreeBSD.ORG&gt; wrote this file. As long as you retain this notice you\ncan do whatever you want with this stuff. If we meet some day, and you think\nthis stuff is worth it, you can buy me a beer in return Poul-Henning Kamp\n&quot;,
     &quot;__impliedURLs&quot;: [
         [
             &quot;SPDX&quot;,
@@ -316,6 +375,10 @@
         [
             null,
             &quot;https://people.freebsd.org/~phk/&quot;
+        ],
+        [
+            &quot;Homepage&quot;,
+            &quot;http://people.freebsd.org/~phk/&quot;
         ]
     ]
 }</code></pre>

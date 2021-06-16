@@ -11,6 +11,8 @@ The MirOS Licence (MirOS)
 
 -   `The MirOS Licence (MirOS)`
 
+-   `scancode://mir-os`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -40,16 +42,26 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:** https://www.mirbsd.org/MirOS-Licence
+
 -   **OSI Page:** https://opensource.org/licenses/MirOS
+
+-   **OSI Page:** http://opensource.org/licenses/miros.html
 
 -   **SPDX:** https://spdx.org/licenses/MirOS.html
 
 -   **SPDX:** http://spdx.org/licenses/MirOS.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1554
+
+-   http://www.opensource.org/licenses/MirOS
 
 Description from open-license
 -----------------------------
@@ -97,60 +109,20 @@ Description from open-license
 Text
 ----
 
-    /*-
-    * Copyright © year, year, year, …
-    * First M. Last <user@host.domain>
-    *
-    * Provided that these terms and disclaimer and all copyright notices
-    * are retained or reproduced in an accompanying document, permission
-    * is granted to deal in this work without restriction, including un‐
-    * limited rights to use, publicly perform, distribute, sell, modify,
-    * merge, give away, or sublicence.
-    *
-    * This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to
-    * the utmost extent permitted by applicable law, neither express nor
-    * implied; without malicious intent or gross negligence. In no event
-    * may a licensor, author or contributor be held liable for indirect,
-    * direct, other damage, loss, or other issues arising in any way out
-    * of dealing in the work, even if advised of the possibility of such
-    * damage or existence of a defect, except proven that it results out
-    * of said person's immediate fault when using the work as intended.
-    */
+    Provided that these terms and disclaimer and all copyright notices
+    are retained or reproduced in an accompanying document, permission
+    is granted to deal in this work without restriction, including un‐
+    limited rights to use, publicly perform, distribute, sell, modify,
+    merge, give away, or sublicence.
 
-    I_N_S_T_R_U_C_T_I_O_N_S_:_
-    To apply the template(¹) specify the years of copyright (separated by
-    comma, not as a range), the legal names of the copyright holders, and
-    the real names of the authors if different. Avoid adding text.
-
-    R_A_T_I_O_N_A_L_E_:_
-    This licence is apt for any kind of work (such as source code, fonts,
-    documentation, graphics, sound etc.) and the preferred terms for work
-    added to MirBSD. It has been drafted as universally usable equivalent
-    of the "historic permission notice"⁽²⁾ adapted to Europen law because
-    in some (droit d'auteur) countries authors cannot disclaim all liabi‐
-    lities. Compliance to DFSG⁽³⁾ 1.1 is ensured, and GPLv2 compatibility
-    is asserted unless advertising clauses are used. The MirOS Licence is
-    certified to conform to OKD⁽⁴⁾ 1.0 and OSD⁽⁵⁾ 1.9, and qualifies as a
-    Free Software⁽⁶⁾ and also Free Documentation⁽⁷⁾ licence and is inclu‐
-    ded in some relevant lists⁽⁸⁾⁽⁹⁾⁽¹⁰⁾.
-
-    We believe you are not liable for work inserted which is intellectual
-    property of third parties, if you were not aware of the fact, act ap‐
-    propriately as soon as you become aware of that problem, seek an ami‐
-    cable solution for all parties, and never knowingly distribute a work
-    without being authorised to do so by its licensors.
-
-    R_E_F_E_R_E_N_C_E_S_:_
-    ① also at http://mirbsd.de/MirOS-Licence
-    ② http://www.opensource.org/licenses/historical.php
-    ③ http://www.debian.org/social_contract#guidelines
-    ④ http://www.opendefinition.org/1.0
-    ⑤ http://www.opensource.org/docs/osd
-    ⑥ http://www.gnu.org/philosophy/free-sw.html
-    ⑦ http://www.gnu.org/philosophy/free-doc.html
-    ⑧ http://www.ifross.de/ifross_html/lizenzcenter.html
-    ⑨ http://www.opendefinition.org/licenses
-    ⑩ http://opensource.org/licenses/miros.html
+    This work is provided "AS IS" and WITHOUT WARRANTY of any kind, to
+    the utmost extent permitted by applicable law, neither express nor
+    implied; without malicious intent or gross negligence. In no event
+    may a licensor, author or contributor be held liable for indirect,
+    direct, other damage, loss, or other issues arising in any way out
+    of dealing in the work, even if advised of the possibility of such
+    damage or existence of a defect, except proven that it results out
+    of said person's immediate fault when using the work as intended.
 
 ------------------------------------------------------------------------
 
@@ -190,6 +162,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
@@ -198,7 +173,8 @@ Raw Data
             "MirOS License",
             "MirOS Licence",
             "The MirOS Licence (MirOS)",
-            "The MirOS Licence"
+            "The MirOS Licence",
+            "scancode://mir-os"
         ],
         "__impliedId": "MirOS",
         "__isFsfFree": true,
@@ -211,6 +187,12 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "https://opensource.org/licenses/miros.html"
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
                 ]
             ]
         ],
@@ -316,6 +298,66 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.opensource.org/licenses/MirOS",
+                    "https://opensource.org/licenses/MirOS"
+                ],
+                "homepageUrl": "https://www.mirbsd.org/MirOS-Licence",
+                "shortName": "MirOS License",
+                "textUrls": null,
+                "text": "Provided that these terms and disclaimer and all copyright notices\nare retained or reproduced in an accompanying document, permission\nis granted to deal in this work without restriction, including unâ\nlimited rights to use, publicly perform, distribute, sell, modify,\nmerge, give away, or sublicence.\n\nThis work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\nthe utmost extent permitted by applicable law, neither express nor\nimplied; without malicious intent or gross negligence. In no event\nmay a licensor, author or contributor be held liable for indirect,\ndirect, other damage, loss, or other issues arising in any way out\nof dealing in the work, even if advised of the possibility of such\ndamage or existence of a defect, except proven that it results out\nof said person's immediate fault when using the work as intended.\n",
+                "category": "Permissive",
+                "osiUrl": "http://opensource.org/licenses/miros.html",
+                "owner": "MirOS Project",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml",
+                "key": "mir-os",
+                "name": "MirOS License",
+                "spdxId": "MirOS",
+                "notes": "Per SPDX.org, this license is OSI certified.",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://mir-os",
+                        "MirOS License",
+                        "MirOS"
+                    ],
+                    "__impliedId": "MirOS",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Provided that these terms and disclaimer and all copyright notices\nare retained or reproduced in an accompanying document, permission\nis granted to deal in this work without restriction, including un‐\nlimited rights to use, publicly perform, distribute, sell, modify,\nmerge, give away, or sublicence.\n\nThis work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\nthe utmost extent permitted by applicable law, neither express nor\nimplied; without malicious intent or gross negligence. In no event\nmay a licensor, author or contributor be held liable for indirect,\ndirect, other damage, loss, or other issues arising in any way out\nof dealing in the work, even if advised of the possibility of such\ndamage or existence of a defect, except proven that it results out\nof said person's immediate fault when using the work as intended.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://www.mirbsd.org/MirOS-Licence"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/miros.html"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/MirOS"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/MirOS"
                         ]
                     ]
                 }
@@ -620,11 +662,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "/*-\n* Copyright © year, year, year, …\n* First M. Last <user@host.domain>\n*\n* Provided that these terms and disclaimer and all copyright notices\n* are retained or reproduced in an accompanying document, permission\n* is granted to deal in this work without restriction, including un‐\n* limited rights to use, publicly perform, distribute, sell, modify,\n* merge, give away, or sublicence.\n*\n* This work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\n* the utmost extent permitted by applicable law, neither express nor\n* implied; without malicious intent or gross negligence. In no event\n* may a licensor, author or contributor be held liable for indirect,\n* direct, other damage, loss, or other issues arising in any way out\n* of dealing in the work, even if advised of the possibility of such\n* damage or existence of a defect, except proven that it results out\n* of said person's immediate fault when using the work as intended.\n*/\n\nI_N_S_T_R_U_C_T_I_O_N_S_:_\nTo apply the template(¹) specify the years of copyright (separated by\ncomma, not as a range), the legal names of the copyright holders, and\nthe real names of the authors if different. Avoid adding text.\n\nR_A_T_I_O_N_A_L_E_:_\nThis licence is apt for any kind of work (such as source code, fonts,\ndocumentation, graphics, sound etc.) and the preferred terms for work\nadded to MirBSD. It has been drafted as universally usable equivalent\nof the \"historic permission notice\"⁽²⁾ adapted to Europen law because\nin some (droit d'auteur) countries authors cannot disclaim all liabi‐\nlities. Compliance to DFSG⁽³⁾ 1.1 is ensured, and GPLv2 compatibility\nis asserted unless advertising clauses are used. The MirOS Licence is\ncertified to conform to OKD⁽⁴⁾ 1.0 and OSD⁽⁵⁾ 1.9, and qualifies as a\nFree Software⁽⁶⁾ and also Free Documentation⁽⁷⁾ licence and is inclu‐\nded in some relevant lists⁽⁸⁾⁽⁹⁾⁽¹⁰⁾.\n\nWe believe you are not liable for work inserted which is intellectual\nproperty of third parties, if you were not aware of the fact, act ap‐\npropriately as soon as you become aware of that problem, seek an ami‐\ncable solution for all parties, and never knowingly distribute a work\nwithout being authorised to do so by its licensors.\n\nR_E_F_E_R_E_N_C_E_S_:_\n① also at http://mirbsd.de/MirOS-Licence\n② http://www.opensource.org/licenses/historical.php\n③ http://www.debian.org/social_contract#guidelines\n④ http://www.opendefinition.org/1.0\n⑤ http://www.opensource.org/docs/osd\n⑥ http://www.gnu.org/philosophy/free-sw.html\n⑦ http://www.gnu.org/philosophy/free-doc.html\n⑧ http://www.ifross.de/ifross_html/lizenzcenter.html\n⑨ http://www.opendefinition.org/licenses\n⑩ http://opensource.org/licenses/miros.html",
+        "__impliedText": "Provided that these terms and disclaimer and all copyright notices\nare retained or reproduced in an accompanying document, permission\nis granted to deal in this work without restriction, including un‐\nlimited rights to use, publicly perform, distribute, sell, modify,\nmerge, give away, or sublicence.\n\nThis work is provided \"AS IS\" and WITHOUT WARRANTY of any kind, to\nthe utmost extent permitted by applicable law, neither express nor\nimplied; without malicious intent or gross negligence. In no event\nmay a licensor, author or contributor be held liable for indirect,\ndirect, other damage, loss, or other issues arising in any way out\nof dealing in the work, even if advised of the possibility of such\ndamage or existence of a defect, except proven that it results out\nof said person's immediate fault when using the work as intended.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -645,6 +691,18 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/MirOS.json"
+            ],
+            [
+                "Homepage",
+                "https://www.mirbsd.org/MirOS-Licence"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/miros.html"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/MirOS"
             ]
         ]
     }

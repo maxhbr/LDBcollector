@@ -11,6 +11,8 @@ ISC License (ISC)
 
 -   `License :: OSI Approved :: ISC License (ISCL)`
 
+-   `scancode://isc`
+
 Description
 -----------
 
@@ -53,6 +55,10 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
+    (CC0-1.0))
+
 Obligations
 -----------
 
@@ -65,7 +71,11 @@ Obligations
 URLs
 ----
 
+-   **Homepage:** https://www.isc.org/software/license
+
 -   **OSI Page:** https://opensource.org/licenses/ISC
+
+-   **OSI Page:** http://opensource.org/licenses/isc-license.txt
 
 -   **SPDX:** https://spdx.org/licenses/ISC.html
 
@@ -76,6 +86,12 @@ URLs
 -   **open-license:** http://open-license.hitachi.com/licenses/379
 
 -   https://www.isc.org/downloads/software-support-policy/isc-license/
+
+-   http://openbsd.wikia.com/wiki/OpenBSD%27s\_BSD\_license
+
+-   http://www.opensource.org/licenses/ISC
+
+-   https://www.isc.org/isc-license-1.0.html
 
 Description from open-license
 -----------------------------
@@ -111,12 +127,17 @@ Description from open-license
 Text
 ----
 
-    Copyright © 2004-<year> by Internet Systems Consortium, Inc. (“ISC”)
-    Copyright © 1995-2003 by Internet Software Consortium
+    Permission to use, copy, modify, and/or distribute this software for any purpose
+    with or without fee is hereby granted, provided that the above copyright notice
+    and this permission notice appear in all copies.
 
-    Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
-
-    THE SOFTWARE IS PROVIDED “AS IS” AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
+    REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+    FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
+    INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+    OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+    TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF
+    THIS SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -170,6 +191,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/ISC.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
+    (CC0-1.0)
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -183,6 +207,7 @@ Raw Data
             "isc-license",
             "ISC License (ISC)",
             "License :: OSI Approved :: ISC License (ISCL)",
+            "scancode://isc",
             "ISC license"
         ],
         "__impliedId": "ISC",
@@ -194,6 +219,12 @@ Raw Data
                 "Hitachi open-license",
                 [
                     "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
                 ]
             ]
         ],
@@ -298,6 +329,86 @@ Raw Data
                 },
                 "licensename": "ISC",
                 "copyleftkind": "NoCopyleft"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license",
+                    "http://www.isc.org/software/license",
+                    "http://www.opensource.org/licenses/ISC",
+                    "https://opensource.org/licenses/ISC",
+                    "https://www.isc.org/downloads/software-support-policy/isc-license/",
+                    "https://www.isc.org/isc-license-1.0.html"
+                ],
+                "homepageUrl": "https://www.isc.org/software/license",
+                "shortName": "ISC License",
+                "textUrls": null,
+                "text": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
+                "category": "Permissive",
+                "osiUrl": "http://opensource.org/licenses/isc-license.txt",
+                "owner": "ISC - Internet Systems Consortium",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml",
+                "key": "isc",
+                "name": "ISC License",
+                "spdxId": "ISC",
+                "notes": "Per SPDX.org, this license is OSI certified.",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://isc",
+                        "ISC License",
+                        "ISC"
+                    ],
+                    "__impliedId": "ISC",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://www.isc.org/software/license"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/isc-license.txt"
+                        ],
+                        [
+                            null,
+                            "http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license"
+                        ],
+                        [
+                            null,
+                            "http://www.isc.org/software/license"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/ISC"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/ISC"
+                        ],
+                        [
+                            null,
+                            "https://www.isc.org/downloads/software-support-policy/isc-license/"
+                        ],
+                        [
+                            null,
+                            "https://www.isc.org/isc-license-1.0.html"
+                        ]
+                    ]
+                }
             },
             "HansHammel license-compatibility-checker": {
                 "implications": {
@@ -769,6 +880,10 @@ Raw Data
                 "NoCopyleft"
             ],
             [
+                "Scancode",
+                "NoCopyleft"
+            ],
+            [
                 "librariesio license-compatibility",
                 "NoCopyleft"
             ]
@@ -811,7 +926,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": true,
-        "__impliedText": "Copyright © 2004-<year> by Internet Systems Consortium, Inc. (“ISC”)\nCopyright © 1995-2003 by Internet Software Consortium\n\nPermission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED “AS IS” AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+        "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any purpose\nwith or without fee is hereby granted, provided that the above copyright notice\nand this permission notice appear in all copies.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH\nREGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND\nFITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,\nINDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS\nOF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER\nTORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF\nTHIS SOFTWARE.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -840,6 +955,30 @@ Raw Data
             [
                 null,
                 "https://www.isc.org/downloads/software-support-policy/isc-license/"
+            ],
+            [
+                "Homepage",
+                "https://www.isc.org/software/license"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/isc-license.txt"
+            ],
+            [
+                null,
+                "http://openbsd.wikia.com/wiki/OpenBSD%27s_BSD_license"
+            ],
+            [
+                null,
+                "http://www.isc.org/software/license"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/ISC"
+            ],
+            [
+                null,
+                "https://www.isc.org/isc-license-1.0.html"
             ]
         ]
     }

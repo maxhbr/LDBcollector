@@ -3,6 +3,10 @@ Leptonica License (Leptonica)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://leptonica`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -21,11 +25,22 @@ General Comments
 URLs
 ----
 
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/Leptonica
+
 -   **SPDX:** https://spdx.org/licenses/Leptonica.html
 
 -   **SPDX:** http://spdx.org/licenses/Leptonica.json
 
--   https://fedoraproject.org/wiki/Licensing/Leptonica
+Text
+----
+
+    This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.
+
+    No author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: 
+
+    (1) the origin of this source code must not be misrepresented; 
+    (2) modified versions must be plainly marked as such; and 
+    (3) this notice may not be removed or altered from any source or modified source distribution.
 
 ------------------------------------------------------------------------
 
@@ -47,12 +62,16 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Leptonica.html "SPDX") (all data
     \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/leptonica.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Leptonica",
-            "Leptonica License"
+            "Leptonica License",
+            "scancode://leptonica"
         ],
         "__impliedId": "Leptonica",
         "__isFsfFree": true,
@@ -128,6 +147,43 @@ Raw Data
                     ]
                 }
             },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "https://fedoraproject.org/wiki/Licensing/Leptonica",
+                "shortName": "Leptonica License",
+                "textUrls": null,
+                "text": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Leptonica",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/leptonica.yml",
+                "key": "leptonica",
+                "name": "Leptonica License",
+                "spdxId": "Leptonica",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://leptonica",
+                        "Leptonica License",
+                        "Leptonica"
+                    ],
+                    "__impliedId": "Leptonica",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://fedoraproject.org/wiki/Licensing/Leptonica"
+                        ]
+                    ]
+                }
+            },
             "BlueOak License List": {
                 "BlueOakRating": "Lead",
                 "url": "https://spdx.org/licenses/Leptonica.html",
@@ -185,10 +241,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.\n\nNo author or distributor accepts responsibility to anyone for the consequences of using this software, or for whether it serves any particular purpose or works at all, unless he or she says so in writing.  Everyone is granted permission to copy, modify and redistribute this source code, for commercial or non-commercial purposes, with the following restrictions: \n\n(1) the origin of this source code must not be misrepresented; \n(2) modified versions must be plainly marked as such; and \n(3) this notice may not be removed or altered from any source or modified source distribution.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -200,6 +261,10 @@ Raw Data
             ],
             [
                 null,
+                "https://fedoraproject.org/wiki/Licensing/Leptonica"
+            ],
+            [
+                "Homepage",
                 "https://fedoraproject.org/wiki/Licensing/Leptonica"
             ]
         ]

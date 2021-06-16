@@ -3,6 +3,12 @@ GNU Free Documentation License v1.2 or later (GFDL-1.2-or-later)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://gfdl-1.2-plus`
+
+-   `GFDL 1.2 or later`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -16,12 +22,16 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “This license was released November 2002” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2-plus.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
--   **SPDX:** http://spdx.org/licenses/GFDL-1.2-or-later.json
+-   **Homepage:** http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt
 
--   https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt
+-   **SPDX:** http://spdx.org/licenses/GFDL-1.2-or-later.json
 
 ------------------------------------------------------------------------
 
@@ -39,16 +49,29 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/GFDL-1.2-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2-plus.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "GFDL-1.2-or-later",
-            "GNU Free Documentation License v1.2 or later"
+            "GNU Free Documentation License v1.2 or later",
+            "scancode://gfdl-1.2-plus",
+            "GFDL 1.2 or later"
         ],
         "__impliedId": "GFDL-1.2-or-later",
         "__impliedAmbiguousNames": [
             "GNU Free Documentation License (GFDL)"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "This license was released November 2002"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -90,6 +113,61 @@ Raw Data
                 },
                 "spdxLicenseId": "GFDL-1.2-or-later"
             },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt",
+                    "https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+                ],
+                "homepageUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt",
+                "shortName": "GFDL 1.2 or later",
+                "textUrls": null,
+                "text": null,
+                "category": "Copyleft Limited",
+                "osiUrl": null,
+                "owner": "Free Software Foundation (FSF)",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2-plus.yml",
+                "key": "gfdl-1.2-plus",
+                "name": "GNU Free Documentation License v1.2 or later",
+                "spdxId": "GFDL-1.2-or-later",
+                "notes": "This license was released November 2002",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://gfdl-1.2-plus",
+                        "GFDL 1.2 or later",
+                        "GFDL-1.2-or-later"
+                    ],
+                    "__impliedId": "GFDL-1.2-or-later",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "This license was released November 2002"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "WeakCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "WeakCopyleft",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+                        ],
+                        [
+                            null,
+                            "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+                        ],
+                        [
+                            null,
+                            "https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+                        ]
+                    ]
+                }
+            },
             "Debian Free Software Guidelines": {
                 "LicenseName": "GNU Free Documentation License (GFDL)",
                 "State": "DFSGInCompatible",
@@ -124,6 +202,13 @@ Raw Data
                 }
             ]
         ],
+        "__impliedCopyleft": [
+            [
+                "Scancode",
+                "WeakCopyleft"
+            ]
+        ],
+        "__calculatedCopyleft": "WeakCopyleft",
         "__isOsiApproved": false,
         "__impliedURLs": [
             [
@@ -133,6 +218,14 @@ Raw Data
             [
                 null,
                 "https://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
+            ],
+            [
+                null,
+                "http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt"
             ]
         ]
     }

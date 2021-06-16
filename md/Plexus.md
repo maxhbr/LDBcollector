@@ -3,6 +3,14 @@ Plexus Classworlds License (Plexus)
 
 [TABLE]
 
+**Other Names:**
+
+-   `DOM4J License`
+
+-   `scancode://dom4j`
+
+-   `Dom4j License`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -18,14 +26,129 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “"DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate
+    credit can be found at "DOM4J Project http://www.dom4j.org/".”
+    (source: [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0))
+
+-   “Per Fedora, this is an Apache 1.1 derived license. Unfortunately,
+    clause 4 is too broad, making it Free but GPL-incompatible. It does
+    also replace the deprecated keys classworlds and apache-due-credit
+    that were the same licenses. Plexus Classworlds was started in 2002
+    and dom4j in 2000/2001 hence it has precedence. Other projects such
+    as Exolab/Intalio/Castor and JCharts have used the same license.
+    Castor is actually the first to use this but dom4j is still commonly
+    used and castor less so. ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://www.dom4j.org/
 
 -   **SPDX:** https://spdx.org/licenses/Plexus.html
 
 -   **SPDX:** http://spdx.org/licenses/Plexus.json
 
+-   **open-license:** http://open-license.hitachi.com/licenses/288
+
 -   https://fedoraproject.org/wiki/Licensing/Plexus\_Classworlds\_License
+
+-   http://classworlds.codehaus.org/license.html
+
+-   http://www.castor.org/license.txt
+
+-   https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD\#jCharts\_Variant
+
+-   http://openorb.sourceforge.net/license.txt
+
+-   https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642
+
+Description from open-license
+-----------------------------
+
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Use the obtained source code without modification (Use the fetched code as it is.)
+        - Modify the obtained source code.
+        - Using Modified Source Code
+        - Use the retrieved binaries (Use the fetched binary as it is.)
+        - Use binaries generated from modified source code
+
+        Conditions: None
+
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
+        - Distribution of Modified Source Code
+
+        Conditions:
+        AND
+          OBLIGATION: Include the copyright notice contained in the software
+          OBLIGATION: Give you a copy of the relevant license.
+
+-   Description: Relevant documentation for the software should be treated in the same way as for the software.
+        Actions:
+        - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
+        - Distribute the generated binaries from modified source code
+
+        Conditions:
+        OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
+
+-   Description: "If you want to use the name "DOM4J". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.
+        Actions:
+        - Use the name to endorse and promote derived products
+
+        Conditions:
+        REQUISITE: Get special permission in writing.
+
+-   Description: "If you use the name "DOM4J", you have the permission of MetaStuff, Ltd." DOM4J" is a registered trademark of MetaStuff, Ltd.
+        Actions:
+        - Use the name of the product or part of the name of the product from which it was derived
+
+        Conditions:
+        REQUISITE: Get special permission in writing.
+
+(source: Hitachi open-license)
+
+Text
+----
+
+    Redistribution and use of this software and associated documentation
+    ("Software"), with or without modification, are permitted provided that the
+    following conditions are met:
+
+    1. Redistributions of source code must retain copyright statements and
+    notices. Redistributions must also contain a copy of this document.
+
+    2. Redistributions in binary form must reproduce the above copyright notice,
+    this list of conditions and the following disclaimer in the documentation
+    and/or other materials provided with the distribution.
+
+    3. The name "DOM4J" must not be used to endorse or promote products derived
+    from this Software without prior written permission of MetaStuff, Ltd. For
+    written permission, please contact dom4j-info@metastuff.com.
+
+    4. Products derived from this Software may not be called "DOM4J" nor may
+    "DOM4J" appear in their names without prior written permission of MetaStuff, Ltd. DOM4J
+    is a registered trademark of MetaStuff, Ltd.
+
+    5. Due credit should be given to the DOM4J Project - http://www.dom4j.org
+
+    THIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS ``AS IS'' AND
+    ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED.
+
+    IN NO EVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+    THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 
@@ -47,20 +170,44 @@ Raw Data
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/Plexus.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [Hitachi
+    open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
+    (CDLA-Permissive-1.0)
+
 -   [SPDX](https://spdx.org/licenses/Plexus.html "SPDX") (all data \[in
     this repository\] is generated)
+
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml "Scancode")
+    (CC0-1.0)
 
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Plexus",
-            "Plexus Classworlds License"
+            "Plexus Classworlds License",
+            "DOM4J License",
+            "scancode://dom4j",
+            "Dom4j License"
         ],
         "__impliedId": "Plexus",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Plexus"
+        ],
+        "__impliedComments": [
+            [
+                "Hitachi open-license",
+                [
+                    "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n"
+                ]
+            ]
         ],
         "facts": {
             "LicenseName": {
@@ -130,6 +277,211 @@ Raw Data
                         ]
                     ]
                 }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://classworlds.codehaus.org/license.html",
+                    "http://www.castor.org/license.txt",
+                    "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License",
+                    "https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#jCharts_Variant",
+                    "http://openorb.sourceforge.net/license.txt",
+                    "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
+                ],
+                "homepageUrl": "http://www.dom4j.org/",
+                "shortName": "Dom4j License",
+                "textUrls": null,
+                "text": "Redistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions of source code must retain copyright statements and\nnotices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. The name \"DOM4J\" must not be used to endorse or promote products derived\nfrom this Software without prior written permission of MetaStuff, Ltd. For\nwritten permission, please contact dom4j-info@metastuff.com.\n\n4. Products derived from this Software may not be called \"DOM4J\" nor may\n\"DOM4J\" appear in their names without prior written permission of MetaStuff, Ltd. DOM4J\nis a registered trademark of MetaStuff, Ltd.\n\n5. Due credit should be given to the DOM4J Project - http://www.dom4j.org\n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS ``AS IS'' AND\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.\n\nIN NO EVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "dom4j",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml",
+                "key": "dom4j",
+                "name": "Dom4j License",
+                "spdxId": "Plexus",
+                "notes": "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://dom4j",
+                        "Dom4j License",
+                        "Plexus"
+                    ],
+                    "__impliedId": "Plexus",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per Fedora, this is an Apache 1.1 derived license. Unfortunately, clause 4\nis too broad, making it Free but GPL-incompatible. It does also replace the\ndeprecated keys classworlds and apache-due-credit that were the same licenses.\nPlexus Classworlds was started in 2002 and dom4j in 2000/2001 hence it has precedence.\nOther projects such as Exolab/Intalio/Castor and JCharts have used the same license.\nCastor is actually the first to use this but dom4j is still commonly used and castor less so.\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions of source code must retain copyright statements and\nnotices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. The name \"DOM4J\" must not be used to endorse or promote products derived\nfrom this Software without prior written permission of MetaStuff, Ltd. For\nwritten permission, please contact dom4j-info@metastuff.com.\n\n4. Products derived from this Software may not be called \"DOM4J\" nor may\n\"DOM4J\" appear in their names without prior written permission of MetaStuff, Ltd. DOM4J\nis a registered trademark of MetaStuff, Ltd.\n\n5. Due credit should be given to the DOM4J Project - http://www.dom4j.org\n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS ``AS IS'' AND\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.\n\nIN NO EVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.dom4j.org/"
+                        ],
+                        [
+                            null,
+                            "http://classworlds.codehaus.org/license.html"
+                        ],
+                        [
+                            null,
+                            "http://www.castor.org/license.txt"
+                        ],
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License"
+                        ],
+                        [
+                            null,
+                            "https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#jCharts_Variant"
+                        ],
+                        [
+                            null,
+                            "http://openorb.sourceforge.net/license.txt"
+                        ],
+                        [
+                            null,
+                            "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
+                        ]
+                    ]
+                }
+            },
+            "Hitachi open-license": {
+                "notices": [
+                    {
+                        "content": "the software is provided by the copyright holders and contributors \"as-is\" and without any warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability and fitness for a particular purpose. The warranties include, but are not limited to, the implied warranties of commercial applicability and fitness for a particular purpose.",
+                        "description": "There is no guarantee."
+                    },
+                    {
+                        "content": "Neither the copyright owner nor any contributor, for any cause whatsoever, shall be liable for damages, regardless of how caused, and regardless of whether the liability is based on contract, strict liability, or tort (including negligence), even if they have been advised of the possibility of such damages arising from the use of the software, and even if they have been advised of the possibility of such damages. for any direct, indirect, incidental, special, punitive, or consequential damages (including, but not limited to, compensation for procurement of substitute goods or services, loss of use, loss of data, loss of profits, or business interruption). It shall not be defeated."
+                    }
+                ],
+                "_sourceURL": "http://open-license.hitachi.com/licenses/288",
+                "content": "Copyright 2001-2005 (C) MetaStuff, Ltd. \nAll Rights Reserved. \n\nRedistribution and use of this software and \nassociated documentation (\"Software\"), with \nor without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain \n   copyright statements and notices. Redistributions \n   must also contain a copy of this document. \n2. Redistributions in binary form must reproduce \n   the above copyright notice, this list of conditions \n   and the following disclaimer in the documentation \n   and/or other materials provided with the distribution. \n3. The name \"DOM4J\" must not be used to endorse or promote \n   products derived from this Software without prior written \n   permission of MetaStuff, Ltd. For written permission, \n   please contact dom4j-info@metastuff.com. \n4. Products derived from this Software may not be called \n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \n   prior written permission of MetaStuff, Ltd. DOM4J is a \n   registered trademark of MetaStuff, Ltd. \n5. Due credit should be given to the DOM4J Project \n   http://www.dom4j.org/ \n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \nOF SUCH DAMAGE.",
+                "name": "DOM4J License",
+                "permissions": [
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the obtained source code without modification",
+                                "description": "Use the fetched code as it is."
+                            },
+                            {
+                                "name": "Modify the obtained source code."
+                            },
+                            {
+                                "name": "Using Modified Source Code"
+                            },
+                            {
+                                "name": "Use the retrieved binaries",
+                                "description": "Use the fetched binary as it is."
+                            },
+                            {
+                                "name": "Use binaries generated from modified source code"
+                            }
+                        ],
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Use the obtained source code without modification (Use the fetched code as it is.)\n- Modify the obtained source code.\n- Using Modified Source Code\n- Use the retrieved binaries (Use the fetched binary as it is.)\n- Use binaries generated from modified source code\n\nConditions: None\n",
+                        "conditions": null,
+                        "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the obtained source code without modification",
+                                "description": "Redistribute the code as it was obtained"
+                            },
+                            {
+                                "name": "Distribution of Modified Source Code"
+                            }
+                        ],
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the obtained source code without modification (Redistribute the code as it was obtained)\n- Distribution of Modified Source Code\n\nConditions:\nAND\n  OBLIGATION: Include the copyright notice contained in the software\n  OBLIGATION: Give you a copy of the relevant license.\n\n",
+                        "conditions": {
+                            "AND": [
+                                {
+                                    "name": "Include the copyright notice contained in the software",
+                                    "type": "OBLIGATION"
+                                },
+                                {
+                                    "name": "Give you a copy of the relevant license.",
+                                    "type": "OBLIGATION"
+                                }
+                            ]
+                        },
+                        "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Distribute the fetched binaries",
+                                "description": "Redistribute the fetched binaries as they are"
+                            },
+                            {
+                                "name": "Distribute the generated binaries from modified source code"
+                            }
+                        ],
+                        "_str": "Description: Relevant documentation for the software should be treated in the same way as for the software.\nActions:\n- Distribute the fetched binaries (Redistribute the fetched binaries as they are)\n- Distribute the generated binaries from modified source code\n\nConditions:\nOBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license\n",
+                        "conditions": {
+                            "name": "Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license",
+                            "type": "OBLIGATION"
+                        },
+                        "description": "Relevant documentation for the software should be treated in the same way as for the software."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the name to endorse and promote derived products"
+                            }
+                        ],
+                        "_str": "Description: \"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd.\nActions:\n- Use the name to endorse and promote derived products\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "conditions": {
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE"
+                        },
+                        "description": "\"If you want to use the name \"DOM4J\". dom4j-info@metastuff.comに連絡して and get permission from MetaStuff, Ltd."
+                    },
+                    {
+                        "actions": [
+                            {
+                                "name": "Use the name of the product or part of the name of the product from which it was derived"
+                            }
+                        ],
+                        "_str": "Description: \"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd.\nActions:\n- Use the name of the product or part of the name of the product from which it was derived\n\nConditions:\nREQUISITE: Get special permission in writing.\n",
+                        "conditions": {
+                            "name": "Get special permission in writing.",
+                            "type": "REQUISITE"
+                        },
+                        "description": "\"If you use the name \"DOM4J\", you have the permission of MetaStuff, Ltd.\" DOM4J\" is a registered trademark of MetaStuff, Ltd."
+                    }
+                ],
+                "_implications": {
+                    "__impliedNames": [
+                        "DOM4J License"
+                    ],
+                    "__impliedComments": [
+                        [
+                            "Hitachi open-license",
+                            [
+                                "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
+                            ]
+                        ]
+                    ],
+                    "__impliedText": "Copyright 2001-2005 (C) MetaStuff, Ltd. \nAll Rights Reserved. \n\nRedistribution and use of this software and \nassociated documentation (\"Software\"), with \nor without modification, are permitted provided \nthat the following conditions are met: \n\n1. Redistributions of source code must retain \n   copyright statements and notices. Redistributions \n   must also contain a copy of this document. \n2. Redistributions in binary form must reproduce \n   the above copyright notice, this list of conditions \n   and the following disclaimer in the documentation \n   and/or other materials provided with the distribution. \n3. The name \"DOM4J\" must not be used to endorse or promote \n   products derived from this Software without prior written \n   permission of MetaStuff, Ltd. For written permission, \n   please contact dom4j-info@metastuff.com. \n4. Products derived from this Software may not be called \n   \"DOM4J\" nor may \"DOM4J\" appear in their names without \n   prior written permission of MetaStuff, Ltd. DOM4J is a \n   registered trademark of MetaStuff, Ltd. \n5. Due credit should be given to the DOM4J Project \n   http://www.dom4j.org/ \n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS \n\"AS IS\" AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, \nBUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY \nAND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO \nEVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR \nANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR \nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT \nOF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; \nOR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF \n LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT \n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT \nOF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY \nOF SUCH DAMAGE.",
+                    "__impliedURLs": [
+                        [
+                            "open-license",
+                            "http://open-license.hitachi.com/licenses/288"
+                        ]
+                    ]
+                },
+                "description": "\"DOM4J\" is a registered trademark of MetaStuff, Ltd. Legitimate credit can be found at \"DOM4J Project http://www.dom4j.org/\"."
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",
@@ -240,14 +592,23 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
+        "__impliedText": "Redistribution and use of this software and associated documentation\n(\"Software\"), with or without modification, are permitted provided that the\nfollowing conditions are met:\n\n1. Redistributions of source code must retain copyright statements and\nnotices. Redistributions must also contain a copy of this document.\n\n2. Redistributions in binary form must reproduce the above copyright notice,\nthis list of conditions and the following disclaimer in the documentation\nand/or other materials provided with the distribution.\n\n3. The name \"DOM4J\" must not be used to endorse or promote products derived\nfrom this Software without prior written permission of MetaStuff, Ltd. For\nwritten permission, please contact dom4j-info@metastuff.com.\n\n4. Products derived from this Software may not be called \"DOM4J\" nor may\n\"DOM4J\" appear in their names without prior written permission of MetaStuff, Ltd. DOM4J\nis a registered trademark of MetaStuff, Ltd.\n\n5. Due credit should be given to the DOM4J Project - http://www.dom4j.org\n\nTHIS SOFTWARE IS PROVIDED BY METASTUFF, LTD. AND CONTRIBUTORS ``AS IS'' AND\nANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.\n\nIN NO EVENT SHALL METASTUFF, LTD. OR ITS CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n",
         "__impliedURLs": [
             [
                 "SPDX",
                 "https://spdx.org/licenses/Plexus.html"
+            ],
+            [
+                "open-license",
+                "http://open-license.hitachi.com/licenses/288"
             ],
             [
                 "SPDX",
@@ -256,6 +617,30 @@ Raw Data
             [
                 null,
                 "https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License"
+            ],
+            [
+                "Homepage",
+                "http://www.dom4j.org/"
+            ],
+            [
+                null,
+                "http://classworlds.codehaus.org/license.html"
+            ],
+            [
+                null,
+                "http://www.castor.org/license.txt"
+            ],
+            [
+                null,
+                "https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#jCharts_Variant"
+            ],
+            [
+                null,
+                "http://openorb.sourceforge.net/license.txt"
+            ],
+            [
+                null,
+                "https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642"
             ]
         ]
     }

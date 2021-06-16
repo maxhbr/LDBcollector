@@ -7,6 +7,10 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 -   `The bzip2 license`
 
+-   `scancode://bzip2-libbzip-2010`
+
+-   `bzip2 License 2010`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -17,8 +21,16 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “until bzip2 1.0.6 there is only one license and not two as listed
+    in SPDX” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:**
+    https://github.com/asimonov-im/bzip2/blob/master/LICENSE
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.6.html
 
@@ -29,6 +41,8 @@ URLs
 -   https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6
 
 -   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
+
+-   http://www.bzip.org/
 
 Description from open-license
 -----------------------------
@@ -79,28 +93,36 @@ Description from open-license
 Text
 ----
 
-    This program, "bzip2" and associated library "libbzip2", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
 
-    Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
 
-        1. Redistributions of source code must retain the above copyright notice, this list of conditions 
-        and the following disclaimer.
+    2. The origin of this software must not be misrepresented; you must
+       not claim that you wrote the original software.  If you use this
+       software in a product, an acknowledgment in the product
+       documentation would be appreciated but is not required.
 
-        2. The origin of this software must not be misrepresented; you must not claim that you wrote 
-        the original software. If you use this software in a product, an acknowledgment in the product 
-        documentation would be appreciated but is not required.
+    3. Altered source versions must be plainly marked as such, and must
+       not be misrepresented as being the original software.
 
-        3. Altered source versions must be plainly marked as such, and must not be misrepresented as 
-        being the original software.
+    4. The name of the author may not be used to endorse or promote
+       products derived from this software without specific prior written
+       permission.
 
-        4. The name of the author may not be used to endorse or promote products derived from this software 
-        without specific prior written permission.
-
-    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-    Julian Seward, Cambridge, UK.
-
-    jseward@acm.org
+    THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+    OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+    DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+    GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 
@@ -122,15 +144,28 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/bzip2-1.0.6.html "SPDX") (all data
     \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "bzip2-1.0.6",
             "bzip2 and libbzip2 License v1.0.6",
-            "The bzip2 license"
+            "The bzip2 license",
+            "scancode://bzip2-libbzip-2010",
+            "bzip2 License 2010"
         ],
         "__impliedId": "bzip2-1.0.6",
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                ]
+            ]
+        ],
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -175,6 +210,67 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "bzip2-1.0.6"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html",
+                    "http://www.bzip.org/",
+                    "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
+                ],
+                "homepageUrl": "https://github.com/asimonov-im/bzip2/blob/master/LICENSE",
+                "shortName": "bzip2 License 2010",
+                "textUrls": null,
+                "text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. The origin of this software must not be misrepresented; you must\n   not claim that you wrote the original software.  If you use this\n   software in a product, an acknowledgment in the product\n   documentation would be appreciated but is not required.\n\n3. Altered source versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. The name of the author may not be used to endorse or promote\n   products derived from this software without specific prior written\n   permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "bzip",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml",
+                "key": "bzip2-libbzip-2010",
+                "name": "bzip2 License 2010",
+                "spdxId": "bzip2-1.0.6",
+                "notes": "until bzip2 1.0.6 there is only one license and not two as listed in SPDX",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://bzip2-libbzip-2010",
+                        "bzip2 License 2010",
+                        "bzip2-1.0.6"
+                    ],
+                    "__impliedId": "bzip2-1.0.6",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "until bzip2 1.0.6 there is only one license and not two as listed in SPDX"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. The origin of this software must not be misrepresented; you must\n   not claim that you wrote the original software.  If you use this\n   software in a product, an acknowledgment in the product\n   documentation would be appreciated but is not required.\n\n3. Altered source versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. The name of the author may not be used to endorse or promote\n   products derived from this software without specific prior written\n   permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
+                        ],
+                        [
+                            null,
+                            "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+                        ],
+                        [
+                            null,
+                            "http://www.bzip.org/"
+                        ],
+                        [
+                            null,
+                            "https://sourceware.org/git/?p=bzip2.git;a=blob;f=LICENSE;hb=bzip2-1.0.6"
+                        ]
+                    ]
+                }
             },
             "Hitachi open-license": {
                 "notices": [
@@ -351,11 +447,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": false,
-        "__impliedText": "This program, \"bzip2\" and associated library \"libbzip2\", are copyright (C) 1996-2000 Julian R Seward. All rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: \n\n    1. Redistributions of source code must retain the above copyright notice, this list of conditions \n    and the following disclaimer.\n\n    2. The origin of this software must not be misrepresented; you must not claim that you wrote \n    the original software. If you use this software in a product, an acknowledgment in the product \n    documentation would be appreciated but is not required.\n\n    3. Altered source versions must be plainly marked as such, and must not be misrepresented as \n    being the original software.\n\n    4. The name of the author may not be used to endorse or promote products derived from this software \n    without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nJulian Seward, Cambridge, UK.\n\njseward@acm.org",
+        "__impliedText": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions\nare met:\n\n1. Redistributions of source code must retain the above copyright\n   notice, this list of conditions and the following disclaimer.\n\n2. The origin of this software must not be misrepresented; you must\n   not claim that you wrote the original software.  If you use this\n   software in a product, an acknowledgment in the product\n   documentation would be appreciated but is not required.\n\n3. Altered source versions must be plainly marked as such, and must\n   not be misrepresented as being the original software.\n\n4. The name of the author may not be used to endorse or promote\n   products derived from this software without specific prior written\n   permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS\nOR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\nDAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\nINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,\nWHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -376,6 +476,14 @@ Raw Data
             [
                 null,
                 "http://bzip.org/1.0.5/bzip2-manual-1.0.5.html"
+            ],
+            [
+                "Homepage",
+                "https://github.com/asimonov-im/bzip2/blob/master/LICENSE"
+            ],
+            [
+                null,
+                "http://www.bzip.org/"
             ]
         ]
     }

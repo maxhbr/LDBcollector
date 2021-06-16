@@ -15,6 +15,10 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 -   `Affero General Public License 3.0 or later`
 
+-   `scancode://agpl-3.0-plus`
+
+-   `AGPL 3.0 or later`
+
 -   `GNU Affero General Public License 3.0`
 
 Comments on (easy) usability
@@ -47,8 +51,17 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
+-   “Per SPDX.org, this version was released 19 November 2007 This
+    license is OSI certified ” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://www.gnu.org/licenses/agpl-3.0.html
+
+-   **OSI Page:** http://www.opensource.org/licenses/agpl-v3.html
 
 -   **SPDX:** http://spdx.org/licenses/AGPL-3.0-or-later.json
 
@@ -57,6 +70,28 @@ URLs
 -   https://www.gnu.org/licenses/agpl.txt
 
 -   https://opensource.org/licenses/AGPL-3.0
+
+-   http://www.fsf.org/licensing/licenses/agpl-3.0.html
+
+-   http://www.fsf.org/licensing/licenses/agpl-3.0.txt
+
+-   http://www.opensource.org/licenses/AGPL-3.0
+
+Text
+----
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU Affero General Public License as
+    published by the Free Software Foundation, either version 3 of the
+    License, or (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU Affero General Public License for more details.
+
+    You should have received a copy of the GNU Affero General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 ------------------------------------------------------------------------
 
@@ -87,6 +122,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
     data \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
+    (CC0-1.0)
+
 -   [Wikipedia](https://en.wikipedia.org/wiki/Comparison_of_free_and_open-source_software_licenses "Wikipedia")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
 
@@ -101,6 +139,8 @@ Raw Data
             "AGPL (v3 or later)",
             "Affero General Public License 3.0 or later",
             "GNU Affero General Public License v3.0 or later",
+            "scancode://agpl-3.0-plus",
+            "AGPL 3.0 or later",
             "GNU Affero General Public License 3.0"
         ],
         "__impliedId": "AGPL-3.0-or-later",
@@ -115,6 +155,12 @@ Raw Data
                 [
                     "In addition to the requirements of strong copyleft licenses, network copyleft licenses require you to share larger programs that you build with the licensed software not just when you give copies to others, but also when you run the software for others to use over the Internet or another network.",
                     "Strong copyleft licenses require you to share both the licensed software (like the weak copyleft licenses, and larger programs that you build with the licensed software, when you give copies to others."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
                 ]
             ]
         ],
@@ -214,6 +260,81 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://www.fsf.org/licensing/licenses/agpl-3.0.html",
+                    "http://www.fsf.org/licensing/licenses/agpl-3.0.txt",
+                    "http://www.opensource.org/licenses/AGPL-3.0",
+                    "https://opensource.org/licenses/AGPL-3.0",
+                    "https://www.gnu.org/licenses/agpl.txt"
+                ],
+                "homepageUrl": "http://www.gnu.org/licenses/agpl-3.0.html",
+                "shortName": "AGPL 3.0 or later",
+                "textUrls": null,
+                "text": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+                "category": "Copyleft",
+                "osiUrl": "http://www.opensource.org/licenses/agpl-v3.html",
+                "owner": "Free Software Foundation (FSF)",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml",
+                "key": "agpl-3.0-plus",
+                "name": "GNU Affero General Public License 3.0 or later",
+                "spdxId": "AGPL-3.0-or-later",
+                "notes": "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://agpl-3.0-plus",
+                        "AGPL 3.0 or later",
+                        "AGPL-3.0-or-later"
+                    ],
+                    "__impliedId": "AGPL-3.0-or-later",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this version was released 19 November 2007 This license is\nOSI certified\n"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft",
+                    "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.gnu.org/licenses/agpl-3.0.html"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://www.opensource.org/licenses/agpl-v3.html"
+                        ],
+                        [
+                            null,
+                            "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
+                        ],
+                        [
+                            null,
+                            "http://www.fsf.org/licensing/licenses/agpl-3.0.txt"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/AGPL-3.0"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/AGPL-3.0"
+                        ],
+                        [
+                            null,
+                            "https://www.gnu.org/licenses/agpl.txt"
                         ]
                     ]
                 }
@@ -481,12 +602,17 @@ Raw Data
                 "SaaSCopyleft"
             ],
             [
+                "Scancode",
+                "Copyleft"
+            ],
+            [
                 "librariesio license-compatibility",
                 "SaaSCopyleft"
             ]
         ],
         "__calculatedCopyleft": "SaaSCopyleft",
         "__isOsiApproved": true,
+        "__impliedText": "This program is free software: you can redistribute it and/or modify\nit under the terms of the GNU Affero General Public License as\npublished by the Free Software Foundation, either version 3 of the\nLicense, or (at your option) any later version.\n\nThis program is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\nGNU Affero General Public License for more details.\n\nYou should have received a copy of the GNU Affero General Public License\nalong with this program.  If not, see <http://www.gnu.org/licenses/>.\n",
         "__impliedURLs": [
             [
                 null,
@@ -503,6 +629,26 @@ Raw Data
             [
                 null,
                 "https://opensource.org/licenses/AGPL-3.0"
+            ],
+            [
+                "Homepage",
+                "http://www.gnu.org/licenses/agpl-3.0.html"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/agpl-v3.html"
+            ],
+            [
+                null,
+                "http://www.fsf.org/licensing/licenses/agpl-3.0.html"
+            ],
+            [
+                null,
+                "http://www.fsf.org/licensing/licenses/agpl-3.0.txt"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/AGPL-3.0"
             ]
         ]
     }

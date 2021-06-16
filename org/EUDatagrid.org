@@ -1,9 +1,14 @@
 * EU DataGrid Software License (EUDatagrid)
-| Key       | Value                                        |
-|-----------+----------------------------------------------|
-| Fullname  | EU DataGrid Software License                 |
-| Shortname | EUDatagrid                                   |
-| Rating    | Unknown, probably Attention or Stop or No-Go |
+| Key            | Value                        |
+|----------------+------------------------------|
+| Fullname       | EU DataGrid Software License |
+| Shortname      | EUDatagrid                   |
+| Rating         | Unknown                      |
+| Classification | NoCopyleft                   |
+
+*Other Names:*
+
+- =scancode://eu-datagrid=
 
 ** Comments on (easy) usability
 
@@ -22,15 +27,25 @@
   [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0))
 
+- "Per SPDX.org, this license is OSI certified" (source:
+  [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml][Scancode]]
+  (CC0-1.0))
+
 ** URLs
 
+- *Homepage:* http://eu-datagrid.web.cern.ch/eu-datagrid/license.html
+
 - *OSI Page:* https://opensource.org/licenses/EUDatagrid
+
+- *OSI Page:* http://www.opensource.org/licenses/eudatagrid.php
 
 - *SPDX:* http://spdx.org/licenses/EUDatagrid.json
 
 - *open-license:* http://open-license.hitachi.com/licenses/1546
 
-- http://eu-datagrid.web.cern.ch/eu-datagrid/license.html
+- http://www.eu-egee.org/
+
+- http://www.opensource.org/licenses/EUDatagrid
 
 ** Description from open-license
 
@@ -105,64 +120,29 @@
 #+BEGIN_EXAMPLE
   EU DataGrid Software License
 
-
   Copyright (c) 2001 EU DataGrid. All rights reserved.
 
-  This software includes voluntary contributions made to the EU DataGrid. For more
-  information on the EU DataGrid, please see http://www.eu-datagrid.org/.
+  This software includes voluntary contributions made to the EU DataGrid. For more information on the EU DataGrid, please see http://www.eu-datagrid.org/.
 
-  Installation, use, reproduction, display, modification and redistribution of this
-  software, with or without modification, in source and binary forms, are
-  permitted. Any exercise of rights under this license by you or your sub-licensees
-  is subject to the following conditions:
+  Installation, use, reproduction, display, modification and redistribution of this software, with or without modification, in source and binary forms, are permitted. Any exercise of rights under this license by you or your sub-licensees is subject to the following conditions:
 
-  1. Redistributions of this software, with or without modification, must reproduce
-  the above copyright notice and the above license statement as well as this list
-  of conditions, in the software, the user documentation and any other materials
-  provided with the software.
+  1. Redistributions of this software, with or without modification, must reproduce the above copyright notice and the above license statement as well as this list of conditions, in the software, the user documentation and any other materials provided with the software.
 
-  2. The user documentation, if any, included with a redistribution, must include
-  the following notice: "This product includes software developed by the EU
-  DataGrid (http://www.eu-datagrid.org/)."
+  2. The user documentation, if any, included with a redistribution, must include the following notice: "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)."
 
-  Alternatively, if that is where third-party acknowledgments normally appear, this
-  acknowledgment must be reproduced in the software itself.
+  Alternatively, if that is where third-party acknowledgments normally appear, this acknowledgment must be reproduced in the software itself.
 
-  3. The names "EDG", "EDG Toolkit", and "EU DataGrid Project" may not be used to
-  endorse or promote software, or products derived therefrom, except with prior
-  written permission by hep-project-grid-edg-license@cern.ch.
+  3. The names "EDG", "EDG Toolkit", and "EU DataGrid Project" may not be used to endorse or promote software, or products derived therefrom, except with prior written permission by hep-project-grid-edg-license@cern.ch.
 
-  4. You are under no obligation to provide anyone with any bug fixes, patches,
-  upgrades or other modifications, enhancements or derivatives of the
-  features,functionality or performance of this software that you may develop.
-  However, if you publish or distribute your modifications, enhancements or
-  derivative works without contemporaneously requiring users to enter into a
-  separate written license agreement, then you are deemed to have granted
-  participants in the EU DataGrid a worldwide, non-exclusive, royalty-free,
-  perpetual license to install, use, reproduce, display, modify, redistribute and
-  sub-license your modifications, enhancements or derivative works, whether in
-  binary or source code form, under the license conditions stated in this list of
-  conditions.
+  4. You are under no obligation to provide anyone with any bug fixes, patches, upgrades or other modifications, enhancements or derivatives of the features,functionality or performance of this software that you may develop. However, if you publish or distribute your modifications, enhancements or derivative works without contemporaneously requiring users to enter into a separate written license agreement, then you are deemed to have granted participants in the EU DataGrid a worldwide, non-exclusive, royalty-free, perpetual license to install, use, reproduce, display, modify, redistribute and sub-license your modifications, enhancements or derivative works, whether in binary or source code form, under the license conditions stated in this list of conditions.
 
   5. DISCLAIMER
 
-  THIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS "AS IS" AND ANY
-  EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-  WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A
-  PARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE
-  NO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE
-  WORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER
-  PROPRIETARY RIGHT.
+  THIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE NO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE WORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER PROPRIETARY RIGHT.
 
   6. LIMITATION OF LIABILITY
 
-  THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER
-  PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR
-  PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF
-  SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS
-  INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT
-  (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF
-  THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+  THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 #+END_EXAMPLE
 
 --------------
@@ -192,13 +172,17 @@
 - [[https://spdx.org/licenses/EUDatagrid.html][SPDX]] (all data [in this
   repository] is generated)
 
+- [[https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml][Scancode]]
+  (CC0-1.0)
+
 *** Raw JSON
 #+BEGIN_EXAMPLE
   {
       "__impliedNames": [
           "EUDatagrid",
           "EU Datagrid Software License",
-          "EU DataGrid Software License"
+          "EU DataGrid Software License",
+          "scancode://eu-datagrid"
       ],
       "__impliedId": "EUDatagrid",
       "__isFsfFree": true,
@@ -210,6 +194,12 @@
               "Hitachi open-license",
               [
                   "https://opensource.org/licenses/EUDatagrid"
+              ]
+          ],
+          [
+              "Scancode",
+              [
+                  "Per SPDX.org, this license is OSI certified"
               ]
           ]
       ],
@@ -320,6 +310,71 @@
                               "tag": "PositiveJudgement",
                               "contents": "This software Licenses is OK for Fedora"
                           }
+                      ]
+                  ]
+              }
+          },
+          "Scancode": {
+              "otherUrls": [
+                  "http://www.eu-egee.org/",
+                  "http://www.opensource.org/licenses/EUDatagrid",
+                  "https://opensource.org/licenses/EUDatagrid"
+              ],
+              "homepageUrl": "http://eu-datagrid.web.cern.ch/eu-datagrid/license.html",
+              "shortName": "EU DataGrid Software License",
+              "textUrls": null,
+              "text": "EU DataGrid Software License\n\nCopyright (c) 2001 EU DataGrid. All rights reserved.\n\nThis software includes voluntary contributions made to the EU DataGrid. For more information on the EU DataGrid, please see http://www.eu-datagrid.org/.\n\nInstallation, use, reproduction, display, modification and redistribution of this software, with or without modification, in source and binary forms, are permitted. Any exercise of rights under this license by you or your sub-licensees is subject to the following conditions:\n\n1. Redistributions of this software, with or without modification, must reproduce the above copyright notice and the above license statement as well as this list of conditions, in the software, the user documentation and any other materials provided with the software.\n\n2. The user documentation, if any, included with a redistribution, must include the following notice: \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"\n\nAlternatively, if that is where third-party acknowledgments normally appear, this acknowledgment must be reproduced in the software itself.\n\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to endorse or promote software, or products derived therefrom, except with prior written permission by hep-project-grid-edg-license@cern.ch.\n\n4. You are under no obligation to provide anyone with any bug fixes, patches, upgrades or other modifications, enhancements or derivatives of the features,functionality or performance of this software that you may develop. However, if you publish or distribute your modifications, enhancements or derivative works without contemporaneously requiring users to enter into a separate written license agreement, then you are deemed to have granted participants in the EU DataGrid a worldwide, non-exclusive, royalty-free, perpetual license to install, use, reproduce, display, modify, redistribute and sub-license your modifications, enhancements or derivative works, whether in binary or source code form, under the license conditions stated in this list of conditions.\n\n5. DISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE NO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE WORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER PROPRIETARY RIGHT.\n\n6. LIMITATION OF LIABILITY\n\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+              "category": "Permissive",
+              "osiUrl": "http://www.opensource.org/licenses/eudatagrid.php",
+              "owner": "DataGrid Project",
+              "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/eu-datagrid.yml",
+              "key": "eu-datagrid",
+              "name": "EU DataGrid Software License",
+              "spdxId": "EUDatagrid",
+              "notes": "Per SPDX.org, this license is OSI certified",
+              "_implications": {
+                  "__impliedNames": [
+                      "scancode://eu-datagrid",
+                      "EU DataGrid Software License",
+                      "EUDatagrid"
+                  ],
+                  "__impliedId": "EUDatagrid",
+                  "__impliedComments": [
+                      [
+                          "Scancode",
+                          [
+                              "Per SPDX.org, this license is OSI certified"
+                          ]
+                      ]
+                  ],
+                  "__impliedCopyleft": [
+                      [
+                          "Scancode",
+                          "NoCopyleft"
+                      ]
+                  ],
+                  "__calculatedCopyleft": "NoCopyleft",
+                  "__impliedText": "EU DataGrid Software License\n\nCopyright (c) 2001 EU DataGrid. All rights reserved.\n\nThis software includes voluntary contributions made to the EU DataGrid. For more information on the EU DataGrid, please see http://www.eu-datagrid.org/.\n\nInstallation, use, reproduction, display, modification and redistribution of this software, with or without modification, in source and binary forms, are permitted. Any exercise of rights under this license by you or your sub-licensees is subject to the following conditions:\n\n1. Redistributions of this software, with or without modification, must reproduce the above copyright notice and the above license statement as well as this list of conditions, in the software, the user documentation and any other materials provided with the software.\n\n2. The user documentation, if any, included with a redistribution, must include the following notice: \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"\n\nAlternatively, if that is where third-party acknowledgments normally appear, this acknowledgment must be reproduced in the software itself.\n\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to endorse or promote software, or products derived therefrom, except with prior written permission by hep-project-grid-edg-license@cern.ch.\n\n4. You are under no obligation to provide anyone with any bug fixes, patches, upgrades or other modifications, enhancements or derivatives of the features,functionality or performance of this software that you may develop. However, if you publish or distribute your modifications, enhancements or derivative works without contemporaneously requiring users to enter into a separate written license agreement, then you are deemed to have granted participants in the EU DataGrid a worldwide, non-exclusive, royalty-free, perpetual license to install, use, reproduce, display, modify, redistribute and sub-license your modifications, enhancements or derivative works, whether in binary or source code form, under the license conditions stated in this list of conditions.\n\n5. DISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE NO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE WORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER PROPRIETARY RIGHT.\n\n6. LIMITATION OF LIABILITY\n\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+                  "__impliedURLs": [
+                      [
+                          "Homepage",
+                          "http://eu-datagrid.web.cern.ch/eu-datagrid/license.html"
+                      ],
+                      [
+                          "OSI Page",
+                          "http://www.opensource.org/licenses/eudatagrid.php"
+                      ],
+                      [
+                          null,
+                          "http://www.eu-egee.org/"
+                      ],
+                      [
+                          null,
+                          "http://www.opensource.org/licenses/EUDatagrid"
+                      ],
+                      [
+                          null,
+                          "https://opensource.org/licenses/EUDatagrid"
                       ]
                   ]
               }
@@ -558,8 +613,15 @@
               }
           ]
       ],
+      "__impliedCopyleft": [
+          [
+              "Scancode",
+              "NoCopyleft"
+          ]
+      ],
+      "__calculatedCopyleft": "NoCopyleft",
       "__isOsiApproved": true,
-      "__impliedText": "EU DataGrid Software License\n\n\nCopyright (c) 2001 EU DataGrid. All rights reserved.\n\nThis software includes voluntary contributions made to the EU DataGrid. For more\ninformation on the EU DataGrid, please see http://www.eu-datagrid.org/.\n\nInstallation, use, reproduction, display, modification and redistribution of this\nsoftware, with or without modification, in source and binary forms, are\npermitted. Any exercise of rights under this license by you or your sub-licensees\nis subject to the following conditions:\n\n1. Redistributions of this software, with or without modification, must reproduce\nthe above copyright notice and the above license statement as well as this list\nof conditions, in the software, the user documentation and any other materials\nprovided with the software.\n\n2. The user documentation, if any, included with a redistribution, must include\nthe following notice: \"This product includes software developed by the EU\nDataGrid (http://www.eu-datagrid.org/).\"\n\nAlternatively, if that is where third-party acknowledgments normally appear, this\nacknowledgment must be reproduced in the software itself.\n\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to\nendorse or promote software, or products derived therefrom, except with prior\nwritten permission by hep-project-grid-edg-license@cern.ch.\n\n4. You are under no obligation to provide anyone with any bug fixes, patches,\nupgrades or other modifications, enhancements or derivatives of the\nfeatures,functionality or performance of this software that you may develop.\nHowever, if you publish or distribute your modifications, enhancements or\nderivative works without contemporaneously requiring users to enter into a\nseparate written license agreement, then you are deemed to have granted\nparticipants in the EU DataGrid a worldwide, non-exclusive, royalty-free,\nperpetual license to install, use, reproduce, display, modify, redistribute and\nsub-license your modifications, enhancements or derivative works, whether in\nbinary or source code form, under the license conditions stated in this list of\nconditions.\n\n5. DISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY\nEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A\nPARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE\nNO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE\nWORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER\nPROPRIETARY RIGHT.\n\n6. LIMITATION OF LIABILITY\n\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER\nPERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR\nPUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF\nSUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS\nINTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT\n(INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+      "__impliedText": "EU DataGrid Software License\n\nCopyright (c) 2001 EU DataGrid. All rights reserved.\n\nThis software includes voluntary contributions made to the EU DataGrid. For more information on the EU DataGrid, please see http://www.eu-datagrid.org/.\n\nInstallation, use, reproduction, display, modification and redistribution of this software, with or without modification, in source and binary forms, are permitted. Any exercise of rights under this license by you or your sub-licensees is subject to the following conditions:\n\n1. Redistributions of this software, with or without modification, must reproduce the above copyright notice and the above license statement as well as this list of conditions, in the software, the user documentation and any other materials provided with the software.\n\n2. The user documentation, if any, included with a redistribution, must include the following notice: \"This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/).\"\n\nAlternatively, if that is where third-party acknowledgments normally appear, this acknowledgment must be reproduced in the software itself.\n\n3. The names \"EDG\", \"EDG Toolkit\", and \"EU DataGrid Project\" may not be used to endorse or promote software, or products derived therefrom, except with prior written permission by hep-project-grid-edg-license@cern.ch.\n\n4. You are under no obligation to provide anyone with any bug fixes, patches, upgrades or other modifications, enhancements or derivatives of the features,functionality or performance of this software that you may develop. However, if you publish or distribute your modifications, enhancements or derivative works without contemporaneously requiring users to enter into a separate written license agreement, then you are deemed to have granted participants in the EU DataGrid a worldwide, non-exclusive, royalty-free, perpetual license to install, use, reproduce, display, modify, redistribute and sub-license your modifications, enhancements or derivative works, whether in binary or source code form, under the license conditions stated in this list of conditions.\n\n5. DISCLAIMER\n\nTHIS SOFTWARE IS PROVIDED BY THE EU DATAGRID AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY, OF SATISFACTORY QUALITY, AND FITNESS FOR A PARTICULAR PURPOSE OR USE ARE DISCLAIMED. THE EU DATAGRID AND CONTRIBUTORS MAKE NO REPRESENTATION THAT THE SOFTWARE, MODIFICATIONS, ENHANCEMENTS OR DERIVATIVE WORKS THEREOF, WILL NOT INFRINGE ANY PATENT, COPYRIGHT, TRADE SECRET OR OTHER PROPRIETARY RIGHT.\n\n6. LIMITATION OF LIABILITY\n\nTHE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
       "__impliedURLs": [
           [
               null,
@@ -580,6 +642,22 @@
           [
               null,
               "http://eu-datagrid.web.cern.ch/eu-datagrid/license.html"
+          ],
+          [
+              "Homepage",
+              "http://eu-datagrid.web.cern.ch/eu-datagrid/license.html"
+          ],
+          [
+              "OSI Page",
+              "http://www.opensource.org/licenses/eudatagrid.php"
+          ],
+          [
+              null,
+              "http://www.eu-egee.org/"
+          ],
+          [
+              null,
+              "http://www.opensource.org/licenses/EUDatagrid"
           ]
       ]
   }

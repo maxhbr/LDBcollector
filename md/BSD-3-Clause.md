@@ -23,6 +23,8 @@ BSD 3-Clause "New" or "Revised" License (BSD-3-Clause)
 
 -   `New BSD License`
 
+-   `scancode://bsd-new`
+
 Description
 -----------
 
@@ -77,6 +79,10 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
+-   “Per SPDX.org, this license is OSI certified.” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
+    (CC0-1.0))
+
 Obligations
 -----------
 
@@ -89,6 +95,8 @@ Obligations
 URLs
 ----
 
+-   **Homepage:** http://www.opensource.org/licenses/BSD-3-Clause
+
 -   **OSI Page:** https://opensource.org/licenses/BSD-3-Clause
 
 -   **SPDX:** https://spdx.org/licenses/BSD-3-Clause.html
@@ -99,6 +107,8 @@ URLs
     https://en.wikipedia.org/wiki/BSD\_licenses\#3-clause
 
 -   **open-license:** http://open-license.hitachi.com/licenses/14
+
+-   http://framework.zend.com/license/new-bsd
 
 Description from open-license
 -----------------------------
@@ -137,52 +147,30 @@ Description from open-license
 Text
 ----
 
-    The BSD 3-Clause License
+    Redistribution and use in source and binary forms, with or without modification,
+    are permitted provided that the following conditions are met:
 
-          The following is a BSD 3-Clause ("BSD New" or "BSD Simplified") license template. 
-          To generate your own license, change the values of OWNER, ORGANIZATION and YEAR from 
-          their original values as given here, and substitute your own.
+    Redistributions of source code must retain the above copyright notice, this list
+    of conditions and the following disclaimer.
 
-          Note: You may omit clause 3 and still be OSD-conformant. 
-          Despite its colloquial name "BSD New", this is not the newest version of the BSD license; 
-          it was followed by the even newer BSD-2-Clause version, sometimes known as the 
-          "Simplified BSD License". On January 9th, 2008 the OSI Board approved BSD-2-Clause, 
-          which is used by FreeBSD and others. It omits the final "no-endorsement" clause and 
-          is thus roughly equivalent to the MIT License.
+    Redistributions in binary form must reproduce the above copyright notice, this
+    list of conditions and the following disclaimer in the documentation and/or
+    other materials provided with the distribution.
 
-          Historical Background: The original license used on BSD Unix had four clauses. 
-          The advertising clause (the third of four clauses) required you to acknowledge 
-          use of U.C. Berkeley code in your advertising of any product using that code. It 
-          was officially rescinded by the Director of the Office of Technology Licensing of 
-          the University of California on July 22nd, 1999. He states that clause 3 is "hereby 
-          deleted in its entirety." The four clause license has not been approved by OSI. 
-          The license below does not contain the advertising clause.
+    Neither the name of the ORGANIZATION nor the names of its contributors may be
+    used to endorse or promote products derived from this software without specific
+    prior written permission.
 
-          This prelude is not part of the license.
-
-    ＜OWNER＞ = Regents of the University of California
-    ＜ORGANIZATION＞ = University of California, Berkeley
-    ＜YEAR＞ = 1998
-
-    In the original BSD license, both occurrences of the phrase "COPYRIGHT HOLDERS AND CONTRIBUTORS" in the disclaimer read "REGENTS AND CONTRIBUTORS".
-
-    Here is the license template:
-
-    Copyright (c) ＜YEAR＞, ＜OWNER＞
-    All rights reserved.
-
-    Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
-
-       * Redistributions of source code must retain the above copyright notice, this list of 
-         conditions and the following disclaimer.
-       * Redistributions in binary form must reproduce the above copyright notice, this list of 
-         conditions and the following disclaimer in the documentation and/or other materials 
-         provided with the distribution.
-       * Neither the name of the <ORGANIZATION> nor the names of its contributors may be 
-         used to endorse or promote products derived from this software without specific prior 
-         written permission.
-
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+    THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+    ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS
+    BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+    GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+    HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+    LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+    THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 ------------------------------------------------------------------------
 
@@ -242,6 +230,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/BSD-3-Clause.html "SPDX") (all data
     \[in this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
@@ -258,7 +249,8 @@ Raw Data
             "License :: OSI Approved :: BSD License",
             "Revised BSD License",
             "Modified BSD License",
-            "New BSD License"
+            "New BSD License",
+            "scancode://bsd-new"
         ],
         "__impliedId": "BSD-3-Clause",
         "__isFsfFree": true,
@@ -272,6 +264,12 @@ Raw Data
                 [
                     "BSD-3-Clause",
                     "<OWNER> would be the equivalent of a copyright holder."
+                ]
+            ],
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified."
                 ]
             ]
         ],
@@ -393,6 +391,66 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://framework.zend.com/license/new-bsd",
+                    "https://opensource.org/licenses/BSD-3-Clause"
+                ],
+                "homepageUrl": "http://www.opensource.org/licenses/BSD-3-Clause",
+                "shortName": "BSD-3-Clause",
+                "textUrls": null,
+                "text": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                "category": "Permissive",
+                "osiUrl": "http://www.opensource.org/licenses/BSD-3-Clause",
+                "owner": "Regents of the University of California",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-new.yml",
+                "key": "bsd-new",
+                "name": "BSD-3-Clause",
+                "spdxId": "BSD-3-Clause",
+                "notes": "Per SPDX.org, this license is OSI certified.",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://bsd-new",
+                        "BSD-3-Clause",
+                        "BSD-3-Clause"
+                    ],
+                    "__impliedId": "BSD-3-Clause",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified."
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://www.opensource.org/licenses/BSD-3-Clause"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://www.opensource.org/licenses/BSD-3-Clause"
+                        ],
+                        [
+                            null,
+                            "http://framework.zend.com/license/new-bsd"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/BSD-3-Clause"
                         ]
                     ]
                 }
@@ -879,6 +937,10 @@ Raw Data
                 "NoCopyleft"
             ],
             [
+                "Scancode",
+                "NoCopyleft"
+            ],
+            [
                 "librariesio license-compatibility",
                 "NoCopyleft"
             ]
@@ -921,7 +983,7 @@ Raw Data
             ]
         },
         "__isOsiApproved": true,
-        "__impliedText": "The BSD 3-Clause License\n\n      The following is a BSD 3-Clause (\"BSD New\" or \"BSD Simplified\") license template. \n      To generate your own license, change the values of OWNER, ORGANIZATION and YEAR from \n      their original values as given here, and substitute your own.\n\n      Note: You may omit clause 3 and still be OSD-conformant. \n      Despite its colloquial name \"BSD New\", this is not the newest version of the BSD license; \n      it was followed by the even newer BSD-2-Clause version, sometimes known as the \n      \"Simplified BSD License\". On January 9th, 2008 the OSI Board approved BSD-2-Clause, \n      which is used by FreeBSD and others. It omits the final \"no-endorsement\" clause and \n      is thus roughly equivalent to the MIT License.\n\n      Historical Background: The original license used on BSD Unix had four clauses. \n      The advertising clause (the third of four clauses) required you to acknowledge \n      use of U.C. Berkeley code in your advertising of any product using that code. It \n      was officially rescinded by the Director of the Office of Technology Licensing of \n      the University of California on July 22nd, 1999. He states that clause 3 is \"hereby \n      deleted in its entirety.\" The four clause license has not been approved by OSI. \n      The license below does not contain the advertising clause.\n\n      This prelude is not part of the license.\n\n＜OWNER＞ = Regents of the University of California\n＜ORGANIZATION＞ = University of California, Berkeley\n＜YEAR＞ = 1998\n\nIn the original BSD license, both occurrences of the phrase \"COPYRIGHT HOLDERS AND CONTRIBUTORS\" in the disclaimer read \"REGENTS AND CONTRIBUTORS\".\n\nHere is the license template:\n\nCopyright (c) ＜YEAR＞, ＜OWNER＞\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\n\n   * Redistributions of source code must retain the above copyright notice, this list of \n     conditions and the following disclaimer.\n   * Redistributions in binary form must reproduce the above copyright notice, this list of \n     conditions and the following disclaimer in the documentation and/or other materials \n     provided with the distribution.\n   * Neither the name of the <ORGANIZATION> nor the names of its contributors may be \n     used to endorse or promote products derived from this software without specific prior \n     written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the ORGANIZATION nor the names of its contributors may be\nused to endorse or promote products derived from this software without specific\nprior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,\nTHE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS\nBE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\nCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE\nGOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\nHOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\nLIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF\nTHE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -946,6 +1008,18 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/BSD-3-Clause.json"
+            ],
+            [
+                "Homepage",
+                "http://www.opensource.org/licenses/BSD-3-Clause"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/BSD-3-Clause"
+            ],
+            [
+                null,
+                "http://framework.zend.com/license/new-bsd"
             ]
         ]
     }

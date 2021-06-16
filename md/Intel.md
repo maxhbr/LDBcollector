@@ -13,6 +13,10 @@ Intel Open Source License (Intel)
 
 -   `Intel License Agreement`
 
+-   `scancode://intel-bsd-export-control`
+
+-   `Intel BSD - Export Control`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -37,16 +41,30 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “this has this title in SPDX and OSI text The Intel Open Source
+    License for CDSA/CSSM Implementation (BSD License with Export
+    Notice)” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
 
+-   **Homepage:**
+    http://opensource.org/licenses/intel-open-source-license.html
+
 -   **OSI Page:** https://opensource.org/licenses/Intel
+
+-   **OSI Page:**
+    http://www.opensource.org/licenses/intel-open-source-license.html
 
 -   **SPDX:** https://spdx.org/licenses/Intel.html
 
 -   **SPDX:** http://spdx.org/licenses/Intel.json
 
 -   **open-license:** http://open-license.hitachi.com/licenses/663
+
+-   https://opensource.org/licenses/intel-open-source-license.php
 
 Description from open-license
 -----------------------------
@@ -86,38 +104,39 @@ Description from open-license
 Text
 ----
 
-    Intel License Agreement
+    Redistribution and use in source and binary forms, with or without modification,
+    are permitted provided that the following conditions are met:
 
-    Copyright (c) 2000, Intel Corporation
+    Redistributions of source code must retain the above copyright notice, this list
+    of conditions and the following disclaimer.
 
-    All rights reserved.
+    Redistributions in binary form must reproduce the above copyright notice, this
+    list of conditions and the following disclaimer in the documentation and/or
+    other materials provided with the distribution.
 
-    Redistribution and use in source and binary forms, with or without
-    modification, are permitted provided that the following conditions are
-    met:
+    Neither the name of the Intel Corporation nor the names of its contributors may
+    be used to endorse or promote products derived from this software without
+    specific prior written permission.
 
-    * Redistributions of source code must retain the above copyright
-    notice, this list of conditions and the following disclaimer.
-
-    * Redistributions in binary form must reproduce the above copyright
-    notice, this list of conditions and the following disclaimer in the
-    documentation and/or other materials provided with the distribution.
-
-    * The name of Intel Corporation may not be used to endorse or promote
-    products derived from this software without specific prior written
-    permission.
-
-    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
-    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
-    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
-    A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL OR
-    CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-    EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-    PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
-    LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
-    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+    DISCLAIMED. IN NO EVENT SHALL THE INTEL OR CONTRIBUTORS BE LIABLE FOR ANY
+    DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+    ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
     SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+    EXPORT LAWS: THIS LICENSE ADDS NO RESTRICTIONS TO THE EXPORT LAWS OF YOUR
+    JURISDICTION. It is licensee's responsibility to comply with any export
+    regulations applicable in licensee's jurisdiction. Under CURRENT (May 2000) U.S.
+    export regulations this software is eligible for export from the U.S. and can be
+    downloaded by or otherwise exported or reexported worldwide EXCEPT to U.S.
+    embargoed destinations which include Cuba, Iraq, Libya, North Korea, Iran,
+    Syria, Sudan, Afghanistan and any other country to which the U.S. has embargoed
+    goods and services.
 
 ------------------------------------------------------------------------
 
@@ -150,6 +169,9 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
@@ -159,10 +181,20 @@ Raw Data
             "intel-osl",
             "The Intel Open Source License",
             "License :: OSI Approved :: Intel Open Source License",
-            "Intel License Agreement"
+            "Intel License Agreement",
+            "scancode://intel-bsd-export-control",
+            "Intel BSD - Export Control"
         ],
         "__impliedId": "Intel",
         "__isFsfFree": true,
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                ]
+            ]
+        ],
         "facts": {
             "Open Knowledge International": {
                 "is_generic": null,
@@ -275,6 +307,71 @@ Raw Data
                     ]
                 },
                 "Notes": "Deprecated license"
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://opensource.org/licenses/Intel",
+                    "https://opensource.org/licenses/Intel",
+                    "https://opensource.org/licenses/intel-open-source-license.php"
+                ],
+                "homepageUrl": "http://opensource.org/licenses/intel-open-source-license.html",
+                "shortName": "Intel BSD - Export Control",
+                "textUrls": null,
+                "text": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the Intel Corporation nor the names of its contributors may\nbe used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE INTEL OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nEXPORT LAWS: THIS LICENSE ADDS NO RESTRICTIONS TO THE EXPORT LAWS OF YOUR\nJURISDICTION. It is licensee's responsibility to comply with any export\nregulations applicable in licensee's jurisdiction. Under CURRENT (May 2000) U.S.\nexport regulations this software is eligible for export from the U.S. and can be\ndownloaded by or otherwise exported or reexported worldwide EXCEPT to U.S.\nembargoed destinations which include Cuba, Iraq, Libya, North Korea, Iran,\nSyria, Sudan, Afghanistan and any other country to which the U.S. has embargoed\ngoods and services.",
+                "category": "Permissive",
+                "osiUrl": "http://www.opensource.org/licenses/intel-open-source-license.html",
+                "owner": "Intel Corporation",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml",
+                "key": "intel-bsd-export-control",
+                "name": "Intel BSD - Export Control",
+                "spdxId": "Intel",
+                "notes": "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://intel-bsd-export-control",
+                        "Intel BSD - Export Control",
+                        "Intel"
+                    ],
+                    "__impliedId": "Intel",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "this has this title in SPDX and OSI text The Intel Open Source License for CDSA/CSSM Implementation (BSD License with Export Notice)"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the Intel Corporation nor the names of its contributors may\nbe used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE INTEL OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nEXPORT LAWS: THIS LICENSE ADDS NO RESTRICTIONS TO THE EXPORT LAWS OF YOUR\nJURISDICTION. It is licensee's responsibility to comply with any export\nregulations applicable in licensee's jurisdiction. Under CURRENT (May 2000) U.S.\nexport regulations this software is eligible for export from the U.S. and can be\ndownloaded by or otherwise exported or reexported worldwide EXCEPT to U.S.\nembargoed destinations which include Cuba, Iraq, Libya, North Korea, Iran,\nSyria, Sudan, Afghanistan and any other country to which the U.S. has embargoed\ngoods and services.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://opensource.org/licenses/intel-open-source-license.html"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://www.opensource.org/licenses/intel-open-source-license.html"
+                        ],
+                        [
+                            null,
+                            "http://opensource.org/licenses/Intel"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/Intel"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/intel-open-source-license.php"
+                        ]
+                    ]
+                }
             },
             "Hitachi open-license": {
                 "notices": [
@@ -493,11 +590,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
-        "__impliedText": "Intel License Agreement\n\nCopyright (c) 2000, Intel Corporation\n\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n* Redistributions of source code must retain the above copyright\nnotice, this list of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright\nnotice, this list of conditions and the following disclaimer in the\ndocumentation and/or other materials provided with the distribution.\n\n* The name of Intel Corporation may not be used to endorse or promote\nproducts derived from this software without specific prior written\npermission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS\n\"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT\nLIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR\nA PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL INTEL OR\nCONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,\nEXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,\nPROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR\nPROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF\nLIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING\nNEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.",
+        "__impliedText": "Redistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\nRedistributions of source code must retain the above copyright notice, this list\nof conditions and the following disclaimer.\n\nRedistributions in binary form must reproduce the above copyright notice, this\nlist of conditions and the following disclaimer in the documentation and/or\nother materials provided with the distribution.\n\nNeither the name of the Intel Corporation nor the names of its contributors may\nbe used to endorse or promote products derived from this software without\nspecific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL THE INTEL OR CONTRIBUTORS BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON\nANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\nEXPORT LAWS: THIS LICENSE ADDS NO RESTRICTIONS TO THE EXPORT LAWS OF YOUR\nJURISDICTION. It is licensee's responsibility to comply with any export\nregulations applicable in licensee's jurisdiction. Under CURRENT (May 2000) U.S.\nexport regulations this software is eligible for export from the U.S. and can be\ndownloaded by or otherwise exported or reexported worldwide EXCEPT to U.S.\nembargoed destinations which include Cuba, Iraq, Libya, North Korea, Iran,\nSyria, Sudan, Afghanistan and any other country to which the U.S. has embargoed\ngoods and services.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -518,6 +619,22 @@ Raw Data
             [
                 "SPDX",
                 "http://spdx.org/licenses/Intel.json"
+            ],
+            [
+                "Homepage",
+                "http://opensource.org/licenses/intel-open-source-license.html"
+            ],
+            [
+                "OSI Page",
+                "http://www.opensource.org/licenses/intel-open-source-license.html"
+            ],
+            [
+                null,
+                "http://opensource.org/licenses/Intel"
+            ],
+            [
+                null,
+                "https://opensource.org/licenses/intel-open-source-license.php"
             ]
         ]
     }

@@ -3,6 +3,10 @@ BSD Zero Clause License (0BSD)
 
 [TABLE]
 
+**Other Names:**
+
+-   `scancode://bsd-zero`
+
 Description
 -----------
 
@@ -40,11 +44,25 @@ Obligations
 URLs
 ----
 
+-   **Homepage:** http://landley.net/toybox/license.html
+
 -   **SPDX:** https://spdx.org/licenses/0BSD.html
 
 -   **SPDX:** http://spdx.org/licenses/0BSD.json
 
--   http://landley.net/toybox/license.html
+Text
+----
+
+    Permission to use, copy, modify, and/or distribute this software for any
+    purpose with or without fee is hereby granted.
+
+    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
 ------------------------------------------------------------------------
 
@@ -74,13 +92,17 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/0BSD.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-zero.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "0BSD",
             "BSD Zero Clause License",
-            "0bsd"
+            "0bsd",
+            "scancode://bsd-zero"
         ],
         "__impliedId": "0BSD",
         "facts": {
@@ -131,6 +153,43 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "0BSD"
+            },
+            "Scancode": {
+                "otherUrls": null,
+                "homepageUrl": "http://landley.net/toybox/license.html",
+                "shortName": "BSD Zero Clause License",
+                "textUrls": null,
+                "text": "Permission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                "category": "Permissive",
+                "osiUrl": null,
+                "owner": "Rob Landley",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-zero.yml",
+                "key": "bsd-zero",
+                "name": "BSD Zero Clause License",
+                "spdxId": "0BSD",
+                "notes": null,
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://bsd-zero",
+                        "BSD Zero Clause License",
+                        "0BSD"
+                    ],
+                    "__impliedId": "0BSD",
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://landley.net/toybox/license.html"
+                        ]
+                    ]
+                }
             },
             "OpenChainPolicyTemplate": {
                 "isSaaSDeemed": "no",
@@ -289,6 +348,10 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
@@ -324,6 +387,7 @@ Raw Data
             "conditions": []
         },
         "__isOsiApproved": true,
+        "__impliedText": "Permission to use, copy, modify, and/or distribute this software for any\npurpose with or without fee is hereby granted.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES\nWITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF\nMERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR\nANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES\nWHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN\nACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF\nOR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -335,6 +399,10 @@ Raw Data
             ],
             [
                 null,
+                "http://landley.net/toybox/license.html"
+            ],
+            [
+                "Homepage",
                 "http://landley.net/toybox/license.html"
             ]
         ]

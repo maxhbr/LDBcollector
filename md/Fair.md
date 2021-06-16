@@ -7,6 +7,8 @@ Fair License (Fair)
 
 -   `Fair License (Fair)`
 
+-   `scancode://fair`
+
 Comments on (easy) usability
 ----------------------------
 
@@ -26,8 +28,14 @@ Comments on (easy) usability
 General Comments
 ----------------
 
+-   “Per SPDX.org, this license is OSI certified” (source:
+    [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
+    (CC0-1.0))
+
 URLs
 ----
+
+-   **Homepage:** http://opensource.org/licenses/fair.php
 
 -   **OSI Page:** https://opensource.org/licenses/Fair
 
@@ -36,6 +44,19 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/Fair.json
 
 -   http://fairlicense.org/
+
+-   http://www.opensource.org/licenses/Fair
+
+-   http://rhid.com/fair
+
+Text
+----
+
+    Usage of the works is permitted provided that this instrument is retained with
+    the works, so that any entity that uses the works is notified of this
+    instrument.
+
+    DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
 
 ------------------------------------------------------------------------
 
@@ -67,18 +88,30 @@ Raw Data
 -   [SPDX](https://spdx.org/licenses/Fair.html "SPDX") (all data \[in
     this repository\] is generated)
 
+-   [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
+    (CC0-1.0)
+
 ### Raw JSON
 
     {
         "__impliedNames": [
             "Fair",
             "Fair License",
-            "Fair License (Fair)"
+            "Fair License (Fair)",
+            "scancode://fair"
         ],
         "__impliedId": "Fair",
         "__isFsfFree": true,
         "__impliedAmbiguousNames": [
             "Fair"
+        ],
+        "__impliedComments": [
+            [
+                "Scancode",
+                [
+                    "Per SPDX.org, this license is OSI certified"
+                ]
+            ]
         ],
         "facts": {
             "Open Knowledge International": {
@@ -187,6 +220,76 @@ Raw Data
                                 "tag": "PositiveJudgement",
                                 "contents": "This software Licenses is OK for Fedora"
                             }
+                        ]
+                    ]
+                }
+            },
+            "Scancode": {
+                "otherUrls": [
+                    "http://fairlicense.org/",
+                    "http://www.opensource.org/licenses/Fair",
+                    "https://opensource.org/licenses/Fair",
+                    "http://rhid.com/fair"
+                ],
+                "homepageUrl": "http://opensource.org/licenses/fair.php",
+                "shortName": "Fair License",
+                "textUrls": null,
+                "text": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
+                "category": "Permissive",
+                "osiUrl": "http://opensource.org/licenses/fair.php",
+                "owner": "OSI - Open Source Initiative",
+                "_sourceURL": "https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml",
+                "key": "fair",
+                "name": "Fair License",
+                "spdxId": "Fair",
+                "notes": "Per SPDX.org, this license is OSI certified",
+                "_implications": {
+                    "__impliedNames": [
+                        "scancode://fair",
+                        "Fair License",
+                        "Fair"
+                    ],
+                    "__impliedId": "Fair",
+                    "__impliedComments": [
+                        [
+                            "Scancode",
+                            [
+                                "Per SPDX.org, this license is OSI certified"
+                            ]
+                        ]
+                    ],
+                    "__impliedCopyleft": [
+                        [
+                            "Scancode",
+                            "NoCopyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "NoCopyleft",
+                    "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
+                    "__impliedURLs": [
+                        [
+                            "Homepage",
+                            "http://opensource.org/licenses/fair.php"
+                        ],
+                        [
+                            "OSI Page",
+                            "http://opensource.org/licenses/fair.php"
+                        ],
+                        [
+                            null,
+                            "http://fairlicense.org/"
+                        ],
+                        [
+                            null,
+                            "http://www.opensource.org/licenses/Fair"
+                        ],
+                        [
+                            null,
+                            "https://opensource.org/licenses/Fair"
+                        ],
+                        [
+                            null,
+                            "http://rhid.com/fair"
                         ]
                     ]
                 }
@@ -314,10 +417,15 @@ Raw Data
             [
                 "BlueOak License List",
                 "NoCopyleft"
+            ],
+            [
+                "Scancode",
+                "NoCopyleft"
             ]
         ],
         "__calculatedCopyleft": "NoCopyleft",
         "__isOsiApproved": true,
+        "__impliedText": "Usage of the works is permitted provided that this instrument is retained with\nthe works, so that any entity that uses the works is notified of this\ninstrument.\n\nDISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n",
         "__impliedURLs": [
             [
                 "SPDX",
@@ -338,6 +446,22 @@ Raw Data
             [
                 null,
                 "http://fairlicense.org/"
+            ],
+            [
+                "Homepage",
+                "http://opensource.org/licenses/fair.php"
+            ],
+            [
+                "OSI Page",
+                "http://opensource.org/licenses/fair.php"
+            ],
+            [
+                null,
+                "http://www.opensource.org/licenses/Fair"
+            ],
+            [
+                null,
+                "http://rhid.com/fair"
             ]
         ]
     }
