@@ -99,17 +99,17 @@ data FOSSLight_License
   , _fossLight_OBLIGATION_NOTIFICATION   :: Bool                    --  5    `OBLIGATION_NOTIFICATION_YN` char(1) DEFAULT 'N' COMMENT '고지여부',
   , _fossLight_OBLIGATION_NEEDS_CHECK    :: Bool                    --  6    `OBLIGATION_NEEDS_CHECK_YN` char(1) DEFAULT 'N' COMMENT '추후확인필요여부',
   , _fossLight_SHORT_IDENTIFIER          :: Maybe LicenseName       --  7    `SHORT_IDENTIFIER` varchar(100) DEFAULT NULL COMMENT '라이선스 약어(SPDX기준인 경우만 설정)',
-  , _fossLight_WEBPAGE                   :: () -- Maybe Text        --  8    `WEBPAGE` varchar(2000) DEFAULT NULL COMMENT '라이선스를 만든 기관에서 제공하는 WEB PAGE 주소',
-  , _fossLight_DESCRIPTION               :: () -- Maybe Text        --  9    `DESCRIPTION` text DEFAULT NULL COMMENT '부가설명 및 collab link등',
-  , _fossLight_LICENSE_TEXT              :: () -- Maybe Text        -- 10    `LICENSE_TEXT` mediumtext DEFAULT NULL COMMENT '라이선스 원문',
-  , _fossLight_ATTRIBUTION               :: () -- Maybe Text        -- 11    `ATTRIBUTION` text DEFAULT NULL COMMENT '고지문구 추가 사항',
+  , _fossLight_WEBPAGE                   :: Maybe Text              --  8    `WEBPAGE` varchar(2000) DEFAULT NULL COMMENT '라이선스를 만든 기관에서 제공하는 WEB PAGE 주소',
+  , _fossLight_DESCRIPTION               :: Maybe Text              --  9    `DESCRIPTION` text DEFAULT NULL COMMENT '부가설명 및 collab link등',
+  , _fossLight_LICENSE_TEXT              :: Maybe Text              -- 10    `LICENSE_TEXT` mediumtext DEFAULT NULL COMMENT '라이선스 원문',
+  , _fossLight_ATTRIBUTION               :: Maybe Text              -- 11    `ATTRIBUTION` text DEFAULT NULL COMMENT '고지문구 추가 사항',
   , _fossLight_USE                       :: Bool                    -- 12    `USE_YN` char(1) DEFAULT 'Y' COMMENT '사용여부',
   , _fossLight_CREATOR                   :: ()                      -- 13    `CREATOR` varchar(50) DEFAULT NULL COMMENT '등록자',
   , _fossLight_CREATED_DATE              :: ()                      -- 14    `CREATED_DATE` datetime DEFAULT current_timestamp() COMMENT '등록일',
   , _fossLight_MODIFIER                  :: ()                      -- 15    `MODIFIER` varchar(50) DEFAULT NULL COMMENT '수정자',
   , _fossLight_MODIFIED_DATE             :: ()                      -- 16    `MODIFIED_DATE` datetime DEFAULT current_timestamp() ON UPDATE current_timestamp() COMMENT '수정일',
   , _fossLight_REQ_LICENSE_TEXT          :: Bool                    -- 17    `REQ_LICENSE_TEXT_YN` char(1) DEFAULT 'N' COMMENT 'LICENSE TEXT 필수 입력 여부, MIT LIKE, BSD LIKE만 적용',
-  , _fossLight_RESTRICTION               :: () -- Maybe Text        -- 18    `RESTRICTION` varchar(100) DEFAULT NULL,
+  , _fossLight_RESTRICTION               :: Maybe Text              -- 18    `RESTRICTION` varchar(100) DEFAULT NULL,
   } deriving (Show)
 
 instance S.FromField () where
@@ -155,21 +155,22 @@ instance LicenseFactClassifiable FOSSLightFact where
   getLicenseFactClassifier _ = fossLightLFC
 
 instance LFRaw FOSSLightFact where
-  getImpliedNames (FOSSLightFact lic nicks)       = CLSR (_fossLight_name lic : (maybeToList (_fossLight_SHORT_IDENTIFIER lic) ++ nicks))
-  getImpliedJudgement flf@(FOSSLightFact lic _)   = SLSR (getLicenseFactClassifier flf) $ case _fossLight_USE lic of
+  getImpliedNames (FOSSLightFact lic _)            = CLSR (_fossLight_name lic : (maybeToList (_fossLight_SHORT_IDENTIFIER lic)))
+  getImpliedAmbiguousNames (FOSSLightFact _ nicks) = CLSR nicks
+  getImpliedJudgement flf@(FOSSLightFact lic _)    = SLSR (getLicenseFactClassifier flf) $ case _fossLight_USE lic of
     True -> NeutralJudgement "This license is allowed for use at LG"
     False -> NegativeJudgement "This license is prohibited to use at LG"
-  getImpliedFullName flf@(FOSSLightFact lic _)    = mkRLSR flf 20 $ _fossLight_name lic
-  -- getImpliedURLs flf@(FOSSLightFact lic _)        = case _fossLight_WEBPAGE lic of
-  --   Just webpage ->  CLSR [(Just "webpage", T.unpack webpage)]
-  --   Nothing -> NoCLSR
-  -- getImpliedText flf@(FOSSLightFact lic _)        = case _fossLight_LICENSE_TEXT lic of 
-  --   Just txt -> mkRLSR flf 10 txt
-  --   Nothing -> NoRLSR
-  -- getImpliedDescription flf@(FOSSLightFact lic _) = case _fossLight_DESCRIPTION lic of
-  --   Just desc -> mkRLSR flf 5 (T.unpack desc)
-  --   Nothing -> NoRLSR
-  getImpliedCopyleft flf@(FOSSLightFact lic _)    = case _fossLight_type lic of
+  getImpliedFullName flf@(FOSSLightFact lic _)     = mkRLSR flf 20 $ _fossLight_name lic
+  getImpliedURLs flf@(FOSSLightFact lic _)         = case _fossLight_WEBPAGE lic of
+    Just webpage ->  CLSR [(Just "webpage", T.unpack webpage)]
+    Nothing -> NoCLSR
+  getImpliedText flf@(FOSSLightFact lic _)         = case _fossLight_LICENSE_TEXT lic of 
+    Just txt -> mkRLSR flf 10 txt
+    Nothing -> NoRLSR
+  getImpliedDescription flf@(FOSSLightFact lic _)  = case _fossLight_DESCRIPTION lic of
+    Just desc -> mkRLSR flf 5 (T.unpack desc)
+    Nothing -> NoRLSR
+  getImpliedCopyleft flf@(FOSSLightFact lic _)     = case _fossLight_type lic of
     FOSSLight_License_Type_Copyleft -> mkSLSR flf StrongCopyleft
     FOSSLight_License_Type_Proprietary -> NoSLSR
     FOSSLight_License_Type_Proprietary_Free -> NoSLSR

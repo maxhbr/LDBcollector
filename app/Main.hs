@@ -23,6 +23,7 @@ handler outputFolder = (\facts input -> do
 
                            writeLicenseJSONs outputFolder licenses
                            writeFlictLicenseTranslationJSON outputFolder licenses
+                           writeAliasesCSV outputFolder licenses
                            writeDetails outputFolder pages
                            writePandocs outputFolder pages
                            writeGraphizs outputFolder trees
