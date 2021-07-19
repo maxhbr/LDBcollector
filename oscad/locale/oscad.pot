@@ -1,21 +1,21 @@
 # Translations template for oscad.
-# Copyright (C) 2016 ORGANIZATION
+# Copyright (C) 2021 ORGANIZATION
 # This file is distributed under the same license as the oscad project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2021.
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: oscad 2.1.0\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2016-04-14 11:11+0000\n"
+"POT-Creation-Date: 2021-07-08 11:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 1.3\n"
+"Generated-By: Babel 2.9.0\n"
 
 #: oscad/__init__.py:29
 msgid "your legal expert"
@@ -45,84 +45,84 @@ msgstr ""
 msgid "Imprint"
 msgstr ""
 
-#: oscad/views.py:23
+#: oscad/views.py:24
 msgid "application"
 msgstr ""
 
-#: oscad/views.py:25
+#: oscad/views.py:26
 msgid "library"
 msgstr ""
 
-#: oscad/views.py:28
+#: oscad/views.py:29
 msgid "use"
 msgstr ""
 
-#: oscad/views.py:30
+#: oscad/views.py:31
 msgid "distribute"
 msgstr ""
 
-#: oscad/views.py:33
+#: oscad/views.py:34
 msgid "an"
 msgstr ""
 
-#: oscad/views.py:34
+#: oscad/views.py:35
 msgid "unmodified"
 msgstr ""
 
-#: oscad/views.py:36
+#: oscad/views.py:37
 msgid "a"
 msgstr ""
 
-#: oscad/views.py:37
+#: oscad/views.py:38
 msgid "modified"
 msgstr ""
 
-#: oscad/views.py:40
+#: oscad/views.py:41
 msgid "sources"
 msgstr ""
 
-#: oscad/views.py:42
+#: oscad/views.py:43
 msgid "binary files"
 msgstr ""
 
-#: oscad/views.py:44
+#: oscad/views.py:45
 msgid "sources or binary files"
 msgstr ""
 
-#: oscad/views.py:47
+#: oscad/views.py:48
 msgid "independent"
 msgstr ""
 
-#: oscad/views.py:48
+#: oscad/views.py:49
 msgid "piece of software"
 msgstr ""
 
-#: oscad/views.py:50
+#: oscad/views.py:51
 msgid "embedded"
 msgstr ""
 
-#: oscad/views.py:51
+#: oscad/views.py:52
 msgid "in my own software development"
 msgstr ""
 
-#: oscad/views.py:54
+#: oscad/views.py:55
 msgid "locally"
 msgstr ""
 
-#: oscad/views.py:56
+#: oscad/views.py:57
 msgid "over the internet"
 msgstr ""
 
-#: oscad/views.py:275
+#: oscad/views.py:282
 #, python-format
 msgid "Missing parameter: %(param)s"
 msgstr ""
 
-#: oscad/views.py:282
+#: oscad/views.py:289
 msgid "The combination of parameters you have entered is invalid"
 msgstr ""
 
-#: oscad/views.py:290
+#: oscad/views.py:297
 #, python-format
 msgid ""
 "The license \"%(license)s\" you have entered is not covered by this "
@@ -291,7 +291,7 @@ msgstr ""
 msgid "Parameters"
 msgstr ""
 
-#: oscad/templates/oscad/help.jinja2:16 oscad/templates/oscad/matrix.jinja2:19
+#: oscad/templates/oscad/help.jinja2:16 oscad/templates/oscad/matrix.jinja2:11
 #: oscad/templates/oscad/request.jinja2:36
 msgid "Type"
 msgstr ""
@@ -310,7 +310,7 @@ msgid ""
 "other cases, it is a snippet, a module, a library or a plugin (snimoli)"
 msgstr ""
 
-#: oscad/templates/oscad/help.jinja2:25 oscad/templates/oscad/matrix.jinja2:21
+#: oscad/templates/oscad/help.jinja2:25 oscad/templates/oscad/matrix.jinja2:13
 #: oscad/templates/oscad/request.jinja2:42
 msgid "Context"
 msgstr ""
@@ -357,7 +357,7 @@ msgid ""
 "distributor is using this library independly."
 msgstr ""
 
-#: oscad/templates/oscad/help.jinja2:58 oscad/templates/oscad/matrix.jinja2:20
+#: oscad/templates/oscad/help.jinja2:58 oscad/templates/oscad/matrix.jinja2:12
 #: oscad/templates/oscad/request.jinja2:48
 msgid "State"
 msgstr ""
@@ -381,7 +381,7 @@ msgid ""
 "modifying the open source software itself."
 msgstr ""
 
-#: oscad/templates/oscad/help.jinja2:75 oscad/templates/oscad/matrix.jinja2:22
+#: oscad/templates/oscad/help.jinja2:75 oscad/templates/oscad/matrix.jinja2:14
 #: oscad/templates/oscad/request.jinja2:54
 msgid "Recipient"
 msgstr ""
@@ -404,7 +404,7 @@ msgid ""
 "(2others)."
 msgstr ""
 
-#: oscad/templates/oscad/help.jinja2:85 oscad/templates/oscad/matrix.jinja2:23
+#: oscad/templates/oscad/help.jinja2:85 oscad/templates/oscad/matrix.jinja2:15
 #: oscad/templates/oscad/request.jinja2:60
 msgid "Form"
 msgstr ""
@@ -434,11 +434,15 @@ msgstr ""
 msgid "FIXME: clarify viaInternet and onlyLocally"
 msgstr ""
 
-#: oscad/templates/oscad/matrix.jinja2:51
+#: oscad/templates/oscad/matrix.jinja2:16 oscad/templates/oscad/request.jinja2:66
+msgid "IoAccess"
+msgstr ""
+
+#: oscad/templates/oscad/matrix.jinja2:44
 msgid "Known licenses"
 msgstr ""
 
-#: oscad/templates/oscad/matrix.jinja2:68
+#: oscad/templates/oscad/matrix.jinja2:61
 msgid "Planned licenses"
 msgstr ""
 
@@ -466,7 +470,7 @@ msgstr ""
 msgid ""
 "Given you want to use a library in the broadest sense, are you going to use /"
 " distribute this open source software as an {independent} unit, or do you "
-"plan to integrate it as an {embedded} component into a complexer piece of "
+"plan to integrate it as an {embedded} component into a more complex piece of "
 "software?"
 msgstr ""
 
@@ -486,10 +490,6 @@ msgstr ""
 msgid ""
 "Given you want to (re)distribute an open source based work [2others], do you "
 "focus on distributing the {binaries} or the {sources}?"
-msgstr ""
-
-#: oscad/templates/oscad/request.jinja2:66
-msgid "IoAccess"
 msgstr ""
 
 #: oscad/templates/oscad/request.jinja2:67
