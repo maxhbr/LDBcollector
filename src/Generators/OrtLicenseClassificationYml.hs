@@ -117,6 +117,8 @@ hasNoPatentHintCategory = OLCY_Category "has-no-patent-hint" Nothing
 nonCommercialCategory = OLCY_Category "non-commercial" Nothing
 nonNonCommercialCategory = OLCY_Category "allows-commercial" Nothing
 
+isOsiApprovedCategory = OLCY_Category "osi-approved" Nothing
+
 ratingToCategoryName :: Rating -> [OLCY_Category_Name]
 ratingToCategoryName (RUnknown rs) = map (\r -> "maybe-rating:" ++ (show r)) rs
 ratingToCategoryName r             = ["rating:" ++ (show r)]
@@ -158,6 +160,8 @@ categories = nub $ concat
   , [ hasPatentHintCategory , hasNoPatentHintCategory ]
   -- Non Commercial
   , [ nonCommercialCategory , nonNonCommercialCategory ]
+  -- approvals
+  , [isOsiApprovedCategory]
   ]
 
 pageToCategorization :: Page -> OLCY_Categorization
@@ -178,6 +182,9 @@ pageToCategorization page = let
   categorizationsFromObligations = case pObligations page of
     Just ows -> licenseObligationsToCategory (unpackWithSource ows)
     Nothing -> []
+  categorizationsFromOsiApproval = case ldIsOsiApproved licenseDetails of
+    Just True -> [isOsiApprovedCategory]
+    _         -> []
   in OLCY_Categorization (ldShortname licenseDetails)
   ( categorizationsFromCopyleft
   ++ categorizationsFromNonCommercial
