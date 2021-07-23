@@ -10,6 +10,7 @@ categories:
 - name: has-no-patent-hint
 - name: non-commercial
 - name: allows-commercial
+- name: osi-approved
 - name: rating:Go
 - name: right:commercial-use
 - name: right:distribution
