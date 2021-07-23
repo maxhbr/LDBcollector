@@ -45,11 +45,13 @@ categorizations:
   - right:private-use
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: 0BSD
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: AAL
 - categories:
   - permissive
@@ -58,18 +60,22 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: AFL-1.1
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: AFL-1.2
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: AFL-2.0
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: AFL-2.1
 - categories:
   - permissive
@@ -85,6 +91,7 @@ categorizations:
   - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: AFL-3.0
 - categories:
   - saas-copyleft
@@ -118,6 +125,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: AGPL-3.0-only
 - categories:
   - saas-copyleft
@@ -126,6 +134,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: AGPL-3.0-or-later
 - categories:
   - permissive
@@ -153,24 +162,28 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: APL-1.0
 - categories:
   - saas-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: APSL-1.0
 - categories:
   - saas-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: APSL-1.1
 - categories:
   - saas-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: APSL-1.2
 - categories:
   - saas-copyleft
@@ -179,6 +192,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: APSL-2.0
 - categories:
   - permissive
@@ -216,6 +230,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Attention
+  - osi-approved
   id: Apache-1.1
 - categories:
   - permissive
@@ -231,24 +246,28 @@ categorizations:
   - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: Apache-2.0
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Artistic-1.0
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Artistic-1.0-Perl
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Artistic-1.0-cl8
 - categories:
   - weak-copyleft
@@ -267,10 +286,12 @@ categorizations:
   - limitation:liability
   - limitation:trademark-use
   - limitation:warranty
+  - osi-approved
   id: Artistic-2.0
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: BSD-1-Clause
 - categories:
   - permissive
@@ -282,10 +303,12 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: BSD-2-Clause
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: BSD-2-Clause-Patent
 - categories:
   - permissive
@@ -303,6 +326,7 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: BSD-3-Clause
 - categories:
   - permissive
@@ -323,6 +347,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: BSD-3-Clause-LBNL
 - categories:
   - permissive
@@ -381,6 +406,7 @@ categorizations:
   - condition:include-copyright--source
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: BSL-1.0
 - categories:
   - permissive
@@ -425,6 +451,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CAL-1.0
 - categories:
   - weak-copyleft
@@ -432,6 +459,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CAL-1.0-Combined-Work-Exception
 - categories:
   - weak-copyleft
@@ -439,6 +467,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CATOSL-1.1
 - categories:
   - permissive
@@ -671,6 +700,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CDDL-1.0
 - categories:
   - weak-copyleft
@@ -729,6 +759,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: CECILL-2.1
 - categories:
   - permissive
@@ -780,6 +811,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: CNRI-Python
 - categories:
   - permissive
@@ -791,6 +823,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CPAL-1.0
 - categories:
   - strong-copyleft
@@ -799,6 +832,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CPL-1.0
 - categories:
   - maybe-rating:Attention
@@ -811,6 +845,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: CUA-OPL-1.0
 - categories:
   - permissive
@@ -869,6 +904,7 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - osi-approved
   id: ECL-1.0
 - categories:
   - permissive
@@ -883,16 +919,19 @@ categorizations:
   - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: ECL-2.0
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: EFL-1.0
 - categories:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: EFL-2.0
 - categories:
   - permissive
@@ -917,6 +956,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: EPL-1.0
 - categories:
   - strong-copyleft
@@ -935,6 +975,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: EPL-2.0
 - categories:
   - permissive
@@ -942,6 +983,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: EUDatagrid
 - categories:
   - saas-copyleft
@@ -969,6 +1011,7 @@ categorizations:
   - limitation:liability
   - limitation:trademark-use
   - limitation:warranty
+  - osi-approved
   id: EUPL-1.1
 - categories:
   - saas-copyleft
@@ -990,10 +1033,12 @@ categorizations:
   - limitation:liability
   - limitation:trademark-use
   - limitation:warranty
+  - osi-approved
   id: EUPL-1.2
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: Entessa
 - categories:
   - weak-copyleft
@@ -1038,6 +1083,7 @@ categorizations:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Fair
 - categories:
   - weak-copyleft
@@ -1045,6 +1091,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Frameworx-1.0
 - categories:
   - weak-copyleft
@@ -1198,6 +1245,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: GPL-2.0-only
 - categories:
   - strong-copyleft
@@ -1205,6 +1253,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: GPL-2.0-or-later
 - categories:
   - strong-copyleft
@@ -1224,6 +1273,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: GPL-3.0-only
 - categories:
   - strong-copyleft
@@ -1243,6 +1293,7 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: GPL-3.0-only
 - categories:
   - permissive
@@ -1266,6 +1317,7 @@ categorizations:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: HPND
 - categories:
   - permissive
@@ -1304,6 +1356,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: IPA
 - categories:
   - weak-copyleft
@@ -1312,6 +1365,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: IPL-1.0
 - categories:
   - permissive
@@ -1324,6 +1378,7 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: ISC
 - categories:
   - permissive
@@ -1342,6 +1397,7 @@ categorizations:
   id: Info-ZIP
 - categories:
   - permissive
+  - osi-approved
   id: Intel
 - categories:
   - permissive
@@ -1388,6 +1444,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LGPL-2.0-only
 - categories:
   - weak-copyleft
@@ -1395,6 +1452,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LGPL-2.0-or-later
 - categories:
   - weak-copyleft
@@ -1412,6 +1470,7 @@ categorizations:
   - condition:same-license--library
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: LGPL-2.1-only
 - categories:
   - weak-copyleft
@@ -1419,6 +1478,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LGPL-2.1-or-later
 - categories:
   - weak-copyleft
@@ -1438,6 +1498,7 @@ categorizations:
   - condition:same-license--library
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: LGPL-3.0-only
 - categories:
   - weak-copyleft
@@ -1457,6 +1518,7 @@ categorizations:
   - condition:same-license--library
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: LGPL-3.0-only
 - categories:
   - weak-copyleft
@@ -1470,12 +1532,14 @@ categorizations:
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LPL-1.0
 - categories:
   - weak-copyleft
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LPL-1.02
 - categories:
   - weak-copyleft
@@ -1521,6 +1585,7 @@ categorizations:
   - condition:disclose-source
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: LPPL-1.3c
 - categories:
   - permissive
@@ -1538,16 +1603,19 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LiLiQ-P-1.1
 - categories:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LiLiQ-R-1.1
 - categories:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: LiLiQ-Rplus-1.1
 - categories:
   - permissive
@@ -1568,10 +1636,12 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: MIT
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: MIT-0
 - categories:
   - permissive
@@ -1599,6 +1669,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: MPL-1.0
 - categories:
   - weak-copyleft
@@ -1606,6 +1677,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: MPL-1.1
 - categories:
   - weak-copyleft
@@ -1625,6 +1697,7 @@ categorizations:
   - limitation:liability
   - limitation:trademark-use
   - limitation:warranty
+  - osi-approved
   id: MPL-2.0
 - categories:
   - weak-copyleft
@@ -1632,6 +1705,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: MPL-2.0-no-copyleft-exception
 - categories:
   - weak-copyleft
@@ -1648,6 +1722,7 @@ categorizations:
   - condition:include-copyright
   - limitation:warranty
   - limitation:trademark-use
+  - osi-approved
   id: MS-PL
 - categories:
   - strong-copyleft
@@ -1665,6 +1740,7 @@ categorizations:
   - condition:same-license--file
   - limitation:warranty
   - limitation:trademark-use
+  - osi-approved
   id: MS-RL
 - categories:
   - permissive
@@ -1680,6 +1756,7 @@ categorizations:
   - permissive
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: MirOS
 - categories:
   - weak-copyleft
@@ -1687,6 +1764,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Motosoto
 - categories:
   - permissive
@@ -1700,10 +1778,12 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: MulanPSL-2.0
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: Multics
 - categories:
   - permissive
@@ -1714,6 +1794,7 @@ categorizations:
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: NASA-1.3
 - categories:
   - weak-copyleft
@@ -1736,6 +1817,7 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: NCSA
 - categories:
   - weak-copyleft
@@ -1743,6 +1825,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: NGPL
 - categories:
   - permissive
@@ -1795,6 +1878,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: NPOSL-3.0
 - categories:
   - permissive
@@ -1804,6 +1888,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: NTP
 - categories:
   - permissive
@@ -1814,6 +1899,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: Naumen
 - categories:
   - permissive
@@ -1834,6 +1920,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Nokia
 - categories:
   - weak-copyleft
@@ -1860,6 +1947,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OCLC-2.0
 - categories:
   - permissive
@@ -1916,16 +2004,19 @@ categorizations:
   - condition:same-license
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: OFL-1.1
 - categories:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OFL-1.1-RFN
 - categories:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OFL-1.1-no-RFN
 - categories:
   - permissive
@@ -1962,6 +2053,7 @@ categorizations:
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OGTSL
 - categories:
   - weak-copyleft
@@ -2034,6 +2126,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: OLDAP-2.8
 - categories:
   - permissive
@@ -2052,6 +2145,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OSET-PL-2.1
 - categories:
   - saas-copyleft
@@ -2059,6 +2153,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OSL-1.0
 - categories:
   - saas-copyleft
@@ -2073,6 +2168,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OSL-2.0
 - categories:
   - saas-copyleft
@@ -2080,6 +2176,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: OSL-2.1
 - categories:
   - saas-copyleft
@@ -2101,6 +2198,7 @@ categorizations:
   - limitation:trademark-use
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: OSL-3.0
 - categories:
   - permissive
@@ -2116,10 +2214,12 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: PHP-3.0
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: PHP-3.01
 - categories:
   - permissive
@@ -2165,11 +2265,13 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: PostgreSQL
 - categories:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - osi-approved
   id: Python-2.0
 - categories:
   - strong-copyleft
@@ -2178,6 +2280,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: QPL-1.0
 - categories:
   - weak-copyleft
@@ -2198,6 +2301,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: RPL-1.1
 - categories:
   - maximal-copyleft
@@ -2205,6 +2309,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: RPL-1.5
 - categories:
   - saas-copyleft
@@ -2212,6 +2317,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: RPSL-1.0
 - categories:
   - permissive
@@ -2223,6 +2329,7 @@ categorizations:
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: RSCPL
 - categories:
   - permissive
@@ -2282,6 +2389,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: SISSL
 - categories:
   - weak-copyleft
@@ -2313,6 +2421,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: SPL-1.0
 - categories:
   - permissive
@@ -2358,6 +2467,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: SimPL-2.0
 - categories:
   - strong-copyleft
@@ -2366,6 +2476,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Sleepycat
 - categories:
   - permissive
@@ -2438,6 +2549,7 @@ categorizations:
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: UCL-1.0
 - categories:
   - permissive
@@ -2450,6 +2562,7 @@ categorizations:
   - condition:include-copyright
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: UPL-1.0
 - categories:
   - permissive
@@ -2458,6 +2571,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: Unicode-DFS-2016
 - categories:
   - maybe-rating:Attention
@@ -2474,6 +2588,7 @@ categorizations:
   - right:distribution
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: Unlicense
 - categories:
   - copyleft
@@ -2484,6 +2599,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: VSL-1.0
 - categories:
   - strong-copyleft
@@ -2504,6 +2620,7 @@ categorizations:
   - permissive
   - has-no-patent-hint
   - rating:Go
+  - osi-approved
   id: W3C
 - categories:
   - permissive
@@ -2530,6 +2647,7 @@ categorizations:
   - copyleft
   - maybe-rating:Stop
   - maybe-rating:No-Go
+  - osi-approved
   id: Watcom-1.0
 - categories:
   - permissive
@@ -2558,6 +2676,7 @@ categorizations:
   id: Xerox
 - categories:
   - permissive
+  - osi-approved
   id: Xnet
 - categories:
   - weak-copyleft
@@ -2581,6 +2700,7 @@ categorizations:
 - categories:
   - permissive
   - rating:Go
+  - osi-approved
   id: ZPL-2.0
 - categories:
   - permissive
@@ -2622,6 +2742,7 @@ categorizations:
   - condition:document-changes
   - limitation:liability
   - limitation:warranty
+  - osi-approved
   id: Zlib
 - categories:
   - permissive
