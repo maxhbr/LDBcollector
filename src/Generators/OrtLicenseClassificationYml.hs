@@ -118,6 +118,7 @@ nonCommercialCategory = OLCY_Category "non-commercial" Nothing
 nonNonCommercialCategory = OLCY_Category "allows-commercial" Nothing
 
 isOsiApprovedCategory = OLCY_Category "osi-approved" Nothing
+isFSFFreeCategory = OLCY_Category "fsf-free" Nothing
 
 ratingToCategoryName :: Rating -> [OLCY_Category_Name]
 ratingToCategoryName (RUnknown rs) = map (\r -> "maybe-rating:" ++ (show r)) rs
@@ -185,12 +186,17 @@ pageToCategorization page = let
   categorizationsFromOsiApproval = case ldIsOsiApproved licenseDetails of
     Just True -> [isOsiApprovedCategory]
     _         -> []
+  categorizationsFromFSFFree = case ldIsFSFFree licenseDetails of
+    Just True -> [isFSFFreeCategory]
+    _         -> []
   in OLCY_Categorization (ldShortname licenseDetails)
   ( categorizationsFromCopyleft
   ++ categorizationsFromNonCommercial
   ++ categorizationsFromHasPatentHint
   ++ categorizationsFromRating
   ++ categorizationsFromObligations
+  ++ categorizationsFromOsiApproval
+  ++ categorizationsFromFSFFree
   )
 
 writeOrtLicenseClassificationYml :: FilePath -> [Page] -> IO ()

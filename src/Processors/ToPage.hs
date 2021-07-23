@@ -47,6 +47,7 @@ data LicenseDetails
   , ldHasPatentHint :: Maybe Bool
   , ldNonCommercial :: Maybe Bool
   , ldIsOsiApproved :: Maybe Bool
+  , ldIsFSFFree :: Maybe Bool
   , ldOtherNames :: [LicenseName]
   } deriving (Show, Generic)
 instance ToNamedRecord LicenseDetails where
@@ -63,9 +64,11 @@ instance ToNamedRecord LicenseDetails where
                                           Just nc -> show nc
                                           Nothing -> "UNDEFINED"
                                       , "IsOsiApproved" C..= case ldIsOsiApproved details of 
-                                        Just True  -> "True"
-                                        Just False -> "False"
-                                        Nothing    -> "UNDEFINED"
+                                        Just b  -> show b
+                                        Nothing -> "UNDEFINED"
+                                      , "IsFSFFree" C..= case ldIsFSFFree details of 
+                                        Just b  -> show b
+                                        Nothing -> "UNDEFINED"
                                       ]
 
 calculateDetails :: RatingRules -> (LicenseName, License) -> LicenseDetails
@@ -77,6 +80,7 @@ calculateDetails ratingRules (licName, lic) = let
     patent = unpackRLSR (getHasPatentnHint lic)
     nonCommercial = unpackRLSR (getImpliedNonCommercial lic)
     isOsiApproved = unpackRLSR (getImpliedIsOSIApproved lic)
+    isFSFFree = unpackRLSR (getImpliedIsFSFFree lic)
     otherNames = let
         isNotElemUpToCase :: String -> [String] -> Bool
         isNotElemUpToCase needle hay = let
@@ -90,6 +94,7 @@ calculateDetails ratingRules (licName, lic) = let
                     patent
                     nonCommercial
                     isOsiApproved
+                    isFSFFree
                     otherNames
 
 data Page
