@@ -18,7 +18,7 @@
             ]
         ]
     ],
-    "__hasPatentHint": false,
+    "__hasPatentHint": true,
     "facts": {
         "Open Knowledge International": {
             "is_generic": null,
@@ -102,6 +102,17 @@
             },
             "licensename": "CC0-1.0",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/CC0-1.0.txt",
+            "spdxId": "CC0-1.0",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\nPATENT HINTS Yes\n",
+            "_implications": {
+                "__impliedNames": [
+                    "CC0-1.0"
+                ],
+                "__hasPatentHint": true
+            }
         },
         "Scancode": {
             "otherUrls": [

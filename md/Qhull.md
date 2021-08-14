@@ -34,6 +34,21 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Qhull
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	IF Software modification
+    		YOU MUST Provide Modification author
+    		YOU MUST Provide Modification date
+    		YOU MUST Provide Modification reason
+    		YOU MUST Reference Original source code
+    			ATTRIBUTE http://www.qhull.org
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -71,6 +86,10 @@ Raw Data
 -   [Fedora Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [SPDX](https://spdx.org/licenses/Qhull.html "SPDX") (all data \[in
     this repository\] is generated)
@@ -130,6 +149,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Qhull"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Qhull.txt",
+                "spdxId": "Qhull",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification author\n\t\tYOU MUST Provide Modification date\n\t\tYOU MUST Provide Modification reason\n\t\tYOU MUST Reference Original source code\n\t\t\tATTRIBUTE http://www.qhull.org\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Qhull"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

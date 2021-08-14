@@ -144,6 +144,23 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward License text
+    	IF Software modification
+    		YOU MUST Provide Modification report
+    	YOU MUST Forward Copyright notices
+    	YOU MUST NOT Promote
+    	YOU MUST Credit FreeType Team
+    USE CASE Binary delivery
+    	YOU MUST Credit In Documentation FreeType Team
+    	YOU MUST NOT Promote
+    	YOU MUST Credit FreeType Team
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -333,6 +350,10 @@ Raw Data
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -413,6 +434,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "FTL"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt",
+                "spdxId": "FTL",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "FTL"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

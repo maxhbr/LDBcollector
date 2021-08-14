@@ -57,6 +57,15 @@ URLs
 
 -   http://en.wikipedia.org/wiki/Eiffel\_Forum\_License
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -107,6 +116,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/EFL-2.0.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -226,6 +239,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "EFL-2.0"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/EFL-2.0.txt",
+                "spdxId": "EFL-2.0",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "EFL-2.0"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

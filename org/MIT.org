@@ -156,6 +156,15 @@
 
 (source: Hitachi open-license)
 
+** OSADL Rule
+#+BEGIN_EXAMPLE
+  USE CASE Source code delivery OR Binary delivery
+  	YOU MUST Forward Copyright notices
+  	YOU MUST Forward License text
+#+END_EXAMPLE
+
+(source: OSADL License Checklist)
+
 ** Text
 #+BEGIN_EXAMPLE
   Permission is hereby granted, free of charge, to any person obtaining
@@ -215,6 +224,9 @@
 - [[https://github.com/okfn/licenses/blob/master/licenses.csv][Open
   Knowledge International]]
   ([[https://opendatacommons.org/licenses/pddl/1-0/][PDDL-1.0]])
+
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt][OSADL
+  License Checklist]] (NOASSERTION)
 
 - [[https://opensource.org/licenses/][OpenSourceInitiative]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
@@ -363,6 +375,16 @@
               },
               "licensename": "MIT",
               "copyleftkind": "NoCopyleft"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT.txt",
+              "spdxId": "MIT",
+              "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "MIT"
+                  ]
+              }
           },
           "Fedora Project Wiki": {
               "GPLv2 Compat?": "Yes",

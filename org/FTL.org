@@ -157,6 +157,23 @@
 
 (source: Hitachi open-license)
 
+** OSADL Rule
+#+BEGIN_EXAMPLE
+  USE CASE Source code delivery
+  	YOU MUST Forward License text
+  	IF Software modification
+  		YOU MUST Provide Modification report
+  	YOU MUST Forward Copyright notices
+  	YOU MUST NOT Promote
+  	YOU MUST Credit FreeType Team
+  USE CASE Binary delivery
+  	YOU MUST Credit In Documentation FreeType Team
+  	YOU MUST NOT Promote
+  	YOU MUST Credit FreeType Team
+#+END_EXAMPLE
+
+(source: OSADL License Checklist)
+
 ** Text
 #+BEGIN_EXAMPLE
   The FreeType Project LICENSE
@@ -343,6 +360,9 @@
   license-compatibility-checker]]
   ([[https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE][MIT]])
 
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt][OSADL
+  License Checklist]] (NOASSERTION)
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
 
@@ -422,6 +442,16 @@
                   ]
               },
               "spdxLicenseId": "FTL"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/FTL.txt",
+              "spdxId": "FTL",
+              "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Provide Modification report\n\tYOU MUST Forward Copyright notices\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\nUSE CASE Binary delivery\n\tYOU MUST Credit In Documentation FreeType Team\n\tYOU MUST NOT Promote\n\tYOU MUST Credit FreeType Team\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "FTL"
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [

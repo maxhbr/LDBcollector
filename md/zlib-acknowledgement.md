@@ -50,6 +50,26 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST Forward License text
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST Mark
+    
+    USE CASE Binary delivery
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST Mark
+    
+    USE CASE Commercial distribution
+    	YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -98,6 +118,10 @@ Raw Data
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [SPDX](https://spdx.org/licenses/zlib-acknowledgement.html "SPDX")
     (all data \[in this repository\] is generated)
@@ -167,6 +191,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "zlib-acknowledgement"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/zlib-acknowledgement.txt",
+                "spdxId": "zlib-acknowledgement",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST Forward License text\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\r\nUSE CASE Commercial distribution\n\tYOU MUST Credit Verbatim \"Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig\"\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "zlib-acknowledgement"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "NO",

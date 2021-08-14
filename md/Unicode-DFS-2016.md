@@ -45,6 +45,17 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    YOU MUST Forward Copyright notices In Files
+    YOU MUST Forward License text In Files
+    YOU MUST Provide Copyright notices In Documentation
+    YOU MUST Provide License text In Documentation
+    YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -124,6 +135,10 @@ Raw Data
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0)
@@ -193,6 +208,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Unicode-DFS-2016"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2016.txt",
+                "spdxId": "Unicode-DFS-2016",
+                "osadlRule": "YOU MUST Forward Copyright notices In Files\nYOU MUST Forward License text In Files\nYOU MUST Provide Copyright notices In Documentation\nYOU MUST Provide License text In Documentation\nYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Unicode-DFS-2016"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

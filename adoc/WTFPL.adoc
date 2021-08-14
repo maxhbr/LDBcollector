@@ -80,6 +80,14 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt[c
 * http://sam.zoy.org/wtfpl/COPYING
 * http://fedoraproject.org/wiki/Licensing/WTFPL
 
+=== OSADL Rule
+
+....
+USE CASE Source code delivery OR Binary delivery
+....
+
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -123,6 +131,8 @@ license-compatibility-checker]
 * https://github.com/librariesio/license-compatibility/blob/master/lib/license/licenses.json[librariesio
 license-compatibility]
 (https://github.com/librariesio/license-compatibility/blob/master/LICENSE.txt[MIT])
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt[OSADL
+License Checklist] (NOASSERTION)
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
 (CC0-1.0)
 * https://spdx.org/licenses/WTFPL.html[SPDX] (all data [in this
@@ -211,6 +221,16 @@ repository] is generated)
             },
             "licensename": "WTFPL",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/WTFPL.txt",
+            "spdxId": "WTFPL",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\n",
+            "_implications": {
+                "__impliedNames": [
+                    "WTFPL"
+                ]
+            }
         },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "Yes",

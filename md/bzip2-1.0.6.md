@@ -90,6 +90,25 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST Mark
+    		YOU MUST NOT Appropriate
+    		YOU MUST NOT Promote
+    USE CASE Binary delivery
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -136,6 +155,10 @@ Raw Data
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -210,6 +233,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "bzip2-1.0.6"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.6.txt",
+                "spdxId": "bzip2-1.0.6",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.6"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

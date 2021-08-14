@@ -98,6 +98,27 @@ REQUISITE: Get special permission in writing.
 </code></pre></li>
 </ul>
 <p> (source: Hitachi open-license)</p>
+<h2>OSADL Rule</h2>
+<pre><code>USE CASE Source code delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+	YOU MUST Forward Warranty disclaimer
+	IF Documentation
+		YOU MUST Credit Verbatim &quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.&quot; in Documentation
+	IF NOT Documentation
+		YOU MUST Credit Verbatim &quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.&quot; In Source code delivery
+	YOU MUST NOT Promote
+USE CASE Binary delivery
+	IF Documentation
+		YOU MUST Credit Verbatim &quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.&quot; in Documentation
+	IF NOT Documentation
+		YOU MUST Credit Verbatim &quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.&quot; In Binary delivery
+	YOU MUST Forward Copyright notices In Documentation OR Distribution material
+	YOU MUST Forward License text In Documentation OR Distribution material
+	YOU MUST Forward Warranty disclaimer In Documentation OR Distribution material
+	YOU MUST NOT Promote
+</code></pre>
+<p> (source: OSADL License Checklist)</p>
 <h2>Text</h2>
 <pre><code>Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the &quot;Software&quot;), to deal in
@@ -143,6 +164,7 @@ OF SUCH DAMAGE.</code></pre>
 <li><p>LicenseName</p></li>
 <li><p><a href="https://blueoakcouncil.org/list" title="BlueOak License List">BlueOak License List</a> (<a href="https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE" title="CC0-1.0">CC0-1.0</a>)</p></li>
 <li><p><a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json" title="HansHammel license-compatibility-checker">HansHammel license-compatibility-checker</a> (<a href="https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE" title="MIT">MIT</a>)</p></li>
+<li><p><a href="https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt" title="OSADL License Checklist">OSADL License Checklist</a> (NOASSERTION)</p></li>
 <li><p><a href="https://github.com/Hitachi/open-license" title="Hitachi open-license">Hitachi open-license</a> (CDLA-Permissive-1.0)</p></li>
 <li><p><a href="https://spdx.org/licenses/XFree86-1.1.html" title="SPDX">SPDX</a> (all data [in this repository] is generated)</p></li>
 <li><p><a href="https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xfree86-1.1.yml" title="Scancode">Scancode</a> (CC0-1.0)</p></li>
@@ -197,6 +219,16 @@ OF SUCH DAMAGE.</code></pre>
                 ]
             },
             &quot;spdxLicenseId&quot;: &quot;XFree86-1.1&quot;
+        },
+        &quot;OSADL License Checklist&quot;: {
+            &quot;_sourceURL&quot;: &quot;https://www.osadl.org/fileadmin/checklists/unreflicenses/XFree86-1.1.txt&quot;,
+            &quot;spdxId&quot;: &quot;XFree86-1.1&quot;,
+            &quot;osadlRule&quot;: &quot;USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\&quot; in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\&quot; In Source code delivery\n\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tIF Documentation\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\&quot; in Documentation\n\tIF NOT Documentation\n\t\tYOU MUST Credit Verbatim \&quot;This product includes software developed by The XFree86 Project, Inc (http://www.xfree86.org/) and its contributors.\&quot; In Binary delivery\n\tYOU MUST Forward Copyright notices In Documentation OR Distribution material\n\tYOU MUST Forward License text In Documentation OR Distribution material\n\tYOU MUST Forward Warranty disclaimer In Documentation OR Distribution material\n\tYOU MUST NOT Promote\n&quot;,
+            &quot;_implications&quot;: {
+                &quot;__impliedNames&quot;: [
+                    &quot;XFree86-1.1&quot;
+                ]
+            }
         },
         &quot;Scancode&quot;: {
             &quot;otherUrls&quot;: null,

@@ -44,6 +44,17 @@ URLs
 
 -   http://www.opensource.org/licenses/HPND
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward Copyright notices In Documentation
+    	YOU MUST Forward License text In Documentation
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -86,6 +97,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/HPND.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -196,6 +211,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "HPND"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/HPND.txt",
+                "spdxId": "HPND",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward Copyright notices In Documentation\n\tYOU MUST Forward License text In Documentation\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "HPND"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

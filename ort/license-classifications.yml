@@ -72,11 +72,13 @@ categorizations:
   id: AFL-1.2
 - categories:
   - permissive
+  - has-patent-hint
   - rating:Go
   - osi-approved
   id: AFL-2.0
 - categories:
   - permissive
+  - has-patent-hint
   - rating:Go
   - osi-approved
   id: AFL-2.1
@@ -114,6 +116,7 @@ categorizations:
 - categories:
   - saas-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -328,6 +331,7 @@ categorizations:
   id: BSD-2-Clause
 - categories:
   - permissive
+  - has-patent-hint
   - rating:Go
   - osi-approved
   id: BSD-2-Clause-Patent
@@ -422,9 +426,11 @@ categorizations:
   - rating:Go
   id: BSD-Source-Code
 - categories:
-  - permissive
+  - maybe-copyleft
   - has-no-patent-hint
-  - rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - right:commercial-use
   - right:modifications
   - right:distribution
@@ -713,7 +719,7 @@ categorizations:
   id: CC-PDDC
 - categories:
   - permissive
-  - has-no-patent-hint
+  - has-patent-hint
   - rating:Go
   - right:commercial-use
   - right:modifications
@@ -727,7 +733,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
-  - has-no-patent-hint
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -861,13 +867,15 @@ categorizations:
 - categories:
   - strong-copyleft
   - copyleft
-  - has-no-patent-hint
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - osi-approved
   id: CPL-1.0
 - categories:
+  - maybe-copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -987,6 +995,7 @@ categorizations:
 - categories:
   - strong-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1042,6 +1051,7 @@ categorizations:
 - categories:
   - saas-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1290,6 +1300,7 @@ categorizations:
 - categories:
   - strong-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1309,6 +1320,7 @@ categorizations:
 - categories:
   - strong-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1406,6 +1418,7 @@ categorizations:
   id: Hippocratic-2.1
 - categories:
   - permissive
+  - has-patent-hint
   - rating:Go
   id: IBM-pibs
 - categories:
@@ -1414,6 +1427,7 @@ categorizations:
   id: ICU
 - categories:
   - permissive
+  - has-patent-hint
   - maybe-rating:Stop
   - maybe-rating:No-Go
   - fsf-free
@@ -1430,7 +1444,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
-  - has-no-patent-hint
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1531,6 +1545,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1549,6 +1564,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1757,6 +1773,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1793,7 +1810,7 @@ categorizations:
 - categories:
   - weak-copyleft
   - copyleft
-  - has-no-patent-hint
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -1811,6 +1828,7 @@ categorizations:
 - categories:
   - strong-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2306,9 +2324,11 @@ categorizations:
   - fsf-free
   id: OSL-3.0
 - categories:
-  - permissive
+  - maybe-copyleft
   - has-no-patent-hint
-  - rating:Go
+  - maybe-rating:Attention
+  - maybe-rating:Stop
+  - maybe-rating:No-Go
   - fsf-free
   id: OpenSSL
 - categories:
@@ -2417,6 +2437,7 @@ categorizations:
 - categories:
   - maximal-copyleft
   - copyleft
+  - has-patent-hint
   - maybe-rating:Attention
   - maybe-rating:Stop
   - maybe-rating:No-Go
@@ -2890,6 +2911,7 @@ categorizations:
   id: blessing
 - categories:
   - permissive
+  - has-patent-hint
   - rating:Go
   id: bzip2-1.0.5
 - categories:

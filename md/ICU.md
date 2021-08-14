@@ -92,6 +92,18 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Provide Copyright notices In Documentation
+    	YOU MUST Provide License text In Documentation
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -142,6 +154,14 @@ Raw Data
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt "OSADL License Checklist")
+    (NOASSERTION)
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/X11.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -212,6 +232,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "ICU"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ICU.txt",
+                "spdxId": "ICU",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Provide Copyright notices In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "ICU"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

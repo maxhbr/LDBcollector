@@ -30,6 +30,16 @@ URLs
 
 -   http://curl.haxx.se/legal/licmix.html
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -61,6 +71,10 @@ Raw Data
 -   [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [SPDX](https://spdx.org/licenses/curl.html "SPDX") (all data \[in
     this repository\] is generated)
@@ -117,6 +131,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "curl"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/curl.txt",
+                "spdxId": "curl",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "curl"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -39,6 +39,21 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/BSD-2-Clause-Patent.json
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    USE CASE Binary delivery
+    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+    	YOU MUST Provide License text In Documentation OR Distribution material
+    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -105,6 +120,10 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [OpenChainPolicyTemplate](https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods "OpenChainPolicyTemplate")
     (CC0-1.0)
 
@@ -132,6 +151,7 @@ Raw Data
                 ]
             ]
         ],
+        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -180,6 +200,17 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "BSD-2-Clause-Patent"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause-Patent.txt",
+                "spdxId": "BSD-2-Clause-Patent",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause-Patent"
+                    ],
+                    "__hasPatentHint": true
+                }
             },
             "Scancode": {
                 "otherUrls": null,

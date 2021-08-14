@@ -37,6 +37,19 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST NOT Appropriate
+    	YOU MUST Forward License text
+    	IF Software modification
+    		YOU MUST Mark
+    		YOU MUST NOT Appropriate
+    USE CASE Binary delivery
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -162,6 +175,10 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/libpng.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -225,6 +242,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "Libpng"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Libpng.txt",
+                "spdxId": "Libpng",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST NOT Appropriate\n\tYOU MUST Forward License text\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\nUSE CASE Binary delivery\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "Libpng"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": [

@@ -35,6 +35,17 @@ URLs
 
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Provide Copyright notice In Documentation
+    	YOU MUST Provide License text In Documentation
+    	YOU MUST NOT Promote
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -64,6 +75,10 @@ Raw Data
 -   [HansHammel
     license-compatibility-checker](https://github.com/HansHammel/license-compatibility-checker/blob/master/lib/licenses.json "HansHammel license-compatibility-checker")
     ([MIT](https://github.com/HansHammel/license-compatibility-checker/blob/master/LICENSE "MIT"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [finos/OSLC-handbook](https://github.com/finos/OSLC-handbook/blob/master/src/MIT-CMU.yaml "finos/OSLC-handbook")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -132,6 +147,16 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "MIT-CMU"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MIT-CMU.txt",
+                "spdxId": "MIT-CMU",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Provide Copyright notice In Documentation\n\tYOU MUST Provide License text In Documentation\n\tYOU MUST NOT Promote\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "MIT-CMU"
+                    ]
+                }
             },
             "Scancode": {
                 "otherUrls": null,

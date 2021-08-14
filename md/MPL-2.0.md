@@ -179,6 +179,54 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Provide License notice
+    	YOU MUST Reference License text
+    	YOU MUST NOT Modify Legal notices
+    	IF Service offerings
+    		ATTRIBUTE NOT Transferable
+    		YOU MUST Indemnify Other contributors
+    	IF Software modification
+    		YOU MUST Grant License
+    			ATTRIBUTE Original license
+    	YOU MUST NOT Restrict Granted rights
+    USE CASE Binary delivery
+    	YOU MUST Inform Recipients
+    		ATTRIBUTE Delayed source code delivery
+    			ATTRIBUTE Reasonable
+    			ATTRIBUTE Timely
+    			ATTRIBUTE No profit
+    	USE CASE License change
+    		YOU MUST NOT Restrict Granted rights
+    	IF Service offerings
+    		ATTRIBUTE NOT Transferable
+    		YOU MUST Indemnify Other contributors
+    COMPATIBILITY BSD-2-Clause
+    COMPATIBILITY BSD-2-Clause-Patent
+    COMPATIBILITY BSD-3-Clause
+    COMPATIBILITY bzip2-1.0.5
+    COMPATIBILITY bzip2-1.0.6
+    COMPATIBILITY CC0-1.0
+    COMPATIBILITY curl
+    COMPATIBILITY EFL-2.0
+    COMPATIBILITY IBM-pibs
+    COMPATIBILITY ICU
+    COMPATIBILITY ISC
+    COMPATIBILITY Libpng
+    COMPATIBILITY MIT
+    COMPATIBILITY NTP
+    COMPATIBILITY UPL-1.0
+    COMPATIBILITY WTFPL
+    COMPATIBILITY X11
+    COMPATIBILITY Zlib
+    COPYLEFT CLAUSE Yes
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -592,6 +640,10 @@ Raw Data
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
 
@@ -754,6 +806,24 @@ Raw Data
                 },
                 "licensename": "MPL-2.0",
                 "copyleftkind": "WeakCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/MPL-2.0.txt",
+                "spdxId": "MPL-2.0",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Provide License notice\n\tYOU MUST Reference License text\n\tYOU MUST NOT Modify Legal notices\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\n\tIF Software modification\n\t\tYOU MUST Grant License\n\t\t\tATTRIBUTE Original license\n\tYOU MUST NOT Restrict Granted rights\nUSE CASE Binary delivery\n\tYOU MUST Inform Recipients\n\t\tATTRIBUTE Delayed source code delivery\n\t\t\tATTRIBUTE Reasonable\n\t\t\tATTRIBUTE Timely\n\t\t\tATTRIBUTE No profit\n\tUSE CASE License change\n\t\tYOU MUST NOT Restrict Granted rights\n\tIF Service offerings\n\t\tATTRIBUTE NOT Transferable\n\t\tYOU MUST Indemnify Other contributors\nCOMPATIBILITY BSD-2-Clause\r\nCOMPATIBILITY BSD-2-Clause-Patent\r\nCOMPATIBILITY BSD-3-Clause\r\nCOMPATIBILITY bzip2-1.0.5\r\nCOMPATIBILITY bzip2-1.0.6\r\nCOMPATIBILITY CC0-1.0\r\nCOMPATIBILITY curl\r\nCOMPATIBILITY EFL-2.0\r\nCOMPATIBILITY IBM-pibs\r\nCOMPATIBILITY ICU\r\nCOMPATIBILITY ISC\r\nCOMPATIBILITY Libpng\r\nCOMPATIBILITY MIT\r\nCOMPATIBILITY NTP\r\nCOMPATIBILITY UPL-1.0\r\nCOMPATIBILITY WTFPL\r\nCOMPATIBILITY X11\r\nCOMPATIBILITY Zlib\r\nCOPYLEFT CLAUSE Yes\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "MPL-2.0"
+                    ],
+                    "__hasPatentHint": true,
+                    "__impliedCopyleft": [
+                        [
+                            "OSADL License Checklist",
+                            "Copyleft"
+                        ]
+                    ],
+                    "__calculatedCopyleft": "Copyleft"
+                }
             },
             "Scancode": {
                 "otherUrls": [
@@ -1495,6 +1565,10 @@ Raw Data
             [
                 "HansHammel license-compatibility-checker",
                 "WeakCopyleft"
+            ],
+            [
+                "OSADL License Checklist",
+                "Copyleft"
             ],
             [
                 "Scancode",

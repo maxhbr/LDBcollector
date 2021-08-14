@@ -76,6 +76,19 @@ https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt
 * https://oss.oracle.com/licenses/upl/index.html
 * https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
 
+=== OSADL Rule
+
+....
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Forward Copyright notice
+	EITHER
+		YOU MUST Forward License text
+	OR
+		YOU MUST Reference License text
+....
+
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -127,6 +140,8 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 (https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE[CC0-1.0])
 * https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt[choosealicense.com]
 (https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md[MIT])
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt[OSADL
+License Checklist] (NOASSERTION)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/OpenChain-Project/curriculum/raw/ddf1e879341adbd9b297cd67c5d5c16b2076540b/policy-template/Open%20Source%20Policy%20Template%20for%20OpenChain%20Specification%201.2.ods[OpenChainPolicyTemplate]
@@ -198,6 +213,16 @@ repository] is generated)
                 ]
             },
             "spdxLicenseId": "UPL-1.0"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/UPL-1.0.txt",
+            "spdxId": "UPL-1.0",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notice\n\tEITHER\n\t\tYOU MUST Forward License text\n\tOR\r\n\t\tYOU MUST Reference License text\n",
+            "_implications": {
+                "__impliedNames": [
+                    "UPL-1.0"
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [

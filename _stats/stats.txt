@@ -1,12 +1,13 @@
 ## Stats:
 ### Stats on Facts:
-Number of facts: 4358
+Number of facts: 4428
     BlueOak License List: 224
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 430
     Google OSS Policy: 112
     HansHammel license-compatibility-checker: 161
     Hitachi open-license: 711
+    OSADL License Checklist: 70
     Open Knowledge International: 111
     OpenChainPolicyTemplate: 92
     OpenSourceInitiative: 89
@@ -20,7 +21,7 @@ Number of facts: 4358
 Number of clusters: 2591
 ### Stats on Licenses:
 Number of Licenses: 414
-Number of facts: 2626
+Number of facts: 2704
     BlueOak License List: 228
     Debian Free Software Guidelines: 82
     Fedora Project Wiki: 164
@@ -28,6 +29,7 @@ Number of facts: 2626
     HansHammel license-compatibility-checker: 163
     Hitachi open-license: 126
     LicenseName: 414
+    OSADL License Checklist: 78
     Open Knowledge International: 90
     OpenChainPolicyTemplate: 88
     OpenSourceInitiative: 87

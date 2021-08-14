@@ -125,6 +125,20 @@ Description from open-license
 
 (source: Hitachi open-license)
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    USE CASE Binary delivery
+    	YOU MUST Provide Copyright notices In Documentation OR Distribution material
+    	YOU MUST Provide License text In Documentation OR Distribution material
+    	YOU MUST Provide Warranty disclaimer In Documentation OR Distribution material
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -182,6 +196,10 @@ Raw Data
 -   [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0"))
+
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause.txt "OSADL License Checklist")
+    (NOASSERTION)
 
 -   [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0"))
@@ -335,6 +353,16 @@ Raw Data
                 },
                 "licensename": "BSD-2-Clause",
                 "copyleftkind": "NoCopyleft"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/BSD-2-Clause.txt",
+                "spdxId": "BSD-2-Clause",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\nUSE CASE Binary delivery\n\tYOU MUST Provide Copyright notices In Documentation OR Distribution material\n\tYOU MUST Provide License text In Documentation OR Distribution material\n\tYOU MUST Provide Warranty disclaimer In Documentation OR Distribution material\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "BSD-2-Clause"
+                    ]
+                }
             },
             "Fedora Project Wiki": {
                 "GPLv2 Compat?": "Yes",

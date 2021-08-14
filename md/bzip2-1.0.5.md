@@ -24,6 +24,26 @@ URLs
 
 -   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery
+    	YOU MUST Forward Copyright notices
+    	YOU MUST Forward License text
+    	YOU MUST Forward Warranty disclaimer
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST Mark
+    		YOU MUST NOT Appropriate
+    		YOU MUST NOT Promote
+    USE CASE Binary delivery
+    	YOU MUST NOT Appropriate
+    	IF Software modification
+    		YOU MUST NOT Promote
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 ------------------------------------------------------------------------
 
 Raw Data
@@ -37,6 +57,10 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [SPDX](https://spdx.org/licenses/bzip2-1.0.5.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -48,6 +72,7 @@ Raw Data
             "bzip2 and libbzip2 License v1.0.5"
         ],
         "__impliedId": "bzip2-1.0.5",
+        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -92,6 +117,17 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "bzip2-1.0.5"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/bzip2-1.0.5.txt",
+                "spdxId": "bzip2-1.0.5",
+                "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST Mark\n\t\tYOU MUST NOT Appropriate\n\t\tYOU MUST NOT Promote\nUSE CASE Binary delivery\n\tYOU MUST NOT Appropriate\n\tIF Software modification\n\t\tYOU MUST NOT Promote\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "bzip2-1.0.5"
+                    ],
+                    "__hasPatentHint": true
+                }
             },
             "BlueOak License List": {
                 "BlueOakRating": "Bronze",

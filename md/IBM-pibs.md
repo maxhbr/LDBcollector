@@ -29,6 +29,16 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/IBM-pibs.json
 
+OSADL Rule
+----------
+
+    USE CASE Source code delivery OR Binary delivery
+    	YOU MUST Provide Copyright notice (Copyright notice)
+    	YOU MUST Provide License text
+    PATENT HINTS Yes
+
+(source: OSADL License Checklist)
+
 Text
 ----
 
@@ -63,6 +73,10 @@ Raw Data
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0"))
 
+-   [OSADL License
+    Checklist](https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt "OSADL License Checklist")
+    (NOASSERTION)
+
 -   [SPDX](https://spdx.org/licenses/IBM-pibs.html "SPDX") (all data
     \[in this repository\] is generated)
 
@@ -79,6 +93,7 @@ Raw Data
             "IBM PowerPC Software"
         ],
         "__impliedId": "IBM-pibs",
+        "__hasPatentHint": true,
         "facts": {
             "LicenseName": {
                 "implications": {
@@ -118,6 +133,17 @@ Raw Data
                     ]
                 },
                 "spdxLicenseId": "IBM-pibs"
+            },
+            "OSADL License Checklist": {
+                "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/IBM-pibs.txt",
+                "spdxId": "IBM-pibs",
+                "osadlRule": "USE CASE Source code delivery OR Binary delivery\n\tYOU MUST Provide Copyright notice (Copyright notice)\n\tYOU MUST Provide License text\nPATENT HINTS Yes\n",
+                "_implications": {
+                    "__impliedNames": [
+                        "IBM-pibs"
+                    ],
+                    "__hasPatentHint": true
+                }
             },
             "Scancode": {
                 "otherUrls": null,

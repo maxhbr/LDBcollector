@@ -120,6 +120,20 @@
 
 (source: Hitachi open-license)
 
+** OSADL Rule
+#+BEGIN_EXAMPLE
+  YOU MUST Forward Copyright notices In Files
+  YOU MUST Forward License text In Files
+  YOU MUST Provide Copyright notices In Documentation
+  YOU MUST Provide License text In Documentation
+  IF Software modification
+  	YOU MUST Provide Modification notice In Files
+  	YOU MUST Provide Modification notice in Documentation
+  YOU MUST NOT Promote
+#+END_EXAMPLE
+
+(source: OSADL License Checklist)
+
 ** Text
 #+BEGIN_EXAMPLE
   UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
@@ -193,6 +207,9 @@
   Policy]]
   ([[https://creativecommons.org/licenses/by/4.0/legalcode][CC-BY-4.0]])
 
+- [[https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt][OSADL
+  License Checklist]] (NOASSERTION)
+
 - [[https://github.com/Hitachi/open-license][Hitachi open-license]]
   (CDLA-Permissive-1.0)
 
@@ -261,6 +278,16 @@
                   ]
               },
               "spdxLicenseId": "Unicode-DFS-2015"
+          },
+          "OSADL License Checklist": {
+              "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Unicode-DFS-2015.txt",
+              "spdxId": "Unicode-DFS-2015",
+              "osadlRule": "YOU MUST Forward Copyright notices In Files\nYOU MUST Forward License text In Files\nYOU MUST Provide Copyright notices In Documentation\nYOU MUST Provide License text In Documentation\nIF Software modification\n\tYOU MUST Provide Modification notice In Files\n\tYOU MUST Provide Modification notice in Documentation\nYOU MUST NOT Promote\n",
+              "_implications": {
+                  "__impliedNames": [
+                      "Unicode-DFS-2015"
+                  ]
+              }
           },
           "Scancode": {
               "otherUrls": [

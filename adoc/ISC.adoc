@@ -131,6 +131,16 @@ OBLIGATION: Include a copyright notice, list of terms and conditions, and discla
 
 (source: Hitachi open-license)
 
+=== OSADL Rule
+
+....
+USE CASE Source code delivery OR Binary delivery
+	YOU MUST Forward Copyright notices
+	YOU MUST Forward License text
+....
+
+(source: OSADL License Checklist)
+
 === Text
 
 ....
@@ -172,6 +182,8 @@ license-compatibility]
 * https://github.com/okfn/licenses/blob/master/licenses.csv[Open
 Knowledge International]
 (https://opendatacommons.org/licenses/pddl/1-0/[PDDL-1.0])
+* https://www.osadl.org/fileadmin/checklists/unreflicenses/ISC.txt[OSADL
+License Checklist] (NOASSERTION)
 * https://opensource.org/licenses/[OpenSourceInitiative]
 (https://creativecommons.org/licenses/by/4.0/legalcode[CC-BY-4.0])
 * https://github.com/finos/OSLC-handbook/blob/master/src/ISC.yaml[finos/OSLC-handbook]
@@ -320,6 +332,16 @@ repository] is generated)
             },
             "licensename": "ISC",
             "copyleftkind": "NoCopyleft"
+        },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/ISC.txt",
+            "spdxId": "ISC",
+            "osadlRule": "USE CASE Source code delivery OR Binary delivery\r\n\tYOU MUST Forward Copyright notices\n\tYOU MUST Forward License text\n",
+            "_implications": {
+                "__impliedNames": [
+                    "ISC"
+                ]
+            }
         },
         "Scancode": {
             "otherUrls": [

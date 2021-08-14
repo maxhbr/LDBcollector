@@ -112,6 +112,16 @@
             },
             "spdxLicenseId": "Zlib"
         },
+        "OSADL License Checklist": {
+            "_sourceURL": "https://www.osadl.org/fileadmin/checklists/unreflicenses/Zlib.txt",
+            "spdxId": "Zlib",
+            "osadlRule": "USE CASE Source code delivery\n\tYOU MUST Forward License text\n\tYOU MUST Forward Warranty disclaimer\n\tIF Software modification\n\t\tYOU MUST Mark\n\tYOU MUST NOT Appropriate\nUSE CASE Binary delivery\n\tIF Software modification\n\t\tYOU MUST Mark\n\tYOU MUST NOT Appropriate\n",
+            "_implications": {
+                "__impliedNames": [
+                    "Zlib"
+                ]
+            }
+        },
         "Fedora Project Wiki": {
             "GPLv2 Compat?": "Yes",
             "rating": "Good",
