@@ -1,0 +1,22 @@
+name: Check
+
+on:
+  push:
+    branches:
+      - "main"
+  pull_request:
+    branches:
+      - "main"
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+    container:
+      image: doubleopen/ort:poc-0.1.2
+    
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v2
+      - name: Check license-classifications.yml
+        run: |
+          /opt/ort/bin/orth list-license-categories -i license-classifications.yml
