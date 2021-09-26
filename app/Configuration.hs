@@ -25,7 +25,7 @@ configuration = let
     -- , cavilLFC
     , ocptLFC
     , scancodeLFC
-    -- , osadlLFC
+    , osadlLFC
     , calLFC
     , fedoraLFC
     -- , fossLightLFC 
