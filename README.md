@@ -14,7 +14,7 @@ you can see, the license-classification is published by us freely, without any w
 ## ORT rules
 
 We do not currently maintain our ORT rules as a public version. However, we have published a small
-ruleset to help in combining the the license classification with your ORT rules.
+ruleset to help in combining the license classification with your ORT rules.
 
 ## Contributing to the license classification
 
