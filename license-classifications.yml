@@ -3,11 +3,11 @@
 # Author: Double Open by HH Partners, Attorneys-at-law, Ltd
 # 
 # Example license-classifications.yml using the license names from SPDX (https://spdx.org/licenses/), 
-# licensed under  CC-BY-3.0 and Scancode license database
+# licensed under CC-BY-3.0 and Scancode license database
 # https://github.com/nexB/scancode-toolkit/commit/ed644e4, licensed by nexB under CC-BY-4.0. The Scancode
 # database is available at https://scancode-licensedb.aboutcode.org/. 
 #
-# Double Open additions and modifications are licensed under CC0.
+# Double Open additions and modifications are published under CC0.
 # 
 # The following introduces the applicable categories and properties. Each license should be in one category.
 # A license can have multiple properties. 
