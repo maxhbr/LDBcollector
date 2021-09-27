@@ -16,6 +16,16 @@ you can see, the license-classification is published by us freely, without any w
 We do not currently maintain our ORT rules as a public version. However, we have published a small
 ruleset to help in combining the license classification with your ORT rules.
 
+## Versioning
+
+We are currently in beta versions, below 1.0. Our aim with versioning is to enable determining of
+compatibility between different versions of related resources. For example version 0.9 of the 
+license classification will work together with certain ORT rules. We also produce training and 
+policy documentation which may need to be updated as versions update. The version numbering helps 
+us to communicate which documents have been created to work together. Backwards compatibility is 
+still being explored, e.g. to what extent we can update the license classifications, while 
+maintaining compatibility backwards with the ORT rules.
+
 ## Contributing to the license classification
 
 Unclassified or unchecked licenses and new license variants - as well as some new licenses - are
