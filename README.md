@@ -5,11 +5,11 @@ by Double Open.
 
 ## Rationale
 
-We aim to maintain the classification to be consumed by ORT (Open Review Toolkit) in automatic open
-source compliance reviews. However, the content of the license classification is useful in many
-manual instances too, at least for us. Any one is free to use the license classification, subject to
-its publishing guidelines. As you can see, the license-classification is published by us freely,
-without any warranties.
+We aim to maintain the classification to be consumed by [ORT (OSS Review
+Toolkit)](https://github.com/oss-review-toolkit/ort) in automatic open source compliance reviews.
+However, the content of the license classification is useful in many manual instances too, at least
+for us. Any one is free to use the license classification, subject to its publishing guidelines. As
+you can see, the license-classification is published by us freely, without any warranties.
 
 ## ORT rules
 
