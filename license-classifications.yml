@@ -3,11 +3,13 @@
 # Author: Double Open by HH Partners, Attorneys-at-law, Ltd
 # 
 # Example license-classifications.yml using the license names from SPDX (https://spdx.org/licenses/), 
-# licensed under CC-BY-3.0 and Scancode license database
-# https://github.com/nexB/scancode-toolkit/commit/ed644e4, licensed by nexB under CC-BY-4.0. The Scancode
-# database is available at https://scancode-licensedb.aboutcode.org/. 
+# licensed under CC-BY-3.0. When licenses are not covered by SPDX, we use the license names of Scancode,
+# but a different/more detailed categorization, enabling better automation at least in our cases. As we
+# also use other scanners, notably Nomos and Monk in Fossology, we have included some licenses to help 
+# process unclear scanner findings. The Scancode database is available at 
+# https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0. 
 #
-# Double Open additions and modifications are published under CC0.
+# Double Open content in this file is published under CC0.
 # 
 # The following introduces the applicable categories and properties. Each license should be in one category.
 # A license can have multiple properties. 
@@ -137,7 +139,7 @@ categories:
   - name: "property:unchecked"
     description: 
       This property marking means that the properties of the license have not been checked. Ask for license 
-      categorization/checking. This typically is a non-open source license, which has not yet been fully categorized.
+      categorization/checking. This typically is an uncommon license, which has not yet been fully categorized.
 
 categorizations:
   # url:https://spdx.org/licenses/AGPL-1.0-only.html
