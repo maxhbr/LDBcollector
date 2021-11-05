@@ -1,5 +1,4 @@
-Open LDAP Public License v1.3 (OLDAP-1.3)
-=========================================
+# Open LDAP Public License v1.3 (OLDAP-1.3)
 
 [TABLE]
 
@@ -9,15 +8,13 @@ Open LDAP Public License v1.3 (OLDAP-1.3)
 
 -   `OpenLDAP Public License 1.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 17 January 1999. This
     license was issued twice in the same day with a minor correction.
@@ -25,8 +22,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-1.3.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=e5f8117f0ce088d0bd7a8e18ddf37eaa40eb09b1
@@ -35,8 +31,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/OLDAP-1.3.json
 
-Text
-----
+## Text
 
     The OpenLDAP Public License 
 
@@ -179,8 +174,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,20 +1,16 @@
-bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
-===============================================
+# bzip2 and libbzip2 License v1.0.5 (bzip2-1.0.5)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** https://spdx.org/licenses/bzip2-1.0.5.html
 
@@ -24,8 +20,7 @@ URLs
 
 -   http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -46,8 +41,7 @@ OSADL Rule
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

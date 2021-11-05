@@ -1,5 +1,4 @@
-Nokia Open Source License (Nokia)
-=================================
+# Nokia Open Source License (Nokia)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Nokia Open Source License (Nokia)
 
 -   `NOKOS License 1.0a`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Nokia.html "SPDX") (all data \[in
@@ -25,15 +23,13 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nokos-1.0a.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/nokia.html
 
@@ -43,8 +39,7 @@ URLs
 
 -   http://www.opensource.org/licenses/nokia
 
-Text
-----
+## Text
 
     Nokia Open Source License (NOKOS License) Version 1.0a
 
@@ -435,8 +430,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Good Luck With That Public License (GLWTPL)
-===========================================
+# Good Luck With That Public License (GLWTPL)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Good Luck With That Public License (GLWTPL)
 
 -   `scancode://glwtpl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://github.com/me-shaon/GLWTPL/blob/master/LICENSE
 
@@ -22,8 +18,7 @@ URLs
 
 -   https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85
 
-Text
-----
+## Text
 
     GLWT(Good Luck With That) Public License 
     Copyright (c) Everyone, except Author
@@ -52,8 +47,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
-===============================================
+# TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 
 [TABLE]
 
@@ -9,16 +8,14 @@ TORQUE v2.5+ Software License v1.1 (TORQUE-1.1)
 
 -   `TORQUE 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, when the licensing for TORQUE 2.4 expired, the TORQUE
     upstream drafted a new license with updated contact information. The
@@ -38,15 +35,13 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/torque-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/TORQUEv1.1
 
 -   **SPDX:** http://spdx.org/licenses/TORQUE-1.1.json
 
-Text
-----
+## Text
 
     TORQUE v2.5+ Software License v1.1
     Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
@@ -76,8 +71,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

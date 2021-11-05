@@ -47,7 +47,7 @@
 - https://spdx.org/licenses/AGPL-1.0-or-later.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This is free software; you can redistribute it and/or modify
   it under the terms of the AFFERO GENERAL PUBLIC LICENSE as published by
   Affero Inc; either version 1, or (at your option) any later version.
@@ -56,7 +56,7 @@
   WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the 
   AFFERO GENERAL PUBLIC LICENSE for more details.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -79,7 +79,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "AGPL-1.0-or-later",
@@ -283,7 +283,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/AGPL-1.0-or-later.svg]]

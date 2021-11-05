@@ -1,5 +1,4 @@
-Zope Public License 1.1 (ZPL-1.1)
-=================================
+# Zope Public License 1.1 (ZPL-1.1)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Zope Public License 1.1 (ZPL-1.1)
 
 -   `ZPL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -20,11 +18,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.zope.org/Resources/License/
 
@@ -36,8 +32,7 @@ URLs
 
 -   http://www.zope.com/
 
-Text
-----
+## Text
 
     Zope Public License (ZPL) Version 1.1
 
@@ -103,8 +98,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

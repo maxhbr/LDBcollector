@@ -1,5 +1,4 @@
-Intel ACPI Software License Agreement (Intel-ACPI)
-==================================================
+# Intel ACPI Software License Agreement (Intel-ACPI)
 
 [TABLE]
 
@@ -9,16 +8,14 @@ Intel ACPI Software License Agreement (Intel-ACPI)
 
 -   `Intel ACPI SLA`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is no longer available at its original URL
     http://www.intel.com/technology/iapc/acpi/license2.htm. A copy was
@@ -26,16 +23,14 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-acpi.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Intel\_ACPI\_Software\_License\_Agreement
 
 -   **SPDX:** http://spdx.org/licenses/Intel-ACPI.json
 
-Text
-----
+## Text
 
     ACPI - Software License Agreement
 
@@ -154,8 +149,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

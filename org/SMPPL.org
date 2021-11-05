@@ -22,7 +22,7 @@
 - *SPDX:* http://spdx.org/licenses/SMPPL.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
   Distribution Rights
 
@@ -51,7 +51,7 @@
   The SMP uses the Enhanced SNACC (eSNACC) Abstract Syntax Notation One (ASN.1) C++ Library to ASN.1 encode and decode security-related data objects. The eSNACC ASN.1 C++ Library is covered by the ENHANCED SNACC SOFTWARE PUBLIC LICENSE. None of the GNU public licenses apply to the eSNACC ASN.1 C++ Library. The eSNACC Compiler is not distributed as part of the SMP.
 
   Copyright © 1997-2002 National Security Agency
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -67,7 +67,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SMPPL",
@@ -177,7 +177,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SMPPL.svg]]

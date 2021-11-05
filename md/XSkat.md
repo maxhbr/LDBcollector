@@ -1,5 +1,4 @@
-XSkat License (XSkat)
-=====================
+# XSkat License (XSkat)
 
 [TABLE]
 
@@ -7,16 +6,14 @@ XSkat License (XSkat)
 
 -   `scancode://xskat`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is Free only when clause 2.b is used. It
     is always GPL-incompatible. Packagers using code under this license
@@ -34,16 +31,14 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/XSkat\_License
 
 -   **SPDX:** http://spdx.org/licenses/XSkat.json
 
-Text
-----
+## Text
 
     This program is free software; you can redistribute it freely.
     Use it at your own risk; there is NO WARRANTY.
@@ -61,8 +56,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

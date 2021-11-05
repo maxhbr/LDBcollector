@@ -32,7 +32,7 @@
 - *SPDX:* http://spdx.org/licenses/Afmparse.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file may be freely copied and redistributed as long as:  
 
        1) This entire notice continues to be included in the file,  
@@ -50,7 +50,7 @@
   RESPECT TO THIS INFORMATION, AND EXPRESSLY DISCLAIMS ANY AND ALL WARRANTIES OF
   MERCHANTABILITY, FITNESS FOR PARTICULAR PURPOSES AND NONINFRINGEMENT OF THIRD
   PARTY RIGHTS.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -73,7 +73,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Afmparse",
@@ -277,7 +277,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Afmparse.svg]]

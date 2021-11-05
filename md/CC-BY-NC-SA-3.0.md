@@ -1,5 +1,4 @@
-Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC-BY-NC-SA-3.0)
-======================================================================================
+# Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC-BY-NC-SA-3.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Creative Commons Attribution Non Commercial Share Alike 3.0 Unported (CC-BY-NC-S
 
 -   `scancode://cc-by-nc-sa-3.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Everything that
     Google undertakes, including research, is considered a commercial
@@ -27,8 +25,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://creativecommons.org/licenses/by-nc-sa/3.0/このサイトからLegalCodeを参照できる.”
     (source: [Hitachi
@@ -113,8 +110,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -124,8 +120,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: A work is a literary or artistic work offered under this licence in any form, including digital forms of expression, including, but not limited to, creations in the fields of literature, science and the arts. Works of authorship are works of creation in the fields of literature, science and the arts, including, but not limited to, books, pamphlets, other written works, and other works of authorship in digital form. This license includes, but is not limited to: books, pamphlets, and other written works; lectures, speeches, and sermons of the same nature as lectures, speeches, and sermons; plays, musical productions, choreography, and silent plays; musical works with or without lyrics; cinematographic and similarly expressed works in motion pictures; sketches, paintings, architecture, sculptures, and prints. The work of photography, lithography, photographic works, works of applied art, illustrations, maps, blueprints, sketches, or other three-dimensional works related to geography, topography, architecture, or science, demonstrations, broadcasts, sound recordings, and the compilation of copyrighted data. A work performed by a variety or circus performer, to the extent that it is not considered an object, a literary work, or a work of art, including, but not limited to, the recording of sound and visual information, rights to fixation, and copies of works. Reproduction means the reproduction of a work by means of any means, including, but not limited to, the right to record or fix audio or visual information, or copies of a work, including, but not limited to, protected performance or sound recording storage devices in digital form or other electronic media. A collective work is a literary, artistic, performing, sound recording, broadcasting or other work, such as an encyclopaedia, poetry, etc., or a collection of works other than those enumerated as works of authorship, each of which consists of independent works assembled without modification and which, by their selection and arrangement, constitute an intellectual creation. A work that constitutes a collective work is not considered a derivative work for the purposes of this license. A derivative work is a work or other work that has existed before the original work, such as a translation, alteration, derivative work, arrangement of a musical work, modification of a literary or artistic work, sound recording, performance, alteration of a film work, transformation of a work into another form by changing the cast or format, or alteration that includes a form recognizable as a derivative of the original work. A work that is based on a collective work is defined as a work that is a derivative work. However, works that constitute a collective work shall not be considered derivative works for the purposes of this license. For the avoidance of doubt, musical works, performances and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. For the avoidance of doubt, synchronized musical works, performances and recordings shall be considered derivative works under this license. Public performance is defined as the public recitation and communication of a work in public by any means or procedure, including wire, radio or public digital performance, or making the work available to the public by making it accessible to the public at a place of their choosing, where it exists. includes digital performances in public and involves the public performance of a work by any means or procedure; and broadcasting or rebroadcasting of a work by any means or procedure, including signals, sounds or images.
         Actions:
@@ -181,8 +176,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Creative Commons Legal Code
 
@@ -547,8 +541,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

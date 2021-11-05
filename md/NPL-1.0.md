@@ -1,5 +1,4 @@
-Netscape Public License v1.0 (NPL-1.0)
-======================================
+# Netscape Public License v1.0 (NPL-1.0)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Netscape Public License v1.0 (NPL-1.0)
 
 -   `NPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.mozilla.org/MPL/NPL-1.0.html
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://www.mozilla.org/NPL/
 
-Text
-----
+## Text
 
     NETSCAPE PUBLIC LICENSE
     Version 1.0
@@ -173,8 +168,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

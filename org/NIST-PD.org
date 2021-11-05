@@ -27,7 +27,7 @@
 - https://github.com/usnistgov/jsip
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Conditions Of Use
 
   This software was developed by employees of the National Institute of
@@ -48,7 +48,7 @@
 
   Permission to use this software is contingent upon your acceptance
   of the terms of this agreement
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -64,7 +64,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NIST-PD",
@@ -198,7 +198,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NIST-PD.svg]]

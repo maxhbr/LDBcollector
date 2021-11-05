@@ -1,5 +1,4 @@
-GNU Affero General Public License v3.0 only (AGPL-3.0-only)
-===========================================================
+# GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 [TABLE]
 
@@ -35,8 +34,7 @@ GNU Affero General Public License v3.0 only (AGPL-3.0-only)
 
 -   `AGPL 3.0`
 
-Description
------------
+## Description
 
 > Permissions of this strongest copyleft license are conditioned on
 > making available complete source code of licensed works and
@@ -49,8 +47,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-only.html "SPDX") (all
@@ -74,8 +71,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -104,8 +100,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -113,8 +108,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/agpl-3.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -134,8 +128,7 @@ URLs
 
 -   https://opensource.google.com/docs/using/agpl-policy/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -258,8 +251,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -387,8 +379,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
                         GNU AFFERO GENERAL PUBLIC LICENSE
                            Version 3, 19 November 2007
@@ -1054,8 +1045,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

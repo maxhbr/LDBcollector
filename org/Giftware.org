@@ -42,7 +42,7 @@
 - http://liballeg.org/license.html#allegro-4-the-giftware-license
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Allegro 4 (the giftware license)
 
   Allegro is gift-ware. It was created by a number of people working in cooperation, and is given to you freely as a gift. You may use, modify, redistribute, and generally hack it about in any way you like, and you do not have to give us anything in return.
@@ -52,7 +52,7 @@
   By Shawn Hargreaves, 18 October 1998.
 
   DISCLAIMER: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -75,7 +75,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Giftware",
@@ -301,7 +301,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Giftware.svg]]

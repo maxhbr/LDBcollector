@@ -23,7 +23,7 @@
 - *SPDX:* http://spdx.org/licenses/CERN-OHL-1.1.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CERN OHL v1.1
 
   2011-07-08 - CERN, Geneva, Switzerland
@@ -101,7 +101,7 @@
      6.4 This Licence shall terminate with immediate effect, upon written notice and without involvement of a court if the Licensee fails to comply with any of its terms and conditions, or if the Licensee initiates legal action against Licensor in relation to this Licence. Section 5 shall continue to apply.
 
      6.5 Except as may be otherwise agreed with the Intergovernmental Organization, any dispute with respect to this Licence involving an Intergovernmental Organization shall, by virtue of the latter's Intergovernmental status, be settled by international arbitration. The arbitration proceedings shall be held at the place where the Intergovernmental Organization has its seat. The arbitral award shall be final and binding upon the parties, who hereby expressly agree to renounce any form of appeal or revision.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -117,7 +117,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CERN-OHL-1.1",
@@ -234,7 +234,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CERN-OHL-1.1.svg]]

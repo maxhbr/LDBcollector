@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/Aladdin.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Aladdin Free Public License 
   (Version 8, November 18, 1999) 
 
@@ -99,7 +99,7 @@
   For United States Government users, the Program is provided with RESTRICTED RIGHTS. If you are a unit or agency of the United States Government or are acquiring the Program for any such unit or agency, the following apply: 
 
   If the unit or agency is the Department of Defense ("DOD"), the Program and its documentation are classified as "commercial computer software" and "commercial computer software documentation" respectively and, pursuant to DFAR Section 227.7202, the Government is acquiring the Program and its documentation in accordance with the terms of this License. If the unit or agency is other than DOD, the Program and its documentation are classified as "commercial computer software" and "commercial computer software documentation" respectively and, pursuant to FAR Section 12.212, the Government is acquiring the Program and its documentation in accordance with the terms of this License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -119,7 +119,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Aladdin",
@@ -278,7 +278,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Aladdin.svg]]

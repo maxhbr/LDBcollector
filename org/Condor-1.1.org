@@ -37,7 +37,7 @@
 - http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CONDOR PUBLIC LICENSE
 
   Version 1.1, October 30, 2003
@@ -157,7 +157,7 @@
      of any subsequent version of this License published by the Condor
      Team.  No one other than the Condor Team has the right to modify
      the terms of this License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -180,7 +180,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Condor-1.1",
@@ -400,7 +400,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Condor-1.1.svg]]

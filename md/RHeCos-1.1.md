@@ -1,5 +1,4 @@
-Red Hat eCos Public License v1.1 (RHeCos-1.1)
-=============================================
+# Red Hat eCos Public License v1.1 (RHeCos-1.1)
 
 [TABLE]
 
@@ -9,21 +8,17 @@ Red Hat eCos Public License v1.1 (RHeCos-1.1)
 
 -   `Red Hat eCos Public License 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://ecos.sourceware.org/old-license.html
 
 -   **SPDX:** http://spdx.org/licenses/RHeCos-1.1.json
 
-Text
-----
+## Text
 
     Red Hat eCos Public License v1.1
 
@@ -467,8 +462,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

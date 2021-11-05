@@ -30,7 +30,7 @@
 - https://spdx.org/licenses/Parity-7.0.0.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Parity Public License 7.0.0
 
   Contributor: contributor name
@@ -89,7 +89,7 @@
 
   No Liability
   As far as the law allows, this software comes as is, without any warranty or condition, and the contributor won’t be liable to anyone for any damages related to this software or this license, under any kind of legal claim.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -108,7 +108,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Parity-7.0.0",
@@ -275,7 +275,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Parity-7.0.0.svg]]

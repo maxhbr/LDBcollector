@@ -1,5 +1,4 @@
-bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
-===============================================
+# bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 [TABLE]
 
@@ -11,23 +10,20 @@ bzip2 and libbzip2 License v1.0.6 (bzip2-1.0.6)
 
 -   `bzip2 License 2010`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “until bzip2 1.0.6 there is only one license and not two as listed
     in SPDX” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/asimonov-im/bzip2/blob/master/LICENSE
@@ -44,8 +40,7 @@ URLs
 
 -   http://www.bzip.org/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -90,8 +85,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -109,8 +103,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
@@ -145,8 +138,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

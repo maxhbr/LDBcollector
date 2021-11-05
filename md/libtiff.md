@@ -1,5 +1,4 @@
-libtiff License (libtiff)
-=========================
+# libtiff License (libtiff)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ libtiff License (libtiff)
 
 -   `X11-Style (Tiff)`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -25,11 +23,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** https://spdx.org/licenses/libtiff.html
 
@@ -37,8 +33,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/libtiff
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -49,8 +44,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, distribute, and sell this software and its
     documentation for any purpose is hereby granted without fee, provided
@@ -73,8 +67,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

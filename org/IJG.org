@@ -47,7 +47,7 @@
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
@@ -60,12 +60,12 @@
   USE CASE Binary delivery
   	YOU MUST Credit Verbatim "This software is based in part on the work of the Independent JPEG Group"
   PATENT HINTS Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   LEGAL ISSUES
   ============
 
@@ -151,7 +151,7 @@
       "The Graphics Interchange Format(c) is the Copyright property of
       CompuServe Incorporated.  GIF(sm) is a Service Mark property of
       CompuServe Incorporated."
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -180,7 +180,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "IJG",
@@ -436,7 +436,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/IJG.svg]]

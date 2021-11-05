@@ -1,5 +1,4 @@
-Sun Industry Standards Source License v1.2 (SISSL-1.2)
-======================================================
+# Sun Industry Standards Source License v1.2 (SISSL-1.2)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Sun Industry Standards Source License v1.2 (SISSL-1.2)
 
 -   `Sun Industry Standards Source License 1.2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Code released under
     the Sun Industry Standards Source License (SISSL) cannot be used at
@@ -24,8 +22,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source code refers to the source code and related interface
     definition files and scripts used to control compilation and
@@ -47,8 +44,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://gridscheduler.sourceforge.net/Gridengine\_SISSL\_license.html
@@ -57,13 +53,11 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/61
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     SUN INDUSTRY STANDARDS SOURCE LICENSE 
     Version 1.2 
@@ -207,8 +201,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

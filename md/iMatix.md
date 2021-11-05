@@ -1,5 +1,4 @@
-iMatix Standard Function Library Agreement (iMatix)
-===================================================
+# iMatix Standard Function Library Agreement (iMatix)
 
 [TABLE]
 
@@ -9,30 +8,26 @@ iMatix Standard Function Library Agreement (iMatix)
 
 -   `SFL License Agreement`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://legacy.imatix.com/html/sfl/sfl4.htm
 
 -   **SPDX:** http://spdx.org/licenses/iMatix.json
 
--   http://legacy.imatix.com/html/sfl/sfl4.htm\#license
+-   http://legacy.imatix.com/html/sfl/sfl4.htm#license
 
 -   http://www.imatix.com
 
-Text
-----
+## Text
 
     The SFL License Agreement
 
@@ -77,8 +72,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

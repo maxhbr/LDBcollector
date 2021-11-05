@@ -1,5 +1,4 @@
-Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
-=========================================================================
+# Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 [TABLE]
 
@@ -13,13 +12,11 @@ Creative Commons Attribution Share Alike 4.0 International (CC-BY-SA-4.0)
 
 -   `CC-BY-SA 4.0`
 
-Description
------------
+## Description
 
-> Similar to &lt;a href='/licenses/cc-by-4.0/'&gt;CC-BY-4.0&lt;/a&gt;
-> but requires derivatives be distributed under the same or a similar,
-> &lt;a
-> href="https://creativecommons.org/compatiblelicenses/"&gt;compatible&lt;/a&gt;
+> Similar to &lt;a href='/licenses/cc-by-4.0/'>CC-BY-4.0&lt;/a> but
+> requires derivatives be distributed under the same or a similar, &lt;a
+> href="https://creativecommons.org/compatiblelicenses/">compatible&lt;/a>
 > license. Frequently used for media assets and educational materials. A
 > previous version is the default license for Wikipedia and other
 > Wikimedia projects. Not recommended for software.
@@ -27,8 +24,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Version 4.0 is considered to be compatible to the DFSG.
     Changes from the previous version are discussed in a thread starting
@@ -41,8 +37,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -111,8 +106,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -120,8 +114,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cc-by-sa-4.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-sa/4.0/
 
@@ -133,8 +126,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: If reasonably practicable, include a Uniform Resource Identifier (URI) or hyperlink to the work. The provision of credits, copyright notices, and information about this license may be satisfied in a manner that is reasonable in the medium, medium, and context in which the work is shared. For example, if there is a Uniform Resource Identifier (URI) or hyperlink containing the required information, the condition shall be satisfied by presenting the URI or hyperlink to the extent reasonably practicable. If the licensed rights include database rights, you are granted the right to extract, use, reproduce and share all or substantial portions of the database. Copyright and similar rights, regardless of how they are labeled or classified, including, but not limited to, performance, broadcast, sound recording, and database rights, are copyright and similar rights closely related to copyright. However, for purposes of this license, the rights described in 2(b)(1)-(2) shall not be considered copyright or similar rights. An effective technical measure is a technical measure that may not be circumvented without proper authorization under the law satisfying obligations under Article 11 of the World Intellectual Property Organization (WIPO) Convention on Copyright, adopted on 20 December 1996, or equivalent international agreements. Licensed Works are works of art, literature, databases and other works of authorship to which the Licensor applies this License. Licensed Rights refers to the license granted to Licensor in accordance with the terms of this License. The Licensed Rights are limited to the copyrights and similar rights that Licensor has the authority to grant and that apply to the use of works licensed to it. Licensor is the person or entity granting the rights under this License. Sharing means making a work available to the public by any means or process that requires a license for licensed rights. Sharing means making a work available to the public, including reproduction, public display, public performance, distribution, dissemination, communication, or importation, and in such a way as to enable the public to access the work at a place and time of their choosing. The term "database rights" refers to non-copyright or essentially equivalent national rights under the EC Database Directive on the legal protection of databases, including any revised or successor versions. itself is the person or entity exercising the rights under this licence.
         Actions:
@@ -186,8 +178,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Attribution-ShareAlike 4.0 International
 
@@ -619,8 +610,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

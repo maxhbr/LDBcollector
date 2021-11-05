@@ -1,5 +1,4 @@
-Beerware License (Beerware)
-===========================
+# Beerware License (Beerware)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Beerware License (Beerware)
 
 -   `Beerware 42`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -31,11 +29,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://people.freebsd.org/~phk/
 
@@ -45,8 +41,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Beerware
 
-Text
-----
+## Text
 
     "THE BEER-WARE LICENSE" (Revision 42):
     <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
@@ -55,8 +50,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

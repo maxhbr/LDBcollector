@@ -1,5 +1,4 @@
-BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
-=======================================================
+# BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 [TABLE]
 
@@ -11,19 +10,17 @@ BSD 4-Clause "Original" or "Old" License (BSD-4-Clause)
 
 -   `BSD-Original`
 
-Description
------------
+## Description
 
 > A permissive license similar to the &lt;a
-> href="/licenses/bsd-3-clause/"&gt;BSD 3-Clause License&lt;/a&gt;, but
-> with an "advertising clause" that requires an acknowledgment of the
+> href="/licenses/bsd-3-clause/">BSD 3-Clause License&lt;/a>, but with
+> an "advertising clause" that requires an acknowledgment of the
 > original source in all advertising material.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -41,8 +38,7 @@ Comments on (easy) usability
 -   **↓**“Advertisement clause (3.) is complicated and prone to
     conflicts” (source: Override)
 
-General Comments
-----------------
+## General Comments
 
 -   “BSD-4-Clause” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -53,8 +49,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-original.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -62,8 +57,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-4-clause.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.xfree86.org/3.3.6/COPYRIGHT2.html
 
@@ -81,8 +75,7 @@ URLs
 
 -   http://www.gnu.org/philosophy/bsd.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -122,8 +115,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -142,8 +134,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are met:
@@ -176,8 +167,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

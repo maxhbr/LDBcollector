@@ -50,7 +50,7 @@
 - http://www.opensource.org/licenses/RPL-1.5
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward License notice
   	IF Software modification
@@ -112,12 +112,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Reciprocal Public License (RPL)
 
   Version 1.5, July 15, 2007
@@ -276,7 +276,7 @@
   EXHIBIT B
 
   The User-Visible Attribution Notice below, when provided, must appear in each user-visible display as defined in Section 6.4 (d):
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -316,7 +316,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RPL-1.5",
@@ -701,7 +701,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RPL-1.5.svg]]

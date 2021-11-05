@@ -22,7 +22,7 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The University of Illinois/NCSA Open Source License, or UIUC license,
   is a permissive free software license, based on the <a
   href="/licenses/mit/">MIT/X11 license</a> and the <a
@@ -31,7 +31,7 @@
   notices both in source and in binary distributions and the prohibition
   of using the names of the authors or the project organization to
   promote or endorse derived products.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -96,7 +96,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -106,9 +106,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -119,9 +119,9 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -133,20 +133,20 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the name of the owner or contributor to promote or sell the derived product
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   University of Illinois/NCSA Open Source License
 
   Permission is hereby granted, free of charge, to any person obtaining a copy of this
@@ -173,7 +173,7 @@
   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
   ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
   SOFTWARE OR THE USE OR OTHER DEALINGS WITH THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -215,7 +215,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NCSA",
@@ -880,7 +880,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NCSA.svg]]

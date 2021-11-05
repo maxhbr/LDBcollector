@@ -1,5 +1,4 @@
-IBM PowerPC Initialization and Boot Software (IBM-pibs)
-=======================================================
+# IBM PowerPC Initialization and Boot Software (IBM-pibs)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ IBM PowerPC Initialization and Boot Software (IBM-pibs)
 
 -   `IBM PowerPC Software`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://git.denx.de/?p=u-boot.git;a=blob;f=arch/powerpc/cpu/ppc4xx/miiphy.c;h=297155fdafa064b955e53e9832de93bfb0cfb85b;hb=9fab4bf4cc077c21e43941866f3f2c196f28670d
@@ -29,8 +25,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/IBM-pibs.json
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Provide Copyright notice (Copyright notice)
@@ -39,8 +34,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This source code has been made available to you by IBM on an AS-IS
     basis.  Anyone receiving this source is licensed under IBM copyrights to
@@ -62,8 +56,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

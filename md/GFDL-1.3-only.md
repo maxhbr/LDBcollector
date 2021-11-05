@@ -1,5 +1,4 @@
-GNU Free Documentation License v1.3 only (GFDL-1.3-only)
-========================================================
+# GNU Free Documentation License v1.3 only (GFDL-1.3-only)
 
 [TABLE]
 
@@ -9,32 +8,28 @@ GNU Free Documentation License v1.3 only (GFDL-1.3-only)
 
 -   `GFDL 1.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
-    http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
+    http://www.debian.org/vote/2006/vote\_001#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 3 November 2008.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.3.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/fdl-1.3.txt
 
 -   **SPDX:** http://spdx.org/licenses/GFDL-1.3-only.json
 
-Text
-----
+## Text
 
     GNU Free Documentation License
                      Version 1.3, 3 November 2008
@@ -488,8 +483,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -49,7 +49,7 @@
 - https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Warranty disclaimer
   	YOU MUST Forward License text
@@ -64,12 +64,12 @@
   
   USE CASE Commercial distribution
   	YOU MUST Credit Verbatim "Portions Copyright (c) 2002-2007 Charlie Poole or Copyright (c) 2002-2004 James W. Newkirk, Michael C. Two, Alexei A. Vorontsov or Copyright (c) 2000-2002 Philip A. Craig"
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This software is provided 'as-is', without any express or implied warranty. In
   no event will the authors be held liable for any damages arising from the use of
   this software.
@@ -90,7 +90,7 @@
   misrepresented as being the original software.
 
   3. This notice may not be removed or altered from any source distribution.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -123,7 +123,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "zlib-acknowledgement",
@@ -411,7 +411,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/zlib-acknowledgement.svg]]

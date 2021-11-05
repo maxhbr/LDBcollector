@@ -1,21 +1,17 @@
-Creative Commons Attribution 3.0 United States (CC-BY-3.0-US)
-=============================================================
+# Creative Commons Attribution 3.0 United States (CC-BY-3.0-US)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://creativecommons.org/licenses/by/3.0/us/このサイトからLegalCodeを参照できる.”
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/CC-BY-3.0-US.json
 
@@ -23,13 +19,11 @@ URLs
 
 -   https://creativecommons.org/licenses/by/3.0/us/legalcode
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE LEGAL SERVICES. DISTRIBUTION OF THIS LICENSE DOES NOT CREATE AN ATTORNEY-CLIENT RELATIONSHIP. CREATIVE COMMONS PROVIDES THIS INFORMATION ON AN "AS-IS" BASIS. CREATIVE COMMONS MAKES NO WARRANTIES REGARDING THE INFORMATION PROVIDED, AND DISCLAIMS LIABILITY FOR DAMAGES RESULTING FROM ITS USE.
 
@@ -195,8 +189,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

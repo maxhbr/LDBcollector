@@ -32,7 +32,7 @@
 - ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Any use of this software is permitted provided that this notice is not
   removed and that neither the authors nor the Technische Universitaet Berlin
   are deemed to have made any representations as to the suitability of this
@@ -42,7 +42,7 @@
   As a matter of courtesy, the authors request to be informed about uses
   this software has found, about bugs in this software, and about any
   improvements that may be of general interest.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -61,7 +61,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TU-Berlin-1.0",
@@ -240,7 +240,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TU-Berlin-1.0.svg]]

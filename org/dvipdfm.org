@@ -32,11 +32,11 @@
 - *SPDX:* http://spdx.org/licenses/dvipdfm.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   A modified version of this file may be distributed, but it should be distributed
   with a *different* name. Changed files must be distributed *together with a
   complete and unchanged* distribution of these files.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -56,7 +56,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "dvipdfm",
@@ -224,7 +224,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/dvipdfm.svg]]

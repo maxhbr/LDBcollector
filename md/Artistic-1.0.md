@@ -1,5 +1,4 @@
-Artistic License 1.0 (Artistic-1.0)
-===================================
+# Artistic License 1.0 (Artistic-1.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Artistic License 1.0 (Artistic-1.0)
 
 -   `Artistic 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Do note that the Artistic License is considered non-free by
     the FSF. They suggest to use the Clarified Artistic License (also
@@ -44,8 +42,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://opensource.org/licenses/Artistic-1.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -68,8 +65,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.perlfoundation.org/
 
@@ -85,12 +81,11 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/721
 
--   http://www.gnu.org/licenses/license-list.html\#ArtisticLicense
+-   http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
 -   http://www.perlfoundation.org/artistic\_license\_1\_0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -150,8 +145,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Preamble
 
@@ -253,8 +247,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

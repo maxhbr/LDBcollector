@@ -1,5 +1,4 @@
-Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
-===================================================================
+# Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
 
 [TABLE]
 
@@ -9,15 +8,13 @@ Creative Commons Attribution Share Alike 2.5 Generic (CC-BY-SA-2.5)
 
 -   `scancode://cc-by-sa-2.5`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -58,8 +55,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-sa/2.5/
 
@@ -71,8 +67,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-sa/2.5/legalcode
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: A work is a copyrighted work and is a work made available under this licence. A derivative work is a translation, arrangement, dramatization, fictionalization, film adaptation, sound recording, work of art, extract, abridgement, abridgement, or any other form of work that has been re-cast or altered. However, works that constitute a collective work are not considered derivative works for the purposes of this license and are therefore excluded. For the avoidance of doubt, songs and sound recordings that are synchronized with moving images shall be considered derivative works for the purposes of this license. A collective work is a work that is composed of independent works, such as periodicals, poetry collections, and encyclopedias, assembled without modification. The works that comprise a collective work shall not be considered derivative works under this license. A work that constitutes a collective work shall not be considered a derivative work under this license. The original author is the person or entity that created the work. A person or entity exercising rights under this License who has never previously violated the terms of this License with respect to his or her work, or who has expressly granted Licensor permission to exercise his or her rights in the past, even if he or she has previously violated the License.
         Actions:
@@ -124,8 +119,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Attribution-ShareAlike 2.5
 
@@ -190,8 +184,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Spencer License 94 (Spencer-94)
-===============================
+# Spencer License 94 (Spencer-94)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Spencer License 94 (Spencer-94)
 
 -   `Henry Spencer Regexp License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/garyhouston/regex/blob/master/COPYRIGHT
@@ -31,8 +27,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Henry\_Spencer\_Reg-Ex\_Library\_License
 
-Text
-----
+## Text
 
     This software is not subject to any license of the American Telephone and
     Telegraph Company or of the Regents of the University of California.
@@ -56,8 +51,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

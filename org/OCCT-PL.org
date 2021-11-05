@@ -28,7 +28,7 @@
 - *SPDX:* http://spdx.org/licenses/OCCT-PL.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Open CASCADE Technology Public License 
   Version 6.6, April 2013
   OPEN CASCADE releases and makes publicly available the source code of the software Open CASCADE Technology to the free software development community under the terms and conditions of this license.
@@ -140,7 +140,7 @@
 
   Please see the License for the specific terms and conditions governing rights and limitations under the License" 
   End of Schedule "B"
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -160,7 +160,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OCCT-PL",
@@ -302,7 +302,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OCCT-PL.svg]]

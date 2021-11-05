@@ -1,5 +1,4 @@
-BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
-======================================================
+# BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ BSD-2-Clause Plus Patent License (BSD-2-Clause-Patent)
 
 -   `BSD-2-Clause Plus Patent`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-2-Clause-Patent.html "SPDX")
@@ -20,8 +18,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per the OSI, this license is designed to provide a) a simple
     permissive license; b) that is compatible with the GNU General
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-plus-patent.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opensource.org/licenses/BSDplusPatent
 
@@ -39,8 +35,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/BSD-2-Clause-Patent.json
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -54,8 +49,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -109,8 +103,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

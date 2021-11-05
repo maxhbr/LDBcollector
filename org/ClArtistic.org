@@ -38,7 +38,7 @@
 - http://www.ncftp.com/ncftp/doc/LICENSE.txt
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Clarified Artistic License
 
   Preamble
@@ -179,7 +179,7 @@
   MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
                               The End
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -208,7 +208,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ClArtistic",
@@ -465,7 +465,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ClArtistic.svg]]

@@ -1,5 +1,4 @@
-Adobe Glyph List License (Adobe-Glyph)
-======================================
+# Adobe Glyph List License (Adobe-Glyph)
 
 [TABLE]
 
@@ -9,27 +8,23 @@ Adobe Glyph List License (Adobe-Glyph)
 
 -   `Adobe Glyph License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
-    https://fedoraproject.org/wiki/Licensing/MIT\#AdobeGlyph
+    https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph
 
 -   **SPDX:** http://spdx.org/licenses/Adobe-Glyph.json
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this documentation file to use, copy, publish, distribute, sublicense, and/or sell copies of the documentation, and to permit others to do the same, provided that: 
          - No modification, editing or other alteration of this document is allowed; and 
@@ -41,8 +36,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

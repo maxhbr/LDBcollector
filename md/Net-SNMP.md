@@ -1,5 +1,4 @@
-Net-SNMP License (Net-SNMP)
-===========================
+# Net-SNMP License (Net-SNMP)
 
 [TABLE]
 
@@ -9,22 +8,19 @@ Net-SNMP License (Net-SNMP)
 
 -   `Net SNMP License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/net-snmp.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://net-snmp.sourceforge.net/about/license.html
 
@@ -32,8 +28,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Net-SNMP.json
 
-Text
-----
+## Text
 
     Net SNMP License
     http://net-snmp.sourceforge.net/about/license.html 
@@ -281,8 +276,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

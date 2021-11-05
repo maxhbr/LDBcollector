@@ -18,7 +18,7 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   A permissive, OSI and FSF approved, GPL compatible license, expressly
   allowing attribution with just a copyright notice and a short form
   link rather than the full text of the license. Includes an express
@@ -26,7 +26,7 @@
   distributed under different terms and without source code, and the
   patent grant may also optionally be expanded to larger works to permit
   use as a contributor license agreement.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -75,19 +75,19 @@
 - https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notice
   	EITHER
   		YOU MUST Forward License text
   	OR
   		YOU MUST Reference License text
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Universal Permissive License (UPL), Version 1.0
 
   Subject to the condition set forth below, permission is hereby granted to any
@@ -122,7 +122,7 @@
   COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -155,7 +155,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "UPL-1.0",
@@ -574,7 +574,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/UPL-1.0.svg]]

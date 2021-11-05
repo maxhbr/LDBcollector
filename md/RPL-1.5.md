@@ -1,5 +1,4 @@
-Reciprocal Public License 1.5 (RPL-1.5)
-=======================================
+# Reciprocal Public License 1.5 (RPL-1.5)
 
 [TABLE]
 
@@ -11,15 +10,13 @@ Reciprocal Public License 1.5 (RPL-1.5)
 
 -   `RPL 1.5`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/RPL-1.5.html "SPDX") (all data \[in
     this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Maximal copyleft licenses answer the question “When does the
     license require you to share?” differently than other families.
@@ -34,8 +31,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.5.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/rpl1.5.txt
 
@@ -45,12 +41,11 @@ URLs
 
 -   https://spdx.org/licenses/RPL-1.5.html
 
--   http://www.gnu.org/licenses/license-list.html\#RPL
+-   http://www.gnu.org/licenses/license-list.html#RPL
 
 -   http://www.opensource.org/licenses/RPL-1.5
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License notice
@@ -116,8 +111,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Reciprocal Public License (RPL)
 
@@ -280,8 +274,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

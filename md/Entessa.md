@@ -1,5 +1,4 @@
-Entessa Public License v1.0 (Entessa)
-=====================================
+# Entessa Public License v1.0 (Entessa)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Entessa Public License v1.0 (Entessa)
 
 -   `Entessa 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Entessa.html "SPDX") (all data \[in
@@ -29,15 +27,13 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/entessa-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://openseal.sourceforge.net/epl/index.html
 
@@ -51,8 +47,7 @@ URLs
 
 -   http://sourceforge.net/softwaremap/?&fq\[\]=trove%3A397
 
-Text
-----
+## Text
 
     Entessa Public License Version. 1.0
 
@@ -103,8 +98,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

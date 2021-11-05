@@ -1,5 +1,4 @@
-Server Side Public License, v 1 (SSPL-1.0)
-==========================================
+# Server Side Public License, v 1 (SSPL-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Server Side Public License, v 1 (SSPL-1.0)
 
 -   `MongoDB SSPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.mongodb.com/licensing/server-side-public-license
@@ -27,8 +23,7 @@ URLs
 
 -   https://webassets.mongodb.com/\_com\_assets/legal/SSPL-compared-to-AGPL.pdf
 
-Text
-----
+## Text
 
                          Server Side Public License
                          VERSION 1, OCTOBER 16, 2018
@@ -590,8 +585,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
-===============================================
+# Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Artistic License 1.0 (Perl) (Artistic-1.0-Perl)
 
 -   `Artistic-Perl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Do note that the Artistic License is considered non-free by
     the FSF. They suggest to use the Clarified Artistic License (also
@@ -28,8 +26,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this is the Artistic License 1.0 found on the Perl
     site, which is different (particularly, clauses 5, 6, 7 and 8) than
@@ -38,8 +35,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-perl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://dev.perl.org/licenses/artistic.html
 
@@ -47,8 +43,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Artistic-1.0-Perl.json
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -84,8 +79,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The "Artistic License"
 
@@ -217,8 +211,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -29,7 +29,7 @@
 - https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CERN Open Hardware Licence Version 2 - Weakly Reciprocal
 
 
@@ -341,7 +341,7 @@
     8.6 This Licence shall not be enforceable except by a Licensor
         acting as such, and third party beneficiary rights are
         specifically excluded.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -357,7 +357,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CERN-OHL-W-2.0",
@@ -495,7 +495,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CERN-OHL-W-2.0.svg]]

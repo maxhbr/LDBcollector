@@ -1,5 +1,4 @@
-BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
-===========================================================================
+# BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
 
 [TABLE]
 
@@ -9,23 +8,20 @@ BSD 3-Clause No Nuclear License 2014 (BSD-3-Clause-No-Nuclear-License-2014)
 
 -   `Oracle BSD-Style with Nuclear Restrictions`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “this is a minor variation on similar licenses by Sun and Oracle.”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oracle-bsd-no-nuclear.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
@@ -38,8 +34,7 @@ URLs
 
 -   https://web.archive.org/web/20150906075957/https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
-Text
-----
+## Text
 
     Use is subject to license terms.
 
@@ -73,8 +68,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

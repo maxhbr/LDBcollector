@@ -1,5 +1,4 @@
-Creative Commons Attribution-Share Alike 3.0 Austria (CC-BY-SA-3.0-AT)
-======================================================================
+# Creative Commons Attribution-Share Alike 3.0 Austria (CC-BY-SA-3.0-AT)
 
 [TABLE]
 
@@ -7,22 +6,18 @@ Creative Commons Attribution-Share Alike 3.0 Austria (CC-BY-SA-3.0-AT)
 
 -   `scancode://cc-by-sa-3.0-at`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://creativecommons.org/licenses/by-sa/3.0/at/legalcode
 
 -   **SPDX:** http://spdx.org/licenses/CC-BY-SA-3.0-AT.json
 
-Text
-----
+## Text
 
     Namensnennung - Weitergabe unter gleichen Bedingungen 3.0 Österreich
 
@@ -124,8 +119,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

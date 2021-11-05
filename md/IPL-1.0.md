@@ -1,5 +1,4 @@
-IBM Public License v1.0 (IPL-1.0)
-=================================
+# IBM Public License v1.0 (IPL-1.0)
 
 [TABLE]
 
@@ -19,8 +18,7 @@ IBM Public License v1.0 (IPL-1.0)
 
 -   `IPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/IPL-1.0.html "SPDX") (all data \[in
@@ -36,8 +34,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -50,8 +47,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ibmpl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/ibmpl.php
 
@@ -65,13 +61,11 @@ URLs
 
 -   http://www.opensource.org/licenses/IPL-1.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -131,8 +125,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     IBM Public License Version 1.0
     THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS IBM PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
@@ -204,8 +197,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

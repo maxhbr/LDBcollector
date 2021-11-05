@@ -1,5 +1,4 @@
-Licence Libre du Québec – Réciprocité forte version 1.1 (LiLiQ-Rplus-1.1)
-=========================================================================
+# Licence Libre du Québec – Réciprocité forte version 1.1 (LiLiQ-Rplus-1.1)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Licence Libre du Québec – Réciprocité forte version 1.1 (LiLiQ-Rplus-1.1)
 
 -   `Licence Libre du Québec – Réciprocité forte, Version 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LiLiQ-Rplus-1.1.html "SPDX") (all
     data \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **OSI Page:** https://opensource.org/licenses/LiLiQ-Rplus-1.1
 
@@ -30,8 +26,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

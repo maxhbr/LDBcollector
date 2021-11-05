@@ -1,5 +1,4 @@
-Adaptive Public License 1.0 (APL-1.0)
-=====================================
+# Adaptive Public License 1.0 (APL-1.0)
 
 [TABLE]
 
@@ -13,22 +12,19 @@ Adaptive Public License 1.0 (APL-1.0)
 
 -   `APL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APL-1.0.html "SPDX") (all data \[in
     this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/adapt-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/apl1.0.php
 
@@ -38,8 +34,7 @@ URLs
 
 -   http://www.opensource.org/licenses/APL-1.0
 
-Text
-----
+## Text
 
     ADAPTIVE PUBLIC LICENSE
     Version 1.0
@@ -387,8 +382,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

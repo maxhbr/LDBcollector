@@ -1,5 +1,4 @@
-Japan Network Information Center License (JPNIC)
-================================================
+# Japan Network Information Center License (JPNIC)
 
 [TABLE]
 
@@ -9,25 +8,21 @@ Japan Network Information Center License (JPNIC)
 
 -   `JPNIC idnkit License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.nic.ad.jp/ja/idn/idnkit/download/
 
 -   **SPDX:** http://spdx.org/licenses/JPNIC.json
 
--   https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT\#L366
+-   https://gitlab.isc.org/isc-projects/bind9/blob/master/COPYRIGHT#L366
 
 -   https://jprs.co.jp/idn/
 
-Text
-----
+## Text
 
     By using this file, you agree to the terms and conditions set forth bellow.
 
@@ -70,8 +65,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

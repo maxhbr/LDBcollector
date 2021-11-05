@@ -1,5 +1,4 @@
-PolyForm Small Business License 1.0.0 (PolyForm-Small-Business-1.0.0)
-=====================================================================
+# PolyForm Small Business License 1.0.0 (PolyForm-Small-Business-1.0.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ PolyForm Small Business License 1.0.0 (PolyForm-Small-Business-1.0.0)
 
 -   `scancode://polyform-small-business-1.0.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://polyformproject.org/licenses/small-business/1.0.0/
@@ -24,8 +20,7 @@ URLs
 
 -   https://polyformproject.org/licenses/small-business/1.0.0
 
-Text
-----
+## Text
 
     # Polyform Small Business License 1.0.0
 
@@ -151,8 +146,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

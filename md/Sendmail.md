@@ -1,5 +1,4 @@
-Sendmail License (Sendmail)
-===========================
+# Sendmail License (Sendmail)
 
 [TABLE]
 
@@ -13,16 +12,14 @@ Sendmail License (Sendmail)
 
 -   `scancode://sendmail`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source code refers to the complete, compiled and linkable source
     code of Sendmail, including modifications.” (source: [Hitachi
@@ -34,8 +31,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sendmail.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.sendmail.com/
 
@@ -51,8 +47,7 @@ URLs
 
 -   https://web.archive.org/web/20160322142305/https://www.sendmail.com/pdfs/open\_source/sendmail\_license.pdf
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.
         Actions:
@@ -99,8 +94,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
                      SENDMAIL LICENSE
 
@@ -184,8 +178,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

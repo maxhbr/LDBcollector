@@ -1,5 +1,4 @@
-TMate Open Source License (TMate)
-=================================
+# TMate Open Source License (TMate)
 
 [TABLE]
 
@@ -9,23 +8,20 @@ TMate Open Source License (TMate)
 
 -   `scancode://tmate`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://svnkit.com/license.html” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://svnkit.com/licensing.html
 
@@ -37,8 +33,7 @@ URLs
 
 -   http://svnkit.com/license.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -88,8 +83,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     This license applies to all portions of TMate SVNKit library, which 
     are not externally-maintained libraries (e.g. Ganymed SSH library).
@@ -139,8 +133,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

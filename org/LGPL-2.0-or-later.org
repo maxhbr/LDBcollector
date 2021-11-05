@@ -51,7 +51,7 @@
 - https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This library is free software; you can redistribute it and/or modify it under
   the terms of the GNU Library General Public License as published by the Free
   Software Foundation; either version 2 of the License, or (at your option) any
@@ -64,7 +64,7 @@
   You should have received a copy of the GNU Library General Public License along
   with this library; if not, write to the Free Software Foundation, Inc., 51
   Franklin St, Fifth Floor, Boston, MA  02110-1301, USA.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -97,7 +97,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LGPL-2.0-or-later",
@@ -490,7 +490,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LGPL-2.0-or-later.svg]]

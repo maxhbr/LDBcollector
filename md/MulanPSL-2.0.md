@@ -1,5 +1,4 @@
-Mulan Permissive Software License, Version 2 (MulanPSL-2.0)
-===========================================================
+# Mulan Permissive Software License, Version 2 (MulanPSL-2.0)
 
 [TABLE]
 
@@ -9,25 +8,21 @@ Mulan Permissive Software License, Version 2 (MulanPSL-2.0)
 
 -   `Mulan PSL v2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MulanPSL-2.0.html "SPDX") (all data
     \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://license.coscl.org.cn/MulanPSL2/
 
 -   **SPDX:** http://spdx.org/licenses/MulanPSL-2.0.json
 
-Text
-----
+## Text
 
     木兰宽松许可证, 第2版
     木兰宽松许可证， 第2版
@@ -158,8 +153,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

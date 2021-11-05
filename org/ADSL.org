@@ -33,7 +33,7 @@
 - *SPDX:* http://spdx.org/licenses/ADSL.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This software code is made available "AS IS" without warranties of any kind.
 
   You may copy, display, modify and redistribute the software code either by
@@ -43,7 +43,7 @@
   Your use of this software code is at your own risk and you waive any claim
   against Amazon Digital Services, Inc. or its affiliates with respect to your use
   of this software code.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -66,7 +66,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ADSL",
@@ -269,7 +269,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ADSL.svg]]

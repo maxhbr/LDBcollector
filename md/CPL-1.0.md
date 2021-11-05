@@ -1,5 +1,4 @@
-Common Public License 1.0 (CPL-1.0)
-===================================
+# Common Public License 1.0 (CPL-1.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Common Public License 1.0 (CPL-1.0)
 
 -   `CPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CPL-1.0.html "SPDX") (all data \[in
@@ -34,8 +32,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -56,8 +53,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cpl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.eclipse.org/legal/cpl-v10.html
 
@@ -79,8 +75,7 @@ URLs
 
 -   http://www.padsproj.org/License.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Contributor is the person or entity that distributes the Software.
         Actions:
@@ -208,8 +203,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -266,8 +260,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Common Public License - v 1.0
 
@@ -363,8 +356,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

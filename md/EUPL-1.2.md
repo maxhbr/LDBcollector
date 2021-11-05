@@ -1,5 +1,4 @@
-European Union Public License 1.2 (EUPL-1.2)
-============================================
+# European Union Public License 1.2 (EUPL-1.2)
 
 [TABLE]
 
@@ -11,20 +10,18 @@ European Union Public License 1.2 (EUPL-1.2)
 
 -   `European Union Public Licence 1.2`
 
-Description
------------
+## Description
 
 > The European Union Public Licence (EUPL) is a copyleft free/open
 > source software license created on the initiative of and approved by
 > the European Commission in &lt;a
-> href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12"&gt;23
-> official languages&lt;/a&gt; of the European Union.
+> href="https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12">23
+> official languages&lt;/a> of the European Union.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EUPL-1.2.html "SPDX") (all data
@@ -37,8 +34,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -55,8 +51,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -64,8 +59,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/eupl-1.2.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://joinup.ec.europa.eu/sites/default/files/ckeditor\_files/files/EUPL%20v1\_2%20EN%20UTF-8.txt
@@ -88,8 +82,7 @@ URLs
 
 -   https://opensource.org/licenses/EUPL-1.1
 
-Text
-----
+## Text
 
     EUROPEAN UNION PUBLIC LICENCE v. 1.2 
     EUPL © the European Union 2007, 2016 
@@ -206,8 +199,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

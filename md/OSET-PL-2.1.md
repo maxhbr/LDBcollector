@@ -1,5 +1,4 @@
-OSET Public License version 2.1 (OSET-PL-2.1)
-=============================================
+# OSET Public License version 2.1 (OSET-PL-2.1)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ OSET Public License version 2.1 (OSET-PL-2.1)
 
 -   `scancode://oset-pl-2.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSET-PL-2.1.html "SPDX") (all data
     \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.osetfoundation.org/public-license/
 
@@ -28,8 +24,7 @@ URLs
 
 -   http://www.osetfoundation.org/public-license
 
-Text
-----
+## Text
 
     OSET Public License
     (c) 2015 ALL RIGHTS RESERVED VERSION 2.1
@@ -147,8 +142,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Blue Oak Model License 1.0.0 (BlueOak-1.0.0)
-============================================
+# Blue Oak Model License 1.0.0 (BlueOak-1.0.0)
 
 [TABLE]
 
@@ -7,25 +6,21 @@ Blue Oak Model License 1.0.0 (BlueOak-1.0.0)
 
 -   `scancode://blueoak-1.0.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Model” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://blueoakcouncil.org/license/1.0.0
 
 -   **SPDX:** http://spdx.org/licenses/BlueOak-1.0.0.json
 
-Text
-----
+## Text
 
     # Blue Oak Model License
 
@@ -85,8 +80,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

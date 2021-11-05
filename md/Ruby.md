@@ -1,5 +1,4 @@
-Ruby License (Ruby)
-===================
+# Ruby License (Ruby)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Ruby License (Ruby)
 
 -   `scancode://ruby`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -27,8 +25,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://www.ruby-lang.org/en/about/license.txt” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -45,8 +42,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ruby.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.ruby-lang.org/en/LICENSE.txt
 
@@ -60,8 +56,7 @@ URLs
 
 -   https://raw.githubusercontent.com/ruby/ruby/2cd6800fd8437b1f862f3f5c44db877159271d17/COPYING
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
         Actions:
@@ -113,8 +108,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
 
       1. You may make and give away verbatim copies of the source form of the
@@ -172,8 +166,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -53,7 +53,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: We hope that somewhere in the documentation of commercial products, research projects, etc., it will be noted in the credits that ANTLR or ANTLR-generated code is being used. I would like to see the header description of the source code of the software in question remain intact.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -74,12 +74,12 @@
     - Distribute the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   ANTLR SOFTWARE RIGHTS
 
   ANTLR 1989-2006 Developed by Terence Parr
@@ -110,7 +110,7 @@
   Terence Parr
   parrt@cs.usfca.edu
   parrt@antlr.org
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -136,7 +136,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ANTLR-PD",
@@ -473,7 +473,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ANTLR-PD.svg]]

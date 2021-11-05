@@ -1,5 +1,4 @@
-Boost Software License 1.0 (BSL-1.0)
-====================================
+# Boost Software License 1.0 (BSL-1.0)
 
 [TABLE]
 
@@ -19,8 +18,7 @@ Boost Software License 1.0 (BSL-1.0)
 
 -   `Boost 1.0`
 
-Description
------------
+## Description
 
 > A simple permissive license only requiring preservation of copyright
 > and license notices for source (and not binary) distribution. Licensed
@@ -30,8 +28,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -45,16 +42,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this version was released 17 August 2003 This license
     is OSI certifified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/boost-1.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -62,8 +57,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsl-1.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.boost.org/users/license.html
 
@@ -81,8 +75,7 @@ URLs
 
 -   http://www.opensource.org/licenses/BSL-1.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Documentation accompanying the software should be treated in the same way as the software.
         Actions:
@@ -122,8 +115,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -155,8 +147,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Boost Software License - Version 1.0 - August 17th, 2003
 
@@ -184,8 +175,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

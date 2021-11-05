@@ -1,5 +1,4 @@
-GNU Library General Public License v2 or later (LGPL-2.0-or-later)
-==================================================================
+# GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ GNU Library General Public License v2 or later (LGPL-2.0-or-later)
 
 -   `LGPL 2.0 or later`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent.” (source:
@@ -26,8 +24,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -40,8 +37,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html
 
@@ -51,8 +47,7 @@ URLs
 
 -   https://www.gnu.org/licenses/old-licenses/lgpl-2.0-standalone.html
 
-Text
-----
+## Text
 
     This library is free software; you can redistribute it and/or modify it under
     the terms of the GNU Library General Public License as published by the Free
@@ -69,8 +64,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

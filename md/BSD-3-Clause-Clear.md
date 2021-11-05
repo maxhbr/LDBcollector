@@ -1,5 +1,4 @@
-BSD 3-Clause Clear License (BSD-3-Clause-Clear)
-===============================================
+# BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 [TABLE]
 
@@ -11,17 +10,15 @@ BSD 3-Clause Clear License (BSD-3-Clause-Clear)
 
 -   `Clear BSD License`
 
-Description
------------
+## Description
 
-> A variant of the &lt;a href="/licenses/bsd-3-clause/"&gt;BSD 3-Clause
-> License&lt;/a&gt; that explicitly does not grant any patent rights.
+> A variant of the &lt;a href="/licenses/bsd-3-clause/">BSD 3-Clause
+> License&lt;/a> that explicitly does not grant any patent rights.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Note that a 2-clause form of the BSD license, removing the
     third condition, is also in use. This is because even a generous
@@ -37,11 +34,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -49,8 +44,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-3-clause-clear.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://labs.metacarta.com/license-explanation.html
 
@@ -58,10 +52,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Clear.json
 
--   http://labs.metacarta.com/license-explanation.html\#license
+-   http://labs.metacarta.com/license-explanation.html#license
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted (subject to the limitations in the
@@ -95,8 +88,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

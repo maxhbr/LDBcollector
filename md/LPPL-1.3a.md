@@ -1,5 +1,4 @@
-LaTeX Project Public License v1.3a (LPPL-1.3a)
-==============================================
+# LaTeX Project Public License v1.3a (LPPL-1.3a)
 
 [TABLE]
 
@@ -9,25 +8,21 @@ LaTeX Project Public License v1.3a (LPPL-1.3a)
 
 -   `LPPL 1.3a`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 1 Oct 2004” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3a.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.latex-project.org/lppl/lppl-1-3a.txt
 
 -   **SPDX:** http://spdx.org/licenses/LPPL-1.3a.json
 
-Text
-----
+## Text
 
     The LaTeX Project Public License
     =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -426,8 +421,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

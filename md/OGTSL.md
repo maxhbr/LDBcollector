@@ -1,5 +1,4 @@
-Open Group Test Suite License (OGTSL)
-=====================================
+# Open Group Test Suite License (OGTSL)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Open Group Test Suite License (OGTSL)
 
 -   `scancode://opengroup`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OGTSL.html "SPDX") (all data \[in
@@ -28,15 +26,13 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/opengroup.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/opengroup.php
 
@@ -50,8 +46,7 @@ URLs
 
 -   http://www.opensource.org/licenses/OGTSL
 
-Text
-----
+## Text
 
     The Open Group Test Suite License
 
@@ -108,8 +103,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

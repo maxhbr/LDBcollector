@@ -1,5 +1,4 @@
-BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
-=================================================================
+# BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ BSD 3-Clause No Nuclear License (BSD-3-Clause-No-Nuclear-License)
 
 -   `Sun BSD-Style with Nuclear Restrictions`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:**
     http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-License.json
@@ -25,8 +21,7 @@ URLs
 
 -   https://jogamp.org/git/?p=gluegen.git;a=blob\_plain;f=LICENSE.txt
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -62,8 +57,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

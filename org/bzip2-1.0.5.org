@@ -26,7 +26,7 @@
 - http://bzip.org/1.0.5/bzip2-manual-1.0.5.html
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
@@ -41,7 +41,7 @@
   	IF Software modification
   		YOU MUST NOT Promote
   PATENT HINTS Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
@@ -62,7 +62,7 @@
   this repository] is generated)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "bzip2-1.0.5",
@@ -199,7 +199,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/bzip2-1.0.5.svg]]

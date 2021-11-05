@@ -1,5 +1,4 @@
-GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
-===================================================================
+# GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ GNU Lesser General Public License v2.1 or later (LGPL-2.1-or-later)
 
 -   `LGPL 2.1 or later`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent.” (source:
@@ -32,8 +30,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -46,8 +43,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html
@@ -62,8 +58,7 @@ URLs
 
 -   http://www.opensource.org/licenses/LGPL-2.1
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -220,8 +215,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.
 
@@ -231,8 +225,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

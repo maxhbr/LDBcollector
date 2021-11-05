@@ -1,5 +1,4 @@
-Creative Commons Public Domain Dedication and Certification (CC-PDDC)
-=====================================================================
+# Creative Commons Public Domain Dedication and Certification (CC-PDDC)
 
 [TABLE]
 
@@ -11,19 +10,16 @@ Creative Commons Public Domain Dedication and Certification (CC-PDDC)
 
 -   `CC-PD`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://creativecommons.org/licenses/publicdomain/” (source:
     [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://creativecommons.org/licenses/publicdomain/
 
@@ -31,8 +27,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/276
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The work shall be in the public domain.
         Actions:
@@ -46,8 +41,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The person or persons who have associated work with this document (the "Dedicator" or "Certifier") hereby either (a) certifies that, to the best of his knowledge, the work of authorship identified is in the public domain of the country from which the work is published, or (b) hereby dedicates whatever copyright the dedicators holds in the work of authorship identified below (the "Work") to the public domain. A certifier, moreover, dedicates any copyright interest he may have in the associated work, and for these purposes, is described as a "dedicator" below.
 
@@ -59,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

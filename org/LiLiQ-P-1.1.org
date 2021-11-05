@@ -46,7 +46,7 @@
   this repository] is generated)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LiLiQ-P-1.1",
@@ -210,7 +210,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LiLiQ-P-1.1.svg]]

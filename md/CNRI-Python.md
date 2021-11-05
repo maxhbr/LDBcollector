@@ -1,5 +1,4 @@
-CNRI Python License (CNRI-Python)
-=================================
+# CNRI Python License (CNRI-Python)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ CNRI Python License (CNRI-Python)
 
 -   `CNRI Python 1.6`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CNRI-Python.html "SPDX") (all data
@@ -26,8 +24,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “This License Agreement is between the Corporation for National
     Research Initiatives ("CNRI") and any person who accesses or uses
@@ -43,8 +40,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cnri-python-1.6.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.handle.net/python\_licenses/python1.6\_9-5-00.html
@@ -61,8 +57,7 @@ URLs
 
 -   http://www.opensource.org/licenses/CNRI-Python
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Treat software related documentation in the same way as software
         Actions:
@@ -122,8 +117,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     CNRI OPEN SOURCE LICENSE AGREEMENT
 
@@ -149,8 +143,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

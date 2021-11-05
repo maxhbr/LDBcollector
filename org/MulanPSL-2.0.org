@@ -27,7 +27,7 @@
 - *SPDX:* http://spdx.org/licenses/MulanPSL-2.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   木兰宽松许可证, 第2版
   木兰宽松许可证， 第2版
 
@@ -154,7 +154,7 @@
   MERCHANTABILITY OR FIT FOR A PARTICULAR PURPOSE.
   See the Mulan PSL v2 for more details.
   Copyright © 中国开源云联盟 京ICP备05013730号-37
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -170,7 +170,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MulanPSL-2.0",
@@ -299,7 +299,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MulanPSL-2.0.svg]]

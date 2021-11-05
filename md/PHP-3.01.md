@@ -1,5 +1,4 @@
-PHP License v3.01 (PHP-3.01)
-============================
+# PHP License v3.01 (PHP-3.01)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ PHP License v3.01 (PHP-3.01)
 
 -   `PHP License 3.01`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/PHP-3.01.html "SPDX") (all data
@@ -22,8 +20,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, the PHP License v3.01 is essentially the same as
     v3.0, with the exceoption of a couple word differences and updated
@@ -32,8 +29,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/php-3.01.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.php.net/license/3\_01.txt
 
@@ -47,8 +43,7 @@ URLs
 
 -   http://www.zend.com
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -95,8 +90,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The PHP License, version 3.01 
 
@@ -168,8 +162,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
-=============================================================================
+# Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Unicode License Agreement - Data Files and Software (2016) (Unicode-DFS-2016)
 
 -   `Unicode DFS 2016`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -26,11 +24,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.unicode.org/copyright.html
 
@@ -40,13 +36,11 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/314
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     YOU MUST Forward Copyright notices In Files
     YOU MUST Forward License text In Files
@@ -56,8 +50,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
@@ -120,8 +113,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

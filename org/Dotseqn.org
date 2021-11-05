@@ -26,11 +26,11 @@
 - *SPDX:* http://spdx.org/licenses/Dotseqn.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed also (except that you may freely change the paper-size option for \documentclass).
 
   This notice must be left intact.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -50,7 +50,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Dotseqn",
@@ -202,7 +202,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Dotseqn.svg]]

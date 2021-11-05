@@ -1,5 +1,4 @@
-Code Project Open License 1.02 (CPOL-1.02)
-==========================================
+# Code Project Open License 1.02 (CPOL-1.02)
 
 [TABLE]
 
@@ -9,11 +8,9 @@ Code Project Open License 1.02 (CPOL-1.02)
 
 -   `CPOL 1.02`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.codeproject.com/info/cpol10.aspx” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -32,8 +29,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.codeproject.com/info/cpol10.aspx
 
@@ -41,8 +37,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/835
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The term "source code" refers to the source code and configuration files used to create executables. Source code refers to the source code and configuration files used to create an executable. The term "executable" refers to the executables, binary files, configuration and data files necessary for the software to be included in the software. The publisher is the provider of the software's media, such as websites, magazines, CD-ROMs and DVDs. The author is the provider of the website, magazine, CD-ROM, DVD or other media related to the software. The author is the person or entity that provides the software under this license.
         Actions:
@@ -126,8 +121,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notice
@@ -152,8 +146,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The Code Project Open License (CPOL) 1.02
 
@@ -218,8 +211,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

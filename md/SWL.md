@@ -1,5 +1,4 @@
-Scheme Widget Library (SWL) Software License Agreement (SWL)
-============================================================
+# Scheme Widget Library (SWL) Software License Agreement (SWL)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Scheme Widget Library (SWL) Software License Agreement (SWL)
 
 -   `Scheme Widget Library (SWL) Software License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this permissive license is derived from MIT, however,
     it has significant rewording and merits being considered as an
@@ -33,8 +30,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swl.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.scheme.com/download/swl-lic.html
 
@@ -46,8 +42,7 @@ URLs
 
 -   https://puredata.info/about/pdlicense
 
-Text
-----
+## Text
 
     The authors hereby grant permission to use, copy, modify, distribute, and license this software and its documentation for any purpose, provided that existing copyright notices are retained in all copies and that this notice is included verbatim in any distributions. No written agreement, license, or royalty fee is required for any of the authorized uses. Modifications to this software may be copyrighted by their authors and need not follow the licensing terms described here, provided that the new terms are clearly indicated on the first page of each file where they apply.
 
@@ -59,8 +54,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

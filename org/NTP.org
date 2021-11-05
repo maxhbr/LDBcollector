@@ -52,18 +52,18 @@
 - http://www.pgpool.net/mediawiki/index.php/pgpool-II_License
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST NOT Promote
   	YOU MUST Forward Copyright notices In Documentation
   	YOU MUST Forward License text In Documentation
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify, and distribute this software and its
   documentation for any purpose and without fee is hereby granted,
   provided that the above copyright notice appear in all copies and
@@ -73,7 +73,7 @@
   software without specific, written prior permission. The authors
   makes no representations about the suitability of this software for any
   purpose. It is provided "as is" without express or implied warranty.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -108,7 +108,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NTP",
@@ -431,7 +431,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NTP.svg]]

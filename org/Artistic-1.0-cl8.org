@@ -49,7 +49,7 @@
 - http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Preamble
 
   The intent of this document is to state the conditions under which a Package may
@@ -153,7 +153,7 @@
   MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
   The End
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -179,7 +179,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Artistic-1.0-cl8",
@@ -452,7 +452,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Artistic-1.0-cl8.svg]]

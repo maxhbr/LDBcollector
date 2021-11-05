@@ -1,5 +1,4 @@
-MIT +no-false-attribs license (MITNFA)
-======================================
+# MIT +no-false-attribs license (MITNFA)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ MIT +no-false-attribs license (MITNFA)
 
 -   `MIT no false attribution License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is based on the MIT license, but contains
     an additional section covering the removal of attributions in
@@ -31,8 +28,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-no-false-attribs.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/MITNFA
 
@@ -42,8 +38,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/698
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -88,8 +83,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person
     obtaining a copy of this software and associated documentation
@@ -123,8 +117,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

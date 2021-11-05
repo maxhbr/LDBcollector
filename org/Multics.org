@@ -41,7 +41,7 @@
 - http://www.opensource.org/licenses/Multics
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify, and distribute these programs and their
   documentation for any purpose and without fee is hereby granted,provided
   that the below copyright notice and historical background appear in all
@@ -55,7 +55,7 @@
   Copyright 2006 by BULL HN Information Systems Inc.
   Copyright 2006 by Bull SAS
   All Rights Reserved
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -84,7 +84,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Multics",
@@ -393,7 +393,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Multics.svg]]

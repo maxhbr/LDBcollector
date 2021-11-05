@@ -1,5 +1,4 @@
-Apple Public Source License 2.0 (APSL-2.0)
-==========================================
+# Apple Public Source License 2.0 (APSL-2.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Apple Public Source License 2.0 (APSL-2.0)
 
 -   `APSL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-2.0.html "SPDX") (all data
@@ -35,8 +33,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -58,8 +55,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.apple.com/license/apsl/
 
@@ -71,8 +67,7 @@ URLs
 
 -   https://spdx.org/licenses/APSL-2.0.html
 
-Text
-----
+## Text
 
     APPLE PUBLIC SOURCE LICENSE
     Version 2.0 - August 6, 2003
@@ -177,8 +172,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

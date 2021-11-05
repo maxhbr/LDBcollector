@@ -46,7 +46,7 @@
 - *SPDX:* http://spdx.org/licenses/Artistic-1.0-Perl.json
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward Warranty disclaimer
@@ -78,12 +78,12 @@
   			YOU MUST Provide Modification report In Distribution material
   			YOU MUST Reference Original source code In Distribution material
   	YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The "Artistic License"
 
   				Preamble
@@ -211,7 +211,7 @@
   WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
   				The End
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -243,7 +243,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Artistic-1.0-Perl",
@@ -579,7 +579,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Artistic-1.0-Perl.svg]]

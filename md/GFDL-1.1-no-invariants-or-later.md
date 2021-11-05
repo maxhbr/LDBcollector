@@ -1,16 +1,12 @@
-GNU Free Documentation License v1.1 or later - no invariants (GFDL-1.1-no-invariants-or-later)
-==============================================================================================
+# GNU Free Documentation License v1.1 or later - no invariants (GFDL-1.1-no-invariants-or-later)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:**
     http://spdx.org/licenses/GFDL-1.1-no-invariants-or-later.json
@@ -19,8 +15,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

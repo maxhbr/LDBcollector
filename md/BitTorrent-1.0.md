@@ -1,5 +1,4 @@
-BitTorrent Open Source License v1.0 (BitTorrent-1.0)
-====================================================
+# BitTorrent Open Source License v1.0 (BitTorrent-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ BitTorrent Open Source License v1.0 (BitTorrent-1.0)
 
 -   `BitTorrent 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.bittorrent.com/license/
 
@@ -24,8 +20,7 @@ URLs
 
 -   http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/BitTorrent?r1=1.1&r2=1.1.1.1&diff\_format=s
 
-Text
-----
+## Text
 
     BitTorrent Open Source License
 
@@ -360,8 +355,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

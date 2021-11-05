@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/OLDAP-2.1.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The OpenLDAP Public License 
 
   Version 2.1, 29 February 2000 
@@ -84,7 +84,7 @@
   STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
   ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
   OF THE POSSIBILITY OF SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -107,7 +107,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OLDAP-2.1",
@@ -307,7 +307,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OLDAP-2.1.svg]]

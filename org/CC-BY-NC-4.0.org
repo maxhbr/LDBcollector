@@ -41,7 +41,7 @@
 - https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Attribution-NonCommercial 4.0 International
 
   =======================================================================
@@ -449,7 +449,7 @@
   public licenses.
 
   Creative Commons may be contacted at creativecommons.org.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -481,7 +481,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CC-BY-NC-4.0",
@@ -738,7 +738,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CC-BY-NC-4.0.svg]]

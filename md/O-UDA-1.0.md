@@ -1,5 +1,4 @@
-Open Use of Data Agreement v1.0 (O-UDA-1.0)
-===========================================
+# Open Use of Data Agreement v1.0 (O-UDA-1.0)
 
 [TABLE]
 
@@ -7,22 +6,18 @@ Open Use of Data Agreement v1.0 (O-UDA-1.0)
 
 -   `scancode://o-uda-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/microsoft/Open-Use-of-Data-Agreement/blob/v1.0/O-UDA-1.0.md
 
 -   **SPDX:** http://spdx.org/licenses/O-UDA-1.0.json
 
-Text
-----
+## Text
 
     Open Use of Data Agreement v1.0
     This is the Open Use of Data Agreement, Version 1.0 (the "O-UDA"). Capitalized terms are defined in Section 5. Data Provider and you agree as follows:
@@ -73,8 +68,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-copyleft-next 0.3.1 (copyleft-next-0.3.1)
-=========================================
+# copyleft-next 0.3.1 (copyleft-next-0.3.1)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ copyleft-next 0.3.1 (copyleft-next-0.3.1)
 
 -   `scancode://copyleft-next-0.3.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/richardfontana/copyleft-next/blob/master/Releases/copyleft-next-0.3.1
@@ -23,8 +19,7 @@ URLs
 
 -   https://github.com/copyleft-next/copyleft-next/blob/master/Releases/copyleft-next-0.3.1
 
-Text
-----
+## Text
 
     copyleft-next 0.3.1 ("this License")
     Release date: 2016-04-29
@@ -249,8 +244,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

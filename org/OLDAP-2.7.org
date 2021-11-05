@@ -43,7 +43,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -53,9 +53,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -65,9 +65,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -77,21 +77,21 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright of the software is held by the copyright holder.
     Actions:
     - Use the name of the author or copyright holder in advertising and promotion of the software
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The OpenLDAP Public License 
   Version 2.7, 7 September 2001 
 
@@ -139,7 +139,7 @@
   Copyright 1999-2001 The OpenLDAP Foundation, Redwood City, 
   California, USA. All Rights Reserved. Permission to copy and 
   distribute verbatim copies of this document is granted.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -165,7 +165,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OLDAP-2.7",
@@ -501,7 +501,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OLDAP-2.7.svg]]

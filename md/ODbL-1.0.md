@@ -1,5 +1,4 @@
-ODC Open Database License v1.0 (ODbL-1.0)
-=========================================
+# ODC Open Database License v1.0 (ODbL-1.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ ODC Open Database License v1.0 (ODbL-1.0)
 
 -   `ODbL 1.0`
 
-Description
------------
+## Description
 
 > The Open Database License (ODbL) is a license agreement intended to
 > allow users to freely share, modify, and use a database while
@@ -23,14 +21,11 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -38,8 +33,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/odbl-1.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opendatacommons.org/licenses/odbl/1.0/
 
@@ -47,8 +41,7 @@ URLs
 
 -   https://opendefinition.org/licenses/odc-odbl
 
-Text
-----
+## Text
 
     ## ODC Open Database License (ODbL)
 
@@ -593,8 +586,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

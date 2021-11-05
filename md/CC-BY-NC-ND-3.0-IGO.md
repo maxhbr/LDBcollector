@@ -1,5 +1,4 @@
-Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO (CC-BY-NC-ND-3.0-IGO)
-========================================================================================
+# Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO (CC-BY-NC-ND-3.0-IGO)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Creative Commons Attribution Non Commercial No Derivatives 3.0 IGO (CC-BY-NC-ND-
 
 -   `scancode://cc-by-nc-nd-3.0-igo`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://creativecommons.org/licenses/by-nc-nd/3.0/igo/
 
@@ -22,8 +18,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-nc-nd/3.0/igo/legalcode
 
-Text
-----
+## Text
 
     Attribution-NonCommercial-NoDerivs 3.0 IGO
 
@@ -84,8 +79,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

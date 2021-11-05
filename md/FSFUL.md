@@ -1,5 +1,4 @@
-FSF Unlimited License (FSFUL)
-=============================
+# FSF Unlimited License (FSFUL)
 
 [TABLE]
 
@@ -9,19 +8,16 @@ FSF Unlimited License (FSFUL)
 
 -   `FSF Free Software License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.fsf.org/licensing/licenses/
 
@@ -29,16 +25,14 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/FSF\_Unlimited\_License
 
-Text
-----
+## Text
 
     This configure script is free software; the Free Software Foundation gives
     unlimited permission to copy, distribute and modify it.
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

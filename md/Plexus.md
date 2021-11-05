@@ -1,5 +1,4 @@
-Plexus Classworlds License (Plexus)
-===================================
+# Plexus Classworlds License (Plexus)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Plexus Classworlds License (Plexus)
 
 -   `Dom4j License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -23,8 +21,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “"DOM4J" is a registered trademark of MetaStuff, Ltd. Legitimate
     credit can be found at "DOM4J Project http://www.dom4j.org/".”
@@ -43,8 +40,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dom4j.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.dom4j.org/
 
@@ -60,14 +56,13 @@ URLs
 
 -   http://www.castor.org/license.txt
 
--   https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD\#jCharts\_Variant
+-   https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#jCharts\_Variant
 
 -   http://openorb.sourceforge.net/license.txt
 
 -   https://confluence.sakaiproject.org/plugins/viewsource/viewpagesrc.action?pageId=28442642
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -113,8 +108,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Redistribution and use of this software and associated documentation
     ("Software"), with or without modification, are permitted provided that the
@@ -152,8 +146,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

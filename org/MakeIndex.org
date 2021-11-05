@@ -33,7 +33,7 @@
 - *SPDX:* http://spdx.org/licenses/MakeIndex.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   MakeIndex Distribution Notice
 
   Permission is hereby granted to make and distribute original copies of this
@@ -60,7 +60,7 @@
   This program is distributed with no warranty of any sort. No contributor accepts
   responsibility for the consequences of using this program or for whether it
   serves any particular purpose.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -80,7 +80,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MakeIndex",
@@ -249,7 +249,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MakeIndex.svg]]

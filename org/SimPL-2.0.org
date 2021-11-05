@@ -41,7 +41,7 @@
 - http://www.opensource.org/licenses/SimPL-2.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Preamble
   This Simple Public License 2.0 (SimPL 2.0 for short) is a plain language implementation of GPL 2.0.  The words are different, but the goal is the same - to guarantee for all users the freedom to share and change software.  If anyone wonders about the meaning of the SimPL, they should interpret it as consistent with GPL 2.0.
 
@@ -70,7 +70,7 @@
 
   License for the License
   You may do anything that you want with the SimPL text; it's a license form to use in any way that you find helpful.  To avoid confusion, however, if you change the terms in any way then you may not call your license the Simple Public License or the SimPL (but feel free to acknowledge that your license is "based on the Simple Public License").
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -96,7 +96,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SimPL-2.0",
@@ -355,7 +355,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SimPL-2.0.svg]]

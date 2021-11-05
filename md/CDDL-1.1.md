@@ -1,5 +1,4 @@
-Common Development and Distribution License 1.1 (CDDL-1.1)
-==========================================================
+# Common Development and Distribution License 1.1 (CDDL-1.1)
 
 [TABLE]
 
@@ -11,15 +10,13 @@ Common Development and Distribution License 1.1 (CDDL-1.1)
 
 -   `CDDL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   “Google Classification is RECIPROCAL” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -57,8 +54,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cddl-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://glassfish.java.net/public/CDDL+GPL\_1\_1.html
 
@@ -70,8 +66,7 @@ URLs
 
 -   https://javaee.github.io/glassfish/LICENSE
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The copyright license granted includes copyrights that are licensable to the initial developer. The patent license granted includes claims of patents that are licensable by the Initial Developer that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. Source code refers to the source code and the documentation contained in or accompanying the source code. Source code refers to the source code and any documentation contained in or attached to the source code.
         Actions:
@@ -189,8 +184,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL)Version 1.1
 
@@ -280,8 +274,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

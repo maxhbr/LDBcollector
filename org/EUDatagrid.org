@@ -49,7 +49,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -60,9 +60,9 @@
     - Display the generated binary from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The same rights would be granted to sub-licenses.
     Actions:
     - Using Modified Source Code
@@ -72,9 +72,9 @@
 
     Conditions:
     RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -82,9 +82,9 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to sub-licensees.
     Actions:
     - Distribution of Modified Source Code
@@ -94,30 +94,30 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       RESTRICTION: A worldwide, non-exclusive, royalty-free, and unrestricted license to use, display, modify, redistribute, and sublicense their modifications and derivatives to EU DataGrid participants in accordance with this license. (However, this does not include cases where a separate written license agreement is entered into with the User.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes software developed by the EU DataGrid (http://www.eu-datagrid.org/)." If third party acknowledgments appear in the software, they should be included in the software itself. The same rights are granted to the sublicensees.
     Actions:
     - Include end-user documentation in the distribution
 
     Conditions:
     OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: To use the names "EDG", "EDG Toolkit" and "EU DataGrid Project". hep-project-grid-edg-license@cern.chに連絡する. The same rights will be granted to sub-licensees.
     Actions:
     - Use the name to endorse and promote software and derivative products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   EU DataGrid Software License
 
   Copyright (c) 2001 EU DataGrid. All rights reserved.
@@ -143,7 +143,7 @@
   6. LIMITATION OF LIABILITY
 
   THE EU DATAGRID AND CONTRIBUTORS SHALL HAVE NO LIABILITY TO LICENSEE OR OTHER PERSONS FOR DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY CHARACTER INCLUDING, WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, LOSS OF USE, DATA OR PROFITS, OR BUSINESS INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF CONTRACT, WARRANTY, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY OR OTHERWISE, ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -176,7 +176,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "EUDatagrid",
@@ -661,7 +661,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/EUDatagrid.svg]]

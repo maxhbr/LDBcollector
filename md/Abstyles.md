@@ -1,5 +1,4 @@
-Abstyles License (Abstyles)
-===========================
+# Abstyles License (Abstyles)
 
 [TABLE]
 
@@ -7,31 +6,27 @@ Abstyles License (Abstyles)
 
 -   `scancode://abstyles`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/abstyles.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Abstyles
 
 -   **SPDX:** http://spdx.org/licenses/Abstyles.json
 
-Text
-----
+## Text
 
     This program is distributed WITHOUT ANY WARRANTY, express or implied.  
 
@@ -46,8 +41,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

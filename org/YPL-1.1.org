@@ -26,7 +26,7 @@
 - http://www.gnu.org/licenses/license-list.html#Yahoo
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Yahoo! Public License, Version 1.1 (YPL)
 
   This Yahoo! Public License (this "Agreement") is a legal agreement that
@@ -179,7 +179,7 @@
   be deemed to be a waiver of such party's rights under this Agreement and will
   not in any way affect the validity of the whole or any part of this Agreement or
   prejudice such party's right to take subsequent action.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -199,7 +199,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "YPL-1.1",
@@ -340,7 +340,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/YPL-1.1.svg]]

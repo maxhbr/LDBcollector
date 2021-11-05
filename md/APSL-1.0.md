@@ -1,5 +1,4 @@
-Apple Public Source License 1.0 (APSL-1.0)
-==========================================
+# Apple Public Source License 1.0 (APSL-1.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Apple Public Source License 1.0 (APSL-1.0)
 
 -   `APSL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.0.html "SPDX") (all data
@@ -28,8 +26,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -50,8 +47,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.opensource.apple.com/source/architecture/architecture-229/APPLE\_LICENSE?f=text
@@ -62,8 +58,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Apple\_Public\_Source\_License\_1.0
 
-Text
-----
+## Text
 
     APPLE PUBLIC SOURCE LICENSE
     		     Version 1.0 - March 16, 1999
@@ -438,8 +433,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

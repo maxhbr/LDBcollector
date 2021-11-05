@@ -45,7 +45,7 @@
 - http://www.gnu.org/licenses/license-list.html#RPL
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Reciprocal Public License, version 1.1 
 
   Copyright (C) 2001-2002 Technical Pursuit Inc., 
@@ -206,7 +206,7 @@
   You may obtain a copy of both the TPL and the RPL (the "Licenses") from Technical Pursuit Inc. at http://www.technicalpursuit.com. 
 
   All software distributed under the Licenses is provided strictly on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, AND TECHNICAL PURSUIT INC. HEREBY DISCLAIMS ALL SUCH WARRANTIES, INCLUDING WITHOUT LIMITATION, ANY WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT, OR NON-INFRINGEMENT. See the Licenses for specific language governing rights and limitations under the Licenses.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -236,7 +236,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RPL-1.1",
@@ -548,7 +548,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RPL-1.1.svg]]

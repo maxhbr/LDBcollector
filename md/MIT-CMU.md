@@ -1,5 +1,4 @@
-CMU License (MIT-CMU)
-=====================
+# CMU License (MIT-CMU)
 
 [TABLE]
 
@@ -11,23 +10,20 @@ CMU License (MIT-CMU)
 
 -   `CMU UC Regents License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://copyfree.org/licenses/cmu/license.txt
 
 -   **Homepage:**
-    https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT\#CMU\_Style
+    https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU\_Style
 
 -   **SPDX:** https://spdx.org/licenses/MIT-CMU.html
 
@@ -35,8 +31,7 @@ URLs
 
 -   https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -46,8 +41,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify and distribute this software and its
     documentation is hereby granted, provided that both the copyright notice and
@@ -61,8 +55,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

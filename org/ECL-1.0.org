@@ -58,7 +58,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -69,9 +69,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -88,9 +88,9 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Modify the obtained source code.
@@ -99,9 +99,9 @@
     AND
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
       OBLIGATION: Include a file to report the changes you make and the date of all changes
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: You must treat the software documentation in the same way as the software. A copy of this license shall be placed in a place visible to the user.
     Actions:
     - Distribution of Modified Source Code
@@ -119,21 +119,21 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include disclaimers, notices and clauses regarding existing intellectual property
       OBLIGATION: Include a file to report the changes you make and the date of all changes
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright in the software and related documentation is retained by the copyright holder at all times.
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Educational Community License 1.0
 
   This Educational Community License (the "License") applies
@@ -188,7 +188,7 @@
   Works without specific, written prior permission. Title to copyright in
   the Original Work and any associated documentation will at all times
   remain with the copyright holders.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -220,7 +220,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ECL-1.0",
@@ -769,7 +769,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ECL-1.0.svg]]

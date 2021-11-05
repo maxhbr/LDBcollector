@@ -1,5 +1,4 @@
-TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
-==============================================
+# TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ TAPR Open Hardware License v1.0 (TAPR-OHL-1.0)
 
 -   `scancode://tapr-ohl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.tapr.org/OHL
 
 -   **SPDX:** http://spdx.org/licenses/TAPR-OHL-1.0.json
 
-Text
-----
+## Text
 
     The TAPR Open Hardware License Version 1.0 (May 25, 2007) Copyright 2007 TAPR - http://www.tapr.org/OHL
 
@@ -161,8 +156,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

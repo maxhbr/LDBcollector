@@ -1,5 +1,4 @@
-Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
-=============================================================================
+# Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Unicode License Agreement - Data Files and Software (2015) (Unicode-DFS-2015)
 
 -   `Unicode DFS 2015`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -22,10 +20,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
--   “http://www.unicode.org/copyright.html\#License” (source: [Hitachi
+-   “http://www.unicode.org/copyright.html#License” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
@@ -45,8 +42,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://web.archive.org/web/20151224134844/http://unicode.org/copyright.html
@@ -57,8 +53,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/976
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Treat related documents in the same way as data files and software.
         Actions:
@@ -111,8 +106,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     YOU MUST Forward Copyright notices In Files
     YOU MUST Forward License text In Files
@@ -125,8 +119,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
@@ -186,8 +179,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

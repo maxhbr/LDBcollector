@@ -88,7 +88,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The software may be used to compile, link, and execute legitimately developed application programs.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -98,17 +98,17 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
     Conditions:
     OBLIGATION: Include copyright and trademark notices and disclaimers contained in the software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: If this license applies to a Modification of the Software, the initial developer is granted a non-exclusive, royalty-free right to distribute his or her Modification as part of future versions of the Software, provided that such future versions are also available under the terms of this license in addition to the initial developer's license. However, such future versions shall be made available under the terms of this license in addition to the initial developer's license.
     Actions:
     - Create and distribute your modifications in a form separate from the original software (Create a patch file or other format)
@@ -116,9 +116,9 @@
     Conditions:
     AND
       OBLIGATION: Include the copyright notice contained in the software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained executable (Redistribute the obtained executable as-is)
 
@@ -126,9 +126,9 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the executable generated from the modified source code
 
@@ -137,9 +137,9 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Enables the recipient to receive the source code corresponding to the software. (No fee shall be charged in excess of the cost of transferring the data. ● Conspicuous inclusion of a notice regarding these terms and conditions.)
       OBLIGATION: Apply this license to the entire modification
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Develop and distribute application programs, reusable components and other software items linked to the software (including modifications)
 
@@ -148,12 +148,12 @@
       OBLIGATION: Enables the recipient to receive and use the source code corresponding to the item in question. (No fee shall be charged in excess of the cost of transferring the data.)
       OBLIGATION: expressly grant the recipient of the item a license to use and distribute the item, and any modifications thereof, in both executable and source code form.
       OBLIGATION: Supply copies of items not available to the general public to early developers of the software upon request from them.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Q Public License Version 1.0
 
   Copyright (C) 1999 Trolltech AS, Norway.
@@ -201,7 +201,7 @@
 
   Choice of Law
   This license is governed by the Laws of Norway. Disputes shall be settled by Oslo City Court.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -247,7 +247,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "QPL-1.0",
@@ -887,7 +887,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/QPL-1.0.svg]]

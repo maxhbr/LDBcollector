@@ -1,5 +1,4 @@
-CrystalStacker License (CrystalStacker)
-=======================================
+# CrystalStacker License (CrystalStacker)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ CrystalStacker License (CrystalStacker)
 
 -   `scancode://crystal-stacker`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,11 +19,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:CrystalStacker?rd=Licensing/CrystalStacker
@@ -34,8 +30,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CrystalStacker.json
 
-Text
-----
+## Text
 
     Crystal Stacker is freeware. This means you can pass copies around freely provided you include this document in it's original form in your distribution. Please see the "Contacting Us" section of this document if you need to contact us for any reason.
 
@@ -47,8 +42,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

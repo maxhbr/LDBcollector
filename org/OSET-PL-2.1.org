@@ -29,7 +29,7 @@
 - http://www.osetfoundation.org/public-license
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   OSET Public License
   (c) 2015 ALL RIGHTS RESERVED VERSION 2.1
 
@@ -143,7 +143,7 @@
   EXHIBIT B - "Incompatible With Secondary License" Notice
 
   This Source Code Form is "Incompatible With Secondary Licenses", as defined by the OSET Public License, v.2.1.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -162,7 +162,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OSET-PL-2.1",
@@ -337,7 +337,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OSET-PL-2.1.svg]]

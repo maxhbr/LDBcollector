@@ -1,5 +1,4 @@
-Mozilla Public License 2.0 (MPL-2.0)
-====================================
+# Mozilla Public License 2.0 (MPL-2.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Mozilla Public License 2.0 (MPL-2.0)
 
 -   `MPL 2.0`
 
-Description
------------
+## Description
 
 > Permissions of this weak copyleft license are conditioned on making
 > available source code of licensed files and modifications of those
@@ -31,8 +29,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-2.0.html "SPDX") (all data \[in
@@ -48,8 +45,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -83,8 +79,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -92,8 +87,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mpl-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://mpl.mozilla.org/2012/01/03/announcing-mpl-2-0/
 
@@ -111,8 +105,7 @@ URLs
 
 -   http://www.mozilla.org/MPL/2.0/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
         Actions:
@@ -179,8 +172,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide License notice
@@ -227,8 +219,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Mozilla Public License Version 2.0
     ==================================
@@ -606,8 +597,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

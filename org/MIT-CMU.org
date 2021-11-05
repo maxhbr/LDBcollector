@@ -36,18 +36,18 @@
 - https://github.com/python-pillow/Pillow/blob/fffb426092c8db24a5f4b6df243a8a3c01fb63cd/LICENSE
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Provide Copyright notice In Documentation
   	YOU MUST Provide License text In Documentation
   	YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify and distribute this software and its
   documentation is hereby granted, provided that both the copyright notice and
   this permission notice appear in all copies of the software, derivative works
@@ -57,7 +57,7 @@
   COPYRIGHT HOLDER ALLOWS FREE USE OF THIS SOFTWARE IN ITS "AS IS" CONDITION.
   COPYRIGHT HOLDER DISCLAIMS ANY LIABILITY OF ANY KIND FOR ANY DAMAGES
   WHATSOEVER RESULTING FROM THE USE OF THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -89,7 +89,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MIT-CMU",
@@ -337,7 +337,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MIT-CMU.svg]]

@@ -50,13 +50,13 @@
 - http://rhid.com/fair
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Usage of the works is permitted provided that this instrument is retained with
   the works, so that any entity that uses the works is notified of this
   instrument.
 
   DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -89,7 +89,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Fair",
@@ -462,7 +462,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Fair.svg]]

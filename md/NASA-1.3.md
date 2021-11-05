@@ -1,5 +1,4 @@
-NASA Open Source Agreement 1.3 (NASA-1.3)
-=========================================
+# NASA Open Source Agreement 1.3 (NASA-1.3)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ NASA Open Source Agreement 1.3 (NASA-1.3)
 
 -   `NASA 1.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/NASA-1.3.html "SPDX") (all data
@@ -24,15 +22,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nasa-1.3.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://opensource.arc.nasa.gov/static/html/NASA\_Open\_Source\_Agreement\_1.3.txt
@@ -45,12 +41,11 @@ URLs
 
 -   http://ti.arc.nasa.gov/opensource/nosa/
 
--   http://www.gnu.org/licenses/license-list.html\#NASA
+-   http://www.gnu.org/licenses/license-list.html#NASA
 
 -   http://www.opensource.org/licenses/NASA-1.3
 
-Text
-----
+## Text
 
     NASA OPEN SOURCE AGREEMENT VERSION 1.3
 
@@ -159,8 +154,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

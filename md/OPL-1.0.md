@@ -1,5 +1,4 @@
-Open Public License v1.0 (OPL-1.0)
-==================================
+# Open Public License v1.0 (OPL-1.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Open Public License v1.0 (OPL-1.0)
 
 -   `Open Public License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“This license is not compatible with the
     DebianFreeSoftwareGuidelines (DFSG-unfree)” (source: [Debian Free
@@ -18,11 +16,9 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://ksoap.objectweb.org/software/license/opl.html
 
@@ -32,8 +28,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Open\_Public\_License
 
-Text
-----
+## Text
 
     OPEN PUBLIC LICENSE
     Version 1.0
@@ -375,8 +370,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

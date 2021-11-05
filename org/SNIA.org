@@ -53,7 +53,7 @@
 - *SPDX:* http://spdx.org/licenses/SNIA.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   STORAGE NETWORKING INDUSTRY ASSOCIATION
   PUBLIC LICENSE
   Version 1.1
@@ -176,7 +176,7 @@
   Contributor(s):  .
 
   Read more about this license at http://www.snia.org/smi/developers/open_source/
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -196,7 +196,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SNIA",
@@ -364,7 +364,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SNIA.svg]]

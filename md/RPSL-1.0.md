@@ -1,5 +1,4 @@
-RealNetworks Public Source License v1.0 (RPSL-1.0)
-==================================================
+# RealNetworks Public Source License v1.0 (RPSL-1.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ RealNetworks Public Source License v1.0 (RPSL-1.0)
 
 -   `scancode://rpsl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/RPSL-1.0.html "SPDX") (all data
@@ -29,8 +27,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -51,8 +48,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpsl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/real.php
 
@@ -66,8 +62,7 @@ URLs
 
 -   http://www.opensource.org/licenses/RPSL-1.0
 
-Text
-----
+## Text
 
     RealNetworks Public Source License Version 1.0
     (Rev. Date October 28, 2002)
@@ -589,8 +584,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

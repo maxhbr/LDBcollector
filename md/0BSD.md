@@ -1,5 +1,4 @@
-BSD Zero Clause License (0BSD)
-==============================
+# BSD Zero Clause License (0BSD)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ BSD Zero Clause License (0BSD)
 
 -   `scancode://bsd-zero`
 
-Description
------------
+## Description
 
 > The BSD Zero Clause license goes further than the BSD 2-Clause license
 > to allow you unlimited freedom with the software without requirements
@@ -18,8 +16,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/0BSD.html "SPDX") (all data \[in
@@ -29,11 +26,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -41,8 +36,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/0bsd.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://landley.net/toybox/license.html
 
@@ -50,8 +44,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/0BSD.json
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and/or distribute this software for any
     purpose with or without fee is hereby granted.
@@ -66,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

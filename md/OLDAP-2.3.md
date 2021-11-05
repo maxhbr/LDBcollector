@@ -1,5 +1,4 @@
-Open LDAP Public License v2.3 (OLDAP-2.3)
-=========================================
+# Open LDAP Public License v2.3 (OLDAP-2.3)
 
 [TABLE]
 
@@ -9,22 +8,19 @@ Open LDAP Public License v2.3 (OLDAP-2.3)
 
 -   `OpenLDAP Public License 2.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 28 July 2000.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.3.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=d32cf54a32d581ab475d23c810b0a7fbaf8d63c3
@@ -33,8 +29,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/OLDAP-2.3.json
 
-Text
-----
+## Text
 
     The OpenLDAP Public License 
     Version 2.3, 28 July 2000 
@@ -90,8 +85,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

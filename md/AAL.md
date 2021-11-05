@@ -1,5 +1,4 @@
-Attribution Assurance License (AAL)
-===================================
+# Attribution Assurance License (AAL)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Attribution Assurance License (AAL)
 
 -   `scancode://attribution`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AAL.html "SPDX") (all data \[in
@@ -27,16 +25,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this version was released 2002 This license is OSI
     certifified. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/attribution.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/attribution.php
 
@@ -50,8 +46,7 @@ URLs
 
 -   http://www.opensource.org/licenses/attribution
 
-Text
-----
+## Text
 
     PROFESSIONAL IDENTIFICATION * URL
     "PROMOTIONAL SLOGAN FOR AUTHOR'S PROFESSIONAL PRACTICE"
@@ -103,8 +98,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

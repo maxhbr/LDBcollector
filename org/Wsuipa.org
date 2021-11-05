@@ -37,7 +37,7 @@
 - *SPDX:* http://spdx.org/licenses/Wsuipa.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
   Guenther and pointers to this file were added to all source files.
 
@@ -47,7 +47,7 @@
 
   The copyright holder is Washington State University. The original author of the
   fonts is Janene Winter. The primary contact (as of 2008) is Dean Guenther.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -70,7 +70,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Wsuipa",
@@ -289,7 +289,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Wsuipa.svg]]

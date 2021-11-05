@@ -1,5 +1,4 @@
-dvipdfm License (dvipdfm)
-=========================
+# dvipdfm License (dvipdfm)
 
 [TABLE]
 
@@ -7,16 +6,14 @@ dvipdfm License (dvipdfm)
 
 -   `scancode://dvipdfm`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, "should" does not mean "must", and there are implied
     rights for unlimited copying and distribution rights for unmodified
@@ -24,15 +21,13 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dvipdfm.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/dvipdfm
 
 -   **SPDX:** http://spdx.org/licenses/dvipdfm.json
 
-Text
-----
+## Text
 
     A modified version of this file may be distributed, but it should be distributed
     with a *different* name. Changed files must be distributed *together with a
@@ -40,8 +35,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

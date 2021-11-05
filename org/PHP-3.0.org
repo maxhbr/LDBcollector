@@ -62,7 +62,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -71,9 +71,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes PHP, freely available from <http://www.php.net/>"
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -83,9 +83,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes PHP, freely available from <http://www.php.net/>"
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -95,30 +95,30 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "PHP" as the name is used. group@php.netに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: To use the name "PHP", please refer to group@php.netの許可を取る. ● Instead of "PHP Foo" or "phpfoo", you can use "Foo for PHP" to indicate that your software works with PHP. Instead of using "PHP Foo" or "phpfoo", you can use "Foo for PHP" to indicate that the software runs with PHP.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   -------------------------------------------------------------------- 
                     The PHP License, version 3.0
   Copyright (c) 1999 - 2006 The PHP Group. All rights reserved.
@@ -187,7 +187,7 @@
 
   This product includes the Zend Engine, freely available at
   <http://www.zend.com>.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -234,7 +234,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "PHP-3.0",
@@ -860,7 +860,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/PHP-3.0.svg]]

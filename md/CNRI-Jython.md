@@ -1,5 +1,4 @@
-CNRI Jython License (CNRI-Jython)
-=================================
+# CNRI Jython License (CNRI-Jython)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ CNRI Jython License (CNRI-Jython)
 
 -   `scancode://cnri-jython`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.jython.org/license.html
 
@@ -26,8 +22,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CNRI-Jython.json
 
-Text
-----
+## Text
 
 
     1. This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 ("CNRI"), and the Individual or Organization ("Licensee") accessing and using JPython version 1.1.x in source or binary form and its associated documentation as provided herein ("Software").  
@@ -50,8 +45,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

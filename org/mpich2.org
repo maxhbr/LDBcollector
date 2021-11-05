@@ -42,7 +42,7 @@
 - https://fedoraproject.org/wiki/Licensing/MIT
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   COPYRIGHT
 
       The following is a notice of limited availability of the code, and disclaimer
@@ -81,7 +81,7 @@
       for the accuracy, completeness, or usefulness of any information, apparatus,
       product, or process disclosed, or represents that its use would not infringe
       privately owned rights.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -104,7 +104,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "mpich2",
@@ -330,7 +330,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/mpich2.svg]]

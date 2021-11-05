@@ -1,5 +1,4 @@
-Fair License (Fair)
-===================
+# Fair License (Fair)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Fair License (Fair)
 
 -   `scancode://fair`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Fair.html "SPDX") (all data \[in
@@ -25,15 +23,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fair.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/fair.php
 
@@ -49,8 +45,7 @@ URLs
 
 -   http://rhid.com/fair
 
-Text
-----
+## Text
 
     Usage of the works is permitted provided that this instrument is retained with
     the works, so that any entity that uses the works is notified of this
@@ -60,8 +55,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

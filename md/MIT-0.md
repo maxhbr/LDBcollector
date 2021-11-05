@@ -1,5 +1,4 @@
-MIT No Attribution (MIT-0)
-==========================
+# MIT No Attribution (MIT-0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ MIT No Attribution (MIT-0)
 
 -   `MIT-0-Clause`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MIT-0.html "SPDX") (all data \[in
@@ -20,11 +18,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/awsdocs/aws-cloud9-user-guide/blob/master/LICENSE-SAMPLECODE
@@ -37,8 +33,7 @@ URLs
 
 -   https://romanrm.net/mit-zero
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this
     software and associated documentation files (the "Software"), to deal in the Software
@@ -55,8 +50,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

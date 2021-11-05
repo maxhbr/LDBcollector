@@ -53,13 +53,13 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   Permissions of this strong copyleft license are conditioned on making
   available complete source code of licensed works and modifications,
   which include larger works using a licensed work, under the same
   license. Copyright and license notices must be preserved. Contributors
   provide an express grant of patent rights.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -157,7 +157,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Using Modified Source Code
@@ -166,9 +166,9 @@
 
     Conditions:
     RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distributing source code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
     - Distribute object code to third parties for the purpose of having them modify it exclusively for themselves or to provide functionality to run the software.
@@ -178,9 +178,9 @@
       OBLIGATION: Distribution of the parts of the work not covered by your copyright is subject to this license.
       RESTRICTION: Third parties who modify or allow the software to run on their own behalf are doing so under their own control and supervision, and only on their own behalf.
       RESTRICTION: You will not copy the software to anyone other than yourself and any third party who modifies or allows the software to run on your behalf.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -192,9 +192,9 @@
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Give you a copy of the relevant license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Modify the obtained source code.
 
@@ -204,9 +204,9 @@
       OBLIGATION: Indicate your changes and the date of the change.
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: This license is to be delivered with the software. This license is to be passed along with the software; ● Retain notice that this license, and any additional terms and conditions added to it, apply. You may charge a fee for the physical act of transferring a copy; you may provide support and warranty services in exchange for a fee. You may provide support or warranty in exchange for a fee.
     Actions:
     - Distribution of Modified Source Code
@@ -221,9 +221,9 @@
       OBLIGATION: If such software, or any part of it, cannot or will not be treated as expressly independent of a work to which a license other than this license applies, then this license shall apply to the entire work. (Often, it is a condition described in the context of static and dynamic linkage of source code, object code)
       OBLIGATION: If the software is designed to be read interactively in executing such software, then the user may, in executing the software interactively in the most common manner, use the software under the terms of such license with appropriate copyright notice, with no warranties (or with the user providing his own warranties) Print or display on your screen all notices that you can do so, including how to view a copy of the license (Even if the software is interactive, there is no need to have it printed if you do not normally print such notices.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -243,9 +243,9 @@
         OBLIGATION: When using peer-to-peer transmission, notify other peers where the object code and source code are free and open to the public.
       OBLIGATION: In the case of a product in which such software is installed and is considered to be a personal tangible object for personal, family, or household use or a product designed or sold for installation in a dwelling, the means and procedures required to install and execute a modified version of such software and certification Document and provide all necessary information, including keys, in a publicly available format (If there is any doubt as to whether or not the product is applicable, it shall be deemed to fall under this condition.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code means the source code for generating, installing, and executing executable object code, all of the source code necessary to modify the object code, and the scripts for controlling these tasks. This license is delivered with the software. You retain a notice that this license, and any additional terms added to this license, apply to you. You may charge a fee for the physical act of transferring a copy; you may charge a fee for the physical act of transferring a copy in exchange for support and assistance. You may provide support or warranty in exchange for a fee.
     Actions:
     - Distribute the object code generated from the modified source code
@@ -267,9 +267,9 @@
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       REQUISITE: Not restricting the operation or modification of the software as a means of enforcing a legal right to prohibit themselves or any third party from circumventing technological protection measures
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: This additional license provision may be a license document that is independent of this license or may be written as an exception to this license.
     Actions:
     - Add an additional license clause to the portions of the part to which you can grant your copyright, if the copyright holder of the part allows it.
@@ -284,12 +284,12 @@
         RESTRICTION: To make it a provision that refuses to grant rights under the Trademark Law in relation to the use of a product name, trademark name or service mark.
         RESTRICTION: Clause requiring a person who distributes his or her own additions or modified versions under contractual liability to the recipient to release the licensor and the author from any liability directly imposed on him or her
       RESTRICTION: Include these license terms, or a reference to them in the file to which these additional license terms apply
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Provide Copyright notice
   		ATTRIBUTE Highlighted
@@ -438,12 +438,12 @@
   INCOMPATIBILITY XFree86-1.1
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -456,7 +456,7 @@
 
   You should have received a copy of the GNU General Public License
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -567,7 +567,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "GPL-3.0-or-later",
@@ -1961,7 +1961,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/GPL-3.0-only.svg]]

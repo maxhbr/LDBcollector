@@ -25,7 +25,7 @@
 - http://www.sugarcrm.com/page/sugarcrm-public-license/en
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   SUGARCRM PUBLIC LICENSE
 
   Version 1.1.3
@@ -181,7 +181,7 @@
   This License does not grant any rights to use the trademarks "SugarCRM" and the "SugarCRM" logos even if such marks are included in the Original Code or Modifications.
 
   However, in addition to the other notice obligations, all copies of the Covered Code in Executable and Source Code form distributed must, as a form of attribution of the original author, include on each user interface screen (i) the "Powered by SugarCRM" logo and (ii) the copyright notice in the same form as the latest version of the Covered Code distributed by SugarCRM, Inc. at the time of distribution of such copy. In addition, the "Powered by SugarCRM" logo must be visible to all users and be located at the very bottom center of each user interface screen. Notwithstanding the above, the dimensions of the "Powered By SugarCRM" logo must be at least 106 x 23 pixels. When users click on the "Powered by SugarCRM" logo it must direct them back to http://www.sugarforge.org. In addition, the copyright notice must remain visible to all users at all times at the bottom of the user interface screen. When users click on the copyright notice, it must direct them back to http://www.sugarcrm.com
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -201,7 +201,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SugarCRM-1.1.3",
@@ -342,7 +342,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SugarCRM-1.1.3.svg]]

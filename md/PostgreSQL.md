@@ -1,5 +1,4 @@
-PostgreSQL License (PostgreSQL)
-===============================
+# PostgreSQL License (PostgreSQL)
 
 [TABLE]
 
@@ -9,16 +8,14 @@ PostgreSQL License (PostgreSQL)
 
 -   `scancode://postgresql`
 
-Description
------------
+## Description
 
 > A very short, BSD-style license, used specifically for PostgreSQL.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -37,15 +34,13 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/postgresql.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -53,8 +48,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/postgresql.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.postgresql.org/about/licence
 
@@ -68,8 +62,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/608
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -97,8 +90,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     PostgreSQL is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
@@ -127,8 +119,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

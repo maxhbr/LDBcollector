@@ -50,7 +50,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -64,9 +64,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation and accompanying documents for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -84,33 +84,33 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: With permission of the copyright owner.
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
   	YOU MUST Provide Copyright notices In Documentation
   	YOU MUST Provide License text In Documentation
   	YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission is hereby granted, free of charge, to any person obtaining a copy of
   this software and associated documentation files (the "Software"), to deal in
   the Software without restriction, including without limitation the rights to
@@ -133,7 +133,7 @@
   this Software without prior written authorization from the X Consortium.
 
   X Window System is a trademark of X Consortium, Inc.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -178,7 +178,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "X11",
@@ -536,7 +536,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ICU.svg]]

@@ -40,7 +40,7 @@
 - https://web.archive.org/web/20150906075957/https://java.net/projects/javaeetutorial/pages/BerkeleyLicense
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Use is subject to license terms.
 
   Redistribution and use in source and binary forms, with or without modification,
@@ -70,7 +70,7 @@
 
   You acknowledge that this software is not designed, licensed or intended for use
   in the design, construction, operation or maintenance of any nuclear facility.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -93,7 +93,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "BSD-3-Clause-No-Nuclear-License-2014",
@@ -292,7 +292,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/BSD-3-Clause-No-Nuclear-License-2014.svg]]

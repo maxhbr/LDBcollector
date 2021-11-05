@@ -1,5 +1,4 @@
-Spencer License 99 (Spencer-99)
-===============================
+# Spencer License 99 (Spencer-99)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Spencer License 99 (Spencer-99)
 
 -   `Henry Spencer License 1999`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.opensource.apple.com/source/tcl/tcl-5/tcl/generic/regfronts.c
@@ -29,8 +25,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Spencer-99.json
 
-Text
-----
+## Text
 
     Development of this software was funded, in part, by Cray Research Inc.,
     UUNET Communications Services Inc., Sun Microsystems Inc., and Scriptics
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

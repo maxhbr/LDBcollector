@@ -1,5 +1,4 @@
-LaTeX Project Public License v1.3c (LPPL-1.3c)
-==============================================
+# LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ LaTeX Project Public License v1.3c (LPPL-1.3c)
 
 -   `LPPL 1.3c`
 
-Description
------------
+## Description
 
 > The LaTeX Project Public License (LPPL) is the primary license under
 > which the LaTeX kernel and the base LaTeX packages are distributed.
@@ -24,8 +22,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LPPL-1.3c.html "SPDX") (all data
@@ -35,8 +32,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://latex-project.org/lppl/” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -72,8 +68,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lppl-1.3c.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -81,8 +76,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lppl-1.3c.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.latex-project.org/lppl/lppl-1-3c.txt
 
@@ -96,8 +90,7 @@ URLs
 
 -   http://www.opensource.org/licenses/LPPL-1.3c
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -177,8 +170,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The LaTeX Project Public License
     =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -598,8 +590,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

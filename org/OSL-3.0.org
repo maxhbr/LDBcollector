@@ -17,12 +17,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   OSL 3.0 is a copyleft license that does not require reciprocal
   licensing on linked works. It also provides an express grant of patent
   rights from contributors to users, with a termination clause triggered
   if a user files a patent infringement lawsuit.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -101,7 +101,7 @@
 - http://www.rosenlaw.com/OSL3.0.htm
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	IF Software modification
   		YOU MUST Grant License
@@ -151,12 +151,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Open Software License ("OSL") v. 3.0
 
   This Open Software License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following licensing notice adjacent to the copyright notice for the Original Work:
@@ -204,7 +204,7 @@
   15) Right to Use. You may use the Original Work in all ways not otherwise restricted or conditioned by this License or by law, and Licensor promises not to interfere with or be responsible for such uses by You.
 
   16) Modification of This License. This License is Copyright © 2005 Lawrence Rosen. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Open Software License" or "OSL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -258,7 +258,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OSL-3.0",
@@ -931,7 +931,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OSL-3.0.svg]]

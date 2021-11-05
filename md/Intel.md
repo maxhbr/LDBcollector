@@ -1,5 +1,4 @@
-Intel Open Source License (Intel)
-=================================
+# Intel Open Source License (Intel)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Intel Open Source License (Intel)
 
 -   `Intel BSD - Export Control`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Intel.html "SPDX") (all data \[in
@@ -38,8 +36,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “this has this title in SPDX and OSI text The Intel Open Source
     License for CDSA/CSSM Implementation (BSD License with Export
@@ -47,8 +44,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/intel-bsd-export-control.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://opensource.org/licenses/intel-open-source-license.html
@@ -66,8 +62,7 @@ URLs
 
 -   https://opensource.org/licenses/intel-open-source-license.php
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -101,8 +96,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
@@ -140,8 +134,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

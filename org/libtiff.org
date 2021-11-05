@@ -39,19 +39,19 @@
 - https://fedoraproject.org/wiki/Licensing/libtiff
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
   	YOU MUST Provide Copyright notices In Documentation
   	YOU MUST Provide License text In Documentation
   	YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify, distribute, and sell this software and its
   documentation for any purpose is hereby granted without fee, provided
   that (i) the above copyright notices and this permission notice appear in
@@ -70,7 +70,7 @@
   WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF 
   LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE 
   OF THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -100,7 +100,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "libtiff",
@@ -342,7 +342,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/libtiff.svg]]

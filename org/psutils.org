@@ -37,7 +37,7 @@
 - https://fedoraproject.org/wiki/Licensing/psutils
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   PS Utilities Package
 
   The constituent files of this package listed below are copyright (C) 1991-1995 Angus J. C. Duggan.
@@ -67,7 +67,7 @@
   3) These programs are provided "as-is". No warranty or guarantee of their fitness for any particular task is provided. Use of these programs is completely at your own risk.
 
   Basically, I don't mind how you use the programs so long as you acknowledge the author, and give people the originals if they want them.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -90,7 +90,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "psutils",
@@ -300,7 +300,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/psutils.svg]]

@@ -1,5 +1,4 @@
-GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
-===================================================================
+# GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 [TABLE]
 
@@ -21,8 +20,7 @@ GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later)
 
 -   `GNU Affero General Public License 3.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AGPL-3.0-or-later.html "SPDX") (all
@@ -33,8 +31,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -56,8 +53,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-3.0-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/agpl-3.0.html
 
@@ -77,8 +73,7 @@ URLs
 
 -   http://www.opensource.org/licenses/AGPL-3.0
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -207,8 +202,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU Affero General Public License as
@@ -225,8 +219,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

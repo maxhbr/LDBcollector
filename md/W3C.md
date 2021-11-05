@@ -1,5 +1,4 @@
-W3C Software Notice and License (2002-12-31) (W3C)
-==================================================
+# W3C Software Notice and License (2002-12-31) (W3C)
 
 [TABLE]
 
@@ -19,8 +18,7 @@ W3C Software Notice and License (2002-12-31) (W3C)
 
 -   `W3C Software Notice and License 20021231`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -39,8 +37,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231”
     (source: [Hitachi
@@ -52,10 +49,10 @@ General Comments
     "previous version" can be found at http The link for "Free Software
     Foundation's assessment of GPL compatibility" can be found at
     http://www.
-    gnu.org/philosophy/license-list.html\#GPLCompatibleLicenses "OSI's
+    gnu.org/philosophy/license-list.html#GPLCompatibleLicenses "OSI's
     certification" can be found at
     www.w3.org/Consortium/Legal/copyright-software-19980720.
-    gnu.org/philosophy/license-list.html\#GPLCompatibleLicenses "OSI's
+    gnu.org/philosophy/license-list.html#GPLCompatibleLicenses "OSI's
     certification" can be found at
     http://www.opensource.org/licenses/W3C.php." The link for "Open
     Source Definition" is http://www.opensource.org/docs/definition.php”
@@ -68,8 +65,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/w3c.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231
@@ -89,8 +85,7 @@ URLs
 -   http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231.html
     http://www.opensource.org/licenses/W3C.php
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -148,8 +143,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     By obtaining, using and/or copying this work, you (the licensee) agree that you
     have read, understood, and will comply with the following terms and conditions.
@@ -188,8 +182,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

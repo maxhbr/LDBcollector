@@ -30,7 +30,7 @@
 - https://ohwr.org/project/cernohl/wikis/uploads/0be6f561d2b4a686c5765c74be32daf9/CERN_OHL_rationale.pdf
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CERN Open Hardware Licence Version 2 - Permissive
 
 
@@ -230,7 +230,7 @@
     7.4 This Licence shall not be enforceable except by a Licensor
         acting as such, and third party beneficiary rights are
         specifically excluded.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -246,7 +246,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CERN-OHL-P-2.0",
@@ -393,7 +393,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CERN-OHL-P-2.0.svg]]

@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/OLDAP-2.4.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The OpenLDAP Public License 
   Version 2.4, 8 December 2000 
 
@@ -82,7 +82,7 @@
   Copyright 1999-2000 The OpenLDAP Foundation, Redwood City, 
   California, USA. All Rights Reserved. Permission to copy and 
   distributed verbatim copies of this document is granted.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -105,7 +105,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OLDAP-2.4",
@@ -305,7 +305,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OLDAP-2.4.svg]]

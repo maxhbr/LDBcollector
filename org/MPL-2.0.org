@@ -23,7 +23,7 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   Permissions of this weak copyleft license are conditioned on making
   available source code of licensed files and modifications of those
   files under the same license (or in certain cases, one of the GNU
@@ -31,7 +31,7 @@
   Contributors provide an express grant of patent rights. However, a
   larger work using the licensed work may be distributed under different
   terms and without source code for files added in the larger work.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -119,7 +119,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -132,9 +132,9 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -149,9 +149,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Let us know where to get a copy of this license. (Notice that the source code is subject to this license.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
     Actions:
     - Distribute the obtained executable (Redistribute the obtained executable as-is)
@@ -166,17 +166,17 @@
       RESTRICTION: An unrestricted, worldwide, non-exclusive, royalty-free, irrevocable contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - When you distribute the software, you offer support, warranties, indemnification, and other liability and rights consistent with the license, for a fee.
 
     Conditions:
     OBLIGATION: I do so at my own risk. (If you accept the responsibility, you can take it on your own account, but you cannot do it for other contributors. If by acting as your own responsibility, you are held liable for or demand compensation from other contributors, you need to prevent those people or entities from being damaged and compensate them for the damage.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code refers to the format that is suitable for making the modified version of the software. The source code refers to the format suitable for making the modified version of the software.
     Actions:
     - Distribute the acquired executables under your own license
@@ -190,12 +190,12 @@
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
       RESTRICTION: Inform you that the terms of your own license, which are different from the license in question, are offered only by you and not by any other party.
       OBLIGATION: Indemnify the Contributor against any and all liability to the Contributor arising from the terms of the license he or she presents
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Provide License notice
   	YOU MUST Reference License text
@@ -238,12 +238,12 @@
   COMPATIBILITY Zlib
   COPYLEFT CLAUSE Yes
   PATENT HINTS Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Mozilla Public License Version 2.0
   ==================================
 
@@ -617,7 +617,7 @@
 
     This Source Code Form is "Incompatible With Secondary Licenses", as
     defined by the Mozilla Public License, v. 2.0.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -676,7 +676,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MPL-2.0",
@@ -1686,7 +1686,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MPL-2.0.svg]]

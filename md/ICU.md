@@ -1,5 +1,4 @@
-ICU License (ICU)
-=================
+# ICU License (ICU)
 
 [TABLE]
 
@@ -17,18 +16,15 @@ ICU License (ICU)
 
 -   `scancode://x11`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.xfree86.org/current/LICENSE5.html
 
@@ -46,10 +42,9 @@ URLs
 
 -   http://source.icu-project.org/repos/icu/icu/trunk/license.html
 
--   http://www.xfree86.org/3.3.6/COPYRIGHT2.html\#3
+-   http://www.xfree86.org/3.3.6/COPYRIGHT2.html#3
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -92,8 +87,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -104,8 +98,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
@@ -132,8 +125,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

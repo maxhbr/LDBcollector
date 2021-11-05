@@ -1,5 +1,4 @@
-gSOAP Public License v1.3b (gSOAP-1.3b)
-=======================================
+# gSOAP Public License v1.3b (gSOAP-1.3b)
 
 [TABLE]
 
@@ -9,11 +8,9 @@ gSOAP Public License v1.3b (gSOAP-1.3b)
 
 -   `scancode://gsoap-1.3b`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.cs.fsu.edu/~engelen/license.html” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -39,8 +36,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.cs.fsu.edu/~engelen/license.html
 
@@ -48,8 +44,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/691
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
         Actions:
@@ -172,8 +167,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     gSOAP Public License
 
@@ -344,8 +338,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

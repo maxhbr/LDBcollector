@@ -24,7 +24,7 @@
 - *SPDX:* http://spdx.org/licenses/libselinux-1.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This library (libselinux) is public domain software, i.e. not copyrighted.
 
   Warranty Exclusion
@@ -46,7 +46,7 @@
   limitation will apply even if NSA has been advised of the possibility
   of such damage. You acknowledge that this is a reasonable allocation of
   risk.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -62,7 +62,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "libselinux-1.0",
@@ -173,7 +173,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/libselinux-1.0.svg]]

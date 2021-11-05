@@ -1,5 +1,4 @@
-NetCDF license (NetCDF)
-=======================
+# NetCDF license (NetCDF)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ NetCDF license (NetCDF)
 
 -   `scancode://netcdf`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -23,16 +21,14 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.unidata.ucar.edu/software/netcdf/copyright.html”
     (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.unidata.ucar.edu/software/netcdf/copyright.html
@@ -45,8 +41,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/921
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Documentation accompanying the software should be treated in the same way as the software.
         Actions:
@@ -82,8 +77,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
 
     Portions of this software were developed by the Unidata Program at the
@@ -115,8 +109,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

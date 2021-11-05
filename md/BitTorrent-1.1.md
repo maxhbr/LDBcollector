@@ -1,5 +1,4 @@
-BitTorrent Open Source License v1.1 (BitTorrent-1.1)
-====================================================
+# BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 
 [TABLE]
 
@@ -11,11 +10,9 @@ BitTorrent Open Source License v1.1 (BitTorrent-1.1)
 
 -   `BitTorrent 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “The link http://www.bittorrent.com/license/ is dead, so there is no
     live text containing the license terms except at
@@ -24,8 +21,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bittorrent-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://web.archive.org/web/20080213154112/http://www.bittorrent.com/bittorrent-open-source-license
@@ -36,8 +32,7 @@ URLs
 
 -   http://directory.fsf.org/wiki/License:BitTorrentOSL1.1
 
-Text
-----
+## Text
 
     BitTorrent Open Source License
 
@@ -181,8 +176,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

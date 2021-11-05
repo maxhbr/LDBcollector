@@ -1,5 +1,4 @@
-Zend License v2.0 (Zend-2.0)
-============================
+# Zend License v2.0 (Zend-2.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Zend License v2.0 (Zend-2.0)
 
 -   `Zend Engine License 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -29,15 +27,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.zend.com/license/2\_00.txt” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://web.archive.org/web/20130517195954/http://www.zend.com/license/2\_00.txt
@@ -48,8 +44,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/837
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -96,8 +91,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     -------------------------------------------------------------------- 
                     The Zend Engine License, version 2.00
@@ -157,8 +151,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

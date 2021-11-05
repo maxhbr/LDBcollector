@@ -1,5 +1,4 @@
-FreeImage Public License v1.0 (FreeImage)
-=========================================
+# FreeImage Public License v1.0 (FreeImage)
 
 [TABLE]
 
@@ -9,21 +8,17 @@ FreeImage Public License v1.0 (FreeImage)
 
 -   `FreeImage Public License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://freeimage.sourceforge.net/freeimage-license.txt
 
 -   **SPDX:** http://spdx.org/licenses/FreeImage.json
 
-Text
-----
+## Text
 
     FreeImage Public License - Version 1.0
     ---------------------------------------------
@@ -170,8 +165,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

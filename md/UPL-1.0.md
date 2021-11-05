@@ -1,5 +1,4 @@
-Universal Permissive License v1.0 (UPL-1.0)
-===========================================
+# Universal Permissive License v1.0 (UPL-1.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Universal Permissive License v1.0 (UPL-1.0)
 
 -   `UPL 1.0`
 
-Description
------------
+## Description
 
 > A permissive, OSI and FSF approved, GPL compatible license, expressly
 > allowing attribution with just a copyright notice and a short form
@@ -27,8 +25,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/UPL-1.0.html "SPDX") (all data \[in
@@ -38,11 +35,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -50,8 +45,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/upl-1.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/UPL
 
@@ -59,14 +53,13 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/UPL-1.0.json
 
--   http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626\#.VQsAeWTF8z0
+-   http://h30499.www3.hp.com/t5/HP-Software-Solutions-Blog/Use-Oracle-s-UPL-Abandon-Your-Intellectual-Property/ba-p/6485626#.VQsAeWTF8z0
 
 -   https://oss.oracle.com/licenses/upl/index.html
 
 -   https://www.jcp.org/aboutJava/communityprocess/ec-public/materials/2014-04-15/UPL.pdf
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notice
@@ -77,8 +70,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The Universal Permissive License (UPL), Version 1.0
 
@@ -117,8 +109,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

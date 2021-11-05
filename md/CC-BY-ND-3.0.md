@@ -1,5 +1,4 @@
-Creative Commons Attribution No Derivatives 3.0 Unported (CC-BY-ND-3.0)
-=======================================================================
+# Creative Commons Attribution No Derivatives 3.0 Unported (CC-BY-ND-3.0)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ Creative Commons Attribution No Derivatives 3.0 Unported (CC-BY-ND-3.0)
 
 -   `scancode://cc-by-nd-3.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-nd/3.0/
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-nd/3.0/legalcode
 
-Text
-----
+## Text
 
     Creative Commons Legal Code
 
@@ -325,8 +320,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

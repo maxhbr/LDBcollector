@@ -1,5 +1,4 @@
-Deutsche Freie Software Lizenz (D-FSL-1.0)
-==========================================
+# Deutsche Freie Software Lizenz (D-FSL-1.0)
 
 [TABLE]
 
@@ -7,11 +6,9 @@ Deutsche Freie Software Lizenz (D-FSL-1.0)
 
 -   `scancode://d-fsl-1.0-de`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was created for and is backed by the
     German state. The English translation can be found here
@@ -20,8 +17,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/d-fsl-1.0-de.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.dipp.nrw.de/d-fsl/index\_html/lizenzen/de/D-FSL-1\_0\_de.txt
@@ -44,8 +40,7 @@ URLs
 
 -   http://www.dipp.nrw.de/d-fsl/nutzer/
 
-Text
-----
+## Text
 
     Deutsche Freie Software Lizenz
 
@@ -503,8 +498,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

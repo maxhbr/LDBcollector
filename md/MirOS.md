@@ -1,5 +1,4 @@
-The MirOS Licence (MirOS)
-=========================
+# The MirOS Licence (MirOS)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ The MirOS Licence (MirOS)
 
 -   `scancode://mir-os`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MirOS.html "SPDX") (all data \[in
@@ -35,8 +33,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://opensource.org/licenses/miros.html” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -46,8 +43,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mir-os.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.mirbsd.org/MirOS-Licence
 
@@ -63,8 +59,7 @@ URLs
 
 -   http://www.opensource.org/licenses/MirOS
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -106,8 +101,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     EITHER
     	YOU MUST Forward License text
@@ -120,8 +114,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Provided that these terms and disclaimer and all copyright notices
     are retained or reproduced in an accompanying document, permission
@@ -140,8 +133,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

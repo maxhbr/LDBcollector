@@ -1,5 +1,4 @@
-Python Software Foundation License 2.0 (PSF-2.0)
-================================================
+# Python Software Foundation License 2.0 (PSF-2.0)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ Python Software Foundation License 2.0 (PSF-2.0)
 
 -   `scancode://psf-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opensource.org/licenses/Python-2.0
 
 -   **SPDX:** http://spdx.org/licenses/PSF-2.0.json
 
-Text
-----
+## Text
 
     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 
@@ -36,8 +31,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

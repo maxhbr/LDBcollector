@@ -1,5 +1,4 @@
-Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
-=====================================================================
+# Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Adobe Systems Incorporated Source Code License Agreement (Adobe-2006)
 
 -   `Adobe Source Code License 2006`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,11 +19,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://fedoraproject.org/wiki/Licensing/AdobeLicense
 
@@ -33,8 +29,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Adobe-2006.json
 
-Text
-----
+## Text
 
     Please read this Source Code License Agreement carefully before using the source
     code.
@@ -66,8 +61,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

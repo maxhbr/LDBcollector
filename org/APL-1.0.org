@@ -39,7 +39,7 @@
 - http://www.opensource.org/licenses/APL-1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   ADAPTIVE PUBLIC LICENSE
   Version 1.0
   THE LICENSED WORK IS PROVIDED UNDER THE TERMS OF THIS ADAPTIVE PUBLIC LICENSE
@@ -383,7 +383,7 @@
   PART 7: SAMPLE REQUIREMENTS FOR THE DESCRIPTION OF DISTRIBUTED MODIFICATIONS
 
   Each Subsequent Contributor (including the Initial Contributor where the Initial Contributor qualifies as a Subsequent Contributor) is invited (but not required) to cause each Subsequent Work created or contributed to by that Subsequent Contributor to contain a file documenting the changes such Subsequent Contributor made to create that Subsequent Work and the date of any change. //***EXHIBIT A ENDS HERE.***//
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -410,7 +410,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "APL-1.0",
@@ -678,7 +678,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/APL-1.0.svg]]

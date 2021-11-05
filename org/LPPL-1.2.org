@@ -27,7 +27,7 @@
 - *SPDX:* http://spdx.org/licenses/LPPL-1.2.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The LaTeX Project Public License
   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   LPPL Version 1.2  1999-09-03
@@ -330,7 +330,7 @@
      additional conditions on LaTeX software given above are examples 
      of declaring a category of files bearing exceptional additional
      conditions.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -350,7 +350,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LPPL-1.2",
@@ -497,7 +497,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LPPL-1.2.svg]]

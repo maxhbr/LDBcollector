@@ -1,5 +1,4 @@
-Sleepycat License (Sleepycat)
-=============================
+# Sleepycat License (Sleepycat)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Sleepycat License (Sleepycat)
 
 -   `scancode://sleepycat`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Sleepycat.html "SPDX") (all data
@@ -31,8 +29,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -45,8 +42,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sleepycat.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/sleepycat.html
 
@@ -60,8 +56,7 @@ URLs
 
 -   http://www.opensource.org/licenses/sleepycat.php
 
-Text
-----
+## Text
 
      Redistribution and use in source and binary forms, with or without
      modification, are permitted provided that the following conditions
@@ -96,8 +91,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

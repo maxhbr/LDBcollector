@@ -1,5 +1,4 @@
-The Parity Public License 7.0.0 (Parity-7.0.0)
-==============================================
+# The Parity Public License 7.0.0 (Parity-7.0.0)
 
 [TABLE]
 
@@ -7,11 +6,9 @@ The Parity Public License 7.0.0 (Parity-7.0.0)
 
 -   `scancode://parity-7.0.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “Maximal copyleft licenses answer the question “When does the
     license require you to share?” differently than other families.
@@ -21,8 +18,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://paritylicense.com/versions/7.0.0.html
 
@@ -30,8 +26,7 @@ URLs
 
 -   https://spdx.org/licenses/Parity-7.0.0.html
 
-Text
-----
+## Text
 
     The Parity Public License 7.0.0
 
@@ -94,8 +89,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

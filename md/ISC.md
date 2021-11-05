@@ -1,5 +1,4 @@
-ISC License (ISC)
-=================
+# ISC License (ISC)
 
 [TABLE]
 
@@ -13,21 +12,19 @@ ISC License (ISC)
 
 -   `scancode://isc`
 
-Description
------------
+## Description
 
 > A permissive license lets people do anything with your code with
 > proper attribution and without warranty. The ISC license is
 > functionally equivalent to the &lt;a
-> href="/licenses/bsd-2-clause/"&gt;BSD 2-Clause&lt;/a&gt; and &lt;a
-> href="/licenses/mit/"&gt;MIT&lt;/a&gt; licenses, removing some
-> language that is no longer necessary.
+> href="/licenses/bsd-2-clause/">BSD 2-Clause&lt;/a> and &lt;a
+> href="/licenses/mit/">MIT&lt;/a> licenses, removing some language that
+> is no longer necessary.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -47,8 +44,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://www.isc.org/downloads/software-support-policy/isc-license/”
     (source: [Hitachi
@@ -59,8 +55,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/isc.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -68,8 +63,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/isc.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.isc.org/software/license
 
@@ -93,8 +87,7 @@ URLs
 
 -   https://www.isc.org/isc-license-1.0.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -124,8 +117,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -133,8 +125,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and/or distribute this software for any purpose
     with or without fee is hereby granted, provided that the above copyright notice
@@ -150,8 +141,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -30,7 +30,7 @@
 - *SPDX:* http://spdx.org/licenses/TU-Berlin-2.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Any use of this software is permitted provided that this notice is not
   removed and that neither the authors nor the Technische Universitaet Berlin
   are deemed to have made any representations as to the suitability of this
@@ -54,7 +54,7 @@
   of this software for any purpose nor are held responsible
   for any defects of this software.  THERE IS ABSOLUTELY NO
   WARRANTY FOR THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -73,7 +73,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TU-Berlin-2.0",
@@ -243,7 +243,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TU-Berlin-2.0.svg]]

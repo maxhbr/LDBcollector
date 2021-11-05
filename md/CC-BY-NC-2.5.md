@@ -1,5 +1,4 @@
-Creative Commons Attribution Non Commercial 2.5 Generic (CC-BY-NC-2.5)
-======================================================================
+# Creative Commons Attribution Non Commercial 2.5 Generic (CC-BY-NC-2.5)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Creative Commons Attribution Non Commercial 2.5 Generic (CC-BY-NC-2.5)
 
 -   `scancode://cc-by-nc-2.5`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "Everything that
     Google undertakes, including research, is considered a commercial
@@ -25,11 +23,9 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-nc/2.5/
 
@@ -37,8 +33,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-nc/2.5/legalcode
 
-Text
-----
+## Text
 
     Attribution-NonCommercial 2.5
 
@@ -102,8 +97,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

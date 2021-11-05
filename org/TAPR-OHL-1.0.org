@@ -21,7 +21,7 @@
 - *SPDX:* http://spdx.org/licenses/TAPR-OHL-1.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The TAPR Open Hardware License Version 1.0 (May 25, 2007) Copyright 2007 TAPR - http://www.tapr.org/OHL
 
   PREAMBLE
@@ -157,7 +157,7 @@
      7.4 You agree to defend, indemnify, and hold each Licensor harmless from any claim brought by a third party alleging any defect in the design, manufacture, or operation of any Product which you make, have made, or distribute pursuant to this Agreement.
 
   ####
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -173,7 +173,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TAPR-OHL-1.0",
@@ -289,7 +289,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TAPR-OHL-1.0.svg]]

@@ -1,5 +1,4 @@
-Affero General Public License v1.0 or later (AGPL-1.0-or-later)
-===============================================================
+# Affero General Public License v1.0 or later (AGPL-1.0-or-later)
 
 [TABLE]
 
@@ -9,11 +8,9 @@ Affero General Public License v1.0 or later (AGPL-1.0-or-later)
 
 -   `AGPL 1.0 or later`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -38,8 +35,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/agpl-1.0-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.affero.org/oagpl.html
 
@@ -47,8 +43,7 @@ URLs
 
 -   https://spdx.org/licenses/AGPL-1.0-or-later.html
 
-Text
-----
+## Text
 
     This is free software; you can redistribute it and/or modify
     it under the terms of the AFFERO GENERAL PUBLIC LICENSE as published by
@@ -61,8 +56,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

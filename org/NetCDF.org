@@ -45,7 +45,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Documentation accompanying the software should be treated in the same way as the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -57,9 +57,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: You must include UCAR/Unidata credit on any product or publication that includes the Software. The software's accompanying documentation shall be treated in the same manner as the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -73,20 +73,20 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include credit to the copyright holder.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: To use the name UCAR or Unidata; obtain permission from UCAR/Unidata.
     Actions:
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
 
   Portions of this software were developed by the Unidata Program at the
   University Corporation for Atmospheric Research.
@@ -114,7 +114,7 @@
   OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER
   IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
   IN CONNECTION WITH THE ACCESS, USE OR PERFORMANCE OF THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -143,7 +143,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NetCDF",
@@ -473,7 +473,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NetCDF.svg]]

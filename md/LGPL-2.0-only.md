@@ -1,5 +1,4 @@
-GNU Library General Public License v2 only (LGPL-2.0-only)
-==========================================================
+# GNU Library General Public License v2 only (LGPL-2.0-only)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ GNU Library General Public License v2 only (LGPL-2.0-only)
 
 -   `LGPL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent.” (source:
@@ -28,8 +26,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -52,8 +49,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html
 
@@ -67,8 +63,7 @@ URLs
 
 -   http://www.gnu.org/licenses/old-licenses/library.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
         Actions:
@@ -181,8 +176,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
                       GNU LIBRARY GENERAL PUBLIC LICENSE
                            Version 2, June 1991
@@ -668,8 +662,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

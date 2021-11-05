@@ -1,5 +1,4 @@
-Giftware License (Giftware)
-===========================
+# Giftware License (Giftware)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Giftware License (Giftware)
 
 -   `Allegro 4 License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,8 +19,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license may also be known as Allegro 4. The
     Allegro 5 license shown at the alleg.sourceforge.net URL is the same
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/allegro-4.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://alleg.sourceforge.net//license.html
 
@@ -39,10 +35,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Giftware.json
 
--   http://liballeg.org/license.html\#allegro-4-the-giftware-license
+-   http://liballeg.org/license.html#allegro-4-the-giftware-license
 
-Text
-----
+## Text
 
     Allegro 4 (the giftware license)
 
@@ -56,8 +51,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

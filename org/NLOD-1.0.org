@@ -23,7 +23,7 @@
 - http://data.norge.no/nlod/no/1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Norwegian Licence for Open Government Data (NLOD)
   Preface of licence
 
@@ -102,7 +102,7 @@
 
   11. Governing law and legal venue 
   This licence, including its formation, and any disputes and claims arising in connection with or relating to this licence, shall be regulated by Norwegian law. The legal venue shall be the licensor's ordinary legal venue. The licensor may, with regard to intellectual proprietary rights, choose to pursue a claim at other competent legal venues and/or based on the laws of the country where the intellectual property rights are sought enforced.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -118,7 +118,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NLOD-1.0",
@@ -238,7 +238,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NLOD-1.0.svg]]

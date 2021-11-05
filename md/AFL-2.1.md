@@ -1,5 +1,4 @@
-Academic Free License v2.1 (AFL-2.1)
-====================================
+# Academic Free License v2.1 (AFL-2.1)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Academic Free License v2.1 (AFL-2.1)
 
 -   `AFL 2.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -26,8 +24,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source Code means the documentation that describes the appropriate
     format for making modifications to the Software and how to modify
@@ -48,8 +45,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.rosenlaw.com/afl21.htm
 
@@ -63,10 +59,9 @@ URLs
 
 -   http://opensource.linux-mirror.org/licenses/afl-2.1.txt
 
--   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
+-   http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -127,8 +122,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	IF Software modification
@@ -164,8 +158,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The Academic Free License
     v. 2.1
@@ -218,8 +211,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

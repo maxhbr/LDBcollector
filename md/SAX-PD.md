@@ -1,5 +1,4 @@
-Sax Public Domain Notice (SAX-PD)
-=================================
+# Sax Public Domain Notice (SAX-PD)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ Sax Public Domain Notice (SAX-PD)
 
 -   `scancode://sax-pd`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.saxproject.org/copying.html
 
 -   **SPDX:** http://spdx.org/licenses/SAX-PD.json
 
-Text
-----
+## Text
 
     Copyright Status for SAX
 
@@ -81,8 +76,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

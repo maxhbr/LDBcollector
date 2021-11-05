@@ -25,7 +25,7 @@
 - https://jogamp.org/git/?p=gluegen.git;a=blob_plain;f=LICENSE.txt
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions are
   met:
@@ -57,7 +57,7 @@
   You acknowledge that this software is not designed, licensed or intended
   for use in the design, construction, operation or maintenance of any
   nuclear facility.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -77,7 +77,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "BSD-3-Clause-No-Nuclear-License",
@@ -204,7 +204,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/BSD-3-Clause-No-Nuclear-License.svg]]

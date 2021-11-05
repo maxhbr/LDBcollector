@@ -20,12 +20,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The Open Font License (OFL) is maintained by SIL International. It
   attempts to be a compromise between the values of the free software
   and typeface design communities. It is used for almost all open source
   font projects, including those by Adobe, Google and Mozilla.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -94,7 +94,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Font Software is the set of files that the copyright holder provides under this license that is specifically identified as the Font Software. The Font Software includes source files, build scripts, and documentation.
     Actions:
     - Using Font Software (Use the acquired font software as it is.)
@@ -102,9 +102,9 @@
     - Using Modified Font Software
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright notice or license is included in a text file, human-readable header, or machine-readable metadata field contained in a text or binary file if the field is easily viewable by the user. Font Software means the set of files that the copyright holder identifies as such Font Software under this License. Font Software includes source files, build scripts, and documentation.
     Actions:
     - Selling font software
@@ -114,9 +114,9 @@
       RESTRICTION: We don't sell it alone.
       OBLIGATION: Include a copyright notice in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright notice or license is included in a text file, human-readable header, or machine-readable metadata field contained in a text or binary file if the field is easily viewable by the user. Font Software means the set of files that the copyright holder identifies as such Font Software under this License. Font Software includes source files, build scripts, and documentation.
     Actions:
     - Distributing font software (Distribute the acquired font software as is)
@@ -130,18 +130,18 @@
     AND
       OBLIGATION: Include a copyright notice in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright owner's permission is required to use it in the primary font name presented to the user. The Font Software is the set of files that the copyright holder identifies as the Font Software under this License. The Font Software includes source files, build scripts, and documentation.
     Actions:
     - Use font names retained in modified font software (A retained font name is a name that is clearly identified as the retained font name with a copyright notice.)
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The Font Software is the set of files that the copyright holder identifies as the Font Software under this License. The Font Software includes source files, build scripts, and documentation. The author(s) of the Font Software are the designers, engineers, programmers, technical writers, etc. who have contributed to the Font Software.
     Actions:
     - Use the name of the copyright holder or author to endorse or promote the modified font software
@@ -150,12 +150,12 @@
     OR
       OBLIGATION: Acknowledgements
       REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
   This license is copied below, and is also available with a FAQ at: http://scripts.sil.org/OFL
@@ -246,7 +246,7 @@
   DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
   FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
   OTHER DEALINGS IN THE FONT SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -281,7 +281,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OFL-1.1",
@@ -867,7 +867,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OFL-1.1.svg]]

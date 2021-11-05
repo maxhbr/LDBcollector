@@ -38,12 +38,12 @@
 - https://fedoraproject.org/wiki/Licensing/FSFAP
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Copying and distribution of this file, with or without modification, are
   permitted in any medium without royalty provided the copyright notice
   and this notice are preserved. This file is offered as-is, without any
   warranty.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -63,7 +63,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "FSFAP",
@@ -265,7 +265,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/FSFAP.svg]]

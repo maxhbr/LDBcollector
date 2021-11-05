@@ -1,5 +1,4 @@
-GNU General Public License v2.0 or later (GPL-2.0-or-later)
-===========================================================
+# GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ GNU General Public License v2.0 or later (GPL-2.0-or-later)
 
 -   `GPL 2.0 or later`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/GPL-2.0-or-later.html "SPDX") (all
@@ -40,8 +38,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -55,8 +52,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.gnu.org/licenses/old-licenses/gpl-2.0-standalone.html
@@ -69,8 +65,7 @@ URLs
 
 -   http://www.opensource.org/licenses/GPL-2.0
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -176,8 +171,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This program is free software; you can redistribute it and/or modify it under
     the terms of the GNU General Public License as published by the Free Software
@@ -194,8 +188,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Freetype Project License (FTL)
-==============================
+# Freetype Project License (FTL)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Freetype Project License (FTL)
 
 -   `scancode://freetype`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -18,8 +16,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.freetype.org/license.html\[http://git.savannah.gnu.org/cgit/freetype/freetype2.git/tree/docs/FTL.TXT\]”
     (source: [Hitachi
@@ -39,8 +36,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/freetype.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.freetype.org/license.html
 
@@ -58,8 +54,7 @@ URLs
 
 -   http://www.freetype.org/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Related documents should be treated in the same way as software.
         Actions:
@@ -144,8 +139,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -161,8 +155,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The FreeType Project LICENSE
     ----------------------------
@@ -331,8 +324,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

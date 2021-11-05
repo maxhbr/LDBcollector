@@ -1,5 +1,4 @@
-Standard ML of New Jersey License (SMLNJ)
-=========================================
+# Standard ML of New Jersey License (SMLNJ)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Standard ML of New Jersey License (SMLNJ)
 
 -   `Standard ML of New Jersey`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “per SPDX.org, SPDX ended up with this license on the license list
     twice once as of v1.17 with the short identifier SMLNJ and then
@@ -35,8 +32,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/standard-ml-nj.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.smlnj.org//license.html
 
@@ -46,12 +42,11 @@ URLs
 
 -   https://www.smlnj.org/license.html
 
--   http://www.gnu.org/licenses/license-list.html\#StandardMLofNJ
+-   http://www.gnu.org/licenses/license-list.html#StandardMLofNJ
 
 -   http://www2.cs.tum.edu/projects/cup/
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and distribute this software and its
     documentation for any purpose and without fee is hereby granted,
@@ -72,8 +67,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

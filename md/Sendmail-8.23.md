@@ -1,5 +1,4 @@
-Sendmail License 8.23 (Sendmail-8.23)
-=====================================
+# Sendmail License 8.23 (Sendmail-8.23)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Sendmail License 8.23 (Sendmail-8.23)
 
 -   `scancode://sendmail-8.23`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.proofpoint.com/sites/default/files/sendmail-license.pdf
@@ -23,8 +19,7 @@ URLs
 
 -   https://web.archive.org/web/20181003101040/https://www.proofpoint.com/sites/default/files/sendmail-license.pdf
 
-Text
-----
+## Text
 
     SENDMAIL LICENSE 
     The following license terms and conditions apply, unless a redistribution agreement or other license is obtained from Proofpoint, Inc., 892 Ross Street, Sunnyvale, CA, 94089, USA, or by electronic mail at sendmail-license@proofpoint.com. 
@@ -64,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

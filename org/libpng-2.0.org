@@ -23,7 +23,7 @@
 - *SPDX:* http://spdx.org/licenses/libpng-2.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   COPYRIGHT NOTICE, DISCLAIMER, and LICENSE
   =========================================
 
@@ -60,7 +60,7 @@
 
    3. This Copyright notice may not be removed or altered from any
       source or altered source distribution.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -76,7 +76,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "libpng-2.0",
@@ -187,7 +187,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/libpng-2.0.svg]]

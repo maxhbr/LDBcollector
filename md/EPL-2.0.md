@@ -1,5 +1,4 @@
-Eclipse Public License 2.0 (EPL-2.0)
-====================================
+# Eclipse Public License 2.0 (EPL-2.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Eclipse Public License 2.0 (EPL-2.0)
 
 -   `EPL 2.0`
 
-Description
------------
+## Description
 
 > This commercially-friendly copyleft license provides the ability to
 > commercially license binaries; a modern royalty-free patent license
@@ -24,8 +22,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EPL-2.0.html "SPDX") (all data \[in
@@ -40,8 +37,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -68,8 +64,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -77,8 +72,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.eclipse.org/legal/epl-2.0/
 
@@ -94,8 +88,7 @@ URLs
 
 -   https://www.opensource.org/licenses/EPL-2.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The term "Contributor" refers to the person or entity that distributes the software. The term "source code" refers to the source code of the software, documentation sources, configuration files and other files suitable for making changes.
         Actions:
@@ -174,8 +167,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -245,8 +237,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Eclipse Public License - v 2.0
 
@@ -528,8 +519,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

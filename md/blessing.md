@@ -1,5 +1,4 @@
-SQLite Blessing (blessing)
-==========================
+# SQLite Blessing (blessing)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ SQLite Blessing (blessing)
 
 -   `scancode://blessing`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://sqlite.org/src/artifact/df5091916dbb40e6
 
@@ -22,8 +18,7 @@ URLs
 
 -   https://www.sqlite.org/src/artifact/e33a4df7e32d742a?ln=4-9
 
-Text
-----
+## Text
 
     The author disclaims copyright to this source code.
     In place of a legal notice, here is a blessing:
@@ -33,8 +28,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

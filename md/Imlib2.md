@@ -1,5 +1,4 @@
-Imlib2 License (Imlib2)
-=======================
+# Imlib2 License (Imlib2)
 
 [TABLE]
 
@@ -7,16 +6,14 @@ Imlib2 License (Imlib2)
 
 -   `scancode://imlib2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://git.enlightenment.org/legacy/imlib2.git/tree/ and
     https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING”
@@ -24,8 +21,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://trac.enlightenment.org/e/browser/trunk/imlib2/COPYING
@@ -36,8 +32,7 @@ URLs
 
 -   https://git.enlightenment.org/legacy/imlib2.git/tree/COPYING
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -92,8 +87,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Imlib2 License 
 
@@ -131,8 +125,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

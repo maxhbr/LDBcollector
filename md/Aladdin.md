@@ -1,5 +1,4 @@
-Aladdin Free Public License (Aladdin)
-=====================================
+# Aladdin Free Public License (Aladdin)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Aladdin Free Public License (Aladdin)
 
 -   `Aladdin FPL v8`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“This software licenses which is NOT OKAY for Fedora. Nothing
     in Fedora is permitted to use this license. It is either non-free or
@@ -18,23 +16,20 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 18 Nov 1999” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afpl-8.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://pages.cs.wisc.edu/~ghost/doc/AFPL/6.01/Public.htm
 
 -   **SPDX:** http://spdx.org/licenses/Aladdin.json
 
-Text
-----
+## Text
 
     Aladdin Free Public License 
     (Version 8, November 18, 1999) 
@@ -103,8 +98,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

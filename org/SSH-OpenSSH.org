@@ -32,7 +32,7 @@
 - http://www.openssh.org/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file is part of the OpenSSH software.
 
   The licences which components of this software fall under are as
@@ -373,7 +373,7 @@
 
   ------
   $OpenBSD: LICENCE,v 1.19 2004/08/30 09:18:08 markus Exp $
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -389,7 +389,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SSH-OpenSSH",
@@ -531,7 +531,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SSH-OpenSSH.svg]]

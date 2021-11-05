@@ -32,7 +32,7 @@
 - *SPDX:* http://spdx.org/licenses/DSDP.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   COPYRIGHT NOTIFICATION
 
   (C) COPYRIGHT 2004 UNIVERSITY OF CHICAGO
@@ -76,7 +76,7 @@
   RECOMMENDATION, OR FAVORING BY THE UNITED STATES GOVERNMENT OR ANY AGENCY
   THEREOF. THE VIEW AND OPINIONS OF AUTHORS EXPRESSED HEREIN DO NOT NECESSARILY
   STATE OR REFLECT THOSE OF THE UNITED STATES GOVERNMENT OR ANY AGENCY THEREOF.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -107,7 +107,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "DSDP",
@@ -350,7 +350,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/DSDP.svg]]

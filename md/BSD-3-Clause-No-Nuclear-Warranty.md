@@ -1,5 +1,4 @@
-BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
-===================================================================
+# BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 
 [TABLE]
 
@@ -7,15 +6,13 @@ BSD 3-Clause No Nuclear Warranty (BSD-3-Clause-No-Nuclear-Warranty)
 
 -   `scancode://bsd-3-clause-no-nuclear-warranty`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “per SPDX.org, it is the same license as
     BSD-3-Clause-No-Nuclear-License, except it has a disclaimer for
@@ -24,8 +21,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-3-clause-no-nuclear-warranty.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://jogamp.org/git/?p=gluegen.git;a=blob\_plain;f=LICENSE.txt
@@ -36,8 +32,7 @@ URLs
 -   **SPDX:**
     http://spdx.org/licenses/BSD-3-Clause-No-Nuclear-Warranty.json
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -73,8 +68,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

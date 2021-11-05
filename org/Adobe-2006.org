@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/Adobe-2006.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Please read this Source Code License Agreement carefully before using the source
   code.
 
@@ -62,7 +62,7 @@
   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
   ANY WAY OUT OF THE USE OF THIS SOURCE CODE, EVEN IF ADVISED OF THE POSSIBILITY OF
   SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -85,7 +85,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Adobe-2006",
@@ -295,7 +295,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Adobe-2006.svg]]

@@ -47,18 +47,18 @@
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   YOU MUST Forward Copyright notices In Files
   YOU MUST Forward License text In Files
   YOU MUST Provide Copyright notices In Documentation
   YOU MUST Provide License text In Documentation
   YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
   Unicode Data Files include all data files under the directories
@@ -117,7 +117,7 @@
   not be used in advertising or otherwise to promote the sale, use or
   other dealings in these Data Files or Software without prior written
   authorization of the copyright holder.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -146,7 +146,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Unicode-DFS-2016",
@@ -404,7 +404,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Unicode-DFS-2016.svg]]

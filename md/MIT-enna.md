@@ -1,5 +1,4 @@
-enna License (MIT-enna)
-=======================
+# enna License (MIT-enna)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ enna License (MIT-enna)
 
 -   `scancode://enna`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,20 +17,17 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/MIT\#enna
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/MIT#enna
 
 -   **SPDX:** https://spdx.org/licenses/MIT-enna.html
 
 -   **SPDX:** http://spdx.org/licenses/MIT-enna.json
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of
     this software and associated documentation files (the "Software"), to deal in
@@ -63,8 +58,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

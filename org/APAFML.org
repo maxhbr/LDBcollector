@@ -33,7 +33,7 @@
 - *SPDX:* http://spdx.org/licenses/APAFML.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,
   and distributed for any purpose and without charge, with or without
   modification, provided that all copyright notices are retained; that the AFM
@@ -41,7 +41,7 @@
   or any of the AFM files are prominently noted in the modified file(s); and that
   this paragraph is not modified. Adobe Systems has no responsibility or
   obligation to support the use of the AFM files.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -64,7 +64,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "APAFML",
@@ -267,7 +267,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/APAFML.svg]]

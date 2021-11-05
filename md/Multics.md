@@ -1,5 +1,4 @@
-Multics License (Multics)
-=========================
+# Multics License (Multics)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Multics License (Multics)
 
 -   `scancode://multics`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Multics.html "SPDX") (all data \[in
@@ -18,15 +16,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/multics.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.multicians.org/
 
@@ -40,8 +36,7 @@ URLs
 
 -   http://www.opensource.org/licenses/Multics
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and distribute these programs and their
     documentation for any purpose and without fee is hereby granted,provided
@@ -59,8 +54,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

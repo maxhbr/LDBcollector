@@ -35,7 +35,7 @@
 - *SPDX:* http://spdx.org/licenses/Intel-ACPI.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   ACPI - Software License Agreement
 
   Software License Agreement IMPORTANT - READ BEFORE COPYING, INSTALLING
@@ -150,7 +150,7 @@
   government or any agency thereof requires an export license, other
   governmental approval, or letter of assurance, without first obtaining
   such license, approval or letter.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -170,7 +170,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Intel-ACPI",
@@ -339,7 +339,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Intel-ACPI.svg]]

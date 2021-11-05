@@ -1,5 +1,4 @@
-libpng License (Libpng)
-=======================
+# libpng License (Libpng)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ libpng License (Libpng)
 
 -   `scancode://libpng`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.libpng.org/pub/png/libpng.html
 
@@ -32,13 +28,11 @@ URLs
 
 -   http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST NOT Appropriate
@@ -50,8 +44,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This copy of the libpng notices is provided for your convenience.  In case of
     any discrepancy between this copy and the notices in the file png.h that is
@@ -164,8 +157,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

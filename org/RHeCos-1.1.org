@@ -23,7 +23,7 @@
 - *SPDX:* http://spdx.org/licenses/RHeCos-1.1.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Red Hat eCos Public License v1.1
 
   1. DEFINITIONS
@@ -463,7 +463,7 @@
   POSSIBILITY OF SUCH DAMAGE.
 
   eCos and the eCos logo are registered trademarks of eCosCentric Limited.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -483,7 +483,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RHeCos-1.1",
@@ -614,7 +614,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RHeCos-1.1.svg]]

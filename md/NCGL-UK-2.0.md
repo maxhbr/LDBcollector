@@ -1,5 +1,4 @@
-Non-Commercial Government Licence (NCGL-UK-2.0)
-===============================================
+# Non-Commercial Government Licence (NCGL-UK-2.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Non-Commercial Government Licence (NCGL-UK-2.0)
 
 -   `scancode://ncgl-uk-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence/version/2/
@@ -25,8 +21,7 @@ URLs
 
 -   http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence-cymraeg/version/2/
 
-Text
-----
+## Text
 
     Non-Commercial Government Licence
     for public sector information
@@ -105,8 +100,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

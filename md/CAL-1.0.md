@@ -1,5 +1,4 @@
-Cryptographic Autonomy License 1.0 (CAL-1.0)
-============================================
+# Cryptographic Autonomy License 1.0 (CAL-1.0)
 
 [TABLE]
 
@@ -7,15 +6,13 @@ Cryptographic Autonomy License 1.0 (CAL-1.0)
 
 -   `scancode://cal-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CAL-1.0.html "SPDX") (all data \[in
     this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Maximal copyleft licenses answer the question “When does the
     license require you to share?” differently than other families.
@@ -25,8 +22,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opensource.org/licenses/CAL-1.0
 
@@ -36,8 +32,7 @@ URLs
 
 -   http://cryptographicautonomylicense.com/license-text.html
 
-Text
-----
+## Text
 
     The Cryptographic Autonomy License, v. 1.0
 
@@ -167,8 +162,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

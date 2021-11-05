@@ -1,5 +1,4 @@
-Apache License 1.1 (Apache-1.1)
-===============================
+# Apache License 1.1 (Apache-1.1)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Apache License 1.1 (Apache-1.1)
 
 -   `Apache 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -47,16 +45,14 @@ Comments on (easy) usability
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified. This license has been
     superseded by Apache 2.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
@@ -70,8 +66,7 @@ URLs
 
 -   http://apache.org/licenses/LICENSE-1.1
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -119,8 +114,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -143,8 +137,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     The Apache Software License, Version 1.1
 
@@ -194,8 +187,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -27,7 +27,7 @@
 - https://webassets.mongodb.com/_com_assets/legal/SSPL-compared-to-AGPL.pdf
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
                        Server Side Public License
                        VERSION 1, OCTOBER 16, 2018
 
@@ -585,7 +585,7 @@
     return for a fee.
     
                           END OF TERMS AND CONDITIONS
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -601,7 +601,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SSPL-1.0",
@@ -717,7 +717,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SSPL-1.0.svg]]

@@ -1,5 +1,4 @@
-SugarCRM Public License v1.1.3 (SugarCRM-1.1.3)
-===============================================
+# SugarCRM Public License v1.1.3 (SugarCRM-1.1.3)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ SugarCRM Public License v1.1.3 (SugarCRM-1.1.3)
 
 -   `SugarCRM Public License 1.1.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.sugarcrm.com/crm/SPL
 
@@ -24,8 +20,7 @@ URLs
 
 -   http://www.sugarcrm.com/page/sugarcrm-public-license/en
 
-Text
-----
+## Text
 
     SUGARCRM PUBLIC LICENSE
 
@@ -185,8 +180,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

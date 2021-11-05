@@ -1,5 +1,4 @@
-GNU General Public License v1.0 or later (GPL-1.0-or-later)
-===========================================================
+# GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ GNU General Public License v1.0 or later (GPL-1.0-or-later)
 
 -   `GPL 1.0 or later`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
@@ -34,23 +32,20 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released February 1989.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html
 
 -   **SPDX:** http://spdx.org/licenses/GPL-1.0-or-later.json
 
-Text
-----
+## Text
 
     This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 1, or (at your option) any later version.
 
@@ -60,8 +55,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

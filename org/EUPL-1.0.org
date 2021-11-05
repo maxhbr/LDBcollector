@@ -48,7 +48,7 @@
 - http://ec.europa.eu/idabc/servlets/Doc027f.pdf?id=31096
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   European Union Public Licence V.1.0 
   EUPL © the European Community 2007 
 
@@ -201,7 +201,7 @@
   − Common Public License v. 1.0 
   − Eclipse Public License v. 1.0 
   − Cecill v. 2.0
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -228,7 +228,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "EUPL-1.0",
@@ -462,7 +462,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/EUPL-1.0.svg]]

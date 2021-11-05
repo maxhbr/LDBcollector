@@ -1,5 +1,4 @@
-MakeIndex License (MakeIndex)
-=============================
+# MakeIndex License (MakeIndex)
 
 [TABLE]
 
@@ -9,31 +8,27 @@ MakeIndex License (MakeIndex)
 
 -   `MakeIndex Distribution Notice`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is free but GPL-incompatible, and was
     found in the MakeIndex component inside TeXLive. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/makeindex.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/MakeIndex
 
 -   **SPDX:** http://spdx.org/licenses/MakeIndex.json
 
-Text
-----
+## Text
 
     MakeIndex Distribution Notice
 
@@ -64,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
-========================================================
+# CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ CeCILL Free Software License Agreement v2.1 (CECILL-2.1)
 
 -   `CeCILL 2.1`
 
-Description
------------
+## Description
 
 > Strong copyleft license made by three French public research
 > organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0,
@@ -25,18 +23,15 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CECILL-2.1.html "SPDX") (all data
     \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -44,8 +39,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/cecill-2.1.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.cecill.info/licences/Licence\_CeCILL\_V2.1-fr.html
@@ -56,8 +50,7 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL\_V2.1-en.html
 
-Text
-----
+## Text
 
       CeCILL FREE SOFTWARE LICENSE AGREEMENT
 
@@ -579,8 +572,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

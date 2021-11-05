@@ -1,5 +1,4 @@
-Microsoft Public License (MS-PL)
-================================
+# Microsoft Public License (MS-PL)
 
 [TABLE]
 
@@ -9,16 +8,14 @@ Microsoft Public License (MS-PL)
 
 -   `scancode://ms-pl`
 
-Description
------------
+## Description
 
 > An open source license with a patent grant.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -37,8 +34,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “The term "duplication," "derivative works" and "distribution" are
     the same as in the U.S. Copyright Act. The term "contribution"
@@ -55,8 +51,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-pl.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -64,11 +59,10 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-pl.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
-    http://www.microsoft.com/opensource/licenses.mspx\#Ms-PL
+    http://www.microsoft.com/opensource/licenses.mspx#Ms-PL
 
 -   **OSI Page:** https://opensource.org/licenses/MS-PL
 
@@ -82,12 +76,11 @@ URLs
 
 -   http://www.microsoft.com/opensource/licenses.mspx
 
--   http://www.microsoft.com/en-us/openness/licenses.aspx\#MPL
+-   http://www.microsoft.com/en-us/openness/licenses.aspx#MPL
 
 -   http://www.opensource.org/licenses/MS-PL
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -152,8 +145,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Grant License
@@ -193,8 +185,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Microsoft Public License (Ms-PL)
 
@@ -259,8 +250,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

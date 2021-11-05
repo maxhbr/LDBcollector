@@ -1,5 +1,4 @@
-Netizen Open Source License (NOSL)
-==================================
+# Netizen Open Source License (NOSL)
 
 [TABLE]
 
@@ -9,19 +8,16 @@ Netizen Open Source License (NOSL)
 
 -   `NOSL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://bits.netizen.com.au/licenses/NOSL/
 
@@ -29,8 +25,7 @@ URLs
 
 -   http://bits.netizen.com.au/licenses/NOSL/nosl.txt
 
-Text
-----
+## Text
 
     The Netizen Open Source License (NOSL) is a license based on the Mozilla Public License (MPL).
 
@@ -520,8 +515,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

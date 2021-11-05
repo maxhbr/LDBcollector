@@ -1,5 +1,4 @@
-Unicode Terms of Use (Unicode-TOU)
-==================================
+# Unicode Terms of Use (Unicode-TOU)
 
 [TABLE]
 
@@ -7,11 +6,9 @@ Unicode Terms of Use (Unicode-TOU)
 
 -   `scancode://unicode-tou`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “EXHIBIT 1 of UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND
     SOFTWARE is registered separately.
@@ -20,8 +17,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.unicode.org/copyright.html
 
@@ -29,13 +25,11 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/313
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Unicode Terms of Use
 
@@ -167,8 +161,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

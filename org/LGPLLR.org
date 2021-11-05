@@ -21,7 +21,7 @@
 - *SPDX:* http://spdx.org/licenses/LGPLLR.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Lesser General Public License For Linguistic Resources
 
   Preamble
@@ -252,7 +252,7 @@
   SOFTWARE), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
   END OF TERMS AND CONDITIONS
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -268,7 +268,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LGPLLR",
@@ -378,7 +378,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LGPLLR.svg]]

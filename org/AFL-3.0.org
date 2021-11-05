@@ -21,12 +21,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The Academic Free License is a variant of the Open Software License
   that does not require that the source code of derivative works be
   disclosed. It contains explicit copyright and patent grants and
   reserves trademark rights in the author.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -86,7 +86,7 @@
 - http://www.opensource.org/licenses/afl-3.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This Academic Free License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following licensing notice adjacent to the copyright notice for the Original Work:
 
   Licensed under the Academic Free License version 3.0
@@ -132,7 +132,7 @@
   15) Right to Use. You may use the Original Work in all ways not otherwise restricted or conditioned by this License or by law, and Licensor promises not to interfere with or be responsible for such uses by You.
 
   16) Modification of This License. This License is Copyright © 2005 Lawrence Rosen. Permission is granted to copy, distribute, or communicate this License without modification. Nothing in this License permits You to modify this License as applied to the Original Work or to Derivative Works. However, You may modify the text of this License and copy, distribute or communicate your modified version (the "Modified License") and apply it to other original works of authorship subject to the following conditions: (i) You may not indicate in any way that your Modified License is the "Academic Free License" or "AFL" and you may not use those names in the name of your Modified License; (ii) You must replace the notice specified in the first paragraph above with the notice "Licensed under <insert your license name here>" or with a notice of your own that is not confusingly similar to the notice in this License; and (iii) You may not claim that your original works are open source software unless your Modified License has been approved by Open Source Initiative (OSI) and You comply with its license review and certification process.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -179,7 +179,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "AFL-3.0",
@@ -772,7 +772,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/AFL-3.0.svg]]

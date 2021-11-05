@@ -37,7 +37,7 @@
 - *SPDX:* http://spdx.org/licenses/CUA-OPL-1.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CUA Office Public License Version 1.0
   1. Definitions.
 
@@ -506,7 +506,7 @@
   the notices in the Source Code files of the Original Code. You should
   use the text of this Exhibit A rather than the text found in the
   Original Code Source Code for Your Modifications.]
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -536,7 +536,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CUA-OPL-1.0",
@@ -816,7 +816,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CUA-OPL-1.0.svg]]

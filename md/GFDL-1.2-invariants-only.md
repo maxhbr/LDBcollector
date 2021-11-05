@@ -1,16 +1,12 @@
-GNU Free Documentation License v1.2 only - invariants (GFDL-1.2-invariants-only)
-================================================================================
+# GNU Free Documentation License v1.2 only - invariants (GFDL-1.2-invariants-only)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/GFDL-1.2-invariants-only.json
 
@@ -18,8 +14,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

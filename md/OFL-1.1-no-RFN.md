@@ -1,20 +1,16 @@
-SIL Open Font License 1.1 with no Reserved Font Name (OFL-1.1-no-RFN)
-=====================================================================
+# SIL Open Font License 1.1 with no Reserved Font Name (OFL-1.1-no-RFN)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OFL-1.1-no-RFN.html "SPDX") (all
     data \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/OFL-1.1-no-RFN.json
 
@@ -24,8 +20,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

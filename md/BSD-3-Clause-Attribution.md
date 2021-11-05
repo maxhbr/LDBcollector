@@ -1,5 +1,4 @@
-BSD with attribution (BSD-3-Clause-Attribution)
-===============================================
+# BSD with attribution (BSD-3-Clause-Attribution)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ BSD with attribution (BSD-3-Clause-Attribution)
 
 -   `BSD Acknowledgment License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,11 +19,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/BSD\_with\_Attribution
@@ -34,8 +30,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/BSD-3-Clause-Attribution.json
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
@@ -68,8 +63,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

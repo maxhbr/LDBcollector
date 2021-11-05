@@ -48,7 +48,7 @@
 - http://www.opensource.org/licenses/RSCPL
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Ricoh Source Code Public License
 
   Version 1.0
@@ -181,7 +181,7 @@
   This code was initially developed by Ricoh Silicon Valley, Inc. Portions created by Ricoh Silicon Valley, Inc. are Copyright (C) 1995-1999. All Rights Reserved.
 
   Contributor(s):  ."
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -215,7 +215,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RSCPL",
@@ -545,7 +545,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RSCPL.svg]]

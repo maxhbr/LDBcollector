@@ -1,5 +1,4 @@
-Apple MIT License (AML)
-=======================
+# Apple MIT License (AML)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Apple MIT License (AML)
 
 -   `scancode://aml`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,11 +17,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Apple\_MIT\_License
@@ -32,8 +28,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/AML.json
 
-Text
-----
+## Text
 
     IMPORTANT: This Apple software is supplied to you by Apple Computer, Inc. ("Apple") in consideration of your agreement to the following terms, and your use, installation, modification or redistribution of this Apple software constitutes acceptance of these terms. If you do not agree with these terms, please do not use, install, modify or redistribute this Apple software.
 
@@ -45,8 +40,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

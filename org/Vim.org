@@ -12,13 +12,13 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   There are no restrictions on using or distributing an unmodified copy
   of the software. Parts of the software may also be distributed, but
   the license text must always be included. For modified versions a few
   restrictions apply. The license is GPL compatible, you may compile the
   software with GPL libraries and distribute it.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -56,7 +56,7 @@
 - http://www.vim.org/docs.php
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   VIM LICENSE
 
   I)  There are no restrictions on distributing unmodified copies of Vim except
@@ -159,7 +159,7 @@
   - If you distribute a modified version of Vim, you can include your name and
     contact information with the "--with-modified-by" configure argument or the
     MODIFIED_BY define.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -186,7 +186,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Vim",
@@ -479,7 +479,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Vim.svg]]

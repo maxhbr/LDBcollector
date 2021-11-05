@@ -1,5 +1,4 @@
-DOC License (DOC)
-=================
+# DOC License (DOC)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ DOC License (DOC)
 
 -   `ACE TAO License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,11 +19,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.cs.wustl.edu/~schmidt/
 
@@ -37,8 +33,7 @@ URLs
 
 -   https://www.dre.vanderbilt.edu/~schmidt/ACE-copying.html
 
-Text
-----
+## Text
 
     Copyright and Licensing Information for ACE(TM), TAO(TM), CIAO(TM), and CoSMIC(TM)
 
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

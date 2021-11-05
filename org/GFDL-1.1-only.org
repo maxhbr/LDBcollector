@@ -35,7 +35,7 @@
 - http://www.lysator.liu.se/~kjell-e/tekla/linux/security/fdl.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   GNU Free Documentation License
   		   Version 1.1, March 2000
 
@@ -390,7 +390,7 @@
   recommend releasing these examples in parallel under your choice of
   free software license, such as the GNU General Public License,
   to permit their use in free software.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -409,7 +409,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "GFDL-1.1-only",
@@ -596,7 +596,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/GFDL-1.1-only.svg]]

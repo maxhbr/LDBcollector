@@ -31,7 +31,7 @@
 - https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This software is not subject to any license of the American Telephone and
   Telegraph Company or of the Regents of the University of California.
 
@@ -51,7 +51,7 @@
   sources, credits must appear in the documentation.
 
   4. This notice may not be removed or altered.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -70,7 +70,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Spencer-94",
@@ -240,7 +240,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Spencer-94.svg]]

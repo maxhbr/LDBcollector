@@ -57,7 +57,7 @@
 - http://www.opensource.org/licenses/Watcom-1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   USE OF THE SYBASE OPEN WATCOM SOFTWARE DESCRIBED BELOW ("SOFTWARE") IS 
   SUBJECT TO THE TERMS AND CONDITIONS SET FORTH IN THE SYBASE OPEN WATCOM 
   PUBLIC LICENSE SET FORTH BELOW ("LICENSE"). YOU MAY NOT USE THE SOFTWARE 
@@ -408,7 +408,7 @@
   FITNESS FOR A PARTICULAR PURPOSE, QUIET ENJOYMENT OR NON-INFRINGEMENT. Please 
   see the License for the specific language governing rights and limitations 
   under the License."
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -446,7 +446,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Watcom-1.0",
@@ -772,7 +772,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Watcom-1.0.svg]]

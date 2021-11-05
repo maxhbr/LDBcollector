@@ -26,7 +26,7 @@
 - http://www.nationalarchives.gov.uk/doc/open-government-licence/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
   Using Information under this licence
 
@@ -102,7 +102,7 @@
   These terms are compatible with the Creative Commons Attribution License 4.0 and the Open Data Commons Attribution License, both of which license copyright and database rights. This means that when the Information is adapted and licensed under either of those licences, you automatically satisfy the conditions of the OGL when you comply with the other licence. The OGLv2.0 is Open Definition compliant.
 
   Further context, best practice and guidance can be found in the UK Government Licensing Framework section on The National Archives website.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -122,7 +122,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OGL-UK-2.0",
@@ -280,7 +280,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OGL-UK-2.0.svg]]

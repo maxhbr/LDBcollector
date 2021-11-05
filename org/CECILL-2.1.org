@@ -21,11 +21,11 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   Strong copyleft license made by three French public research
   organisations, CEA, CNRS, and Inria, compatible with AGPL-3.0,
   EUPL-1.1, and GPL-2.0, or later versions of those licenses.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -67,7 +67,7 @@
 - http://www.cecill.info/licences/Licence_CeCILL_V2.1-en.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
     CeCILL FREE SOFTWARE LICENSE AGREEMENT
 
   Version 2.1 dated 2013-06-21
@@ -585,7 +585,7 @@
   occurrence, and unless emergency proceedings are necessary, the
   disagreements or disputes shall be referred to the Paris Courts having
   jurisdiction, by the more diligent Party.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -621,7 +621,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CECILL-2.1",
@@ -1057,7 +1057,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CECILL-2.1.svg]]

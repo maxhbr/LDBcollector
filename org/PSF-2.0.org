@@ -21,7 +21,7 @@
 - *SPDX:* http://spdx.org/licenses/PSF-2.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
 
   1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and the Individual or Organization ("Licensee") accessing and otherwise using this software ("Python") in source or binary form and its associated documentation.
@@ -32,7 +32,7 @@
   6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.
   7. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee. This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.
   8. By copying, installing or otherwise using Python, Licensee agrees to be bound by the terms and conditions of this License Agreement.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -48,7 +48,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "PSF-2.0",
@@ -158,7 +158,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/PSF-2.0.svg]]

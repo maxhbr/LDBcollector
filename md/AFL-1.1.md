@@ -1,5 +1,4 @@
-Academic Free License v1.1 (AFL-1.1)
-====================================
+# Academic Free License v1.1 (AFL-1.1)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Academic Free License v1.1 (AFL-1.1)
 
 -   `AFL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AFL-1.1.html "SPDX") (all data \[in
@@ -20,16 +18,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license has been superseded by later versions.”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://spdx.org/licenses/AFL-1.1
 
@@ -44,10 +40,9 @@ URLs
 
 -   http://wayback.archive.org/web/20021004124254/http://www.opensource.org/licenses/academic.php
 
--   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
+-   http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
-Text
-----
+## Text
 
     Academic Free License
     Version 1.1
@@ -137,8 +132,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

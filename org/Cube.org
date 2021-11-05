@@ -32,7 +32,7 @@
 - *SPDX:* http://spdx.org/licenses/Cube.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Cube game engine source code, 20 dec 2003 release.
 
   Copyright (C) 2001-2003 Wouter van Oortmerssen.
@@ -59,7 +59,7 @@
 
        4. Source versions may not be "relicensed" under a different license
        without my explicitly written permission.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -82,7 +82,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Cube",
@@ -285,7 +285,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Cube.svg]]

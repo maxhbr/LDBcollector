@@ -1,5 +1,4 @@
-CERN Open Hardware Licence v1.1 (CERN-OHL-1.1)
-==============================================
+# CERN Open Hardware Licence v1.1 (CERN-OHL-1.1)
 
 [TABLE]
 
@@ -9,22 +8,18 @@ CERN Open Hardware Licence v1.1 (CERN-OHL-1.1)
 
 -   `CERN Open Hardware License v1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.ohwr.org/project/licenses/wikis/cern-ohl-v1.1
 
 -   **SPDX:** http://spdx.org/licenses/CERN-OHL-1.1.json
 
-Text
-----
+## Text
 
     CERN OHL v1.1
 
@@ -106,8 +101,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

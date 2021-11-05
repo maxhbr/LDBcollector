@@ -18,11 +18,11 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The Open Database License (ODbL) is a license agreement intended to
   allow users to freely share, modify, and use a database while
   maintaining this same freedom for others.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -55,7 +55,7 @@
 - https://opendefinition.org/licenses/odc-odbl
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   ## ODC Open Database License (ODbL)
 
   ### Preamble
@@ -596,7 +596,7 @@
   jurisdiction includes additional rights not granted under this License,
   these additional rights are granted in this License in order to meet the
   terms of this License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -627,7 +627,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ODbL-1.0",
@@ -953,7 +953,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ODbL-1.0.svg]]

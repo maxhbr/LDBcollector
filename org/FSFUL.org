@@ -30,10 +30,10 @@
 - https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This configure script is free software; the Free Software Foundation gives
   unlimited permission to copy, distribute and modify it.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -53,7 +53,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "FSFUL",
@@ -206,7 +206,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/FSFUL.svg]]

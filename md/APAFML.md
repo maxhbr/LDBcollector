@@ -1,5 +1,4 @@
-Adobe Postscript AFM License (APAFML)
-=====================================
+# Adobe Postscript AFM License (APAFML)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Adobe Postscript AFM License (APAFML)
 
 -   `scancode://apafml`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,11 +17,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM
@@ -32,8 +28,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/APAFML.json
 
-Text
-----
+## Text
 
     This file and the 14 PostScript(R) AFM files it accompanies may be used, copied,
     and distributed for any purpose and without charge, with or without
@@ -45,8 +40,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -27,7 +27,7 @@
 - https://opendatacommons.org/licenses/by/1.0/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Open Data Commons Attribution License (ODC-By) v1.0
   ODC Attribution License (ODC-By)
   Preamble
@@ -444,7 +444,7 @@
   jurisdiction includes additional rights not granted under this License,
   these additional rights are granted in this License in order to meet the
   terms of this License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -464,7 +464,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ODC-By-1.0",
@@ -614,7 +614,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ODC-By-1.0.svg]]

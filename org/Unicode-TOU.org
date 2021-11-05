@@ -32,7 +32,7 @@
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Unicode Terms of Use
 
   For the general privacy policy governing access to this site, see the
@@ -160,7 +160,7 @@
 
   5. Entire Agreement. This Agreement constitutes the entire agreement
   between the parties.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -179,7 +179,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Unicode-TOU",
@@ -315,7 +315,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Unicode-TOU.svg]]

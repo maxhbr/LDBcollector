@@ -1,5 +1,4 @@
-Yahoo! Public License v1.1 (YPL-1.1)
-====================================
+# Yahoo! Public License v1.1 (YPL-1.1)
 
 [TABLE]
 
@@ -9,24 +8,20 @@ Yahoo! Public License v1.1 (YPL-1.1)
 
 -   `YPL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.zimbra.com/license/yahoo\_public\_license\_1.1.html
 
 -   **SPDX:** http://spdx.org/licenses/YPL-1.1.json
 
--   http://www.gnu.org/licenses/license-list.html\#Yahoo
+-   http://www.gnu.org/licenses/license-list.html#Yahoo
 
-Text
-----
+## Text
 
     Yahoo! Public License, Version 1.1 (YPL)
 
@@ -183,8 +178,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

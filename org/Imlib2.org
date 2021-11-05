@@ -37,7 +37,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -49,9 +49,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -64,9 +64,9 @@
     Conditions:
     AND
       OBLIGATION: Include copyright notice, trademark notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided. Acknowledgements should be included in any copyright notices, manuals, advertising or promotional documents, or accompanying documentation for products containing the software. The acknowledgment should state that the software is being used.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -92,12 +92,12 @@
           OBLIGATION: Attach the source code corresponding to the software in question.
           OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
           OBLIGATION: Provide source code for the software upon request
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Imlib2 License 
 
   Permission is hereby granted, free of charge, to any person obtaining a copy 
@@ -131,7 +131,7 @@
   THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER 
   IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
   CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -154,7 +154,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Imlib2",
@@ -525,7 +525,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Imlib2.svg]]

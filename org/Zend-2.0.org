@@ -51,7 +51,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -60,9 +60,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes the Zend Engine, freely available at http://www.zend.com"
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -72,9 +72,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes the Zend Engine, freely available at http://www.zend.com"
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -84,30 +84,30 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "Zend", when using the name "Zend Engine". license@zend.comに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgement is here: "The Zend Engine is freely available at http://www.zend.com"
     Actions:
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
     OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   -------------------------------------------------------------------- 
                   The Zend Engine License, version 2.00
   Copyright (c) 1999-2002 Zend Technologies Ltd. All rights reserved.
@@ -163,7 +163,7 @@
   OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
   SUCH DAMAGE.
   --------------------------------------------------------------------
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -193,7 +193,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Zend-2.0",
@@ -585,7 +585,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Zend-2.0.svg]]

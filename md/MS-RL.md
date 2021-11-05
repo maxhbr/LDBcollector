@@ -1,5 +1,4 @@
-Microsoft Reciprocal License (MS-RL)
-====================================
+# Microsoft Reciprocal License (MS-RL)
 
 [TABLE]
 
@@ -9,19 +8,17 @@ Microsoft Reciprocal License (MS-RL)
 
 -   `scancode://ms-rl`
 
-Description
------------
+## Description
 
 > An open source license with a patent grant similar to the &lt;a
-> href="/licenses/ms-pl/"&gt;Microsoft Public License&lt;/a&gt;, with
-> the additional condition that any source code for any derived file be
+> href="/licenses/ms-pl/">Microsoft Public License&lt;/a>, with the
+> additional condition that any source code for any derived file be
 > provided under this license.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MS-RL.html "SPDX") (all data \[in
@@ -32,8 +29,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -56,8 +52,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ms-rl.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -65,11 +60,10 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ms-rl.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
-    http://www.microsoft.com/opensource/licenses.mspx\#Ms-RL
+    http://www.microsoft.com/opensource/licenses.mspx#Ms-RL
 
 -   **OSI Page:** https://opensource.org/licenses/MS-RL
 
@@ -83,12 +77,11 @@ URLs
 
 -   http://www.microsoft.com/opensource/licenses.mspx
 
--   http://www.microsoft.com/en-us/openness/licenses.aspx\#MRL
+-   http://www.microsoft.com/en-us/openness/licenses.aspx#MRL
 
 -   http://www.opensource.org/licenses/MS-RL
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -130,8 +123,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Grant License
@@ -174,8 +166,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Microsoft Reciprocal License (Ms-RL)
 
@@ -201,8 +192,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

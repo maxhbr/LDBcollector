@@ -43,10 +43,10 @@
 - *SPDX:* http://spdx.org/licenses/diffmark.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   1. you can do what you want with it
   2. I refuse any responsibility for the consequences
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -69,7 +69,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "diffmark",
@@ -289,7 +289,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/diffmark.svg]]

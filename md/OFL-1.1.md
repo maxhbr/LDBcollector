@@ -1,5 +1,4 @@
-SIL Open Font License 1.1 (OFL-1.1)
-===================================
+# SIL Open Font License 1.1 (OFL-1.1)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ SIL Open Font License 1.1 (OFL-1.1)
 
 -   `OFL 1.1`
 
-Description
------------
+## Description
 
 > The Open Font License (OFL) is maintained by SIL International. It
 > attempts to be a compromise between the values of the free software
@@ -26,8 +24,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OFL-1.1.html "SPDX") (all data \[in
@@ -41,8 +38,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Font Software is the set of files that the copyright holder
     provides under this license that is specifically identified as the
@@ -60,8 +56,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.1.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -69,8 +64,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ofl-1.1.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://scripts.sil.org/cms/scripts/page.php?item\_id=OFL\_web
@@ -87,8 +81,7 @@ URLs
 
 -   https://github.com/adobe-fonts/source-code-pro/blob/master/LICENSE.txt
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Font Software is the set of files that the copyright holder provides under this license that is specifically identified as the Font Software. The Font Software includes source files, build scripts, and documentation.
         Actions:
@@ -140,8 +133,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     This Font Software is licensed under the SIL Open Font License, Version 1.1.
 
@@ -236,8 +228,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

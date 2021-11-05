@@ -1,5 +1,4 @@
-Q Public License 1.0 (QPL-1.0)
-==============================
+# Q Public License 1.0 (QPL-1.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Q Public License 1.0 (QPL-1.0)
 
 -   `QPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/QPL-1.0.html "SPDX") (all data \[in
@@ -48,8 +46,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -66,8 +63,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qpl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://doc.trolltech.com/4.0/qpl.html
 
@@ -81,12 +77,11 @@ URLs
 
 -   http://doc.qt.nokia.com/3.3/license.html
 
--   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
+-   http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
 
 -   http://www.opensource.org/licenses/QPL-1.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The software may be used to compile, link, and execute legitimately developed application programs.
         Actions:
@@ -140,8 +135,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The Q Public License Version 1.0
 
@@ -193,8 +187,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

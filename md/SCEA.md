@@ -1,5 +1,4 @@
-SCEA Shared Source License (SCEA)
-=================================
+# SCEA Shared Source License (SCEA)
 
 [TABLE]
 
@@ -9,27 +8,23 @@ SCEA Shared Source License (SCEA)
 
 -   `SCEA Shared Source License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://research.scea.com/scea\_shared\_source\_license.html
 
 -   **SPDX:** http://spdx.org/licenses/SCEA.json
 
-Text
-----
+## Text
 
     SCEA Shared Source License 1.0
 
@@ -94,8 +89,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

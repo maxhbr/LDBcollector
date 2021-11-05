@@ -53,7 +53,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -63,9 +63,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the complete, compiled and linkable source code of Sendmail, including modifications.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -78,9 +78,9 @@
         OBLIGATION: Attach the source code corresponding to the software in question.
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: ●Source code refers to the complete, compilable and linkable Sendmail source code, including modifications. The contents of the copyright notice are here." Copyright (c) 1998-2004 Sendmail, Inc. all rights reserved."
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -93,21 +93,21 @@
         OBLIGATION: Attach the source code corresponding to the software in question.
         OBLIGATION: Give you a letter, valid for at least three years, stating that you will provide the corresponding source code for the software in exchange for a fee not to exceed the physical cost of distribution.
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The use of "Sendmail, Inc.", "the University of California" and the Contributor's name. Sendmail" is a trademark of "Sendmail, Inc.
     Actions:
     - Use the name of the copyright holder or contributor to endorse or promote the derived product
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
                    SENDMAIL LICENSE
 
   The following license terms and conditions apply, unless a different
@@ -187,7 +187,7 @@
      THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
 
   $Revision: 8.13 $, Last updated $Date: 2004/05/11 23:57:57 $
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -220,7 +220,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Sendmail",
@@ -597,7 +597,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Sendmail.svg]]

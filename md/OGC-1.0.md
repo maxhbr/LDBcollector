@@ -1,5 +1,4 @@
-OGC Software License, Version 1.0 (OGC-1.0)
-===========================================
+# OGC Software License, Version 1.0 (OGC-1.0)
 
 [TABLE]
 
@@ -9,21 +8,17 @@ OGC Software License, Version 1.0 (OGC-1.0)
 
 -   `OGC 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.ogc.org/ogc/software/1.0
 
 -   **SPDX:** http://spdx.org/licenses/OGC-1.0.json
 
-Text
-----
+## Text
 
     OGC Software License, Version 1.0
 
@@ -67,8 +62,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -31,7 +31,7 @@
 - *SPDX:* http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT 
 
   IMPORTANT: PLEASE READ THE FOLLOWING AGREEMENT CAREFULLY. 
@@ -55,7 +55,7 @@
   8. By clicking on the "ACCEPT" button where indicated, or by copying, installing or otherwise using Python 1.6.1, Licensee agrees to be bound by the terms and conditions of this License Agreement. 
 
   ACCEPT
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -78,7 +78,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CNRI-Python-GPL-Compatible",
@@ -262,7 +262,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CNRI-Python-GPL-Compatible.svg]]

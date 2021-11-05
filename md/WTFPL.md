@@ -1,5 +1,4 @@
-Do What The F\*ck You Want To Public License (WTFPL)
-====================================================
+# Do What The F\*ck You Want To Public License (WTFPL)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Do What The F\*ck You Want To Public License (WTFPL)
 
 -   `Do What The Fuck You Want To Public License (WTFPL) 2`
 
-Description
------------
+## Description
 
 > The easiest license out there. It gives the user permissions to do
 > whatever they want with your code.
@@ -20,8 +18,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This license is compatible with the
     DebianFreeSoftwareGuidelines (DFSG-free)” (source: [Debian Free
@@ -47,11 +44,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -59,8 +54,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/wtfpl.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://sam.zoy.org/wtfpl/
 
@@ -74,15 +68,13 @@ URLs
 
 -   http://fedoraproject.org/wiki/Licensing/WTFPL
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                         Version 2, December 2004
@@ -100,8 +92,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

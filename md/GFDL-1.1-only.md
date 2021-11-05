@@ -1,5 +1,4 @@
-GNU Free Documentation License v1.1 only (GFDL-1.1-only)
-========================================================
+# GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 
 [TABLE]
 
@@ -9,25 +8,22 @@ GNU Free Documentation License v1.1 only (GFDL-1.1-only)
 
 -   `GFDL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
-    http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
+    http://www.debian.org/vote/2006/vote\_001#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released March 2000” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/fdl-1.1.txt
 
@@ -35,8 +31,7 @@ URLs
 
 -   http://www.lysator.liu.se/~kjell-e/tekla/linux/security/fdl.html
 
-Text
-----
+## Text
 
     GNU Free Documentation License
     		   Version 1.1, March 2000
@@ -395,8 +390,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

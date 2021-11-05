@@ -1,5 +1,4 @@
-NIST Public Domain Notice with license fallback (NIST-PD-fallback)
-==================================================================
+# NIST Public Domain Notice with license fallback (NIST-PD-fallback)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ NIST Public Domain Notice with license fallback (NIST-PD-fallback)
 
 -   `NIST Public Domain Notice with fallback`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/usnistgov/jsip/blob/59700e6926cbe96c5cdae897d9a7d2656b42abe3/LICENSE
@@ -25,8 +21,7 @@ URLs
 
 -   https://github.com/usnistgov/fipy/blob/86aaa5c2ba2c6f1be19593c5986071cf6568cc34/LICENSE.rst
 
-Text
-----
+## Text
 
     This software was developed by employees of the National Institute of Standards
     and Technology (NIST), an agency of the Federal Government and is being made
@@ -54,8 +49,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

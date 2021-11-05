@@ -1,5 +1,4 @@
-gnuplot License (gnuplot)
-=========================
+# gnuplot License (gnuplot)
 
 [TABLE]
 
@@ -7,19 +6,16 @@ gnuplot License (gnuplot)
 
 -   `scancode://gnuplot`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Gnuplot?rd=Licensing/Gnuplot
@@ -28,8 +24,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Gnuplot
 
-Text
-----
+## Text
 
     Permission to use, copy, and distribute this software and its documentation for
     any purpose with or without fee is hereby granted, provided that the above
@@ -60,8 +55,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Open Government Licence v1.0 (OGL-UK-1.0)
-=========================================
+# Open Government Licence v1.0 (OGL-UK-1.0)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Open Government Licence v1.0 (OGL-UK-1.0)
 
 -   `scancode://ogl-uk-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“The license issuperseded” (source: [Open Knowledge
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/
@@ -29,8 +25,7 @@ URLs
 
 -   http://www.nationalarchives.gov.uk/doc/open-government-licence/
 
-Text
-----
+## Text
 
     You are encouraged to use and re-use the Information that is available under this
      licence, the Open Government Licence, freely and flexibly, with only a few conditions.
@@ -139,8 +134,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

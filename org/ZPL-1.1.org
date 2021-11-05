@@ -38,7 +38,7 @@
 - http://www.zope.com/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Zope Public License (ZPL) Version 1.1
 
   Copyright (c) Zope Corporation. All rights reserved.
@@ -100,7 +100,7 @@
   This software consists of contributions made by Zope Corporation and many
   individuals on behalf of Zope Corporation. Specific attributions are listed in
   the accompanying credits file.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -127,7 +127,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ZPL-1.1",
@@ -363,7 +363,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ZPL-1.1.svg]]

@@ -44,7 +44,7 @@
 - http://www.opensource.org/licenses/nokia
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Nokia Open Source License (NOKOS License) Version 1.0a
 
    1. DEFINITIONS.
@@ -431,7 +431,7 @@
    .
 
   Copyright © <year> Nokia and others. All Rights Reserved.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -465,7 +465,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Nokia",
@@ -795,7 +795,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Nokia.svg]]

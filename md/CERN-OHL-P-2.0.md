@@ -1,5 +1,4 @@
-CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
-==================================================================
+# CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ CERN Open Hardware Licence Version 2 - Permissive (CERN-OHL-P-2.0)
 
 -   `scancode://cern-ohl-p-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
@@ -29,8 +25,7 @@ URLs
 
 -   https://ohwr.org/project/cernohl/wikis/uploads/0be6f561d2b4a686c5765c74be32daf9/CERN\_OHL\_rationale.pdf
 
-Text
-----
+## Text
 
     CERN Open Hardware Licence Version 2 - Permissive
 
@@ -234,8 +229,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

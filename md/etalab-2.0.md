@@ -1,5 +1,4 @@
-Etalab Open License 2.0 (etalab-2.0)
-====================================
+# Etalab Open License 2.0 (etalab-2.0)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ Etalab Open License 2.0 (etalab-2.0)
 
 -   `scancode://etalab-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “there is also a French version” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/etalab-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://raw.githubusercontent.com/DISIC/politique-de-contribution-open-source/master/LICENSE
@@ -29,8 +25,7 @@ URLs
 
 -   https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf
 
-Text
-----
+## Text
 
     # OPEN LICENCE 2.0/LICENCE OUVERTE 2.0
 
@@ -111,8 +106,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

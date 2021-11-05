@@ -1,5 +1,4 @@
-SGI Free Software License B v1.1 (SGI-B-1.1)
-============================================
+# SGI Free Software License B v1.1 (SGI-B-1.1)
 
 [TABLE]
 
@@ -11,18 +10,15 @@ SGI Free Software License B v1.1 (SGI-B-1.1)
 
 -   `SGI Free Software License B 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 22 February 2002” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc
@@ -33,13 +29,11 @@ URLs
 
 -   http://oss.sgi.com/projects/FreeB/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000]) 
     2.License Grant and Restrictions.
@@ -69,8 +63,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

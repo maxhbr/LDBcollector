@@ -1,5 +1,4 @@
-Reciprocal Public License 1.1 (RPL-1.1)
-=======================================
+# Reciprocal Public License 1.1 (RPL-1.1)
 
 [TABLE]
 
@@ -11,15 +10,13 @@ Reciprocal Public License 1.1 (RPL-1.1)
 
 -   `RPL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/RPL-1.1.html "SPDX") (all data \[in
     this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Maximal copyleft licenses answer the question “When does the
     license require you to share?” differently than other families.
@@ -34,8 +31,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rpl-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/RPL-1.1
 
@@ -43,10 +39,9 @@ URLs
 
 -   https://spdx.org/licenses/RPL-1.1.html
 
--   http://www.gnu.org/licenses/license-list.html\#RPL
+-   http://www.gnu.org/licenses/license-list.html#RPL
 
-Text
-----
+## Text
 
     Reciprocal Public License, version 1.1 
 
@@ -211,8 +206,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

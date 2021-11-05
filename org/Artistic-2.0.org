@@ -25,11 +25,11 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   Heavily favored by the Perl community, the Artistic license requires
   that modified versions of the software do not prevent users from
   running the standard version.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -112,7 +112,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the source code, documentation and configuration files. Source code refers to source code, documentation and configuration files.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -125,9 +125,9 @@
 
     Conditions:
     RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -136,9 +136,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution.
     Actions:
     - Distribution of Modified Source Code
@@ -155,9 +155,9 @@
           REQUISITE: Change the name of the software
         RESTRICTION: Allow the recipient of such software to make the corresponding source code for such software available to others under one of the following licenses Such license means this license, or the license terms applicable to such software, which requires the licensee to permit the licensee to copy, modify, and redistribute the software or its derivative works under the terms of this license or the license terms applicable to such software, and to make the source code of such software or its derivative works freely available for use at no charge, but without a fee for distribution A license that may impose a
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Source code refers to the source code, documentation and configuration files. You may charge a fee for distribution. You may charge a fee for distribution. If the source code is made available in an obsolete manner, notify the user on demand of the new method of distribution or stop distribution. You do not lose your rights under this license if you do so within 30 days of becoming aware of the invalidation.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -167,9 +167,9 @@
     AND
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Linking software with other software
     - Embedding software into its own software
@@ -177,12 +177,12 @@
 
     Conditions:
     RESTRICTION: Not directly exposing the interface of the software in question
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Copyright (c) 2000-2006, The Perl Foundation.
 
   Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
@@ -256,7 +256,7 @@
   (13) This license includes the non-exclusive, worldwide, free-of-charge patent license to make, have made, use, offer to sell, sell, import and otherwise transfer the Package with respect to any patent claims licensable by the Copyright Holder that are necessarily infringed by the Package. If you institute patent litigation (including a cross-claim or counterclaim) against any party alleging that the Package constitutes direct or contributory patent infringement, then this Artistic License to you shall terminate on the date that such litigation is filed.
 
   (14) Disclaimer of Warranty: THE PACKAGE IS PROVIDED BY THE COPYRIGHT HOLDER AND CONTRIBUTORS "AS IS' AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES. THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT ARE DISCLAIMED TO THE EXTENT PERMITTED BY YOUR LOCAL LAW. UNLESS REQUIRED BY LAW, NO COPYRIGHT HOLDER OR CONTRIBUTOR WILL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THE PACKAGE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -318,7 +318,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Artistic-2.0",
@@ -1300,7 +1300,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Artistic-2.0.svg]]

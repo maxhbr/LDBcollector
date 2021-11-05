@@ -1,5 +1,4 @@
-GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
-===========================================================
+# GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 [TABLE]
 
@@ -27,8 +26,7 @@ GNU Lesser General Public License v2.1 only (LGPL-2.1-only)
 
 -   `LGPL 2.1`
 
-Description
------------
+## Description
 
 > Primarily used for software libraries, the GNU LGPL requires that
 > derived works be licensed under the same license, but works that only
@@ -38,8 +36,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Earlier called the "Library General Public License"; this name
     is deprecated because it confuses the license's intent.” (source:
@@ -55,8 +52,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -79,8 +75,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lgpl-2.1.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -88,8 +83,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/lgpl-2.1.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/lgpl-2.1.html
 
@@ -122,8 +116,7 @@ URLs
 
 -   http://www.opensource.org/licenses/LGPL-2.1
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The source code includes the source code of all modules, plus all of the associated interface definition files and the scripts used to control the compilation and installation of the library.
         Actions:
@@ -237,8 +230,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -394,8 +386,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
                       GNU LESSER GENERAL PUBLIC LICENSE
                            Version 2.1, February 1999
@@ -911,8 +902,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

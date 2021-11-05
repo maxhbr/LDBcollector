@@ -17,10 +17,10 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The easiest license out there. It gives the user permissions to do
   whatever they want with your code.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -81,14 +81,14 @@
 - http://fedoraproject.org/wiki/Licensing/WTFPL
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
                       Version 2, December 2004
 
@@ -102,7 +102,7 @@
      TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
 
     0. You just DO WHAT THE FUCK YOU WANT TO.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -152,7 +152,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "WTFPL",
@@ -621,7 +621,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/WTFPL.svg]]

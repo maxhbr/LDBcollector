@@ -1,5 +1,4 @@
-Eurosym License (Eurosym)
-=========================
+# Eurosym License (Eurosym)
 
 [TABLE]
 
@@ -7,19 +6,16 @@ Eurosym License (Eurosym)
 
 -   `scancode://eurosym`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Eurosym?rd=Licensing/Eurosym
@@ -28,8 +24,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Eurosym
 
-Text
-----
+## Text
 
     Licence Version 2
 
@@ -51,8 +46,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

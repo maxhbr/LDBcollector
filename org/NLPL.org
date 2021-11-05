@@ -41,7 +41,7 @@
 - *SPDX:* http://spdx.org/licenses/NLPL.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   NO LIMIT PUBLIC LICENSE
              Version 0, June 2012
 
@@ -55,7 +55,7 @@
   or anything else.
 
     0. No limit to do anything with this work and this license.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -78,7 +78,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NLPL",
@@ -297,7 +297,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NLPL.svg]]

@@ -1,5 +1,4 @@
-GNU General Public License v3.0 only (GPL-3.0-only)
-===================================================
+# GNU General Public License v3.0 only (GPL-3.0-only)
 
 [TABLE]
 
@@ -47,8 +46,7 @@ GNU General Public License v3.0 only (GPL-3.0-only)
 
 -   `GPL 3.0`
 
-Description
------------
+## Description
 
 > Permissions of this strong copyleft license are conditioned on making
 > available complete source code of licensed works and modifications,
@@ -59,8 +57,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com")
@@ -85,8 +82,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -107,8 +103,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-3.0-plus.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -116,8 +111,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-3.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/gpl-3.0-standalone.html
 
@@ -147,8 +141,7 @@ URLs
 
 -   http://www.gnu.org/licenses/quick-guide-gplv3.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -265,8 +258,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -419,8 +411,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -437,8 +428,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

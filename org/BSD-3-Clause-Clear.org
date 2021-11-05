@@ -16,10 +16,10 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   A variant of the <a href="/licenses/bsd-3-clause/">BSD 3-Clause
   License</a> that explicitly does not grant any patent rights.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -67,7 +67,7 @@
 - http://labs.metacarta.com/license-explanation.html#license
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Redistribution and use in source and binary forms, with or without
   modification, are permitted (subject to the limitations in the
   disclaimer below) provided that the following conditions are met:
@@ -97,7 +97,7 @@
   WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
   OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
   IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -133,7 +133,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "BSD-3-Clause-Clear",
@@ -501,7 +501,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/BSD-3-Clause-Clear.svg]]

@@ -15,9 +15,9 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   An open source license with a patent grant.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -98,7 +98,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Use the retrieved object code (Use the fetched code as it is.)
@@ -109,9 +109,9 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -122,9 +122,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
@@ -134,9 +134,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Modify the obtained source code.
 
@@ -144,9 +144,9 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the object code generated from the modified source code
     - Distribute the generated binaries from modified source code
@@ -157,9 +157,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribution of Modified Source Code
 
@@ -169,12 +169,12 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Grant License
   	YOU MUST Forward Copyright notices
@@ -210,12 +210,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Questionable
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Microsoft Public License (Ms-PL)
 
   This license governs use of the accompanying software. If you use the software,
@@ -276,7 +276,7 @@
   change. To the extent permitted under your local laws, the contributors exclude
   the implied warranties of merchantability, fitness for a particular purpose and
   non-infringement.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -332,7 +332,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MS-PL",
@@ -1230,7 +1230,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MS-PL.svg]]

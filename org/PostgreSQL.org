@@ -14,9 +14,9 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   A very short, BSD-style license, used specifically for PostgreSQL.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -78,7 +78,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -90,9 +90,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -104,12 +104,12 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice and list of terms and conditions included in the license
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   PostgreSQL is released under the PostgreSQL License, a liberal Open Source license, similar to the BSD or MIT licenses.
 
   PostgreSQL Database Management System
@@ -134,7 +134,7 @@
   PARTICULAR PURPOSE. THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" BASIS, AND
   THE UNIVERSITY OF CALIFORNIA HAS NO OBLIGATIONS TO PROVIDE MAINTENANCE, SUPPORT,
   UPDATES, ENHANCEMENTS, OR MODIFICATIONS.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -177,7 +177,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "PostgreSQL",
@@ -771,7 +771,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/PostgreSQL.svg]]

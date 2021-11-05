@@ -20,12 +20,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The Educational Community License version 2.0 ("ECL") consists of the
   Apache 2.0 license, modified to change the scope of the patent grant
   in section 3 to be specific to the needs of the education communities
   using this license.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -86,7 +86,7 @@
 - *SPDX:* http://spdx.org/licenses/ECL-2.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
                Educational Community License
                   Version 2.0, April 2007
                http://www.osedu.org/licenses/
@@ -290,7 +290,7 @@
   	BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
   	or implied. See the License for the specific language governing
   	permissions and limitations under the License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -334,7 +334,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ECL-2.0",
@@ -860,7 +860,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ECL-2.0.svg]]

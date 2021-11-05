@@ -1,5 +1,4 @@
-Rdisc License (Rdisc)
-=====================
+# Rdisc License (Rdisc)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Rdisc License (Rdisc)
 
 -   `scancode://rdisc`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,16 +17,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this is a permissive style license from Sun, Free and
     GPL compatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rdisc.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Rdisc\_License
@@ -37,8 +33,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Rdisc.json
 
-Text
-----
+## Text
 
     Rdisc (this program) was developed by Sun Microsystems, Inc. and is provided for unrestricted use provided that this legend is included on all tape media and as a part of the software program in whole or part. Users may copy or modify Rdisc without charge, and they may freely distribute it.
 
@@ -52,8 +47,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

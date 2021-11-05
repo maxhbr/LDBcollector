@@ -19,12 +19,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   This commercially-friendly copyleft license provides the ability to
   commercially license binaries; a modern royalty-free patent license
   grant; and the ability for linked works to use other licenses,
   including commercial ones.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -105,7 +105,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The term "Contributor" refers to the person or entity that distributes the software. The term "source code" refers to the source code of the software, documentation sources, configuration files and other files suitable for making changes.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -131,9 +131,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributors may include appropriate proprietary copyright notices, patents, trademarks, and attribution notices and related disclaimers. Contributor is the person or entity that distributes the software. Distribution includes making available a method of transferring a copy of the software. The term "source code" refers to the source code, documentation sources, configuration files, and other files suitable for making modifications to the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -150,9 +150,9 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the original copyright notices, patents, trademarks, and attribution notices and related disclaimers contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -166,9 +166,9 @@
       OBLIGATION: Include a notice that the corresponding source code for the software is available under this license
       OBLIGATION: Communicate that the corresponding source code for the software is available on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The term "Contributor" refers to the person or entity that distributes the software, including making available a method of transferring copies of the software. Distribution includes making available a method of transferring copies of the Software. The term "source code" refers to the source code of the Software, the documentation source, configuration files, and other files suitable for making modifications.
     Actions:
     - Distribute the acquired object code under your own license
@@ -186,12 +186,12 @@
       RESTRICTION: The license you offer does not restrict or modify the rights to the source code described in the license.
       RESTRICTION: The recipient of such software is distributing it under a license that meets the terms of distribution of this license
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward License text
   	YOU MUST NOT Modify Copyright notices
@@ -257,12 +257,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Eclipse Public License - v 2.0
 
       THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
@@ -540,7 +540,7 @@
     look for such a notice.
 
     You may add additional accurate notices of copyright ownership.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -593,7 +593,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "EPL-2.0",
@@ -1546,7 +1546,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/EPL-2.0.svg]]

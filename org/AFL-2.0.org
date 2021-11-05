@@ -44,7 +44,7 @@
 - http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	IF Software modification
   		YOU MUST Forward Copyright notices
@@ -76,12 +76,12 @@
   			ATTRIBUTE No profit
   			ATTRIBUTE Duration As long as distributed
   PATENT HINTS Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Academic Free License
   v. 2.0
 
@@ -127,7 +127,7 @@
   14) Definition of "You" in This License. "You" throughout this License, whether in upper or lower case, means an individual or a legal entity exercising rights under, and complying with all of the terms of, this License. For legal entities, "You" includes any entity that controls, is controlled by, or is under common control with you. For purposes of this definition, "control" means (i) the power, direct or indirect, to cause the direction or management of such entity, whether by contract or otherwise, or (ii) ownership of fifty percent (50%) or more of the outstanding shares, or (iii) beneficial ownership of such entity.
 
   15) Right to Use. You may use the Original Work in all ways not otherwise restricted or conditioned by this License or by law, and Licensor promises not to interfere with or be responsible for such uses by You.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -157,7 +157,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "AFL-2.0",
@@ -428,7 +428,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/AFL-2.0.svg]]

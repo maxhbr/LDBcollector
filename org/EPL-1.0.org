@@ -19,12 +19,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   This commercially-friendly copyleft license provides the ability to
   commercially license binaries; a modern royalty-free patent license
   grant; and the ability for linked works to use other licenses,
   including commercial ones.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -110,7 +110,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -135,9 +135,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -150,9 +150,9 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -165,9 +165,9 @@
       OBLIGATION: Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribute the acquired object code under your own license
@@ -183,9 +183,9 @@
       OBLIGATION: Tell them that the corresponding source code for the software is available from themselves on media commonly used for software interchange and in a reasonable manner.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Modify the obtained source code.
@@ -197,9 +197,9 @@
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribution of Modified Source Code
@@ -213,9 +213,9 @@
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribute the object code generated from the modified source code
@@ -229,9 +229,9 @@
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Indicate that you have made the change yourself.
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Contributor is the person or entity that distributes the Software.
     Actions:
     - Distribute object code generated from modified source code under your own license
@@ -248,12 +248,12 @@
       REQUISITE: If there are intellectual property rights that need to be acquired, we will acquire them ourselves. (The rights conferred by the license and the intellectual property rights necessary as a condition for exercising the license, if any, follow the responsibility to obtain them yourself. For example, if a third party's patent license is needed to distribute the software, it is the responsibility of the distributor to obtain that license before the software is distributed.)
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to such license (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by using the contributor's contribution alone or in combination with the software in question.)
       OBLIGATION: Indemnify all contributors against any loss, damage or expense arising from any third party claim or action or other legal action, solely arising from their own acts or omissions in connection with the distribution. (Contributor is the person or entity that distributes the Software. Contributors also include all persons who receive such software under the license. This section does not apply to matters relating to intellectual property infringement. An indemnified contributor shall be entitled to indemnification by immediately sending written notice of such claim to the person who made the applicable distribution and cooperating with the person to whom such notice was sent.)
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward License text
   	YOU MUST Provide Warranty disclaimer
@@ -307,12 +307,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Eclipse Public License - v 1.0
 
   THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
@@ -399,7 +399,7 @@
   Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. The Eclipse Foundation is the initial Agreement Steward. The Eclipse Foundation may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to distribute the Program (including its Contributions) under the new version. Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved.
 
   This Agreement is governed by the laws of the State of New York and the intellectual property laws of the United States of America. No party to this Agreement will bring a legal action under this Agreement more than one year after the cause of action arose. Each party waives its rights to a jury trial in any resulting litigation.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -459,7 +459,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "EPL-1.0",
@@ -1659,7 +1659,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/EPL-1.0.svg]]

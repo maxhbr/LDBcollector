@@ -28,7 +28,7 @@
 - https://creativecommons.org/licenses/by-nd/3.0/legalcode
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Creative Commons Legal Code
 
   Attribution-NoDerivs 3.0 Unported
@@ -322,7 +322,7 @@
       this trademark restriction does not form part of this License.
 
       Creative Commons may be contacted at https://creativecommons.org/.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -342,7 +342,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CC-BY-ND-3.0",
@@ -472,7 +472,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CC-BY-ND-3.0.svg]]

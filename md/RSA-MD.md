@@ -1,5 +1,4 @@
-RSA Message-Digest License (RSA-MD)
-===================================
+# RSA Message-Digest License (RSA-MD)
 
 [TABLE]
 
@@ -11,18 +10,15 @@ RSA Message-Digest License (RSA-MD)
 
 -   `RSA-MD5 License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.faqs.org/rfcs/rfc1321.html
 
@@ -30,8 +26,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/RSA-MD.json
 
-Text
-----
+## Text
 
     License to copy and use this software is granted provided that it
     is identified as the "RSA Data Security, Inc. MD5 Message-Digest
@@ -53,8 +48,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

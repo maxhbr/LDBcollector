@@ -1,5 +1,4 @@
-Academic Free License v2.0 (AFL-2.0)
-====================================
+# Academic Free License v2.0 (AFL-2.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Academic Free License v2.0 (AFL-2.0)
 
 -   `AFL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/AFL-2.0.html "SPDX") (all data \[in
@@ -20,15 +18,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://opensource.linux-mirror.org/licenses/afl-2.0.txt
@@ -41,10 +37,9 @@ URLs
 
 -   http://wayback.archive.org/web/20060924134533/http://www.opensource.org/licenses/afl-2.0.txt
 
--   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
+-   http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	IF Software modification
@@ -80,8 +75,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Academic Free License
     v. 2.0
@@ -131,8 +125,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

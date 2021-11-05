@@ -1,5 +1,4 @@
-European Union Public License 1.0 (EUPL-1.0)
-============================================
+# European Union Public License 1.0 (EUPL-1.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ European Union Public License 1.0 (EUPL-1.0)
 
 -   `EUPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is CANNOT\_BE\_USED "The EUPL is very
     similar to the AGPL. For the same reasons that the AGPL is banned,
@@ -19,8 +17,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -37,8 +34,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://ec.europa.eu/idabc/en/document/7330.html
 
@@ -48,8 +44,7 @@ URLs
 
 -   http://ec.europa.eu/idabc/servlets/Doc027f.pdf?id=31096
 
-Text
-----
+## Text
 
     European Union Public Licence V.1.0 
     EUPL © the European Community 2007 
@@ -206,8 +201,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

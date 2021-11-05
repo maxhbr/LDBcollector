@@ -52,7 +52,7 @@
 - http://www.opensource.org/licenses/OGTSL
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Open Group Test Suite License
 
   Preamble
@@ -105,7 +105,7 @@
   9. THIS PACKAGE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
 
   The End
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -138,7 +138,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OGTSL",
@@ -496,7 +496,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OGTSL.svg]]

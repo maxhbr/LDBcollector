@@ -1,5 +1,4 @@
-Mozilla Public License 1.0 (MPL-1.0)
-====================================
+# Mozilla Public License 1.0 (MPL-1.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Mozilla Public License 1.0 (MPL-1.0)
 
 -   `MPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-1.0.html "SPDX") (all data \[in
@@ -36,8 +34,7 @@ Comments on (easy) usability
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -70,8 +67,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.mozilla.org/MPL/MPL-1.0.html
 
@@ -85,8 +81,7 @@ URLs
 
 -   https://spdx.org/licenses/MPL-1.0.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
         Actions:
@@ -210,8 +205,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     MOZILLA PUBLIC LICENSE
     Version 1.0
@@ -334,8 +328,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

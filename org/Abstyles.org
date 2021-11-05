@@ -31,7 +31,7 @@
 - *SPDX:* http://spdx.org/licenses/Abstyles.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This program is distributed WITHOUT ANY WARRANTY, express or implied.  
 
   Permission is granted to make and distribute verbatim copies of this
@@ -42,7 +42,7 @@
   document under the conditions for verbatim copying, provided that the
   entire resulting derived work is distributed under the terms of a
   permission notice identical to this one.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -62,7 +62,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Abstyles",
@@ -230,7 +230,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Abstyles.svg]]

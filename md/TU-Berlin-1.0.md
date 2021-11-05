@@ -1,5 +1,4 @@
-Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
-==========================================================
+# Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Technische Universitaet Berlin License 1.0 (TU-Berlin-1.0)
 
 -   `TU Berlin License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/swh/ladspa/blob/7bf6f3799fdba70fda297c2d8fd9f526803d9680/gsm/COPYRIGHT
@@ -31,8 +27,7 @@ URLs
 
 -   ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/gsm-1.0.6.tar.gz
 
-Text
-----
+## Text
 
     Any use of this software is permitted provided that this notice is not
     removed and that neither the authors nor the Technische Universitaet Berlin
@@ -46,8 +41,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

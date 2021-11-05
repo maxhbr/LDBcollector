@@ -1,5 +1,4 @@
-Afmparse License (Afmparse)
-===========================
+# Afmparse License (Afmparse)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Afmparse License (Afmparse)
 
 -   `scancode://afmparse`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,11 +17,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Afmparse
 
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Afmparse.json
 
-Text
-----
+## Text
 
     This file may be freely copied and redistributed as long as:  
 
@@ -54,8 +49,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

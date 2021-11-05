@@ -1,5 +1,4 @@
-Norwegian Licence for Open Government Data (NLOD-1.0)
-=====================================================
+# Norwegian Licence for Open Government Data (NLOD-1.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Norwegian Licence for Open Government Data (NLOD-1.0)
 
 -   `scancode://nlod-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://data.norge.no/nlod/en/1.0
 
@@ -22,8 +18,7 @@ URLs
 
 -   http://data.norge.no/nlod/no/1.0
 
-Text
-----
+## Text
 
     Norwegian Licence for Open Government Data (NLOD)
     Preface of licence
@@ -106,8 +101,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Technische Universitaet Berlin License 2.0 (TU-Berlin-2.0)
-==========================================================
+# Technische Universitaet Berlin License 2.0 (TU-Berlin-2.0)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Technische Universitaet Berlin License 2.0 (TU-Berlin-2.0)
 
 -   `TU Berlin License 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/CorsixTH/deps/blob/fd339a9f526d1d9c9f01ccf39e438a015da50035/licences/libgsm.txt
@@ -29,8 +25,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/TU-Berlin-2.0.json
 
-Text
-----
+## Text
 
     Any use of this software is permitted provided that this notice is not
     removed and that neither the authors nor the Technische Universitaet Berlin
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

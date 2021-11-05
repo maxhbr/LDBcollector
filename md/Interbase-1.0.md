@@ -1,5 +1,4 @@
-Interbase Public License v1.0 (Interbase-1.0)
-=============================================
+# Interbase Public License v1.0 (Interbase-1.0)
 
 [TABLE]
 
@@ -13,11 +12,9 @@ Interbase Public License v1.0 (Interbase-1.0)
 
 -   `Interbase Public License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.firebirdsql.org/en/interbase-public-license/” (source:
     [Hitachi
@@ -43,8 +40,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://info.borland.com/devsupport/interbase/opensource/IPL.html
@@ -57,8 +53,7 @@ URLs
 
 -   https://web.archive.org/web/20060319014854/http://info.borland.com/devsupport/interbase/opensource/IPL.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The source code is a combination of source code, source code, and contributor contributions. The term "source code" refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of the executable.
         Actions:
@@ -202,8 +197,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Interbase Public License v1.0
 
@@ -403,8 +397,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

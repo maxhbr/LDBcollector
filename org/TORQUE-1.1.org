@@ -46,7 +46,7 @@
 - *SPDX:* http://spdx.org/licenses/TORQUE-1.1.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   TORQUE v2.5+ Software License v1.1
   Copyright (c) 2010-2011 Adaptive Computing Enterprises, Inc. All rights reserved.
 
@@ -72,7 +72,7 @@
 
   Note 1: TORQUE is developed from an earlier version v2.3 of OpenPBS. TORQUE has been developed beyond OpenPBS v2.3. The OpenPBS v2.3 license and OpenPBS software can be obtained at:
   http://www.pbsworks.com/ResLibSearchResult.aspx?keywords=openpbs&industry=All&pro duct_service=All&category=Free%20Software%20Downloads&order_by=title. Users of TORQUE should comply with the TORQUE license as well as the OpenPBS license.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -92,7 +92,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TORQUE-1.1",
@@ -261,7 +261,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TORQUE-1.1.svg]]

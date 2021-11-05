@@ -65,7 +65,7 @@
 - http://www.opensource.org/licenses/RPSL-1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   RealNetworks Public Source License Version 1.0
   (Rev. Date October 28, 2002)
 
@@ -583,7 +583,7 @@
   except as permitted by and in strict compliance at all times with RealNetworks'
   third party trademark usage guidelines which are posted at
   http://www.realnetworks.com/info/helixlogo.html.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -619,7 +619,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RPSL-1.0",
@@ -1021,7 +1021,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RPSL-1.0.svg]]

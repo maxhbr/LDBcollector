@@ -1,5 +1,4 @@
-Frameworx Open License 1.0 (Frameworx-1.0)
-==========================================
+# Frameworx Open License 1.0 (Frameworx-1.0)
 
 [TABLE]
 
@@ -13,23 +12,20 @@ Frameworx Open License 1.0 (Frameworx-1.0)
 
 -   `Frameworx 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Frameworx-1.0.html "SPDX") (all
     data \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified. The url included in
     the license does not work. (15/10/10) ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/frameworx-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/frameworx.php
 
@@ -39,8 +35,7 @@ URLs
 
 -   http://www.opensource.org/licenses/Frameworx-1.0
 
-Text
-----
+## Text
 
     THE FRAMEWORX OPEN LICENSE 1.0
     This License Agreement, The Frameworx Open License 1.0, has been entered into between The Frameworx Company and you, the licensee hereunder, effective as of Your acceptance of the Frameworx Code Base or an Downstream Distribution (each as defined below).
@@ -109,8 +104,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

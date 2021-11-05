@@ -25,7 +25,7 @@
 - http://www.nationalarchives.gov.uk/doc/non-commercial-government-licence-cymraeg/version/2/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Non-Commercial Government Licence
   for public sector information
 
@@ -100,7 +100,7 @@
 
   ‘You’
   means the natural or legal person, or body of persons corporate or incorporate, acquiring rights under this licence.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -116,7 +116,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NCGL-UK-2.0",
@@ -227,7 +227,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NCGL-UK-2.0.svg]]

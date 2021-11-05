@@ -29,7 +29,7 @@
 - https://fedoraproject.org/wiki/Licensing/Noweb
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Noweb is protected by copyright.  It is not public-domain
   software or shareware, and it is not protected by a ``copyleft''
   agreement like the one used by the Free Software Foundation.
@@ -50,7 +50,7 @@
   You must state clearly that your work uses or is based on noweb and
   that noweb is available free of change.  You must also request that
   bug reports on your work be reported to you.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -70,7 +70,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Noweb",
@@ -228,7 +228,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Noweb.svg]]

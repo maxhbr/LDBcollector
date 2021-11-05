@@ -58,7 +58,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -67,48 +67,48 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
     - Distribution of Modified Source Code
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
     - Distribute the generated binaries from modified source code
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "VOCAL", "Vovida Open Communication Application Library", and "Vovida Open Communication Application Library (VOCAL)". vocal@vovida.orgに Contact.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: If you use the name "VOCAL". get permission from Vovida Networks, Inc.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Vovida Software License v. 1.0
 
   This license applies to all software incorporated in the "Vovida
@@ -162,7 +162,7 @@
 
   All third party licenses and copyright notices and other required
   legends also need to be complied with as well.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -194,7 +194,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "VSL-1.0",
@@ -650,7 +650,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/VSL-1.0.svg]]

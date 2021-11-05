@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/OLDAP-1.1.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The OpenLDAP Public License 
 
   Version 1.1, 25 August 1998 
@@ -157,7 +157,7 @@
   WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. 
 
   The End
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -180,7 +180,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OLDAP-1.1",
@@ -380,7 +380,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OLDAP-1.1.svg]]

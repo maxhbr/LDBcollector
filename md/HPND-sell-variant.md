@@ -1,5 +1,4 @@
-Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
-==============================================================================
+# Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
 
 [TABLE]
 
@@ -11,18 +10,15 @@ Historical Permission Notice and Disclaimer - sell variant (HPND-sell-variant)
 
 -   `X11-Style (Keith Packard)`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “this is actually the same as the x11-keith-packard” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical-sell-variant.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/HPND-sell-variant.json
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://www.freedesktop.org/software/fontconfig/release/
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, distribute, and sell this software and its
     documentation for any purpose is hereby granted without fee, provided that the
@@ -53,8 +48,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -26,7 +26,7 @@
   this repository] is generated)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OFL-1.0-RFN",
@@ -86,7 +86,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OFL-1.0-RFN.svg]]

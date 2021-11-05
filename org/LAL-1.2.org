@@ -33,7 +33,7 @@
   repository] is generated)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LAL-1.2",
@@ -129,7 +129,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LAL-1.2.svg]]

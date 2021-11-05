@@ -53,7 +53,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -62,9 +62,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -74,9 +74,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -86,39 +86,39 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Acknowledgements include "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)."
     Actions:
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
     OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "OpenSSL Toolkit" and "OpenSSL Project". openssl-core@openssl.orgに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: To use the name "OpenSSL". Get written permission from the OpenSSL Project.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
@@ -154,12 +154,12 @@
   COMPATIBILITY X11
   COMPATIBILITY Zlib
   COPYLEFT CLAUSE Questionable
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   LICENSE ISSUES
     ==============
 
@@ -280,7 +280,7 @@
   derivative of this code cannot be changed.  i.e. this code cannot simply be
   copied and put under another distribution licence
   [including the GNU Public Licence.]
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -326,7 +326,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OpenSSL",
@@ -884,7 +884,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OpenSSL.svg]]

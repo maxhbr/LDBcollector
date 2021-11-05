@@ -1,5 +1,4 @@
-Apple Public Source License 1.1 (APSL-1.1)
-==========================================
+# Apple Public Source License 1.1 (APSL-1.1)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Apple Public Source License 1.1 (APSL-1.1)
 
 -   `APSL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.1.html "SPDX") (all data
@@ -30,8 +28,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -79,8 +76,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://web.archive.org/web/20000901055846/http://www.opensource.apple.com/apsl/
@@ -95,8 +91,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Apple\_Public\_Source\_License\_1.1
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Source code refers to the source code of all modules included in the software, all of the associated interface definition files, and the scripts used to control the compilation and installation of executables (object code).
         Actions:
@@ -266,8 +261,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     APPLE PUBLIC SOURCE LICENSE
     Version 1.1 - April 19,1999
@@ -644,8 +638,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

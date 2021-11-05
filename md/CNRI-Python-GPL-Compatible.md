@@ -1,5 +1,4 @@
-CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compatible)
-=====================================================================================
+# CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compatible)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ CNRI Python Open Source GPL Compatible License Agreement (CNRI-Python-GPL-Compat
 
 -   `CNRI Python 1.6.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.python.org/download/releases/1.6.1/download\_win/
@@ -29,8 +25,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CNRI-Python-GPL-Compatible.json
 
-Text
-----
+## Text
 
     CNRI OPEN SOURCE GPL-COMPATIBLE LICENSE AGREEMENT 
 
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

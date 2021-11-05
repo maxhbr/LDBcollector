@@ -1,5 +1,4 @@
-SSH short notice (SSH-short)
-============================
+# SSH short notice (SSH-short)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ SSH short notice (SSH-short)
 
 -   `Tatu Ylonen License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/SSH-short.json
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://joinup.ec.europa.eu/svn/lesoll/trunk/italc/lib/src/dsa\_key.cpp
 
-Text
-----
+## Text
 
     As far as I am concerned, the code I have written for this software
     can be used freely for any purpose.  Any derived versions of this
@@ -37,8 +32,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

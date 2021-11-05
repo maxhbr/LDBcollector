@@ -1,5 +1,4 @@
-TCP Wrappers License (TCP-wrappers)
-===================================
+# TCP Wrappers License (TCP-wrappers)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ TCP Wrappers License (TCP-wrappers)
 
 -   `scancode://tcp-wrappers`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -18,11 +16,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     ftp://ftp.porcupine.org/pub/security/tcp\_wrappers\_license
@@ -31,10 +27,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/TCP-wrappers.json
 
--   http://rc.quest.com/topics/openssh/license.php\#tcpwrappers
+-   http://rc.quest.com/topics/openssh/license.php#tcpwrappers
 
-Text
-----
+## Text
 
     -----BEGIN PGP SIGNED MESSAGE-----
 
@@ -70,8 +65,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

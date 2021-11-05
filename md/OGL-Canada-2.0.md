@@ -1,5 +1,4 @@
-Open Government Licence - Canada (OGL-Canada-2.0)
-=================================================
+# Open Government Licence - Canada (OGL-Canada-2.0)
 
 [TABLE]
 
@@ -13,22 +12,18 @@ Open Government Licence - Canada (OGL-Canada-2.0)
 
 -   `OGL Canada 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://open.canada.ca/en/open-government-licence-canada
 
 -   **SPDX:** http://spdx.org/licenses/OGL-Canada-2.0.json
 
-Text
-----
+## Text
 
 
     Open Government Licence - Canada
@@ -92,8 +87,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

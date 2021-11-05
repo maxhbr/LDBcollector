@@ -1,5 +1,4 @@
-Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
-==================================================
+# Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Artistic License 1.0 w/clause 8 (Artistic-1.0-cl8)
 
 -   `Artistic 1.0 w/clause 8`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Do note that the Artistic License is considered non-free by
     the FSF. They suggest to use the Clarified Artistic License (also
@@ -28,16 +26,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was superseded by v2.0 This is Artistic
     License 1.0 as found on OSI site, including clause 8. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-1.0-cl8.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://spdx.org/licenses/Artistic-1.0-cl8
 
@@ -47,10 +43,9 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Artistic-1.0-cl8.json
 
--   http://www.gnu.org/licenses/license-list.html\#ArtisticLicense
+-   http://www.gnu.org/licenses/license-list.html#ArtisticLicense
 
-Text
-----
+## Text
 
     Preamble
 
@@ -158,8 +153,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

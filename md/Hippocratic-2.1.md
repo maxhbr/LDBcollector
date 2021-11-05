@@ -1,5 +1,4 @@
-Hippocratic License 2.1 (Hippocratic-2.1)
-=========================================
+# Hippocratic License 2.1 (Hippocratic-2.1)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Hippocratic License 2.1 (Hippocratic-2.1)
 
 -   `Hippocratic License v2.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://firstdonoharm.dev/
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://github.com/EthicalSource/hippocratic-license/blob/58c0e646d64ff6fbee275bfe2b9492f914e3ab2a/LICENSE.txt
 
-Text
-----
+## Text
 
     Hippocratic License Version Number: 2.1.
 
@@ -63,8 +58,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

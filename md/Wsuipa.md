@@ -1,5 +1,4 @@
-Wsuipa License (Wsuipa)
-=======================
+# Wsuipa License (Wsuipa)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Wsuipa License (Wsuipa)
 
 -   `scancode://wsuipa`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,16 +17,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license was found on the "wsuipa" component of
     texlive 2010. It is Free, but GPL-incompatible. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wsuipa.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Wsuipa
 
@@ -36,8 +32,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Wsuipa.json
 
-Text
-----
+## Text
 
     This file was added by Clea F. Rees on 2008/11/30 with the permission of Dean
     Guenther and pointers to this file were added to all source files.
@@ -51,8 +46,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

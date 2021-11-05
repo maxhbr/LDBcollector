@@ -44,7 +44,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -56,9 +56,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -71,9 +71,9 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The relevant documentation for the software will be treated in the same way as the software. The same rights will be granted to those to whom the software is provided.
     Actions:
     - Distribution of Modified Source Code
@@ -89,12 +89,12 @@
       OR
         OBLIGATION: Change the e-mail address or URL of the original author's bug report to the contact information of the organization responsible for the modification.
         OBLIGATION: Delete the e-mail address or URL of the original author's bug report
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission is hereby granted, free of charge, to any person
   obtaining a copy of this software and associated documentation
   files (the "Software"), to deal in the Software without
@@ -124,7 +124,7 @@
   WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
   FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
   OTHER DEALINGS IN THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -150,7 +150,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MITNFA",
@@ -515,7 +515,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MITNFA.svg]]

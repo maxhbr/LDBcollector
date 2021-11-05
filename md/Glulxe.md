@@ -1,5 +1,4 @@
-Glulxe License (Glulxe)
-=======================
+# Glulxe License (Glulxe)
 
 [TABLE]
 
@@ -7,26 +6,22 @@ Glulxe License (Glulxe)
 
 -   `scancode://glulxe`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Glulxe
 
 -   **SPDX:** http://spdx.org/licenses/Glulxe.json
 
-Text
-----
+## Text
 
     You may copy and distribute it freely, by any means and under any conditions,
     as long as the code and documentation is not changed. You may also incorporate
@@ -36,8 +31,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

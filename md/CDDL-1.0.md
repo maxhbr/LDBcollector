@@ -1,5 +1,4 @@
-Common Development and Distribution License 1.0 (CDDL-1.0)
-==========================================================
+# Common Development and Distribution License 1.0 (CDDL-1.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Common Development and Distribution License 1.0 (CDDL-1.0)
 
 -   `CDDL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CDDL-1.0.html "SPDX") (all data
@@ -28,8 +26,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -59,8 +56,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cddl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.sun.com/cddl/
 
@@ -81,7 +77,7 @@ URLs
 
 -   https://opensource.org/licenses/cddl1
 
--   http://www.gnu.org/licenses/license-list.html\#CDDL
+-   http://www.gnu.org/licenses/license-list.html#CDDL
 
 -   http://www.opensource.org/licenses/cddl1
 
@@ -89,8 +85,7 @@ URLs
 
 -   https://glassfish.dev.java.net/public/CDDLv1.0.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The copyright license granted includes copyrights that are licensable to the initial developer. The patent license granted includes claims of patents that are licensable by the Initial Developer that are necessarily infringed by the use of software developed by the Initial Developer alone or in combination with Contributor's contributions. Source code refers to the source code and the documentation contained in or accompanying the source code. Source code refers to the source code and any documentation contained in or attached to the source code.
         Actions:
@@ -208,8 +203,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide License text
@@ -264,8 +258,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0 
 
@@ -363,8 +356,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

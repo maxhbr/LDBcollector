@@ -1,5 +1,4 @@
-Zimbra Public License v1.3 (Zimbra-1.3)
-=======================================
+# Zimbra Public License v1.3 (Zimbra-1.3)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Zimbra Public License v1.3 (Zimbra-1.3)
 
 -   `Zimbra PL 1.3`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.zimbra.com/license/zimbra-public-license-1-3.html
@@ -25,8 +21,7 @@ URLs
 
 -   http://web.archive.org/web/20100302225219/http://www.zimbra.com/license/zimbra-public-license-1-3.html
 
-Text
-----
+## Text
 
     Zimbra Public License, Version 1.3 (ZPL)
 
@@ -183,8 +178,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

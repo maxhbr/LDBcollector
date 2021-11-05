@@ -1,5 +1,4 @@
-Creative Commons Attribution 1.0 Generic (CC-BY-1.0)
-====================================================
+# Creative Commons Attribution 1.0 Generic (CC-BY-1.0)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Creative Commons Attribution 1.0 Generic (CC-BY-1.0)
 
 -   `scancode://cc-by-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -21,11 +19,9 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by/1.0/
 
@@ -33,8 +29,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by/1.0/legalcode
 
-Text
-----
+## Text
 
     Attribution 1.0
 
@@ -94,8 +89,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

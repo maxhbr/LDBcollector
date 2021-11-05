@@ -1,5 +1,4 @@
-psutils License (psutils)
-=========================
+# psutils License (psutils)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ psutils License (psutils)
 
 -   `PS Utilities License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,11 +19,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Psutils?rd=Licensing/psutils
@@ -36,8 +32,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/psutils
 
-Text
-----
+## Text
 
     PS Utilities Package
 
@@ -71,8 +66,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

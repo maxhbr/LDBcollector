@@ -1,5 +1,4 @@
-PNG Reference Library version 2 (libpng-2.0)
-============================================
+# PNG Reference Library version 2 (libpng-2.0)
 
 [TABLE]
 
@@ -9,21 +8,17 @@ PNG Reference Library version 2 (libpng-2.0)
 
 -   `LIbpng License v2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.libpng.org/pub/png/src/libpng-LICENSE.txt
 
 -   **SPDX:** http://spdx.org/licenses/libpng-2.0.json
 
-Text
-----
+## Text
 
     COPYRIGHT NOTICE, DISCLAIMER, and LICENSE
     =========================================
@@ -64,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

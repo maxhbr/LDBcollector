@@ -1,5 +1,4 @@
-Apple Public Source License 1.2 (APSL-1.2)
-==========================================
+# Apple Public Source License 1.2 (APSL-1.2)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Apple Public Source License 1.2 (APSL-1.2)
 
 -   `APSL 1.2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/APSL-1.2.html "SPDX") (all data
@@ -28,8 +26,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -51,8 +48,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apsl-1.2.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.apple.com/apsl/1.2.txt
 
@@ -69,8 +65,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Apple\_Public\_Source\_License\_1.2
 
-Text
-----
+## Text
 
     APPLE PUBLIC SOURCE LICENSE
     Version 1.2 - January 4, 2001
@@ -332,8 +327,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Creative Commons Attribution 3.0 Austria (CC-BY-3.0-AT)
-=======================================================
+# Creative Commons Attribution 3.0 Austria (CC-BY-3.0-AT)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ Creative Commons Attribution 3.0 Austria (CC-BY-3.0-AT)
 
 -   `scancode://cc-by-3.0-at`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://creativecommons.org/licenses/by/3.0/at/
 
@@ -22,8 +18,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by/3.0/at/legalcode
 
-Text
-----
+## Text
 
     Namensnennung 3.0 Österreich
 
@@ -101,8 +96,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

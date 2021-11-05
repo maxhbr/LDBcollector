@@ -1,5 +1,4 @@
-Vim License (Vim)
-=================
+# Vim License (Vim)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Vim License (Vim)
 
 -   `scancode://vim`
 
-Description
------------
+## Description
 
 > There are no restrictions on using or distributing an unmodified copy
 > of the software. Parts of the software may also be distributed, but
@@ -19,19 +17,16 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -39,8 +34,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/vim.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://vimdoc.sourceforge.net/htmldoc/uganda.html
 
@@ -48,8 +42,7 @@ URLs
 
 -   http://www.vim.org/docs.php
 
-Text
-----
+## Text
 
     VIM LICENSE
 
@@ -156,8 +149,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

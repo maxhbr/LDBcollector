@@ -1,5 +1,4 @@
-Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
-=====================================================================
+# Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Community Data License Agreement Permissive 1.0 (CDLA-Permissive-1.0)
 
 -   `CDLA Permissive 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://cdla.io/permissive-1-0/
 
@@ -24,8 +20,7 @@ URLs
 
 -   https://cdla.io/permissive-1-0
 
-Text
-----
+## Text
 
     Community Data License Agreement – Permissive – Version 1.0
 
@@ -115,8 +110,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Sybase Open Watcom Public License 1.0 (Watcom-1.0)
-==================================================
+# Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Sybase Open Watcom Public License 1.0 (Watcom-1.0)
 
 -   `Open Watcom 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/Watcom-1.0.html "SPDX") (all data
@@ -36,15 +34,13 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sybase.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/sybase.php
 
@@ -54,8 +50,7 @@ URLs
 
 -   http://www.opensource.org/licenses/Watcom-1.0
 
-Text
-----
+## Text
 
     USE OF THE SYBASE OPEN WATCOM SOFTWARE DESCRIBED BELOW ("SOFTWARE") IS 
     SUBJECT TO THE TERMS AND CONDITIONS SET FORTH IN THE SYBASE OPEN WATCOM 
@@ -410,8 +405,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

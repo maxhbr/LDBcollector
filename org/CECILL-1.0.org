@@ -25,7 +25,7 @@
 - http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL
 
   Avertissement
@@ -266,7 +266,7 @@
 
 
   Version 1 du 21/06/2004
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -286,7 +286,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CECILL-1.0",
@@ -427,7 +427,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CECILL-1.0.svg]]

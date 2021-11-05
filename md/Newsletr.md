@@ -1,5 +1,4 @@
-Newsletr License (Newsletr)
-===========================
+# Newsletr License (Newsletr)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Newsletr License (Newsletr)
 
 -   `scancode://newsletr`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,8 +17,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, This is a zlib variant, less restrictive. It was found
     on the component of texlive 2010. It is Free and GPL-compatible. ”
@@ -28,8 +25,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/newsletr.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Newsletr
 
@@ -37,8 +33,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Newsletr.json
 
-Text
-----
+## Text
 
     Permission is granted to anyone to use this software for any purpose on any computer system, and to redistribute it freely, subject to the following restrictions:
 
@@ -48,8 +43,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

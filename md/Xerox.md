@@ -1,5 +1,4 @@
-Xerox License (Xerox)
-=====================
+# Xerox License (Xerox)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Xerox License (Xerox)
 
 -   `MIT with Export Control`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is very similar to MIT, except that it
     requires that US Export Control laws be followed, which makes it
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-export-control.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Xerox?rd=Licensing/Xerox
@@ -42,8 +38,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Xerox
 
-Text
-----
+## Text
 
     Use and copying of this software and preparation of derivative works
     based upon this software are permitted. Any copy of this software or of
@@ -63,8 +58,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

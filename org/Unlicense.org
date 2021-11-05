@@ -15,11 +15,11 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   A license with no conditions whatsoever which dedicates works to the
   public domain. Unlicensed works, modifications, and larger works may
   be distributed under different terms and without source code.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -81,7 +81,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -96,12 +96,12 @@
     - Publish the binary generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This is free and unencumbered software released into the public domain.
 
   Anyone is free to copy, modify, publish, use, compile, sell, or
@@ -126,7 +126,7 @@
   OTHER DEALINGS IN THE SOFTWARE.
 
   For more information, please refer to <http://unlicense.org/>
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -177,7 +177,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Unlicense",
@@ -746,7 +746,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Unlicense.svg]]

@@ -61,7 +61,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Treat related documents in the same way as data files and software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -76,9 +76,9 @@
     - Using Modified Data Files
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documents are treated in the same way as data files.
     Actions:
     - Distribute the acquired data files without modification (Distribute the acquired data files as they are)
@@ -89,9 +89,9 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such data files.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation should be treated in the same way as software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -107,21 +107,21 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
     - Use the copyright holder's name in data file promotions and advertisements.
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   YOU MUST Forward Copyright notices In Files
   YOU MUST Forward License text In Files
   YOU MUST Provide Copyright notices In Documentation
@@ -130,12 +130,12 @@
   	YOU MUST Provide Modification notice In Files
   	YOU MUST Provide Modification notice in Documentation
   YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   UNICODE, INC. LICENSE AGREEMENT - DATA FILES AND SOFTWARE
 
   Unicode Data Files include all data files under the directories
@@ -191,7 +191,7 @@
   not be used in advertising or otherwise to promote the sale, use or
   other dealings in these Data Files or Software without prior written
   authorization of the copyright holder.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -220,7 +220,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Unicode-DFS-2015",
@@ -616,7 +616,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Unicode-DFS-2015.svg]]

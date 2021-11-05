@@ -1,5 +1,4 @@
-AMD's plpa\_map.c License (AMDPLPA)
-===================================
+# AMD's plpa\_map.c License (AMDPLPA)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ AMD's plpa\_map.c License (AMDPLPA)
 
 -   `AMD PLPA License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,11 +19,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/AMD\_plpa\_map\_License
@@ -34,8 +30,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/AMDPLPA.json
 
-Text
-----
+## Text
 
     Redistribution and use in any form of this material and any product thereof including
     software in source or binary forms, along with any related documentation, with or
@@ -120,8 +115,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

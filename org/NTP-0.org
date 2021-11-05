@@ -22,7 +22,7 @@
 - *SPDX:* http://spdx.org/licenses/NTP-0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify, and distribute this software and
   its documentation for any purpose is hereby granted, provided that
   the names of M.I.T. and the M.I.T. S.I.P.B. not be used in
@@ -31,7 +31,7 @@
   M.I.T. S.I.P.B. make no representations about the suitability of
   this software for any purpose.  It is provided "as is" without
   express or implied warranty.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -47,7 +47,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NTP-0",
@@ -157,7 +157,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NTP-0.svg]]

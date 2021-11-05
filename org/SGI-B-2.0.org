@@ -45,7 +45,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -57,9 +57,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL []. Instead of including a copyright notice, list of terms and conditions, and disclaimer, you may include a reference to the following URL [http://oss.sgi.com/projects/FreeB/].
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -81,21 +81,21 @@
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: With permission of Silicon Graphics, Inc.
     Actions:
     - Use the copyright holder's name in software promotions and advertisements
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission is hereby granted, free of charge, to any person obtaining a
   copy of this software and associated documentation files (the
   "Software"), to deal in the Software without restriction, including
@@ -121,7 +121,7 @@
   shall not be used in advertising or otherwise to promote the sale, use
   or other dealings in this Software without prior written authorization
   from Silicon Graphics, Inc.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -147,7 +147,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SGI-B-2.0",
@@ -519,7 +519,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SGI-B-2.0.svg]]

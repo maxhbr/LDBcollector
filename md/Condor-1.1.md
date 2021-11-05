@@ -1,5 +1,4 @@
-Condor Public License v1.1 (Condor-1.1)
-=======================================
+# Condor Public License v1.1 (Condor-1.1)
 
 [TABLE]
 
@@ -9,22 +8,19 @@ Condor Public License v1.1 (Condor-1.1)
 
 -   `Condor Public License 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released 30 October 2003” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/condor-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.cs.wisc.edu/condor/license.html
 
@@ -32,12 +28,11 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Condor-1.1.json
 
--   http://research.cs.wisc.edu/condor/license.html\#condor
+-   http://research.cs.wisc.edu/condor/license.html#condor
 
--   http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html\#condor
+-   http://web.archive.org/web/20111123062036/http://research.cs.wisc.edu/condor/license.html#condor
 
-Text
-----
+## Text
 
     CONDOR PUBLIC LICENSE
 
@@ -161,8 +156,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

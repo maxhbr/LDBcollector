@@ -35,7 +35,7 @@
 - https://spdx.org/licenses/BSD-Protection.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   BSD Protection License
   February 2002
 
@@ -163,7 +163,7 @@
      OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT, EVEN
      IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
      SUCH DAMAGES.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -186,7 +186,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "BSD-Protection",
@@ -393,7 +393,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/BSD-Protection.svg]]

@@ -53,7 +53,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -62,9 +62,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -74,9 +74,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -86,39 +86,39 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The acknowledgements include "This product includes software developed by the Apache Group for use in the Apache HTTP server project (http://www.apache.org/)."
     Actions:
     - Create an advertising medium that describes the features and use of the software
 
     Conditions:
     OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "Apache Server" and "Apache Group", if you use the names "Apache Server" and "Apache Group". apache@apache.orgに連絡する.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "Apache", if you want to use the name "Apache". apache@apache.orgに連絡する.
     Actions:
     - Use the name of the product or part of the name of the product from which it was derived
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
@@ -139,12 +139,12 @@
   	IF Software modification
   		YOU MUST NOT Promote using "Apache Server" or "Apache Group"
   		YOU MUST NOT Use "Apache" in product name
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Redistribution and use in source and binary forms, with or without
   modification, are permitted provided that the following conditions
   are met:
@@ -196,7 +196,7 @@
   Supercomputing Applications, University of Illinois, Urbana-Champaign.
   For more information on the Apache Group and the Apache HTTP server
   project, please see <http://www.apache.org/>.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -234,7 +234,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Apache-1.0",
@@ -672,7 +672,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Apache-1.0.svg]]

@@ -27,7 +27,7 @@
   (all data [in this repository] is generated)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "GFDL-1.2-no-invariants-only",
@@ -87,7 +87,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/GFDL-1.2-no-invariants-only.svg]]

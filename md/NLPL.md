@@ -1,5 +1,4 @@
-No Limit Public License (NLPL)
-==============================
+# No Limit Public License (NLPL)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ No Limit Public License (NLPL)
 
 -   `scancode://nlpl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,8 +17,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, there is a certain irony in a Frenchman writing a
     license that isn't wholly applicable in France, due to Moral Rights.
@@ -31,8 +28,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nlpl.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/NLPL
 
@@ -40,8 +36,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/NLPL.json
 
-Text
-----
+## Text
 
     NO LIMIT PUBLIC LICENSE
                Version 0, June 2012
@@ -59,8 +54,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

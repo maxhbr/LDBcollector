@@ -1,5 +1,4 @@
-NTP License (NTP)
-=================
+# NTP License (NTP)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ NTP License (NTP)
 
 -   `scancode://ntpl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/NTP.html "SPDX") (all data \[in
@@ -24,18 +22,16 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-old-style-no-advert.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
-    http://fedoraproject.org/wiki/Licensing:MIT\#Old\_Style\_.28no\_advertising\_without\_permission.29
+    http://fedoraproject.org/wiki/Licensing:MIT#Old\_Style\_.28no\_advertising\_without\_permission.29
 
 -   **Homepage:**
     https://www.eecis.udel.edu/~mills/ntp/html/copyright.html
@@ -52,8 +48,7 @@ URLs
 
 -   http://www.pgpool.net/mediawiki/index.php/pgpool-II\_License
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -63,8 +58,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and distribute this software and its
     documentation for any purpose and without fee is hereby granted,
@@ -78,8 +72,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

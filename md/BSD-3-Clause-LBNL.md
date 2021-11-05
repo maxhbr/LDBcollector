@@ -1,5 +1,4 @@
-Lawrence Berkeley National Labs BSD variant license (BSD-3-Clause-LBNL)
-=======================================================================
+# Lawrence Berkeley National Labs BSD variant license (BSD-3-Clause-LBNL)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Lawrence Berkeley National Labs BSD variant license (BSD-3-Clause-LBNL)
 
 -   `LBNL BSD Variant`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-3-Clause-LBNL.html "SPDX") (all
@@ -25,11 +23,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:LBNLBSD?rd=Licensing/LBNLBSD
@@ -40,8 +36,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/LBNLBSD
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-NRL License (NRL)
-=================
+# NRL License (NRL)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ NRL License (NRL)
 
 -   `scancode://nrl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,11 +17,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://web.mit.edu/network/isakmp/nrllicense.html
 
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/NRL.json
 
-Text
-----
+## Text
 
     NRL License
     COPYRIGHT NOTICE
@@ -64,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

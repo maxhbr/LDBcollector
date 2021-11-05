@@ -23,7 +23,7 @@
 - *SPDX:* http://spdx.org/licenses/OGC-1.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   OGC Software License, Version 1.0
 
   This OGC work (including software, documents, or other related items) is being
@@ -63,7 +63,7 @@
   publicity pertaining to the software without specific, written prior permission.
   Title to copyright in this software and any associated documentation will at all
   times remain with copyright holders.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -79,7 +79,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OGC-1.0",
@@ -190,7 +190,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OGC-1.0.svg]]

@@ -1,5 +1,4 @@
-libselinux public domain notice (libselinux-1.0)
-================================================
+# libselinux public domain notice (libselinux-1.0)
 
 [TABLE]
 
@@ -9,22 +8,18 @@ libselinux public domain notice (libselinux-1.0)
 
 -   `selinux-nsa-declaration-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/SELinuxProject/selinux/blob/master/libselinux/LICENSE
 
 -   **SPDX:** http://spdx.org/licenses/libselinux-1.0.json
 
-Text
-----
+## Text
 
     This library (libselinux) is public domain software, i.e. not copyrighted.
 
@@ -50,8 +45,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

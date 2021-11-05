@@ -1,5 +1,4 @@
-Open Software License 2.0 (OSL-2.0)
-===================================
+# Open Software License 2.0 (OSL-2.0)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Open Software License 2.0 (OSL-2.0)
 
 -   `OSL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-2.0.html "SPDX") (all data \[in
@@ -25,8 +23,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -43,8 +40,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.nexb.com/license/LICENSE-OSL-2.0.html
 
@@ -56,10 +52,9 @@ URLs
 
 -   http://web.archive.org/web/20041020171434/http://www.rosenlaw.com/osl2.0.html
 
--   http://www.gnu.org/licenses/license-list.html\#OSL
+-   http://www.gnu.org/licenses/license-list.html#OSL
 
-Text
-----
+## Text
 
     Open Software License v. 2.0
 
@@ -109,8 +104,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

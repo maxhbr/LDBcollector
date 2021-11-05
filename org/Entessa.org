@@ -52,7 +52,7 @@
 - http://sourceforge.net/softwaremap/?&fq[]=trove%3A397
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Entessa Public License Version. 1.0
 
   Copyright (c) 2003 Entessa, LLC. All rights reserved.
@@ -99,7 +99,7 @@
   behalf of openSEAL and was originally based on software contributed by Entessa,
   LLC, http://www.entessa.com. For more information on the openSEAL, please see
   <http://www.openseal.org/>.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -135,7 +135,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Entessa",
@@ -560,7 +560,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Entessa.svg]]

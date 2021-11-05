@@ -1,5 +1,4 @@
-The Unlicense (Unlicense)
-=========================
+# The Unlicense (Unlicense)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ The Unlicense (Unlicense)
 
 -   `Unlicense 1`
 
-Description
------------
+## Description
 
 > A license with no conditions whatsoever which dedicates works to the
 > public domain. Unlicensed works, modifications, and larger works may
@@ -19,8 +17,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is UNENCUMBERED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -39,8 +36,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://unlicense.org/” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -50,8 +46,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unlicense.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -59,8 +54,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/unlicense.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://unlicense.org/
 
@@ -70,8 +64,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/844
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: In jurisdictions recognizing copyright law, the author of such software shall own the software in the public domain.
         Actions:
@@ -90,8 +83,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     This is free and unencumbered software released into the public domain.
 
@@ -120,8 +112,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

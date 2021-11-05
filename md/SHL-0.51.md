@@ -1,5 +1,4 @@
-Solderpad Hardware License, Version 0.51 (SHL-0.51)
-===================================================
+# Solderpad Hardware License, Version 0.51 (SHL-0.51)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ Solderpad Hardware License, Version 0.51 (SHL-0.51)
 
 -   `scancode://shl-0.51`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://solderpad.org/licenses/SHL-0.51/
 
 -   **SPDX:** http://spdx.org/licenses/SHL-0.51.json
 
-Text
-----
+## Text
 
     SOLDERPAD HARDWARE LICENSE version 0.51
 
@@ -109,8 +104,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

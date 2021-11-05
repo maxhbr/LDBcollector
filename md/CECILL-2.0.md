@@ -1,5 +1,4 @@
-CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
-========================================================
+# CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 
 [TABLE]
 
@@ -9,11 +8,9 @@ CeCILL Free Software License Agreement v2.0 (CECILL-2.0)
 
 -   `CeCILL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “per SPDX.org, English translation can be found here
     http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html ”
@@ -21,8 +18,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.cecill.info/licences.en.html
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL\_V2-en.html
 
-Text
-----
+## Text
 
     CeCILL FREE SOFTWARE LICENSE AGREEMENT
 
@@ -540,8 +535,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

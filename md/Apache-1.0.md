@@ -1,5 +1,4 @@
-Apache License 1.0 (Apache-1.0)
-===============================
+# Apache License 1.0 (Apache-1.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Apache License 1.0 (Apache-1.0)
 
 -   `Apache 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Older versions of the Apache License (1.0 and 1.1) are also
     DFSG free, but the Apache Software Foundation recommends using the
@@ -35,11 +33,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
@@ -51,8 +47,7 @@ URLs
 
 -   http://www.apache.org/licenses/LICENSE-1.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -106,8 +101,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -132,8 +126,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
@@ -189,8 +182,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

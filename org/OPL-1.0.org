@@ -32,7 +32,7 @@
 - https://fedoraproject.org/wiki/Licensing/Open_Public_License
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   OPEN PUBLIC LICENSE
   Version 1.0
 
@@ -370,7 +370,7 @@
   Text for this Exhibit B is found in the corresponding addendum, described in section 
   6.4 above, text file provided by the Initial Developer. This license is not valid or 
   complete with out that file.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -389,7 +389,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OPL-1.0",
@@ -551,7 +551,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OPL-1.0.svg]]

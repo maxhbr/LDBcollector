@@ -29,11 +29,11 @@
 - *SPDX:* http://spdx.org/licenses/FSFULLR.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This file is free software; the Free Software Foundation gives
   unlimited permission to copy and/or distribute it, with or without
   modifications, as long as this notice is preserved.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -53,7 +53,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "FSFULLR",
@@ -206,7 +206,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/FSFULLR.svg]]

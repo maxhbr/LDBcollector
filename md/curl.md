@@ -1,5 +1,4 @@
-curl License (curl)
-===================
+# curl License (curl)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ curl License (curl)
 
 -   `scancode://curl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://curl.haxx.se/
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://curl.haxx.se/legal/licmix.html
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -40,8 +35,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and distribute this software for any purpose
     with or without fee is hereby granted, provided that the above copyright
@@ -61,8 +55,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

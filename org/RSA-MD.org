@@ -31,7 +31,7 @@
 - *SPDX:* http://spdx.org/licenses/RSA-MD.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   License to copy and use this software is granted provided that it
   is identified as the "RSA Data Security, Inc. MD5 Message-Digest
   Algorithm" in all material mentioning or referencing this software
@@ -49,7 +49,7 @@
 
   These notices must be retained in any copies of any part of this
   documentation and/or software.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -68,7 +68,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "RSA-MD",
@@ -239,7 +239,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/RSA-MD.svg]]

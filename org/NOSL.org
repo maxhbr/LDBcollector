@@ -30,7 +30,7 @@
 - http://bits.netizen.com.au/licenses/NOSL/nosl.txt
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Netizen Open Source License (NOSL) is a license based on the Mozilla Public License (MPL).
 
   NETIZEN OPEN SOURCE LICENSE Version 1.0
@@ -516,7 +516,7 @@
         Original Code Source Code for Your Modifications.]
 
         ----------------------------------------------------------------------
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -540,7 +540,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NOSL",
@@ -713,7 +713,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NOSL.svg]]

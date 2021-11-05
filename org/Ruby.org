@@ -63,7 +63,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -74,18 +74,18 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
     Conditions:
     OBLIGATION: Include the original copyright notice and associated disclaimer in the software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
     Actions:
     - Modify the obtained source code.
@@ -99,9 +99,9 @@
           RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
           OBLIGATION: Pass information on where the original software was obtained
         RESTRICTION: Decide on a different method of distribution with the copyright holder
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The list of files written by people other than the author(s) of the software and the conditions that apply to such files are contained in the software's LEGAL file.
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
@@ -117,12 +117,12 @@
         RESTRICTION: Giving non-standard binaries a different name than the standard version of the binary
         OBLIGATION: Pass information on where the original software was obtained
       RESTRICTION: Decide on a different method of distribution with the copyright holder
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
 
     1. You may make and give away verbatim copies of the source form of the
        software without restriction, provided that you duplicate all of the
@@ -176,7 +176,7 @@
        IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
        PURPOSE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -213,7 +213,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Ruby",
@@ -664,7 +664,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Ruby.svg]]

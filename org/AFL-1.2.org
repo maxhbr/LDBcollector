@@ -42,7 +42,7 @@
 - http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Academic Free License
   		Version 1.2
 
@@ -129,7 +129,7 @@
   Permission is hereby granted to copy and distribute this license without 
   modification. This license may not be modified without the express written 
   permission of its copyright owner.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -156,7 +156,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "AFL-1.2",
@@ -416,7 +416,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/AFL-1.2.svg]]

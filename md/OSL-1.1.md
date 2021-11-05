@@ -1,5 +1,4 @@
-Open Software License 1.1 (OSL-1.1)
-===================================
+# Open Software License 1.1 (OSL-1.1)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Open Software License 1.1 (OSL-1.1)
 
 -   `OSL 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -27,8 +25,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -45,8 +42,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:OSL1.1?rd=Licensing/OSL1.1
@@ -57,10 +53,9 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/OSL1.1
 
--   http://www.gnu.org/licenses/license-list.html\#OSL
+-   http://www.gnu.org/licenses/license-list.html#OSL
 
-Text
-----
+## Text
 
     The Open Software License v. 1.1
     This Open Software License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following notice immediately following the copyright notice for the Original Work:
@@ -111,8 +106,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

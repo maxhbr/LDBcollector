@@ -1,5 +1,4 @@
-BSD 2-Clause with views sentence (BSD-2-Clause-Views)
-=====================================================
+# BSD 2-Clause with views sentence (BSD-2-Clause-Views)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ BSD 2-Clause with views sentence (BSD-2-Clause-Views)
 
 -   `scancode://bsd-2-clause-views`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.freebsd.org/copyright/freebsd-license.html
 
@@ -24,8 +20,7 @@ URLs
 
 -   https://github.com/protegeproject/protege/blob/master/license.txt
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -39,8 +34,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

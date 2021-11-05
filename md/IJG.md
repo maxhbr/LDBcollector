@@ -1,5 +1,4 @@
-Independent JPEG Group License (IJG)
-====================================
+# Independent JPEG Group License (IJG)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Independent JPEG Group License (IJG)
 
 -   `JPEG License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -23,11 +21,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://fedoraproject.org/wiki/Licensing/IJG
 
@@ -39,15 +35,13 @@ URLs
 
 -   http://dev.w3.org/cvsweb/Amaya/libjpeg/Attic/README?rev=1.2
 
--   http://www.gnu.org/licenses/license-list.html\#GPLCompatibleLicenses
+-   http://www.gnu.org/licenses/license-list.html#GPLCompatibleLicenses
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -64,8 +58,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     LEGAL ISSUES
     ============
@@ -155,8 +148,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

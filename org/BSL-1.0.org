@@ -25,12 +25,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   A simple permissive license only requiring preservation of copyright
   and license notices for source (and not binary) distribution. Licensed
   works, modifications, and larger works may be distributed under
   different terms and without source code.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -92,7 +92,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Documentation accompanying the software should be treated in the same way as the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -114,9 +114,9 @@
     - Sublicense the object code generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Documentation accompanying the software should be treated in the same way as the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -130,12 +130,12 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
@@ -163,12 +163,12 @@
   COMPATIBILITY X11
   COMPATIBILITY Zlib
   COPYLEFT CLAUSE Questionable
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Boost Software License - Version 1.0 - August 17th, 2003
 
   Permission is hereby granted, free of charge, to any person or organization
@@ -192,7 +192,7 @@
   FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
   DEALINGS IN THE SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -244,7 +244,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "BSL-1.0",
@@ -946,7 +946,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/BSL-1.0.svg]]

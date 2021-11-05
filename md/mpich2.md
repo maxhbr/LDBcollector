@@ -1,5 +1,4 @@
-mpich2 License (mpich2)
-=======================
+# mpich2 License (mpich2)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ mpich2 License (mpich2)
 
 -   `MPICH License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,8 +19,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this is missing the anti-publicity-use clause, and
     doesn't mention sublicensing, but otherwise, it is functionally
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpich.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://svn.mcs.anl.gov/repos/mpi/mpich2/trunk/COPYRIGHT
@@ -42,8 +38,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/MIT
 
-Text
-----
+## Text
 
     COPYRIGHT
 
@@ -86,8 +81,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
-===============================================================
+# Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Community Data License Agreement Sharing 1.0 (CDLA-Sharing-1.0)
 
 -   `CDLA Sharing 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://cdla.io/sharing-1-0/
 
@@ -24,8 +20,7 @@ URLs
 
 -   https://cdla.io/sharing-1-0
 
-Text
-----
+## Text
 
     Community Data License Agreement – Sharing – Version 1.0
 
@@ -119,8 +114,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

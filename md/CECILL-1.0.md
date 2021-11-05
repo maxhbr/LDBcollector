@@ -1,5 +1,4 @@
-CeCILL Free Software License Agreement v1.0 (CECILL-1.0)
-========================================================
+# CeCILL Free Software License Agreement v1.0 (CECILL-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ CeCILL Free Software License Agreement v1.0 (CECILL-1.0)
 
 -   `CeCILL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.cecill.info/licences/Licence\_CeCILL\_V1-fr.html
@@ -25,8 +21,7 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL\_V1.1-US.html
 
-Text
-----
+## Text
 
     CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL
 
@@ -271,8 +266,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

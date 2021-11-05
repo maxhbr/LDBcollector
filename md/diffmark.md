@@ -1,5 +1,4 @@
-diffmark license (diffmark)
-===========================
+# diffmark license (diffmark)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ diffmark license (diffmark)
 
 -   `scancode://diffmark`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,8 +17,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this extremely minimal and permissive license was found
     in diffmark (0.08). While poorly written, our interpretation of the
@@ -34,8 +31,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/diffmark.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/diffmark
 
@@ -43,16 +39,14 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/diffmark.json
 
-Text
-----
+## Text
 
     1. you can do what you want with it
     2. I refuse any responsibility for the consequences
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

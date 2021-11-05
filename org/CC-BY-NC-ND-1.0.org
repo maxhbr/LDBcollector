@@ -39,7 +39,7 @@
 - https://creativecommons.org/licenses/by-nd-nc/1.0/legalcode
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Creative Commons
 
   Attribution-NoDerivs-NonCommercial 1.0
@@ -97,7 +97,7 @@
   Creative Commons may be contacted at http://creativecommons.org/.
 
   « Back to Commons Deed
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -122,7 +122,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CC-BY-NC-ND-1.0",
@@ -340,7 +340,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CC-BY-NC-ND-1.0.svg]]

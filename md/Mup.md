@@ -1,5 +1,4 @@
-Mup License (Mup)
-=================
+# Mup License (Mup)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Mup License (Mup)
 
 -   `scancode://mup`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,8 +17,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this is a BSD derived Free license, but clause 3 makes
     it GPL- incompatible, due to the need to include the reasons for the
@@ -29,8 +26,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mup.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.arkkra.com/doc/license.html
 
@@ -40,8 +36,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Mup
 
-Text
-----
+## Text
 
 
     Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

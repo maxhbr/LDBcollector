@@ -1,5 +1,4 @@
-University of Illinois/NCSA Open Source License (NCSA)
-======================================================
+# University of Illinois/NCSA Open Source License (NCSA)
 
 [TABLE]
 
@@ -17,13 +16,12 @@ University of Illinois/NCSA Open Source License (NCSA)
 
 -   `NCSA Open Source License`
 
-Description
------------
+## Description
 
 > The University of Illinois/NCSA Open Source License, or UIUC license,
 > is a permissive free software license, based on the &lt;a
-> href="/licenses/mit/"&gt;MIT/X11 license&lt;/a&gt; and the &lt;a
-> href="/licenses/bsd-3-clause/"&gt;BSD 3-clause License&lt;/a&gt;. Its
+> href="/licenses/mit/">MIT/X11 license&lt;/a> and the &lt;a
+> href="/licenses/bsd-3-clause/">BSD 3-clause License&lt;/a>. Its
 > conditions include requiring the preservation of copyright and license
 > notices both in source and in binary distributions and the prohibition
 > of using the names of the authors or the project organization to
@@ -32,8 +30,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -47,15 +44,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/uoi-ncsa.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -63,8 +58,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ncsa.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.otm.illinois.edu/faculty/forms/opensource.asp
@@ -87,8 +81,7 @@ URLs
 
 -   http://www.stlinux.com/node/140
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -131,8 +124,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     University of Illinois/NCSA Open Source License
 
@@ -163,8 +155,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

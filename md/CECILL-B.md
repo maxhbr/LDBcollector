@@ -1,5 +1,4 @@
-CeCILL-B Free Software License Agreement (CECILL-B)
-===================================================
+# CeCILL-B Free Software License Agreement (CECILL-B)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ CeCILL-B Free Software License Agreement (CECILL-B)
 
 -   `scancode://cecill-b`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,15 +19,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “The primary text is in French.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-b.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.cecill.info/licences/Licence\_CeCILL-B\_V1-fr.html
@@ -42,8 +38,7 @@ URLs
 
 -   http://www.cecill.info/licences.en.html
 
-Text
-----
+## Text
 
     "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL-B
 
@@ -293,8 +288,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

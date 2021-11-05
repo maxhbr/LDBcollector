@@ -27,7 +27,7 @@
 - *SPDX:* http://spdx.org/licenses/LPPL-1.0.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   LaTeX Project Public License
   ============================
    LPPL Version 1.0  1999-03-01
@@ -231,7 +231,7 @@
      need meet only the conditions in this file; it is not necessary to
      check the header of every file in the distribution to check that a
      distribution meets these requirements.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -251,7 +251,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LPPL-1.0",
@@ -398,7 +398,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LPPL-1.0.svg]]

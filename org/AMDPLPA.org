@@ -35,7 +35,7 @@
 - *SPDX:* http://spdx.org/licenses/AMDPLPA.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Redistribution and use in any form of this material and any product thereof including
   software in source or binary forms, along with any related documentation, with or
   without modification ("this material"), is permitted provided that the following
@@ -116,7 +116,7 @@
   disputes arising out of this license shall be subject to the jurisdiction of the
   federal and state courts in Austin, Texas, and all defenses are hereby waived
   concerning personal jurisdiction and venue of these courts.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -139,7 +139,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "AMDPLPA",
@@ -343,7 +343,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/AMDPLPA.svg]]

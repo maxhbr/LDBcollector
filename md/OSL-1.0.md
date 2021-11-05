@@ -1,5 +1,4 @@
-Open Software License 1.0 (OSL-1.0)
-===================================
+# Open Software License 1.0 (OSL-1.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Open Software License 1.0 (OSL-1.0)
 
 -   `OSL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-1.0.html "SPDX") (all data \[in
@@ -27,8 +25,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -50,8 +47,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/osl-1.0.txt
 
@@ -61,10 +57,9 @@ URLs
 
 -   https://spdx.org/licenses/OSL-1.0.html
 
--   http://www.gnu.org/licenses/license-list.html\#OSL
+-   http://www.gnu.org/licenses/license-list.html#OSL
 
-Text
-----
+## Text
 
     Open Software License, v 1.0
 
@@ -233,8 +228,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

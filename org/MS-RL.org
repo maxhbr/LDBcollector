@@ -15,12 +15,12 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   An open source license with a patent grant similar to the <a
   href="/licenses/ms-pl/">Microsoft Public License</a>, with the
   additional condition that any source code for any derived file be
   provided under this license.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -97,7 +97,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -109,9 +109,9 @@
     AND
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's copyright license is granted in accordance with such license.
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained object code (Redistribute the code as it was obtained)
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -126,9 +126,9 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Provide the source code corresponding to the software or a file containing the software or a part of it.
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
     - Distribution of Modified Source Code
@@ -139,12 +139,12 @@
       RESTRICTION: A worldwide, non-exclusive, royalty-free contributor's patent license is granted pursuant to this license. (However, it applies only to those claims that are licensable by the contributor that are necessarily infringed by the unmodified use of the contributor's contribution.)
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer contained in such software
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Grant License
   	YOU MUST Forward Copyright notices
@@ -183,12 +183,12 @@
   COMPATIBILITY Zlib
   PATENT HINTS Yes
   COPYLEFT CLAUSE Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Microsoft Reciprocal License (Ms-RL)
 
   This license governs use of the accompanying software. If you use the software, you accept this license. If you do not accept the license, do not use the software.
@@ -210,7 +210,7 @@
         (D) If you distribute any portion of the software, you must retain all copyright, patent, trademark, and attribution notices that are present in the software.
         (E) If you distribute any portion of the software in source code form, you may do so only under this license by including a complete copy of this license with your distribution. If you distribute any portion of the software in compiled or object code form, you may only do so under a license that complies with this license.
         (F) The software is licensed "as-is." You bear the risk of using it. The contributors give no express warranties, guarantees, or conditions. You may have additional consumer rights under your local laws which this license cannot change. To the extent permitted under your local laws, the contributors exclude the implied warranties of merchantability, fitness for a particular purpose and non-infringement.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -260,7 +260,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MS-RL",
@@ -991,7 +991,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MS-RL.svg]]

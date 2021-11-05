@@ -1,5 +1,4 @@
-Lucent Public License Version 1.0 (LPL-1.0)
-===========================================
+# Lucent Public License Version 1.0 (LPL-1.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Lucent Public License Version 1.0 (LPL-1.0)
 
 -   `Lucent Public License 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/LPL-1.0.html "SPDX") (all data \[in
@@ -28,11 +26,9 @@ Comments on (easy) usability
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/plan9.php
 
@@ -42,8 +38,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/LPL-1.0.json
 
-Text
-----
+## Text
 
     Lucent Public License Version 1.0
 
@@ -265,8 +260,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-zlib/libpng License with Acknowledgement (zlib-acknowledgement)
-===============================================================
+# zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ zlib/libpng License with Acknowledgement (zlib-acknowledgement)
 
 -   `ZLIB License with Acknowledgment`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -27,8 +25,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is the same as zlib, except that it
     requires that an acknowledgement be made in the product
@@ -38,8 +35,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zlib-acknowledgement.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:ZlibWithAcknowledgement?rd=Licensing/ZlibWithAcknowledgement
@@ -50,8 +46,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Warranty disclaimer
@@ -70,8 +65,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This software is provided 'as-is', without any express or implied warranty. In
     no event will the authors be held liable for any damages arising from the use of
@@ -96,8 +90,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

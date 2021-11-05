@@ -49,7 +49,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Font software refers to font files, data files, source files, build scripts, and documents.
     Actions:
     - Using Font Software (Use the acquired font software as it is.)
@@ -57,9 +57,9 @@
     - Using Modified Font Software
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
     Actions:
     - Selling font software
@@ -69,9 +69,9 @@
       RESTRICTION: We don't sell it alone.
       OBLIGATION: Include a copyright notice in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Copyright notices and licenses are included in text files, human-readable headers, or machine-readable metadata fields in text and binary files if the fields are easily viewable by the user. Font software refers to font files, data files, source files, build scripts and documentation.
     Actions:
     - Distributing font software (Distribute the acquired font software as is)
@@ -85,18 +85,18 @@
     AND
       OBLIGATION: Include a copyright notice in the license
       OBLIGATION: Give you a copy of the relevant license.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The copyright holder's permission must be obtained if the font name is to be used as the primary font name presented to the user. The copyright holder's name is the name of the font to be retained, which will be identified with a copyright notice. The term "font software" refers to font files, data files, source files, build scripts, and documents.
     Actions:
     - Use font names retained in modified font software (A retained font name is a name that is clearly identified as the retained font name with a copyright notice.)
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The term "font software" refers to font files, data files, source files, build scripts and documentation. The authors are the designers, engineers, programmers, technical writers, etc. who have contributed to the font software.
     Actions:
     - Use the name of the copyright holder or author to endorse or promote the modified font software
@@ -105,12 +105,12 @@
     OR
       OBLIGATION: Acknowledgements
       REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   SIL OPEN FONT LICENSE 
 
   Version 1.0 - 22 November 2005 
@@ -198,7 +198,7 @@
   DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
   FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM 
   OTHER DEALINGS IN THE FONT SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -220,7 +220,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OFL-1.0",
@@ -543,7 +543,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OFL-1.0.svg]]

@@ -19,7 +19,7 @@
 
 ** Description
 
-#+BEGIN_QUOTE
+#+begin_quote
   The <a
   href="https://creativecommons.org/publicdomain/zero/1.0/">Creative
   Commons CC0 Public Domain Dedication</a> waives copyright interest in
@@ -28,7 +28,7 @@
   has the widest reach. As with the Unlicense and typical software
   licenses, CC0 disclaims warranties. CC0 is very similar to the
   Unlicense.
-#+END_QUOTE
+#+end_quote
 
 (source: choosealicense.com
 ([[https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md][MIT]]))
@@ -96,7 +96,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Reproduce the work.
     - Transmit the work.
@@ -107,20 +107,20 @@
     - Translating a work
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   PATENT HINTS Yes
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Creative Commons Legal Code
 
   CC0 1.0 Universal
@@ -242,7 +242,7 @@
    d. Affirmer understands and acknowledges that Creative Commons is not a
       party to this document and has no duty or obligation with respect to
       this CC0 or use of the Work.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -289,7 +289,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CC0-1.0",
@@ -831,7 +831,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CC0-1.0.svg]]

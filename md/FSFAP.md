@@ -1,5 +1,4 @@
-FSF All Permissive License (FSFAP)
-==================================
+# FSF All Permissive License (FSFAP)
 
 [TABLE]
 
@@ -7,16 +6,14 @@ FSF All Permissive License (FSFAP)
 
 -   `scancode://fsf-ap`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, This is a simple permissive license, created by the
     FSF. It is Free and GPL compatible. The FSF recommends it for "small
@@ -25,8 +22,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-ap.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.gnu.org/prep/maintain/html\_node/License-Notices-for-Other-Files.html
@@ -37,8 +33,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/FSFAP
 
-Text
-----
+## Text
 
     Copying and distribution of this file, with or without modification, are
     permitted in any medium without royalty provided the copyright notice
@@ -47,8 +42,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

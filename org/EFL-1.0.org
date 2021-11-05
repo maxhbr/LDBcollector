@@ -46,7 +46,7 @@
 - http://www.eiffel-nice.org/license/forum.txt
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Eiffel Forum License, version 1
 
   Permission is hereby granted to use, copy, modify and/or distribute
@@ -70,7 +70,7 @@
   DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE TO ANY PARTY FOR
   ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
   DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -96,7 +96,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "EFL-1.0",
@@ -398,7 +398,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/EFL-1.0.svg]]

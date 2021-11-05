@@ -23,7 +23,7 @@
 - https://github.com/me-shaon/GLWTPL/commit/da5f6bc734095efbacb442c0b31e33a65b9d6e85
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   GLWT(Good Luck With That) Public License 
   Copyright (c) Everyone, except Author
 
@@ -48,7 +48,7 @@
   DEALINGS IN THE SOFTWARE.
 
   Good luck and Godspeed.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -64,7 +64,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "GLWTPL",
@@ -180,7 +180,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/GLWTPL.svg]]

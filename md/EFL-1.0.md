@@ -1,5 +1,4 @@
-Eiffel Forum License v1.0 (EFL-1.0)
-===================================
+# Eiffel Forum License v1.0 (EFL-1.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Eiffel Forum License v1.0 (EFL-1.0)
 
 -   `EFL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EFL-1.0.html "SPDX") (all data \[in
@@ -22,16 +20,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was OSI certified. This license has been
     superseded by v2.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/efl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.eiffel-nice.org/license/
 
@@ -45,8 +41,7 @@ URLs
 
 -   http://www.eiffel-nice.org/license/forum.txt
 
-Text
-----
+## Text
 
     Eiffel Forum License, version 1
 
@@ -74,8 +69,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

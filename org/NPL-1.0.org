@@ -32,7 +32,7 @@
 - http://www.mozilla.org/NPL/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   NETSCAPE PUBLIC LICENSE
   Version 1.0
 
@@ -170,7 +170,7 @@
 
 
   [NOTE: The text of this Exhibit A may differ slightly from the text of the notices in the Source Code files of the Original Code. This is due to time constraints encountered in simultaneously finalizing the License and in preparing the Original Code for release. You should use the text of this Exhibit A rather than the text found in the Original Code Source Code for Your Modifications.]
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -190,7 +190,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NPL-1.0",
@@ -344,7 +344,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NPL-1.0.svg]]

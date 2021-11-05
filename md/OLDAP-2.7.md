@@ -1,5 +1,4 @@
-Open LDAP Public License v2.7 (OLDAP-2.7)
-=========================================
+# Open LDAP Public License v2.7 (OLDAP-2.7)
 
 [TABLE]
 
@@ -11,15 +10,13 @@ Open LDAP Public License v2.7 (OLDAP-2.7)
 
 -   `OpenLDAP Public License 2.7`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “"OpenLDAP" is a registered trademark of OpenLDAP Foundaction.”
     (source: [Hitachi
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openldap-2.7.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=blob;f=LICENSE;hb=47c2415c1df81556eeb39be6cad458ef87c534a2
@@ -42,8 +38,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/335
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -84,8 +79,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The OpenLDAP Public License 
     Version 2.7, 7 September 2001 
@@ -137,8 +131,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

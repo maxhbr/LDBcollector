@@ -1,5 +1,4 @@
-EPICS Open License (EPICS)
-==========================
+# EPICS Open License (EPICS)
 
 [TABLE]
 
@@ -7,19 +6,16 @@ EPICS Open License (EPICS)
 
 -   `scancode://epics`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.aps.anl.gov/epics/license/open.php
 
@@ -27,8 +23,7 @@ URLs
 
 -   https://epics.anl.gov/license/open.php
 
-Text
-----
+## Text
 
     Experimental Physics and Industrial Control System (EPICS) Open Source License
 
@@ -64,8 +59,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

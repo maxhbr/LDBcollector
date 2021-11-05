@@ -1,5 +1,4 @@
-MIT License (MIT)
-=================
+# MIT License (MIT)
 
 [TABLE]
 
@@ -21,8 +20,7 @@ MIT License (MIT)
 
 -   `MIT license / X11 license`
 
-Description
------------
+## Description
 
 > A short and simple permissive license with conditions only requiring
 > preservation of copyright and license notices. Licensed works,
@@ -32,8 +30,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
@@ -71,15 +68,13 @@ Comments on (easy) usability
     [OpenSourceInitiative](https://opensource.org/licenses/ "OpenSourceInitiative")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -87,8 +82,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/mit.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/mit-license.php
 
@@ -110,8 +104,7 @@ URLs
 
 -   https://opensource.com/article/19/4/history-mit-license
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -146,8 +139,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -155,8 +147,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
@@ -179,8 +170,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

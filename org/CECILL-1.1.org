@@ -30,7 +30,7 @@
 - http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   FREE SOFTWARE LICENSING AGREEMENT CeCILL
   ========================================
 
@@ -531,7 +531,7 @@
 
 
                                                      Version 1.1 of 10/26/2004
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -551,7 +551,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CECILL-1.1",
@@ -704,7 +704,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CECILL-1.1.svg]]

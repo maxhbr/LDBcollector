@@ -64,7 +64,7 @@
 - http://www.gnu.org/licenses/license-list.html#OSL
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Open Software License, v 1.0
 
   The Open Software License
@@ -229,7 +229,7 @@
   reserved. Permission is hereby granted to copy and distribute this
   license without modification. This license may not be modified without
   the express written permission of its copyright owner.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -267,7 +267,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OSL-1.0",
@@ -654,7 +654,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OSL-1.0.svg]]

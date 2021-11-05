@@ -1,5 +1,4 @@
-Open Data Commons Attribution License v1.0 (ODC-By-1.0)
-=======================================================
+# Open Data Commons Attribution License v1.0 (ODC-By-1.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Open Data Commons Attribution License v1.0 (ODC-By-1.0)
 
 -   `scancode://odc-by-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opendatacommons.org/licenses/by/
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://opendatacommons.org/licenses/by/1.0/
 
-Text
-----
+## Text
 
     Open Data Commons Attribution License (ODC-By) v1.0
     ODC Attribution License (ODC-By)
@@ -448,8 +443,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

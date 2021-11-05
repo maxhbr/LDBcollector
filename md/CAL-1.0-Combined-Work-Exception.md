@@ -1,5 +1,4 @@
-Cryptographic Autonomy License 1.0 (Combined Work Exception) (CAL-1.0-Combined-Work-Exception)
-==============================================================================================
+# Cryptographic Autonomy License 1.0 (Combined Work Exception) (CAL-1.0-Combined-Work-Exception)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ Cryptographic Autonomy License 1.0 (Combined Work Exception) (CAL-1.0-Combined-W
 
 -   `scancode://cal-1.0-combined-work-exception`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CAL-1.0-Combined-Work-Exception.html "SPDX")
     (all data \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opensource.org/licenses/CAL-1.0
 
@@ -27,8 +23,7 @@ URLs
 
 -   http://cryptographicautonomylicense.com/license-text.html
 
-Text
-----
+## Text
 
     The Cryptographic Autonomy License, v. 1.0, with Combined Work Exception
 
@@ -158,8 +153,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

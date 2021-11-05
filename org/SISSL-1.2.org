@@ -62,7 +62,7 @@
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   SUN INDUSTRY STANDARDS SOURCE LICENSE 
   Version 1.2 
 
@@ -202,7 +202,7 @@
   All Rights Reserved.
 
   "Contributor(s): "
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -229,7 +229,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SISSL-1.2",
@@ -420,7 +420,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SISSL-1.2.svg]]

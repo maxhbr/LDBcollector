@@ -1,5 +1,4 @@
-Python License 2.0 (Python-2.0)
-===============================
+# Python License 2.0 (Python-2.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Python License 2.0 (Python-2.0)
 
 -   `Python Software Foundation License 2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -30,8 +28,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “This License Agreement is between the Python Software Foundation
     ("PSF") and any person or entity that accesses or uses the source
@@ -42,8 +39,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://docs.python.org/license.html
 
@@ -59,10 +55,9 @@ URLs
 
 -   http://opensource.org/licenses/PythonSoftFoundation.php
 
--   http://www.gnu.org/licenses/license-list.html\#PythonOld
+-   http://www.gnu.org/licenses/license-list.html#PythonOld
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Treat software related documentation in the same way as software
         Actions:
@@ -122,8 +117,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward License text
@@ -133,8 +127,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
     --------------------------------------------
@@ -331,8 +324,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

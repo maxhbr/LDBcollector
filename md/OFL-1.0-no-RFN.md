@@ -1,16 +1,12 @@
-SIL Open Font License 1.0 with no Reserved Font Name (OFL-1.0-no-RFN)
-=====================================================================
+# SIL Open Font License 1.0 with no Reserved Font Name (OFL-1.0-no-RFN)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/OFL-1.0-no-RFN.json
 
@@ -18,8 +14,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

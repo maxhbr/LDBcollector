@@ -1,5 +1,4 @@
-Info-ZIP License (Info-ZIP)
-===========================
+# Info-ZIP License (Info-ZIP)
 
 [TABLE]
 
@@ -13,15 +12,13 @@ Info-ZIP License (Info-ZIP)
 
 -   `scancode://info-zip`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “This applies to all source code from
     http://www.info-zip.org/pub/infozip/license.html明示されているものを除き,
@@ -30,8 +27,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.info-zip.org/doc/
 
@@ -47,13 +43,11 @@ URLs
 
 -   http://www.info-zip.org/license.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Info-Zip License
 
@@ -79,8 +73,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

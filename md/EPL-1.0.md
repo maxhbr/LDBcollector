@@ -1,5 +1,4 @@
-Eclipse Public License 1.0 (EPL-1.0)
-====================================
+# Eclipse Public License 1.0 (EPL-1.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Eclipse Public License 1.0 (EPL-1.0)
 
 -   `EPL 1.0`
 
-Description
------------
+## Description
 
 > This commercially-friendly copyleft license provides the ability to
 > commercially license binaries; a modern royalty-free patent license
@@ -24,8 +22,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/EPL-1.0.html "SPDX") (all data \[in
@@ -50,8 +47,7 @@ Comments on (easy) usability
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -72,8 +68,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/epl-1.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -81,8 +76,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/epl-1.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.eclipse.org/legal/epl-v10.html
 
@@ -101,8 +95,7 @@ URLs
 
 -   http://www.opensource.org/licenses/EPL-1.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Contributor is the person or entity that distributes the Software.
         Actions:
@@ -230,8 +223,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -289,8 +281,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Eclipse Public License - v 1.0
 
@@ -381,8 +372,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

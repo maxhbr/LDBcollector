@@ -30,7 +30,7 @@
 - https://www.etalab.gouv.fr/wp-content/uploads/2018/11/open-licence.pdf
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   # OPEN LICENCE 2.0/LICENCE OUVERTE 2.0
 
   ## “Reuse” of the “Information” covered by this licence
@@ -107,7 +107,7 @@
   This licence is version 2.0 of the Open Licence.
 
   Etalab reserves the right to propose new versions of the Open Licence. Nevertheless, “Reusers” may continue to reuse information obtained under this licence should they so wish.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -123,7 +123,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "etalab-2.0",
@@ -278,7 +278,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/etalab-2.0.svg]]

@@ -1,5 +1,4 @@
-CeCILL Free Software License Agreement v1.1 (CECILL-1.1)
-========================================================
+# CeCILL Free Software License Agreement v1.1 (CECILL-1.1)
 
 [TABLE]
 
@@ -9,19 +8,16 @@ CeCILL Free Software License Agreement v1.1 (CECILL-1.1)
 
 -   `CeCILL 1.1 English`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, there is only an English version for 1.1, which
     includes some wording changes from v1.0 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-1.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.cecill.info/licences.en.html
 
@@ -29,8 +25,7 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL\_V1.1-US.html
 
-Text
-----
+## Text
 
     FREE SOFTWARE LICENSING AGREEMENT CeCILL
     ========================================
@@ -535,8 +530,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

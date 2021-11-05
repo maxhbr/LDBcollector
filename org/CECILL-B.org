@@ -43,7 +43,7 @@
 - http://www.cecill.info/licences.en.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL-B
 
   Avertissement
@@ -289,7 +289,7 @@
   1 CeCILL est pour Ce(a) C(nrs) I(nria) L(ogiciel) L(ibre)
 
   Version 1.0 du 2006-09-05."
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -316,7 +316,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CECILL-B",
@@ -571,7 +571,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CECILL-B.svg]]

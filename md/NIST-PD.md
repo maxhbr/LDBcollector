@@ -1,5 +1,4 @@
-NIST Public Domain Notice (NIST-PD)
-===================================
+# NIST Public Domain Notice (NIST-PD)
 
 [TABLE]
 
@@ -7,17 +6,14 @@ NIST Public Domain Notice (NIST-PD)
 
 -   `scancode://nist-pd`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
-    https://github.com/usnistgov/jsip/blob/master/README\#L122
+    https://github.com/usnistgov/jsip/blob/master/README#L122
 
 -   **SPDX:** http://spdx.org/licenses/NIST-PD.json
 
@@ -27,8 +23,7 @@ URLs
 
 -   https://github.com/usnistgov/jsip
 
-Text
-----
+## Text
 
     Conditions Of Use
 
@@ -53,8 +48,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

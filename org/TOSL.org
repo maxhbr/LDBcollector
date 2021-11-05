@@ -44,7 +44,7 @@
 - *SPDX:* http://spdx.org/licenses/TOSL.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Trusster Open Source License version 1.0a (TRUST) 
   copyright (c) 2006 Mike Mintz and Robert Ekendahl. All rights reserved.
 
@@ -79,7 +79,7 @@
   CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING 
   IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY 
   OF SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -99,7 +99,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TOSL",
@@ -268,7 +268,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TOSL.svg]]

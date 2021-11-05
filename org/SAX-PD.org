@@ -21,7 +21,7 @@
 - *SPDX:* http://spdx.org/licenses/SAX-PD.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Copyright Status for SAX
 
   SAX is free!
@@ -77,7 +77,7 @@
 
   David Megginson, Megginson Technologies Ltd.
   2000-05-05
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -101,7 +101,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SAX-PD",
@@ -251,7 +251,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SAX-PD.svg]]

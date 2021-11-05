@@ -1,5 +1,4 @@
-Educational Community License v1.0 (ECL-1.0)
-============================================
+# Educational Community License v1.0 (ECL-1.0)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Educational Community License v1.0 (ECL-1.0)
 
 -   `ECL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/ECL-1.0.html "SPDX") (all data \[in
@@ -29,8 +27,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://opensource.org/licenses/ecl1.php” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -40,8 +37,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/ecl1.php
 
@@ -55,8 +51,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1545
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -122,8 +117,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     The Educational Community License 1.0
 
@@ -182,8 +176,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-XPP License (xpp)
-=================
+# XPP License (xpp)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ XPP License (xpp)
 
 -   `Indiana Extreme License 1.2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,11 +19,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.extreme.indiana.edu/license.txt
 
@@ -35,8 +31,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/xpp
 
-Text
-----
+## Text
 
     Indiana University Extreme! Lab Software License, Version 1.2
 
@@ -97,8 +92,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

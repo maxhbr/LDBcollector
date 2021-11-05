@@ -40,7 +40,7 @@
 - http://www.opensource.org/licenses/Frameworx-1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   THE FRAMEWORX OPEN LICENSE 1.0
   This License Agreement, The Frameworx Open License 1.0, has been entered into between The Frameworx Company and you, the licensee hereunder, effective as of Your acceptance of the Frameworx Code Base or an Downstream Distribution (each as defined below).
   AGREEMENT BACKGROUND
@@ -105,7 +105,7 @@
   Your agreement to the foregoing as of the date hereof has been evidenced by your acceptance of the relevant software distribution hereunder.
 
   (C) THE FRAMEWORX COMPANY 2003
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -131,7 +131,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Frameworx-1.0",
@@ -392,7 +392,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Frameworx-1.0.svg]]

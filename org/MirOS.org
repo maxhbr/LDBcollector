@@ -64,7 +64,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Relevant documentation for the software should be treated in the same way as for the software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -76,9 +76,9 @@
     - Use the executable generated from the modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation and accompanying documents for the software are treated in the same way as the software.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -104,12 +104,12 @@
     Conditions:
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   EITHER
   	YOU MUST Forward License text
   	YOU MUST Forward Warranty disclaimer
@@ -118,12 +118,12 @@
   	YOU MUST Provide License text in Documentation
   	YOU MUST Provide Warranty disclaimer in Documentation
   	YOU MUST Provide Copyright notices in Documentation
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Provided that these terms and disclaimer and all copyright notices
   are retained or reproduced in an accompanying document, permission
   is granted to deal in this work without restriction, including un‐
@@ -138,7 +138,7 @@
   of dealing in the work, even if advised of the possibility of such
   damage or existence of a defect, except proven that it results out
   of said person's immediate fault when using the work as intended.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -180,7 +180,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MirOS",
@@ -730,7 +730,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MirOS.svg]]

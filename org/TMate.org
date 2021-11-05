@@ -39,7 +39,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Modify the obtained source code.
@@ -48,9 +48,9 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -67,9 +67,9 @@
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The source code is redistributed under reasonable conditions. ● Permission may be obtained from the copyright holder at support@svnkit.comに連絡する.
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -89,12 +89,12 @@
         OBLIGATION: Attach the source code of the software that accompanies the software, which is the software that uses the software that uses the software.
         OBLIGATION: Communicate that the source code for the software that accompanies the software, which is the software that uses the software, is available
         OBLIGATION: Obtain the express permission of the copyright holder that he may not redistribute the source code of any software that accompanies the software that uses the software, which is the software that uses the software.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This license applies to all portions of TMate SVNKit library, which 
   are not externally-maintained libraries (e.g. Ganymed SSH library).
 
@@ -140,7 +140,7 @@
   LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE 
   OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -166,7 +166,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TMate",
@@ -513,7 +513,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TMate.svg]]

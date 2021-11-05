@@ -1,5 +1,4 @@
-OCLC Research Public License 2.0 (OCLC-2.0)
-===========================================
+# OCLC Research Public License 2.0 (OCLC-2.0)
 
 [TABLE]
 
@@ -11,23 +10,20 @@ OCLC Research Public License 2.0 (OCLC-2.0)
 
 -   `scancode://oclc-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OCLC-2.0.html "SPDX") (all data
     \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified. This license was
     released May 2002 ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oclc-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/oclc2.php
 
@@ -39,8 +35,7 @@ URLs
 
 -   http://www.opensource.org/licenses/OCLC-2.0
 
-Text
-----
+## Text
 
     OCLC Research Public License 2.0
     Terms & Conditions Of Use
@@ -230,8 +225,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

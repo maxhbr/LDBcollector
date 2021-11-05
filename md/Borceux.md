@@ -1,5 +1,4 @@
-Borceux license (Borceux)
-=========================
+# Borceux license (Borceux)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Borceux license (Borceux)
 
 -   `scancode://borceux`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,11 +17,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Borceux
 
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Borceux.json
 
-Text
-----
+## Text
 
     Copyright 1993 Francis Borceux
     You may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:
@@ -56,8 +51,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

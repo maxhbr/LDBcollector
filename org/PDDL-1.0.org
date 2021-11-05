@@ -31,7 +31,7 @@
 - http://opendatacommons.org/licenses/pddl/1.0/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Open Data Commons – Public Domain Dedication & Licence (PDDL)
   Preamble
   The Open Data Commons – Public Domain Dedication & Licence is a document intended to allow you to freely share, modify, and use this work for any purpose and without any restrictions. This licence is intended for use on databases or their contents ("data"), either together or individually.
@@ -166,7 +166,7 @@
   6.3 This Document does not affect any rights that You or anyone else may independently have under any applicable law to make any use of this Work, including (for jurisdictions where this Document is a licence) fair dealing, fair use, database exceptions, or any other legally recognised limitation or exception to infringement of copyright or other applicable laws. 
 
   6.4 This Document takes effect in the relevant jurisdiction in which the Document terms are sought to be enforced. If the rights waived or granted under applicable law in the relevant jurisdiction includes additional rights not waived or granted under this Document, these additional rights are included in this Document in order to meet the intent of this Document.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -194,7 +194,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "PDDL-1.0",
@@ -388,7 +388,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/PDDL-1.0.svg]]

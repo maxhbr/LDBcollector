@@ -29,7 +29,7 @@
 - https://fedoraproject.org/wiki/Licensing/Gnuplot
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, and distribute this software and its documentation for
   any purpose with or without fee is hereby granted, provided that the above
   copyright notice appear in all copies and that both that copyright notice and
@@ -56,7 +56,7 @@
 
   This software is provided "as is" without express or implied warranty to the
   extent permitted by applicable law.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -76,7 +76,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "gnuplot",
@@ -234,7 +234,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/gnuplot.svg]]

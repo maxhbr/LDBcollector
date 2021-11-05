@@ -1,5 +1,4 @@
-3dfx Glide License (Glide)
-==========================
+# 3dfx Glide License (Glide)
 
 [TABLE]
 
@@ -9,26 +8,22 @@
 
 -   `3DFX GLIDE`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.users.on.net/~triforce/glidexp/COPYING.txt
 
 -   **SPDX:** http://spdx.org/licenses/Glide.json
 
-Text
-----
+## Text
 
     3DFX GLIDE Source Code General Public License
 
@@ -285,8 +280,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -29,7 +29,7 @@
 - https://fedoraproject.org/wiki/Licensing/Eurosym
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Licence Version 2
 
   This software is provided 'as-is', without warranty of any kind, express or implied. In no event will the authors or copyright holders be held liable for any damages arising from the use of this software.
@@ -47,7 +47,7 @@
        5. This notice may not be removed or altered from any source distribution.
 
   This licence is governed by the Laws of Germany. Disputes shall be settled by Saarbruecken City Court.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -67,7 +67,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Eurosym",
@@ -225,7 +225,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Eurosym.svg]]

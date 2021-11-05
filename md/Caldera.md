@@ -1,5 +1,4 @@
-Caldera License (Caldera)
-=========================
+# Caldera License (Caldera)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ Caldera License (Caldera)
 
 -   `scancode://caldera`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.lemis.com/grog/UNIX/ancient-source-all.pdf
 
 -   **SPDX:** http://spdx.org/licenses/Caldera.json
 
-Text
-----
+## Text
 
     Caldera International, Inc. hereby grants a fee free license that includes the
     rights use, modify and distribute this named source code, including creating
@@ -74,8 +69,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

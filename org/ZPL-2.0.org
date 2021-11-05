@@ -63,7 +63,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
     - Using Modified Source Code
@@ -71,42 +71,42 @@
     - Use binaries generated from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
 
     Conditions:
     OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: "If you use the name "Zope Corporation (tm)". get permission from Zope Corporation.
     Actions:
     - Use the name to endorse and promote derived products
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Modify the obtained source code.
 
     Conditions:
     OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribution of Modified Source Code
 
@@ -114,9 +114,9 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Actions:
     - Distribute the generated binaries from modified source code
 
@@ -124,12 +124,12 @@
     AND
       OBLIGATION: Include a copyright notice, list of terms and conditions, and disclaimer in the materials accompanying the distribution, which are included in the license
       OBLIGATION: Indicate your changes and the date of your changes in the file where you made them.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This license has been certified as open source. It has also been designated as
   GPL compatible by the Free Software Foundation (FSF).
 
@@ -172,7 +172,7 @@
   This software consists of contributions made by Zope Corporation and many
   individuals on behalf of Zope Corporation. Specific attributions are listed in
   the accompanying credits file.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -216,7 +216,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "ZPL-2.0",
@@ -794,7 +794,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/ZPL-2.0.svg]]

@@ -1,5 +1,4 @@
-Open Software License 2.1 (OSL-2.1)
-===================================
+# Open Software License 2.1 (OSL-2.1)
 
 [TABLE]
 
@@ -13,8 +12,7 @@ Open Software License 2.1 (OSL-2.1)
 
 -   `OSL 2.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OSL-2.1.html "SPDX") (all data \[in
@@ -29,8 +27,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -71,8 +68,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/osl-2.1.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.nexb.com/license/LICENSE-OSL-2.1.html
 
@@ -88,10 +84,9 @@ URLs
 
 -   http://web.archive.org/web/20050212003940/http://www.rosenlaw.com/osl21.htm
 
--   http://www.gnu.org/licenses/license-list.html\#OSL
+-   http://www.gnu.org/licenses/license-list.html#OSL
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -153,8 +148,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Open Software License v. 2.1
 
@@ -202,8 +196,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

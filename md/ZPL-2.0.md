@@ -1,5 +1,4 @@
-Zope Public License 2.0 (ZPL-2.0)
-=================================
+# Zope Public License 2.0 (ZPL-2.0)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Zope Public License 2.0 (ZPL-2.0)
 
 -   `ZPL 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -32,8 +30,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://opensource.org/licenses/ZPL-2.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -43,8 +40,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.zope.org/Resources/License/
 
@@ -60,8 +56,7 @@ URLs
 
 -   http://www.zope.com/Marks
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -114,8 +109,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     This license has been certified as open source. It has also been designated as
     GPL compatible by the Free Software Foundation (FSF).
@@ -162,8 +156,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

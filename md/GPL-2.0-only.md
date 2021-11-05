@@ -1,5 +1,4 @@
-GNU General Public License v2.0 only (GPL-2.0-only)
-===================================================
+# GNU General Public License v2.0 only (GPL-2.0-only)
 
 [TABLE]
 
@@ -29,8 +28,7 @@ GNU General Public License v2.0 only (GPL-2.0-only)
 
 -   `GPL 2.0`
 
-Description
------------
+## Description
 
 > The GNU GPL is the most widely used free software license and has a
 > strong copyleft requirement. When distributing derived works, the
@@ -41,8 +39,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/GPL-2.0-only.html "SPDX") (all data
@@ -64,8 +61,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Strong copyleft licenses require you to share both the licensed
     software (like the weak copyleft licenses, and larger programs that
@@ -99,8 +95,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-2.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -108,8 +103,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/gpl-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -141,8 +135,7 @@ URLs
 
 -   http://www.opensource.org/licenses/GPL-2.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -224,8 +217,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide Copyright notice
@@ -330,8 +322,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
                         GNU GENERAL PUBLIC LICENSE
                            Version 2, June 1991
@@ -675,8 +666,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-BSD 2-Clause "Simplified" License (BSD-2-Clause)
-================================================
+# BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 [TABLE]
 
@@ -23,19 +22,17 @@ BSD 2-Clause "Simplified" License (BSD-2-Clause)
 
 -   `scancode://bsd-simplified`
 
-Description
------------
+## Description
 
 > A permissive license that comes in two variants, the &lt;a
-> href="/licenses/bsd-2-clause/"&gt;BSD 2-Clause&lt;/a&gt; and &lt;a
-> href="/licenses/bsd-3-clause/"&gt;BSD 3-Clause&lt;/a&gt;. Both have
-> very minute differences to the MIT license.
+> href="/licenses/bsd-2-clause/">BSD 2-Clause&lt;/a> and &lt;a
+> href="/licenses/bsd-3-clause/">BSD 3-Clause&lt;/a>. Both have very
+> minute differences to the MIT license.
 
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-2-Clause.html "SPDX") (all data
@@ -50,15 +47,14 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “BSD-2-Clause” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
--   “&lt;OWNER&gt; would be the equivalent of a copyright holder.”
-    (source: [Hitachi
+-   “&lt;OWNER> would be the equivalent of a copyright holder.” (source:
+    [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
@@ -66,8 +62,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bsd-simplified.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -75,8 +70,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/bsd-2-clause.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/BSD-2-Clause
 
@@ -89,7 +83,7 @@ URLs
 -   **SPDX:** http://spdx.org/licenses/BSD-2-Clause.json
 
 -   **Wikipedia Page:**
-    https://en.wikipedia.org/wiki/BSD\_licenses\#2-clause
+    https://en.wikipedia.org/wiki/BSD\_licenses#2-clause
 
 -   **open-license:** http://open-license.hitachi.com/licenses/15
 
@@ -97,8 +91,7 @@ URLs
 
 -   http://www.freebsd.org/copyright/copyright.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -125,8 +118,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward Copyright notices
@@ -139,8 +131,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
@@ -165,8 +156,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

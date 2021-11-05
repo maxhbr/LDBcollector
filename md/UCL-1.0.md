@@ -1,5 +1,4 @@
-Upstream Compatibility License v1.0 (UCL-1.0)
-=============================================
+# Upstream Compatibility License v1.0 (UCL-1.0)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ Upstream Compatibility License v1.0 (UCL-1.0)
 
 -   `scancode://ucl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/UCL-1.0.html "SPDX") (all data \[in
     this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://opensource.org/licenses/UCL-1.0
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://github.com/spdx/license-list-XML/issues/894
 
-Text
-----
+## Text
 
     Upstream Compatibility License v. 1.0 (UCL-1.0)
 
@@ -240,8 +235,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

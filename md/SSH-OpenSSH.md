@@ -1,5 +1,4 @@
-SSH OpenSSH license (SSH-OpenSSH)
-=================================
+# SSH OpenSSH license (SSH-OpenSSH)
 
 [TABLE]
 
@@ -9,30 +8,26 @@ SSH OpenSSH license (SSH-OpenSSH)
 
 -   `OpenSSH License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “composite” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssh.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/openssh/openssh-portable/blob/V\_7\_3\_P1/LICENCE
 
 -   **SPDX:** http://spdx.org/licenses/SSH-OpenSSH.json
 
--   https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE\#L10
+-   https://github.com/openssh/openssh-portable/blob/1b11ea7c58cd5c59838b5fa574cd456d6047b2d4/LICENCE#L10
 
 -   http://www.openssh.org/
 
-Text
-----
+## Text
 
     This file is part of the OpenSSH software.
 
@@ -377,8 +372,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

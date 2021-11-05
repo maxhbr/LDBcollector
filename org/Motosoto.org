@@ -44,7 +44,7 @@
 - http://www.opensource.org/licenses/Motosoto
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   MOTOSOTO OPEN SOURCE LICENSE - Version 0.9.1
 
   This Motosoto Open Source License (the "License") applies to "Community Portal Server" and related software products as well as any updatesor maintenance releases of that software ("Motosoto Products") that are distributed by Motosoto.Com B.V. ("Licensor"). Any Motosoto Product licensed pursuant to this License is a "Licensed Product." Licensed Product, in its entirety, is protected by Dutch copyright law. This License identifies the terms under which you may use, copy, distribute or modify Licensed Product and has been submitted to the Open Software Initiative (OSI) for approval.
@@ -190,7 +190,7 @@
   Notice: The notice contained in Exhibit A. (See Section 4(e))
 
   Source Code: The preferred form for making modifications to the Licensed Product, including all modules contained therein, plus any associated interface definition files, scripts used to control compilation and installation of an executable program, or a list of differential comparisons against the Source Code of the Licensed Product.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -224,7 +224,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Motosoto",
@@ -550,7 +550,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Motosoto.svg]]

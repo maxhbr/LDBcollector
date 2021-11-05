@@ -1,16 +1,12 @@
-Creative Commons Attribution Share Alike 2.0 England and Wales (CC-BY-SA-2.0-UK)
-================================================================================
+# Creative Commons Attribution Share Alike 2.0 England and Wales (CC-BY-SA-2.0-UK)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/CC-BY-SA-2.0-UK.json
 
@@ -18,8 +14,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

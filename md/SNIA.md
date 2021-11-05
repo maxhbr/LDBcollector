@@ -1,5 +1,4 @@
-SNIA Public License 1.1 (SNIA)
-==============================
+# SNIA Public License 1.1 (SNIA)
 
 [TABLE]
 
@@ -7,16 +6,14 @@ SNIA Public License 1.1 (SNIA)
 
 -   `scancode://snia`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, MPL 1.1 derived license with a few distinct changes
     They typoed the version number in Exhibit A (it says it is 1.0,
@@ -46,16 +43,14 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/snia.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/SNIA\_Public\_License
 
 -   **SPDX:** http://spdx.org/licenses/SNIA.json
 
-Text
-----
+## Text
 
     STORAGE NETWORKING INDUSTRY ASSOCIATION
     PUBLIC LICENSE
@@ -182,8 +177,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

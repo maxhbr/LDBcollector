@@ -32,7 +32,7 @@
 - *SPDX:* http://spdx.org/licenses/Borceux.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Copyright 1993 Francis Borceux
   You may freely use, modify, and/or distribute each of the files in this package without limitation.  The package consists of the following files:
 
@@ -52,7 +52,7 @@
 
   Of course no support is guaranteed, but the author will attempt to assist with problems.  Current email address:
   francis dot borceux at uclouvain dot be.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -75,7 +75,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Borceux",
@@ -279,7 +279,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Borceux.svg]]

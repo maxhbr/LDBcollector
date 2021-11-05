@@ -1,5 +1,4 @@
-Academic Free License v3.0 (AFL-3.0)
-====================================
+# Academic Free License v3.0 (AFL-3.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Academic Free License v3.0 (AFL-3.0)
 
 -   `AFL 3.0`
 
-Description
------------
+## Description
 
 > The Academic Free License is a variant of the Open Software License
 > that does not require that the source code of derivative works be
@@ -26,8 +24,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -41,15 +38,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/afl-3.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -57,8 +52,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/afl-3.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opensource.org/licenses/afl-3.0.php
 
@@ -70,12 +64,11 @@ URLs
 
 -   http://www.rosenlaw.com/AFL3.0.htm
 
--   http://www.gnu.org/licenses/license-list.html\#AcademicFreeLicense
+-   http://www.gnu.org/licenses/license-list.html#AcademicFreeLicense
 
 -   http://www.opensource.org/licenses/afl-3.0
 
-Text
-----
+## Text
 
     This Academic Free License (the "License") applies to any original work of authorship (the "Original Work") whose owner (the "Licensor") has placed the following licensing notice adjacent to the copyright notice for the Original Work:
 
@@ -125,8 +118,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

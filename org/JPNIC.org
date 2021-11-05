@@ -27,7 +27,7 @@
 - https://jprs.co.jp/idn/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   By using this file, you agree to the terms and conditions set forth bellow.
 
                           LICENSE TERMS AND CONDITIONS 
@@ -66,7 +66,7 @@
      WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
      OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
      ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -82,7 +82,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "JPNIC",
@@ -208,7 +208,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/JPNIC.svg]]

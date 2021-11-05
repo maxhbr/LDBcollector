@@ -39,7 +39,7 @@
 - https://creativecommons.org/licenses/by-nc-nd/2.0/legalcode
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Attribution-NonCommercial-NoDerivs 2.0
 
   CREATIVE COMMONS CORPORATION IS NOT A LAW FIRM AND DOES NOT PROVIDE
@@ -279,7 +279,7 @@
   available upon request from time to time.
 
   Creative Commons may be contacted at http://creativecommons.org/.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -304,7 +304,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CC-BY-NC-ND-2.0",
@@ -513,7 +513,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CC-BY-NC-ND-2.0.svg]]

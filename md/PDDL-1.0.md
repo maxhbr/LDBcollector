@@ -1,5 +1,4 @@
-ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
-=====================================================
+# ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 [TABLE]
 
@@ -13,14 +12,11 @@ ODC Public Domain Dedication & License 1.0 (PDDL-1.0)
 
 -   `PDDL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://opendatacommons.org/licenses/pddl/1-0/
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://opendatacommons.org/licenses/pddl/1.0/
 
-Text
-----
+## Text
 
     Open Data Commons – Public Domain Dedication & Licence (PDDL)
     Preamble
@@ -170,8 +165,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

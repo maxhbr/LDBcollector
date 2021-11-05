@@ -1,5 +1,4 @@
-Zimbra Public License v1.4 (Zimbra-1.4)
-=======================================
+# Zimbra Public License v1.4 (Zimbra-1.4)
 
 [TABLE]
 
@@ -9,21 +8,17 @@ Zimbra Public License v1.4 (Zimbra-1.4)
 
 -   `Zimbra PL 1.4`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.zimbra.com/legal/zimbra-public-license-1-4
 
 -   **SPDX:** http://spdx.org/licenses/Zimbra-1.4.json
 
-Text
-----
+## Text
 
     Zimbra Public License, Version 1.4 (ZPL)
     This Zimbra Public License (this "Agreement") is a legal agreement that describes the terms under which Zimbra, Inc., a Texas corporation ("Zimbra") will provide software to you via download or otherwise ("Software"). By using the Software, you, an individual or an entity ("You") agree to the terms of this Agreement.
@@ -74,8 +69,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-Educational Community License v2.0 (ECL-2.0)
-============================================
+# Educational Community License v2.0 (ECL-2.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Educational Community License v2.0 (ECL-2.0)
 
 -   `ECL 2.0`
 
-Description
------------
+## Description
 
 > The Educational Community License version 2.0 ("ECL") consists of the
 > Apache 2.0 license, modified to change the scope of the patent grant
@@ -26,8 +24,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/ECL-2.0.html "SPDX") (all data \[in
@@ -42,8 +39,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certifified. The Educational
     Community License version 2.0 ("ECL") consists of the Apache 2.0
@@ -54,8 +50,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ecl-2.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -63,8 +58,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/ecl-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/ecl2.php
 
@@ -76,8 +70,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/ECL-2.0.json
 
-Text
-----
+## Text
 
                  Educational Community License
                     Version 2.0, April 2007
@@ -285,8 +278,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

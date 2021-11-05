@@ -1,5 +1,4 @@
-eGenix.com Public License 1.1.0 (eGenix)
-========================================
+# eGenix.com Public License 1.1.0 (eGenix)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ eGenix.com Public License 1.1.0 (eGenix)
 
 -   `eGenix Public License 1.1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,11 +19,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf
@@ -36,8 +32,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/eGenix.com\_Public\_License\_1.1.0
 
-Text
-----
+## Text
 
     EGENIX.COM PUBLIC LICENSE AGREEMENT 
     Version 1.1.0 
@@ -82,8 +77,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

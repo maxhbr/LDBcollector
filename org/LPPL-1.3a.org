@@ -27,7 +27,7 @@
 - *SPDX:* http://spdx.org/licenses/LPPL-1.3a.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The LaTeX Project Public License
   =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
   LPPL Version 1.3a  2004-10-01
@@ -422,7 +422,7 @@
      to comprise the Work and, in such a case, the licensee would be
      entitled to make reasonable conjectures as to which files comprise
      the Work.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -442,7 +442,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "LPPL-1.3a",
@@ -589,7 +589,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/LPPL-1.3a.svg]]

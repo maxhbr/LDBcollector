@@ -34,7 +34,7 @@
 - http://rc.quest.com/topics/openssh/license.php#tcpwrappers
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   -----BEGIN PGP SIGNED MESSAGE-----
 
   As of June 1, 2001, the text below constitutes the TCP Wrappers license.
@@ -66,7 +66,7 @@
   0JsaB8crR3M=
   =0AMW
   -----END PGP SIGNATURE-----
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -89,7 +89,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TCP-wrappers",
@@ -295,7 +295,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TCP-wrappers.svg]]

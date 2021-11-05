@@ -36,7 +36,7 @@
 - https://fedoraproject.org/wiki/Licensing/xpp
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Indiana University Extreme! Lab Software License, Version 1.2
 
   Copyright (C) 2004 The Trustees of Indiana University.
@@ -93,7 +93,7 @@
   RISK AS TO THE PERFORMANCE OF SOFTWARE AND/OR ASSOCIATED MATERIALS,
   AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING
   SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -116,7 +116,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "xpp",
@@ -320,7 +320,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/xpp.svg]]

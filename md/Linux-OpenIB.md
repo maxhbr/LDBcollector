@@ -1,5 +1,4 @@
-Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
-=========================================================
+# Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 
 [TABLE]
 
@@ -7,23 +6,20 @@ Linux Kernel Variant of OpenIB.org license (Linux-OpenIB)
 
 -   `scancode://linux-openib`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “This license is a hybrid of two common licenses the BSD-2-Clause
     (bsd- simplified) and the MIT License (mit). ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/linux-openib.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h
@@ -36,8 +32,7 @@ URLs
 
 -   https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tree/drivers/infiniband/core/sa.h?id=3215b9d57a2c75c4305a3956ca303d7004485200
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without modification,
     are permitted provided that the following conditions are met:
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

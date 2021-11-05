@@ -1,5 +1,4 @@
-Vovida Software License v1.0 (VSL-1.0)
-======================================
+# Vovida Software License v1.0 (VSL-1.0)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Vovida Software License v1.0 (VSL-1.0)
 
 -   `scancode://vsl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/VSL-1.0.html "SPDX") (all data \[in
@@ -26,8 +24,7 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “https://opensource.org/licenses/VSL-1.0” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -37,8 +34,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.vovida.org/About/license.html
 
@@ -56,8 +52,7 @@ URLs
 
 -   http://www.vovida.org
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -98,8 +93,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Vovida Software License v. 1.0
 
@@ -157,8 +151,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

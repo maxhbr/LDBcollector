@@ -1,5 +1,4 @@
-Noweb License (Noweb)
-=====================
+# Noweb License (Noweb)
 
 [TABLE]
 
@@ -7,19 +6,16 @@ Noweb License (Noweb)
 
 -   `scancode://noweb`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing:Noweb?rd=Licensing/Noweb
@@ -28,8 +24,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/Noweb
 
-Text
-----
+## Text
 
     Noweb is protected by copyright.  It is not public-domain
     software or shareware, and it is not protected by a ``copyleft''
@@ -54,8 +49,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

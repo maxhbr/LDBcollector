@@ -44,7 +44,7 @@
 - https://fedoraproject.org/wiki/Licensing/Open_Market_License
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This FastCGI application library source and object code (the
   "Software") and its documentation (the "Documentation") are
   copyrighted by Open Market, Inc ("Open Market").  The following terms
@@ -73,7 +73,7 @@
   SUCH DAMAGES.  THE SOFTWARE AND DOCUMENTATION ARE PROVIDED "AS IS".
   OPEN MARKET HAS NO LIABILITY IN CONTRACT, TORT, NEGLIGENCE OR
   OTHERWISE ARISING OUT OF THIS SOFTWARE OR THE DOCUMENTATION.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -96,7 +96,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "OML",
@@ -316,7 +316,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/OML.svg]]

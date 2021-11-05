@@ -28,7 +28,7 @@
 - *SPDX:* http://spdx.org/licenses/Glide.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   3DFX GLIDE Source Code General Public License
 
   1. PREAMBLE
@@ -281,7 +281,7 @@
   DERIVATIVE WORKS TO OPERATE WITH ANY OTHER PROGRAMS), EVEN IF SUCH
   HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
   DAMAGES.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -301,7 +301,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Glide",
@@ -454,7 +454,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Glide.svg]]

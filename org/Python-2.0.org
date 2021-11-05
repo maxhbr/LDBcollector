@@ -64,7 +64,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Treat software related documentation in the same way as software
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -81,9 +81,9 @@
     - Test the generated binaries from modified source code
 
     Conditions: None
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -97,9 +97,9 @@
     AND
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
     Actions:
     - Modify the obtained source code.
@@ -108,9 +108,9 @@
     AND
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Include a summary of the changes you have made
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013 Python Software Foundation; All Rights Reserved."
     Actions:
     - Distribution of Modified Source Code
@@ -126,23 +126,23 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Include a summary of the changes you have made
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward License text
   	YOU MUST Forward Copyright notices
   	IF Software modification
   		YOU MUST Provide Modification report
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2
   --------------------------------------------
 
@@ -335,7 +335,7 @@
   WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
   ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
   OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -388,7 +388,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Python-2.0",
@@ -1078,7 +1078,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Python-2.0.svg]]

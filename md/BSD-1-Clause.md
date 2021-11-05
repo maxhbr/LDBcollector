@@ -1,5 +1,4 @@
-BSD 1-Clause License (BSD-1-Clause)
-===================================
+# BSD 1-Clause License (BSD-1-Clause)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ BSD 1-Clause License (BSD-1-Clause)
 
 -   `scancode://bsd-1-clause`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/BSD-1-Clause.html "SPDX") (all data
@@ -18,11 +16,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://svnweb.freebsd.org/base/head/include/ifaddrs.h?revision=326823
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/BSD-1-Clause.json
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions
@@ -54,8 +49,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

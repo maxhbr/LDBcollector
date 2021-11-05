@@ -1,5 +1,4 @@
-BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
-=====================================================
+# BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ BSD 3-Clause Open MPI variant (BSD-3-Clause-Open-MPI)
 
 -   `scancode://bsd-3-clause-open-mpi`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.open-mpi.org/community/license.php” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://www.open-mpi.org/community/license.php
 
@@ -30,8 +26,7 @@ URLs
 
 -   http://www.netlib.org/lapack/LICENSE.txt
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -64,8 +59,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -104,8 +98,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

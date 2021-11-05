@@ -1,5 +1,4 @@
-Spencer License 86 (Spencer-86)
-===============================
+# Spencer License 86 (Spencer-86)
 
 [TABLE]
 
@@ -9,18 +8,15 @@ Spencer License 86 (Spencer-86)
 
 -   `Regexp License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Rating is: Lead” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://fedoraproject.org/wiki/Licensing/Henry\_Spencer\_Reg-Ex\_Library\_License
@@ -29,8 +25,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Spencer-86.json
 
-Text
-----
+## Text
 
     Not derived from licensed software.
 
@@ -54,8 +49,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

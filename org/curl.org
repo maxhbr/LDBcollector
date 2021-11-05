@@ -31,17 +31,17 @@
 - http://curl.haxx.se/legal/licmix.html
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery OR Binary delivery
   	YOU MUST Forward Copyright notices
   	YOU MUST Forward License text
   	YOU MUST NOT Promote
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission to use, copy, modify, and distribute this software for any purpose
   with or without fee is hereby granted, provided that the above copyright
   notice and this permission notice appear in all copies.
@@ -57,7 +57,7 @@
   Except as contained in this notice, the name of a copyright holder shall not
   be used in advertising or otherwise to promote the sale, use or other dealings
   in this Software without prior written authorization of the copyright holder.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -79,7 +79,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "curl",
@@ -268,7 +268,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/curl.svg]]

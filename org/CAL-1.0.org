@@ -36,7 +36,7 @@
 - http://cryptographicautonomylicense.com/license-text.html
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The Cryptographic Autonomy License, v. 1.0
 
   1. Purpose
@@ -162,7 +162,7 @@
 
   7.7. License for the Text of this License
   The text of this license is released under the Creative Commons Attribution-ShareAlike 4.0 International License, with the caveat that any modifications of this license may not use the name “Cryptographic Autonomy License” or any name confusingly similar thereto to describe any derived work of this License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -181,7 +181,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CAL-1.0",
@@ -381,7 +381,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CAL-1.0.svg]]

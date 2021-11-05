@@ -1,5 +1,4 @@
-Open Government Licence v2.0 (OGL-UK-2.0)
-=========================================
+# Open Government Licence v2.0 (OGL-UK-2.0)
 
 [TABLE]
 
@@ -9,14 +8,11 @@ Open Government Licence v2.0 (OGL-UK-2.0)
 
 -   `scancode://ogl-uk-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/
@@ -25,8 +21,7 @@ URLs
 
 -   http://www.nationalarchives.gov.uk/doc/open-government-licence/
 
-Text
-----
+## Text
 
     You are encouraged to use and re-use the Information that is available under this licence freely and flexibly, with only a few conditions.
     Using Information under this licence
@@ -106,8 +101,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

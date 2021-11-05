@@ -43,7 +43,7 @@
 - https://fedoraproject.org/wiki/Licensing/Xerox
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Use and copying of this software and preparation of derivative works
   based upon this software are permitted. Any copy of this software or of
   any derivative work must include the above copyright notice of
@@ -59,7 +59,7 @@
   EXPRESSLY DISCLAIMED, WHETHER ARISING IN CONTRACT, TORT (INCLUDING
   NEGLIGENCE) OR STRICT LIABILITY, EVEN IF {copyright-holder} IS ADVISED
   OF THE POSSIBILITY OF SUCH DAMAGES.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -82,7 +82,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Xerox",
@@ -308,7 +308,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Xerox.svg]]

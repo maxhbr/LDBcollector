@@ -1,5 +1,4 @@
-Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exception)
-==================================================================================
+# Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exception)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Mozilla Public License 2.0 (no copyleft exception) (MPL-2.0-no-copyleft-exceptio
 
 -   `MPL 2.0 with no copyleft exception`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html "SPDX")
@@ -22,8 +20,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -37,8 +34,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mpl-2.0-no-copyleft-exception.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.mozilla.org/MPL/2.0/
 
@@ -49,8 +45,7 @@ URLs
 
 -   https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Provide License notice
@@ -98,16 +93,14 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     This Source Code Form is "Incompatible With Secondary Licenses", as
     defined by the Mozilla Public License, v. 2.0.
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

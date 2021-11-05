@@ -1,5 +1,4 @@
-PolyForm Noncommercial License 1.0.0 (PolyForm-Noncommercial-1.0.0)
-===================================================================
+# PolyForm Noncommercial License 1.0.0 (PolyForm-Noncommercial-1.0.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ PolyForm Noncommercial License 1.0.0 (PolyForm-Noncommercial-1.0.0)
 
 -   `scancode://polyform-noncommercial-1.0.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://polyformproject.org/licenses/noncommercial/1.0.0/
@@ -23,8 +19,7 @@ URLs
 
 -   https://polyformproject.org/licenses/noncommercial/1.0.0
 
-Text
-----
+## Text
 
     # Polyform Noncommercial License 1.0.0
 
@@ -160,8 +155,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

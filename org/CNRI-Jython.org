@@ -27,7 +27,7 @@
 - *SPDX:* http://spdx.org/licenses/CNRI-Jython.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
 
   1. This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 ("CNRI"), and the Individual or Organization ("Licensee") accessing and using JPython version 1.1.x in source or binary form and its associated documentation as provided herein ("Software").  
 
@@ -46,7 +46,7 @@
   8. This License Agreement shall be governed by and interpreted in all respects by the law of the State of Virginia, excluding conflict of law provisions. Nothing in this Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between CNRI and Licensee.  
 
   9. By clicking on the "ACCEPT" button where indicated, or by installing, copying or otherwise using the Software, Licensee agrees to be bound by the terms and conditions of this License Agreement.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -69,7 +69,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CNRI-Jython",
@@ -252,7 +252,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CNRI-Jython.svg]]

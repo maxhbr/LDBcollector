@@ -1,5 +1,4 @@
-Enlightenment License (e16) (MIT-advertising)
-=============================================
+# Enlightenment License (e16) (MIT-advertising)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Enlightenment License (e16) (MIT-advertising)
 
 -   `EFL MIT-Style License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per Fedora, this license is a modified version of the common MIT
     license, with an additional advertising clause that makes it
@@ -35,8 +32,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/enlightenment.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.enlightenment.org/
 
@@ -46,8 +42,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/MIT\_With\_Advertising
 
-Text
-----
+## Text
 
     Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -57,8 +52,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

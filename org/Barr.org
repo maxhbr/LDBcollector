@@ -34,7 +34,7 @@
 - *SPDX:* http://spdx.org/licenses/Barr.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This is a package of commutative diagram macros built on top of Xy-pic  by
   Michael Barr (email: barr@barrs.org). Its use is unrestricted. It  may be freely
   distributed, unchanged, for non-commercial or commercial  use. If changed, it
@@ -43,7 +43,7 @@
   use. There are no guarantees  that this package is good for anything. I have
   tested it with LaTeX 2e,  LaTeX 2.09 and Plain TeX. Although I know of no reason
   it will not work  with AMSTeX, I have not tested it.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -66,7 +66,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Barr",
@@ -270,7 +270,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Barr.svg]]

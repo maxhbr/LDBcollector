@@ -1,5 +1,4 @@
-Artistic License 2.0 (Artistic-2.0)
-===================================
+# Artistic License 2.0 (Artistic-2.0)
 
 [TABLE]
 
@@ -19,8 +18,7 @@ Artistic License 2.0 (Artistic-2.0)
 
 -   `scancode://artistic-2.0`
 
-Description
------------
+## Description
 
 > Heavily favored by the Perl community, the Artistic license requires
 > that modified versions of the software do not prevent users from
@@ -29,8 +27,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -55,8 +52,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source code refers to the source code, documentation and
     configuration files. This license does not grant you the right to
@@ -70,8 +66,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/artistic-2.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -79,8 +74,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/artistic-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.perlfoundation.org/
 
@@ -101,8 +95,7 @@ URLs
 
 -   http://www.opensource.org/licenses/artistic-license-2.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Source code refers to the source code, documentation and configuration files. Source code refers to source code, documentation and configuration files.
         Actions:
@@ -163,8 +156,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Copyright (c) 2000-2006, The Perl Foundation.
 
@@ -242,8 +234,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

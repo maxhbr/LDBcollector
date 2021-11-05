@@ -1,5 +1,4 @@
-SIL Open Font License 1.0 (OFL-1.0)
-===================================
+# SIL Open Font License 1.0 (OFL-1.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ SIL Open Font License 1.0 (OFL-1.0)
 
 -   `OFL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“The following restriction on distributions, which is part of
     OFL, has been widely accepted by open source projects when it is
@@ -22,8 +20,7 @@ Comments on (easy) usability
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Font software refers to font files, data files, source files, build
     scripts, and documents. A retained font name is the name of the font
@@ -38,8 +35,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ofl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://scripts.sil.org/cms/scripts/page.php?item\_id=OFL10\_web
@@ -48,8 +44,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/823
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Font software refers to font files, data files, source files, build scripts, and documents.
         Actions:
@@ -101,8 +96,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     SIL OPEN FONT LICENSE 
 
@@ -194,8 +188,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

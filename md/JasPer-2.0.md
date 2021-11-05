@@ -1,5 +1,4 @@
-JasPer License (JasPer-2.0)
-===========================
+# JasPer License (JasPer-2.0)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ JasPer License (JasPer-2.0)
 
 -   `JasPer 2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -23,11 +21,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.ece.uvic.ca/~frodo/jasper/LICENSE
 
@@ -39,8 +35,7 @@ URLs
 
 -   http://www.ece.uvic.ca/~mdadams/jasper/LICENSE
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -84,8 +79,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     JasPer License Version 2.0
 
@@ -144,8 +138,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

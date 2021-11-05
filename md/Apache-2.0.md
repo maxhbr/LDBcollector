@@ -1,5 +1,4 @@
-Apache License 2.0 (Apache-2.0)
-===============================
+# Apache License 2.0 (Apache-2.0)
 
 [TABLE]
 
@@ -23,8 +22,7 @@ Apache License 2.0 (Apache-2.0)
 
 -   `Apache 2.0`
 
-Description
------------
+## Description
 
 > A permissive license whose main conditions require preservation of
 > copyright and license notices. Contributors provide an express grant
@@ -34,8 +32,7 @@ Description
 (source: choosealicense.com
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“ This License is featured by choosealicense.com” (source:
     [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")
@@ -64,8 +61,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source refers to software source code, document sources,
     configuration files, and other files suitable for making changes,
@@ -92,8 +88,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0.yml "Scancode")
     (CC0-1.0))
 
-Obligations
------------
+## Obligations
 
 [TABLE]
 
@@ -101,8 +96,7 @@ Obligations
 [choosealicense.com](https://github.com/github/choosealicense.com/blob/gh-pages/_licenses/apache-2.0.txt "choosealicense.com")
 ([MIT](https://github.com/github/choosealicense.com/blob/gh-pages/LICENSE.md "MIT")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.apache.org/licenses/
 
@@ -125,8 +119,7 @@ URLs
 
 -   http://www.opensource.org/licenses/Apache-2.0
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source without modification. (The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes.)
@@ -201,8 +194,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery
     	YOU MUST Forward License text
@@ -243,8 +235,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
                                      Apache License
                                Version 2.0, January 2004
@@ -450,8 +441,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

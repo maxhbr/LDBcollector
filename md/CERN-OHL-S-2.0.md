@@ -1,5 +1,4 @@
-CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
-===========================================================================
+# CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
 
 [TABLE]
 
@@ -7,14 +6,11 @@ CERN Open Hardware Licence Version 2 - Strongly Reciprocal (CERN-OHL-S-2.0)
 
 -   `scancode://cern-ohl-s-2.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://www.ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
@@ -27,8 +23,7 @@ URLs
 
 -   https://ohwr.org/project/cernohl/wikis/Documents/CERN-OHL-version-2
 
-Text
-----
+## Text
 
     CERN Open Hardware Licence Version 2 - Strongly Reciprocal
 
@@ -322,8 +317,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

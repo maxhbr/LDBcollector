@@ -1,5 +1,4 @@
-Open LDAP Public License v2.8 (OLDAP-2.8)
-=========================================
+# Open LDAP Public License v2.8 (OLDAP-2.8)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Open LDAP Public License v2.8 (OLDAP-2.8)
 
 -   `OpenLDAP Public License 2.8`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/OLDAP-2.8.html "SPDX") (all data
@@ -20,11 +18,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.openldap.org/software/release/license.html
 
@@ -32,8 +28,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/OLDAP-2.8.json
 
-Text
-----
+## Text
 
     The OpenLDAP Public License
       Version 2.8, 17 August 2003
@@ -85,8 +80,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

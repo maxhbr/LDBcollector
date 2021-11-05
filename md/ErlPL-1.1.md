@@ -1,5 +1,4 @@
-Erlang Public License v1.1 (ErlPL-1.1)
-======================================
+# Erlang Public License v1.1 (ErlPL-1.1)
 
 [TABLE]
 
@@ -11,16 +10,14 @@ Erlang Public License v1.1 (ErlPL-1.1)
 
 -   `scancode://erlangpl-1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Weak copyleft licenses require sharing changes and additions to the
     licensed software when you give copies to others.” (source: [BlueOak
@@ -48,8 +45,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.erlang.org/EPLICENSE
 
@@ -59,8 +55,7 @@ URLs
 
 -   https://spdx.org/licenses/ErlPL-1.1.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
         Actions:
@@ -184,8 +179,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     ERLANG PUBLIC LICENSE
     Version 1.1
@@ -476,8 +470,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

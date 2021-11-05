@@ -25,7 +25,7 @@
 - https://cdla.io/sharing-1-0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Community Data License Agreement – Sharing – Version 1.0
 
   This is the Community Data License Agreement – Sharing, Version 1.0 ("Agreement").  Data is provided to You under this Agreement by each of the Data Providers.  Your exercise of any of the rights and permissions granted below constitutes Your acceptance and agreement to be bound by the terms and conditions of this Agreement.
@@ -115,7 +115,7 @@
   7.4 The Data Provider(s) reserve no right or expectation of privacy, data protection or confidentiality in any Data that they Publish under this Agreement.  If You choose to Publish Data under this Agreement, You similarly do so with no reservation or expectation of any rights of privacy or confidentiality in that Data.
 
   7.5 The Community Data License Agreement workgroup under The Linux Foundation is the steward of this Agreement ("Steward").  No one other than the Steward has the right to modify or publish new versions of this Agreement.  Each version will be given a distinguishing version number.  You may Use and Publish Data Received hereunder under the terms of the version of the Agreement under which You originally Received the Data, or under the terms of any subsequent version published by the Steward.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -131,7 +131,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "CDLA-Sharing-1.0",
@@ -248,7 +248,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/CDLA-Sharing-1.0.svg]]

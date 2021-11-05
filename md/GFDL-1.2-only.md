@@ -1,5 +1,4 @@
-GNU Free Documentation License v1.2 only (GFDL-1.2-only)
-========================================================
+# GNU Free Documentation License v1.2 only (GFDL-1.2-only)
 
 [TABLE]
 
@@ -9,32 +8,28 @@ GNU Free Documentation License v1.2 only (GFDL-1.2-only)
 
 -   `GFDL 1.2`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Exception: Data licensed under the FDL with no invariant
     sections are considered DFSG-free as of GR 2006-001:
-    http://www.debian.org/vote/2006/vote\_001\#outcome” (source: [Debian
+    http://www.debian.org/vote/2006/vote\_001#outcome” (source: [Debian
     Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license was released November 2002” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gfdl-1.2.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/old-licenses/fdl-1.2.txt
 
 -   **SPDX:** http://spdx.org/licenses/GFDL-1.2-only.json
 
-Text
-----
+## Text
 
     GNU Free Documentation License
     		  Version 1.2, November 2002
@@ -436,8 +431,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

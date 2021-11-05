@@ -34,7 +34,7 @@
 - https://fedoraproject.org/wiki/Licensing/TCL
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This software is copyrighted by the Regents of the University of
   California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState
   Corporation and other parties.  The following terms apply to all files
@@ -75,7 +75,7 @@
   authors grant the U.S. Government and others acting in its behalf
   permission to use and distribute the software in accordance with the
   terms specified in this license.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -105,7 +105,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "TCL",
@@ -404,7 +404,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/TCL.svg]]

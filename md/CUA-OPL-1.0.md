@@ -1,5 +1,4 @@
-CUA Office Public License v1.0 (CUA-OPL-1.0)
-============================================
+# CUA Office Public License v1.0 (CUA-OPL-1.0)
 
 [TABLE]
 
@@ -11,22 +10,19 @@ CUA Office Public License v1.0 (CUA-OPL-1.0)
 
 -   `scancode://cua-opl-1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/CUA-OPL-1.0.html "SPDX") (all data
     \[in this repository\] is generated))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certifified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cua-opl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/cuaoffice.php
 
@@ -36,8 +32,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/CUA-OPL-1.0.json
 
-Text
-----
+## Text
 
     CUA Office Public License Version 1.0
     1. Definitions.
@@ -510,8 +505,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

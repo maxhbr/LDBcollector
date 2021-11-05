@@ -1,5 +1,4 @@
-Creative Commons Attribution No Derivatives 2.5 Generic (CC-BY-ND-2.5)
-======================================================================
+# Creative Commons Attribution No Derivatives 2.5 Generic (CC-BY-ND-2.5)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ Creative Commons Attribution No Derivatives 2.5 Generic (CC-BY-ND-2.5)
 
 -   `scancode://cc-by-nd-2.5`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://creativecommons.org/licenses/by-nd/2.5/
 
@@ -26,8 +22,7 @@ URLs
 
 -   https://creativecommons.org/licenses/by-nd/2.5/legalcode
 
-Text
-----
+## Text
 
     Attribution-NoDerivs 2.5
 
@@ -87,8 +82,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

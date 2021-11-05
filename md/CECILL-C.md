@@ -1,5 +1,4 @@
-CeCILL-C Free Software License Agreement (CECILL-C)
-===================================================
+# CeCILL-C Free Software License Agreement (CECILL-C)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ CeCILL-C Free Software License Agreement (CECILL-C)
 
 -   `scancode://cecill-c`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -21,8 +19,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “per SPDX.org, English translation can be found here
     http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html ”
@@ -30,8 +27,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/cecill-c.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-fr.html
@@ -40,8 +36,7 @@ URLs
 
 -   http://www.cecill.info/licences/Licence\_CeCILL-C\_V1-en.html
 
-Text
-----
+## Text
 
     "CONTRAT DE LICENCE DE LOGICIEL LIBRE CeCILL-C
 
@@ -285,8 +280,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

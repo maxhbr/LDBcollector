@@ -1,5 +1,4 @@
-Historical Permission Notice and Disclaimer (HPND)
-==================================================
+# Historical Permission Notice and Disclaimer (HPND)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Historical Permission Notice and Disclaimer (HPND)
 
 -   `scancode://historical`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/HPND.html "SPDX") (all data \[in
@@ -23,16 +21,14 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified. This license has been
     voluntarily deprecated by its author. ” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/historical.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.opensource.org/licenses/historical.php
 
@@ -44,8 +40,7 @@ URLs
 
 -   http://www.opensource.org/licenses/HPND
 
-OSADL Rule
-----------
+## OSADL Rule
 
     USE CASE Source code delivery OR Binary delivery
     	YOU MUST Forward Copyright notices
@@ -55,8 +50,7 @@ OSADL Rule
 
 (source: OSADL License Checklist)
 
-Text
-----
+## Text
 
     Permission to use, copy, modify and distribute this software and its
     documentation for any purpose and without fee is hereby granted,
@@ -79,8 +73,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

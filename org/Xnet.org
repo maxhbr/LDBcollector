@@ -56,7 +56,7 @@
 - *SPDX:* http://spdx.org/licenses/Xnet.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission is hereby granted, free of charge, to any person obtaining a copy
   of this software and associated documentation files (the "Software"), to deal
   in the Software without restriction, including without limitation the rights
@@ -77,7 +77,7 @@
 
   This agreement shall be governed in all respects by the laws of the State of
   California and by the laws of the United States of America.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -114,7 +114,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Xnet",
@@ -498,7 +498,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Xnet.svg]]

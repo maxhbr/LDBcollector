@@ -45,7 +45,7 @@
 - http://www.dipp.nrw.de/d-fsl/nutzer/
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Deutsche Freie Software Lizenz
 
   (c) Ministerium für Wissenschaft und Forschung 
@@ -499,7 +499,7 @@
 
   Die Lizenz kann unter <http://www.d-fsl.de> 
   abgerufen werden."
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -515,7 +515,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "D-FSL-1.0",
@@ -749,7 +749,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/D-FSL-1.0.svg]]

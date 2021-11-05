@@ -1,5 +1,4 @@
-Secure Messaging Protocol Public License (SMPPL)
-================================================
+# Secure Messaging Protocol Public License (SMPPL)
 
 [TABLE]
 
@@ -7,22 +6,18 @@ Secure Messaging Protocol Public License (SMPPL)
 
 -   `scancode://smppl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/dcblake/SMP/blob/master/Documentation/License.txt
 
 -   **SPDX:** http://spdx.org/licenses/SMPPL.json
 
-Text
-----
+## Text
 
     Secure Messaging Protocol (SMP) Libraries [ACL, CML, SFL]
     Distribution Rights
@@ -55,8 +50,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

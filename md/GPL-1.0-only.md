@@ -1,5 +1,4 @@
-GNU General Public License v1.0 only (GPL-1.0-only)
-===================================================
+# GNU General Public License v1.0 only (GPL-1.0-only)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ GNU General Public License v1.0 only (GPL-1.0-only)
 
 -   `GPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This is the most popular free software license. Most of Linux
     (the kernel) is distributed under the GPL, as is most of the other
@@ -36,8 +34,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source code refers to the source code of all modules.” (source:
     [Hitachi
@@ -48,8 +45,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.gnu.org/licenses/gpl-1.0.html
 
@@ -59,8 +55,7 @@ URLs
 
 -   https://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -140,8 +135,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     GNU GENERAL PUBLIC LICENSE
     		     Version 1, February 1989
@@ -400,8 +394,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

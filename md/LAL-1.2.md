@@ -1,21 +1,17 @@
-Licence Art Libre 1.2 (LAL-1.2)
-===============================
+# Licence Art Libre 1.2 (LAL-1.2)
 
 [TABLE]
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   “It is currently unstettled whether this license is DFSG-free”
     (source: [Debian Free Software
     Guidelines](https://wiki.debian.org/DFSGLicenses "Debian Free Software Guidelines")
     (NOASSERTION))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **SPDX:** http://spdx.org/licenses/LAL-1.2.json
 
@@ -23,8 +19,7 @@ URLs
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

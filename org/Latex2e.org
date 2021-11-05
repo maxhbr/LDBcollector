@@ -31,7 +31,7 @@
 - *SPDX:* http://spdx.org/licenses/Latex2e.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Permission is granted to make and distribute verbatim copies of this
   manual provided the copyright notice and this permission notice are
   preserved on all copies.
@@ -43,7 +43,7 @@
 
   Permission is granted to copy and distribute translations of this manual
   into another language, under the above conditions for modified versions.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -63,7 +63,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Latex2e",
@@ -231,7 +231,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Latex2e.svg]]

@@ -1,5 +1,4 @@
-ImageMagick License (ImageMagick)
-=================================
+# ImageMagick License (ImageMagick)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ ImageMagick License (ImageMagick)
 
 -   `scancode://imagemagick`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Silver” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,8 +17,7 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “http://www.imagemagick.org/script/license.php” (source: [Hitachi
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
@@ -47,8 +44,7 @@ General Comments
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/imagemagick.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.imagemagick.org/script/license.php
 
@@ -58,8 +54,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/873
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Actions:
         - Use the obtained source without modification. (The source code is used as it is. The source refers to software source code, document sources, configuration files, and other files suitable for making changes.)
@@ -134,8 +129,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     ImageMagick License
 
@@ -186,8 +180,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

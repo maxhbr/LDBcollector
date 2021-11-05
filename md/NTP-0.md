@@ -1,5 +1,4 @@
-NTP No Attribution (NTP-0)
-==========================
+# NTP No Attribution (NTP-0)
 
 [TABLE]
 
@@ -7,22 +6,18 @@ NTP No Attribution (NTP-0)
 
 -   `scancode://ntp-0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/tytso/e2fsprogs/blob/master/lib/et/et\_name.c
 
 -   **SPDX:** http://spdx.org/licenses/NTP-0.json
 
-Text
-----
+## Text
 
     Permission to use, copy, modify, and distribute this software and
     its documentation for any purpose is hereby granted, provided that
@@ -35,8 +30,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

@@ -1,5 +1,4 @@
-BSD Source Code Attribution (BSD-Source-Code)
-=============================================
+# BSD Source Code Attribution (BSD-Source-Code)
 
 [TABLE]
 
@@ -7,18 +6,15 @@ BSD Source Code Attribution (BSD-Source-Code)
 
 -   `scancode://bsd-source-code`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:**
     https://github.com/infusion/PHP/blob/master/TSRM/LICENSE
@@ -29,8 +25,7 @@ URLs
 
 -   https://github.com/robbiehanson/CocoaHTTPServer/blob/master/LICENSE.txt
 
-Text
-----
+## Text
 
     Redistribution and use in source and binary forms, with or without
     modification, are permitted provided that the following conditions are
@@ -58,8 +53,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

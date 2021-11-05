@@ -1,5 +1,4 @@
-Affero General Public License v1.0 only (AGPL-1.0-only)
-=======================================================
+# Affero General Public License v1.0 only (AGPL-1.0-only)
 
 [TABLE]
 
@@ -15,8 +14,7 @@ Affero General Public License v1.0 only (AGPL-1.0-only)
 
 -   `AGPL 1.0`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -30,8 +28,7 @@ Comments on (easy) usability
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “In addition to the requirements of strong copyleft licenses,
     network copyleft licenses require you to share larger programs that
@@ -48,8 +45,7 @@ General Comments
     List](https://blueoakcouncil.org/copyleft "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.affero.org/oagpl.html
 
@@ -57,8 +53,7 @@ URLs
 
 -   https://spdx.org/licenses/AGPL-1.0-only.html
 
-Text
-----
+## Text
 
     AFFERO GENERAL PUBLIC LICENSE
 
@@ -159,8 +154,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

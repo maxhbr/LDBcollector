@@ -1,5 +1,4 @@
-Latex2e License (Latex2e)
-=========================
+# Latex2e License (Latex2e)
 
 [TABLE]
 
@@ -7,31 +6,27 @@ Latex2e License (Latex2e)
 
 -   `scancode://latex2e`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “the latext2e, verbatim-manual and abstyles are similar licenses”
     (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/latex2e.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Latex2e
 
 -   **SPDX:** http://spdx.org/licenses/Latex2e.json
 
-Text
-----
+## Text
 
     Permission is granted to make and distribute verbatim copies of this
     manual provided the copyright notice and this permission notice are
@@ -47,8 +42,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

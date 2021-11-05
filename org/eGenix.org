@@ -37,7 +37,7 @@
 - https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   EGENIX.COM PUBLIC LICENSE AGREEMENT 
   Version 1.1.0 
 
@@ -78,7 +78,7 @@
        Pastor-Loeh-Str. 48 
        D-40764 Langenfeld 
        Germany
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -101,7 +101,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "eGenix",
@@ -314,7 +314,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/eGenix.svg]]

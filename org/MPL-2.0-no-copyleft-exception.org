@@ -47,7 +47,7 @@
 - https://spdx.org/licenses/MPL-2.0-no-copyleft-exception.html
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Provide License notice
   	YOU MUST Reference License text
@@ -91,15 +91,15 @@
   COMPATIBILITY Zlib
   COPYLEFT CLAUSE Yes
   PATENT HINTS
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This Source Code Form is "Incompatible With Secondary Licenses", as
   defined by the Mozilla Public License, v. 2.0.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -128,7 +128,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "MPL-2.0-no-copyleft-exception",
@@ -424,7 +424,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/MPL-2.0-no-copyleft-exception.svg]]

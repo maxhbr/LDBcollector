@@ -30,7 +30,7 @@
 - *SPDX:* http://spdx.org/licenses/Spencer-86.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   Not derived from licensed software.
 
   Permission is granted to anyone to use this software for any
@@ -50,7 +50,7 @@
   Beware that some of this code is subtly aware of the way operator
   precedence is structured in regular expressions. Serious changes in
   regular-expression syntax might require a total rethink.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -69,7 +69,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Spencer-86",
@@ -233,7 +233,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Spencer-86.svg]]

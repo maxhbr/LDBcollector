@@ -1,5 +1,4 @@
-TCL/TK License (TCL)
-====================
+# TCL/TK License (TCL)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ TCL/TK License (TCL)
 
 -   `scancode://tcl`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,11 +17,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.tcl.tk/software/tcltk/license.html
 
@@ -33,8 +29,7 @@ URLs
 
 -   https://fedoraproject.org/wiki/Licensing/TCL
 
-Text
-----
+## Text
 
     This software is copyrighted by the Regents of the University of
     California, Sun Microsystems, Inc., Scriptics Corporation, ActiveState
@@ -79,8 +74,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

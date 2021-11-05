@@ -1,5 +1,4 @@
-Cube License (Cube)
-===================
+# Cube License (Cube)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Cube License (Cube)
 
 -   `scancode://cube`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -19,11 +17,9 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Cube
 
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Cube.json
 
-Text
-----
+## Text
 
     Cube game engine source code, 20 dec 2003 release.
 
@@ -63,8 +58,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

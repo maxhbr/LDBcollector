@@ -60,7 +60,7 @@
 
 ** Description from open-license
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documents should be treated in the same way as software.
     Actions:
     - Use the obtained source code without modification (Use the fetched code as it is.)
@@ -70,9 +70,9 @@
 
     Conditions:
     RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
     Actions:
     - Sublicense the acquired source code. (Sublicensing means that the person to whom the license was granted re-grants the license granted to a third party.)
@@ -92,9 +92,9 @@
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
     Actions:
     - Distribute the obtained source code without modification (Redistribute the code as it was obtained)
@@ -105,9 +105,9 @@
       OBLIGATION: Give you a copy of the relevant license.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
     Actions:
     - Modify the obtained source code.
@@ -118,9 +118,9 @@
       OBLIGATION: Indicate your changes in the materials that accompany the distribution.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: Related documentation should be treated in the same way as the software. Acknowledgments should include the following text: "Portions of this software are copyrighted by The FreeType Project. "Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
     Actions:
     - Distribution of Modified Source Code
@@ -132,9 +132,9 @@
       OBLIGATION: Indicate your changes in the materials that accompany the distribution.
       OBLIGATION: Include the copyright notice contained in the software
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: The related documents should be treated in the same way as the software. It is recommended to include the URL to the FreeType web page [http://www.freetype.org] in the related documentation. It is recommended to include the following text in the acknowledgements." Portions of this software are copyright <year> The FreeType Project (www.freetype.org). Replace <year> with the year in effect for the actual version.
     Actions:
     - Distribute the fetched binaries (Redistribute the fetched binaries as they are)
@@ -144,21 +144,21 @@
     AND
       RESTRICTION: An unrestricted, royalty-free, worldwide supplyable copyright license is granted in accordance with this license. (Sublicensing means that a person who has been granted this license re-grants the license granted to a third party.)
       OBLIGATION: Acknowledgements
-  #+END_EXAMPLE
+  #+end_example
 
-- #+BEGIN_EXAMPLE
+- #+begin_example
     Description: You must treat the documentation in the same way as the software. It is recommended that you use one or more of the following phrases to identify the software in any material or advertisement accompanying the distribution: "FreeType Project", "FreeType Engine", "FreeType library", or "FreeType Distribution".
     Actions:
     - Use the names of authors and contributors in publicity and advertising.
 
     Conditions:
     REQUISITE: Get special permission in writing.
-  #+END_EXAMPLE
+  #+end_example
 
 (source: Hitachi open-license)
 
 ** OSADL Rule
-#+BEGIN_EXAMPLE
+#+begin_example
   USE CASE Source code delivery
   	YOU MUST Forward License text
   	IF Software modification
@@ -170,12 +170,12 @@
   	YOU MUST Credit In Documentation FreeType Team
   	YOU MUST NOT Promote
   	YOU MUST Credit FreeType Team
-#+END_EXAMPLE
+#+end_example
 
 (source: OSADL License Checklist)
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   The FreeType Project LICENSE
   ----------------------------
   2006-Jan-27
@@ -340,7 +340,7 @@
       http://www.freetype.org
 
   --- end of FTL.TXT ---
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -373,7 +373,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "FTL",
@@ -927,7 +927,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/FTL.svg]]

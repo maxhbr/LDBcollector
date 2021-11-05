@@ -47,12 +47,12 @@
 - https://fedoraproject.org/wiki/Licensing/Beerware
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   "THE BEER-WARE LICENSE" (Revision 42):
   <phk@FreeBSD.ORG> wrote this file. As long as you retain this notice you
   can do whatever you want with this stuff. If we meet some day, and you think
   this stuff is worth it, you can buy me a beer in return Poul-Henning Kamp
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -86,7 +86,7 @@
   ([[https://creativecommons.org/licenses/by-sa/3.0/legalcode][CC-BY-SA-3.0]])
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "Beerware",
@@ -398,7 +398,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/Beerware.svg]]

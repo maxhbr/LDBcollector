@@ -31,7 +31,7 @@
 - https://fedoraproject.org/wiki/Licensing/VOSTROM
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   VOSTROM Public License for Open Source
   ----------
   Copyright (c) 2007 VOSTROM Holdings, Inc.
@@ -91,7 +91,7 @@
   DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
   ACTION OF CONTRACT, TORT (INCLUDING NEGLIGENCE) OR STRICT LIABILITY, ARISING
   OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -111,7 +111,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "VOSTROM",
@@ -270,7 +270,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/VOSTROM.svg]]

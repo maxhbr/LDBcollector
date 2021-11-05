@@ -1,5 +1,4 @@
-GL2PS License (GL2PS)
-=====================
+# GL2PS License (GL2PS)
 
 [TABLE]
 
@@ -9,19 +8,16 @@ GL2PS License (GL2PS)
 
 -   `scancode://gl2ps`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.geuz.org/gl2ps/COPYING.GL2PS
 
@@ -29,8 +25,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1560
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Relevant documentation for the software should be treated in the same way as for the software.
         Actions:
@@ -71,8 +66,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     GL2PS LICENSE Version 2, November 2003
 
@@ -97,8 +91,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

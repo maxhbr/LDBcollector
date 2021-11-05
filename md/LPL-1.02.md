@@ -1,5 +1,4 @@
-Lucent Public License v1.02 (LPL-1.02)
-======================================
+# Lucent Public License v1.02 (LPL-1.02)
 
 [TABLE]
 
@@ -11,8 +10,7 @@ Lucent Public License v1.02 (LPL-1.02)
 
 -   `scancode://lucent-pl-1.02`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Google Classification is NOTICE” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
@@ -26,15 +24,13 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Per SPDX.org, this license is OSI certified.” (source:
     [Scancode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lucent-pl-1.02.yml "Scancode")
     (CC0-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://plan9.bell-labs.com/plan9/license.html
 
@@ -46,8 +42,7 @@ URLs
 
 -   http://www.opensource.org/licenses/LPL-1.02
 
-Text
-----
+## Text
 
     Lucent Public License Version 1.02
 
@@ -131,8 +126,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

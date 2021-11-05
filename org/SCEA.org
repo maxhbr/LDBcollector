@@ -28,7 +28,7 @@
 - *SPDX:* http://spdx.org/licenses/SCEA.json
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   SCEA Shared Source License 1.0
 
   Terms and Conditions:
@@ -89,7 +89,7 @@
   http://research.scea.com/scea_shared_source_license.html
 
   Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -109,7 +109,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "SCEA",
@@ -262,7 +262,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/SCEA.svg]]

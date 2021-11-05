@@ -1,5 +1,4 @@
-Sun Industry Standards Source License v1.1 (SISSL)
-==================================================
+# Sun Industry Standards Source License v1.1 (SISSL)
 
 [TABLE]
 
@@ -17,8 +16,7 @@ Sun Industry Standards Source License v1.1 (SISSL)
 
 -   `scancode://sun-sissl-1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Is OSI Approved” (source:
     [SPDX](https://spdx.org/licenses/SISSL.html "SPDX") (all data \[in
@@ -43,8 +41,7 @@ Comments on (easy) usability
     International](https://github.com/okfn/licenses/blob/master/licenses.csv "Open Knowledge International")
     ([PDDL-1.0](https://opendatacommons.org/licenses/pddl/1-0/ "PDDL-1.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Source code refers to source code and related interface definition
     files and scripts used to control the compilation and installation
@@ -66,8 +63,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.openoffice.org/licenses/sissl\_license.html
 
@@ -77,8 +73,7 @@ URLs
 
 -   **open-license:** http://open-license.hitachi.com/licenses/1486
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: Source code refers to source code and related interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A.
         Actions:
@@ -208,8 +203,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     Sun Industry Standards Source License - Version 1.1
 
@@ -516,8 +510,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

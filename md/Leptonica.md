@@ -1,5 +1,4 @@
-Leptonica License (Leptonica)
-=============================
+# Leptonica License (Leptonica)
 
 [TABLE]
 
@@ -7,8 +6,7 @@ Leptonica License (Leptonica)
 
 -   `scancode://leptonica`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“This software Licenses is OK for Fedora” (source: [Fedora
     Project
@@ -19,11 +17,9 @@ Comments on (easy) usability
     List](https://blueoakcouncil.org/list "BlueOak License List")
     ([CC0-1.0](https://raw.githubusercontent.com/blueoakcouncil/blue-oak-list-npm-package/master/LICENSE "CC0-1.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** https://fedoraproject.org/wiki/Licensing/Leptonica
 
@@ -31,8 +27,7 @@ URLs
 
 -   **SPDX:** http://spdx.org/licenses/Leptonica.json
 
-Text
-----
+## Text
 
     This software is distributed in the hope that it will be useful, but with NO WARRANTY OF ANY KIND.
 
@@ -44,8 +39,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

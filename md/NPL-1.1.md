@@ -1,5 +1,4 @@
-Netscape Public License v1.1 (NPL-1.1)
-======================================
+# Netscape Public License v1.1 (NPL-1.1)
 
 [TABLE]
 
@@ -13,15 +12,13 @@ Netscape Public License v1.1 (NPL-1.1)
 
 -   `Netscape Public License 1.1`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↓**“Google Classification is RESTRICTED” (source: [Google OSS
     Policy](https://opensource.google.com/docs/thirdparty/licenses/ "Google OSS Policy")
     ([CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode "CC-BY-4.0")))
 
-General Comments
-----------------
+## General Comments
 
 -   “Mozilla Public License Version 1.1 with the Amendments, including
     Exhibit A-Netscape Public
@@ -57,8 +54,7 @@ General Comments
     open-license](https://github.com/Hitachi/open-license "Hitachi open-license")
     (CDLA-Permissive-1.0))
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www.mozilla.org/MPL/NPL-1.1.html
 
@@ -70,8 +66,7 @@ URLs
 
 -   http://www.mozilla.org/NPL/
 
-Description from open-license
------------------------------
+## Description from open-license
 
 -   Description: The license granted excludes copyright licenses and patent licenses in which a third party claims intellectual property rights. The copyright license granted includes copyrights that are licensable to the Initial Developer. The patent license granted includes any patent claims that the Initial Developer can license that are necessarily infringed by the use of the software developed by the Initial Developer alone or in combination with the Contributor's contributions. The initial developer is the person or entity listed as the initial developer in the source code notice required by EXHIBIT A. The initial developer is the person or entity listed as the initial developer in the source code notice. Source code refers to the source code and associated interface definition files and scripts used to control the compilation and installation of executables. The executable refers to any form of software other than source code.
         Actions:
@@ -194,8 +189,7 @@ Description from open-license
 
 (source: Hitachi open-license)
 
-Text
-----
+## Text
 
     AMENDMENTS
     The Netscape Public License Version 1.1 ("NPL") consists of the Mozilla Public License Version 1.1 with the following Amendments, including Exhibit A-Netscape Public License.  Files identified with "Exhibit A-Netscape Public License" are governed by the Netscape Public License Version 1.1.
@@ -243,8 +237,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

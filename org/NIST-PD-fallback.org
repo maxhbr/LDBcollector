@@ -26,7 +26,7 @@
 - https://github.com/usnistgov/fipy/blob/86aaa5c2ba2c6f1be19593c5986071cf6568cc34/LICENSE.rst
 
 ** Text
-#+BEGIN_EXAMPLE
+#+begin_example
   This software was developed by employees of the National Institute of Standards
   and Technology (NIST), an agency of the Federal Government and is being made
   available as a public service. Pursuant to title 17 United States Code Section
@@ -50,7 +50,7 @@
   CONTRACT, TORT, OR OTHERWISE, WHETHER OR NOT INJURY WAS SUSTAINED BY PERSONS OR
   PROPERTY OR OTHERWISE, AND WHETHER OR NOT LOSS WAS SUSTAINED FROM, OR AROSE OUT
   OF THE RESULTS OF, OR USE OF, THE SOFTWARE OR SERVICES PROVIDED HEREUNDER.
-#+END_EXAMPLE
+#+end_example
 
 --------------
 
@@ -66,7 +66,7 @@
   (CC0-1.0)
 
 *** Raw JSON
-#+BEGIN_EXAMPLE
+#+begin_example
   {
       "__impliedNames": [
           "NIST-PD-fallback",
@@ -186,7 +186,7 @@
           ]
       ]
   }
-#+END_EXAMPLE
+#+end_example
 
 *** Dot Cluster Graph
 [[../dot/NIST-PD-fallback.svg]]

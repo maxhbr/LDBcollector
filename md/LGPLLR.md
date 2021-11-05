@@ -1,5 +1,4 @@
-Lesser General Public License For Linguistic Resources (LGPLLR)
-===============================================================
+# Lesser General Public License For Linguistic Resources (LGPLLR)
 
 [TABLE]
 
@@ -7,21 +6,17 @@ Lesser General Public License For Linguistic Resources (LGPLLR)
 
 -   `scancode://lgpllr`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
 -   **Homepage:** http://www-igm.univ-mlv.fr/~unitex/lgpllr.html
 
 -   **SPDX:** http://spdx.org/licenses/LGPLLR.json
 
-Text
-----
+## Text
 
     Lesser General Public License For Linguistic Resources
 
@@ -256,8 +251,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 

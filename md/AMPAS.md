@@ -1,5 +1,4 @@
-Academy of Motion Picture Arts and Sciences BSD (AMPAS)
-=======================================================
+# Academy of Motion Picture Arts and Sciences BSD (AMPAS)
 
 [TABLE]
 
@@ -9,8 +8,7 @@ Academy of Motion Picture Arts and Sciences BSD (AMPAS)
 
 -   `AMPAS BSD-Style License`
 
-Comments on (easy) usability
-----------------------------
+## Comments on (easy) usability
 
 -   **↑**“Rating is: Bronze” (source: [BlueOak License
     List](https://blueoakcouncil.org/list "BlueOak License List")
@@ -21,20 +19,17 @@ Comments on (easy) usability
     Wiki](https://fedoraproject.org/wiki/Licensing:Main?rd=Licensing "Fedora Project Wiki")
     ([CC-BY-SA-3.0](https://creativecommons.org/licenses/by-sa/3.0/legalcode "CC-BY-SA-3.0")))
 
-General Comments
-----------------
+## General Comments
 
-URLs
-----
+## URLs
 
--   **Homepage:** https://fedoraproject.org/wiki/Licensing/BSD\#AMPASBSD
+-   **Homepage:** https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
 
 -   **SPDX:** https://spdx.org/licenses/AMPAS.html
 
 -   **SPDX:** http://spdx.org/licenses/AMPAS.json
 
-Text
-----
+## Text
 
     A world-wide, royalty-free, non-exclusive right to distribute, copy, modify, create derivatives, and use, in source and binary forms, is hereby granted, subject to acceptance of this license. Performance of any of the aforementioned acts indicates acceptance to be bound by the following terms and conditions:
 
@@ -50,8 +45,7 @@ Text
 
 ------------------------------------------------------------------------
 
-Raw Data
---------
+## Raw Data
 
 ### Facts
 
