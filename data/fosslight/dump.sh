@@ -13,16 +13,17 @@ cleanupContainer() {
 
 startContainer() {
     mkdir -p docker-entrypoint-initdb.d
-    curl https://raw.githubusercontent.com/fosslight/fosslight/main/install/db/fosslight_create.sql > docker-entrypoint-initdb.d/fosslight_create.sql
-    set -x
-    cleanupContainer
-    docker logs "$(docker run --rm\
+    curl https://raw.githubusercontent.com/fosslight/fosslight/main/db/initdb.d/fosslight_create.sql > docker-entrypoint-initdb.d/fosslight_create.sql
+    ( set -x;
+      cleanupContainer;
+      docker logs "$(docker run --rm\
         --name $container \
         -e MYSQL_ROOT_PASSWORD=my-secret-pw \
         -v "$(pwd)/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d" \
         -v "$(pwd)/out:/out" \
         -d mariadb:latest && sleep 3)"
-    sleep 60
+      sleep 60;
+    )
 }
 
 dumpTable() {
@@ -36,13 +37,18 @@ dumpTable() {
     dumpARGS="$dumpARGS --compact"
     dumpARGS="$dumpARGS --single-transaction"
 
-    awk -f <(curl https://raw.githubusercontent.com/dumblob/mysql2sqlite/master/mysql2sqlite) <(docker exec $container sh -c "$dumpCMD fosslight $tablename $dumpARGS")
+    (set -x;
+     awk -f <(curl https://raw.githubusercontent.com/dumblob/mysql2sqlite/master/mysql2sqlite) <(docker exec $container sh -c "$dumpCMD fosslight $tablename $dumpARGS");
+    )
 }
 
 startContainer
+
 rm -f fosslight.sqlite.db
+
 cat <<EOF | tee fosslight.sqlite.db.sql | sqlite3 fosslight.sqlite.db
 $(dumpTable LICENSE_MASTER)
 $(dumpTable LICENSE_NICKNAME)
 EOF
+
 cleanupContainer

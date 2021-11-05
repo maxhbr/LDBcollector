@@ -1,10 +1,10 @@
 resolver:
-  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/9.yaml
+  url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/18/13.yaml
 
 packages:
 - .
 
 nix:
-  packages: [graphviz, zlib.dev, zlib.out, curlFull]
+  packages: [graphviz, zlib.dev, zlib.out, curlFull, libffi]
 
 ghc-options: {"$locals": -ddump-to-file -ddump-hi}
