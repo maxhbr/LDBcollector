@@ -53,3 +53,9 @@
 |[TU Berlin License 1.0]([tu]/TU-Berlin-License-1.0.yaml)|TU Berlin| |[TU-Berlin-1.0](https://spdx.org/licenses/preview/TU-Berlin-1.0.html)| | [tu-berlin](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin.LICENSE) | [tu-berlin](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin.LICENSE) |terms|
 |[TU Berlin License 2.0]([tu]/TU-Berlin-License-2.0.yaml)|TU Berlin| |[TU-Berlin-2.0](https://spdx.org/licenses/preview/TU-Berlin-2.0.html)| | [tu-berlin-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin-2.0.LICENSE) | [tu-berlin-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/tu-berlin-2.0.LICENSE) |terms|
 |[TXL License 10.5]([tx]/TXL-License-10.5.yaml)|TXL License|TXL-10.5| | | [txl-10.5](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/txl-10.5.LICENSE) | [txl-10.5](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/txl-10.5.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

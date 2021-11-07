@@ -22,3 +22,9 @@
 |[xpp License]([xp]/xpp-License.yaml)|xpp| |[xpp](https://spdx.org/licenses/preview/xpp.html)| | [indiana-extreme-1.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.LICENSE) | [indiana-extreme-1.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/indiana-extreme-1.2.LICENSE) |terms|
 |[XSkat License]([xs]/XSkat-License.yaml)|XSkat| |[XSkat](https://spdx.org/licenses/preview/XSkat.html)| | [xskat](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.LICENSE) | [xskat](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xskat.LICENSE) |terms|
 |[xxd License]([xx]/xxd-License.yaml)|xxd License|xxd| | | [xxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xxd.LICENSE) | [xxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/xxd.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

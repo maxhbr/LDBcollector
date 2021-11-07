@@ -11,3 +11,9 @@
 |[Kevlin Henney License]([ke]/Kevlin-Henney-License.yaml)|Kevlin Henney License|Kevlin-Henney| | | [kevlin-henney](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kevlin-henney.LICENSE) | [kevlin-henney](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kevlin-henney.LICENSE) |terms|
 |[Kumar Robotics License]([ku]/Kumar-Robotics-License.yaml)|Kumar Robotics License|Kumar-Robotics| | | [kumar-robotics](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kumar-robotics.LICENSE) | [kumar-robotics](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/kumar-robotics.LICENSE) |terms|
 |[Kyoto Products Specific FOSS Library Linking Exception]([ky]/Kyoto-Products-Specific-FOSS-Library-Linking-Exception.yaml)|FOSS Library Linking Exception|Kyoto-Products-FOSS-Linking| | | | |exception|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

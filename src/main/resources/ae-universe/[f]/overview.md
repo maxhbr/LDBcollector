@@ -51,3 +51,9 @@
 |[FSF Unlimited License (with retention; no warranty)]([fs]/FSF-Unlimited-License-(with-retention;no-warranty).yaml)|FSF Unlimited|FSFULLR-no-warranty| | | | [fsf-unlimited](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-unlimited.LICENSE) |terms|
 |[FtpBean License]([ft]/FtpBean-License.yaml)|FtpBean License|FtpBean| | | [ftpbean](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ftpbean.LICENSE) | [ftpbean](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ftpbean.LICENSE) |terms|
 |[Future Technology Devices International License]([fu]/Future-Technology-Devices-International-License.yaml)|Future Technology Devices International License|FTDI| | | [ftdi](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ftdi.LICENSE) | [ftdi](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ftdi.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

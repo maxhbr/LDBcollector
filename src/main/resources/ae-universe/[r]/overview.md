@@ -48,3 +48,9 @@
 |[RubyEncoder Loader Licence]([ru]/RubyEncoder-Loader-Licence.yaml)|RubyEncoder Loader Licence|RubyEncoder-Loader| | | [rubyencoder-loader](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rubyencoder-loader.LICENSE) | [rubyencoder-loader](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rubyencoder-loader.LICENSE) |terms|
 |[Rute Users Tutorial and Exposition License 0.8.0]([ru]/Rute-Users-Tutorial-and-Exposition-License-0.8.0.yaml)|Rute Users Tutorial and Exposition License|Rute-0.8.0| | | [rute](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rute.LICENSE) | [rute](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/rute.LICENSE) |terms|
 |[Ryszard Szopa License]([ry]/Ryszard-Szopa-License.yaml)|Ryszard Szopa License|Ryszard-Szopa| | | [ryszard-szopa](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ryszard-szopa.LICENSE) | [ryszard-szopa](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ryszard-szopa.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

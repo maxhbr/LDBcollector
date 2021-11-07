@@ -221,3 +221,9 @@
 |[Python Software Foundation License 2.1.1]([py]/Python-Software-Foundation-License-2.1.1.yaml)|Python Software Foundation License| |[Python-2.1.1](https://spdx.org/licenses/preview/Python-2.1.1.html)| | | [python](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/python.LICENSE) |terms|
 |[Python Software Foundation License 2.2]([py]/Python-Software-Foundation-License-2.2.yaml)|Python Software Foundation License| |[Python-2.2](https://spdx.org/licenses/preview/Python-2.2.html)| | | [psf-3.7.2](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/psf-3.7.2.LICENSE) |terms|
 |[Python Software Foundation License 2.3]([py]/Python-Software-Foundation-License-2.3.yaml)|Python Software Foundation License| |[Python-2.3](https://spdx.org/licenses/preview/Python-2.3.html)| | | [python](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/python.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

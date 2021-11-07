@@ -70,8 +70,8 @@ explicitly. We perform deterministic license matching based on evidences and pat
 
 The internal representation (and therefore the content shown here) is based on SPDX and ScanCode.
 
-Namen von Firmen, Organisationen, Lizenzen und Produkten werden ausschließlich zu Identifikationszwecken verwendet.
-Die Daten unter {metæffekt} Universum Github Repository [externer Link] werden unter Creative Commons BY-4.0 [externer Link] zur Verfügung gestellt. Copyright © metaeffekt GmbH 2021. All rights reserved.
+All company names, organization names, license names, and product names mentioned in this documentation
+are used for identification purposes only.
 
 ## Licensing
 
@@ -88,6 +88,8 @@ Die Daten unter {metæffekt} Universum Github Repository [externer Link] werden 
 
 The content provided in contact@metaeffekt.com {metæffekt}-universe is licensed under
 [Creative Common BY-4.0](LICENSE)    
+
+Copyright © metaeffekt GmbH 2021. All rights reserved.
 
 ## Contribution
 As this repository is largely showing converted data a direct contribution in the form of patches is

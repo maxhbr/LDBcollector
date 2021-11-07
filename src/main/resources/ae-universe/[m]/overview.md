@@ -124,3 +124,9 @@
 |[musl attribution exception]([mu]/musl-attribution-exception.yaml)|musl attribution exception|musl-exception| | | [musl-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/musl-exception.LICENSE) | |terms|
 |[MySQL Connector ODBC Exception 2.0]([my]/MySQL-Connector-ODBC-Exception-2.0.yaml)|MySQL Connector ODBC Exception|MySQL-Connector-ODBC-Exception-2.0| | | [mysql-connector-odbc-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mysql-connector-odbc-exception-2.0.LICENSE) | [mysql-connector-odbc-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mysql-connector-odbc-exception-2.0.LICENSE) |exception|
 |[MySQL linking exception 2018]([my]/MySQL-linking-exception-2018.yaml)|MySQL linking exception 2018|mysql-linking-exception-2018| | | [mysql-linking-exception-2018](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mysql-linking-exception-2018.LICENSE) | |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

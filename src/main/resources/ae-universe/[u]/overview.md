@@ -34,3 +34,9 @@
 |[US Government Grant of Unlimited Rights]([us]/US-Government-Grant-of-Unlimited-Rights.yaml)|US Government Grant of Unlimited Rights|US-Gov-Unlimited-Rights| | | [us-govt-unlimited-rights](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/us-govt-unlimited-rights.LICENSE) | [us-govt-unlimited-rights](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/us-govt-unlimited-rights.LICENSE) |terms|
 |[USRobotics Permissive License]([us]/USRobotics-Permissive-License.yaml)|USRobotics Permissive License|USRobotics-Permissive| | | [usrobotics-permissive](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/usrobotics-permissive.LICENSE) | [mit-veillard-variant](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-veillard-variant.LICENSE) |terms|
 |[Utopia License]([ut]/Utopia-License.yaml)|Utopia|Utopia| | | [utopia](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/utopia.LICENSE) | |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

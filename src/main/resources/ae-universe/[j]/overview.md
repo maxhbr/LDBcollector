@@ -33,3 +33,9 @@
 |[JSR Specification License]([js]/JSR-Specification-License.yaml)|JSR-Specification|JSR-Spec| | | | [sun-jsr-spec-04-2006](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-jsr-spec-04-2006.LICENSE) |terms|
 |[JSR-107 JCache Specification License]([js]/JSR-107-JCache-Specification-License.yaml)|JSR-107 JCache Specification License|JSR-107-JCache-Spec| | | [jsr-107-jcache-spec](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jsr-107-jcache-spec.LICENSE) | [jsr-107-jcache-spec](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jsr-107-jcache-spec.LICENSE) |terms|
 |[JSR-107 JCache Specification License 2013]([js]/JSR-107-JCache-Specification-License-2013.yaml)|JSR-107 JCache Specification License|JSR-107-JCache-Spec-2013| | | [jsr-107-jcache-spec-2013](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/jsr-107-jcache-spec-2013.LICENSE) | [proprietary-license](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/proprietary-license.LICENSE), [sun-sdk-spec-1.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sun-sdk-spec-1.1.LICENSE), [unknown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unknown.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

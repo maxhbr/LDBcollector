@@ -55,3 +55,9 @@
 |[Lyubinskiy dropdown License]([ly]/Lyubinskiy-dropdown-License.yaml)|Lyubinskiy dropdown License|Lyubinskiy-dropdown| | | [lyubinskiy-dropdown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lyubinskiy-dropdown.LICENSE) | [lyubinskiy-dropdown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lyubinskiy-dropdown.LICENSE) |terms|
 |[Lyubinskiy popup-window License]([ly]/Lyubinskiy-popup-window-License.yaml)|Lyubinskiy popup-window License|Lyubinskiy-popup-window| | | [lyubinskiy-popup-window](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lyubinskiy-popup-window.LICENSE) | [lyubinskiy-popup-window](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lyubinskiy-popup-window.LICENSE) |terms|
 |[LZMA Exception]([lz]/LZMA-Exception.yaml)|LZMA Exception|LZMA-Exception|[LZMA-exception](https://spdx.org/licenses/preview/LZMA-exception.html)| | [lzma-cpl-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lzma-cpl-exception.LICENSE) | [lzma-cpl-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/lzma-cpl-exception.LICENSE) |exception|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

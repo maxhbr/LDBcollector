@@ -119,3 +119,9 @@
 |[OSSN License 3.0]([os]/OSSN-License-3.0.yaml)|OSSN|OSSN-3.0| | | [ossn-3.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/ossn-3.0.LICENSE) | |terms|
 |[OTN Early Adopter Development License Agreement]([ot]/OTN-Early-Adopter-Development-License-Agreement.yaml)|OTN Early Adopter Development License Agreement|OTN-Early-Adopter-Development| | | [otn-early-adopter-development](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/otn-early-adopter-development.LICENSE) | [otn-early-adopter-development](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/otn-early-adopter-development.LICENSE) |terms|
 |[Oxygen XML WebHelp EULA]([ox]/Oxygen-XML-WebHelp-EULA.yaml)|Oxygen XML WebHelp|Oxygen-XML-EebHelp-EULA| | | [oxygen-xml-webhelp-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/oxygen-xml-webhelp-eula.LICENSE) | |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

@@ -89,3 +89,9 @@
 |[gSOAP Public License 1.3b]([gs]/gSOAP-Public-License-1.3b.yaml)|gSOAP| |[gSOAP-1.3b](https://spdx.org/licenses/preview/gSOAP-1.3b.html)| | [gsoap-1.3b](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.LICENSE) | [gsoap-1.3b](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gsoap-1.3b.LICENSE) |terms|
 |[GStreamer Exception 2.0]([gs]/GStreamer-Exception-2.0.yaml)|GStreamer Exception|GStreamer-Exception-2.0| | | [gstreamer-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gstreamer-exception-2.0.LICENSE) | [gstreamer-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gstreamer-exception-2.0.LICENSE) |exception|
 |[GUILE Exception]([gu]/GUILE-Exception.yaml)|GUILE Exception|GUILE-Exception| | | [guile-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/guile-exception-2.0.LICENSE) | [guile-exception-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/guile-exception-2.0.LICENSE) |exception|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

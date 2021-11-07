@@ -184,3 +184,9 @@
 |[bzip2 License 1.0.5]([bz]/bzip2-License-1.0.5.yaml)|bzip2| |[bzip2-1.0.5](https://spdx.org/licenses/preview/bzip2-1.0.5.html)| | | [bzip2-libbzip-2010](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.LICENSE) |terms|
 |[bzip2 License 1.0.6]([bz]/bzip2-License-1.0.6.yaml)|bzip2| |[bzip2-1.0.6](https://spdx.org/licenses/preview/bzip2-1.0.6.html)| | [bzip2-libbzip-2010](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.LICENSE), [bzip2-libbzip-1.0.5](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-1.0.5.LICENSE) | [bzip2-libbzip-2010](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.LICENSE) |terms|
 |[bzip2 License 1.0.8]([bz]/bzip2-License-1.0.8.yaml)|bzip2|bzip2-1.0.8| | | | [bzip2-libbzip-2010](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/bzip2-libbzip-2010.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

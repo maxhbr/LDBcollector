@@ -66,3 +66,9 @@
 |[NXP Microcontroller Permission]([nx]/NXP-Microcontroller-Permission.yaml)|NXP Microcontroller Permission|NXP-Microcontroller-Permission| | | [nxp-microcontroller-proprietary](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nxp-microcontroller-proprietary.LICENSE) | |terms|
 |[NXP Warranty Disclaimer]([nx]/NXP-Warranty-Disclaimer.yaml)|NXP Warranty Disclaimer|NXP-Warranty-Disclaimer| | | [nxp-warranty-disclaimer](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nxp-warranty-disclaimer.LICENSE) | |terms|
 |[NYSL 0.9982]([ny]/NYSL-0.9982.yaml)|NYSL 0.9982|NYSL-0.9982| | | [nysl-0.9982](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nysl-0.9982.LICENSE) | [nysl-0.9982](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nysl-0.9982.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

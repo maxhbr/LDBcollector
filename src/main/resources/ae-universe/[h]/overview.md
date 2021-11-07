@@ -26,3 +26,9 @@
 |[HTML 5 Specification License]([ht]/HTML-5-Specification-License.yaml)|Specification License|HTML-5-Specification| | | [html5](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/html5.LICENSE) | |terms|
 |[httpget Notice and Disclaimer]([ht]/httpget-Notice-and-Disclaimer.yaml)|httpget Notice and Disclaimer|httpget| | | [httpget](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/httpget.LICENSE) | [httpget](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/httpget.LICENSE) |terms|
 |[HxD License]([hx]/HxD-License.yaml)|HxD License|HxD| | | [hxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hxd.LICENSE) | [hxd](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/hxd.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

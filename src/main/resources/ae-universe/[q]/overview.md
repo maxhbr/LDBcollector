@@ -25,3 +25,9 @@
 |[QuinStreet License]([qu]/QuinStreet-License.yaml)|QuinStreet License|Quin-Street| | | [quin-street](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/quin-street.LICENSE) | [quin-street](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/quin-street.LICENSE) |terms|
 |[Quirksmode Copyright Notice]([qu]/Quirksmode-Copyright-Notice.yaml)|Quirksmode Copyright Notice|Quirksmode| | | [quirksmode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/quirksmode.LICENSE) | [quirksmode](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/quirksmode.LICENSE) |terms|
 |[Qwt Exception 1.0]([qw]/Qwt-Exception-1.0.yaml)|Qwt Exception|Qwt-Exception-1.0|[Qwt-exception-1.0](https://spdx.org/licenses/preview/Qwt-exception-1.0.html)| | [qwt-exception-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qwt-exception-1.0.LICENSE) | [qwt-exception-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/qwt-exception-1.0.LICENSE) |exception|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

@@ -23,3 +23,9 @@
 |[Zope Public License 2.1]([zo]/Zope-Public-License-2.1.yaml)|ZPL| |[ZPL-2.1](https://spdx.org/licenses/preview/ZPL-2.1.html)| [ZPL-2.1](https://opensource.org/licenses/ZPL-2.1) | [zpl-2.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.LICENSE) | [zpl-2.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zpl-2.1.LICENSE) |terms|
 |[Zuora Software License]([zu]/Zuora-Software-License.yaml)|Zuora Software Licens|Zuora-Software| | | [zuora-software](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zuora-software.LICENSE) | [zuora-software](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zuora-software.LICENSE) |terms|
 |[Zveno Research License]([zv]/Zveno-Research-License.yaml)|Zveno Research License|Zveno-Research| | | [zveno-research](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zveno-research.LICENSE) | [zveno-research](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/zveno-research.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

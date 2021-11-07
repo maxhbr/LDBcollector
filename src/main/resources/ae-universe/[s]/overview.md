@@ -112,3 +112,9 @@
 |[Swift Exception]([sw]/Swift-Exception.yaml)|Swift Exception| |[Swift-exception](https://spdx.org/licenses/preview/Swift-exception.html)| | [apache-2.0-runtime-library-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apache-2.0-runtime-library-exception.LICENSE), [apple-runtime-library-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apple-runtime-library-exception.LICENSE) | [apple-runtime-library-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/apple-runtime-library-exception.LICENSE) |exception|
 |[SWIG Library License]([sw]/SWIG-Library-License.yaml)|SWIG Library License|SWIG| | | [swig](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swig.LICENSE) | [swig](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/swig.LICENSE) |terms|
 |[Synopsys Attribution License]([sy]/Synopsys-Attribution-License.yaml)|Synopsys Attribution License|Synopsys-Attribution| | | [synopsys-attribution](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/synopsys-attribution.LICENSE) | [synopsys-attribution](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/synopsys-attribution.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

@@ -76,3 +76,9 @@
 |[ITC End User License Agreement]([it]/ITC-End-User-License-Agreement.yaml)|ITC End User License Agreement|ITC-EULA| | | [itc-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/itc-eula.LICENSE) | [itc-eula](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/itc-eula.LICENSE) |terms|
 |[ITU License]([it]/ITU-License.yaml)|ITU License|ITU| | | [itu](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/itu.LICENSE) | |terms|
 |[ITU-T License]([it]/ITU-T-License.yaml)|ITU-T License|ITU-T| | | [itu-t](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/itu-t.LICENSE) | [itu-t](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/itu-t.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

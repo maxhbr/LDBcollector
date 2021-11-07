@@ -18,3 +18,9 @@
 |[VOSTROM License]([vo]/VOSTROM-License.yaml)|VOSTROM| |[VOSTROM](https://spdx.org/licenses/preview/VOSTROM.html)| | [vostrom](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vostrom.LICENSE) | [vostrom](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vostrom.LICENSE) |terms|
 |[Vovida Software License 1.0]([vo]/Vovida-Software-License-1.0.yaml)|VSL| |[VSL-1.0](https://spdx.org/licenses/preview/VSL-1.0.html)| [VSL-1.0](https://opensource.org/licenses/VSL-1.0) | [vsl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.LICENSE) | [vsl-1.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vsl-1.0.LICENSE) |terms|
 |[VS10x Code Map]([vs]/VS10x-Code-Map.yaml)|VS10x Code Map|VS10x-Code-Map| | | [vs10x-code-map](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vs10x-code-map.LICENSE) | [vs10x-code-map](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/vs10x-code-map.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

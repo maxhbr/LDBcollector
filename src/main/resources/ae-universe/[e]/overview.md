@@ -50,3 +50,9 @@
 |[Expat Permission Var002]([ex]/Expat-Permission-Var002.yaml)|MIT|Expat-Permission-002| | | | [mit-synopsys](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/mit-synopsys.LICENSE) |terms|
 |[Expat SunSoft Exception]([ex]/Expat-SunSoft-Exception.yaml)|Expat Exception|Expat-SunSoft-Exception| | | | [sgi-freeb-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/sgi-freeb-2.0.LICENSE) |exception|
 |[EZTwain Pro License Agreement]([ez]/EZTwain-Pro-License-Agreement.yaml)|EZTwain|EZTwain| | | | [fsf-mit](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/fsf-mit.LICENSE), [unknown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unknown.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

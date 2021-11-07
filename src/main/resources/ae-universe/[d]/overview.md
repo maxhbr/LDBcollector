@@ -36,3 +36,9 @@
 |[Dynamic HTML Lab Public License]([dy]/Dynamic-HTML-Lab-Public-License.yaml)|Dynamic HTML Lab Public License|DHTMLab-public| | | [dhtmlab-public](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dhtmlab-public.LICENSE) | [dhtmlab-public](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dhtmlab-public.LICENSE) |terms|
 |[Dynarch Developer Agreement]([dy]/Dynarch-Developer-Agreement.yaml)|Dynarch Developer Agreement|Dynarch-Developer| | | [dynarch-developer](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dynarch-developer.LICENSE) | [dynarch-developer](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dynarch-developer.LICENSE) |terms|
 |[Dynarch Linkware Agreement]([dy]/Dynarch-Linkware-Agreement.yaml)|Dynarch Linkware Agreement|Dynarch-Linkware| | | [dynarch-linkware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dynarch-linkware.LICENSE) | [dynarch-linkware](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/dynarch-linkware.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

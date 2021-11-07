@@ -135,3 +135,9 @@
 |[Avisynth C Interface Exception]([av]/Avisynth-C-Interface-Exception.yaml)|Avisynth C Interface Exception|Avisynth-C-Interface-Exception| | | [avisynth-c-interface-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/avisynth-c-interface-exception.LICENSE) | |exception|
 |[Avisynth Linking Exception]([av]/Avisynth-Linking-Exception.yaml)|Avisynth Linking Exception|Avisynth-Linking-Exception| | | [avisynth-linking-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/avisynth-linking-exception.LICENSE) | [avisynth-linking-exception](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/avisynth-linking-exception.LICENSE) |exception|
 |[AWV e.V. Notice]([aw]/AWV-e.V.-Notice.yaml)|AWV|AWV-Notice| | | | |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

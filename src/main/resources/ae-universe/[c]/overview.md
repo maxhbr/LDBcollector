@@ -154,3 +154,9 @@
 |[Cygwin Linking Exception]([cy]/Cygwin-Linking-Exception.yaml)|Cygwin|Cygwin-Linking| | | | |exception|
 |[Cypress Device End User License Agreement]([cy]/Cypress-Device-End-User-License-Agreement.yaml)|Cypress EULA|Cypress-EULA| | | | [gpl-1.0-plus](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/gpl-1.0-plus.LICENSE), [nilsson-historical](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/nilsson-historical.LICENSE), [proprietary-license](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/proprietary-license.LICENSE), [unknown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unknown.LICENSE), [warranty-disclaimer](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/warranty-disclaimer.LICENSE) |terms|
 |[Cyrus SASL Exception]([cy]/Cyrus-SASL-Exception.yaml)|Cyrus SASL|Cyrus-SASL| | | | [openssl-exception-gpl-2.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/openssl-exception-gpl-2.0.LICENSE), [unknown](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/unknown.LICENSE) |exception|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.

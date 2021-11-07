@@ -39,3 +39,9 @@
 |[WxWindows Library Exception 3.1]([wx]/WxWindows-Library-Exception-3.1.yaml)|WxWindows Exception| |[WxWindows-exception-3.1](https://spdx.org/licenses/preview/WxWindows-exception-3.1.html)| | [wxwindows-exception-3.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-exception-3.1.LICENSE) | [wxwindows-exception-3.1](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-exception-3.1.LICENSE) |exception|
 |[wxWindows Restricted Licence 3.0]([wx]/wxWindows-Restricted-Licence-3.0.yaml)|wxWindows Restricted Licence 3.0|wxWindows-R-3.0| | | [wxwindows-r-3.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-r-3.0.LICENSE) | [wxwindows-r-3.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-r-3.0.LICENSE) |terms|
 |[wxWindows Unrestricted Licence 3.0]([wx]/wxWindows-Unrestricted-Licence-3.0.yaml)|wxWindows Unrestricted Licence 3.0|wxWindows-U-3.0| | | [wxwindows-u-3.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-u-3.0.LICENSE) | [wxwindows-u-3.0](https://github.com/nexB/scancode-toolkit/blob/develop/src/licensedcode/data/licenses/wxwindows-u-3.0.LICENSE) |terms|
+
+This is generated content.
+
+SPDX-License-Identifier: CC-BY-4.0
+
+SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
