@@ -1,6 +1,8 @@
 # {metæffekt}-universe
 Project providing insights on the metaeffekt license database.
 
+The following links provide letter-specific overviews on the license information.
+
 [3](src/main/resources/ae-universe/[3]/overview.md) -
 [4](src/main/resources/ae-universe/[4]/overview.md) -
 [a](src/main/resources/ae-universe/[a]/overview.md) -
@@ -29,6 +31,9 @@ Project providing insights on the metaeffekt license database.
 [x](src/main/resources/ae-universe/[x]/overview.md) -
 [y](src/main/resources/ae-universe/[y]/overview.md) -
 [z](src/main/resources/ae-universe/[z]/overview.md)
+
+The yaml files withing the subfolders shows metadata on the individual licenses and exception.
+The files also contain alternative names that support the normalization of licenses and exceptions.
 
 ## Why another list of licenses and exceptions?
 {metæffekt} is follows a defined strategie for analyzing, scanning and documenting software projects. To do this a 
