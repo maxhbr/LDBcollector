@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License (Axis)"
+category: "BSD"
+shortName: "BSD-Axis"
+
+alternativeNames:
+  - "bsd-axis"
+
+otherIds: 
+  - "scancode:bsd-axis"

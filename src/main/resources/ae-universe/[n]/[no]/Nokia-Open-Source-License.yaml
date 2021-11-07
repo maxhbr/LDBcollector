@@ -1,0 +1,15 @@
+canonicalName: "Nokia Open Source License"
+category: "Nokia License"
+spdxIdentifier: "Nokia"
+
+alternativeNames:
+  - "Nokia License"
+  - "NOKIA LICENSE"
+  - "NOKIA License"
+  - "Nokia Open Source License"
+  - "NOKIA Open Source License"
+  - "NOKOS License"
+
+otherIds: 
+  - "scancode:nokos-1.0a"
+  - "osi:nokia"

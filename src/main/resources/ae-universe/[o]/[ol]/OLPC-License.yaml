@@ -1,0 +1,9 @@
+canonicalName: "OLPC License"
+category: "OLPC"
+shortName: "OLPC"
+
+alternativeNames:
+  - "OLPC License"
+
+otherIds: 
+  - "scancode:marvell-firmware"

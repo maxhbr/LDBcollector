@@ -1,0 +1,10 @@
+canonicalName: "Microsoft Shared Source Community License"
+category: "Microsoft Shared Source Community License"
+shortName: "MS-CL"
+
+alternativeNames:
+  - "Microsoft Shared Source Community License"
+  - "MS-CL"
+
+otherIds: 
+  - "scancode:ms-cl"

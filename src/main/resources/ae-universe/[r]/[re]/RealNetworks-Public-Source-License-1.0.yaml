@@ -1,0 +1,12 @@
+canonicalName: "RealNetworks Public Source License 1.0"
+category: "RPSL"
+spdxIdentifier: "RPSL-1.0"
+
+alternativeNames:
+  - "RPSL, Version 1.0"
+  - "RPSL, 1.0"
+  - "RealNetworks Public Source License Version 1.0"
+
+otherIds: 
+  - "scancode:rpsl-1.0"
+  - "osi:RPSL-1.0"

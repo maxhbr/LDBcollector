@@ -1,0 +1,16 @@
+canonicalName: "Info-ZIP License 2009"
+category: "Info-ZIP License"
+spdxIdentifier: "Info-ZIP-2009"
+
+alternativeNames:
+  - "Info ZIP License"
+  - "INFO ZIP LICENSE"
+  - "INFO ZIP License"
+  - "Info-ZIP License"
+  - "INFO-ZIP LICENSE"
+  - "INFO-ZIP License"
+  - "Info-ZIP license"
+  - "https://spdx.org/licenses/info-zip"
+
+otherIds: 
+  - "scancode:info-zip"

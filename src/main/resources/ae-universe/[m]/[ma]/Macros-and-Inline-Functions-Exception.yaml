@@ -1,0 +1,11 @@
+canonicalName: "Macros and Inline Functions Exception"
+category: "MIF Exception"
+spdxIdentifier: "mif-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "mif-exception"
+
+otherIds: 
+  - "scancode:mif-exception"

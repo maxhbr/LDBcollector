@@ -1,0 +1,11 @@
+canonicalName: "Errbot Exception"
+category: "Errbot Exception"
+shortName: "Errbot-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "errbot-exception"
+
+otherIds: 
+  - "scancode:errbot-exception"

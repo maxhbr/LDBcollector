@@ -1,0 +1,9 @@
+canonicalName: "RSA Data Security MD4"
+category: "RSA Data Security MD4"
+shortName: "RSA-MD4"
+
+alternativeNames:
+  - "RSA Data Security MD4"
+
+otherIds: 
+  - "scancode:rsa-md4"

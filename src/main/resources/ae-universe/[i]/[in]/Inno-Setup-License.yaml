@@ -1,0 +1,10 @@
+canonicalName: "Inno Setup License"
+category: "Inno Setup License"
+shortName: "Inno-Setup"
+
+alternativeNames:
+  - "Inno Setup License"
+  - "http://www.jrsoftware.org/files/is/license.txt"
+
+otherIds: 
+  - "scancode:inno-setup"

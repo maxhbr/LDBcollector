@@ -1,0 +1,13 @@
+canonicalName: "Solderpad Hardware License 0.51"
+category: "SHL"
+spdxIdentifier: "SHL-0.51"
+
+alternativeNames:
+  - "Solderpad Hardware License v0.51"
+  - "SOLDERPAD HARDWARE LICENSE version 0.51"
+  - "SOLDERPAD HARDWARE LICENSE Version 0.51"
+  - "Solderpad Hardware License Version 0.51"
+  - "SHL-0.51"
+
+otherIds: 
+  - "scancode:shl-0.51"

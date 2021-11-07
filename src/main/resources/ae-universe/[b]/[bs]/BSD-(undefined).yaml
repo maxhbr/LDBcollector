@@ -1,0 +1,10 @@
+canonicalName: "BSD (undefined)"
+category: "BSD"
+shortName: "BSD-?"
+
+unspecific: true
+
+alternativeNames:
+  - "The license can be found at /usr/share/common-licenses/BSD"
+  - "http://www.opensource.org/licenses/bsd-license.php"
+

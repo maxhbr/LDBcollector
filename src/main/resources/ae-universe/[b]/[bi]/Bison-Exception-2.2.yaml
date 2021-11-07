@@ -1,0 +1,15 @@
+canonicalName: "Bison Exception 2.2"
+category: "Bison Exception"
+shortName: "Bison-Exception-2.2"
+spdxIdentifier: "Bison-exception-2.2"
+
+type: "exception"
+
+alternativeNames:
+  - "BISON-EXCEPTION"
+  - "BISON EXCEPTION"
+  - "BISON Exception"
+  - "Bison-exception-2.2"
+
+otherIds: 
+  - "scancode:bison-exception-2.2"

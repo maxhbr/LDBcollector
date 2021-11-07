@@ -1,0 +1,9 @@
+canonicalName: "Intel Confidential"
+category: "Intel Confidential"
+shortName: "Intel-Confidential"
+
+alternativeNames:
+  - "intel-confidential"
+
+otherIds: 
+  - "scancode:intel-confidential"

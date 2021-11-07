@@ -1,0 +1,13 @@
+canonicalName: "Naumen License"
+category: "Naumen"
+spdxIdentifier: "Naumen"
+
+alternativeNames:
+  - "Naumen License"
+  - "NAUMEN LICENSE"
+  - "NAUMEN License"
+  - "NAUMEN Public License"
+
+otherIds: 
+  - "scancode:naumen"
+  - "osi:Naumen"

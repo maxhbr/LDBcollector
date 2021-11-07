@@ -1,0 +1,9 @@
+canonicalName: "EMX Library License"
+category: "EMX Library License"
+shortName: "EMX-Library"
+
+alternativeNames:
+  - "http://web.lemoyne.edu/courseinformation/emtex/emx/doc/COPYING.EMX"
+
+otherIds: 
+  - "scancode:emx-library"

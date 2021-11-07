@@ -1,0 +1,8 @@
+canonicalName: "Linking exception to GPL 2.0+"
+category: "GPL Linking Exception"
+spdxIdentifier: "GPL-2.0+-linking-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:linking-exception-2.0-plus"

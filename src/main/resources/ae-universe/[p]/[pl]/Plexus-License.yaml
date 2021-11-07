@@ -1,0 +1,11 @@
+canonicalName: "Plexus License"
+category: "Plexus"
+spdxIdentifier: "Plexus"
+
+alternativeNames:
+  - "Plexus License"
+  - "PLEXUS LICENSE"
+  - "PLEXUS License"
+
+otherIds: 
+  - "scancode:classworlds"

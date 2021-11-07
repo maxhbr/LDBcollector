@@ -1,0 +1,9 @@
+canonicalName: "Cavium malloc License"
+category: "Cavium malloc License"
+shortName: "Cavium-malloc"
+
+alternativeNames:
+  - "cavium-malloc"
+
+otherIds: 
+  - "scancode:cavium-malloc"

@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Stanford University)"
+category: "X11-Style (Stanford University)"
+shortName: "X11-stanford"
+
+alternativeNames:
+  - "X11-Style (Stanford University)"
+
+otherIds: 
+  - "scancode:x11-stanford"

@@ -1,0 +1,11 @@
+canonicalName: "Far Manager Exception"
+category: "Far Manager Exception"
+shortName: "Far-Manager-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "far-manager-exception"
+
+otherIds: 
+  - "scancode:far-manager-exception"

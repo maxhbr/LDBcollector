@@ -1,0 +1,13 @@
+canonicalName: "Eiffel Forum License 1.0"
+category: "EFL"
+spdxIdentifier: "EFL-1.0"
+
+alternativeNames:
+  - "EFL, Version 1.0"
+  - "EFL 1.0"
+  - "EFL-1.0"
+  - "Eiffel Forum License, version 1"
+
+otherIds: 
+  - "scancode:efl-1.0"
+  - "osi:EFL-1.0"

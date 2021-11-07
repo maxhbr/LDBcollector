@@ -1,0 +1,10 @@
+canonicalName: "BSD 3-Clause License (attribution)"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-Attribution"
+
+alternativeNames:
+  - "BSD-3-Clause-Attribution"
+  - "BSD 3-Clause Attribution"
+
+otherIds: 
+  - "scancode:bsd-ack"

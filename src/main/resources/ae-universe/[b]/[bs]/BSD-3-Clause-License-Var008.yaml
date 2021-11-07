@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License Var008"
+category: "BSD"
+shortName: "BSD-3-Clause-008"
+
+alternativeNames:
+  - "bsd-3-clause-sun"
+
+otherIds: 
+  - "scancode:bsd-3-clause-sun"

@@ -1,0 +1,11 @@
+canonicalName: "MTLL"
+category: "MTLL"
+spdxIdentifier: "MTLL"
+
+alternativeNames:
+  - "MTL License"
+  - "MTL LICENSE"
+  - "Software License for MTL"
+
+otherIds: 
+  - "scancode:mtll"

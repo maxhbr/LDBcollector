@@ -1,0 +1,11 @@
+canonicalName: "RSCPL"
+category: "RSCPL"
+spdxIdentifier: "RSCPL"
+
+alternativeNames:
+  - "RSCPL"
+  - "Ricoh Source Code Public License"
+
+otherIds: 
+  - "scancode:ricoh-1.0"
+  - "osi:RSCPL"

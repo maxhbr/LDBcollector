@@ -1,0 +1,9 @@
+canonicalName: "Apple Quicktime License"
+category: "Apple Quicktime License"
+shortName: "Apple-Quicktime"
+
+alternativeNames:
+  - "http://store.apple.com/Catalog/US/Images/quicktime.html"
+
+otherIds: 
+  - "scancode:quicktime"

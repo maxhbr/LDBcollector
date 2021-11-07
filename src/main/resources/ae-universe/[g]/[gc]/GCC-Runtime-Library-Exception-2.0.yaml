@@ -1,0 +1,14 @@
+canonicalName: "GCC Runtime Library Exception 2.0"
+category: "GCC Runtime Library Exception"
+shortName: "GCC-Runtime-Library-Exception-2.0"
+spdxIdentifier: "GCC-exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "GCC exception, Version 2.0"
+  - "GCC exception 2.0"
+  - "GCC-exception, Version 2.0"
+  - "GCC-exception, 2.0"
+  - "GCC-exception-2.0"
+

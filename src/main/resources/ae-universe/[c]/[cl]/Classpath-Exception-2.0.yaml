@@ -1,0 +1,15 @@
+canonicalName: "Classpath Exception 2.0"
+category: "Classpath Exception"
+shortName: "Classpath-Exception-2.0"
+spdxIdentifier: "Classpath-exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Class Path Exception"
+  - "CLASSPATH EXCEPTION"
+  - "Classpath-exception"
+  - "Classpath Exception"
+
+otherIds: 
+  - "scancode:classpath-exception-2.0"

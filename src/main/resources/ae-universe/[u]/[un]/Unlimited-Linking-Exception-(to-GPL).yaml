@@ -1,0 +1,8 @@
+canonicalName: "Unlimited Linking Exception (to GPL)"
+category: "Unlimited Linking"
+shortName: "Unlimited-Linking-gpl"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:unlimited-linking-exception-gpl"

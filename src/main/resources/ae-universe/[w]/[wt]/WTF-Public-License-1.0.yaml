@@ -1,0 +1,11 @@
+canonicalName: "WTF Public License 1.0"
+category: "WTFPL"
+shortName: "WTFPL-1.0"
+
+alternativeNames:
+  - "http://cvs.windowmaker.org/co.php/wm/COPYING.WTFPL"
+  - "http://hg.windowmaker.info/wmaker/file/0a3a3e370483/COPYING.WTFPL"
+  - "do What The Fuck you want to Public License"
+
+otherIds: 
+  - "scancode:wtfpl-1.0"

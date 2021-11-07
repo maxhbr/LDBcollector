@@ -1,0 +1,10 @@
+canonicalName: "SISSL 1.1"
+category: "SISSL"
+spdxIdentifier: "SISSL"
+
+alternativeNames:
+  - "SISSL"
+  - "Sun Industry Standards Source License - Version 1.1"
+
+otherIds: 
+  - "osi:SISSL"

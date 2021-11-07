@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Silicon Graphics)"
+category: "X11-Style (Silicon Graphics)"
+shortName: "X11-SG"
+
+alternativeNames:
+  - "X11-Style (Silicon Graphics)"
+
+otherIds: 
+  - "scancode:x11-sg"

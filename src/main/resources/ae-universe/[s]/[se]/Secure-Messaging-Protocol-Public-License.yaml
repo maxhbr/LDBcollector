@@ -1,0 +1,11 @@
+canonicalName: "Secure Messaging Protocol Public License"
+category: "SMPPL"
+spdxIdentifier: "SMPPL"
+
+alternativeNames:
+  - "SMP Public License"
+  - "Secure Messaging Protocol (SMP) Public License"
+  - "Secure Messaging Protocol Public License"
+
+otherIds: 
+  - "scancode:smppl"

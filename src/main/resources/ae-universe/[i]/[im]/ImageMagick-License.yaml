@@ -1,0 +1,9 @@
+canonicalName: "ImageMagick License"
+category: "ImageMagick"
+spdxIdentifier: "ImageMagick"
+
+alternativeNames:
+  - "ImageMagick License"
+
+otherIds: 
+  - "scancode:imagemagick"

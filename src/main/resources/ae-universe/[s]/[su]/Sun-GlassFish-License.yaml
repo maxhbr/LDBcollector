@@ -1,0 +1,9 @@
+canonicalName: "Sun GlassFish License"
+category: "Sun GlassFish License"
+shortName: "Sun-GlassFish"
+
+alternativeNames:
+  - "https://glassfish.dev.java.net/public/BinariesLicense.html"
+
+otherIds: 
+  - "scancode:sun-glassfish"

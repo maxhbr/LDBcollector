@@ -1,0 +1,9 @@
+canonicalName: "Cyrus SASL Exception"
+category: "Cyrus SASL"
+shortName: "Cyrus-SASL"
+
+type: "exception"
+
+alternativeNames:
+  - "Cyrus SASL Exception"
+

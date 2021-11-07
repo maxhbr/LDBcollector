@@ -1,0 +1,11 @@
+canonicalName: "OpenSSL Exception (MongoDB SSPL)"
+category: "OpenSSL Exception"
+shortName: "OpenSSL-Exception-MongoDB-SSPL"
+
+type: "exception"
+
+alternativeNames:
+  - "openssl-exception-mongodb-sspl"
+
+otherIds: 
+  - "scancode:openssl-exception-mongodb-sspl"

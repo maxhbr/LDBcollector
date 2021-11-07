@@ -1,0 +1,9 @@
+canonicalName: "Berkeley Database License"
+category: "Berkeley Database License"
+shortName: "Berkeley-Database"
+
+alternativeNames:
+  - "Berkeley DB License"
+
+otherIds: 
+  - "scancode:sleepycat"

@@ -1,0 +1,9 @@
+canonicalName: "NICTA Restriction"
+category: "NICTA Restriction"
+shortName: "NICTA-Restriction"
+
+alternativeNames:
+  - "nicta-exception"
+
+otherIds: 
+  - "scancode:nicta-exception"

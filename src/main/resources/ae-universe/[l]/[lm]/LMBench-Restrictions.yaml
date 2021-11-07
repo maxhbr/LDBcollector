@@ -1,0 +1,9 @@
+canonicalName: "LMBench Restrictions"
+category: "LMBench Restriction"
+shortName: "LMBench-Restriction"
+
+alternativeNames:
+  - "gpl-2.0-lmbench"
+
+otherIds: 
+  - "scancode:lmbench-exception-2.0"

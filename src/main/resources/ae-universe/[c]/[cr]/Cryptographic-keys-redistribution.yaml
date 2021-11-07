@@ -1,0 +1,9 @@
+canonicalName: "Cryptographic keys redistribution"
+category: "Cryptographic keys redistribution"
+shortName: "Crypto-keys-redistribution"
+
+alternativeNames:
+  - "crypto-keys-redistribution"
+
+otherIds: 
+  - "scancode:crypto-keys-redistribution"

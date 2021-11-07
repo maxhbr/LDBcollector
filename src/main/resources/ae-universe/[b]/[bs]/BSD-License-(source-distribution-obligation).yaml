@@ -1,0 +1,9 @@
+canonicalName: "BSD License (source distribution obligation)"
+category: "BSD"
+shortName: "BSD-source-distribution-obligation"
+
+alternativeNames:
+  - "bsd-simplified-source"
+
+otherIds: 
+  - "scancode:bsd-simplified-source"

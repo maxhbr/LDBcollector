@@ -1,0 +1,6 @@
+canonicalName: "SANE Short Exception"
+category: "SANE Exception"
+shortName: "SANE-Exception-short"
+
+otherIds: 
+  - "scancode:sane-exception-2.0-plus"

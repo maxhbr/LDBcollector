@@ -1,0 +1,11 @@
+canonicalName: "Creative Commons BY-NC-ND 4.0 (international)"
+category: "CC-BY-NC-ND"
+spdxIdentifier: "CC-BY-NC-ND-4.0"
+
+alternativeNames:
+  - "Creative Commons Attribution Non Commercial No Derivatives 4.0 International"
+  - "Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International"
+  - "CC-BY-NC-ND-4.0"
+
+otherIds: 
+  - "scancode:cc-by-nc-nd-4.0"

@@ -1,0 +1,9 @@
+canonicalName: "Apple iTunes License"
+category: "Apple iTunes License"
+shortName: "Apple-iTunes"
+
+alternativeNames:
+  - "http://images.apple.com/legal/sla/docs/itunes.pdf"
+
+otherIds: 
+  - "scancode:itunes"

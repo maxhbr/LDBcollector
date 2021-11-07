@@ -1,0 +1,11 @@
+canonicalName: "Ada Linking Exception"
+category: "Ada Linking Exception"
+shortName: "Ada-Linking"
+
+type: "exception"
+
+alternativeNames:
+  - "Ada Linking Exception"
+
+otherIds: 
+  - "scancode:ada-linking-exception"

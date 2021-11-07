@@ -1,0 +1,9 @@
+canonicalName: "SQLite Blessing"
+category: "Public Domain"
+spdxIdentifier: "blessing"
+
+alternativeNames:
+  - "SQLite Blessing"
+
+otherIds: 
+  - "scancode:blessing"

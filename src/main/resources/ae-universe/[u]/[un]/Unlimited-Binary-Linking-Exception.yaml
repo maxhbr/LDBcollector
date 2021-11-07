@@ -1,0 +1,11 @@
+canonicalName: "Unlimited Binary Linking Exception"
+category: "Unlimited Binary Linking Exception"
+shortName: "Unlimited-Binary-Linking"
+
+type: "exception"
+
+alternativeNames:
+  - "Unlimited Binary Linking Exception"
+
+otherIds: 
+  - "scancode:unlimited-binary-linking"

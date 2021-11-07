@@ -1,0 +1,9 @@
+canonicalName: "CLISP Exception 2.0"
+category: "CLISP Exception"
+shortName: "CLISP-Exception-2.0"
+spdxIdentifier: "CLISP-exception-2.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:clisp-exception-2.0"

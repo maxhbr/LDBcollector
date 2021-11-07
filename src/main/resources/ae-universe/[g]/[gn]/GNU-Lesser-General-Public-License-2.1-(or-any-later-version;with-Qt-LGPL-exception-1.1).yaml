@@ -1,0 +1,7 @@
+canonicalName: "GNU Lesser General Public License 2.1 (or any later version; with Qt LGPL exception 1.1)"
+category: "LGPL-Qt"
+shortName: "LGPL-2.1+-Qt-1.1"
+
+otherIds: 
+  - "scancode:lgpl-2.0-plus-gcc"
+  - "scancode:lgpl-2.1-nokia-qt"

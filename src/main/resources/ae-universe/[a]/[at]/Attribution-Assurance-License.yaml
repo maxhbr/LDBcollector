@@ -1,0 +1,10 @@
+canonicalName: "Attribution Assurance License"
+category: "AAL"
+spdxIdentifier: "AAL"
+
+alternativeNames:
+  - "Attribution Assurance License"
+
+otherIds: 
+  - "scancode:attribution"
+  - "osi:attribution"

@@ -1,0 +1,9 @@
+canonicalName: "NIST Public Domain Notice"
+category: "NIST Public Domain Notice"
+spdxIdentifier: "NIST-PD"
+
+alternativeNames:
+  - "nist-pd"
+
+otherIds: 
+  - "scancode:nist-pd"

@@ -1,0 +1,9 @@
+canonicalName: "NXP Microcontroller Permission"
+category: "NXP Microcontroller Permission"
+shortName: "NXP-Microcontroller-Permission"
+
+alternativeNames:
+  - "NXP Microcontroller Permission"
+
+otherIds: 
+  - "scancode:nxp-microcontroller-proprietary"

@@ -1,0 +1,9 @@
+canonicalName: "Apple MFi License"
+category: "Apple MFi"
+shortName: "Apple-MFi"
+
+alternativeNames:
+  - "Apple MFi License"
+
+otherIds: 
+  - "scancode:apple-mfi-license"

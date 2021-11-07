@@ -1,0 +1,10 @@
+canonicalName: "Sleepycat License"
+category: "Sleepycat"
+spdxIdentifier: "Sleepycat"
+
+alternativeNames:
+  - "Sleepycat License"
+
+otherIds: 
+  - "scancode:sleepycat"
+  - "osi:Sleepycat"

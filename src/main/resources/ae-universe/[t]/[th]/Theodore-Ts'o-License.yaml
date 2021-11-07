@@ -1,0 +1,9 @@
+canonicalName: "Theodore Ts'o License"
+category: "Theodore Ts'o License"
+shortName: "TSO"
+
+alternativeNames:
+  - "Theodore Ts'o license"
+
+otherIds: 
+  - "scancode:tso-license"

@@ -1,0 +1,9 @@
+canonicalName: "Oculus SDK License"
+category: "Oculus SDK"
+shortName: "Oculus-SDK"
+
+alternativeNames:
+  - "Oculus SDK License"
+
+otherIds: 
+  - "scancode:oculus-sdk"

@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License Var001"
+category: "BSD"
+shortName: "BSD-3-Clause-001"
+
+otherIds: 
+  - "scancode:libzip"
+  - "scancode:twisted-snmp"
+  - "scancode:bsd-3-clause-no-change"
+  - "scancode:bsd-intel"

@@ -1,0 +1,10 @@
+canonicalName: "Sendmail 8.23"
+category: "Sendmail"
+spdxIdentifier: "Sendmail-8.23"
+
+alternativeNames:
+  - "Sendmail, Version 8.23"
+  - "Sendmail 8.23"
+
+otherIds: 
+  - "scancode:sendmail-8.23"

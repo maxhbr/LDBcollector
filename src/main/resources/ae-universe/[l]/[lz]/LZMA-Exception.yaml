@@ -1,0 +1,9 @@
+canonicalName: "LZMA Exception"
+category: "LZMA Exception"
+shortName: "LZMA-Exception"
+spdxIdentifier: "LZMA-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:lzma-cpl-exception"

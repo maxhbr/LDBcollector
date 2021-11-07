@@ -1,0 +1,11 @@
+canonicalName: "mpich2 License"
+category: "mpich2"
+spdxIdentifier: "mpich2"
+
+alternativeNames:
+  - "mpich2 License"
+  - "MPICH2 LICENSE"
+  - "MPICH2 License"
+
+otherIds: 
+  - "scancode:mpich"

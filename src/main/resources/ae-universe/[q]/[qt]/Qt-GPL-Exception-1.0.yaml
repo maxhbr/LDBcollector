@@ -1,0 +1,14 @@
+canonicalName: "Qt GPL Exception 1.0"
+category: "Qt GPL Exception"
+shortName: "Qt-GPL-Exception-1.0"
+spdxIdentifier: "Qt-GPL-exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Qt-GPL-exception"
+  - "Qt Company GPL Exception 1.0"
+  - "Exception 2"
+
+otherIds: 
+  - "scancode:qt-gpl-exception-1.0"

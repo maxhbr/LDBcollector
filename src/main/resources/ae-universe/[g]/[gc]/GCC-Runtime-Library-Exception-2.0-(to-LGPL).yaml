@@ -1,0 +1,9 @@
+canonicalName: "GCC Runtime Library Exception 2.0 (to LGPL)"
+category: "GCC Runtime Library Exception"
+shortName: "GCC-Runtime-Library-Exception-2.0-lgpl"
+
+type: "exception"
+
+alternativeNames:
+  - "GCC Runtime Library Exception 2.0 (to LGPL)"
+

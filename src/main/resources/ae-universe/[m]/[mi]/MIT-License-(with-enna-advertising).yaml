@@ -1,0 +1,12 @@
+canonicalName: "MIT License (with enna advertising)"
+category: "MIT"
+spdxIdentifier: "MIT-enna"
+
+alternativeNames:
+  - "MIT enna"
+  - "MIT ENNA"
+  - "MIT-enna"
+  - "MIT-ENNA"
+
+otherIds: 
+  - "scancode:enna"

@@ -1,0 +1,12 @@
+canonicalName: "RSA MD License"
+category: "RSA MD"
+spdxIdentifier: "RSA-MD"
+
+alternativeNames:
+  - "RSA MD License"
+  - "RSA MD LICENSE"
+  - "RSA-MD License"
+  - "RSA-MD LICENSE"
+
+otherIds: 
+  - "scancode:rsa-md5"

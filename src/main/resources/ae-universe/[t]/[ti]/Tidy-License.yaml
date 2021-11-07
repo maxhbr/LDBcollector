@@ -1,0 +1,6 @@
+canonicalName: "Tidy License"
+category: "Tidy"
+spdxIdentifier: "HTMLTIDY"
+
+otherIds: 
+  - "scancode:tidy"

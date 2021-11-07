@@ -1,0 +1,10 @@
+canonicalName: "Amazon Software License"
+category: "Amazon Software License"
+shortName: "Amazon-SL"
+
+alternativeNames:
+  - "http://aws.amazon.com/asl/"
+  - "Amazon Software License"
+
+otherIds: 
+  - "scancode:amazon-sl"

@@ -1,0 +1,9 @@
+canonicalName: "LILO License"
+category: "LILO License"
+shortName: "LILO"
+
+alternativeNames:
+  - "lilo license"
+
+otherIds: 
+  - "scancode:lilo"

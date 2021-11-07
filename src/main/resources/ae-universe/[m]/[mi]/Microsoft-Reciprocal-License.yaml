@@ -1,0 +1,16 @@
+canonicalName: "Microsoft Reciprocal License"
+category: "MS-RL"
+spdxIdentifier: "MS-RL"
+
+alternativeNames:
+  - "MS-RL"
+  - "Microsoft Reciprocal License"
+  - "Ms-RL"
+  - "MS, Version RL"
+  - "MS RL"
+  - "MS License, Version RL"
+  - "MS License, RL"
+
+otherIds: 
+  - "scancode:ms-rl"
+  - "osi:MS-RL"

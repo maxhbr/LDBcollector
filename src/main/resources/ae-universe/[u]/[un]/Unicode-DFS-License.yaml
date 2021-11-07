@@ -1,0 +1,17 @@
+canonicalName: "Unicode DFS License"
+category: "Unicode DFS"
+spdxIdentifier: "Unicode-DFS"
+
+alternativeNames:
+  - "Unicode DFS, Version 2008"
+  - "Unicode DFS, 2008"
+  - "Unicode-DFS, Version 2008"
+  - "Unicode-DFS 2008"
+  - "Unicode DFS License, Version 2008"
+  - "Unicode DFS License 2008"
+  - "Unicode-DFS License, Version 2008"
+  - "Unicode-DFS License, 2008"
+
+otherIds: 
+  - "scancode:unicode"
+  - "scancode:unicode-data-software"

@@ -1,0 +1,12 @@
+canonicalName: "Xerox License"
+category: "Xerox"
+spdxIdentifier: "Xerox"
+
+alternativeNames:
+  - "https://spdx.org/licenses/xerox"
+  - "Xerox License"
+  - "XEROX LICENSE"
+  - "XEROX License"
+
+otherIds: 
+  - "scancode:mit-export-control"

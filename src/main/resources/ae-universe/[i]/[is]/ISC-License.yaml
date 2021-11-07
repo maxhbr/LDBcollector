@@ -1,0 +1,12 @@
+canonicalName: "ISC License"
+category: "ISC"
+spdxIdentifier: "ISC"
+
+alternativeNames:
+  - "ISC License"
+  - "ISC Terms"
+  - "ISC Permission"
+
+otherIds: 
+  - "scancode:isc"
+  - "osi:ISC"

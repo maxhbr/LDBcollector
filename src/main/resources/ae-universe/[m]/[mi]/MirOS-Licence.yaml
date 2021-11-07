@@ -1,0 +1,14 @@
+canonicalName: "MirOS Licence"
+category: "MirOS"
+spdxIdentifier: "MirOS"
+
+alternativeNames:
+  - "MirOS Licence"
+  - "http://opensource.org/licenses/miros.html"
+  - "https://www.mirbsd.org/MirOS-Licence"
+  - "http://www.opensource.org/licenses/miros"
+  - "https://www.opensource.org/licenses/miros"
+
+otherIds: 
+  - "scancode:mir-os"
+  - "osi:MirOS"

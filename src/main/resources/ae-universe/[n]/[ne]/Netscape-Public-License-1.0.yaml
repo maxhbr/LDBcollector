@@ -1,0 +1,10 @@
+canonicalName: "Netscape Public License 1.0"
+category: "Netscape Public License"
+spdxIdentifier: "NPL-1.0"
+
+alternativeNames:
+  - "http://www.mozilla.org/MPL/NPL-1.0.html"
+  - "https://spdx.org/licenses/npl-1.0"
+
+otherIds: 
+  - "scancode:npl-1.0"

@@ -1,0 +1,15 @@
+canonicalName: "Educational Community License 1.0"
+category: "ECL"
+spdxIdentifier: "ECL-1.0"
+
+alternativeNames:
+  - "Educational Community License 1.0"
+  - "Educational Community License, Version 1.0"
+  - "ECL, Version 1.0"
+  - "ECL-1.0"
+  - "ECL 1.0"
+  - "Educational Community License version 1.0"
+
+otherIds: 
+  - "scancode:ecl-1.0"
+  - "osi:ECL-1.0"

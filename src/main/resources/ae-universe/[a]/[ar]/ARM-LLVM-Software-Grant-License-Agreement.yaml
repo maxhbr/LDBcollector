@@ -1,0 +1,9 @@
+canonicalName: "ARM LLVM Software Grant License Agreement"
+category: "ARM LLVM Software Grant License Agreement"
+shortName: "ARM-LLVM-SGA"
+
+alternativeNames:
+  - "arm-llvm-sga"
+
+otherIds: 
+  - "scancode:arm-llvm-sga"

@@ -1,0 +1,14 @@
+canonicalName: "TCP Wrappers License"
+category: "TCP Wrappers"
+spdxIdentifier: "TCP-wrappers"
+
+alternativeNames:
+  - "TCP wrappers License"
+  - "TCP WRAPPERS LICENSE"
+  - "TCP WRAPPERS License"
+  - "TCP-wrappers License"
+  - "TCP-WRAPPERS LICENSE"
+  - "TCP-WRAPPERS License"
+
+otherIds: 
+  - "scancode:tcp-wrappers"

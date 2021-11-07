@@ -1,0 +1,10 @@
+canonicalName: "OGC Software License 1.0"
+category: "OGC Software License"
+spdxIdentifier: "OGC-1.0"
+
+alternativeNames:
+  - "OGC Software License, Version 1.0"
+
+otherIds: 
+  - "scancode:ogc-1.0"
+  - "scancode:ogc-2006"

@@ -1,0 +1,12 @@
+canonicalName: "IBM pibs License"
+category: "IBM pibs"
+spdxIdentifier: "IBM-pibs"
+
+alternativeNames:
+  - "IBM pibs"
+  - "IBM PIBS"
+  - "IBM-pibs"
+  - "IBM-PIBS"
+
+otherIds: 
+  - "scancode:ibm-pibs"

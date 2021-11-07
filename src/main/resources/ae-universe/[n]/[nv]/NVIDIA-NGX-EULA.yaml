@@ -1,0 +1,9 @@
+canonicalName: "NVIDIA NGX EULA"
+category: "NVIDIA NGX EULA"
+shortName: "NVIDIA-NGX-EULA"
+
+alternativeNames:
+  - "NVIDIA NGX EULA"
+
+otherIds: 
+  - "scancode:nvidia-ngx-eula-2019"

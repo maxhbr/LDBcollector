@@ -1,0 +1,15 @@
+canonicalName: "X11 License"
+category: "X11"
+spdxIdentifier: "X11"
+
+alternativeNames:
+  - "X License"
+  - "MIT/X Consortium"
+  - "X/MIT License"
+  - "X11 License"
+  - "MIT/X11"
+  - "X11 LICENSE"
+  - "Expat~X with X exception"
+
+otherIds: 
+  - "scancode:x11-xconsortium"

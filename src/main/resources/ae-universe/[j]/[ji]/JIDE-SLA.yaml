@@ -1,0 +1,9 @@
+canonicalName: "JIDE SLA"
+category: "JIDE SLA"
+shortName: "JIDE-SLA"
+
+alternativeNames:
+  - "jide-sla"
+
+otherIds: 
+  - "scancode:jide-sla"

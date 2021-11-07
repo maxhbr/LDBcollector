@@ -1,0 +1,10 @@
+canonicalName: "Norwegian Licence (Open Government Data)"
+category: "NLOD"
+spdxIdentifier: "NLOD-1.0"
+
+alternativeNames:
+  - "Norwegian Licence for Open Government Data"
+  - "NLOD-1.0"
+
+otherIds: 
+  - "scancode:nlod-1.0"

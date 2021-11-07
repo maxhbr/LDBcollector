@@ -1,0 +1,10 @@
+canonicalName: "Permission Terms CWI"
+category: "Permission"
+shortName: "PT-CWI"
+
+alternativeNames:
+  - "HPND License"
+  - "Historical Permission Notice and Disclaimer"
+
+otherIds: 
+  - "scancode:cmu-uc"

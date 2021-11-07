@@ -1,0 +1,11 @@
+canonicalName: "CERN Open Hardware License 1.1"
+category: "CERN OHL"
+spdxIdentifier: "CERN-OHL-1.1"
+
+alternativeNames:
+  - "CERN Open Hardware License v1.1"
+  - "CERN-OHL-1.1"
+  - "CERN OHL v1.1"
+
+otherIds: 
+  - "scancode:cern-ohl-1.1"

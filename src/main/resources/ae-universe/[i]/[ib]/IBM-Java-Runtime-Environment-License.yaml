@@ -1,0 +1,9 @@
+canonicalName: "IBM Java Runtime Environment License"
+category: "IBM Java Runtime Environment License"
+shortName: "IBM-JRE"
+
+alternativeNames:
+  - "ibm-jre"
+
+otherIds: 
+  - "scancode:ibm-jre"

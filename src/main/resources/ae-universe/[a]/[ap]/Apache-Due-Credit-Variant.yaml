@@ -1,0 +1,9 @@
+canonicalName: "Apache Due Credit Variant"
+category: "Apache Due Credit Variant"
+shortName: "Apache-Due-Credit"
+
+alternativeNames:
+  - "apache-due-credit"
+
+otherIds: 
+  - "scancode:apache-due-credit"

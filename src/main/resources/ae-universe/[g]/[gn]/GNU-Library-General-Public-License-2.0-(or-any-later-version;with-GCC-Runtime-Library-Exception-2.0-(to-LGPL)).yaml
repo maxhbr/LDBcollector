@@ -1,0 +1,9 @@
+canonicalName: "GNU Library General Public License 2.0 (or any later version; with GCC Runtime Library Exception 2.0 (to LGPL))"
+category: "LGPL-GCC"
+shortName: "LGPL-2.0+-GCC-2.0"
+
+alternativeNames:
+  - "GNU Library General Public License 2.0 (or any later version; with GCC Runtime Library Exception 2.0 (to LGPL))"
+
+otherIds: 
+  - "scancode:lgpl-2.0-plus-gcc"

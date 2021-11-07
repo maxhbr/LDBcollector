@@ -1,0 +1,13 @@
+canonicalName: "OpenLDAP Public License 1.1"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-1.1"
+
+alternativeNames:
+  - "OLDAP, Version 1.1"
+  - "OLDAP, 1.1"
+  - "OLDAP License, Version 1.1"
+  - "OLDAP License, 1.1"
+  - "The OpenLDAP Public License Version 1.1, 25 August 1998"
+
+otherIds: 
+  - "scancode:openldap-1.1"

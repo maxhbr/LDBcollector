@@ -1,0 +1,9 @@
+canonicalName: "TCL License (terms only)"
+category: "TCL License"
+shortName: "TCL-terms-only"
+
+alternativeNames:
+  - "TCL License (terms only)"
+
+otherIds: 
+  - "scancode:newlib-historical"

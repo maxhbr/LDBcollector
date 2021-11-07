@@ -1,0 +1,9 @@
+canonicalName: "Tizen SDK License"
+category: "Tizen SDK License"
+shortName: "Tizen-SDK"
+
+alternativeNames:
+  - "Tizen SDK License Agreement"
+
+otherIds: 
+  - "scancode:tizen-sdk"

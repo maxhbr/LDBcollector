@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Adobe)"
+category: "X11-Style (Adobe)"
+shortName: "X11-Adobe"
+
+alternativeNames:
+  - "X11-Style (Adobe)"
+
+otherIds: 
+  - "scancode:x11-adobe"

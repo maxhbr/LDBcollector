@@ -1,0 +1,11 @@
+canonicalName: "SGI GLX Public License 1.0"
+category: "SGI GLX Public License"
+shortName: "SGI-GLX-1.0"
+
+alternativeNames:
+  - "http://velib.kyb.mpg.de/docu/GLX.html"
+  - "http://www.sgi.com/products/software/opensource/glx/glxlicense.txt"
+  - "GLX PUBLIC LICENSE Version 1.0 2/11/99 License"
+
+otherIds: 
+  - "scancode:sgi-glx-1.0"

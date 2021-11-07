@@ -1,0 +1,11 @@
+canonicalName: "Net License SNMP"
+category: "Net"
+spdxIdentifier: "Net-SNMP"
+
+alternativeNames:
+  - "Net, Version SNMP"
+  - "Net SNMP"
+  - "Net License, Version SNMP"
+  - "Net License, SNMP"
+  - "In addition, all contributors need to be aware that if the contribution is accepted and incorporated into the Net-SNMP project, it will be redistributed under the terms of the license agreement used for the entire body of work that comprises the Net-SNMP project (see the COPYING file for details)"
+

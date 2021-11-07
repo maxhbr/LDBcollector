@@ -1,0 +1,10 @@
+canonicalName: "OpenLDAP Public License (undefined)"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-?"
+
+unspecific: true
+
+alternativeNames:
+  - "Redistribution and use in source and binary forms, with or without modification, are permitted only as authorized by the OpenLDAP Public License."
+  - "Redistribution and use in source and binary forms are permitted only as authorized by the OpenLDAP Public License"
+

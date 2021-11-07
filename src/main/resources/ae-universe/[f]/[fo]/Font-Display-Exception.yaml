@@ -1,0 +1,9 @@
+canonicalName: "Font Display Exception"
+category: "Font Display Exception"
+shortName: "Font-Display-Exception"
+spdxIdentifier: "PS-or-PDF-font-exception-20170817"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:ps-or-pdf-font-exception-20170817"

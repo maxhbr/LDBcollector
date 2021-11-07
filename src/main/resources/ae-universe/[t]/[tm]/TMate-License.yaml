@@ -1,0 +1,13 @@
+canonicalName: "TMate License"
+category: "TMate"
+spdxIdentifier: "TMate"
+
+alternativeNames:
+  - "TMate License"
+  - "TMATE LICENSE"
+  - "TMATE License"
+  - "TMate Open Source License"
+  - "http://svnkit.com/license.html"
+
+otherIds: 
+  - "scancode:tmate"

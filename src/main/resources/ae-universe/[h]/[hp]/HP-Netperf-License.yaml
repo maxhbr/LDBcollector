@@ -1,0 +1,9 @@
+canonicalName: "HP Netperf License"
+category: "HP Netperf License"
+shortName: "HP-Netperf"
+
+alternativeNames:
+  - "http://www.netperf.org/netperf/training/Netperf.html"
+
+otherIds: 
+  - "scancode:hp-netperf"

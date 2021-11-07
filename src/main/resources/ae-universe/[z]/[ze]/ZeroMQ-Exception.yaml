@@ -1,0 +1,13 @@
+canonicalName: "ZeroMQ Exception"
+category: "ZeroMQ Exception"
+shortName: "ZeroMQ-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "lgpl-3.0-zeromq"
+  - "ZeroMQ exception to LGPL 3.0"
+
+otherIds: 
+  - "scancode:lgpl-3.0-zeromq"
+  - "scancode:zeromq-exception-lgpl-3.0"

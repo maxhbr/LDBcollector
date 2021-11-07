@@ -1,0 +1,12 @@
+canonicalName: "Apache 2.0 Linking Exception"
+category: "Linking Exception"
+shortName: "Apache-2.0-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Apache 2.0 with Linking Exception"
+
+otherIds: 
+  - "scancode:apache-2.0-linking-exception"
+  - "scancode:compuphase-linking-exception"

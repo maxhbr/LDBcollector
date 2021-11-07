@@ -1,0 +1,10 @@
+canonicalName: "Permission Terms (Sun)"
+category: "Permission"
+shortName: "PT-Sun-short"
+
+alternativeNames:
+  - "SunPro License"
+
+otherIds: 
+  - "scancode:red-hat-attribution"
+  - "scancode:ralf-corsepius"

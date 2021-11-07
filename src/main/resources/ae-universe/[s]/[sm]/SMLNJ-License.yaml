@@ -1,0 +1,11 @@
+canonicalName: "SMLNJ License"
+category: "SMLNJ"
+spdxIdentifier: "SMLNJ"
+
+alternativeNames:
+  - "SMLNJ License"
+  - "SMLNJ LICENSE"
+  - "STANDARD ML OF NEW JERSEY COPYRIGHT NOTICE, LICENSE AND DISCLAIMER"
+
+otherIds: 
+  - "scancode:standard-ml-nj"

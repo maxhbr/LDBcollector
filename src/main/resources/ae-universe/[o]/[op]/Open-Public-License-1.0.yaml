@@ -1,0 +1,11 @@
+canonicalName: "Open Public License 1.0"
+category: "OPL"
+spdxIdentifier: "OPL-1.0"
+
+alternativeNames:
+  - "OPL, Version 1.0"
+  - "OPL 1.0"
+  - "OPEN PUBLIC LICENSE Version 1.0"
+
+otherIds: 
+  - "scancode:open-public"

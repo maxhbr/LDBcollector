@@ -1,0 +1,12 @@
+canonicalName: "CNRI Jython License"
+category: "CNRI Jython"
+spdxIdentifier: "CNRI-Jython"
+
+alternativeNames:
+  - "CNRI Jython"
+  - "CNRI JYTHON"
+  - "CNRI-Jython"
+  - "CNRI-JYTHON"
+
+otherIds: 
+  - "scancode:cnri-jython"

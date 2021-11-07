@@ -1,0 +1,9 @@
+canonicalName: "UnboundID LDAP SDK Free Use License"
+category: "UnboundID LDAP SDK Free Use License"
+shortName: "LDAP-SDK-Free-Use"
+
+alternativeNames:
+  - "ldap-sdk-free-use"
+
+otherIds: 
+  - "scancode:ldap-sdk-free-use"

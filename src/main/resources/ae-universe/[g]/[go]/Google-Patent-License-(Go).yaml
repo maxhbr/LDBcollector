@@ -1,0 +1,9 @@
+canonicalName: "Google Patent License (Go)"
+category: "Google Patent License"
+shortName: "Google-Patent-Go"
+
+alternativeNames:
+  - "Google Patent License for Go"
+
+otherIds: 
+  - "scancode:google-patent-license-golang"

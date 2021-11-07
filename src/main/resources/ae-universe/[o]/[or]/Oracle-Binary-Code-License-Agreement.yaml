@@ -1,0 +1,9 @@
+canonicalName: "Oracle Binary Code License Agreement"
+category: "Oracle BCLA"
+shortName: "Oracle-BCLA"
+
+alternativeNames:
+  - "Oracle Binary Code License Agreement"
+
+otherIds: 
+  - "scancode:oracle-bcl-javase-platform-javafx-2017"

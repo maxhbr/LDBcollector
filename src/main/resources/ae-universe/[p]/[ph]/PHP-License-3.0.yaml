@@ -1,0 +1,14 @@
+canonicalName: "PHP License 3.0"
+category: "PHP"
+spdxIdentifier: "PHP-3.0"
+
+alternativeNames:
+  - "PHP, Version 3.0"
+  - "PHP, 3.0"
+  - "PHP License, Version 3.0"
+  - "PHP License, 3.0"
+  - "PHP License, version 3.0"
+
+otherIds: 
+  - "scancode:php-3.0"
+  - "osi:PHP-3.0"

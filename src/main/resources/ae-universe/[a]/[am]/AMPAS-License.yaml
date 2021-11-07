@@ -1,0 +1,10 @@
+canonicalName: "AMPAS License"
+category: "AMPAS"
+spdxIdentifier: "AMPAS"
+
+alternativeNames:
+  - "AMPAS License"
+  - "AMPAS LICENSE"
+
+otherIds: 
+  - "scancode:ampas"

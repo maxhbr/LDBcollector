@@ -1,0 +1,11 @@
+canonicalName: "NAnt Exception"
+category: "NAnt"
+shortName: "NAnt-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "NAnt Exception"
+
+otherIds: 
+  - "scancode:nant-exception-2.0-plus"

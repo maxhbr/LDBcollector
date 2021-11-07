@@ -1,0 +1,8 @@
+canonicalName: "UPX Exception"
+category: "UPX"
+shortName: "UPX-"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:upx-exception-2.0-plus"

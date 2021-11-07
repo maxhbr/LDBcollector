@@ -1,0 +1,9 @@
+canonicalName: "UNIX Network Programming Book License"
+category: "UNIX Network Programming Book License"
+shortName: "UNPBook"
+
+alternativeNames:
+  - "UNIX Network Programming Book License"
+
+otherIds: 
+  - "scancode:unpbook"

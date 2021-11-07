@@ -1,0 +1,10 @@
+canonicalName: "Texas Instruments Broadband Applications License"
+category: "Texas Instruments Broadband Applications License"
+shortName: "TI-Broadband-Apps"
+
+alternativeNames:
+  - "Texas Instruments Broadband Applications License"
+  - "ti-broadband-apps"
+
+otherIds: 
+  - "scancode:ti-broadband-apps"

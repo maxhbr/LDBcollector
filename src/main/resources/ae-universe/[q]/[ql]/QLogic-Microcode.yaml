@@ -1,0 +1,9 @@
+canonicalName: "QLogic Microcode"
+category: "QLogic Microcode"
+shortName: "QLogic-Microcode"
+
+alternativeNames:
+  - "qlogic-microcode"
+
+otherIds: 
+  - "scancode:qlogic-microcode"

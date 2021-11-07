@@ -1,0 +1,14 @@
+canonicalName: "Motosoto License"
+category: "Motosoto"
+spdxIdentifier: "Motosoto"
+
+alternativeNames:
+  - "Motosoto License"
+  - "MOTOSOTO LICENSE"
+  - "MOTOSOTO License"
+  - "MOTOSOTO OPEN SOURCE LICENSE"
+  - "MOTOSOTO Open Source License"
+
+otherIds: 
+  - "scancode:motosoto-0.9.1"
+  - "osi:Motosoto"

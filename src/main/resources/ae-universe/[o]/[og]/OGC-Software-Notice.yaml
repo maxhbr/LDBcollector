@@ -1,0 +1,9 @@
+canonicalName: "OGC Software Notice"
+category: "OGC Software Notice"
+shortName: "OGC"
+
+alternativeNames:
+  - "OGC Software Notice"
+
+otherIds: 
+  - "scancode:ogc"

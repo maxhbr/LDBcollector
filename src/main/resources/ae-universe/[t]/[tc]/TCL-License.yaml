@@ -1,0 +1,9 @@
+canonicalName: "TCL License"
+category: "TCL License"
+spdxIdentifier: "TCL"
+
+alternativeNames:
+  - "TCL License"
+
+otherIds: 
+  - "scancode:tcl"

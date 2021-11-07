@@ -1,0 +1,10 @@
+canonicalName: "OASIS Specification License"
+category: "OASIS"
+shortName: "OASIS-Specification"
+
+alternativeNames:
+  - "OASIS Specification License"
+  - "OASIS License"
+
+otherIds: 
+  - "scancode:oasis-ws-security-spec"

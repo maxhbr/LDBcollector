@@ -1,0 +1,10 @@
+canonicalName: "zlib/libpng License with Acknowledgement"
+category: "zlib-acknowledgement"
+spdxIdentifier: "zlib-acknowledgement"
+
+alternativeNames:
+  - "zlib-acknowledgement"
+  - "zlib/libpng License with Acknowledgement"
+
+otherIds: 
+  - "scancode:zlib-acknowledgement"

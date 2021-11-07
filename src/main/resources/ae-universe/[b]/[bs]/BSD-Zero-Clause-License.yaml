@@ -1,0 +1,11 @@
+canonicalName: "BSD Zero Clause License"
+category: "BSD"
+spdxIdentifier: "0BSD"
+
+alternativeNames:
+  - "BSD Zero Clause License"
+  - "0BSD"
+
+otherIds: 
+  - "scancode:bsd-zero"
+  - "osi:0BSD"

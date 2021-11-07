@@ -1,0 +1,9 @@
+canonicalName: "Texas Instruments Restricted Use License"
+category: "Texas Instruments Restricted Use License"
+shortName: "TI-Restricted-Use"
+
+alternativeNames:
+  - "Texas Instruments Restricted Use License"
+
+otherIds: 
+  - "scancode:ti-restricted"

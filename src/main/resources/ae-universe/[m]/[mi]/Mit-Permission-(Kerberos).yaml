@@ -1,0 +1,6 @@
+canonicalName: "Mit Permission (Kerberos)"
+category: "Permission"
+shortName: "MIT-Permission-Kerberos"
+
+otherIds: 
+  - "scancode:mit-no-trademarks"

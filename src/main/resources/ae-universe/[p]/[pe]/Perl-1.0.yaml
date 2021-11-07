@@ -1,0 +1,9 @@
+canonicalName: "Perl 1.0"
+category: "Perl"
+shortName: "Perl-1.0"
+
+alternativeNames:
+  - "perl-1.0"
+
+otherIds: 
+  - "scancode:perl-1.0"

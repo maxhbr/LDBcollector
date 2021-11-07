@@ -1,0 +1,9 @@
+canonicalName: "FSF Unlimited License"
+category: "FSF Unlimited"
+spdxIdentifier: "FSFUL"
+
+alternativeNames:
+  - "FSF Unlimited License"
+
+otherIds: 
+  - "scancode:fsf-free"

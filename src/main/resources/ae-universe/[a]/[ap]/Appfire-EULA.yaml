@@ -1,0 +1,9 @@
+canonicalName: "Appfire EULA"
+category: "Appfire EULA"
+shortName: "Appfire-EULA"
+
+alternativeNames:
+  - "appfire-eula"
+
+otherIds: 
+  - "scancode:appfire-eula"

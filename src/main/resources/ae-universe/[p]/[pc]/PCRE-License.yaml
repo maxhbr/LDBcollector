@@ -1,0 +1,10 @@
+canonicalName: "PCRE License"
+category: "PCRE"
+spdxIdentifier: "PCRE"
+
+alternativeNames:
+  - "PCRE License"
+  - "http://www.pcre.org/licence.txt"
+
+otherIds: 
+  - "scancode:pcre"

@@ -1,0 +1,16 @@
+canonicalName: "Condor Public License 1.1"
+category: "Condor Public License"
+spdxIdentifier: "Condor-1.1"
+
+alternativeNames:
+  - "Condor, Version 1.1"
+  - "Condor, 1.1"
+  - "Condor License, Version 1.1"
+  - "Condor License, 1.1"
+  - "Condor Public License Version 1.1"
+  - "https://spdx.org/licenses/condor-1.1"
+  - "http://www.cs.wisc.edu/condor/license.html"
+  - "http://www.condorproject.org"
+
+otherIds: 
+  - "scancode:condor-1.1"

@@ -1,0 +1,17 @@
+canonicalName: "LLVM Exception"
+category: "LLVM Exception"
+shortName: "LLVM-Exception"
+spdxIdentifier: "LLVM-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "LLVM exception"
+  - "LLVM EXCEPTION"
+  - "LLVM-exception"
+  - "LLVM-EXCEPTION"
+  - "Apache Exception LLVM"
+
+otherIds: 
+  - "scancode:apache-exception-llvm"
+  - "scancode:llvm-exception"

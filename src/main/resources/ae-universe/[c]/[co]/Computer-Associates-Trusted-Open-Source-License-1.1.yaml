@@ -1,0 +1,13 @@
+canonicalName: "Computer Associates Trusted Open Source License 1.1"
+category: "CATOSL"
+spdxIdentifier: "CATOSL-1.1"
+
+alternativeNames:
+  - "CATOSL, Version 1.1"
+  - "CATOSL, 1.1"
+  - "CATOSL-1.1"
+  - "Computer Associates Trusted Open Source License Version 1.1"
+
+otherIds: 
+  - "scancode:ca-tosl-1.1"
+  - "osi:CATOSL-1.1"

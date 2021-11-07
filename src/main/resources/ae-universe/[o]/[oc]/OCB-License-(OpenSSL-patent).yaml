@@ -1,0 +1,9 @@
+canonicalName: "OCB License (OpenSSL patent)"
+category: "OCB"
+shortName: "OCB-OpenSSL-patent"
+
+alternativeNames:
+  - "OCB License (OpenSSL patent)"
+
+otherIds: 
+  - "scancode:ocb-patent-openssl-2013"

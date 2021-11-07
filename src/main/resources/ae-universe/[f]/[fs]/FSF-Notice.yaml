@@ -1,0 +1,9 @@
+canonicalName: "FSF Notice"
+category: "FSF Notice"
+shortName: "FSF"
+
+alternativeNames:
+  - "FSF Notice"
+
+otherIds: 
+  - "scancode:fsf-notice"

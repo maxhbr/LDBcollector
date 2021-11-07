@@ -1,0 +1,13 @@
+canonicalName: "Noweb License"
+category: "Noweb"
+spdxIdentifier: "Noweb"
+
+alternativeNames:
+  - "Noweb License"
+  - "NOWEB LICENSE"
+  - "NOWEB License"
+  - "Noweb is copyright"
+  - "Noweb is protected by copyright"
+
+otherIds: 
+  - "scancode:noweb"

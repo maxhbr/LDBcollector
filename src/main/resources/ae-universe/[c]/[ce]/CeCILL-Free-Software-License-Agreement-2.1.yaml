@@ -1,0 +1,12 @@
+canonicalName: "CeCILL Free Software License Agreement 2.1"
+category: "CECILL"
+spdxIdentifier: "CECILL-2.1"
+
+alternativeNames:
+  - "CECILL, Version 2.1"
+  - "CECILL, 2.1"
+  - "CeCILL FREE SOFTWARE LICENSE AGREEMENT Version 2.1"
+
+otherIds: 
+  - "scancode:cecill-2.1"
+  - "osi:CECILL-2.1"

@@ -1,0 +1,11 @@
+canonicalName: "VOSTROM License"
+category: "VOSTROM"
+spdxIdentifier: "VOSTROM"
+
+alternativeNames:
+  - "VOSTROM License"
+  - "VOSTROM LICENSE"
+  - "VOSTROM Public License"
+
+otherIds: 
+  - "scancode:vostrom"

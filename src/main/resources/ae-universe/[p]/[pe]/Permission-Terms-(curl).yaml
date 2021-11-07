@@ -1,0 +1,12 @@
+canonicalName: "Permission Terms (curl)"
+category: "Permission"
+spdxIdentifier: "curl"
+
+alternativeNames:
+  - "CURL LICENSE"
+  - "CURL License"
+  - "Curl License"
+  - "curl license"
+
+otherIds: 
+  - "scancode:curl"

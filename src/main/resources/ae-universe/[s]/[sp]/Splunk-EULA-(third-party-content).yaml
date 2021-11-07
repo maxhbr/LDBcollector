@@ -1,0 +1,10 @@
+canonicalName: "Splunk EULA (third-party content)"
+category: "Splunk EULA"
+shortName: "Splunk-3PC-EULA"
+
+alternativeNames:
+  - "splunk-3pp-eula"
+  - "Splunk EULA for Third-Party Content"
+
+otherIds: 
+  - "scancode:splunk-3pp-eula"

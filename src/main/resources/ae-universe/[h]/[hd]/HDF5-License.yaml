@@ -1,0 +1,9 @@
+canonicalName: "HDF5 License"
+category: "HDF5 License"
+shortName: "HDF5"
+
+alternativeNames:
+  - "HDF5 License"
+
+otherIds: 
+  - "scancode:hdf5"

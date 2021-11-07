@@ -1,0 +1,6 @@
+canonicalName: "GNU Library General Public License 2.0 (or any later version; with Mini-XML exception 2.0)"
+category: "LGPL+Mini-XML"
+shortName: "LGPL-2.0-plus-Mini-XML"
+
+otherIds: 
+  - "scancode:mini-xml"

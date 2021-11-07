@@ -1,0 +1,9 @@
+canonicalName: "Riverbank SIP License"
+category: "Riverbank SIP License"
+shortName: "Riverbank-SIP"
+
+alternativeNames:
+  - "riverbank-sip"
+
+otherIds: 
+  - "scancode:riverbank-sip"

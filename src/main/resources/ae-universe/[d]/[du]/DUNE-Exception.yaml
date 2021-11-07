@@ -1,0 +1,11 @@
+canonicalName: "DUNE Exception"
+category: "DUNE Exception"
+shortName: "DUNE-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "dune-exception"
+
+otherIds: 
+  - "scancode:dune-exception"

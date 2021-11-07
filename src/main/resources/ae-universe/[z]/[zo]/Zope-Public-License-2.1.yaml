@@ -1,0 +1,12 @@
+canonicalName: "Zope Public License 2.1"
+category: "ZPL"
+spdxIdentifier: "ZPL-2.1"
+
+alternativeNames:
+  - "ZPL, Version 2.1"
+  - "ZPL 2.1"
+  - "Zope Public License (ZPL) Version 2.1"
+
+otherIds: 
+  - "osi:ZPL-2.1"
+  - "scancode:zpl-2.1"

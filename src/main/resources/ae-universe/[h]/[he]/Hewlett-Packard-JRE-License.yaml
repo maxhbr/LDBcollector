@@ -1,0 +1,9 @@
+canonicalName: "Hewlett Packard JRE License"
+category: "Hewlett Packard JRE License"
+shortName: "HP-UX-jre"
+
+alternativeNames:
+  - "hp-ux-jre"
+
+otherIds: 
+  - "scancode:hp-ux-jre"

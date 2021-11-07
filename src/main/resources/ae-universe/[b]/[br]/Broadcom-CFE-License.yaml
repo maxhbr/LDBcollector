@@ -1,0 +1,9 @@
+canonicalName: "Broadcom CFE License"
+category: "Broadcom CFE License"
+shortName: "Broadcom-CFE"
+
+alternativeNames:
+  - "broadcom-cfe"
+
+otherIds: 
+  - "scancode:broadcom-cfe"

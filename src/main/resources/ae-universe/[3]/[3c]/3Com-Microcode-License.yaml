@@ -1,0 +1,9 @@
+canonicalName: "3Com Microcode License"
+category: "3Com-MC"
+shortName: "3Com-Microcode"
+
+alternativeNames:
+  - "3Com Microcode License"
+
+otherIds: 
+  - "scancode:3com-microcode"

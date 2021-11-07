@@ -1,0 +1,11 @@
+canonicalName: "NetCDF License"
+category: "NetCDF"
+spdxIdentifier: "NetCDF"
+
+alternativeNames:
+  - "NetCDF License"
+  - "NETCDF LICENSE"
+  - "NETCDF License"
+
+otherIds: 
+  - "scancode:netcdf"

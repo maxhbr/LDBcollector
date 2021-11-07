@@ -1,0 +1,9 @@
+canonicalName: "Sendmail License"
+category: "Sendmail"
+spdxIdentifier: "Sendmail"
+
+alternativeNames:
+  - "Sendmail License"
+
+otherIds: 
+  - "scancode:sendmail"

@@ -1,0 +1,9 @@
+canonicalName: "Microsoft .NET Framework Redistributable EULA"
+category: "Microsoft .NET Framework Redistributable EULA"
+shortName: "MS-NET-FRAMEWORK-Deployment"
+
+alternativeNames:
+  - "Microsoft .NET Framework Redistributable EULA"
+
+otherIds: 
+  - "scancode:ms-net-framework-deployment"

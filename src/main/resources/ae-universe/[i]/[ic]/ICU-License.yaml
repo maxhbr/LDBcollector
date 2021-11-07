@@ -1,0 +1,9 @@
+canonicalName: "ICU License"
+category: "ICU"
+spdxIdentifier: "ICU"
+
+alternativeNames:
+  - "ICU License"
+
+otherIds: 
+  - "scancode:slf4j-2005"

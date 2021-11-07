@@ -1,0 +1,11 @@
+canonicalName: "Eurosym License"
+category: "Eurosym"
+spdxIdentifier: "Eurosym"
+
+alternativeNames:
+  - "Eurosym License"
+  - "EUROSYM LICENSE"
+  - "EUROSYM License"
+
+otherIds: 
+  - "scancode:eurosym"

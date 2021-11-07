@@ -1,0 +1,9 @@
+canonicalName: "Open Market License"
+category: "OML"
+spdxIdentifier: "OML"
+
+alternativeNames:
+  - "OM License"
+
+otherIds: 
+  - "scancode:fastcgi-devkit"

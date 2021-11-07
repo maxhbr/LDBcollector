@@ -1,0 +1,11 @@
+canonicalName: "Barr License"
+category: "Barr"
+spdxIdentifier: "Barr"
+
+alternativeNames:
+  - "Barr License"
+  - "BARR LICENSE"
+  - "BARR License"
+
+otherIds: 
+  - "scancode:barr-tex"

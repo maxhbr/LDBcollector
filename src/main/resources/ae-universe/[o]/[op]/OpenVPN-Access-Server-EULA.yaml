@@ -1,0 +1,9 @@
+canonicalName: "OpenVPN Access Server EULA"
+category: "OpenVPN Access Server EULA"
+shortName: "OpenVPN-AS-EULA"
+
+alternativeNames:
+  - "openvpn-as-eula"
+
+otherIds: 
+  - "scancode:openvpn-as-eula"

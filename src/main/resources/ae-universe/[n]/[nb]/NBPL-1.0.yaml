@@ -1,0 +1,10 @@
+canonicalName: "NBPL 1.0"
+category: "NBPL"
+spdxIdentifier: "NBPL-1.0"
+
+alternativeNames:
+  - "NBPL, Version 1.0"
+  - "NBPL, 1.0"
+
+otherIds: 
+  - "scancode:nbpl-1.0"

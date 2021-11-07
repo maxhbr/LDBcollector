@@ -1,0 +1,9 @@
+canonicalName: "ITU License"
+category: "ITU License"
+shortName: "ITU"
+
+alternativeNames:
+  - "ITU License"
+
+otherIds: 
+  - "scancode:itu"

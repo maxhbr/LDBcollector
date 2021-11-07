@@ -1,0 +1,10 @@
+canonicalName: "Beerware License"
+category: "Beerware"
+spdxIdentifier: "Beerware"
+
+alternativeNames:
+  - "Beerware"
+  - "BEERWARE"
+
+otherIds: 
+  - "scancode:beerware"

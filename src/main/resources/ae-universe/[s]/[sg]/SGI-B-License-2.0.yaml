@@ -1,0 +1,18 @@
+canonicalName: "SGI B License 2.0"
+category: "SGI B"
+spdxIdentifier: "SGI-B-2.0"
+
+alternativeNames:
+  - "SGI B, Version 2.0"
+  - "SGI B, 2.0"
+  - "SGI-B, Version 2.0"
+  - "SGI-B, 2.0"
+  - "SGI B License, Version 2.0"
+  - "SGI B License 2.0"
+  - "SGI-B License, Version 2.0"
+  - "SGI-B License, 2.0"
+  - "SGI FREE SOFTWARE LICENSE B (Version 2.0, Sept. 18, 2008)"
+  - "SGI Free Software License B, version 2.0"
+
+otherIds: 
+  - "scancode:sgi-freeb-2.0"

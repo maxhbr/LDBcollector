@@ -1,0 +1,13 @@
+canonicalName: "OpenLDAP Public License 2.0.1"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-2.0.1"
+
+alternativeNames:
+  - "OLDAP, Version 2.0.1"
+  - "OLDAP 2.0.1"
+  - "OLDAP License, Version 2.0.1"
+  - "OLDAP License 2.0.1"
+  - "Version 2.0.1, 21 December 1999"
+
+otherIds: 
+  - "scancode:openldap-2.0.1"

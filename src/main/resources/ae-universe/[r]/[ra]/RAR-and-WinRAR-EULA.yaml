@@ -1,0 +1,9 @@
+canonicalName: "RAR and WinRAR EULA"
+category: "RAR and WinRAR EULA"
+shortName: "RAR-WinRAR-EULA"
+
+alternativeNames:
+  - "rar-winrar-eula"
+
+otherIds: 
+  - "scancode:rar-winrar-eula"

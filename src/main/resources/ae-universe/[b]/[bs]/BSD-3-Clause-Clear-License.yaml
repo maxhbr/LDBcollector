@@ -1,0 +1,11 @@
+canonicalName: "BSD 3-Clause Clear License"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-Clear"
+
+alternativeNames:
+  - "BSD-3-Clause-Clear"
+  - "BSD 3-Clause Clear License"
+  - "Clear BSD License"
+
+otherIds: 
+  - "scancode:clear-bsd"

@@ -1,0 +1,9 @@
+canonicalName: "XFree86 License 1.1"
+category: "XFree86"
+spdxIdentifier: "XFree86-1.1"
+
+alternativeNames:
+  - "XFree86-1.1"
+
+otherIds: 
+  - "scancode:xfree86-1.1"

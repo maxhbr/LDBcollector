@@ -1,0 +1,9 @@
+canonicalName: "Couchbase Community Edition License"
+category: "Couchbase Community Edition License"
+shortName: "Couchbase-Community"
+
+alternativeNames:
+  - "COUCHBASE INC. COMMUNITY EDITION LICENSE AGREEMENT"
+
+otherIds: 
+  - "scancode:couchbase-community"

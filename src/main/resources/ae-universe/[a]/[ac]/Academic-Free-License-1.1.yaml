@@ -1,0 +1,11 @@
+canonicalName: "Academic Free License 1.1"
+category: "AFL"
+spdxIdentifier: "AFL-1.1"
+
+alternativeNames:
+  - "AFL, Version 1.1"
+  - "AFL, 1.1"
+  - "AFL-1.1"
+
+otherIds: 
+  - "scancode:afl-1.1"

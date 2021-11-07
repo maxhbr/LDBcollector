@@ -1,0 +1,10 @@
+canonicalName: "BSD alike (display obligation)"
+category: "BSD"
+shortName: "BSD-alike-display"
+
+alternativeNames:
+  - " BSD alike (display obligation)"
+
+otherIds: 
+  - "scancode:bsd-1988"
+  - "scancode:flex-2.5"

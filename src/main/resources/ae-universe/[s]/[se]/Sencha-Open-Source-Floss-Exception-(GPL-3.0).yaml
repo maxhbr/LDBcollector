@@ -1,0 +1,8 @@
+canonicalName: "Sencha Open Source Floss Exception (GPL 3.0)"
+category: "Sencha Exception"
+shortName: "Sencha-FLOSS"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:sencha-app-floss-exception"

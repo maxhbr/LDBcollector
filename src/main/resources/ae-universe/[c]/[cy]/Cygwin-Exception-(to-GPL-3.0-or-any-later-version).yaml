@@ -1,0 +1,9 @@
+canonicalName: "Cygwin Exception (to GPL 3.0 or any later version)"
+category: "Cygwin"
+shortName: "Cygwin-Exception-to-GPL-3.0+"
+
+alternativeNames:
+  - "Cygwin Exception (to GPL 3.0 or any later version)"
+
+otherIds: 
+  - "scancode:cygwin-exception-3.0"

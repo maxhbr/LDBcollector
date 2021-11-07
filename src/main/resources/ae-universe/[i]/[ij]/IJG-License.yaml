@@ -1,0 +1,10 @@
+canonicalName: "IJG License"
+category: "IJG"
+spdxIdentifier: "IJG"
+
+alternativeNames:
+  - "IJG License"
+  - "IJG LICENSE"
+
+otherIds: 
+  - "scancode:ijg"

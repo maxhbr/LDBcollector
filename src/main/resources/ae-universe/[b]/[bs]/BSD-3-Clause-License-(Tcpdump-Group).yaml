@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License (Tcpdump Group)"
+category: "BSD"
+shortName: "BSD-new-Derivative"
+
+alternativeNames:
+  - "bsd-new-derivative"
+
+otherIds: 
+  - "scancode:bsd-new-derivative"

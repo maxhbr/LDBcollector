@@ -1,0 +1,13 @@
+canonicalName: "iMatix License"
+category: "iMatix"
+spdxIdentifier: "iMatix"
+
+alternativeNames:
+  - "iMatix License"
+  - "IMATIX LICENSE"
+  - "IMATIX License"
+  - "iMatix STANDARD FUNCTION LIBRARY"
+  - "SFL License Agreement"
+
+otherIds: 
+  - "scancode:sfl-license"

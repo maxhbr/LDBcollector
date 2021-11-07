@@ -1,0 +1,9 @@
+canonicalName: "IBM AS-IS License"
+category: "IBM AS-IS License"
+shortName: "IBM-AS-IS"
+
+alternativeNames:
+  - "ibm-as-is"
+
+otherIds: 
+  - "scancode:ibm-as-is"

@@ -1,0 +1,12 @@
+canonicalName: "NCSA License"
+category: "BSD"
+spdxIdentifier: "NCSA"
+
+alternativeNames:
+  - "NCSA License"
+  - "NCSA LICENSE"
+  - "NCSA Open Source License"
+
+otherIds: 
+  - "scancode:uoi-ncsa"
+  - "osi:NCSA"

@@ -1,0 +1,9 @@
+canonicalName: "NRL License"
+category: "NRL"
+spdxIdentifier: "NRL"
+
+alternativeNames:
+  - "NRL License"
+
+otherIds: 
+  - "scancode:nrl"

@@ -1,0 +1,6 @@
+canonicalName: "Detection Rule License 1.0"
+category: "Detection Rule"
+spdxIdentifier: "DRL-1.0"
+
+otherIds: 
+  - "scancode:drl-1.0"

@@ -1,0 +1,10 @@
+canonicalName: "BSD 2-Clause License (with advertizing clause)"
+category: "BSD"
+shortName: "BSD-2-Clause-advertizing"
+
+alternativeNames:
+  - "bsd-2-clause-plus-advertizing"
+
+otherIds: 
+  - "scancode:bsd-2-clause-plus-advertizing"
+  - "scancode:ttf2pt1"

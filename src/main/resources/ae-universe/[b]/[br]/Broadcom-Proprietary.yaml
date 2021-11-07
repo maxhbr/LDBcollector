@@ -1,0 +1,10 @@
+canonicalName: "Broadcom Proprietary"
+category: "Broadcom Proprietary"
+shortName: "Broadcom-Proprietary"
+
+alternativeNames:
+  - "broadcom-confidential"
+  - "Broadcom Confidential"
+
+otherIds: 
+  - "scancode:broadcom-confidential"

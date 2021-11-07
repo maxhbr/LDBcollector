@@ -1,0 +1,8 @@
+canonicalName: "Trolltech Exception 1.0"
+category: "Trolltech Exception"
+shortName: "Trolltech-1.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:trolltech-gpl-exception-1.0"

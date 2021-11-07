@@ -1,0 +1,10 @@
+canonicalName: "CERN Open Hardware Licence Strongly Reciprocal 2.0"
+category: "CERN Open Hardware Licence Strongly Reciprocal"
+spdxIdentifier: "CERN-OHL-S-2.0"
+
+alternativeNames:
+  - "cern-ohl-s-2.0"
+  - "CERN Open Hardware Licence Version 2 - Strongly Reciprocal"
+
+otherIds: 
+  - "scancode:cern-ohl-s-2.0"

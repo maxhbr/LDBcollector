@@ -1,0 +1,9 @@
+canonicalName: "Intel Microcode License"
+category: "Intel Microcode License"
+shortName: "Intel-Microcode"
+
+alternativeNames:
+  - "intel-microcode"
+
+otherIds: 
+  - "scancode:intel-microcode"

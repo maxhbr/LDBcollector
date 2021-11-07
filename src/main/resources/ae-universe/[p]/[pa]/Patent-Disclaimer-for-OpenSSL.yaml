@@ -1,0 +1,9 @@
+canonicalName: "Patent Disclaimer for OpenSSL"
+category: "Patent Disclaimer for OpenSSL"
+shortName: "OpenSSL-Nokia-PSK-Contribution"
+
+alternativeNames:
+  - "openssl-nokia-psk-contribution"
+
+otherIds: 
+  - "scancode:openssl-nokia-psk-contribution"

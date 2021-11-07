@@ -1,0 +1,11 @@
+canonicalName: "Giftware License"
+category: "Giftware"
+spdxIdentifier: "Giftware"
+
+alternativeNames:
+  - "Giftware"
+  - "GIFTWARE"
+  - "Allegro 4"
+
+otherIds: 
+  - "scancode:allegro-4"

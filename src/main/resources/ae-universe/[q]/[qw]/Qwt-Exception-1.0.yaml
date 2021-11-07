@@ -1,0 +1,12 @@
+canonicalName: "Qwt Exception 1.0"
+category: "Qwt Exception"
+shortName: "Qwt-Exception-1.0"
+spdxIdentifier: "Qwt-exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Qwt License Version 1.0"
+
+otherIds: 
+  - "scancode:qwt-exception-1.0"

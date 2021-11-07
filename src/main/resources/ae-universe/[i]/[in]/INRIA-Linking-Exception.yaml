@@ -1,0 +1,11 @@
+canonicalName: "INRIA Linking Exception"
+category: "INRIA Linking Exception"
+shortName: "INRIA-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "inria-linking-exception"
+
+otherIds: 
+  - "scancode:inria-linking-exception"

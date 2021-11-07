@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License (no modification)"
+category: "BSD"
+shortName: "BSD-3-Clause-no-modification"
+
+alternativeNames:
+  - "bsd-axis-nomod"
+
+otherIds: 
+  - "scancode:bsd-axis-nomod"

@@ -1,0 +1,9 @@
+canonicalName: "SafeCopy EULA"
+category: "SafeCopy EULA"
+shortName: "SafeCopy-EULA"
+
+alternativeNames:
+  - "safecopy-eula"
+
+otherIds: 
+  - "scancode:safecopy-eula"

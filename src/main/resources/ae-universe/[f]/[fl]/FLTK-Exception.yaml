@@ -1,0 +1,9 @@
+canonicalName: "FLTK Exception"
+category: "FLTK Exception"
+shortName: "FLTK-Exception"
+spdxIdentifier: "FLTK-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:lgpl-2.0-fltk"

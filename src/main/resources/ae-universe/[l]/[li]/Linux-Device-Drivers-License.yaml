@@ -1,0 +1,9 @@
+canonicalName: "Linux Device Drivers License"
+category: "Linux Device Drivers"
+shortName: "Linux-Device-Drivers"
+
+alternativeNames:
+  - "Linux Device Drivers License"
+
+otherIds: 
+  - "scancode:linux-device-drivers"

@@ -1,0 +1,11 @@
+canonicalName: "SNIA License"
+category: "SNIA"
+spdxIdentifier: "SNIA"
+
+alternativeNames:
+  - "SNIA License"
+  - "SNIA LICENSE"
+  - "STORAGE NETWORKING INDUSTRY ASSOCIATION"
+
+otherIds: 
+  - "scancode:snia"

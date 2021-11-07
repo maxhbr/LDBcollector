@@ -1,0 +1,10 @@
+canonicalName: "JPNIC License"
+category: "JPNIC"
+spdxIdentifier: "JPNIC"
+
+alternativeNames:
+  - "Japan Network Information Center Terms"
+  - "Japan Network Information Center License"
+
+otherIds: 
+  - "scancode:jpnic-idnkit"

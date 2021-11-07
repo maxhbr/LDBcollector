@@ -1,0 +1,10 @@
+canonicalName: "OpenSSH Linking Exception"
+category: "OpenSSH Linking Exception"
+shortName: "OpenSSH-LE"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSSH Linking Exception"
+  - "OpenSSH-linking exception"
+

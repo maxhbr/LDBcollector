@@ -1,0 +1,14 @@
+canonicalName: "OpenLDAP Public License 2.4"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-2.4"
+
+alternativeNames:
+  - "OLDAP, Version 2.4"
+  - "OLDAP, 2.4"
+  - "OLDAP License, Version 2.4"
+  - "OLDAP License, 2.4"
+  - "OpenLDAP Public License Version 2.4"
+  - "OpenLDAP 2.4"
+
+otherIds: 
+  - "scancode:openldap-2.4"

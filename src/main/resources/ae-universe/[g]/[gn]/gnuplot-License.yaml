@@ -1,0 +1,11 @@
+canonicalName: "gnuplot License"
+category: "gnuplot"
+spdxIdentifier: "gnuplot"
+
+alternativeNames:
+  - "gnuplot License"
+  - "GNUPLOT LICENSE"
+  - "GNUPLOT License"
+
+otherIds: 
+  - "scancode:gnuplot"

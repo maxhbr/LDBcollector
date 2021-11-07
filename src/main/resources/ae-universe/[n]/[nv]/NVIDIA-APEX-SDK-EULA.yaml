@@ -1,0 +1,9 @@
+canonicalName: "NVIDIA APEX SDK EULA"
+category: "NVIDIA APEX SDK"
+shortName: "NVIDIA-APEX-SDK-EULA"
+
+alternativeNames:
+  - "NVIDIA APEX SDK EULA"
+
+otherIds: 
+  - "scancode:nvidia-apex-sdk-eula-2011"

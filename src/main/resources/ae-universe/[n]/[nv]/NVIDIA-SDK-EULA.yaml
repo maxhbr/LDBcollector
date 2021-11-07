@@ -1,0 +1,9 @@
+canonicalName: "NVIDIA SDK EULA"
+category: "NVIDIA SDK"
+shortName: "NVIDIA-SDK-EULA"
+
+alternativeNames:
+  - "NVIDIA SDK EULA"
+
+otherIds: 
+  - "scancode:nvidia-sdk-eula-v0.11"

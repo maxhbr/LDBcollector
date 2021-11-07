@@ -1,0 +1,9 @@
+canonicalName: "Intel Firmware License"
+category: "Intel Firmware License"
+shortName: "Intel-Firmware"
+
+alternativeNames:
+  - "intel-firmware"
+
+otherIds: 
+  - "scancode:intel-firmware"

@@ -1,0 +1,9 @@
+canonicalName: "Linux HowTo License"
+category: "Linux HowTo License"
+shortName: "LinuxHowtos"
+
+alternativeNames:
+  - "linuxhowtos"
+
+otherIds: 
+  - "scancode:linuxhowtos"

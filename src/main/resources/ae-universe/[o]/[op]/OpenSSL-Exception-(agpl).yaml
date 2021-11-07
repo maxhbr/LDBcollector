@@ -1,0 +1,13 @@
+canonicalName: "OpenSSL Exception (agpl)"
+category: "OpenSSL Exception"
+shortName: "Open-SSL-Exception-Agpl"
+
+type: "exception"
+
+alternativeNames:
+  - "AGPL 3.0 with OpenSSL exception"
+  - "GNU Affero General Public License 3.0 (with OpenSSL exception)"
+
+otherIds: 
+  - "scancode:agpl-3.0-openssl"
+  - "scancode:openssl-exception-agpl-3.0"

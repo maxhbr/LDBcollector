@@ -1,0 +1,9 @@
+canonicalName: "HIDAPI License"
+category: "HIDAPI License"
+shortName: "HIDAPI"
+
+alternativeNames:
+  - "hidapi license"
+
+otherIds: 
+  - "scancode:hidapi"

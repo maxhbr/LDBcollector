@@ -1,0 +1,10 @@
+canonicalName: "Adaptec File License"
+category: "Adaptec"
+shortName: "Adaptec-File"
+
+alternativeNames:
+  - "Adaptec EULA"
+  - "Adaptec by PMC Downloadable Files"
+
+otherIds: 
+  - "scancode:adaptec-eula"

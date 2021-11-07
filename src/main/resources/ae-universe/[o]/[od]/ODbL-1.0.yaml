@@ -1,0 +1,11 @@
+canonicalName: "ODbL 1.0"
+category: "ODbL"
+spdxIdentifier: "ODbL-1.0"
+
+alternativeNames:
+  - "ODbL, Version 1.0"
+  - "ODbL, 1.0"
+  - "ODC Open Database License"
+
+otherIds: 
+  - "scancode:odbl-1.0"

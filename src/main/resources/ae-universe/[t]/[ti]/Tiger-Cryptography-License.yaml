@@ -1,0 +1,10 @@
+canonicalName: "Tiger Cryptography License"
+category: "Tiger Cryptography License"
+shortName: "Tiger-Cryptography"
+
+alternativeNames:
+  - "http://www.cs.technion.ac.il/~biham/Reports/Tiger/"
+  - "Tiger Cryptography"
+
+otherIds: 
+  - "scancode:tiger-crypto"

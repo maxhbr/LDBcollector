@@ -1,0 +1,9 @@
+canonicalName: "LSI Proprietary EULA"
+category: "LSI Proprietary EULA"
+shortName: "LSI-Proprietary-EULA"
+
+alternativeNames:
+  - "lsi-proprietary-eula"
+
+otherIds: 
+  - "scancode:lsi-proprietary-eula"

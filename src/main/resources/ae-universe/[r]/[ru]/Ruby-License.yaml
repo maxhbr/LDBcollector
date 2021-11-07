@@ -1,0 +1,9 @@
+canonicalName: "Ruby License"
+category: "Ruby"
+spdxIdentifier: "Ruby"
+
+alternativeNames:
+  - "Ruby License"
+
+otherIds: 
+  - "scancode:ruby"

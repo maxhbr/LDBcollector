@@ -1,0 +1,10 @@
+canonicalName: "Autoit EULA"
+category: "Autoit EULA"
+shortName: "Autoit-EULA"
+
+alternativeNames:
+  - "autoit-eula"
+  - "https://www.autoitscript.com/site/autoit/"
+
+otherIds: 
+  - "scancode:autoit-eula"

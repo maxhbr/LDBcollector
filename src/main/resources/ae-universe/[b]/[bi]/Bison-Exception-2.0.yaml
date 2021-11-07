@@ -1,0 +1,11 @@
+canonicalName: "Bison Exception 2.0"
+category: "Bison Exception"
+shortName: "Bison-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "bison-exception-2.0"
+
+otherIds: 
+  - "scancode:bison-exception-2.0"

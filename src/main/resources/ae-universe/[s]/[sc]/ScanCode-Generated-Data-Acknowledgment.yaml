@@ -1,0 +1,9 @@
+canonicalName: "ScanCode Generated Data Acknowledgment"
+category: "ScanCode Generated Data Acknowledgment"
+shortName: "ScanCode-Acknowledgment"
+
+alternativeNames:
+  - "ScanCode generated data acknowledgment"
+
+otherIds: 
+  - "scancode:scancode-acknowledgment"

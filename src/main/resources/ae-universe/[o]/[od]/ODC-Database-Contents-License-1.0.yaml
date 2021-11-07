@@ -1,0 +1,11 @@
+canonicalName: "ODC Database Contents License 1.0"
+category: "ODC Database Contents License"
+shortName: "DbCL-1.0"
+
+alternativeNames:
+  - "https://opendatacommons.org/licenses/dbcl/1.0/"
+  - "http://opendatacommons.org/licenses/dbcl/1.0/"
+  - "dbcl-1.0"
+
+otherIds: 
+  - "scancode:dbcl-1.0"

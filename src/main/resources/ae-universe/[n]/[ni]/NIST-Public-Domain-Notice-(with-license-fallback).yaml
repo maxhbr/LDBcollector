@@ -1,0 +1,9 @@
+canonicalName: "NIST Public Domain Notice (with license fallback)"
+category: "NIST Public Domain Notice"
+spdxIdentifier: "NIST-PD-fallback"
+
+alternativeNames:
+  - "NIST Public Domain Notice (with license fallback)"
+
+otherIds: 
+  - "scancode:nist-pd-fallback"

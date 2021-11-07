@@ -1,0 +1,9 @@
+canonicalName: "RSA Cryptoki License"
+category: "RSA Cryptoki License"
+shortName: "RSA-Cryptoki"
+
+alternativeNames:
+  - "http://www.rsa.com/rsalabs/node.asp?id=2133"
+
+otherIds: 
+  - "scancode:rsa-cryptoki"

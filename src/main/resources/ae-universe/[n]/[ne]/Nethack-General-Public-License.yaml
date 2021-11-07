@@ -1,0 +1,12 @@
+canonicalName: "Nethack General Public License"
+category: "Nethack General Public License"
+spdxIdentifier: "NGPL"
+
+alternativeNames:
+  - "NETHACK GENERAL PUBLIC LICENSE"
+  - "http://www.nethack.org/common/license.html"
+  - "https://spdx.org/licenses/ngpl"
+
+otherIds: 
+  - "scancode:ngpl"
+  - "osi:NGPL"

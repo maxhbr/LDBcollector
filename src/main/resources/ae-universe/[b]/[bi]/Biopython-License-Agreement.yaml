@@ -1,0 +1,10 @@
+canonicalName: "Biopython License Agreement"
+category: "Biopython License Agreement"
+shortName: "Biopython"
+
+alternativeNames:
+  - "http://www.biopython.org/DIST/LICENSE"
+  - "biopython license"
+
+otherIds: 
+  - "scancode:biopython"

@@ -1,0 +1,11 @@
+canonicalName: "TAPR Open Hardware 1.0"
+category: "TAPR-OHL-1.0"
+spdxIdentifier: "TAPR-OHL-1.0"
+
+alternativeNames:
+  - "TAPR-OHL-1.0"
+  - "TAPR Open Hardware License v1.0"
+  - "TAPR Open Hardware License Version 1.0"
+
+otherIds: 
+  - "scancode:tapr-ohl-1.0"

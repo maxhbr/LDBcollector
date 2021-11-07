@@ -1,0 +1,9 @@
+canonicalName: "Qualcomm Atheros Technology License"
+category: "Qualcomm Atheros Technology License"
+shortName: "Qualcomm-Atheros-Technology"
+
+alternativeNames:
+  - "qca-technology"
+
+otherIds: 
+  - "scancode:qca-technology"

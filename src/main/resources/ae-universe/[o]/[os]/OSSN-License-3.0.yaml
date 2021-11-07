@@ -1,0 +1,9 @@
+canonicalName: "OSSN License 3.0"
+category: "OSSN"
+shortName: "OSSN-3.0"
+
+alternativeNames:
+  - "http://www.opensource-socialnetwork.org/licence"
+
+otherIds: 
+  - "scancode:ossn-3.0"

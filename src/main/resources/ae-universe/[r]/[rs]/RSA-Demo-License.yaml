@@ -1,0 +1,9 @@
+canonicalName: "RSA Demo License"
+category: "RSA Demo License"
+shortName: "RSA-Demo"
+
+alternativeNames:
+  - "rsa-demo"
+
+otherIds: 
+  - "scancode:rsa-demo"

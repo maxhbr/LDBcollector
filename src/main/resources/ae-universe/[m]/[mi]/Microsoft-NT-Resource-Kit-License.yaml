@@ -1,0 +1,9 @@
+canonicalName: "Microsoft NT Resource Kit License"
+category: "Microsoft NT Resource Kit License"
+shortName: "MS-MT-Resource-Kit"
+
+alternativeNames:
+  - "Microsoft NT Resource Kit License"
+
+otherIds: 
+  - "scancode:ms-nt-resource-kit"

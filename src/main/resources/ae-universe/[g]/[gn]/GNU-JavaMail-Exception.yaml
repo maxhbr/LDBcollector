@@ -1,0 +1,12 @@
+canonicalName: "GNU JavaMail Exception"
+category: "GNU JavaMail Exception"
+shortName: "GNU-JavaMail-Exception"
+spdxIdentifier: "gnu-javamail-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "https://spdx.org/licenses/gnu-javamail-exception"
+
+otherIds: 
+  - "scancode:gnu-javamail-exception"

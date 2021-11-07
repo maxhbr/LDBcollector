@@ -1,0 +1,9 @@
+canonicalName: "STMicro BSD Restricted"
+category: "STMicro BSD Restricted"
+shortName: "STMicro-BSD-Restricted"
+
+alternativeNames:
+  - "st-bsd-restricted"
+
+otherIds: 
+  - "scancode:st-bsd-restricted"

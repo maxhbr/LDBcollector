@@ -1,0 +1,9 @@
+canonicalName: "Microsoft EULA for Windows Script Host"
+category: "Microsoft EULA for Windows Script Host"
+shortName: "MS-EULA-Win-Script-Host"
+
+alternativeNames:
+  - "Microsoft EULA for Windows Script Host"
+
+otherIds: 
+  - "scancode:ms-eula-win-script-host"

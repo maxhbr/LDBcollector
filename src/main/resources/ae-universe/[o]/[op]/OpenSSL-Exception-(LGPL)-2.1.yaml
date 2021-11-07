@@ -1,0 +1,11 @@
+canonicalName: "OpenSSL Exception (LGPL) 2.1"
+category: "OpenSSL Exception"
+shortName: "OpenSSL-Exception-LGPL-2.1"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSSL Exception (LGPL) 2.1"
+
+otherIds: 
+  - "scancode:openssl-exception-lgpl-3.0-plus"

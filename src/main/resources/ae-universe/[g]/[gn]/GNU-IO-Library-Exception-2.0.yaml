@@ -1,0 +1,11 @@
+canonicalName: "GNU IO Library Exception 2.0"
+category: "GNU IO Library Exception"
+shortName: "GNU-IO-Libarby-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "iolib-exception-2.0"
+
+otherIds: 
+  - "scancode:iolib-exception-2.0"

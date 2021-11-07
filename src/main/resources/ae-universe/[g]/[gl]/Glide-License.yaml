@@ -1,0 +1,12 @@
+canonicalName: "Glide License"
+category: "Glide"
+spdxIdentifier: "Glide"
+
+alternativeNames:
+  - "Glide License"
+  - "GLIDE LICENSE"
+  - "GLIDE License"
+  - "3DFX GLIDE Source Code General Public License"
+
+otherIds: 
+  - "scancode:glide"

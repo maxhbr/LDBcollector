@@ -1,0 +1,12 @@
+canonicalName: "Apache License 1.0"
+category: "Apache License"
+spdxIdentifier: "Apache-1.0"
+
+alternativeNames:
+  - "Apache License Version 1.0"
+  - "http://www.apache.org/licenses/LICENSE-1.0"
+  - "Apache License 1.0"
+  - "https://spdx.org/licenses/apache-1.0"
+
+otherIds: 
+  - "scancode:apache-1.0"

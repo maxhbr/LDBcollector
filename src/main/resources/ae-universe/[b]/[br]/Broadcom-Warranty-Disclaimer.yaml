@@ -1,0 +1,9 @@
+canonicalName: "Broadcom Warranty Disclaimer"
+category: "Broadcom Warranty Disclaimer"
+shortName: "Broadcom-Linux-Timer"
+
+alternativeNames:
+  - "broadcom-linux-timer"
+
+otherIds: 
+  - "scancode:broadcom-linux-timer"

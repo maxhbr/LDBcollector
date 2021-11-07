@@ -1,0 +1,15 @@
+canonicalName: "Fair License"
+category: "Fair"
+spdxIdentifier: "Fair"
+
+alternativeNames:
+  - "Fair License"
+  - "FAIR LICENSE"
+  - "FAIR License"
+  - "http://opensource.org/licenses/fair.php"
+  - "http://www.opensource.org/licenses/fair.php"
+  - "https://spdx.org/licenses/fair"
+
+otherIds: 
+  - "scancode:fair"
+  - "osi:Fair"

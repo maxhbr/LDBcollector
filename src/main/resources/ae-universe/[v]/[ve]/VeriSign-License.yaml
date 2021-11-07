@@ -1,0 +1,9 @@
+canonicalName: "VeriSign License"
+category: "VeriSign License"
+shortName: "VeriSign"
+
+alternativeNames:
+  - "http://www.verisign.com/repository/CPS"
+
+otherIds: 
+  - "scancode:verisign"

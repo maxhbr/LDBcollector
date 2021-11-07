@@ -1,0 +1,11 @@
+canonicalName: "Mup License"
+category: "Mup"
+spdxIdentifier: "Mup"
+
+alternativeNames:
+  - "Mup License"
+  - "MUP LICENSE"
+  - "MUP License"
+
+otherIds: 
+  - "scancode:mup"

@@ -1,0 +1,10 @@
+canonicalName: "MIT (NFA) License"
+category: "MITNFA"
+spdxIdentifier: "MITNFA"
+
+alternativeNames:
+  - "MITNFA"
+  - "MIT +no-false-attribs license"
+
+otherIds: 
+  - "scancode:mit-no-false-attribs"

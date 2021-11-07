@@ -1,0 +1,11 @@
+canonicalName: "OCCT PL"
+category: "OCCT PL"
+spdxIdentifier: "OCCT-PL"
+
+alternativeNames:
+  - "OCCT PL"
+  - "OCCT-PL"
+  - "Open CASCADE Technology Public License"
+
+otherIds: 
+  - "scancode:occt-pl"

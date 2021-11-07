@@ -1,0 +1,9 @@
+canonicalName: "Microsoft Kinect for Windows SDK License"
+category: "Microsoft Kinect for Windows SDK License"
+shortName: "MS-Kinext-Win-SDK"
+
+alternativeNames:
+  - "Microsoft Kinect for Windows SDK License"
+
+otherIds: 
+  - "scancode:ms-kinext-win-sdk"

@@ -1,0 +1,10 @@
+canonicalName: "DSDP License"
+category: "DSDP"
+spdxIdentifier: "DSDP"
+
+alternativeNames:
+  - "DSDP LICENSE"
+  - "DSDP License"
+
+otherIds: 
+  - "scancode:dsdp"

@@ -1,0 +1,9 @@
+canonicalName: "Permission Terms (HL)"
+category: "Permission"
+shortName: "PT-HL"
+
+alternativeNames:
+  - "Permission Terms (HL)"
+
+otherIds: 
+  - "scancode:ntpl-origin"

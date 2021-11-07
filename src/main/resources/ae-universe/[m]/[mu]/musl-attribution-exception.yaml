@@ -1,0 +1,9 @@
+canonicalName: "musl attribution exception"
+category: "musl attribution exception"
+shortName: "musl-exception"
+
+alternativeNames:
+  - "musl attribution exception"
+
+otherIds: 
+  - "scancode:musl-exception"

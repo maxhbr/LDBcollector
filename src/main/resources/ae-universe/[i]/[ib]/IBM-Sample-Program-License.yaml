@@ -1,0 +1,9 @@
+canonicalName: "IBM Sample Program License"
+category: "IBM Sample Program License"
+shortName: "IBM-Sample"
+
+alternativeNames:
+  - "ibm-sample"
+
+otherIds: 
+  - "scancode:ibm-sample"

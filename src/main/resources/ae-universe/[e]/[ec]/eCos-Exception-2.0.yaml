@@ -1,0 +1,9 @@
+canonicalName: "eCos Exception 2.0"
+category: "eCos Exception"
+shortName: "eCos-Exception-2.0"
+spdxIdentifier: "eCos-exception-2.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:ecos-exception-2.0"

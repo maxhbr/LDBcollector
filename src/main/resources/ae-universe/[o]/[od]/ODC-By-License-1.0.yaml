@@ -1,0 +1,14 @@
+canonicalName: "ODC By License 1.0"
+category: "ODC By"
+spdxIdentifier: "ODC-By-1.0"
+
+alternativeNames:
+  - "ODC By, Version 1.0"
+  - "ODC By, 1.0"
+  - "ODC By License, Version 1.0"
+  - "ODC By License, 1.0"
+  - "ODC Attribution License"
+  - "ODC-By"
+
+otherIds: 
+  - "scancode:odc-by-1.0"

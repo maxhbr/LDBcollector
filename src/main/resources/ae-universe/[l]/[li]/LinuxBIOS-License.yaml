@@ -1,0 +1,9 @@
+canonicalName: "LinuxBIOS License"
+category: "LinuxBIOS License"
+shortName: "LinuxBIOS"
+
+alternativeNames:
+  - "linuxbios"
+
+otherIds: 
+  - "scancode:linuxbios"

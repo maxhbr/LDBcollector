@@ -1,0 +1,9 @@
+canonicalName: "ADI BSD License"
+category: "ADI BSD License"
+shortName: "ADI-BSD"
+
+alternativeNames:
+  - "ADI BSD License"
+
+otherIds: 
+  - "scancode:adi-bsd"

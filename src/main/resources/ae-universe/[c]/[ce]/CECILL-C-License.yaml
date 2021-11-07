@@ -1,0 +1,13 @@
+canonicalName: "CECILL C License"
+category: "CECILL-C"
+spdxIdentifier: "CECILL-C"
+
+alternativeNames:
+  - "CECILL C"
+  - "CECILL-C"
+  - "CeCILL-C FREE SOFTWARE LICENSE AGREEMENT Notice"
+  - "https://spdx.org/licenses/cecill-c"
+  - "eCILL-C Free Software License Agreement"
+
+otherIds: 
+  - "scancode:cecill-c"

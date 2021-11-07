@@ -1,0 +1,9 @@
+canonicalName: "Permission Terms (TA)"
+category: "Permission"
+shortName: "PT-TA"
+
+alternativeNames:
+  - "TA License"
+
+otherIds: 
+  - "scancode:takao-abe"

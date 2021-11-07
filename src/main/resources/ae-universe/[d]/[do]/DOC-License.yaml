@@ -1,0 +1,10 @@
+canonicalName: "DOC License"
+category: "DOC"
+spdxIdentifier: "DOC"
+
+alternativeNames:
+  - "DOC License"
+  - "DOC LICENSE"
+
+otherIds: 
+  - "scancode:ace-tao"

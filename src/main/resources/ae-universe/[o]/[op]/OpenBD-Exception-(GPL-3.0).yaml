@@ -1,0 +1,8 @@
+canonicalName: "OpenBD Exception (GPL 3.0)"
+category: "OpenBD Exception"
+shortName: "OpenBD-3.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:openbd-exception-3.0"

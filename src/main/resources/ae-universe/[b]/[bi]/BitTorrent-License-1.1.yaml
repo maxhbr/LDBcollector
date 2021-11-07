@@ -1,0 +1,14 @@
+canonicalName: "BitTorrent License 1.1"
+category: "BitTorrent"
+spdxIdentifier: "BitTorrent-1.1"
+
+alternativeNames:
+  - "BitTorrent, Version 1.1"
+  - "BitTorrent, 1.1"
+  - "BitTorrent-1.1"
+  - "BitTorrent License, Version 1.1"
+  - "BitTorrent License 1.1"
+  - "BitTorrent Open Source License Version 1.1"
+
+otherIds: 
+  - "scancode:bittorrent-1.1"

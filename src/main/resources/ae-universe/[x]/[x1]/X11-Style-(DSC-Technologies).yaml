@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (DSC Technologies)"
+category: "X11-Style (DSC Technologies)"
+shortName: "X11-DSC"
+
+alternativeNames:
+  - "X11-Style (DSC Technologies)"
+
+otherIds: 
+  - "scancode:x11-dsc"

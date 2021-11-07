@@ -1,0 +1,9 @@
+canonicalName: "Couchbase Enterprise Edition License"
+category: "Couchbase Enterprise Edition License"
+shortName: "Couchbase-Enterprise"
+
+alternativeNames:
+  - "COUCHBASE INC. ENTERPRISE LICENSE AGREEMENT"
+
+otherIds: 
+  - "scancode:couchbase-enterprise"

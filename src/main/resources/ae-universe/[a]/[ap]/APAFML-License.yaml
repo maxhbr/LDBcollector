@@ -1,0 +1,9 @@
+canonicalName: "APAFML License"
+category: "APAFML"
+spdxIdentifier: "APAFML"
+
+alternativeNames:
+  - "APAFML"
+
+otherIds: 
+  - "scancode:apafml"

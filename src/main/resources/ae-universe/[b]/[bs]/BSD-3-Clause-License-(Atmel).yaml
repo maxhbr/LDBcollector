@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License (Atmel)"
+category: "BSD"
+shortName: "BSD-Atmel"
+
+alternativeNames:
+  - "bsd-atmel"
+
+otherIds: 
+  - "scancode:bsd-atmel"

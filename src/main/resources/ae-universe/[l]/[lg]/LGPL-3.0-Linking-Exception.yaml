@@ -1,0 +1,8 @@
+canonicalName: "LGPL-3.0 Linking Exception"
+category: "LGPL Linking Exception"
+spdxIdentifier: "LGPL-3.0-linking-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:lgpl-3.0-linking-exception"

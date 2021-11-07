@@ -1,0 +1,13 @@
+canonicalName: "BSD 1-Clause License"
+category: "BSD"
+spdxIdentifier: "BSD-1-Clause"
+
+alternativeNames:
+  - "BSD 1 Clause"
+  - "BSD 1 CLAUSE"
+  - "BSD-1-Clause"
+  - "BSD-1-CLAUSE"
+  - "BSD-1-clause"
+
+otherIds: 
+  - "scancode:bsd-1-clause"

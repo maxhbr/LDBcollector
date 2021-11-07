@@ -1,0 +1,12 @@
+canonicalName: "Independent Module Linking Exception"
+category: "Independent Module Linking Exception"
+shortName: "Independent-Module-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Independent Module Linking Exception"
+
+otherIds: 
+  - "scancode:independent-module-linking-exception"
+  - "scancode:linking-exception-lgpl-2.0-plus"

@@ -1,0 +1,9 @@
+canonicalName: "BSD Artwork License"
+category: "BSD Artwork License"
+shortName: "BSD-Artwork"
+
+alternativeNames:
+  - "bsd-artwork"
+
+otherIds: 
+  - "scancode:bsd-artwork"

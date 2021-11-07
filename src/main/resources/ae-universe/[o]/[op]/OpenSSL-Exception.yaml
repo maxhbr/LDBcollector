@@ -1,0 +1,9 @@
+canonicalName: "OpenSSL Exception"
+category: "OpenSSL Exception"
+shortName: "OpenSSL-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSSL Exception"
+

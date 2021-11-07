@@ -1,0 +1,11 @@
+canonicalName: "MakeHuman Exception"
+category: "MakeHuman Exception"
+shortName: "MakeHuman-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "make-human-exception"
+
+otherIds: 
+  - "scancode:make-human-exception"

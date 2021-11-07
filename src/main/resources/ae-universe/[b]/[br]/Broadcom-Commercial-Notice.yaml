@@ -1,0 +1,10 @@
+canonicalName: "Broadcom Commercial Notice"
+category: "Broadcom Commercial Notice"
+shortName: "Broadcom-Commercial"
+
+alternativeNames:
+  - "broadcom-commercial"
+  - "Confidential Property of Broadcom Corporation"
+
+otherIds: 
+  - "scancode:broadcom-commercial"

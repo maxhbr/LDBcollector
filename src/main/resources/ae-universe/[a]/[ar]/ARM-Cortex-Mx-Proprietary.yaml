@@ -1,0 +1,9 @@
+canonicalName: "ARM Cortex-Mx Proprietary"
+category: "ARM Cortex-Mx Proprietary"
+shortName: "ARM-Cortex-Mx"
+
+alternativeNames:
+  - "arm-cortex-mx"
+
+otherIds: 
+  - "scancode:arm-cortex-mx"

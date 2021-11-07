@@ -1,0 +1,9 @@
+canonicalName: "X11-R5 Authors"
+category: "X11-R5 Authors"
+shortName: "X11-R5-Authors"
+
+alternativeNames:
+  - "X11-R5 Authors"
+
+otherIds: 
+  - "scancode:x11r5-authors"

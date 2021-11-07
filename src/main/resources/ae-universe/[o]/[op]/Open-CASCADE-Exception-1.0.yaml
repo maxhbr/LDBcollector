@@ -1,0 +1,11 @@
+canonicalName: "Open CASCADE Exception 1.0"
+category: "CASCADE Exception"
+spdxIdentifier: "OCCT-exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Open CASCADE Exception 1.0"
+
+otherIds: 
+  - "scancode:occt-exception-1.0"

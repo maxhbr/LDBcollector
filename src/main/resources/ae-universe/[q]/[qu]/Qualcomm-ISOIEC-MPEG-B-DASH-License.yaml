@@ -1,0 +1,9 @@
+canonicalName: "Qualcomm ISO/IEC MPEG-B DASH License"
+category: "Qualcomm ISO/IEC MPEG-B DASH License"
+shortName: "Qualcomm-ISO"
+
+alternativeNames:
+  - "qualcomm-iso"
+
+otherIds: 
+  - "scancode:qualcomm-iso"

@@ -1,0 +1,11 @@
+canonicalName: "TXL License 10.5"
+category: "TXL License"
+shortName: "TXL-10.5"
+
+alternativeNames:
+  - "http://fossat.googlecode.com/svn/trunk/bin/COPYRIGHT.txt"
+  - "TXL 10.5"
+  - "TXL License"
+
+otherIds: 
+  - "scancode:txl-10.5"

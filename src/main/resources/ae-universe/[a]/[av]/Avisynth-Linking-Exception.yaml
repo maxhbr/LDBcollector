@@ -1,0 +1,11 @@
+canonicalName: "Avisynth Linking Exception"
+category: "Avisynth Linking Exception"
+shortName: "Avisynth-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "avisynth-linking-exception"
+
+otherIds: 
+  - "scancode:avisynth-linking-exception"

@@ -1,0 +1,9 @@
+canonicalName: "Wi-Fi Alliance License"
+category: "Wi-Fi Alliance License"
+shortName: "Wi-Fi-Alliance"
+
+alternativeNames:
+  - "Wi-Fi Alliance License"
+
+otherIds: 
+  - "scancode:wifi-alliance"

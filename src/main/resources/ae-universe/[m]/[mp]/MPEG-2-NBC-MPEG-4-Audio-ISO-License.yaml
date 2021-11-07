@@ -1,0 +1,9 @@
+canonicalName: "MPEG-2 NBC MPEG-4 Audio ISO License"
+category: "MPEG-2 NBC MPEG-4 Audio ISO License"
+shortName: "MPEG-ISO"
+
+alternativeNames:
+  - "mpeg-iso"
+
+otherIds: 
+  - "scancode:mpeg-iso"

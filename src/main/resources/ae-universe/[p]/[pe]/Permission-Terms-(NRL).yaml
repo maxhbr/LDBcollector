@@ -1,0 +1,9 @@
+canonicalName: "Permission Terms (NRL)"
+category: "Permission"
+shortName: "PT-NRL"
+
+alternativeNames:
+  - "Permission Terms (NRL)"
+
+otherIds: 
+  - "scancode:nrl-permission"

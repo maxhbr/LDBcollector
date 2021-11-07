@@ -1,0 +1,11 @@
+canonicalName: "GCC Compiler Exception 2.0"
+category: "GCC Compiler Exception"
+shortName: "GCC-Compiler-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "gcc-compiler-exception-2.0"
+
+otherIds: 
+  - "scancode:gcc-compiler-exception-2.0"

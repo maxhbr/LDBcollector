@@ -1,0 +1,9 @@
+canonicalName: "KDE Accepted"
+category: "KDE"
+shortName: "KDE-Accepted"
+
+alternativeNames:
+  - "KDE Accepted"
+
+otherIds: 
+  - "scancode:kde-accepted-gpl"

@@ -1,0 +1,12 @@
+canonicalName: "VIM License"
+category: "VIM"
+spdxIdentifier: "Vim"
+
+alternativeNames:
+  - "VIM LICENSE"
+  - "vim License"
+  - "vim license"
+  - "VIM licnese"
+
+otherIds: 
+  - "scancode:vim"

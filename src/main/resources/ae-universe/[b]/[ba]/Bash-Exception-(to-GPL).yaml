@@ -1,0 +1,11 @@
+canonicalName: "Bash Exception (to GPL)"
+category: "Bash-exception"
+shortName: "Bash-gpl"
+
+type: "exception"
+
+alternativeNames:
+  - "Bash Exception (to GPL)"
+
+otherIds: 
+  - "scancode:bash-exception-gpl"

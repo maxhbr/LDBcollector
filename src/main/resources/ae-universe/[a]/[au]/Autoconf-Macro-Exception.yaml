@@ -1,0 +1,13 @@
+canonicalName: "Autoconf Macro Exception"
+category: "Autoconf Macro Exception"
+shortName: "Autoconf-Macro-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Autoconf Macro Exception"
+  - "Autoconf-Macro-Exception"
+  - "autoconf-macro-exception"
+
+otherIds: 
+  - "scancode:autoconf-macro-exception"

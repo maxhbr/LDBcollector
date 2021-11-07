@@ -1,0 +1,11 @@
+canonicalName: "Autoconf Exception"
+category: "Autoconf Exception"
+shortName: "Autoconf-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Autoconf Exception"
+  - "Autoconf-Exception"
+  - "autoconf-exception"
+

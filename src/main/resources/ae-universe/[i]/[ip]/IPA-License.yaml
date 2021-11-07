@@ -1,0 +1,12 @@
+canonicalName: "IPA License"
+category: "IPA"
+spdxIdentifier: "IPA"
+
+alternativeNames:
+  - "IPA License"
+  - "IPA LICENSE"
+  - "IPA Font License Agreement v1.0"
+
+otherIds: 
+  - "scancode:ipa-font"
+  - "osi:IPA"

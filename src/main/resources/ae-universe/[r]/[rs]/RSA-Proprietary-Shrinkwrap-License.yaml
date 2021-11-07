@@ -1,0 +1,9 @@
+canonicalName: "RSA Proprietary Shrinkwrap License"
+category: "RSA Proprietary Shrinkwrap License"
+shortName: "RSA-Proprietary"
+
+alternativeNames:
+  - "rsa-proprietary"
+
+otherIds: 
+  - "scancode:rsa-proprietary"

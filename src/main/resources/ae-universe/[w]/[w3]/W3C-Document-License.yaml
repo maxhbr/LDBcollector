@@ -1,0 +1,9 @@
+canonicalName: "W3C Document License"
+category: "W3C"
+spdxIdentifier: "W3C-Document"
+
+alternativeNames:
+  - "W3C Document License"
+
+otherIds: 
+  - "scancode:w3c-docs-20021231"

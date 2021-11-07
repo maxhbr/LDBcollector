@@ -1,0 +1,12 @@
+canonicalName: "MakeIndex License"
+category: "MakeIndex"
+spdxIdentifier: "MakeIndex"
+
+alternativeNames:
+  - "MakeIndex License"
+  - "MAKEINDEX LICENSE"
+  - "MAKEINDEX License"
+  - "MakeIndex Distribution Notice"
+
+otherIds: 
+  - "scancode:makeindex"

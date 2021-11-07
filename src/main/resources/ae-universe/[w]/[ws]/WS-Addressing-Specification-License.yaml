@@ -1,0 +1,10 @@
+canonicalName: "WS-Addressing Specification License"
+category: "WS-Addressing Specification License"
+shortName: "WS-Addressing-Specification"
+
+alternativeNames:
+  - "WS Addressing Specification License"
+  - "WS/WS-Addressing.xsd"
+
+otherIds: 
+  - "scancode:ws-addressing-spec"

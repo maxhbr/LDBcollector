@@ -1,0 +1,18 @@
+canonicalName: "Artistic License 1.0 (Perl)"
+category: "Artistic License"
+spdxIdentifier: "Artistic-1.0-Perl"
+
+alternativeNames:
+  - "Artistic Perl License"
+  - "Artistic License 1.0 (Perl)"
+  - "Artistic 1.0, Version Perl"
+  - "Artistic 1.0, Perl"
+  - "Artistic-1.0, Version Perl"
+  - "Artistic-1.0 Perl"
+  - "Artistic 1.0 License, Version Perl"
+  - "Artistic 1.0 License Perl"
+  - "Artistic-1.0 License, Version Perl"
+  - "Artistic-1.0 License, Perl"
+
+otherIds: 
+  - "scancode:artistic-perl-1.0"

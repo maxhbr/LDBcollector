@@ -1,0 +1,11 @@
+canonicalName: "SCEA License"
+category: "SCEA"
+spdxIdentifier: "SCEA"
+
+alternativeNames:
+  - "SCEA License"
+  - "SCEA LICENSE"
+  - "SCEA Shared Source License 1.0"
+
+otherIds: 
+  - "scancode:scea-1.0"

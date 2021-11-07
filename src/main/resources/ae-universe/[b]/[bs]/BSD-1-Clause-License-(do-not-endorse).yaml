@@ -1,0 +1,9 @@
+canonicalName: "BSD 1-Clause License (do not endorse)"
+category: "BSD"
+shortName: "BSD-1-Clause-no-endorsement"
+
+alternativeNames:
+  - "BSD 1-Clause License (do not endorse)"
+
+otherIds: 
+  - "scancode:bsd-top"

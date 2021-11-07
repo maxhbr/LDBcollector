@@ -1,0 +1,12 @@
+canonicalName: "Latex2e License"
+category: "Latex2e"
+spdxIdentifier: "Latex2e"
+
+alternativeNames:
+  - "Latex2e License"
+  - "LATEX2E LICENSE"
+  - "LATEX2E License"
+  - "https://spdx.org/licenses/latex2e"
+
+otherIds: 
+  - "scancode:latex2e"

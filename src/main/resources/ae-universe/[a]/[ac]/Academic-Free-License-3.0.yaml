@@ -1,0 +1,13 @@
+canonicalName: "Academic Free License 3.0"
+category: "AFL"
+spdxIdentifier: "AFL-3.0"
+
+alternativeNames:
+  - "AFL, Version 3.0"
+  - "AFL, 3.0"
+  - "AFL-3.0"
+
+otherIds: 
+  - "scancode:afl-3.0"
+  - "osi:AFL-3.0"
+  - "osi:afl-3.0"

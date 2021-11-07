@@ -1,0 +1,11 @@
+canonicalName: "FSF All Permissive License"
+category: "FSFAP"
+spdxIdentifier: "FSFAP"
+
+alternativeNames:
+  - "FSFAP"
+  - "FSF All Permissive"
+  - "FSF all permissive"
+
+otherIds: 
+  - "scancode:fsf-ap"

@@ -1,0 +1,27 @@
+canonicalName: "BSD 5-Clause License"
+category: "BSD"
+shortName: "BSD-5-Clause"
+
+alternativeNames:
+  - "IAIK License"
+  - "RELAXNG License"
+  - "5-Clause BSD License"
+  - "5-clause BSD"
+  - "BSD-5"
+  - "BSD5"
+  - "Five-clause BSD-style"
+  - "bsd_5"
+  - "BSD (5-Clause)"
+  - "BSD (5-point)"
+  - "BSD 5"
+  - "BSD Licence 5"
+  - "BSD License (5-Clause)"
+  - "BSD License 5 Clause"
+  - "BSD License, 5-Clause"
+  - "BSD License, Version 5.0"
+  - "BSD (5-clause)"
+  - "BSD License (5-clause license)"
+  - "is under a 5 clause BSD license"
+
+otherIds: 
+  - "scancode:xmldb-1.0"

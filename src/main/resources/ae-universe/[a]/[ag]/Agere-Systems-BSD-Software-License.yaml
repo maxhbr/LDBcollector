@@ -1,0 +1,9 @@
+canonicalName: "Agere Systems BSD Software License"
+category: "Agere Systems BSD Software License"
+shortName: "Agere-BSD"
+
+alternativeNames:
+  - "agere-bsd"
+
+otherIds: 
+  - "scancode:agere-bsd"

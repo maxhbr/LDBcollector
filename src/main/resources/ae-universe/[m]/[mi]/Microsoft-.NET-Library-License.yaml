@@ -1,0 +1,11 @@
+canonicalName: "Microsoft .NET Library License"
+category: "Microsoft .NET Library License"
+shortName: "MS-NET-Library"
+
+alternativeNames:
+  - "http://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm"
+  - "https://www.microsoft.com/web/webpi/eula/net_library_eula_enu.htm"
+  - "http://go.microsoft.com/fwlink/?LinkID=320539"
+
+otherIds: 
+  - "scancode:ms-net-library"

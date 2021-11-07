@@ -1,0 +1,9 @@
+canonicalName: "Pivotal Software ToU"
+category: "Pivotal Software"
+shortName: "Pivotal-ToU"
+
+alternativeNames:
+  - "Pivotal Software ToU"
+
+otherIds: 
+  - "scancode:pivotal-tou"

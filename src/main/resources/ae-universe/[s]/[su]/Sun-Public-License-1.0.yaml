@@ -1,0 +1,12 @@
+canonicalName: "Sun Public License 1.0"
+category: "SPL"
+spdxIdentifier: "SPL-1.0"
+
+alternativeNames:
+  - "SPL, Version 1.0"
+  - "SPL 1.0"
+  - "SUN PUBLIC LICENSE Version 1.0"
+
+otherIds: 
+  - "scancode:spl-1.0"
+  - "osi:SPL-1.0"

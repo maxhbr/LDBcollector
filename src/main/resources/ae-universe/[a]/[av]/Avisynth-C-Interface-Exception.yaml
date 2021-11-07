@@ -1,0 +1,11 @@
+canonicalName: "Avisynth C Interface Exception"
+category: "Avisynth C Interface Exception"
+shortName: "Avisynth-C-Interface-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Avisynth C Interface Exception"
+
+otherIds: 
+  - "scancode:avisynth-c-interface-exception"

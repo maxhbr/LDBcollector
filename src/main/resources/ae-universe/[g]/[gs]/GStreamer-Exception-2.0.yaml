@@ -1,0 +1,11 @@
+canonicalName: "GStreamer Exception 2.0"
+category: "GStreamer Exception"
+shortName: "GStreamer-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "gstreamer-exception-2.0"
+
+otherIds: 
+  - "scancode:gstreamer-exception-2.0"

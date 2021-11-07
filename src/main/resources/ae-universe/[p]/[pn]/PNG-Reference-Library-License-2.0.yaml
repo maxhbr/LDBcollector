@@ -1,0 +1,9 @@
+canonicalName: "PNG Reference Library License 2.0"
+category: "libpng"
+spdxIdentifier: "libpng-2.0"
+
+alternativeNames:
+  - "PNG Reference Library License 2"
+
+otherIds: 
+  - "scancode:libpng-v2"

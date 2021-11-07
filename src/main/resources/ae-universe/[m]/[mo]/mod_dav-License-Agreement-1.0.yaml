@@ -1,0 +1,10 @@
+canonicalName: "mod_dav License Agreement 1.0"
+category: "mod_dav License Agreement"
+shortName: "mod-dav-1.0"
+
+alternativeNames:
+  - "http://www.webdav.org/mod_dav/license-1.html"
+  - "mod_dav License Agreement v1"
+
+otherIds: 
+  - "scancode:mod-dav-1.0"

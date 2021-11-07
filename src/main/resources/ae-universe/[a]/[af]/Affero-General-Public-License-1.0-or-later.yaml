@@ -1,0 +1,10 @@
+canonicalName: "Affero General Public License 1.0 or later"
+category: "AGPL"
+shortName: "AGPL-1.0+"
+spdxIdentifier: "AGPL-1.0-or-later"
+
+alternativeNames:
+  - "https://spdx.org/licenses/agpl-1.0-or-later"
+
+otherIds: 
+  - "scancode:agpl-1.0-plus"

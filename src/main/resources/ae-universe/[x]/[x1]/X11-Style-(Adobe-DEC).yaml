@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Adobe-DEC)"
+category: "X11-Style (Adobe-DEC)"
+shortName: "X11-Adobe-DEC"
+
+alternativeNames:
+  - "X11-Style (Adobe-DEC)"
+
+otherIds: 
+  - "scancode:x11-adobe-dec"

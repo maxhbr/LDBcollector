@@ -1,0 +1,11 @@
+canonicalName: "QCAD Exception"
+category: "QCAD Exception"
+shortName: "QCAD-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "QCAD Exception"
+
+otherIds: 
+  - "scancode:qcad-exception-gpl"

@@ -1,0 +1,9 @@
+canonicalName: "Sash Notice"
+category: "Sash Notice"
+shortName: "Sash"
+
+alternativeNames:
+  - "Sash Notice"
+
+otherIds: 
+  - "scancode:sash"

@@ -1,0 +1,14 @@
+canonicalName: "OpenSSH License"
+category: "OpenSSH License"
+spdxIdentifier: "SSH-OpenSSH"
+
+alternativeNames:
+  - "OpenSSH License"
+  - "SSH-OpenSSH"
+  - "Tatu Ylonen's original licence"
+  - "Tatu Ylonen's licence"
+  - "Tatu Ylonen's Licence"
+  - "Tatu Ylonen Licence"
+
+otherIds: 
+  - "scancode:tatu-ylonen"

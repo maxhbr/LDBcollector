@@ -1,0 +1,9 @@
+canonicalName: "Netcat License"
+category: "Netcat License"
+shortName: "Netcat"
+
+alternativeNames:
+  - "Netcat License"
+
+otherIds: 
+  - "scancode:netcat"

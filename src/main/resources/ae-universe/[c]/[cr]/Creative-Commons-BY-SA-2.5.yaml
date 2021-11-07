@@ -1,0 +1,12 @@
+canonicalName: "Creative Commons BY-SA 2.5"
+category: "CC-BY-SA"
+spdxIdentifier: "CC-BY-SA-2.5"
+
+alternativeNames:
+  - "Creative Commons Attribution Share Alike 2.5"
+  - "CC-BY-SA-2.5"
+  - "Creative Commons Attribution-ShareAlike 2.5"
+  - "This product includes images from the Pasodoble Icon Theme (http://www.jesusda.com/projects/pasodoble)"
+
+otherIds: 
+  - "scancode:cc-by-sa-2.5"

@@ -1,0 +1,9 @@
+canonicalName: "Intel MCU Path License 2018"
+category: "Intel MCU Path License 2018"
+shortName: "Intel-MCU-2018"
+
+alternativeNames:
+  - "intel-mcu-2018"
+
+otherIds: 
+  - "scancode:intel-mcu-2018"

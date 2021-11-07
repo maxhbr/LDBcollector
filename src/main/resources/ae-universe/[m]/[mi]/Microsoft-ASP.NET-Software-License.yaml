@@ -1,0 +1,13 @@
+canonicalName: "Microsoft ASP.NET Software License"
+category: "Microsoft ASP.NET Software License"
+shortName: "MS-ASP-NET-Software"
+
+alternativeNames:
+  - "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_TRK.htm"
+  - "https://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_JPN.htm"
+  - "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_ENU.htm"
+  - "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_csy.htm"
+  - "http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_JPN.htm"
+
+otherIds: 
+  - "scancode:ms-asp-net-software"

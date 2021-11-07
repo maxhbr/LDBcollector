@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (DEC 2)"
+category: "X11-Style (DEC 2)"
+shortName: "X11-DEC2"
+
+alternativeNames:
+  - "x11-dec2"
+
+otherIds: 
+  - "scancode:x11-dec2"

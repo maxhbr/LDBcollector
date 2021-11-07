@@ -1,0 +1,9 @@
+canonicalName: "Unlicense"
+category: "Public Domain"
+spdxIdentifier: "Unlicense"
+
+alternativeNames:
+  - "Unlicense"
+
+otherIds: 
+  - "scancode:unlicense"

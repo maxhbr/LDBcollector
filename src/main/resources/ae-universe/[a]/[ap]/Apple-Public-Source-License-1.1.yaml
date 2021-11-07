@@ -1,0 +1,15 @@
+canonicalName: "Apple Public Source License 1.1"
+category: "APSL"
+spdxIdentifier: "APSL-1.1"
+
+alternativeNames:
+  - "APSL, Version 1.1"
+  - "APSL 1.1"
+  - "APSL-1.1"
+  - "APPLE PUBLIC SOURCE LICENSE 1.1"
+  - "APPLE PUBLIC SOURCE LICENSE v1.1"
+  - "APPLE PUBLIC SOURCE LICENSE Version 1.1"
+  - "Apple Public Source License Ver. 1.1"
+
+otherIds: 
+  - "scancode:apsl-1.1"

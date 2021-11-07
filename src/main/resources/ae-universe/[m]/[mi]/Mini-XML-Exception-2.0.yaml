@@ -1,0 +1,11 @@
+canonicalName: "Mini-XML Exception 2.0"
+category: "Mini-XML Exception"
+shortName: "Mini-XML-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "mini-xml-exception-lgpl-2.0"
+
+otherIds: 
+  - "scancode:mini-xml-exception-lgpl-2.0"

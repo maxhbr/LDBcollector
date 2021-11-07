@@ -1,0 +1,9 @@
+canonicalName: "SpeechWorks Public License 1.1"
+category: "SpeechWorks Public License"
+shortName: "SpeechWorks-1.1"
+
+alternativeNames:
+  - "http://www.speech.cs.cmu.edu/openvxi/OpenVXI_1_4/License.txt"
+
+otherIds: 
+  - "scancode:speechworks-1.1"

@@ -1,0 +1,9 @@
+canonicalName: "Common Weaness Enumeration ToU License"
+category: "CWE"
+shortName: "CWE-ToU"
+
+alternativeNames:
+  - "Common Weaness Enumeration ToU License"
+
+otherIds: 
+  - "scancode:cwe-tou"

@@ -1,0 +1,13 @@
+canonicalName: "Intel ACPI License"
+category: "Intel ACPI"
+spdxIdentifier: "Intel-ACPI"
+
+alternativeNames:
+  - "Intel ACPI"
+  - "INTEL ACPI"
+  - "Intel-ACPI"
+  - "INTEL-ACPI"
+  - "ACPI - Software License Agreement"
+
+otherIds: 
+  - "scancode:intel-acpi"

@@ -1,0 +1,9 @@
+canonicalName: "Cube License"
+category: "Cube"
+spdxIdentifier: "Cube"
+
+alternativeNames:
+  - "Cube License"
+
+otherIds: 
+  - "scancode:cube"

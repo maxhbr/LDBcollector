@@ -1,0 +1,15 @@
+canonicalName: "WxWindows Library Exception 3.1"
+category: "WxWindows Exception"
+spdxIdentifier: "WxWindows-exception-3.1"
+
+type: "exception"
+
+alternativeNames:
+  - "WxWindows exception, Version 3.1"
+  - "WxWindows exception, 3.1"
+  - "WxWindows-exception, Version 3.1"
+  - "WxWindows-exception, 3.1"
+  - "wxWindows Library Licence"
+
+otherIds: 
+  - "scancode:wxwindows-exception-3.1"

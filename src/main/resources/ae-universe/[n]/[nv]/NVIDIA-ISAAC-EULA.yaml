@@ -1,0 +1,9 @@
+canonicalName: "NVIDIA ISAAC EULA"
+category: "NVIDIA ISAAC EULA"
+shortName: "NVIDIA-ISAAC-EULA"
+
+alternativeNames:
+  - "NVIDIA ISAAC EULA"
+
+otherIds: 
+  - "scancode:nvidia-isaac-eula-2019.1"

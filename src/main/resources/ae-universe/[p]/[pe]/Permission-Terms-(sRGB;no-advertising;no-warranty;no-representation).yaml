@@ -1,0 +1,9 @@
+canonicalName: "Permission Terms (sRGB; no advertising; no warranty; no representation)"
+category: "Permission"
+shortName: "PT-no-advertising-no-warranty-no-representation"
+
+alternativeNames:
+  - "Permission Terms (sRGB; no advertising; no warranty; no representation)"
+
+otherIds: 
+  - "scancode:srgb"

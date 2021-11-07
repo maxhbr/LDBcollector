@@ -1,0 +1,9 @@
+canonicalName: "FreeBSD unmodified first lines License"
+category: "FreeBSD unmodified first lines License"
+shortName: "FreeBSD-first"
+
+alternativeNames:
+  - "freebsd-first"
+
+otherIds: 
+  - "scancode:freebsd-first"

@@ -1,0 +1,11 @@
+canonicalName: "Qt KDE Linking Exception"
+category: "Qt KDE Linking Exception"
+shortName: "Qt-KDE-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "qt-kde-linking-exception"
+
+otherIds: 
+  - "scancode:qt-kde-linking-exception"

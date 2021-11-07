@@ -1,0 +1,9 @@
+canonicalName: "Bootloader Distribution Exception"
+category: "Bootloader Distribution Exception"
+shortName: "Bootloader-Distribution-Exception"
+spdxIdentifier: "Bootloader-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:bootloader-exception"

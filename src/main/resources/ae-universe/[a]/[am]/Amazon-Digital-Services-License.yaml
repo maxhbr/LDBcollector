@@ -1,0 +1,9 @@
+canonicalName: "Amazon Digital Services License"
+category: "ADSL"
+spdxIdentifier: "ADSL"
+
+alternativeNames:
+  - "Amazon Digital Services License"
+
+otherIds: 
+  - "scancode:adsl"

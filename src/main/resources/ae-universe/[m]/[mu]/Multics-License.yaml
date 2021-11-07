@@ -1,0 +1,12 @@
+canonicalName: "Multics License"
+category: "Multics"
+spdxIdentifier: "Multics"
+
+alternativeNames:
+  - "Multics License"
+  - "MULTICS LICENSE"
+  - "MULTICS License"
+
+otherIds: 
+  - "scancode:multics"
+  - "osi:Multics"

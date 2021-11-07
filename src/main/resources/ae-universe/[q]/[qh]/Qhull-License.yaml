@@ -1,0 +1,7 @@
+canonicalName: "Qhull License"
+category: "Qhull License"
+shortName: "Qhull"
+spdxIdentifier: "Qhull"
+
+otherIds: 
+  - "scancode:qhull"

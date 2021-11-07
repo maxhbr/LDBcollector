@@ -1,0 +1,11 @@
+canonicalName: "Creative Commons BY-NC 2.0 (generic)"
+category: "CCC-BY-NC"
+spdxIdentifier: "CC-BY-NC-2.0"
+
+alternativeNames:
+  - "Creative Commons Attribution Non Commercial 2.0 Generic"
+  - "CC-BY-NC-2.0"
+  - "Creative Commons Attribution-NonCommercial 2.0"
+
+otherIds: 
+  - "scancode:cc-by-nc-2.0"

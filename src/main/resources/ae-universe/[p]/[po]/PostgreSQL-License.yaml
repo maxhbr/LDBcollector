@@ -1,0 +1,12 @@
+canonicalName: "PostgreSQL License"
+category: "PostgreSQL"
+spdxIdentifier: "PostgreSQL"
+
+alternativeNames:
+  - "License: PostgreSQL"
+  - "PostgreSQL License"
+  - "POSTGRESQL License"
+
+otherIds: 
+  - "scancode:postgresql"
+  - "osi:PostgreSQL"

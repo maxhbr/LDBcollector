@@ -1,0 +1,13 @@
+canonicalName: "OpenLDAP Public License 2.6"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-2.6"
+
+alternativeNames:
+  - "OLDAP, Version 2.6"
+  - "OLDAP 2.6"
+  - "OLDAP License, Version 2.6"
+  - "OLDAP License 2.6"
+  - "OpenLDAP Public License Version 2.6"
+
+otherIds: 
+  - "scancode:openldap-2.6"

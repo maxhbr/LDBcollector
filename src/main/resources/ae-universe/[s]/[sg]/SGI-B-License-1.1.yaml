@@ -1,0 +1,20 @@
+canonicalName: "SGI B License 1.1"
+category: "SGI B"
+spdxIdentifier: "SGI-B-1.1"
+
+alternativeNames:
+  - "SGI B, Version 1.1"
+  - "SGI B, 1.1"
+  - "SGI-B, Version 1.1"
+  - "SGI-B, 1.1"
+  - "SGI B License, Version 1.1"
+  - "SGI B License 1.1"
+  - "SGI-B License, Version 1.1"
+  - "SGI-B License, 1.1"
+  - "SGI FREE SOFTWARE LICENSE B (Version 1.1 02/22/2000)"
+  - "http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.1.1.doc"
+  - "https://spdx.org/licenses/sgi-b-1.1"
+  - "SGI FREE SOFTWARE LICENSE B (Version 1.1 [02/22/2000])"
+
+otherIds: 
+  - "scancode:sgi-freeb-1.1"

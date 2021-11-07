@@ -1,0 +1,11 @@
+canonicalName: "TeX Exception (to GPL 3.0)"
+category: "TeX Exception"
+shortName: "TeX-Exception-GPL-3.0"
+
+type: "exception"
+
+alternativeNames:
+  - "TeX Exception (to GPL 3.0)"
+
+otherIds: 
+  - "scancode:tex-exception"

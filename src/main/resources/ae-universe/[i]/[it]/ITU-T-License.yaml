@@ -1,0 +1,10 @@
+canonicalName: "ITU-T License"
+category: "ITU-T License"
+shortName: "ITU-T"
+
+alternativeNames:
+  - "ITU-T License"
+  - "http://www.itu.int/ipr"
+
+otherIds: 
+  - "scancode:itu-t"

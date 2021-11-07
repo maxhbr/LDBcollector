@@ -1,0 +1,11 @@
+canonicalName: "NTP License"
+category: "NTP"
+spdxIdentifier: "NTP"
+
+alternativeNames:
+  - "NTP License"
+
+otherIds: 
+  - "scancode:network-time-protocol"
+  - "scancode:ntpl"
+  - "osi:NTP"

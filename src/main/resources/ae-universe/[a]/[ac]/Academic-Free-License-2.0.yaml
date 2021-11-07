@@ -1,0 +1,16 @@
+canonicalName: "Academic Free License 2.0"
+category: "AFL"
+spdxIdentifier: "AFL-2.0"
+
+alternativeNames:
+  - "AFL, Version 2.0"
+  - "AFL, 2.0"
+  - "AFL-2.0"
+  - "Academic Free License version 2.0"
+  - "Academic Free License v2.0"
+  - "Academic Free License Version 2.0"
+  - "ACADEMIC FREE LICENSE Version 2.0"
+  - "Academic Free License v. 2.0"
+
+otherIds: 
+  - "scancode:afl-2.0"

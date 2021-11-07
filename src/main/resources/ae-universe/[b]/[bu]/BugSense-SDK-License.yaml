@@ -1,0 +1,9 @@
+canonicalName: "BugSense SDK License"
+category: "BugSense SDK License"
+shortName: "Bugsense-SDK"
+
+alternativeNames:
+  - "BugSense SDK License"
+
+otherIds: 
+  - "scancode:bugsense-sdk"

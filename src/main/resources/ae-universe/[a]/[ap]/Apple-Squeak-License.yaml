@@ -1,0 +1,10 @@
+canonicalName: "Apple Squeak License"
+category: "Apple Squeak License"
+shortName: "Apple-Squeak"
+
+alternativeNames:
+  - "http://squeak.org/SqueakLicense/"
+  - "Apple Computer, Inc. Software License"
+
+otherIds: 
+  - "scancode:squeak"

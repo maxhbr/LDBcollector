@@ -1,0 +1,11 @@
+canonicalName: "xinetd License"
+category: "xinetd"
+spdxIdentifier: "xinetd"
+
+alternativeNames:
+  - "xinetd License"
+  - "XINETD LICENSE"
+  - "XINETD License"
+
+otherIds: 
+  - "scancode:xinetd"

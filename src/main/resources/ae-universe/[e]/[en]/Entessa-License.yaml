@@ -1,0 +1,14 @@
+canonicalName: "Entessa License"
+category: "Entessa"
+spdxIdentifier: "Entessa"
+
+alternativeNames:
+  - "Entessa License"
+  - "ENTESSA LICENSE"
+  - "ENTESSA License"
+  - "Entessa Public License"
+  - "ENTESSA Public License"
+
+otherIds: 
+  - "scancode:entessa-1.0"
+  - "osi:Entessa"

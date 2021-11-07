@@ -1,0 +1,10 @@
+canonicalName: "Agere Systems WinModem EULA"
+category: "Agere Systems WinModem EULA"
+shortName: "Agere-SLA"
+
+alternativeNames:
+  - "http://fedoraproject.org/wiki/Licensing/Agere_LT_Modem_Driver_License"
+  - "agere-sla"
+
+otherIds: 
+  - "scancode:agere-sla"

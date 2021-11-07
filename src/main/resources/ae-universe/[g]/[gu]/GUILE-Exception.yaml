@@ -1,0 +1,11 @@
+canonicalName: "GUILE Exception"
+category: "GUILE Exception"
+shortName: "GUILE-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "GUILE Exception"
+
+otherIds: 
+  - "scancode:guile-exception-2.0"

@@ -1,0 +1,9 @@
+canonicalName: "SNMP++ License"
+category: "SNMP++ License"
+shortName: "HP-SNMP-PP"
+
+alternativeNames:
+  - "hp-snmp-pp"
+
+otherIds: 
+  - "scancode:hp-snmp-pp"

@@ -1,0 +1,13 @@
+canonicalName: "Developer Certificate of Origin 1.1"
+category: "Developer Certificate of Origin 1.1"
+shortName: "DCO-1.1"
+
+alternativeNames:
+  - "Developer Certificate of Origin (DCO) version 1.1"
+  - "Developer Certificate of Origin Version 1.1"
+  - "Developer's Certificate of Origin 1.1"
+  - "http://developercertificate.org/"
+  - "GnuPG Developer's Certificate of Origin.  Version 1.0"
+
+otherIds: 
+  - "scancode:dco-1.1"

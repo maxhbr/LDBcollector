@@ -1,0 +1,10 @@
+canonicalName: "AMDPLPA License"
+category: "AMDPLPA"
+spdxIdentifier: "AMDPLPA"
+
+alternativeNames:
+  - "AMDPLPA License"
+  - "AMDPLPA LICENSE"
+
+otherIds: 
+  - "scancode:amdplpa"

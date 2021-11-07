@@ -1,0 +1,9 @@
+canonicalName: "BitTorrent End User License Agreement (EULA)"
+category: "BitTorrent End User License Agreement (EULA)"
+shortName: "BitTorrent-EULA"
+
+alternativeNames:
+  - "bittorrent-eula"
+
+otherIds: 
+  - "scancode:bittorrent-eula"

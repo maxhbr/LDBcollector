@@ -1,0 +1,9 @@
+canonicalName: "ISO Recorder License"
+category: "ISO Recorder License"
+shortName: "ISO-Recorder"
+
+alternativeNames:
+  - "iso-recorder"
+
+otherIds: 
+  - "scancode:iso-recorder"

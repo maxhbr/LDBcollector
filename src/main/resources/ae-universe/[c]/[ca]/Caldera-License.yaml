@@ -1,0 +1,11 @@
+canonicalName: "Caldera License"
+category: "Caldera"
+spdxIdentifier: "Caldera"
+
+alternativeNames:
+  - "Caldera License"
+  - "CALDERA LICENSE"
+  - "CALDERA License"
+
+otherIds: 
+  - "scancode:caldera"

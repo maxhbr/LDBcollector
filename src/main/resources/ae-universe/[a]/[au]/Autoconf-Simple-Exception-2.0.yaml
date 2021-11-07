@@ -1,0 +1,11 @@
+canonicalName: "Autoconf Simple Exception 2.0"
+category: "Autoconf Simple Exception"
+shortName: "Autoconf-Simple-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "autoconf-simple-exception-2.0"
+
+otherIds: 
+  - "scancode:autoconf-simple-exception-2.0"

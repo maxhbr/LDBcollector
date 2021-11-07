@@ -1,0 +1,9 @@
+canonicalName: "BSD 3-Clause License (export)"
+category: "BSD"
+shortName: "BSD-3-Clause-export"
+
+alternativeNames:
+  - "bsd-export"
+
+otherIds: 
+  - "scancode:bsd-export"

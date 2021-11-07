@@ -1,0 +1,11 @@
+canonicalName: "BPEL4WS Specification License"
+category: "BPEL4WS Specification License"
+shortName: "BPEL4WS-Spec"
+
+alternativeNames:
+  - "bpel4ws-spec"
+  - "BPEL4WS Specification license"
+  - "http://dev2dev.bea.com/technologies/webservices/BPEL4WS.jsp"
+
+otherIds: 
+  - "scancode:bpel4ws-spec"

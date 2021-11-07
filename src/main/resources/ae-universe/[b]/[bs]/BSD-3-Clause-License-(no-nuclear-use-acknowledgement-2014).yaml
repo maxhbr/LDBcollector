@@ -1,0 +1,16 @@
+canonicalName: "BSD 3-Clause License (no-nuclear use acknowledgement 2014)"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-No-Nuclear-License-2014"
+
+alternativeNames:
+  - "BSD 3 Clause No Nuclear License, Version 2014"
+  - "BSD 3 Clause No Nuclear License 2014"
+  - "BSD-3-Clause-No-Nuclear-License, Version 2014"
+  - "BSD-3-Clause-No-Nuclear-License 2014"
+  - "BSD 3 Clause No Nuclear License License, Version 2014"
+  - "BSD 3 Clause No Nuclear License License, 2014"
+  - "BSD-3-Clause-No-Nuclear-License License, Version 2014"
+  - "BSD-3-Clause-No-Nuclear-License License 2014"
+
+otherIds: 
+  - "scancode:oracle-bsd-no-nuclear"

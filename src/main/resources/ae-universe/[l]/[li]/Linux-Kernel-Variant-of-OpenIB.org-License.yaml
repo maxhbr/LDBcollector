@@ -1,0 +1,10 @@
+canonicalName: "Linux Kernel Variant of OpenIB.org License"
+category: "Linux OpenIB"
+spdxIdentifier: "Linux-OpenIB"
+
+alternativeNames:
+  - "Linux Kernel Variant of OpenIB.org license"
+  - "Linux-OpenIB"
+
+otherIds: 
+  - "scancode:linux-openib"

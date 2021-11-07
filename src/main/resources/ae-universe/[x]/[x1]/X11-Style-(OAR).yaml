@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (OAR)"
+category: "X11-Style (OAR)"
+shortName: "X11-OAR"
+
+alternativeNames:
+  - "X11-Style (OAR)"
+
+otherIds: 
+  - "scancode:x11-oar"

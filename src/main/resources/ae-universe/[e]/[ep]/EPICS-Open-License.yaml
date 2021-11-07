@@ -1,0 +1,10 @@
+canonicalName: "EPICS Open License"
+category: "EPICS Open License"
+spdxIdentifier: "EPICS"
+
+alternativeNames:
+  - "http://www.aps.anl.gov/epics/license/open.php"
+  - "EPICS"
+
+otherIds: 
+  - "scancode:epics"

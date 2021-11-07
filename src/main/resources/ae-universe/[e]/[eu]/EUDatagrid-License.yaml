@@ -1,0 +1,13 @@
+canonicalName: "EUDatagrid License"
+category: "EUDatagrid"
+spdxIdentifier: "EUDatagrid"
+
+alternativeNames:
+  - "EUDatagrid License"
+  - "EUDATAGRID LICENSE"
+  - "EUDATAGRID License"
+  - "EU DataGrid Software License"
+
+otherIds: 
+  - "scancode:eu-datagrid"
+  - "osi:EUDatagrid"

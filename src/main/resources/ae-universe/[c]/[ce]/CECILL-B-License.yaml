@@ -1,0 +1,14 @@
+canonicalName: "CECILL B License"
+category: "CECILL B"
+spdxIdentifier: "CECILL-B"
+
+alternativeNames:
+  - "CECILL B"
+  - "CECILL-B"
+  - "CeCILL-B FREE SOFTWARE LICENSE AGREEMENT Notice"
+  - "CeCILL-B Free Software License Agreement"
+  - "http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.html"
+  - "https://spdx.org/licenses/cecill-b"
+
+otherIds: 
+  - "scancode:cecill-b"

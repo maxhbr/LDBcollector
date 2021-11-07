@@ -1,0 +1,9 @@
+canonicalName: "MAME License"
+category: "MAME License"
+shortName: "MAME"
+
+alternativeNames:
+  - "MAME License"
+
+otherIds: 
+  - "scancode:mame"

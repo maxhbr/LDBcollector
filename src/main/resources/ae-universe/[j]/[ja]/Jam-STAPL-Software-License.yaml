@@ -1,0 +1,9 @@
+canonicalName: "Jam STAPL Software License"
+category: "Jam STAPL Software License"
+shortName: "Jam-STAPL"
+
+alternativeNames:
+  - "jam-stapl"
+
+otherIds: 
+  - "scancode:jam-stapl"

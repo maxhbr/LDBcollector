@@ -1,0 +1,9 @@
+canonicalName: "OCB License"
+category: "OCB"
+spdxIdentifier: "OCB"
+
+alternativeNames:
+  - "License for Open Source Software Implementations of OCB"
+
+otherIds: 
+  - "scancode:ocb-open-source-2013"

@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Tektronix)"
+category: "X11-Style (Tektronix)"
+shortName: "X11-Tektronix"
+
+alternativeNames:
+  - "X11-Style (Tektronix)"
+
+otherIds: 
+  - "scancode:x11-tektronix"

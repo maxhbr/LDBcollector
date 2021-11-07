@@ -1,0 +1,9 @@
+canonicalName: "Cavium Targeted Hardware License"
+category: "Cavium Targeted Hardware License"
+shortName: "Cavium-Targeted-Hardware"
+
+alternativeNames:
+  - "cavium-targeted-hardware"
+
+otherIds: 
+  - "scancode:cavium-targeted-hardware"

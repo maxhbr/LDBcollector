@@ -1,0 +1,10 @@
+canonicalName: "Fraunhofer FDK AAC Codec Library (Android)"
+category: "Fraunhofer FDK AAC Codec Library"
+shortName: "Fraunhofer-FDK-AAC-Codec"
+
+alternativeNames:
+  - "http://opencore-amr.git.sourceforge.net/git/gitweb.cgi?p=opencore-amr/fdk-aac;a=blob;f=NOTICE"
+  - "Fraunhofer FDK AAC Codec Library for Android"
+
+otherIds: 
+  - "scancode:fraunhofer-fdk-aac-codec"

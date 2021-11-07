@@ -1,0 +1,16 @@
+canonicalName: "Boost Software License 1.0"
+category: "BSL"
+spdxIdentifier: "BSL-1.0"
+
+alternativeNames:
+  - "BSL-1.0"
+  - "BSL 1.0"
+  - "BSL Version 1.0"
+  - "BSL v1.0"
+  - "Boost Software License - Version 1.0"
+  - "Boost Software License, Version 1.0"
+  - "Boost Software License v1.0"
+
+otherIds: 
+  - "scancode:boost-1.0"
+  - "osi:BSL-1.0"

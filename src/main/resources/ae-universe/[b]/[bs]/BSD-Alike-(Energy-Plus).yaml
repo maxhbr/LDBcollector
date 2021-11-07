@@ -1,0 +1,9 @@
+canonicalName: "BSD Alike (Energy Plus)"
+category: "BSD"
+shortName: "BSD-Energy-Plus"
+
+alternativeNames:
+  - "BSD Alike (Energy Plus)"
+
+otherIds: 
+  - "scancode:energyplus-bsd"

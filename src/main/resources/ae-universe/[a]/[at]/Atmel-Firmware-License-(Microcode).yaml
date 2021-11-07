@@ -1,0 +1,9 @@
+canonicalName: "Atmel Firmware License (Microcode)"
+category: "Atmel Firmware"
+shortName: "Atmel-Firmware-Microcode"
+
+alternativeNames:
+  - "Atmel Firmware License (Microcode)"
+
+otherIds: 
+  - "scancode:atmel-firmware"

@@ -1,0 +1,9 @@
+canonicalName: "Autoconf Exception 2.0"
+category: "Autoconf Exception"
+shortName: "Autoconf-Exception-2.0"
+spdxIdentifier: "Autoconf-exception-2.0"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:autoconf-exception-2.0"

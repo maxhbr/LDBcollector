@@ -1,0 +1,12 @@
+canonicalName: "OpenVPN OpenSSL Exception"
+category: "OpenVPN OpenSSL Exception"
+spdxIdentifier: "openvpn-openssl-exception"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenVPN-OpenSSL-Exception"
+  - "openvpn-openssl-exception"
+
+otherIds: 
+  - "scancode:openvpn-openssl-exception"

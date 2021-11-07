@@ -1,0 +1,14 @@
+canonicalName: "CDDL 1.1"
+category: "CDDL"
+spdxIdentifier: "CDDL-1.1"
+
+alternativeNames:
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE 1.1"
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1"
+  - "Common Development and Distribution License 1.1 (\"CDDL\")"
+  - "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL - Version 1.1)"
+  - "https://oss.oracle.com/licenses/CDDL+GPL-1.1"
+  - "Copyright (c) 2013 Oracle and/or its affiliates. All rights reserved"
+
+otherIds: 
+  - "scancode:cddl-1.1"

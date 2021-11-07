@@ -1,0 +1,6 @@
+canonicalName: "GCC Runtime Library Exception 2.1"
+category: "GCC Runtime Library Exception"
+shortName: "GCC-Runtime-Library-2.1"
+
+otherIds: 
+  - "scancode:gcc-linking-exception-2.0"

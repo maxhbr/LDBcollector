@@ -1,0 +1,13 @@
+canonicalName: "Open Software License 1.0"
+category: "OSL"
+spdxIdentifier: "OSL-1.0"
+
+alternativeNames:
+  - "OSL, Version 1.0"
+  - "OSL 1.0"
+  - "Open Software License v. 1.0"
+  - "Open Software License version 1.0"
+
+otherIds: 
+  - "scancode:osl-1.0"
+  - "osi:OSL-1.0"

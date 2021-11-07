@@ -1,0 +1,13 @@
+canonicalName: "Universal FOSS Exception 1.0"
+category: "Universal FOSS Exception"
+spdxIdentifier: "Universal-FOSS-exception-1.0"
+
+type: "exception"
+
+alternativeNames:
+  - "https://spdx.org/licenses/universal-foss-exception-1.0"
+  - "The Universal FOSS Exception, Version 1.0"
+  - "the Universal FOSS Exception, Version 1.0"
+
+otherIds: 
+  - "scancode:universal-foss-exception-1.0"

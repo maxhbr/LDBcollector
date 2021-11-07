@@ -1,0 +1,9 @@
+canonicalName: "Wind River License"
+category: "Wind River License"
+shortName: "WindRiver-Commercial"
+
+alternativeNames:
+  - "http://www.windriver.com/licensing/"
+
+otherIds: 
+  - "scancode:windriver-commercial"

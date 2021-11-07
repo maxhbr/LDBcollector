@@ -1,0 +1,9 @@
+canonicalName: "Brocade Firmware License"
+category: "Brocade Firmware License"
+shortName: "Brocade-Firmware"
+
+alternativeNames:
+  - "brocade-firmware"
+
+otherIds: 
+  - "scancode:brocade-firmware"

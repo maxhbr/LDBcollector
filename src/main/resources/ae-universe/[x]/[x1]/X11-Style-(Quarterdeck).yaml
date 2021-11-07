@@ -1,0 +1,9 @@
+canonicalName: "X11-Style (Quarterdeck)"
+category: "X11-Style (Quarterdeck)"
+shortName: "X11-Quarterdeck"
+
+alternativeNames:
+  - "X11-Style (Quarterdeck)"
+
+otherIds: 
+  - "scancode:x11-quarterdeck"

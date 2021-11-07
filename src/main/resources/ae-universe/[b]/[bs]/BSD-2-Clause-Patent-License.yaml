@@ -1,0 +1,11 @@
+canonicalName: "BSD 2-Clause Patent License"
+category: "BSD Patent"
+spdxIdentifier: "BSD-2-Clause-Patent"
+
+alternativeNames:
+  - "BSD-2-Clause-Patent"
+  - "BSD-2-Clause Plus Patent License"
+
+otherIds: 
+  - "scancode:bsd-plus-patent"
+  - "osi:BSDplusPatent"

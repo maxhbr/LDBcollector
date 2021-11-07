@@ -1,0 +1,9 @@
+canonicalName: "CUPS Exceptions"
+category: "CUPS Exceptions"
+shortName: "CUPS-Exceptions"
+
+type: "exception"
+
+alternativeNames:
+  - "CUPS Exceptions"
+

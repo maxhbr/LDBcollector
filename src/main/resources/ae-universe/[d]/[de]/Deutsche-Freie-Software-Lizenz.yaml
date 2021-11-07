@@ -1,0 +1,10 @@
+canonicalName: "Deutsche Freie Software Lizenz"
+category: "D-FSL"
+spdxIdentifier: "D-FSL-1.0"
+
+alternativeNames:
+  - "D-FSL-1.0"
+  - "Deutsche Freie Software Lizenz"
+
+otherIds: 
+  - "scancode:d-fsl-1.0-de"

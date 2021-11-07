@@ -1,0 +1,12 @@
+canonicalName: "Aptana Exception 3.0"
+category: "Aptana Exception 3.0"
+shortName: "Aptana-Exception-3.0"
+
+type: "exception"
+
+alternativeNames:
+  - "Appcelerator GPL Exception"
+  - "Section 7 Exception"
+
+otherIds: 
+  - "scancode:aptana-exception-3.0"

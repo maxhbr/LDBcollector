@@ -1,0 +1,9 @@
+canonicalName: "Expat SunSoft Exception"
+category: "Expat Exception"
+shortName: "Expat-SunSoft-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "Expat~SunSoft with SunSoft exception"
+

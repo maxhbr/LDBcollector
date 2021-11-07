@@ -1,0 +1,10 @@
+canonicalName: "Microsoft Windows CE Shared Source License Agreement 5.0"
+category: "Microsoft Windows CE Shared Source License Agreement"
+shortName: "MS-WinCE-Shared-Source-50"
+
+alternativeNames:
+  - "http://msdn.microsoft.com/en-us/windowsembedded/aa714524.aspx"
+  - "Microsoft Windows CE 5.0 Shared Source License Agreement"
+
+otherIds: 
+  - "scancode:wince-50-shared-source"

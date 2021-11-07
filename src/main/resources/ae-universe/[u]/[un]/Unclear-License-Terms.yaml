@@ -1,0 +1,9 @@
+canonicalName: "Unclear License Terms"
+category: "Unclear"
+spdxIdentifier: "Unclear"
+
+unspecific: true
+
+alternativeNames:
+  - "Except when explicitly stated as GPL, programming examples within this part can be used and distributed without restrictions"
+

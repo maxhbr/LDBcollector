@@ -1,0 +1,11 @@
+canonicalName: "Microsoft Public License"
+category: "MS-PL"
+spdxIdentifier: "MS-PL"
+
+alternativeNames:
+  - "MS-PL"
+  - "Microsoft Public License"
+
+otherIds: 
+  - "scancode:ms-pl"
+  - "osi:MS-PL"

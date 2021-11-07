@@ -1,0 +1,9 @@
+canonicalName: "BSD 1-Clause Build System License"
+category: "BSD Build System"
+shortName: "BSD-1-Clause-Build"
+
+alternativeNames:
+  - "bsd-1-clause-build"
+
+otherIds: 
+  - "scancode:bsd-1-clause-build"

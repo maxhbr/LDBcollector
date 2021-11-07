@@ -1,0 +1,11 @@
+canonicalName: "Qt-QCA Exception 2.0"
+category: "Qt-QCA Exception"
+shortName: "Qt-QCA-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "qt-qca-exception-2.0"
+
+otherIds: 
+  - "scancode:qt-qca-exception-2.0"

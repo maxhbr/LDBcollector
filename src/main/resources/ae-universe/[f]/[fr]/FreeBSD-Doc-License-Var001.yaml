@@ -1,0 +1,9 @@
+canonicalName: "FreeBSD Doc License Var001"
+category: "FreeBSD Doc License"
+shortName: "FreeBSD-Doc-Var001"
+
+alternativeNames:
+  - "freebsd-doc"
+
+otherIds: 
+  - "scancode:freebsd-doc"

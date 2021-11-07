@@ -1,0 +1,17 @@
+canonicalName: "FreeType Project License"
+category: "FreeType"
+spdxIdentifier: "FTL"
+
+alternativeNames:
+  - "and may include FreeType"
+  - "License: FTL"
+  - "FreeType project license"
+  - "Freetype Project License"
+  - "FreeType Project LICENSE"
+  - "http://www.freetype.org/FTL.TXT"
+  - "http://www.freetype.org/license.html"
+  - "https://spdx.org/licenses/ftl"
+  - "FreeType License"
+
+otherIds: 
+  - "scancode:freetype"

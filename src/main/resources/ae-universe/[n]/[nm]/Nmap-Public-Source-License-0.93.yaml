@@ -1,0 +1,11 @@
+canonicalName: "Nmap Public Source License 0.93"
+category: "NPSL"
+shortName: "NPSL-0.93"
+
+alternativeNames:
+  - "Nmap Public Source License Version 0.93"
+  - "https://svn.nmap.org/nmap/LICENSE"
+  - "https://nmap.org/npsl/npsl-annotated.html"
+
+otherIds: 
+  - "scancode:npsl-exception-0.93"

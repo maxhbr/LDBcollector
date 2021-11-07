@@ -1,0 +1,9 @@
+canonicalName: "LMBench Exception"
+category: "LMBench-Exception"
+shortName: "LMBench"
+
+alternativeNames:
+  - "LMBench Exception"
+
+otherIds: 
+  - "scancode:lmbench-exception-2.0"

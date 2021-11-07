@@ -1,0 +1,16 @@
+canonicalName: "FreeRTOS Exception 2.0"
+category: "FreeRTOS Exception"
+shortName: "FreeRTOS-Exception-2.0"
+spdxIdentifier: "freertos-exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "freertos exception, Version 2.0"
+  - "freertos exception 2.0"
+  - "freertos-exception, Version 2.0"
+  - "freertos-exception, 2.0"
+  - "FreeRTOS"
+
+otherIds: 
+  - "scancode:freertos-exception-2.0"

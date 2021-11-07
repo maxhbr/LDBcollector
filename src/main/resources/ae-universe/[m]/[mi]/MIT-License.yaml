@@ -1,0 +1,26 @@
+canonicalName: "MIT License"
+category: "MIT"
+spdxIdentifier: "MIT"
+
+alternativeNames:
+  - "under MIT"
+  - "MIT license"
+  - "MIT Licence"
+  - "MIT licencse"
+  - "MIT-License"
+  - "MIT License"
+  - "MIT Licensed"
+  - "http://www.opensource.org/licenses/MIT"
+  - "http://opensource.org/licenses/MIT"
+  - "http://opensource.org/licenses/mit-license.php"
+  - "link=https://github.com/sporritt/jsPlumb/blob/master/jsPlumb-MIT-LICENSE.txt"
+  - "Licensed under the MIT"
+  - "licensed under the MIT"
+  - "'license': 'MIT'"
+  - "\"License\": \"MIT\""
+  - "https://angular.io/license"
+  - "MIT LICENSE"
+
+otherIds: 
+  - "scancode:mit"
+  - "osi:MIT"

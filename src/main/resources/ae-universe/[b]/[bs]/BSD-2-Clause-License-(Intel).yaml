@@ -1,0 +1,9 @@
+canonicalName: "BSD 2-Clause License (Intel)"
+category: "BSD"
+shortName: "BSD-2-Clause-Intel"
+
+alternativeNames:
+  - "bsd-simplified-intel"
+
+otherIds: 
+  - "scancode:bsd-simplified-intel"
