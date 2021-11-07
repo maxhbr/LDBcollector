@@ -1,7 +1,7 @@
 # {metæffekt}-universe
 Project providing insights on the metaeffekt license database.
 
-The following links provide letter-specific overviews on the license information.
+The following links provide letter-specific overviews on the license information:
 
 [3](src/main/resources/ae-universe/[3]/overview.md) -
 [4](src/main/resources/ae-universe/[4]/overview.md) -
@@ -32,41 +32,41 @@ The following links provide letter-specific overviews on the license information
 [y](src/main/resources/ae-universe/[y]/overview.md) -
 [z](src/main/resources/ae-universe/[z]/overview.md)
 
-The yaml files withing the subfolders shows metadata on the individual licenses and exception.
+The yaml files withing the subfolders show metadata on the individual licenses and exceptions.
 The files also contain alternative names that support the normalization of licenses and exceptions.
 
 ## Why another list of licenses and exceptions?
-{metæffekt} is follows a defined strategie for analyzing, scanning and documenting software projects. To do this a 
-consistent baseline set of information is required. This baseline must cover the different license types that a used
+{metæffekt} follows a defined strategie for analyzing, scanning and documenting software projects. To do this, a 
+consistent information/data baseline is required. This baseline must cover the different license types that are used
 by the software stacks being examined.
 
-OSI, SPDX and ScanCode provide a good representation of licenses and exceptions in the open source
-domain. However, the license identification and matching strategies are not fully compatible with
+OSI, SPDX and the ScanCode Toolkit provide a good representation of licenses and exceptions in the FOSS domain. 
+However, the license identification and matching strategies are not fully compatible with
 the level of granularity and paradigms set forth by {metæffekt}. Second, the data does not cover public 
-available licenses (at least not to the extend required).
+available commercial licenses (at least not to the extend required).
 
-This is why {metæffekt} chose to create an overarching database of licenses, exceptions, 
+This is why {metæffekt} choose to create an overarching database of licenses, exceptions, 
 references, exceptions, expressions; the {metæffekt}-universe.
 
 ## Is {metæffekt} handing back to the FOSS Compliance Community?
-Sure. We intent to provide those parts of our {metæffekt}-universe into the community, which we are allowed to.
+Sure. We intent to provide those parts of our {metæffekt}-universe into the community, which we are allowed to share.
 
-The only issue is time and resources. {metæffekt} is a self financed company that makes a
+The only issue is time and resources. {metæffekt} is a self-financed company that makes a
 living from customer projects. With our limited time and resources we have to be very focused. 
 We are ready to do community work, once we see that there is a benefit beyond simply publishing 
 materials.
 
-So, if you see that this materials can be suitable to you or easy your work, let us known. We are looking forward to
+So if you see that this materials can be usefaul to you or easy your work, let us known. We are looking forward to
 intensify our community work or to start off a new project.
 
 ## Disclaimer
 
-This is all work in progress. In particular the scancode identifications and scancode matching is used
-to validate the dataset.
+This is all work in progress and subject to continuous improvement. In particular, ScanCode identifications and
+ScanCode matching is used to validate the dataset and synchronize the different data sets.
 
 Please note, that the {metæffekt}-universe as displayed in this repository is a converted, reduced
-dataset from the representation we use internally. The internal representation models licenses
-explicitly. We perform deterministic license matching based on evidences and patterns.
+dataset from a more extensive internal representation. The internal representation models licenses
+explicitly and is used to deterministic license matching based on evidences and patterns.
 
 The internal representation (and therefore the content shown here) is based on SPDX and ScanCode.
 
@@ -98,5 +98,4 @@ to [contact@metaeffekt.com](mailto:contact@metaeffekt.com). Modifications will t
 internal dataset to produce the corrected outputs.
 
 ## Further information
-{metæffekt} provides a playful visualization of {metæffekt}-universe on 
-https://metaeffekt.com/#universe.
+{metæffekt} provides visualization of {metæffekt}-universe on https://metaeffekt.com/#universe.
