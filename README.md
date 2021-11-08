@@ -32,31 +32,31 @@ The following links provide letter-specific overviews on the license information
 [y](src/main/resources/ae-universe/[y]/overview.md) -
 [z](src/main/resources/ae-universe/[z]/overview.md)
 
-The yaml files withing the subfolders show metadata on the individual licenses and exceptions.
+The yaml files within the subfolders show metadata on the individual licenses and exceptions.
 The files also contain alternative names that support the normalization of licenses and exceptions.
 
 ## Why another list of licenses and exceptions?
-{metæffekt} follows a defined strategie for analyzing, scanning and documenting software projects. To do this, a 
+{metæffekt} follows a defined strategy for analyzing, scanning and documenting software projects. To do this, a 
 consistent information/data baseline is required. This baseline must cover the different license types that are used
 by the software stacks being examined.
 
 OSI, SPDX and the ScanCode Toolkit provide a good representation of licenses and exceptions in the FOSS domain. 
 However, the license identification and matching strategies are not fully compatible with
-the level of granularity and paradigms set forth by {metæffekt}. Second, the data does not cover public 
+the level of granularity and paradigms set forth by {metæffekt}. Second, the data does not cover publicly
 available commercial licenses (at least not to the extend required).
 
 This is why {metæffekt} choose to create an overarching database of licenses, exceptions, 
 references, exceptions, expressions; the {metæffekt}-universe.
 
 ## Is {metæffekt} handing back to the FOSS Compliance Community?
-Sure. We intent to provide those parts of our {metæffekt}-universe into the community, which we are allowed to share.
+Sure. We intend to provide those parts of our {metæffekt}-universe to the community, which we are allowed to share.
 
 The only issue is time and resources. {metæffekt} is a self-financed company that makes a
 living from customer projects. With our limited time and resources we have to be very focused. 
 We are ready to do community work, once we see that there is a benefit beyond simply publishing 
 materials.
 
-So if you see that this materials can be usefaul to you or easy your work, let us known. We are looking forward to
+So if you see that this material can be useful to you or ease your work, let us know. We are looking forward to
 intensify our community work or to start off a new project.
 
 ## Disclaimer
@@ -64,9 +64,9 @@ intensify our community work or to start off a new project.
 This is all work in progress and subject to continuous improvement. In particular, ScanCode identifications and
 ScanCode matching is used to validate the dataset and synchronize the different data sets.
 
-Please note, that the {metæffekt}-universe as displayed in this repository is a converted, reduced
+Please note that the {metæffekt}-universe as displayed in this repository is a converted, reduced
 dataset from a more extensive internal representation. The internal representation models licenses
-explicitly and is used to deterministic license matching based on evidences and patterns.
+explicitly and is used for deterministic license matching based on evidences and patterns.
 
 The internal representation (and therefore the content shown here) is based on SPDX and ScanCode.
 
@@ -87,7 +87,7 @@ are used for identification purposes only.
   ScanCode is a trademark of nexB Inc.
 
 The content provided in contact@metaeffekt.com {metæffekt}-universe is licensed under
-[Creative Common BY-4.0](LICENSE)    
+[Creative Common BY-4.0](LICENSE)
 
 Copyright © metaeffekt GmbH 2021. All rights reserved.
 
