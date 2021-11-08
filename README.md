@@ -81,13 +81,12 @@ are used for identification purposes only.
   © 2018 SPDX Workgroup a Linux Foundation Project. All Rights Reserved.
 
 - [ScanCode Toolkit](https://github.com/nexB/scancode-toolkit) - ScanCode license data is used under 
-  [Creative Common BY-4.0](https://github.com/nexB/scancode-toolkit/blob/develop/cc-by-4.0.LICENSE).
+  [Creative Commons BY-4.0](https://github.com/nexB/scancode-toolkit/blob/develop/cc-by-4.0.LICENSE).
 
   Copyright (c) nexB Inc. and others. All rights reserved.
   ScanCode is a trademark of nexB Inc.
 
-The content provided in contact@metaeffekt.com {metæffekt}-universe is licensed under
-[Creative Common BY-4.0](LICENSE)
+The content provided in {metæffekt}-universe is licensed under [Creative Commons BY-4.0](LICENSE).
 
 Copyright © metaeffekt GmbH 2021. All rights reserved.
 
