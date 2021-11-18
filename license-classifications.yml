@@ -84,6 +84,10 @@ categories:
       Third-party software that has a copyright notice, but no stated license. Common examples include code snippets 
       from publications and websites (such as those from O'Reilly Media). 
 
+  - name: "irrelevant"
+    description: >-
+      Category for scanner hits that are irrelevant for compliance purposes.
+
   - name: "property:network-clause"
     description: >-
       This license has specific terms that apply when the software is used or deployed over a network. Few licenses 
@@ -577,7 +581,6 @@ categorizations:
   # url:https://spdx.org/licenses/OFL-1.1.html
   - id: "OFL-1.1"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -834,7 +837,6 @@ categorizations:
   # url:https://scancode-licensedb.aboutcode.org/mit-specification-disclaimer.html
   - id: "LicenseRef-scancode-mit-specification-disclaimer"
     categories:
-      - "property:unchecked"
       - "permissive"
 
   # url:https://scancode-licensedb.aboutcode.org/ms-ws-routing-spec.html
@@ -884,7 +886,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-sun-jsr-spec-04-2006"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
@@ -896,102 +897,89 @@ categorizations:
 
   - id: "LicenseRef-scancode-taligent-jdk"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-unicode"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-unicode-mappings"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-w3c-docs-20021231"
     categories:
-      - "property:unchecked"
       - "free-restricted"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-ws-addressing-spec"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-ws-policy-specification"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-ws-trust-specification"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-x11-hanson"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-x11-lucent"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-x11-opengroup"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "NOSL"
     categories:
-      - "property:unchecked"
+      - "copyleft-file-level"
       - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
 
   - id: "Plexus"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "Saxpath"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "W3C-19980720"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "CC-BY-SA-3.0"
     categories:
-      - "property:unchecked"
+      - "copyleft-file-level"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-public-domain"
     categories:
-      - "property:unchecked"
       - "public-domain"
-      - "property:include-in-notice-file"
 
   - id: "CC-BY-NC-ND-4.0"
     categories:
       - "source-available"
-      - "property:unchecked"
+      - "property:non-commercial"
       - "property:include-in-notice-file"
 
   # url:https://spdx.org/licenses/FSFULLR.html
@@ -1002,7 +990,6 @@ categorizations:
 
   - id: "CC-BY-SA-4.0"
     categories:
-      - "property:unchecked"
       - "copyleft-strong"
       - "property:include-in-notice-file"
 
@@ -1013,39 +1000,38 @@ categorizations:
 
   - id: "Classpath-exception-2.0"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
+
+  - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
 
   - id: "LicenseRef-scancode-warranty-disclaimer"
     categories:
-      - "property:unchecked"
-      - "unstated"
+      - "irrelevant"
 
   - id: "LicenseRef-scancode-generic-cla"
     categories:
-      - "property:unchecked"
-      - "unstated"
+      - "irrelevant"
 
   - id: "LicenseRef-scancode-generic-export-compliance"
     categories:
-      - "property:unchecked"
-      - "unstated"
+      - "irrelevant"
 
   - id: "LicenseRef-scancode-tex-exception"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-autoconf-macro-exception"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-dco-1.1"
     categories:
-      - "property:unchecked"
-      - "permissive"
-      - "property:include-in-notice-file"
+      - "irrelevant"
 
   - id: "LicenseRef-scancode-other-copyleft"
     categories:
@@ -1055,35 +1041,30 @@ categorizations:
 
   - id: "LicenseRef-scancode-autoconf-simple-exception"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-jetty-ccla-1.1"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-newton-king-cla"
     categories:
-      - "property:unchecked"
       - "unstated"
 
   - id: "BSD-3-Clause-Open-MPI"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-bsd-x11"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-zipeg"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
@@ -1104,7 +1085,6 @@ categorizations:
 
   - id: "PostgreSQL"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1116,18 +1096,22 @@ categorizations:
   - id: "CC-BY-NC-SA-4.0"
     categories:
       - "source-available"
-      - "property:unchecked"
+      - "property:non-commercial"
+      - "property:include-in-notice-file"
+
+  - id: "CC-BY-NC-SA-2.5"
+    categories:
+      - "source-available"
+      - "property:non-commercial"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-ubuntu-font-1.0"
     categories:
-      - "property:unchecked"
       - "free-restricted"
       - "property:include-in-notice-file"
 
   - id: "ANTLR-PD"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1138,12 +1122,11 @@ categorizations:
 
   - id: "LicenseRef-scancode-autoconf-simple-exception-2.0"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-sun-prop-non-commercial"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:non-commercial"
       - "property:include-in-notice-file"
@@ -1186,8 +1169,8 @@ categorizations:
 
   - id: "LicenseRef-scancode-rsa-md4"
     categories:
-      - "property:unchecked"
       - "permissive"
+      - "property:advertising-clause"
       - "property:include-in-notice-file"
 
   - id: "RSA-MD"
