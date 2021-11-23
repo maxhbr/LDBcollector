@@ -1,0 +1,19 @@
+[license]
+
+expression = "zlib-acknowledgement"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement
+'''
+
+[fedora]
+
+name = "zlib/libpng License with Acknowledgement"
+abbreviation = "zlib with acknowledgement"
+
+notes = '''
+will need to templatize copyright/acknowledgement statement in middle of license
+text  - decided to not templatize; need to use different short name b/c "with"
+is an operator for SPDX license expression
+'''

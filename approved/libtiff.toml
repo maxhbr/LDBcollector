@@ -1,0 +1,17 @@
+[license]
+
+expression = "libtiff"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/libtiff
+'''
+
+[fedora]
+
+name = "libtiff License"
+abbreviation = "libtiff"
+
+notes = '''
+BSD/MIT like
+'''

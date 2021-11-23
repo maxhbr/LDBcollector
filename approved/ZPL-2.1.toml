@@ -1,0 +1,13 @@
+[license]
+
+expression = "ZPL-2.1"
+status = "approved"
+
+text = '''
+http://www.zope.org/Resources/ZPL
+'''
+
+[fedora]
+
+name = "Zope Public License v 2.1"
+abbreviation = "ZPLv2.1"

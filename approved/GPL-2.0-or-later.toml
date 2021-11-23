@@ -1,0 +1,13 @@
+[license]
+
+expression = "GPL-2.0-or-later"
+status = "approved"
+
+text = '''
+http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+'''
+
+[fedora]
+
+name = "GNU General Public License v2.0 or later"
+abbreviation = "GPLv2+"

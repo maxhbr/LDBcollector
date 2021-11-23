@@ -1,0 +1,17 @@
+[license]
+
+expression = "LGPL-2.0-or-later"
+status = "approved"
+
+text = '''
+http://creativecommons.org/choose/cc-lgpl
+'''
+
+[fedora]
+
+name = "Creative Commons GNU LGPL"
+abbreviation = "LGPLv2+"
+
+notes = '''
+This is LGPL-2.0+
+'''

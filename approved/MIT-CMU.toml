@@ -1,0 +1,17 @@
+[license]
+
+expression = "MIT-CMU"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style
+'''
+
+[fedora]
+
+name = "CMU License (BSD like)"
+abbreviation = "MIT"
+
+notes = '''
+MIT/BSD variant.
+'''

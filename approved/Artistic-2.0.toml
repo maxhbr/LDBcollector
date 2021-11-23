@@ -1,0 +1,13 @@
+[license]
+
+expression = "Artistic-2.0"
+status = "approved"
+
+text = '''
+http://www.perlfoundation.org/artistic_license_2_0
+'''
+
+[fedora]
+
+name = "Artistic 2.0"
+abbreviation = "Artistic 2.0"

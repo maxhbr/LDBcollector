@@ -1,0 +1,13 @@
+[license]
+
+expression = "LGPL-2.0-or-later "
+status = "approved"
+
+text = '''
+http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+'''
+
+[fedora]
+
+name = "GNU Lesser General Public License v2 (or 2.1) or later"
+abbreviation = "LGPLv2+"

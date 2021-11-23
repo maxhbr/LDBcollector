@@ -1,0 +1,17 @@
+[license]
+
+expression = "DSDP"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/DSDP
+'''
+
+[fedora]
+
+name = "DSDP License"
+abbreviation = "DSDP"
+
+notes = '''
+MIT like license.
+'''

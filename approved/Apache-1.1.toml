@@ -1,0 +1,13 @@
+[license]
+
+expression = "Apache-1.1"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/SequenceLibraryLicense
+'''
+
+[fedora]
+
+name = "Sequence Library License"
+abbreviation = "Sequence"

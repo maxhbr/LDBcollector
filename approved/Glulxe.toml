@@ -1,0 +1,17 @@
+[license]
+
+expression = "Glulxe"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Glulxe
+'''
+
+[fedora]
+
+name = "Glulxe License"
+abbreviation = "Glulxe"
+
+notes = '''
+Permissive license. May be one package license.
+'''

@@ -1,0 +1,17 @@
+[license]
+
+expression = "GL2PS"
+status = "approved"
+
+text = '''
+http://www.geuz.org/gl2ps/COPYING.GL2PS
+'''
+
+[fedora]
+
+name = "GL2PS License"
+abbreviation = "GL2PS"
+
+notes = '''
+Copyleft license.
+'''

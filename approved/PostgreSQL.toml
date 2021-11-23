@@ -1,0 +1,13 @@
+[license]
+
+expression = "PostgreSQL"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/PostgreSQL_License
+'''
+
+[fedora]
+
+name = "PostgreSQL License"
+abbreviation = "PostgreSQL"

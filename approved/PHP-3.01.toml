@@ -1,0 +1,17 @@
+[license]
+
+expression = "PHP-3.01"
+status = "approved"
+
+text = '''
+http://www.php.net/license/3_01.txt
+'''
+
+[fedora]
+
+name = "PHP License v3.0"
+abbreviation = "PHP"
+
+notes = '''
+SPDX List also has PHP-3.0
+'''

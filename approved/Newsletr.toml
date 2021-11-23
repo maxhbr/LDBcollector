@@ -1,0 +1,13 @@
+[license]
+
+expression = "Newsletr"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Newsletr
+'''
+
+[fedora]
+
+name = "Newsletr License"
+abbreviation = "Newsletr"

@@ -1,0 +1,17 @@
+[license]
+
+expression = "BSD-3-Clause"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License
+'''
+
+[fedora]
+
+name = "Metasploit Framework License (post 2006)"
+abbreviation = "BSD"
+
+notes = '''
+license text on Fedora page is list of licenses
+'''

@@ -1,0 +1,17 @@
+[license]
+
+expression = "Abstyles"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Abstyles
+'''
+
+[fedora]
+
+name = "Abstyles License"
+abbreviation = "Abstyles"
+
+notes = '''
+Document License.  Meets Open Source definition.
+'''

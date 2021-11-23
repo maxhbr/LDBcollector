@@ -1,0 +1,13 @@
+[license]
+
+expression = "psutils"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/psutils
+'''
+
+[fedora]
+
+name = "psutils License"
+abbreviation = "psutils"

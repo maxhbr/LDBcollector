@@ -1,0 +1,18 @@
+[license]
+
+expression = "BSD-3-Clause-Attribution"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution
+'''
+
+[fedora]
+
+name = "BSD with attribution"
+abbreviation = "BSD with attribution"
+
+notes = '''
+Did not find BSD with attribution on any of the URL links for BSD licenses (see
+Note at bottom of table).
+'''

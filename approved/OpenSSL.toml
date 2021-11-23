@@ -1,0 +1,13 @@
+[license]
+
+expression = "OpenSSL"
+status = "approved"
+
+text = '''
+http://www.sdisw.com/openssl.htm
+'''
+
+[fedora]
+
+name = "OpenSSL License"
+abbreviation = "OpenSSL"

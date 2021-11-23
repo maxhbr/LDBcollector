@@ -1,0 +1,17 @@
+[license]
+
+expression = "HPND"
+status = "approved"
+
+text = '''
+http://opensource.org/licenses/historical.php
+'''
+
+[fedora]
+
+name = "Historical Permission Notice and Disclaimer"
+abbreviation = "MIT"
+
+notes = '''
+no longer used in practice per OSI
+'''

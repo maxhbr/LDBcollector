@@ -1,0 +1,17 @@
+[license]
+
+expression = "TORQUE-1.1"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/TORQUEv1.1
+'''
+
+[fedora]
+
+name = "TORQUE v2.5+ Software License v1.1"
+abbreviation = "TORQUEv1.1"
+
+notes = '''
+choice of law Utah. Release in Feb. 2014
+'''

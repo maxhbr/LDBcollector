@@ -1,0 +1,13 @@
+[license]
+
+expression = "CNRI-Python"
+status = "approved"
+
+text = '''
+http://www.handle.net/python_licenses/python1.6_9-5-00.html
+'''
+
+[fedora]
+
+name = "CNRI License (Old Python)"
+abbreviation = "CNRI"

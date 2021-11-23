@@ -1,0 +1,311 @@
+Fedora Full Name	Fedora Short Name	SPDX Short Identifier		On SPDX list?	SPDX-Fedora identifiers compare?	1:1 replaceable?	Notes (2021)	Fedora license URL	Notes on license (old)
+Zero-Clause BSD	0BSD	0BSD		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD	
+Attribution Assurance License	AAL	AAL		YES	same	N/A		http://opensource.org/licenses/attribution.php	
+Abstyles License	Abstyles	Abstyles		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Abstyles	Document License.  Meets Open Source definition.
+Adobe Systems Incorporated Source Code License Agreement	Adobe	Adobe-2006		YES	version #	Y		https://fedoraproject.org/wiki/Licensing/AdobeLicense	Permissive license with a reverse indemnification clause.  Indemnity flows from Licensee to Adobe.
+Amazon Digital Services License	ADSL	ADSL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/AmazonDigitalServicesLicense	Permissive license
+Academic Free License	AFL	AFL-3.0		YES	version #			http://opensource.org/licenses/afl-3.0.php	SPDX List also has AFL-1.1, AFL-1.2, AFL-2.0, AFL-2.1
+Afmparse License	Afmparse	Afmparse		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Afmparse	Permissive license
+Affero General Public License 1.0	AGPLv1	AGPL-1.0-only		YES	GPL	Y		http://www.affero.org/oagpl.html	
+Affero General Public License 3.0	AGPLv3	AGPL-3.0-only		YES	GPL	Y		http://www.fsf.org/licensing/licenses/agpl-3.0.html	
+Affero General Public License 3.0 with Zarafa trademark exceptions	AGPLv3 with exceptions	AGPL-3.0-only WITH <exception identifier> AGPL-3.0-or-later WITH <exception identifier>		NO	exceptions		I don't think we have this exception on the SPDX list - find actual text and add	http://www.zarafa.com/content/affero-gplv3	Single product instance
+Affero General Public License 3.0 or later	AGPLv3+	AGPL-3.0-or-later		YES	GPL	Y		http://www.fsf.org/licensing/licenses/agpl-3.0.html	
+AMD's plpa_map.c License	AMDPLPA	AMDPLPA		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/AMD_plpa_map_License	BSD variant. Single use case?
+Apple MIT License	AML	AML		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Apple_MIT_License	MIT-like license with a provision regarding no patent grant for derivative works.
+Academy of Motion Picture Arts and Sciences BSD	AMPAS BSD	AMPAS		YES	different	Y		https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD	BSD variant; specifically disclaims rights to trademarks, patents, etc.
+ANTLR Software Rights Notice	ANTLR-PD	ANTLR-PD		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/ANTLR-PD	
+Adobe Postscript AFM License	APAFML	APAFML		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/AdobePostscriptAFM	Permissive license, specifically for Adobe AFM files  It shows up in the open source package iText. See http://itextpdf.com/terms-of-use/adobe.html 
+App::s2p License	App-s2p	App-s2p		submitted			used in https://metacpan.org/release/KNOK/File-MMagic-1.30/source/COPYING	https://fedoraproject.org/wiki/Licensing/App-s2p	https://github.com/spdx/license-list-XML/issues/1361
+Apple Public Source License 2.0	APSL 2.0	APSL-2.0		YES	hyphen	N/A		http://www.opensource.apple.com/apsl/2.0.txt	
+Aspell-ru License	ARL	ARL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/AspellRu	Permissive license. Single Russian dictionary file under this license. Should we include additional license text?  appears to be part of larger license at: http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/myspell-ru_RU-ALexanderLebedev
+Array Input Method Public License	Array			NO			only saw license listed for gcin project in Rawhide. downloaded 3.9 and only saw LGPL ??	https://fedoraproject.org/wiki/Licensing/Array	
+Artistic 2.0	Artistic 2.0	Artistic-2.0		YES	hyphen	Y		http://www.perlfoundation.org/artistic_license_2_0	
+Artistic (clarified)	Artistic clarified	ClArtistic		YES	different	Y		https://fedoraproject.org/wiki/Licensing/ArtisticClarified	
+Apache Software License 1.0	ASL 1.0	Apache-1.0		YES	different	Y		http://www.apache.org/licenses/LICENSE-1.0	
+4Suite Copyright License	ASL 1.1	Apache-1.1		YES	different	Y	new URL http://www.worldlii.org/int/other/PubRL/2000/1.html	http://4suite.org/COPYRIGHT	Bad URL; this is the same license as Apache-1.1
+Apache Software License 1.1	ASL 1.1	Apache-1.1		YES	different	Y		http://www.apache.org/licenses/LICENSE-1.1	
+MX4J License	ASL 1.1	Apache-1.1		YES	different	Y		https://fedoraproject.org/wiki/Licensing/MX4J	Fedora uses identifier, "ASL 1.1" this is the same as Apache 1.1 but for names 
+Neotonic Clearsilver License	ASL 1.1	Apache-1.1		YES	different	Y		http://www.clearsilver.net/license.hdf	Fedora uses identifier, "ASL 1.1" link used to go to a page that shows BSD-2-Clause and a notice regarding that change.   Found older(?) version with this license: https://github.com/rphillips/clearsilver/blob/master/CS_LICENSE, which is same as Apache 1.1 also see https://github.com/blong42/clearsilver/blob/master/LICENSE
+QuickFix License	ASL 1.1	Apache-1.1		YES	different	Y		http://www.quickfixengine.org/quickfix/doc/html/license.html	
+Apache Software License 2.0	ASL 2.0	Apache-2.0		YES	different	Y		http://www.apache.org/licenses/LICENSE-2.0	
+Bahyph License	Bahyph	Bahyph		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Bahyph	Very permissive license (may be for single product).
+Barr License	Barr	Barr		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Barr	Shows up here: http://stuff.mit.edu/afs/athena/system/i386_deb50/os-ubuntu-9.04/usr/share/texmf-texlive/tex/latex/barr/diagxy.tex
+Beerware License	Beerware	Beerware		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Beerware	Very permissive license.
+BeOpen Open Source License Agreement Version 1	BeOpen			NO			not listed in Rawhide - don't add to SPDX	https://fedoraproject.org/wiki/Licensing/BeOpen	Included on SPDX List as part of the greater Python v2 license. is this used by itself?  if so, then add as an individual license (Tom I. did a bunch of research on Python licensing some time ago - that may be useful here)  - should we ask Fedora about this, where it's used and frequency? Does Fedora treat the Python stack as separate licenses?
+Bibtex License	Bibtex			NO			did not find in Source Rawhide list  check binaries?	https://fedoraproject.org/wiki/Licensing/Bibtex	Permissive license with requirement to rename any modified files.  need to consider how to manage variations (see: http://osl.ugr.es/CTAN/biblio/bibtex/contrib/sort-by-letters/README). that is, should we templatize the actual filenames in the ""original"" license version, since they may or may not be included? - should we ask Fedora about this issue, are there variations with other filenames? 
+BitTorrent License	BitTorrent	BitTorrent-1.1		YES	version #			https://fedoraproject.org/wiki/Licensing/BitTorrent_Open_Source_License	SPDX List also has BitTorrent-1.0
+Boost Software License	Boost	BSL-1.0		YES	version #	Y		http://www.boost.org/LICENSE_1_0.txt	
+Borceux license	Borceux	Borceux		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Borceux	Permissive license. May be single package license.
+Eclipse Distribution License 1.0	BSD	BSD 3-clause		YES	different	category		http://www.eclipse.org/org/documents/edl-v10.php	This is BSD 3-clause
+Creative Commons BSD	BSD	BSD-2-Clause		YES	different	category		http://creativecommons.org/licenses/BSD/	short identifier issue - need to deal with for all BSD variants
+Cryptix General License	BSD	BSD-2-Clause		YES	different	category		http://www.cryptix.org/LICENSE.TXT	Fedora uses identifier, "BSD"
+BSD License (two clause)	BSD	BSD-2-Clause-FreeBSD		YES	different	category		https://fedoraproject.org/wiki/Licensing/BSD#2ClauseBSD	Fedora uses identifier, "BSD"
+BSD License (no advertising)	BSD	BSD-3-Clause		YES	different	category		https://fedoraproject.org/wiki/Licensing/BSD#3ClauseBSD	Same as BSD-3-Clause, but replaces "copyright holders" with "regents"
+Metasploit Framework License (post 2006)	BSD	BSD-3-Clause		YES	different	category	license text on Fedora page is list of licenses	https://fedoraproject.org/wiki/Licensing/Metasploit_Framework_License	
+BSD Protection License	BSD Protection	BSD-Protection		YES	hyphen	Y		https://fedoraproject.org/wiki/Licensing/BSD_Protection_License	Copyleft license that allows for binary distribution under closed source license.
+BSD License (Advertising Variant)	BSD with advertising	BSD-4-Clause		YES	different		this is actually the BSD-4-Clause (Fedora records some extra stuff at top of file, but that is not really part of license)	https://fedoraproject.org/wiki/Licensing/BSD#BSDwithAdvertising	Fedora should link to: https://fedoraproject.org/wiki/Licensing:BSD?rd=Licensing/BSD#Original_BSD_License_.28BSD_with_advertising.29  similar to BSD-4-Clause 
+NRL License	BSD with advertising	NRL		YES	different	category		http://web.mit.edu/network/isakmp/nrllicense.html	this license is just different enough from BSD-4-Clause, including adding a clause stating that "All terms of the UC Berkeley copyright and license must be followed.
+BSD with attribution	BSD with attribution	BSD-3-Clause-Attribution		YES	different	Y		https://fedoraproject.org/wiki/Licensing/BSD_with_Attribution	Did not find BSD with attribution on any of the URL links for BSD licenses (see Note at bottom of table).
+BSD + Patent	BSD-2-Clause-Patent	BSD-2-Clause-Patent		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/BSD-2-Clause-Patent	
+Computer Associates Trusted Open Source License 1.1	CATOSL	CATOSL-1.1		YES	version #	Y		http://opensource.org/licenses/ca-tosl1.1.php	SPDX short identifier adds version #
+Creative Commons Zero 1.0 Universal	CC0	CC0-1.0		YES	version #	Y		http://creativecommons.org/publicdomain/zero/1.0/legalcode	
+Common Development Distribution License 1.0	CDDL-1.0	CDDL-1.0		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.0	
+Common Development Distribution License 1.1	CDDL-1.1	CDDL-1.1		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1	
+CeCILL License v1.1	CeCILL	CECILL-1.1		YES	version #			http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html	SPDX List also has CECILL-1.0
+CeCILL License v2	CeCILL	CECILL-2.0		YES	version #			http://www.cecill.info/licences.en.html	SPDX List also has CECILL-1.0
+CeCILL-B License	CeCILL-B	CECILL-B		YES	same	N/A		http://www.cecill.info/licences.en.html	SPDX List also has CECILL-1.0
+CeCILL-C License	CeCILL-C	CECILL-C		YES	same	N/A		http://www.cecill.info/licences.en.html	SPDX List also has CECILL-1.0
+CNRI License (Old Python)	CNRI	CNRI-Python		YES	different	Y		http://www.handle.net/python_licenses/python1.6_9-5-00.html	
+Condor Public License	Condor	Condor-1.1		YES	version #	Y	URL has been updated to show Apache-2.0 (SPDX has original text)	http://www.cs.wisc.edu/condor/condor-public-license.html	The URL provided by Fedora does not point to any license.  SPDX short identifier adds version #
+Copyright Attribution Only	Copyright only			NO		category	SPDX doesn't accomodate a generic statement - would be good to know more about how this is used	https://fedoraproject.org/wiki/Licensing/CopyrightOnly	Simple "license" that requires copyright only
+CPAL License 1.0	CPAL	CPAL-1.0		YES	version #	Y		https://www.socialtext.net/open/index.cgi?cpal_license_in_wikitext	SPDX short identifier adds version #
+Common Public License	CPL	CPL-1.0		YES	version #	Y		http://www.eclipse.org/legal/cpl-v10.html	SPDX short identifier adds version #
+CP/M License	CPM			NO			one-off email "license" (sort of painful to add this to the SPDX License List for obvious reasons...)	https://fedoraproject.org/wiki/Licensing/CPM	
+CRC32 License	CRC32			NO			super short one-sentence license	https://fedoraproject.org/wiki/Licensing/CRC32	
+Crossword License	Crossword	Crossword		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Crossword	Permissive license. May be single package license.
+Crystal Stacker License	Crystal Stacker	CrystalStacker		YES	same	Y		https://fedoraproject.org/wiki/Licensing/CrystalStacker	
+Cube License	Cube	Cube		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Cube	Permissive license with requirement that you may not relicense the source code under any other license. Official site http://src.gnu-darwin.org/ports/games/assaultcube/work/AssaultCube/source/LICENSE
+diffmark license	diffmark	diffmark		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/diffmark	License text "1. you can do what you want with it 2. I refuse any responsibility for the consequences" May be single package license
+Docbook MIT License	DMIT			NO			looks to be used by docbook project?	https://fedoraproject.org/wiki/Licensing/DMIT	
+DOC License	DOC	DOC		YES	same	N/A		http://www.cs.wustl.edu/~schmidt/ACE-copying.html	Permissive license. May be single package license, but package is oft used.
+Dotseqn License	Dotseqn	Dotseqn		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Dotseqn	Permissive license. Appears to be single file/package
+DSDP License	DSDP	DSDP		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/DSDP	MIT like license.
+dvipdfm License	dvipdfm	dvipdfm		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/dvipdfm	Permissive license. May be a one time license
+DO WHATEVER PUBLIC LICENSE	DWPL			NO			2 project listed in Rawhide with this license	https://fedoraproject.org/wiki/Licensing/DWPL	Basically Beerware without the buy-me-a-beer part. If used in Fedora, then add to SPDX
+Educational Community License 1.0	ECL 1.0	ECL-1.0		YES	hyphen	Y		http://opensource.org/licenses/ecl1.php	
+Educational Community License 2.0	ECL 2.0	ECL-2.0		YES	hyphen	Y		http://www.osedu.org/licenses/ECL-2.0/	
+eCos License v2.0	eCos	GPL-2.0-or-later WITH eCos-2.0		YES	exceptions	Y		http://www.fsf.org/licensing/licenses/ecos-license.html	
+Eiffel Forum License 2.0	EFL 2.0	EFL-2.0		YES	hyphen	Y		http://www.fsf.org/licensing/licenses/eiffel-forum-license-2.html	
+eGenix.com Public License 1.1.0	eGenix	eGenix		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0	Based on CNRI license and may be for one project. Official license site http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf
+Entessa Public License	Entessa	Entessa		YES	same	N/A		http://opensource.org/licenses/entessa.php	
+EPICS Open License	EPICS	EPICS		YES	same	N/A		http://www.aps.anl.gov/epics/license/open.php	
+Eclipse Public License 1.0	EPL-1.0	EPL-1.0		YES	same	N/A		http://www.eclipse.org/legal/epl-v10.html	
+Eclipse Public License 2.0	EPL-2.0	EPL-2.0		YES	same	N/A		http://www.eclipse.org/legal/epl-v20.html	
+Erlang Public License 1.1	ERPL	ErlPL-1.1		YES	version #	Y		https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense	
+EU Datagrid Software License	EU Datagrid	EUDatagrid		YES	space	Y		http://www.opensource.org/licenses/eudatagrid.php	
+European Union Public License 1.1	EUPL 1.1	EUPL-1.1		YES	hyphen	Y		http://ec.europa.eu/idabc/en/document/7774.html	
+European Union Public License 1.2	EUPL 1.2	EUPL-1.2		YES	hyphen	Y		https://opensource.org/licenses/EUPL-1.2	
+Eurosym License	Eurosym	Eurosym		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Eurosym	Copyleft license. German law applies
+Fair License	Fair	Fair		YES	same	N/A		http://opensource.org/licenses/fair.php	
+Fraunhofer FDK AAC License	FDK-AAC	FDK-AAC		YES	same	Y	if still used in Fedora, then add to SPDX added for 3.15 version	https://fedoraproject.org/wiki/Licensing/FDK-AAC	
+FSF All Permissive license	FSFAP	FSFAP		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/FSFAP	
+FSF Unlimited License	FSFUL	FSFUL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License	Permissive license.
+FSF Unlimited License (with License Retention)	FSFULLR	FSFULLR		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/FSF_Unlimited_License#License_Retention_Variant	Permissive license.
+Freetype License	FTL	FTL		YES	same	N/A		http://freetype.fis.uniroma2.it/FTL.TXT	
+Giftware License	Giftware	Giftware		YES	same	N/A		http://www.talula.demon.co.uk/allegro/license.html	Permissive license.  done - added Allegro 4; Allegro 5 is same as zlib
+GL2PS License	GL2PS	GL2PS		YES	same	N/A		http://www.geuz.org/gl2ps/COPYING.GL2PS	Copyleft license.
+3dfx Glide License	Glide	Glide		YES	same	N/A		http://www.users.on.net/~triforce/glidexp/COPYING.txt	License is specific to 3dfx corporation and glide software. License text shows up in opensuse. See https://gitorious.org/opensuse/license_o_o/source/f0086a864b2322ce268931aeb45edbe2718fd2a6:licenses/3DFX-GPL.txt
+Glulxe License	Glulxe	Glulxe		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Glulxe	Permissive license. May be one package license.
+gnuplot License	gnuplot	Gnuplot		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Gnuplot	License requires changes to source to be packaged as patches and not appended to the original source, etc.
+GNU General Public License (no version)	GPL+	GPL-1.0-or-later		YES	GPL	Y		A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include.	No version GPL
+GNU General Public License v1.0 or later	GPL+	GPL-1.0-or-later		YES	GPL	Y		Note that this is not GPLv1+, because 1+ is the same as any version.	
+Perl License	GPL+ or Artistic	GPL-1.0-or-later OR Artistic-1.0-Perl		YES	GPL	Y		http://dev.perl.org/licenses/	this would be covered by using the short identifiers for each licnese choice with the "OR" operator 
+GNU General Public License (no version), with Classpath exception	GPL+ with exceptions	GPL-1.0-or-later WITH Classpath-exception-2.0		YES	exceptions	category		https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception	
+GNU General Public License (no version), with font embedding exception	GPL+ with exceptions	GPL-1.0-or-later WITH Font-exception-2.0		YES	exceptions	category		A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include. And if they manage to grant the font embedding exception without specifying a version, you get this strange beast.	
+GNU General Public License v1.0 only	GPLv1	GPL-1.0-only		YES	GPL	Y		http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt	
+GNU General Public License v2.0 only	GPLv2	GPL-2.0-only		YES	GPL	Y		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html	
+Perl License (variant)	GPLv2 or Artistic	GPL-2.0-only OR Artistic-1.0-Perl		YES	GPL	Y		Some perl packages explicitly state GPLv2, only use this license for those cases	this would be covered by using the short identifiers for each licnese choice with the "OR" operator 
+GNU General Public License v2.0 only, with Classpath exception	GPLv2 with exceptions	GPL-2.0-only WITH Classpath-exception-2.0		YES	exceptions	category		https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception	
+MySQL License	GPLv2 with exceptions	GPL-2.0-only WITH DigiRule-FOSS-exception GPL-2.0-only WITH Universal-FOSS-exception-1.0		YES	exceptions	category	SPDX has the old one and the latest one (same as Fedora-provided link)  note for SPDX: DigiRule needs markup in SPDX (current one)	http://www.mysql.com/company/legal/licensing/foss-exception.html	two versions of this, link only goes to most current
+GNU General Public License v2.0 only, with font embedding exception	GPLv2 with exceptions	GPL-2.0-only WITH Font-exception-2.0		YES	exceptions	category		http://www.gnu.org/licenses/gpl-faq.html#FontException	
+Fedora Directory Server License	GPLv2 with exceptions			NO	exceptions	category	link to license in Fedora is not found - need help from Fedora as to what this is	http://directory.fedoraproject.org/wiki/GPL_Exception_License_Text	GPLv2 with exception to link to certain well defined "Approved Interfaces".  Add?
+Creative Commons GNU GPL	GPLv2+	GPL-2.0-or-later		YES	GPL	Y		http://creativecommons.org/choose/cc-gpl	This is GPL-2.0+
+GNU General Public License v2.0 or later	GPLv2+	GPL-2.0-or-later		YES	GPL	Y		http://www.gnu.org/licenses/old-licenses/gpl-2.0.html	
+Perl License (variant)	GPLv2+ or Artistic	GPL-2.0-or-later OR Artistic-1.0-Perl		YES	GPL	Y		Some perl packages explicitly state GPLv2+, only use this license for those cases	this would be covered by using the short identifiers for each licnese choice with the "OR" operator 
+GNU General Public License v2.0 or later, with Classpath exception	GPLv2+ with exceptions	GPL-2.0-or-later WITH Classpath-exception-2.0		YES	exceptions	category		https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception	
+GNU General Public License v2.0 or later, with font embedding exception	GPLv2+ with exceptions	GPL-2.0-or-later WITH Font-exception-2.0		YES	exceptions	category		http://www.gnu.org/licenses/gpl-faq.html#FontException	
+GNU General Public License v3.0 only	GPLv3	GPL-3.0-only		YES	GPL	Y		http://www.fsf.org/licensing/licenses/gpl.html	
+GNU General Public License v3.0 only, with Classpath exception	GPLv3 with exceptions	GPL-3.0-only WITH Classpath-exception-2.0		YES	exceptions	category		https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception	
+GNU General Public License v3.0 only, with font embedding exception	GPLv3 with exceptions	GPL-3.0-only WITH Font-exception-2.0		YES	exceptions	category		http://www.gnu.org/licenses/gpl-faq.html#FontException	
+GNU General Public License v3.0 or later	GPLv3+	GPL-3.0-or-later		YES	GPL	Y		http://www.fsf.org/licensing/licenses/gpl.html	
+GNU General Public License v3.0 or later, with Classpath exception	GPLv3+ with exceptions	GPL-3.0-or-later WITH Classpath-exception-2.0		YES	exceptions	category		https://fedoraproject.org/wiki/Licensing/GPL_Classpath_Exception	
+GNU General Public License v3.0 or later, with font embedding exception	GPLv3+ with exceptions	GPL-3.0-or-later WITH Font-exception-2.0		YES	exceptions	category		http://www.gnu.org/licenses/gpl-faq.html#FontException	
+Haskell Language Report License	HaskellReport	HaskellReport		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Haskell_Language_Report_License	there are 3 variations here, but the difference can be accomodated via a license template as it's only a different in name; use same Fedora short identifier; add as one license with template
+Henry Spencer Reg-Ex Library License	HSRL	Spencer-86		YES	different			https://fedoraproject.org/wiki/Licensing/Henry_Spencer_Reg-Ex_Library_License	Fedora shows 2 different licenses on this page, SPDX includes them both, plus also a third variant from 99
+Henry Spencer Reg-Ex Library License	HSRL	Spencer-94							
+IBM Public License	IBM	IPL-1.0		YES	different	Y		http://www.opensource.org/licenses/ibmpl.php	
+Independent JPEG Group License	IJG	IJG		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/IJG	
+ImageMagick License	ImageMagick	ImageMagick		YES	same	N/A		http://www.imagemagick.org/script/license.php	Weak copyleft license specific to imagemagick Apache 2.0 with the exception of the summary above the Terms and Conditions, the statement above the (c) notice, and the absence of ""(except as stated in this section)"" in section 3, patent grant
+iMatix Standard Function Library Agreement	iMatix	iMatix		YES	same	Y		http://legacy.imatix.com/html/sfl/sfl4.htm#license	Permissive license. May be just for single library. might want to search for original version of license, though - it mentions a URL above and there is none in this version. 
+Imlib2 License	Imlib2	Imlib2		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Imlib2	
+Inner Net License	Inner-Net			NO			in one package - glibc	https://fedoraproject.org/wiki/Licensing/Inner_Net_License	
+Intel ACPI Software License Agreement	Intel ACPI	Intel-ACPI		YES	hyphen	Y		https://fedoraproject.org/wiki/Licensing/Intel_ACPI_Software_License_Agreement	Intel specific license.
+Interbase Public License	Interbase	Interbase-1.0		YES	version #	Y	Fedora to update link to license to: http://www.firebirdsql.org/en/interbase-public-license/	http://www.borland.com/devsupport/interbase/opensource/IPL.html	Fedora link does not provide license text
+ISC License (Bind, DHCP Server)	ISC	ISC		YES	same	N/A		https://www.isc.org/software/license	
+Jabber Open Source License	Jabber			NO			license doesn't appear to be in Fedora, if that's the case, then don't worry about it SPDX to still consider if it should be added as per OSI site	http://opensource.org/licenses/jabberpl.php	OSI approved, but no longer used Research found that version on OSI site is not the same as version at http://archive.jabber.org/core/JOSL.pdf (substantive diff includes inclusion in the latter of a definition of Source Code and "reasonably necessarly" qualifier in patent grant) see https://lists.spdx.org/g/Spdx-legal/message/435?p=,,,20,0,0,0::Created,,jabber,20,2,0,22080275 for doc with diff
+JasPer License	JasPer	JasPer-2.0		YES	version #	Y		http://www.ece.uvic.ca/~mdadams/jasper/LICENSE	MIT/BSD like
+JPython License (old)	JPython			NO			not listed in Rawhide 	http://www.jython.org/license.html	link broken, see https://web.archive.org/web/20160310111940/https://www.jython.org/license.html - stack of 3 licenses, each of which can be respresented by SPDX: PSF-2.0 AND BSD-3-Clause AND CNRI-Jython
+Julius License	Julius			NO			project appears to now be under BSD-3-Clause, see https://github.com/julius-speech/julius/blob/master/LICENSE	https://fedoraproject.org/wiki/Licensing/Julius	Japanese and English text license under Japanese law.  FOSS license. 
+Knuth License	Knuth			NO			only appears in texlive-base package??	http://tug.org/TUGboat/Articles/tb11-4/tb30knut.pdf	Does not meet FOSS elements.  No addition to the code upon death of author, etc. 
+Latex2e License	Latex2e	Latex2e		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Latex2e	Copyleft license. 
+Lawrence Berkeley National Labs BSD variant license	LBNL BSD	BSD-3-Clause-LBNL		YES	different	Y		https://fedoraproject.org/wiki/Licensing/LBNLBSD	BSD like license with a provision at the end that makes any non licensed additions subject to a FOSS license
+Leptonica License	Leptonica	Leptonica		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Leptonica	BSD like.  Official license site http://www.leptonica.com/about-the-license.html
+GNU Lesser General Public License v2 (or 2.1) only	LGPLv2	LGPL-2.0-only 		YES	GPL			=HYPERLINK("http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html","http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html Note that this license was originally referred to as the GNU Library General Public License v2, but all current versions (v2.1 or newer) of the license are correctly known as the GNU Lesser General Public License.")	Fedora treats 2.0 and 2.1 as same, SPDX does not  
+GNU Lesser General Public License v2 (or 2.1) only	LGPLv2	LGPL-2.1-only		YES	GPL				
+GNU Lesser General Public License v2 (or 2.1), with exceptions	LGPLv2 with exceptions	LGPL-2.0 WITH ... LGPL-2.1 WITH ...		YES	exceptions	category	are there any LGPL exceptions actually in use in Fedora? list just says to email list for approval	Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.	
+FLTK License	LGPLv2 with exceptions	LGPL-2.0-or-later WITH FLTK-exception		YES	exceptions	category		http://www.fltk.org/COPYING.php	LGPLv2 with exception.
+Creative Commons GNU LGPL	LGPLv2+	LGPL-2.0-or-later		YES	GPL	Y		http://creativecommons.org/choose/cc-lgpl	This is LGPL-2.0+
+GNU Lesser General Public License (no version)	LGPLv2+	LGPL-2.0-or-later 		YES	GPL	Y		A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING file they include. Note that this is LGPLv2+, not LGPL+, because version 2 was the first version of LGPL. Note that this license was originally referred to as the GNU Library General Public License v2, but all current versions (v2.1 or newer) of the license are correctly known as the GNU Lesser General Public License.	
+GNU Lesser General Public License v2 (or 2.1) or later	LGPLv2+	LGPL-2.0-or-later 		YES	GPL			http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html	
+GNU Lesser General Public License v2 (or 2.1) or later	LGPLv2+	LGPL-2.1-or-later		YES	GPL				
+Perl License (variant)	LGPLv2+ or Artistic	LGPL-2.0-or-later OR Artistic-1.0-Perl		YES	GPL	Y		Some perl packages explicitly state LGPLv2+ (extremely uncommon), only use this license for those cases	this would be covered by using the short identifiers for each licnese choice with the "OR" operator 
+GNU Lesser General Public License v2 (or 2.1) or later, with exceptions	LGPLv2+ with exceptions	LGPL-2.0-or-later WITH ... LGPL-2.1-or-later WITH ...		YES	exceptions	category	are there any LGPL exceptions actually in use in Fedora? list just says to email list for approval	Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.	
+Qwt License 1.0	LGPLv2+ with exceptions	LGPL-2.1-or-later WITH Qwt-exception-1.0		YES	exceptions	category		http://qwt.sourceforge.net/qwtlicense.html	
+GNU Lesser General Public License v3.0 only	LGPLv3	LGPL-3.0-only		YES	GPL	Y		http://www.fsf.org/licensing/licenses/lgpl.html	
+GNU Lesser General Public License v3.0 only, with exceptions	LGPLv3 with exceptions	LGPL-3.0-only WITH ...		YES	exceptions	category	are there any LGPL exceptions actually in use in Fedora? list just says to email list for approval	Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.	No specific exception to approve for SPDX. SPDX uses specific short identifiers for each exception
+GNU Lesser General Public License v3.0 or later	LGPLv3+	LGPL-3.0-or-later		YES	GPL	Y		http://www.fsf.org/licensing/licenses/lgpl.html	
+GNU Lesser General Public License v3.0 or later, with exceptions	LGPLv3+ with exceptions	LGPL-3.0-or-later WITH ...		YES	exceptions	category	are there any LGPL exceptions actually in use in Fedora? list just says to email list for approval	Please be sure that any exceptions are approved by emailing them to legal@lists.fedoraproject.org first.	No specific exception to approve for SPDX. SPDX uses specific short identifiers for each exception
+Lhcyr License	Lhcyr			NO			not in current Rawhide list	https://fedoraproject.org/wiki/Licensing/Lhcyr	Permissive license.    old, not worth adding
+libtiff License	libtiff	libtiff		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/libtiff	BSD/MIT like
+Lisp Library General Public License	LLGPL			NO	exceptions		license listed fro common-lisp-controller - check still current?	A GPL or LGPL licensed package that lacks any statement of what version that it's licensed under in the source code/program output/accompanying docs is technically licensed under *any* version of the GPL or LGPL, not just the version in whatever COPYING f	Provides additional definitions to the LGPLv2.1 specific to Lisp programming language. 
+Logica Open Source License	Logica			NO			not listed in Rawhide list	http://opensmpp.logica.com/CommonPart/Download/Download.htm	Appears to be specific to Logica code and under the laws of Ireland license appears here: https://github.com/OpenSmpp/opensmpp/blob/master/LICENSE_LOGICA,  The license indicates that it has been superseded.  
+LEGO Open Source License Agreement	LOSLA			NO			not listed in Rawhide list	https://fedoraproject.org/wiki/Licensing/LOSLA	
+Lucent Public License (Plan9)	LPL	LPL-1.02		YES	version #	Y		http://plan9.bell-labs.com/plan9dist/license.html	SPDX List also has LPL-1.0
+LaTeX Project Public License	LPPL	LPPL-1.3a		YES	version #			http://www.latex-project.org/lppl/lppl-1-3a.txt	SPDX List also has LPPL-1.0, LPPL-1.1, LPPL-1.2, LPPL-1.3c
+MakeIndex License	MakeIndex	MakeIndex		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/MakeIndex	Strong Copyleft.
+mecab-ipadic license	mecab-ipadic			NO			listed as a license for packages: mecab-ipadic, mozc fcitx5-mozc  - need to download and check actual license text	http://www.icot.or.jp/ARCHIVE/terms-and-conditions-for-IFS-J.html	Link broken not sure of license terms - text from license cut and pasted into comments, but not sure where it was found... so can't be sure it's what Fedora intended  "Copyright 2000, 2001, 2002, 2003 Nara Institute of Science and Technology.  All Rights Reserved.  Use, reproduction, and distribution of this software is permitted. Any copy of this software, whether in its original form or modified, must include both the above copyright notice and the following paragraphs.  Nara Institute of Science and Technology (NAIST), the copyright holders, disclaims all warranties with regard to this software, including all implied warranties of merchantability and fitness, in no event shall NAIST be liable for any special, indirect or consequential damages or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortuous action, arising out of or in connection with the use or performance of this software.  A large portion of the dictionary entries originate from ICOT Free Software.  The following conditions for ICOT Free Software applies to the current dictionary as well.  Each User may also freely distribute the Program, whether in its original form or modified, to any third party or parties, PROVIDED that the provisions of Section 3 (""NO WARRANTY"") will ALWAYS appear on, or be attached to, the Program, which is distributed substantially in the same form as set out herein and that such intended distribution, if actually made, will neither violate or otherwise contravene any of the laws and regulations of the countries having jurisdiction over the User or the intended distribution itself.  NO WARRANTY  The program was produced on an experimental basis in the course of the research and development conducted during the project and is provided to users as so produced on an experimental basis.  Accordingly, the program is provided without any warranty whatsoever, whether express, implied, statutory or otherwise.  The term ""warranty"" used herein includes, but is not limited to, any warranty of the quality, performance, merchantability and fitness for a particular purpose of the program and the nonexistence of any infringement or violation of any right of any third party.  Each user of the program will agree and understand, and be deemed to have agreed and understood, that there is no warranty whatsoever for the program and, accordingly, the entire risk arising from or otherwise connected with the program is assumed by the user.  Therefore, neither ICOT, the copyright holder, or any other organization that participated in or was otherwise related to the development of the program and their respective officials, directors, officers and other employees shall be held liable for any and all damages, including, without limitation, general, special, incidental and consequential damages, arising out of or otherwise in connection with the use or inability to use the program or any product, material or result produced or otherwise obtained by using the program, regardless of whether they have been advised of, or otherwise had knowledge of, the possibility of such damages at any time during the project or thereafter.  Each user will be deemed to have agreed to the foregoing by his or her commencement of use of the program.  The term ""use"" as used herein includes, but is not limited to, the use, modification, copying and distribution of the program and the production of secondary products from the program.  In the case where the program, whether in its original form or modified, was distributed or delivered to or received by a user from any person, organization or entity other than ICOT, unless it makes or grants independently of ICOT any specific warranty to the user in writing, such person, organization or entity, will also be exempted from and not be held liable to the user for any such damages as noted above as far as the program is concerned. ˜˜ ' "
+midnight License	midnight			NO			not listed in current Rawhide list	https://fedoraproject.org/wiki/Licensing/midnight	FOSS license for single package
+MirOS License	MirOS	MirOS		YES	same	N/A		http://mirbsd.de/MirOS-Licence	
+Adobe Glyph List License	MIT	Adobe-Glyph		YES	different	category		https://fedoraproject.org/wiki/Licensing/MIT#AdobeGlyph	MIT variant; Fedora does not use distinct short identifier
+Historical Permission Notice and Disclaimer	MIT	HPND		YES	different	category		http://opensource.org/licenses/historical.php	no longer used in practice per OSI
+CMU License (BSD like)	MIT	MIT-CMU		YES	different	category		https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#CMU_Style	MIT/BSD variant.
+enna License	MIT	MIT-enna		YES	different	category		https://fedoraproject.org/wiki/Licensing/MIT#enna	MIT variant  COPYING.PLAIN text referenced in the license can be found here http://git.enlightenment.org/enlightenment/modules/forecasts.git/plain/COPYING-PLAIN 
+feh License	MIT	MIT-feh		YES	different	category		https://fedoraproject.org/wiki/Licensing/MIT#feh	Slight variant to MIT license. May be one package license
+mpich2 License	MIT	mpich2		YES	different	category		https://fedoraproject.org/wiki/Licensing/MIT	
+SGI Free Software License B 2.0	MIT	SGI-B-2.0		YES	different	category		http://oss.sgi.com/projects/FreeB/SGIFreeSWLicB.2.0.pdf	Fedora uses short name, "MIT"
+Standard ML of New Jersey License	MIT	StandardML-NJ		YES	different	category		https://fedoraproject.org/wiki/Licensing/MIT	https://fedoraproject.org/wiki/Licensing:MIT?rd=Licensing/MIT#Standard_ML_of_New_Jersey_Variant  There are other versions of this license that are more generic (http://www2.cs.tum.edu/projects/cup/) , without ""Lucent""; this license needs to be templated for the usual variables. 
+MIT license (also X11)	MIT	MIT		YES		category	SPDX has many of the variations accounted for; eventually would want to check anything tagged as MIT in Fedora and check for actual license text	https://fedoraproject.org/wiki/Licensing/MIT	This link goes to MIT "category" page - not a specific license text 
+Enlightenment License (e16)	MIT with advertising	MIT-advertising		YES	hyphen	Y		https://fedoraproject.org/wiki/Licensing/MIT_With_Advertising	This license is identical to MIT-FEH (except for templatized copyright statement)
+Nunit License	MIT with advertising	Nunit zlib-acknowledgement		YES	different	category	added to SPDX as "Nunit" and later realized it was same as zlib-acknowledgement with matching guidelines - use latter identifier	https://fedoraproject.org/wiki/Licensing/Nunit	
+MIT No Attribution (MIT-0)	MIT-0	MIT-0		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/MIT-0	
+MIT +no-false-attribs license	MITNFA	MITNFA		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/MITNFA	
+mod_macro License	mod_macro			NO			not listed in current Rawhide list	http://www.cri.ensmp.fr/~coelho/mod_macro/mod_macro/LICENSE	link broken - is this it?  https://people.apache.org/~fabien/mod_macro/LICENSE also see https://fossies.org/linux/mod_macro/LICENSE
+Motosoto License	Motosoto	Motosoto		YES	same	N/A		http://opensource.org/licenses/motosoto.php	
+FreeImage Public License	MPLv1.0	FreeImage		YES	different	category		http://freeimage.sourceforge.net/freeimage-license.txt	Fedora does not use distinct short identifier from MPLv1.0 (needs to be verified).   diff in choice of law provision - ADDED
+Mozilla Public License v1.0	MPLv1.0	MPL-1.0		YES	hyphen	category		http://opensource.org/licenses/mozilla1.0.php	
+CUA Office Public License Version 1.0	MPLv1.1	CUA-OPL-1.0		YES	different	category		http://opensource.org/licenses/cuaoffice.php	Fedora uses short identifier, "MPLv1.1"
+Mozilla Public License v1.1	MPLv1.1	MPL-1.1		YES	hyphen	category		http://www.mozilla.org/MPL/MPL-1.1.html	
+Mozilla Public License v2.0	MPLv2.0	MPL-2.0		YES	hyphen	Y		https://fedoraproject.org/wiki/Licensing/MPLv2.0	
+Microsoft Public License	MS-PL	MS-PL		YES	same	N/A		http://www.microsoft.com/opensource/licenses.mspx#Ms-PL	
+Microsoft Reciprocal License	MS-RL	MS-RL		YES	same	N/A		http://www.microsoft.com/opensource/licenses.mspx#Ms-RL	
+Matrix Template Library License	MTLL	MTLL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Matrix_Template_Library_License	Single package license. Apache-1.1-like
+Mup License	Mup	Mup		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Mup	
+Naumen Public License	Naumen	Naumen		YES	same	N/A		http://opensource.org/licenses/naumen.php	
+NCSA/University of Illinois Open Source License	NCSA	NCSA		YES	same	N/A		http://otm.illinois.edu/uiuc_openSource	
+Celtx Public License (CePL)	Netscape	Interbase-1.0		YES	different	category	as per 6/3/2021 - still shows up in Fedora - in Libre Office Libre Office Licensing list shows Firebrand under http://www.firebirdsql.org/en/initial-developer-s-public-license-version-1-0/ and http://www.firebirdsql.org/en/interbase-public-license/ - the latter of which is on SPDX License List  The former is really MPL-1.1 with an additional clause (6.4) which explains the origins (and which probably can't be accommodated via markup) Add to SPDX? Fedora needs to update Full Name, which is wrong	http://www.celtx.com/CePL/	URL should point to https://www.celtx.com/desktoplicense.html#artTerms  looks like the license page has since been updated to MPL-2.0... (and the other link we found is now also broken) - is this what we reviewed? https://www.ohloh.net/licenses/Celtx_Public_License - decided not to add, since cannot confirm license text originally reviewed 
+Netscape Public License	Netscape	NPL-1.0		YES	different	category		http://www.mozilla.org/NPL/NPL-1.0.html	SPDX List also has NPL-1.1
+Newmat License	Newmat			NO			not listed in Rawhide list	https://fedoraproject.org/wiki/Licensing/Newmat_License	
+Newsletr License	Newsletr	Newsletr		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Newsletr	
+Nethack General Public License	NGPL	NGPL		YES	same	N/A		http://opensource.org/licenses/nethack.php	
+NIST Software License	NISTSL	NIST-PD-fallback		YES	different	Y	new license to Fedora.  SPDX version and in wild does not have superflous paragraph at beg and end as shows in Fedora license text page?	https://fedoraproject.org/wiki/Licensing/NISTSL	
+No Limit Public License	NLPL	NLPL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/NLPL	
+Nmap License (not Nmap Public Source License)	Nmap			NO			is in one project in Fedora. Not sure how to deal with, as seems to be both an exception to GPL and explanation of GPL	https://fedoraproject.org/wiki/Licensing/Nmap	
+Nokia Open Source License	Nokia	Nokia		YES	same	N/A		http://opensource.org/licenses/nokia.html	
+Netizen Open Source License	NOSL	NOSL		YES	same	N/A		http://bits.netizen.com.au/licenses/NOSL/nosl.txt	
+Noweb License	Noweb	Noweb		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Noweb	
+Open Government License	OGL	OGL-UK-3.0		YES	version #		SPDX uses version number and "UK" as there are other "Open Government" licenses	http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/	
+Open Market License	OML	OML		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Open_Market_License	
+OpenLDAP License	OpenLDAP	OLDAP-2.8		YES	different			http://www.openldap.org/software/release/license.html	
+OpenPBS License	OpenPBS			NO			listed for torque project, but only see Torque-1.1 license in upstream repo??	https://fedoraproject.org/wiki/Licensing/OpenPBS	
+OpenSSL License	OpenSSL	OpenSSL		YES	same	N/A		http://www.sdisw.com/openssl.htm	
+OReilly License	OReilly			NO			only shows up in Rawhide list for http://wsdlpull.sourceforge.net project ??	https://fedoraproject.org/wiki/Licensing/OReilly	permissive license
+Open Software License 1.0	OSL 1.0	OSL-1.0		YES	hyphen	Y		http://www.opensource.org/licenses/osl-1.0.txt	
+Open Software License 2.0	OSL 2.0	OSL-2.0		YES	hyphen	Y		http://www.nexb.com/license/LICENSE-OSL-2.0.html	
+Open Software License 2.1	OSL 2.1	OSL-2.1		YES	hyphen	Y		https://fedoraproject.org/wiki/Licensing/OSL2.1	
+Open Software License 3.0	OSL 3.0	OSL-3.0		YES	hyphen	Y		http://opensource.org/licenses/osl-3.0.php	
+Par License	Par			NO			doesn't seem to be in Rawhide	https://fedoraproject.org/wiki/Licensing/Par	
+Phorum License	Phorum	Apache-1.1		YES	different	Y		http://phorum.org/license.txt	https://github.com/Phorum/Core/blob/master/docs/license.txt  PM: Reject (Apache 1.1 license-template should suffice)
+PHP License v3.0	PHP	PHP-3.01		YES	version #			http://www.php.net/license/3_01.txt	SPDX List also has PHP-3.0
+PlainTeX License	PlainTeX			NO			doesn't seem to be in Rawhide	https://fedoraproject.org/wiki/Licensing/PlainTeX	
+Plexus Classworlds License	Plexus	Plexus		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Plexus_Classworlds_License	
+PostgreSQL License	PostgreSQL	PostgreSQL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/PostgreSQL_License	
+psfrag License	psfrag	psfrag		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/psfrag	
+psutils License	psutils	psutils		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/psutils	
+Public Domain	Public Domain			NO			SPDX would use specific identifiers for public domain dedications (some of which might be on list) or can add new ones (or use LicenseRef-?"	Being in the public domain is not a license; rather, it means the material is not copyrighted and no license is needed.	SPDX does nto have a generic identifier - for the following reason:  http://wiki.spdx.org/view/Legal_Team/Decisions/Dealing_with_Public_Domain_within_SPDX_Files_(DRAFT)
+Python License	Python			NO			seems to still be in Fedora, see https://src.fedoraproject.org/rpms/python-functools32/blob/f28/f/python-functools32.spec check actual text	http://www.python.org/2.0.1/license.html	link broken. SPDX List has Python-2.0 text at https://docs.python.org/3/license.html is a bit different than Python-2.0 and may not be able to be accomodated via markup
+Qhull License	Qhull	Qhull		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Qhull	
+Q Public License	QPL	QPL-1.0		YES	version #			http://doc.trolltech.com/4.0/qpl.html	
+radvd License	radvd			NO				https://fedoraproject.org/wiki/Licensing/radvd_License	
+Rdisc License	Rdisc	Rdisc		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Rdisc_License	
+REX License	REX			NO				https://fedoraproject.org/wiki/Licensing/REX	
+Rice BSD	RiceBSD			NO			Fedora link works now - license is BSD-3-Clause with an additional clause re: modifications.  doesnt seem to appear in Fedora - confirm and if not, then don't add to SPDX	https://fedoraproject.org/wiki/Licensing/Rice_BSD_License	link is broken, license is old and no current link, also found: http://www.caam.rice.edu/software/ARPACK/RiceBSD.txt which appears that it was changed at some point to be simply a BSD-3-Clause
+Romio License	Romio			NO			Fedora link works now and has licene text. still in Fedora - see https://src.fedoraproject.org/rpms/openmpi/blob/rawhide/f/openmpi.spec   confirm and add to sPDX? (similar to existing license)	https://fedoraproject.org/wiki/Licensing/Romio_License	see current license here: https://www.open-mpi.org/community/license.php - it appears that license was changed to BSD-3-Clause, so rejecting, can always add later, if older versions are in wide-use
+RealNetworks Public Source License V1.0	RPSL	RPSL-1.0		YES	version #	Y		http://www.opensource.org/licenses/real.php	
+RSA License	RSA			NO				https://fedoraproject.org/wiki/Licensing/RSA	
+Rsfs License	Rsfs			NO			confirm no longer in Fedora (and then don't add to SPDX)	https://fedoraproject.org/wiki/Licensing/Rsfs	this text is part of a longer letter and so is making a call of what is the license to begin with - see: http://mirror.utexas.edu/ctan/fonts/rsfs/README
+Ruby License	Ruby	Ruby		YES	same	N/A		http://www.ruby-lang.org/en/LICENSE.txt	
+Saxpath License	Saxpath	Saxpath		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Saxpath_License	
+SCEA Shared Source License	SCEA	SCEA		YES	same	N/A		http://research.scea.com/scea_shared_source_license.html	note it is listed here too: http://en.opensuse.org/openSUSE:Accepted_licences and elsewhere
+SCRIP License	SCRIP			NO				https://fedoraproject.org/wiki/Licensing/SCRIP	Way too specific "JL: this seems old and can't find it elsewhere... reject? PM: Add?-found wiki page and code available, although last contribution 3 yrs. ago (see http://oceans11.lanl.gov/trac/SCRIP/wiki ) - too specific, decided not to add"
+Sendmail License	Sendmail	Sendmail-8.23		YES	version #		SPDX also has https://spdx.org/licenses/Sendmail.html text on link Fedora has goes to "8.23" version	http://www.sendmail.org/ftp/LICENSE	
+Sequence Library License	Sequence	Apache-1.1		YES	different	Y		https://fedoraproject.org/wiki/Licensing/SequenceLibraryLicense	
+Sun Industry Standards Source License	SISSL	SISSL		YES	same	N/A		http://www.openoffice.org/licenses/sissl_license.html	
+Sleepycat Software Product License	Sleepycat	Sleepycat		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Sleepycat	
+SLIB License	SLIB			NO				http://www-swiss.ai.mit.edu/~jaffer/SLIB_COPYING.txt	The text at the given URL is not really the license it self, more an explanatory text mentionning public domain dedication and the actual license. On a side note, they seem to define a theshold for copyrightability at "a dozen of lines" "PM: Reject (not a license, but rather an explanation of how SLIB is licensed on file by file basis) DC: Reject (agree with PM) "
+SNIA Public License 1.1	SNIA	SNIA		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/SNIA_Public_License	The reference URL given in the license text doesn't work anymore http://www.snia.org/smi/developers/open_source/ There is an ambiguity in the version number between 1.0 and 1.1 
+softSurfer License	softSurfer			NO				https://fedoraproject.org/wiki/Licensing/softSurfer	
+Sun Public License	SPL	SPL-1.0		YES	version #	Y		https://fedoraproject.org/wiki/Licensing/Sun_Public_License	
+SciTech MGL Public License	STMPL			NO				https://fedoraproject.org/wiki/Licensing/STMPL	this is the same as MPL 1.0 except for the preamble and amendment at end, due to this and that no one has seen it used currently, did not add
+Scheme Widget Library (SWL) Software License Agreement	SWL	SWL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/SWL	
+Trusted Computing Group License	TCGL			NO				https://fedoraproject.org/wiki/Licensing/TCGL	
+TCL/TK License	TCL	TCL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/TCL	
+Teeworlds License	Teeworlds	zlib		YES	different	Y	Fedora page mentions additional 4th clause as option - is this variant found? if so, then might need new entry in SPDX	https://fedoraproject.org/wiki/Licensing/Teeworlds	In its Free version (cf. fedora Wiki for details), it is identical to the Zlib license.
+Transitive Grace Period Public Licence	TGPPL			NO			This is really OSL-3.0 with a few minor changes having to do with the name and then the modifications to the license (last section). I think this was submitted to SPDX and we pointed out they should just use the "original"? check this	https://fedoraproject.org/wiki/Licensing/TGPPL	
+Threeparttable License	Threeparttable			NO				https://fedoraproject.org/wiki/Licensing/Threeparttable	
+TMate Open Source License	TMate	TMate		YES	same	N/A		http://svnkit.com/license.html	
+Tolua License	Tolua			NO				https://fedoraproject.org/wiki/Licensing/Tolua	
+TORQUE v2.5+ Software License v1.1	TORQUEv1.1	TORQUE-1.1		YES	hyphen	N/A		https://fedoraproject.org/wiki/Licensing/TORQUEv1.1	choice of law Utah. Release in Feb. 2014
+Trusster Open Source License	TOSL	TOSL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/TOSL	per Fedora, sleepycat like but one substantial difference
+Time::ParseDate License	TPDL			NO				https://fedoraproject.org/wiki/Licensing/TPDL	
+Thor Public License	TPL			NO				https://fedoraproject.org/wiki/Licensing/ThorPublicLicense	As noted in Fedora's wiki, this is MPL-1.1 with an additionnal 0.1 section - this is the same as MPL 1.1 except for the added terms at the beginning, due to this and that no one has seen it used currently, did not add
+Text-Tabs+Wrap License	TTWL			NO				https://fedoraproject.org/wiki/Licensing/TTWL	
+Tumbolia Public License	Tumbolia			NO			very similar to FSFAP	https://fedoraproject.org/wiki/Licensing/Tumbolia	
+UCAR License	UCAR			NO			used in one project - udunits2	https://fedoraproject.org/wiki/Licensing/UCAR	
+Unicode Character Database Terms Of Use	UCD			NO				https://fedoraproject.org/wiki/Licensing/UCD	this license appears to have been replaced as of 1991 see  http://www.unicode.org/copyright.html#Exhibit1  
+Unicode License	Unicode	Unicode-DFS-2015		YES	version #			https://fedoraproject.org/wiki/Licensing/Unicode	
+Unlicense	Unlicense	Unlicense		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Unlicense	
+Universal Permissive License	UPL	UPL-1.0		YES	version #	Y		https://fedoraproject.org/wiki/Licensing/UPL	
+Vim License	Vim	Vim		YES	same	N/A		http://vimdoc.sourceforge.net/htmldoc/uganda.html	
+Vita Nuova Liberal Source License	VNLSL			NO			Fedora link now has text preserved - doesn't seem to be in Fedora, confirm	https://fedoraproject.org/wiki/Licensing/Vita_Nuova_Liberal_Source_License	no current copy of license elsewhere and seems old and very specific so not adding
+VOSTROM Public License for Open Source	VOSTROM	VOSTROM		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/VOSTROM	
+Vovida Software License v. 1.0	VSL	VSL-1.0		YES	version #	Y		http://opensource.org/licenses/vovidapl.php	
+W3C Software Notice and License	W3C	W3C		YES	same	N/A		http://www.w3.org/Consortium/Legal/2002/copyright-software-20021231	
+Webmin License	Webmin			NO			Fedora link now has text - need to do more research on this	https://fedoraproject.org/wiki/Licensing/Webmin	This is a BSD-3-Clause with an additional set of patent-related restrictions same as BSD; can't find the patent clause in current download and unclear from Fedora page if this is really "part" of the license
+Wsuipa License	Wsuipa	Wsuipa		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Wsuipa	part of TEX
+Do What The F*ck You Want To Public License	WTFPL	WTFPL		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/WTFPL	
+wxWidgets Library License	wxWidgets	WXwindows		NO	different		see https://www.wxwidgets.org/about/licence/ - not sure time frame of this, but says it's same as wxWindows webarchive for wxwidgets URL that Fedora has shows wxWindows license going back to 2008, https://web.archive.org/web/20080425022039/http://docs.wxwidgets.org/stable/wx_wxlicense.html seems to appear in Fedora, see: https://src.fedoraproject.org/rpms/python-wxpython4/blob/rawhide/f/python-wxpython4.spec - check for actual text to see if it is different or not	http://www.wxwidgets.org/manuals/stable/wx_wxlicense.html	This is actually the *wxWindows* (not wxWidget) Library Licence, Version 3.1. The SPDX list didn't retain the version number.  
+wxWindows Library License v 3.1	wxWindows	LGPL-2.0-or-later WITH WxWindows-exception-3.1		YES	exceptions	Y		https://fedoraproject.org/wiki/Licensing/wxWindows.html	
+Xerox License	Xerox	Xerox		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Xerox	Currently identified by fossology as "Xerox"
+xinetd License	xinetd	xinetd		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Xinetd_License	
+XPP License	xpp	xpp		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/xpp	
+XSkat License	XSkat	XSkat		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/XSkat_License	
+Yahoo Public License v 1.1	YPLv1.1	YPL-1.1		YES	hyphen	Y		http://www.zimbra.com/license/yahoo_public_license_1.1.html	
+Zed License	Zed	Zed		YES	same	N/A		https://fedoraproject.org/wiki/Licensing/Zed	
+Zend License v2.0	Zend	Zend-2.0		YES	version #	Y		http://www.zend.com/license/2_00.txt	Currently identified by fossology as "Zend-2.0", which is consistent with SPDX naming scheme 
+zlib/libpng License	zlib	Zlib		YES	same	N/A		http://www.gzip.org/zlib/zlib_license.html	
+zlib/libpng License with Acknowledgement	zlib with acknowledgement	zlib-acknowledgement		YES	different	Y		https://fedoraproject.org/wiki/Licensing/ZlibWithAcknowledgement	will need to templatize copyright/acknowledgement statement in middle of license text  - decided to not templatize; need to use different short name b/c "with" is an operator for SPDX license expression
+Zope Public License v 1.0	ZPLv1.0			NO			SPDX has v 1.1, 2.0 and 2.1	http://www.zope.org/Resources/ZPL	There is no link to version 1.0 of the license on http://old.zope.org/Resources/License/ eventhough this version is mentioned. The link http://www.zope.org/Resources/ZPL now gives a 404ish "Die Seite existiert leider nicht…" fine to add if someone can find a version of the license text; it is listed here: http://old.zope.org/Resources/License/ (as well as other older licenses) but no active link) Reject (old licensethat has been replaced at least 3 times since 1.0 and can't find copy of old license)"
+Zope Public License v 2.0	ZPLv2.0	ZPL-2.0		YES	hyphen	Y		http://www.zope.org/Resources/ZPL	
+Zope Public License v 2.1	ZPLv2.1	ZPL-2.1		YES	hyphen	Y		http://www.zope.org/Resources/ZPL	
+									
+									
+									
+285 listed licenses on Fedora good list		Already on or covered by SPDX list =		232					
+		Not on SPDX =		54					
+		On hold question for Fedora =		0					
+		NEW licenses from Fedora / not on SPDX =		0					
+									
+		TOTAL =		286					
+		IDENTIFIERS							
+									
+		same =			100				
+		diff identifer (hypen) =			21				
+		diff identifier (version #) =			26				
+		exceptions			22				
+		GPL =			23				
+		different =			42				
+									
+				REPLACEABLE:					
+				1:1 - Y		76			
+				N/A (already same)		98			
+				blank		71			

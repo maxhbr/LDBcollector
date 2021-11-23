@@ -1,0 +1,18 @@
+[license]
+
+expression = "Barr"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Barr
+'''
+
+[fedora]
+
+name = "Barr License"
+abbreviation = "Barr"
+
+notes = '''
+Shows up here: http://stuff.mit.edu/afs/athena/system/i386_deb50/os-
+ubuntu-9.04/usr/share/texmf-texlive/tex/latex/barr/diagxy.tex
+'''

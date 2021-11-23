@@ -1,0 +1,13 @@
+[license]
+
+expression = "UPL-1.0"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/UPL
+'''
+
+[fedora]
+
+name = "Universal Permissive License"
+abbreviation = "UPL"

@@ -1,0 +1,13 @@
+[license]
+
+expression = "NLPL"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/NLPL
+'''
+
+[fedora]
+
+name = "No Limit Public License"
+abbreviation = "NLPL"

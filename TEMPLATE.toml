@@ -1,0 +1,63 @@
+# All of the files in this provide information about a single approved
+# Fedora license.  The file format is TOML and the sections allowed
+# are described below.  For information on the TOML standard, see
+# https://toml.io/en/
+
+# All files must provide a 'license' block.
+[license]
+
+# The SPDX expression is the SPDX license expression as evaluated by
+# Fedora.  It is a string wrapped in double quotes.  For example:
+#
+#     spdx_expression = "GPL-3.0-or-later WITH Autoconf-exception-3.0"
+#
+# This expression is constructed using valid SPDX license and
+# exception identifiers found at https://spdx.org/
+#
+# This is a required field.
+expression = ""
+
+# The status of this license expression.  It is a string wrapped in
+# double quotes.  Generally 'approved', but may be any of:
+#
+#     approved
+#     not-approved
+#     approved-for-fonts
+#     approved-for-contents
+#
+# This is a required field.
+status = ""
+
+# Optional URL(s) to the license text or the contents of the license
+# itself.  This field is a multiline literal string.  For example:
+#
+#     text = '''
+#     https://www.gnu.org/licenses/gpl-3.0-standalone.html
+#     https://www.gnu.org/licenses/autoconf-exception-3.0.html
+#     '''
+#
+# In cases where the license is not available online, you may put the
+# text of license in this multiline field.
+#
+# This field is optional.
+#text = '''
+#'''
+
+# The 'fedora' block contains additional information for the Fedora
+# Project regarding the license.  This section is optional and any of
+# the fields in it are optional.
+#[fedora]
+
+# The name Fedora uses to refer to this license.  This field is a
+# string wrapped in double quotes.
+#name = ""
+
+# The short abbreviation Fedora uses to represent this license in RPM
+# packages.  This field is a string wrapped in double quotes.
+#abbreviation = ""
+
+# Any additional notes, history, or other information about this
+# license and its use in Fedora.  This field is a multiline literal
+# string.
+#notes = '''
+#'''

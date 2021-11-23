@@ -1,0 +1,20 @@
+[license]
+
+expression = "ARL"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/AspellRu
+'''
+
+[fedora]
+
+name = "Aspell-ru License"
+abbreviation = "ARL"
+
+notes = '''
+Permissive license. Single Russian dictionary file under this license. Should we
+include additional license text?  appears to be part of larger license at:
+http://sources.gentoo.org/cgi-bin/viewvc.cgi/gentoo-x86/licenses/myspell-ru_RU-
+ALexanderLebedev
+'''
