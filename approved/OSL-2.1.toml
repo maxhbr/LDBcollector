@@ -1,0 +1,13 @@
+[license]
+
+expression = "OSL-2.1"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/OSL2.1
+'''
+
+[fedora]
+
+name = "Open Software License 2.1"
+abbreviation = "OSL 2.1"

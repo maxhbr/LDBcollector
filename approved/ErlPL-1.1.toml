@@ -1,0 +1,13 @@
+[license]
+
+expression = "ErlPL-1.1"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/ErlangPublicLicense
+'''
+
+[fedora]
+
+name = "Erlang Public License 1.1"
+abbreviation = "ERPL"

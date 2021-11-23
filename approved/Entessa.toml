@@ -1,0 +1,13 @@
+[license]
+
+expression = "Entessa"
+status = "approved"
+
+text = '''
+http://opensource.org/licenses/entessa.php
+'''
+
+[fedora]
+
+name = "Entessa Public License"
+abbreviation = "Entessa"

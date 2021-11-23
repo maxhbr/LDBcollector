@@ -1,0 +1,13 @@
+[license]
+
+expression = "GPL-3.0-or-later WITH Font-exception-2.0"
+status = "approved"
+
+text = '''
+http://www.gnu.org/licenses/gpl-faq.html#FontException
+'''
+
+[fedora]
+
+name = "GNU General Public License v3.0 or later, with font embedding exception"
+abbreviation = "GPLv3+ with exceptions"

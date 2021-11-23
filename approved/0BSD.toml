@@ -1,0 +1,13 @@
+[license]
+
+expression = "0BSD"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/ZeroClauseBSD
+'''
+
+[fedora]
+
+name = "Zero-Clause BSD"
+abbreviation = "0BSD"

@@ -1,0 +1,17 @@
+[license]
+
+expression = "Giftware"
+status = "approved"
+
+text = '''
+http://www.talula.demon.co.uk/allegro/license.html
+'''
+
+[fedora]
+
+name = "Giftware License"
+abbreviation = "Giftware"
+
+notes = '''
+Permissive license.  done - added Allegro 4; Allegro 5 is same as zlib
+'''

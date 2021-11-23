@@ -1,0 +1,17 @@
+[license]
+
+expression = "Dotseqn"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Dotseqn
+'''
+
+[fedora]
+
+name = "Dotseqn License"
+abbreviation = "Dotseqn"
+
+notes = '''
+Permissive license. Appears to be single file/package
+'''

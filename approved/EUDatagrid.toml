@@ -1,0 +1,13 @@
+[license]
+
+expression = "EUDatagrid"
+status = "approved"
+
+text = '''
+http://www.opensource.org/licenses/eudatagrid.php
+'''
+
+[fedora]
+
+name = "EU Datagrid Software License"
+abbreviation = "EU Datagrid"

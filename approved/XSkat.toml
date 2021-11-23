@@ -1,0 +1,13 @@
+[license]
+
+expression = "XSkat"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/XSkat_License
+'''
+
+[fedora]
+
+name = "XSkat License"
+abbreviation = "XSkat"

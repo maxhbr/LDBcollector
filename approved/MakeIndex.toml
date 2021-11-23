@@ -1,0 +1,17 @@
+[license]
+
+expression = "MakeIndex"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MakeIndex
+'''
+
+[fedora]
+
+name = "MakeIndex License"
+abbreviation = "MakeIndex"
+
+notes = '''
+Strong Copyleft.
+'''

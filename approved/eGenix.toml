@@ -1,0 +1,18 @@
+[license]
+
+expression = "eGenix"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/eGenix.com_Public_License_1.1.0
+'''
+
+[fedora]
+
+name = "eGenix.com Public License 1.1.0"
+abbreviation = "eGenix"
+
+notes = '''
+Based on CNRI license and may be for one project. Official license site
+http://www.egenix.com/products/eGenix.com-Public-License-1.1.0.pdf
+'''

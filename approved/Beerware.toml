@@ -1,0 +1,17 @@
+[license]
+
+expression = "Beerware"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Beerware
+'''
+
+[fedora]
+
+name = "Beerware License"
+abbreviation = "Beerware"
+
+notes = '''
+Very permissive license.
+'''

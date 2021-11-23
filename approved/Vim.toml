@@ -1,0 +1,13 @@
+[license]
+
+expression = "Vim"
+status = "approved"
+
+text = '''
+http://vimdoc.sourceforge.net/htmldoc/uganda.html
+'''
+
+[fedora]
+
+name = "Vim License"
+abbreviation = "Vim"

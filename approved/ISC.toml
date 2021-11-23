@@ -1,0 +1,13 @@
+[license]
+
+expression = "ISC"
+status = "approved"
+
+text = '''
+https://www.isc.org/software/license
+'''
+
+[fedora]
+
+name = "ISC License (Bind, DHCP Server)"
+abbreviation = "ISC"

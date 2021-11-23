@@ -1,0 +1,17 @@
+[license]
+
+expression = "AMPAS"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/BSD#AMPASBSD
+'''
+
+[fedora]
+
+name = "Academy of Motion Picture Arts and Sciences BSD"
+abbreviation = "AMPAS BSD"
+
+notes = '''
+BSD variant; specifically disclaims rights to trademarks, patents, etc.
+'''

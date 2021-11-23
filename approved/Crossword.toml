@@ -1,0 +1,17 @@
+[license]
+
+expression = "Crossword"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/Crossword
+'''
+
+[fedora]
+
+name = "Crossword License"
+abbreviation = "Crossword"
+
+notes = '''
+Permissive license. May be single package license.
+'''

@@ -1,0 +1,28 @@
+[license]
+
+expression = "Interbase-1.0"
+status = "approved"
+
+text = '''
+http://www.celtx.com/CePL/
+'''
+
+[fedora]
+
+name = "Celtx Public License (CePL)"
+abbreviation = "Netscape"
+
+notes = '''
+as per 6/3/2021 - still shows up in Fedora - in Libre Office Libre Office
+Licensing list shows Firebrand under http://www.firebirdsql.org/en/initial-
+developer-s-public-license-version-1-0/ and
+http://www.firebirdsql.org/en/interbase-public-license/ - the latter of which is
+on SPDX License List  The former is really MPL-1.1 with an additional clause
+(6.4) which explains the origins (and which probably can't be accommodated via
+markup) Add to SPDX? Fedora needs to update Full Name, which is wrong URL should
+point to https://www.celtx.com/desktoplicense.html#artTerms  looks like the
+license page has since been updated to MPL-2.0... (and the other link we found
+is now also broken) - is this what we reviewed?
+https://www.ohloh.net/licenses/Celtx_Public_License - decided not to add, since
+cannot confirm license text originally reviewed
+'''

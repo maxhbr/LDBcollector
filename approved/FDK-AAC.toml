@@ -1,0 +1,17 @@
+[license]
+
+expression = "FDK-AAC"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/FDK-AAC
+'''
+
+[fedora]
+
+name = "Fraunhofer FDK AAC License"
+abbreviation = "FDK-AAC"
+
+notes = '''
+if still used in Fedora, then add to SPDX added for 3.15 version
+'''

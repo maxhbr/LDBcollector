@@ -1,0 +1,13 @@
+[license]
+
+expression = "OSL-3.0"
+status = "approved"
+
+text = '''
+http://opensource.org/licenses/osl-3.0.php
+'''
+
+[fedora]
+
+name = "Open Software License 3.0"
+abbreviation = "OSL 3.0"

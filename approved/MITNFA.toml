@@ -1,0 +1,13 @@
+[license]
+
+expression = "MITNFA"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/MITNFA
+'''
+
+[fedora]
+
+name = "MIT +no-false-attribs license"
+abbreviation = "MITNFA"

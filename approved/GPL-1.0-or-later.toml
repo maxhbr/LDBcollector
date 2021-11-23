@@ -1,0 +1,13 @@
+[license]
+
+expression = "GPL-1.0-or-later"
+status = "approved"
+
+text = '''
+Note that this is not GPLv1+, because 1+ is the same as any version.
+'''
+
+[fedora]
+
+name = "GNU General Public License v1.0 or later"
+abbreviation = "GPL+"

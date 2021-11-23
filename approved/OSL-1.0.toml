@@ -1,0 +1,13 @@
+[license]
+
+expression = "OSL-1.0"
+status = "approved"
+
+text = '''
+http://www.opensource.org/licenses/osl-1.0.txt
+'''
+
+[fedora]
+
+name = "Open Software License 1.0"
+abbreviation = "OSL 1.0"

@@ -1,0 +1,13 @@
+[license]
+
+expression = "APSL-2.0"
+status = "approved"
+
+text = '''
+http://www.opensource.apple.com/apsl/2.0.txt
+'''
+
+[fedora]
+
+name = "Apple Public Source License 2.0"
+abbreviation = "APSL 2.0"

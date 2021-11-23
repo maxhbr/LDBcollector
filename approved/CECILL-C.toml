@@ -1,0 +1,17 @@
+[license]
+
+expression = "CECILL-C"
+status = "approved"
+
+text = '''
+http://www.cecill.info/licences.en.html
+'''
+
+[fedora]
+
+name = "CeCILL-C License"
+abbreviation = "CeCILL-C"
+
+notes = '''
+SPDX List also has CECILL-1.0
+'''

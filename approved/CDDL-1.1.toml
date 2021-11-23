@@ -1,0 +1,13 @@
+[license]
+
+expression = "CDDL-1.1"
+status = "approved"
+
+text = '''
+https://fedoraproject.org/wiki/Licensing/CDDL#CDDL_1.1
+'''
+
+[fedora]
+
+name = "Common Development Distribution License 1.1"
+abbreviation = "CDDL-1.1"

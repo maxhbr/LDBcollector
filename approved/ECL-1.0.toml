@@ -1,0 +1,13 @@
+[license]
+
+expression = "ECL-1.0"
+status = "approved"
+
+text = '''
+http://opensource.org/licenses/ecl1.php
+'''
+
+[fedora]
+
+name = "Educational Community License 1.0"
+abbreviation = "ECL 1.0"
