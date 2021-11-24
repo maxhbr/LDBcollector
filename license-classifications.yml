@@ -401,6 +401,24 @@ categorizations:
       - "property:AutoConf-or-other-exception"
 
   # url:https://spdx.org/licenses/GPL-2.0-only.html
+  # url:https://spdx.org/licenses/Classpath-exception-2.0.html
+  - id: "GPL-2.0 WITH Classpath-exception-2.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-2.0-only.html
+  # url:https://spdx.org/licenses/OpenJDK-assembly-exception-1.0.html
+  - id: "GPL-2.0 WITH OpenJDK-assembly-exception-1.0"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:AutoConf-or-other-exception"
+
+  # url:https://spdx.org/licenses/GPL-2.0-only.html
   # url:https://spdx.org/licenses/Font-exception-2.0.html
   - id: "GPL-2.0-only WITH Font-exception-2.0"
     categories:
@@ -1003,6 +1021,10 @@ categorizations:
       - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
+  - id: "openvpn-openssl-exception"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
   - id: "LicenseRef-scancode-mysql-floss-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
@@ -1035,7 +1057,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-other-copyleft"
     categories:
-      - "property:unchecked"
       - "copyleft-strong"
       - "property:include-in-notice-file"
 
@@ -1070,12 +1091,11 @@ categorizations:
 
   - id: "LicenseRef-scancode-openjdk-exception"
     categories:
-      - "property:unchecked"
+      - "property:AutoConf-or-other-exception"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-unknown-spdx"
     categories:
-      - "property:unchecked"
       - "unstated"
 
   - id: "BSD-2-Clause-Views"
@@ -1090,7 +1110,7 @@ categorizations:
 
   - id: "Noweb" # unusual bug report clause
     categories:
-      - "property:unchecked"
+      - "copyleft-module-level"
       - "property:include-in-notice-file"
 
   - id: "CC-BY-NC-SA-4.0"
@@ -1187,54 +1207,48 @@ categorizations:
 
   - id: "LicenseRef-scancode-mit-old-style"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "MPL-2.0-no-copyleft-exception"
     categories:
-      - "property:unchecked"
+      - "copyleft-file-level"
       - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
 
   - id: "LicenseRef-scancode-bsd-no-disclaimer"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-minpack"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "Linux-OpenIB"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "APAFML"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "Adobe-Glyph"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-freemarker"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-indiana-extreme"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1257,25 +1271,21 @@ categorizations:
 
   - id: "LicenseRef-scancode-bakoma-fonts-1995"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-bitstream"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-boost-original"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-llnl"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1310,7 +1320,7 @@ categorizations:
 
   - id: "LicenseRef-scancode-bsla"
     categories:
-      - "property:unchecked"
+      - "property:advertising-clause"
       - "permissive"
       - "property:include-in-notice-file"
 
@@ -1322,9 +1332,7 @@ categorizations:
 
   - id: "LicenseRef-scancode-ekioh"
     categories:
-      - "property:unchecked"
       - "permissive"
-      - "property:include-in-notice-file"
 
   - id: "LicenseRef-scancode-mit-nagy"
     categories:
@@ -1334,8 +1342,7 @@ categorizations:
 
   - id: "Font-exception-2.0"
     categories:
-      - "property:unchecked"
-      - "property:include-in-notice-file"
+      - "property:AutoConf-or-other-exception"
 
   - id: "LicenseRef-scancode-mit-modern"
     categories:
@@ -1394,7 +1401,6 @@ categorizations:
 
   - id: "BSD-3-Clause-LBNL"
     categories:
-      - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
 
