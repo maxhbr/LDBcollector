@@ -909,7 +909,6 @@ categorizations:
 
   - id: "LicenseRef-scancode-sun-sdk-spec-1.1"
     categories:
-      - "property:unchecked"
       - "proprietary-free"
       - "property:include-in-notice-file"
 
@@ -1260,7 +1259,7 @@ categorizations:
 
   - id: "CC-BY-SA-2.5"
     categories:
-      - "property:unchecked"
+      - "copyleft-file-level"
       - "property:include-in-notice-file"
 
   - id: "PSF-2.0"
@@ -1870,3 +1869,16 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
+
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-js-pd.LICENSE
+  - id: "LicenseRef-scancode-json-js-pd"
+    categories:
+      - "public-domain"
+
+  # url:https://spdx.org/licenses/xpp.html
+  - id: "xpp"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
