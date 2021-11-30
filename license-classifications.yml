@@ -1881,3 +1881,47 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:advertising-clause"
 
+# url:https://spdx.org/licenses/YPL-1.0.html
+  - id: "YPL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
+  - id: "LicenseRef-scancode-cc-devnations-2.0"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/BSD-3-Clause-Clear.html
+  - id: "BSD-3-Clause-Clear"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
+  - id: "LicenseRef-scancode-mx4j"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:advertising-clause"
+
+# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
+  - id: "LicenseRef-scancode-bsd-simplified-darwin"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
+  - id: "LicenseRef-scancode-iptc-2006"
+    categories:
+      - "proprietary-free"
+      - "property:include-in-notice-file"
+
+# url:https://spdx.org/licenses/CC-BY-ND-3.0.html
+  - id: "CC-BY-ND-3.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
