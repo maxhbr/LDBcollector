@@ -53,6 +53,7 @@ categories:
       A Permissive-style license that contains restrictions regarding the usage of the software (for example, 
       where the software is not intended for use in nuclear facilities) or the redistribution of the software 
       (for example, where commercial redistribution of the software is not allowed without express permission). 
+      These licenses are not open source licenses, since they do not include all the required freedoms. 
 
   - name: "proprietary-free"
     description: >-
