@@ -23,7 +23,7 @@ expression = ""
 #     approved
 #     not-approved
 #     approved-for-fonts
-#     approved-for-contents
+#     approved-for-content
 #
 # This is a required field.
 status = ""
