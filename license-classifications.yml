@@ -1906,7 +1906,6 @@ categorizations:
     categories:
       - "permissive"
       - "property:include-in-notice-file"
-      - "property:advertising-clause"
 
 # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
   - id: "LicenseRef-scancode-bsd-simplified-darwin"
@@ -1925,3 +1924,68 @@ categorizations:
     categories:
       - "source-available"
       - "property:include-in-notice-file"
+
+# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
+  - id: "LicenseRef-scancode-json-pd"
+    categories:
+      - "public-domain"
+
+# url:https://spdx.org/licenses/AFL-1.1.html
+  - id: "AFL-1.1"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+
+# url:https://spdx.org/licenses/AFL-1.2.html
+  - id: "AFL-1.2"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+
+# url:https://spdx.org/licenses/AFL-3.0.html
+  - id: "AFL-3.0"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:network-clause"
+
+# url:https://spdx.org/licenses/AMDPLPA.html
+  - id: "AMDPLPA"
+    categories:
+      - "permissive"
+      - "property:include-in-notice-file"
+
+# url:https://spdx.org/licenses/APL-1.0.html
+  - id: "APL-1.0"
+    categories:
+      - "copyleft-module-level"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/APSL-1.0.html
+  - id: "APSL-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/APSL-1.1.html
+  - id: "APSL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/APSL-1.2.html
+  - id: "APSL-1.2"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
