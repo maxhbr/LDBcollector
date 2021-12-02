@@ -2037,3 +2037,31 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
+# url:https://spdx.org/licenses/BitTorrent-1.1.html
+  - id: "BitTorrent-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+# url:https://spdx.org/licenses/Borceux.html
+  - id: "Borceux"
+    categories:
+      - "permissive"
+
+# url:https://spdx.org/licenses/CATOSL-1.1.html
+  - id: "CATOSL-1.1"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
+# url:https://spdx.org/licenses/CC-BY-NC-1.0.html
+  - id: "CC-BY-NC-1.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
