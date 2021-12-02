@@ -1989,3 +1989,50 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:patent-clause"
       - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/APSL-2.0.html
+  - id: "APSL-2.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:patent-clause"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/Adobe-2006.html
+  - id: "Adobe-2006"
+    categories:
+      - "permissive"
+
+# url:https://spdx.org/licenses/Artistic-1.0-cl8.html
+  - id: "Artistic-1.0-cl8"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:artistic-license"
+
+# url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  - id: "Autoconf-exception-2.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+# url:https://spdx.org/licenses/Autoconf-exception-3.0.html
+  - id: "Autoconf-exception-3.0"
+    categories:
+      - "property:AutoConf-or-other-exception"
+
+# url:https://spdx.org/licenses/BSD-Protection.html
+  - id: "BSD-Protection"
+    categories:
+      - "copyleft-strong"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+
+# url:https://spdx.org/licenses/BitTorrent-1.0.html
+  - id: "BitTorrent-1.0"
+    categories:
+      - "copyleft-file-level"
+      - "property:include-in-notice-file"
+      - "property:distribute-source-code"
+      - "property:patent-clause"
+
