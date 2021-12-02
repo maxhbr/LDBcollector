@@ -90,7 +90,8 @@ categories:
   - name: "property:network-clause"
     description: >-
       This license has specific terms that apply when the software is used or deployed over a network. Few licenses 
-      have such terms; examples include Affero GPL, OSL and the Common Public Attribution License (CPAL 1.0). 
+      have such terms; examples include Affero GPL, EUPL-1.2 (and other versions) OSL and the Common Public Attribution 
+      License (CPAL 1.0). 
 
   - name: "property:advertising-clause"
     description: >-
