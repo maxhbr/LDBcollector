@@ -111,7 +111,8 @@ categories:
     description: >-
       This property means that the end user must be offered an opportunity to reinstall modified software in the device, 
       and there must not be any firmware checking for checksums of the software on device and not operating due to 
-      such checks failing.
+      such checks failing. This property only applies to products (i) normally used for personal, family or household 
+      purposes or (ii) designed or sold for incorporation into a dwelling.
 
   - name: "property:nuclear-restriction"
     description: >-
