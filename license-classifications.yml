@@ -2065,3 +2065,31 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
+# url:https://spdx.org/licenses/CC-BY-NC-2.0.html
+  - id: "CC-BY-NC-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-2.5.html
+  - id: "CC-BY-NC-2.5"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-3.0.html
+  - id: "CC-BY-NC-3.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-4.0.html
+  - id: "CC-BY-NC-4.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
