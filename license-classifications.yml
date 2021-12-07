@@ -2097,3 +2097,93 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
+# url:https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
+  - id: "CC-BY-NC-ND-1.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
+  - id: "CC-BY-NC-ND-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
+  - id: "CC-BY-NC-ND-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
+  - id: "CC-BY-NC-ND-2.5"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
+  - id: "CC-BY-NC-ND-3.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
+  - id: "CC-BY-NC-SA-1.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
+  - id: "CC-BY-NC-SA-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
+  - id: "CC-BY-NC-SA-3.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-ND-1.0.html
+  - id: "CC-BY-ND-1.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-ND-2.0.html
+  - id: "CC-BY-ND-2.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-ND-2.5.html
+  - id: "CC-BY-ND-2.5"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-ND-3.0.html
+  - id: "CC-BY-ND-3.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
+
+# url:https://spdx.org/licenses/CC-BY-ND-4.0.html
+  - id: "CC-BY-ND-4.0"
+    categories:
+      - "source-available"
+      - "property:include-in-notice-file"
+      - "property:non-commercial"
