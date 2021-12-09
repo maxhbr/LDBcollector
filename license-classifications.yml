@@ -26,7 +26,7 @@ categories:
     description: >-
       Open source software that require you to license modifications, as well as any code that ends
       up in the same binary (including statically linking and module modification), as well as code
-      that dynamically links with strong copyleft code, with the same strong copyleft license. -
+      that dynamically links with strong copyleft code, with the same strong copyleft license.
       Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
 
   - name: "copyleft-LGPL"
