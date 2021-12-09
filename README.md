@@ -1,3 +1,5 @@
+<!--- SPDX-License-Identifier: CC0-1.0 -->
+
 # Double Open Policy Configuration
 
 This repository is used to maintain the license classification (license-classifications.yml) created by Double Open.
