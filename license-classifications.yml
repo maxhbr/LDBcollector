@@ -120,7 +120,8 @@ categories:
       non-operation of the software or device due to the failure of such checks, unless the
       licensee/end user is given adequate information to bypass such controls. This property only
       applies to (i) products normally used for personal, family or household purposes (interpreted
-      broadly), and (ii) products designed or sold for incorporation into a dwelling.
+      broadly), and (ii) products designed or sold for incorporation into a dwelling. Known
+      instances in GPL-3.0, LGPL-3.0, AGPL-3.0.
 
   - name: "property:nuclear-restriction"
     description: >-
