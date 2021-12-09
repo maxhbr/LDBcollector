@@ -1,3 +1,8 @@
+
+/*
+SPDX-License-Identifier: CC0-1.0
+*/
+
 val permissiveLicenses = licenseClassifications.licensesByCategory["permissive"].orEmpty()
 val copyleftLicenses = licenseClassifications.licensesByCategory["copyleft"].orEmpty()
 
