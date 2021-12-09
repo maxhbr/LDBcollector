@@ -1,4 +1,4 @@
-<!--- 
+<!---
 SPDX-FileCopyrightText: 2021 Double Open by HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
 SPDX-License-Identifier: CC0-1.0
 -->
@@ -31,4 +31,4 @@ If you need a warranty for the content of the classification, or for the timely 
 
 Double Open is a project managed by HH Partners, Attorneys-at-law, Ltd, a law firm based in Helsinki, Finland.
 
-The license-classifications.yml file is published under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and the Creative Commons Attribution 4.0 International license ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). The latter applies for certain material reused from another project, as indicated in the said file.
+The license-classifications.yml file is published under [CC0](https://creativecommons.org/publicdomain/zero/1.0/) and Creative Commons Attribution licenses versions 3.0 and 4.0 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/)). The latter CC licenses apply to certain material reused from other projects, as indicated in the said file.
