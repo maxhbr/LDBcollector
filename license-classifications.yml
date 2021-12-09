@@ -1,6 +1,6 @@
 ---
-# SPDX-License-Identifier: CC0 AND AND CC-BY-3.0 AND CC-BY-4.0 Author: Double Open by HH Partners,
-# Attorneys-at-law, Ltd
+# SPDX-License-Identifier: CC0 AND AND CC-BY-3.0 AND CC-BY-4.0
+# Author: Double Open by HH Partners, Attorneys-at-law, Ltd
 #
 # Example license-classifications.yml using the license names from SPDX
 # (https://spdx.org/licenses/), licensed under CC-BY-3.0. When licenses are not covered by SPDX, we
@@ -1119,7 +1119,8 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  - id: "Noweb"  # unusual bug report clause
+  # unusual bug report clause
+  - id: "Noweb"
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
