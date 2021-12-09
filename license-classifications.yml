@@ -1,11 +1,13 @@
 ---
 # SPDX-FileCopyrightText: 2021 Double Open by HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
 # SPDX-License-Identifier: CC0-1.0
+# SPDX-FileCopyrightText: The Linux Foundation® <legal@linuxfoundation.org>
+# SPDX-License-Identifier: CC-BY-3.0
 # SPDX-FileCopyrightText: 2015-2021 nexB, Inc. <info@nexb.com>
 # SPDX-License-Identifier: CC-BY-4.0
 #
 # Example of license-classifications.yml, using the license names from the SPDX License List
-# (https://spdx.org/licenses/) licensed under CC0-1.0. When licenses are not covered by SPDX,
+# (https://spdx.org/licenses/) licensed under CC-BY-3.0. When licenses are not covered by SPDX,
 # we use license names from the ScanCode LicenseDB, although with a different and more detailed
 # categorization, enabling better automation at least for our use cases. Since we also use other
 # scanners, notably Nomos and Monk in Fossology, we have included some license names of our own to
