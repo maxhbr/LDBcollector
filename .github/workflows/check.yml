@@ -20,3 +20,12 @@ jobs:
       - name: Check license-classifications.yml
         run: |
           /opt/ort/bin/orth list-license-categories -i license-classifications.yml
+
+  Lint:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Clone the repository
+        uses: actions/checkout@v2
+      - name: Lint YAML files
+        uses: ibiqlik/action-yamllint@v3
