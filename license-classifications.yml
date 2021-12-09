@@ -1,90 +1,94 @@
 ---
-# SPDX-License-Identifier: CC0 AND AND CC-BY-3.0 AND CC-BY-4.0
-# Author: Double Open by HH Partners, Attorneys-at-law, Ltd
-# 
-# Example license-classifications.yml using the license names from SPDX (https://spdx.org/licenses/), 
-# licensed under CC-BY-3.0. When licenses are not covered by SPDX, we use the license names of Scancode,
-# but a different/more detailed categorization, enabling better automation at least in our cases. As we
-# also use other scanners, notably Nomos and Monk in Fossology, we have included some licenses to help 
-# process unclear scanner findings. The Scancode database is available at 
-# https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0. 
+# SPDX-License-Identifier: CC0 AND AND CC-BY-3.0 AND CC-BY-4.0 Author: Double Open by HH Partners,
+# Attorneys-at-law, Ltd
+#
+# Example license-classifications.yml using the license names from SPDX
+# (https://spdx.org/licenses/), licensed under CC-BY-3.0. When licenses are not covered by SPDX, we
+# use the license names of Scancode, but a different/more detailed categorization, enabling better
+# automation at least in our cases. As we also use other scanners, notably Nomos and Monk in
+# Fossology, we have included some licenses to help process unclear scanner findings. The Scancode
+# database is available at https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0.
 #
 # Double Open content in this file is published under CC0.
-# 
-# The following introduces the applicable categories and properties. Each license should be in one category.
-# A license can have multiple properties. 
 #
-# Do you want this file to be updated? Make a GitHub issue or send email to doubleopen at hhpartners.fi. If
-# you make a pull request, we expect every contribution to be published under CC0.
+# The following introduces the applicable categories and properties. Each license should be in one
+# category. A license can have multiple properties.
+#
+# Do you want this file to be updated? Make a GitHub issue or send email to doubleopen at
+# hhpartners.fi. If you make a pull request, we expect every contribution to be published under CC0.
 
 categories:
   - name: "copyleft-strong"
     description: >-
-      Open source software that require you to license modifications, as well as any code that ends up in the same 
-      binary (including statically linking and module modification), as well as code that dynamically links with 
-      strong copyleft code, with the same strong copyleft license.
+      Open source software that require you to license modifications, as well as any code that ends
+      up in the same binary (including statically linking and module modification), as well as code
+      that dynamically links with strong copyleft code, with the same strong copyleft license.
       - Example: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2
 
   - name: "copyleft-LGPL"
     description: >-
-      This category is for particular software interaction method defined in the LGPL family of licenses, namely 
-      LGPL-2.0, LGPL-2.1 and LGPL-3.0. Loosely, if you statically link with an LGPL licensed library, you need to 
-      provide for the recipient the option to modify the LGPL licensed library and thereafter relink with your 
-      application.  
+      This category is for particular software interaction method defined in the LGPL family of
+      licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0. Loosely, if you statically link with an LGPL
+      licensed library, you need to provide for the recipient the option to modify the LGPL licensed
+      library and thereafter relink with your application.
       - This category is for the LGPL family of licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0.
 
   - name: "copyleft-module-level"
     description: >-
-      Open source software that requires you to license modifications made into the same software module with 
-      the same license as the original open source software module. This also applies, if you add code from this 
-      module to your own module. 
+      Open source software that requires you to license modifications made into the same software
+      module with the same license as the original open source software module. This also applies,
+      if you add code from this module to your own module.
       - Example: EPL 1.1, CPL
 
   - name: "copyleft-file-level"
     description: >-
-      Open source software that requires you to license modifications made into the same file with the same 
-      license as the original open source file. This also applies, if you add code from this file to your own file.
+      Open source software that requires you to license modifications made into the same file with
+      the same license as the original open source file. This also applies, if you add code from
+      this file to your own file.
       - Example: MPL 2.0
 
   - name: "permissive"
     description: >-
-      Open source software that is made available under "non-copyleft" licenses. These generally require 
-      attribution of the included open source and may include other obligations.
+      Open source software that is made available under "non-copyleft" licenses. These generally
+      require attribution of the included open source and may include other obligations.
 
   - name: "free-restricted"
     description: >-
-      A Permissive-style license that contains restrictions regarding the usage of the software (for example, 
-      where the software is not intended for use in nuclear facilities) or the redistribution of the software 
-      (for example, where commercial redistribution of the software is not allowed without express permission). 
-      These licenses are not open source licenses, since they do not include all the required freedoms. 
+      A Permissive-style license that contains restrictions regarding the usage of the software (for
+      example, where the software is not intended for use in nuclear facilities) or the
+      redistribution of the software (for example, where commercial redistribution of the software
+      is not allowed without express permission). These licenses are not open source licenses, since
+      they do not include all the required freedoms.
 
   - name: "proprietary-free"
     description: >-
-      Proprietary Free software that may not require a commercial license but may have specific terms and 
-      conditions which the project is obligated to follow. Some of these terms and conditions are provided with
-      or in the code or in clickable downloaded licenses. Examples are the Sun Binary Code License Agreement or
-      a freely offered BSP.
+      Proprietary Free software that may not require a commercial license but may have specific
+      terms and conditions which the project is obligated to follow. Some of these terms and
+      conditions are provided with or in the code or in clickable downloaded licenses. Examples are
+      the Sun Binary Code License Agreement or a freely offered BSP.
 
   - name: "commercial"
     description: >-
-      Third-party proprietary software offered under a direct commercial license between supplier and customer. 
+      Third-party proprietary software offered under a direct commercial license between supplier
+      and customer.
 
   - name: "public-domain"
     description: >-
-      Software that is made available into the public domain without any explicit obligations, but which may have a 
-      notice that must be kept with the code per project policy. The match may be to software, code examples on a 
-      website, published public domain specifications or another type of publication.
+      Software that is made available into the public domain without any explicit obligations, but
+      which may have a notice that must be kept with the code per project policy. The match may be
+      to software, code examples on a website, published public domain specifications or another
+      type of publication.
 
   - name: "source-available"
     description: >-
-      Source-available software is software released through a source code distribution model that includes 
-      arrangements where the source can be viewed, and in some cases modified, but without necessarily meeting the 
-      criteria to be called open-source.
+      Source-available software is software released through a source code distribution model that
+      includes arrangements where the source can be viewed, and in some cases modified, but without
+      necessarily meeting the criteria to be called open-source.
 
   - name: "unstated"
     description: >-
-      Third-party software that has a copyright notice, but no stated license. Common examples include code snippets 
-      from publications and websites (such as those from O'Reilly Media). 
+      Third-party software that has a copyright notice, but no stated license. Common examples
+      include code snippets from publications and websites (such as those from O'Reilly Media).
 
   - name: "irrelevant"
     description: >-
@@ -92,14 +96,14 @@ categories:
 
   - name: "property:network-clause"
     description: >-
-      This license has specific terms that apply when the software is used or deployed over a network. Few licenses 
-      have such terms; examples include Affero GPL, EUPL-1.2 (and other versions) OSL and the Common Public Attribution 
-      License (CPAL 1.0). 
+      This license has specific terms that apply when the software is used or deployed over a
+      network. Few licenses have such terms; examples include Affero GPL, EUPL-1.2 (and other
+      versions) OSL and the Common Public Attribution License (CPAL 1.0).
 
   - name: "property:advertising-clause"
     description: >-
-      This license requires a notice in certain advertisements for the product (typically those mentioning features 
-      of the licensed software) that the licensed software is being used.
+      This license requires a notice in certain advertisements for the product (typically those
+      mentioning features of the licensed software) that the licensed software is being used.
 
   - name: "property:non-commercial"
     description: >-
@@ -107,15 +111,16 @@ categories:
 
   - name: "property:include-in-notice-file"
     description: >-
-      Whether the license includes a notice obligation or similar which can be fulfilled by adding the relevant 
-      copyright notices and the license text into the project/product notice file.
+      Whether the license includes a notice obligation or similar which can be fulfilled by adding
+      the relevant copyright notices and the license text into the project/product notice file.
 
   - name: "property:antitivo-clause"
     description: >-
-      This property means that the end user must be offered an opportunity to reinstall modified software in the device, 
-      and there must not be any firmware checking for checksums of the software on device and not operating due to 
-      such checks failing. This property only applies to products (i) normally used for personal, family or household 
-      purposes or (ii) designed or sold for incorporation into a dwelling.
+      This property means that the end user must be offered an opportunity to reinstall modified
+      software in the device, and there must not be any firmware checking for checksums of the
+      software on device and not operating due to such checks failing. This property only applies to
+      products (i) normally used for personal, family or household purposes or (ii) designed or sold
+      for incorporation into a dwelling.
 
   - name: "property:nuclear-restriction"
     description: >-
@@ -123,14 +128,15 @@ categories:
 
   - name: "property:patent-clause"
     description: >-
-      This property indicates that the license has patent licensing related terms. All patent related provisions in a 
-      license, with the exception of a basic patent license, trigger this clause. For example Apache-2.0 license 
-      includes a license cancellation clause due to patent disputes.
+      This property indicates that the license has patent licensing related terms. All patent
+      related provisions in a license, with the exception of a basic patent license, trigger this
+      clause. For example Apache-2.0 license includes a license cancellation clause due to patent
+      disputes.
 
   - name: "property:distribute-source-code"
     description: >-
-      This property indicates that the license requires that the source code of the OSS is either distributed, or 
-      offered to distribute, in connection with the software delivery.
+      This property indicates that the license requires that the source code of the OSS is either
+      distributed, or offered to distribute, in connection with the software delivery.
 
   - name: "property:artistic-license"
     description: >-
@@ -138,16 +144,18 @@ categories:
 
   - name: "property:AutoConf-or-other-exception"
     description: >-
-      This property indicates that the license includes an AutoConf exception or another type of exception to the license terms.
+      This property indicates that the license includes an AutoConf exception or another type of
+      exception to the license terms.
 
   - name: "property:unclear-scanner-finding"
     description: >-
       This property indicates that the scanner finding requires manual conclusion.
 
   - name: "property:unchecked"
-    description: 
-      This property marking means that the properties of the license have not been checked. Ask for license 
-      categorization/checking. This typically is an uncommon license, which has not yet been fully categorized.
+    description:
+      This property marking means that the properties of the license have not been checked. Ask for
+      license categorization/checking. This typically is an uncommon license, which has not yet been
+      fully categorized.
 
 categorizations:
   # url:https://spdx.org/licenses/AGPL-1.0-only.html
@@ -214,7 +222,7 @@ categorizations:
   # url:https://spdx.org/licenses/Artistic-1.0.html
   - id: "Artistic-1.0"
     categories:
-      - "permissive" 
+      - "permissive"
       - "property:include-in-notice-file"
       - "property:artistic-license"
 
@@ -1111,7 +1119,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  - id: "Noweb" # unusual bug report clause
+  - id: "Noweb"  # unusual bug report clause
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
@@ -1382,7 +1390,6 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
       - "property:AutoConf-or-other-exception"
-      
 
   - id: "LicenseRef-scancode-mit-synopsys"
     categories:
@@ -1424,7 +1431,7 @@ categorizations:
       - "property:unchecked"
       - "permissive"
       - "property:include-in-notice-file"
-  
+
   - id: "Beerware"
     categories:
       - "permissive"
@@ -1488,7 +1495,7 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # url:https://spdx.org/licenses/GPL-3.0-or-later.html 
+  # url:https://spdx.org/licenses/GPL-3.0-or-later.html
   # url:https://spdx.org/licenses/Bison-exception-2.2.html
   - id: "GPL-3.0-or-later WITH Bison-exception-2.2"
     categories:
@@ -1796,7 +1803,7 @@ categorizations:
   - id: "GPL"
     categories:
       - "property:unclear-scanner-finding"
-      
+
   - id: "LGPL"
     categories:
       - "property:unclear-scanner-finding"
@@ -1886,70 +1893,70 @@ categorizations:
       - "property:include-in-notice-file"
       - "property:advertising-clause"
 
-# url:https://spdx.org/licenses/YPL-1.0.html
+  # url:https://spdx.org/licenses/YPL-1.0.html
   - id: "YPL-1.0"
     categories:
       - "copyleft-file-level"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/cc-devnations-2.0.LICENSE
   - id: "LicenseRef-scancode-cc-devnations-2.0"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/BSD-3-Clause-Clear.html
+  # url:https://spdx.org/licenses/BSD-3-Clause-Clear.html
   - id: "BSD-3-Clause-Clear"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/mx4j.LICENSE
   - id: "LicenseRef-scancode-mx4j"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/bsd-simplified-darwin.LICENSE
   - id: "LicenseRef-scancode-bsd-simplified-darwin"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/iptc-2006.LICENSE
   - id: "LicenseRef-scancode-iptc-2006"
     categories:
       - "proprietary-free"
       - "property:include-in-notice-file"
 
-# url:https://spdx.org/licenses/CC-BY-ND-3.0.html
+  # url:https://spdx.org/licenses/CC-BY-ND-3.0.html
   - id: "CC-BY-ND-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-# url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
+  # url:https://github.com/nexB/scancode-licensedb/blob/main/docs/json-pd.LICENSE
   - id: "LicenseRef-scancode-json-pd"
     categories:
       - "public-domain"
 
-# url:https://spdx.org/licenses/AFL-1.1.html
+  # url:https://spdx.org/licenses/AFL-1.1.html
   - id: "AFL-1.1"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-# url:https://spdx.org/licenses/AFL-1.2.html
+  # url:https://spdx.org/licenses/AFL-1.2.html
   - id: "AFL-1.2"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
       - "property:patent-clause"
 
-# url:https://spdx.org/licenses/AFL-3.0.html
+  # url:https://spdx.org/licenses/AFL-3.0.html
   - id: "AFL-3.0"
     categories:
       - "permissive"
@@ -1957,13 +1964,13 @@ categorizations:
       - "property:patent-clause"
       - "property:network-clause"
 
-# url:https://spdx.org/licenses/AMDPLPA.html
+  # url:https://spdx.org/licenses/AMDPLPA.html
   - id: "AMDPLPA"
     categories:
       - "permissive"
       - "property:include-in-notice-file"
 
-# url:https://spdx.org/licenses/APL-1.0.html
+  # url:https://spdx.org/licenses/APL-1.0.html
   - id: "APL-1.0"
     categories:
       - "copyleft-module-level"
@@ -1971,7 +1978,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/APSL-1.0.html
+  # url:https://spdx.org/licenses/APSL-1.0.html
   - id: "APSL-1.0"
     categories:
       - "copyleft-file-level"
@@ -1979,7 +1986,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/APSL-1.1.html
+  # url:https://spdx.org/licenses/APSL-1.1.html
   - id: "APSL-1.1"
     categories:
       - "copyleft-file-level"
@@ -1987,7 +1994,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/APSL-1.2.html
+  # url:https://spdx.org/licenses/APSL-1.2.html
   - id: "APSL-1.2"
     categories:
       - "copyleft-file-level"
@@ -1995,7 +2002,7 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/APSL-2.0.html
+  # url:https://spdx.org/licenses/APSL-2.0.html
   - id: "APSL-2.0"
     categories:
       - "copyleft-file-level"
@@ -2003,12 +2010,12 @@ categorizations:
       - "property:patent-clause"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/Adobe-2006.html
+  # url:https://spdx.org/licenses/Adobe-2006.html
   - id: "Adobe-2006"
     categories:
       - "permissive"
 
-# url:https://spdx.org/licenses/Artistic-1.0-cl8.html
+  # url:https://spdx.org/licenses/Artistic-1.0-cl8.html
   - id: "Artistic-1.0-cl8"
     categories:
       - "copyleft-file-level"
@@ -2016,24 +2023,24 @@ categorizations:
       - "property:distribute-source-code"
       - "property:artistic-license"
 
-# url:https://spdx.org/licenses/Autoconf-exception-2.0.html
+  # url:https://spdx.org/licenses/Autoconf-exception-2.0.html
   - id: "Autoconf-exception-2.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
-# url:https://spdx.org/licenses/Autoconf-exception-3.0.html
+  # url:https://spdx.org/licenses/Autoconf-exception-3.0.html
   - id: "Autoconf-exception-3.0"
     categories:
       - "property:AutoConf-or-other-exception"
 
-# url:https://spdx.org/licenses/BSD-Protection.html
+  # url:https://spdx.org/licenses/BSD-Protection.html
   - id: "BSD-Protection"
     categories:
       - "copyleft-strong"
       - "property:include-in-notice-file"
       - "property:distribute-source-code"
 
-# url:https://spdx.org/licenses/BitTorrent-1.0.html
+  # url:https://spdx.org/licenses/BitTorrent-1.0.html
   - id: "BitTorrent-1.0"
     categories:
       - "copyleft-file-level"
@@ -2041,7 +2048,7 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-# url:https://spdx.org/licenses/BitTorrent-1.1.html
+  # url:https://spdx.org/licenses/BitTorrent-1.1.html
   - id: "BitTorrent-1.1"
     categories:
       - "copyleft-file-level"
@@ -2049,12 +2056,12 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-# url:https://spdx.org/licenses/Borceux.html
+  # url:https://spdx.org/licenses/Borceux.html
   - id: "Borceux"
     categories:
       - "permissive"
 
-# url:https://spdx.org/licenses/CATOSL-1.1.html
+  # url:https://spdx.org/licenses/CATOSL-1.1.html
   - id: "CATOSL-1.1"
     categories:
       - "copyleft-file-level"
@@ -2062,109 +2069,109 @@ categorizations:
       - "property:distribute-source-code"
       - "property:patent-clause"
 
-# url:https://spdx.org/licenses/CC-BY-NC-1.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-1.0.html
   - id: "CC-BY-NC-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-2.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-2.0.html
   - id: "CC-BY-NC-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-2.5.html
+  # url:https://spdx.org/licenses/CC-BY-NC-2.5.html
   - id: "CC-BY-NC-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-3.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-3.0.html
   - id: "CC-BY-NC-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-4.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-4.0.html
   - id: "CC-BY-NC-4.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-ND-1.0.html
   - id: "CC-BY-NC-ND-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-ND-2.0.html
   - id: "CC-BY-NC-ND-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
+  # url:https://spdx.org/licenses/CC-BY-NC-ND-2.5.html
   - id: "CC-BY-NC-ND-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-ND-3.0.html
   - id: "CC-BY-NC-ND-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-SA-1.0.html
   - id: "CC-BY-NC-SA-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-SA-2.0.html
   - id: "CC-BY-NC-SA-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
+  # url:https://spdx.org/licenses/CC-BY-NC-SA-3.0.html
   - id: "CC-BY-NC-SA-3.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
       - "property:non-commercial"
 
-# url:https://spdx.org/licenses/CC-BY-ND-1.0.html
+  # url:https://spdx.org/licenses/CC-BY-ND-1.0.html
   - id: "CC-BY-ND-1.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-# url:https://spdx.org/licenses/CC-BY-ND-2.0.html
+  # url:https://spdx.org/licenses/CC-BY-ND-2.0.html
   - id: "CC-BY-ND-2.0"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-# url:https://spdx.org/licenses/CC-BY-ND-2.5.html
+  # url:https://spdx.org/licenses/CC-BY-ND-2.5.html
   - id: "CC-BY-ND-2.5"
     categories:
       - "source-available"
       - "property:include-in-notice-file"
 
-# url:https://spdx.org/licenses/CC-BY-ND-4.0.html
+  # url:https://spdx.org/licenses/CC-BY-ND-4.0.html
   - id: "CC-BY-ND-4.0"
     categories:
       - "source-available"
