@@ -1,21 +1,23 @@
 ---
-# SPDX-License-Identifier: CC0 AND AND CC-BY-3.0 AND CC-BY-4.0
+# SPDX-License-Identifier: CC0-1.0 AND CC-BY-4.0
 # Author: Double Open by HH Partners, Attorneys-at-law, Ltd
 #
-# Example license-classifications.yml using the license names from SPDX
-# (https://spdx.org/licenses/), licensed under CC-BY-3.0. When licenses are not covered by SPDX, we
-# use the license names of Scancode, but a different/more detailed categorization, enabling better
-# automation at least in our cases. As we also use other scanners, notably Nomos and Monk in
-# Fossology, we have included some licenses to help process unclear scanner findings. The Scancode
-# database is available at https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0.
+# Example license-classifications.yml using the license names from the SPDX License List
+# (https://spdx.org/licenses/), licensed under CC0-1.0. When licenses are not covered by SPDX, we 
+# use the license names from the Scancode License DB, although with a different/more detailed 
+# categorization, enabling better automation at least for our use cases. As we also use other 
+# scanners, notably Nomos and Monk in Fossology, we have included some licenses to help process 
+# unclear scanner findings. The Scancode database is available at: 
+# https://scancode-licensedb.aboutcode.org/, licensed under CC-BY-4.0.
 #
-# Double Open content in this file is published under CC0.
+# Double Open content in this file is published under CC0-1.0.
 #
 # The following introduces the applicable categories and properties. Each license should be in one
 # category. A license can have multiple properties.
 #
 # Do you want this file to be updated? Make a GitHub issue or send email to doubleopen at
-# hhpartners.fi. If you make a pull request, we expect every contribution to be published under CC0.
+# hhpartners.fi. If you make a pull request, we expect every contribution to be published under 
+# CC0-1.0.
 
 categories:
   - name: "copyleft-strong"
