@@ -43,7 +43,7 @@ categories:
     description: >-
       Open source software that requires you to license modifications made into the same file with
       the same license as the original open source file. This also applies, if you add code from
-      this file to your own file. Example: MPL 2.0.
+      this file to your own file. Example: MPL-2.0.
 
   - name: "permissive"
     description: >-
