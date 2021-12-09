@@ -1,4 +1,7 @@
-<!--- SPDX-License-Identifier: CC0-1.0 -->
+<!--- 
+SPDX-FileCopyrightText: 2021 Double Open by HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
+SPDX-License-Identifier: CC0-1.0
+-->
 
 # Double Open Policy Configuration
 
