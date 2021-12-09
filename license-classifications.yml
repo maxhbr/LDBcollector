@@ -1,10 +1,8 @@
 ---
-# SPDX-FileCopyrightText: 2021 Double Open by HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
-# SPDX-License-Identifier: CC0-1.0
-# SPDX-FileCopyrightText: The Linux Foundation® <legal@linuxfoundation.org>
-# SPDX-License-Identifier: CC-BY-3.0
+# SPDX-FileCopyrightText: 2021 HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
+# SPDX-FileCopyrightText: 2021 The Linux Foundation® <legal@linuxfoundation.org>
 # SPDX-FileCopyrightText: 2015-2021 nexB, Inc. <info@nexb.com>
-# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-License-Identifier: CC0-1.0 AND CC-BY-3.0 AND CC-BY-4.0
 #
 # Example of license-classifications.yml, using the license names from the SPDX License List
 # (https://spdx.org/licenses/) licensed under CC-BY-3.0. When licenses are not covered by SPDX,
@@ -1127,7 +1125,6 @@ categorizations:
       - "property:include-in-notice-file"
 
   - id: "Noweb" # unusual bug report clause
-
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"

@@ -1,5 +1,5 @@
 {
-  // SPDX-FileCopyrightText: 2021 Double Open by HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
+  // SPDX-FileCopyrightText: 2021 HH Partners, Attorneys-at-law, Ltd <doubleopen@hhpartners.fi>
   // SPDX-License-Identifier: CC0-1.0
   "yaml.format.proseWrap": "always",
   "yaml.format.printWidth": 100
