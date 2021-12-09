@@ -23,27 +23,27 @@ categories:
       Open source software that require you to license modifications, as well as any code that ends
       up in the same binary (including statically linking and module modification), as well as code
       that dynamically links with strong copyleft code, with the same strong copyleft license. -
-      Example: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2
+      Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
 
   - name: "copyleft-LGPL"
     description: >-
       This category is for particular software interaction method defined in the LGPL family of
       licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0. Loosely, if you statically link with an LGPL
       licensed library, you need to provide for the recipient the option to modify the LGPL licensed
-      library and thereafter relink with your application. - This category is for the LGPL family of
+      library and thereafter relink with your application. This category is for the LGPL family of
       licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0.
 
   - name: "copyleft-module-level"
     description: >-
       Open source software that requires you to license modifications made into the same software
       module with the same license as the original open source software module. This also applies,
-      if you add code from this module to your own module. - Example: EPL 1.1, CPL
+      if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.
 
   - name: "copyleft-file-level"
     description: >-
       Open source software that requires you to license modifications made into the same file with
       the same license as the original open source file. This also applies, if you add code from
-      this file to your own file. - Example: MPL 2.0
+      this file to your own file. Example: MPL 2.0.
 
   - name: "permissive"
     description: >-
