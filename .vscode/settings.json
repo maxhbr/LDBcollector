@@ -1,0 +1,4 @@
+{
+  "yaml.format.proseWrap": "always",
+  "yaml.format.printWidth": 100
+}

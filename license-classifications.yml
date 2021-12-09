@@ -22,30 +22,28 @@ categories:
     description: >-
       Open source software that require you to license modifications, as well as any code that ends
       up in the same binary (including statically linking and module modification), as well as code
-      that dynamically links with strong copyleft code, with the same strong copyleft license.
-      - Example: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2
+      that dynamically links with strong copyleft code, with the same strong copyleft license. -
+      Examples: GPL-2.0, GPL-3.0, AGPL-3.0, EUPL-1.0, EUPL-1.1, EUPL-1.2.
 
   - name: "copyleft-LGPL"
     description: >-
       This category is for particular software interaction method defined in the LGPL family of
       licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0. Loosely, if you statically link with an LGPL
       licensed library, you need to provide for the recipient the option to modify the LGPL licensed
-      library and thereafter relink with your application.
-      - This category is for the LGPL family of licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0.
+      library and thereafter relink with your application. This category is for the LGPL family of
+      licenses, namely LGPL-2.0, LGPL-2.1 and LGPL-3.0.
 
   - name: "copyleft-module-level"
     description: >-
       Open source software that requires you to license modifications made into the same software
       module with the same license as the original open source software module. This also applies,
-      if you add code from this module to your own module.
-      - Example: EPL 1.1, CPL
+      if you add code from this module to your own module. Examples: EPL-1.1, CPL-1.0.
 
   - name: "copyleft-file-level"
     description: >-
       Open source software that requires you to license modifications made into the same file with
       the same license as the original open source file. This also applies, if you add code from
-      this file to your own file.
-      - Example: MPL 2.0
+      this file to your own file. Example: MPL-2.0.
 
   - name: "permissive"
     description: >-
@@ -116,11 +114,14 @@ categories:
 
   - name: "property:antitivo-clause"
     description: >-
-      This property means that the end user must be offered an opportunity to reinstall modified
-      software in the device, and there must not be any firmware checking for checksums of the
-      software on device and not operating due to such checks failing. This property only applies to
-      products (i) normally used for personal, family or household purposes or (ii) designed or sold
-      for incorporation into a dwelling.
+      This property means that the licensee/end user must be offered an opportunity to reinstall
+      modified versions of the licensed software on the device and that there must not be any
+      controls, such as firmware checking for checksums of the software on device and consequent
+      non-operation of the software or device due to the failure of such checks, unless the
+      licensee/end user is given adequate information to bypass such controls. This property only
+      applies to (i) products normally used for personal, family or household purposes (interpreted
+      broadly), and (ii) products designed or sold for incorporation into a dwelling. Known
+      instances in GPL-3.0, LGPL-3.0, AGPL-3.0.
 
   - name: "property:nuclear-restriction"
     description: >-
@@ -1119,8 +1120,8 @@ categorizations:
       - "permissive"
       - "property:include-in-notice-file"
 
-  # unusual bug report clause
-  - id: "Noweb"
+  - id: "Noweb" # unusual bug report clause
+
     categories:
       - "copyleft-module-level"
       - "property:include-in-notice-file"
