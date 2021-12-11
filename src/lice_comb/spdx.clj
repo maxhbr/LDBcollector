@@ -136,7 +136,6 @@
                   (recur (first r) (rest r)))))))))))
 
 
-; Note: this should be updated to use the methods described here: https://spdx.dev/license-list/matching-guidelines/
 (defmulti from-text
   "Attempts to determine the SPDX license identifier(s) (a sequence) from the given license text (a String, InputStream, or something that can have an io/input-stream opened on it)."
   {:arglists '([text])}
@@ -148,10 +147,12 @@
     (with-open [is (io/input-stream (.getBytes s "UTF-8"))]
       (from-text is))))
 
+; Note: this should be updated to use the methods described here: https://spdx.dev/license-list/matching-guidelines/
 (defmethod from-text java.io.InputStream
-  [f]
-  ;####TODO: Implement me!
-  (throw (ex-info "Not yet implemented." {})))
+  [is]
+  (let [rdr         (io/reader is)    ; Note: we don't wrap this in "with-open", since the input-stream we're handed is closed by the calling fn
+        first-lines (s/trim (s/join " " (take 2 (remove s/blank? (map s/trim (line-seq rdr))))))]  ; Take the first two non-blank lines, since many licenses put the name on line 1, and the version on line 2
+    (seq (distinct (from-name first-lines)))))
 
 (defmethod from-text :default
   [text]

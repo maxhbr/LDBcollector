@@ -18,17 +18,17 @@
 
 (ns lice-comb.api-test
   (:require [clojure.test  :refer [deftest testing is]]
-            [lice-comb.api :refer [from-name from-uri]]))
+            [lice-comb.api :refer [from-name from-uri from-text]]))
 
 (println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
 
 (deftest from-name-tests
   (testing "Nil, empty or blank names"
-    (is (nil? (from-name nil)))
-    (is (nil? (from-name "")))
-    (is (nil? (from-name "       ")))
-    (is (nil? (from-name "\n")))
-    (is (nil? (from-name "\t"))))
+    (is (nil?                                   (from-name nil)))
+    (is (nil?                                   (from-name "")))
+    (is (nil?                                   (from-name "       ")))
+    (is (nil?                                   (from-name "\n")))
+    (is (nil?                                   (from-name "\t"))))
   (testing "Names that are SPDX license ids"
     (is (= ["Apache-2.0"]                       (from-name "Apache-2.0")))
     (is (= ["Apache-2.0"]                       (from-name "    Apache-2.0        ")))   ; Test whitespace
@@ -55,11 +55,11 @@
 
 (deftest from-uri-tests
   (testing "Nil, empty or blank uri"
-    (is (nil? (from-uri nil)))
-    (is (nil? (from-uri "")))
-    (is (nil? (from-uri "       ")))
-    (is (nil? (from-uri "\n")))
-    (is (nil? (from-uri "\t"))))
+    (is (nil?                                 (from-uri nil)))
+    (is (nil?                                 (from-uri "")))
+    (is (nil?                                 (from-uri "       ")))
+    (is (nil?                                 (from-uri "\n")))
+    (is (nil?                                 (from-uri "\t"))))
   (testing "URIs that appear verbatim in the SPDX license list"
     (is (= "Apache-2.0"                       (from-uri "https://www.apache.org/licenses/LICENSE-2.0")))
     (is (= "Apache-2.0"                       (from-uri "               https://www.apache.org/licenses/LICENSE-2.0             ")))   ; Test whitespace
@@ -69,3 +69,16 @@
   (testing "URIs that appear in licensey things, but aren't in the SPDX license list"
     (is (= "Apache-2.0"                       (from-uri "http://www.apache.org/licenses/LICENSE-2.0")))
     (is (= "Apache-2.0"                       (from-uri "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
+
+(deftest from-text-tests
+  (testing "Nil, empty or blank text"
+    (is (nil?               (from-text nil)))
+    (is (nil?               (from-text "")))
+    (is (nil?               (from-text "       ")))
+    (is (nil?               (from-text "\n")))
+    (is (nil?               (from-text "\t"))))
+  (testing "Text"
+    (is (= ["Apache-2.0"]   (from-text "Apache License\nVersion 2.0, January 2004")))
+    (is (= ["Apache-2.0"]   (from-text "               Apache License\n               Version 2.0, January 2004             ")))   ; Test whitespace
+    (is (= ["AGPL-3.0"]     (from-text "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
+    (is (= ["CC-BY-SA-4.0"] (from-text "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))
