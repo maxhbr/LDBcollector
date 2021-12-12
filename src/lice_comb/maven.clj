@@ -59,7 +59,7 @@
   [{:keys [name url]}]
   (if-let [license (spdx/uri->id url)]
     license
-    (spdx/from-name name)))
+    (spdx/name->ids name)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 

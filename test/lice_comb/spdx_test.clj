@@ -20,8 +20,6 @@
   (:require [clojure.test   :refer [deftest testing is]]
             [lice-comb.spdx :refer [name->ids uri->id text->ids]]))
 
-(println "\n☔️ Running tests on Clojure" (clojure-version) "/ JVM" (System/getProperty "java.version"))
-
 (deftest name->ids-tests
   (testing "Nil, empty or blank names"
     (is (nil?                                   (name->ids nil)))
