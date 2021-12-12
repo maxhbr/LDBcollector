@@ -29,7 +29,7 @@
   (spdx/from-name license-name))
 
 (defn from-uri
-  "Attempt to detect the license(s) from a license URI (e.g. \"https://www.apache.org/licenses/LICENSE-2.0\" returns [\"Apache-2.0\"]). license-uri may be a string, a java.net.URL, or a java.net.URI."
+  "Attempt to detect the license from a license URI (e.g. \"https://www.apache.org/licenses/LICENSE-2.0\" returns \"Apache-2.0\"). license-uri may be a string, a java.net.URL, or a java.net.URI."
   [license-uri]
   (spdx/uri->id license-uri))
 
