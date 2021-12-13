@@ -58,3 +58,4 @@ Distributed under the [Apache License, Version 2.0](http://www.apache.org/licens
 
 SPDX-License-Identifier: [Apache-2.0](https://spdx.org/licenses/Apache-2.0)
 
+The OSI "Keyhole Logo" is used as per the [Open Source Initiative's](https://opensource.org/) [trademark](https://opensource.org/trademark-guidelines) and [logo usage](https://opensource.org/logo-usage-guidelines) policies.
