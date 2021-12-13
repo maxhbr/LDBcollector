@@ -48,6 +48,18 @@
           (for [[k v] m]
             [k (f v)]))))
 
+(defn map-pad
+  "Like map, but when presented with multiple collections of different lengths, 'pads out' the missing elements with nil rather than terminating early."
+  [f & cs]
+  (loop [result nil
+         firsts (map first cs)
+         rests  (map rest  cs)]
+    (if-not (seq (keep identity firsts))
+      result
+      (recur (cons (apply f firsts) result)
+             (map first rests)
+             (map rest  rests)))))
+
 (defn escape-re
   "Escapes the given string for use in a regex."
   [s]

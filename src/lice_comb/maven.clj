@@ -17,13 +17,14 @@
 ;
 
 (ns lice-comb.maven
-  "Public API namespace for lice-comb."
+  "Maven related functionality, mostly related to POMs."
   (:require [clojure.string     :as s]
             [clojure.java.io    :as io]
             [clojure.data.xml   :as xml]
             [xml-in.core        :as xi]
             [clojure.java.shell :as sh]
-            [lice-comb.spdx     :as spdx]))
+            [lice-comb.spdx     :as spdx]
+            [lice-comb.utils    :as u]))
 
 (def ^:private local-maven-repo
   (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
@@ -37,65 +38,63 @@
   "Does the given URI resolve (i.e. does the resource it points to exist)?"
   [^java.net.URI uri]
   (and uri
-       (let [http (doto (.openConnection (.toURL uri))
+       (let [http (doto ^java.net.HttpURLConnection (.openConnection (.toURL uri))
                         (.setRequestMethod "HEAD"))]
          (= 200 (.getResponseCode http)))))
 
 (defn- pom-uri-for-gav
   "Attempts to locate the POM for the given GAV, which is a URI that may point to a file in the local Maven repository or a remote Maven repository (e.g. on Maven Central or Clojars)."
-  [group-id artifact-id version]
+  [{:keys [group-id artifact-id version]}]
   (when (and (not (s/blank? group-id))
              (not (s/blank? artifact-id))
              (not (s/blank? version)))
-    (let [gav-path  (str (s/replace "." "/" group-id) "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
+    (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
           local-pom (io/file (str local-maven-repo "/" gav-path))]
       (if (and (.exists local-pom)
                (.isFile local-pom))
         (.toURI local-pom)
         (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos)))))))
 
-(defn- license-from-pair
-  "Attempts to determine the license from a POM license name/URL pair."
+(defn- licenses-from-pair
+  "Attempts to determine the license(s) from a POM license name/URL pair."
   [{:keys [name url]}]
   (if-let [license (spdx/uri->id url)]
-    license
+    [license]
     (spdx/name->ids name)))
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
-(defmulti from-pom
+(defmulti pom->ids
   "Attempt to detect the license(s) reported in a pom.xml file. pom may be a java.io.InputStream, or anything that can be opened by clojure.java.io/input-stream."
   (fn [pom] (type pom)))
 
-(defmethod from-pom java.io.InputStream
+(defmethod pom->ids java.io.InputStream
   [pom-is]
-  (let [pom-xml             (xml/parse pom-is)
-        licenses            (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license])
-        licenses-without-ns (xi/find-all pom-xml [:project      :licenses      :license])]; Note: a few rare pom.xml files are missing an xmlns declation (e.g. software.amazon.ion/ion-java) - this catches those
-    (if (and (empty? licenses)
-             (empty? licenses-without-ns))
-      ; License block doesn't exist, so attempt to lookup the parent pom
-      (if-let [parent (xi/find-first pom-xml [::pom/project ::pom/parent])]
-        (let [group-id       (s/trim (xi/find-first parent [::pom/groupId]))
-              artifact-id    (s/trim (xi/find-first parent [::pom/artifactId]))
-              version        (s/trim (xi/find-first parent [::pom/version]))]
-          (when-let [parent-pom-uri (pom-uri-for-gav group-id artifact-id version)]
-            (from-pom parent-pom-uri)))
-        (when-let [parent (xi/find-first pom-xml [:project :parent])]
-          (let [group-id       (s/trim (xi/find-first parent [:groupId]))
-                artifact-id    (s/trim (xi/find-first parent [:artifactId]))
-                version        (s/trim (xi/find-first parent [:version]))]
-            (when-let [parent-pom-uri (pom-uri-for-gav group-id artifact-id version)]
-              (from-pom parent-pom-uri)))))
-      ; License block exists - process it
+  (let [pom-xml        (xml/parse pom-is)
+        licenses       (seq (xi/find-all pom-xml [::pom/project ::pom/licenses ::pom/license]))
+        licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]        ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - this case catches those
+    (if (or licenses licenses-no-ns)
+      ; Licenses block exists - process it
       (let [name-uri-pairs (seq
                              (distinct
-                               (concat (map #(hash-map :name %1 :url %2) (xi/find-all licenses [::pom/name]) (xi/find-all licenses [::pom/url]))
-                                       (map #(hash-map :name %1 :url %2) (xi/find-all licenses [:name])      (xi/find-all licenses [:url])))))]
-        (seq (distinct (keep license-from-pair name-uri-pairs)))))))
+                               (concat (u/map-pad #(hash-map :name %1 :url %2) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
+                                       (u/map-pad #(hash-map :name %1 :url %2) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url])))))]
+        (seq (distinct (flatten (keep licenses-from-pair name-uri-pairs)))))
+      ; License block doesn't exist, so attempt to lookup the parent pom
+      (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
+            parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
+            parent-gav   (merge {}
+                                (when parent       {:group-id    (s/trim (first (xi/find-first parent       [::pom/groupId])))
+                                                    :artifact-id (s/trim (first (xi/find-first parent       [::pom/artifactId])))
+                                                    :version     (s/trim (first (xi/find-first parent       [::pom/version])))})
+                                (when parent-no-ns {:group-id    (s/trim (first (xi/find-first parent-no-ns [:groupId])))
+                                                    :artifact-id (s/trim (first (xi/find-first parent-no-ns [:artifactId])))
+                                                    :version     (s/trim (first (xi/find-first parent-no-ns [:version])))}))]
+        (when-not (empty? parent-gav)
+          (pom->ids (pom-uri-for-gav parent-gav)))))))
 
-(defmethod from-pom :default
+(defmethod pom->ids :default
   [pom]
   (when pom
     (with-open [pom-is (io/input-stream pom)]
-      (from-pom pom-is))))
+      (pom->ids pom-is))))

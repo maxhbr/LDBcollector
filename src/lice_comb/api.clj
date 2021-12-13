@@ -26,7 +26,7 @@
 (defn from-name
   "Attempt to detect the license(s) from a license name (e.g. \"Apache License, Version 2.0\" returns [\"Apache-2.0\"])."
   [license-name]
-  (spdx/from-name license-name))
+  (spdx/name->ids license-name))
 
 (defn from-uri
   "Attempt to detect the license from a license URI (e.g. \"https://www.apache.org/licenses/LICENSE-2.0\" returns \"Apache-2.0\"). license-uri may be a string, a java.net.URL, or a java.net.URI."
@@ -36,12 +36,12 @@
 (defn from-text
   "Attempt to detect the license(s) from a block of text. text may be a string, a java.io.InputStream, or anything accepted by clojure.java.io/input-stream."
   [text]
-  (spdx/from-text text))
+  (spdx/text->ids text))
 
 (defn from-pom
   "Attempt to detect the license(s) reported in a pom.xml file. pom may be a string, java.io.File, or java.io.InputStream."
   [pom]
-  (mvn/from-pom pom))
+  (mvn/pom->ids pom))
 
 (defn from-dir
   "Attempt to detect the license(s) located in a directory. dir may be a string or a java.io.File."

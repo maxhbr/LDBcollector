@@ -17,7 +17,7 @@
 ;
 
 (ns lice-comb.spdx
-  "SPDX related functionality"
+  "SPDX related functionality."
   (:require [clojure.string  :as s]
             [clojure.java.io :as io]
             [clojure.reflect :as cr]
@@ -136,7 +136,7 @@
   (fn [text] (type text)))
 
 (defmethod text->ids String
-  [s]
+  [^String s]
   (when s
     (with-open [is (io/input-stream (.getBytes s "UTF-8"))]
       (text->ids is))))
