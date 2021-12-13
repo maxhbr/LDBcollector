@@ -77,42 +77,64 @@
           uri-match      (first (filter (partial s/starts-with? simplified-uri) (keys idx-uri-to-id)))]
       (get idx-uri-to-id uri-match))))
 
+(defn spdx-id?
+  "Is the given identifier an SPDX identifier?"
+  [id]
+  (when id
+    (not (s/starts-with? id "NON-SPDX-"))))
+
+(defn id->name
+  "Returns the license name of the given id; either the official SPDX name or (if the id is not an SPDX id) an unofficial name. Returns nil if unable to determine the name for that id."
+  [id]
+  (if (spdx-id? id)
+    (id->spdx-name id)
+    (case id
+      "NON-SPDX-Public-Domain" "Public domain"
+      "NON-SPDX-JDOM"          "JDOM"
+      nil)))
+
 ; Important note: we can't use regexes as map keys as they don't implement equality / hash 🙄
 ; Instead we use the string representation, and compile-on-demand+memoize
 ; Note escaping of \, as these are string, not regex, literals
 (def ^:private aliases {
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 2(\\.0)?"                           ["Apache-2.0"]
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*2(\\.0)?"                              ["Apache-2.0"]
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 1\\.1"                              ["Apache-1.1"]
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*1(\\.1)?"                              ["Apache-1.1"]
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 1\\.0"                              ["Apache-1.0"]
-  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*1(\\.0)?"                              ["Apache-1.0"]
-  "apache(\\s+software)?(\\s+license(s)?)?"                                                      ["Apache-1.0"]   ; Assume earliest version
-  "copyright(\\s+\\(c\\)|©)?\\s+2011\\s+matthew\\s+lee\\s+hinman"                                ["MIT"]
-  "cup\\s+parser\\s+generator\\s+copyright\\s+notice,\\s+license,\\s+and\\s+disclaimer"          ["MIT"]          ; See https://www.apache.org/legal/resolved.html#category-a
-  "eclipse\\s+distribution\\s+license\\s+-\\s+v\\s+1\\.0"                                        ["BSD-3-Clause"] ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
-  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*2(\\.0)?"                                           ["EPL-2.0"]
-  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*1\\.1"                                              ["EPL-1.1"]
-  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*1(\\.0)?"                                           ["EPL-1.0"]
-  "eclipse\\s+public\\s+license"                                                                 ["EPL-1.0"]      ; Assume earliest version
-  "gnu\\s+affero\\s+general\\s+public\\s+license"                                                ["AGPL-3.0"]     ; Assume earliest version
-  "gnu\\s+affero\\s+general\\s+public\\s+license\\s+version\\s+3"                                ["AGPL-3.0"]
-  "gnu\\s+general\\s+public\\s+license\\s+version"                                               ["GPL-1.0"]      ; Assume earliest version
-  "gnu\\s+general\\s+public\\s+license\\s+version\\s+1"                                          ["GPL-1.0"]
-  "gnu\\s+general\\s+public\\s+license\\s+version\\s+2"                                          ["GPL-2.0"]
-  "gnu\\s+general\\s+public\\s+license\\s+version\\s+3"                                          ["GPL-3.0"]
-  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version"                                     ["LGPL-2.0"]     ; Assume earliest version
-  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+2"                                ["LGPL-2.0"]
-  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+2\\.1"                            ["LGPL-2.1"]
-  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+3"                                ["LGPL-3.0"]
-  "the\\s+mx4j\\s+license(,)?\\s+version\\s+1\\.0"                                               ["Apache-1.1"]   ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
-  "cddl\\+gpl\\s+license"                                                                        ["CDDL-1.0" "GPL-2.0"]
-  "cddl/gplv2\\+ce"                                                                              ["CDDL-1.0" "GPL-2.0-with-classpath-exception"]
-  "cddl\\s+\\+\\s+gpl\\s*v2\\s+with\\s+classpath\\s+exception"                                   ["CDDL-1.0" "GPL-2.0-with-classpath-exception"]
-  "cddl\\s+1(\\.1)?\\+gpl\\s+license"                                                            ["CDDL-1.1" "GPL-2.0"]
-  "dual\\s+license\\s+consisting\\s+of\\s+the\\s+cddl\\s+v1(\\.1)?\\s+and\\s+gpl\\s+v2"          ["CDDL-1.1" "GPL-2.0"]
-  "lesser\\s+general\\s+public\\s+license(,)?\\s+version\\s+3\\s+or\\s+greater"                  ["LGPL-3.0"]
-  "creative\\s+commons\\s+attribution-sharealike\\s+4\\.0\\s+international\\s+public\\s+license" ["CC-BY-SA-4.0"]})
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*1(\\.0)?"                                 #{"Apache-1.0"}
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*1(\\.1)?"                                 #{"Apache-1.1"}
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+v)?\\s*2(\\.0)?"                                 #{"Apache-2.0"}
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 1\\.0"                                 #{"Apache-1.0"}
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 1\\.1"                                 #{"Apache-1.1"}
+  "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 2(\\.0)?"                              #{"Apache-2.0"}
+  "apache(\\s+software)?(\\s+license(s)?)?"                                                         #{"Apache-1.0"}   ; Assume earliest version
+  "cddl/gplv2\\+ce"                                                                                 #{"CDDL-1.0" "GPL-2.0-with-classpath-exception"}
+  "cddl\\+gpl\\s+license"                                                                           #{"CDDL-1.0" "GPL-2.0"}
+  "cddl\\s+1(\\.1)?\\+gpl\\s+license"                                                               #{"CDDL-1.1" "GPL-2.0"}
+  "cddl\\s+\\+\\s+gpl\\s*v2\\s+with\\s+classpath\\s+exception"                                      #{"CDDL-1.0" "GPL-2.0-with-classpath-exception"}
+  "common\\s+development\\s+and\\s+distribution\\s+license\\s+\\(cddl\\)\\s+version\\s+1(\\.0)?"    #{"CDDL-1.0"}
+  "common\\s+development\\s+and\\s+distribution\\s+license\\s+\\(cddl\\)\\s+version\\s+1\\.1"       #{"CDDL-1.1"}
+  "copyright(\\s+\\(c\\)|©)?\\s+2011\\s+matthew\\s+lee\\s+hinman"                                   #{"MIT"}
+  "creative\\s+commons\\s+attribution-sharealike\\s+4\\.0\\s+international\\s+public\\s+license"    #{"CC-BY-SA-4.0"}
+  "cup\\s+parser\\s+generator\\s+copyright\\s+notice,\\s+license,\\s+and\\s+disclaimer"             #{"MIT"}          ; See https://www.apache.org/legal/resolved.html#category-a
+  "dual\\s+license\\s+consisting\\s+of\\s+the\\s+cddl\\s+v1(\\.1)?\\s+and\\s+gpl\\s+v2"             #{"CDDL-1.1" "GPL-2.0"}
+  "eclipse\\s+distribution\\s+license\\s+-\\s+v\\s+1\\.0"                                           #{"BSD-3-Clause"} ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
+  "eclipse\\s+public\\s+license"                                                                    #{"EPL-1.0"}      ; Assume earliest version
+  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*1(\\.0)?"                                              #{"EPL-1.0"}
+  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*1\\.1"                                                 #{"EPL-1.1"}
+  "eclipse\\s+public\\s+license\\s*-\\s*v\\s*2(\\.0)?"                                              #{"EPL-2.0"}
+  "gnu\\s+affero\\s+general\\s+public\\s+license"                                                   #{"AGPL-3.0"}     ; Assume earliest version
+  "gnu\\s+affero\\s+general\\s+public\\s+license\\s+version\\s+3"                                   #{"AGPL-3.0"}
+  "gnu\\s+general\\s+public\\s+license\\s+version"                                                  #{"GPL-1.0"}      ; Assume earliest version
+  "gnu\\s+general\\s+public\\s+license\\s+version\\s+1"                                             #{"GPL-1.0"}
+  "gnu\\s+general\\s+public\\s+license\\s+version\\s+2"                                             #{"GPL-2.0"}
+  "gnu\\s+general\\s+public\\s+license\\s+version\\s+3"                                             #{"GPL-3.0"}
+  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version"                                        #{"LGPL-2.0"}     ; Assume earliest version
+  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+2"                                   #{"LGPL-2.0"}
+  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+2\\.1"                               #{"LGPL-2.1"}
+  "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+3"                                   #{"LGPL-3.0"}
+  "lesser\\s+general\\s+public\\s+license(,)?\\s+version\\s+3\\s+or\\s+greater"                     #{"LGPL-3.0"}
+  "public\\s+domain"                                                                                #{"NON-SPDX-Public-Domain"}   ; Note: not an SPDX license
+  "similar\\s+to\\s+apache\\s+license\\s+but\\s+with\\s+the\\s+acknowledgment\\s+clause\\s+removed" #{"NON-SPDX-JDOM"}            ; Note: not an SPDX license
+  "copyright\\s+\\(c\\)\\s+2000-2012\\s+jason\\s+hunter\\s+\\&\\s+brett\\s+mclaughlin"              #{"NON-SPDX-JDOM"}            ; Note: not an SPDX license
+  "the\\s+mx4j\\s+license(,)?\\s+version\\s+1\\.0"                                                  #{"Apache-1.1"}   ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
+  })
 
 ; Store regexes in reverse size order, on the assumption that longer regexes are more specific and should be processed first
 (def ^:private alias-regexes (reverse (sort-by #(count %) (keys aliases))))
@@ -120,18 +142,18 @@
 (def ^:private re-pattern-mem (memoize re-pattern))
 
 (defn name->ids
-  "Attempts to determine the SPDX license identifier(s) (a sequence) from the given license name (a string). Returns nil if unable to do so."
+  "Attempts to determine the SPDX license identifier(s) (a set) from the given license name (a string). Returns nil if unable to do so."
   [name]
   (when name
     (let [name (s/trim name)]
       (if-let [exact-id-match (id->info name)]
-        [(:license-id exact-id-match)]
+        #{(:license-id exact-id-match)}
         (if-let [exact-name-match (spdx-name->id name)]
-          [exact-name-match]
+          #{exact-name-match}
           (get aliases (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) alias-regexes))))))))
 
 (defmulti text->ids
-  "Attempts to determine the SPDX license identifier(s) (a sequence) from the given license text (a String, InputStream, or something that can have an io/input-stream opened on it)."
+  "Attempts to determine the SPDX license identifier(s) (a set) from the given license text (a String, InputStream, or something that can have an io/input-stream opened on it)."
   {:arglists '([text])}
   (fn [text] (type text)))
 
@@ -146,7 +168,7 @@
   [is]
   (let [rdr         (io/reader is)    ; Note: we don't wrap this in "with-open", since the input-stream we're handed is closed by the calling fn
         first-lines (s/trim (s/join " " (take 2 (remove s/blank? (map s/trim (line-seq rdr))))))]  ; Take the first two non-blank lines, since many licenses put the name on line 1, and the version on line 2
-    (seq (distinct (name->ids first-lines)))))
+    (name->ids first-lines)))
 
 (defmethod text->ids :default
   [text]

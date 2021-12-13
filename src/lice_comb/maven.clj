@@ -56,11 +56,13 @@
         (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos)))))))
 
 (defn- licenses-from-pair
-  "Attempts to determine the license(s) from a POM license name/URL pair."
+  "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
   [{:keys [name url]}]
   (if-let [license (spdx/uri->id url)]
-    [license]
-    (spdx/name->ids name)))
+    #{license}
+    (if-let [licenses (spdx/name->ids name)]
+      licenses
+      (when name #{name}))))   ; Last resort - return the license name verbatim
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 
@@ -75,21 +77,19 @@
         licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]        ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - this case catches those
     (if (or licenses licenses-no-ns)
       ; Licenses block exists - process it
-      (let [name-uri-pairs (seq
-                             (distinct
-                               (concat (u/map-pad #(hash-map :name %1 :url %2) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
-                                       (u/map-pad #(hash-map :name %1 :url %2) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url])))))]
-        (seq (distinct (flatten (keep licenses-from-pair name-uri-pairs)))))
+      (let [name-uri-pairs (set (concat (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
+                                        (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))]
+        (set (mapcat licenses-from-pair name-uri-pairs)))
       ; License block doesn't exist, so attempt to lookup the parent pom
       (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
             parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
             parent-gav   (merge {}
-                                (when parent       {:group-id    (s/trim (first (xi/find-first parent       [::pom/groupId])))
-                                                    :artifact-id (s/trim (first (xi/find-first parent       [::pom/artifactId])))
-                                                    :version     (s/trim (first (xi/find-first parent       [::pom/version])))})
-                                (when parent-no-ns {:group-id    (s/trim (first (xi/find-first parent-no-ns [:groupId])))
-                                                    :artifact-id (s/trim (first (xi/find-first parent-no-ns [:artifactId])))
-                                                    :version     (s/trim (first (xi/find-first parent-no-ns [:version])))}))]
+                                (when parent       {:group-id    (u/strim (first (xi/find-first parent       [::pom/groupId])))
+                                                    :artifact-id (u/strim (first (xi/find-first parent       [::pom/artifactId])))
+                                                    :version     (u/strim (first (xi/find-first parent       [::pom/version])))})
+                                (when parent-no-ns {:group-id    (u/strim (first (xi/find-first parent-no-ns [:groupId])))
+                                                    :artifact-id (u/strim (first (xi/find-first parent-no-ns [:artifactId])))
+                                                    :version     (u/strim (first (xi/find-first parent-no-ns [:version])))}))]
         (when-not (empty? parent-gav)
           (pom->ids (pom-uri-for-gav parent-gav)))))))
 

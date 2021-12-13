@@ -28,28 +28,33 @@
     (is (nil?                                   (name->ids "\n")))
     (is (nil?                                   (name->ids "\t"))))
   (testing "Names that are SPDX license ids"
-    (is (= ["Apache-2.0"]                       (name->ids "Apache-2.0")))
-    (is (= ["Apache-2.0"]                       (name->ids "    Apache-2.0        ")))   ; Test whitespace
-    (is (= ["GPL-2.0"]                          (name->ids "GPL-2.0")))
-    (is (= ["GPL-2.0-with-classpath-exception"] (name->ids "GPL-2.0-with-classpath-exception")))
-    (is (= ["AGPL-3.0"]                         (name->ids "AGPL-3.0")))
-    (is (= ["AGPL-3.0-only"]                    (name->ids "AGPL-3.0-only")))
-    (is (= ["CC-BY-SA-4.0"]                     (name->ids "CC-BY-SA-4.0"))))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache-2.0")))
+    (is (= #{"Apache-2.0"}                       (name->ids "    Apache-2.0        ")))   ; Test whitespace
+    (is (= #{"GPL-2.0"}                          (name->ids "GPL-2.0")))
+    (is (= #{"GPL-2.0-with-classpath-exception"} (name->ids "GPL-2.0-with-classpath-exception")))
+    (is (= #{"AGPL-3.0"}                         (name->ids "AGPL-3.0")))
+    (is (= #{"AGPL-3.0-only"}                    (name->ids "AGPL-3.0-only")))
+    (is (= #{"CC-BY-SA-4.0"}                     (name->ids "CC-BY-SA-4.0"))))
   (testing "Names that appear verbatim in the SPDX license list"
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License, Version 2.0")))
-    (is (= ["Apache-2.0"]                       (name->ids "               Apache Software License, Version 2.0             ")))   ; Test whitespace
-    (is (= ["AGPL-3.0"]                         (name->ids "GNU Affero General Public License v3.0")))
-    (is (= ["AGPL-3.0-only"]                    (name->ids "GNU Affero General Public License v3.0 only")))
-    (is (= ["CC-BY-SA-4.0"]                     (name->ids "Creative Commons Attribution Share Alike 4.0 International")))
-    (is (= ["GPL-2.0-with-classpath-exception"] (name->ids "GNU General Public License v2.0 w/Classpath exception")))
-    (is (= ["Apache-1.0"]                       (name->ids "Apache Software License"))))
-  (testing "Names that appear in licensey things, but aren't in the SPDX license list"
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License v2.0")))
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License 2.0")))
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License Version 2.0")))
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License v2")))
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License 2")))
-    (is (= ["Apache-2.0"]                       (name->ids "Apache Software License Version 2")))))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License, Version 2.0")))
+    (is (= #{"Apache-2.0"}                       (name->ids "               Apache Software License, Version 2.0             ")))   ; Test whitespace
+    (is (= #{"AGPL-3.0"}                         (name->ids "GNU Affero General Public License v3.0")))
+    (is (= #{"AGPL-3.0-only"}                    (name->ids "GNU Affero General Public License v3.0 only")))
+    (is (= #{"CC-BY-SA-4.0"}                     (name->ids "Creative Commons Attribution Share Alike 4.0 International")))
+    (is (= #{"GPL-2.0-with-classpath-exception"} (name->ids "GNU General Public License v2.0 w/Classpath exception")))
+    (is (= #{"Apache-1.0"}                       (name->ids "Apache Software License"))))
+  (testing "Names that appear in licensey things, but aren't in the SPDX license list verbatim"
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License v2.0")))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License 2.0")))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2.0")))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License v2")))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License 2")))
+    (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2")))
+    (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0"))))
+  (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
+    (is (= #{"NON-SPDX-JDOM"})                   (name->ids "Similar to Apache License but with the acknowledgment clause removed"))
+    (is (= #{"NON-SPDX-Public-Domain"})          (name->ids "Public Domain"))
+    (is (= #{"NON-SPDX-Public-Domain"})          (name->ids "Public domain"))))
 
 (deftest uri->id-tests
   (testing "Nil, empty or blank uri"
@@ -76,7 +81,7 @@
     (is (nil?               (text->ids "\n")))
     (is (nil?               (text->ids "\t"))))
   (testing "Text"
-    (is (= ["Apache-2.0"]   (text->ids "Apache License\nVersion 2.0, January 2004")))
-    (is (= ["Apache-2.0"]   (text->ids "               Apache License\n               Version 2.0, January 2004             ")))   ; Test whitespace
-    (is (= ["AGPL-3.0"]     (text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
-    (is (= ["CC-BY-SA-4.0"] (text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))
+    (is (= #{"Apache-2.0"}   (text->ids "Apache License\nVersion 2.0, January 2004")))
+    (is (= #{"Apache-2.0"}   (text->ids "               Apache License\n               Version 2.0, January 2004             ")))   ; Test whitespace
+    (is (= #{"AGPL-3.0"}     (text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
+    (is (= #{"CC-BY-SA-4.0"} (text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))

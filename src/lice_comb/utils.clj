@@ -60,6 +60,11 @@
              (map first rests)
              (map rest  rests)))))
 
+(defn strim
+  "nil safe version of clojure.string/trim"
+  [s]
+  (when s (s/trim s)))
+
 (defn escape-re
   "Escapes the given string for use in a regex."
   [s]
