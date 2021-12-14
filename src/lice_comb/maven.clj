@@ -30,7 +30,7 @@
   (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
     (if (= 0 (:exit sh-result))
       (s/trim (:out sh-result))
-      (throw (ex-info "Unable to determine local Maven repository location - is Maven installed correctly and in the PATH?" sh-result)))))
+      (str (System/getProperty "user.home") "/.m2/repository"))))   ; Default location
 
 (def ^:private remote-maven-repos #{"https://repo1.maven.org/maven2" "https://repo.clojars.org"})
 
