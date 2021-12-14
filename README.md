@@ -5,7 +5,7 @@
 
 [![Latest Version](https://img.shields.io/clojars/v/com.github.pmonks/lice-comb)](https://clojars.org/com.github.pmonks/lice-comb/) [![Open Issues](https://img.shields.io/github/issues/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/issues) [![License](https://img.shields.io/github/license/pmonks/lice-comb.svg)](https://github.com/pmonks/lice-comb/blob/main/LICENSE)
 
-<img alt="lice-comb logo: a fine-toothed metal comb for removing headlice" align="right" width="50%" src="https://raw.githubusercontent.com/pmonks/lice-comb/main/lice-comb-logo.png">
+<img alt="lice-comb logo: a fine-toothed metal comb for removing headlice emblazoned with the OSI keyhole logo" align="right" width="50%" src="https://raw.githubusercontent.com/pmonks/lice-comb/main/lice-comb-logo.png">
 
 # lice-comb
 
