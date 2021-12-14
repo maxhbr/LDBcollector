@@ -30,7 +30,7 @@
 
     ; clj -T:build <taskname>
     :build
-      {:deps       {io.github.seancorfield/build-clj {:git/tag "v0.6.1" :git/sha "6e962ef"}
+      {:deps       {io.github.seancorfield/build-clj {:git/tag "v0.6.2" :git/sha "97c275a"}
                     com.github.pmonks/pbr            {:mvn/version "2.0.115"}}
        :ns-default build}
 
