@@ -18,10 +18,9 @@
 
 (ns lice-comb.api
   "Public API namespace for lice-comb."
-  (:require [clojure.string  :as s]
-            [lice-comb.spdx  :as spdx]
+  (:require [lice-comb.spdx  :as spdx]
             [lice-comb.maven :as mvn]
-            [lice-comb.utils :as u]))
+            [lice-comb.files :as fil]))
 
 (defn from-name
   "Attempt to detect the license(s) from a license name (e.g. \"Apache License, Version 2.0\" returns [\"Apache-2.0\"])."
@@ -44,13 +43,11 @@
   (mvn/pom->ids pom))
 
 (defn from-dir
-  "Attempt to detect the license(s) located in a directory. dir may be a string or a java.io.File."
+  "Attempt to detect the license(s) located in a directory. dir may be a string or a java.io.File, both of which must refer to a directory."
   [dir]
-  ;####TODO: Implement me!
-  (throw (ex-info "Not yet implemented." {})))
+  (fil/dir->ids dir))
 
 (defn from-zip
-  "Attempt to detect the license(s) located in a file in ZIP format (note: this includes JAR files). zip may be a string or a java.io.File."
+  "Attempt to detect the license(s) located in a file in ZIP format (note: this includes JAR files). zip may be a string or a java.io.File, both of which must refer to a valid ZIP-format compressed file."
   [zip]
-  ;####TODO: Implement me!
-  (throw (ex-info "Not yet implemented." {})))
+  (fil/zip->ids zip))

@@ -153,15 +153,9 @@
           (get aliases (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) alias-regexes))))))))
 
 (defmulti text->ids
-  "Attempts to determine the SPDX license identifier(s) (a set) from the given license text (a String, InputStream, or something that can have an io/input-stream opened on it)."
+  "Attempts to determine the SPDX license identifier(s) (a set) from the given license text (an InputStream, or something that can have an io/input-stream opened on it)."
   {:arglists '([text])}
-  (fn [text] (type text)))
-
-(defmethod text->ids String
-  [^String s]
-  (when s
-    (with-open [is (io/input-stream (.getBytes s "UTF-8"))]
-      (text->ids is))))
+  type)
 
 ; Note: this should be updated to use the methods described here: https://spdx.dev/license-list/matching-guidelines/
 (defmethod text->ids java.io.InputStream
@@ -171,7 +165,7 @@
     (name->ids first-lines)))
 
 (defmethod text->ids :default
-  [text]
-  (when text
-    (with-open [is (io/input-stream text)]
+  [src]
+  (when src
+    (with-open [is (io/input-stream src)]
       (text->ids is))))

@@ -17,8 +17,9 @@
 ;
 
 (ns lice-comb.spdx-test
-  (:require [clojure.test   :refer [deftest testing is]]
-            [lice-comb.spdx :refer [name->ids uri->id text->ids]]))
+  (:require [clojure.test    :refer [deftest testing is]]
+            [clojure.java.io :as io]
+            [lice-comb.spdx  :refer [name->ids uri->id text->ids]]))
 
 (deftest name->ids-tests
   (testing "Nil, empty or blank names"
@@ -52,9 +53,9 @@
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2")))
     (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
-    (is (= #{"NON-SPDX-JDOM"})                   (name->ids "Similar to Apache License but with the acknowledgment clause removed"))
-    (is (= #{"NON-SPDX-Public-Domain"})          (name->ids "Public Domain"))
-    (is (= #{"NON-SPDX-Public-Domain"})          (name->ids "Public domain"))))
+    (is (= #{"NON-SPDX-JDOM"}                    (name->ids "Similar to Apache License but with the acknowledgment clause removed")))
+    (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public Domain")))
+    (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public domain")))))
 
 (deftest uri->id-tests
   (testing "Nil, empty or blank uri"
@@ -73,15 +74,20 @@
     (is (= "Apache-2.0"                       (uri->id "http://www.apache.org/licenses/LICENSE-2.0")))
     (is (= "Apache-2.0"                       (uri->id "https://www.apache.org/licenses/LICENSE-2.0.txt")))))
 
+(defn- string-text->ids
+  [s]
+  (with-open [is (io/input-stream (.getBytes s "UTF-8"))]
+    (text->ids is)))
+
 (deftest text->ids-tests
   (testing "Nil, empty or blank text"
-    (is (nil?               (text->ids nil)))
-    (is (nil?               (text->ids "")))
-    (is (nil?               (text->ids "       ")))
-    (is (nil?               (text->ids "\n")))
-    (is (nil?               (text->ids "\t"))))
+    (is (nil?                                  (text->ids nil)))
+    (is (thrown? java.io.FileNotFoundException (text->ids "")))
+    (is (thrown? java.io.FileNotFoundException (text->ids "       ")))
+    (is (thrown? java.io.FileNotFoundException (text->ids "\n")))
+    (is (thrown? java.io.FileNotFoundException (text->ids "\t"))))
   (testing "Text"
-    (is (= #{"Apache-2.0"}   (text->ids "Apache License\nVersion 2.0, January 2004")))
-    (is (= #{"Apache-2.0"}   (text->ids "               Apache License\n               Version 2.0, January 2004             ")))   ; Test whitespace
-    (is (= #{"AGPL-3.0"}     (text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
-    (is (= #{"CC-BY-SA-4.0"} (text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))
+    (is (= #{"Apache-2.0"}   (string-text->ids "Apache License\nVersion 2.0, January 2004")))
+    (is (= #{"Apache-2.0"}   (string-text->ids "               Apache License\n               Version 2.0, January 2004             ")))
+    (is (= #{"AGPL-3.0"}     (string-text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
+    (is (= #{"CC-BY-SA-4.0"} (string-text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))

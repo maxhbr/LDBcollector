@@ -68,7 +68,8 @@
 
 (defmulti pom->ids
   "Attempt to detect the license(s) reported in a pom.xml file. pom may be a java.io.InputStream, or anything that can be opened by clojure.java.io/input-stream."
-  (fn [pom] (type pom)))
+  {:arglists '([pom])}
+  type)
 
 (defmethod pom->ids java.io.InputStream
   [pom-is]
@@ -77,10 +78,10 @@
         licenses-no-ns (seq (xi/find-all pom-xml [:project      :licenses      :license]))]        ; Note: a few rare pom.xml files are missing the xmlns declation (e.g. software.amazon.ion/ion-java) - this case catches those
     (if (or licenses licenses-no-ns)
       ; Licenses block exists - process it
-      (let [name-uri-pairs (set (concat (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
-                                        (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))]
-        (set (mapcat licenses-from-pair name-uri-pairs)))
-      ; License block doesn't exist, so attempt to lookup the parent pom
+      (let [name-uri-pairs (u/nset (concat (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses       [::pom/name]) (xi/find-all licenses       [::pom/url]))
+                                           (u/map-pad #(hash-map :name (u/strim %1) :url (u/strim %2)) (xi/find-all licenses-no-ns [:name])      (xi/find-all licenses-no-ns [:url]))))]
+        (u/nset (mapcat licenses-from-pair name-uri-pairs)))
+      ; License block doesn't exist, so attempt to lookup the parent pom and get it from there
       (let [parent       (seq (xi/find-first pom-xml [::pom/project ::pom/parent]))
             parent-no-ns (seq (xi/find-first pom-xml [:project      :parent]))
             parent-gav   (merge {}
@@ -91,7 +92,7 @@
                                                     :artifact-id (u/strim (first (xi/find-first parent-no-ns [:artifactId])))
                                                     :version     (u/strim (first (xi/find-first parent-no-ns [:version])))}))]
         (when-not (empty? parent-gav)
-          (pom->ids (pom-uri-for-gav parent-gav)))))))
+          (pom->ids (pom-uri-for-gav parent-gav)))))))   ; Note: naive (stack consuming) recursion
 
 (defmethod pom->ids :default
   [pom]

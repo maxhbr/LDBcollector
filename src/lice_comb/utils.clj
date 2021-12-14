@@ -65,6 +65,12 @@
   [s]
   (when s (s/trim s)))
 
+(defn nset
+  "nil preserving version of clojure.core/set"
+  [coll]
+  (when (seq coll)
+    (set coll)))
+
 (defn escape-re
   "Escapes the given string for use in a regex."
   [s]
