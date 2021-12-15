@@ -62,7 +62,7 @@ intensify our community work or to start off a new project.
 ## Disclaimer
 
 This is all work in progress and subject to continuous improvement. In particular, ScanCode identifications and
-ScanCode matching is used to validate the dataset and synchronize the different data sets.
+ScanCode matching is used to validate the dataset and synchronize the different sources.
 
 Please note that the {metæffekt}-universe as displayed in this repository is a converted, reduced
 dataset from a more extensive internal representation. The internal representation models licenses
