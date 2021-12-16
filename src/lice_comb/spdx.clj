@@ -31,8 +31,8 @@
                                        (catch Exception e
                                          (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " spdx-license-list-uri ". Please check your internet connection and try again.") {})))))
 
-(def ^:private aliases-uri (str (System/getProperty "user.home") "/Development/personal/lice-comb-data/spdx/aliases.edn"))   ; For testing changes locally
-;(def ^:private aliases-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/spdx/aliases.edn")
+;(def ^:private aliases-uri (str (System/getProperty "user.home") "/Development/personal/lice-comb-data/spdx/aliases.edn"))   ; For testing changes locally
+(def ^:private aliases-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/spdx/aliases.edn")
 (def ^:private aliases     (try
                              (edn/read-string (slurp aliases-uri))
                              (catch Exception e
