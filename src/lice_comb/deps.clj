@@ -48,14 +48,14 @@
         license-ids
         (if-let [license-ids (u/nset (mapcat f/zip->ids (:paths info)))]   ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
           license-ids
-          (get fallbacks ga))))))    ; Then, as a last resort, look at the fallbacks
+          (:licenses (get fallbacks ga)))))))    ; Then, as a last resort, look at the fallbacks
 
 (defmethod dep->ids :deps
   [[ga info]]
   (when info
     (if-let [license-ids (f/dir->ids (:deps/root info))]
       license-ids
-      (get fallbacks ga))))    ; As a last resort, look at the fallbacks
+      (:licenses (get fallbacks ga)))))    ; As a last resort, look at the fallbacks
 
 (defmethod dep->ids nil
   [_])
