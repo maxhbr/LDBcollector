@@ -59,11 +59,6 @@ clojure -A:deps -T:build help/doc"
   [opts]
   (bb/run-task (set-opts opts) [:check]))
 
-(defn install
-  "Install the library locally e.g. so it can be tested by downstream dependencies"
-  [opts]
-  (bb/install (set-opts opts)))
-
 (defn outdated
   "Check for outdated dependencies."
   [opts]
@@ -137,6 +132,12 @@ clojure -A:deps -T:build help/doc"
       (set-opts)
       (pom/pom)
       (bb/jar)))
+
+(defn install
+  "Install the library locally e.g. so it can be tested by downstream dependencies"
+  [opts]
+  (jar opts)
+  (bb/install (set-opts opts)))
 
 (defn deploy
   "Deploys the library JAR to Clojars."
