@@ -1,0 +1,4 @@
+{
+  borkdude/sci.impl.reflector {:spdx true  :licenses #{"EPL-1.0"} :evidence "https://github.com/borkdude/sci/blob/master/LICENSE"}
+  slipset/deps-deploy         {:spdx true  :licenses #{"EPL-1.0"} :evidence "https://github.com/slipset/deps-deploy/blob/master/LICENSE"}
+}
