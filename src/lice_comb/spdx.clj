@@ -47,7 +47,7 @@
 
 ; Alternative indexes into the SPDX list
 (def ^:private idx-id-to-info  (into {} (map #(vec [(:license-id %) %]) license-list)))
-(def ^:private idx-name-to-id  (apply merge (map #(hash-map (s/trim (s/lower-case (:name %))) (:license-id %)) license-list)))
+(def ^:private idx-lname-to-id (apply merge (map #(hash-map (s/trim (s/lower-case (:name %))) (:license-id %)) license-list)))
 (def ^:private idx-uri-to-id   (into {} (mapcat (fn [lic] (map #(vec [(u/simplify-uri %) (:license-id lic)]) (:see-also lic))) license-list)))
 (def ^:private idx-regex-to-id (merge aliases
                                       (apply merge (map #(hash-map (s/replace (u/escape-re (s/lower-case (:name %))) #"\s+" "\\\\s+") #{(:license-id %)}) license-list))))
@@ -74,10 +74,10 @@
     (:name (id->info spdx-id))))
 
 (defn spdx-name->id
-  "Returns the SPDX license identifier equivalent of the given license name, or nil if unable to do so."
+  "Returns the SPDX license identifier equivalent of the given license name (matched case insensitively), or nil if unable to do so."
   [name]
   (when name
-    (get idx-name-to-id (s/trim (s/lower-case name)))))
+    (get idx-lname-to-id (s/trim (s/lower-case name)))))
 
 (defn uri->id
   "Returns the SPDX license identifier equivalent for the given uri, or nil if unable to do so.

@@ -21,6 +21,7 @@
             [clojure.java.io :as io]
             [lice-comb.spdx  :refer [name->ids uri->id text->ids]]))
 
+; Note: these tests should be extended indefinitely, as it exercises the guts of the matching algorithm
 (deftest name->ids-tests
   (testing "Nil, empty or blank names"
     (is (nil?                                   (name->ids nil)))
@@ -44,7 +45,7 @@
     (is (= #{"CC-BY-SA-4.0"}                     (name->ids "Creative Commons Attribution Share Alike 4.0 International")))
     (is (= #{"GPL-2.0-with-classpath-exception"} (name->ids "GNU General Public License v2.0 w/Classpath exception")))
     (is (= #{"Apache-1.0"}                       (name->ids "Apache Software License"))))
-  (testing "Names that appear in licensey things, but aren't in the SPDX license list verbatim"    ; Note: this list should be extended indefinitely, as it tests the guts of the matching algorithm
+  (testing "Names that appear in licensey things, but aren't in the SPDX license list verbatim"
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License v2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License 2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2.0")))
@@ -55,7 +56,13 @@
     (is (= #{"LGPL-2.1"}                         (name->ids "GNU Lesser General Public License")))
     (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0")))
     (is (= #{"MIT"}                              (name->ids "The MIT License")))
-    (is (= #{"MIT"}                              (name->ids "MIT License"))))
+    (is (= #{"MIT"}                              (name->ids "MIT License")))
+    (is (= #{"MPL-2.0"}                          (name->ids "Mozilla Public License Version 2.0")))
+    (is (= #{"CC-BY-3.0"}                        (name->ids "Creative Commons Legal Code Attribution 3.0 Unported")))
+    (is (= #{"CC-BY-3.0"}                        (name->ids "Attribution 3.0 Unported")))
+    (is (= #{"CC-BY-4.0"}                        (name->ids "Attribution 4.0 International"))))
+  (testing "Names that appear in licensey things, but are ambiguous"
+    (is (nil?                                    (name->ids "BSD"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
     (is (= #{"NON-SPDX-JDOM"}                    (name->ids "Similar to Apache License but with the acknowledgment clause removed")))
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public Domain")))
