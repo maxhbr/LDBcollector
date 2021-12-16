@@ -27,10 +27,13 @@
             [lice-comb.utils    :as u]))
 
 (def ^:private local-maven-repo
-  (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
-    (if (= 0 (:exit sh-result))
-      (s/trim (:out sh-result))
-      (str (System/getProperty "user.home") "/.m2/repository"))))   ; Default location
+  (try
+    (let [sh-result (sh/sh "mvn" "help:evaluate" "-Dexpression=settings.localRepository" "-q" "-DforceStdout")]
+      (if (= 0 (:exit sh-result))
+        (s/trim (:out sh-result))
+        (str (System/getProperty "user.home") "/.m2/repository")))
+    (catch java.io.IOException _
+      (str (System/getProperty "user.home") "/.m2/repository"))))
 
 (def ^:private remote-maven-repos #{"https://repo1.maven.org/maven2" "https://repo.clojars.org"})
 
