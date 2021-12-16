@@ -19,9 +19,17 @@
 (ns lice-comb.deps
   "deps (in tools.deps lib-map format) related functionality."
   (:require [clojure.string  :as s]
+            [clojure.reflect :as cr]
+            [clojure.edn     :as edn]
             [lice-comb.maven :as mvn]
             [lice-comb.files :as f]
             [lice-comb.utils :as u]))
+
+(def ^:private fallbacks-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/fallbacks.edn")
+(def ^:private fallbacks     (try
+                               (edn/read-string (slurp fallbacks-uri))
+                               (catch Exception e
+                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {})))))
 
 (defmulti dep->ids
   "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or two-element sequence of [groupId/artifactId dep-info])."
@@ -38,12 +46,16 @@
           license-ids            (mvn/pom->ids pom-uri)]
       (if license-ids
         license-ids
-        (u/nset (mapcat f/zip->ids (:paths info)))))))   ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
+        (if-let [license-ids (u/nset (mapcat f/zip->ids (:paths info)))]   ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
+          license-ids
+          (get fallbacks ga))))))    ; Then, as a last resort, look at the fallbacks
 
 (defmethod dep->ids :deps
-  [[_ info]]
+  [[ga info]]
   (when info
-    (f/dir->ids (:deps/root info))))
+    (if-let [license-ids (f/dir->ids (:deps/root info))]
+      license-ids
+      (get fallbacks ga))))    ; As a last resort, look at the fallbacks
 
 (defmethod dep->ids nil
   [_])

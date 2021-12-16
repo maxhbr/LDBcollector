@@ -20,8 +20,8 @@
   "SPDX related functionality."
   (:require [clojure.string  :as s]
             [clojure.java.io :as io]
-            [clojure.edn     :as edn]
             [clojure.reflect :as cr]
+            [clojure.edn     :as edn]
             [cheshire.core   :as json]
             [lice-comb.utils :as u]))
 
