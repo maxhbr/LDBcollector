@@ -51,12 +51,12 @@
     ; clj -M:kondo
     :kondo
       {:extra-deps {clj-kondo/clj-kondo {:mvn/version "2021.12.01"}}
-       :main-opts  ["-m" "clj-kondo.main" "--lint" "src" "resources"]}
+       :main-opts  ["-m" "clj-kondo.main" "--lint" "src"]}
 
     ; clj -M:eastwood
     :eastwood
       {:extra-deps {jonase/eastwood {:mvn/version "1.0.0"}}
-       :main-opts  ["-m" "eastwood.lint" "{:source-paths,[\"src\",\"resources\"]}"]}
+       :main-opts  ["-m" "eastwood.lint" "{:source-paths,[\"src\"]}"]}
 
     ; clj -M:outdated
     :outdated

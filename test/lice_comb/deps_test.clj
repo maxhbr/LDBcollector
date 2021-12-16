@@ -26,9 +26,12 @@
   (testing "Nil deps"
     (is (nil? (dep->ids nil))))
   (testing "Valid deps - single license"
-    (is (= #{"Apache-2.0"} (dep->ids ['com.github.pmonks/asf-cat {:deps/manifest :mvn :mvn/version "1.0.12"}])))
-    (is (= #{"EPL-1.0"}    (dep->ids ['org.clojure/clojure       {:deps/manifest :mvn :mvn/version "1.10.3"}])))
-    (is (nil?              (dep->ids ['sci.impl/reflector        {:deps/manifest :mvn :mvn/version "0.0.1"}]))))  ; No licenses in deployed artifacts
+    (is (= #{"Apache-2.0"} (dep->ids ['com.github.pmonks/asf-cat  {:deps/manifest :mvn :mvn/version "1.0.12"}])))
+    (is (= #{"EPL-1.0"}    (dep->ids ['org.clojure/clojure        {:deps/manifest :mvn :mvn/version "1.10.3"}])))
+    (is (= #{"EPL-1.0"}    (dep->ids ['com.github.athos/clj-check {:deps/manifest :deps :deps/root (str gitlib-dir "/com.github.athos/clj-check") :lice-comb/licenses #{"EPL-1.0"}}]))))
+  (testing "Valid deps - no licenses in deployed artifacts -> leverage fallbacks"
+    (is (= #{"EPL-1.0"} (dep->ids ['slipset/deps-deploy         {:deps/manifest :mvn :mvn/version "0.2.0"}])))
+    (is (= #{"EPL-1.0"} (dep->ids ['borkdude/sci.impl.reflector {:deps/manifest :mvn :mvn/version "0.0.1"}]))))
   (testing "Valid deps - multi license"
     (is (= #{"GPL-2.0-with-classpath-exception" "MIT"} (dep->ids ['org.checkerframework/checker-compat-qual {:deps/manifest :mvn :mvn/version "2.5.5"}])))))
 

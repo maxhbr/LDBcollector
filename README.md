@@ -29,11 +29,14 @@ Express the correct maven dependencies in your `deps.edn`:
 {:deps {com.github.pmonks/lice-comb {:mvn/version "LATEST_CLOJARS_VERSION"}}}
 ```
 
-### Require the namespace
+### Require one or more of the namespaces
 
 ```clojure
 (ns your.ns
-  (:require [lice-comb.api :as lic]))
+  (:require [lice-comb.deps  :as lcd]
+            [lice-comb.files :as lcf]
+            [lice-comb.maven :as lcm]
+            [lice-comb.spdx  :as lcs]))
 ```
 
 ## Contributor Information
