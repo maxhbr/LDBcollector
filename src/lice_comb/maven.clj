@@ -66,7 +66,7 @@
     #{license}
     (if-let [licenses (spdx/name->ids name)]
       licenses
-      (when name #{(str "NON-SPDX (" name ")")}))))   ; Last resort - return the license name as-is
+      (when name #{(str "NON-SPDX-Unknown (" name ")")}))))   ; Last resort - return the license name
 
 (xml/alias-uri 'pom "http://maven.apache.org/POM/4.0.0")
 

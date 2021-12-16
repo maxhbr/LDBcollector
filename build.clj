@@ -133,6 +133,12 @@ clojure -A:deps -T:build help/doc"
       (pom/pom)
       (bb/jar)))
 
+(defn install
+  "Install the library locally e.g. so it can be tested by downstream dependencies"
+  [opts]
+  (jar opts)
+  (bb/install (set-opts opts)))
+
 (defn deploy
   "Deploys the library JAR to Clojars."
   [opts]

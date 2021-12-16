@@ -61,12 +61,13 @@
   (testing "Not a directory"
     (is (thrown? java.nio.file.NotDirectoryException (probable-license-files "deps.edn"))))
   (testing "A real directory"
-    (is (= #{(io/file "./LICENSE")
-             (io/file "./test/lice_comb/data/asf-cat-1.0.12.pom")
-             (io/file "./test/lice_comb/data/with-parent.pom")
-             (io/file "./test/lice_comb/data/no-xml-ns.pom")
-             (io/file "./test/lice_comb/data/simple.pom")}
-           (probable-license-files ".")))))
+      (is (= #{(io/file (str test-data-path "/asf-cat-1.0.12.pom"))
+               (io/file (str test-data-path "/with-parent.pom"))
+               (io/file (str test-data-path "/no-xml-ns.pom"))
+               (io/file (str test-data-path "/simple.pom"))
+               (io/file (str test-data-path "/CC-BY-4.0/LICENSE"))
+               (io/file (str test-data-path "/MPL-2.0/LICENSE"))}
+             (probable-license-files test-data-path)))))
 
 (deftest file->ids-tests
   (testing "Nil, empty, or blank filename"
@@ -79,6 +80,8 @@
     (is (thrown? java.io.FileNotFoundException (file->ids "this_file_does_not_exist"))))
   (testing "License files"
 ;    (is (= #{"Apache-1.0"} (file->ids "https://www.apache.org/licenses/LICENSE-1.0")))    ; Note: this page incorrectly lists itself as Apache 1.1
+    (is (= #{"CC-BY-4.0"}  (file->ids (str test-data-path "/CC-BY-4.0/LICENSE"))))
+    (is (= #{"MPL-2.0"}    (file->ids (str test-data-path "/MPL-2.0/LICENSE"))))
     (is (= #{"Apache-1.1"} (file->ids "https://www.apache.org/licenses/LICENSE-1.1")))
     (is (= #{"Apache-2.0"} (file->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
     (is (= #{"EPL-1.0"}    (file->ids "https://www.eclipse.org/org/documents/epl-1.0/EPL-1.0.txt")))
@@ -111,7 +114,7 @@
     (is (thrown? java.io.FileNotFoundException       (dir->ids "this_directory_does_not_exist")))
     (is (thrown? java.nio.file.NotDirectoryException (dir->ids "deps.edn"))))
   (testing "Valid directory"
-    (is (= #{"Apache-2.0" "BSD-3-Clause"} (dir->ids ".")))))
+    (is (= #{"Apache-2.0" "BSD-3-Clause" "MPL-2.0" "CC-BY-4.0"} (dir->ids ".")))))
 
 (deftest zip->ids-tests
   (testing "Nil, empty, or blank zip file name"

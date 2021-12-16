@@ -50,7 +50,7 @@
 
     ; clj -M:kondo
     :kondo
-      {:extra-deps {clj-kondo/clj-kondo {:mvn/version "2021.12.01"}}
+      {:extra-deps {clj-kondo/clj-kondo {:mvn/version "2021.12.16"}}
        :main-opts  ["-m" "clj-kondo.main" "--lint" "src"]}
 
     ; clj -M:eastwood
