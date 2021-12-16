@@ -125,6 +125,5 @@
   (testing "Invalid zip file"
     (is (thrown? java.util.zip.ZipException (zip->ids (str test-data-path "/bad.zip")))))
   (testing "Valid zip file"
-    (is (= #{"Apache-2.0"} (zip->ids (str test-data-path "/good.zip")))))
-  )
+    (is (= #{"Apache-2.0"} (zip->ids (str test-data-path "/good.zip"))))))
 
