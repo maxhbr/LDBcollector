@@ -42,18 +42,19 @@
                         (.setRequestMethod "HEAD"))]
          (= 200 (.getResponseCode http)))))
 
-(defn- pom-uri-for-gav
+(defn pom-uri-for-gav
   "Attempts to locate the POM for the given GAV, which is a URI that may point to a file in the local Maven repository or a remote Maven repository (e.g. on Maven Central or Clojars)."
-  [{:keys [group-id artifact-id version]}]
-  (when (and (not (s/blank? group-id))
-             (not (s/blank? artifact-id))
-             (not (s/blank? version)))
-    (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
-          local-pom (io/file (str local-maven-repo "/" gav-path))]
-      (if (and (.exists local-pom)
-               (.isFile local-pom))
-        (.toURI local-pom)
-        (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos)))))))
+  ([{:keys [group-id artifact-id version]}] (pom-uri-for-gav group-id artifact-id version))
+  ([group-id artifact-id version]
+   (when (and (not (s/blank? group-id))
+              (not (s/blank? artifact-id))
+              (not (s/blank? version)))
+     (let [gav-path  (str (s/replace group-id "." "/") "/" artifact-id "/" version "/" artifact-id "-" version ".pom")
+           local-pom (io/file (str local-maven-repo "/" gav-path))]
+       (if (and (.exists local-pom)
+                (.isFile local-pom))
+         (.toURI local-pom)
+         (first (filter uri-resolves? (map #(java.net.URI. (str % "/" gav-path)) remote-maven-repos))))))))
 
 (defn- licenses-from-pair
   "Attempts to determine the license(s) (a set) from a POM license name/URL pair."
