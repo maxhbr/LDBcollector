@@ -37,7 +37,7 @@
   [ga ids]
   (if (or (empty? ids)
           (every? #(not (spdx/spdx-id? %)) ids))
-    (:licenses (get fallbacks ga ids))
+    (:licenses (get fallbacks ga {:licenses ids}))
     ids))
 
 (defmulti dep->ids
