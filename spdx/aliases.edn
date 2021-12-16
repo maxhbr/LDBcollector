@@ -10,7 +10,7 @@
   "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 1\\.1"                                         #{"Apache-1.1"}
   "apache(\\s+software)?(\\s+license(s)?(,)?)?(\\s+version)? 2(\\.0|\\s+|\\z)"                              #{"Apache-2.0"}
   "apache(\\s+software)?(\\s+license(s)?)?"                                                                 #{"Apache-1.0"}   ; Assume earliest version
-  "creative\\s+commons(\\s+legal\\s+code)?\\s+attribution\\s+3\\.0\\s+unported"                             #{"CC-BY-3.0"}
+  "(creative\\s+commons(\\s+legal\\s+code)?\\s+)?attribution\\s+3\\.0\\s+unported"                          #{"CC-BY-3.0"}
   "attribution\\s+4\\.0\\s+international"                                                                   #{"CC-BY-4.0"}
   "cddl/gplv2\\+ce"                                                                                         #{"CDDL-1.0" "GPL-2.0-with-classpath-exception"}
   "cddl\\+gpl\\s+license"                                                                                   #{"CDDL-1.0" "GPL-2.0"}
