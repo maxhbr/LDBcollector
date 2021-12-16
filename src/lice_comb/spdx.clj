@@ -31,6 +31,12 @@
                                        (catch Exception e
                                          (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " spdx-license-list-uri ". Please check your internet connection and try again.") {})))))
 
+(def ^:private aliases-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/spdx/aliases.edn")
+(def ^:private aliases     (try
+                             (edn/read-string (slurp aliases-uri))
+                             (catch Exception e
+                               (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " aliases-uri ". Please check your internet connection and try again.") {})))))
+
 (def license-list-version
   "The version of the license list in use."
   (:license-list-version spdx-license-list))
@@ -43,7 +49,7 @@
 (def ^:private idx-id-to-info  (into {} (map #(vec [(:license-id %) %]) license-list)))
 (def ^:private idx-name-to-id  (apply merge (map #(hash-map (s/trim (s/lower-case (:name %))) (:license-id %)) license-list)))
 (def ^:private idx-uri-to-id   (into {} (mapcat (fn [lic] (map #(vec [(u/simplify-uri %) (:license-id lic)]) (:see-also lic))) license-list)))
-(def ^:private idx-regex-to-id (merge (edn/read (java.io.PushbackReader. (io/reader (io/resource "spdx/aliases.edn"))))
+(def ^:private idx-regex-to-id (merge aliases
                                       (apply merge (map #(hash-map (s/replace (u/escape-re (s/lower-case (:name %))) #"\s+" "\\\\s+") #{(:license-id %)}) license-list))))
 
 ; Store regexes in reverse size order, on the assumption that longer regexes are more specific and should be processed first

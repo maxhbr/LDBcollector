@@ -25,7 +25,7 @@
             [lice-comb.files :as f]
             [lice-comb.utils :as u]))
 
-(def ^:private fallbacks-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/fallbacks.edn")
+(def ^:private fallbacks-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/deps/fallbacks.edn")
 (def ^:private fallbacks     (try
                                (edn/read-string (slurp fallbacks-uri))
                                (catch Exception e
