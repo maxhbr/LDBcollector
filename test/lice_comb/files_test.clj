@@ -21,6 +21,8 @@
             [clojure.java.io :as io]
             [lice-comb.files :refer [probable-license-file? probable-license-files file->ids dir->ids zip->ids]]))
 
+(def test-data-path "./test/lice_comb/data")
+
 (deftest probable-license-file?-tests
   (testing "Nil, empty or blank names"
     (is (= false (probable-license-file? nil)))
@@ -61,11 +63,42 @@
     (is (= [(io/file "./LICENSE")] (probable-license-files ".")))))
 
 (deftest file->ids-tests
-  (testing "Nil, empty, or blank file"
+  (testing "Nil, empty, or blank filename"
     (is (nil?                                  (file->ids nil)))
     (is (thrown? java.io.FileNotFoundException (file->ids "")))
     (is (thrown? java.io.FileNotFoundException (file->ids "       ")))
     (is (thrown? java.io.FileNotFoundException (file->ids "\n")))
-    (is (thrown? java.io.FileNotFoundException (file->ids "\t")))))
+    (is (thrown? java.io.FileNotFoundException (file->ids "\t"))))
+  (testing "Non-existent files"
+    (is (thrown? java.io.FileNotFoundException (file->ids "this_file_does_not_exists"))))
+  (testing "License files"
+;    (is (= #{"Apache-1.0"} (file->ids "https://www.apache.org/licenses/LICENSE-1.0")))    ; Note: this page incorrectly lists itself as Apache 1.1
+    (is (= #{"Apache-1.1"} (file->ids "https://www.apache.org/licenses/LICENSE-1.1")))
+    (is (= #{"Apache-2.0"} (file->ids "https://www.apache.org/licenses/LICENSE-2.0.txt")))
+    (is (= #{"EPL-1.0"}    (file->ids "https://www.eclipse.org/org/documents/epl-1.0/EPL-1.0.txt")))
+    (is (= #{"EPL-2.0"}    (file->ids "https://www.eclipse.org/org/documents/epl-2.0/EPL-2.0.txt")))
+    (is (= #{"CDDL-1.0"}   (file->ids "https://spdx.org/licenses/CDDL-1.0.txt")))
+    (is (= #{"CDDL-1.1"}   (file->ids "https://spdx.org/licenses/CDDL-1.1.txt")))
+    (is (= #{"GPL-1.0"}    (file->ids "https://www.gnu.org/licenses/gpl-1.0.txt")))
+    (is (= #{"GPL-2.0"}    (file->ids "https://www.gnu.org/licenses/gpl-2.0.txt")))
+    (is (= #{"GPL-3.0"}    (file->ids "https://www.gnu.org/licenses/gpl-3.0.txt")))
+    (is (= #{"LGPL-2.0"}   (file->ids "https://www.gnu.org/licenses/lgpl-2.0.txt")))
+    (is (= #{"LGPL-2.1"}   (file->ids "https://www.gnu.org/licenses/lgpl-2.1.txt")))
+    (is (= #{"LGPL-3.0"}   (file->ids "https://www.gnu.org/licenses/lgpl-3.0.txt")))
+    (is (= #{"AGPL-3.0"}   (file->ids "https://www.gnu.org/licenses/agpl-3.0.txt")))
+    (is (= #{"Unlicense"}  (file->ids "https://unlicense.org/UNLICENSE")))
+    (is (= #{"WTFPL"}      (file->ids "http://www.wtfpl.net/txt/copying/"))))
+  (testing "POM files"
+    (is (= #{"Apache-2.0"  (file->ids "https://raw.githubusercontent.com/pmonks/alfresco-bulk-import/master/pom.xml")}))
+;    (is (= #{""}    (file->ids "")))
 
+    ))
+
+(deftest dir->ids-tests
+  ;TODO: "."?  Something in test-data-path?
+  )
+
+(deftest zip->ids-tests
+  ;TODO: JAR or ZIP file in test-data-path
+  )
 

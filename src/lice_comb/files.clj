@@ -44,7 +44,7 @@
   [^java.util.zip.ZipEntry ze]
   (filename (.getName ze)))   ; Note that Zip Entry names include the entire path
 
-(def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
+(def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
 
 (defn probable-license-file?
   "Returns true if the given file-like thing (String, File, ZipEntry) is a probable license file, false otherwise."

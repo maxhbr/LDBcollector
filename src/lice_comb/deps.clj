@@ -53,9 +53,9 @@
   (throw (ex-info (str "Unexpected manifest type '" (:deps/manifest (second dep)) "' for dependency " dep) {:dep dep})))
 
 (defn deps-licenses
-  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new lib map with the licenses assoc'ed in (in key :lice-cap/licenses)"
+  "Attempt to detect the license(s) in a tools.deps 'lib map', returning a new lib map with the licenses assoc'ed in (in key :lice-comb/licenses)"
   [deps]
   (when deps
     (into {}
           (for [[k v] deps]
-            [k (assoc v :lice-cap/licenses (dep->ids [k v]))]))))
+            [k (assoc v :lice-comb/licenses (dep->ids [k v]))]))))

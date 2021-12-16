@@ -25,8 +25,39 @@
     (is (nil? (dep->ids nil))))
   (testing "Valid deps - single license"
     (is (= #{"Apache-2.0"} (dep->ids ['com.github.pmonks/asf-cat {:deps/manifest :mvn :mvn/version "1.0.12"}])))
-    (is (= #{"EPL-1.0"}    (dep->ids ['org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}]))))
+    (is (= #{"EPL-1.0"}    (dep->ids ['org.clojure/clojure       {:deps/manifest :mvn :mvn/version "1.10.3"}])))
+    (is (nil?              (dep->ids ['sci.impl/reflector        {:deps/manifest :mvn :mvn/version "0.0.1"}]))))  ; No licenses in deployed artifacts
   (testing "Valid deps - multi license"
     (is (= #{"GPL-2.0-with-classpath-exception" "MIT"} (dep->ids ['org.checkerframework/checker-compat-qual {:deps/manifest :mvn :mvn/version "2.5.5"}])))))
 
+(deftest deps-licenses-test
+  (testing "Nil and empty deps"
+    (is (nil? (deps-licenses nil)))
+    (is (= {} (deps-licenses {}))))
+  (testing "Single deps"
+    (is (= {'org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3" :lice-comb/licenses #{"EPL-1.0"}}}
+           (deps-licenses {'org.clojure/clojure {:deps/manifest :mvn :mvn/version "1.10.3"}})))
+    ; TODO: Test both :mvn and :deps deps
+    )
+  (testing "Multiple deps"
+    (comment
+    (is (= {} (deps-licenses {'org.clojure/clojure                                       {:deps/manifest :mvn :mvn/version "1.10.3"}
+                              'org.clojure/spec.alpha                                    {:deps/manifest :mvn :mvn/version "0.2.194"}
+                              'org.clojure/core.specs.alpha                              {:deps/manifest :mvn :mvn/version "0.2.56"}
+                              'org.clojure/data.xml                                      {:deps/manifest :mvn :mvn/version "0.2.0-alpha6"}
+                              'org.clojure/data.codec                                    {:deps/manifest :mvn :mvn/version "0.1.0"}
+                              'cheshire/cheshire                                         {:deps/manifest :mvn :mvn/version "5.10.1"}
+                              'com.fasterxml.jackson.core/jackson-core                   {:deps/manifest :mvn :mvn/version "2.12.4"}
+                              'com.fasterxml.jackson.dataformat/jackson-dataformat-smile {:deps/manifest :mvn :mvn/version "2.12.4"}
+                              'com.fasterxml.jackson.core/jackson-databind               {:deps/manifest :mvn :mvn/version "2.12.4"}
+                              'com.fasterxml.jackson.core/jackson-annotations            {:deps/manifest :mvn :mvn/version "2.12.4"}
+                              'com.fasterxml.jackson.dataformat/jackson-dataformat-cbor  {:deps/manifest :mvn :mvn/version "2.12.4"}
+                              'tigris/tigris                                             {:deps/manifest :mvn :mvn/version "0.1.2"}
+                              'clj-xml-validation/clj-xml-validation                     {:deps/manifest :mvn :mvn/version "1.0.2"}
+                              'camel-snake-kebab/camel-snake-kebab                       {:deps/manifest :mvn :mvn/version "0.4.2"}
+                              'tolitius/xml-in                                           {:deps/manifest :mvn :mvn/version "0.1.1"}})))
+    )
+    ; TODO: Test :deps deps
+    ; TODO: Test a mixture of :mvn and :deps deps
+    ))
 
