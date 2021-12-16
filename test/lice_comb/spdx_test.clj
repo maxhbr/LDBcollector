@@ -44,14 +44,18 @@
     (is (= #{"CC-BY-SA-4.0"}                     (name->ids "Creative Commons Attribution Share Alike 4.0 International")))
     (is (= #{"GPL-2.0-with-classpath-exception"} (name->ids "GNU General Public License v2.0 w/Classpath exception")))
     (is (= #{"Apache-1.0"}                       (name->ids "Apache Software License"))))
-  (testing "Names that appear in licensey things, but aren't in the SPDX license list verbatim"
+  (testing "Names that appear in licensey things, but aren't in the SPDX license list verbatim"    ; Note: this list should be extended indefinitely, as it tests the guts of the matching algorithm
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License v2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License 2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License v2")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License 2")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License Version 2")))
-    (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0"))))
+    (is (= #{"LGPL-2.0"}                         (name->ids "GNU Library General Public License")))
+    (is (= #{"LGPL-2.1"}                         (name->ids "GNU Lesser General Public License")))
+    (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0")))
+    (is (= #{"MIT"}                              (name->ids "The MIT License")))
+    (is (= #{"MIT"}                              (name->ids "MIT License"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
     (is (= #{"NON-SPDX-JDOM"}                    (name->ids "Similar to Apache License but with the acknowledgment clause removed")))
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public Domain")))

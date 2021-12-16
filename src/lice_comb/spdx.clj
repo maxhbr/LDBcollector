@@ -40,9 +40,16 @@
   (:licenses spdx-license-list))
 
 ; Alternative indexes into the SPDX list
-(def ^:private idx-id-to-info (into {} (map #(vec [(:license-id %) %]) license-list)))
-(def ^:private idx-name-to-id (apply merge (map #(hash-map (s/lower-case (:name %)) (:license-id %)) license-list)))
-(def ^:private idx-uri-to-id  (into {} (mapcat (fn [lic] (map #(vec [(u/simplify-uri %) (:license-id lic)]) (:see-also lic))) license-list)))
+(def ^:private idx-id-to-info  (into {} (map #(vec [(:license-id %) %]) license-list)))
+(def ^:private idx-name-to-id  (apply merge (map #(hash-map (s/trim (s/lower-case (:name %))) (:license-id %)) license-list)))
+(def ^:private idx-uri-to-id   (into {} (mapcat (fn [lic] (map #(vec [(u/simplify-uri %) (:license-id lic)]) (:see-also lic))) license-list)))
+(def ^:private idx-regex-to-id (merge (edn/read (java.io.PushbackReader. (io/reader (io/resource "spdx/aliases.edn"))))
+                                      (apply merge (map #(hash-map (s/replace (u/escape-re (s/lower-case (:name %))) #"\s+" "\\\\s+") #{(:license-id %)}) license-list))))
+
+; Store regexes in reverse size order, on the assumption that longer regexes are more specific and should be processed first
+; Note: `regexes` actually contains string representations, since regexes in Clojure don't implement equality / hash 🙄
+(def ^:private regexes         (reverse (sort-by #(count %) (concat (keys idx-regex-to-id) (keys idx-regex-to-id)))))
+(def ^:private re-pattern-mem  (memoize re-pattern))   ; So we memomize re-pattern to save having to recompile the regex string representations every time we use them
 
 (def ids
   "All SPDX license identifiers in the list."
@@ -64,7 +71,7 @@
   "Returns the SPDX license identifier equivalent of the given license name, or nil if unable to do so."
   [name]
   (when name
-    (get idx-name-to-id (s/lower-case name))))
+    (get idx-name-to-id (s/trim (s/lower-case name)))))
 
 (defn uri->id
   "Returns the SPDX license identifier equivalent for the given uri, or nil if unable to do so.
@@ -85,39 +92,32 @@
     (not (s/starts-with? id "NON-SPDX-"))))
 
 (defn id->name
-  "Returns the license name of the given id; either the official SPDX name or (if the id is not an SPDX id) an unofficial name. Returns nil if unable to determine the name for that id."
+  "Returns the license name of the given id; either the official SPDX name or (if the id is not an SPDX id) an unofficial name. Returns the id as-is if unable to determine its name."
   [id]
   (if (spdx-id? id)
     (id->spdx-name id)
     (case id
       "NON-SPDX-Public-Domain" "Public domain"
       "NON-SPDX-JDOM"          "JDOM"
-      nil)))
-
-(def ^:private aliases (edn/read (java.io.PushbackReader. (io/reader (io/resource "spdx/aliases.edn")))))
-
-; Store regexes in reverse size order, on the assumption that longer regexes are more specific and should be processed first
-(def ^:private alias-regexes (reverse (sort-by #(count %) (keys aliases))))
-
-(def ^:private re-pattern-mem (memoize re-pattern))
+      id)))
 
 (defn name->ids
   "Attempts to determine the SPDX license identifier(s) (a set) from the given license name (a string). Returns nil if unable to do so."
   [name]
   (when name
     (let [name (s/trim name)]
-      (if-let [exact-id-match (id->info name)]
+      (if-let [exact-id-match (id->info name)]   ; First we exact match on the id, for those cases where someone has used the SPDX id as the name (e.g. in a pom.xml file)
         #{(:license-id exact-id-match)}
-        (if-let [exact-name-match (spdx-name->id name)]
+        (if-let [exact-name-match (spdx-name->id name)]   ; Then we exact match on the name (albeit case-insensitively)
           #{exact-name-match}
-          (get aliases (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) alias-regexes))))))))
+          (get idx-regex-to-id (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) regexes))))))))   ; Then the last resort is to match on the regexes
 
 (defmulti text->ids
   "Attempts to determine the SPDX license identifier(s) (a set) from the given license text (an InputStream, or something that can have an io/input-stream opened on it)."
   {:arglists '([text])}
   type)
 
-; Note: this should be updated to use the methods described here: https://spdx.dev/license-list/matching-guidelines/
+; TODO: https://github.com/pmonks/lice-comb/issues/3
 (defmethod text->ids java.io.InputStream
   [is]
   (let [rdr         (io/reader is)    ; Note: we don't wrap this in "with-open", since the input-stream we're handed is closed by the calling fn
