@@ -33,6 +33,7 @@
   (testing "Filenames that are probable license files"
     (is (= true  (probable-license-file? "pom.xml")))
     (is (= true  (probable-license-file? "POM.XML")))
+    (is (= true  (probable-license-file? "asf-cat-1.0.12.pom")))
     (is (= true  (probable-license-file? "license")))
     (is (= true  (probable-license-file? "LICENSE")))
     (is (= true  (probable-license-file? "license.txt")))
@@ -60,7 +61,12 @@
   (testing "Not a directory"
     (is (thrown? java.nio.file.NotDirectoryException (probable-license-files "deps.edn"))))
   (testing "A real directory"
-    (is (= [(io/file "./LICENSE")] (probable-license-files ".")))))
+    (is (= #{(io/file "./LICENSE")
+             (io/file "./test/lice_comb/data/asf-cat-1.0.12.pom")
+             (io/file "./test/lice_comb/data/with-parent.pom")
+             (io/file "./test/lice_comb/data/no-xml-ns.pom")
+             (io/file "./test/lice_comb/data/simple.pom")}
+           (probable-license-files ".")))))
 
 (deftest file->ids-tests
   (testing "Nil, empty, or blank filename"
@@ -70,7 +76,7 @@
     (is (thrown? java.io.FileNotFoundException (file->ids "\n")))
     (is (thrown? java.io.FileNotFoundException (file->ids "\t"))))
   (testing "Non-existent files"
-    (is (thrown? java.io.FileNotFoundException (file->ids "this_file_does_not_exists"))))
+    (is (thrown? java.io.FileNotFoundException (file->ids "this_file_does_not_exist"))))
   (testing "License files"
 ;    (is (= #{"Apache-1.0"} (file->ids "https://www.apache.org/licenses/LICENSE-1.0")))    ; Note: this page incorrectly lists itself as Apache 1.1
     (is (= #{"Apache-1.1"} (file->ids "https://www.apache.org/licenses/LICENSE-1.1")))
@@ -89,16 +95,36 @@
     (is (= #{"Unlicense"}  (file->ids "https://unlicense.org/UNLICENSE")))
     (is (= #{"WTFPL"}      (file->ids "http://www.wtfpl.net/txt/copying/"))))
   (testing "POM files"
-    (is (= #{"Apache-2.0"  (file->ids "https://raw.githubusercontent.com/pmonks/alfresco-bulk-import/master/pom.xml")}))
-;    (is (= #{""}    (file->ids "")))
-
-    ))
+    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/simple.pom"))))
+    (is (= #{"BSD-3-Clause"} (file->ids (str test-data-path "/no-xml-ns.pom"))))
+    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/asf-cat-1.0.12.pom"))))
+    (is (= #{"Apache-2.0"}   (file->ids (str test-data-path "/with-parent.pom"))))))
 
 (deftest dir->ids-tests
-  ;TODO: "."?  Something in test-data-path?
-  )
+  (testing "Nil, empty, or blank directory name"
+    (is (nil?                                  (dir->ids nil)))
+    (is (thrown? java.io.FileNotFoundException (dir->ids "")))
+    (is (thrown? java.io.FileNotFoundException (dir->ids "       ")))
+    (is (thrown? java.io.FileNotFoundException (dir->ids "\n")))
+    (is (thrown? java.io.FileNotFoundException (dir->ids "\t"))))
+  (testing "Non-existent or invalid directory"
+    (is (thrown? java.io.FileNotFoundException       (dir->ids "this_directory_does_not_exist")))
+    (is (thrown? java.nio.file.NotDirectoryException (dir->ids "deps.edn"))))
+  (testing "Valid directory"
+    (is (= #{"Apache-2.0" "BSD-3-Clause"} (dir->ids ".")))))
 
 (deftest zip->ids-tests
-  ;TODO: JAR or ZIP file in test-data-path
+  (testing "Nil, empty, or blank zip file name"
+    (is (nil?                                      (zip->ids nil)))
+    (is (thrown? java.io.FileNotFoundException     (zip->ids "")))            ; Note the hodgepodge of different thrown exception types here - java.util.zip is a mess!
+    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "       ")))
+    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "\n")))
+    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "\t"))))
+  (testing "Non-existent zip file"
+    (is (thrown? java.nio.file.NoSuchFileException (zip->ids "this_zip_file_does_not_exist"))))
+  (testing "Invalid zip file"
+    (is (thrown? java.util.zip.ZipException (zip->ids (str test-data-path "/bad.zip")))))
+  (testing "Valid zip file"
+    (is (= #{"Apache-2.0"} (zip->ids (str test-data-path "/good.zip")))))
   )
 

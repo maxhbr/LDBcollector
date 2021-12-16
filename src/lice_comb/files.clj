@@ -49,52 +49,51 @@
 (defn probable-license-file?
   "Returns true if the given file-like thing (String, File, ZipEntry) is a probable license file, false otherwise."
   [f]
-  (let [fname (filename f)]
-    (and (not (s/blank? fname))
-         (contains? probable-license-filenames (s/lower-case fname)))))
+  (and (not (nil? f))
+       (let [fname (s/lower-case (filename f))]
+         (and (not (s/blank? fname))
+              (or (contains? probable-license-filenames fname)
+                  (s/ends-with? fname ".pom"))))))
 
 (defn probable-license-files
-  "Returns all probable license files in the given directory (as a sequence of java.io.File objects). dir may be a String or a java.io.File, both of which must refer to a directory."
+  "Returns all probable license files in the given directory, recursively, as a set of java.io.File objects. dir may be a String or a java.io.File, both of which must refer to a directory."
   [dir]
   (when dir
     (let [dir (io/file dir)]
-      (if (.exists dir)
+      (if (.exists dir)    ; Note: we have to do this, because file-seq does weird things when handed a file that doesn't exist
         (if (.isDirectory dir)
-          (seq (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
+          (u/nset (filter #(and (.isFile ^java.io.File %) (probable-license-file? %)) (file-seq (io/file dir))))
           (throw (java.nio.file.NotDirectoryException. (str dir))))
         (throw (java.io.FileNotFoundException. (str dir)))))))
 
-(defmulti file->ids
-  "Attempts to determine the SPDX license identifier(s) (a set) from the given file (a String, InputStream, or something that can have an io/input-stream opened on it)."
-  {:arglists '([f])}
-  filename)
-
-(defmethod file->ids "pom.xml"
-  [f]
-  (mvn/pom->ids f))
-
-(defmethod file->ids :default
-  [f]
-  (spdx/text->ids f))
+(defn file->ids
+  "Attempts to determine the SPDX license identifier(s) (a set) from the given file (an InputStream or something that can have an io/input-stream opened on it).
+   If an InputStream is provided, the associated filename MUST also be provided as the second parameter."
+  ([f] (file->ids f (filename f)))
+  ([f fname]
+   (when (and f fname)
+     (let [fname (s/lower-case fname)]
+       (cond (= fname "pom.xml")         (mvn/pom->ids f)
+             (s/ends-with? fname ".pom") (mvn/pom->ids f)
+             :else                       (spdx/text->ids f))))))
 
 (defn dir->ids
   "Attempt to detect the license(s) in a directory. dir may be a String or a java.io.File, both of which must refer to a directory."
   [dir]
-  (u/nset (mapcat file->ids (probable-license-files dir))))
+  (when dir
+    (u/nset (mapcat file->ids (probable-license-files dir)))))
 
 (defn zip->ids
   "Attempt to detect the license(s) in a ZIP file. zip may be a String or a java.io.File, both of which must refer to a ZIP-format compressed file."
   [zip]
   (when zip
-    (let [zip (io/file zip)]
-      (if (and (.exists zip)
-               (.isFile zip))
-        (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip))]
-          (loop [entry    (.getNextEntry zip-is)
-                 licenses nil]
-            (if entry
-              (if (probable-license-file? entry)
-                (recur (.getNextEntry zip-is) (set/union licenses (file->ids zip-is)))
-                (recur (.getNextEntry zip-is) licenses))
-              licenses)))
-        (throw (java.io.FileNotFoundException. (str zip)))))))
+    (let [zip-file (io/file zip)]
+      (java.util.zip.ZipFile. zip-file)  ; This forces validation of the zip file - ZipInputStream does not reliably perform validation
+      (with-open [zip-is (java.util.zip.ZipInputStream. (io/input-stream zip-file))]
+        (loop [licenses nil
+               entry    (.getNextEntry zip-is)]
+          (if entry
+            (if (probable-license-file? entry)
+              (recur (set/union licenses (file->ids zip-is (filename entry))) (.getNextEntry zip-is))
+              (recur licenses                                                 (.getNextEntry zip-is)))
+            licenses))))))
