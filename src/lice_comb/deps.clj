@@ -21,6 +21,7 @@
   (:require [clojure.string  :as s]
             [clojure.reflect :as cr]
             [clojure.edn     :as edn]
+            [lice-comb.spdx  :as spdx]
             [lice-comb.maven :as mvn]
             [lice-comb.files :as f]
             [lice-comb.utils :as u]))
@@ -31,9 +32,17 @@
                                (catch Exception e
                                  (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {})))))
 
+(defn- check-fallbacks
+  "Checks if a fallback should be used for the given dep, given the set of detected ids"
+  [ga ids]
+  (if (or (empty? ids)
+          (every? #(not (spdx/spdx-id? %)) ids))
+    (:licenses (get fallbacks ga ids))
+    ids))
+
 (defmulti dep->ids
   "Attempt to detect the license(s) in a tools.deps style dep (a MapEntry or two-element sequence of [groupId/artifactId dep-info])."
-  {:arglists '([[dep info]])}
+  {:arglists '([[ga info]])}
   (fn [[_ info]] (:deps/manifest info)))
 
 (defmethod dep->ids :mvn
@@ -43,19 +52,16 @@
           [group-id artifact-id] (s/split (str ga) #"/")
           version                (:mvn/version info)
           pom-uri                (mvn/pom-uri-for-gav group-id artifact-id version)
-          license-ids            (mvn/pom->ids pom-uri)]
-      (if license-ids
-        license-ids
-        (if-let [license-ids (u/nset (mapcat f/zip->ids (:paths info)))]   ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
-          license-ids
-          (:licenses (get fallbacks ga)))))))    ; Then, as a last resort, look at the fallbacks
+          license-ids            (if-let [license-ids (mvn/pom->ids pom-uri)]
+                                   license-ids
+                                   (u/nset (mapcat f/zip->ids (:paths info))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
+      (check-fallbacks ga license-ids))))
 
 (defmethod dep->ids :deps
-  [[ga info]]
-  (when info
-    (if-let [license-ids (f/dir->ids (:deps/root info))]
-      license-ids
-      (:licenses (get fallbacks ga)))))    ; As a last resort, look at the fallbacks
+  [dep]
+  (when dep
+    (let [[ga info] dep]
+      (check-fallbacks ga (f/dir->ids (:deps/root info))))))
 
 (defmethod dep->ids nil
   [_])

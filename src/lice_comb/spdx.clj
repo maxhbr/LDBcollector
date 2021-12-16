@@ -95,7 +95,7 @@
   "Is the given identifier an SPDX identifier?"
   [id]
   (when id
-    (not (s/starts-with? id "NON-SPDX-"))))
+    (not (s/starts-with? id "NON-SPDX"))))
 
 (defn id->name
   "Returns the license name of the given id; either the official SPDX name or (if the id is not an SPDX id) an unofficial name. Returns the id as-is if unable to determine its name."
