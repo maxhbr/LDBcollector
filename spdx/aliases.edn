@@ -40,6 +40,9 @@
   "gnu\\s+lesser\\s+general\\s+public\\s+license\\s+version\\s+3"                                           #{"LGPL-3.0"}
   "gnu\\s+library\\s+general\\s+public\\s+license"                                                          #{"LGPL-2.0"}     ; There was only ever one version of the "GNU Library General Public License" (v2.0) - "Library" was renamed to "Lesser" as of v2.1
   "lesser\\s+general\\s+public\\s+license(,)?\\s+version\\s+3\\s+or\\s+greater"                             #{"LGPL-3.0"}
+  "mozilla\\2+public\\2+license\\2+(v(ersion)?\\2+1\\.0)?"                                                  #{"MPL-1.0"}
+  "mozilla\\2+public\\2+license\\2+v(ersion)?\\2+1.1"                                                       #{"MPL-1.1"}
+  "mozilla\\2+public\\2+license\\2+v(ersion)?\\2+2(\\.0|\\s+|\\z)"                                          #{"MPL-2.0"}
   "public\\s+domain"                                                                                        #{"NON-SPDX-Public-Domain"}   ; Note: not an SPDX license
   "similar\\s+to\\s+apache\\s+license\\s+but\\s+with\\s+the\\s+acknowledgment\\s+clause\\s+removed"         #{"NON-SPDX-JDOM"}            ; Note: not an SPDX license
   "the\\s+mx4j\\s+license(,)?\\s+version\\s+1\\.0"                                                          #{"Apache-1.1"}   ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
