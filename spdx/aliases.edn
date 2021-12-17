@@ -52,7 +52,7 @@
   "mozilla\\s+public\\s+license(\\s+v(ersion)?)?\\s+1.1"                                                                                                #{"MPL-1.1"}
   "mozilla\\s+public\\s+license(\\s+v(ersion)?)?\\s+2(\\.0|\\s+|\\z)"                                                                                   #{"MPL-2.0"}
   "public\\s+domain"                                                                                                                                    #{"NON-SPDX-Public-Domain"}   ; Note: not an SPDX license
-  "similar\\s+to\\s+apache\\s+license\\s+but\\s+with\\s+the\\s+acknowledgment\\s+clause\\s+removed"                                                     #{"NON-SPDX-JDOM"}            ; Note: not an SPDX license
+  "similar\\s+to\\s+apache\\s+license\\s+but\\s+with\\s+the\\s+acknowledgment\\s+clause\\s+removed"                                                     #{"Plexus"}       ; Note: see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
   "the\\s+mx4j\\s+license(\\s*[,-])?\\s+version\\s+1\\.0"                                                                                               #{"Apache-1.1"}   ; See https://wiki.spdx.org/view/Legal_Team/License_List/Licenses_Under_Consideration#Processed_License_Requests
   "this\\s+is\\s+free\\s+and\\s+unencumbered\\s+software\\s+released\\s+into\\s+the\\s+public\\s+domain\\."                                             #{"Unlicense"}
 }
