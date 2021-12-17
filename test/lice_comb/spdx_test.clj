@@ -110,6 +110,8 @@
     (is (nil?                                 (uri->id "\t"))))
   (testing "URIs that appear verbatim in the SPDX license list"
     (is (= "Apache-2.0"                       (uri->id "https://www.apache.org/licenses/LICENSE-2.0")))
+    (is (= "Apache-2.0"                       (uri->id "http://www.apache.org/licenses/LICENSE-2.0.html")))
+    (is (= "Apache-2.0"                       (uri->id "https://apache.org/licenses/LICENSE-2.0.txt")))
     (is (= "Apache-2.0"                       (uri->id "               https://www.apache.org/licenses/LICENSE-2.0             ")))   ; Test whitespace
     (is (= "AGPL-3.0"                         (uri->id "https://www.gnu.org/licenses/agpl.txt")))
     (is (= "CC-BY-SA-4.0"                     (uri->id "https://creativecommons.org/licenses/by-sa/4.0/legalcode")))
