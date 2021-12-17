@@ -105,7 +105,6 @@
     (id->spdx-name id)
     (case id
       "NON-SPDX-Public-Domain" "Public domain"
-      "NON-SPDX-JDOM"          "JDOM"
       id)))
 
 (defn name->ids
