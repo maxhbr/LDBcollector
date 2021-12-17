@@ -35,6 +35,7 @@
   "eclipse\\s+public\\s+license(\\s*[,-])?\\s*v(ersion)?\\s*1(\\.0|\\s+|\\z)"                                                                           #{"EPL-1.0"}
   "eclipse\\s+public\\s+license(\\s*[,-])?\\s*v(ersion)?\\s*1\\.1"                                                                                      #{"EPL-1.1"}
   "eclipse\\s+public\\s+license(\\s*[,-])?\\s*v(ersion)?\\s*2(\\.0|\\s+|\\z)"                                                                           #{"EPL-2.0"}
+  "json\\.org"                                                                                                                                          #{"JSON"}
   "gnu\\s+affero\\s+general\\s+public\\s+license"                                                                                                       #{"AGPL-3.0"}     ; Assume earliest version
   "gnu\\s+affero\\s+general\\s+public\\s+license(\\s+v(ersion)?)?\\s+3"                                                                                 #{"AGPL-3.0"}
   "gnu\\s+general\\s+public\\s+license"                                                                                                                 #{"GPL-1.0"}      ; Assume earliest version
