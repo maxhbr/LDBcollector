@@ -97,7 +97,7 @@
   (testing "Names that appear in licensey things, but are ambiguous"
     (is (nil?                                    (name->ids "BSD"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
-    (is (= #{"NON-SPDX-JDOM"}                    (name->ids "Similar to Apache License but with the acknowledgment clause removed")))
+    (is (= #{"Plexus"}                           (name->ids "Similar to Apache License but with the acknowledgment clause removed")))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public Domain")))
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public domain")))))
 

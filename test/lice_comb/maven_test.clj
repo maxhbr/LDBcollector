@@ -45,7 +45,7 @@
     (is (= #{"Apache-2.0"}                             (pom->ids "https://repo.clojars.org/http-kit/http-kit/2.5.3/http-kit-2.5.3.pom")))
     (is (nil?                                          (pom->ids "https://repo.clojars.org/borkdude/sci.impl.reflector/0.0.1/sci.impl.reflector-0.0.1.pom")))   ; This project has no license information in its pom
     (is (= #{"CDDL-1.0"}                               (pom->ids "https://repo1.maven.org/maven2/javax/activation/activation/1.1.1/activation-1.1.1.pom")))
-    (is (= #{"NON-SPDX-JDOM"}                          (pom->ids "https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom")))                  ; Note: non-SPDX
+    (is (= #{"Plexus"}                                 (pom->ids "https://repo1.maven.org/maven2/org/jdom/jdom2/2.0.6.1/jdom2-2.0.6.1.pom")))                  ; See https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
     (is (= #{"GPL-3.0"}                                (pom->ids "https://repo1.maven.org/maven2/org/activecomponents/jadex/jadex-kernel-component/3.0.117/jadex-kernel-component-3.0.117.pom"))))
   (testing "Real pom files - remote - dual-licensed"
     (is (= #{"GPL-2.0-with-classpath-exception" "MIT"} (pom->ids "https://repo1.maven.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom"))))
