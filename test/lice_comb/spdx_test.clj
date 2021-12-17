@@ -93,11 +93,11 @@
     (is (= #{"MIT"}                              (name->ids "MIT license")))     ; Test capitalisation
     (is (= #{"MIT"}                              (name->ids "The MIT License")))
     (is (= #{"MPL-1.0"}                          (name->ids "Mozilla Public License")))
-    (is (= #{"MPL-2.0"}                          (name->ids "Mozilla Public License Version 2.0"))))
+    (is (= #{"MPL-2.0"}                          (name->ids "Mozilla Public License Version 2.0")))
+    (is (= #{"Plexus"}                           (name->ids "Similar to Apache License but with the acknowledgment clause removed"))))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
   (testing "Names that appear in licensey things, but are ambiguous"
     (is (nil?                                    (name->ids "BSD"))))
   (testing "Names that appear in licensey things, but aren't in the SPDX license list, and don't have identified SPDX identifiers"
-    (is (= #{"Plexus"}                           (name->ids "Similar to Apache License but with the acknowledgment clause removed")))   ; JDOM - see https://lists.linuxfoundation.org/pipermail/spdx-legal/2014-December/001280.html
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public Domain")))
     (is (= #{"NON-SPDX-Public-Domain"}           (name->ids "Public domain")))))
 
@@ -136,4 +136,5 @@
     (is (= #{"Apache-2.0"}   (string-text->ids "Apache License\nVersion 2.0, January 2004")))
     (is (= #{"Apache-2.0"}   (string-text->ids "               Apache License\n               Version 2.0, January 2004             ")))
     (is (= #{"AGPL-3.0"}     (string-text->ids "GNU AFFERO GENERAL PUBLIC LICENSE\nVersion 3, 19 November 2007")))
-    (is (= #{"CC-BY-SA-4.0"} (string-text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))))
+    (is (= #{"CC-BY-SA-4.0"} (string-text->ids "Creative Commons Attribution-ShareAlike\n4.0 International Public License")))
+    (is (= #{"JSON"}         (string-text->ids "Copyright (c) 2002 JSON.org")))))
