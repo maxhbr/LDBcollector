@@ -18,7 +18,8 @@
 
 (ns lice-comb.utils
   "General purpose utility fns that I seem to end up needing in every single project I write..."
-  (:require [clojure.string :as s]))
+  (:require [clojure.string :as s]
+            [clojure.java.io :as io]))
 
 (defn clojurise-json-key
   "Converts JSON-style string keys (e.g. \"fullName\") to Clojure keyword keys (e.g. :full-name)."
@@ -103,3 +104,39 @@
     (s/replace (s/replace (s/lower-case (s/trim (str uri)))
                           "https://" "http://")
                "://www." "://")))
+
+(defmulti filename
+  "Returns just the name component of the given file or path string, excluding any parents."
+  type)
+
+(defmethod filename nil
+  [_])
+
+(defmethod filename java.io.File
+  [^java.io.File f]
+  (.getName f))
+
+(defmethod filename java.lang.String
+  [s]
+  (filename (io/file s)))
+
+(defmethod filename java.util.zip.ZipEntry
+  [^java.util.zip.ZipEntry ze]
+  (filename (.getName ze)))   ; Note that Zip Entry names include the entire path
+
+(defmethod filename java.net.URI
+  [^java.net.URI uri]
+  (filename (.getPath uri)))
+
+(defmethod filename java.net.URL
+  [^java.net.URL url]
+  (filename (.getPath url)))
+
+(defn getenv
+  "Obtain the given environment variable, returning default (or nil, if default is not provided) if it isn't set."
+  ([var] (getenv var nil))
+  ([var default]
+    (let [val (System/getenv var)]
+      (if-not (s/blank? val)
+        val
+        default))))
