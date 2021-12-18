@@ -13,8 +13,11 @@
   "apache(\\s+software)?(\\s+license(s)?)?"                                                                                                             #{"Apache-1.0"}   ; Assume earliest version
   "attribution\\s+3\\.0\\s+unported"                                                                                                                    #{"CC-BY-3.0"}
   "attribution\\s+4\\.0\\s+international"                                                                                                               #{"CC-BY-4.0"}
+  "bouncy\\s+castle\\s+licence"                                                                                                                         #{"MIT"}          ; See https://github.com/spdx/license-list-XML/issues/910
   "bsd\\s+3-clause\\s+attribution"                                                                                                                      #{"BSD-3-Clause-Attribution"}
   "bsd\\s+3-clause\\s+license"                                                                                                                          #{"BSD-3-Clause"}
+  "cc0(\\s+1(\\.0)?)?(\\s+universal)?"                                                                                                                  #{"CC0-1.0"}
+  "cddl"                                                                                                                                                #{"CDDL-1.0"}
   "cddl/gplv2\\+ce"                                                                                                                                     #{"CDDL-1.0" "GPL-2.0-with-classpath-exception"}
   "cddl\\+gpl\\s+license"                                                                                                                               #{"CDDL-1.0" "GPL-2.0"}
   "cddl\\s+1(\\.0)?\\+gpl\\s+license"                                                                                                                   #{"CDDL-1.1" "GPL-2.0"}
