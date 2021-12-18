@@ -25,32 +25,13 @@
             [lice-comb.maven :as mvn]
             [lice-comb.utils :as u]))
 
-(defmulti ^:private filename
-  "Returns just the name component of the given file or path string, excluding any parents."
-  type)
-
-(defmethod filename nil
-  [_])
-
-(defmethod filename java.io.File
-  [^java.io.File f]
-  (.getName f))
-
-(defmethod filename java.lang.String
-  [s]
-  (filename (io/file s)))
-
-(defmethod filename java.util.zip.ZipEntry
-  [^java.util.zip.ZipEntry ze]
-  (filename (.getName ze)))   ; Note that Zip Entry names include the entire path
-
 (def ^:private probable-license-filenames #{"pom.xml" "license" "license.txt" "copying" "unlicense"})   ;TODO: consider "license.md" and #".+\.spdx" (see https://github.com/spdx/spdx-maven-plugin for why the latter is important)...
 
 (defn probable-license-file?
   "Returns true if the given file-like thing (String, File, ZipEntry) is a probable license file, false otherwise."
   [f]
   (and (not (nil? f))
-       (let [fname (s/lower-case (filename f))]
+       (let [fname (s/lower-case (u/filename f))]
          (and (not (s/blank? fname))
               (or (contains? probable-license-filenames fname)
                   (s/ends-with? fname ".pom"))))))
@@ -69,7 +50,7 @@
 (defn file->ids
   "Attempts to determine the SPDX license identifier(s) (a set) from the given file (an InputStream or something that can have an io/input-stream opened on it).
    If an InputStream is provided, the associated filename MUST also be provided as the second parameter."
-  ([f] (file->ids f (filename f)))
+  ([f] (file->ids f (u/filename f)))
   ([f fname]
    (when (and f fname)
      (let [fname (s/lower-case fname)]
@@ -94,6 +75,6 @@
                entry    (.getNextEntry zip-is)]
           (if entry
             (if (probable-license-file? entry)
-              (recur (set/union licenses (file->ids zip-is (filename entry))) (.getNextEntry zip-is))
-              (recur licenses                                                 (.getNextEntry zip-is)))
+              (recur (set/union licenses (file->ids zip-is (u/filename entry))) (.getNextEntry zip-is))
+              (recur licenses                                                   (.getNextEntry zip-is)))
             licenses))))))

@@ -1,0 +1,18 @@
+<configuration>
+
+  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%date %-5level [%thread] %logger{30} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <!-- Make noisy libraries shut up -->
+  <logger name="org.apache"  level="ERROR" />
+  <logger name="org.eclipse" level="ERROR" />
+  <logger name="ch.qos"      level="ERROR" />
+<!--  <logger name="lice-comb"   level="DEBUG" />  -->
+
+  <root level="WARN">
+    <appender-ref ref="STDOUT" />
+  </root>
+</configuration>

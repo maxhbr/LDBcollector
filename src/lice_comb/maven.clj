@@ -18,13 +18,14 @@
 
 (ns lice-comb.maven
   "Maven related functionality, mostly related to POMs."
-  (:require [clojure.string     :as s]
-            [clojure.java.io    :as io]
-            [clojure.data.xml   :as xml]
-            [xml-in.core        :as xi]
-            [clojure.java.shell :as sh]
-            [lice-comb.spdx     :as spdx]
-            [lice-comb.utils    :as u]))
+  (:require [clojure.string        :as s]
+            [clojure.java.io       :as io]
+            [clojure.data.xml      :as xml]
+            [clojure.tools.logging :as log]
+            [xml-in.core           :as xi]
+            [clojure.java.shell    :as sh]
+            [lice-comb.spdx        :as spdx]
+            [lice-comb.utils       :as u]))
 
 (def ^:private local-maven-repo
   (try
@@ -102,4 +103,6 @@
   [pom]
   (when pom
     (with-open [pom-is (io/input-stream pom)]
-      (pom->ids pom-is))))
+      (if-let [pom-licenses (pom->ids pom-is)]
+        pom-licenses
+        (log/info (str "'" pom "'") "contains no license information")))))

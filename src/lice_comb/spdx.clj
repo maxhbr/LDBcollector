@@ -18,25 +18,26 @@
 
 (ns lice-comb.spdx
   "SPDX related functionality."
-  (:require [clojure.string  :as s]
-            [clojure.java.io :as io]
-            [clojure.reflect :as cr]
-            [clojure.edn     :as edn]
-            [cheshire.core   :as json]
-            [lice-comb.utils :as u]))
+  (:require [clojure.string        :as s]
+            [clojure.java.io       :as io]
+            [clojure.reflect       :as cr]
+            [clojure.edn           :as edn]
+            [clojure.tools.logging :as log]
+            [cheshire.core         :as json]
+            [lice-comb.data        :as d]
+            [lice-comb.utils       :as u]))
 
 (def ^:private spdx-license-list-uri "https://spdx.org/licenses/licenses.json")
 (def ^:private spdx-license-list     (try
                                        (json/parse-string (slurp spdx-license-list-uri) u/clojurise-json-key)
                                        (catch Exception e
-                                         (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " spdx-license-list-uri ". Please check your internet connection and try again.") {})))))
+                                         (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " spdx-license-list-uri ". Please check your internet connection and try again.") {} e)))))
 
-;(def ^:private aliases-uri (str (System/getProperty "user.home") "/Development/personal/lice-comb-data/spdx/aliases.edn"))   ; For testing changes locally
-(def ^:private aliases-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/spdx/aliases.edn")
+(def ^:private aliases-uri (d/uri-for-data "/spdx/aliases.edn"))
 (def ^:private aliases     (try
                              (edn/read-string (slurp aliases-uri))
                              (catch Exception e
-                               (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " aliases-uri ". Please check your internet connection and try again.") {})))))
+                               (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " aliases-uri ". Please check your internet connection and try again.") {} e)))))
 
 (def license-list-version
   "The version of the license list in use."
@@ -110,13 +111,15 @@
 (defn name->ids
   "Attempts to determine the SPDX license identifier(s) (a set) from the given license name (a string). Returns nil if unable to do so."
   [name]
-  (when name
+  (when (not (s/blank? name))
     (let [name (s/trim name)]
       (if-let [exact-id-match (id->info name)]   ; First we exact match on the id, for those cases where someone has used the SPDX id as the name (e.g. in a pom.xml file)
         #{(:license-id exact-id-match)}
         (if-let [exact-name-match (spdx-name->id name)]   ; Then we exact match on the name (albeit case-insensitively)
           #{exact-name-match}
-          (get idx-regex-to-id (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) regexes))))))))   ; Then the last resort is to match on the regexes
+          (if-let [re-name-match (get idx-regex-to-id (first (filter #(re-find (re-pattern-mem %) (s/lower-case name)) regexes)))]   ; Then the last resort is to match on the regexes
+            re-name-match
+            (log/warn "Unable to find a license for" (str "'" name "'"))))))))
 
 (defmulti text->ids
   "Attempts to determine the SPDX license identifier(s) (a set) from the given license text (an InputStream, or something that can have an io/input-stream opened on it)."

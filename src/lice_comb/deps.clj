@@ -24,13 +24,27 @@
             [lice-comb.spdx  :as spdx]
             [lice-comb.maven :as mvn]
             [lice-comb.files :as f]
+            [lice-comb.data  :as d]
             [lice-comb.utils :as u]))
 
-(def ^:private fallbacks-uri "https://raw.githubusercontent.com/pmonks/lice-comb/data/deps/fallbacks.edn")
+(def ^:private overrides-uri (d/uri-for-data "/deps/overrides.edn"))
+(def ^:private overrides     (try
+                               (edn/read-string (slurp overrides-uri))
+                               (catch Exception e
+                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " overrides-uri ". Please check your internet connection and try again.") {} e)))))
+
+(def ^:private fallbacks-uri (d/uri-for-data "/deps/fallbacks.edn"))
 (def ^:private fallbacks     (try
                                (edn/read-string (slurp fallbacks-uri))
                                (catch Exception e
-                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {})))))
+                                 (throw (ex-info (str "Unexpected " (cr/typename (type e)) " while reading " fallbacks-uri ". Please check your internet connection and try again.") {} e)))))
+
+(defn- check-overrides
+  "Checks if an override should be used for the given dep"
+  ([ga] (check-overrides ga nil))
+  ([ga v]
+    (let [gav (symbol (str ga (when v (str "@" v))))]
+      (:licenses (get overrides gav (get overrides ga))))))  ; Lookup overrides both with and without the version
 
 (defn- check-fallbacks
   "Checks if a fallback should be used for the given dep, given the set of detected ids"
@@ -50,18 +64,24 @@
   (when dep
     (let [[ga info]              dep
           [group-id artifact-id] (s/split (str ga) #"/")
-          version                (:mvn/version info)
-          pom-uri                (mvn/pom-uri-for-gav group-id artifact-id version)
-          license-ids            (if-let [license-ids (mvn/pom->ids pom-uri)]
-                                   license-ids
-                                   (u/nset (mapcat f/zip->ids (:paths info))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
-      (check-fallbacks ga license-ids))))
+          version                (:mvn/version info)]
+      (if-let [override (check-overrides ga version)]
+        override
+        (let [pom-uri     (mvn/pom-uri-for-gav group-id artifact-id version)
+              license-ids (check-fallbacks ga
+                                           (if-let [license-ids (mvn/pom->ids pom-uri)]
+                                             license-ids
+                                             (u/nset (mapcat f/zip->ids (:paths info)))))]      ; If we didn't find any licenses in the dep's POM, check the dep's JAR(s) too
+          license-ids)))))
 
 (defmethod dep->ids :deps
   [dep]
   (when dep
-    (let [[ga info] dep]
-      (check-fallbacks ga (f/dir->ids (:deps/root info))))))
+    (let [[ga info] dep
+          version   (:git/sha info)]
+      (if-let [override (check-overrides ga version)]
+        override
+        (check-fallbacks ga (f/dir->ids (:deps/root info)))))))
 
 (defmethod dep->ids nil
   [_])

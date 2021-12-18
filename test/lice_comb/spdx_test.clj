@@ -62,6 +62,7 @@
     (is (= #{"Apache-2.0"}                       (name->ids "Apache Software License, Version 2.0")))
     (is (= #{"Apache-2.0"}                       (name->ids "Apache v2")))
     (is (= #{"Apache-2.0"}                       (name->ids "The Apache Software License, Version 2.0")))
+    (is (= #{"MIT"}                              (name->ids "Bouncy Castle Licence")))  ; Note spelling of "licence"
     (is (= #{"BSD-3-Clause"}                     (name->ids "3-Clause BSD License")))
     (is (= #{"BSD-3-Clause"}                     (name->ids "BSD 3-Clause License")))
     (is (= #{"BSD-3-Clause"}                     (name->ids "The BSD 3-Clause License (BSD3)")))
@@ -74,6 +75,7 @@
     (is (= #{"CDDL-1.0"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0")))
     (is (= #{"CDDL-1.1"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE Version 1.1")))
     (is (= #{"CDDL-1.1"}                         (name->ids "COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.1")))
+    (is (= #{"EPL-1.0"}                          (name->ids "Eclipse Public License")))
     (is (= #{"EPL-1.0"}                          (name->ids "Eclipse Public License (EPL)")))
     (is (= #{"EPL-1.0"}                          (name->ids "Eclipse Public License - v 1.0")))
     (is (= #{"EPL-1.0"}                          (name->ids "Eclipse Public License 1.0")))
