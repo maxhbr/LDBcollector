@@ -21,6 +21,7 @@
   (:require [lice-comb.utils :as u]))
 
 (defn uri-for-data
+  "Returns a URI (as a string) for the given data file.  May be a local file path or a URI to a remote resource."
   [file]
   (when file
     (str (u/getenv "LICE_COMB_DATA_DIR" "https://raw.githubusercontent.com/pmonks/lice-comb/data") file)))
