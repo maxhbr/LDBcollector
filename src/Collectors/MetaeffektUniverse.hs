@@ -85,11 +85,11 @@ instance LFRaw MetaeffektUniverseData where
   getImpliedNames me@MetaeffektUniverseData { canonicalName = cn
                                             , shortName = msn
                                             , spdxIdentifier = msi
-                                            , otherIds = ois
                                             } =
-    CLSR $ [cn] ++ (Maybe.maybeToList msn) ++ (Maybe.maybeToList msi) ++ ois
-  getImpliedAmbiguousNames me@MetaeffektUniverseData {alternativeNames = mans} =
-    CLSR $ mans
+    CLSR $ [cn] ++ (Maybe.maybeToList msn) ++ (Maybe.maybeToList msi)
+  getImpliedAmbiguousNames me@MetaeffektUniverseData { alternativeNames = mans
+                                                     , otherIds = ois
+                                                     } = CLSR $ mans ++ ois
   getImpliedId me@MetaeffektUniverseData {spdxIdentifier = Just si} =
     mkRLSR me 90 si
   getImpliedId me@MetaeffektUniverseData {shortName = Just sn} = mkRLSR me 80 sn
