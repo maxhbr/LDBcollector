@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Apple Squeak License"
+category: "Apple Squeak License"
+shortName: "Apple-Squeak"
+
+alternativeNames:
+  - "http://squeak.org/SqueakLicense/"
+  - "Apple Computer, Inc. Software License"
+
+otherIds: 
+  - "scancode:squeak"

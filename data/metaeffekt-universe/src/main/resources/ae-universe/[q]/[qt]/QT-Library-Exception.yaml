@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "QT Library Exception"
+category: "QT-Library-Exception"
+shortName: "QT-Library"
+
+type: "exception"
+
+alternativeNames:
+  - "QT Library Exception"
+
+otherIds: 
+  - "scancode:subcommander-exception-2.0-plus"

@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD 3-Clause License (attribution)"
+category: "BSD"
+spdxIdentifier: "BSD-3-Clause-Attribution"
+
+alternativeNames:
+  - "BSD-3-Clause-Attribution"
+  - "BSD 3-Clause Attribution"
+
+otherIds: 
+  - "scancode:bsd-ack"

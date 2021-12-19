@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Sun BSD-Style with Additional Restrictions"
+category: "Sun BSD-Style with Additional Restrictions"
+shortName: "Sun-BSD-Extra"
+
+alternativeNames:
+  - "Sun Open Source License"
+
+otherIds: 
+  - "scancode:sun-bsd-extra"

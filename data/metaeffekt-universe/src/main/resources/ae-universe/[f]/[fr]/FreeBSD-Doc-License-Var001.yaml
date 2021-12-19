@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "FreeBSD Doc License Var001"
+category: "FreeBSD Doc License"
+shortName: "FreeBSD-Doc-Var001"
+
+alternativeNames:
+  - "freebsd-doc"
+
+otherIds: 
+  - "scancode:freebsd-doc"

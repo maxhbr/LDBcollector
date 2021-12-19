@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD Source Code License"
+category: "BSD Source Code"
+spdxIdentifier: "BSD-Source-Code"
+
+alternativeNames:
+  - "BSD Source Code"
+  - "BSD SOURCE CODE"
+  - "BSD-Source-Code"
+  - "BSD-SOURCE-CODE"
+
+otherIds: 
+  - "scancode:bsd-source-code"

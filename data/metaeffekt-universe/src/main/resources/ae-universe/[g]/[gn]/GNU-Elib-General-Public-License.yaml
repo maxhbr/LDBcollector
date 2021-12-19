@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "GNU Elib General Public License"
+category: "GNU Elib General Public License"
+shortName: "Elib-GPL"
+
+alternativeNames:
+  - "http://www.math.utah.edu/docs/info/elib_3.html"
+  - "http://www.math.utah.edu/docs/info/elib_1.html"
+
+otherIds: 
+  - "scancode:elib-gpl"

@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "PHP License 3.01"
+category: "PHP"
+spdxIdentifier: "PHP-3.01"
+
+alternativeNames:
+  - "PHP, Version 3.01"
+  - "PHP, 3.01"
+  - "PHP License, Version 3.01"
+  - "PHP License 3.01"
+  - "PHP License, version 3.01"
+
+otherIds: 
+  - "scancode:php-3.01"

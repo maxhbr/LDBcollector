@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "CeCILL Free Software License Agreement 1.1"
+category: "CECILL-1.1"
+spdxIdentifier: "CECILL-1.1"
+
+alternativeNames:
+  - "CeCILL Free Software License Agreement v1.1"
+  - "CECILL-1.1"
+  - "FREE SOFTWARE LICENSING AGREEMENT CeCILL Notice"
+  - "https://spdx.org/licenses/cecill-1.1"
+  - "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.txt"
+  - "http://www.cecill.info/licences/Licence_CeCILL_V1.1-US.html"
+
+otherIds: 
+  - "scancode:cecill-1.1"

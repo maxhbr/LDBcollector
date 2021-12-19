@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Broadcom Linking Exception"
+category: "Broadcom Linking Exception"
+shortName: "Broadcom-Linking-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "broadcom-linking-unmodified"
+
+otherIds: 
+  - "scancode:broadcom-linking-unmodified"
+  - "scancode:broadcom-linking-exception-2.0"

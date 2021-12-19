@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "SISSL 1.2"
+category: "SISSL"
+spdxIdentifier: "SISSL-1.2"
+
+alternativeNames:
+  - "SISSL, Version 1.2"
+  - "SISSL 1.2"
+  - "SUN INDUSTRY STANDARDS SOURCE LICENSE Version 1.2"
+
+otherIds: 
+  - "scancode:sun-sissl-1.2"

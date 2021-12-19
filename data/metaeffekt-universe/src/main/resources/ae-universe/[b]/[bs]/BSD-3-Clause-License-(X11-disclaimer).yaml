@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD 3-Clause License (X11 disclaimer)"
+category: "BSD"
+shortName: "BSD-3-Clause-X11"
+
+alternativeNames:
+  - "bsd-x11"
+
+otherIds: 
+  - "scancode:bsd-x11"

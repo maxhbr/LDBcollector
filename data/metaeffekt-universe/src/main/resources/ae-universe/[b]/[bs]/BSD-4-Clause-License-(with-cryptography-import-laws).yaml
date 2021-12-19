@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD 4-Clause License (with cryptography import laws)"
+category: "BSD"
+shortName: "BSD-4-Clause-cryptography"
+
+alternativeNames:
+  - "BSD 4-Clause License (with cryptography import laws)"
+
+otherIds: 
+  - "scancode:libsrv-1.0.2"

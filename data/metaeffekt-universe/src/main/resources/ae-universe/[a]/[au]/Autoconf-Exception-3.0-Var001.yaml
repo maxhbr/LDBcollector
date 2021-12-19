@@ -1,0 +1,11 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Autoconf Exception 3.0 Var001"
+category: "Autoconf Exception"
+shortName: "Autoconf-Exception-3.0-Var001"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:autoconf-simple-exception"

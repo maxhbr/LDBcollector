@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "NPOSL 3.0"
+category: "NPOSL"
+spdxIdentifier: "NPOSL-3.0"
+
+alternativeNames:
+  - "NPOSL, Version 3.0"
+  - "NPOSL, 3.0"
+  - "Non-Profit Open Software License 3.0"
+
+otherIds: 
+  - "scancode:nosl-3.0"
+  - "osi:NPOSL-3.0"
+  - "osi:NOSL3.0"

@@ -1,0 +1,26 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Apache License 1.1"
+category: "Apache License"
+spdxIdentifier: "Apache-1.1"
+
+alternativeNames:
+  - "Apache License Version 1.1"
+  - "Apache-1.1"
+  - "ASL 1.1"
+  - "Apache Software License Version 1.1"
+  - "Apache Software License version 1.1"
+  - "Apache Software License v1.1"
+  - "Apache Software License 1.1"
+  - "http://apache.org/licenses/LICENSE-1.1"
+  - "The OpenSymphony Software License, Version 1.1"
+  - "The P6Spy Software License, Version 1.1"
+  - "Apache License 1.1"
+  - "The CyberNeko Software License, Version 1.0"
+  - "https://spdx.org/licenses/apache-1.1"
+
+otherIds: 
+  - "scancode:apache-1.1"
+  - "osi:Apache-1.1"
+  - "scancode:phorum-2.0"

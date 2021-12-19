@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "DUNE Exception"
+category: "DUNE Exception"
+shortName: "DUNE-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "dune-exception"
+
+otherIds: 
+  - "scancode:dune-exception"

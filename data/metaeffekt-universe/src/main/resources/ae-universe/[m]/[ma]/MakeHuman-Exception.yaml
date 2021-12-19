@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "MakeHuman Exception"
+category: "MakeHuman Exception"
+shortName: "MakeHuman-Exception"
+
+type: "exception"
+
+alternativeNames:
+  - "make-human-exception"
+
+otherIds: 
+  - "scancode:make-human-exception"

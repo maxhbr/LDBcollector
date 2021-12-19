@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "OCB License (OpenSSL patent)"
+category: "OCB"
+shortName: "OCB-OpenSSL-patent"
+
+alternativeNames:
+  - "OCB License (OpenSSL patent)"
+
+otherIds: 
+  - "scancode:ocb-patent-openssl-2013"

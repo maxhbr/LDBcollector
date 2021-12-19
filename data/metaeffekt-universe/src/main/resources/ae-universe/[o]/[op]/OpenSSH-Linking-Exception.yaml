@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "OpenSSH Linking Exception"
+category: "OpenSSH Linking Exception"
+shortName: "OpenSSH-LE"
+
+type: "exception"
+
+alternativeNames:
+  - "OpenSSH Linking Exception"
+  - "OpenSSH-linking exception"
+

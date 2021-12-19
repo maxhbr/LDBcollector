@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "MPEG SSG License"
+category: "MPEG SSG License"
+shortName: "MPEG-SSG"
+
+alternativeNames:
+  - "http://www.mpeg.org/MPEG/video/mssg-free-mpeg-software.html"
+
+otherIds: 
+  - "scancode:mpeg-ssg"

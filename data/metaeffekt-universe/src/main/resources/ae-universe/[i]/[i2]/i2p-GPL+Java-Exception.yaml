@@ -1,0 +1,11 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "i2p GPL+Java Exception"
+category: "i2p GPL Java Exception"
+spdxIdentifier: "i2p-gpl-java-exception"
+
+type: "exception"
+
+otherIds: 
+  - "scancode:i2p-gpl-java-exception"

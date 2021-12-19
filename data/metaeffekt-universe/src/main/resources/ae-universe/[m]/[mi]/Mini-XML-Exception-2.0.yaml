@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Mini-XML Exception 2.0"
+category: "Mini-XML Exception"
+shortName: "Mini-XML-Exception-2.0"
+
+type: "exception"
+
+alternativeNames:
+  - "mini-xml-exception-lgpl-2.0"
+
+otherIds: 
+  - "scancode:mini-xml-exception-lgpl-2.0"

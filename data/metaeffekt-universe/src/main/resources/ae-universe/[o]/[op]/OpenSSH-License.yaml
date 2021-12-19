@@ -1,0 +1,17 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "OpenSSH License"
+category: "OpenSSH License"
+spdxIdentifier: "SSH-OpenSSH"
+
+alternativeNames:
+  - "OpenSSH License"
+  - "SSH-OpenSSH"
+  - "Tatu Ylonen's original licence"
+  - "Tatu Ylonen's licence"
+  - "Tatu Ylonen's Licence"
+  - "Tatu Ylonen Licence"
+
+otherIds: 
+  - "scancode:tatu-ylonen"

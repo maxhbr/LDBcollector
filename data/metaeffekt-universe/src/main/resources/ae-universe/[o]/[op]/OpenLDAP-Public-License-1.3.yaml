@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "OpenLDAP Public License 1.3"
+category: "OLDAP"
+spdxIdentifier: "OLDAP-1.3"
+
+alternativeNames:
+  - "OLDAP, Version 1.3"
+  - "OLDAP, 1.3"
+  - "OLDAP License, Version 1.3"
+  - "OLDAP License, 1.3"
+  - "The OpenLDAP Public License Version 1.3, 17 January 1999"
+
+otherIds: 
+  - "scancode:openldap-1.3"

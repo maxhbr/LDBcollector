@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "RSA Demo License"
+category: "RSA Demo License"
+shortName: "RSA-Demo"
+
+alternativeNames:
+  - "rsa-demo"
+
+otherIds: 
+  - "scancode:rsa-demo"

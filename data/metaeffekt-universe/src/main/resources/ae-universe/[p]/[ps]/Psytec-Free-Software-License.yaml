@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Psytec Free Software License"
+category: "Psytec Free Software License"
+shortName: "Psytec-FreeSoft"
+
+alternativeNames:
+  - "・本ソフトウェアの配布は自由です。 ・ソースコードの一部または全部の使用、及び改変しての使用を認めます。 ・ソースコードを使用する際に弊社に許可を求める必要はなく、また弊社名の記載も不要です。"
+
+otherIds: 
+  - "scancode:psytec-freesoft"

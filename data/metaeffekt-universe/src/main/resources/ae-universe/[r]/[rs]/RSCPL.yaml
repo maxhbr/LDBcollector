@@ -1,0 +1,14 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "RSCPL"
+category: "RSCPL"
+spdxIdentifier: "RSCPL"
+
+alternativeNames:
+  - "RSCPL"
+  - "Ricoh Source Code Public License"
+
+otherIds: 
+  - "scancode:ricoh-1.0"
+  - "osi:RSCPL"

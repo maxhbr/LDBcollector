@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Microsoft .NET Framework Redistributable EULA"
+category: "Microsoft .NET Framework Redistributable EULA"
+shortName: "MS-NET-FRAMEWORK-Deployment"
+
+alternativeNames:
+  - "Microsoft .NET Framework Redistributable EULA"
+
+otherIds: 
+  - "scancode:ms-net-framework-deployment"

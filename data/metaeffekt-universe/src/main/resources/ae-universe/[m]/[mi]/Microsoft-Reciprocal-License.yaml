@@ -1,0 +1,19 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Microsoft Reciprocal License"
+category: "MS-RL"
+spdxIdentifier: "MS-RL"
+
+alternativeNames:
+  - "MS-RL"
+  - "Microsoft Reciprocal License"
+  - "Ms-RL"
+  - "MS, Version RL"
+  - "MS RL"
+  - "MS License, Version RL"
+  - "MS License, RL"
+
+otherIds: 
+  - "scancode:ms-rl"
+  - "osi:MS-RL"

@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "HP-UX 11i Java Technology Software"
+category: "HP-UX 11i Java Technology Software"
+shortName: "HP-UX-Java"
+
+alternativeNames:
+  - "http://www.hp.com/products1/unix/java/java2/sdkrte1_3/downloads/license_rte_1-3-1-17_pa-risc.html"
+
+otherIds: 
+  - "scancode:hp-ux-java"

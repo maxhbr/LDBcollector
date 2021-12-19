@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Creative Commons Public Domain Dedication and Certification"
+category: "CC-PDDC"
+spdxIdentifier: "CC-PDDC"
+
+alternativeNames:
+  - "CC-PDDC"
+  - "Creative Commons Public Domain Dedication and Certification"
+  - "AOP Public Domain License"
+
+otherIds: 
+  - "scancode:aop-pd"
+  - "scancode:cc-pd"

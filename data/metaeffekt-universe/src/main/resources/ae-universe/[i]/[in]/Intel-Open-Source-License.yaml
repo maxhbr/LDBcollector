@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Intel Open Source License"
+category: "Intel"
+spdxIdentifier: "Intel"
+
+alternativeNames:
+  - "Intel Open Source License"
+  - "Intel BSD - Export Control"
+  - "http://opensource.org/licenses/intel"
+  - "https://opensource.org/licenses/intel"
+
+otherIds: 
+  - "scancode:intel-bsd-export-control"
+  - "osi:Intel"

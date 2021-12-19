@@ -1,0 +1,15 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "Upstream Compatibility License 1.0"
+category: "Upstream Compatibility"
+spdxIdentifier: "UCL-1.0"
+
+alternativeNames:
+  - "UCL-1.0"
+  - "Upstream Compatibility License v1.0"
+  - "Upstream Compatibility License v. 1.0"
+
+otherIds: 
+  - "scancode:ucl-1.0"
+  - "osi:UCL-1.0"

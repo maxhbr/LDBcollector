@@ -1,0 +1,16 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "CNRI Open Source License Agreement (Python 1.6b1)"
+category: "CNRI Open Source License Agreement"
+shortName: "CNRI-Python-1.6b1"
+spdxIdentifier: "CNRI-Python"
+
+alternativeNames:
+  - "http://spdx.org/licenses/CNRI-Python"
+  - "https://spdx.org/licenses/cnri-python"
+  - "http://www.opensource.org/licenses/CNRI-Python"
+
+otherIds: 
+  - "scancode:cnri-python-1.6"
+  - "osi:CNRI-Python"

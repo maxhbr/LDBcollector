@@ -1,0 +1,21 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "WTF Public License 2.0"
+category: "WTFPL"
+shortName: "WTFPL-2.0"
+spdxIdentifier: "WTFPL"
+
+alternativeNames:
+  - "WTFPL"
+  - "DO WHAT THE F#*@ YOU WANT TO PUBLIC LICENSE"
+  - "DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE"
+  - "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 1"
+  - "DO WHAT YOU WANT TO PUBLIC LICENSE, Version 2.0"
+  - "Do What The Fuck You Want To Public License, Version 2"
+  - "Do What you Want"
+  - "http://www.wtfpl.net/about/"
+  - "http://sam.zoy.org/wtfpl/"
+
+otherIds: 
+  - "scancode:wtfpl-2.0"

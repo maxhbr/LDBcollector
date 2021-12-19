@@ -1,0 +1,12 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "CeCILL-B Free Software License (FRA)"
+category: "CeCILL-B"
+shortName: "CeCILL-B-FSL"
+
+alternativeNames:
+  - "`CECILL-B` - [CEA CNRS INRIA Logiciel Libre](http://www.cecill.info/licences/Licence_CeCILL-B_V1-en.txt)"
+
+otherIds: 
+  - "scancode:cecill-b"

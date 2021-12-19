@@ -1,0 +1,13 @@
+# Generated content
+# SPDX-License-Identifier: CC-BY-4.0
+# SPDX-FileCopyrightText: Copyright © metaeffekt GmbH 2021. All rights reserved.
+canonicalName: "BSD alike (display obligation)"
+category: "BSD"
+shortName: "BSD-alike-display"
+
+alternativeNames:
+  - " BSD alike (display obligation)"
+
+otherIds: 
+  - "scancode:bsd-1988"
+  - "scancode:flex-2.5"
